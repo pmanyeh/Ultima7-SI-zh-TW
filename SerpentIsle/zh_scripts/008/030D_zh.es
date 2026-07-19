@@ -10,11 +10,11 @@ void Func030D shape#(0x30D) ()
 	abort;
 labelFunc030D_000F:
 	if (!UI_get_item_flag(item, 0x000A)) goto labelFunc030D_0023;
-	Func094A("@The sails must be furled before the planks can be lowered.@");
+	Func094A("@在放下跳板之前，必須先捲起船帆。@");
 	goto labelFunc030D_0031;
 labelFunc030D_0023:
 	if (!(!Func0910(item))) goto labelFunc030D_0031;
-	Func094A("@I believe the gangplank is blocked.@");
+	Func094A("@我想跳板被擋住了。@");
 labelFunc030D_0031:
 	return;
 }

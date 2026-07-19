@@ -6,7 +6,7 @@ void Func07F1 object#(0x7F1) ()
 {
 	var var0000;
 
-	var0000 = Func0992(0x0001, "@Blue lightning? Gustacio said nothing about blue lightning!@", "@The lightning was blue. Blue?@", false);
+	var0000 = Func0992(0x0001, "@藍色閃電？Gustacio 可沒說過有藍色閃電！@", "@閃電是藍色的。藍色的？@", false);
 	return;
 }
 

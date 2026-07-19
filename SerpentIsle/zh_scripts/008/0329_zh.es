@@ -12,7 +12,7 @@ void Func0329 shape#(0x329) ()
 	if (!gflags[0x0004]) goto labelFunc0329_003F;
 	UI_clear_item_flag(item, 0x001D);
 	UI_clear_item_say(item);
-	Func097F(item, "@No! It must work!@", 0x0000);
+	Func097F(item, "@不！它一定會起作用的！@", 0x0000);
 	UI_obj_sprite_effect(item, 0x0009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_play_sound_effect(0x002B);
 	abort;
@@ -23,7 +23,7 @@ labelFunc0329_003F:
 	UI_play_sound_effect(0x0082);
 	UI_remove_npc(item);
 	UI_set_schedule_type(item, 0x0004);
-	var0002 = Func0992(0x0001, "@What happened?@", "@Gone!@", 0x0003);
+	var0002 = Func0992(0x0001, "@發生了什麼事？@", "@消失了！@", 0x0003);
 	return;
 }
 

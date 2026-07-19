@@ -39,7 +39,7 @@ labelFunc07AB_009D:
 	var0008 = UI_get_object_position(item);
 	UI_move_object(0xFF2B, var0008);
 	UI_set_schedule_type(0xFF2B, 0x000F);
-	var0003 = UI_execute_usecode_array(0xFF2B, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x2B, 0x000A, (byte)0x52, "@Now is the Time of Visions!@"]);
+	var0003 = UI_execute_usecode_array(0xFF2B, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x2B, 0x000A, (byte)0x52, "@『預言之刻』已到！@"]);
 	Func09AC(0xFF2B, var0008[0x0001], var0008[0x0002], 0x000F);
 	UI_play_music(0x003F, var0002);
 labelFunc07AB_00F6:

@@ -137,57 +137,57 @@ labelFunc07FF_0280:
 	var0013 = var0013[0x0002];
 	var0016 = (0x0000 - UI_get_npc_number(item));
 	var0017 = UI_game_hour();
-	message("\"Failed out of tournament code at hour ");
+	message("「在第 ");
 	message(var0017);
-	message(" gametime. Npc #");
+	message(" 點時發生錦標賽程式錯誤。NPC #");
 	message(var0016);
-	message(" was training, and he was at coord (");
+	message(" 正在訓練，且他位於座標 (");
 	message(var0014);
 	message(",");
 	message(var0013);
 	message(",");
 	message(var0015);
-	message(").\"");
+	message(")。」");
 	say();
 	if (!gflags[0x0007]) goto labelFunc07FF_02EF;
-	message("\"$Temp1Flag was set to true.\"");
+	message("「$Temp1Flag 被設為 true。」");
 	say();
 labelFunc07FF_02EF:
 	if (!gflags[0x0008]) goto labelFunc07FF_02F9;
-	message("\"$Temp2Flag was set to true.\"");
+	message("「$Temp2Flag 被設為 true。」");
 	say();
 labelFunc07FF_02F9:
 	if (!gflags[0x0009]) goto labelFunc07FF_0303;
-	message("\"$Temp3Flag was set to true.\"");
+	message("「$Temp3Flag 被設為 true。」");
 	say();
 labelFunc07FF_0303:
 	if (!gflags[0x000A]) goto labelFunc07FF_030D;
-	message("\"$Temp4Flag was set to true.\"");
+	message("「$Temp4Flag 被設為 true。」");
 	say();
 labelFunc07FF_030D:
 	if (!gflags[0x0085]) goto labelFunc07FF_0317;
-	message("\"We had just finished the tournament and were on our way to the list field door.\"");
+	message("「我們剛剛完成了錦標賽，正在前往比武場大門的路上。」");
 	say();
 labelFunc07FF_0317:
 	if (!gflags[0x0084]) goto labelFunc07FF_0321;
-	message("\"The training flag was set.\"");
+	message("「訓練標記已被設定。」");
 	say();
 labelFunc07FF_0321:
 	if (!gflags[0x0083]) goto labelFunc07FF_032B;
-	message("\"And, of course, the tournament flag was set.\"");
+	message("「而且，當然，錦標賽標記也被設定了。」");
 	say();
 labelFunc07FF_032B:
 	if (!Func0932(item)) goto labelFunc07FF_0336;
-	message("\"Moreover, the student was in the list fields.\"");
+	message("「此外，學生當時在比武場。」");
 	say();
 labelFunc07FF_0336:
 	if (!Func0932(item)) goto labelFunc07FF_0355;
 	UI_move_object(item, [0x03F8, 0x0A7D, 0x0006]);
-	message("\"All right, thy time is over!\"");
+	message("「好了，你的時間到了！」");
 	say();
 	goto labelFunc07FF_0359;
 labelFunc07FF_0355:
-	message("\"Ummm.... I cannot seem to find my keys. Thou mightest return later.\"");
+	message("「嗯……我好像找不到我的鑰匙。你或許可以稍後再來。」");
 	say();
 labelFunc07FF_0359:
 	UI_remove_npc_face0();

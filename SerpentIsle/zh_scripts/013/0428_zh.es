@@ -207,13 +207,13 @@ labelFunc0428_0450:
 	UI_remove_answer("Arabella");
 labelFunc0428_0469:
 	case "passengers" attend labelFunc0428_048C:
-	message("\"I had three passengers for the trip over to Moonshade.\" ~\"There's a fellow named Kane, a scurvy merchant named Flindo, and a pretty lass named Selina.\"");
+	message("\"I had three passengers for the trip over to月影城( Moonshade ).\" ~\"There's a fellow named Kane, a scurvy merchant named Flindo, and a pretty lass named Selina.\"");
 	say();
 	UI_remove_answer("passengers");
 	UI_add_answer(["Kane", "Flindo", "Selina"]);
 labelFunc0428_048C:
 	case "Kane" attend labelFunc0428_04A6:
-	message("\"Seems I heard tell he was a sheepherder or something.\" ~\"Kane wants ta go talk ta some of those fancy wizards over in Moonshade...\" *\"See if they kin help him find what happened ta his older brother who disappeared a few months ago.\" ~\"Ye can't miss him... He always has a bird with him.\"");
+	message("\"Seems I heard tell he was a sheepherder or something.\" ~\"Kane wants ta go talk ta some of those fancy wizards over in月影城( Moonshade )...\" *\"See if they kin help him find what happened ta his older brother who disappeared a few months ago.\" ~\"Ye can't miss him... He always has a bird with him.\"");
 	say();
 	UI_remove_answer("Kane");
 	UI_add_answer("bird");
@@ -268,7 +268,7 @@ labelFunc0428_0553:
 	message("\"...Er, Pikemen. Sorry, Argus.\"");
 	say();
 labelFunc0428_056B:
-	message("\"Talking just after I woke up.\" ~\"Seems like Flindo payed them ta rough me up so that I'd decide not ta stay and go back ta Moonshade.\" *\"But, moneybags Flindo didn't count on those swine getting greedy!\"");
+	message("\"Talking just after I woke up.\" ~\"Seems like Flindo payed them ta rough me up so that I'd decide not ta stay and go back ta月影城( Moonshade ).\" *\"But, moneybags Flindo didn't count on those swine getting greedy!\"");
 	say();
 	UI_remove_answer("bribed");
 	UI_remove_answer("greedy");
@@ -281,7 +281,7 @@ labelFunc0428_0590:
 	case "Selina" attend labelFunc0428_05BE:
 	message("\"Pretty little thing, ");
 	message(var0005);
-	message("... Brought her over from Moonshade a while back. Might have been the return trip from takin' that fat sage Batlin across.\"");
+	message("... Brought her over from月影城( Moonshade )a while back. Might have been the return trip from takin' that fat sage Batlin across.\"");
 	say();
 	message("\"An' a sullen, bossy sort of fellow he was, too. Did not even have the decency ta lift a mug wit' me during the crossing! Bah! But what was I talkin' about... Ah yes, that lovely slip of a lass, Selina.\"");
 	say();
@@ -331,7 +331,7 @@ labelFunc0428_0642:
 	case "journey" attend labelFunc0428_068C:
 	UI_remove_answer("journey");
 	if (!(var0000 == 0x0001)) goto labelFunc0428_068B;
-	message("\"I can take ye to Moonshade, ");
+	message("\"I can take ye to月影城( Moonshade ), ");
 	message(var0005);
 	message(".\" ~\"Wait for me out on the Arabella, and we'll try to outrace these blasted storms!\"");
 	say();

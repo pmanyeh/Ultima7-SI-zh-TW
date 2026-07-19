@@ -19,7 +19,7 @@ void Func0175 shape#(0x175) ()
 	if (!(UI_get_npc_id(item) == 0x0000)) goto labelFunc0175_0061;
 	Func0922(0x0001);
 	UI_set_npc_id(item, 0x0001);
-	var0002 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@Farewell...@", (byte)0x6F, (byte)0x70, (byte)0x27, 0x0002, (byte)0x55, 0x0175, (byte)0x55, 0x07D2, (byte)0x6C, (byte)0x6D, (byte)0x6E], 0x0008);
+	var0002 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@再見……@", (byte)0x6F, (byte)0x70, (byte)0x27, 0x0002, (byte)0x55, 0x0175, (byte)0x55, 0x07D2, (byte)0x6C, (byte)0x6D, (byte)0x6E], 0x0008);
 	goto labelFunc0175_0103;
 labelFunc0175_0061:
 	if (!(UI_get_npc_id(item) == 0x000C)) goto labelFunc0175_00B5;
@@ -45,120 +45,120 @@ labelFunc0175_0103:
 	UI_play_music(0x0032, Func09A0(0x0005, 0x0001));
 	UI_show_npc_face0(0xFEF5, 0x0000);
 	gflags[0x0279] = true;
-	message("\"At last, I am awakened from the slumber of death. I know thee, for the Great Earth Serpent hath whispered to me of thee. Welcome, noble Avatar! Thou hast arrived on the very brink of disaster. It is up to thee to restore the land to its needful Balance.\"");
+	message("「終於，我從死亡的沉睡中甦醒。我認識你，因為大地之蛇向我低語了你的事蹟。歡迎，高貴的聖者！你在災難的邊緣到來。恢復這片土地所需的平衡，就靠你了。」");
 	say();
 	if (!(Func097D(0xFE9B, 0x0001, 0x0280, 0xFE99, 0x0000) && (Func097D(0xFE9B, 0x0001, 0x027E, 0xFE99, 0x0000) && Func097D(0xFE9B, 0x0001, 0x03EC, 0xFE99, 0x0002)))) goto labelFunc0175_016F;
-	message("\"I see that thou art equipped with the Serpent Staff, the Serpent Armour and the Serpent Crown.\" *\"Now I must tell thee what must be done...\"");
+	message("「我看到你已裝備了巨蛇法杖( Serpent Staff )、巨蛇護甲( Serpent Armour )與巨蛇皇冠( Serpent Crown )。」*「現在我必須告訴你必須做什麼……」");
 	say();
 	goto labelFunc0175_0187;
 labelFunc0175_016F:
-	message("\"But first, thou must arm thyself with the symbols of my authority --\"");
+	message("「但首先，你必須以我的權威象徵裝備自己——」");
 	say();
-	message("\"the Staff, Armour, and Crown of the Great Earth Serpent.\"");
+	message("「大地之蛇的蛇杖、蛇鎧與蛇冠。」");
 	say();
-	UI_add_answer(["Staff", "Armour", "Crown"]);
+	UI_add_answer(["蛇杖", "蛇鎧", "蛇冠"]);
 labelFunc0175_0187:
-	UI_add_answer(["Great Earth Serpent", "quest", "bye"]);
+	UI_add_answer(["大地之蛇", "任務", "告辭"]);
 labelFunc0175_0197:
 	converse attend labelFunc0175_0355;
-	case "Great Earth Serpent" attend labelFunc0175_01B5:
-	UI_remove_answer("Great Earth Serpent");
-	message("\"Dost thou not recognize Him? 'Twas he whom thou didst free from the tyranny of Exodus, in thine adventurings of long, long ago. It is he who speaks to thee now, in his whisperings from the deeps.\"");
+	case "大地之蛇" attend labelFunc0175_01B5:
+	UI_remove_answer("大地之蛇");
+	message("「你不認識祂了嗎？就是祂，你在很久很久以前的冒險中，從 Exodus 的暴政下將祂解放出來。是祂在深淵的低語中向你訴說。」");
 	say();
-	message("\"It was the Great Serpent who maintained Balance in the land, but when Exodus stole him, the Serpents of Chaos and Order were left unto themselves.\"");
+	message("「正是大地之蛇維繫著這片土地的平衡，但當 Exodus 將祂奪走時，混沌之蛇與秩序之蛇便各自為政。」");
 	say();
-	message("\"Thus came the War of Imbalance, and when the Great Earth Serpent did return, it was too late! Order had won, and Chaos was divided into the crippled Banes!\"");
+	message("「於是失衡之戰爆發，而當大地之蛇終於歸來，一切已是太遲！秩序獲勝，而混沌則被分裂成殘缺不全的災禍！」");
 	say();
 labelFunc0175_01B5:
-	case "Staff" attend labelFunc0175_01EC:
-	UI_remove_answer("Staff");
+	case "蛇杖" attend labelFunc0175_01EC:
+	UI_remove_answer("蛇杖");
 	if (!Func097D(0xFE9B, 0x0001, 0x0280, 0xFE99, 0x0000)) goto labelFunc0175_01E4;
-	message("\"Good. Thou hast my Serpent Staff... It was both a support and a weapon to smite those who would unseat the delicate balance.\"");
+	message("「很好。你擁有我的巨蛇法杖( Serpent Staff )……它既是支撐，也是武器，用以打擊那些試圖破壞微妙平衡的人。」");
 	say();
-	message("\"Alas, it did me little good in the end...\"");
+	message("「唉，它最終對我幫助有限……」");
 	say();
 	goto labelFunc0175_01EC;
 labelFunc0175_01E4:
-	message("\"Thou dost not have my Serpent Staff... Thou must travel to the fiery depths to find where it now lies.\"");
+	message("「你沒有我的巨蛇法杖( Serpent Staff )……你必須前往熾熱的深處，找到它現在所在之處。」");
 	say();
 	gflags[0x0278] = true;
 labelFunc0175_01EC:
-	case "Armour" attend labelFunc0175_021F:
-	UI_remove_answer("Armour");
+	case "蛇鎧" attend labelFunc0175_021F:
+	UI_remove_answer("蛇鎧");
 	if (!Func097D(0xFE9B, 0x0001, 0x027E, 0xFE99, 0x0000)) goto labelFunc0175_021B;
-	message("\"Thou dost possess the Serpent Armour... fine, fine. It is more than a symbol of the Great Earth Serpent's power.\"");
+	message("「你擁有巨蛇護甲( Serpent Armour )……好，很好。它不僅僅是大地之蛇力量的象徵。」");
 	say();
-	message("\"The Serpent Armour wilt help thee to surmount the final challenges at the Grand Shrine of balance. Unfortunately, it proved to be little protection against treachery...\"");
+	message("「巨蛇護甲( Serpent Armour )將幫助你克服平衡大神殿中的最終挑戰。可惜，面對背叛時它幾乎無能為力……」");
 	say();
 	goto labelFunc0175_021F;
 labelFunc0175_021B:
-	message("\"Before thou canst complete thy quest, thou must have the Serpent Armour. Thou must ease the troubled heart of Love before thou canst hope to obtain it. She was once Beauty herself, but Chaos hath painted her with ugliness...\"");
+	message("「在你完成任務之前，你必須擁有巨蛇護甲( Serpent Armour )。在你能夠希望獲得它之前，你必須撫慰「愛」那飽受折磨的心。她曾是美麗本身，但混沌已將醜陋塗抹於她身上……」");
 	say();
 labelFunc0175_021F:
-	case "Crown" attend labelFunc0175_0252:
-	UI_remove_answer("Crown");
+	case "蛇冠" attend labelFunc0175_0252:
+	UI_remove_answer("蛇冠");
 	if (!Func097D(0xFE9B, 0x0001, 0x03EC, 0xFE99, 0x0002)) goto labelFunc0175_024A;
-	message("\"I see that thou dost possess my Serpent Crown. Well done! This is the crown my people set upon mine head, recognizing the power of the Great Earth Serpent through me.\" *\"Though I had no wish for crowns, it will aid thee in restoring the land's balance.\"");
+	message("「我看到你擁有我的巨蛇皇冠( Serpent Crown )。做得好！這是我的族人戴在我頭上的王冠，透過我來認可大地之蛇的力量。」*「雖然我不渴望王冠，但它將助你恢復大地的平衡。」");
 	say();
 	goto labelFunc0175_0252;
 labelFunc0175_024A:
-	message("\"Seek out the resting place of the Serpent Crown... Without the symbol of the Great Earth Serpent's power in the land, thou canst not hope to complete thy quest.\"");
+	message("「尋找巨蛇皇冠( Serpent Crown )的安息之所……若無大地之蛇力量的象徵在此大地，你便無法希望完成你的任務。」");
 	say();
-	message("\"Thou didst know he who held this treasure, but he hath been killed by the Banes of Chaos. Yet he left clues which shall show thee the way...\"");
+	message("「你認識持有此寶物的人，但他已被混沌的災禍所殺。然而他留下了線索，將為你指引前行的方向……」");
 	say();
 labelFunc0175_0252:
-	case "quest" attend labelFunc0175_0283:
-	UI_remove_answer("quest");
-	message("\"Be warned, ");
+	case "任務" attend labelFunc0175_0283:
+	UI_remove_answer("任務");
+	message("「請警惕， ");
 	message(var0000);
-	message(". None but thou can prevail against the Imbalance. And time grows short...\"");
+	message(" ！只有你才能戰勝失衡，時間已所剩無幾……」");
 	say();
-	message("\"Alas, I must give thee bitter news! Before thou canst restore Balance, thou must reunite the Chaos Serpent.\"");
+	message("「唉，我必須帶給你苦澀的消息！在你能恢復平衡之前，你必須使混沌之蛇重新合一。」");
 	say();
-	message("\"I grieve that I cannot tell thee how this is done... Such knowledge was for the Chaos Hierophant only.\"");
+	message("「我為無法告訴你該如何做到而哀傷……那樣的知識只屬於混沌教父。」");
 	say();
-	UI_add_answer(["Chaos Hierophant", "Chaos Serpent", "Balance"]);
+	UI_add_answer(["混沌教父", "混沌之蛇", "平衡"]);
 labelFunc0175_0283:
-	case "Chaos Hierophant" attend labelFunc0175_029A:
-	UI_remove_answer("Chaos Hierophant");
-	message("\"As with me, thou must wrest him from his last slumber to reveal his truths to thee... but alas, he was killed in the War, and I know not where his remains lie.\"");
+	case "混沌教父" attend labelFunc0175_029A:
+	UI_remove_answer("混沌教父");
+	message("「如同我一樣，你必須將他從最後的沉睡中喚醒，讓他向你揭示真相……但唉，他在戰爭中被殺，我不知道他的遺骸在何處。」");
 	say();
-	message("\"Yet I must hope that thou shalt find his burial site... or all is lost.\"");
+	message("「然而我必須希望你能找到他的埋葬之地……否則一切都將失去。」");
 	say();
 labelFunc0175_029A:
-	case "Chaos Serpent" attend labelFunc0175_02B5:
-	UI_remove_answer("Chaos Serpent");
-	message("\"Hear wisdom! The Banes of Chaos are not thine enemy, nor are they evil in themselves. It is their disunity which hath driven them into cruel insanity.\"");
+	case "混沌之蛇" attend labelFunc0175_02B5:
+	UI_remove_answer("混沌之蛇");
+	message("「聽我說！混沌的災禍並非你的敵人，它們本身也並不邪惡。是它們的分裂，將它們逼入了殘忍的瘋狂。」");
 	say();
-	message("\"Before the land can again live in Balance, the Banes must once more become the Chaos Serpent, united and intelligent.\"");
+	message("「在大地能再次平衡地生活之前，那些災禍必須再次成為混沌之蛇，合一且有智慧。」");
 	say();
-	message("\"The way to do this is the secret held by the Chaos Hierophant. Now thou must seek him out!\"");
+	message("「做到這一點的方法，是混沌教父所持有的秘密。現在你必須去找到他！」");
 	say();
 labelFunc0175_02B5:
-	case "Balance" attend labelFunc0175_02CC:
-	UI_remove_answer("Balance");
-	message("\"If by some miracle thou art able to make the Chaos Serpent whole, then hasten to the Grand Shrine of Balance. Only there canst thou complete thy work, and end the plagues which afflict this land.\"");
+	case "平衡" attend labelFunc0175_02CC:
+	UI_remove_answer("平衡");
+	message("「若奇蹟般地，你能使混沌之蛇恢復完整，那麼就趕往平衡大神殿( Grand Shrine of Balance )吧。只有在那裡，你才能完成你的使命，終結折磨這片土地的災禍。」");
 	say();
-	message("\"Remember to bear each of the symbols of power upon thy person, or thou shalt not enter the most sacred precincts therein.\"");
+	message("「記住要隨身攜帶每一件力量的象徵，否則你將無法進入其中最神聖的禁地。」");
 	say();
 labelFunc0175_02CC:
-	case "bye" attend labelFunc0175_0352:
-	message("\"Do not be hasty, Avatar! I can only speak to thee this once! Art thou sure that thou dost understand all that I have said?\"");
+	case "告辭" attend labelFunc0175_0352:
+	message("「不要急，聖者！我只能與你說這一次！你確定你已理解我所說的一切了嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0175_032F;
 	UI_play_music(0x0032, Func09A0(0x0005, 0x0001));
-	message("\"I must go now -- into the Void! My blessings are given to thee, Hero from Another World!\"");
+	message("「我現在必須離去——前往虛空！我將我的祝福賜予你，來自異世界的英雄！」");
 	say();
 	UI_set_item_flag(0xFE9C, 0x0010);
 	UI_end_conversation();
 	UI_set_schedule_type(item, 0x000F);
-	var0002 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x6F, (byte)0x70, (byte)0x52, "@Hail to Balance!@", (byte)0x27, 0x0007, (byte)0x55, 0x0175], 0x0008);
+	var0002 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x6F, (byte)0x70, (byte)0x52, "@平衡萬歲！@", (byte)0x27, 0x0007, (byte)0x55, 0x0175], 0x0008);
 	abort;
 	goto labelFunc0175_0352;
 labelFunc0175_032F:
-	message("\"Then ask of me once more.\"");
+	message("「那麼再問我一次吧。」");
 	say();
-	UI_add_answer(["Crown", "Armour", "Staff", "quest", "Chaos Hierophant", "Chaos Serpent", "Balance", "bye"]);
+	UI_add_answer(["蛇冠", "蛇鎧", "蛇杖", "任務", "混沌教父", "混沌之蛇", "平衡", "告辭"]);
 labelFunc0175_0352:
 	goto labelFunc0175_0197;
 labelFunc0175_0355:

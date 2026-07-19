@@ -22,7 +22,7 @@ void Func00D1 shape#(0xD1) ()
 	if (!(var0000 == 0x0016)) goto labelFunc00D1_0067;
 	UI_set_item_frame(item, 0x0017);
 	UI_play_sound_effect(0x0027);
-	Func097F(0xFE9C, "@Pretty@", 0x0004);
+	Func097F(0xFE9C, "@漂亮@", 0x0004);
 	UI_obj_sprite_effect(item, 0x000C, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF);
 	var0001 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x27, 0x0014, (byte)0x46, 0x0015]);
 	abort;
@@ -39,8 +39,8 @@ labelFunc00D1_00A8:
 	UI_remove_item(var0006);
 	goto labelFunc00D1_00A8;
 labelFunc00D1_00BD:
-	var0001 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@Die, you cursed fiends!@", (byte)0x6F, (byte)0x70, (byte)0x6A]);
-	Func097F(UI_get_npc_object(0xFE9C), "@I despise you all!@", 0x0002);
+	var0001 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@去死吧，你們這些被詛咒的惡魔！@", (byte)0x6F, (byte)0x70, (byte)0x6A]);
+	Func097F(UI_get_npc_object(0xFE9C), "@我鄙視你們所有人！@", 0x0002);
 	enum();
 labelFunc00D1_00E8:
 	for (var0009 in var0002 with var0007 to var0008) attend labelFunc00D1_0186;

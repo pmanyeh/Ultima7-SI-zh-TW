@@ -7,7 +7,7 @@ void Func0405 object#(0x405) ()
 	var var0000;
 	var var0001;
 
-	var0000 = "Columna and Melino";
+	var0000 = "Columna 與 Melino";
 	var0001 = 0x0002;
 	Func0808(var0000, var0001);
 	return;

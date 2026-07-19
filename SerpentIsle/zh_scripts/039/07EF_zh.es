@@ -18,9 +18,9 @@ void Func07EF object#(0x7EF) ()
 	UI_play_sound_effect(0x0074);
 	UI_lightning();
 	UI_set_schedule_type(0xFE9C, 0x000F);
-	var0001 = Func0992(0x0001, "@Oh, no!@", 0x0000, true);
+	var0001 = Func0992(0x0001, "@喔，不！@", 0x0000, true);
 	UI_set_item_flag(0xFE9C, 0x0010);
-	var0002 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@Arggh!@", (byte)0x6C, (byte)0x6D, (byte)0x6E]);
+	var0002 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@啊啊啊！@", (byte)0x6C, (byte)0x6D, (byte)0x6E]);
 	var0003 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x07F0], 0x000A);
 	return;
 }

@@ -71,7 +71,7 @@ labelFunc0154_0166:
 	UI_set_temperature(var0002, 0x0000);
 labelFunc0154_017A:
 	if (!(var0001 >= 0x000A)) goto labelFunc0154_0195;
-	var0008 = Func0992(0x0001, "@What is this!@", 0x0000, false);
+	var0008 = Func0992(0x0001, "@這是什麼！@", 0x0000, false);
 	abort;
 labelFunc0154_0195:
 	UI_remove_item(item);
@@ -79,7 +79,7 @@ labelFunc0154_0195:
 	goto labelFunc0154_0203;
 labelFunc0154_019E:
 	var0009 = [var0002[0x0002], var0002[0x0003], var0002[0x0004]];
-	var0008 = Func0992(0x0001, (("@Please, " + Func0954()) + ", waste them not!@"), 0x0000, false);
+	var0008 = Func0992(0x0001, (("@請不要浪費它，" + Func0954()) + "！@"), 0x0000, false);
 	var000A = UI_create_new_object(0x0390);
 	if (!var000A) goto labelFunc0154_0203;
 	UI_set_item_flag(var000A, 0x0012);

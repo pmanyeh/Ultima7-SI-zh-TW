@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Ultima7-zh-TW"
+		},
+		{
+			"path": "../Exult-for-zh"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.es": "csharp"
+		}
+	}
+}

@@ -33,7 +33,7 @@ labelFunc0105_008A:
 	var0000 = UI_update_last_created(var0004);
 labelFunc0105_00F1:
 	if (!(event == 0x0001)) goto labelFunc0105_00FF;
-	Func094A("@I believe that one threads a loom before using it.@");
+	Func094A("@我相信使用織布機前要先穿線。@");
 labelFunc0105_00FF:
 	return;
 }

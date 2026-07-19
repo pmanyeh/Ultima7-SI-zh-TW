@@ -26,67 +26,67 @@ void Func07FC object#(0x7FC) ()
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFCE, 0x0000);
 	if (!UI_get_item_flag(0xFFCE, 0x001C)) goto labelFunc07FC_004F;
-	message("\"I am prepared for thy questions, ");
+	message("「我準備好回答你的問題了，");
 	message(var0001);
-	message(". What dost thou care to question me about?\"");
+	message("。你想問我什麼事？」");
 	say();
 	goto labelFunc07FC_0059;
 labelFunc07FC_004F:
-	message("\"What hast thou to do with me? I did not even set eyes upon ");
+	message("「你跟我有什麼關係？在這次審判之前我甚至沒見過 ");
 	message(var0002);
-	message(" until this trial.\"");
+	message(" 。」");
 	say();
 labelFunc07FC_0059:
-	UI_add_answer(["the character of the accused", "Daemonism", "no questions"]);
+	UI_add_answer(["被告的品格", "惡魔崇拜", "沒有問題"]);
 labelFunc07FC_0069:
 	converse attend labelFunc07FC_0134;
-	case "the character of the accused" attend labelFunc07FC_00C9:
-	UI_remove_answer(["the character of the accused", "no questions"]);
-	UI_add_answer("no further questions");
+	case "被告的品格" attend labelFunc07FC_00C9:
+	UI_remove_answer(["被告的品格", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
 	if (!UI_get_item_flag(0xFFCE, 0x001C)) goto labelFunc07FC_00C5;
 	var0003 = Func08AC(false);
 	if (!gflags[0x0174]) goto labelFunc07FC_00A6;
-	message("\"To be honest, he did not strike me as an honest man. Never cared much for bards. Louts, every one of them!\"");
+	message("「老實說，他給我的印象不像個誠實的人。我向來不太喜歡吟遊詩人。他們全都是些粗鄙之徒！」");
 	say();
 labelFunc07FC_00A6:
 	if (!gflags[0x0173]) goto labelFunc07FC_00B4;
-	message("\"Well, I must say that I find him likable. He does his duty without blabbering all the time.\"");
+	message("「嗯，我必須說我覺得他挺討人喜歡的。他盡忠職守，不會總是喋喋不休。」");
 	say();
-	message("\"Hard to believe a good man like Dupre would be in league with Daemon British...\"");
+	message("「很難相信像杜普瑞(Dupre)這樣的好人會跟惡魔不列顛王勾結……」");
 	say();
 labelFunc07FC_00B4:
 	if (!gflags[0x0175]) goto labelFunc07FC_00C2;
-	message("\"Hard to say. He doth not talk much, and always seems to be in a hurry...\"");
+	message("「很難說。他不常說話，而且似乎總是匆匆忙忙的……」");
 	say();
-	message("\"Couldn't say more than that. Merely an ordinary knave.\"");
+	message("「我說不出更多了。不過是個普通的無賴罷了。」");
 	say();
 labelFunc07FC_00C2:
 	goto labelFunc07FC_00C9;
 labelFunc07FC_00C5:
-	message("\"Art thou daft? I said that I have never met the man. I can form no opinion.\"");
+	message("「你傻了嗎？我說過我從未見過這個人。我無法發表意見。」");
 	say();
 labelFunc07FC_00C9:
-	case "Daemonism" attend labelFunc07FC_00F7:
-	UI_remove_answer(["Daemonism", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"Look here, ");
+	case "惡魔崇拜" attend labelFunc07FC_00F7:
+	UI_remove_answer(["惡魔崇拜", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「聽著，");
 	message(var0001);
-	message(". I'm a captain, not a theologian. I find it hard to believe in something I can't touch or smell.\"");
+	message("。我是個隊長，不是神學家。我覺得很難去相信我摸不到或聞不到的東西。」");
 	say();
-	message("\"Yet all of our legends tell of this Beast British, and his crimes against our ancestors.\"");
+	message("「然而我們所有的傳說都在講述這頭野獸不列顛王，以及他對我們祖先犯下的罪行。」");
 	say();
-	message("\"I suppose I don't know what to believe -- pardon me, Kylista...\"");
+	message("「我想我也不知道該相信什麼——請原諒我，凱麗斯塔……」");
 	say();
 labelFunc07FC_00F7:
-	case "no questions" attend labelFunc07FC_011A:
+	case "沒有問題" attend labelFunc07FC_011A:
 	UI_show_npc_face1(0xFE9C, 0x0000);
-	message("\"Forgive me. I have no questions for thee.\"");
+	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@Waste of time...@", 0x0000);
+	Func097F(item, "@浪費時間……@", 0x0000);
 	goto labelFunc07FC_0135;
 labelFunc07FC_011A:
-	case "no further questions" attend labelFunc07FC_0131:
-	Func097F(0xFE9C, "@No further questions...@", 0x0000);
+	case "沒有其他問題了" attend labelFunc07FC_0131:
+	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
 	goto labelFunc07FC_0135;
 labelFunc07FC_0131:
 	goto labelFunc07FC_0069;
@@ -107,60 +107,60 @@ labelFunc07FC_0196:
 	if (!(var0000 == 0x002F)) goto labelFunc07FC_0323;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFCF, 0x0000);
-	message("\"Question me! I am ready. On what subject dost thou desire information?\"");
+	message("「問我吧！我準備好了。你想了解什麼事？」");
 	say();
-	UI_add_answer(["the character of the accused", "Daemonism", "no questions"]);
+	UI_add_answer(["被告的品格", "惡魔崇拜", "沒有問題"]);
 labelFunc07FC_01C2:
 	converse attend labelFunc07FC_02C1;
-	case "the character of the accused" attend labelFunc07FC_025C:
-	UI_remove_answer(["the character of the accused", "no questions"]);
-	UI_add_answer("no further questions");
+	case "被告的品格" attend labelFunc07FC_025C:
+	UI_remove_answer(["被告的品格", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
 	var0003 = Func0992(0x0001, 0x0000, 0x0000, true);
 	var0003 = UI_get_npc_name(var0003);
-	message("\"I have met him face to face, and I find ");
+	message("「我曾與他面對面，我發現 ");
 	message(var0003);
-	message(" to be the most surly, disrespectful man I have ever seen.\"");
+	message(" 是我見過最脾氣暴躁、最無禮的人。」");
 	say();
-	message("\"He offends with every breath that comes out of his ugly face!\"");
+	message("「他那張醜臉呼出的每一口氣都令人反感！」");
 	say();
 	var0007 = Func08AC(false);
 	if (!(var0003 != var0007)) goto labelFunc07FC_025C;
 	UI_show_npc_face1(0xFFC6, 0x0000);
-	message("\"Captain, thou art confused. It is ");
+	message("「隊長，你搞混了。正在受審的是 ");
 	message(var0007);
-	message(" on trial, not ");
+	message(" ，而不是 ");
 	message(var0003);
-	message(".\"");
+	message(" 。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Why, thou art right, sailor. Nevertheless, I stand by my sworn testimony!\"");
+	message("「哎呀，你說得對，水手。儘管如此，我還是堅持我的宣誓證詞！」");
 	say();
 	UI_show_npc_face1(0xFFC6, 0x0000);
-	message("\"I may be drunk, but I'm not stupid...\"");
+	message("「我可能喝醉了，但我可不笨……」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc07FC_025C:
-	case "Daemonism" attend labelFunc07FC_0284:
-	UI_remove_answer(["Daemonism", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"Lest anyone be confused, let me state unequivocably that Daemons exist. Evil is real!\"");
+	case "惡魔崇拜" attend labelFunc07FC_0284:
+	UI_remove_answer(["惡魔崇拜", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「為了避免任何人感到困惑，讓我毫不含糊地聲明惡魔是存在的。邪惡是真實的！」");
 	say();
-	message("\"The tales of our forefathers -- about the Daemon King named British, and the lands he stole in the name of Virtue -- are literally true.\"");
+	message("「我們祖先的故事——關於那位名為不列顛王的惡魔國王，以及他以美德之名竊取的土地——都是千真萬確的。」");
 	say();
-	message("\"Lastly, I have absolute faith in the Priestess of Beauty... wherever she may be. She is too beautiful to be wrong!\"");
+	message("「最後，我對美麗女祭司有著絕對的信仰……無論她身在何處。她太美了，絕不會錯！」");
 	say();
 labelFunc07FC_0284:
-	case "no questions" attend labelFunc07FC_02A7:
+	case "沒有問題" attend labelFunc07FC_02A7:
 	UI_show_npc_face1(0xFE9C, 0x0000);
-	message("\"Forgive me. I have no questions for thee.\"");
+	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@Damned traitor...@", 0x0000);
+	Func097F(item, "@該死的叛徒……@", 0x0000);
 	goto labelFunc07FC_02C2;
 labelFunc07FC_02A7:
-	case "no further questions" attend labelFunc07FC_02BE:
-	Func097F(0xFE9C, "@No further questions...@", 0x0000);
+	case "沒有其他問題了" attend labelFunc07FC_02BE:
+	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
 	goto labelFunc07FC_02C2;
 labelFunc07FC_02BE:
 	goto labelFunc07FC_01C2;
@@ -181,139 +181,139 @@ labelFunc07FC_0323:
 	if (!(var0000 == 0x0027)) goto labelFunc07FC_05F6;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFCC, 0x0000);
-	message("\"Why hast thou brought me before the Oracle, Avatar? Ask me thy questions.\"");
+	message("「聖者，你為何把我帶到神諭面前？問你的問題吧。」");
 	say();
-	UI_add_answer(["the character of the accused", "Daemonism"]);
+	UI_add_answer(["被告的品格", "惡魔崇拜"]);
 	if (!gflags[0x01AD]) goto labelFunc07FC_0359;
-	UI_add_answer("strange objects");
+	UI_add_answer("奇怪的物品");
 labelFunc07FC_0359:
 	if (!gflags[0x01AC]) goto labelFunc07FC_0366;
-	UI_add_answer("ancient ruins");
+	UI_add_answer("古代遺跡");
 labelFunc07FC_0366:
 	if (!gflags[0x01AB]) goto labelFunc07FC_0373;
-	UI_add_answer("savages");
+	UI_add_answer("野蠻人");
 labelFunc07FC_0373:
 	if (!gflags[0x0155]) goto labelFunc07FC_0380;
-	UI_add_answer("Gwenno");
+	UI_add_answer("關諾(Gwenno)");
 labelFunc07FC_0380:
-	UI_add_answer("no questions");
+	UI_add_answer("沒有問題");
 labelFunc07FC_0387:
 	converse attend labelFunc07FC_0594;
-	case "strange objects" attend labelFunc07FC_03CB:
-	UI_remove_answer(["strange objects", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"That is what I said in my testimony -- ");
+	case "奇怪的物品" attend labelFunc07FC_03CB:
+	UI_remove_answer(["奇怪的物品", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「這就是我在證詞中所說的—— ");
 	message(var0002);
-	message(" brought me strange items, and asked me to identify them.\"");
+	message(" 帶了奇怪的物品給我，並要我辨認它們。」");
 	say();
-	var0008 = Func0992(0x0001, "@But thou art an innkeeper! Surely, many folks bring thee mysteries...@", 0x0000, false);
+	var0008 = Func0992(0x0001, "@但你是個旅店老闆！肯定有很多人會帶些神祕的東西來找你……@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
-	message("\"Mayhaps, stranger. But nothing half so strange...\"");
+	message("「或許吧，陌生人。但沒有一半那麼奇怪的……」");
 	say();
 labelFunc07FC_03CB:
-	case "ancient ruins" attend labelFunc07FC_042B:
-	UI_remove_answer(["ancient ruins", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"");
+	case "古代遺跡" attend labelFunc07FC_042B:
+	UI_remove_answer(["古代遺跡", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「");
 	message(var0002);
-	message(" did ask me about the ancient ruins, indeed. Very suspicious.\"");
+	message(" 的確問過我關於古代遺跡的事。非常可疑。」");
 	say();
-	var0008 = Func0992(0x0001, "@Surely, others ask of these same things?@", 0x0000, false);
+	var0008 = Func0992(0x0001, "@難道沒有其他人問過同樣的事情嗎？@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
-	message("\"Indeed, the sage Batlin was also curious about the ruins.\"");
+	message("「的確，智者巴特林(Batlin)也對這些遺跡很好奇。」");
 	say();
 	UI_show_npc_face1(0xFFCF, 0x0000);
-	message("\"See how the evidence convicts him! I tell thee, this ");
+	message("「看這些證據是如何將他定罪的！我告訴你，這個 ");
 	message(var0002);
-	message(" works for Batlin, and both are tools of Beast British!\"");
+	message(" 是為巴特林工作的，而且兩人都是野獸不列顛王的工具！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc07FC_042B:
-	case "savages" attend labelFunc07FC_046A:
-	UI_remove_answer(["savages", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"We did speak of the northern barbarians, ");
+	case "野蠻人" attend labelFunc07FC_046A:
+	UI_remove_answer(["野蠻人", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「我們確實談論過北方的野蠻人，我和 ");
 	message(var0002);
-	message(" and I. He seemed to relish the most grisly parts of the tale.\"");
+	message(" 。他似乎對故事中最可怕的部分津津樂道。」");
 	say();
 	UI_show_npc_face1(0xFFC6, 0x0000);
-	message("\"Ah, but thou dost tell that tale to everyone, Jendon. Thou canst not convict a man for listening to thy tales...\"");
+	message("「啊，可是詹登，你逢人就講那個故事。你不能因為一個人聽了你的故事就給他定罪……」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc07FC_046A:
-	case "Gwenno" attend labelFunc07FC_049B:
-	UI_remove_answer(["Gwenno", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"Yes, I did meet the scholar when she was here. A fine lady, of good temperament.\"");
+	case "關諾(Gwenno)" attend labelFunc07FC_049B:
+	UI_remove_answer(["關諾(Gwenno)", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「是的，那位學者在這裡時我確實見過她。一位氣質優雅的好女士。」");
 	say();
 	if (!gflags[0x0174]) goto labelFunc07FC_0497;
-	message("\"I find it hard to believe that Iolo could be guilty of Daemonism, yet be wed to such a wonderful lady.\"");
+	message("「我很難相信伊奧洛(Iolo)會犯下崇拜惡魔的罪，卻又娶了這麼一位美好的女士。」");
 	say();
 	goto labelFunc07FC_049B;
 labelFunc07FC_0497:
-	message("\"But I fail to see any connection between that good lady, and this trial.\"");
+	message("「但我看不出那位好女士與這次審判有任何關聯。」");
 	say();
 labelFunc07FC_049B:
-	case "the character of the accused" attend labelFunc07FC_052D:
-	UI_remove_answer(["the character of the accused", "no questions"]);
-	UI_add_answer("no further questions");
+	case "被告的品格" attend labelFunc07FC_052D:
+	UI_remove_answer(["被告的品格", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
 	if (!UI_get_item_flag(0xFFCC, 0x001C)) goto labelFunc07FC_0529;
 	if (!gflags[0x0174]) goto labelFunc07FC_04EB;
-	message("\"A prince of a man! Why, when he breaks into song, I can hardly keep the crowds out of mine inn!\"");
+	message("「他真是個人中之龍！哎呀，當他開始唱歌時，我簡直無法把人群擋在我的旅館外！」");
 	say();
 	UI_show_npc_face1(0xFFC9, 0x0000);
-	message("\"Such a man hardly sounds like the servant of Daemons, innkeeper.\"");
+	message("「旅館老闆，這樣的人聽起來不像是惡魔的僕人。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Aye. But then again, doth legend not claim that Daemons have silver tongues? This Iolo doth certainly have charm...\"");
+	message("「是啊。但話又說回來，傳說中不是說惡魔都有著三寸不爛之舌嗎？這個伊奧洛確實很有魅力……」");
 	say();
 labelFunc07FC_04EB:
 	if (!gflags[0x0175]) goto labelFunc07FC_0518;
-	message("\"Can't say as I like him much, ");
+	message("「我不能說我很喜歡他，");
 	message(var0001);
-	message(". He doth not drink much, nor doth he seem to enjoy the entertainments of the inn.\"");
+	message("。他酒喝得不多，似乎也不怎麼享受旅館裡的娛樂。」");
 	say();
 	UI_show_npc_face1(0xFFC3, 0x0000);
-	message("\"Doth Shamino not have the passions of a normal man, Jendon?\"");
+	message("「詹登，沙米諾(Shamino)難道沒有正常男人的熱情嗎？」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Perhaps. Or he may merely be driven by his cause. Shamino is far too serious.\"");
+	message("「也許吧。或者他只是被他的事業所驅使。沙米諾實在太嚴肅了。」");
 	say();
 labelFunc07FC_0518:
 	if (!gflags[0x0173]) goto labelFunc07FC_0526;
-	message("\"He can out-drink any man in this town, and I think he could out-fight nearly everyone except Jorvin!\"");
+	message("「他的酒量勝過鎮上的任何人，而且我認為除了約文，他能打贏幾乎所有人！」");
 	say();
-	message("\"I must admit, Dupre is a likable man. Hard to believe he's a tool of Beast British.\"");
+	message("「我必須承認，杜普瑞是個討人喜歡的人。很難相信他是野獸不列顛王的工具。」");
 	say();
 labelFunc07FC_0526:
 	goto labelFunc07FC_052D;
 labelFunc07FC_0529:
-	message("\"Not having met the man, I have little to say about him. He needs a shave.\"");
+	message("「沒見過這個人，我對他沒什麼好說的。他需要刮鬍子了。」");
 	say();
 labelFunc07FC_052D:
-	case "Daemonism" attend labelFunc07FC_0557:
-	UI_remove_answer(["Daemonism", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"Do I believe in Daemonism? Of course. My mother told me the legends when I was a mere child.\"");
+	case "惡魔崇拜" attend labelFunc07FC_0557:
+	UI_remove_answer(["惡魔崇拜", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「我相信有惡魔崇拜嗎？當然。我還是個小孩的時候，我母親就告訴過我這些傳說了。」");
 	say();
-	message("\"And even if I didn't -- why, I'm an innkeeper, ");
+	message("「就算我不信——哎呀，我是個旅館老闆，");
 	message(var0001);
-	message(". For the sake of my business, friend, I dare not disagree with the Priestess of Beauty.\"");
+	message("。為了我的生意，朋友，我可不敢反對美麗女祭司。」");
 	say();
 labelFunc07FC_0557:
-	case "no questions" attend labelFunc07FC_057A:
+	case "沒有問題" attend labelFunc07FC_057A:
 	UI_show_npc_face1(0xFE9C, 0x0000);
-	message("\"Forgive me. I have no questions for thee.\"");
+	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@Strange kind of person...@", 0x0000);
+	Func097F(item, "@奇怪的人……@", 0x0000);
 	goto labelFunc07FC_0595;
 labelFunc07FC_057A:
-	case "no further questions" attend labelFunc07FC_0591:
-	Func097F(0xFE9C, "@No further questions...@", 0x0000);
+	case "沒有其他問題了" attend labelFunc07FC_0591:
+	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
 	goto labelFunc07FC_0595;
 labelFunc07FC_0591:
 	goto labelFunc07FC_0387;
@@ -334,79 +334,79 @@ labelFunc07FC_05F6:
 	if (!(var0000 == 0x0026)) goto labelFunc07FC_07AB;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFD0, 0x0000);
-	message("\"Hail to Beauty, and the omnipotence of the Oracle!\"");
+	message("「向『美』致敬，向神諭的全能致敬！」");
 	say();
-	message("\"I shall answer thy questions truthfully, Avatar. Of what can I tell thee?\"");
+	message("「我會如實回答你的問題，聖者。你想知道什麼？」");
 	say();
-	UI_add_answer(["the character of the accused", "Daemonism"]);
+	UI_add_answer(["被告的品格", "惡魔崇拜"]);
 	if (!gflags[0x01AE]) goto labelFunc07FC_0630;
-	UI_add_answer("Varo Leaves");
+	UI_add_answer("瓦羅葉(Varo Leaves)");
 labelFunc07FC_0630:
-	UI_add_answer("no questions");
+	UI_add_answer("沒有問題");
 labelFunc07FC_0637:
 	converse attend labelFunc07FC_0749;
-	case "Varo Leaves" attend labelFunc07FC_06A2:
-	UI_remove_answer(["Varo Leaves", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"I did provide Varo Leaves for ");
+	case "瓦羅葉(Varo Leaves)" attend labelFunc07FC_06A2:
+	UI_remove_answer(["瓦羅葉(Varo Leaves)", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「我確實提供了瓦羅葉給 ");
 	message(var0002);
-	message(", as I did testify before. And such leaves are used to treat poisons and curses.\"");
+	message(" ，正如我之前作證的那樣。而這種葉子是用來治療毒藥和詛咒的。」");
 	say();
 	UI_show_npc_face1(0xFE9C, 0x0000);
-	message("\"It was not ");
+	message("「受詛咒的不是 ");
 	message(var0002);
-	message(" who was cursed, Delphynia. 'Twas I, poisoned by a treacherous woman in the city of Monitor.\"");
+	message(" ，黛爾菲妮亞。是我，在監視鎮(Monitor)被一個陰險的女人下了毒。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Mine apologies, ");
+	message("「我道歉，");
 	message(var0001);
-	message(". I did not know...\"");
+	message("。我不知道……」");
 	say();
 	UI_show_npc_face1(0xFFCF, 0x0000);
-	message("\"How do we know this to be true? I say that he lies!\"");
+	message("「我們怎麼知道這是真的？我說他在說謊！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc07FC_06A2:
-	case "the character of the accused" attend labelFunc07FC_06E4:
-	UI_remove_answer(["the character of the accused", "no questions"]);
-	UI_add_answer("no further questions");
+	case "被告的品格" attend labelFunc07FC_06E4:
+	UI_remove_answer(["被告的品格", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
 	if (!gflags[0x0174]) goto labelFunc07FC_06C8;
-	message("\"He did strike me as a kindly man, of affable temperament. Good with children. Not the kind to consort with Daemons.\"");
+	message("「他給我一種和藹可親的印象。對小孩子很好。不像是會跟惡魔來往的那種人。」");
 	say();
 labelFunc07FC_06C8:
 	if (!gflags[0x0175]) goto labelFunc07FC_06D2;
-	message("\"He doth have honest eyes. He is a hard man to like, but I do not think he is a bad sort.\"");
+	message("「他有一雙誠實的眼睛。他是個很難讓人喜歡上的人，但我不認為他是個壞人。」");
 	say();
 labelFunc07FC_06D2:
 	if (!gflags[0x0173]) goto labelFunc07FC_06E4;
-	message("\"This man drinks far too much, and his health will surely suffer for this some day! He is also a bit of a braggart, and he doth think himself a ladies' man --\"");
+	message("「這個人酒喝太多了，總有一天他的健康肯定會因此受損！他還有點愛吹牛，而且自以為很受女人歡迎——」");
 	say();
-	message("\"He did try to steal a kiss from me!\"");
+	message("「他還試圖偷親我！」");
 	say();
-	message("\"Dupre doth have an evil heart. I'd not be surprised if he were in the service of Daemons.\"");
+	message("「杜普瑞有顆邪惡的心。如果他是為惡魔服務，我也不會感到驚訝。」");
 	say();
 labelFunc07FC_06E4:
-	case "Daemonism" attend labelFunc07FC_070C:
-	UI_remove_answer(["Daemonism", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"I do believe in Daemons. There is much evil in this world, and I do not believe that we cause it of ourselves.\"");
+	case "惡魔崇拜" attend labelFunc07FC_070C:
+	UI_remove_answer(["惡魔崇拜", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「我確實相信有惡魔。這個世界上有很多邪惡，而我不認為這些全都是我們自己造成的。」");
 	say();
-	message("\"Our ancestors did beat the British by escaping to this land. Is it so incredible that the Daemon would want revenge?\"");
+	message("「我們的祖先是為了逃避不列顛王才來到這片土地的。惡魔想要報復，這有那麼令人難以置信嗎？」");
 	say();
-	message("\"We should be very afraid, all of us...\"");
+	message("「我們應該要非常害怕，我們所有人都該如此……」");
 	say();
 labelFunc07FC_070C:
-	case "no questions" attend labelFunc07FC_072F:
+	case "沒有問題" attend labelFunc07FC_072F:
 	UI_show_npc_face1(0xFE9C, 0x0000);
-	message("\"Forgive me. I have no questions for thee.\"");
+	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@Never mind...@", 0x0000);
+	Func097F(item, "@別管了……@", 0x0000);
 	goto labelFunc07FC_074A;
 labelFunc07FC_072F:
-	case "no further questions" attend labelFunc07FC_0746:
-	Func097F(0xFE9C, "@No further questions...@", 0x0000);
+	case "沒有其他問題了" attend labelFunc07FC_0746:
+	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
 	goto labelFunc07FC_074A;
 labelFunc07FC_0746:
 	goto labelFunc07FC_0637;
@@ -427,80 +427,80 @@ labelFunc07FC_07AB:
 	if (!(var0000 == 0x001F)) goto labelFunc07FC_0965;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFD1, 0x0000);
-	message("\"Oh... I'm not used to standing in public like this... crowds make me nervous...\"");
+	message("「哦……我不習慣像這樣站在群眾面前……人群讓我感到緊張……」");
 	say();
-	message("\"Let this be swift. Ask thy questions.\"");
+	message("「長話短說吧。問你的問題。」");
 	say();
-	UI_add_answer(["the character of the accused", "Daemonism"]);
+	UI_add_answer(["被告的品格", "惡魔崇拜"]);
 	if (!gflags[0x01AF]) goto labelFunc07FC_07E5;
-	UI_add_answer("engagement ring");
+	UI_add_answer("訂婚戒指");
 labelFunc07FC_07E5:
-	UI_add_answer("no questions");
+	UI_add_answer("沒有問題");
 labelFunc07FC_07EC:
 	converse attend labelFunc07FC_0903;
-	case "engagement ring" attend labelFunc07FC_085E:
-	UI_remove_answer(["engagement ring", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"That is what Alyssand said in her testimony -- that thy friend did return her engagement ring to her.\"");
+	case "訂婚戒指" attend labelFunc07FC_085E:
+	UI_remove_answer(["訂婚戒指", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「這就是亞歷珊在證詞裡說的——你的朋友把她的訂婚戒指還給了她。」");
 	say();
-	message("\"Mighty nice of him, I say. He looks to be a good lad. Doth he need a wife?\"");
+	message("「我說，他還真是個好人。他看起來是個好小伙子。他需要娶老婆嗎？」");
 	say();
 	if (!gflags[0x0174]) goto labelFunc07FC_0827;
 	UI_show_npc_face1(0xFFFD, 0x0000);
-	message("\"I already have a wife, thank thee!\"");
+	message("「我已經有妻子了，謝謝你！」");
 	say();
 labelFunc07FC_0827:
 	if (!gflags[0x0173]) goto labelFunc07FC_083B;
 	UI_show_npc_face1(0xFFFF, 0x0000);
-	message("\"I'm afraid thy daughter is not lively enough for me, old man.\"");
+	message("「恐怕你的女兒對我來說不夠活潑，老兄。」");
 	say();
 labelFunc07FC_083B:
 	if (!gflags[0x0175]) goto labelFunc07FC_084F;
 	UI_show_npc_face1(0xFFFE, 0x0000);
-	message("\"This is not the time for idle chat, good man. My life is at stake!\"");
+	message("「現在不是閒聊的時候，老兄。我的命都快沒了！」");
 	say();
 labelFunc07FC_084F:
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"I know that the Priestess fears that the ring was stolen by magical means. But what about the storms! They steal things every day. Could not a storm have taken my daughter's ring?\"");
+	message("「我知道女祭司擔心戒指是用魔法偷走的。但是風暴呢！它們每天都在偷東西。難道不能是風暴捲走了我女兒的戒指嗎？」");
 	say();
 labelFunc07FC_085E:
-	case "the character of the accused" attend labelFunc07FC_08A6:
-	UI_remove_answer(["the character of the accused", "no questions"]);
-	UI_add_answer("no further questions");
+	case "被告的品格" attend labelFunc07FC_08A6:
+	UI_remove_answer(["被告的品格", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
 	if (!gflags[0x0174]) goto labelFunc07FC_0888;
-	message("\"He looks to be too old for my daughter, now that I see him clearly.\"");
+	message("「現在我仔細看他，他看起來似乎配我女兒年紀太大了點。」");
 	say();
-	message("\"When a man ages, he starts to lose his mind. Wouldn't want mine Alyssand to have to deal with someone like that...\"");
+	message("「當一個男人變老時，他就會開始失去理智。我可不希望我們家亞歷珊必須應付那種人……」");
 	say();
 labelFunc07FC_0888:
 	if (!gflags[0x0175]) goto labelFunc07FC_0892;
-	message("\"Doth he not ever smile? He doth have the look of a convict, that's what I say.\"");
+	message("「他難道從來都不笑的嗎？我要說，他長得就像個囚犯。」");
 	say();
 labelFunc07FC_0892:
 	if (!gflags[0x0173]) goto labelFunc07FC_08A6;
-	message("\"He looks like a fine lad, he doth.\"");
+	message("「他看起來是個不錯的小伙子，確實如此。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0002);
-	message("! Come by the shop afterwards, and I'll introduce ye to my daughter!\"");
+	message(" ！審判結束後來店裡一趟，我把女兒介紹給你認識！」");
 	say();
 labelFunc07FC_08A6:
-	case "Daemonism" attend labelFunc07FC_08C6:
-	UI_remove_answer(["Daemonism", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"Very frightening. Don't care much for Daemons.\"");
+	case "惡魔崇拜" attend labelFunc07FC_08C6:
+	UI_remove_answer(["惡魔崇拜", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「非常可怕。我不太喜歡惡魔。」");
 	say();
 labelFunc07FC_08C6:
-	case "no questions" attend labelFunc07FC_08E9:
+	case "沒有問題" attend labelFunc07FC_08E9:
 	UI_show_npc_face1(0xFE9C, 0x0000);
-	message("\"Forgive me. I have no questions for thee.\"");
+	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@Nor I for thee...@", 0x0000);
+	Func097F(item, "@我對你也沒有……@", 0x0000);
 	goto labelFunc07FC_0904;
 labelFunc07FC_08E9:
-	case "no further questions" attend labelFunc07FC_0900:
-	Func097F(0xFE9C, "@No further questions...@", 0x0000);
+	case "沒有其他問題了" attend labelFunc07FC_0900:
+	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
 	goto labelFunc07FC_0904;
 labelFunc07FC_0900:
 	goto labelFunc07FC_07EC;
@@ -521,96 +521,96 @@ labelFunc07FC_0965:
 	if (!(var0000 == 0x002E)) goto labelFunc07FC_0B8F;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFC6, 0x0000);
-	message("\"Hail to Lady Yelinda, Hail to the Oracle, hail to... hail to everyone!\"");
+	message("「向葉琳達女士致敬，向神諭致敬，向……向大家致敬！」");
 	say();
 	UI_show_npc_face1(0xFFCC, 0x0000);
-	message("\"I'm afraid he hath been drinking...\"");
+	message("「我怕他是喝醉了……」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"I drinks ta forget my pain, innkeeper. Go ahead, Avatar. Ask me thy questions.\"");
+	message("「我喝酒是為了忘記痛苦，旅館老闆。問吧，聖者。問你的問題。」");
 	say();
-	UI_add_answer(["the character of the accused", "Daemonism", "drinking", "no questions"]);
+	UI_add_answer(["被告的品格", "惡魔崇拜", "喝酒", "沒有問題"]);
 labelFunc07FC_09B1:
 	converse attend labelFunc07FC_0B2D;
-	case "the character of the accused" attend labelFunc07FC_0A78:
-	UI_remove_answer(["the character of the accused", "no questions"]);
-	UI_add_answer("no further questions");
+	case "被告的品格" attend labelFunc07FC_0A78:
+	UI_remove_answer(["被告的品格", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
 	if (!UI_get_item_flag(0xFFC6, 0x001C)) goto labelFunc07FC_0A74;
 	if (!gflags[0x0174]) goto labelFunc07FC_09E7;
-	message("\"He looks like he hath had one too many tips of the bottle, if ya know what I mean.\"");
+	message("「他看起來就像是多喝了幾杯，你懂我的意思吧。」");
 	say();
 labelFunc07FC_09E7:
 	if (!gflags[0x0175]) goto labelFunc07FC_09F1;
-	message("\"What a sourpuss! Wouldn't even share a glass of ale with me...\"");
+	message("「真是個悶瓜！甚至不願意跟我喝杯麥酒……」");
 	say();
 labelFunc07FC_09F1:
 	if (!gflags[0x0173]) goto labelFunc07FC_0A71;
-	message("\"I love that man! Dupre, sing that drinking song thou didst teach me, the one about all the young ladies?\"");
+	message("「我愛死這個人了！杜普瑞，唱那首你教我的喝酒歌好嗎，就是關於所有年輕姑娘的那首？」");
 	say();
 	UI_show_npc_face1(0xFFC3, 0x0000);
-	message("\"I don't think that would be advisable.\"");
+	message("「我不認為這樣妥當。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"I have my lute with me...\"");
+	message("「我帶著我的魯特琴……」");
 	say();
 	UI_play_music(0x003B, Func09A0(0x0005, 0x0001));
-	message("\"If all the young ladies were bricks in a pile,\"");
+	message("「如果所有的年輕姑娘都是一疊磚塊，」");
 	say();
 	UI_play_music(0x003C, Func09A0(0x0005, 0x0001));
-	message("\"I'd be a mason and lay them in style!\"");
+	message("「那我要當個泥水匠，優雅地把她們砌上！」");
 	say();
 	UI_play_music(0x003D, Func09A0(0x0005, 0x0001));
-	message("\"Roll thy leg over, roll thy leg over...\"");
+	message("「把妳的腿翻過來，把妳的腿翻過來……」");
 	say();
 	UI_show_npc_face1(0xFFC3, 0x0000);
-	message("\"Zounds, man! In the earshot of Lady Yelinda? Hast thou no decency!\"");
+	message("「老天啊，老兄！在葉琳達女士聽得見的地方？你難道不知羞恥嗎！」");
 	say();
-	Func097F(0xFFC6, "@Leave me alone...@", 0x0000);
+	Func097F(0xFFC6, "@別管我……@", 0x0000);
 	goto labelFunc07FC_0B2E;
 labelFunc07FC_0A71:
 	goto labelFunc07FC_0A78;
 labelFunc07FC_0A74:
-	message("\"Don't believe I've met the man before.\"");
+	message("「不記得以前見過這個人。」");
 	say();
 labelFunc07FC_0A78:
-	case "Daemonism" attend labelFunc07FC_0AC8:
-	UI_remove_answer(["Daemonism", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"I used ta believe in that stuff. But what Beauty is there in the world for a sailor who cannot sail?\"");
+	case "惡魔崇拜" attend labelFunc07FC_0AC8:
+	UI_remove_answer(["惡魔崇拜", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「我以前是信那些東西的。但對一個不能航海的水手來說，這個世界上還有什麼『美』可言呢？」");
 	say();
-	message("\"If the Oracle is so powerful, why did it not save us from the storms? Why did it let so many good men die?\"");
+	message("「如果神諭如此強大，為何祂不把我們從風暴中拯救出來？為何祂要讓那麼多好人死去？」");
 	say();
 	UI_show_npc_face1(0xFFCF, 0x0000);
-	message("\"Foul blasphemy! Hold thy tongue, rogue, or face the wrath of the Oracle.\"");
+	message("「邪惡的褻瀆！管好你的舌頭，無賴，否則將面臨神諭的怒火。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"I may be a drunk, but I be an honest drunk. I shall follow no hypocrite ta a watery grave.\"");
+	message("「我可能是個酒鬼，但我也是個誠實的酒鬼。我不會跟隨一個偽君子葬身海底。」");
 	say();
-	Func097F(0xFFC6, "@That's all I have to say...@", 0x0000);
+	Func097F(0xFFC6, "@這就是我要說的……@", 0x0000);
 	goto labelFunc07FC_0B2E;
 labelFunc07FC_0AC8:
-	case "drinking" attend labelFunc07FC_0AF0:
-	UI_remove_answer(["drinking", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"Why do I drink so much? That's rather a personal question...\"");
+	case "喝酒" attend labelFunc07FC_0AF0:
+	UI_remove_answer(["喝酒", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「我為什麼喝這麼多酒？這算是個滿私人的問題……」");
 	say();
-	message("\"I be a sailor stranded on the shore, mate. 'Tis no worse fate. With my very own eyes, I have seen our fleet blasted to wreckage by the storms. I saw sailors die!\"");
+	message("「我被困在岸上，老兄，我是個水手啊。沒有比這更糟的命運了。我親眼看著我們的船隊被風暴擊碎。我看著水手們死去！」");
 	say();
-	message("\"Why would a man who hath cheated death not drink, Avatar? Perhaps I should have died with my brothers...\"");
+	message("「一個死裡逃生的人為什麼不喝酒，聖者？也許我該和我的兄弟們一起死……」");
 	say();
 labelFunc07FC_0AF0:
-	case "no questions" attend labelFunc07FC_0B13:
+	case "沒有問題" attend labelFunc07FC_0B13:
 	UI_show_npc_face1(0xFE9C, 0x0000);
-	message("\"Forgive me. I have no questions for thee.\"");
+	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@Drunkard...@", 0x0000);
+	Func097F(item, "@酒鬼……@", 0x0000);
 	goto labelFunc07FC_0B2E;
 labelFunc07FC_0B13:
-	case "no further questions" attend labelFunc07FC_0B2A:
-	Func097F(0xFE9C, "@No further questions...@", 0x0000);
+	case "沒有其他問題了" attend labelFunc07FC_0B2A:
+	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
 	goto labelFunc07FC_0B2E;
 labelFunc07FC_0B2A:
 	goto labelFunc07FC_09B1;
@@ -631,65 +631,65 @@ labelFunc07FC_0B8F:
 	if (!(var0000 == 0x0034)) goto labelFunc07FC_0D29;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFC9, 0x0000);
-	message("\"I shall answer thy questions, ");
+	message("「我會回答你的問題，");
 	message(var0001);
-	message(", for the sake of the Oracle. But do not try my patience.\"");
+	message("，為了神諭。但不要考驗我的耐心。」");
 	say();
-	UI_add_answer(["the character of the accused", "Daemonism", "Dupre's words", "no questions"]);
+	UI_add_answer(["被告的品格", "惡魔崇拜", "杜普瑞的話", "沒有問題"]);
 labelFunc07FC_0BC4:
 	converse attend labelFunc07FC_0CC7;
-	case "Dupre's words" attend labelFunc07FC_0C1A:
-	UI_remove_answer(["Dupre's words", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"I do not remember every word uttered in my presence, ");
+	case "杜普瑞的話" attend labelFunc07FC_0C1A:
+	UI_remove_answer(["杜普瑞的話", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「我不記得在我面前說過的每一句話，");
 	message(var0001);
-	message(".\"");
+	message("。」");
 	say();
 	UI_show_npc_face1(Func08AC(true), 0x0000);
-	message("\"These were mine exact words, Lady -- All hail Lord British and the glory that is Britannia!\"");
+	message("「這是我確切說過的話，女士——向不列顛王(Lord British)致敬，並向不列顛尼亞(Britannia)的榮耀致敬！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Beauty forbid! Thou hast spouted the blasphemy again!\"");
+	message("「『美』不容許！你又在口出褻瀆之言了！」");
 	say();
-	Func097F(0xFFC9, "@I cannot bear this!@", 0x0000);
+	Func097F(0xFFC9, "@我受不了了！@", 0x0000);
 	goto labelFunc07FC_0CC8;
 labelFunc07FC_0C1A:
-	case "the character of the accused" attend labelFunc07FC_0C54:
-	UI_remove_answer(["the character of the accused", "no questions"]);
-	UI_add_answer("no further questions");
+	case "被告的品格" attend labelFunc07FC_0C54:
+	UI_remove_answer(["被告的品格", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
 	if (!gflags[0x0174]) goto labelFunc07FC_0C40;
-	message("\"He seems to be an unstable man. Sociable at one moment, and deranged in the next!\"");
+	message("「他似乎是個情緒不穩的人。前一刻還很隨和，下一刻就發狂了！」");
 	say();
 labelFunc07FC_0C40:
 	if (!gflags[0x0175]) goto labelFunc07FC_0C4A;
-	message("\"He frightens me. Look into those cold, hard eyes! Aren't those the eyes of a murderer?\"");
+	message("「他讓我感到害怕。看那雙冷酷、堅定的眼睛！那難道不是殺人兇手的眼睛嗎？」");
 	say();
 labelFunc07FC_0C4A:
 	if (!gflags[0x0173]) goto labelFunc07FC_0C54;
-	message("\"This is a wild man, full of passions and lusts! I can feel his eyes on me now...\"");
+	message("「這是一個充滿熱情與慾望的野人！我現在就能感覺到他的眼睛正盯著我……」");
 	say();
 labelFunc07FC_0C54:
-	case "Daemonism" attend labelFunc07FC_0C7C:
-	UI_remove_answer(["Daemonism", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"There is no doubt that Daemon British exists. I have seen the records left by previous generations.\"");
+	case "惡魔崇拜" attend labelFunc07FC_0C7C:
+	UI_remove_answer(["惡魔崇拜", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「毫無疑問，惡魔不列顛王是存在的。我看過前人留下來的紀錄。」");
 	say();
-	message("\"The Beast did conquer all of Sosaria, and did force the Fawnese to flee into the sea. How cruel!\"");
+	message("「野獸確實征服了整個索沙利亞(Sosaria)，並迫使方恩人逃入海中。多麼殘酷！」");
 	say();
-	message("\"I have always hated the Beast, and I always shall!\"");
+	message("「我一直痛恨這頭野獸，而且將永遠痛恨！」");
 	say();
 labelFunc07FC_0C7C:
-	case "no questions" attend labelFunc07FC_0CAD:
+	case "沒有問題" attend labelFunc07FC_0CAD:
 	UI_show_npc_face1(0xFE9C, 0x0000);
-	message("\"Forgive me. I have no questions for thee.\"");
+	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(0xFFC3, "@Such impudence!@", 0x0002);
-	Func097F(0xFFCE, "@For shame!@", 0x0000);
+	Func097F(0xFFC3, "@真是厚顏無恥！@", 0x0002);
+	Func097F(0xFFCE, "@太丟臉了！@", 0x0000);
 	goto labelFunc07FC_0CC8;
 labelFunc07FC_0CAD:
-	case "no further questions" attend labelFunc07FC_0CC4:
-	Func097F(0xFE9C, "@No further questions...@", 0x0000);
+	case "沒有其他問題了" attend labelFunc07FC_0CC4:
+	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
 	goto labelFunc07FC_0CC8;
 labelFunc07FC_0CC4:
 	goto labelFunc07FC_0BC4;
@@ -710,92 +710,92 @@ labelFunc07FC_0D29:
 	if (!(var0000 == 0x0033)) goto labelFunc07FC_0F15;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFC3, 0x0000);
-	message("\"Ask thy questions, Avatar. However, I shall reserve the right to silence. After all, I am the custodian of Lady Yelinda's confidential matters.\"");
+	message("「問你的問題吧，聖者。不過，我保留保持沉默的權利。畢竟，我是葉琳達女士機密事務的管理人。」");
 	say();
-	UI_add_answer(["the character of the accused", "Daemonism", "following me", "no questions"]);
+	UI_add_answer(["被告的品格", "惡魔崇拜", "跟蹤我", "沒有問題"]);
 labelFunc07FC_0D58:
 	converse attend labelFunc07FC_0EB3;
-	case "following me" attend labelFunc07FC_0E18:
-	UI_remove_answer(["following me", "no questions"]);
-	UI_add_answer("no further questions");
+	case "跟蹤我" attend labelFunc07FC_0E18:
+	UI_remove_answer(["跟蹤我", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
 	if (!gflags[0x01B0]) goto labelFunc07FC_0D8A;
-	message("\"As I stated in the earlier session of these proceedings, ");
+	message("「正如我在本次訴訟稍早的庭期中所陳述的，");
 	message(var0002);
-	message(" was too sharp for me. However, I did see him conferring with Delin's daughter, and she is a known sympathizer with The Fellowship!\"");
+	message(" 對我來說太敏銳了。不過，我確實看到他和德林的女兒商議，而她是一位眾所周知的兄弟會同情者！」");
 	say();
 	goto labelFunc07FC_0DF5;
 labelFunc07FC_0D8A:
-	message("\"I do not have to answer that question. This is a matter of state security.\"");
+	message("「我不需要回答那個問題。這是國家安全的問題。」");
 	say();
-	var0003 = Func0956(["protest", "accept"]);
-	if (!(var0003 == "protest")) goto labelFunc07FC_0DC7;
-	message("\"I don't have to answer thy questions, traitor!\"");
+	var0003 = Func0956(["抗議", "接受"]);
+	if (!(var0003 == "抗議")) goto labelFunc07FC_0DC7;
+	message("「我不需要回答你的問題，叛徒！」");
 	say();
 	UI_show_npc_face1(0xFFC9, 0x0000);
-	message("\"The Oracle must hear all of the facts, if it is to decide fairly. Chancellor, I give my permission to speak of thy secrets.\"");
+	message("「神諭必須聽取所有的事實，才能做出公平的決定。大法官，我允許你說出你的機密。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	goto labelFunc07FC_0DCE;
 labelFunc07FC_0DC7:
-	message("\"Ask me something else...\"");
+	message("「問我別的事吧……」");
 	say();
 	goto labelFunc07FC_0E12;
 labelFunc07FC_0DCE:
-	message("\"I followed ");
+	message("「我跟蹤了 ");
 	message(var0002);
-	message(" about this town, until he spotted me. No doubt I prevented him from great evil!\"");
+	message(" 在這鎮上轉，直到他發現了我。毫無疑問，我阻止了他犯下大錯！」");
 	say();
 	UI_show_npc_face1(0xFFD0, 0x0000);
-	message("\"But thou didst not see him actually perform any vile acts?\"");
+	message("「但你並沒有親眼看到他真的做出任何邪惡的行為？」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"He contacted Alyssand, madam! I saw them speaking together, and casting many sly glances in my direction.\"");
+	message("「他聯絡了亞歷珊，夫人！我看到他們在交談，還朝我的方向投下許多狡猾的目光。」");
 	say();
 labelFunc07FC_0DF5:
 	UI_show_npc_face1(0xFFD1, 0x0000);
-	message("\"My daughter is not on trial here, chancellor...\"");
+	message("「我女兒不是在這裡受審，大法官……」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Well... I suppose not...\"");
+	message("「嗯……我想也是……」");
 	say();
 labelFunc07FC_0E12:
 	var0003 = 0x0001;
 labelFunc07FC_0E18:
-	case "the character of the accused" attend labelFunc07FC_0E52:
-	UI_remove_answer(["the character of the accused", "no questions"]);
-	UI_add_answer("no further questions");
+	case "被告的品格" attend labelFunc07FC_0E52:
+	UI_remove_answer(["被告的品格", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
 	if (!gflags[0x0174]) goto labelFunc07FC_0E3E;
-	message("\"Isn't it obvious? The bard is a light-minded man, disrespectful of proper authority! Iolo is not a man to be trusted.\"");
+	message("「這還不明顯嗎？這名吟遊詩人是個輕浮的人，不尊重正當的權威！伊奧洛不是個值得信任的人。」");
 	say();
 labelFunc07FC_0E3E:
 	if (!gflags[0x0175]) goto labelFunc07FC_0E48;
-	message("\"He possesses the grim silence of the professional executioner. Shamino never laughs. I find him to be disquieting...\"");
+	message("「他有著專業劊子手那種冷酷的沉默。沙米諾從不笑。我覺得他令人不安……」");
 	say();
 labelFunc07FC_0E48:
 	if (!gflags[0x0173]) goto labelFunc07FC_0E52;
-	message("\"Why, the man is a known drunkard, and a companion of thieves and cut-throats. Look at those he consorts with!\"");
+	message("「哎呀，這個人是出了名的酒鬼，而且是小偷和殺人犯的同伴。看看他都跟些什麼人混在一起！」");
 	say();
 labelFunc07FC_0E52:
-	case "Daemonism" attend labelFunc07FC_0E76:
-	UI_remove_answer(["Daemonism", "no questions"]);
-	UI_add_answer("no further questions");
-	message("\"Dost thou not feel the sudden chill in this Temple, at the very mention of Beast British?\"");
+	case "惡魔崇拜" attend labelFunc07FC_0E76:
+	UI_remove_answer(["惡魔崇拜", "沒有問題"]);
+	UI_add_answer("沒有其他問題了");
+	message("「一提到野獸不列顛王，難道你沒感覺到這神廟裡突然有一股寒意嗎？」");
 	say();
-	message("\"I tell thee, the Daemon exists, and his schemes to destroy Fawn can only be averted by the justice of the Oracle!\"");
+	message("「我告訴你，惡魔是存在的，而他毀滅方恩的陰謀只能藉由神諭的正義來化解！」");
 	say();
 labelFunc07FC_0E76:
-	case "no questions" attend labelFunc07FC_0E99:
+	case "沒有問題" attend labelFunc07FC_0E99:
 	UI_show_npc_face1(0xFE9C, 0x0000);
-	message("\"Forgive me. I have no questions for thee.\"");
+	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@Idiot...@", 0x0000);
+	Func097F(item, "@白痴……@", 0x0000);
 	goto labelFunc07FC_0EB4;
 labelFunc07FC_0E99:
-	case "no further questions" attend labelFunc07FC_0EB0:
-	Func097F(0xFE9C, "@No further questions...@", 0x0000);
+	case "沒有其他問題了" attend labelFunc07FC_0EB0:
+	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
 	goto labelFunc07FC_0EB4;
 labelFunc07FC_0EB0:
 	goto labelFunc07FC_0D58;

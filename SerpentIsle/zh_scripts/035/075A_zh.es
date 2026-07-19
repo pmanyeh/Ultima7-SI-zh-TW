@@ -19,8 +19,8 @@ void Func075A object#(0x75A) ()
 	var0000[0x0002] = (var0000[0x0002] + 0x0007);
 	UI_set_schedule_type(0xFF2D, 0x000F);
 	UI_move_object(0xFF2D, var0000);
-	Func097F(0xFF2D, "@Thou hast arrived!@", 0x0000);
-	Func097F(0xFE9C, "@Who said that?@", 0x0003);
+	Func097F(0xFF2D, "@你到了！@", 0x0000);
+	Func097F(0xFE9C, "@是誰在說話？@", 0x0003);
 	0xFF2D->Func07D2();
 	var0001 = UI_delayed_execute_usecode_array(0xFF2D, [(byte)0x23, (byte)0x55, 0x0363], 0x0014);
 	UI_sprite_effect(0x0007, var0000[0x0001], var0000[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
@@ -33,7 +33,7 @@ labelFunc075A_00D7:
 	if (!((event == 0x0002) && (gflags[0x000A] == true))) goto labelFunc075A_013F;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFF2D, 0x0000);
-	message("\"This fire ring shall save thee from being destroyed during this battle, Hero. Neither of us means thee harm, but errors can occur in the heat of combat. Remain within the ring!\"");
+	message("「這道火焰之環能在這場戰鬥中保你免遭波及，英雄。我們皆無意傷你，但激戰之中難免刀劍無眼。切勿離開此環！」");
 	say();
 	UI_end_conversation();
 	var0002 = Func09A0(0x0007, 0x0001);

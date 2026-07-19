@@ -55,7 +55,7 @@ labelFunc017D_00D0:
 labelFunc017D_00FA:
 	if (!(var0003 == 0x0007)) goto labelFunc017D_014F;
 	UI_show_npc_face0(0xFEF3, 0x0000);
-	message("\"Thou art a dog, to have brutalized an innocent townsperson. Thy place is behind stout iron bars!!!\"");
+	message("「你這條狗，竟敢殘害無辜的鎮民。你該待在堅固的鐵窗後！！！」");
 	say();
 	UI_fade_palette(0x000C, 0x0001, 0x0000);
 	UI_move_object(0xFE9C, [0x03DC, 0x0625, 0x0000]);
@@ -66,11 +66,11 @@ labelFunc017D_014F:
 	var0006 = UI_is_pc_female();
 	var0007 = Func0953();
 	if (!(event == 0x0002)) goto labelFunc017D_0186;
-	Func097F(item, "@Stand and be recognized, stranger!@", 0x0005);
+	Func097F(item, "@站住，接受盤查，陌生人！@", 0x0005);
 	UI_set_schedule_type(item, 0x0003);
 labelFunc017D_0186:
 	if (!(event == 0x0001)) goto labelFunc017D_01A0;
-	Func097F(item, "@Stand and be recognized, stranger!@", 0x0005);
+	Func097F(item, "@站住，接受盤查，陌生人！@", 0x0005);
 	UI_set_schedule_type(item, 0x0003);
 labelFunc017D_01A0:
 	if (!(event == 0x0009)) goto labelFunc017D_047E;
@@ -81,9 +81,9 @@ labelFunc017D_01A0:
 	if (!(gflags[0x0168] == false)) goto labelFunc017D_0256;
 	var0008 = UI_get_schedule_type(0xFFC5);
 	if (!(var0008 != 0x0003)) goto labelFunc017D_0253;
-	message("\"There hath been trouble of late here in Fawn...\"");
+	message("「最近芳恩城( Fawn )有些麻煩……」");
 	say();
-	message("\"...And here comes part of it now.\"");
+	message("「……而這就來了其中一個。」");
 	say();
 	var0009 = UI_get_object_position(item);
 	var0009[0x0002] = (var0009[0x0002] + 0x0014);
@@ -95,112 +95,112 @@ labelFunc017D_01A0:
 labelFunc017D_0253:
 	goto labelFunc017D_02CF;
 labelFunc017D_0256:
-	message("\"Be careful of that one. He is nothing but trouble.\"");
+	message("「小心那傢伙。他只會惹麻煩。」");
 	say();
-	message("\"Thou must state thy name and business, before thou canst pass, ");
+	message("「在你通過之前，你必須報上姓名和目的， ");
 	message(var0005);
-	message(".\"");
+	message("。」");
 	say();
-	var000A = Func0956([("I am " + var0000), "I am the Avatar.", "It is not thy business."]);
-	if (!(var000A == ("I am " + var0000))) goto labelFunc017D_02A2;
-	message("\"Pleased to meet thee, ");
+	var000A = Func0956([("我是" + var0000), "我是聖者。", "這不關你的事。"]);
+	if (!(var000A == ("我是" + var0000))) goto labelFunc017D_02A2;
+	message("「很高興見到你， ");
 	message(var0007);
-	message(". What is thy business here in Fawn?\"");
+	message("。你來芳恩城( Fawn )有什麼事？」");
 	say();
-	UI_add_answer(["I am merely visiting.", "I am missing a companion.", "It is not thy business."]);
+	UI_add_answer(["我只是來拜訪的。", "我有一名同伴失蹤了。", "這不關你的事。"]);
 labelFunc017D_02A2:
-	if (!(var000A == "I am the Avatar.")) goto labelFunc017D_02C0;
-	message("\"And I am the Lady of Fawn! Thou wilt not go far with such here, stranger.\" *\"What is thy business here in Fawn?\"");
+	if (!(var000A == "我是聖者。")) goto labelFunc017D_02C0;
+	message("「而我是芳恩城女士！在這裡你用這種說詞走不遠的，陌生人。」*「你來芳恩城( Fawn )有什麼事？」");
 	say();
-	UI_add_answer(["I am merely visiting.", "I am missing a companion.", "It is not thy business."]);
+	UI_add_answer(["我只是來拜訪的。", "我有一名同伴失蹤了。", "這不關你的事。"]);
 labelFunc017D_02C0:
-	if (!(var000A == "It is not thy business.")) goto labelFunc017D_02CF;
-	message("\"If thou wilt not tell me thy name and business, thou canst not enter the city. Come back when thou art feeling more talkative.\"");
+	if (!(var000A == "這不關你的事。")) goto labelFunc017D_02CF;
+	message("「如果你不肯告訴我你的姓名和目的，你就不能進城。等你比較想說話時再來吧。」");
 	say();
 	abort;
 labelFunc017D_02CF:
 	goto labelFunc017D_02FD;
 labelFunc017D_02D2:
-	message("\"Thou shouldst avoid trouble whilst thou art here.\"");
+	message("「你在這兒的時候最好別惹麻煩。」");
 	say();
 	if (!UI_find_nearby_avatar(0x0203)) goto labelFunc017D_02F0;
-	UI_add_answer(["duty", "pass"]);
+	UI_add_answer(["職責", "通過"]);
 	goto labelFunc017D_02FD;
 labelFunc017D_02F0:
-	UI_add_answer(["duty", "bye"]);
+	UI_add_answer(["職責", "告辭"]);
 labelFunc017D_02FD:
 	converse attend labelFunc017D_047D;
-	case "I am merely visiting." attend labelFunc017D_0333:
-	message("\"Welcome to Fawn, then! Keep away from trouble whilst thou art here.\" *\"We have enough to worry about, what with storms, goblins, and Fellowship troublemakers.\"");
+	case "我只是來拜訪的。" attend labelFunc017D_0333:
+	message("「那麼，歡迎來到芳恩城( Fawn )！你在這裡時別惹麻煩。」*「我們要擔心的已經夠多了，有風暴、哥布林，還有兄弟會的搗亂者。」");
 	say();
 	gflags[0x014F] = false;
-	UI_remove_answer(["I am merely visiting.", "I am missing a companion.", "It is not thy business."]);
-	UI_add_answer(["storms", "goblins", "Fellowship troublemakers", "pass"]);
+	UI_remove_answer(["我只是來拜訪的。", "我有一名同伴失蹤了。", "這不關你的事。"]);
+	UI_add_answer(["風暴", "哥布林", "兄弟會的搗亂者", "通過"]);
 labelFunc017D_0333:
-	case "storms" attend labelFunc017D_034C:
-	message("\"They start without warning, ");
+	case "風暴" attend labelFunc017D_034C:
+	message("「它們毫無預兆地開始， ");
 	message(var0005);
-	message(". So do not stray too far from shelter.\" *\"Be warned, we have orders to close the gate during a storm. So if thou art caught outside of the gate, thine only choice is the traveller's shelter.\"");
+	message("。所以別離避難所太遠。」*「警告你，我們接獲命令在風暴期間關閉城門。所以如果你被困在城門外，你唯一的選擇就是旅者的避難所。」");
 	say();
-	UI_remove_answer("storms");
+	UI_remove_answer("風暴");
 labelFunc017D_034C:
-	case "goblins" attend labelFunc017D_036E:
+	case "哥布林" attend labelFunc017D_036E:
 	if (!(gflags[0x014E] == false)) goto labelFunc017D_0363;
-	message("\"Now that those savages have overtaken the Pikeman tower, the gates must be closed at night. We cannot open them for anyone until morning. So have a care if thou dost venture outside near dark.\"");
+	message("「既然那些野蠻人佔領了長槍兵塔樓，城門在夜間必須關閉。直到早晨我們都不會為任何人開門。所以如果你在天黑前冒險外出，請多加小心。」");
 	say();
 	goto labelFunc017D_0367;
 labelFunc017D_0363:
-	message("\"If those foul savages would dare attack the Pikemen, we cannot leave the gates open at night. Fawn's gates are now closed at night. They cannot be opened for anyone until morning.\" *\"So have a care if thou dost venture outside near dark.\"");
+	message("「如果那些骯髒的野蠻人竟敢攻擊長槍兵，我們晚上就不能開著城門。芳恩城( Fawn )的城門現在夜間關閉。直到早晨都不會為任何人開啟。」*「所以如果你在天黑前冒險外出，請多加小心。」");
 	say();
 labelFunc017D_0367:
-	UI_remove_answer("goblins");
+	UI_remove_answer("哥布林");
 labelFunc017D_036E:
-	case "Fellowship troublemakers" attend labelFunc017D_038E:
-	message("\"I should not have said that, ");
+	case "兄弟會的搗亂者" attend labelFunc017D_038E:
+	message("「我不該說這個的， ");
 	message(var0005);
-	message(".\" ~\"Be assured that the Captain is quick with the Wand of Detainment.\"");
+	message("。」~「放心，隊長使用拘留魔杖( Wand of Detainment )的速度很快。」");
 	say();
-	UI_remove_answer("Fellowship troublemakers");
-	UI_add_answer("Wand of Detainment");
+	UI_remove_answer("兄弟會的搗亂者");
+	UI_add_answer("拘留魔杖");
 labelFunc017D_038E:
-	case "duty" attend labelFunc017D_03A1:
-	message("\"I am a Fawn Guardsman! Thou wouldst do well to stay out of mischief while visiting our city!\"");
+	case "職責" attend labelFunc017D_03A1:
+	message("「我是芳恩城守衛！你來我們城市參訪時，最好安分守己！」");
 	say();
-	UI_remove_answer("duty");
+	UI_remove_answer("職責");
 labelFunc017D_03A1:
-	case "Wand of Detainment" attend labelFunc017D_03B4:
-	message("\"The Wand of Detainment is a fine gift from the people of Moonshade. With the Wand, the Captain can capture any criminal.\" *\"Keep that in mind if thou shouldst feel mischievous...\"");
+	case "拘留魔杖" attend labelFunc017D_03B4:
+	message("「拘留魔杖( Wand of Detainment )是月影城( Moonshade )人民送的美好禮物。有了這根魔杖，隊長可以抓住任何罪犯。」*「如果你想搗蛋，請記住這一點……」");
 	say();
-	UI_remove_answer("Wand of Detainment");
+	UI_remove_answer("拘留魔杖");
 labelFunc017D_03B4:
-	case "I am missing a companion." attend labelFunc017D_03EA:
-	message("\"Thou shouldst try inquiring at The Broken Oar. Keep away from trouble whilst thou art here.\" *\"We have enough to worry about, what with storms, goblins, and Fellowship troublemakers.\"");
+	case "我有一名同伴失蹤了。" attend labelFunc017D_03EA:
+	message("「你應該去斷槳酒館( The Broken Oar )問問。你在這裡時別惹麻煩。」*「我們要擔心的已經夠多了，有風暴、哥布林，還有兄弟會的搗亂者。」");
 	say();
 	gflags[0x014F] = false;
-	UI_remove_answer(["I am merely visiting.", "I am missing a companion.", "It is not thy business."]);
-	UI_add_answer(["The Broken Oar", "storms", "goblins", "Fellowship troublemakers", "pass"]);
+	UI_remove_answer(["我只是來拜訪的。", "我有一名同伴失蹤了。", "這不關你的事。"]);
+	UI_add_answer(["斷槳酒館", "風暴", "哥布林", "兄弟會的搗亂者", "通過"]);
 labelFunc017D_03EA:
-	case "The Broken Oar" attend labelFunc017D_03FD:
-	message("\"The Broken Oar is a tavern. It is the only establishment in Fawn that offers rooms to rent.\" *\"Most strangers stay there.\"");
+	case "斷槳酒館" attend labelFunc017D_03FD:
+	message("「斷槳酒館( The Broken Oar )是一家酒館。這是芳恩城唯一提供租房的場所。」*「大多數陌生人都住在那裡。」");
 	say();
-	UI_remove_answer("The Broken Oar");
+	UI_remove_answer("斷槳酒館");
 labelFunc017D_03FD:
-	case "It is not thy business." attend labelFunc017D_040A:
-	message("\"If thou wilt not tell me thy name and business, thou canst not enter the city. Come back when thou art feeling more talkative.\"");
+	case "這不關你的事。" attend labelFunc017D_040A:
+	message("「如果你不肯告訴我你的姓名和目的，你就不能進城。等你比較想說話時再來吧。」");
 	say();
 	abort;
 labelFunc017D_040A:
-	case "pass" attend labelFunc017D_0442:
+	case "通過" attend labelFunc017D_0442:
 	UI_remove_npc_face0();
-	Func097F(item, (("@Pass through, " + var0005) + ".@"), 0x0000);
+	Func097F(item, (("@通過吧，" + var0005) + "。@"), 0x0000);
 	gflags[0x014F] = false;
 	var000B = UI_find_nearby_avatar(0x0203);
 	var0004 = Func089D(var000B);
 	goto labelFunc017D_0964;
 labelFunc017D_0442:
-	case "bye" attend labelFunc017D_047A:
+	case "告辭" attend labelFunc017D_047A:
 	UI_remove_npc_face0();
-	Func097F(item, (("@Pass through, " + var0005) + ".@"), 0x0005);
+	Func097F(item, (("@通過吧，" + var0005) + "。@"), 0x0005);
 	gflags[0x014F] = false;
 	var000B = UI_find_nearby_avatar(0x0203);
 	var0004 = Func089D(var000B);
@@ -218,12 +218,12 @@ labelFunc017D_047E:
 	if (!(UI_get_random(0x000A) < 0x0006)) goto labelFunc017D_04BC;
 	abort;
 labelFunc017D_04BC:
-	var000C = ["@A tattooed woman!@", "@I'll show thee mine...@", "@A painted lady!@", "@Want a good time?@", "@I'll protect thee.@", "@Buy thee a drink?@"];
+	var000C = ["@有刺青的女人！@", "@我給妳看我的……@", "@刺青女士！@", "@想快活一下嗎？@", "@我會保護妳。@", "@請妳喝一杯？@"];
 	Func097F(item, var000C[UI_get_random(0x0006)], 0x0000);
 labelFunc017D_04E5:
 	if (!(event == 0x0001)) goto labelFunc017D_0511;
-	UI_item_say(0xFE9C, "@Thou... guard!@");
-	Func097F(item, (("@Yes, " + var0005) + "?@"), 0x0005);
+	UI_item_say(0xFE9C, "@你……守衛！@");
+	Func097F(item, (("@有事嗎，" + var0005) + "？@"), 0x0005);
 	UI_set_schedule_type(item, 0x0003);
 labelFunc017D_0511:
 	if (!(event == 0x0009)) goto labelFunc017D_06A8;
@@ -232,79 +232,79 @@ labelFunc017D_0511:
 	UI_show_npc_face0(0xFEF3, 0x0000);
 	var000D = UI_die_roll(0x0001, 0x0004);
 	if (!(var000D == 0x0001)) goto labelFunc017D_0567;
-	message("\"Thou shouldst address me by rank while I am on duty, ");
+	message("「我值班時你應該稱呼我的軍階， ");
 	message(var0005);
-	message(". I am a Private in Fawn's Guard.\" *\"Dost thou require some assistance?\"");
+	message("。我是芳恩衛隊的二等兵。」*「你需要協助嗎？」");
 	say();
-	var000E = "Private";
-	UI_add_answer(["Why art thou following me?", "Stop following me!", "Never mind."]);
+	var000E = "二等兵";
+	UI_add_answer(["你為什麼跟著我？", "別再跟著我了！", "沒事。"]);
 labelFunc017D_0567:
 	if (!(var000D == 0x0002)) goto labelFunc017D_0591;
-	message("\"I am on duty now, ");
+	message("「我現在正在值勤， ");
 	message(var0005);
-	message(". Thou mayest address me as Corporal.\" *\"Dost thou require some assistance?\"");
+	message("。你可以稱呼我為下士。」*「你需要協助嗎？」");
 	say();
-	var000E = "Corporal";
-	UI_add_answer(["Why art thou following me?", "Stop following me!", "Never mind."]);
+	var000E = "下士";
+	UI_add_answer(["你為什麼跟著我？", "別再跟著我了！", "沒事。"]);
 labelFunc017D_0591:
 	if (!(var000D == 0x0003)) goto labelFunc017D_05BB;
-	message("\"While I am on duty, ");
+	message("「我值勤時， ");
 	message(var0005);
-	message(", thou must address me as Sergeant.\" *\"Dost thou require some assistance?\"");
+	message("，你必須稱呼我為中士。」*「你需要協助嗎？」");
 	say();
-	var000E = "Sergeant";
-	UI_add_answer(["Why art thou following me?", "Stop following me!", "Never mind."]);
+	var000E = "中士";
+	UI_add_answer(["你為什麼跟著我？", "別再跟著我了！", "沒事。"]);
 labelFunc017D_05BB:
 	if (!(var000D == 0x0004)) goto labelFunc017D_05E5;
-	message("\"I am a Lieutenant in Fawn's Guard. Thou must address me as such, ");
+	message("「我是芳恩衛隊的中尉。你必須這樣稱呼我， ");
 	message(var0005);
-	message(".\" *\"Dost thou require some assistance?\"");
+	message("。」*「你需要協助嗎？」");
 	say();
-	var000E = "Lieutenant";
-	UI_add_answer(["Why art thou following me?", "Stop following me!", "Never mind."]);
+	var000E = "中尉";
+	UI_add_answer(["你為什麼跟著我？", "別再跟著我了！", "沒事。"]);
 labelFunc017D_05E5:
 	converse attend labelFunc017D_06A7;
-	case "Why art thou following me?" attend labelFunc017D_0611:
-	message("\"Forgive me, ");
+	case "你為什麼跟著我？" attend labelFunc017D_0611:
+	message("「請原諒我， ");
 	message(var0005);
-	message(". But, by Law, I must follow thee.\"");
+	message("。但是，根據法律，我必須跟著你。」");
 	say();
-	UI_remove_answer(["Why art thou following me?", "Stop following me!", "Never mind."]);
-	UI_add_answer("Law");
+	UI_remove_answer(["你為什麼跟著我？", "別再跟著我了！", "沒事。"]);
+	UI_add_answer("法律");
 labelFunc017D_0611:
-	case "Law" attend labelFunc017D_0631:
-	message("\"By Law, all Beauty must be protected, ");
+	case "法律" attend labelFunc017D_0631:
+	message("「根據法律，所有的『美』都必須受到保護， ");
 	message(var0005);
-	message(". Therefore, I am to ensure that thou dost not endanger thyself.\"");
+	message("。因此，我要確保你不會讓自己陷入危險。」");
 	say();
-	UI_remove_answer("Law");
-	UI_add_answer("endanger");
+	UI_remove_answer("法律");
+	UI_add_answer("危險");
 labelFunc017D_0631:
-	case "endanger" attend labelFunc017D_063E:
-	message("\"Thou shouldst not provoke arguments, or stray too close to the docks where thou couldst be injured. I must intervene in any situation in which thy Beauty might be marred. That is my duty.\"");
+	case "危險" attend labelFunc017D_063E:
+	message("「你不應該挑起爭端，或離碼頭太近以免受傷。任何可能損害你美貌的情況，我都必須介入。這是我的職責。」");
 	say();
 	abort;
 labelFunc017D_063E:
-	case "Stop following me!" attend labelFunc017D_0667:
-	message("\"I am sorry, ");
+	case "別再跟著我了！" attend labelFunc017D_0667:
+	message("「抱歉， ");
 	message(var0005);
-	message(", thou art not my Captain. I may only take orders from the Captain of the Guard.\"");
+	message("，你不是我的隊長。我只能聽從衛隊長的命令。」");
 	say();
-	UI_remove_answer(["Why art thou following me?", "Stop following me!", "Never mind."]);
-	UI_add_answer("Captain of the Guard");
+	UI_remove_answer(["你為什麼跟著我？", "別再跟著我了！", "沒事。"]);
+	UI_add_answer("衛隊長");
 labelFunc017D_0667:
-	case "Captain of the Guard" attend labelFunc017D_0681:
-	message("\"His name is Jorvin. Thou canst ask him to reassign me, if thou wishest. But by Law he must assign another guard to the job.\"");
+	case "衛隊長" attend labelFunc017D_0681:
+	message("「他的名字叫 Jorvin 。如果你願意，你可以要求他重新指派我。但根據法律，他必須指派另一名守衛接手。」");
 	say();
-	UI_remove_answer("Captain of the Guard");
-	UI_add_answer("Law");
+	UI_remove_answer("衛隊長");
+	UI_add_answer("法律");
 labelFunc017D_0681:
-	case "Never mind." attend labelFunc017D_06A4:
-	message("\"I am ever at thy service, ");
+	case "沒事。" attend labelFunc017D_06A4:
+	message("「隨時為你服務， ");
 	message(var0005);
-	message(". Call on me any time.\"");
+	message("。隨時可以叫我。」");
 	say();
-	UI_remove_answer(["Why art thou following me?", "Stop following me!", "Never mind."]);
+	UI_remove_answer(["你為什麼跟著我？", "別再跟著我了！", "沒事。"]);
 	abort;
 labelFunc017D_06A4:
 	goto labelFunc017D_05E5;
@@ -316,8 +316,8 @@ labelFunc017D_06A8:
 	var0006 = UI_is_pc_female();
 	var0007 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc017D_06F9;
-	UI_item_say(0xFE9C, "@Might I speak with thee, guard?@");
-	Func097F(item, (("@What dost thou need, " + var0005) + "?@"), 0x0005);
+	UI_item_say(0xFE9C, "@我能跟你說話嗎，守衛？@");
+	Func097F(item, (("@你需要什麼，" + var0005) + "？@"), 0x0005);
 	UI_set_schedule_type(item, 0x0003);
 labelFunc017D_06F9:
 	if (!(event == 0x0009)) goto labelFunc017D_0965;
@@ -326,124 +326,124 @@ labelFunc017D_06F9:
 	UI_show_npc_face0(0xFEF3, 0x0000);
 	var000D = UI_die_roll(0x0001, 0x0004);
 	if (!(var0003 == 0x0003)) goto labelFunc017D_074F;
-	message("\"Thou shouldst address me by rank while I am on duty, ");
+	message("「我值班時你應該稱呼我的軍階， ");
 	message(var0005);
-	message(". I am a Private in Fawn's Guard.\"");
+	message("。我是芳恩衛隊的二等兵。」");
 	say();
-	var000E = "Private";
-	UI_add_answer(["storms", "goblins", "bye"]);
+	var000E = "二等兵";
+	UI_add_answer(["風暴", "哥布林", "告辭"]);
 labelFunc017D_074F:
 	if (!(var0003 == 0x0004)) goto labelFunc017D_0779;
-	message("\"I am on duty now, ");
+	message("「我現在正在值勤， ");
 	message(var0005);
-	message(". Thou mayest address me as Corporal.\"");
+	message("。你可以稱呼我為下士。」");
 	say();
-	var000E = "Corporal";
-	UI_add_answer(["storms", "goblins", "bye"]);
+	var000E = "下士";
+	UI_add_answer(["風暴", "哥布林", "告辭"]);
 labelFunc017D_0779:
 	if (!(var0003 == 0x0005)) goto labelFunc017D_07A3;
-	message("\"While I am on duty, ");
+	message("「我值勤時， ");
 	message(var0005);
-	message(", thou must address me as Sergeant.\"");
+	message("，你必須稱呼我為中士。」");
 	say();
-	var000E = "Sergeant";
-	UI_add_answer(["storms", "goblins", "bye"]);
+	var000E = "中士";
+	UI_add_answer(["風暴", "哥布林", "告辭"]);
 labelFunc017D_07A3:
 	if (!(var0003 == 0x0006)) goto labelFunc017D_07CD;
-	message("\"I am a Lieutenant in Fawn's Guard. Thou must address me as such, ");
+	message("「我是芳恩衛隊的中尉。你必須這樣稱呼我， ");
 	message(var0005);
-	message(".\"");
+	message("。」");
 	say();
-	var000E = "Lieutenant";
-	UI_add_answer(["storms", "goblins", "bye"]);
+	var000E = "中尉";
+	UI_add_answer(["風暴", "哥布林", "告辭"]);
 labelFunc017D_07CD:
 	converse attend labelFunc017D_0964;
-	case "storms" attend labelFunc017D_087B:
+	case "風暴" attend labelFunc017D_087B:
 	var000F = UI_die_roll(0x0001, 0x0006);
 	if (!(var000F == 0x0001)) goto labelFunc017D_0800;
-	message("\"Be thou careful to stay close to shelter, ");
+	message("「小心待在避難所附近， ");
 	message(var0005);
-	message(". Thou dost never know when one of these freak storms will appear.\"");
+	message("。你永遠不知道這些怪風暴何時會出現。」");
 	say();
-	UI_remove_answer("storms");
+	UI_remove_answer("風暴");
 labelFunc017D_0800:
 	if (!(var000F == 0x0002)) goto labelFunc017D_081B;
-	message("\"'Tis unnatural, for sure. I wouldn't wander too far from safety, if I were thee, ");
+	message("「這肯定是不尋常的。如果我是你，我就不會離安全的地方太遠， ");
 	message(var0005);
-	message(".\"");
+	message("。」");
 	say();
-	UI_remove_answer("storms");
+	UI_remove_answer("風暴");
 labelFunc017D_081B:
 	if (!(var000F == 0x0003)) goto labelFunc017D_0836;
-	message("\"The storms are no great cause for alarm. Remain in sight of shelter and thou shouldst be fine, ");
+	message("「風暴不值得大驚小怪。只要在看得到避難所的地方就沒事了， ");
 	message(var0005);
-	message(".\"");
+	message("。」");
 	say();
-	UI_remove_answer("storms");
+	UI_remove_answer("風暴");
 labelFunc017D_0836:
 	if (!(var000F == 0x0004)) goto labelFunc017D_0851;
-	message("\"Between thee and me, ");
+	message("「我們私下說， ");
 	message(var0005);
-	message(", I would not be out here if I weren't on duty. These storms are not natural.\"");
+	message("，要不是我值班，我才不會出來。這些風暴很不尋常。」");
 	say();
-	UI_remove_answer("storms");
+	UI_remove_answer("風暴");
 labelFunc017D_0851:
 	if (!(var000F == 0x0005)) goto labelFunc017D_0866;
-	message("\"I tell thee, we are all cursed! These storms are a punishment for our transgressions against the heavens!\" *\"Thou canst run to shelter all thou wishest, but if thou hast transgressed, it will avail thee not!\"");
+	message("「我告訴你，我們都被詛咒了！這些風暴是老天對我們罪行的懲罰！」*「你愛怎麼跑去避難就去吧，但如果你犯了罪，那也無濟於事！」");
 	say();
-	UI_remove_answer("storms");
+	UI_remove_answer("風暴");
 labelFunc017D_0866:
 	if (!(var000F == 0x0006)) goto labelFunc017D_087B;
-	message("\"Use the sense that the heavens gave thee... If a storm starts, seek shelter. 'Tis simple enough.\"");
+	message("「用上天賦予你的理智……如果風暴開始了，就去避難。這很簡單。」");
 	say();
-	UI_remove_answer("storms");
+	UI_remove_answer("風暴");
 labelFunc017D_087B:
-	case "goblins" attend labelFunc017D_092C:
+	case "哥布林" attend labelFunc017D_092C:
 	var0010 = UI_die_roll(0x0001, 0x0006);
 	if (!(var0010 == 0x0001)) goto labelFunc017D_08A5;
-	message("\"The goblins have been nothing but trouble of late. Thou shouldst remain within the city gates.\"");
+	message("「哥布林最近一直在惹麻煩。你應該留在城門內。」");
 	say();
-	UI_remove_answer("goblins");
+	UI_remove_answer("哥布林");
 labelFunc017D_08A5:
 	if (!(var0010 == 0x0002)) goto labelFunc017D_08C0;
-	message("\"Goblins are filthy savages, ");
+	message("「哥布林是骯髒的野蠻人， ");
 	message(var0005);
-	message(". I yearn for the day when we are allowed to kill them all!\" *\"'Tis unsafe to venture outside the city with them out there.\"");
+	message("。我渴望有一天我們能把他們殺光！」*「有他們在外面，冒險出城是不安全的。」");
 	say();
-	UI_remove_answer("goblins");
+	UI_remove_answer("哥布林");
 labelFunc017D_08C0:
 	if (!(var0010 == 0x0003)) goto labelFunc017D_08DB;
-	message("\"Make no mistake, ");
+	message("「別搞錯了， ");
 	message(var0005);
-	message(". Those goblins would sooner make a meal out of us as look at us. No one is safe as long as one goblin is left alive!\"");
+	message("。那些哥布林寧可把我們當作一餐，也不願多看我們一眼。只要還有一個哥布林活著，就沒有人是安全的！」");
 	say();
-	UI_remove_answer("goblins");
+	UI_remove_answer("哥布林");
 labelFunc017D_08DB:
 	if (!(var0010 == 0x0004)) goto labelFunc017D_08F6;
-	message("\"Don't go out of the city gates, ");
+	message("「別出城門， ");
 	message(var0005);
-	message("! 'Tis not safe even in broad daylight!\"");
+	message("！即使在光天化日之下也不安全！」");
 	say();
-	UI_remove_answer("goblins");
+	UI_remove_answer("哥布林");
 labelFunc017D_08F6:
 	if (!(var0010 == 0x0005)) goto labelFunc017D_0911;
-	message("\"Thou hast nothing to fear from the goblins, ");
+	message("「你沒什麼好怕哥布林的， ");
 	message(var0005);
-	message(", as long as thou stayest within the confines of the city.\"");
+	message("，只要你待在城市範圍內。」");
 	say();
-	UI_remove_answer("goblins");
+	UI_remove_answer("哥布林");
 labelFunc017D_0911:
 	if (!(var0010 == 0x0006)) goto labelFunc017D_092C;
-	message("\"Fawn is caught between the storms and the goblins, ");
+	message("「芳恩城( Fawn )夾在風暴與哥布林之間， ");
 	message(var0005);
-	message(". 'Tis not a safe place to be!\"");
+	message("。這不是個安全的地方！」");
 	say();
-	UI_remove_answer("goblins");
+	UI_remove_answer("哥布林");
 labelFunc017D_092C:
-	case "bye" attend labelFunc017D_0961:
+	case "告辭" attend labelFunc017D_0961:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, (("@Goodbye, " + var000E) + ".@"), 0x0000);
-	Func097F(item, (("@Walk in Beauty, " + var0005) + ".@"), 0x0005);
+	Func097F(0xFE9C, (("@再見，" + var000E) + "。@"), 0x0000);
+	Func097F(item, (("@願美貌與你同行，" + var0005) + "。@"), 0x0005);
 	goto labelFunc017D_0964;
 labelFunc017D_0961:
 	goto labelFunc017D_07CD;

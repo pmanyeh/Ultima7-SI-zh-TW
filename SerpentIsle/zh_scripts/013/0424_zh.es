@@ -24,9 +24,9 @@ void Func0424 object#(0x424) ()
 	var0003 = UI_get_item_flag(0xFFFD, 0x0006);
 	var0004 = UI_get_item_flag(0xFFDC, 0x001C);
 	if (!(event == 0x0001)) goto labelFunc0424_0064;
-	UI_item_say(0xFE9C, "@A moment, good fellow.@");
+	UI_item_say(0xFE9C, "@等一下，好兄弟。@");
 	0xFFDC->Func07D1();
-	var0005 = ("@Do not hit me...@" & "@I beg thee!@");
+	var0005 = ("@不要打我……@" & "@我求求你！@");
 	Func094F(0xFFDC, var0005);
 	UI_set_schedule_type(0xFFDC, 0x0003);
 labelFunc0424_0064:
@@ -35,232 +35,232 @@ labelFunc0424_0064:
 	UI_clear_item_say(0xFFDC);
 	UI_show_npc_face0(0xFFDC, 0x0000);
 	if (!(!var0004)) goto labelFunc0424_0092;
-	message("\"What dost thou want, if thou dost not want to beat me?\"");
+	message("「如果你不想打我，你想要什麼？」");
 	say();
 	goto labelFunc0424_0096;
 labelFunc0424_0092:
-	message("\"Thou hast come to beat me again, I know it!\"");
+	message("「你又來打我了，我知道的！」");
 	say();
 labelFunc0424_0096:
-	UI_add_answer(["name", "duties"]);
+	UI_add_answer(["姓名", "職責"]);
 	if (!gflags[0x01BE]) goto labelFunc0424_00B0;
-	UI_add_answer("teleportation");
+	UI_add_answer("傳送");
 labelFunc0424_00B0:
-	UI_add_answer("bye");
+	UI_add_answer("告辭");
 labelFunc0424_00B7:
 	converse attend labelFunc0424_04B7;
-	case "name" attend labelFunc0424_00E1:
-	UI_remove_answer("name");
-	message("\"I am an orphan. I have no name. My parents were so poor they could not afford to give me one!\"");
+	case "姓名" attend labelFunc0424_00E1:
+	UI_remove_answer("姓名");
+	message("「我是個孤兒。我沒有名字。我的父母太窮了，給不起我一個名字！」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["orphan", "What art thou called?", "change subject"]);
+	UI_add_answer(["孤兒", "你被叫作什麼？", "改變話題"]);
 labelFunc0424_00E1:
-	case "change subject" attend labelFunc0424_00F7:
-	message("\"Yes, master... er, I mean, ");
+	case "改變話題" attend labelFunc0424_00F7:
+	message("「是的，主人……呃，我是說， ");
 	message(var0000);
-	message(".\"");
+	message(" 。」");
 	say();
 	UI_pop_answers();
 labelFunc0424_00F7:
-	case "orphan" attend labelFunc0424_010A:
-	UI_remove_answer("orphan");
-	message("\"My parents served an evil sorceress who stole me away and had them banished. She raised me as her own dog -- er, I mean son. But she was eventually caught and hanged for all her heinous crimes. I still miss my stepmother, terribly.\"");
+	case "孤兒" attend labelFunc0424_010A:
+	UI_remove_answer("孤兒");
+	message("「我的父母服侍一位邪惡的女巫，她把我偷走並把他們流放。她把我當作她的狗來養——呃，我是說兒子。但她最終被抓住了，因為她所有令人髮指的罪行而被絞死。我仍然非常想念我的繼母。」");
 	say();
 labelFunc0424_010A:
-	case "What art thou called?" attend labelFunc0424_014E:
-	UI_remove_answer("What art thou called?");
-	message("\"As a child, I was called a freak because I collected bugs! But when I went to dispose of my collection, I was called grotesque! I was so upset I could barely finish eating! But now I am called by an honorable gentleman's name, given to me by the Master.\"");
+	case "你被叫作什麼？" attend labelFunc0424_014E:
+	UI_remove_answer("你被叫作什麼？");
+	message("「小時候，我被稱為怪胎，因為我收集蟲子！但當我去處理我的收藏品時，我被稱為怪物！我太難過了，連飯都吃不下去！但現在我被冠以一位尊敬的紳士的名字，那是主人賜予我的。」");
 	say();
-	var0006 = Func0992(0xFFFD, "@Avatar, talking to this little fellow doth turn my stomach.@", 0x0000, false);
+	var0006 = Func0992(0xFFFD, "@聖者，和這個小傢伙說話讓我想吐。@", 0x0000, false);
 	if (!(var0006 != 0xFE9C)) goto labelFunc0424_013E;
 	UI_set_conversation_slot(0x0000);
 labelFunc0424_013E:
-	UI_add_answer(["freak", "grotesque", "master"]);
+	UI_add_answer(["怪胎", "怪物", "主人"]);
 labelFunc0424_014E:
-	case "freak" attend labelFunc0424_0161:
-	UI_remove_answer("freak");
-	message("\"Merely because I had a brief career with one sideshow, everyone hath marked me for life! Still, it taught me things that have helped me in my work here. It gave me a strong stomach.\"");
+	case "怪胎" attend labelFunc0424_0161:
+	UI_remove_answer("怪胎");
+	message("「僅僅因為我曾有過一段短暫的雜耍生涯，每個人就把我標記了一輩子！不過，這教會了我一些東西，對我在這裡的工作很有幫助。它給了我一個強健的胃。」");
 	say();
 labelFunc0424_0161:
-	case "grotesque" attend labelFunc0424_0174:
-	UI_remove_answer("grotesque");
-	message("\"They called me that when I was young. But looking back on it, I think they meant it in a complimentary way.\"");
+	case "怪物" attend labelFunc0424_0174:
+	UI_remove_answer("怪物");
+	message("「他們在我年輕的時候這麼叫我。但現在回想起來，我覺得他們是帶有讚美之意的。」");
 	say();
 labelFunc0424_0174:
-	case "master" attend labelFunc0424_01B7:
-	UI_remove_answer("master");
-	message("\"'Tis my master who calls me Vasel. Thou mayest address me by that name as well.\"");
+	case "主人" attend labelFunc0424_01B7:
+	UI_remove_answer("主人");
+	message("「是我的主人叫我 Vasel 。你也可以用那個名字稱呼我。」");
 	say();
 	UI_set_item_flag(0xFFDC, 0x001C);
 	if (!var0002) goto labelFunc0424_01B0;
 	UI_show_npc_face1(0xFFDD, 0x0000);
-	message("\"They shall be carving that name on thy tombstone if thou dost not return to work!\"");
+	message("「如果你不回去工作，他們就會把那個名字刻在你的墓碑上！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0424_01B0:
-	UI_add_answer("Who is thy master?");
+	UI_add_answer("誰是你的主人？");
 labelFunc0424_01B7:
-	case "Who is thy master?" attend labelFunc0424_01D7:
-	UI_remove_answer("Who is thy master?");
-	message("\"I serve Erstam. He is the master of this Manor.\"");
+	case "誰是你的主人？" attend labelFunc0424_01D7:
+	UI_remove_answer("誰是你的主人？");
+	message("「我服侍 Erstam 。他是這座莊園的主人。」");
 	say();
-	UI_add_answer(["Why serve him?", "Erstam"]);
+	UI_add_answer(["為什麼服侍他？", "Erstam"]);
 labelFunc0424_01D7:
-	case "Why serve him?" attend labelFunc0424_01EA:
-	UI_remove_answer("Why serve him?");
-	message("\"There is something about him that reminds me of my stepmother! Call it crazy if thou wilt!\"");
+	case "為什麼服侍他？" attend labelFunc0424_01EA:
+	UI_remove_answer("為什麼服侍他？");
+	message("「他身上有些東西讓我想起了我的繼母！如果你願意，可以說這很瘋狂！」");
 	say();
 labelFunc0424_01EA:
 	case "Erstam" attend labelFunc0424_0227:
 	UI_remove_answer("Erstam");
-	message("\"He is the one who is called the Mad Mage!\"");
+	message("「他就是那個被稱為瘋狂法師的人！」");
 	say();
 	if (!var0002) goto labelFunc0424_0220;
 	UI_show_npc_face1(0xFFDD, 0x0000);
-	message("\"Thou dost dare to speak that name in my presence, thou cretin?! I said I do not want to hear that name come from thy lips ever again!\"");
+	message("「你竟敢在我面前提到那個名字，你這白痴？！我說過我再也不想從你嘴裡聽到那個名字！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Never again! Never again! I promise! Do not beat me, Master!\"");
+	message("「再也不會了！再也不會了！我保證！不要打我，主人！」");
 	say();
 labelFunc0424_0220:
-	UI_add_answer("mad mage");
+	UI_add_answer("瘋狂法師");
 labelFunc0424_0227:
-	case "mad mage" attend labelFunc0424_023A:
-	UI_remove_answer("mad mage");
-	message("\"The Master hath not been himself since he lost his one true love, the enchantress Drogeni. Many years ago she left on what she said was a secret errand for a wealthy patron, and she hath never returned.\"");
+	case "瘋狂法師" attend labelFunc0424_023A:
+	UI_remove_answer("瘋狂法師");
+	message("「自從主人失去了他的一生摯愛，女巫 Drogeni 以後，他就變得不再像他自己了。許多年前，她說為了一位富有的贊助人去執行一項秘密任務後離開，就再也沒有回來過。」");
 	say();
 labelFunc0424_023A:
-	case "duties" attend labelFunc0424_025D:
-	UI_remove_answer("duties");
-	message("\"I am the custodian of the Manor. I assist the Master in his experiments. I am also called upon to do the housekeeping.\"");
+	case "職責" attend labelFunc0424_025D:
+	UI_remove_answer("職責");
+	message("「我是莊園的看守人。我協助主人進行他的實驗。我也被要求做家事。」");
 	say();
-	UI_add_answer(["Manor", "experiments", "housekeeping"]);
+	UI_add_answer(["莊園", "實驗", "家事"]);
 labelFunc0424_025D:
-	case "Manor" attend labelFunc0424_028F:
-	UI_remove_answer("Manor");
-	message("\"The Master's house is very old, and constantly in need of repair.\"");
+	case "莊園" attend labelFunc0424_028F:
+	UI_remove_answer("莊園");
+	message("「主人的房子很舊了，需要經常修理。」");
 	say();
 	if (!var0002) goto labelFunc0424_028F;
 	UI_show_npc_face1(0xFFDD, 0x0000);
-	message("\"That is correct, Vasel! Thou shouldst be returning to thine appointed chores!\"");
+	message("「沒錯， Vasel ！你應該回去做你被指定的工作！」");
 	say();
 	UI_set_conversation_slot(0x0000);
 	UI_remove_npc_face1();
 labelFunc0424_028F:
-	case "experiments" attend labelFunc0424_02AF:
-	UI_remove_answer("experiments");
-	message("\"The Master's experiments are of an extremely secret nature. They are also quite dangerous.\"");
+	case "實驗" attend labelFunc0424_02AF:
+	UI_remove_answer("實驗");
+	message("「主人的實驗極其機密。它們也非常危險。」");
 	say();
-	UI_add_answer(["secret", "dangerous"]);
+	UI_add_answer(["機密", "危險"]);
 labelFunc0424_02AF:
-	case "secret" attend labelFunc0424_02E5:
-	UI_remove_answer("secret");
-	message("\"Like any mage, the Master's work involves rare artifacts and arcane spells. Thou canst look as much as thou dost want for them. But thou shalt never be able to find them! Ha! Ha!\"");
+	case "機密" attend labelFunc0424_02E5:
+	UI_remove_answer("機密");
+	message("「就像任何法師一樣，主人的工作涉及稀有神器和奧秘法術。你可以盡情尋找它們。但你永遠也找不到！哈！哈！」");
 	say();
 	if (!var0002) goto labelFunc0424_02E5;
 	UI_show_npc_face1(0xFFDD, 0x0000);
-	message("\"Vasel, thou art a fool! I will not tolerate thee giving away my precious secrets! Stop it at once!\"");
+	message("「 Vasel ，你這個蠢貨！我不能容忍你洩露我珍貴的秘密！立刻停下來！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Yes, Master... I am sorry... Please do not beat me...!\"");
+	message("「是的，主人……對不起……請不要打我……！」");
 	say();
 labelFunc0424_02E5:
-	case "dangerous" attend labelFunc0424_0308:
-	UI_remove_answer("dangerous");
-	message("\"I am not the first to have worked as the Master's assistant. Nor, I fear, shall I be the last. There have been many of us.\"");
+	case "危險" attend labelFunc0424_0308:
+	UI_remove_answer("危險");
+	message("「我不是第一個擔任主人助手的人。恐怕也不會是最後一個。我們有很多這樣的人。」");
 	say();
-	UI_add_answer(["first assistant", "last assistant", "other assistants"]);
+	UI_add_answer(["第一任助手", "上一任助手", "其他助手"]);
 labelFunc0424_0308:
-	case "first assistant" attend labelFunc0424_033A:
-	UI_remove_answer("first assistant");
-	message("\"I do not know the name of the Master's first assistant. His partial remains are around here somewhere. I do not know where. They are not where I last left them.\"");
+	case "第一任助手" attend labelFunc0424_033A:
+	UI_remove_answer("第一任助手");
+	message("「我不知道主人第一任助手的名字。他的部分遺骸就在這附近某處。我不知道在哪裡。它們不在我最後放置它們的地方。」");
 	say();
 	if (!var0002) goto labelFunc0424_033A;
 	UI_show_npc_face1(0xFFDD, 0x0000);
-	message("\"Hmph!  A lazy lout he was, as well. We shall not miss him!\"");
+	message("「哼！他也是個懶鬼。我們不會想念他的！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0424_033A:
-	case "last assistant" attend labelFunc0424_0389:
-	UI_remove_answer("last assistant");
-	message("\"The last assistant to the Master -- before myself, that is -- was named Boydon. In fact, thou canst say he is still the head assistant. Heh-heh-heh-heh...\"");
+	case "上一任助手" attend labelFunc0424_0389:
+	UI_remove_answer("上一任助手");
+	message("「上一任主人助手——也就是我之前的那位——名叫 Boydon 。事實上，你可以說他仍然是『首要』(head)的助手。嘿嘿嘿嘿……」");
 	say();
 	if (!var0002) goto labelFunc0424_0389;
 	UI_show_npc_face1(0xFFDD, 0x0000);
-	message("\"He was another one who was dead from the neck up!\"");
+	message("「他是另一個脖子以上都死掉的傢伙！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Dost thou not actually mean dead from the neck down?\"");
+	message("「你實際上是指脖子以下都死掉了嗎？」");
 	say();
 	UI_show_npc_face1(0xFFDD, 0x0000);
-	message("\"Yes, very well, Vasel. I shall concede that point.\"");
+	message("「是的，很好， Vasel 。我承認這一點。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0424_0389:
-	case "other assistants" attend labelFunc0424_03BB:
-	UI_remove_answer("other assistants");
-	message("\"Oh, little by little and bit by bit, they pop up now and again. I was never very good with names or faces... or arms or legs, or any of those other parts.\"");
+	case "其他助手" attend labelFunc0424_03BB:
+	UI_remove_answer("其他助手");
+	message("「噢，一點一點地、一塊一塊地，他們時不時會冒出來。我從來都不擅長記名字或臉孔……或是手臂、腿，或其他那些部位。」");
 	say();
 	if (!var0002) goto labelFunc0424_03BB;
 	UI_show_npc_face1(0xFFDD, 0x0000);
-	message("\"Enough with this maudlin waste of time! Back to work with thee, Vasel!\"");
+	message("「夠了，不要再浪費時間在這種多愁善感上了！回去工作， Vasel ！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0424_03BB:
-	case "housekeeping" attend labelFunc0424_03FA:
-	UI_remove_answer("housekeeping");
-	message("\"This place becomes quite... unkempt, and requires constant cleaning. 'Tis a dreadful thing to do! I hate the cleanings! I hate them!\"");
+	case "家事" attend labelFunc0424_03FA:
+	UI_remove_answer("家事");
+	message("「這個地方變得非常……不整潔，需要不斷地清理。這真是一件可怕的事情！我討厭清理！我討厭它們！」");
 	say();
 	if (!var0002) goto labelFunc0424_03ED;
 	UI_show_npc_face1(0xFFDD, 0x0000);
-	message("\"Stop thy whining, Vasel! Back to work with thee!\"");
+	message("「停止你的抱怨， Vasel ！回去工作！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0424_03ED:
-	UI_add_answer(["Why so much cleaning?", "Why hate cleaning?"]);
+	UI_add_answer(["為什麼有這麼多清理工作？", "為什麼討厭清理？"]);
 labelFunc0424_03FA:
-	case "Why so much cleaning?" attend labelFunc0424_040D:
-	UI_remove_answer("Why so much cleaning?");
-	message("\"The experiments are, to say the least, quite messy...\"");
+	case "為什麼有這麼多清理工作？" attend labelFunc0424_040D:
+	UI_remove_answer("為什麼有這麼多清理工作？");
+	message("「這些實驗，退一步說，相當凌亂……」");
 	say();
 labelFunc0424_040D:
-	case "Why hate cleaning?" attend labelFunc0424_0449:
-	UI_remove_answer("Why hate cleaning?");
-	message("\"Because I have to... to touch... all those things! I have to pick them up, with all their little squeaky noises... and squirming!\"");
+	case "為什麼討厭清理？" attend labelFunc0424_0449:
+	UI_remove_answer("為什麼討厭清理？");
+	message("「因為我必須……去觸碰……所有那些東西！我必須把它們撿起來，聽著它們發出那些小小的吱吱聲……然後扭動！」");
 	say();
-	var0006 = Func0992(0xFFFE, "@Things?! Squirming things?! What sort of squirming things?! Not snakes!@", 0x0000, false);
+	var0006 = Func0992(0xFFFE, "@東西？！扭動的東西？！什麼樣的扭動東西？！不是蛇吧！@", 0x0000, false);
 	UI_remove_npc_face1();
 	if (!(var0006 != 0xFE9C)) goto labelFunc0424_0449;
 	UI_set_conversation_slot(0x0000);
-	message("\"Snakes would be pleasant compared to what thou canst find here...\"");
+	message("「與你在這裡能找到的東西相比，蛇就顯得令人愉快多了……」");
 	say();
 labelFunc0424_0449:
-	case "teleportation" attend labelFunc0424_0489:
-	UI_remove_answer("teleportation");
-	message("\"There is a way to travel quickly from one place to another, and its magic is very powerful. The Jawbone of the Serpent enables one to walk through the great Void. But it belongs to the Master.\"");
+	case "傳送" attend labelFunc0424_0489:
+	UI_remove_answer("傳送");
+	message("「有一種方法可以從一個地方快速旅行到另一個地方，它的魔法非常強大。巨蛇顎骨( Jawbone of the Serpent )能讓人穿越巨大的虛空。但它屬於主人。」");
 	say();
 	gflags[0x01C1] = true;
-	var0006 = Func0992(0xFFFE, "@Thou dost mean one must actually touch such a hideous thing?! I simply cannot abide snakes!@", 0x0000, false);
+	var0006 = Func0992(0xFFFE, "@你的意思是人必須實際觸碰如此可怕的東西？！我簡直無法忍受蛇！@", 0x0000, false);
 	UI_remove_npc_face1();
 	if (!(var0006 != 0xFE9C)) goto labelFunc0424_0489;
 	UI_set_conversation_slot(0x0000);
-	message("\"'Tis not so hideous. Sometimes I amuse myself, taking the Teeth out and putting them back into the Jawbone...\"");
+	message("「這沒那麼可怕。有時候我會自娛自樂，把牙齒拔出來再放回顎骨裡……」");
 	say();
 labelFunc0424_0489:
-	case "bye" attend labelFunc0424_04B4:
+	case "告辭" attend labelFunc0424_04B4:
 	UI_remove_npc_face0();
 	UI_remove_npc_face1();
-	Func097F(0xFE9C, "@Good day to thee.@", 0x0000);
-	Func097F(0xFFDC, "@Please do not hit me!@", 0x0003);
+	Func097F(0xFE9C, "@祝你有美好的一天。@", 0x0000);
+	Func097F(0xFFDC, "@請不要打我！@", 0x0003);
 	goto labelFunc0424_04B7;
 labelFunc0424_04B4:
 	goto labelFunc0424_00B7;
@@ -269,5 +269,3 @@ labelFunc0424_04B7:
 labelFunc0424_04B8:
 	return;
 }
-
-

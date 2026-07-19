@@ -44,7 +44,7 @@ labelFunc07F8_0035:
 	if (!((event == 0x000D) && (UI_get_npc_number(item) == 0xFE9C))) goto labelFunc07F8_0116;
 	if (!(!gflags[0x0171])) goto labelFunc07F8_008E;
 	UI_set_schedule_type(0xFE9C, 0x000F);
-	var0001 = UI_execute_usecode_array(0xFFC3, [(byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x27, 0x0003, (byte)0x52, "@Bring in the defendant.@"]);
+	var0001 = UI_execute_usecode_array(0xFFC3, [(byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x27, 0x0003, (byte)0x52, "@帶被告進來。@"]);
 	var0001 = UI_delayed_execute_usecode_array(item, [(byte)0x55, 0x07F8], 0x000F);
 	goto labelFunc07F8_0115;
 labelFunc07F8_008E:
@@ -94,20 +94,20 @@ labelFunc07F8_01EC:
 	if (!((var0001 < 0x0003) || (var0001 > 0x0006))) goto labelFunc07F8_024B;
 	var0001 = Func0992(0x0001, 0x0000, 0x0000, true);
 	if (!(var0001 == 0xFE9C)) goto labelFunc07F8_023E;
-	Func097F(0xFE9C, "@I should come back later...@", 0x0000);
+	Func097F(0xFE9C, "@我應該晚點再來……@", 0x0000);
 	goto labelFunc07F8_024A;
 labelFunc07F8_023E:
-	Func097F(var0001, "@Let's come back later...@", 0x0000);
+	Func097F(var0001, "@我們晚點再來吧……@", 0x0000);
 labelFunc07F8_024A:
 	abort;
 labelFunc07F8_024B:
 	if (!(gflags[0x0172] && (UI_get_timer(0x0000) < 0x000C))) goto labelFunc07F8_0293;
 	var0001 = Func0992(0x0001, 0x0000, 0x0000, true);
 	if (!(var0001 == 0xFE9C)) goto labelFunc07F8_0286;
-	Func097F(0xFE9C, "@It isn't time yet...@", 0x0000);
+	Func097F(0xFE9C, "@時間還沒到……@", 0x0000);
 	goto labelFunc07F8_0292;
 labelFunc07F8_0286:
-	Func097F(var0001, "@We've come too early...@", 0x0000);
+	Func097F(var0001, "@我們來得太早了……@", 0x0000);
 labelFunc07F8_0292:
 	abort;
 labelFunc07F8_0293:
@@ -138,13 +138,13 @@ labelFunc07F8_0332:
 	UI_si_path_run_usecode(0xFE9C, [0x0407, 0x0668, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), 0x07F8, false);
 	Func08C2();
 	if (!gflags[0x0170]) goto labelFunc07F8_03C0;
-	var000C = Func0992(0x0001, "@The trial awaits!@", "@The trial awaits our presence.@", true);
-	Func097F(0xFFD1, "@It's the stranger...@", 0x0016);
-	Func097F(0xFFC8, "@Now the trial begins!@", 0x001C);
-	Func097F(0xFFD2, "@Hush!@", 0x0023);
+	var000C = Func0992(0x0001, "@審判要開始了！@", "@審判在等我們出席。@", true);
+	Func097F(0xFFD1, "@是那個陌生人……@", 0x0016);
+	Func097F(0xFFC8, "@現在審判開始！@", 0x001C);
+	Func097F(0xFFD2, "@噓！@", 0x0023);
 	goto labelFunc07F8_03DF;
 labelFunc07F8_03C0:
-	var0001 = "@Let justice be swift!@";
+	var0001 = "@讓正義迅速降臨吧！@";
 	var000C = Func0992(0x0001, 0x0000, 0x0000, true);
 	Func094F(var000C, var0001);
 labelFunc07F8_03DF:

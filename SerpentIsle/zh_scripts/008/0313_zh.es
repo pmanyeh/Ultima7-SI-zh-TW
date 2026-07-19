@@ -57,7 +57,7 @@ labelFunc0313_00DE:
 	goto labelFunc0313_01FA;
 labelFunc0313_0154:
 	if (!(UI_get_schedule_type(0xFF58) == 0x001F)) goto labelFunc0313_01EF;
-	UI_item_say(0xFF58, "@I shall set the other lever...@");
+	UI_item_say(0xFF58, "@我來設定另一個拉桿……@");
 	UI_set_schedule_type(0xFF58, 0x000F);
 	var000C = UI_find_nearby(0xFE9C, 0x0313, 0x0028, 0x0000);
 	var000D = false;
@@ -76,7 +76,7 @@ labelFunc0313_01AD:
 	abort;
 	goto labelFunc0313_01FA;
 labelFunc0313_01EF:
-	UI_item_say(0xFE9C, "@The lever will not move.@");
+	UI_item_say(0xFE9C, "@拉桿動不了。@");
 	abort;
 labelFunc0313_01FA:
 	goto labelFunc0313_00DE;

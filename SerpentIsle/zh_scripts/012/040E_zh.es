@@ -24,23 +24,23 @@ void Func040E object#(0x40E) ()
 	var var000B;
 	var var000C;
 
-	var0000 = "Mundane";
+	var0000 = "凡夫俗子";
 	if (!gflags[0x00DB]) goto labelFunc040E_0012;
-	var0000 = "Mage";
+	var0000 = "法師";
 labelFunc040E_0012:
 	var0001 = UI_is_pc_female();
 	var0002 = Func0953();
 	var0003 = UI_part_of_day();
 	if (!((var0003 > 0x0001) || (var0003 < 0x0006))) goto labelFunc040E_0041;
-	var0003 = "day";
+	var0003 = "day(日安)";
 	goto labelFunc040E_0047;
 labelFunc040E_0041:
-	var0003 = "evening";
+	var0003 = "evening(晚安))";
 labelFunc040E_0047:
 	if (!(event == 0x0001)) goto labelFunc040E_007D;
-	UI_item_say(0xFE9C, "Hello, there.");
+	UI_item_say(0xFE9C, "你好呀！");
 	0xFFF2->Func07D1();
-	Func097F(0xFFF2, (("@Greetings, " + var0000) + "."), 0x0002);
+	Func097F(0xFFF2, (("@你好，" + var0000) + "！"), 0x0002);
 	UI_set_schedule_type(0xFFF2, 0x0003);
 labelFunc040E_007D:
 	if (!((event == 0x0007) && UI_get_item_flag(item, 0x001D))) goto labelFunc040E_00A0;
@@ -61,7 +61,7 @@ labelFunc040E_00B0:
 labelFunc040E_00F5:
 	var0006 = Func097D(0xFE9B, 0x0001, 0x02A5, 0xFE99, 0x0000);
 	if (!var0006) goto labelFunc040E_0117;
-	UI_add_answer("stockings");
+	UI_add_answer("長襪");
 labelFunc040E_0117:
 	if (!gflags[0x00FD]) goto labelFunc040E_012A;
 	UI_show_npc_face0(0xFFF2, 0x0001);
@@ -70,191 +70,191 @@ labelFunc040E_012A:
 	UI_show_npc_face0(0xFFF2, 0x0000);
 labelFunc040E_0134:
 	if (!(!gflags[0x00DB])) goto labelFunc040E_014C;
-	message("\"I am sorry, but thou hast mistaken me for someone else. Thou couldst not possibly be speaking to me, as I am a Mage... and thou art merely Mundane.\"");
+	message("「抱歉，閣下怕是認錯人了。你絕不可能是在與我說話……因我乃是法師，而你，不過是個凡夫俗子。」");
 	say();
-	Func097F(0xFFF2, "@Honestly!@", 0x0000);
+	Func097F(0xFFF2, "@真是不敢相信！@", 0x0000);
 	abort;
 labelFunc040E_014C:
 	var0007 = UI_get_item_flag(0xFFF2, 0x001C);
 	if (!(var0007 == false)) goto labelFunc040E_0176;
 	UI_set_item_flag(0xFFF2, 0x001C);
-	message("\"I do not believe that we've met. It is so nice to make the acquaintance of a new, young Mage.\"");
+	message("「我想…我們之前應該沒見過，很高興能認識一位年輕的新法師。」");
 	say();
-	message("\"I am Columna, the Green Enchantress.\"");
+	message("「我是 Columna ， 一名『綠女巫』。」");
 	say();
 	goto labelFunc040E_017A;
 labelFunc040E_0176:
-	message("\"Welcome, Mage. I am pleased to see thee again.\"");
+	message("「歡迎，法師。很高興再次見到你。」");
 	say();
 labelFunc040E_017A:
 	if (!(gflags[0x00DF] && (!gflags[0x00EF]))) goto labelFunc040E_018F;
 	UI_add_answer(["Mosh"]);
 labelFunc040E_018F:
 	if (!(gflags[0x0110] && (!gflags[0x028F]))) goto labelFunc040E_01A1;
-	UI_add_answer("apparatus");
+	UI_add_answer("儀器");
 labelFunc040E_01A1:
-	UI_add_answer(["Green Enchantress", "bye"]);
+	UI_add_answer(["綠女巫", "告辭"]);
 labelFunc040E_01AE:
 	converse attend labelFunc040E_044F;
-	case "Green Enchantress" attend labelFunc040E_01DE:
-	UI_remove_answer("Green Enchantress");
-	message("\"My name is Columna. Sorceress, wife of Melino, and I am also the most desired beauty in Moonshade.\"");
+	case "綠女巫" attend labelFunc040E_01DE:
+	UI_remove_answer("綠女巫");
+	message("「我叫 Columna 。是一名女巫，Melino 的妻子，我也是月影城( Moonshade )裡最令人渴望的絕世美女。」");
 	say();
 	if (!gflags[0x00FD]) goto labelFunc040E_01CE;
-	message("\"Is that not a funny joke?! Me, a decrepit hag?! The most desired beauty in all of Moonshade?! Once, in my time... In my time...\"");
+	message("「這難道不是個可笑的笑話嗎？！我，一個衰老的醜婆娘？！月影城( Moonshade )裡最令人渴望的絕世美女？！曾經，在我的時代……在我的時代……」");
 	say();
 labelFunc040E_01CE:
-	UI_add_answer(["sorceress", "Melino", "beauty"]);
+	UI_add_answer(["女巫", "Melino", "美女"]);
 labelFunc040E_01DE:
-	case "sorceress" attend labelFunc040E_0201:
-	UI_remove_answer("sorceress");
-	message("\"Perhaps I could interest thee in a spell. Many strange travellers have come from across the Serpent Isle to learn spells from me. But that, of course, was before the Teleport Storms.\"");
+	case "女巫" attend labelFunc040E_0201:
+	UI_remove_answer("女巫");
+	message("「也許你會對法術感興趣。來自巨蛇之島( Serpent Isle )各地的陌生旅人，來到這裡向我學習法術。但這當然是在傳送風暴發生之前的事了。」");
 	say();
-	UI_add_answer(["buy spells", "strange travellers", "teleport storms"]);
+	UI_add_answer(["購買法術", "陌生旅人", "傳送風暴"]);
 labelFunc040E_0201:
-	case "apparatus" attend labelFunc040E_023A:
-	UI_remove_answer("apparatus");
+	case "儀器" attend labelFunc040E_023A:
+	UI_remove_answer("儀器");
 	var0008 = Func097D(0xFE9B, 0x0001, 0x02ED, 0xFE99, 0x0001);
 	if (!var0008) goto labelFunc040E_0236;
-	message("\"This laboratory equipment must surely belong to Erstam, the Mad Mage! It bears the unmistakably foul stench of one of his experiments.\"");
+	message("「這個實驗室儀器肯定是屬於『瘋狂法師』Erstam 的！它帶有他其中一個實驗那種絕對錯不了的惡臭。」");
 	say();
 	gflags[0x028F] = true;
 	goto labelFunc040E_023A;
 labelFunc040E_0236:
-	message("\"Without being able to actually look at the item thou hast mentioned, I can tell thee nothing.\"");
+	message("「如果不能實際看到你提到的物品，我什麼也無法告訴你。」");
 	say();
 labelFunc040E_023A:
-	case "teleport storms" attend labelFunc040E_024D:
-	UI_remove_answer("teleport storms");
-	message("\"Since these vile telport storms began all sea travel has virtually stopped. Even long range travel over land is considered to be extremely dangerous!\"");
+	case "傳送風暴" attend labelFunc040E_024D:
+	UI_remove_answer("傳送風暴");
+	message("「自從這些邪惡的傳送風暴開始以來，所有的海上旅行幾乎都停止了。甚至長途的陸路旅行也被認為是極度危險的！」");
 	say();
 labelFunc040E_024D:
-	case "buy spells" attend labelFunc040E_0258:
+	case "購買法術" attend labelFunc040E_0258:
 	Func0816();
 labelFunc040E_0258:
-	case "strange travellers" attend labelFunc040E_0278:
-	UI_remove_answer("strange travellers");
-	message("\"Many weeks ago a woman named Gwenno passed through Moonshade, and more recently a sage named Batlin.\"");
+	case "陌生旅人" attend labelFunc040E_0278:
+	UI_remove_answer("陌生旅人");
+	message("「幾週前，一位名叫 Gwenno 的女士經過了月影城( Moonshade )，而最近則是一位名叫『巴特林( Batlin )』的智者。」");
 	say();
-	UI_add_answer(["Gwenno", "Batlin"]);
+	UI_add_answer(["Gwenno", "巴特林"]);
 labelFunc040E_0278:
 	case "Gwenno" attend labelFunc040E_028B:
 	UI_remove_answer("Gwenno");
-	message("\"The one and only time I saw her she was singing a love song about her husband, Iolo. But she made quite an impression on some people while she was here. If thou dost wish to know more of her, then ask around.\"");
+	message("「我唯一一次見到她時，她正在唱一首關於她丈夫 Iolo 的情歌。但她在那裡時給一些人留下了深刻的印象。如果你想了解更多關於她的事，就去四處問問吧。」");
 	say();
 labelFunc040E_028B:
-	case "Batlin" attend labelFunc040E_02AB:
-	UI_remove_answer("Batlin");
-	message("\"He came through town with a strange daemon creature as his companion and servant, and he had some sort of artifact in his possession.\"");
+	case "巴特林" attend labelFunc040E_02AB:
+	UI_remove_answer("巴特林");
+	message("「他穿過城鎮時，帶著一個奇怪的惡魔作為他的同伴和僕人，而且他身上似乎帶著某種神器。」");
 	say();
-	UI_add_answer(["daemon", "artifact"]);
+	UI_add_answer(["惡魔", "神器"]);
 labelFunc040E_02AB:
-	case "daemon" attend labelFunc040E_02BE:
-	UI_remove_answer("daemon");
-	message("\"'Twas male, and had bright red skin. But there were no horns on its head -- I swear. I believe its name was Palos.\"");
+	case "惡魔" attend labelFunc040E_02BE:
+	UI_remove_answer("惡魔");
+	message("「他是男的，有著鮮紅色的皮膚。但我發誓，他頭上沒有角。我相信他的名字叫 Palos 。」");
 	say();
 labelFunc040E_02BE:
-	case "artifact" attend labelFunc040E_02D1:
-	UI_remove_answer("artifact");
-	message("\"I personally did not see it, but I know that Gustacio did.\"");
+	case "神器" attend labelFunc040E_02D1:
+	UI_remove_answer("神器");
+	message("「我個人沒見過，但我知道 Gustacio 有。」");
 	say();
 labelFunc040E_02D1:
 	case "Melino" attend labelFunc040E_02F1:
 	UI_remove_answer("Melino");
-	message("\"I shall have thee know that mine husband is most influential with the Council of Mages. And is perfectly capable of satisfying my needs in nearly all other ways.\"");
+	message("「我要讓你知道，我的丈夫在法師議會中非常有影響力。並且在幾乎所有其他方面都能完全滿足我的需求。」");
 	say();
-	UI_add_answer(["influential", "satisfying needs"]);
+	UI_add_answer(["影響力", "滿足需求"]);
 labelFunc040E_02F1:
-	case "influential" attend labelFunc040E_0304:
-	UI_remove_answer("influential");
-	message("\"He is a close and trusted advisor to Filbercio, the MageLord of Moonshade and senior member of the Council.\"");
+	case "影響力" attend labelFunc040E_0304:
+	UI_remove_answer("影響力");
+	message("「他是月影城( Moonshade )領主法師暨議會資深成員 Filbercio 關係密切且值得信賴的顧問。」");
 	say();
 labelFunc040E_0304:
-	case "satisfying needs" attend labelFunc040E_0317:
-	UI_remove_answer("satisfying needs");
-	message("\"Oh, worry thyself not. I am not one to allow my needs to go unsatisfied.\"");
+	case "滿足需求" attend labelFunc040E_0317:
+	UI_remove_answer("滿足需求");
+	message("「噢，你別擔心。我可不會讓我的需求得不到滿足。」");
 	say();
 labelFunc040E_0317:
-	case "beauty" attend labelFunc040E_0337:
-	UI_remove_answer("beauty");
+	case "美女" attend labelFunc040E_0337:
+	UI_remove_answer("美女");
 	if (!gflags[0x00FD]) goto labelFunc040E_0333;
-	message("\"Without my precious comb, all of my beauty hath long faded.\"");
+	message("「沒有了我珍貴的梳子，我所有的美貌早就褪去了。」");
 	say();
 	goto labelFunc040E_0337;
 labelFunc040E_0333:
-	message("\"Yes, in truth it hath always been so, and shall always be. My natural good looks must be the result of my good breeding.\"");
+	message("「是的，事實上一直如此，也將永遠如此。我天生的美貌一定是我良好教養的結果。」");
 	say();
 labelFunc040E_0337:
 	case "Stefano" attend labelFunc040E_035B:
 	UI_remove_answer("Stefano");
-	message("\"'Twas Stefano who stole my stockings from Torrissio's house in an attempt to blackmail us over our affair.\"");
+	message("「就是 Stefano 從 Torrissio 家裡偷了我的長襪，企圖用我們的風流韻事來勒索我們。」");
 	say();
 	if (!gflags[0x0239]) goto labelFunc040E_0357;
-	message("\"Now that he is returned to Moonshade, we have already seen to it that he shall die for what he tried to do to us.\"");
+	message("「既然他已經回到了月影城( Moonshade )，我們一定會確保他為他企圖對我們做的事付出死刑的代價。」");
 	say();
 	goto labelFunc040E_035B;
 labelFunc040E_0357:
-	message("\"My sincerest wish is that he rot slowly in Filbercio's mountain prison.\"");
+	message("「我最真摯的願望就是他在 Filbercio 的山中監獄裡慢慢腐爛。」");
 	say();
 labelFunc040E_035B:
-	case "stockings" attend labelFunc040E_03F9:
-	UI_remove_answer("stockings");
+	case "長襪" attend labelFunc040E_03F9:
+	UI_remove_answer("長襪");
 	if (!var0001) goto labelFunc040E_03B9;
-	message("\"Those stockings thou dost have in thy possession are rightfully my property. They can be used by people to humiliate me and destroy my marriage. As one woman to another, I appeal to thee for understanding. If thou dost return them to me I will give to thee a spell from my personal spellbook. Wilt thou please return them to me?\"");
+	message("「你手上的那些長襪理當是我的財產。它們會被用來羞辱我並破壞我的婚姻。身為女人，我懇求妳的諒解。如果你能把長襪還給我，我會從我的私人法術書中給你一個法術。妳願意把它們還給我嗎？」");
 	say();
 	var0009 = Func0955();
 	if (!var0009) goto labelFunc040E_03B2;
 	var000A = UI_remove_party_items(0x0001, 0x02A5, 0xFE99, 0x0000, true);
-	message("\"Ha! There was thy spell, foolish woman! Now the stockings are destroyed and they shall trouble me no more!\"");
+	message("「哈！這是妳的法術，愚蠢的女人！現在長襪已經被毀了，它們再也不會困擾我了！」");
 	say();
-	Func097F(0xFFF2, "@Fool!@", 0x0000);
+	Func097F(0xFFF2, "@蠢貨！@", 0x0000);
 	UI_set_schedule_type(0xFFF2, 0x000C);
 	abort;
 	goto labelFunc040E_03B6;
 labelFunc040E_03B2:
-	message("\"Please, I beg of thee to reconsider.\"");
+	message("「拜託，我求妳再考慮一下。」");
 	say();
 labelFunc040E_03B6:
 	goto labelFunc040E_03F9;
 labelFunc040E_03B9:
-	message("\"Thou hast my stockings in thy possession. They are my intimate apparel and they do not belong in thy backpack. They belong on my creamy thighs. I am a woman and thou art a man and thou dost have me at an advantage. If thou wouldst but return them, I shall be happy to wear them for thee, in a night of passion that thou shalt remember all of thy days. May I have them now?\"");
+	message("「你手上有我的長襪。它們是我的貼身衣物，不該待在你的背包裡。它們屬於我白皙的大腿上。我是個女人，而你是個男人，你現在佔據了優勢。只要你願意把它們還給我，我會很樂意為你穿上它們，共度一個讓你終生難忘的激情之夜。我現在可以拿回它們了嗎？」");
 	say();
 	var000B = Func0955();
 	if (!var000B) goto labelFunc040E_03F5;
 	var000C = UI_remove_party_items(0x0001, 0x02A5, 0xFE99, 0x0000, true);
 	if (!gflags[0x00DB]) goto labelFunc040E_03EA;
-	message("\"Ha! Dost thou think that because thou art now a Mage, that thou art equal to me? I reject thine advances, mage.\"");
+	message("「哈！你以為你現在是個法師，就能和我平起平坐了嗎？我拒絕你的追求，法師。」");
 	say();
 	goto labelFunc040E_03EE;
 labelFunc040E_03EA:
-	message("\"Ha! Thou dost think I would squander my lust on the likes of thee?! A Mundane!!! I laugh at thee.\"");
+	message("「哈！你以為我會把我的情慾浪費在你這種人身上？！一個凡夫俗子！！！真是笑死我了。」");
 	say();
 labelFunc040E_03EE:
-	message("\"The stockings have now been destroyed by my magics. Thou dost have no hold over me, nor shall anyone else!\"");
+	message("「那些長襪現在已經被我的魔法摧毀了。你再也無法威脅我，其他人也一樣！」");
 	say();
 	goto labelFunc040E_03F9;
 labelFunc040E_03F5:
-	message("\"Please, I beg of thee to reconsider.\"");
+	message("「拜託，我求你再考慮一下。」");
 	say();
 labelFunc040E_03F9:
 	case "Mosh" attend labelFunc040E_0422:
 	UI_remove_answer("Mosh");
-	message("\"So thou hast been spending thy time with beggars and thieves? This does not speak well of thy character, ");
+	message("「所以你一直和乞丐與小偷混在一起？這對你的人品可不是什麼好兆頭，");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
-	message("\"No doubt she hath defamed me. What tales she tells! Of course, she is merely jealous of my position in society, and of my powers.\"");
+	message("「毫無疑問她一定誹謗了我。她都在說些什麼鬼話！當然，她只是嫉妒我在社會上的地位，以及我的力量。」");
 	say();
-	message("\"Let me say this plainly. Mosh lies. She hath ruined herself with cruel indulgences, and now she is half mad.\"");
+	message("「讓我直說吧。Mosh 在說謊。她因殘酷的放縱而毀了自己，現在她已經半瘋了。」");
 	say();
-	message("\"Why, she sleeps with her rats! I ask thee, is this the action of a respectable mage?\"");
+	message("「哎呀，她竟然和她的老鼠睡在一起！我問你，這是一個受人尊敬的法師會做出的行為嗎？」");
 	say();
 	gflags[0x00EE] = true;
 labelFunc040E_0422:
-	case "bye" attend labelFunc040E_044C:
+	case "告辭" attend labelFunc040E_044C:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@I must be going...@", 0x0000);
-	Func097F(0xFFF2, "@Farewell!@", 0x0002);
+	Func097F(0xFE9C, "@我得走了……@", 0x0000);
+	Func097F(0xFFF2, "@告辭！@", 0x0002);
 	Func08FF();
 	goto labelFunc040E_044F;
 labelFunc040E_044C:

@@ -78,7 +78,7 @@ labelFunc010E_0194:
 	UI_si_path_run_usecode(0xFE9C, var0005, 0x000A, item, 0x07F6, true);
 	UI_play_sound_effect(0x0039);
 	var0001 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x07F6], (var0004 + 0x0002));
-	Func097F(0xFE9C, "@Can't stop myself...@", 0x0002);
+	Func097F(0xFE9C, "@我無法自控……@", 0x0002);
 labelFunc010E_0229:
 	return;
 }

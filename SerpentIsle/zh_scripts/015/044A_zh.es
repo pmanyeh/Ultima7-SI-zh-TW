@@ -100,29 +100,29 @@ labelFunc044A_0172:
 	UI_clear_item_say(var000D);
 	var000E = UI_get_random(0x0006);
 	if (!(var000E == 0x0001)) goto labelFunc044A_01BB;
-	UI_item_say(0xFFB6, "@Work harder!@");
-	Func097F(var000D, "@Yes, Shazzana.@", 0x0003);
+	UI_item_say(0xFFB6, "@更努力工作！@");
+	Func097F(var000D, "@是的， Shazzana 。@", 0x0003);
 labelFunc044A_01BB:
 	if (!(var000E == 0x0002)) goto labelFunc044A_01DB;
-	UI_item_say(0xFFB6, "@Do not rest!@");
-	Func097F(var000D, "@Sorry, madam.@", 0x0003);
+	UI_item_say(0xFFB6, "@不要休息！@");
+	Func097F(var000D, "@抱歉，夫人。@", 0x0003);
 labelFunc044A_01DB:
 	if (!(var000E == 0x0003)) goto labelFunc044A_01FB;
-	UI_item_say(var000D, "@Slave driver...@");
-	Func097F(0xFFB6, "@I heard that!@", 0x0003);
+	UI_item_say(var000D, "@奴隸主……@");
+	Func097F(0xFFB6, "@我聽到了！@", 0x0003);
 labelFunc044A_01FB:
 	if (!(var000E == 0x0004)) goto labelFunc044A_021B;
-	UI_item_say(0xFFB6, "@With vigor!@");
-	Func097F(var000D, "@Yes, Shazzana.@", 0x0003);
+	UI_item_say(0xFFB6, "@充滿活力地！@");
+	Func097F(var000D, "@是的， Shazzana 。@", 0x0003);
 labelFunc044A_021B:
 	if (!(var000E == 0x0005)) goto labelFunc044A_023B;
-	UI_item_say(0xFFB6, "@Do not slow!@");
-	Func097F(var000D, "@Yes, Shazzana.@", 0x0003);
+	UI_item_say(0xFFB6, "@別慢下來！@");
+	Func097F(var000D, "@是的， Shazzana 。@", 0x0003);
 labelFunc044A_023B:
 	if (!(var000E == 0x0006)) goto labelFunc044A_0267;
-	UI_item_say(0xFFB6, "@Very good!@");
-	Func097F(var000D, "@Thanks.@", 0x0003);
-	Func097F(0xFFB6, "@Keep working.@", 0x0006);
+	UI_item_say(0xFFB6, "@非常好！@");
+	Func097F(var000D, "@謝謝。@", 0x0003);
+	Func097F(0xFFB6, "@繼續工作。@", 0x0006);
 labelFunc044A_0267:
 	goto labelFunc044A_03B5;
 labelFunc044A_026A:
@@ -146,37 +146,37 @@ labelFunc044A_02B8:
 	UI_clear_item_say(var000D);
 	var000E = UI_get_random(0x0006);
 	if (!(var000E == 0x0001)) goto labelFunc044A_0301;
-	UI_item_say(0xFFB6, "@Do it my way!@");
-	Func097F(var000D, "@Don't dictate to me!@", 0x0003);
+	UI_item_say(0xFFB6, "@照我的方式做！@");
+	Func097F(var000D, "@別對我發號施令！@", 0x0003);
 labelFunc044A_0301:
 	if (!(var000E == 0x0002)) goto labelFunc044A_0315;
-	UI_item_say(0xFFB6, "@We should not argue.@");
+	UI_item_say(0xFFB6, "@我們不該爭吵。@");
 labelFunc044A_0315:
 	if (!(var000E == 0x0003)) goto labelFunc044A_0335;
-	UI_item_say(var000D, "@Exterminate the Goblins!@");
-	Func097F(0xFFB6, "@I agree.@", 0x0003);
+	UI_item_say(var000D, "@消滅哥布林！@");
+	Func097F(0xFFB6, "@我同意。@", 0x0003);
 labelFunc044A_0335:
 	if (!(var000E == 0x0004)) goto labelFunc044A_0375;
 	if (!(!gflags[0x00B4])) goto labelFunc044A_035F;
-	UI_item_say(0xFFB6, "@The crops sicken.@");
-	Func097F(var000D, "@Is the world ending?@", 0x0003);
+	UI_item_say(0xFFB6, "@農作物病了。@");
+	Func097F(var000D, "@世界末日到了嗎？@", 0x0003);
 	goto labelFunc044A_0375;
 labelFunc044A_035F:
-	UI_item_say(0xFFB6, "@Money is missing.@");
-	Func097F(var000D, "@Must find the thief.@", 0x0003);
+	UI_item_say(0xFFB6, "@錢不見了。@");
+	Func097F(var000D, "@必須找到小偷。@", 0x0003);
 labelFunc044A_0375:
 	if (!(var000E == 0x0005)) goto labelFunc044A_0395;
-	UI_item_say(var000D, "@Kill Marsten!@");
-	Func097F(0xFFB6, "@But how...?", 0x0002);
+	UI_item_say(var000D, "@殺了 Marsten ！@");
+	Func097F(0xFFB6, "@但是怎麼做……？", 0x0002);
 labelFunc044A_0395:
 	if (!(var000E == 0x0006)) goto labelFunc044A_03B5;
-	UI_item_say(var000D, "@As I was saying...@");
-	Func097F(0xFFB6, "@Be silent!@", 0x0003);
+	UI_item_say(var000D, "@正如我剛才說的……@");
+	Func097F(0xFFB6, "@安靜！@", 0x0003);
 labelFunc044A_03B5:
 	if (!(event == 0x0001)) goto labelFunc044A_03E3;
-	UI_item_say(0xFE9C, "@Hail, Knight!@");
+	UI_item_say(0xFE9C, "@你好，騎士！@");
 	0xFFB6->Func07D1();
-	Func097F(0xFFB6, "@Yes?@", 0x0002);
+	Func097F(0xFFB6, "@什麼事？@", 0x0002);
 	UI_set_schedule_type(0xFFB6, 0x0003);
 labelFunc044A_03E3:
 	if (!(event == 0x0009)) goto labelFunc044A_06CA;
@@ -184,18 +184,18 @@ labelFunc044A_03E3:
 	UI_clear_item_say(0xFFB6);
 	UI_show_npc_face0(0xFFB6, 0x0000);
 	if (!(!var0001)) goto labelFunc044A_0422;
-	message("\"We have not had many strangers in our town lately. Let me introduce myself. I am Shazzana, a Knight of the Leopards.\"");
+	message("「我們鎮上最近沒什麼陌生人。讓我自我介紹一下。我是 Shazzana ，獵豹( Leopards )的一名騎士。」");
 	say();
-	UI_add_answer("Leopards");
+	UI_add_answer("獵豹");
 	UI_set_item_flag(0xFFB6, 0x001C);
 	goto labelFunc044A_0426;
 labelFunc044A_0422:
-	message("\"I am not one to waste time with words. What is thy business with me, Knight?\"");
+	message("「我不是個會把時間浪費在廢話上的人。你找我有什麼事，騎士？」");
 	say();
 labelFunc044A_0426:
-	UI_add_answer(["duties"]);
+	UI_add_answer(["職責"]);
 	if (!gflags[0x00A8]) goto labelFunc044A_043D;
-	UI_add_answer("mysterious sailor");
+	UI_add_answer("神秘的水手");
 labelFunc044A_043D:
 	if (!gflags[0x00CC]) goto labelFunc044A_044A;
 	UI_add_answer("Pomdirgun");
@@ -203,162 +203,162 @@ labelFunc044A_044A:
 	if (!gflags[0x0044]) goto labelFunc044A_0457;
 	UI_add_answer("Simon");
 labelFunc044A_0457:
-	UI_add_answer("bye");
+	UI_add_answer("告辭");
 labelFunc044A_045E:
 	converse attend labelFunc044A_06C9;
 	case "Pomdirgun" attend labelFunc044A_0474:
 	UI_remove_answer("Pomdirgun");
-	message("\"Thou hast killed the Goblin King Pomdirgun. How wonderful!\"");
+	message("「你殺了哥布林國王 Pomdirgun 。太棒了！」");
 	say();
 labelFunc044A_0474:
 	case "Simon" attend labelFunc044A_0487:
 	UI_remove_answer("Simon");
-	message("\"I understand thou didst determine that the traitor in our town was Simon. I am certain thou didst deal properly with him.\"");
+	message("「我了解是你查出我們鎮上的叛徒是 Simon 。我確定你已經妥善處理了他。」");
 	say();
 labelFunc044A_0487:
-	case "mysterious sailor" attend labelFunc044A_049E:
-	UI_remove_answer("mysterious sailor");
-	message("\"The mysterious sailor thou dost speak of was a pirate by the name of Deadeye. We engaged in knightly combat on the List Field and in a more esoteric form of hand to hand combat elsewhere. He was most... diverting.\"");
+	case "神秘的水手" attend labelFunc044A_049E:
+	UI_remove_answer("神秘的水手");
+	message("「你說的那個神秘水手是一個名叫 Deadeye 的海盜。我們在比武場進行了騎士般的戰鬥，並在其他地方進行了更深奧的肉搏戰。他非常……有趣。」");
 	say();
-	message("\"There was a very strange man who came into town not long ago. He said his name was Batlin. He wanted me to work for him.  But I felt I could not trust him, so I refused.\"");
+	message("「不久前有一個非常奇怪的男人來到鎮上。他說他叫巴特林。他要我為他工作。但我感覺我不能信任他，所以我拒絕了。」");
 	say();
 labelFunc044A_049E:
-	case "duties" attend labelFunc044A_04E1:
-	UI_remove_answer("duties");
+	case "職責" attend labelFunc044A_04E1:
+	UI_remove_answer("職責");
 	if (!(!gflags[0x0048])) goto labelFunc044A_04CC;
-	message("\"What business is this of thine? If thou dost wish to train with me, then meet me at the List Field at noon.\"");
+	message("「這關你什麼事？如果你想和我一起訓練，中午在比武場見。」");
 	say();
-	message("\"If not, then be on thy way.\"");
+	message("「如果不想，那就走你的路。」");
 	say();
-	Func097F(0xFFB6, "@At noon...@", 0x0000);
+	Func097F(0xFFB6, "@在中午……@", 0x0000);
 	abort;
 	goto labelFunc044A_04E1;
 labelFunc044A_04CC:
-	message("\"I am one of the best fighters in this town. This is why all of the Knights desire to be trained by me.\"");
+	message("「我是這個鎮上最好的戰士之一。這就是為什麼所有的騎士都渴望接受我的訓練。」");
 	say();
-	message("\"I fight harder than any man or woman alive. I commonly win, but when I do not, the victor knows that they were in a terrific fight.\"");
+	message("「我比任何活著的男人或女人都更努力地戰鬥。我通常會贏，但當我沒有贏時，勝利者知道他們經歷了一場極其激烈的戰鬥。」");
 	say();
-	UI_add_answer(["best", "train"]);
+	UI_add_answer(["最好的", "訓練"]);
 labelFunc044A_04E1:
-	case "best" attend labelFunc044A_052F:
-	UI_remove_answer("best");
-	message("\"There are few who can match me! The secret is to be in control. A Knight who doth lose his temper in battle is a defeated Knight.\"");
+	case "最好的" attend labelFunc044A_052F:
+	UI_remove_answer("最好的");
+	message("「很少有人能與我匹敵！秘訣在於控制自己。一個在戰鬥中發脾氣的騎士就是一個被擊敗的騎士。」");
 	say();
-	message("\"The Bears say that strength is the key. Well, I can strike before those over-muscled brutes can react!\"");
+	message("「巨熊說力量是關鍵。嗯，我可以在那些肌肉發達的野獸反應過來之前進行打擊！」");
 	say();
-	message("\"The Wolves pride themselves on cunning. Fools! They cannot think past my blinding sword strikes.\"");
+	message("「野狼為他們的狡猾感到自豪。傻瓜！在我令人眼花撩亂的劍擊下，他們根本無法思考。」");
 	say();
-	message("\"Since thou hast questioned my skill, I challenge thee to a match. Dost thou accept?\"");
+	message("「既然你質疑我的技巧，我向你發起比賽的挑戰。你接受嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc044A_0511;
-	message("\"Meet me upon the List Field at noon, and I shall teach thee to appreciate my skill with a blade.\"");
+	message("「中午在比武場見，我會教你欣賞我用劍的技巧。」");
 	say();
-	message("\"If thou dost not show, then I shall know thee for the coward thou art.\"");
+	message("「如果你不出現，我就會知道你是個懦夫。」");
 	say();
 	goto labelFunc044A_0522;
 labelFunc044A_0511:
-	message("\"Thou art not worthy of thy Knighthood...\"");
+	message("「你不配擁有你的騎士頭銜……」");
 	say();
-	Func097F(0xFFB6, "@Pah!@", 0x0000);
+	Func097F(0xFFB6, "@呸！@", 0x0000);
 	abort;
 labelFunc044A_0522:
-	UI_add_answer(["Bears", "Wolves"]);
+	UI_add_answer(["巨熊", "野狼"]);
 labelFunc044A_052F:
-	case "train" attend labelFunc044A_05CF:
-	UI_remove_answer("train");
-	message("\"I teach the art of combat. My technique is based on swiftness and accuracy of movement. If thou wert to be at the List Field at noon, I could spar with thee.\"");
+	case "訓練" attend labelFunc044A_05CF:
+	UI_remove_answer("訓練");
+	message("「我教導戰鬥的藝術。我的技巧是基於動作的敏捷和準確性。如果你中午在比武場，我可以和你對練。」");
 	say();
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0001)) goto labelFunc044A_05CF;
-	message("\"I am certain I could also teach thy friend a thing or two...\"");
+	message("「我確信我也能教你的朋友一兩手……」");
 	say();
 	var0012 = UI_get_item_flag(0xFFFD, 0x0006);
 	var0013 = UI_get_item_flag(0xFFFE, 0x0006);
 	var0014 = UI_get_item_flag(0xFFFF, 0x0006);
 	if (!var0012) goto labelFunc044A_0594;
 	UI_show_npc_face1(0xFFFD, 0x0000);
-	message("\"Art thou referring to me?\"");
+	message("「你是在說我嗎？」");
 	say();
 	UI_remove_npc_face1();
 labelFunc044A_0594:
 	if (!var0014) goto labelFunc044A_05AC;
 	UI_show_npc_face1(0xFFFF, 0x0000);
-	message("\"I believe she was referring to thee!\"");
+	message("「我相信她是在說你！」");
 	say();
 	UI_remove_npc_face1();
 labelFunc044A_05AC:
 	if (!var0013) goto labelFunc044A_05C4;
 	UI_show_npc_face1(0xFFFE, 0x0000);
-	message("\"I believe it was thee she was referring to, Avatar.\"");
+	message("「我相信她指的是你，聖者。」");
 	say();
 	UI_remove_npc_face1();
 labelFunc044A_05C4:
 	UI_set_conversation_slot(0x0000);
-	message("\"I can train anyone.\"");
+	message("「我可以訓練任何人。」");
 	say();
 labelFunc044A_05CF:
-	case "Leopards" attend labelFunc044A_05E2:
-	UI_remove_answer("Leopards");
-	message("\"The Wolves and the Bears are full of dreams. We Leopards are realistic. We live one day at a time.\"");
+	case "獵豹" attend labelFunc044A_05E2:
+	UI_remove_answer("獵豹");
+	message("「野狼和巨熊充滿了夢想。我們獵豹是現實的。我們只活在當下。」");
 	say();
 labelFunc044A_05E2:
-	case "Wolves" attend labelFunc044A_05F9:
-	UI_remove_answer("Wolves");
-	message("\"The Wolves have this grand scheme for uniting the Three Cities into a commonwealth, united by trade routes.\"");
+	case "野狼" attend labelFunc044A_05F9:
+	UI_remove_answer("野狼");
+	message("「野狼有一個宏偉的計畫，要透過貿易路線將三座城市聯合為一個聯邦。」");
 	say();
-	message("\"How can this be, when the Goblins threaten our very existence? The Wolves are simply not practical.\"");
+	message("「當哥布林威脅到我們生存的時候，這怎麼可能？野狼根本就不切實際。」");
 	say();
 labelFunc044A_05F9:
-	case "Bears" attend labelFunc044A_061D:
-	UI_remove_answer("Bears");
-	message("\"The Bears believe in a strong defense, I will give them that! But we cannot hide behind Monitor's walls -- we must seek out our enemies.\"");
+	case "巨熊" attend labelFunc044A_061D:
+	UI_remove_answer("巨熊");
+	message("「巨熊相信強大的防禦，這點我同意！但我們不能躲在蒙利多城的城牆後面——我們必須主動尋找我們的敵人。」");
 	say();
-	message("\"Our highest priority should be to raid that hidden Goblin camp, and destroy that evil race!\"");
+	message("「我們的首要任務應該是突襲那個隱藏的哥布林營地，並摧毀那個邪惡的種族！」");
 	say();
-	UI_add_answer(["raid", "destroy"]);
+	UI_add_answer(["突襲", "摧毀"]);
 labelFunc044A_061D:
-	case "raid" attend labelFunc044A_0645:
-	UI_remove_answer("raid");
-	message("\"We must take back the Helm of Monitor, and avenge the death of Astrid!\"");
+	case "突襲" attend labelFunc044A_0645:
+	UI_remove_answer("突襲");
+	message("「我們必須奪回蒙利多頭盔，並為 Astrid 的死報仇！」");
 	say();
-	message("\"War is the ultimate test for any Knight. This is how one doth test one's inner strength.\"");
+	message("「戰爭對任何騎士來說都是終極考驗。這就是一個人考驗內在力量的方式。」");
 	say();
-	message("\"War is both holy and obscene, beautiful and yet hideous. I love it. I am very good at it.\"");
+	message("「戰爭既神聖又淫穢，美麗卻又醜陋。我喜歡它。我非常擅長。」");
 	say();
-	UI_add_answer(["Astrid", "Helm of Monitor"]);
+	UI_add_answer(["Astrid", "蒙利多頭盔"]);
 labelFunc044A_0645:
 	case "Astrid" attend labelFunc044A_065C:
 	UI_remove_answer("Astrid");
-	message("\"Astrid was a magnificent Knight Champion! Even though she was a Bear and I a Leopard, we were boon companions.\"");
+	message("「Astrid 是一位出色的冠軍騎士！儘管她是一隻巨熊而我是一隻獵豹，我們還是好夥伴。」");
 	say();
-	message("\"It takes a rare individual to lead warriors in combat. Astrid united us against the Goblins. Now I fear the Bears and Wolves shall squabble again...\"");
+	message("「需要一個罕見的人來領導戰士戰鬥。 Astrid 團結我們對抗哥布林。現在我擔心巨熊和野狼會再次爭吵……」");
 	say();
 labelFunc044A_065C:
-	case "Helm of Monitor" attend labelFunc044A_0684:
-	UI_remove_answer("Helm of Monitor");
-	message("\"The Helm was originally taken from the old goblin king, Gurnordir, in the days of the Goblin Horde.\"");
+	case "蒙利多頭盔" attend labelFunc044A_0684:
+	UI_remove_answer("蒙利多頭盔");
+	message("「在哥布林部落( Goblin Horde )的時代，頭盔原本是從老哥布林國王 Gurnordir 那裡奪來的。」");
 	say();
-	message("\"It is an ancient and powerful talisman, endowed with the Principle of Courage. Thus, it can only be worn by the bravest of warriors.\"");
+	message("「它是一個古老而強大的護身符，被賦予了勇氣法則。因此，它只能被最勇敢的戰士佩戴。」");
 	say();
 	if (!gflags[0x002C]) goto labelFunc044A_0680;
-	message("\"Now thou art the Champion Knight of Monitor. It was an honor I had wished for myself. But I must admit thou dost wear it well.\"");
+	message("「現在你是蒙利多城的冠軍騎士了。那本是我希望為自己爭取的榮譽。但我必須承認你戴著它很好看。」");
 	say();
 	goto labelFunc044A_0684;
 labelFunc044A_0680:
-	message("\"Astrid was such a person. When I become the Knight Champion and the Helm is recovered, I shall wear it in Astrid's memory.\"");
+	message("「Astrid 就是這樣的一個人。當我成為冠軍騎士並找回頭盔時，我會戴上它來紀念 Astrid 。」");
 	say();
 labelFunc044A_0684:
-	case "destroy" attend labelFunc044A_069B:
-	UI_remove_answer("destroy");
-	message("\"If the Goblins refuse to concede that this territory belongs to us, then what else shall we do? Sue for peace?!\"");
+	case "摧毀" attend labelFunc044A_069B:
+	UI_remove_answer("摧毀");
+	message("「如果哥布林拒絕承認這片領土屬於我們，那我們還能做什麼？求和？！」");
 	say();
-	message("\"We must wage war against them until they are all dead. This is the nature of the world. So be it.\"");
+	message("「我們必須對他們發動戰爭，直到他們全部死光。這就是這個世界的本質。就這樣吧。」");
 	say();
 labelFunc044A_069B:
-	case "bye" attend labelFunc044A_06C6:
+	case "告辭" attend labelFunc044A_06C6:
 	UI_remove_npc_face0();
 	UI_remove_npc_face1();
-	Func097F(0xFE9C, "Good day to thee.", 0x0000);
-	Func097F(0xFFB6, "And to thee.", 0x0002);
+	Func097F(0xFE9C, "祝你有美好的一天。", 0x0000);
+	Func097F(0xFFB6, "你也是。", 0x0002);
 	goto labelFunc044A_06C9;
 labelFunc044A_06C6:
 	goto labelFunc044A_045E;

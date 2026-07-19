@@ -42,33 +42,31 @@ labelFunc0425_00F9:
 	if (!((event == 0x0001) || ((event == 0x0000) && (UI_get_schedule_type(item) == 0x0009)))) goto labelFunc0425_01AF;
 	var0005 = UI_get_random(0x0006);
 	if (!(var0005 == 0x0001)) goto labelFunc0425_012F;
-	UI_item_say(0xFFDB, "@Awk!@");
+	UI_item_say(0xFFDB, "@嘎！@");
 labelFunc0425_012F:
 	if (!(var0005 == 0x0002)) goto labelFunc0425_0143;
-	UI_item_say(0xFFDB, "@See nor hear. See nor hear. Squawk!@");
+	UI_item_say(0xFFDB, "@不看不聽。不看不聽。嘎！@");
 labelFunc0425_0143:
 	if (!(var0005 == 0x0003)) goto labelFunc0425_0157;
-	UI_item_say(0xFFDB, "@Cracker!@");
+	UI_item_say(0xFFDB, "@餅乾！@");
 labelFunc0425_0157:
 	if (!(var0005 == 0x0004)) goto labelFunc0425_016B;
-	UI_item_say(0xFFDB, "@Walla Walla!@");
+	UI_item_say(0xFFDB, "@哇啦哇啦！@");
 labelFunc0425_016B:
 	if (!(var0005 == 0x0005)) goto labelFunc0425_019B;
 	if (!Func0942(0xFFD5)) goto labelFunc0425_018B;
-	UI_item_say(0xFFD5, "@Leave the bird alone!@");
+	UI_item_say(0xFFD5, "@別碰那隻鳥！@");
 	goto labelFunc0425_019B;
 labelFunc0425_018B:
-	var0006 = Func0992(0x0001, "@Cute bird.@", 0x0000, true);
+	var0006 = Func0992(0x0001, "@可愛的鳥。@", 0x0000, true);
 labelFunc0425_019B:
 	if (!(var0005 == 0x0006)) goto labelFunc0425_01AF;
-	UI_item_say(0xFFDB, "@Squawk!@");
+	UI_item_say(0xFFDB, "@嘎！@");
 labelFunc0425_01AF:
 	if (!(event == 0x0007)) goto labelFunc0425_01D7;
-	Func097F(0xFFDB, "@Skreee!@", 0x0000);
+	Func097F(0xFFDB, "@嘎啊！@", 0x0000);
 	UI_set_oppressor(0xFE9C, 0xFFDB);
 	UI_set_attack_mode(0xFFDB, 0x0007);
 labelFunc0425_01D7:
 	return;
 }
-
-

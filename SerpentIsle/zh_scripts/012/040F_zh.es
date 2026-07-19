@@ -50,363 +50,363 @@ labelFunc040F_0094:
 	UI_show_npc_face0(0xFFF1, 0x0000);
 	var0006 = UI_get_item_flag(0xFFF1, 0x001C);
 	if (!(var0006 == false)) goto labelFunc040F_00E1;
-	message("\"I am Ducio, the Master Artisan.\"");
+	message("「我是工匠大師 Ducio 。」");
 	say();
 	UI_set_item_flag(0xFFF1, 0x001C);
-	UI_add_answer("Master Artisan");
+	UI_add_answer("工匠大師");
 	goto labelFunc040F_0100;
 labelFunc040F_00E1:
 	if (!gflags[0x0004]) goto labelFunc040F_00F5;
-	message("\"Thou art alive! Thou hast survived the holocaust! So many are dead...\"");
+	message("「你還活著！你在那場大災難中活下來了！好多人都死了……」");
 	say();
-	UI_add_answer("holocaust");
+	UI_add_answer("大災難");
 	goto labelFunc040F_0100;
 labelFunc040F_00F5:
-	message("\"Welcome back...\"");
+	message("「歡迎回來……」");
 	say();
-	UI_add_answer("Master Artisan");
+	UI_add_answer("工匠大師");
 labelFunc040F_0100:
 	if (!var0005) goto labelFunc040F_0114;
-	message("\"What is thy business?\"");
+	message("「你的來意是什麼？」");
 	say();
-	UI_add_answer("business");
+	UI_add_answer("來意");
 	goto labelFunc040F_0118;
 labelFunc040F_0114:
-	message("\"How may I be of use to thee?\"");
+	message("「我能為你效勞嗎？」");
 	say();
 labelFunc040F_0118:
 	if (!(gflags[0x0234] && (!gflags[0x00CE]))) goto labelFunc040F_012A;
-	UI_add_answer("Daemon Sword");
+	UI_add_answer("惡魔劍");
 labelFunc040F_012A:
 	if (!(gflags[0x0111] && (!gflags[0x028F]))) goto labelFunc040F_013C;
-	UI_add_answer("apparatus");
+	UI_add_answer("儀器");
 labelFunc040F_013C:
 	if (!(gflags[0x0268] == true)) goto labelFunc040F_014B;
-	UI_add_answer("Worm Gem");
+	UI_add_answer("蠕蟲寶石");
 labelFunc040F_014B:
 	if (!(gflags[0x0113] && (!gflags[0x0291]))) goto labelFunc040F_015D;
-	UI_add_answer("lost ring");
+	UI_add_answer("遺失的戒指");
 labelFunc040F_015D:
 	if (!(gflags[0x00EA] && (!UI_get_item_flag(0xFFE1, 0x0004)))) goto labelFunc040F_0176;
-	UI_add_answer("kidnap");
+	UI_add_answer("綁架");
 labelFunc040F_0176:
-	UI_add_answer(["bye"]);
+	UI_add_answer(["再見"]);
 labelFunc040F_0180:
 	converse attend labelFunc040F_0634;
-	case "kidnap" attend labelFunc040F_01A7:
-	UI_remove_answer("kidnap");
-	message("\"Do not involve me in such matters, stranger! Canst thou not see that I am a Mundane?\"");
+	case "綁架" attend labelFunc040F_01A7:
+	UI_remove_answer("綁架");
+	message("「陌生人，別把我捲進這種事裡！你看不出來我是個凡夫俗子嗎？」");
 	say();
-	message("\"This matter smacks of wizardry, and I want no part of it!\"");
+	message("「這件事有魔法的氣味，我一點都不想沾上邊！」");
 	say();
-	Func097F(0xFFF1, "@No part!@", 0x0000);
+	Func097F(0xFFF1, "@不想沾邊！@", 0x0000);
 	abort;
 labelFunc040F_01A7:
-	case "holocaust" attend labelFunc040F_01BA:
-	UI_remove_answer("holocaust");
-	message("\"Thy companion Shamino did return to this place, and he was in a killing rage. Despite all efforts to stop him, he did murder everyone in our town, save for Torrissio, Andrio and myself.\"");
+	case "大災難" attend labelFunc040F_01BA:
+	UI_remove_answer("大災難");
+	message("「你的同伴 Shamino 回到了這裡，他陷入了殺戮的狂怒。儘管所有人試圖阻止他，他還是謀殺了我們鎮上的每個人，只剩下 Torrissio 、 Andrio 和我。」");
 	say();
 labelFunc040F_01BA:
-	case "Master Artisan" attend labelFunc040F_01F2:
-	UI_remove_answer("Master Artisan");
+	case "工匠大師" attend labelFunc040F_01F2:
+	UI_remove_answer("工匠大師");
 	if (!gflags[0x0004]) goto labelFunc040F_01D6;
-	message("\"I have the talented hands that come from a long line of craftsmen. But I live in a world with no one but the dead to create for! A most funny joke, no?!\"");
+	message("「我有一雙巧手，來自於我們工匠世家的傳承。但我現在住在一個除了死人之外，沒人需要我的創作的世界！這真是個好笑的笑話，不是嗎？！」");
 	say();
 	goto labelFunc040F_01F2;
 labelFunc040F_01D6:
-	message("\"I have an apprentice. I have automatons to help the work progress. That makes me a Master.\"");
+	message("「我有一個學徒。我有魔導人偶幫忙推進工作。這讓我成為大師。」");
 	say();
-	message("\"I am able to create or repair anything. I make what the Mages need. That makes me an Artisan.\"");
+	message("「我能製造或修理任何東西。我製作法師需要的物品。這讓我成為工匠。」");
 	say();
-	message("\"If thou hast need of the Master, ask me. If not, ask Topo.\"");
+	message("「如果你需要大師，就來找我。如果不需要，去找 Topo 。」");
 	say();
-	UI_add_answer(["automatons", "anything", "Topo"]);
+	UI_add_answer(["魔導人偶", "任何東西", "Topo"]);
 labelFunc040F_01F2:
-	case "automatons" attend labelFunc040F_020C:
-	UI_remove_answer("automatons");
-	message("\"One that bakes. One that sews. One that smiths. All from Torrissio. They work hard... do not talk back like Topo.\"");
+	case "魔導人偶" attend labelFunc040F_020C:
+	UI_remove_answer("魔導人偶");
+	message("「一個會烘焙。一個會縫紉。一個會打鐵。全都是從 Torrissio 那裡來的。他們工作很勤奮……不會像 Topo 那樣頂嘴。」");
 	say();
 	UI_add_answer("Torrissio");
 labelFunc040F_020C:
 	case "Torrissio" attend labelFunc040F_0230:
 	UI_remove_answer("Torrissio");
-	message("\"Torrissio is an Adept. He makes automaton guards and servants. He does good work... almost like a Master Artisan. But he needs magic to make everything work.\"");
+	message("「Torrissio 是個內行。他製造魔導人偶衛兵和僕人。他的手藝不錯……幾乎像個工匠大師了。但他需要魔法才能讓所有東西運轉。」");
 	say();
-	message("\"I gave him a good deal on the metal he needs. Now I've got three hard workers made of metal. Not a bad deal.\"");
+	message("「我用很划算的價格賣給他需要的金屬。現在我得到了三個金屬做的勤勞工人。這交易挺不錯的。」");
 	say();
-	UI_add_answer(["magic", "deal"]);
+	UI_add_answer(["魔法", "交易"]);
 labelFunc040F_0230:
-	case "magic" attend labelFunc040F_0252:
-	UI_remove_answer("magic");
-	message("\"Torrissio doth not ask about my work. I do not ask about his.\"");
+	case "魔法" attend labelFunc040F_0252:
+	UI_remove_answer("魔法");
+	message("「Torrissio 不過問我的工作。我也不過問他的。」");
 	say();
-	message("\"All I know is that his spells are old. Not anything created by these Mages.\"");
+	message("「我只知道他的法術很古老。不是這些法師創造的任何東西。」");
 	say();
-	message("\"Thou wishest to ask more, ask Torrissio... If he will speak with thee.\"");
+	message("「你想問更多，去問 Torrissio ……如果他願意跟你說話的話。」");
 	say();
-	UI_add_answer("old");
+	UI_add_answer("古老");
 labelFunc040F_0252:
-	case "old" attend labelFunc040F_026C:
-	UI_remove_answer("old");
-	message("\"Very old. Maybe as old as the Serpent ruins, maybe not. I'm not a Mage.\"");
+	case "古老" attend labelFunc040F_026C:
+	UI_remove_answer("古老");
+	message("「非常古老。或許跟巨蛇遺跡一樣古老，也或許不是。我不是法師。」");
 	say();
-	UI_add_answer("Serpent Ruins");
+	UI_add_answer("巨蛇遺跡");
 labelFunc040F_026C:
-	case "Serpent Ruins" attend labelFunc040F_0294:
-	UI_remove_answer("Serpent Ruins");
-	message("\"What dost thou think I am, a teacher like Fedabiblio?!\"");
+	case "巨蛇遺跡" attend labelFunc040F_0294:
+	UI_remove_answer("巨蛇遺跡");
+	message("「你以為我是什麼，像 Fedabiblio 那樣的老師嗎？！」");
 	say();
-	message("\"If thou wishest a history lesson, go to him like any novice. If thou wishest the work of a Master Artisan, stay.\"");
+	message("「如果你想上歷史課，就像個新手一樣去找他。如果你想要工匠大師的作品，就留下來。」");
 	say();
-	message("\"I do not have time for such questions!\"");
+	message("「我可沒時間回答這種問題！」");
 	say();
-	UI_add_answer(["Fedabiblio", "novice"]);
+	UI_add_answer(["Fedabiblio", "新手"]);
 labelFunc040F_0294:
 	case "Fedabiblio" attend labelFunc040F_02A7:
 	UI_remove_answer("Fedabiblio");
-	message("\"Fedabiblio teaches the young mages. He keeps the library of magic. He knows the history. Speak to him, do not bother me!\"");
+	message("「Fedabiblio 教導年輕的法師。他掌管著魔法圖書館。他了解歷史。去跟他說，別來煩我！」");
 	say();
 labelFunc040F_02A7:
-	case "novice" attend labelFunc040F_02BA:
-	UI_remove_answer("novice");
-	message("\"If thou seekest knowledge, thou art a novice. One who seeks to be taught. I am a Master. I do not teach. I do not need teaching. I am not a novice.\"");
+	case "新手" attend labelFunc040F_02BA:
+	UI_remove_answer("新手");
+	message("「如果你在尋求知識，你就是個新手。一個尋求教導的人。我是一位大師。我不教學。我也不需要被教導。我不是新手。」");
 	say();
 labelFunc040F_02BA:
-	case "deal" attend labelFunc040F_02D1:
-	UI_remove_answer("deal");
-	message("\"Art thou a Master?\"");
+	case "交易" attend labelFunc040F_02D1:
+	UI_remove_answer("交易");
+	message("「你是大師嗎？」");
 	say();
-	message("\"No. Then do not ask what deal I give to others. Bad manners.\"");
+	message("「不是。那就別問我給別人什麼交易條件。真沒禮貌。」");
 	say();
 labelFunc040F_02D1:
-	case "anything" attend labelFunc040F_02F5:
-	UI_remove_answer("anything");
-	message("\"If the Mages can speak plain enough to explain what they need, I can make it.\"");
+	case "任何東西" attend labelFunc040F_02F5:
+	UI_remove_answer("任何東西");
+	message("「只要法師能說得夠清楚，解釋他們需要什麼，我就能做出來。」");
 	say();
-	message("\"Magical apparatus. Swords. Whatever. I can make it. They enchant it. 'Tis fair.\"");
+	message("「魔法儀器。劍。不管什麼。我都能做。他們負責施法附魔。這很公平。」");
 	say();
-	UI_add_answer(["Magical apparatus", "Swords"]);
+	UI_add_answer(["魔法儀器", "劍"]);
 labelFunc040F_02F5:
-	case "Magical apparatus" attend labelFunc040F_0322:
-	UI_remove_answer("Magical apparatus");
-	message("\"I make all the apparatus for the Mages. All different. Every Mage wants something a little different than the next.\"");
+	case "魔法儀器" attend labelFunc040F_0322:
+	UI_remove_answer("魔法儀器");
+	message("「我為法師製造所有的儀器。全部都不一樣。每個法師想要的東西都跟其他人有點不同。」");
 	say();
-	message("\"I can tell thee who a piece belongs to just by looking at it. I remember everything I've made.\"");
+	message("「我只要看一眼，就能告訴你這件物品是誰的。我記得我做過的每一樣東西。」");
 	say();
-	message("\"Dost thou have something thou wishest me to look at?\"");
+	message("「你有什麼東西想讓我看看嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc040F_031E;
 	goto labelFunc040F_032A;
 	goto labelFunc040F_0322;
 labelFunc040F_031E:
-	message("\"Fine.\"");
+	message("「好吧。」");
 	say();
 labelFunc040F_0322:
-	case "apparatus" attend labelFunc040F_0384:
+	case "儀器" attend labelFunc040F_0384:
 labelFunc040F_032A:
-	UI_remove_answer("apparatus");
+	UI_remove_answer("儀器");
 	if (!var0005) goto labelFunc040F_0380;
 	if (!Func097D(0xFE9B, 0x0001, 0x02ED, 0xFE99, 0x0001)) goto labelFunc040F_0362;
-	message("\"Hmmmm. This is a piece of lab apparatus that the mages use. In fact, this one was one of my first masterpieces. I thought it had been destroyed.\"");
+	message("「嗯……這是法師使用的實驗室儀器。事實上，這個曾是我早期的傑作之一。我以為它已經被毀了。」");
 	say();
-	message("\"I might ask how thou didst come by this. But I won't. I do not want to know. Vasculio hath been dead for years...\"");
+	message("「我或許該問你是怎麼得到這東西的。但我不想問。我不想知道。 Vasculio 已經死了很多年了……」");
 	say();
 	var0007 = true;
 	UI_add_answer("Vasculio");
 	goto labelFunc040F_037D;
 labelFunc040F_0362:
-	message("\"Thou hast no such object! Do not waste my time, for I am a busy man...\"");
+	message("「你根本沒有那種東西！別浪費我的時間，我很忙的……」");
 	say();
-	Func097F(0xFFF1, "@Must work...@", 0x0000);
+	Func097F(0xFFF1, "@必須工作……@", 0x0000);
 	UI_set_schedule_type(0xFFF1, 0x0014);
 	abort;
 labelFunc040F_037D:
 	goto labelFunc040F_0384;
 labelFunc040F_0380:
-	message("\"If thou wouldst bring the object to my shop, I would be glad to examine it there. I do not have my tools with me now.\"");
+	message("「如果你把東西帶到我的店裡，我很樂意在那裡幫你檢查。我現在沒帶工具。」");
 	say();
 labelFunc040F_0384:
 	case "Vasculio" attend labelFunc040F_03A8:
 	UI_remove_answer("Vasculio");
-	message("\"Not good, that one. Sought to reach beyond life and rule death. Not good.\"");
+	message("「那傢伙不是什麼好人。企圖超越生命並統治死亡。不是好人。」");
 	say();
-	message("\"The Council killed him years ago. I thought they had destroyed all his equipment after they found the grave empty... But mayhaps Ensorcio took it.\"");
+	message("「議會多年前殺了他。我以為他們在發現空墳墓後，已經把他的設備全毀了……但也許是 Ensorcio 拿走了。」");
 	say();
-	UI_add_answer(["grave empty", "Ensorcio"]);
+	UI_add_answer(["空墳墓", "Ensorcio"]);
 labelFunc040F_03A8:
-	case "grave empty" attend labelFunc040F_03BF:
-	UI_remove_answer("grave empty");
-	message("\"They say he rose from the dead. They think he is looking for revenge.\"");
+	case "空墳墓" attend labelFunc040F_03BF:
+	UI_remove_answer("空墳墓");
+	message("「他們說他死而復生了。他們認為他在尋找復仇的機會。」");
 	say();
-	message("\"I think the Council secretly decided to burn him. No one can bring back the dead from ashes.\"");
+	message("「我認為議會秘密決定將他燒死。沒有人能讓死人從灰燼中復活。」");
 	say();
 labelFunc040F_03BF:
 	case "Ensorcio" attend labelFunc040F_03D6:
 	UI_remove_answer("Ensorcio");
-	message("\"Ensorcio was Vasculio's apprentice. Too much like his Master, that one.\"");
+	message("「Ensorcio 曾是 Vasculio 的學徒。那傢伙太像他師傅了。」");
 	say();
-	message("\"Exiled now. Hear he spends his time drinking away his sorrows on another island.\"");
+	message("「現在被流放了。聽說他把時間都花在另一個島上借酒澆愁。」");
 	say();
 labelFunc040F_03D6:
-	case "Swords" attend labelFunc040F_03ED:
-	UI_remove_answer("Swords");
-	message("\"Do not have much call for them. Not magic ones anyway. But I have made a few.\"");
+	case "劍" attend labelFunc040F_03ED:
+	UI_remove_answer("劍");
+	message("「對這些東西的需求不大。至少不是魔法劍。但我確實做過幾把。」");
 	say();
-	message("\"Unless it is a special order, mine automaton makes it. For something non-magic, talk to Topo. If it's magic, talk to me.\"");
+	message("「除非是特別訂製，不然都是我的魔導人偶做的。如果是非魔法的，去跟 Topo 談。如果是魔法的，跟我談。」");
 	say();
 labelFunc040F_03ED:
 	case "Topo" attend labelFunc040F_0408:
 	UI_remove_answer("Topo");
-	message("\"Mine apprentice. Scrawny boy. Large ambitions. Big mouth.\"");
+	message("「我的學徒。瘦弱的男孩。野心很大。嘴巴很大。」");
 	say();
-	message("\"But he doth work hard... when I yell at him. Shows promise.\"");
+	message("「但他工作很努力……當我對他大吼的時候。看起來很有前途。」");
 	say();
-	message("\"Tends to be a bit lazy, though. Must teach him better. Make certain he learns as much as he thinks he knows.\"");
+	message("「不過他有點懶惰。必須好好教導他。確保他學到的能跟自以為懂的一樣多。」");
 	say();
 labelFunc040F_0408:
-	case "business" attend labelFunc040F_0465:
-	UI_remove_answer("business");
-	message("\"What dost thou need? To buy? To look? To talk?\"");
+	case "來意" attend labelFunc040F_0465:
+	UI_remove_answer("來意");
+	message("「你需要什麼？購買？看看？談話？」");
 	say();
-	var0008 = Func0956(["buy", "look", "talk"]);
-	if (!(var0008 == "buy")) goto labelFunc040F_0441;
-	UI_add_answer("buy");
+	var0008 = Func0956(["購買", "看看", "談話"]);
+	if (!(var0008 == "購買")) goto labelFunc040F_0441;
+	UI_add_answer("購買");
 	goto labelFunc040F_046D;
 labelFunc040F_0441:
-	if (!(var0008 == "look")) goto labelFunc040F_0457;
-	message("\"Looking is free. Inspect the automaton-made goods.\"");
+	if (!(var0008 == "看看")) goto labelFunc040F_0457;
+	message("「看看是免費的。檢查那些魔導人偶製造的商品。」");
 	say();
-	message("\"I have everything from cloaks to baked goods. Ceramics to swords. And many things between.\"");
+	message("「我這裡什麼都有，從斗篷到烘焙食品。從陶瓷到劍。還有很多其他東西。」");
 	say();
-	message("\"Let me know if thou dost wish to buy anything.\"");
+	message("「如果你想買任何東西，就告訴我。」");
 	say();
 labelFunc040F_0457:
-	if (!(var0008 == "talk")) goto labelFunc040F_0465;
-	message("\"Talk is free, too. But I'm a busy man.\"");
+	if (!(var0008 == "談話")) goto labelFunc040F_0465;
+	message("「談話也是免費的。但我很忙。」");
 	say();
 labelFunc040F_0465:
-	case "buy" attend labelFunc040F_048D:
+	case "購買" attend labelFunc040F_048D:
 labelFunc040F_046D:
 	if (!(var0004 == false)) goto labelFunc040F_048A;
 	if (!gflags[0x0004]) goto labelFunc040F_0482;
-	message("\"If thou seest something thou dost like, tell me. If thou desirest something I do not have, let me know. I can either make it for thee or direct thee to someone who can.\"");
+	message("「如果你看到喜歡的東西，告訴我。如果你想要我這裡沒有的東西，讓我知道。我可以為你製作，或者指引你去找能做的人。」");
 	say();
 	goto labelFunc040F_0486;
 labelFunc040F_0482:
-	message("\"If thou seest something thou dost like, tell Topo or me. If thou desirest something I do not have, let me know. I can either make it for thee or direct thee to someone who can.\"");
+	message("「如果你看到喜歡的東西，告訴 Topo 或我。如果你想要我這裡沒有的東西，讓我知道。我可以為你製作，或者指引你去找能做的人。」");
 	say();
 labelFunc040F_0486:
 	var0004 = true;
 labelFunc040F_048A:
 	Func0827();
 labelFunc040F_048D:
-	case "lost ring" attend labelFunc040F_04DE:
-	UI_remove_answer("lost ring");
+	case "遺失的戒指" attend labelFunc040F_04DE:
+	UI_remove_answer("遺失的戒指");
 	if (!var0005) goto labelFunc040F_04DA;
 	if (!Func097D(0xFE9B, 0x0001, 0x0377, 0xFE99, 0x0000)) goto labelFunc040F_04D3;
-	message("\"May I see it? Ah, thank thee...\"");
+	message("「可以讓我看看嗎？啊，謝謝你……」");
 	say();
-	message("\"Too plain for a Mage... But wait, I remember this!\"");
+	message("「對法師來說太普通了……等等，我想起來了！」");
 	say();
-	message("\"I made it for a sailor from Fawn. I'll wager that it cost him half a year's wages. He wanted it for an engagement ring.\"");
+	message("「這是我為一個來自 幼鹿城( Fawn ) 的水手做的。我敢打賭這花了他半年的工資。他想拿這當訂婚戒指。」");
 	say();
-	UI_add_answer(["Fawn", "sailor"]);
+	UI_add_answer(["幼鹿城", "水手"]);
 	goto labelFunc040F_04D7;
 labelFunc040F_04D3:
-	message("\"So where is this ring? How can I tell thee anything about this ring, if thou dost not bring it to me?\"");
+	message("「那麼這枚戒指在哪裡？如果你不把它帶給我，我要怎麼告訴你關於它的任何事？」");
 	say();
 labelFunc040F_04D7:
 	goto labelFunc040F_04DE;
 labelFunc040F_04DA:
-	message("\"If thou wouldst bring thy ring to my shop, I would be glad to examine it there. I do not have my tools with me now.\"");
+	message("「如果你把戒指帶到我的店裡，我很樂意在那裡幫你檢查。我現在沒帶工具。」");
 	say();
 labelFunc040F_04DE:
-	case "Fawn" attend labelFunc040F_04F5:
-	UI_remove_answer("Fawn");
-	message("\"Fawn is on the other island. Somewhere on the far side, I think. 'Tis a port. Filled with sailors.\"");
+	case "幼鹿城" attend labelFunc040F_04F5:
+	UI_remove_answer("幼鹿城");
+	message("「幼鹿城( Fawn ) 在另一座島上。我想是在遠處的某個地方。那是個港口。擠滿了水手。」");
 	say();
-	message("\"That is all I know.\"");
+	message("「我只知道這麼多。」");
 	say();
 labelFunc040F_04F5:
-	case "sailor" attend labelFunc040F_050C:
-	UI_remove_answer("sailor");
-	message("\"I remember the piece, not the man. Wasn't a Mage. Not worth recalling, I imagine.\"");
+	case "水手" attend labelFunc040F_050C:
+	UI_remove_answer("水手");
+	message("「我記得那件作品，但不記得那個人了。他不是法師。我想也不值得回憶。」");
 	say();
-	message("\"Ask in Fawn. He was proud enough about the ring. Someone will know who it belongs to.\"");
+	message("「去 幼鹿城( Fawn ) 問問看吧。他對這枚戒指可是引以為傲的。應該會有人知道這戒指是誰的。」");
 	say();
 labelFunc040F_050C:
-	case "Daemon Sword" attend labelFunc040F_0563:
-	UI_remove_answer("Daemon Sword");
-	message("\"Magical swords are very difficult to deal with. In some cases, I can be of aid, but other cases require the assistance of a Mage.\"");
+	case "惡魔劍" attend labelFunc040F_0563:
+	UI_remove_answer("惡魔劍");
+	message("「魔法劍非常難處理。有些情況我能幫上忙，但有些情況需要法師的協助。」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0326, 0xFE99, 0xFE99)) goto labelFunc040F_055F;
-	message("\"'Tis a magic sword, right enough. I'll take thy word about the Daemon...\"");
+	message("「這的確是一把魔法劍。我就姑且相信你說的惡魔這回事……」");
 	say();
-	message("\"The structure of the blade is not damaged. It is not a problem that I can repair.\"");
+	message("「劍刃的結構沒有受損。這不是我能修理的問題。」");
 	say();
 	if (!UI_get_item_flag(0xFFEA, 0x0004)) goto labelFunc040F_0554;
-	message("\"Thou must seek out a Mage to aid thee, if there are any left among the living...\"");
+	message("「你必須找一位法師來幫助你，如果還有活著的法師的話……」");
 	say();
-	message("\"If Gustacio's flux analyzer had not been stolen, I would have sent thee to his lab. It was the only thing that might have helped thee.\"");
+	message("「如果 Gustacio 的流量分析儀 (flux analyzer) 沒有被偷的話，我會派你去他的實驗室。那是唯一能幫助你的東西。」");
 	say();
 	goto labelFunc040F_055C;
 labelFunc040F_0554:
-	message("\"Thou mightest check with Gustacio. He might be able to help thee. I have heard that he is working on something called the flux analyzer. It might be of aid to thee.\"");
+	message("「你或許可以去找 Gustacio 看看。他或許能幫助你。我聽說他正在研究一個叫做流量分析儀的東西。或許對你有幫助。」");
 	say();
 	gflags[0x00FE] = true;
 labelFunc040F_055C:
 	goto labelFunc040F_0563;
 labelFunc040F_055F:
-	message("\"If thou wouldst bring me the sword, I could examine it for thee.\"");
+	message("「如果你把劍帶給我，我可以為你檢查。」");
 	say();
 labelFunc040F_0563:
-	case "Worm Gem" attend labelFunc040F_05D9:
-	UI_remove_answer("Worm Gem");
+	case "蠕蟲寶石" attend labelFunc040F_05D9:
+	UI_remove_answer("蠕蟲寶石");
 	if (!var0005) goto labelFunc040F_05D5;
-	message("\"What a strange request... Yes, I can make thee a Worm Gem, if thou dost desire.\"");
+	message("「真是個奇怪的要求……是的，如果你想要，我可以為你製造一顆蠕蟲寶石。」");
 	say();
-	UI_add_answer("strange request");
+	UI_add_answer("奇怪的要求");
 	if (!Func097D(0xFE9B, 0x0001, 0x034A, 0xFE99, 0x000A)) goto labelFunc040F_05C7;
 	if (!Func097D(0xFE9B, 0x0003, 0x034A, 0xFE99, 0x000A)) goto labelFunc040F_05B9;
-	message("\"'Tis a simple matter, when thou dost know the secret...\"");
+	message("「這很簡單，只要你知道其中的秘密……」");
 	say();
 	Func0826(event);
 	abort;
 	goto labelFunc040F_05C4;
 labelFunc040F_05B9:
-	message("\"Thou must bring me three Worm Hearts -- no less!\"");
+	message("「你必須帶給我三顆蠕蟲心臟——一顆都不能少！」");
 	say();
-	UI_add_answer("Worm Hearts");
+	UI_add_answer("蠕蟲心臟");
 labelFunc040F_05C4:
 	goto labelFunc040F_05D2;
 labelFunc040F_05C7:
-	message("\"But first, thou must bring me the Hearts of three Ice Worms.\"");
+	message("「但首先，你必須帶給我三顆冰霜蠕蟲的心臟。」");
 	say();
-	UI_add_answer("Worm Hearts");
+	UI_add_answer("蠕蟲心臟");
 labelFunc040F_05D2:
 	goto labelFunc040F_05D9;
 labelFunc040F_05D5:
-	message("\"I will make thee a Worm Gem if thou wilt come to my shop when I am there...\"");
+	message("「如果你在我店裡的時候過來，我會為你製作蠕蟲寶石……」");
 	say();
 labelFunc040F_05D9:
-	case "strange request" attend labelFunc040F_05F0:
-	UI_remove_answer("strange request");
-	message("\"'Twas Torrissio who told me the secret of making these gems. He said he learned of it from ancient scrolls written in some strange runic lettering.\"");
+	case "奇怪的要求" attend labelFunc040F_05F0:
+	UI_remove_answer("奇怪的要求");
+	message("「是 Torrissio 告訴我製造這些寶石的秘密。他說他是從一些寫著奇怪盧恩文字的古老卷軸上學到的。」");
 	say();
-	message("\"For years, he hath been mine only customer for such gems. But then the stranger named Batlin asked me to craft some for him, and now thou dost request them...\"");
+	message("「多年來，他一直是我這種寶石的唯一顧客。但後來那個叫 巴特林( Batlin ) 的陌生人要求我為他製作一些，現在你也要求……」");
 	say();
 labelFunc040F_05F0:
-	case "Worm Hearts" attend labelFunc040F_0607:
-	UI_remove_answer("Worm Hearts");
-	message("\"Why, the hearts of Ice Worms, of course! Kill an Ice Worm, strip it of its heart, and kill another.\"");
+	case "蠕蟲心臟" attend labelFunc040F_0607:
+	UI_remove_answer("蠕蟲心臟");
+	message("「當然是冰霜蠕蟲的心臟了！殺死一隻冰霜蠕蟲，剝下牠的心臟，然後再殺另一隻。」");
 	say();
-	message("\"The Ice Worms are found in the cold northern lands, I am told. I have not been there myself. Heard stories. Very cold.\"");
+	message("「聽說冰霜蠕蟲生長在寒冷的北方土地。我自己沒去過。只聽過傳聞。非常冷。」");
 	say();
 labelFunc040F_0607:
-	case "bye" attend labelFunc040F_0631:
+	case "再見" attend labelFunc040F_0631:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Farewell!@", 0x0000);
-	Func097F(0xFFF1, "@Come again!@", 0x0002);
+	Func097F(0xFE9C, "@再會了！@", 0x0000);
+	Func097F(0xFFF1, "@歡迎下次光臨！@", 0x0002);
 	Func08FF();
 	goto labelFunc040F_0634;
 labelFunc040F_0631:

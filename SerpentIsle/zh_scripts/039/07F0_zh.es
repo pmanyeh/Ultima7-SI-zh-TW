@@ -32,7 +32,7 @@ labelFunc07F0_006F:
 	UI_set_schedule_type(0xFE9C, 0x001F);
 	UI_clear_item_flag(0xFE9C, 0x0010);
 	var0005 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0001), [(byte)0x23, (byte)0x55, 0x0636], 0x001E);
-	var0005 = ("" & ("@Oh...@" & ("@Mine head doth ache!@" & "@Where am I?@")));
+	var0005 = ("" & ("@喔……@" & ("@我的頭好痛！@" & "@我在哪裡？@")));
 	Func094F(0xFE9C, var0005);
 	return;
 }

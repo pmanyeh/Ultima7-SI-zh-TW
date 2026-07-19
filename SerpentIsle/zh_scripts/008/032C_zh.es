@@ -49,13 +49,13 @@ labelFunc032C_00B4:
 	UI_set_polymorph(0xFE9C, 0x00EF);
 	UI_set_item_frame(item, 0x0001);
 	var0006 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x032C], 0x0019);
-	var0006 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@AAAAAHHHHH!!!!!!@"], 0x0002);
+	var0006 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@啊啊啊啊啊！！！！！！@"], 0x0002);
 	abort;
 labelFunc032C_0103:
 	if (!((event == 0x0002) && (gflags[0x0007] == false))) goto labelFunc032C_0274;
 	var0007 = UI_get_item_frame(item);
 	if (!(var0007 == 0x0000)) goto labelFunc032C_0135;
-	var0006 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@...uunnhhhh...@"]);
+	var0006 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@……呃嗯……@"]);
 labelFunc032C_0135:
 	if (!(var0007 == 0x0001)) goto labelFunc032C_023A;
 	var0008 = 0x0000;

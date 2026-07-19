@@ -13,18 +13,18 @@ void Func011E shape#(0x11E) ()
 	var0001 = UI_click_on_item();
 	if (!UI_is_npc(var0001)) goto labelFunc011E_0050;
 	UI_play_sound_effect(0x0038);
-	UI_item_say(0xFE9C, "@Take that!@");
-	Func097F(var0001, "@Oooww!@", 0xFFFE);
+	UI_item_say(0xFE9C, "@吃我一下！@");
+	Func097F(var0001, "@哎唷！@", 0xFFFE);
 	abort;
 labelFunc011E_0050:
 	if (!((UI_get_item_shape(var0001) == 0x011E) && (UI_get_item_frame(var0001) == 0x0000))) goto labelFunc011E_007E;
 	UI_play_sound_effect(0x003C);
-	Func097F(0xFE9C, "@Listen...@", 0x0001);
+	Func097F(0xFE9C, "@聽這個……@", 0x0001);
 	abort;
 labelFunc011E_007E:
 	if (!((UI_get_item_shape(var0001) == 0x011E) && (UI_get_item_frame(var0001) == 0x0003))) goto labelFunc011E_00AA;
 	UI_play_sound_effect(0x007A);
-	UI_item_say(0xFE9C, "@Troll drum, nice...@");
+	UI_item_say(0xFE9C, "@巨魔鼓，不錯……@");
 	abort;
 labelFunc011E_00AA:
 	return;

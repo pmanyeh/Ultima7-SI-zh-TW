@@ -4,12 +4,14 @@
 
 ## 專有名詞與稱謂
 - **Avatar** ➔ **聖者**
+- **Lord British** ➔ **不列顛王**
 - **Fellowship** ➔ **友誼會**
 - **milord** ➔ **大人**
 - **milady** ➔ **女士**
 - **Moongate** ➔ **月之門**
 - **Blackrock** ➔ **黑石**
 - **The Guardian** ➔ **守護者**
+- **Guardian** ➔ **守護者**
 - **Blackrock Sword** ➔ **黑石劍**
 - **Excellencia** ➔ **卓越號（Excellencia）**
 - **The Crown Jewel** ➔ **皇冠寶石號（The Crown Jewel）**
@@ -36,6 +38,35 @@
 - **Triad** ➔ **三位一體 (Triad)** (請注意：當內容涉及講述「兄弟會」的理念時，要特別留意此用法)
 - **Ether** ➔ **以太**
 - **philosophy** ➔ **理念** (請注意：當內容涉及講述「兄弟會」的理念時，要特別留意此用法)
+- **teleport storms** ➔ **傳送風暴**
+- **Filnri** ➔ **法拉利幣**
+- **Filnris** ➔ **法拉利幣**
+- **Monetari** ➔ **蒙里他利幣**
+- **Monetaris** ➔ **蒙里他利幣**
+- **Guilder** ➔ **吉爾得幣**
+- **Guilders** ➔ **吉爾得幣**
+- **Varo leaves** ➔ **瓦羅葉**
+- **mace** ➔ **釘頭錘**
+- **maces** ➔ **釘頭錘**
+- **The Sleeping Soldier** ➔ **沉睡士兵旅店**
+- **Test of Knighthood** ➔ **騎士考驗**
+
+## 可翻譯的姓名
+- **Batlin** ➔ **巴特林**
+
+## 可翻譯的專有地名
+- **Serpent Isle** ➔ **巨蛇之島**
+- **Moonshade** ➔ **月影城** (原中文手冊翻譯成「月暈城」，但感覺不太對，請以「月影城」為準)
+- **city of Moon** ➔ **月之城**
+- **Fawn** ➔ **幼鹿城**
+- **Monitor** ➔ **蒙利多城**
+- **Monitorian** ➔ **蒙利多城**
+- **Dungeon Freedom** ➔ **自由山地牢**
+- **Swamp of Gorlab** ➔ **果雷沼澤**
+- **Gorlab Swamp** ➔ **果雷沼澤**
+- **Mountains of Freedom** ➔ **自由山脈**
+- **Serpent Highway** ➔ **蛇道**
+- **Monk Isle** ➔ **僧侶島**
 
 ## 常用 UI 選項 (對話選單)
 - **name** ➔ **姓名** （不使用「名字」）
@@ -57,16 +88,23 @@
 ## 特殊文本翻譯規則
 1. **對話引號**：NPC 的對話內容，請統一使用「全形引號」（「」）取代原本的英文引號 `"`。
 2. **魔法咒語**：遊戲中施放魔法的咒語（例如 `@Corp Por@`, `@An Nox@`, `@Vas Flam Uus~~@` 等），請**保持原汁原味的英文**，不要翻譯成中文，以保留《創世紀》系列的經典風味。
-3. **控制字元**：必須嚴格保留所有 Exult 引擎的控制字元（如 `@`、`*`、`~~`、`` ` `` 等），不可在翻譯過程中遺漏。
-4. **英文名詞處理**：尚未翻譯的英文人名（如 `Petre`, `Elad`）與地名（如 `Moonglow`, `Britain`）維持原文，並且在英文單字的前後各保留一個半形空白，以提升中文閱讀的舒適度（例如：「我是 Elad ，住在 Moonglow 。」）。如果英文單字前面，或是後面剛好接「標點符號」或是「空白」，則不需再添加空白（例如：「你好，『Avatar』。」）。 
+3. **控制字元**：必須嚴格保留所有 Exult 引擎的控制字元（如 `@`、`*`、`~~`、`` ` `` 等），不可在翻譯過程中遺漏。請注意：如果標籤包覆在對話兩端（例如 `"@Hi!@"`），翻譯後請維持在引號內文的最外側（例如 `"@嗨！@"`），切勿放錯位置或遺漏。
+4. **英文名詞與變數處理**：尚未翻譯的英文人名（如 `Petre`, `Elad`）與地名（如 `Moonglow`, `Britain`）維持原文，並且在英文單字的前後各保留一個半形空白，以提升中文閱讀的舒適度（例如：「我是 Elad ，住在 Moonglow 。」）。如果英文單字前面，或是後面剛好接「標點符號」或是「空白」，則不需再添加空白（例如：「你好，『Avatar』。」）。特別注意：腳本常使用 `message(var0000);` 插入英文名字，若變數前後會緊連著中文字（無標點符號），在拆分 `message()` 字串時，請務必在引號內預留半形空白（例如：`message("「很高興見到你， "); message(var0000); message(" ！」");`）。
 5. **法術名稱的處理**: 先採用「中英並呈」的方式，例如：治療術(Cure)。
 6. **法術咒語的處理**: 若為由多個英文單字所組成的法術，例如 'An Nox', 'Corp Por', 'Vas Flam Uus' 等，請將這些單字視為一個整體，並在前後加上引號，例如「An Nox」、「Corp Por」、「Vas Flam Uus」。
 7. **英文引號句尾標點替換**：翻譯後，英文句尾的引號組合需替換為對應的全形中文標點：
    - `.\"` ➔ `。」`（句號＋閉引號）
    - `?\"` ➔ `？」`（問號＋閉引號）
    - `!\"` ➔ `！」`（驚嘆號＋閉引號）
-8. **用於UI對話選單的字串 UI_add_answer（"aaa", "bbb", ...）**: 必須注意前後一致性！通常會在同一份檔案內找到相對應的 case "aaa" attend labelXXX: 判斷，而且大多也會有 UI_remove_answer("aaa") 的處理，請務必確認「字串」要一模一樣。
-   - 
+8. **對話選項「三位一體」的絕對一致性**：用於對話選單的字串 `UI_add_answer("aaa")`，必須與該對話分支的判斷式 `case "aaa" attend labelXXX:`，以及移除選項 `UI_remove_answer("aaa")` 這三處的字串**完全一模一樣**。若翻譯不同步（如漏翻一處或打錯字），會導致遊戲對話分支卡死或出錯。
+9. **性別與語氣判定**：腳本中經常使用 `UI_is_pc_female()` 來判定主角性別並給予不同稱呼（如 handsome / love）。翻譯具有性別分支的對話時，請注意切換符合上下文的語氣與稱謂。
+10. **程式碼引號結尾對齊**：將 `message("\"Hello\"");` 轉換為 `message("「你好」");` 後，請務必再三檢查程式碼的結尾是否有漏掉右括號或分號，或者殘留多餘的英文引號（如 `message("「你好」"");`），否則會導致編譯失敗。
+11. **隱藏於變數中的字串翻譯**：請務必檢查腳本中將字串賦值給變數的語句（例如 `var0000 = "Mundane";`）。這些變數經常會透過 `message(var0000);` 被代入對話中顯示，因此變數內的英文字串也必須正確翻譯成中文（例如改為 `var0000 = "凡夫俗子";`），以免在對話顯示時出現未翻譯的英文。
+12. **專有地名的翻譯處理**：具有明確中文翻譯的地名（例如「月影城」、「自由山地牢」），在一般對話文本（message）中請採用「中文譯名( 英文原名 )」的格式（例如：`月影城( Moonshade )`，且左右預留括號空白以利閱讀），以利玩家對照原文；而在對話選項（UI_add_answer / case / UI_remove_answer）中，請僅使用「中文譯名」（例如：`月影城`），以保持選單簡潔並確保三位一體一致性。
+
+## 翻譯工作流程 (Workflow)
+1. **紀錄進度**：每翻譯完成一個 `.es` 檔，都必須在 `si_functions_report.csv` 對應的紀錄中將「Translated」改為「Yes」，並於「NPC/Event」欄位填寫相關的人名、事件或簡短描述 (10~20字)。
+2. **名詞提取**：在 `.es` 檔中出現的人名與地名，必須抽出來放入 `Extracted_Terms.md` 統一整理，並且一定要在旁邊標註該詞彙是來自哪一個 `.es` 檔，以利後續查詢。
 
 ## 書籍與特殊物品名詞 (0638)
 - **Silverleaf** ➔ **銀葉草** (一種美味但無營養的食物)
@@ -127,9 +165,16 @@
 - **Man Versus Fish: The Ultimate Conflict** ➔ **人與魚：終極衝突**
 - **Knight's Bridge in a Nutshell** ➔ **騎士橋遊戲簡介**
 
-## 八環法術翻譯
-### 第一環 (1st Circle) —— 基礎、環境操作
-- **Awaken** ➔ **喚醒眾人**
+## 其他專有名詞
+- **Brrr** ➔ **冷啊**
+- **Ugh** ➔ **呃**
+- **Mundanes** ➔ **凡夫俗子**
+- **Mundane** ➔ **凡夫俗子**
+- **automaton** ➔ **魔導人偶**
+- **automatons** ➔ **魔導人偶**
+
+## 九環法術翻譯
+### 第一環 (First Circle of Magic)
 - **Create Food** ➔ **製造食物**
 - **Cure** ➔ **醫療**
 - **Detect Trap** ➔ **偵測陷阱**
@@ -137,73 +182,147 @@
 - **Great Ignite** ➔ **大點燃術**
 - **Light** ➔ **亮光術**
 - **Locate** ➔ **定位術**
+- **Telekinesis** ➔ **遙控術**
 
-### 第二環 (2nd Circle) —— 輔助與初級戰鬥
-- **Destroy Trap** ➔ **摧毀陷阱** 
-- **Enchant** ➔ **著魔術** 
-- **Fire Blast** ➔ **火焰術** 
-- **Great Light** ➔ **大光亮術**
+### 第二環 (Second Circle of Magic)
+- **Awaken** ➔ **喚醒術**
+- **Cold Blast** ➔ **寒冰術**
+- **Destroy Trap** ➔ **摧毀陷阱**
+- **False Coin** ➔ **假錢複製術**
+- **Great Light** ➔ **大亮光術**
+- **Heal** ➔ **醫療術**
 - **Mass Cure** ➔ **大治療術**
 - **Protection** ➔ **保護術**
-- **Telekinesis** ➔ **遙控術**
-- **Wizard Eye** ➔ **巫師眼**
 
-### 第三環 (3rd Circle) —— 狀態干擾與恢復
+### 第三環 (Third Circle of Magic)
+- **Columna's Intuition** ➔ **直覺顯像術**
 - **Curse** ➔ **詛咒術**
-- **Heal** ➔ **醫療術**
+- **Enchant Missiles** ➔ **魔法飛彈**
 - **Paralyze** ➔ **麻痺術**
-- **Peer** ➔ **靈視術**
-- **Poison** ➔ **撒毒術**
-- **Protect All** ➔ **保護全體隊員**
+- **Protect All** ➔ **保護眾人**
 - **Sleep** ➔ **催眠術**
-- **Swarm** ➔ **招蟲術**
+- **Translation** ➔ **翻譯術**
 
-### 第四環 (4th Circle) —— 元素與空間旅行
-- **Conjure** ➔ **招遣術**
-- **Lightning** ➔ **霹靂閃電**
-- **Mark** ➔ **標記術**
+### 第四環 (Fourth Circle of Magic)
+- **Blink** ➔ **瞬目移步法**
+- **Deter** ➔ **妨礙術**
+- **Flash** ➔ **強光術**
 - **Mass Curse** ➔ **大詛咒術**
-- **Recall** ➔ **喚回術**
 - **Reveal** ➔ **現形術**
-- **Seance** ➔ **降神術**
+- **Transcribe** ➔ **抄寫術**
 - **Unlock Magic** ➔ **開鎖術**
 
-### 第五環 (5th Circle) —— 進階精神與環境控制
-- **Charm** ➔ **迷惑術**
-- **Dance** ➔ **狂舞術**
-- **Dispel Field** ➔ **祛除力場**
+### 第五環 (Fifth Circle of Magic)
+- **Conjure** ➔ **召遣術**
 - **Explosion** ➔ **爆炸術**
-- **Fire Field** ➔ **火焰力場**
-- **Great Heal** ➔ **大治療術**
+- **Great Heal** ➔ **大醫療術**
 - **Invisibility** ➔ **隱身術**
 - **Mass Sleep** ➔ **大催眠術**
+- **Surprise** ➔ **奇襲術**
 
-### 第六環 (6th Circle) —— 範圍毀滅與力場
-- **Cause Fear** ➔ **恐懼術**
-- **Clone** ➔ **複製隊員**
-- **Fire Ring** ➔ **火環術**
-- **Flame Strike** ➔ **火焰之擊**
-- **Magic Storm** ➔ **魔法風暴**
-- **Poison Field** ➔ **毒性力場**
-- **Sleep Field** ➔ **催眠力場**
-- **Tremor** ➔ **大地震**
+### 第六環 (Sixth Circle of Magic)
+- **Betray** ➔ **背叛**
+- **Cause Fear** ➔ **造成恐懼**
+- **Cold Strike** ➔ **冷擊術**
+- **Create Automata** ➔ **創造運輸工具**
+- **Create Missile** ➔ **造箭術**
+- **Dispel Illusion** ➔ **解除幻象**
+- **Fire Field** ➔ **火焰力場**
+- **Fire Ring** ➔ **火焰環**
 
-### 第七環 (7th Circle) —— 高階攻擊與變化
-- **Create Gold** ➔ **製金術**
-- **Death Bolt** ➔ **死亡之矢**
-- **Delayed Blast** ➔ **延遲爆炸術**
+### 第七環 (Seventh Circle of Magic)
 - **Energy Field** ➔ **能量力場**
-- **Energy Mist** ➔ **能量之矢**
-- **Mass Charm** ➔ **大迷惑術**
+- **Energy Mist** ➔ **能量之霧**
+- **Lightning** ➔ **霹靂閃電**
+- **Mass Awaken** ➔ **大喚醒術**
 - **Mass Might** ➔ **大力術**
-- **Restoration** ➔ **回複術**
+- **Poison Mist** ➔ **毒霧術**
+- **Restoration** ➔ **回復術**
+- **Vibrate** ➔ **大震動**
 
-### 第八環 (8th Circle) —— 終極禁咒（傳奇法術）
-- **Armageddon** ➔ **末日決戰**
+### 第八環 (Eighth Circle of Magic)
+- **Create Ice** ➔ **造冰術**
+- **Delayed Blast** ➔ **延遲爆炸術**
+- **Fetch** ➔ **隔空取物**
+- **Firesnake** ➔ **火蛇術**
+- **Invoke Snow Serpent** ➔ **召喚雪蛇**
+- **Mind Blast** ➔ **心靈爆破**
+- **Serpent Bond** ➔ **蛇枷**
+- **Swordstrike** ➔ **劍擊術**
+
+### 第九環 (Ninth Circle of Magic)
 - **Death Vortex** ➔ **死亡漩渦**
+- **Imbalance** ➔ **均衡失調**
 - **Invisibility All** ➔ **全體隱形**
 - **Mass Death** ➔ **大死亡術**
-- **Resurrect** ➔ **復活術**
-- **Summon** ➔ **招喚術**
-- **Swordstrike** ➔ **劍擊術**
-- **Time Stop** ➔ **時間暫停**
+- **Spiral Missile** ➔ **螺旋飛彈**
+- **Stop Storm** ➔ **停止風暴**
+- **Summon** ➔ **召喚術**
+- **Time Stop** ➔ **時光暫停**
+
+## 怪物名稱翻譯
+- **Acid Slug** ➔ **酸液蛞蝓**
+- **Alligator** ➔ **鱷魚**
+- **Bat, Giant** ➔ **大蝙蝠**
+- **Bear** ➔ **熊**
+- **Bear, Polar** ➔ **北極熊**
+- **Bird** ➔ **鳥**
+- **Boar** ➔ **野豬**
+- **Cat** ➔ **貓**
+- **Chicken** ➔ **雞**
+- **Corpser** ➔ **屍怪**
+- **Cow** ➔ **牛**
+- **Cyclops** ➔ **獨眼巨人**
+- **Daemon** ➔ **地妖**
+- **Deer** ➔ **鹿**
+- **Dog** ➔ **狗**
+- **Dragon** ➔ **龍**
+- **Fish** ➔ **魚**
+- **Fox** ➔ **狐狸**
+- **Frost Serpent** ➔ **霜蛇**
+- **Gazer** ➔ **多眼妖**
+- **Ghost** ➔ **鬼**
+- **Goblin** ➔ **哥布林**
+- **Gremlin** ➔ **小魔怪**
+- **Gwani** ➔ **猿怪**
+- **Harpy** ➔ **鷹身女妖**
+- **Headless** ➔ **無頭怪**
+- **Ice Corpser** ➔ **冰屍怪**
+- **Ice Elemental** ➔ **冰元素**
+- **Ice Troll** ➔ **冰巨魔**
+- **Ice Worm** ➔ **冰蠕蟲**
+- **Insect** ➔ **昆蟲**
+- **Mongbat** ➔ **蝙蝠精**
+- **Mouse** ➔ **老鼠**
+- **Mummy** ➔ **木乃伊**
+- **Penguin** ➔ **企鵝**
+- **Phoenix** ➔ **鳳凰**
+- **Rabbit** ➔ **兔子**
+- **Rat, Giant** ➔ **大老鼠**
+- **Ratman** ➔ **鼠人**
+- **Reaper** ➔ **樹精**
+- **Scorpion** ➔ **蠍子**
+- **Serpent** ➔ **巨蛇**
+- **Sheep** ➔ **羊**
+- **Skeletal Dragon** ➔ **骷髏龍**
+- **Skeleton** ➔ **骷髏人**
+- **Slime** ➔ **黏怪**
+- **Snow Leopard** ➔ **雪豹**
+- **Spider, Giant** ➔ **大蜘蛛**
+- **Stone Harpy** ➔ **石像鷹身女妖**
+- **Swamp Tentacle** ➔ **沼澤怪**
+- **Troll** ➔ **巨魔**
+- **Wolf** ➔ **狼**
+
+## 施法材料翻譯
+- **Black Pearl** ➔ **黑珍珠**
+- **Blood Moss** ➔ **血苔**
+- **Blood Spawn** ➔ **血菌絲**
+- **Garlic** ➔ **大蒜**
+- **Ginseng** ➔ **人蔘**
+- **Mandrake Root** ➔ **曼陀羅根**
+- **Nightshade** ➔ **龍葵**
+- **Serpent Scales** ➔ **蛇鱗**
+- **Spider's Silk** ➔ **蜘蛛絲**
+- **Sulfurous Ash** ➔ **硫磺灰**
+- **Worm's Heart** ➔ **蠕蟲心**

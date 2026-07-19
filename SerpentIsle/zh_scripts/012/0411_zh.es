@@ -45,8 +45,8 @@ labelFunc0411_003B:
 	var0004 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0329]);
 labelFunc0411_005E:
 	if (!(event == 0x0001)) goto labelFunc0411_008E;
-	UI_item_say(0xFE9C, (("@Good " + var0003) + "!@"));
-	Func097F(0xFFEF, "@Hush...@", 0x0002);
+	UI_item_say(0xFE9C, (("@早安" + var0003) + "!@"));
+	Func097F(0xFFEF, "@噓……@", 0x0002);
 	UI_set_schedule_type(0xFFEF, 0x0003);
 labelFunc0411_008E:
 	if (!(event == 0x0009)) goto labelFunc0411_0B31;
@@ -55,495 +55,495 @@ labelFunc0411_008E:
 	UI_show_npc_face0(0xFFEF, 0x0000);
 	var0005 = UI_get_item_flag(0xFFEF, 0x001C);
 	if (!(gflags[0x00F0] && (!gflags[0x0128]))) goto labelFunc0411_00DD;
-	message("\"I cannot give thee what thou dost desire until thou hast gazed into my crystal ball, ");
+	message("「在你凝視過我的水晶球之前，我不能給你你所渴望的，");
 	message(var0000);
-	message(". Come back when thou hast done so.\"");
+	message("。當你完成這件事後再來找我。」");
 	say();
-	Func097F(0xFFEF, "@The crystal ball!@", 0x0000);
+	Func097F(0xFFEF, "@水晶球！@", 0x0000);
 	abort;
 labelFunc0411_00DD:
 	if (!(gflags[0x00F0] && (gflags[0x0128] && (!gflags[0x011D])))) goto labelFunc0411_011B;
 	if (!gflags[0x00F2]) goto labelFunc0411_0106;
-	message("\"Did I not tell thee to speak with Gustacio?\"");
+	message("「難道我沒有告訴你要去和 Gustacio 談談嗎？」");
 	say();
-	Func097F(0xFFEF, "@Tell him the news.@", 0x0000);
+	Func097F(0xFFEF, "@告訴他這個消息。@", 0x0000);
 	abort;
 	goto labelFunc0411_011B;
 labelFunc0411_0106:
-	message("\"At last, all is made clear! Tell good Gustacio that Edrin the missing brother is actually Ale the Bird! He will know what to do from there...\"");
+	message("「終於，一切都明朗了！去告訴好心的 Gustacio ，失蹤的兄弟 Edrin 其實就是怪鳥 Ale ！他會知道接下來該怎麼做的……」");
 	say();
 	gflags[0x00F2] = true;
-	Func097F(0xFFEF, "@Speak to Gustacio...@", 0x0000);
+	Func097F(0xFFEF, "@去跟 Gustacio 說……@", 0x0000);
 	abort;
 labelFunc0411_011B:
 	if (!gflags[0x0004]) goto labelFunc0411_0150;
 	if (!gflags[0x00F6]) goto labelFunc0411_0134;
-	message("\"So good to see that the Anarch hath not yet slain thee, ");
+	message("「真高興看到無政府主義者還沒有殺了你，");
 	message(var0000);
-	message(". How may I be of aid?\"");
+	message("。我能幫上什麼忙嗎？」");
 	say();
 	goto labelFunc0411_0138;
 labelFunc0411_0134:
-	message("\"A thousand thanks! I had feared that I would remain an adornment of this place forever, thanks to Shamino the Anarch.\"");
+	message("「萬分感謝！我本來還擔心我會永遠成為這個地方的裝飾品，這都要拜無政府主義者 Shamino 所賜。」");
 	say();
 labelFunc0411_0138:
-	UI_add_answer("Shamino the Anarch");
+	UI_add_answer("無政府主義者 Shamino ");
 	if (!(!gflags[0x00F6])) goto labelFunc0411_014D;
-	UI_add_answer("gratitude");
+	UI_add_answer("感謝");
 labelFunc0411_014D:
 	goto labelFunc0411_017A;
 labelFunc0411_0150:
 	if (!(var0005 == false)) goto labelFunc0411_0169;
 	UI_set_item_flag(0xFFEF, 0x001C);
-	message("\"Thou must be a seeker after knowledge. I am the Mage Fedabiblio, and I serve as the Magister of Moonshade.\"");
+	message("「你一定是個知識的探索者。我是法師 Fedabiblio ，我擔任月影城( Moonshade )的教長。」");
 	say();
 	goto labelFunc0411_016D;
 labelFunc0411_0169:
-	message("\"Thou hast a voracious appetite for knowledge. What dost thou desire to learn?\"");
+	message("「你對知識有著無窮的渴望。你想學習什麼？」");
 	say();
 labelFunc0411_016D:
-	UI_add_answer(["Magister", "Moonshade"]);
+	UI_add_answer(["教長", "月影城"]);
 labelFunc0411_017A:
 	if (!(!gflags[0x00DB])) goto labelFunc0411_0188;
-	UI_add_answer("spellbook");
+	UI_add_answer("法術書");
 labelFunc0411_0188:
 	if (!(gflags[0x00E4] && (!gflags[0x0128]))) goto labelFunc0411_019A;
-	UI_add_answer("Gustacio's experiment");
+	UI_add_answer(" Gustacio 的實驗");
 labelFunc0411_019A:
 	if (!(gflags[0x00EA] && (!UI_get_item_flag(0xFFE1, 0x0004)))) goto labelFunc0411_01B3;
-	UI_add_answer("kidnap");
+	UI_add_answer("綁架");
 labelFunc0411_01B3:
 	if (!((gflags[0x010B] && (!gflags[0x028C])) || ((gflags[0x010C] && (!gflags[0x0295])) || ((gflags[0x010E] && (!gflags[0x029A])) || ((gflags[0x0110] && (!gflags[0x028F])) || ((gflags[0x0112] && (!gflags[0x0290])) || (gflags[0x0114] && (!gflags[0x0293])))))))) goto labelFunc0411_01F2;
-	UI_add_answer("information");
+	UI_add_answer("情報");
 labelFunc0411_01F2:
-	UI_add_answer(["bye"]);
+	UI_add_answer(["再見"]);
 labelFunc0411_01FC:
 	converse attend labelFunc0411_0B30;
-	case "kidnap" attend labelFunc0411_0238:
-	UI_remove_answer("kidnap");
+	case "綁架" attend labelFunc0411_0238:
+	UI_remove_answer("綁架");
 	if (!gflags[0x00EB]) goto labelFunc0411_021B;
-	message("\"Most ominous... Again, I would direct thee to the MageLord. He is a man of low intellect and great cunning. No doubt he can aid thee.\"");
+	message("「最不祥的……我再次建議你去找領主法師。他是個智力低下但狡猾的人。毫無疑問他能幫到你。」");
 	say();
 	goto labelFunc0411_0238;
 labelFunc0411_021B:
 	if (!gflags[0x0141]) goto labelFunc0411_022C;
-	message("\"Do not waste thy time with the Rangers -- this is a case for Mages, most obviously!\"");
+	message("「別在遊俠身上浪費你的時間——這顯然是法師該管的案子！」");
 	say();
-	message("\"I direct thee to go immediately to MageLord Filbercio with this matter.\"");
+	message("「我建議你立即帶著這件事去找領主法師 Filbercio 。」");
 	say();
 	goto labelFunc0411_0238;
 labelFunc0411_022C:
-	message("\"Thy friend hath been taken! By means magical! 'Tis an offense to the Council...\"");
+	message("「你的朋友被帶走了！靠著魔法！這是對評議會的冒犯……」");
 	say();
-	message("\"Take thy case directly to the MageLord -- he shall aid thee!\"");
+	message("「把你的案子直接交給領主法師——他會幫助你的！」");
 	say();
 	gflags[0x0141] = true;
 labelFunc0411_0238:
-	case "Shamino the Anarch" attend labelFunc0411_0274:
-	UI_remove_answer("Shamino the Anarch");
-	message("\"The first thing that thy monstrous companion did when he came into town was oust the MageLord and the Council of Mages. When they resisted his edicts, Shamino killed them!\"");
+	case "無政府主義者 Shamino " attend labelFunc0411_0274:
+	UI_remove_answer("無政府主義者 Shamino ");
+	message("「你那位怪物同伴進城後做的第一件事就是罷黜領主法師和法師評議會。當他們反抗他的法令時， Shamino 殺了他們！」");
 	say();
-	message("\"Thou wouldst not believe it, ");
+	message("「你絕對不會相信的，");
 	message(var0000);
-	message("! The Anarch simply deflected all their spells... They had no effect at all.\"");
+	message("！無政府主義者輕易地彈開了他們所有的法術……它們完全沒有任何效果。」");
 	say();
-	message("\"The Rangers became his instruments of chaos... Anything was allowed, as long as one held a 'permit' from the Anarch.\"");
+	message("「遊俠變成了他製造混亂的工具……只要持有無政府主義者發的『許可證』，任何事都是被允許的。」");
 	say();
-	message("\"I do not know how many of us are left now. It seems that most of the manors are abandoned...\"");
+	message("「我不知道我們現在還剩下多少人。似乎大部分的莊園都被遺棄了……」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["anything", "left", "abandoned", "change subject"]);
+	UI_add_answer(["任何事", "留下的人", "被遺棄的", "改變話題"]);
 labelFunc0411_0274:
-	case "change subject" attend labelFunc0411_0284:
+	case "改變話題" attend labelFunc0411_0284:
 	UI_pop_answers();
-	message("\"Ah, thy mind is questing again! What shall we speak of now?\"");
+	message("「啊，你的思緒又在探索了！我們現在要談些什麼？」");
 	say();
 labelFunc0411_0284:
-	case "anything" attend labelFunc0411_02C7:
-	UI_remove_answer("anything");
-	message("\"Many of the Mages fell to the Anarch's wild justice. Others fell to the unorthodox magic of their fellow Mages. And I found myself in the lamentable position thou didst find me in for NOT using Death spells!\"");
+	case "任何事" attend labelFunc0411_02C7:
+	UI_remove_answer("任何事");
+	message("「許多法師死於無政府主義者那狂野的正義之下。其他人則死於他們同僚法師的非正統魔法。而我，因為『不』使用死亡法術，落得你發現我時那種悲慘的處境！」");
 	say();
 	if (!(!gflags[0x0100])) goto labelFunc0411_02C7;
-	message("\"I tried to save Captain Hawk from the Anarch, but my powers were not sufficient.\"");
+	message("「我試圖從無政府主義者手中救出 Hawk 船長，但我的力量不夠。」");
 	say();
-	message("\"As he lay dying, Hawk gave me this key. He said that it unlocked his sea chest at the Blue Boar Inn, and that the contents might be helpful someday.\"");
+	message("「當他奄奄一息時， Hawk 給了我這把鑰匙。他說這把鑰匙可以打開他在 Blue Boar 旅店的海員箱，裡面的東西總有一天會派上用場。」");
 	say();
-	message("\"As I think the key might be useful to thee, I am giving it to thee.\"");
+	message("「我想這把鑰匙可能對你有用，所以我把它給你。」");
 	say();
 	var0004 = Func099B(0xFE9C, 0x0001, 0x0281, 0x00BC, 0x0006, 0x0000, true);
 	gflags[0x0100] = true;
 labelFunc0411_02C7:
-	case "abandoned" attend labelFunc0411_02EA:
-	UI_remove_answer("abandoned");
-	message("\"It might not seem virtuous, but I would suggest that thou shouldst explore the empty manors for magical scrolls and other items which might be of use in thy quest.\"");
+	case "被遺棄的" attend labelFunc0411_02EA:
+	UI_remove_answer("被遺棄的");
+	message("「這看起來可能不怎麼高尚，但我建議你應該去那些空蕩蕩的莊園裡尋找魔法卷軸和其他可能對你任務有用的物品。」");
 	say();
-	message("\"For instance, thou couldst perchance assemble a near- complete set of the fabled Serpent Teeth -- \"");
+	message("「例如，你也許能收集到一套幾乎完整的傳說中的巨蛇之齒——」");
 	say();
-	message("\"It was a coup to steal such an artifact from old Erstam, but now the trophies lie abandoned in the mansions...\"");
+	message("「從老 Erstam 那裡偷走這樣的神器是一次大膽的行動，但現在這些戰利品卻被遺棄在豪宅裡……」");
 	say();
-	message("\"I know not what the powers of the Teeth might be, but they might reveal their secret to thee.\"");
+	message("「我不知道那些牙齒的力量是什麼，但它們也許會向你揭示它們的秘密。」");
 	say();
-	message("\"But beware of the automatons!\"");
+	message("「不過要小心那些自動機器人！」");
 	say();
 labelFunc0411_02EA:
-	case "left" attend labelFunc0411_0301:
-	UI_remove_answer("left");
-	message("\"The last I knew, before I earned the Anarch's ire, Stefano was alive... though he was being pursued by some fell creature.\"");
+	case "留下的人" attend labelFunc0411_0301:
+	UI_remove_answer("留下的人");
+	message("「在我惹怒無政府主義者之前，我最後所知的是， Stefano 還活著……儘管他正被某個可怕的生物追趕。」");
 	say();
-	message("\"Ducio yet lived. As did Torrissio. And I can only pray that Andrio and Freli escaped the notice of that monster!\"");
+	message("「 Ducio 依然健在。 Torrissio 也是。我只能祈禱 Andrio 和 Freli 能躲過那個怪物的注意！」");
 	say();
 labelFunc0411_0301:
-	case "Magister" attend labelFunc0411_0330:
-	UI_remove_answer("Magister");
-	message("\"Thou dost not know what a Magister does? The Magister is the director of the Seminarium -- 'tis the only School for Mages in the entire land.\"");
+	case "教長" attend labelFunc0411_0330:
+	UI_remove_answer("教長");
+	message("「你不知道教長是做什麼的嗎？教長是神學院的管理者——那是這整片土地上唯一的一所法師學校。」");
 	say();
-	message("\"One of my functions is to find gifted children for this school. When they are located, I bring them to the school.\"");
+	message("「我的職責之一就是為這所學校尋找有天賦的孩子。一旦找到他們，我就會把他們帶到學校來。」");
 	say();
-	message("\"I was appointed as Magister for life.\"");
+	message("「我被任命為終身教長。」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["Seminarium", "children", "change subject"]);
+	UI_add_answer(["神學院", "孩子", "改變話題"]);
 labelFunc0411_0330:
-	case "children" attend labelFunc0411_0358:
-	UI_remove_answer("children");
-	message("\"A young, untrained Mage can be quite dangerous! Therefore, these children must be brought to the Seminarium -- for their own safety!\"");
+	case "孩子" attend labelFunc0411_0358:
+	UI_remove_answer("孩子");
+	message("「一個年輕、未受過訓練的法師是非常危險的！因此，為了他們自身的安全，這些孩子必須被帶到神學院來！」");
 	say();
-	message("\"For instance, take young Freli. His father was a shopkeeper. What could a merchant teach his son about magical powers!\"");
+	message("「舉例來說，就拿年輕的 Freli 來說吧。他的父親是個店主。一個商人能教他的兒子什麼魔法力量呢！」");
 	say();
-	message("\"Taking care of my students is a tiring but fulfilling duty. Young Freli shows much promise, and Andrio is almost ready to graduate.\"");
+	message("「照顧我的學生是一項疲憊但充滿成就感的職責。年輕的 Freli 前途無量，而 Andrio 則幾乎準備好要畢業了。」");
 	say();
 	UI_add_answer(["Andrio", "Freli"]);
 labelFunc0411_0358:
-	case "Seminarium" attend labelFunc0411_037D:
-	UI_remove_answer("Seminarium");
-	message("\"The Seminarium is unique in all the land, for all Mages are welcome to come here and study our records concerning spell research and magical activity.\"");
+	case "神學院" attend labelFunc0411_037D:
+	UI_remove_answer("神學院");
+	message("「神學院在全大陸是獨一無二的，因為歡迎所有法師來這裡研究我們關於法術研究和魔法活動的記錄。」");
 	say();
-	message("\"Any Mage can study here in safety, knowing that this place is a sanctuary from violence.\"");
+	message("「任何法師都可以在這裡安全地學習，知道這個地方是免於暴力的庇護所。」");
 	say();
-	message("\"Passing travellers also stop here to access our library.\"");
+	message("「路過的旅行者也會在這裡停留以使用我們的圖書館。」");
 	say();
-	UI_add_answer(["travellers"]);
+	UI_add_answer(["旅行者"]);
 labelFunc0411_037D:
 	case "Andrio" attend labelFunc0411_0390:
 	UI_remove_answer("Andrio");
-	message("\"Andrio hath quite a bit of youthful enthusiasm, and I find that most refreshing, but I do wish that he would use a bit more caution in his experiments!\"");
+	message("「 Andrio 充滿了年輕人的熱情，我覺得這非常令人耳目一新，但我真希望他在實驗中能更謹慎一點！」");
 	say();
 labelFunc0411_0390:
 	case "Freli" attend labelFunc0411_03A3:
 	UI_remove_answer("Freli");
-	message("\"I must confess that Freli is my favorite student. He is most brilliant, but the unfortunate thing is that he knows this. Sometimes I feel that he is simply too smart for his own good.\"");
+	message("「我必須承認 Freli 是我最喜歡的學生。他非常聰明，但不幸的是他知道這一點。有時候我覺得他只是聰明反被聰明誤。」");
 	say();
 labelFunc0411_03A3:
-	case "travellers" attend labelFunc0411_03BE:
-	UI_remove_answer("travellers");
-	message("\"Thou art not the first to be attracted to our facilities! In recent days, two visitors are memorable.\"");
+	case "旅行者" attend labelFunc0411_03BE:
+	UI_remove_answer("旅行者");
+	message("「你不是第一個被我們的設施所吸引的人！最近幾天，有兩位訪客令人難忘。」");
 	say();
-	message("\"First, there was the scholar Gwenno. We could not help her much, as her interest was in historical matters. I suggested that she consult the library on Monk Isle.\"");
+	message("「第一位是學者 Gwenno 。我們幫不了她太多，因為她的興趣在於歷史事務。我建議她去查閱僧侶島上的圖書館。」");
 	say();
-	message("\"Less agreeable was the visit of the Mage Batlin. He appeared to be most interested in the ancient inhabitants of this land, the Ophidians. Indeed, one might say that he was obsessed.\"");
+	message("「較不愉快的是法師巴特林( Batlin )的拜訪。他似乎對這片土地的古代居民 Ophidians 最感興趣。事實上，可以說他是著迷了。」");
 	say();
 labelFunc0411_03BE:
-	case "Moonshade" attend labelFunc0411_03EB:
-	UI_remove_answer("Moonshade");
-	message("\"Since thou art a visitor, I will explain a few things to thee. Moonshade is a city of Mages and for Mages. It is ruled by the Adepts, and served by the lesser Mages. There is a lower class -- the Mundanes. But some of them are skilled as artisans.\"");
+	case "月影城" attend labelFunc0411_03EB:
+	UI_remove_answer("月影城");
+	message("「既然你是個訪客，我會向你解釋幾件事。月影城( Moonshade )是法師之城，也是為法師而建的城市。它由高階法師統治，並由低階法師服務。還有一個較低的階級——凡夫俗子。但他們中有些人是熟練的工匠。」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["Adepts", "lesser Mages", "artisans", "Mundanes", "change subject"]);
+	UI_add_answer(["高階法師", "低階法師", "工匠", "凡夫俗子", "改變話題"]);
 labelFunc0411_03EB:
-	case "Adepts" attend labelFunc0411_045D:
-	UI_remove_answer("Adepts");
-	message("\"The three Adepts are the most powerful wizards in the city. They compose the Council of Mages, which governs the city.\"");
+	case "高階法師" attend labelFunc0411_045D:
+	UI_remove_answer("高階法師");
+	message("「三位高階法師是這座城市中最強大的巫師。他們組成了統治這座城市的法師評議會。」");
 	say();
-	message("\"One of the Adepts serves as MageLord. Currently, Filbercio rules as Lord of Moonshade.\"");
+	message("「其中一位高階法師擔任領主法師。目前， Filbercio 統治著月影城( Moonshade )。」");
 	say();
 	UI_add_answer("Filbercio");
 	if (!UI_get_item_flag(0xFFE1, 0x0004)) goto labelFunc0411_044C;
 	if (!gflags[0x00E2]) goto labelFunc0411_0434;
-	message("\"All is in an uproar, with Rotoluncia dead and her replacement -- the Necromancer Mortegro -- missing.\"");
+	message("「現在一片混亂，因為 Rotoluncia 死了，而她的接班人——死靈法師 Mortegro ——失蹤了。」");
 	say();
-	message("\"Gustacio hath asked that I join the Council in this troubled time, and I have done so.\"");
+	message("「 Gustacio 要求我在這動盪的時期加入評議會，而我也這麼做了。」");
 	say();
-	UI_add_answer(["Gustacio", "missing?"]);
+	UI_add_answer(["Gustacio", "失蹤？"]);
 	goto labelFunc0411_0449;
 labelFunc0411_0434:
-	message("\"Rotoluncia was on the Council, but her recent death hath made a change necessary. Therefore, Mortegro the Necromancer now holds her former position.\"");
+	message("「 Rotoluncia 原本在評議會中，但她最近的死亡使得改變成為必要。因此，死靈法師 Mortegro 現在接替了她以前的職位。」");
 	say();
-	message("\"Gustacio remains on the Council, as he is second in power only to Filbercio.\"");
+	message("「 Gustacio 留在評議會中，因為他的權力僅次於 Filbercio 。」");
 	say();
 	UI_add_answer(["Gustacio", "Mortegro"]);
 labelFunc0411_0449:
 	goto labelFunc0411_045D;
 labelFunc0411_044C:
-	message("\"The other two Adepts are Gustacio the Green Mage, and the Red Sorceress, Rotoluncia.\"");
+	message("「另外兩位高階法師是綠法師 Gustacio 和紅女巫 Rotoluncia 。」");
 	say();
 	UI_add_answer(["Gustacio", "Rotoluncia"]);
 labelFunc0411_045D:
 	case "Filbercio" attend labelFunc0411_0484:
 	UI_remove_answer("Filbercio");
-	message("\"He comes from a long line of Mages. Filbercio is well-respected and is known as a shrewd administrator of city affairs. In private, though, it is said that he is something of a womanizer.\"");
+	message("「他來自一個歷史悠久的法師家族。 Filbercio 備受尊敬，並以精明處理城市事務而聞名。然而，私底下據說他是個花花公子。」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["politics", "womanizer", "nothing more"]);
+	UI_add_answer(["政治", "花花公子", "沒事了"]);
 labelFunc0411_0484:
-	case "politics" attend labelFunc0411_0497:
-	UI_remove_answer("politics");
-	message("\"When dealing with magic in this city, everything in this city is political. And when dealing with politics, Filbercio is the master of the game. I dare say, he would be a force to be reckoned with, even if his actual magical skills alone were not good enough to make him the MageLord of Moonshade.\"");
+	case "政治" attend labelFunc0411_0497:
+	UI_remove_answer("政治");
+	message("「當在這座城市處理魔法時，一切都是政治。而在處理政治時， Filbercio 是這個遊戲的大師。我敢說，即使他本身的魔法技能不足以讓他成為月影城( Moonshade )的領主法師，他也會是一股不容小覷的力量。」");
 	say();
 labelFunc0411_0497:
-	case "womanizer" attend labelFunc0411_04AA:
-	UI_remove_answer("womanizer");
-	message("\"If Filbercio doth have a flaw, it is that he can be distracted by a pretty face. It doth not hurt if that face belongs to a woman who is also a powerful Mage. The trouble is that it doth not deter him if that woman is already betrothed to another! Oh, perhaps I have said too much...\"");
+	case "花花公子" attend labelFunc0411_04AA:
+	UI_remove_answer("花花公子");
+	message("「如果 Filbercio 有什麼缺點，那就是他會被漂亮的臉蛋分心。如果那張臉屬於一位同樣強大的女法師，那也沒什麼壞處。麻煩的是，即使那個女人已經和別人訂婚，也無法阻止他！哦，也許我說得太多了……」");
 	say();
 labelFunc0411_04AA:
 	case "Gustacio" attend labelFunc0411_04C1:
 	UI_remove_answer("Gustacio");
-	message("\"He is Filbercio's chief rival for the position of MageLord. Gustacio is extremely hard-working and devout in his studies and practices of the magical arts. He is a respected citizen, although there are those who do not like him -- he tends to have a rather severe personality.\"");
+	message("「他是 Filbercio 爭奪領主法師職位的主要對手。 Gustacio 在魔法藝術的學習和實踐上非常努力和虔誠。他是個受人尊敬的公民，儘管也有些人不喜歡他——他的個性往往相當嚴厲。」");
 	say();
-	message("\"Now, Gustacio hath thrown himself into his studies of the phenomenon of the teleport storms. It hath become his obsession.\"");
+	message("「現在， Gustacio 已經全心投入到傳送風暴現象的研究中。這成了他癡迷的事物。」");
 	say();
 labelFunc0411_04C1:
 	case "Rotoluncia" attend labelFunc0411_04D4:
 	UI_remove_answer("Rotoluncia");
-	message("\"Trust me, she is someone thou dost not wish to cross.\"");
+	message("「相信我，她絕對是你不想招惹的人。」");
 	say();
 labelFunc0411_04D4:
 	case "Mortegro" attend labelFunc0411_04EB:
 	UI_remove_answer("Mortegro");
-	message("\"Mortegro, master of death magic. Quite often he is dismissed as having the least political influence, but it is a mistake to underestimate him. He is a highly-skilled diplomat. After all, he hath remained on close personal speaking terms with the dead for all these years.\"");
+	message("「 Mortegro ，死亡魔法大師。人們經常因為他政治影響力最小而忽視他，但低估他是個錯誤。他是個技術高超的外交官。畢竟，這些年來他一直與死者保持著密切的私人對話。」");
 	say();
-	message("\"He holds seances regularly. I am certain he will invite thee to one, sooner or later.\"");
+	message("「他定期舉行降神會。我確信他遲早會邀請你的。」");
 	say();
 labelFunc0411_04EB:
-	case "missing?" attend labelFunc0411_0506:
-	UI_remove_answer("missing?");
-	message("\"Indeed, Mortegro hath gone missing! It is said that he chose to take a stroll during one of the magical storms...\"");
+	case "失蹤？" attend labelFunc0411_0506:
+	UI_remove_answer("失蹤？");
+	message("「確實， Mortegro 失蹤了！據說他選擇在其中一場魔法風暴期間去散步……」");
 	say();
-	message("\"Whilst making his observations of the storm, the Necromancer was struck by lightning -- and disappeared.\"");
+	message("「當死靈法師在觀察風暴時，被閃電擊中——然後就消失了。」");
 	say();
-	message("\"It would be a shame if he were dead, for only he knows the secrets of speaking with the souls of the dead.\"");
+	message("「如果他死了那就太可惜了，因為只有他知道與死者靈魂交談的秘密。」");
 	say();
 labelFunc0411_0506:
-	case "lesser Mages" attend labelFunc0411_0519:
-	UI_remove_answer("lesser Mages");
-	message("\"These are citizens who have pursued some sort of magical education. Although they know a few spells, they were not able to become Adepts. Most become Rangers or Apothecaries.\"");
+	case "低階法師" attend labelFunc0411_0519:
+	UI_remove_answer("低階法師");
+	message("「這些是受過某種魔法教育的公民。雖然他們知道一些法術，但無法成為高階法師。大多數人成為了遊俠或藥劑師。」");
 	say();
 labelFunc0411_0519:
-	case "artisans" attend labelFunc0411_052C:
-	UI_remove_answer("artisans");
-	message("\"These are basically Mundanes who possess some skill that is valued in the society of Mages. Artists, writers, musicians, metalsmiths... That sort.\"");
+	case "工匠" attend labelFunc0411_052C:
+	UI_remove_answer("工匠");
+	message("「這些基本上是在法師社會中擁有某些被重視技能的凡夫俗子。藝術家、作家、音樂家、金屬工匠……諸如此類的。」");
 	say();
 labelFunc0411_052C:
-	case "Mundanes" attend labelFunc0411_0543:
-	UI_remove_answer("Mundanes");
-	message("\"These poor souls live in a dark little world where magic is merely another powerful natural force that affects them, which they desperately try to adjust to or withstand.\"");
+	case "凡夫俗子" attend labelFunc0411_0543:
+	UI_remove_answer("凡夫俗子");
+	message("「這些可憐的人生活在一個黑暗的小世界裡，在那裡，魔法只不過是影響他們的另一種強大的自然力量，他們拼命地試圖適應或承受它。」");
 	say();
-	message("\"Most of the Mundanes born here eventually leave. They settle in Fawn or Monitor, and this is better for them.\"");
+	message("「在這裡出生的大多數凡夫俗子最終都會離開。他們在 幼鹿城( Fawn ) 或 蒙利多城( Monitor ) 定居，這對他們來說更好。」");
 	say();
 labelFunc0411_0543:
-	case "information" attend labelFunc0411_0573:
-	UI_remove_answer("information");
-	message("\"In what art thou interested?\"");
+	case "情報" attend labelFunc0411_0573:
+	UI_remove_answer("情報");
+	message("「你對什麼感興趣？」");
 	say();
 	UI_push_answers();
 	var0006 = 0x0001;
-	UI_add_answer(["people", "places", "strange objects", "nothing more"]);
+	UI_add_answer(["人物", "地點", "奇怪的物品", "沒事了"]);
 labelFunc0411_0573:
-	case "people" attend labelFunc0411_0593:
-	UI_remove_answer("people");
-	message("\"Thou hast mistaken me for a common gossip.\"");
+	case "人物" attend labelFunc0411_0593:
+	UI_remove_answer("人物");
+	message("「你把我當成了個愛聊八卦的人了。」");
 	say();
-	Func097F(0xFFEF, "@Be gone with thee!@", 0x0000);
+	Func097F(0xFFEF, "@走開！@", 0x0000);
 	abort;
 labelFunc0411_0593:
-	case "places" attend labelFunc0411_05B3:
-	UI_remove_answer("places");
-	message("\"There are many strange places that one may explore in Moonshade. To the south of the city are ancient catacombs. Somewhere within those tunnels is a way leading to a dungeon known only as Furnace.\"");
+	case "地點" attend labelFunc0411_05B3:
+	UI_remove_answer("地點");
+	message("「在月影城( Moonshade )有很多奇怪的地方可以探索。城市南部是古老的地下墓穴。在那些隧道裡的某個地方有一條通往只被稱為 Furnace 的地牢的路。」");
 	say();
-	UI_add_answer(["catacombs", "Furnace"]);
+	UI_add_answer(["地下墓穴", "Furnace"]);
 labelFunc0411_05B3:
-	case "catacombs" attend labelFunc0411_05C6:
-	UI_remove_answer("catacombs");
-	message("\"The catacombs were once occupied by the Rangers, until the water level began to rise. The Rangers built pumps to drain the water, but then a strange breed of rodent began to infest the catacombs. The creatures are said to be large vicious rats that have fangs as big as daggers. Needless to say, the catacombs were shortly abandoned.\"");
+	case "地下墓穴" attend labelFunc0411_05C6:
+	UI_remove_answer("地下墓穴");
+	message("「地下墓穴曾經被遊俠佔據，直到水位開始上升。遊俠們建造了幫浦來排水，但後來一種奇怪的嚙齒動物開始在地下墓穴中氾濫。據說那些生物是巨大的惡鼠，有著像匕首一樣大的尖牙。不用說，地下墓穴很快就被遺棄了。」");
 	say();
 labelFunc0411_05C6:
 	case "Furnace" attend labelFunc0411_05D9:
 	UI_remove_answer("Furnace");
-	message("\"I myself would not go there. It is said that the heat there is so intense that it is lethal.\"");
+	message("「我自己是不會去那裡的。據說那裡的熱度極高，足以致命。」");
 	say();
 labelFunc0411_05D9:
-	case "strange objects" attend labelFunc0411_0654:
-	message("\"Bucia the Shopkeeper hath sent thee to me! And what did she tell thee to ask of me?\"");
+	case "奇怪的物品" attend labelFunc0411_0654:
+	message("「店主 Bucia 派你來找我！她叫你問我什麼？」");
 	say();
 	UI_push_answers();
 	var0006 = (var0006 + 0x0001);
 	if (!(gflags[0x0112] && (!gflags[0x0290]))) goto labelFunc0411_0605;
-	UI_add_answer("pumice");
+	UI_add_answer("浮石");
 labelFunc0411_0605:
 	if (!(gflags[0x0110] && (!gflags[0x028F]))) goto labelFunc0411_0617;
-	UI_add_answer("apparatus");
+	UI_add_answer("儀器");
 labelFunc0411_0617:
 	if (!(gflags[0x010B] && (!gflags[0x028C]))) goto labelFunc0411_0629;
-	UI_add_answer("pinecone");
+	UI_add_answer("松果");
 labelFunc0411_0629:
 	if (!(gflags[0x010C] && (!gflags[0x0295]))) goto labelFunc0411_063B;
-	UI_add_answer("blue egg");
+	UI_add_answer("藍色蛋");
 labelFunc0411_063B:
 	if (!(gflags[0x010E] && (!gflags[0x029A]))) goto labelFunc0411_064D;
-	UI_add_answer("skull");
+	UI_add_answer("頭骨");
 labelFunc0411_064D:
-	UI_add_answer("nothing more");
+	UI_add_answer("沒事了");
 labelFunc0411_0654:
-	case "pumice" attend labelFunc0411_06A1:
-	UI_remove_answer("pumice");
+	case "浮石" attend labelFunc0411_06A1:
+	UI_remove_answer("浮石");
 	if (!Func097D(0xFE9B, 0x0001, 0x010B, 0xFE99, 0xFE99)) goto labelFunc0411_0683;
-	message("\"Might I take that...\"");
+	message("「我能拿那個嗎……」");
 	say();
-	message("\"Yes, this is pumice -- black in color, rough in texture, light in weight.\"");
+	message("「是的，這是浮石——顏色是黑的，質地粗糙，重量很輕。」");
 	say();
 	goto labelFunc0411_0687;
 labelFunc0411_0683:
-	message("\"Pumice is a light, rough rock of a black or light brown hue.\"");
+	message("「浮石是一種輕而粗糙的岩石，呈黑色或淺棕色。」");
 	say();
 labelFunc0411_0687:
-	message("\"These rocks are formed when the Primal Forces of Fire and Earth collide -- during certain conjurations, for instance.\"");
+	message("「這些岩石是在火與地的原始力量碰撞時形成的——例如在某些咒語儀式中。」");
 	say();
-	message("\"Pumice is also found deep in the bowels of the world, where fire runs liquid.\"");
+	message("「在世界深處的熔岩流動之處，也能找到浮石。」");
 	say();
 	gflags[0x029E] = true;
 	if (!(gflags[0x029E] && gflags[0x029F])) goto labelFunc0411_06A1;
 	gflags[0x0290] = true;
 labelFunc0411_06A1:
-	case "apparatus" attend labelFunc0411_072B:
-	UI_remove_answer("apparatus");
+	case "儀器" attend labelFunc0411_072B:
+	UI_remove_answer("儀器");
 	if (!Func097D(0xFE9B, 0x0001, 0x02ED, 0xFE99, 0x0001)) goto labelFunc0411_071C;
-	message("\"That item is used for researching the properties of magic, and to create new spells.\"");
+	message("「那個物品是用來研究魔法屬性和創造新法術的。」");
 	say();
 	if (!(!gflags[0x00DB])) goto labelFunc0411_0711;
-	message("\"It is not safe for thee to have such an item. As the Magister, it is my duty to take that from thee.\"");
+	message("「你擁有這樣的物品並不安全。作為教長，我有責任把它從你這裡拿走。」");
 	say();
 	var0004 = UI_remove_party_items(0x0001, 0x02ED, 0xFE99, 0x0001, 0x0012);
 	var0007 = UI_get_object_position(0xFE9C);
 	UI_obj_sprite_effect(0xFE9C, 0x0015, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF);
 	abort;
 labelFunc0411_0711:
-	message("\"It is not mine, but I cannot tell thee to whom it belongs. Only Master Ducio would know.\"");
+	message("「它不是我的，但我不能告訴你它屬於誰。只有 Ducio 大師知道。」");
 	say();
 	gflags[0x0111] = true;
 	goto labelFunc0411_072B;
 labelFunc0411_071C:
-	message("\"The item sounds as if it might be a piece of magical apparatus. Master Ducio would know for certain.\"");
+	message("「這物品聽起來像是某種魔法儀器。 Ducio 大師肯定會知道的。」");
 	say();
 	if (!(!gflags[0x00DB])) goto labelFunc0411_072B;
-	message("\"But thou shouldst not handle such equipment -- for Mundanes, it could be very dangerous.\"");
+	message("「但你不該接觸這樣的設備——對凡夫俗子來說，它可能非常危險。」");
 	say();
 labelFunc0411_072B:
-	case "pinecone" attend labelFunc0411_076E:
-	UI_remove_answer("pinecone");
-	message("\"Ah, yes. We sometimes find these on the beach after a storm.\"");
+	case "松果" attend labelFunc0411_076E:
+	UI_remove_answer("松果");
+	message("「啊，是的。暴風雨過後，我們有時會在海灘上發現這些。」");
 	say();
-	message("\"The northern trees produce tough cones which are filled with seeds. Later, the cones open and release their seeds.\"");
+	message("「北方的樹木會結出堅硬的毬果，裡面充滿了種子。之後，毬果會打開並釋放出種子。」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0108, 0xFE99, 0xFE99)) goto labelFunc0411_0762;
-	message("\"As thou canst see, this cone still doth have its seeds. It hath been newly released from its tree.\"");
+	message("「如你所見，這個毬果仍有種子。它剛從樹上掉下來不久。」");
 	say();
-	message("\"It must have come directly from the northern forests, on the mainland north of the Swamp of Gorlab.\"");
+	message("「它一定直接來自北方森林，就在 果雷沼澤( Gorlab Swamp )以北的主大陸上。」");
 	say();
 	goto labelFunc0411_076A;
 labelFunc0411_0762:
-	message("\"Once the pinecone releases its seeds, it becomes a dried husk. Being light, it is transported by wind and wave.\"");
+	message("「一旦松果釋放了種子，它就會變成一個乾燥的空殼。因為很輕，它會隨著風和海浪被運走。」");
 	say();
-	message("\"Thy pinecone could have come from any northern forest or any beach.\"");
+	message("「你的松果可能來自任何北方森林或任何海灘。」");
 	say();
 labelFunc0411_076A:
 	gflags[0x028C] = true;
 labelFunc0411_076E:
-	case "blue egg" attend labelFunc0411_07DB:
-	UI_remove_answer("blue egg");
+	case "藍色蛋" attend labelFunc0411_07DB:
+	UI_remove_answer("藍色蛋");
 	if (!Func097D(0xFE9B, 0x0001, 0x0241, 0xFE99, 0x0003)) goto labelFunc0411_079D;
-	message("\"What a stench! This egg hath gone putrid!\"");
+	message("「好臭！這顆蛋已經腐敗了！」");
 	say();
-	message("\"A blue egg... doth not seem to be magical or in any way arcane...\"");
+	message("「一顆藍色的蛋……似乎並非魔法物品或有任何神祕之處……」");
 	say();
 	goto labelFunc0411_07A1;
 labelFunc0411_079D:
-	message("\"A blue egg... have I ever read of such a thing? Blue hens, blue frogs -- but eggs?\"");
+	message("「一顆藍色的蛋……我有在書上看過這種東西嗎？藍色的母雞，藍色的青蛙——但是蛋？」");
 	say();
 labelFunc0411_07A1:
-	message("\"I do not know what it is! And if I do not know, then no one shall.\"");
+	message("「我不知道那是什麼！如果連我都不知道，那就沒有人會知道了。」");
 	say();
 	if (!(!(UI_get_item_flag(0xFFD8, 0x0004) && Func0942(0xFFED)))) goto labelFunc0411_07DB;
 	UI_show_npc_face1(0xFFED, 0x0000);
-	message("\"Cap'n Hawk might know! He hath been everywhere in the world!\"");
+	message("「 Hawk 船長或許知道！他去過世界各地！」");
 	say();
 	gflags[0x010A] = true;
 	UI_set_conversation_slot(0x0000);
-	message("\"The lad doth have a point. Also...\"");
+	message("「這孩子說得有道理。而且……」");
 	say();
-	message("\"Erstam the Mad Mage would almost certainly know, but he doth not share his information with anyone.\"");
+	message("「瘋狂法師 Erstam 幾乎肯定知道，但他不與任何人分享他的情報。」");
 	say();
 labelFunc0411_07DB:
-	case "skull" attend labelFunc0411_0812:
-	UI_remove_answer("skull");
+	case "頭骨" attend labelFunc0411_0812:
+	UI_remove_answer("頭骨");
 	if (!Func097D(0xFE9B, 0x0001, 0x00F4, 0xFE99, 0xFE99)) goto labelFunc0411_080E;
-	message("\"Allow me to handle it...\"");
+	message("「讓我來處理它……」");
 	say();
-	message("\"But this is merely the skull of a common bear, such as are found on the mainland, most often along the westerly coast.\"");
+	message("「但這只不過是隻普通熊的頭骨，這種熊在主大陸隨處可見，最常見於西海岸。」");
 	say();
 	gflags[0x029A] = true;
 	goto labelFunc0411_0812;
 labelFunc0411_080E:
-	message("\"If thou wilt bring me the item, I shall examine it for thee. I can tell thee nothing now.\"");
+	message("「如果你把東西帶給我，我會替你檢查。我現在無法告訴你什麼。」");
 	say();
 labelFunc0411_0812:
-	case "nothing more" attend labelFunc0411_0822:
+	case "沒事了" attend labelFunc0411_0822:
 	UI_pop_answers();
-	message("\"Remember always -- knowledge is power.\"");
+	message("「永遠記住——知識就是力量。」");
 	say();
 labelFunc0411_0822:
-	case "gratitude" attend labelFunc0411_0875:
-	UI_remove_answer("gratitude");
-	message("\"Thank thee for saving me. Now that I am no longer imprisoned within stone, I can continue my researches. There must be some way to stop Shamino the Anarch!\"");
+	case "感謝" attend labelFunc0411_0875:
+	UI_remove_answer("感謝");
+	message("「謝謝你救了我。現在我不再被囚禁在石頭裡，可以繼續我的研究了。一定有辦法可以阻止無政府主義者 Shamino ！」");
 	say();
-	var0008 = Func0992(0x0001, "@We seek the Scroll of the Serpent, sir.@", "@I seek the Scroll of the Serpent, sir.@", false);
+	var0008 = Func0992(0x0001, "@先生，我們在尋找巨蛇卷軸。@", "@先生，我在尋找巨蛇卷軸。@", false);
 	UI_set_conversation_slot(0x0000);
-	message("\"The ancient scroll? Be warned -- it is written entirely in the ancient runes of the Daemons who once dwelt in this land. I can understand none of it.\"");
+	message("「那卷古老的卷軸？我警告你——那完全是用曾經居住在這片土地上的惡魔的古老符文寫成的。我一個字也看不懂。」");
 	say();
-	message("\"It is said that Erstam translated portions of it, but the translation was lost many years ago.\"");
+	message("「據說 Erstam 曾經翻譯了其中一部分，但那份譯文多年前就遺失了。」");
 	say();
-	message("\"As a token of my gratitude, please accept this, the Scroll of the Serpent.\"");
+	message("「作為我感激的信物，請接受這個，巨蛇卷軸。」");
 	say();
 	var0004 = Func099B(0xFE9C, 0x0001, 0x02C3, 0x0050, 0x0000, 0x0000, true);
 	gflags[0x00F6] = true;
 labelFunc0411_0875:
-	case "Gustacio's experiment" attend labelFunc0411_089D:
-	UI_remove_answer("Gustacio's experiment");
-	message("\"Hmmm... I think that thou shouldst consult my crystal ball. Perhaps it can provide a clue into the matter of the missing brother.\"");
+	case " Gustacio 的實驗" attend labelFunc0411_089D:
+	UI_remove_answer(" Gustacio 的實驗");
+	message("「嗯……我想你應該去看看我的水晶球。也許它可以為失蹤兄弟的事情提供線索。」");
 	say();
-	message("\"Once thou hast looked, come back and I shall divine what thou hast seen.\"");
+	message("「你看過之後，回來找我，我會解讀你所看到的景象。」");
 	say();
 	gflags[0x00F0] = true;
-	Func097F(0xFFEF, "@The crystal ball!@", 0x0000);
+	Func097F(0xFFEF, "@水晶球！@", 0x0000);
 	abort;
 labelFunc0411_089D:
-	case "spellbook" attend labelFunc0411_0B03:
-	UI_remove_answer("spellbook");
+	case "法術書" attend labelFunc0411_0B03:
+	UI_remove_answer("法術書");
 	if (!(!gflags[0x00DE])) goto labelFunc0411_08BB;
-	message("\"Bring me three fresh Mandrake Roots, and I shall let thee have a spellbook. The Roots are found on Monk Isle.\"");
+	message("「給我帶三株新鮮的曼德拉草根來，我就給你一本法術書。那些草根可以在僧侶島上找到。」");
 	say();
 	gflags[0x00DE] = true;
 labelFunc0411_08BB:
 	if (!Func097D(0xFE9B, 0x0001, 0x034A, 0xFE99, 0x0003)) goto labelFunc0411_0AF5;
 	if (!(!Func097D(0xFE9B, 0x0003, 0x034A, 0xFE99, 0x0003))) goto labelFunc0411_08F7;
-	message("\"This is not a sufficient number of roots with which to make a spellbook. Return to Monk Isle, and when thou again comest, bring three roots of the Mandrake.\"");
+	message("「這些草根的數量不足以製作一本法術書。回到僧侶島去，當你再來時，帶上三株曼德拉草根。」");
 	say();
-	Func097F(0xFFEF, "@Go back!@", 0x0000);
+	Func097F(0xFFEF, "@回去！@", 0x0000);
 	abort;
 labelFunc0411_08F7:
 	if (!gflags[0x026D]) goto labelFunc0411_0ADD;
-	message("\"I see that thou hast brought the Mandrake Roots. But I am still hesitant... If thou art truly a Mage, thou wilt be able to answer my four questions.\"");
+	message("「我看到你帶來了曼德拉草根。但我仍然有些猶豫……如果你真的是個法師，你就能回答我的四個問題。」");
 	say();
 	if (!Func098C()) goto labelFunc0411_0ABC;
-	message("\"Forgive me for my suspicions. But thou wilt understand that I take my responsibility seriously. I will now conjure a spellbook for thee.\"");
+	message("「原諒我的多疑。但你會明白我對我的職責很認真。我現在就為你變出一本法術書。」");
 	say();
 	UI_obj_sprite_effect(0xFE9C, 0x0015, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF);
 	var0004 = UI_remove_party_items(0x0003, 0x034A, 0xFE99, 0x0003, 0x0000);
@@ -554,7 +554,7 @@ labelFunc0411_08F7:
 labelFunc0411_0976:
 	var0004 = Func099F(0x02F9, 0xFE99, 0x0005);
 	if (!(var0004 == 0x0000)) goto labelFunc0411_0997;
-	message("\"Ummm.... For some reason, I cannot locate the spellbook that I was going to give thee. Thou wilt have to return at a later time.\"");
+	message("「嗯……不知為何，我找不到我打算給你的那本法術書了。你必須晚點再來。」");
 	say();
 	abort;
 	goto labelFunc0411_09A0;
@@ -569,9 +569,9 @@ labelFunc0411_09BD:
 	var0004 = UI_add_spell(var000D, 0x0000, var0009);
 	goto labelFunc0411_09BD;
 labelFunc0411_09DB:
-	message("\"Thou wilt notice that the Transcribe spell is within thy spellbook. Use it to copy spell scrolls into thy spellbook, for they will disappear once thou hast used them.\"");
+	message("「你會注意到『抄寫（ Transcribe ）』法術已經在你的法術書裡了。用它將法術卷軸抄寫到你的法術書中，因為那些卷軸一經使用就會消失。」");
 	say();
-	message("\"Remember this well. It may mean the difference between thy life and thy death.\"");
+	message("「牢記這點。這可能關係到你的生死。」");
 	say();
 	gflags[0x00DB] = true;
 	var000E = [0x0975, 0x0748];
@@ -590,30 +590,30 @@ labelFunc0411_09DB:
 labelFunc0411_0ABC:
 	UI_set_schedule_type(0xFFEF, 0x0014);
 	UI_clear_item_say(0xFFEF);
-	Func097F(0xFFEF, "@Be gone, rogue!@", 0x0000);
+	Func097F(0xFFEF, "@滾開，流氓！@", 0x0000);
 	abort;
 labelFunc0411_0ADA:
 	goto labelFunc0411_0AF2;
 labelFunc0411_0ADD:
-	message("\"Thou didst not understand me. The Roots must be fresh, taken from the swamp precisely as the tides are receding. These roots are stale, and unsuitable for our purposes.\"");
+	message("「你沒聽懂我的話。這些草根必須是新鮮的，必須是在潮水退去時從沼澤裡採下來的。這些草根已經不新鮮了，不適合我們的用途。」");
 	say();
-	message("\"Return to Monk Isle, and return with fresh roots of the Mandrake!\"");
+	message("「回到僧侶島去，帶著新鮮的曼德拉草根回來！」");
 	say();
-	Func097F(0xFFEF, "@Return!@", 0x0000);
+	Func097F(0xFFEF, "@回去！@", 0x0000);
 	abort;
 labelFunc0411_0AF2:
 	goto labelFunc0411_0B03;
 labelFunc0411_0AF5:
 	if (!gflags[0x00DE]) goto labelFunc0411_0B03;
-	message("\"Without the Mandrake Roots, I can do nothing for thee.\"");
+	message("「沒有曼德拉草根，我什麼也幫不了你。」");
 	say();
-	message("\"Return to Monk Isle, and return with fresh roots of the Mandrake!\"");
+	message("「回到僧侶島去，帶著新鮮的曼德拉草根回來！」");
 	say();
 labelFunc0411_0B03:
-	case "bye" attend labelFunc0411_0B2D:
+	case "再見" attend labelFunc0411_0B2D:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Thank thee!@", 0x0000);
-	Func097F(0xFFEF, "@Seek truth always.@", 0x0002);
+	Func097F(0xFE9C, "@謝謝你！@", 0x0000);
+	Func097F(0xFFEF, "@永遠追求真理。@", 0x0002);
 	Func08FF();
 	goto labelFunc0411_0B30;
 labelFunc0411_0B2D:

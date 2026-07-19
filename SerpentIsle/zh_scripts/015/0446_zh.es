@@ -38,20 +38,20 @@ labelFunc0446_0065:
 	if (!(gflags[0x0054] && ((UI_get_schedule_type(0xFFBA) == 0x000E) && ((var0002[0x0001] > 0x042F) && ((var0002[0x0001] < 0x043F) && ((var0002[0x0002] > 0x0A50) && (var0002[0x0002] < 0x0A5F))))))) goto labelFunc0446_0107;
 	0xFFBA->Func07D2();
 	UI_set_schedule_type(0xFFBA, 0x000F);
-	Func097F(0xFFBA, "@Yes, love?@", 0x0002);
+	Func097F(0xFFBA, "@是的，親愛的？@", 0x0002);
 	var0000 = UI_delayed_execute_usecode_array(0xFFBA, [(byte)0x23, (byte)0x55, 0x02E6], 0x000A);
 	UI_play_music(0x001C, Func09A0(0x0005, 0x0001));
 	goto labelFunc0446_014F;
 labelFunc0446_0107:
-	UI_item_say(0xFE9C, "@Miss!@");
+	UI_item_say(0xFE9C, "@小姐！@");
 	0xFFBA->Func07D1();
 	if (!UI_is_pc_female()) goto labelFunc0446_012D;
-	Func097F(0xFFBA, "@Yes, dearie?@", 0x0002);
+	Func097F(0xFFBA, "@是的，親愛的？@", 0x0002);
 	goto labelFunc0446_0139;
 labelFunc0446_012D:
-	Func097F(0xFFBA, "@Yes, handsome?@", 0x0002);
+	Func097F(0xFFBA, "@是的，帥哥？@", 0x0002);
 labelFunc0446_0139:
-	Func097F(0xFFBA, "Hello.", 0x0002);
+	Func097F(0xFFBA, "哈囉。", 0x0002);
 	UI_set_schedule_type(0xFFBA, 0x0003);
 labelFunc0446_014F:
 	if (!(event == 0x0009)) goto labelFunc0446_07D5;
@@ -59,39 +59,39 @@ labelFunc0446_014F:
 	UI_clear_item_say(0xFFBA);
 	UI_show_npc_face0(0xFFBA, 0x0000);
 	if (!(gflags[0x0054] && (UI_get_schedule_type(0xFFBA) == 0x000E))) goto labelFunc0446_0199;
-	message("\"Oh, darling! Let us meet in my bedroom...\"");
+	message("「噢，親愛的！我們去我的臥室見吧……」");
 	say();
-	Func097F(0xFFBA, "@I am so sleepy...@", 0x0000);
+	Func097F(0xFFBA, "@我好睏喔……@", 0x0000);
 	UI_run_schedule(0xFFBA);
 	abort;
 labelFunc0446_0199:
 	if (!(!UI_get_item_flag(0xFFBA, 0x001C))) goto labelFunc0446_01E5;
 	if (!(!UI_is_pc_female())) goto labelFunc0446_01B6;
-	message("\"Forgive my boldness, but I must say that thou hast a fine build, milord! Surely, thou hast overcome many foes with the powerful thrust of thy weapon...\"");
+	message("「原諒我的大膽，但我必須說你的身材真好，大人！想必你已經用你武器強而有力的刺擊克服了許多敵人……」");
 	say();
 	goto labelFunc0446_01BA;
 labelFunc0446_01B6:
-	message("\"What can I do for thee, dear?\"");
+	message("「親愛的，我能為你做什麼嗎？」");
 	say();
 labelFunc0446_01BA:
 	if (!UI_npc_nearby(0xFFB3)) goto labelFunc0446_01D4;
-	Func094E(0xFFB3, "@I do hope that I am not interrupting...@");
+	Func094E(0xFFB3, "@希望我沒有打擾到你們……@");
 	UI_set_conversation_slot(0x0000);
 labelFunc0446_01D4:
-	message("\"My name is Lucilla. Is there anything I can do for thee? Anything at all?\"");
+	message("「我的名字是 Lucilla 。有什麼我能為你效勞的嗎？任何事都可以喔？」");
 	say();
 	UI_set_item_flag(0xFFBA, 0x001C);
 	goto labelFunc0446_01E9;
 labelFunc0446_01E5:
-	message("\"Hello again!\"");
+	message("「又見面了！」");
 	say();
 labelFunc0446_01E9:
-	UI_add_answer(["duties"]);
+	UI_add_answer(["職業"]);
 	if (!Func0942(0xFFB3)) goto labelFunc0446_0203;
-	UI_add_answer("interrupting");
+	UI_add_answer("打擾");
 labelFunc0446_0203:
 	if (!gflags[0x0053]) goto labelFunc0446_0210;
-	UI_add_answer("rendezvous");
+	UI_add_answer("約會");
 labelFunc0446_0210:
 	if (!gflags[0x008F]) goto labelFunc0446_021D;
 	UI_add_answer("Andral");
@@ -100,83 +100,83 @@ labelFunc0446_021D:
 	UI_add_answer("Spektor");
 labelFunc0446_022A:
 	if (!(gflags[0x009C] && (!gflags[0x0291]))) goto labelFunc0446_023C;
-	UI_add_answer("lost ring");
+	UI_add_answer("遺失的戒指");
 labelFunc0446_023C:
 	if (!(gflags[0x004A] && (!gflags[0x0091]))) goto labelFunc0446_024E;
-	UI_add_answer("banquet stew");
+	UI_add_answer("宴會燉肉");
 labelFunc0446_024E:
 	if (!(gflags[0x0045] && (UI_get_schedule_type(0xFFB4) != 0x000F))) goto labelFunc0446_0267;
-	UI_add_answer("brown bottle");
+	UI_add_answer("棕色瓶子");
 labelFunc0446_0267:
 	if (!(gflags[0x0048] && (!(UI_get_item_flag(0xFFB4, 0x0004) && (!(gflags[0x0038] && (!gflags[0x0092]))))))) goto labelFunc0446_028A;
-	UI_add_answer("traitor");
+	UI_add_answer("叛徒");
 labelFunc0446_028A:
-	UI_add_answer(["name", "buy", "bye"]);
+	UI_add_answer(["姓名", "買賣", "告辭"]);
 labelFunc0446_029A:
 	converse attend labelFunc0446_07D4;
-	case "traitor" attend labelFunc0446_02D9:
-	UI_remove_answer("traitor");
-	message("\"This is all so confusing. Lord Brendann is certain that there must be a traitor, and the Wolves are united behind him.\"");
+	case "叛徒" attend labelFunc0446_02D9:
+	UI_remove_answer("叛徒");
+	message("「這一切都太令人困惑了。 Brendann 領主確信一定有叛徒，而且野狼軍團都在背後支持他。」");
 	say();
-	message("\"Yet I have also heard that there is certainly no traitor, and that we should not indulge in hysteria...\"");
+	message("「然而我也聽說絕對沒有叛徒，我們不該陷入歇斯底里……」");
 	say();
-	var0003 = Func0992(0x0001, "@Who told thee this, madam?@", 0x0000, false);
+	var0003 = Func0992(0x0001, "@誰告訴妳的，夫人？@", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc0446_02D9;
 	UI_set_conversation_slot(0x0000);
-	message("\"Um... no single person, actually. I have merely heard it said in conversation. In a tavern, one hears everything.\"");
+	message("「嗯……其實沒有特定的人。我只是在閒聊中聽到的。在酒館裡，什麼都聽得到。」");
 	say();
 labelFunc0446_02D9:
-	case "brown bottle" attend labelFunc0446_0318:
-	UI_remove_answer("brown bottle");
+	case "棕色瓶子" attend labelFunc0446_0318:
+	UI_remove_answer("棕色瓶子");
 	if (!Func097D(0xFE9B, 0x0001, 0x0268, 0xFE99, 0x0009)) goto labelFunc0446_0310;
-	message("\"'Tis a very dirty bottle. Thou didst find this in the woods?\"");
+	message("「這是一個非常髒的瓶子。你是在樹林裡找到的嗎？」");
 	say();
-	message("\"Ah! 'Tis one of Simon's ale bottles. I order them specially for him, as only he can stand the taste.\"");
+	message("「啊！這是 Simon 的麥酒瓶之一。我專門為他訂的，因為只有他受得了那種味道。」");
 	say();
-	message("\"Fawnish ale -- phew! A horrible brew.\"");
+	message("「布恩麥酒( Fawnish ale )——呸！一種難喝的酒。」");
 	say();
 	gflags[0x005F] = true;
 	goto labelFunc0446_0318;
 labelFunc0446_0310:
-	message("\"If thou couldst bring me the bottle, I am sure that I could identify it. We supply ale and spirits for the entire town from the pub where I work.\"");
+	message("「如果你能把瓶子帶給我，我肯定能認出來。我們酒館供應全鎮的麥酒和烈酒。」");
 	say();
-	message("\"If the bottle is of an uncommon type, then perhaps that would be a clue.\"");
+	message("「如果那種瓶子並不常見，也許會是個線索。」");
 	say();
 labelFunc0446_0318:
-	case "name" attend labelFunc0446_0335:
-	UI_remove_answer("name");
-	message("\"My name is Lucilla.\"");
+	case "姓名" attend labelFunc0446_0335:
+	UI_remove_answer("姓名");
+	message("「我的名字是 Lucilla 。」");
 	say();
 	UI_set_item_flag(0xFFBA, 0x001C);
 labelFunc0446_0335:
-	case "duties" attend labelFunc0446_0392:
-	UI_remove_answer("duties");
-	message("\"I run the Slashing Sword, the best pub in Monitor. Thou mightest think that cooking is not a very Knightly activity, but I assure thee, feeding the warriors in this town is indeed a Quest of Courage!\"");
+	case "職業" attend labelFunc0446_0392:
+	UI_remove_answer("職業");
+	message("「我經營斬劍酒館( Slashing Sword )，蒙利多城最好的酒館。你也許覺得煮飯不是什麼騎士的活動，但我向你保證，餵飽這個鎮上的戰士確實是一項勇氣的考驗( Quest of Courage )！」");
 	say();
 	if (!(UI_get_schedule_type(0xFFBA) == 0x0017)) goto labelFunc0446_0363;
-	message("\"If thou dost want anything to eat or drink, thou hast merely to say so, ");
+	message("「如果你想吃點或喝點什麼，只要說一聲，」");
 	message(var0001);
-	message(".\"");
+	message("。」");
 	say();
 	goto labelFunc0446_0367;
 labelFunc0446_0363:
-	message("\"Please come by the pub sometime.\"");
+	message("「有空請來酒館坐坐。」");
 	say();
 labelFunc0446_0367:
 	if (!(!gflags[0x0048])) goto labelFunc0446_0382;
-	message("\"And I would love to chat further, but I do not speak with strangers. My standards are very high, and thou art not a Knight of Monitor.\"");
+	message("「我很樂意跟你多聊聊，但我不跟陌生人說話。我的標準很高，而你不是蒙利多城的騎士。」");
 	say();
-	Func097F(0xFFBA, "@Not a Knight!@", 0x0000);
+	Func097F(0xFFBA, "@不是騎士！@", 0x0000);
 	abort;
 	goto labelFunc0446_0392;
 labelFunc0446_0382:
-	UI_add_answer(["The Slashing Sword", "cooking", "Quest of Courage"]);
+	UI_add_answer(["斬劍酒館", "煮飯", "勇氣的考驗"]);
 labelFunc0446_0392:
-	case "buy" attend labelFunc0446_03E9:
+	case "買賣" attend labelFunc0446_03E9:
 	if (!(UI_get_schedule_type(0xFFBA) == 0x0017)) goto labelFunc0446_03DE;
-	message("\"What wouldst thou like, ");
+	message("「你想要點什麼，」");
 	message(var0001);
-	message("?\"");
+	message("？」");
 	say();
 	var0004 = Func0956(["food", "drink"]);
 	if (!(var0004 == "food")) goto labelFunc0446_03CE;
@@ -187,274 +187,274 @@ labelFunc0446_03CE:
 labelFunc0446_03DB:
 	goto labelFunc0446_03E9;
 labelFunc0446_03DE:
-	message("\"If thou wouldst return when we are open, perhaps I could serve thee food or drink...\"");
+	message("「如果你在我們營業的時候回來，也許我能為你提供食物或飲料……」");
 	say();
-	UI_remove_answer("buy");
+	UI_remove_answer("買賣");
 labelFunc0446_03E9:
-	case "The Slashing Sword" attend labelFunc0446_041C:
-	UI_remove_answer("The Slashing Sword");
+	case "斬劍酒館" attend labelFunc0446_041C:
+	UI_remove_answer("斬劍酒館");
 	message("\"'Tis a pub that hath been handed down generation to generation, originating with my great-grandfather. Although 'tis a wonderful place to have a meal, most of the men in the town come by to court me!\"");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0446_040F;
-	message("\"I enjoy all the attention...\"");
+	message("「我很享受所有的關注……」");
 	say();
-	UI_add_answer("court");
+	UI_add_answer("獻殷勤");
 labelFunc0446_040F:
-	UI_add_answer(["great-grandfather", "men"]);
+	UI_add_answer(["曾祖父", "男人"]);
 labelFunc0446_041C:
-	case "great-grandfather" attend labelFunc0446_043C:
-	UI_remove_answer("great-grandfather");
-	message("\"He was not only the founder of the pub, but he was a Champion Knight of Monitor! He wore the Helm of Monitor for several years, before he was bested in a tournament.\"");
+	case "曾祖父" attend labelFunc0446_043C:
+	UI_remove_answer("曾祖父");
+	message("「他不僅是酒館的創始人，還是蒙利多城的冠軍騎士！他戴著蒙利多頭盔( Helm of Monitor )好幾年，直到在競技場上被擊敗。」");
 	say();
-	UI_add_answer(["Champion Knight", "tournament"]);
+	UI_add_answer(["冠軍騎士", "競技場"]);
 labelFunc0446_043C:
-	case "Champion Knight" attend labelFunc0446_0473:
-	UI_remove_answer("Champion Knight");
-	message("\"I can hardly speak of the Champion Knight without remembering Astrid's foul death at the hands of the Goblins.\"");
+	case "冠軍騎士" attend labelFunc0446_0473:
+	UI_remove_answer("冠軍騎士");
+	message("「提到冠軍騎士，我就忍不住想起 Astrid 慘死在哥布林手中的事。」");
 	say();
 	if (!gflags[0x002C]) goto labelFunc0446_045C;
-	message("\"I am so glad that thou hast recaptured the Helm of Monitor. Thou dost make a fine Champion Knight in thine own right.\"");
+	message("「我真高興你奪回了蒙利多頭盔。你確實是一位當之無愧的冠軍騎士。」");
 	say();
 	goto labelFunc0446_0473;
 labelFunc0446_045C:
-	message("\"I fear that there is none worthy to fill her shoes as Champion Knight!\"");
+	message("「恐怕沒有人配得上接替她成為冠軍騎士！」");
 	say();
-	UI_add_answer("worthy");
+	UI_add_answer("配得上");
 	if (!(!UI_is_pc_female())) goto labelFunc0446_0473;
-	message("\"Except, perhaps, thyself? I must believe that thou hast had thy share of conquests in thy time...\"");
+	message("「或許，除了你之外？我相信你一定也有過不少征服的經驗……」");
 	say();
 labelFunc0446_0473:
-	case "worthy" attend labelFunc0446_04C5:
-	UI_remove_answer("worthy");
-	message("\"Monitor is not the town it once was. Our ancestors founded a settlement built on the Principle of Courage.\"");
+	case "配得上" attend labelFunc0446_04C5:
+	UI_remove_answer("配得上");
+	message("「蒙利多城已經不是以前那個城鎮了。我們的祖先建立了一個建立在勇氣準則上的聚落。」");
 	say();
-	message("\"But today, greed and glory have corrupted our Knights. Monitor needs a champion that is not only a leader on the battlefield, but someone who can stir their hearts and lead them back to what it means to be a Knight.\"");
+	message("「但是今天，貪婪和榮耀已經腐化了我們的騎士。蒙利多城需要一位不僅能在戰場上領導，而且能打動他們的心，引導他們找回騎士真諦的冠軍。」");
 	say();
 	if (!(!gflags[0x002C])) goto labelFunc0446_0495;
-	message("\"I wish a new Champion Knight would arise, one who can not only retrieve the Helm of Monitor, but also right the wrongs in this town!\"");
+	message("「我希望一位新的冠軍騎士能夠出現，一個不僅能找回蒙利多頭盔，還能糾正這個城鎮錯誤的人！」");
 	say();
 labelFunc0446_0495:
 	if (!(!UI_is_pc_female())) goto labelFunc0446_04A4;
-	message("\"Could that person be thee? I would like it to be so.\"");
+	message("「那個人會是你嗎？我希望是。」");
 	say();
 	goto labelFunc0446_04C5;
 labelFunc0446_04A4:
-	var0003 = Func0992(0x0001, "@Perhaps this is a quest for the Avatar?@", 0x0000, false);
+	var0003 = Func0992(0x0001, "@也許這是聖者的考驗？@", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc0446_04C5;
 	UI_set_conversation_slot(0x0000);
 labelFunc0446_04C5:
-	case "tournament" attend labelFunc0446_04E3:
-	UI_remove_answer("tournament");
-	message("\"All the Knights think about is fighting! And who do they fight? The Goblins? No! They prefer to spar with one another at the List Field!\"");
+	case "競技場" attend labelFunc0446_04E3:
+	UI_remove_answer("競技場");
+	message("「騎士們滿腦子想的都是戰鬥！他們跟誰戰鬥？哥布林？不！他們寧願在競技場( List Field )裡互相切磋！」");
 	say();
-	message("\"Luther is the worst. Oh, how I hate him!\"");
+	message("「 Luther 是最糟的。噢，我有多討厭他！」");
 	say();
 	UI_add_answer("Luther");
 labelFunc0446_04E3:
 	case "Luther" attend labelFunc0446_0519:
 	UI_remove_answer("Luther");
-	message("\"What a buffoon! He thinks every woman in this town wants him, but I find him repulsive!\"");
+	message("「真是個小丑！他以為這個鎮上的每個女人都想要他，但我只覺得他令人作嘔！」");
 	say();
-	message("\"To prove his prowess, he torments the weakest Knights and challenges them to meet him on the List Field.\"");
+	message("「為了證明他的實力，他折磨最弱的騎士，並挑戰他們在競技場上對決。」");
 	say();
-	message("\"And when they lose -- which they must, since Luther is such a powerful brute -- he gloats over them.\"");
+	message("「而當他們輸了——他們一定會輸，因為 Luther 是個如此強大野蠻的傢伙——他就會對他們幸災樂禍。」");
 	say();
 	if (!(!gflags[0x00B2])) goto labelFunc0446_0515;
-	message("\"They say that that new shield of his doth have special powers, so that now he is truly invincible!\"");
+	message("「他們說他的新盾牌有特殊的力量，所以現在他真的是無敵了！」");
 	say();
-	message("\"Well, I say if it is magical, then force him to not use it! Monitorians do not use magic weapons or armour...\"");
+	message("「嗯，我說如果是魔法，那就強迫他不要用！蒙利多人不使用魔法武器或盔甲……」");
 	say();
-	message("\"But no one can tell Luther anything.\"");
+	message("「但沒人能對 Luther 說什麼。」");
 	say();
 	gflags[0x00AC] = true;
 labelFunc0446_0515:
 	gflags[0x00AE] = true;
 labelFunc0446_0519:
-	case "men" attend labelFunc0446_0557:
-	UI_remove_answer("men");
+	case "男人" attend labelFunc0446_0557:
+	UI_remove_answer("男人");
 	if (!UI_is_pc_female()) goto labelFunc0446_054F;
-	message("\"Dost thou not know that men are scum? Yet we cannot leave them alone...\"");
+	message("「難道你不知道男人都是人渣嗎？但我們又不能不理他們……」");
 	say();
-	message("\"Wouldst thou like to know more about the men of Monitor?\"");
+	message("「你想了解更多關於蒙利多城男人的事嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0446_0548;
-	message("\"Avoid Brendann -- he sees women as trophies, to be won and then set on a shelf. He is shallow and insincere.\"");
+	message("「避開 Brendann ——他把女人當作戰利品，贏了之後就束之高閣。他膚淺又不真誠。」");
 	say();
-	message("\"Templar is very attractive, I think. But Caladin is a brute, and Luther is a clod!\"");
+	message("「我覺得 Templar 很有魅力。但 Caladin 是個粗漢，而 Luther 是個笨蛋！」");
 	say();
 	goto labelFunc0446_054C;
 labelFunc0446_0548:
-	message("\"'Tis just as well -- there are no great lovers in this place!\"");
+	message("「這也難怪——這裡根本沒有什麼偉大的情人！」");
 	say();
 labelFunc0446_054C:
 	goto labelFunc0446_0557;
 labelFunc0446_054F:
-	message("\"Why is it that a woman must have a man? I have looked and looked, and I have not yet found the one for me.\"");
+	message("「為什麼女人一定要有男人？我找了又找，還沒找到適合我的那個人。」");
 	say();
-	message("\"He must be tough, yet gentle with his woman. Brave, but afraid to disappoint his mate. He must be devious enough to win many battles, yet fair enough to consider me as his equal...\"");
+	message("「他必須強悍，但對他的女人要溫柔。勇敢，但害怕讓他的伴侶失望。他必須夠狡猾以贏得多場戰鬥，但也必須夠公平，把我視為與他平起平坐的人……」");
 	say();
 labelFunc0446_0557:
 	case "Andral" attend labelFunc0446_056A:
 	UI_remove_answer("Andral");
-	message("\"For a time we were quite close. I still have great respect for his talents, but in truth he always put me second to his work. I suppose I enjoy being the center of attention too much.\"");
+	message("「有一段時間我們很親近。我仍然非常尊重他的才華，但事實上他總是把工作放在我前面。我想我太享受成為眾人焦點的感覺了。」");
 	say();
 labelFunc0446_056A:
-	case "court" attend labelFunc0446_05B4:
-	UI_remove_answer("court");
-	message("\"Dost thou find me beautiful? I admit I love the attention! But I have never found the right man for me...\"");
+	case "獻殷勤" attend labelFunc0446_05B4:
+	UI_remove_answer("獻殷勤");
+	message("「你覺得我美嗎？我承認我喜歡被關注！但我一直沒找到對的男人……」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0446_05B4;
-	message("\"But I sense that thou art somehow different, milord.\"");
+	message("「但我感覺你有些與眾不同，大人。」");
 	say();
 	if (!gflags[0x0055]) goto labelFunc0446_0593;
-	message("\"Listen, Spektor and I truly have nothing together. Honestly, 'tis nothing.\"");
+	message("「聽著， Spektor 和我真的沒有什麼。說實話，什麼都沒有。」");
 	say();
 labelFunc0446_0593:
-	message("\"Wouldst thou like to meet later?\"");
+	message("「你想晚點見個面嗎？」");
 	say();
 	gflags[0x0053] = true;
 	if (!Func0955()) goto labelFunc0446_05B0;
 labelFunc0446_05A1:
-	message("\"Then meet me at the pub after we have closed, in the wee hours before dawn. 'Tis the only time I can be alone with thee since I work so late.\"");
+	message("「那麼在我們打烊後，在黎明前的凌晨時分來酒館見我。這是我唯一能和你獨處的時間，因為我工作到很晚。」");
 	say();
-	message("\"I cannot wait.\"");
+	message("「我等不及了。」");
 	say();
 	gflags[0x0054] = true;
 	goto labelFunc0446_05B4;
 labelFunc0446_05B0:
-	message("\"Oh. Be that way, then. There are plenty of others who are interested in me!\"");
+	message("「噢。那就這樣吧。還有一大堆人對我有興趣呢！」");
 	say();
 labelFunc0446_05B4:
-	case "cooking" attend labelFunc0446_05DA:
-	UI_remove_answer("cooking");
-	message("\"If I do say so myself, I am a master of cooking poultry. Or as they say...\"");
+	case "煮飯" attend labelFunc0446_05DA:
+	UI_remove_answer("煮飯");
+	message("「如果不謙虛地說，我是烹飪家禽的大師。或者像他們說的……」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0446_05D6;
-	message("\"Breasts and thighs, breasts and thighs. And which dost thou prefer, milord? But do not answer yet...\"");
+	message("「胸肉還是腿肉，胸肉還是腿肉。大人，你更喜歡哪一個？但先不要回答……」");
 	say();
 	goto labelFunc0446_05DA;
 labelFunc0446_05D6:
-	message("\"If I cannot succeed in the bedroom, I might as well try in the kitchen! Homely women make good cooks, they say...\"");
+	message("「如果我不能在臥室裡成功，我還不如在廚房裡試試！他們說長相平庸的女人都是好廚師……」");
 	say();
 labelFunc0446_05DA:
-	case "Quest of Courage" attend labelFunc0446_060F:
-	UI_remove_answer("Quest of Courage");
-	message("\"Thou knowest -- the quests to prove that thou art fit to bear thy Knighthood...\"");
+	case "勇氣的考驗" attend labelFunc0446_060F:
+	UI_remove_answer("勇氣的考驗");
+	message("「你知道的——那些證明你配得上騎士頭銜的考驗……」");
 	say();
 	if (!gflags[0x002C]) goto labelFunc0446_05FA;
-	message("\"Like when thou didst retrieve the Helm of Monitor from that vile Pomdirgun.\"");
+	message("「就像你從那個卑鄙的 Pomdirgun 手中奪回蒙利多頭盔時一樣。」");
 	say();
 	goto labelFunc0446_060F;
 labelFunc0446_05FA:
-	message("\"Surely, a fine young warrior like thyself dost plan to partake in the Quest to retrieve the Helm of Monitor?\"");
+	message("「想必，像你這樣優秀的年輕戰士，應該計畫參加找回蒙利多頭盔的考驗吧？」");
 	say();
 	if (!Func0955()) goto labelFunc0446_060B;
-	message("\"If only we could learn the secret of their hidden camp! But it remains a mystery...\"");
+	message("「要是我們能知道他們隱密營地的秘密就好了！但那還是個謎……」");
 	say();
 	goto labelFunc0446_060F;
 labelFunc0446_060B:
-	message("\"Too dangerous for a coward like thyself? And I thought better of thee...\"");
+	message("「對你這樣的懦夫來說太危險了？我還以為你有多了不起……」");
 	say();
 labelFunc0446_060F:
-	case "interrupting" attend labelFunc0446_0680:
-	UI_remove_answer("interrupting");
-	message("\"Surely, thou dost know Spektor the Financier?\"");
+	case "打擾" attend labelFunc0446_0680:
+	UI_remove_answer("打擾");
+	message("「你一定認識財務官 Spektor 吧？」");
 	say();
 	UI_show_npc_face1(0xFFB3, 0x0000);
-	message("\"I must be going. Pressing town business, that sort of thing.\"");
+	message("「我得走了。鎮上緊急的事務，這類的事情。」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("\"And it is so seldom that we are able to talk! Be sure to give my greetings to Lord Marsten.\"");
+	message("「我們難得有機會說話！一定要代我向 Marsten 領主問候。」");
 	say();
 	UI_set_conversation_slot(0x0001);
-	message("\"I shall!\"");
+	message("「我會的！」");
 	say();
 	gflags[0x0055] = true;
-	Func097F(0xFFBA, "@Farewell!@", 0x0000);
-	Func097F(0xFFB3, "@Anon!@", 0x0002);
+	Func097F(0xFFBA, "@再見！@", 0x0000);
+	Func097F(0xFFB3, "@回頭見！@", 0x0002);
 	UI_si_path_run_usecode(0xFFB3, [0x041B, 0x0A52, 0x0000], 0x000D, 0xFFB3, 0x044D, true);
 	abort;
 labelFunc0446_0680:
-	case "rendezvous" attend labelFunc0446_06BE:
-	UI_remove_answer("rendezvous");
+	case "約會" attend labelFunc0446_06BE:
+	UI_remove_answer("約會");
 	if (!(!gflags[0x0054])) goto labelFunc0446_06AD;
-	message("\"Hast thou changed thy mind about meeting?\"");
+	message("「你改變主意要見面了嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0446_06A6;
 	goto labelFunc0446_05A1;
 	goto labelFunc0446_06AA;
 labelFunc0446_06A6:
-	message("\"Suit thyself.\"");
+	message("「隨你便。」");
 	say();
 labelFunc0446_06AA:
 	goto labelFunc0446_06BE;
 labelFunc0446_06AD:
-	message("\"The time is not right. I cannot see thee now. Another time, my love...\"");
+	message("「現在時機不對。我現在不能見你。改天吧，我的愛人……」");
 	say();
-	Func097F(0xFFBA, "@Not now!@", 0x0000);
+	Func097F(0xFFBA, "@現在不行！@", 0x0000);
 	abort;
 labelFunc0446_06BE:
 	case "Spektor" attend labelFunc0446_0720:
 	UI_remove_answer("Spektor");
 	if (!(!gflags[0x0092])) goto labelFunc0446_06FA;
-	message("\"Very well, I shall bare my soul to thee.\"");
+	message("「很好，我將對你敞開心扉。」");
 	say();
 	if (!gflags[0x0055]) goto labelFunc0446_06E2;
-	message("\"I suspected that thou knewest when thou didst catch Spektor and I together that time. But we could not fool thee...\"");
+	message("「當你撞見 Spektor 和我在一起那次，我就懷疑你已經知道了。但我們騙不了你……」");
 	say();
 labelFunc0446_06E2:
-	message("\"Spektor and I were lovers. Canst thou believe it? Yet there was something appealing about that man...\"");
+	message("「 Spektor 和我是情人。你能相信嗎？但那個男人身上確實有某種吸引人的地方……」");
 	say();
-	message("\"Despite my conscience, I have kept his guilty secret for these many months. It casts filth upon my soul. I am ashamed.\"");
+	message("「儘管良心不安，這幾個月來我一直守著他那有罪的秘密。這讓我的靈魂蒙上了污垢。我很慚愧。」");
 	say();
-	UI_add_answer(["lovers", "secret"]);
+	UI_add_answer(["情人", "秘密"]);
 	goto labelFunc0446_0720;
 labelFunc0446_06FA:
-	message("\"Now that Spektor hath been arrested for his crimes, I wonder what I shall do with this key that he gave to me for safekeeping. Perhaps I shall give it to thee. Since thou hast determined all of what hath been happening, perhaps thou wilt be able to put it to good use.\"");
+	message("「既然 Spektor 已經因為他的罪行被捕，我想知道該拿他交給我保管的這把鑰匙怎麼辦。也許我該把它給你。既然你已經查明了發生的一切，也許你能好好利用它。」");
 	say();
 	if (!(!gflags[0x00C1])) goto labelFunc0446_0720;
 	var0000 = Func099B(0xFE9C, 0x0001, 0x0281, 0x0062, 0x0005, false, true);
 	gflags[0x00C1] = true;
 labelFunc0446_0720:
-	case "lovers" attend labelFunc0446_0737:
-	UI_remove_answer("lovers");
-	message("\"This is so embarrassing. To think that I could have had any man in this town, and yet I gave mine heart to... Spektor!\"");
+	case "情人" attend labelFunc0446_0737:
+	UI_remove_answer("情人");
+	message("「這太令人尷尬了。想想這個鎮上任何男人我都可以得到，但我卻把心交給了…… Spektor ！」");
 	say();
-	message("\"A Knight who had scarce drawn his sword in many moons...\"");
+	message("「一個好幾個月都沒拔過劍的騎士……」");
 	say();
 labelFunc0446_0737:
-	case "secret" attend labelFunc0446_0752:
-	UI_remove_answer("secret");
-	message("\"Spektor played a key part in Lord Marsten's plan to destroy the Bears and Wolves, so that the Leopards could rule Monitor!\"");
+	case "秘密" attend labelFunc0446_0752:
+	UI_remove_answer("秘密");
+	message("「 Spektor 在 Marsten 領主摧毀巨熊和野狼的計畫中扮演了關鍵角色，如此一來猛豹軍團就能統治蒙利多城！」");
 	say();
-	message("\"They had a secret cache of money and weapons hidden somewhere in the mountains west of town.\"");
+	message("「他們在鎮西邊的山裡某處，藏有一個存放金錢和武器的秘密地窖。」");
 	say();
-	message("\"I do not know what else they hid there, but Spektor said that they had the power to someday rule all of Serpent Isle!\"");
+	message("「我不知道他們在那裡還藏了什麼，但 Spektor 說他們有朝一日能擁有統治全巨蛇之島的力量！」");
 	say();
 labelFunc0446_0752:
-	case "lost ring" attend labelFunc0446_0765:
-	UI_remove_answer("lost ring");
-	message("\"A ring so pretty must be intended for a loved one. Perhaps a ring of marriage or engagement.\"");
+	case "遺失的戒指" attend labelFunc0446_0765:
+	UI_remove_answer("遺失的戒指");
+	message("「這麼漂亮的戒指一定是給心愛的人的。也許是結婚或訂婚戒指。」");
 	say();
 labelFunc0446_0765:
-	case "banquet stew" attend labelFunc0446_0797:
-	UI_remove_answer("banquet stew");
+	case "宴會燉肉" attend labelFunc0446_0797:
+	UI_remove_answer("宴會燉肉");
 	if (!UI_remove_party_items(0x0003, 0x0194, 0xFE99, 0x0003, false)) goto labelFunc0446_0793;
-	message("\"Very good! Now that I have the meat, thy stew will be ready for the banquet. Thy banquet will be held at the Knight's Banquet Hall. It is located south of the Pub. Thou shalt find it on Banquet Hall Road.\"");
+	message("「很好！現在我有了肉，你的燉肉將為宴會準備好。你的宴會將在騎士宴會廳( Knight's Banquet Hall )舉行。它位於酒館的南邊。你可以在宴會廳路( Banquet Hall Road )找到它。」");
 	say();
 	gflags[0x0091] = true;
 	goto labelFunc0446_0797;
 labelFunc0446_0793:
-	message("\"Now that thou hast completed the Knight's Test, thou must now bring me the meat for thy banquet stew.\"");
+	message("「既然你已經完成了騎士考驗，現在你必須為你的宴會燉肉帶肉來給我。」");
 	say();
 labelFunc0446_0797:
-	case "bye" attend labelFunc0446_07D1:
-	Func097F(0xFE9C, "@Must be going...@", 0x0000);
+	case "告辭" attend labelFunc0446_07D1:
+	Func097F(0xFE9C, "@我得走了……@", 0x0000);
 	if (!(!UI_is_pc_female())) goto labelFunc0446_07C2;
-	Func097F(0xFFBA, "@Goodbye, lover.@", 0x0002);
+	Func097F(0xFFBA, "@再見，愛人。@", 0x0002);
 	goto labelFunc0446_07CE;
 labelFunc0446_07C2:
-	Func097F(0xFFBA, "@Goodbye, milady.@", 0x0002);
+	Func097F(0xFFBA, "@再見，夫人。@", 0x0002);
 labelFunc0446_07CE:
 	goto labelFunc0446_07D4;
 labelFunc0446_07D1:

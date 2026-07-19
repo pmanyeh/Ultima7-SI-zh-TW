@@ -62,17 +62,17 @@ labelFunc0414_00E7:
 	0xFFEC->Func07D2();
 	0xFFEC->Func07D1();
 	UI_set_schedule_type(0xFFEC, 0x000F);
-	Func097F(0xFFEC, "@Oh, 'tis thee!@", 0x0002);
+	Func097F(0xFFEC, "@喔，是你！@", 0x0002);
 	var000B = UI_delayed_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x55, 0x00E6, 0x0000], 0x0005);
 	goto labelFunc0414_019D;
 labelFunc0414_0162:
-	UI_item_say(0xFE9C, "Pardon me...");
+	UI_item_say(0xFE9C, "請原諒我……");
 	0xFFEC->Func07D1();
 	if (!var0002) goto labelFunc0414_0187;
-	Func097F(0xFFEC, "@Yes, love?@", 0x0002);
+	Func097F(0xFFEC, "@是的，親愛的？@", 0x0002);
 	goto labelFunc0414_0193;
 labelFunc0414_0187:
-	Func097F(0xFFEC, "@Yes, handsome?@", 0x0002);
+	Func097F(0xFFEC, "@是的，帥哥？@", 0x0002);
 labelFunc0414_0193:
 	UI_set_schedule_type(0xFFEC, 0x0003);
 labelFunc0414_019D:
@@ -82,83 +82,83 @@ labelFunc0414_019D:
 	UI_show_npc_face0(0xFFEC, 0x0000);
 	if (!(var0000 == false)) goto labelFunc0414_01D6;
 	UI_set_item_flag(0xFFEC, 0x001C);
-	message("\"Yes, we met at the MageLord's banquet. I am Frigidazzi, of course.\"");
+	message("「是的，我們在領主法師的宴會上見過。當然，我是 Frigidazzi 。」");
 	say();
 	goto labelFunc0414_01DA;
 labelFunc0414_01D6:
-	message("\"Back so soon? But of course.\"");
+	message("「這麼快就回來了？當然是這樣。」");
 	say();
 labelFunc0414_01DA:
 	if (!gflags[0x0292]) goto labelFunc0414_01E7;
-	UI_add_answer("fur cap");
+	UI_add_answer("毛皮帽");
 labelFunc0414_01E7:
-	UI_add_answer(["spells", "goblin", "Batlin", "Moonshade", "Gwenno", "bye"]);
+	UI_add_answer(["法術", "哥布林", "巴特林", "月影城", "Gwenno", "再見"]);
 labelFunc0414_0200:
 	converse attend labelFunc0414_03B8;
-	case "fur cap" attend labelFunc0414_026B:
-	UI_remove_answer("fur cap");
+	case "毛皮帽" attend labelFunc0414_026B:
+	UI_remove_answer("毛皮帽");
 	var000B = Func097D(0xFE9B, 0x0001, 0x03EC, 0xFE99, 0x0004);
 	if (!var000B) goto labelFunc0414_0267;
-	message("\"Why, thou dost have my favorite fur cap! I have been looking for it everywhere! In fact, I have not seen it since that storm we had a while ago. Hmmm, that would mean that I have something that belongs to thee. I shall trade thee thine helm for my fur cap.\"");
+	message("「哎呀，你拿著我最喜歡的毛皮帽！我到處都在找它！事實上，自從前陣子那場風暴之後，我就再也沒見過它了。嗯，那表示我這裡可能有屬於你的東西。我會用你的頭盔換我的毛皮帽。」");
 	say();
 	gflags[0x0292] = false;
 	var000B = UI_remove_party_items(0x0001, 0x03EC, 0xFE99, 0x0004, 0x0000);
 	var000B = Func099B(0xFE9C, 0x0001, 0x017F, 0xFE99, 0x0000, 0x0000, true);
 	goto labelFunc0414_026B;
 labelFunc0414_0267:
-	message("\"Thou must me talking about my favorite fur cap! I have been looking for it everywhere! In fact, I have not seen it since that storm we had a while ago. Hmmm, perhaps that means I have something that belongs to thee. If thou dost return my fur cap to me I shall see what I have of thine.\"");
+	message("「你一定是在說我最喜歡的毛皮帽！我到處都在找它！事實上，自從前陣子那場風暴之後，我就再也沒見過它了。嗯，或許那表示我這裡有屬於你的東西。如果你把我的毛皮帽還給我，我會看看我這裡有什麼是你的。」");
 	say();
 labelFunc0414_026B:
-	case "goblin" attend labelFunc0414_027E:
-	UI_remove_answer("goblin");
-	message("\"Yes, I have a goblin for a servant. What of it? She is a perfect servant because she is almost completely impervious to the cold. But surely we can think of more interesting things to talk about...\"");
+	case "哥布林" attend labelFunc0414_027E:
+	UI_remove_answer("哥布林");
+	message("「是的，我有一個哥布林僕人。怎麼了嗎？她是個完美的僕人，因為她幾乎完全不怕冷。但我們肯定能想到更有趣的話題……」");
 	say();
 labelFunc0414_027E:
 	case "Gwenno" attend labelFunc0414_0291:
 	UI_remove_answer("Gwenno");
-	message("\"Yes, I saw her briefly a few times while she was in our city. She spent a lot of time at the Seminarium. Gwenno had a lot of interest in the exotic races of our land.\"");
+	message("「是的，她待在我們城市的時候，我曾簡短地見過她幾次。她在神學院花了很多時間。 Gwenno 對我們土地上的異國種族非常感興趣。」");
 	say();
 labelFunc0414_0291:
-	case "Batlin" attend labelFunc0414_02AF:
-	UI_remove_answer("Batlin");
-	message("\"That disgusting oaf! He wanted to buy a serpent relic from me, but I did not sell it to him!\"");
+	case "巴特林" attend labelFunc0414_02AF:
+	UI_remove_answer("巴特林");
+	message("「那個噁心的笨蛋！他想向我買巨蛇遺物，但我沒賣給他！」");
 	say();
-	message("\"Cannot we find a different topic of conversation?\"");
+	message("「我們不能換個話題嗎？」");
 	say();
-	UI_add_answer("serpent relic");
+	UI_add_answer("巨蛇遺物");
 labelFunc0414_02AF:
-	case "serpent relic" attend labelFunc0414_02E3:
-	UI_remove_answer("serpent relic");
-	message("\"It was not very remarkable -- merely a stone in the shape of a serpent's tooth. It had no powers that I know of...\"");
+	case "巨蛇遺物" attend labelFunc0414_02E3:
+	UI_remove_answer("巨蛇遺物");
+	message("「它並不起眼——只是一塊巨蛇牙齒形狀的石頭。據我所知它沒有什麼魔力……」");
 	say();
-	message("\"Many of us have these stones. In fact, it is a tradition for the best Mages to own one or more of them.\"");
+	message("「我們很多人都有這些石頭。事實上，擁有一個或多個這種石頭是頂尖法師的傳統。」");
 	say();
-	message("\"Canst thou keep a secret?\"");
+	message("「你能保守秘密嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0414_02DF;
-	message("\"I can tell thee from whence the Serpent Teeth came...\"");
+	message("「我可以告訴你巨蛇之牙是從哪裡來的……」");
 	say();
-	message("\"The Mages of Moonshade steal them from Erstam, the Mad Mage who lives on the island! It is such fine sport, but if he catches thee, he turns thee into a newt!\"");
+	message("「月影城( Moonshade )的法師們是從住在島上的瘋狂法師 Erstam 那裡偷來的！這是很好的運動，但如果他抓到你，他會把你變成一隻蠑螈！」");
 	say();
-	message("\"We do not know why he values them so. And since he now hates us, I doubt that he shall explain the matter to us.\"");
+	message("「我們不知道他為什麼這麼重視它們。而且既然他現在恨我們，我懷疑他會不會向我們解釋這件事。」");
 	say();
 	goto labelFunc0414_02E3;
 labelFunc0414_02DF:
-	message("\"Neither can I! But I had best not share my secrets with thee...\"");
+	message("「我也不能！但我最好不要跟你分享我的秘密……」");
 	say();
 labelFunc0414_02E3:
-	case "Moonshade" attend labelFunc0414_02F6:
-	UI_remove_answer("Moonshade");
-	message("\"A beautiful city, is it not? But ever so much more beautiful at night when the moon is shining down upon it. Dost thou not agree?\"");
+	case "月影城" attend labelFunc0414_02F6:
+	UI_remove_answer("月影城");
+	message("「一座美麗的城市，不是嗎？但當月光照耀著它的夜晚，它更是美得無以復加。你同意嗎？」");
 	say();
 labelFunc0414_02F6:
-	case "spells" attend labelFunc0414_035A:
-	UI_remove_answer("spells");
-	message("\"I could teach thee many things, ");
+	case "法術" attend labelFunc0414_035A:
+	UI_remove_answer("法術");
+	message("「我可以教你很多事情，");
 	message(var0003);
-	message(". Come after midnight, alone, to my manor, and I shall reveal such knowledge as thou hast never before beheld.\"");
+	message("。午夜過後，獨自一人來我的莊園，我會向你展示你從未見過的知識。」");
 	say();
-	message("\"I am a heavy sleeper, so thou shalt most likely have to awaken me...\"");
+	message("「我睡得很沉，所以你很可能必須叫醒我……」");
 	say();
 	gflags[0x0125] = true;
 	var000B = UI_find_nearby(0xFE9C, 0x010E, 0x003C, 0x0000);
@@ -170,25 +170,25 @@ labelFunc0414_032B:
 labelFunc0414_034D:
 	goto labelFunc0414_032B;
 labelFunc0414_0350:
-	UI_add_answer(["knowledge"]);
+	UI_add_answer(["知識"]);
 labelFunc0414_035A:
-	case "knowledge" attend labelFunc0414_0378:
-	UI_remove_answer("knowledge");
-	message("\"I am the mistress of cold-fire magic, a specialty I learned during my many travels to the north.\"");
+	case "知識" attend labelFunc0414_0378:
+	UI_remove_answer("知識");
+	message("「我是冰火魔法的女巫，這是我在多次前往北方旅行時學到的專長。」");
 	say();
-	message("\"Extreme cold is in its own way just as powerful a force as extreme heat. Over time, I have learned to bend it to my will.\"");
+	message("「極度的寒冷在某種程度上和極度的炎熱一樣是一股強大的力量。隨著時間的推移，我學會了如何讓它服從我的意志。」");
 	say();
-	UI_add_answer("travels to the north");
+	UI_add_answer("前往北方的旅行");
 labelFunc0414_0378:
-	case "travels to the north" attend labelFunc0414_038B:
-	UI_remove_answer("travels to the north");
-	message("\"Some of my most memorable experiences have been on my various expeditions to the north. It is a harsh and unforgiving environment, that brings out the passionate will in one's heart to survive. It is extremely invigorating. All I shall tell thee is that if thou shouldst ever travel there thou shouldst dress warmly!\"");
+	case "前往北方的旅行" attend labelFunc0414_038B:
+	UI_remove_answer("前往北方的旅行");
+	message("「我最難忘的一些經歷是在我多次前往北方的探險中。那裡是個嚴酷無情的環境，能激發出人心底求生的強烈意志。這非常令人振奮。我只能告訴你，如果你有朝一日去那裡旅行，一定要穿暖和點！」");
 	say();
 labelFunc0414_038B:
-	case "bye" attend labelFunc0414_03B5:
+	case "再見" attend labelFunc0414_03B5:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@So long!@", 0x0000);
-	Func097F(0xFFEC, "@Until next time!@", 0x0002);
+	Func097F(0xFE9C, "@再見！@", 0x0000);
+	Func097F(0xFFEC, "@下次見！@", 0x0002);
 	Func08FF();
 	goto labelFunc0414_03B8;
 labelFunc0414_03B5:

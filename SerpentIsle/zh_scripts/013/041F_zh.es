@@ -45,32 +45,32 @@ void Func041F object#(0x41F) ()
 	UI_clear_item_flag(0xFFE1, 0x001D);
 	UI_reduce_health(0xFFE1, 0x0032, 0x0000);
 	var0003 = Func0992(0x0001, 0x0000, 0x0000, true);
-	Func097F(var0003, "@The witch is dead!@", 0x0005);
-	message("\"With my dying breath, I place the Curse of the Red Witch upon thee!\"");
+	Func097F(var0003, "@女巫死了！@", 0x0005);
+	message("「在我臨死前，我要將紅衣女巫(Red Witch)的詛咒降在你身上！」");
 	say();
-	message("\"Arrgh...\"");
+	message("「呃啊……」");
 	say();
 	var0004 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0001), [(byte)0x23, (byte)0x55, 0x016B], 0x0005);
 labelFunc041F_0088:
 	if (!(event == 0x0001)) goto labelFunc041F_00BD;
-	UI_item_say(0xFE9C, "@Listen, witch!@");
-	Func097F(0xFFE1, "@Cretin!@", 0x0005);
+	UI_item_say(0xFE9C, "@聽著，女巫！@");
+	Func097F(0xFFE1, "@白痴！@", 0x0005);
 	var0004 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x27, 0x0005, (byte)0x55, 0x041F]);
 labelFunc041F_00BD:
 	if (!(event == 0x0009)) goto labelFunc041F_01E4;
 	UI_show_npc_face0(0xFFE1, 0x0000);
 	if (!(!gflags[0x0133])) goto labelFunc041F_014A;
-	message("\"So, thou hast come to rescue thy friend? Well, thou must kill me first -- I have the only key to his cell!\"");
+	message("「所以，你是來救你的朋友的？好吧，你必須先殺了我——我才有他牢房唯一的鑰匙！」");
 	say();
-	message("\"Or wilt thou tell me the secret which I desire, the key to controlling Daemons!!!\"");
+	message("「或者你願意告訴我我渴望的秘密，也就是控制惡魔(Daemons)的關鍵！！！」");
 	say();
-	var0003 = Func0992(0x0001, "@But we know nothing about gargoyles... er, Daemons.@", "@But I know nothing of Daemons...@", false);
+	var0003 = Func0992(0x0001, "@但我們對石像鬼(gargoyles)一無所知……呃，惡魔(Daemons)。@", "@但我對惡魔(Daemons)一無所知……@", false);
 	UI_set_conversation_slot(0x0000);
-	message("\"Then thou shalt die, liar.\"");
+	message("「那你去死吧，騙子。」");
 	say();
 	Func09AD(0xFFE1);
 	UI_clear_item_say(0xFFE1);
-	Func097F(0xFFE1, "@Kill the Avatar!@", 0x0000);
+	Func097F(0xFFE1, "@殺了聖者！@", 0x0000);
 	Func09AC(0xFFE1, 0xFFFF, 0x0000, 0x0000);
 	var0004 = UI_find_nearby(item, 0x016B, 0x001E, 0x0000);
 	enum();
@@ -81,27 +81,27 @@ labelFunc041F_0133:
 labelFunc041F_0147:
 	goto labelFunc041F_01E0;
 labelFunc041F_014A:
-	message("\"I am tired of playing games with thee, ");
+	message("「我厭倦了和你玩遊戲，");
 	message(var0002);
-	message(". Thou must either give me thy secrets, or kill me -- I have the only key to this chamber!\"");
+	message("。你要麼把你的秘密告訴我，要麼殺了我——我才有這個房間唯一的鑰匙！」");
 	say();
-	message("\"This is thy last chance -- wilt thou tell me the secret which I desire, the key to controlling Daemons!!!\"");
+	message("「這是你最後的機會——你願不願意告訴我我渴望的秘密，控制惡魔(Daemons)的關鍵！！！」");
 	say();
 	if (!Func0955()) goto labelFunc041F_01BA;
-	message("\"Thou shalt not live to regret this. Open thy mind to me!\"");
+	message("「你不會活著後悔的。向我敞開你的心智！」");
 	say();
 	UI_set_item_flag(0xFE9C, 0x0010);
 	UI_set_schedule_type(0xFFE1, 0x000A);
 	UI_set_schedule_type(0xFE9C, 0x000F);
 	gflags[0x0007] = true;
-	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@Ugh...@", (byte)0x6C, (byte)0x61, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x6D, (byte)0x6E, (byte)0x52, "@Mine head!@", (byte)0x27, 0x0006, (byte)0x55, 0x041F]);
+	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@呃……@", (byte)0x6C, (byte)0x61, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x6D, (byte)0x6E, (byte)0x52, "@我的頭！@", (byte)0x27, 0x0006, (byte)0x55, 0x041F]);
 	abort;
 	goto labelFunc041F_01E0;
 labelFunc041F_01BA:
-	message("\"Then thou shalt die with thy secret, Avatar...\"");
+	message("「那你帶著你的秘密去死吧，聖者……」");
 	say();
 	Func09AD(0xFFE1);
-	Func097F(0xFFE1, "@Die, fool!@", 0x0000);
+	Func097F(0xFFE1, "@去死吧，愚蠢的人！@", 0x0000);
 	Func09AC(0xFFE1, 0xFFFF, 0x0000, 0x0000);
 	abort;
 labelFunc041F_01E0:
@@ -111,7 +111,7 @@ labelFunc041F_01E4:
 	if (!gflags[0x000A]) goto labelFunc041F_020D;
 	gflags[0x000A] = false;
 	UI_set_schedule_type(0xFFE1, 0x0003);
-	Func097F(0xFFE1, "@Surprised, Avatar?@", 0x0003);
+	Func097F(0xFFE1, "@驚訝嗎，聖者？@", 0x0003);
 	abort;
 labelFunc041F_020D:
 	if (!gflags[0x0009]) goto labelFunc041F_027A;
@@ -145,23 +145,23 @@ labelFunc041F_0352:
 	if (!(gflags[0x0134] && (!gflags[0x00EA]))) goto labelFunc041F_03AF;
 	UI_show_npc_face0(0xFED2, 0x0000);
 	if (!UI_get_item_flag(0xFFE1, 0x0004)) goto labelFunc041F_037C;
-	message("\"I am speaking to thee from beyond the grave. I shall have vengeance!\"");
+	message("「我在墳墓的那一頭和你說話。我會復仇的！」");
 	say();
 	abort;
 	goto labelFunc041F_03AF;
 labelFunc041F_037C:
-	message("\"Greetings, Stranger from Another Land. Once again, I am speaking to thee by means of a magic scroll.\"");
+	message("「你好，異鄉人。我又一次透過魔法卷軸和你說話了。」");
 	say();
 	var0009 = UI_get_npc_name((0x0000 - UI_get_npc_id(0xFFE1)));
-	message("\"If thou art looking for thy companion, ");
+	message("「如果你在找你的同伴，");
 	message(var0009);
-	message(", look no further -- I have kidnapped him.\"");
+	message("，別再找了——我已經綁架他了。」");
 	say();
-	message("\"Since thou wilt not give me thy secrets, I shall obtain them from him!\"");
+	message("「既然你不肯把秘密告訴我，我就從他那裡獲取！」");
 	say();
-	message("\"Farewell, ");
+	message("「永別了，");
 	message(var0002);
-	message("...\"");
+	message("……」");
 	say();
 	gflags[0x00EA] = true;
 	abort;
@@ -173,108 +173,108 @@ labelFunc041F_03AF:
 	var000C = false;
 	var000D = UI_get_array_size(UI_get_party_list());
 	UI_show_npc_face0(0xFED2, 0x0000);
-	message("\"Greetings, Stranger from Another Land. I am speaking to thee by means of this magic scroll -- there is no need to be afraid.\"");
+	message("「你好，異鄉人。我是透過這張魔法卷軸跟你說話——沒必要害怕。」");
 	say();
 	var000E = Func0900(0x0002);
 	if (!(var000E != false)) goto labelFunc041F_0448;
 	UI_show_npc_face1(var000E[0x0001], 0x0000);
-	message("\"Afraid? Why, the Avatar is not afraid of magic.\"");
+	message("「害怕？怎麼會，聖者才不怕魔法。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"But all barbarians fear sorcery.\"");
+	message("「但所有野蠻人都害怕巫術。」");
 	say();
 	UI_show_npc_face1(var000E[0x0002], 0x0000);
 	var0003 = Func095B(var000E[0x0001]);
-	message("\"Be quiet, ");
+	message("「安靜，");
 	message(var0003);
-	message(". That witch can hear thee through that scroll!\"");
+	message("。那個女巫能透過那張卷軸聽到你說話！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Who said that! Death draws near for those who taunt Rotoluncia the Red Witch.\"");
+	message("「誰說的！嘲笑紅衣女巫(Red Witch) Rotoluncia 的人死期將至。」");
 	say();
 labelFunc041F_0448:
-	UI_add_answer(["magic", "Council", "not afraid", "bye"]);
+	UI_add_answer(["魔法", "議會", "不害怕", "告辭"]);
 labelFunc041F_045B:
 	converse attend labelFunc041F_0662;
-	case "magic" attend labelFunc041F_04DC:
-	UI_remove_answer("magic");
-	message("\"I am the most powerful wizard in this city, and I could teach thee many things -- if thou wert not a mere Mundane.\"");
+	case "魔法" attend labelFunc041F_04DC:
+	UI_remove_answer("魔法");
+	message("「我是這座城市裡最強大的法師，我可以教你很多東西——如果你不是一個凡夫俗子(Mundane)的話。」");
 	say();
 	var000E = Func0900(0x0002);
 	if (!(var000E != false)) goto labelFunc041F_04D0;
 	UI_show_npc_face1(var000E[0x0001], 0x0000);
-	message("\"But the Avatar is not a Mundane...\"");
+	message("「但聖者不是凡夫俗子……」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"What is this that they say?\"");
+	message("「他們在說什麼？」");
 	say();
 	UI_show_npc_face1(var000E[0x0002], 0x0000);
 	var0003 = Func095B(var000E[0x0001]);
-	message("\"Thou dost speak overly much, ");
+	message("「你的話太多了，");
 	message(var0003);
 	message(".\"");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc041F_04D0:
-	message("\"Thou art not a mage, or I would have detected thy powers by now.\"");
+	message("「你不是法師，否則我早就察覺到你的力量了。」");
 	say();
-	message("\"Or... perhaps thou dost shield thine abilities from my senses? Most interesting...\"");
+	message("「或者……也許你向我的感官隱藏了你的能力？這就非常有趣了……」");
 	say();
 	var000A = true;
 labelFunc041F_04DC:
-	case "Council" attend labelFunc041F_04F7:
-	UI_remove_answer("Council");
-	message("\"So my servant told thee that I sit on the Council of Mages? Perhaps I shall dismantle him to adjust a loose tongue...\"");
+	case "議會" attend labelFunc041F_04F7:
+	UI_remove_answer("議會");
+	message("「所以我的僕人告訴你我在法師議會？也許我該把他拆了來治治他那張大嘴巴……」");
 	say();
-	message("\"Indeed, I am one of the Three who rule this city, along with Gustacio the Decrepit, and that weak-willed profligate, Filbercio.\"");
+	message("「沒錯，我是統治這座城市的三人之一，另外還有老朽的 Gustacio ，以及那個意志薄弱的放蕩傢伙 Filbercio 。」");
 	say();
 	var000B = true;
 labelFunc041F_04F7:
-	case "not afraid" attend labelFunc041F_0511:
-	UI_remove_answer("not afraid");
-	message("\"Thou dost surprise me. Most Mundanes are frightened by the very idea of sorcery.\"");
+	case "不害怕" attend labelFunc041F_0511:
+	UI_remove_answer("不害怕");
+	message("「你讓我驚訝。大多數凡夫俗子一聽到巫術這個詞就會嚇得發抖。」");
 	say();
-	UI_add_answer("Mundanes");
+	UI_add_answer("凡夫俗子");
 labelFunc041F_0511:
-	case "Mundanes" attend labelFunc041F_056A:
-	UI_remove_answer("Mundanes");
-	message("\"Indeed, thou art from a distant land if thou dost not know such a common term.\"");
+	case "凡夫俗子" attend labelFunc041F_056A:
+	UI_remove_answer("凡夫俗子");
+	message("「看來你確實是來自遙遠的土地，如果連這麼普通的詞都不知道。」");
 	say();
-	message("\"The world is divided into two sorts of Men -- those who can handle magics, and mere ordinary folk.\"");
+	message("「世界分為兩種人——那些能使用魔法的人，以及普通人。」");
 	say();
 	var000F = [];
 	if (!(var000D > 0x0001)) goto labelFunc041F_055C;
-	var000F = "and thy companion";
+	var000F = "和你的同伴";
 	if (!(var000D > 0x0002)) goto labelFunc041F_0552;
-	var000F = (var000F + "s");
+	var000F = (var000F + "們");
 labelFunc041F_0552:
 	var000F = (var000F + " ");
 labelFunc041F_055C:
-	message("\"Common folk such as thee ");
+	message("「像你");
 	message(var000F);
-	message("are known as the Mundane.\"");
+	message("這樣的普通人被稱為凡夫俗子(Mundane)。」");
 	say();
 	var000C = true;
 labelFunc041F_056A:
-	case "bye" attend labelFunc041F_065F:
-	message("\"Not so fast! Thou shouldst know that I met with thine ally, the fat and loathsome sage called Batlin...\"");
+	case "告辭" attend labelFunc041F_065F:
+	message("「別急著走！你應該知道我見過你的盟友了，那個又胖又令人討厭、名叫 巴特林( Batlin ) 的智者……」");
 	say();
-	message("\"He travelled with a Daemon named Palos. Where did Batlin obtain such power? If I had this power, I could rule Serpent Isle!\"");
+	message("「他和一個名叫 Palos 的惡魔(Daemon)同行。 巴特林( Batlin ) 是從哪裡獲得這種力量的？如果我有這種力量，我就能統治巨蛇之島( Serpent Isle )！」");
 	say();
-	message("\"Reveal to me the secret of controlling Daemonfolk, and I shall reward thee with power beyond thy comprehension.\"");
+	message("「向我揭示控制惡魔的秘密，我將用你無法理解的力量獎勵你。」");
 	say();
 	if (!Func0955()) goto labelFunc041F_065A;
-	message("\"Then open thy mind to me, and let me withdraw the knowledge which I lust after!\"");
+	message("「那就向我敞開你的心智，讓我提取我渴望的知識！」");
 	say();
-	var0010 = Func0992(0x0001, "@No, my friend. Thou must not...!@", 0x0000, false);
+	var0010 = Func0992(0x0001, "@不，我的朋友。你不能……！@", 0x0000, false);
 	if (!(var0010 != 0xFE9C)) goto labelFunc041F_060C;
 	UI_set_npc_id(0xFFE1, (0x0000 - var0010));
 	UI_set_conversation_slot(0x0000);
-	message("\"Thy friends must learn not to interfere in the interests of mages. Let them learn now!!!\"");
+	message("「你的朋友們必須學會不要干涉法師的利益。讓他們現在就學學！！！」");
 	say();
 	var0008 = UI_get_object_position(var0010);
 	UI_obj_sprite_effect(UI_get_npc_object(var0010), 0x000D, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF);
@@ -288,12 +288,12 @@ labelFunc041F_060C:
 	UI_set_item_flag(0xFE9C, 0x0010);
 	UI_set_schedule_type(0xFE9C, 0x000F);
 	gflags[0x0007] = true;
-	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@Ugh...@", (byte)0x6C, (byte)0x61, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x6D, (byte)0x6E, (byte)0x52, "@Mine head!@", (byte)0x27, 0x0006, (byte)0x55, 0x041F]);
+	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@呃……@", (byte)0x6C, (byte)0x61, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x6D, (byte)0x6E, (byte)0x52, "@我的頭！@", (byte)0x27, 0x0006, (byte)0x55, 0x041F]);
 	abort;
 labelFunc041F_0657:
 	goto labelFunc041F_065E;
 labelFunc041F_065A:
-	message("\"I shall contact thee again, when perhaps thou shalt be more receptive to mine offers. Adieu.\"");
+	message("「我會再聯絡你的，也許到那時你會更容易接受我的提議。再見。」");
 	say();
 labelFunc041F_065E:
 	abort;
@@ -329,15 +329,15 @@ labelFunc041F_072E:
 	UI_set_npc_id(0xFFE1, (0x0000 - var0010));
 	if (!UI_npc_nearby(var0010)) goto labelFunc041F_07E9;
 	UI_show_npc_face0(var0010, 0x0000);
-	message("\"What! What's happening...\"");
+	message("「什麼！發生了什麼事……」");
 	say();
 	var0008 = UI_get_object_position(var0010);
 	var0008[0x0001] = (var0008[0x0001] - (var0008[0x0003] / 0x0002));
 	var0008[0x0002] = (var0008[0x0002] - (var0008[0x0003] / 0x0002));
 	UI_sprite_effect(0x001A, var0008[0x0001], var0008[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	var0009 = Func095B(var0010);
-	var0003 = Func0992(0x0001, (("@" + var0009) + "!"), 0x0000, true);
-	Func097F(0xFE9C, "@Where did he go!@", 0x0002);
+	var0003 = Func0992(0x0001, (("@" + var0009) + "！@"), 0x0000, true);
+	Func097F(0xFE9C, "@他去哪了！@", 0x0002);
 	goto labelFunc041F_08DC;
 labelFunc041F_07E9:
 	gflags[0x0134] = true;
@@ -350,20 +350,20 @@ labelFunc041F_07E9:
 	var0004 = UI_update_last_created(var0008);
 	UI_obj_sprite_effect(0xFE9C, 0x000D, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF);
 	if (!var0004) goto labelFunc041F_085E;
-	var0003 = Func0992(0x0001, "@Look! A scroll!@", "@A scroll...@", true);
+	var0003 = Func0992(0x0001, "@看！一張卷軸！@", "@一張卷軸……@", true);
 labelFunc041F_085E:
 	goto labelFunc041F_08DC;
 labelFunc041F_0861:
 	var0004 = Func099B(0xFE9C, 0x0001, 0x02C3, 0x001F, 0x0006, 0x0012, false);
 	if (!((var0004[0x0001] == 0x0000) && (var0004[0x0002] == 0x0000))) goto labelFunc041F_08A5;
-	var0003 = Func0992(0x0001, "@Thou hast a scroll!@", "@A scroll!@", true);
+	var0003 = Func0992(0x0001, "@你有張卷軸！@", "@一張卷軸！@", true);
 	goto labelFunc041F_08DC;
 labelFunc041F_08A5:
 	if (!(var0004[0x0001] == 0x0000)) goto labelFunc041F_08C5;
-	var0003 = Func0992(0x0001, "@Look! A scroll!@", "@A scroll...@", true);
+	var0003 = Func0992(0x0001, "@看！一張卷軸！@", "@一張卷軸……@", true);
 	goto labelFunc041F_08DC;
 labelFunc041F_08C5:
-	var0003 = Func0992(UI_get_npc_number(var0004[0x0001]), "@Look what I have!@", "@Thou hast a scroll!@", true);
+	var0003 = Func0992(UI_get_npc_number(var0004[0x0001]), "@看我拿到了什麼！@", "@你有張卷軸！@", true);
 labelFunc041F_08DC:
 	if (!UI_get_item_flag(var0010, 0x0006)) goto labelFunc041F_08F0;
 	UI_remove_from_party(var0010);

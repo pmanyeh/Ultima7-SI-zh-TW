@@ -64,20 +64,24 @@ labelFunc0151_00AD:
 labelFunc0151_00D9:
 	goto labelFunc0151_00AD;
 labelFunc0151_00DC:
-	var0009 = ["@I am not sure...@", "@Death is no reward...@", "@Seek death, friends!@", "@Chaos hath no answers.@", "@Was Order wrong?@", "@I have no faith.@"];
-	var000A = ["@None of us are.@", "@The Void is the reward!@", "@But we are Death.@", "@I have no questions.@", "@Imbalance was wrong.@", "@Do not despair, old friend.@"];
+	// 幽靈 1 的隨機自語（悲嘆型）
+	var0009 = ["@我不確定……@", "@死亡並非獎賞……@", "@去尋求死亡吧，朋友們！@", "@混沌沒有答案。@", "@秩序錯了嗎？@", "@我已失去信仰。@"];
+	var000A = ["@我們也都不確定。@", "@虛空才是獎賞！@", "@但我們本就是死亡。@", "@我沒有問題。@", "@失衡才是錯的。@", "@別絕望，老友。@"];
 labelFunc0151_010C:
 	if (!(var0000 == 0x0002)) goto labelFunc0151_0146;
-	var0009 = ["@Chaos shall triumph!@", "@The Void is my reward.@", "@I am not a ghost.@", "@Remember the Hierophant's words.@", "@The war is never over.@", "@Still, the Great One slumbers...@"];
-	var000A = ["@All is ashes.@", "@The Void is nothing.@", "@Then what are we?@", "@Empty words.@", "@Sad, but true.@", "@Hush, he listens now...@"];
+	// 幽靈 2 的隨機自語（狂信型）
+	var0009 = ["@混沌終將勝利！@", "@虛空是我的獎賞。@", "@我不是鬼魂。@", "@銘記教父的話語。@", "@戰爭永無止境。@", "@然而，偉大者仍在沉眠……@"];
+	var000A = ["@一切皆是灰燼。@", "@虛空什麼都不是。@", "@那我們又是什麼？@", "@空洞的言語。@", "@悲哀，但卻真實。@", "@噓，祂現在在傾聽……@"];
 labelFunc0151_0146:
 	if (!(var0000 == 0x0003)) goto labelFunc0151_0180;
-	var0009 = ["@A Champion shall arise...@", "@We shall be released soon.@", "@Have faith, friends.@", "@Do not doubt.@", "@Someone comes!@", "@Listen to the Void...@"];
-	var000A = ["@Promises...@", "@It hath been too long!@", "@We shall try.@", "@'Tis hard to believe.@", "@I do not see...@", "@Yes, it sings to me!@"];
+	// 幽靈 3 的隨機自語（盼望型）
+	var0009 = ["@勇士終將出現……@", "@我們即將獲得解脫。@", "@要有信仰，朋友們。@", "@不要懷疑。@", "@有人來了！@", "@聆聽虛空……@"];
+	var000A = ["@承諾……@", "@已經太久了！@", "@我們會努力的。@", "@難以置信。@", "@我看不見……@", "@是的，它在向我歌唱！@"];
 labelFunc0151_0180:
 	if (!(var0000 == 0x0004)) goto labelFunc0151_01BA;
-	var0009 = ["@Kill the offenders!@", "@Chaos must triumph!@", "@There is no compromise.@", "@The battle is now!@", "@I despise Order...@", "@I am so tired!@"];
-	var000A = ["@All are dead, friend.@", "@Chaos remains alone.@", "@We must agree!@", "@There are no enemies.@", "@Order is not evil, friend.@", "@We are ancient souls.@"];
+	// 幽靈 4 的隨機自語（好戰型）
+	var0009 = ["@殺死那些冒犯者！@", "@混沌必須勝利！@", "@沒有妥協的餘地。@", "@戰鬥就是現在！@", "@我鄙視秩序……@", "@我太累了！@"];
+	var000A = ["@朋友，他們都死了。@", "@混沌孤獨地留存。@", "@我們必須達成一致！@", "@已沒有敵人。@", "@秩序並非邪惡，朋友。@", "@我們都是古老的靈魂。@"];
 labelFunc0151_01BA:
 	var000B = UI_get_random(0x0006);
 	UI_clear_item_say(item);
@@ -88,10 +92,10 @@ labelFunc0151_01BA:
 	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, var000A[var000B]], 0x0005);
 labelFunc0151_0214:
 	if (!((event == 0x0001) && (var0000 != 0x0000))) goto labelFunc0151_02C2;
-	UI_item_say(0xFE9C, "@Pardon me...@");
+	UI_item_say(0xFE9C, "@打擾一下……@");
 	item->Func07D1();
 	if (!(var0000 != 0x0005)) goto labelFunc0151_025C;
-	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@Yesss?@"], 0x0000);
+	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@是的……？@"], 0x0000);
 	UI_set_schedule_type(item, 0x0003);
 	goto labelFunc0151_02C2;
 labelFunc0151_025C:
@@ -121,27 +125,27 @@ labelFunc0151_02DF:
 labelFunc0151_02E7:
 	if (!(var0000 == 0x0001)) goto labelFunc0151_030F;
 	UI_show_npc_face0(0xFEEB, 0x0000);
-	message("\"I can only be disturbed for a moment, as the others will miss me. We must continue our Dirge.\"");
+	message("「我只能被打擾片刻，因為其他人會注意到我不在。我們必須繼續我們的哀歌。」");
 	say();
-	UI_add_answer(["name", "others", "Dirge"]);
+	UI_add_answer(["姓名", "其他人", "哀歌"]);
 labelFunc0151_030F:
 	if (!(var0000 == 0x0002)) goto labelFunc0151_0337;
 	UI_show_npc_face0(0xFEEB, 0x0000);
-	message("\"How darest thou interrupt the Ceremony! Dost thou not recognize the influence of Chaos in this place?\"");
+	message("「你怎敢打斷儀式！難道你認不出此地混沌的影響嗎？」");
 	say();
-	UI_add_answer(["name", "Ceremony", "Chaos"]);
+	UI_add_answer(["姓名", "儀式", "混沌"]);
 labelFunc0151_0337:
 	if (!(var0000 == 0x0003)) goto labelFunc0151_035F;
 	UI_show_npc_face0(0xFEEB, 0x0000);
-	message("\"At last, a stranger! Oh, but have we met before? This existence is confusing...\"");
+	message("「終於有陌生人了！哦，但我們以前見過嗎？這樣的存在令人困惑……」");
 	say();
-	UI_add_answer(["name", "met", "existence"]);
+	UI_add_answer(["姓名", "見過", "存在"]);
 labelFunc0151_035F:
 	if (!(var0000 == 0x0004)) goto labelFunc0151_0387;
 	UI_show_npc_face0(0xFEEB, 0x0000);
-	message("\"Art thou a spy? Come, friends, we must kill the spy sent by the Hierophant of Order!\"");
+	message("「你是間諜嗎？來，朋友們，我們必須殺死秩序教父派來的間諜！」");
 	say();
-	UI_add_answer(["spy", "Hierophant", "Order"]);
+	UI_add_answer(["間諜", "教父", "秩序"]);
 labelFunc0151_0387:
 	if (!(var0000 == 0x0005)) goto labelFunc0151_03F7;
 	var0013 = UI_get_object_position(item);
@@ -152,175 +156,175 @@ labelFunc0151_0387:
 	UI_clear_item_flag(var0012, 0x0012);
 	var000C = UI_update_last_created(var0013);
 labelFunc0151_03D4:
-	var000C = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@Oh!@"]);
-	var0015 = Func0992(0x0001, "@Look! A book...@", "@A book...@", true);
+	var000C = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@哦！@"]);
+	var0015 = Func0992(0x0001, "@看！一本書……@", "@一本書……@", true);
 	abort;
 labelFunc0151_03F7:
 	if (!(var0000 == 0x0006)) goto labelFunc0151_041F;
 	UI_show_npc_face0(0xFEEB, 0x0000);
-	message("\"Canst thou not see that we are trying to help thee! Everything that we say hath meaning. Thou must vanquish the foe...\"");
+	message("「你難道看不出我們是在試圖幫助你嗎！我們所說的每一句話都有含義。你必須戰勝敵人……」");
 	say();
-	UI_add_answer(["help", "we?", "foe"]);
+	UI_add_answer(["幫助", "我們是誰？", "敵人"]);
 labelFunc0151_041F:
 	if (!(var0000 != 0x0000)) goto labelFunc0151_0430;
-	UI_add_answer("bye");
+	UI_add_answer("告辭");
 labelFunc0151_0430:
 	converse attend labelFunc0151_0762;
-	case "name" attend labelFunc0151_04C6:
-	UI_remove_answer("name");
+	case "姓名" attend labelFunc0151_04C6:
+	UI_remove_answer("姓名");
 	if (!(var0000 == 0x0001)) goto labelFunc0151_047C;
-	message("\"I am afraid that I have forgotten. Thou must understand, I have been dead a very long time.\"");
+	message("「恐怕我已經忘了。你必須理解，我已死去很久了。」");
 	say();
-	message("\"Death whispers most sweetly, but my soul is not allowed to respond. I do not desire to persist in this life.\"");
+	message("「死亡最輕柔地低語，但我的靈魂不被允許回應。我不渴望在這樣的生命中持續存在。」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_047C;
 labelFunc0151_0462:
-	message("\"I must be going. The others are waiting...\"");
+	message("「我必須走了。其他人在等著……」");
 	say();
-	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@Begin again!@"], 0x0000);
+	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@再次開始！@"], 0x0000);
 	abort;
 labelFunc0151_047C:
 	if (!(var0000 == 0x0002)) goto labelFunc0151_049F;
-	message("\"Quake at my words, for I am Sesyntho, Scribe to the Hierophant of Chaos! The others say that I am dead, but I am no ghost.\"");
+	message("「在我的話語前顫抖吧，因為我是 Sesyntho ，混沌教父的書記！其他人說我已死，但我並非鬼魂。」");
 	say();
-	message("\"Canst thou not see that this is merely a time of waiting, before our ascension into the Void? So it cannot be called Death.\"");
+	message("「難道你看不出這只不過是一段等待，在我們升入虛空之前的等待？所以它不能稱為死亡。」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_049F;
 	goto labelFunc0151_0462;
 labelFunc0151_049F:
 	if (!(var0000 == 0x0003)) goto labelFunc0151_04C6;
-	message("\"In life, I was Sansalys, the keeper of the Library of Chaos. Alas, the books are taken, except for a few.\"");
+	message("「生前，我是 Sansalys ，混沌圖書館的守護者。唉，除了少數幾本，書都被拿走了。」");
 	say();
-	message("\"There is another who awaits thee there. She would aid thee, but of necessity her aid will be strange to thee.\"");
+	message("「那裡有另一個人在等著你。她會幫助你，但她的幫助對你來說必然是陌生的。」");
 	say();
-	message("\"There is a law which forbids us from directly helping thee. I know that thou art our hope, yet my tongue is ensnared! I cannot speak the truth clearly.\"");
+	message("「有一條法則禁止我們直接幫助你。我知道你是我們的希望，然而我的舌頭被束縛了！我無法清楚地說出真相。」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_04C6;
 	goto labelFunc0151_0462;
 labelFunc0151_04C6:
-	case "others" attend labelFunc0151_04EE:
-	UI_remove_answer("others");
-	message("\"There are four of us here, doomed to perform the same lines over and over 'til eternity dawns.\"");
+	case "其他人" attend labelFunc0151_04EE:
+	UI_remove_answer("其他人");
+	message("「我們共有四個人，被迫一遍又一遍地重複同樣的台詞，直到永恆降臨。」");
 	say();
-	message("\"One was a priest, another a librarian, and the last was a soldier. I was something once, but I do not recall.\"");
+	message("「其中一個曾是祭司，另一個是圖書館員，最後一個是士兵。我曾是某種身份，但我已不記得了。」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_04EE;
 	goto labelFunc0151_0462;
 labelFunc0151_04EE:
-	case "Dirge" attend labelFunc0151_051A:
-	UI_remove_answer("Dirge");
-	message("\"We must mourn the fate of Chaos, for surely it hath been destroyed in this land. Order hath won.\"");
+	case "哀歌" attend labelFunc0151_051A:
+	UI_remove_answer("哀歌");
+	message("「我們必須哀悼混沌的命運，因為它在這片土地上肯定已被摧毀。秩序已勝利。」");
 	say();
-	message("\"Yet, I doubt if there can be any victory. How can Imbalance be victory? We are opposites, not enemies.\"");
+	message("「然而，我懷疑是否真的有任何勝利可言。失衡怎能是勝利？我們是對立，而非敵對。」");
 	say();
-	message("\"Oh, I speak blasphemy! But I cannot take back my words...\"");
+	message("「哦，我說了褻瀆的話！但我無法收回我的話語……」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_051A;
 	goto labelFunc0151_0462;
 labelFunc0151_051A:
-	case "Ceremony" attend labelFunc0151_0542:
-	UI_remove_answer("Ceremony");
-	message("\"Stay and listen to our words, for we are performing a great Ode in honor of the Serpent of Chaos. He shall hear and reward us.\"");
+	case "儀式" attend labelFunc0151_0542:
+	UI_remove_answer("儀式");
+	message("「留下來聆聽我們的話語，因為我們正在進行一場盛大的頌歌，以向混沌之蛇致敬。祂將聽見並獎賞我們。」");
 	say();
-	message("\"While the Great One yet slumbers, the Chaos Serpent hath the power to prevail over Order. I will have faith, unlike these others.\"");
+	message("「雖然偉大者仍在沉眠，混沌之蛇仍有力量勝過秩序。不像那些其他人，我將保持信仰。」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_0542;
 	goto labelFunc0151_0462;
 labelFunc0151_0542:
-	case "Chaos" attend labelFunc0151_056A:
-	UI_remove_answer("Chaos");
-	message("\"Oh, the beauty of pure Chaos! 'Tis the unity of all the discordant elements of Nature, without pattern or order.\"");
+	case "混沌" attend labelFunc0151_056A:
+	UI_remove_answer("混沌");
+	message("「哦，純粹混沌之美！那是自然界一切不和諧元素的統一，沒有規律或秩序。」");
 	say();
-	message("\"We are Chaos -- it is our belief, and we are its adherents. We are followers of the Red Serpent.\"");
+	message("「我們即是混沌——那是我們的信仰，而我們是其信奉者。我們是紅蛇的追隨者。」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_056A;
 	goto labelFunc0151_0462;
 labelFunc0151_056A:
-	case "met" attend labelFunc0151_0596:
-	UI_remove_answer("met");
-	message("\"I am sorry, but if we have met before, I cannot recall. It seems that we live the same moments repeatedly, and the interruptions fade so quickly away.\"");
+	case "見過" attend labelFunc0151_0596:
+	UI_remove_answer("見過");
+	message("「很抱歉，即使我們曾經見過，我也無法記起。我們似乎一遍又一遍地活在同樣的片刻之中，而那些打斷又迅速消逝。」");
 	say();
-	message("\"Life as a spectral being is so tedious. Once, I was a woman in the prime of my life. Now I merely exist...\"");
+	message("「作為一個幽靈般的存在，生命是如此乏味。曾幾何時，我是一個正值壯年的女人。如今我只是存在著……」");
 	say();
-	message("\"I miss the flesh! There were pains and sorrow, but it was far better than this joyless life.\"");
+	message("「我懷念肉體！有痛苦和悲傷，但那遠比這無歡樂的生命要好得多。」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_0596;
 	goto labelFunc0151_0462;
 labelFunc0151_0596:
-	case "existence" attend labelFunc0151_05C2:
-	UI_remove_answer("existence");
-	message("\"We are locked into this existence, ghosts endlessly reciting the same arguments, as if our doom is somehow tied to the greater cycle.\"");
+	case "存在" attend labelFunc0151_05C2:
+	UI_remove_answer("存在");
+	message("「我們被鎖定在這樣的存在中，鬼魂們無休止地重複著同樣的爭論，彷彿我們的命運以某種方式與更大的循環相連。」");
 	say();
-	message("\"If the War of Imbalance doth finally end, if Chaos is victorious or Order doth take the win, then we shall be freed to enter the Void.\"");
+	message("「若失衡之戰終於結束，若混沌得勝或秩序取得勝利，那麼我們將獲得自由，進入虛空。」");
 	say();
-	message("\"I cannot help but think that thou art connected with our fate. How, I cannot say.\"");
+	message("「我禁不住想，你與我們的命運有所關聯。如何關聯，我無法說明。」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_05C2;
 	goto labelFunc0151_0462;
 labelFunc0151_05C2:
-	case "spy" attend labelFunc0151_0619:
-	UI_remove_answer("spy");
-	message("\"One sent by the Soldiers of Order, to break our wills and stop the Ode to Chaos. Why else dost thou listen so attentively?\"");
+	case "間諜" attend labelFunc0151_0619:
+	UI_remove_answer("間諜");
+	message("「一個由秩序士兵派來的人，試圖瓦解我們的意志，阻止對混沌的頌歌。否則你為何如此專注地傾聽？」");
 	say();
 	if (!(!UI_get_item_flag(0xFEDA, 0x0004))) goto labelFunc0151_0604;
-	message("\"I predict this: I see thee lying dead at the feet of one who prowls this labyrinth.\"");
+	message("「我預言此事：我看見你倒在一個潛伏於這迷宮中的人腳下。」");
 	say();
 	if (!(!Func097D(0xFE9B, 0x0001, 0x00E7, 0xFE99, 0xFE99))) goto labelFunc0151_0601;
-	message("\"Thou hast not the weapon to defeat him! His powers overwhelm thee, and thou dost die!\"");
+	message("「你沒有打敗他的武器！他的力量將壓倒你，你將死去！」");
 	say();
 labelFunc0151_0601:
 	goto labelFunc0151_0608;
 labelFunc0151_0604:
-	message("\"Thou hast slain the lurker of these depths, but others await thee! Thou shalt not prevail, stranger.\"");
+	message("「你已殺死潛伏在這深處的怪物，但還有其他人等著你！你將不會成功，陌生人。」");
 	say();
 labelFunc0151_0608:
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_0619;
 	goto labelFunc0151_0462;
 labelFunc0151_0619:
-	case "Hierophant" attend labelFunc0151_0641:
-	UI_remove_answer("Hierophant");
-	message("\"His words were the Words of Chaos. He communed with the Serpent, and wore his armour upon his breast. He was our Serpent Father.\"");
+	case "教父" attend labelFunc0151_0641:
+	UI_remove_answer("教父");
+	message("「祂的話語是混沌之言。祂與蛇神交流，並將祂的甲冑戴在胸前。祂是我們的蛇之父。」");
 	say();
-	message("\"They have slain him, and there is none to replace him. I do not know his burial spot. I weep for him.\"");
+	message("「他們殺死了祂，沒有人能取而代之。我不知道祂的安葬之地。我為祂哭泣。」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_0641;
 	goto labelFunc0151_0462;
 labelFunc0151_0641:
-	case "Order" attend labelFunc0151_0669:
-	UI_remove_answer("Order");
-	message("\"To speak of Order is to defile my lips! They are opposite to rightfulness, they are wrongfulness, they are anathema.\"");
+	case "秩序" attend labelFunc0151_0669:
+	UI_remove_answer("秩序");
+	message("「提及秩序是在玷污我的嘴唇！他們與正義對立，他們是不義，他們是詛咒。」");
 	say();
-	message("\"I despise pattern, and disrespect all laws, and I prize mine individuality above all else!\"");
+	message("「我鄙視規律，藐視一切法則，我將我的個性置於一切之上！」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_0669;
 	goto labelFunc0151_0462;
 labelFunc0151_0669:
-	case "help" attend labelFunc0151_0680:
-	UI_remove_answer("help");
-	message("\"I cannot... it is not permitted... words cannot be spoken...\"");
+	case "幫助" attend labelFunc0151_0680:
+	UI_remove_answer("幫助");
+	message("「我不能……這是不被允許的……話語無法說出……」");
 	say();
-	message("\"'Tis forbidden to help thee directly, stranger. Thou must discern things for thyself.\"");
+	message("「直接幫助你是被禁止的，陌生人。你必須自己去辨明事物。」");
 	say();
 labelFunc0151_0680:
-	case "we?" attend labelFunc0151_0697:
-	UI_remove_answer("we?");
-	message("\"We are the Souls of Chaos, the spirits condemned to prowl these corridors until Chaos is restored.\"");
+	case "我們是誰？" attend labelFunc0151_0697:
+	UI_remove_answer("我們是誰？");
+	message("「我們是混沌之魂，被詛咒在這些走廊中遊蕩的靈魂，直到混沌得以恢復。」");
 	say();
-	message("\"In life, we were victims of the Soldiers of Order. I was burned alive.\"");
+	message("「生前，我們是秩序士兵的受害者。我是被活活燒死的。」");
 	say();
 labelFunc0151_0697:
-	case "foe" attend labelFunc0151_06AA:
-	UI_remove_answer("foe");
-	message("\"The intruder is thine enemy, and is not one with us. He doth not comprehend Chaos. If thou wilt listen to the others, they can aid thee.\"");
+	case "敵人" attend labelFunc0151_06AA:
+	UI_remove_answer("敵人");
+	message("「那個入侵者是你的敵人，而非我們的同類。他不理解混沌。如果你願意聆聽其他人，他們能幫助你。」");
 	say();
 labelFunc0151_06AA:
-	case "bye" attend labelFunc0151_075F:
-	Func097F(0xFE9C, "@Thanks!@", 0x0000);
+	case "告辭" attend labelFunc0151_075F:
+	Func097F(0xFE9C, "@謝謝！@", 0x0000);
 	if (!(var0000 < 0x0005)) goto labelFunc0151_06DD;
-	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@Begin again!@"], 0x0005);
+	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@再次開始！@"], 0x0005);
 labelFunc0151_06DD:
 	if (!(var0000 == 0x0006)) goto labelFunc0151_075C;
-	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@Goodbye...@"], 0x0000);
+	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@再見……@"], 0x0000);
 	UI_reduce_health(item, 0x0037, 0x0000);
 	var0016 = UI_get_object_position(item);
 	var0016[0x0001] = (var0016[0x0001] - (var0016[0x0003] / 0x0002));

@@ -74,7 +74,7 @@ labelFunc0128_01A8:
 	if (!(event == 0x0002)) goto labelFunc0128_0228;
 	var0005 = Func0942(0xFFD4);
 	if (!var0005) goto labelFunc0128_0228;
-	UI_item_say(0xFFD4, "Do not touch my ring!");
+	UI_item_say(0xFFD4, "不許碰我的戒指！");
 	var0006 = UI_get_npc_object(0xFFD4);
 	var0007 = UI_find_direction(0xFFD4, item);
 	var0002 = UI_execute_usecode_array(var0006, [(byte)0x23, (byte)0x59, var0007, (byte)0x6A]);

@@ -30,22 +30,22 @@ void Func044F object#(0x44F) ()
 	var0002 = Func097D(0xFE9B, 0x0001, 0x011D, 0xFE99, 0x0006);
 	var0003 = false;
 	if (!(event == 0x0001)) goto labelFunc044F_005A;
-	UI_item_say(0xFE9C, "@Hail, Knight.@");
+	UI_item_say(0xFE9C, "@你好，騎士。@");
 	0xFFB1->Func07D1();
-	Func097F(0xFFB1, "@Hail.@", 0x0002);
+	Func097F(0xFFB1, "@你好。@", 0x0002);
 	UI_set_schedule_type(0xFFB1, 0x0003);
 labelFunc044F_005A:
 	if (!(event == 0x0000)) goto labelFunc044F_00B1;
 	if (!gflags[0x0083]) goto labelFunc044F_00B1;
 	var0004 = UI_die_roll(0x0001, 0x0003);
 	if (!(var0004 == 0x0001)) goto labelFunc044F_0089;
-	UI_item_say(0xFFB1, "@Strong hit!@");
+	UI_item_say(0xFFB1, "@有力的打擊！@");
 labelFunc044F_0089:
 	if (!(var0004 == 0x0002)) goto labelFunc044F_009D;
-	UI_item_say(0xFFB1, "@Nice form!@");
+	UI_item_say(0xFFB1, "@姿勢不錯！@");
 labelFunc044F_009D:
 	if (!(var0004 == 0x0003)) goto labelFunc044F_00B1;
-	UI_item_say(0xFFB1, "@I could do better.@");
+	UI_item_say(0xFFB1, "@我可以做得更好。@");
 labelFunc044F_00B1:
 	if (!(event == 0x0007)) goto labelFunc044F_0182;
 	if (!gflags[0x0083]) goto labelFunc044F_0172;
@@ -90,303 +90,303 @@ labelFunc044F_0182:
 	UI_show_npc_face0(0xFFB1, 0x0000);
 	Func08F0();
 	if (!(!var0001)) goto labelFunc044F_01BD;
-	message("\"What can I do for thee? I am Templar.\"");
+	message("「我能為你做什麼？我是 Templar 。」");
 	say();
 	UI_set_item_flag(0xFFB1, 0x001C);
 	goto labelFunc044F_01C1;
 labelFunc044F_01BD:
-	message("\"Yes?\"");
+	message("「什麼事？」");
 	say();
 labelFunc044F_01C1:
-	UI_add_answer("duties");
+	UI_add_answer("職責");
 	if (!(gflags[0x00A0] && ((!gflags[0x0296]) && gflags[0x0048]))) goto labelFunc044F_01DE;
-	UI_add_answer("grisly brush");
+	UI_add_answer("可怕的刷子");
 labelFunc044F_01DE:
 	if (!(gflags[0x00A4] && gflags[0x0048])) goto labelFunc044F_01EF;
-	UI_add_answer("Goblins");
+	UI_add_answer("哥布林");
 labelFunc044F_01EF:
 	if (!(gflags[0x0045] && (UI_get_schedule_type(0xFFB4) != 0x000F))) goto labelFunc044F_0208;
-	UI_add_answer("brown bottle");
+	UI_add_answer("棕色瓶子");
 labelFunc044F_0208:
 	if (!(gflags[0x01CA] && gflags[0x0048])) goto labelFunc044F_0219;
 	UI_add_answer("Argus");
 labelFunc044F_0219:
 	if (!gflags[0x0048]) goto labelFunc044F_0226;
-	UI_add_answer("traitor");
+	UI_add_answer("叛徒");
 labelFunc044F_0226:
-	UI_add_answer("bye");
+	UI_add_answer("告辭");
 labelFunc044F_022D:
 	converse attend labelFunc044F_060C;
-	case "grisly brush" attend labelFunc044F_0263:
-	UI_remove_answer("grisly brush");
-	message("\"A peculiar brush? I suspect that I already know what it is, but let me see...\"");
+	case "可怕的刷子" attend labelFunc044F_0263:
+	UI_remove_answer("可怕的刷子");
+	message("「一個奇特的刷子？我懷疑我已經知道那是什麼了，但讓我看看……」");
 	say();
 	if (!var0002) goto labelFunc044F_025F;
-	message("\"That is a Goblin hairbrush! Made out of the bones of their victims, or so the legends claim.\"");
+	message("「那是一個哥布林梳子！傳說是由他們受害者的骨頭製成的。」");
 	say();
-	message("\"Perhaps crafted from the thigh bone of one of mine old friends. Someday, thou or I too may be odd bits of furnishings in some Goblin hut!\"");
+	message("「也許是用我的一位老朋友的大腿骨做的。總有一天，你或我也可能成為某個哥布林小屋裡奇怪的家具！」");
 	say();
 	gflags[0x0296] = true;
-	UI_add_answer("Goblin artifacts");
+	UI_add_answer("哥布林文物");
 	goto labelFunc044F_0263;
 labelFunc044F_025F:
 	message("\"I cannot identify the object if thou dost not show it to me. I will not waste my time making wild guesses.\"");
 	say();
 labelFunc044F_0263:
-	case "Goblin artifacts" attend labelFunc044F_028D:
-	UI_remove_answer("Goblin artifacts");
-	message("\"Goblins have some pretty strange things. Jewelry made from human bones. Drums made with human skin. Much broken glass. Very macabre.\"");
+	case "哥布林文物" attend labelFunc044F_028D:
+	UI_remove_answer("哥布林文物");
+	message("「哥布林有一些非常奇怪的東西。用人骨做的珠寶。用人皮做的鼓。很多碎玻璃。非常令人毛骨悚然。」");
 	say();
-	message("\"I suspect their own village must be brimming with such little nightmares.\"");
+	message("「我懷疑他們自己的村莊一定充滿了這樣的小惡夢。」");
 	say();
-	message("\"They eat nearly anything, except their own kind. Goblins are especially fond of children. We had to build the city walls to keep their scouts from stealing our babies.\"");
+	message("「他們幾乎什麼都吃，除了他們自己的同類。哥布林特別喜歡小孩。我們必須建立城牆，以防止他們的斥候偷走我們的嬰兒。」");
 	say();
-	message("\"The Goblins consider the pelts of the Gwani to be great prizes -- thou canst recognize a Goblin chief by the pelt he wears.\"");
+	message("「哥布林認為 Gwani 的毛皮是偉大的戰利品——你可以從哥布林酋長穿的毛皮認出他來。」");
 	say();
-	message("\"The chief always keeps the prize artifacts for himself. But he must lock them away in a safe place, or his followers will steal them!\"");
+	message("「酋長總是把有價值的文物留給自己。但他必須把它們鎖在一個安全的地方，否則他的追隨者會偷走它們！」");
 	say();
-	UI_add_answer("Gwani pelts");
+	UI_add_answer("Gwani 毛皮");
 labelFunc044F_028D:
-	case "Gwani pelts" attend labelFunc044F_02A4:
-	UI_remove_answer("Gwani pelts");
-	message("\"The furs are taken from the Gwani, a race of fierce warriors which live in the far north. They are said to be even more vicious than the Goblins.\"");
+	case "Gwani 毛皮" attend labelFunc044F_02A4:
+	UI_remove_answer("Gwani 毛皮");
+	message("「這些毛皮取自 Gwani ，這是一個居住在極北地區的兇猛戰士種族。據說他們比哥布林還要兇殘。」");
 	say();
-	message("\"Gwani fur provides great warmth, but it is also valued for its great beauty -- it sparkles in the light.\"");
+	message("「 Gwani 的毛皮提供了極佳的保暖性，但它也因其極高的美麗而受到重視——它在光線下會閃閃發光。」");
 	say();
 labelFunc044F_02A4:
-	case "duties" attend labelFunc044F_02ED:
-	UI_remove_answer("duties");
+	case "職責" attend labelFunc044F_02ED:
+	UI_remove_answer("職責");
 	if (!(!gflags[0x0048])) goto labelFunc044F_02DC;
-	message("\"What business is it of thee, stranger? Canst thou not see that I am recovering from wounds?\"");
+	message("「這關你什麼事，陌生人？你難道看不出我正在從傷痛中恢復嗎？」");
 	say();
-	message("\"I do not wish to spend my limited vitality in idle chatter. I am a warrior, not a clerk...\"");
+	message("「我不想把我有限的精力花在閒聊上。我是一名戰士，不是職員……」");
 	say();
-	Func097F(0xFFB1, "@Excuse me...@", 0x0000);
+	Func097F(0xFFB1, "@抱歉……@", 0x0000);
 	UI_set_schedule_type(0xFFB1, 0x0014);
 	abort;
 	goto labelFunc044F_02ED;
 labelFunc044F_02DC:
-	message("\"I am a Knight of Monitor, and a member of the Command of the Bear. I also serve Lord Marsten as his tactical adviser.\"");
+	message("「我是蒙利多城的騎士，也是巨熊軍團的成員。我也擔任 Marsten 領主的戰術顧問。」");
 	say();
-	UI_add_answer(["Command of the Bear", "adviser"]);
+	UI_add_answer(["巨熊軍團", "顧問"]);
 labelFunc044F_02ED:
-	case "Command of the Bear" attend labelFunc044F_0300:
-	UI_remove_answer("Command of the Bear");
-	message("\"We are by far the strongest of the three commands. The envy of the Serpent Isle.\"");
+	case "巨熊軍團" attend labelFunc044F_0300:
+	UI_remove_answer("巨熊軍團");
+	message("「我們是三個軍團中最強大的。巨蛇之島的羨慕對象。」");
 	say();
 labelFunc044F_0300:
-	case "adviser" attend labelFunc044F_033B:
-	UI_remove_answer("adviser");
-	message("\"Adviser for military matters, that is. Some consider me to be an expert in tactics.\"");
+	case "顧問" attend labelFunc044F_033B:
+	UI_remove_answer("顧問");
+	message("「軍事事務顧問。有些人認為我是戰術專家。」");
 	say();
-	message("\"For instance, hast thou ever noticed that the Goblins tend to attack in patterns? By observing them, I can sometimes predict when and how they are going to strike next. I like to imagine what it must be like, to be huddled around the fires of their village as they draw their plans against us. The better I can understand them, the better I can defend against them.\"");
+	message("「例如，你注意過哥布林傾向於以某種模式攻擊嗎？透過觀察他們，我有時可以預測他們下次攻擊的時間和方式。我喜歡想像他們在村莊的火堆旁擠在一起，制定對付我們的計畫時是什麼樣子。我越了解他們，我就越能防禦他們。」");
 	say();
 	if (!gflags[0x0048]) goto labelFunc044F_0337;
 	UI_push_answers();
-	UI_add_answer(["patterns", "when", "how", "change subject"]);
+	UI_add_answer(["模式", "何時", "方式", "換個話題"]);
 	goto labelFunc044F_033B;
 labelFunc044F_0337:
-	message("\"But I must not speak of these things to a stranger. Thou couldst be a spy for them...\"");
+	message("「但我不能和陌生人談論這些事情。你可能是他們的間諜……」");
 	say();
 labelFunc044F_033B:
-	case "patterns" attend labelFunc044F_035A:
-	UI_remove_answer("patterns");
-	message("\"They are creatures of habit, to be sure. If thou dost know their customs, then thou hast the knowledge to defeat them.\"");
+	case "模式" attend labelFunc044F_035A:
+	UI_remove_answer("模式");
+	message("「毫無疑問，他們是習慣的生物。如果你了解他們的習俗，那麼你就有擊敗他們的知識。」");
 	say();
-	message("\"They always set their travel camps in the same pattern. The chieftain's hut is the largest, and is in the center.\"");
+	message("「他們總是按照相同的模式設立他們的旅行營地。酋長的小屋是最大的，並且在中心。」");
 	say();
-	message("\"Each day ends with a drunken revel, and then the exhausted celebrants stumble to their huts and sleep until long past daybreak.\"");
+	message("「每一天都以醉酒狂歡結束，然後筋疲力盡的慶祝者蹣跚地回到他們的小屋，睡到天亮很久以後。」");
 	say();
-	message("\"When raiding a Goblin camp, strike in the morning, just as the sun is coming up. This is when the guards are fewest, and the chance for success is greatest.\"");
+	message("「當突襲哥布林營地時，在早晨太陽剛升起時發動攻擊。這時候警衛最少，成功的機會也最大。」");
 	say();
 labelFunc044F_035A:
-	case "when" attend labelFunc044F_036D:
-	UI_remove_answer("when");
-	message("\"The Goblins do not seem to like the sun and their most favored time to strike their enemies is precisely after the sun hath set for the night. Many is the time when Goblin armies have marched to the edge of a city or encampment and then they have waited until nightfall. Often these sieges lasted all night long.\"");
+	case "何時" attend labelFunc044F_036D:
+	UI_remove_answer("何時");
+	message("「哥布林似乎不喜歡陽光，他們最喜歡攻擊敵人的時間正是太陽下山後。很多時候，哥布林軍隊會行軍到城市或營地的邊緣，然後一直等到夜幕降臨。通常這些圍攻會持續一整夜。」");
 	say();
 labelFunc044F_036D:
-	case "how" attend labelFunc044F_0380:
-	UI_remove_answer("how");
-	message("\"The Goblins do not practice any sophisticated sort of military strategy or tactics. Mostly they rely on sheer numbers as well as the fear that they inspire in the hearts of men and women.\"");
+	case "方式" attend labelFunc044F_0380:
+	UI_remove_answer("方式");
+	message("「哥布林不練習任何複雜的軍事戰略或戰術。他們主要依靠純粹的數量以及他們在男人和女人心中激起的恐懼。」");
 	say();
 labelFunc044F_0380:
-	case "change subject" attend labelFunc044F_0390:
+	case "換個話題" attend labelFunc044F_0390:
 	UI_pop_answers();
-	message("\"What else dost thou desire of me?\"");
+	message("「你還想從我這裡得到什麼？」");
 	say();
 labelFunc044F_0390:
-	case "Goblins" attend labelFunc044F_03C5:
-	UI_remove_answer("Goblins");
-	message("\"'Tis a bloody war we are fighting. That I am alive, today, speaking with thee is a miracle.\"");
+	case "哥布林" attend labelFunc044F_03C5:
+	UI_remove_answer("哥布林");
+	message("「我們正在打一場血腥的戰爭。我今天還活著，能和你說話，這本身就是一個奇蹟。」");
 	say();
-	message("\"The Goblins are foul but fascinating creatures. They are more intelligent than one would think. In a bestial way, of course.\"");
+	message("「哥布林是骯髒但迷人的生物。他們比人們想像的更聰明。當然，是以野獸的方式。」");
 	say();
-	message("\"If only I could speak with their general Pomdirgun! Imagine what that mind must be like -- so calculating, so incisive, yet so utterly inhuman.\"");
+	message("「如果我能和他們的將軍 Pomdirgun 談談就好了！想像一下那個大腦一定是怎樣的——如此精於算計，如此敏銳，卻又如此完全不通人性。」");
 	say();
 	if (!gflags[0x002C]) goto labelFunc044F_03B5;
-	message("\"Perhaps in my next life I shall see him again. But not for any prolonged period of time, I hope.\"");
+	message("「也許在我的來生我會再次見到他。但我希望不會太久。」");
 	say();
 labelFunc044F_03B5:
-	UI_add_answer(["war", "miracle", "Pomdirgun"]);
+	UI_add_answer(["戰爭", "奇蹟", "Pomdirgun"]);
 labelFunc044F_03C5:
-	case "war" attend labelFunc044F_0415:
-	UI_remove_answer("war");
-	message("\"We have been fighting the damn Goblins since our forefathers landed on these shores. This city was built on the site of a Goblin village.\"");
+	case "戰爭" attend labelFunc044F_0415:
+	UI_remove_answer("戰爭");
+	message("「自從我們的祖先登陸這些海岸以來，我們就一直在與該死的哥布林戰鬥。這座城市建在一個哥布林村莊的遺址上。」");
 	say();
 	var000A = Func097D(0xFE9B, 0x0001, 0x017F, 0xFE99, 0x0001);
 	if (!(gflags[0x002C] || var000A)) goto labelFunc044F_0402;
-	message("\"Now that thou hast recovered the Helm of Monitor from their fiendish hands, the scales have again tipped in our favor.\"");
+	message("「現在你從他們惡魔般的手中奪回了蒙利多頭盔，天平再次傾向了我們這邊。」");
 	say();
-	message("\"How I look forward to the day when the Goblins have been exterminated from this land!\"");
+	message("「我多麼期待將哥布林從這片土地上消滅的那一天！」");
 	say();
 	goto labelFunc044F_040E;
 labelFunc044F_0402:
-	message("\"There had been a balance of sorts, until the ambush of Astrid's patrol. As Knight Champion, she wore the Helm of Monitor, and now the Goblins have it.\"");
+	message("「直到 Astrid 的巡邏隊遭到伏擊之前，雙方保持著某種平衡。作為冠軍騎士，她戴著蒙利多頭盔，而現在哥布林擁有了它。」");
 	say();
-	message("\"The power of the Helm cannot be understated! With it, Pomdirgun can once again assemble the Goblin Horde, and invade the lands of Men.\"");
+	message("「頭盔的力量不容低估！有了它， Pomdirgun 就可以再次集結哥布林部落，入侵人類的土地。」");
 	say();
-	message("\"Somehow, we must regain the Helm!\"");
+	message("「無論如何，我們必須奪回頭盔！」");
 	say();
 labelFunc044F_040E:
-	UI_add_answer("forefathers");
+	UI_add_answer("祖先");
 labelFunc044F_0415:
-	case "forefathers" attend labelFunc044F_0441:
-	UI_remove_answer("forefathers");
-	message("\"The greatest battle of the Goblin wars took place in the days when Gurnordir was King of the Goblins.\"");
+	case "祖先" attend labelFunc044F_0441:
+	UI_remove_answer("祖先");
+	message("「哥布林戰爭中最偉大的一場戰役發生在 Gurnordir 擔任哥布林國王的時代。」");
 	say();
-	message("\"He was the mightiest Goblin who ever lived, and he led the Goblin Horde in the invasion which placed Monitor itself under siege.\"");
+	message("「他是有史以來最強大的哥布林，他帶領哥布林部落入侵，使蒙利多城本身被圍困。」");
 	say();
-	message("\"The Goblins stormed the walls, and fought their way inside the city. However, the Bears surrounded them, and Gurnordir was at last slain.\"");
+	message("「哥布林猛攻城牆，並殺入城內。然而，巨熊包圍了他們， Gurnordir 最終被殺。」");
 	say();
-	message("\"From his dead body was taken the Helm of Courage, and his ashes are enshrined in Knight's Test.\"");
+	message("「從他的屍體上奪走了勇氣頭盔( Helm of Courage )，他的骨灰被供奉在騎士考驗中。」");
 	say();
-	UI_add_answer(["Helm of Courage", "ashes"]);
+	UI_add_answer(["勇氣頭盔", "骨灰"]);
 labelFunc044F_0441:
-	case "Helm of Courage" attend labelFunc044F_045C:
-	UI_remove_answer("Helm of Courage");
-	message("\"We now call it the Helm of Monitor, and it is worn by the Knight Champion. But it first came from the Goblins.\"");
+	case "勇氣頭盔" attend labelFunc044F_045C:
+	UI_remove_answer("勇氣頭盔");
+	message("「我們現在稱它為蒙利多頭盔，由冠軍騎士配戴。但它最初來自哥布林。」");
 	say();
-	message("\"Whence it came before they got their hands upon it, no one can say.\"");
+	message("「在他們得到它之前它是從哪裡來的，沒有人能說清楚。」");
 	say();
-	message("\"The Helm doth have mystical powers, which we believe are due to being imbued with the essence of Courage.\"");
+	message("「頭盔確實具有神秘力量，我們相信這是因為它注入了勇氣的精髓。」");
 	say();
 labelFunc044F_045C:
-	case "ashes" attend labelFunc044F_048C:
-	UI_remove_answer("ashes");
-	message("\"As Renfry can tell thee, we Monitorians have a special reverence for the Ashes of the Dead.\"");
+	case "骨灰" attend labelFunc044F_048C:
+	UI_remove_answer("骨灰");
+	message("「正如 Renfry 會告訴你的那樣，我們蒙利多城人對死者的骨灰有一種特殊的敬意。」");
 	say();
-	message("\"When a Knight dies, his body must be brought back to Monitor for cremation. The ashes are then placed in the Crypts.\"");
+	message("「當一名騎士死後，他的屍體必須被帶回蒙利多城火化。然後將骨灰安放在地下墓穴中。」");
 	say();
-	message("\"In the case of Gurnordir, his ashes have a strange power. Like all ashes, they are imbued with the essence of the living being.\"");
+	message("「就 Gurnordir 而言，他的骨灰有一種奇怪的力量。像所有的骨灰一樣，它們充滿了生物的本質。」");
 	say();
 	if (!gflags[0x004A]) goto labelFunc044F_0484;
-	message("\"As thou hast seen, the ashes are used in the climax of the Test of Knighthood. Somehow, they have the power to summon one's totem animal.\"");
+	message("「正如你所見，骨灰被用於騎士考驗的高潮。不知何故，它們有力量召喚一個人的圖騰動物。」");
 	say();
 	goto labelFunc044F_048C;
 labelFunc044F_0484:
-	message("\"In the climax of the Test of Knighthood, one doth mix one's own blood with the Ashes of Gurnordir.\"");
+	message("「在騎士考驗的高潮部分，一個人會將自己的血與 Gurnordir 的骨灰混合。」");
 	say();
-	message("\"Through a mystical process, this causes one's own totem animal to appear. Thus, it is revealed to which Command thou dost belong.\"");
+	message("「透過一個神秘的過程，這會導致自己的圖騰動物出現。因此，這會揭示你屬於哪個軍團。」");
 	say();
 labelFunc044F_048C:
-	case "miracle" attend labelFunc044F_04C9:
-	UI_remove_answer("miracle");
-	message("\"It shames me to say that I am the sole survivor from the ambush of Astrid's patrol. The Goblins left me for dead, but I was merely dazed.\"");
+	case "奇蹟" attend labelFunc044F_04C9:
+	UI_remove_answer("奇蹟");
+	message("「我很慚愧地說，我是 Astrid 巡邏隊伏擊的唯一倖存者。哥布林以為我死了，但我只是被擊昏了。」");
 	say();
-	message("\"There was a heap of bodies where Astrid had last been fighting, but her body was not there. It is obvious to me that they took her alive.\"");
+	message("「 Astrid 最後戰鬥的地方有一堆屍體，但她的屍體不在那裡。對我來說很明顯，他們活捉了她。」");
 	say();
-	message("\"I managed to reach Knight's Test, where Shmed gave me shelter and sent for Harnna to bandage my wounds. When I recover, I am going there again!\"");
+	message("「我設法到達了騎士考驗，在那裡 Shmed 給了我庇護，並派人找 Harnna 來包紮我的傷口。等我康復了，我會再去的！」");
 	say();
 	UI_push_answers();
 	if (!(!var0003)) goto labelFunc044F_04B9;
-	UI_add_answer("ambush");
+	UI_add_answer("伏擊");
 labelFunc044F_04B9:
-	UI_add_answer(["Astrid", "alive", "change subject"]);
+	UI_add_answer(["Astrid", "活著", "換個話題"]);
 labelFunc044F_04C9:
-	case "ambush", "traitor" attend labelFunc044F_0510:
-	UI_remove_answer("ambush");
-	UI_remove_answer("traitor");
+	case "伏擊", "叛徒" attend labelFunc044F_0510:
+	UI_remove_answer("伏擊");
+	UI_remove_answer("叛徒");
 	var0003 = true;
 	if (!gflags[0x0044]) goto labelFunc044F_04F3;
-	message("\"A Goblin magically transformed himself into a man and hid amongst us as Simon. Amazing! One day we must learn the secret of how they could accomplish this thing.\"");
+	message("「一個哥布林施展魔法把自己變成了一個男人，並以 Simon 的身分隱藏在我們中間。太神奇了！總有一天我們必須了解他們是如何做到這件事的秘密。」");
 	say();
 	goto labelFunc044F_0510;
 labelFunc044F_04F3:
-	message("\"It was as if they knew our plans! They were lying in wait across our path, and were upon us in moments. What carnage!\"");
+	message("「就好像他們知道我們的計畫一樣！他們埋伏在我們的路上，並在幾分鐘內襲擊了我們。真是一場大屠殺！」");
 	say();
-	message("\"It grieves me to say this, but there must be a traitor in Monitor. Someone must have revealed our plans to the Goblins.\"");
+	message("「說這些我很傷心，但蒙利多城裡一定有叛徒。一定有人向哥布林透露了我們的計畫。」");
 	say();
-	message("\"As a Bear, I know that our Command is innocent. Caladin doth have many faults, but being devious is not one of them.\"");
+	message("「作為一隻巨熊，我知道我們的軍團是無辜的。 Caladin 確實有很多缺點，但狡猾不是其中之一。」");
 	say();
-	message("\"The traitor is either a Wolf or a Leopard. Perhaps if thou dost ask around, thou mightest find clues in this mystery.\"");
+	message("「叛徒不是野狼就是獵豹。也許如果你四處打聽一下，你可能會在這個謎團中找到線索。」");
 	say();
-	UI_add_answer(["Wolf", "Leopard"]);
+	UI_add_answer(["野狼", "獵豹"]);
 labelFunc044F_0510:
-	case "Wolf" attend labelFunc044F_052F:
-	UI_remove_answer("Wolf");
-	message("\"The Wolves have been disloyal to Monitor since Brendann took charge. He would have us guard the roads, not the city itself!\"");
+	case "野狼" attend labelFunc044F_052F:
+	UI_remove_answer("野狼");
+	message("「自從 Brendann 掌權以來，野狼一直對蒙利多城不忠。他希望我們保衛道路，而不是城市本身！」");
 	say();
-	message("\"If anyone is the spy, it must be Krayg. He is often out in the woods, alone -- and he never brings back booty or prisoners.\"");
+	message("「如果有人是間諜，那一定是 Krayg 。他經常獨自一人在森林裡——而且他從不帶回戰利品或囚犯。」");
 	say();
-	message("\"What can he be doing? He says that he doth have an old injury, but he's merely a snivelling coward.\"");
+	message("「他能做什麼？他說他有舊傷，但他只是個哭泣的懦夫。」");
 	say();
 	gflags[0x004E] = true;
 labelFunc044F_052F:
-	case "Leopard" attend labelFunc044F_0546:
-	UI_remove_answer("Leopard");
-	message("\"Marsten, the leader of the Leopard Command, officially runs the town and he doth have his hands full. Not only are there the Goblins to worry about, but there is also a thief stealing money from the treasury. Spektor, his right hand man, is in charge of that as well. Needless to say it hath made things unpleasant between the commands as of late.\"");
+	case "獵豹" attend labelFunc044F_0546:
+	UI_remove_answer("獵豹");
+	message("「獵豹軍團的領袖 Marsten 正式管理這座城鎮，而且他忙得不可開交。不僅有哥布林要擔心，還有一個小偷從金庫裡偷錢。他的得力助手 Spektor 也負責這件事。不用說，最近軍團之間的事情變得很不愉快。」");
 	say();
 	gflags[0x00B6] = true;
 labelFunc044F_0546:
 	case "Astrid" attend labelFunc044F_0559:
 	UI_remove_answer("Astrid");
-	message("\"She was the greatest Knight that I have ever had the honor of fighting beside. Carrying on her standard is a challenge to which I will dedicate myself for the rest of my life.\"");
+	message("「她是我有幸並肩作戰過的最偉大的騎士。繼承她的旗幟是我將傾盡餘生去面對的挑戰。」");
 	say();
 labelFunc044F_0559:
-	case "alive" attend labelFunc044F_056C:
-	UI_remove_answer("alive");
-	message("\"Being captured alive by the Goblins is a far worse fate than being killed by them on the battlefield. Survivors tell horrifying stories of torture, mutilation and things I should not even speak of.\"");
+	case "活著" attend labelFunc044F_056C:
+	UI_remove_answer("活著");
+	message("「被哥布林活捉的命運比在戰場上被他們殺死要糟糕得多。倖存者講述了折磨、肢解和我不應該談論的恐怖故事。」");
 	say();
 labelFunc044F_056C:
 	case "Pomdirgun" attend labelFunc044F_0590:
 	UI_remove_answer("Pomdirgun");
 	if (!gflags[0x002C]) goto labelFunc044F_0588;
-	message("\"With Pomdirgun dead, those wicked Goblins will be much easier to defeat. His evil brain was constantly able to devise strategies that perplexed us. Thou hast done us a great service and I thank thee.\"");
+	message("「隨著 Pomdirgun 的死，那些邪惡的哥布林將更容易被擊敗。他邪惡的大腦不斷地想出讓我們困惑的策略。你為我們立下了大功，我感謝你。」");
 	say();
 	goto labelFunc044F_0590;
 labelFunc044F_0588:
-	message("\"He is the Goblin leader -- a king or a chieftain, depending on how one translates the Goblin tongue.\"");
+	message("「他是哥布林的領袖——一個國王或酋長，取決於人們如何翻譯哥布林的語言。」");
 	say();
-	message("\"Pomdirgun claims to be a direct descendant of Gurnordir. Having heard him curse us on the field of battle, I know that he speaks our tongue -- quite a feat for one of those creatures.\"");
+	message("「 Pomdirgun 聲稱自己是 Gurnordir 的直系後代。聽到他在戰場上咒罵我們，我知道他會說我們的語言——對於這些生物來說，這是一項了不起的成就。」");
 	say();
 labelFunc044F_0590:
-	case "brown bottle" attend labelFunc044F_05C7:
-	UI_remove_answer("brown bottle");
-	message("\"How strange! Thou wouldst never find an intact bottle in a Goblin camp -- the creatures delight in smashing glass. Their barbarian urges are very strong.\"");
+	case "棕色瓶子" attend labelFunc044F_05C7:
+	UI_remove_answer("棕色瓶子");
+	message("「真奇怪！你永遠不會在哥布林營地找到一個完好無損的瓶子——這些生物喜歡打碎玻璃。他們野蠻的衝動非常強烈。」");
 	say();
-	message("\"This must have been left by a Man. At last -- evidence to identify our traitor!\"");
+	message("「這一定是人類留下的。最後——確定我們叛徒的證據！」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0268, 0xFE99, 0x0009)) goto labelFunc044F_05C3;
-	message("\"Such an unusual bottle... Perhaps Lucilla can identify it for thee.\"");
+	message("「這麼不尋常的瓶子……也許 Lucilla 可以為你辨認。」");
 	say();
 	goto labelFunc044F_05C7;
 labelFunc044F_05C3:
-	message("\"Thou must inquire to see if anyone can identify this bottle.\"");
+	message("「你必須打聽一下，看看是否有人能認出這個瓶子。」");
 	say();
 labelFunc044F_05C7:
 	case "Argus" attend labelFunc044F_05E2:
 	UI_remove_answer("Argus");
-	message("\"He was a Knight of Monitor with whom I had an altercation. He took bribes, and when my friend accused him of it, Argus slew him on the List Field.\"");
+	message("「他是一名蒙利多城的騎士，我曾與他發生爭吵。他收受賄賂，當我的朋友指控他時， Argus 在比武場上殺了他。」");
 	say();
-	message("\"Then there was a hue and cry, for the honor of the List Field was at stake! The Wolves wanted to protect Argus, but the Bears were for justice!\"");
+	message("「然後就引起了軒然大波，因為比武場的榮譽受到了威脅！野狼想保護 Argus ，但巨熊為了伸張正義！」");
 	say();
-	message("\"Shortly afterward, Argus left town. He must have been guilty, or he would have stayed to prove his innocence.\"");
+	message("「不久之後， Argus 離開了小鎮。他一定是有罪的，否則他會留下來證明他的清白。」");
 	say();
 labelFunc044F_05E2:
-	case "bye" attend labelFunc044F_0609:
+	case "告辭" attend labelFunc044F_0609:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Bye!@", 0x0000);
-	Func097F(0xFFB1, "@Vigilance!@", 0x0002);
+	Func097F(0xFE9C, "@再見！@", 0x0000);
+	Func097F(0xFFB1, "@保持警戒！@", 0x0002);
 	goto labelFunc044F_060C;
 labelFunc044F_0609:
 	goto labelFunc044F_022D;

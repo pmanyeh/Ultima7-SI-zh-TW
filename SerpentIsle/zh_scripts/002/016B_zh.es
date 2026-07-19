@@ -13,7 +13,7 @@ void Func016B shape#(0x16B) ()
 
 	if (!((event == 0x0000) && (Func0994() == 0x000E))) goto labelFunc016B_0058;
 	UI_clear_item_say(item);
-	var0000 = ["@I want an eyeball!@", "@Yes, mistress!@", "@We must hurry!@", "@Break his bones...@", "@I cannot wait!@", "@Skin him alive!@"];
+	var0000 = ["@我要一顆眼球！@", "@是的，女主人！@", "@我們必須趕快！@", "@打碎他的骨頭……@", "@我迫不及待了！@", "@活剝他的皮！@"];
 	Func097F(item, var0000[UI_get_random(UI_get_array_size(var0000))], 0x0000);
 	if (!(UI_get_random(0x000A) == 0x0001)) goto labelFunc016B_0058;
 	UI_set_schedule_type(item, 0x0004);

@@ -37,8 +37,8 @@ labelFunc07EE_0058:
 	UI_set_item_flag(var0001, 0x0012);
 	var0001 = UI_update_last_created(UI_get_object_position(0xFF31));
 labelFunc07EE_00CF:
-	Func097F(0xFF2D, "@Goodbye...@", 0x0002);
-	Func097F(0xFF2D, "@Hero...@", 0x0016);
+	Func097F(0xFF2D, "@再見了……@", 0x0002);
+	Func097F(0xFF2D, "@英雄……@", 0x0016);
 	var0001 = UI_delayed_execute_usecode_array(0xFF2D, [(byte)0x23, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6D, (byte)0x27, 0x0002, (byte)0x55, 0x07EE], 0x0019);
 	gflags[0x000A] = false;
 	gflags[0x0007] = true;
@@ -48,30 +48,30 @@ labelFunc07EE_0115:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFF2D, 0x0000);
 	UI_clear_item_flag(0xFE9C, 0x0010);
-	message("\"Karnax is defeated, for now... I am weak, and must leave...\"");
+	message("「Karnax 暫時被擊敗了……我很虛弱，必須離開了……」");
 	say();
 	if (!gflags[0x02C3]) goto labelFunc07EE_014C;
-	message("\"Remember to seek out the Three Companions -- they must be at thy side!\"");
+	message("「記住要尋找三個同伴——他們必須在你的身邊！」");
 	say();
 	goto labelFunc07EE_0158;
 labelFunc07EE_014C:
-	message("\"The writings of Xenka speak of the Three which shall travel with thee. Without them, thou canst not succeed.\"");
+	message("「Xenka 的著作中提到了將與你同行的三個同伴。沒有他們，你無法成功。」");
 	say();
-	message("\"Thou must find them, Hero! And then never let them leave thy side...\"");
+	message("「你必須找到他們，英雄！然後永遠不要讓他們離開你的身邊……」");
 	say();
 	gflags[0x02C3] = true;
 labelFunc07EE_0158:
 	if (!gflags[0x02C2]) goto labelFunc07EE_0165;
-	message("\"And watch for the Ring, Necklace and Earring -- for by these, the Power shall guide thee.\"");
+	message("「並且留意戒指、項鍊和耳環——因為透過這些，那股力量( Power )將指引你。」");
 	say();
 	goto labelFunc07EE_016D;
 labelFunc07EE_0165:
-	message("\"Thou must also seek three artifacts -- a Ring, a Necklace, and an Earring.\"");
+	message("「你也必須尋找三件神器——一枚戒指、一條項鍊和一只耳環。」");
 	say();
-	message("\"Through these ancient items, a Power shall communicate with thee. More than this, I know not.\"");
+	message("「透過這些古老的物品，那股力量將與你溝通。除此之外，我就不知道了。」");
 	say();
 labelFunc07EE_016D:
-	message("\"Seek out thy black sword with the caged demon that thou didst bring with thee from the other land. Thou must have it to complete thy quest.\"");
+	message("「尋找你從另一片土地帶來、囚禁著惡魔的黑劍。你必須擁有它才能完成你的任務。」");
 	say();
 	UI_remove_npc_face0();
 	var0003 = UI_get_object_position(0xFF2D);
@@ -104,7 +104,7 @@ labelFunc07EE_0230:
 labelFunc07EE_0250:
 	if (!((event == 0x0002) && (gflags[0x0009] == true))) goto labelFunc07EE_02B1;
 	UI_set_schedule_type(0xFFFE, 0x0003);
-	var0001 = UI_delayed_execute_usecode_array(0xFFFE, [(byte)0x23, (byte)0x52, "@The Avatar!@"], 0x0002);
+	var0001 = UI_delayed_execute_usecode_array(0xFFFE, [(byte)0x23, (byte)0x52, "@聖者！@"], 0x0002);
 	var0001 = UI_add_cont_items(0xFFFE, 0x0002, 0x0253, 0x0000, 0x0000, 0x0000);
 	gflags[0x0009] = false;
 	var0001 = UI_execute_usecode_array(0xFFFE, [(byte)0x23, (byte)0x55, 0x07EE]);

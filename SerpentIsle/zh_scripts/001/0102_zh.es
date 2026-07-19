@@ -12,7 +12,7 @@ void Func0102 shape#(0x102) ()
 	if (!(event == 0x0001)) goto labelFunc0102_0022;
 	if (!UI_in_usecode(item)) goto labelFunc0102_001E;
 	UI_halt_scheduled(item);
-	Func0949("@'Tis about time!@");
+	Func0949("@差不多該是時候了！@");
 	goto labelFunc0102_0022;
 labelFunc0102_001E:
 	item->Func0628();

@@ -158,16 +158,16 @@ labelFunc07F9_039D:
 labelFunc07F9_03A4:
 	var0012 = UI_die_roll(0x0001, 0x0004);
 	if (!(var0012 == 0x0001)) goto labelFunc07F9_03C5;
-	UI_item_say(var0011, "@Have at 'em, men!@");
+	UI_item_say(var0011, "@弟兄們，上啊！@");
 labelFunc07F9_03C5:
 	if (!(var0012 == 0x0002)) goto labelFunc07F9_03D9;
-	UI_item_say(var0011, "@Best of luck!@");
+	UI_item_say(var0011, "@祝你好運！@");
 labelFunc07F9_03D9:
 	if (!(var0012 == 0x0003)) goto labelFunc07F9_03ED;
-	UI_item_say(var0011, "@In ya go!@");
+	UI_item_say(var0011, "@進去吧！@");
 labelFunc07F9_03ED:
 	if (!(var0012 == 0x0004)) goto labelFunc07F9_0401;
-	UI_item_say(var0011, "@Pray for mercy!@");
+	UI_item_say(var0011, "@祈求憐憫吧！@");
 labelFunc07F9_0401:
 	var0008 = [0x0000, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0x0001, 0x0001, 0x0001, 0x0001, 0x0001];
 	var0009 = [0x0000, 0x0001, 0x0000, 0xFFFF, 0xFFFE, 0x0002, 0x0002, 0x0001, 0x0000, 0xFFFF, 0xFFFE];

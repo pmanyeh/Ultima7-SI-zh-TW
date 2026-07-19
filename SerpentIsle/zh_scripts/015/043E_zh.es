@@ -21,9 +21,9 @@ void Func043E object#(0x43E) ()
 	var0000 = Func0953();
 	var0001 = UI_get_item_flag(0xFFC2, 0x001C);
 	if (!(event == 0x0001)) goto labelFunc043E_0043;
-	Func097F(0xFE9C, "Hello, sir.", 0x0000);
+	Func097F(0xFE9C, "你好，先生。", 0x0000);
 	0xFFC2->Func07D1();
-	Func097F(0xFFC2, "Greetings.", 0x0002);
+	Func097F(0xFFC2, "你好。", 0x0002);
 	UI_set_schedule_type(0xFFC2, 0x0003);
 labelFunc043E_0043:
 	if (!(event == 0x0009)) goto labelFunc043E_0395;
@@ -31,213 +31,213 @@ labelFunc043E_0043:
 	UI_clear_item_say(0xFFC2);
 	UI_show_npc_face0(0xFFC2, 0x0000);
 	if (!(!var0001)) goto labelFunc043E_007B;
-	message("\"Hello, stranger. I am Andral of Monitor. Dost thou need the services of a master artist?\"");
+	message("「你好，陌生人。我是蒙利多城( Monitor )的 Andral 。你需要大師級藝術家的服務嗎？」");
 	say();
 	UI_set_item_flag(0xFFC2, 0x001C);
 	goto labelFunc043E_0085;
 labelFunc043E_007B:
-	message("\"Welcome, ");
+	message("「歡迎，");
 	message(var0000);
-	message(". How may I be of service to thee?\"");
+	message("。我能為你提供什麼服務？」");
 	say();
 labelFunc043E_0085:
-	UI_add_answer(["artist", "bye"]);
+	UI_add_answer(["藝術家", "告辭"]);
 	if (!(!gflags[0x0058])) goto labelFunc043E_00A4;
-	message("\"Perhaps I should not speak with thee... I hope thou art not come to rob me!\"");
+	message("「也許我不該跟你說話……我希望你不是來搶劫我的！」");
 	say();
-	UI_add_answer("rob");
+	UI_add_answer("搶劫");
 labelFunc043E_00A4:
 	converse attend labelFunc043E_0394;
-	case "artist" attend labelFunc043E_00DF:
-	UI_remove_answer("artist");
-	message("\"I am a sculptor by trade. There is a brisk business to be done in this city, fashioning busts and statues for the Knights.\"");
+	case "藝術家" attend labelFunc043E_00DF:
+	UI_remove_answer("藝術家");
+	message("「我的職業是雕塑家。這座城市的生意很興隆，主要是為騎士( Knights )製作半身像和雕像。」");
 	say();
 	if (!(!gflags[0x0048])) goto labelFunc043E_00CF;
-	message("\"But I can make time for thee, if thou dost wish to commission my talents.\"");
+	message("「但如果你想委託我的才能，我可以為你騰出時間。」");
 	say();
-	UI_add_answer("commission");
+	UI_add_answer("委託");
 	goto labelFunc043E_00DF;
 labelFunc043E_00CF:
-	UI_add_answer(["sculptor", "Knights", "commission"]);
+	UI_add_answer(["雕塑家", "騎士", "委託"]);
 labelFunc043E_00DF:
-	case "commission" attend labelFunc043E_010D:
-	UI_remove_answer("commission");
-	message("\"For a fee I create works of art to honor Knights when they complete great quests -- or when they simply wish to pay me money for a monument to their vanity.\"");
+	case "委託" attend labelFunc043E_010D:
+	UI_remove_answer("委託");
+	message("「只要付費，我就會創作藝術品，在騎士完成偉大任務時表彰他們——或者當他們只是想付錢給我，為他們的虛榮心立個紀念碑時。」");
 	say();
-	message("\"Dost thou wish to commission a work from me?\"");
+	message("「你想委託我創作一件作品嗎？」");
 	say();
 	var0002 = Func0955();
 	if (!var0002) goto labelFunc043E_0109;
-	message("\"I am sorry but I am currently working on a statue of Luther. It may take me some time to complete. I could not begin work on something for thee until then.\"");
+	message("「很抱歉，我目前正在製作 Luther 的雕像。這可能需要一些時間才能完成。在那之前，我無法開始為你製作任何東西。」");
 	say();
 	goto labelFunc043E_010D;
 labelFunc043E_0109:
-	message("\"I am proud of thee! Thy life and thy deeds are all the testament anyone truly needs, provided one hath truly made something of their life.\"");
+	message("「我為你感到驕傲！只要一個人真的在生活中有所作為，你的生活和你的事蹟就是任何人真正需要的全部證明。」");
 	say();
 labelFunc043E_010D:
-	case "sculptor" attend labelFunc043E_012A:
-	UI_remove_answer("sculptor");
-	message("\"Thou mayest have noticed the various sculptures around the town. I crafted many of them.\"");
+	case "雕塑家" attend labelFunc043E_012A:
+	UI_remove_answer("雕塑家");
+	message("「你可能已經注意到鎮上各種各樣的雕塑。其中很多都是我製作的。」");
 	say();
 	if (!gflags[0x0048]) goto labelFunc043E_012A;
-	message("\"'Tis our custom to carve sculptures to commemorate the bravery of our finest warriors. Now that thou art a Knight, thou canst live for the day when I shall sculpt a monument for thee.\"");
+	message("「雕刻雕塑來紀念我們最優秀戰士的勇敢，是我們的習俗。既然你現在是一名騎士，你可以期待有一天我會為你雕刻一座紀念碑。」");
 	say();
 labelFunc043E_012A:
-	case "Knights" attend labelFunc043E_0152:
-	UI_remove_answer("Knights");
-	message("\"As thou knowest by now, this is a city of warriors. I myself passed the Knight's Test when I was fifteen, but my true love hath always been art.\"");
+	case "騎士" attend labelFunc043E_0152:
+	UI_remove_answer("騎士");
+	message("「如你現在所知，這是一座戰士之城。我自己十五歲時就通過了騎士考驗( Knight's Test )，但我真正的熱愛始終是藝術。」");
 	say();
-	message("\"The other Knights sometimes mock me, for I am seldom seen at the List Field. Canst thou imagine what a blade could do to my gifted fingers!\"");
+	message("「其他的騎士有時會嘲笑我，因為我很少在比武場( List Field )露面。你能想像刀刃會對我這雙有天賦的手指造成什麼傷害嗎！」");
 	say();
-	message("\"But, alas, an artist is always misunderstood.\"");
+	message("「但是，唉，藝術家總是會被誤解的。」");
 	say();
-	UI_add_answer(["List Field", "misunderstood"]);
+	UI_add_answer(["比武場", "被誤解的"]);
 labelFunc043E_0152:
-	case "List Field" attend labelFunc043E_016D:
-	UI_remove_answer("List Field");
-	message("\"There is so little time in this life, and 'twould be an utter waste for someone of mine artistic abilities to engage in duels.\"");
+	case "比武場" attend labelFunc043E_016D:
+	UI_remove_answer("比武場");
+	message("「人生苦短，對於像我這樣有藝術天賦的人來說，參與決鬥完全是一種浪費。」");
 	say();
-	message("\"Should I spend that hour in profitless combat, solely to please my fellow Knights? I think not.\"");
+	message("「我應該把時間花在毫無利益的戰鬥上，只為了取悅我的騎士同伴嗎？我不這麼認為。」");
 	say();
-	message("\"Instead, I could be crafting another masterpiece, so that my name will be known to future generations. This is true glory.\"");
+	message("「相反地，我可以製作另一件傑作，這樣我的名字就會被後代所知。這才是真正的榮耀。」");
 	say();
 labelFunc043E_016D:
-	case "misunderstood" attend labelFunc043E_018C:
-	UI_remove_answer("misunderstood");
-	message("\"I have no friends. The Knights tolerate me and value my services, but they do not share mine interests.\"");
+	case "被誤解的" attend labelFunc043E_018C:
+	UI_remove_answer("被誤解的");
+	message("「我沒有朋友。騎士們容忍我並看重我的服務，但他們不分享我的興趣。」");
 	say();
-	message("\"There once was a woman who cared for me, but we quarrelled. She, too, hath art in her soul, but she hides her secret well.\"");
+	message("「曾經有一個關心我的女人，但我們吵架了。她的靈魂中也有藝術，但她把她的秘密隱藏得很好。」");
 	say();
-	message("\"Lucilla would not pay the price that I have, to be so alone. Do not weep for me, my friend -- I am proud of who I am.\"");
+	message("「Lucilla 不願意付出像我一樣的代價，變得如此孤獨。別為我哭泣，我的朋友——我為自己是誰感到驕傲。」");
 	say();
 	gflags[0x008F] = true;
 labelFunc043E_018C:
-	case "rob" attend labelFunc043E_01DD:
-	UI_remove_answer("rob");
-	message("\"I am not sure that I care to speak about the incident. 'Twas most unpleasant.\"");
+	case "搶劫" attend labelFunc043E_01DD:
+	UI_remove_answer("搶劫");
+	message("「我不確定我是否想談論那次事件。那非常令人不快。」");
 	say();
-	message("\"There was a stranger in Monitor, one who claimed to be from another land. He was very large, a scholar rather than a warrior.\"");
+	message("「蒙利多城裡有一個陌生人，他自稱來自另一個大陸。他非常高大，是個學者而不是戰士。」");
 	say();
-	message("\"He travelled with many companions, including a tall, cloaked stranger.\"");
+	message("「他與許多同伴一起旅行，包括一個高大、披著斗篷的陌生人。」");
 	say();
-	message("\"On the night that Batlin the Sage left town, someone stole an ancient relic from mine home. I suspect that he was the thief!\"");
+	message("「在智者巴特林( Batlin the Sage )離開城鎮的那晚，有人從我家偷走了一件古物。我懷疑他就是那個小偷！」");
 	say();
-	var0003 = Func0992(0xFFFF, "@Batlin! Why, he is our enemy, too!@", 0x0000, false);
+	var0003 = Func0992(0xFFFF, "@巴特林！哎呀，他也是我們的敵人！@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	gflags[0x0058] = true;
 	UI_push_answers();
-	UI_add_answer(["Batlin", "companions", "artifact", "nothing more"]);
+	UI_add_answer(["巴特林", "同伴", "古物", "沒別的了"]);
 labelFunc043E_01DD:
-	case "Batlin" attend labelFunc043E_0206:
-	UI_remove_answer("Batlin");
-	message("\"He came inquiring about ancient ruins, and was especially interested in the Serpent Stone -- but Renfry can tell thee more of this.\"");
+	case "巴特林" attend labelFunc043E_0206:
+	UI_remove_answer("巴特林");
+	message("「他來打聽關於古代遺跡的事，並對巨蛇之石( Serpent Stone )特別感興趣——但 Renfry 可以告訴你更多關於這件事。」");
 	say();
-	message("\"Simon the Innkeeper heard the sage say that he had come here from Fawn.\"");
+	message("「旅店老闆 Simon 聽到那個智者說，他是從幼鹿城來這裡的。」");
 	say();
 	gflags[0x008E] = true;
 	if (!(!gflags[0x000B])) goto labelFunc043E_0206;
-	UI_add_answer("Fawn");
+	UI_add_answer("幼鹿城");
 labelFunc043E_0206:
-	case "Fawn" attend labelFunc043E_022F:
-	UI_remove_answer("Fawn");
-	message("\"The City of Beauty lies due north of here, on the shores of a great bay. Fawn is a city of fishermen.\"");
+	case "幼鹿城" attend labelFunc043E_022F:
+	UI_remove_answer("幼鹿城");
+	message("「美麗之城( City of Beauty )位於這裡正北方，一個大海灣的岸邊。幼鹿城是一個漁民的城市。」");
 	say();
 	if (!UI_is_pc_female()) goto labelFunc043E_0227;
-	message("\"Thou mightest like Fawn, for 'tis a place where members of thy sex are highly regarded. The city is ruled by a Queen, and the Priestess of Beauty is also female.\"");
+	message("「你可能會喜歡幼鹿城，因為那裡是非常尊重你這個性別的地方。這座城市由一位女王統治，而美麗的祭司也是女性。」");
 	say();
 	goto labelFunc043E_022F;
 labelFunc043E_0227:
-	message("\"The women of Fawn are the most beautiful in the land, but they are overly pampered.\"");
+	message("「幼鹿城的女人是這片土地上最美麗的，但她們被過度溺愛了。」");
 	say();
-	message("\"Monitorian females, on the other hand, are as strong as oxen!\"");
+	message("「另一方面，蒙利多城的女性強壯得像牛一樣！」");
 	say();
 labelFunc043E_022F:
-	case "companions" attend labelFunc043E_025D:
-	UI_remove_answer("companions");
-	message("\"There is not much to say! The one in the cloak spent most of his time in the inn, and seldom spoke.\"");
+	case "同伴" attend labelFunc043E_025D:
+	UI_remove_answer("同伴");
+	message("「沒什麼好說的！那個披著斗篷的人大部分時間都待在旅店裡，很少說話。」");
 	say();
 	if (!(!gflags[0x0044])) goto labelFunc043E_024D;
-	message("\"Perhaps Simon could tell thee more.\"");
+	message("「也許 Simon 可以告訴你更多。」");
 	say();
 labelFunc043E_024D:
-	message("\"There was also a warrior named Brunt who travelled with Batlin. He was small in stature, but with incredibly broad shoulders --\"");
+	message("「還有一個名叫 Brunt 的戰士和巴特林一起旅行。他身材矮小，但肩膀卻寬得令人難以置信——」");
 	say();
-	message("\"Oh! If only he would have posed in my studio! I could have created such art...\"");
+	message("「哦！要是他願意在我的工作室裡擺姿勢就好了！我可以創作出這樣的藝術……」");
 	say();
-	message("\"Standarr fought him in the List Field, and said that he was an opponent unlike any other!\"");
+	message("「Standarr 在比武場與他交手，並說他是一個與眾不同的對手！」");
 	say();
 	gflags[0x008D] = true;
 labelFunc043E_025D:
-	case "artifact" attend labelFunc043E_02A6:
-	UI_remove_answer("artifact");
-	message("\"Mine ancestors found the relic when they first founded this city, and it hath been kept in the family all this time.\"");
+	case "古物" attend labelFunc043E_02A6:
+	UI_remove_answer("古物");
+	message("「我的祖先在最初建立這座城市時發現了這個古物，它一直被保存在家族中直到現在。」");
 	say();
-	message("\"To be honest, we were afraid to discard it. It had a demonic appearance, being shaped like a serpent, and composed of a dark rock never before seen.\"");
+	message("「老實說，我們不敢丟棄它。它有著惡魔般的外觀，形狀像一條蛇，由一種前所未見的黑色岩石組成。」");
 	say();
-	var0003 = Func0992(0x0001, "@Perhaps blackrock, Avatar...@", 0x0000, false);
+	var0003 = Func0992(0x0001, "@也許是黑岩( blackrock )，聖者……@", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc043E_0295;
 	UI_set_conversation_slot(0x0000);
 labelFunc043E_0295:
-	message("\"We hated the object, yet we were afraid to be parted from it. I cannot explain this. But it was so.\"");
+	message("「我們討厭那個物品，卻又害怕與它分開。我無法解釋這一點。但確實如此。」");
 	say();
-	UI_add_answer(["demonic appearance", "serpent-shaped"]);
+	UI_add_answer(["惡魔般的外觀", "蛇形的"]);
 labelFunc043E_02A6:
-	case "demonic appearance" attend labelFunc043E_02C1:
-	UI_remove_answer("demonic appearance");
-	message("\"Monitorians are not a superstitious people, yet we fear the ancient ruins.\"");
+	case "惡魔般的外觀" attend labelFunc043E_02C1:
+	UI_remove_answer("惡魔般的外觀");
+	message("「蒙利多城人不是迷信的民族，但我們害怕那些古代遺跡。」");
 	say();
-	message("\"They were once the homes of Daemons who ruled this land in a distant age. They were horned beings with red skins, and they had the power to command molten rock to flow!\"");
+	message("「它們曾經是在遙遠的時代統治這片土地的惡魔( Daemons )的家園。它們是長著角、皮膚紅色的生物，而且它們有能力指揮熔融的岩石流動！」");
 	say();
-	message("\"The Serpent was their sign.\"");
+	message("「巨蛇( Serpent )是它們的標誌。」");
 	say();
 labelFunc043E_02C1:
-	case "serpent-shaped" attend labelFunc043E_0314:
-	UI_remove_answer("serpent-shaped");
-	message("\"Indeed, 'twas as if a living serpent had been changed into stone -- a perfect replica!\"");
+	case "蛇形的" attend labelFunc043E_0314:
+	UI_remove_answer("蛇形的");
+	message("「確實，就好像一條活生生的蛇被變成了石頭——完美的複製品！」");
 	say();
-	message("\"'Tis not uncommon to see the symbol of the serpent among the ruins, yet I have never seen before or since any such Rock Serpent.\"");
+	message("「在遺跡中看到蛇的符號並不罕見，但我在那之前或之後都從未見過任何這樣的岩石蛇( Rock Serpent )。」");
 	say();
-	var0003 = Func0992(0xFFFE, "@Couldst thou describe the curvings of the serpent?@", 0x0000, false);
+	var0003 = Func0992(0xFFFE, "@你能描述一下那條蛇的彎曲程度嗎？@", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc043E_0314;
 	UI_set_conversation_slot(0x0000);
-	message("\"Umm... why, the head curved to the right, and the body was most sinuous. Why dost thou ask?\"");
+	message("「嗯……為什麼，頭部向右彎曲，身體非常蜿蜒。你為什麼問這個？」");
 	say();
-	var0003 = Func0992(var0003, "@Avatar, this man's stolen relic was a\tperfect match for the one thou lost in the Storm, except that it faced the opposite way!", 0x0000, false);
+	var0003 = Func0992(var0003, "@聖者，這個人被偷的古物與你在風暴( Storm )中遺失的那個\t完美吻合，只是它面向相反的方向！", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 labelFunc043E_0314:
-	case "nothing more" attend labelFunc043E_0353:
-	message("\"But let me say this -- Batlin shall not rest in peace, for a powerful warrior is on his trail!\"");
+	case "沒別的了" attend labelFunc043E_0353:
+	message("「但讓我這麼說吧——巴特林將不得安寧，因為有一位強大的戰士正在追蹤他！」");
 	say();
-	message("\"Dost thou know of Wilfred the Slayer?\"");
+	message("「你知道殺戮者 Wilfred ( Wilfred the Slayer )嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc043E_0331;
-	message("\"Then I need say no more. Surely, Wilfred shall slay the evil sage and reap my revenge.\"");
+	message("「那麼我不需要多說了。當然， Wilfred 將殺死那個邪惡的智者並為我報仇。」");
 	say();
 	goto labelFunc043E_033D;
 labelFunc043E_0331:
-	message("\"Wilfred is a Knight of Monitor, but his home is at the inn of the Sleeping Bull.\"");
+	message("「Wilfred 是蒙利多城的騎士，但他的家在睡牛旅店。」");
 	say();
-	message("\"Batlin hath been there as well, and Wilfred's father hath mysteriously disappeared. Wilfred suspects the sage of being involved.\"");
+	message("「巴特林也去過那裡，而 Wilfred 的父親神祕地失蹤了。 Wilfred 懷疑這個智者牽涉其中。」");
 	say();
-	message("\"Surely, brave Wilfred shall track down the sage and kill him, and I shall enjoy sweet revenge!\"");
+	message("「當然，勇敢的 Wilfred 將追蹤那個智者並殺死他，而我將享受甜蜜的復仇！」");
 	say();
 labelFunc043E_033D:
 	gflags[0x0059] = true;
 	UI_pop_answers();
 	if (!(!gflags[0x000C])) goto labelFunc043E_0353;
-	UI_add_answer("Sleeping Bull");
+	UI_add_answer("睡牛旅店");
 labelFunc043E_0353:
-	case "Sleeping Bull" attend labelFunc043E_036E:
-	UI_remove_answer("Sleeping Bull");
-	message("\"Thou canst find the inn of the Sleeping Bull by taking the Serpent Highway north from here.\"");
+	case "睡牛旅店" attend labelFunc043E_036E:
+	UI_remove_answer("睡牛旅店");
+	message("「從這裡沿著蛇道( Serpent Highway )往北走，你就可以找到睡牛旅店。」");
 	say();
-	message("\"There is not much there, save for an ancient inn for which the village is named. Wilfred's brother Argus doth operate it.\"");
+	message("「那裡沒什麼東西，除了這個村莊賴以命名的古老旅店。 Wilfred 的兄弟 Argus 在經營它。」");
 	say();
 	gflags[0x000C] = true;
 labelFunc043E_036E:
-	case "bye" attend labelFunc043E_0391:
-	Func097F(0xFE9C, "@Bye!@", 0x0000);
-	Func097F(0xFFC2, "@'Til next we meet...@", 0x0002);
+	case "告辭" attend labelFunc043E_0391:
+	Func097F(0xFE9C, "@再見！@", 0x0000);
+	Func097F(0xFFC2, "@直到我們下次見面……@", 0x0002);
 	goto labelFunc043E_0394;
 labelFunc043E_0391:
 	goto labelFunc043E_00A4;
@@ -252,19 +252,19 @@ labelFunc043E_0395:
 	var0004 = UI_execute_usecode_array(0xFFC2, [(byte)0x23, (byte)0x59, var0004]);
 	var0005 = UI_get_random(0x0006);
 	if (!(var0005 == 0x0001)) goto labelFunc043E_040E;
-	Func097F(0xFFC2, "@Turn this way...@", 0x0000);
-	Func097F(0xFFB9, "@Hurry!@", 0x0003);
+	Func097F(0xFFC2, "@轉向這邊……@", 0x0000);
+	Func097F(0xFFB9, "@快點！@", 0x0003);
 labelFunc043E_040E:
 	if (!(var0005 == 0x0002)) goto labelFunc043E_0430;
-	Func097F(0xFFC2, "@Don't move!@", 0x0000);
-	Func097F(0xFFB9, "@Sorry, Andral.@", 0x0003);
+	Func097F(0xFFC2, "@別動！@", 0x0000);
+	Func097F(0xFFB9, "@抱歉， Andral 。@", 0x0003);
 labelFunc043E_0430:
 	if (!(var0005 == 0x0003)) goto labelFunc043E_0452;
-	Func097F(0xFFB9, "@Is it done yet?@", 0x0000);
-	Func097F(0xFFC2, "@Art doth take time.@", 0x0003);
+	Func097F(0xFFB9, "@完成了嗎？@", 0x0000);
+	Func097F(0xFFC2, "@藝術是需要時間的。@", 0x0003);
 labelFunc043E_0452:
 	if (!(var0005 > 0x0003)) goto labelFunc043E_04A5;
-	Func097F(0xFFC2, "@Aha!@", 0x0000);
+	Func097F(0xFFC2, "@啊哈！@", 0x0000);
 	var0006 = UI_find_nearby(0xFFC2, 0x037E, 0x000A, 0x0000);
 	if (!var0006) goto labelFunc043E_04A5;
 	UI_si_path_run_usecode(0xFFC2, UI_get_object_position(var0006), 0x000D, item, 0x043E, false);
@@ -272,7 +272,7 @@ labelFunc043E_0452:
 labelFunc043E_04A5:
 	goto labelFunc043E_04D7;
 labelFunc043E_04A8:
-	var0007 = ["@Piece by piece...@", "@Art is life!@", "@I have a vision...@", "@Take a chance!@", "@Patience!@", "@Art is not easy...@"];
+	var0007 = ["@一塊接一塊……@", "@藝術就是生活！@", "@我有個願景……@", "@碰碰運氣！@", "@耐心點！@", "@藝術並不容易……@"];
 	Func097F(0xFFC2, var0007[UI_get_random(UI_get_array_size(var0007))], 0x0000);
 labelFunc043E_04D7:
 	if (!(event == 0x000E)) goto labelFunc043E_0507;
@@ -297,7 +297,7 @@ labelFunc043E_057A:
 	abort;
 labelFunc043E_057B:
 	if (!(event == 0x0002)) goto labelFunc043E_05B9;
-	var0007 = ["@Much better!@", "@'Tis taking shape!@", "@Hmmm...@", "@Uh-oh...@", "@Ouch!@", "@A masterpiece!@"];
+	var0007 = ["@好多了！@", "@逐漸成形了！@", "@嗯……@", "@啊哦……@", "@哎喲！@", "@一件傑作！@"];
 	Func097F(0xFFC2, var0007[UI_get_random(UI_get_array_size(var0007))], 0x0000);
 	UI_run_schedule(0xFFC2);
 labelFunc043E_05B9:

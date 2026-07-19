@@ -37,7 +37,7 @@ labelFunc0112_0084:
 	UI_set_npc_id(var0006, 0x0007);
 	goto labelFunc0112_0084;
 labelFunc0112_00A6:
-	var0007 = ["@Hold there!@", "@Cease!@", "@Murderer!@", "@Stop him!@", "@Arrest that dog!@", "@Ruffian!@"];
+	var0007 = ["@住手！@", "@停！@", "@殺人犯！@", "@攔住他！@", "@逮捕那條狗！@", "@流氓！@"];
 	if (!var0003) goto labelFunc0112_00E5;
 	UI_clear_item_say(var0003);
 	Func097F(var0003, [var0007[UI_get_random(UI_get_array_size(var0007))]], 0x0000);
@@ -54,7 +54,7 @@ labelFunc0112_0139:
 labelFunc0112_013C:
 	var0000 = UI_set_npc_prop(item, 0x0003, 0x0014);
 	UI_clear_item_say(item);
-	var0007 = ["@Oh, my!@", "@I am bleeding...@", "@Oh, help me!@", "@Ouch!@", "@Fiend, stop that!@", "@I die!@"];
+	var0007 = ["@哦，天哪！@", "@我在流血……@", "@哦，救我！@", "@哎呀！@", "@惡棍，住手！@", "@我要死了！@"];
 	Func097F(item, [var0007[UI_get_random(UI_get_array_size(var0007))]], 0x0000);
 	UI_set_attack_mode(item, 0x0007);
 labelFunc0112_0187:

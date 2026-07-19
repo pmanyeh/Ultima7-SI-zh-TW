@@ -34,7 +34,7 @@ void Func0124 shape#(0x124) ()
 	var0000 = UI_find_nearby(item, 0x0316, 0x0014, 0x0000);
 	if (!var0000) goto labelFunc0124_0041;
 	if (!((UI_get_item_quality(var0000) == 0x0001) && (!gflags[0x00EC]))) goto labelFunc0124_0041;
-	Func094A("This is Filbercio's barge!");
+	Func094A("這是 Filbercio 的駁船！");
 	abort;
 labelFunc0124_0041:
 	var0001 = Func08E7(item);

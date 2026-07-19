@@ -5,7 +5,7 @@
 ## 專案結構
 
 - `SerpentIsle/` - 《巨蛇之島》相關的翻譯腳本與 Python 工具腳本
-- `Translation_Guide_會增補.md` - 翻譯名詞對照與指導原則
+- `Translation_Guide.md` - 翻譯名詞對照與指導原則
 - `SI_usecode_es_workflow.md` - 巨蛇之島腳本編譯與掛載工作流程
 
 ## 工作流程與編譯說明

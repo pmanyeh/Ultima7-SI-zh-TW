@@ -113,39 +113,39 @@ labelFunc07FA_0368:
 	if (!(var000A != 0x0045)) goto labelFunc07FA_0427;
 	if (!(var0009 == 0x00C9)) goto labelFunc07FA_03AB;
 	UI_show_npc_face0(var000A, 0x0000);
-	message("\"What pleasant music! 'Tis strangely soothing... I could stand here for hours and listen to it...\"");
+	message("「多麼悅耳的音樂！有一種奇妙的撫慰感……我可以在這裡站上好幾個小時，就為了聽它……」");
 	say();
-	message("\"Surely it would not hurt to tarry for a bit...\"");
+	message("「稍微逗留一下肯定無妨……」");
 	say();
 	UI_remove_npc_face0();
 labelFunc07FA_03AB:
 	if (!(var0009 == 0x00CA)) goto labelFunc07FA_03CB;
 	UI_show_npc_face0(var000A, 0x0000);
-	message("\"Wine! Praise the Virtues! I could use a drink right now...\"");
+	message("「美酒！讚美美德！我現在正需要喝一杯……」");
 	say();
-	message("\"Come, let us toast our friendship and hope for a speedy end to this journey!\"");
+	message("「來吧，讓我們為友誼乾杯，並希望這趟旅程能早日結束！」");
 	say();
 	UI_remove_npc_face0();
 labelFunc07FA_03CB:
 	if (!(var0009 == 0x00CB)) goto labelFunc07FA_03EB;
 	UI_show_npc_face0(var000A, 0x0000);
-	message("\"Look! A wondrous gem! This would easily buy enough provisions to last the entire quest!\"");
+	message("「看！好漂亮的一顆寶石！這很容易就能買到足夠支撐整個任務的物資！」");
 	say();
-	message("\"Or think what a fine gift this would be for Lord British! He would be impressed, to be sure.\"");
+	message("「或是想想，這對不列顛王( Lord British )來說會是一份多棒的禮物！他一定會印象深刻的。」");
 	say();
 	UI_remove_npc_face0();
 labelFunc07FA_03EB:
 	if (!(var0009 == 0x00CC)) goto labelFunc07FA_040B;
 	UI_show_npc_face0(var000A, 0x0000);
-	message("\"I have not seen food this rich in a long time! The aroma is marvelous!\"");
+	message("「我已經很久沒看過這麼豐盛的食物了！香氣真是不可思議！」");
 	say();
-	message("\"'Twould be a shame for all this to go to waste...\"");
+	message("「要是這些全浪費了那就太可惜了……」");
 	say();
 	UI_remove_npc_face0();
 labelFunc07FA_040B:
 	if (!(var0009 == 0x00CD)) goto labelFunc07FA_0427;
 	UI_show_npc_face0(var000A, 0x0000);
-	message("\"Perhaps something more needs to be done.\"");
+	message("「也許還需要做些什麼。」");
 	say();
 	UI_remove_npc_face0();
 labelFunc07FA_0427:

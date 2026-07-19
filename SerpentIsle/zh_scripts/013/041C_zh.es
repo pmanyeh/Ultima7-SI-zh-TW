@@ -57,35 +57,35 @@ labelFunc041C_007B:
 	var0003 = UI_execute_usecode_array(0xFFE4, [(byte)0x55, 0x070A]);
 labelFunc041C_00B5:
 	if (!(event == 0x0001)) goto labelFunc041C_00EB;
-	UI_item_say(0xFE9C, "@Hello, there.@");
+	UI_item_say(0xFE9C, "@你好。@");
 	0xFFE4->Func07D1();
-	Func097F(0xFFE4, (("@Greetings, " + var0000) + ".@"), 0x0002);
+	Func097F(0xFFE4, (("@你好，" + var0000) + "。@"), 0x0002);
 	UI_set_schedule_type(0xFFE4, 0x0003);
 labelFunc041C_00EB:
 	if (!(event == 0x0000)) goto labelFunc041C_0197;
 	var0007 = UI_get_random(0x0006);
 	if (!(var0007 == 0x0001)) goto labelFunc041C_0111;
-	UI_item_say(0xFFE4, "@Art thou thirsty?@");
+	UI_item_say(0xFFE4, "@你渴了嗎？@");
 labelFunc041C_0111:
 	if (!(var0007 == 0x0002)) goto labelFunc041C_0125;
-	UI_item_say(0xFFE4, "@Ale! Wine!@");
+	UI_item_say(0xFFE4, "@麥酒！葡萄酒！@");
 labelFunc041C_0125:
 	if (!(var0007 == 0x0003)) goto labelFunc041C_0139;
-	UI_item_say(0xFFE4, "@Welcome!@");
+	UI_item_say(0xFFE4, "@歡迎！@");
 labelFunc041C_0139:
 	if (!(var0007 == 0x0004)) goto labelFunc041C_014D;
-	UI_item_say(0xFFE4, "@Want a room?@");
+	UI_item_say(0xFFE4, "@需要房間嗎？@");
 labelFunc041C_014D:
 	if (!(var0007 == 0x0005)) goto labelFunc041C_0183;
 	if (!Func0942(0xFFE2)) goto labelFunc041C_0179;
-	UI_item_say(0xFFE4, "@Rocco!@");
-	Func097F(0xFFE2, "@In a minute...@", 0x0002);
+	UI_item_say(0xFFE4, "@Rocco ！@");
+	Func097F(0xFFE2, "@等一下……@", 0x0002);
 	goto labelFunc041C_0183;
 labelFunc041C_0179:
-	UI_item_say(0xFFE4, "@Work, work, work...@");
+	UI_item_say(0xFFE4, "@工作，工作，工作……@");
 labelFunc041C_0183:
 	if (!(var0007 == 0x0006)) goto labelFunc041C_0197;
-	UI_item_say(0xFFE4, "@Baked fish!@");
+	UI_item_say(0xFFE4, "@烤魚！@");
 labelFunc041C_0197:
 	if (!(event == 0x0008)) goto labelFunc041C_01DC;
 	if (!gflags[0x0228]) goto labelFunc041C_01D2;
@@ -97,65 +97,65 @@ labelFunc041C_01D2:
 	UI_set_polymorph(0xFFE4, 0x02D1);
 labelFunc041C_01DC:
 	if (!(event == 0x000A)) goto labelFunc041C_01EE;
-	UI_item_say(0xFFE4, "@I'm ready.@");
+	UI_item_say(0xFFE4, "@我準備好了。@");
 labelFunc041C_01EE:
 	if (!(event == 0x0009)) goto labelFunc041C_08BF;
 	if (!UI_get_item_flag(0xFFE4, 0x0006)) goto labelFunc041C_0217;
 	UI_set_schedule_type(0xFFE4, 0x001F);
-	UI_add_answer("leave");
+	UI_add_answer("離開");
 	goto labelFunc041C_0232;
 labelFunc041C_0217:
 	UI_run_schedule(0xFFE4);
 	UI_clear_item_say(0xFFE4);
 	if (!gflags[0x0015]) goto labelFunc041C_0232;
-	UI_add_answer("belongings");
+	UI_add_answer("物品");
 labelFunc041C_0232:
 	UI_show_npc_face0(0xFFE4, 0x0000);
 	var0008 = UI_get_item_flag(0xFFE4, 0x001C);
 	if (!((var0008 == false) && (!gflags[0x0004]))) goto labelFunc041C_0274;
 	UI_set_item_flag(0xFFE4, 0x001C);
-	message("\"This is the Blue Boar Inn, and I am the barmaid. My name is Petra.\"");
+	message("「這裡是藍野豬旅館(Blue Boar Inn)，我是這裡的女侍。我的名字是 Petra 。」");
 	say();
-	UI_add_answer(["Blue Boar Inn", "barmaid"]);
+	UI_add_answer(["藍野豬旅館", "女侍"]);
 	goto labelFunc041C_02DD;
 labelFunc041C_0274:
 	if (!gflags[0x0004]) goto labelFunc041C_02C6;
 	if (!(!gflags[0x0139])) goto labelFunc041C_0296;
-	message("\"Mine existence is pointless now, ");
+	message("「我的存在現在已經毫無意義了，");
 	message(var0000);
-	message(". Rocco -- my love -- is dead, and the Blue Boar destroyed.\"");
+	message("。 Rocco ——我的愛人——已經死了，藍野豬旅館(Blue Boar)也被摧毀了。」");
 	say();
-	message("\"I am only an automaton, with no hope that any soul I may have will join Rocco in the world beyond this one. There is nothing left for me.\"");
+	message("「我只是一個自動機器人(automaton)，不指望我擁有的任何靈魂能在另一個世界與 Rocco 團聚。我已經一無所有了。」");
 	say();
 	gflags[0x0139] = true;
 	goto labelFunc041C_02C3;
 labelFunc041C_0296:
 	if (!(UI_get_item_flag(0xFFE4, 0x0006) || (!(Func0994() == 0x000E)))) goto labelFunc041C_02B9;
-	message("\"Glad to talk to thee again, ");
+	message("「很高興再次和你說話，");
 	message(var0002);
-	message(". I only wish I could be of more help to thee. I am merely an automaton...\"");
+	message("。我只希望能對你多點幫助。我只是一個自動機器人(automaton)……」");
 	say();
 	goto labelFunc041C_02C3;
 labelFunc041C_02B9:
-	message("\"Aiding thee is mine only solace. How may I be of service, ");
+	message("「幫助你是我唯一的慰藉。我能為你服務什麼，");
 	message(var0000);
-	message("?\"");
+	message("？」");
 	say();
 labelFunc041C_02C3:
 	goto labelFunc041C_02DD;
 labelFunc041C_02C6:
 	if (!var0004) goto labelFunc041C_02D9;
-	message("\"Can I bring thee anything, ");
+	message("「我可以為你拿點什麼嗎，");
 	message(var0000);
-	message("?\"");
+	message("？」");
 	say();
 	goto labelFunc041C_02DD;
 labelFunc041C_02D9:
-	message("\"Is this not a nice day?\"");
+	message("「今天天氣真不錯，不是嗎？」");
 	say();
 labelFunc041C_02DD:
 	if (!(gflags[0x0226] && (!UI_get_item_flag(0xFFE4, 0x0006)))) goto labelFunc041C_02F6;
-	UI_add_answer("acid");
+	UI_add_answer("酸");
 labelFunc041C_02F6:
 	if (!(gflags[0x0227] && ((Func0994() == 0x0011) && (!UI_get_item_flag(0xFE9C, 0x0023))))) goto labelFunc041C_034A;
 	var0009 = UI_find_nearby(0xFE9C, 0x0314, 0x000F, 0x0000);
@@ -163,324 +163,324 @@ labelFunc041C_02F6:
 labelFunc041C_0324:
 	for (var000C in var0009 with var000A to var000B) attend labelFunc041C_034A;
 	if (!(UI_get_item_quality(var000C) == 0x003D)) goto labelFunc041C_0347;
-	UI_add_answer("switch bodies");
+	UI_add_answer("交換身體");
 	goto labelFunc041C_034A;
 labelFunc041C_0347:
 	goto labelFunc041C_0324;
 labelFunc041C_034A:
 	if (!(gflags[0x00EA] && (!UI_get_item_flag(0xFFE1, 0x0004)))) goto labelFunc041C_0363;
-	UI_add_answer("kidnap");
+	UI_add_answer("綁架");
 labelFunc041C_0363:
 	if (!(var0004 && (!UI_get_item_flag(0xFFE4, 0x0006)))) goto labelFunc041C_0385;
-	UI_add_answer(["food", "drink", "room"]);
+	UI_add_answer(["食物", "飲料", "房間"]);
 labelFunc041C_0385:
 	UI_add_answer(["bye"]);
 labelFunc041C_038F:
 	converse attend labelFunc041C_08BE;
-	case "food" attend labelFunc041C_03BC:
-	message("\"We have a fine selection of meals available for thee to choose from. Art thou hungry, ");
+	case "食物" attend labelFunc041C_03BC:
+	message("「我們有很好的餐點供你選擇。你餓了嗎，");
 	message(var0000);
-	message("?\"");
+	message("？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc041C_03B2;
 	Func0852();
 	goto labelFunc041C_03BC;
 labelFunc041C_03B2:
-	message("\"Summon me if thou dost change thy mind, ");
+	message("「如果你改變主意，就叫我，");
 	message(var0000);
 	message(".\"");
 	say();
 labelFunc041C_03BC:
-	case "drink" attend labelFunc041C_03E6:
-	message("\"I think thou wilt like our selection of potables, ");
+	case "飲料" attend labelFunc041C_03E6:
+	message("「我想你會喜歡我們精選的飲料，");
 	message(var0000);
-	message(". Dost thou wish a drink?\"");
+	message("。你想喝點什麼嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc041C_03DC;
 	Func0853();
 	goto labelFunc041C_03E6;
 labelFunc041C_03DC:
-	message("\"Perhaps later, then, ");
+	message("「那麼，也許稍後再說，");
 	message(var0000);
 	message(".\"");
 	say();
 labelFunc041C_03E6:
-	case "room" attend labelFunc041C_03F1:
+	case "房間" attend labelFunc041C_03F1:
 	Func0851();
 labelFunc041C_03F1:
-	case "kidnap" attend labelFunc041C_0408:
-	UI_remove_answer("kidnap");
-	message("\"Oh, this is horrible! Though I am but a woman of metal, I have a heart that feels pain for thee.\"");
+	case "綁架" attend labelFunc041C_0408:
+	UI_remove_answer("綁架");
+	message("「噢，這太可怕了！雖然我只是個金屬女人，但我的心也為你感到痛苦。」");
 	say();
-	message("\"Thou shouldst go quickly to Julia -- the Rangers can solve crimes such as this!\"");
+	message("「你應該趕快去 Julia 那裡——遊俠(Rangers)能解決這樣的罪行！」");
 	say();
 labelFunc041C_0408:
-	case "leave" attend labelFunc041C_04C8:
-	UI_remove_answer("leave");
+	case "離開" attend labelFunc041C_04C8:
+	UI_remove_answer("離開");
 	if (!gflags[0x0220]) goto labelFunc041C_0424;
-	message("\"I will do so with haste. I have duties which need attending.\"");
+	message("「我會盡快去。我還有職責需要處理。」");
 	say();
 	goto labelFunc041C_042E;
 labelFunc041C_0424:
-	message("\"As thou wishest, ");
+	message("「如你所願，");
 	message(var0000);
-	message("... If thou hast further need of me, thou hast but to ask.\"");
+	message("……如果你還需要我，只要開口就行了。」");
 	say();
 labelFunc041C_042E:
 	UI_remove_from_party(0xFFE4);
 	if (!UI_get_cont_items(0xFFE4, 0xFE99, 0xFE99, 0xFE99)) goto labelFunc041C_04C2;
-	message("\"Dost thou wish thy belongings returned to thee?\"");
+	message("「你希望歸還你的物品嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc041C_04BA;
-	message("\"Here they are.\"");
+	message("「都在這裡。」");
 	say();
 	gflags[0x0015] = false;
 	var0003 = Func09B3(0xFFE4);
 	if (!(var0003[0x0001] != 0x0000)) goto labelFunc041C_0497;
-	message("\"Thy companions carry some of thine inventory.\"");
+	message("「你的同伴帶著你的一些物品。」");
 	say();
 	if (!(var0003[0x0002] > 0x0000)) goto labelFunc041C_0494;
 	var0003 = var0003[0x0002];
-	message("\"I also had to place ");
+	message("「我也得把 ");
 	message(var0003);
-	message(" items of thine upon the ground.\"");
+	message(" 件物品放在地上。」");
 	say();
 labelFunc041C_0494:
 	goto labelFunc041C_04B7;
 labelFunc041C_0497:
 	if (!(var0003[0x0002] > 0x0000)) goto labelFunc041C_04B7;
 	var0003 = var0003[0x0002];
-	message("\"I had to place ");
+	message("「我得把 ");
 	message(var0003);
-	message(" items of thine on the ground.\"");
+	message(" 件物品放在地上。」");
 	say();
 labelFunc041C_04B7:
 	goto labelFunc041C_04C2;
 labelFunc041C_04BA:
 	gflags[0x0015] = true;
-	message("\"Then I will keep thine inventory for thee. Find me if thou changest thy mind.\"");
+	message("「那我就為你保管你的物品。如果你改變主意再來找我。」");
 	say();
 labelFunc041C_04C2:
 	Func09B4(0xFFE4);
 labelFunc041C_04C8:
-	case "belongings" attend labelFunc041C_0551:
-	UI_remove_answer("belongings");
-	message("\"Thou hast returned for thy belongings. Dost thou want them now?\"");
+	case "物品" attend labelFunc041C_0551:
+	UI_remove_answer("物品");
+	message("「你回來拿你的物品了。你現在就要嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc041C_0549;
-	message("\"Here they are.\"");
+	message("「都在這裡。」");
 	say();
 	gflags[0x0015] = false;
 	var0003 = Func09B3(0xFFE4);
 	if (!(var0003[0x0001] != 0x0000)) goto labelFunc041C_0526;
-	message("\"Thy companions carry some of thine inventory.\"");
+	message("「你的同伴帶著你的一些物品。」");
 	say();
 	if (!(var0003[0x0002] > 0x0000)) goto labelFunc041C_0523;
 	var0003 = var0003[0x0002];
-	message("\"I also had to place ");
+	message("「我也得把 ");
 	message(var0003);
-	message(" items of thine upon the ground.\"");
+	message(" 件物品放在地上。」");
 	say();
 labelFunc041C_0523:
 	goto labelFunc041C_0546;
 labelFunc041C_0526:
 	if (!(var0003[0x0002] > 0x0000)) goto labelFunc041C_0546;
 	var0003 = var0003[0x0002];
-	message("\"I had to place ");
+	message("「我得把 ");
 	message(var0003);
-	message(" items of thine on the ground.\"");
+	message(" 件物品放在地上。」");
 	say();
 labelFunc041C_0546:
 	goto labelFunc041C_0551;
 labelFunc041C_0549:
 	gflags[0x0015] = true;
-	message("\"Then I will continue to keep thine inventory for thee. Find me if thou dost truly want them returned.\"");
+	message("「那我會繼續為你保管你的物品。如果你真的想要回來再找我。」");
 	say();
 labelFunc041C_0551:
-	case "Blue Boar Inn" attend labelFunc041C_059A:
-	UI_remove_answer("Blue Boar Inn");
-	message("\"The finest eating and drinking establishment in all Moonshade! Run by the finest man in all Moonshade...\"");
+	case "藍野豬旅館" attend labelFunc041C_059A:
+	UI_remove_answer("藍野豬旅館");
+	message("「全月影城( Moonshade )最好的餐飲場所！由全月影城( Moonshade )最好的人經營……」");
 	say();
 	if (!(Func0942(0xFFE2) == true)) goto labelFunc041C_058C;
 	UI_show_npc_face1(0xFFE2, 0x0000);
-	message("\"What madness art thou saying, Petra?\"");
+	message("「你在說什麼瘋話， Petra ？」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"It is not madness, Rocco. I am proud of thee...\"");
+	message("「這不是瘋話， Rocco 。我為你感到驕傲……」");
 	say();
 labelFunc041C_058C:
-	message("\"Rocco, the innkeeper. A finer man thou shalt not find.\"");
+	message("「Rocco ，旅館老闆。你再也找不到比他更好的人了。」");
 	say();
 	UI_add_answer(["Rocco"]);
 labelFunc041C_059A:
 	case "Rocco" attend labelFunc041C_05C1:
 	UI_remove_answer("Rocco");
-	message("\"Thou mayest find Rocco a bit gruff, but he doth have a good heart. After all, he alone hath stood between Torrissio and me... At great peril to himself, I might add.\"");
+	message("「你可能覺得 Rocco 有點粗魯，但他心地善良。畢竟，只有他挺身而出保護我免受 Torrissio 的傷害……我必須說，這讓他冒了極大的危險。」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["Torrissio", "peril", "change subject"]);
+	UI_add_answer(["Torrissio", "危險", "換個話題"]);
 labelFunc041C_05C1:
-	case "change subject" attend labelFunc041C_05D1:
-	message("\"Oh, of course! I did not mean to bore thee...\"");
+	case "換個話題" attend labelFunc041C_05D1:
+	message("「噢，當然！我不是故意讓你覺得無聊……」");
 	say();
 	UI_pop_answers();
 labelFunc041C_05D1:
 	case "Torrissio" attend labelFunc041C_05F3:
 	UI_remove_answer("Torrissio");
-	message("\"Thou canst not have failed to notice that I am an automaton. Torrissio is my maker... Curse his black heart!\"");
+	message("「你不可能沒注意到我是個自動機器人(automaton)。 Torrissio 是我的製造者……詛咒他黑心肝！」");
 	say();
-	message("\"Torrissio is a man who feeds off the misery of others. He created me with the sole intent of having a captive to torment for the rest of his life.\"");
+	message("「Torrissio 是一個以別人的痛苦為樂的人。他創造我的唯一目的，就是擁有一個可以讓他折磨一輩子的俘虜。」");
 	say();
-	message("\"But I escaped and Rocco took me in.\"");
+	message("「但我逃了出來， Rocco 收留了我。」");
 	say();
-	UI_add_answer("automaton");
+	UI_add_answer("魔導人偶");
 labelFunc041C_05F3:
-	case "automaton" attend labelFunc041C_061B:
-	UI_remove_answer("automaton");
-	message("\"I am a magical construct. An animated body of metal.\"");
+	case "魔導人偶" attend labelFunc041C_061B:
+	UI_remove_answer("魔導人偶");
+	message("「我是一個魔法構造物(magical construct)。一個會動的金屬軀體。」");
 	say();
-	message("\"Yet I can think. I can reason. And I believe I can care for others.\"");
+	message("「但我能思考。我能推理。我相信我也能關心別人。」");
 	say();
-	message("\"Whether this means that I have a soul locked away within the confines of mine hollow body, I do not know. All I do know is that I am much more complex than the automatons Torrissio normally makes for the other Mages.\"");
+	message("「這是否意味著我空洞的軀體裡鎖著一個靈魂，我不知道。我只知道，我比 Torrissio 通常為其他法師製作的自動機器人(automatons)要複雜得多。」");
 	say();
-	UI_add_answer(["soul", "other Mages"]);
+	UI_add_answer(["靈魂", "其他法師"]);
 labelFunc041C_061B:
-	case "soul" attend labelFunc041C_0636:
-	UI_remove_answer("soul");
-	message("\"If thou dost love, if thou hast compassion for others, if thou dost feel the injustice of the world, art thou not said to possess a soul?\"");
+	case "靈魂" attend labelFunc041C_0636:
+	UI_remove_answer("靈魂");
+	message("「如果你愛別人，如果你對他人有同情心，如果你能感受到世界的不公，難道不能說你擁有靈魂嗎？」");
 	say();
-	message("\"If I have all these things, can I not say that I, too, have a soul?\"");
+	message("「如果我具備所有這些，難道不能說我也擁有靈魂嗎？」");
 	say();
-	message("\"In this I am unique, for none of the other automatons claim to feel emotions as I do. But I do not know why I should be different.\"");
+	message("「在這方面我是獨一無二的，因為沒有任何其他自動機器人聲稱能像我一樣感受到情感。但我不知道為什麼我會有什麼不同。」");
 	say();
 labelFunc041C_0636:
-	case "other Mages" attend labelFunc041C_0661:
-	UI_remove_answer("other Mages");
-	message("\"Most Mages do not wish to be disturbed by the presence of other living beings. Therefore they come to Torrissio to provide them with servants and guards of undemanding metal.\"");
+	case "其他法師" attend labelFunc041C_0661:
+	UI_remove_answer("其他法師");
+	message("「大多數法師不想被其他生物打擾。因此他們來找 Torrissio 為他們提供不需要任何要求的金屬僕人和守衛。」");
 	say();
-	message("\"However, the magic did not originate with Torrissio --\"");
+	message("「然而，這種魔法並不是 Torrissio 首創的——」");
 	say();
 	message("he is merely the latest master of the ancient spells which he did find in certain buried ruins. It is said that automatons served those who dwelt in this land anciently.\"");
 	say();
-	message("\"Even with all his magic, Torrissio cannot construct new automatons --\"");
+	message("「儘管 Torrissio 擁有一切魔法，他也無法建造新的自動機器人——」");
 	say();
 	message("he can merely reanimate those broken automatons which are discovered in the ruins.\"");
 	say();
-	message("\"What better servants to have? Automatons can exist for centuries without any maintenance at all.\"");
+	message("「還有什麼比這更好的僕人呢？自動機器人可以存在好幾個世紀而不需要任何維護。」");
 	say();
-	message("\"They ask nothing. They expect nothing. They do what task is assigned to them until their magic at last fails, and then they simply stop.\"");
+	message("「他們什麼也不問。他們什麼也不期望。他們只是執行分配給他們的任務，直到魔法最終失效，然後他們就停止運作。」");
 	say();
 labelFunc041C_0661:
-	case "peril" attend labelFunc041C_0689:
-	UI_remove_answer("peril");
-	message("\"Oh, ");
+	case "危險" attend labelFunc041C_0689:
+	UI_remove_answer("危險");
+	message("「噢，");
 	message(var0000);
-	message("! Thou canst not know what danger there is in thwarting the will of a Mage!\"");
+	message("！你根本不知道違背一個法師的意願有多危險！」");
 	say();
-	message("\"Rocco could be killed easily, and spells are untraceable. Or he could be spirited away to hideous torture. No one would be the wiser.\"");
+	message("「Rocco 很容易就會被殺掉，而且法術是無法追查的。或者他可能會被帶走去承受可怕的折磨。沒有人會知道。」");
 	say();
-	message("\"So I look after him as best I can, even as he doth care for me. It also helps that everyone believes the tale we have spread.\"");
+	message("「所以我盡我所能照顧他，就像他關心我一樣。大家相信我們散布的故事，這也很有幫助。」");
 	say();
-	UI_add_answer("tale");
+	UI_add_answer("故事");
 labelFunc041C_0689:
-	case "tale" attend labelFunc041C_06A4:
-	UI_remove_answer("tale");
-	message("\"Rocco hath led everyone to believe that he and Torrissio reached an agreement to have me work here to advertise Torrissio's skill.\"");
+	case "故事" attend labelFunc041C_06A4:
+	UI_remove_answer("故事");
+	message("「Rocco 讓大家相信他跟 Torrissio 達成了一項協議，讓我在這裡工作來宣傳 Torrissio 的手藝。」");
 	say();
-	message("\"In truth, my cooking ability doth do Torrissio no small credit. And I dare say that it wins him many customers as well.\"");
+	message("「事實上，我的廚藝確實為 Torrissio 贏得了不少讚譽。我敢說，這也為他贏得了許多客戶。」");
 	say();
-	message("\"But he is still a willful, vicious man who doth not take it kindly when he feels cheated. And I fear his vengeance, for both myself and Rocco.\"");
+	message("「但他仍然是個任性、惡毒的人，當他覺得被欺騙時是不會善罷甘休的。我擔心他會對我和 Rocco 進行報復。」");
 	say();
 labelFunc041C_06A4:
-	case "barmaid" attend labelFunc041C_06C8:
-	UI_remove_answer("barmaid");
-	message("\"I serve Rocco in whatever function I can... Barmaid, cook, whatever needs to be done. I have performed every job thou canst imagine here at the inn. Everything from painting the ceiling to keeping Mosh from stealing our fish.\"");
+	case "女侍" attend labelFunc041C_06C8:
+	UI_remove_answer("女侍");
+	message("「我盡我所能為 Rocco 服務……女侍、廚師、任何需要做的事情。我在這家旅館裡做過你能想像的每一份工作。從粉刷天花板到阻止 Mosh 偷我們的魚。」");
 	say();
 	UI_add_answer("Mosh");
 	if (!var0004) goto labelFunc041C_06C8;
-	message("\"Can I bring thee something?\"");
+	message("「我可以為你拿點什麼嗎？」");
 	say();
 labelFunc041C_06C8:
 	case "Mosh" attend labelFunc041C_06DB:
 	UI_remove_answer("Mosh");
-	message("\"They call her the Rat Woman, which is not a very kind description, but is a reasonably true one, I am sorry to say. There are others in town who can tell thee about her. She doth like fish, I will say that one thing for her.\"");
+	message("「他們叫她鼠婦(Rat Woman)，這不是個很友善的稱呼，但遺憾的是，這相當貼切。城裡還有其他人可以告訴你她的事。我只能說，她確實喜歡魚。」");
 	say();
 labelFunc041C_06DB:
-	case "acid" attend labelFunc041C_0788:
-	UI_remove_answer("acid");
-	message("\"Yes, I know what acid is, ");
+	case "酸" attend labelFunc041C_0788:
+	UI_remove_answer("酸");
+	message("「是的，我知道酸是什麼，");
 	message(var0000);
-	message(". It is a corrosive liquid that is very detrimental to human flesh and most metals... Except mine.\"");
+	message("。那是一種腐蝕性液體，對人體和大多數金屬都非常有害……除了我的。」");
 	say();
-	message("\"Dost thou desire mine help, ");
+	message("「你需要我的幫忙嗎，");
 	message(var0000);
-	message("?\"");
+	message("？」");
 	say();
 	if (!Func0955()) goto labelFunc041C_077E;
 	if (!gflags[0x0227]) goto labelFunc041C_076D;
-	message("\"Let me see if I understand thee correctly. Thou wishest me to accompany thee to an ancient temple.\"");
+	message("「讓我看看我有沒有理解錯。你希望我陪你去一座古老的神廟。」");
 	say();
-	message("\"Once there, I will take thy form, and thou wilt take mine, for a brief period of time. Hmmm...\"");
+	message("「一到那裡，我就會短暫地變成你的樣子，而你會變成我的樣子。嗯……」");
 	say();
-	message("\"It sounds intriguing. I shall discover, if only for an instant, what it is to truly be human.\"");
+	message("「聽起來很有趣。我將能體會，哪怕只有一瞬間，真正身為人類是什麼感覺。」");
 	say();
 	if (!gflags[0x0270]) goto labelFunc041C_0734;
 	if (!(Func0994() == 0x000E)) goto labelFunc041C_072D;
-	message("\"No, I must decline thine offer. Though I have enjoyed thy companionship, I must return to my duties. I shall keep the Blue Boar open, despite any calamity -- in Rocco's memory.\"");
+	message("「不，我必須拒絕你的提議。雖然我很享受你的陪伴，但我必須回到我的崗位。我會繼續經營藍野豬旅館(Blue Boar)，無論發生什麼災難——為了紀念 Rocco 。」");
 	say();
 	goto labelFunc041C_0731;
 labelFunc041C_072D:
-	message("\"No, I must decline thine offer. Though I have enjoyed thy companionship, I must return to Moonshade. I must bury my beloved Rocco.\"");
+	message("「不，我必須拒絕你的提議。雖然我很享受你的陪伴，但我必須回到月影城( Moonshade )。我必須安葬我心愛的 Rocco 。」");
 	say();
 labelFunc041C_0731:
 	goto labelFunc041C_076A;
 labelFunc041C_0734:
 	if (!(UI_get_array_size(UI_get_party_list2()) < 0x0005)) goto labelFunc041C_075C;
-	UI_add_answer("leave");
+	UI_add_answer("離開");
 	gflags[0x0015] = true;
-	message("\"If thou dost wish it, then I shall accompany thee. Perhaps the danger shall cause me to forget my grief.\"");
+	message("「如果你希望，那我就陪你。也許危險能讓我忘記悲傷。」");
 	say();
 	UI_add_to_party(0xFFE4);
 	goto labelFunc041C_076A;
 labelFunc041C_075C:
-	message("\"Thou art not serious, ");
+	message("「你不是認真的吧，");
 	message(var0002);
-	message("! With so many companions, thou hast no need of me.\"");
+	message("！有這麼多同伴，你根本不需要我。」");
 	say();
-	message("\"I think thou art merely trying to cheer me. For this, I thank thee, but nothing can fill an empty heart.\"");
+	message("「我想你只是想讓我開心。為此我感謝你，但沒有什麼能填補一顆空虛的心。」");
 	say();
 labelFunc041C_076A:
 	goto labelFunc041C_077B;
 labelFunc041C_076D:
-	message("\"But I am not very brave, ");
+	message("「但我不是很勇敢，");
 	message(var0000);
-	message("! I could not face the hazards of such a place, even with thy company!\"");
+	message("！即使有你陪伴，我也無法面對那種地方的危險！」");
 	say();
-	message("\"If only there were a way to put thy courage into my metal body...\"");
+	message("「要是能有辦法把你的勇氣注入我金屬的身體裡就好了……」");
 	say();
 labelFunc041C_077B:
 	goto labelFunc041C_0788;
 labelFunc041C_077E:
-	message("\"Oh, I am so glad! I am not very brave, ");
+	message("「噢，我太高興了！我不是很勇敢，");
 	message(var0000);
 	message(".\"");
 	say();
 labelFunc041C_0788:
-	case "switch bodies" attend labelFunc041C_084B:
-	UI_remove_answer("switch bodies");
+	case "交換身體" attend labelFunc041C_084B:
+	UI_remove_answer("交換身體");
 	var000D = UI_find_nearest(var000C, 0x033D, 0x0008);
 	if (!(!var000D)) goto labelFunc041C_07B5;
-	message("\"Once we find the Body Transferance Chamber, I will oblige thee.\"");
+	message("「一旦我們找到身體轉移室(Body Transferance Chamber)，我就會答應你。」");
 	say();
 	goto labelFunc041C_084B;
 labelFunc041C_07B5:
-	message("\"If thou canst promise my safety, I will agree to aid thee.\"");
+	message("「如果你能保證我的安全，我就同意幫助你。」");
 	say();
-	message("\"Dost thou give me thy promise?\"");
+	message("「你向我保證嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc041C_0847;
-	message("\"These temples are awful old. I hope thou knowest what thou art doing.\"");
+	message("「這些神廟非常古老。我希望你知道自己在做什麼。」");
 	say();
 	var000E = UI_get_object_position(var000D);
 	var000F = UI_create_new_object(0x025F);
@@ -494,22 +494,22 @@ labelFunc041C_0843:
 	return;
 	goto labelFunc041C_084B;
 labelFunc041C_0847:
-	message("\"Then I am sorry, but I will not take any unnecessary risks.\"");
+	message("「那我很抱歉，我不會冒任何不必要的風險。」");
 	say();
 labelFunc041C_084B:
 	case "bye" attend labelFunc041C_08BB:
 	UI_remove_npc_face0();
 	if (!(UI_get_item_flag(0xFFE4, 0x0006) || (!(Func0994() == 0x000E)))) goto labelFunc041C_0888;
-	Func097F(0xFE9C, "@Thanks.@", 0x0000);
-	Func097F(0xFFE4, "@Glad to be of help.@", 0x0002);
+	Func097F(0xFE9C, "@謝謝。@", 0x0000);
+	Func097F(0xFFE4, "@很高興能幫上忙。@", 0x0002);
 	goto labelFunc041C_08B5;
 labelFunc041C_0888:
-	Func097F(0xFE9C, "@So long!@", 0x0000);
+	Func097F(0xFE9C, "@再見！@", 0x0000);
 	if (!gflags[0x0004]) goto labelFunc041C_08A9;
-	Func097F(0xFFE4, "@Farewell...@", 0x0002);
+	Func097F(0xFFE4, "@永別了……@", 0x0002);
 	goto labelFunc041C_08B5;
 labelFunc041C_08A9:
-	Func097F(0xFFE4, "@Please come again!@", 0x0002);
+	Func097F(0xFFE4, "@請再來！@", 0x0002);
 labelFunc041C_08B5:
 	Func08FF();
 	goto labelFunc041C_08BE;

@@ -18,19 +18,19 @@ void Func00A0 shape#(0xA0) ()
 
 	if (!(event == 0x0001)) goto labelFunc00A0_01C2;
 	if (!gflags[0x0007]) goto labelFunc00A0_0019;
-	UI_error_message("WARNING: $Temp1Flag is set!!! Report at what point in the game you are in.");
+	UI_error_message("警告： $Temp1Flag 已設定！！！請回報你目前在遊戲中的進度。");
 	gflags[0x0007] = false;
 labelFunc00A0_0019:
 	if (!gflags[0x0008]) goto labelFunc00A0_002A;
-	UI_error_message("WARNING: $Temp2Flag is set!!! Report at what point in the game you are in.");
+	UI_error_message("警告： $Temp2Flag 已設定！！！請回報你目前在遊戲中的進度。");
 	gflags[0x0008] = false;
 labelFunc00A0_002A:
 	if (!gflags[0x0009]) goto labelFunc00A0_003B;
-	UI_error_message("WARNING: $Temp3Flag is set!!! Report at what point in the game you are in.");
+	UI_error_message("警告： $Temp3Flag 已設定！！！請回報你目前在遊戲中的進度。");
 	gflags[0x0009] = false;
 labelFunc00A0_003B:
 	if (!gflags[0x000A]) goto labelFunc00A0_004C;
-	UI_error_message("WARNING: $Temp4Flag is set!!! Report at what point in the game you are in.");
+	UI_error_message("警告： $Temp4Flag 已設定！！！請回報你目前在遊戲中的進度。");
 	gflags[0x000A] = false;
 labelFunc00A0_004C:
 	if (!gflags[0x0004]) goto labelFunc00A0_0148;
@@ -39,9 +39,9 @@ labelFunc00A0_004C:
 labelFunc00A0_00FB:
 	for (var0003 in var0000 with var0001 to var0002) attend labelFunc00A0_0148;
 	if (!((UI_get_schedule_type(var0003) != 0x000F) && (!UI_get_item_flag(var0003, 0x0004)))) goto labelFunc00A0_0145;
-	UI_error_message((("NPC #" + var0003) + " is moving - get his schedule!"));
+	UI_error_message((("NPC #" + var0003) + " 正在移動 - 取得他的行程！"));
 	UI_error_message(("His current activity is #" + UI_get_schedule_type(var0003)));
-	UI_error_message("Save game, and report to Brendann NOW!");
+	UI_error_message("立刻存檔，並向 Brendann 報告！");
 labelFunc00A0_0145:
 	goto labelFunc00A0_00FB;
 labelFunc00A0_0148:

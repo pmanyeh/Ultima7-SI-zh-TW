@@ -28,20 +28,20 @@ void Func0440 object#(0x440) ()
 	Func080E();
 labelFunc0440_005A:
 	if (!(UI_get_npc_id(0xFFC0) == 0x0004)) goto labelFunc0440_0080;
-	Func097F(0xFFC0, "@Never!@", 0x0002);
-	Func097F(var0000, "@Give me thy powers!@", 0x0000);
+	Func097F(0xFFC0, "@絕不！@", 0x0002);
+	Func097F(var0000, "@給我妳的力量！@", 0x0000);
 labelFunc0440_0080:
 	if (!(UI_get_npc_id(0xFFC0) == 0x0003)) goto labelFunc0440_00A6;
-	Func097F(0xFFC0, "@I am only a little girl...@", 0x0002);
-	Func097F(var0000, "@I know thee!@", 0x0000);
+	Func097F(0xFFC0, "@我只是一個小女孩……@", 0x0002);
+	Func097F(var0000, "@我認識你！@", 0x0000);
 labelFunc0440_00A6:
 	if (!(UI_get_npc_id(0xFFC0) == 0x0002)) goto labelFunc0440_00CC;
-	Func097F(0xFFC0, "@Leave me alone!@", 0x0000);
-	Func097F(var0000, "@Stop, fiend!@", 0x0002);
+	Func097F(0xFFC0, "@別管我！@", 0x0000);
+	Func097F(var0000, "@住手，惡魔！@", 0x0002);
 labelFunc0440_00CC:
 	if (!(UI_get_npc_id(0xFFC0) == 0x0001)) goto labelFunc0440_011A;
 	UI_fade_palette(0x000C, 0x0001, 0x0001);
-	Func097F(0xFFC0, "@Help!@", 0x0000);
+	Func097F(0xFFC0, "@救命啊！@", 0x0000);
 	UI_play_music(0x0034, Func09A0(0x0005, 0x0001));
 	if (!var0000) goto labelFunc0440_0113;
 	UI_set_schedule_type(var0000, 0x001D);
@@ -78,41 +78,41 @@ labelFunc0440_020D:
 	if (!(UI_get_random(0x000A) < 0x0007)) goto labelFunc0440_0230;
 	abort;
 labelFunc0440_0230:
-	var0004 = ["@Hello, there!@", "@May I watch?@", "@Art thou a hero?@", "@Where are we going?@", "@May I come?@", "@I'm a warrior, too.@"];
+	var0004 = ["@你好啊！@", "@我可以看嗎？@", "@你是一位英雄嗎？@", "@我們要去哪裡？@", "@我可以一起來嗎？@", "@我也是一名戰士。@"];
 	Func097F(0xFFC0, var0004[UI_get_random(0x0006)], 0x0000);
 labelFunc0440_025B:
 	if (!(event == 0x0001)) goto labelFunc0440_033D;
 	if (!UI_get_item_flag(0xFFC0, 0x001E)) goto labelFunc0440_02F3;
-	Func097F(0xFE9C, "Hello, Cantra.", 0x0000);
+	Func097F(0xFE9C, "妳好， Cantra 。", 0x0000);
 	var0005 = UI_get_random(0x0006);
 	if (!(var0005 == 0x0001)) goto labelFunc0440_0296;
-	var0006 = "@I want thy flesh!@";
+	var0006 = "@我要妳的肉！@";
 labelFunc0440_0296:
 	if (!(var0005 == 0x0002)) goto labelFunc0440_02A6;
-	var0006 = "@I want thy blood!@";
+	var0006 = "@我要妳的血！@";
 labelFunc0440_02A6:
 	if (!(var0005 == 0x0003)) goto labelFunc0440_02B6;
-	var0006 = "@Come pleasure me!@";
+	var0006 = "@來取悅我吧！@";
 labelFunc0440_02B6:
 	if (!(var0005 == 0x0004)) goto labelFunc0440_02C6;
-	var0006 = "@How hungry I am!@";
+	var0006 = "@我好餓啊！@";
 labelFunc0440_02C6:
 	if (!(var0005 == 0x0005)) goto labelFunc0440_02D6;
-	var0006 = "@Blood! Blood everywhere!@";
+	var0006 = "@血！到處都是血！@";
 labelFunc0440_02D6:
 	if (!(var0005 == 0x0006)) goto labelFunc0440_02E6;
-	var0006 = "@I desire thee!@";
+	var0006 = "@我渴望妳！@";
 labelFunc0440_02E6:
 	Func097F(0xFFC0, var0006, 0x0002);
 	abort;
 labelFunc0440_02F3:
 	if (!(!var0001)) goto labelFunc0440_0315;
-	Func097F(0xFE9C, "Hello, little girl.", 0x0000);
-	Func097F(0xFFC0, "@Zounds!@", 0x0002);
+	Func097F(0xFE9C, "妳好，小女孩。", 0x0000);
+	Func097F(0xFFC0, "@天啊！@", 0x0002);
 	goto labelFunc0440_032D;
 labelFunc0440_0315:
-	Func097F(0xFE9C, "Hello, Cantra.", 0x0000);
-	Func097F(0xFFC0, "@Glad to see thee!@", 0x0002);
+	Func097F(0xFE9C, "妳好， Cantra 。", 0x0000);
+	Func097F(0xFFC0, "@很高興見到你！@", 0x0002);
 labelFunc0440_032D:
 	0xFFC0->Func07D1();
 	UI_set_schedule_type(0xFFC0, 0x0003);
@@ -122,137 +122,137 @@ labelFunc0440_033D:
 	UI_clear_item_say(0xFFC0);
 	UI_show_npc_face0(0xFFC0, 0x0000);
 	if (!(!var0001)) goto labelFunc0440_0379;
-	message("\"I am not as young as I look! Dost thou know how hard it is to be small for one's age? I am fourteen years old, nearly old enough to be a Knight of Monitor. But everyone thinks that I'm a little girl...\"");
+	message("「我並不像看起來那麼小！你知道對於同年齡的人來說長得嬌小有多困難嗎？我十四歲了，幾乎到了可以成為蒙利多城( Monitor )騎士( Knight )的年紀。但大家都以為我只是個小女孩……」");
 	say();
-	message("\"Um, sorry. I mean, welcome to Monitor! My name is Cantra.\"");
+	message("「嗯，抱歉。我是說，歡迎來到蒙利多城！我的名字是 Cantra 。」");
 	say();
 	UI_set_item_flag(0xFFC0, 0x001C);
 	goto labelFunc0440_038A;
 labelFunc0440_0379:
 	if (!gflags[0x0047]) goto labelFunc0440_0386;
-	message("\"I feel tired, but I am all right! My mind was full of awful dreams. Thou hast saved me! I shall remember thee always!\"");
+	message("「我覺得很累，但我沒事！我的腦海裡充滿了可怕的夢靨。你救了我！我會永遠記住你的！」");
 	say();
 	goto labelFunc0440_038A;
 labelFunc0440_0386:
-	message("\"Hast thou decided to become a Knight yet? It is so exciting! I am practicing to become one myself.\"");
+	message("「你決定好要成為一名騎士了嗎？這太令人興奮了！我自己也正在練習成為一名騎士。」");
 	say();
 labelFunc0440_038A:
-	UI_add_answer(["Knight"]);
+	UI_add_answer(["騎士"]);
 	if (!(gflags[0x002D] && (!gflags[0x00A5]))) goto labelFunc0440_03A6;
 	UI_add_answer("Marsten");
 labelFunc0440_03A6:
-	UI_add_answer("bye");
+	UI_add_answer("告辭");
 labelFunc0440_03AD:
 	converse attend labelFunc0440_056D;
 	case "Marsten" attend labelFunc0440_03EA:
 	UI_remove_answer("Marsten");
 	if (!gflags[0x0038]) goto labelFunc0440_03C9;
-	message("\"I am amazed to hear that Marsten hath betrayed us. I cannot believe it.\"");
+	message("「聽到 Marsten 背叛了我們，我感到很驚訝。我簡直不敢相信。」");
 	say();
 labelFunc0440_03C9:
 	if (!((gflags[0x003C] == false) && (gflags[0x0038] == false))) goto labelFunc0440_03DF;
-	message("\"To become a Knight of Monitor, thou must first ask permission of the Lord of Monitor.\"");
+	message("「要成為蒙利多城的騎士，你必須先徵求蒙利多城領主( Lord of Monitor )的許可。」");
 	say();
 	gflags[0x003C] = true;
 labelFunc0440_03DF:
 	if (!(!gflags[0x0038])) goto labelFunc0440_03EA;
-	message("\"Marsten is the Lord of Monitor. One day he will give a banquet in mine honor to celebrate my becoming a Knight.\"");
+	message("「Marsten 是蒙利多城領主。總有一天他會為我舉辦一場宴會，慶祝我成為一名騎士。」");
 	say();
 labelFunc0440_03EA:
-	case "permission" attend labelFunc0440_0401:
-	UI_remove_answer("permission");
-	message("\"If thou dost wish to take Knight's Test, thou must ask Lord Marsten for his permission.\"");
+	case "許可" attend labelFunc0440_0401:
+	UI_remove_answer("許可");
+	message("「如果你想參加騎士考驗( Knight's Test )，你必須徵求 Marsten 領主的許可。」");
 	say();
 	gflags[0x003C] = true;
 labelFunc0440_0401:
-	case "Knight" attend labelFunc0440_042C:
-	UI_remove_answer("Knight");
-	message("\"I have trained for a long time to become a Knight. There is nothing in the world so wonderful as being a Knight!\"");
+	case "騎士" attend labelFunc0440_042C:
+	UI_remove_answer("騎士");
+	message("「為了成為一名騎士，我訓練了很長一段時間。世界上沒有什麼比成為騎士更棒的事了！」");
 	say();
-	message("\"My father was a Knight, and a very good one. But he is dead now.\"");
+	message("「我的父親是一名騎士，而且非常優秀。但他現在已經死了。」");
 	say();
-	message("\"When I turn fifteen, I can take the Test of Knighthood and become a grand warrior!\"");
+	message("「當我滿十五歲時，我就可以參加騎士考驗( Test of Knighthood )，成為一名偉大的戰士！」");
 	say();
-	UI_add_answer(["father", "training", "Test of Knighthood"]);
+	UI_add_answer(["父親", "訓練", "騎士考驗"]);
 labelFunc0440_042C:
-	case "father" attend labelFunc0440_0447:
-	UI_remove_answer("father");
-	message("\"Everyone says that he might be alive, but it hath been weeks since he disappeared. I am old enough to face the truth.\"");
+	case "父親" attend labelFunc0440_0447:
+	UI_remove_answer("父親");
+	message("「大家都說他可能還活著，但他已經失蹤好幾個星期了。我已經夠大了，可以面對真相了。」");
 	say();
-	message("\"He was on patrol near Monitor. He told the pikemen that he had found something suspicious, and he went to look... and he never returned.\"");
+	message("「他在蒙利多城附近巡邏。他告訴長槍兵( Pikemen )說他發現了一些可疑的東西，然後他去查看……就再也沒有回來了。」");
 	say();
-	message("\"It must have been the Goblins! I refuse to weep. But I vow that the first dozen Goblins I slay shall be for him!\"");
+	message("「一定是哥布林！我拒絕哭泣。但我發誓，我殺死的前十二隻哥布林將是為了他！」");
 	say();
 labelFunc0440_0447:
-	case "training" attend labelFunc0440_0466:
-	UI_remove_answer("training");
-	message("\"I am strong. I am ready. The Goblins will be no match for me! I have trained well.\"");
+	case "訓練" attend labelFunc0440_0466:
+	UI_remove_answer("訓練");
+	message("「我很強壯。我準備好了。哥布林絕不是我的對手！我訓練得很好。」");
 	say();
-	message("\"If thou dost need a trainer, I can recommend one. Everyone says that Shazzana is the best trainer, but she is such a tyrant!\"");
+	message("「如果你需要一位訓練師，我可以推薦一位。大家都說 Shazzana 是最好的訓練師，但她簡直是個暴君！」");
 	say();
-	message("\"Ever since my father died, Caladin hath been my trainer. He is big and loud, and sometimes dumb, but he doth have a good heart.\"");
+	message("「自從我父親死後， Caladin 一直是我的訓練師。他又高又大聲，有時還有點笨，但他有一副好心腸。」");
 	say();
 	gflags[0x00BC] = true;
 labelFunc0440_0466:
-	case "Test of Knighthood" attend labelFunc0440_04A6:
-	UI_remove_answer("Test of Knighthood");
+	case "騎士考驗" attend labelFunc0440_04A6:
+	UI_remove_answer("騎士考驗");
 	UI_push_answers();
-	message("\"I have been training for the Test for mine entire life! Anything that thou needest to know, I can tell thee.\"");
+	message("「我這輩子都在為考驗做準備！任何你需要知道的事情，我都可以告訴你。」");
 	say();
-	message("\"It truly isn't so dangerous if thou dost know the secrets. And Shmed is nothing to worry about.\"");
+	message("「如果你知道秘密的話，它真的沒那麼危險。而且 Shmed 沒什麼好擔心的。」");
 	say();
-	message("\"What wouldst thou like to know?\"");
+	message("「你想知道什麼？」");
 	say();
-	UI_add_answer(["location", "secrets", "Shmed", "nothing more"]);
+	UI_add_answer(["地點", "秘密", "Shmed", "沒有別的了"]);
 	if (!(!gflags[0x002F])) goto labelFunc0440_04A6;
-	UI_add_answer("permission");
+	UI_add_answer("許可");
 labelFunc0440_04A6:
-	case "location" attend labelFunc0440_04BD:
-	UI_remove_answer("location");
-	message("\"The Test of Knighthood takes place in the Knight Mountains, just north of the city. Thou must follow the trail that leads west from the highway.\"");
+	case "地點" attend labelFunc0440_04BD:
+	UI_remove_answer("地點");
+	message("「騎士考驗在城鎮北方的騎士山脈( Knight Mountains )舉行。你必須沿著公路向西的小徑前進。」");
 	say();
-	message("\"But beware of Goblins! They come ever closer to the city of late. Even the bravest warrior can be slain if ambushed...\"");
+	message("「但是要小心哥布林！他們最近離城鎮越來越近了。即使是最勇敢的戰士如果遭到伏擊也可能被殺……」");
 	say();
 labelFunc0440_04BD:
-	case "secrets" attend labelFunc0440_04E4:
-	UI_remove_answer("secrets");
-	message("\"These actually are not secrets, since everyone in Monitor knows how Knight's Test doth operate. To become a Knight, thou must survive the dungeon there. Simply remember these tips:\"");
+	case "秘密" attend labelFunc0440_04E4:
+	UI_remove_answer("秘密");
+	message("「這實際上不是什麼秘密，因為蒙利多城的每個人都知道騎士考驗是如何運作的。要成為一名騎士，你必須在那裡的地城中生存下來。只要記住以下提示：」");
 	say();
-	message("\"Do not look back, or the explosions will overcome thee. Move swiftly at first.\"");
+	message("「不要回頭看，否則爆炸會吞噬你。一開始要迅速移動。」");
 	say();
-	message("\"Look upwards, as well as from side to side. There are clues that would otherwise escape thee. Be prepared to climb.\"");
+	message("「除了四處張望，也要向上看。有一些你可能會錯過的線索。準備好攀爬。」");
 	say();
-	message("\"Timing is essential. The fiery missiles can be outrun, if thou dost watch carefully.\"");
+	message("「時機是關鍵。如果你仔細觀察，你可以跑得比燃燒的飛彈還快。」");
 	say();
-	message("\"Use thine hands to search as well as thine eyes, for some things are invisible.\"");
+	message("「除了用眼睛，也要用手去搜索，因為有些東西是看不見的。」");
 	say();
-	message("\"The last chamber is kept a secret! But I would wager that it is as easy as the rest of the dungeon, if thou dost keep a calm head and steady nerves.\"");
+	message("「最後一個房間是保密的！但我敢打賭，只要你保持冷靜的頭腦和穩定的神經，它就像地城的其他部分一樣簡單。」");
 	say();
 labelFunc0440_04E4:
 	case "Shmed" attend labelFunc0440_04FF:
 	UI_remove_answer("Shmed");
-	message("\"Oh, he is the old man who administers the Test. I do not like him much. He looks at me oddly sometimes...\"");
+	message("「哦，他是負責管理考驗的老人。我不太喜歡他。他有時會用奇怪的眼神看我……」");
 	say();
-	message("\"He will not let thee into the dungeon until thou dost give him the password. Only Lord Marsten can give the password to thee.\"");
+	message("「除非你給他密碼，否則他不會讓你進入地城。只有 Marsten 領主能把密碼給你。」");
 	say();
-	message("\"Shmed also disarms thee, since thou canst only enter the Knight's Test with a mace and leather armour. And no companions may accompany thee.\"");
+	message("「Shmed 也會解除你的武裝，因為你只能帶著釘頭錘和皮甲進入騎士考驗。而且不能有同伴陪同。」");
 	say();
 labelFunc0440_04FF:
-	case "nothing more" attend labelFunc0440_0516:
-	UI_remove_answer("nothing more");
-	message("\"Very well!\"");
+	case "沒有別的了" attend labelFunc0440_0516:
+	UI_remove_answer("沒有別的了");
+	message("「很好！」");
 	say();
 	UI_pop_answers();
 labelFunc0440_0516:
-	case "bye" attend labelFunc0440_056A:
-	Func097F(0xFE9C, "@Farewell!@", 0x0000);
+	case "告辭" attend labelFunc0440_056A:
+	Func097F(0xFE9C, "@再會！@", 0x0000);
 	if (!gflags[0x0047]) goto labelFunc0440_053F;
-	Func097F(0xFFC0, "@Bless thee!@", 0x0002);
+	Func097F(0xFFC0, "@祝福你！@", 0x0002);
 	goto labelFunc0440_054F;
 labelFunc0440_053F:
-	message("\"Oh, I hope that thou dost attempt the Knight's Test! And when thou dost, please come back to tell me about it!\"");
+	message("「哦，我希望你能嘗試參加騎士考驗！當你參加時，請回來告訴我這件事！」");
 	say();
-	Func097F(0xFFC0, "@Slay a Goblin!@", 0x0002);
+	Func097F(0xFFC0, "@殺死一隻哥布林！@", 0x0002);
 labelFunc0440_054F:
 	if (!(UI_get_schedule_type(0xFFC0) == 0x0009)) goto labelFunc0440_0567;
 	UI_set_schedule_type(0xFFC0, 0x0014);
@@ -278,7 +278,7 @@ labelFunc0440_05A0:
 	var0007 = Func0994();
 	if (!((var0007 == 0x001F) && (gflags[0x004A] == true))) goto labelFunc0440_05D1;
 	UI_show_npc_face0(0xFFC0, 0x0000);
-	message("\"Iieeeee.... Help me, Avatar! Help me! I can't escape... It will catch me and devour me!\" *\"Heelllp!\"");
+	message("「咿……救救我，聖者！救命啊！我逃不掉……它會抓住我並把我吃掉！」 *「救命啊！」*");
 	say();
 	UI_remove_npc_face0();
 	abort;

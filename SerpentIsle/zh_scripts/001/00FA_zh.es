@@ -48,14 +48,14 @@ labelFunc00FA_00D8:
 	gflags[0x0271] = false;
 	var0005 = UI_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x58, 0x0006, (byte)0x27, 0x0007, (byte)0x0B, 0xFFFC, var0004]);
 	if (!(var0004 == 0x000A)) goto labelFunc00FA_0133;
-	var0006 = ["@The time hath come!@", "@The sacred bells!@", "@Xenka comes!@", "@What joy!@", "@To the chapel!@", "@The prophetess comes!@"];
+	var0006 = ["@時機已到！@", "@神聖的鐘聲！@", "@Xenka 降臨！@", "@多麼歡喜！@", "@前往聖堂！@", "@女先知降臨！@"];
 	goto labelFunc00FA_016C;
 labelFunc00FA_0133:
 	if (!gflags[0x0270]) goto labelFunc00FA_0154;
-	var0006 = ["@The bells!@", "@The end is near!@", "@It is time!@", "@Hasten!@", "@Quickly!@", "@Hear the bells!@"];
+	var0006 = ["@鐘聲！@", "@末日將至！@", "@時機已到！@", "@快走！@", "@快點！@", "@聽鐘聲！@"];
 	goto labelFunc00FA_016C;
 labelFunc00FA_0154:
-	var0006 = ["@The bells!@", "@Xenka calls!@", "@It is time!@", "@Hasten!@", "@Quickly!@", "@Hear the bells!@"];
+	var0006 = ["@鐘聲！@", "@Xenka 召喚！@", "@時機已到！@", "@快走！@", "@快點！@", "@聽鐘聲！@"];
 labelFunc00FA_016C:
 	enum();
 labelFunc00FA_016D:

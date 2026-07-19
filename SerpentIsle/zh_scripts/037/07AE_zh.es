@@ -30,7 +30,7 @@ labelFunc07AE_0021:
 labelFunc07AE_0050:
 	var0002 = (("@" + Func0953()) + "...@");
 	var0003 = (("@" + Func0954()) + "...@");
-	var0004 = ["@Avatar...@", var0002, var0003, "@Pardon thou me...@", "@If I may...@", "@See!@"];
+	var0004 = ["@聖者……@", var0002, var0003, "@請原諒我……@", "@如果可以的話……@", "@看！@"];
 	UI_item_say(0xFFFE, var0004[UI_get_random(UI_get_array_size(var0004))]);
 	var0005 = 0x0004;
 	var0006 = false;
@@ -54,11 +54,11 @@ labelFunc07AE_0109:
 	UI_show_npc_face0(0xFFFE, 0x0000);
 	var0007 = UI_get_object_position(0xFE9C);
 	if (!((var0007[0x0001] > 0x0291) && ((var0007[0x0001] < 0x02AB) && ((var0007[0x0002] > 0x0A51) && (var0007[0x0002] < 0x0A5E))))) goto labelFunc07AE_0176;
-	message("\"We did pass through an illusionary wall to enter. Might there be another leading from this place to somewhere else?\"");
+	message("「我們確實是穿過了一道幻影牆才進來的。這裡會不會有另一道通往其他地方的牆？」");
 	say();
 	goto labelFunc07AE_017A;
 labelFunc07AE_0176:
-	message("\"We did pass through an illusionary wall to enter that cave. Might there be another leading deeper inside the mountain?\"");
+	message("「我們確實是穿過了一道幻影牆才進入那個洞穴的。會不會有另一道牆通往山脈深處？」");
 	say();
 labelFunc07AE_017A:
 	goto labelFunc07AE_02E4;
@@ -68,75 +68,75 @@ labelFunc07AE_017D:
 	UI_clear_item_say(0xFFFE);
 	UI_show_npc_face0(0xFFFE, 0x0000);
 	if (!((var0000 < 0x0000) || ((var0000 > 0x0006) || (var0000 == 0x0005)))) goto labelFunc07AE_01C7;
-	UI_error_message(("Tell Bill Qual is " + var0000));
+	UI_error_message(("告訴 Bill Qual 是 " + var0000));
 labelFunc07AE_01C7:
 	if (!(var0000 == 0x0001)) goto labelFunc07AE_01F1;
 	if (!Func097D(0xFE9B, 0x0001, 0x0247, 0xFE99, 0xFE99)) goto labelFunc07AE_01ED;
-	message("\"Thou wert wise to pick up that bedroll. Now we can sleep well anywhere.\"");
+	message("「你把那張睡袋撿起來真是明智。現在我們隨處都能安穩入睡了。」");
 	say();
 	goto labelFunc07AE_01F1;
 labelFunc07AE_01ED:
-	message("\"A bedroll! With this, thou wilt sleep well anywhere.\"");
+	message("「一張睡袋！有了這個，你隨處都能安穩入睡了。」");
 	say();
 labelFunc07AE_01F1:
 	if (!(var0000 == 0x0002)) goto labelFunc07AE_0243;
 	var0001 = UI_find_nearby(0xFE9C, 0x020A, 0x0014, 0x0000);
 	if (!var0001) goto labelFunc07AE_023F;
 	if (!Func097D(0xFE9B, 0x0001, 0x0273, 0xFE99, 0xFE99)) goto labelFunc07AE_0234;
-	message("\"I'll wager that chest is locked. Thou shouldst try thy lockpicks on it.\"");
+	message("「我打賭那個箱子上鎖了。你應該用你的開鎖工具試試。」");
 	say();
-	message("\"Lockpicks work on locked doors, too. Of course, we only use them for virtuous reasons -- the Avatar is no common thief!\"");
+	message("「開鎖工具也能用在上了鎖的門上。當然，我們只會為了美德的原因而使用它們——聖者可不是普通的小偷！」");
 	say();
 	goto labelFunc07AE_023C;
 labelFunc07AE_0234:
-	message("\"I'll wager that chest is locked. If we had lockpicks, however, we could open it!\"");
+	message("「我打賭那個箱子上鎖了。不過，如果我們有開鎖工具，就能打開它了！」");
 	say();
-	message("\"They work on locked doors, too. Of course, we only use them for virtuous reasons -- the Avatar is no common thief!\"");
+	message("「它們也能用在上了鎖的門上。當然，我們只會為了美德的原因而使用它們——聖者可不是普通的小偷！」");
 	say();
 labelFunc07AE_023C:
 	goto labelFunc07AE_0243;
 labelFunc07AE_023F:
-	message("\"Nice day we're having, isn't it.\"");
+	message("「今天天氣真好，不是嗎。」");
 	say();
 labelFunc07AE_0243:
 	if (!(var0000 == 0x0003)) goto labelFunc07AE_0271;
 	var0001 = UI_find_nearby(0xFE9C, 0x031D, 0x0014, 0x0000);
 	if (!var0001) goto labelFunc07AE_026D;
-	message("\"I see a scroll. Perhaps it contains clues about this place, or counsel for our future adventurings.\"");
+	message("「我看到一個卷軸。也許它包含了關於這個地方的線索，或是對我們未來冒險的建議。」");
 	say();
 	goto labelFunc07AE_0271;
 labelFunc07AE_026D:
-	message("\"Thou wert wise to collect that scroll, Avatar. It probably contains clues which will be useful to us later.\"");
+	message("「收集那個卷軸真是明智，聖者。它很可能包含對我們之後有用的線索。」");
 	say();
 labelFunc07AE_0271:
 	if (!(var0000 == 0x0004)) goto labelFunc07AE_02A2;
 	if (!(!UI_find_nearby(0xFE9C, 0x0253, 0x000A, 0x0000))) goto labelFunc07AE_029A;
-	message("\"Thou wert wise to pick up that torch! We need all that we can find, for they do not burn for long.\"");
+	message("「你把那支火把撿起來真是明智！我們需要盡可能多找一些，因為它們燒不了多久。」");
 	say();
-	message("\"No doubt we shall be in many strange dungeons before our adventure is over...\"");
+	message("「毫無疑問，在我們的冒險結束之前，我們會進入許多奇怪的地牢……」");
 	say();
 	goto labelFunc07AE_02A2;
 labelFunc07AE_029A:
-	message("\"Let us take that torch! We need all that we can find, for they do not burn for long.\"");
+	message("「我們把那支火把帶走吧！我們需要盡可能多找一些，因為它們燒不了多久。」");
 	say();
-	message("\"No doubt we shall be in many strange dungeons before our adventure is over...\"");
+	message("「毫無疑問，在我們的冒險結束之前，我們會進入許多奇怪的地牢……」");
 	say();
 labelFunc07AE_02A2:
 	if (!(var0000 == 0x0006)) goto labelFunc07AE_02E4;
 	var0001 = UI_find_nearby(0xFE9C, 0x025E, 0x001E, 0x0000);
 	if (!var0001) goto labelFunc07AE_02E0;
 	var0008 = Func0953();
-	message("\"That seems alike to the bow I did lose to the magical storm!\"");
+	message("「那看起來很像我在魔法風暴中弄丟的弓！」");
 	say();
-	message("\"And we are carrying an animal's skull, given to us by the strange storm -- it must have changed places with my bow!\"");
+	message("「而且我們帶著一個奇怪風暴給我們的動物頭骨——它一定跟我的弓互換了位置！」");
 	say();
-	message("\"");
+	message("「");
 	message(var0008);
-	message(", it is a clue! If we find where the other strange items came from, we shall find our lost possessions!\"");
+	message("，這是一個線索！如果我們找到其他奇怪物品的來源，我們就能找到遺失的所有物了！」");
 	say();
 	goto labelFunc07AE_02E4;
 labelFunc07AE_02E0:
-	message("\"Look at the size of that skeleton! Perhaps that skull thou hast doth match to these bones.\"");
+	message("「看看那具骨骸的大小！也許你拿著的那個頭骨跟這些骨頭是一對的。」");
 	say();
 labelFunc07AE_02E4:
 	return;

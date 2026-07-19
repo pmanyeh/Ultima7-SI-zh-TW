@@ -16,3 +16,6 @@ __pycache__/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# 翻譯過程中，生成的暫存腳本或資料
+temp_Scripts/*

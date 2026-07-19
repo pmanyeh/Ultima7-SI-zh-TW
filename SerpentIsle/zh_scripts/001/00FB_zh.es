@@ -31,10 +31,10 @@ labelFunc00FB_004F:
 	var0003 = UI_count_objects(0xFE9B, 0x031D, var0002, 0xFE99);
 	if (!(((!var0003) && (!gflags[0x0005])) && (!((var0002 == 0x0001) && gflags[0x00EC])))) goto labelFunc00FB_00B0;
 	if (!(UI_get_array_size(UI_get_party_list()) == 0x0001)) goto labelFunc00FB_00A9;
-	Func094A("@This vessel doth have an owner.@");
+	Func094A("@此船有主人。@");
 	goto labelFunc00FB_00AF;
 labelFunc00FB_00A9:
-	Func094A("@We do not own this vessel.@");
+	Func094A("@我們並不擁有這艘船。@");
 labelFunc00FB_00AF:
 	return;
 labelFunc00FB_00B0:

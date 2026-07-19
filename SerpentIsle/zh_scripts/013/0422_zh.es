@@ -100,9 +100,9 @@ labelFunc0422_0334:
 	goto labelFunc0422_0244;
 labelFunc0422_0337:
 	if (!(event == 0x0001)) goto labelFunc0422_0365;
-	UI_item_say(0xFE9C, "@Ahem...@");
+	UI_item_say(0xFE9C, "@咳咳……@");
 	0xFFDE->Func07D1();
-	Func097F(0xFFDE, "@Thou didst speak?@", 0x0002);
+	Func097F(0xFFDE, "@你在說話嗎？@", 0x0002);
 	UI_set_schedule_type(0xFFDE, 0x0003);
 labelFunc0422_0365:
 	if (!(event == 0x0002)) goto labelFunc0422_0371;
@@ -112,89 +112,89 @@ labelFunc0422_0371:
 	if (!(item == UI_get_npc_object(0xFFDE))) goto labelFunc0422_0430;
 	if (!UI_get_item_flag(0xFFDE, 0x0006)) goto labelFunc0422_03A6;
 	UI_set_schedule_type(0xFFDE, 0x001F);
-	UI_add_answer("leave");
+	UI_add_answer("離開");
 	goto labelFunc0422_03BA;
 labelFunc0422_03A6:
 	UI_run_schedule(0xFFDE);
 	if (!gflags[0x01BA]) goto labelFunc0422_03BA;
-	UI_add_answer("join");
+	UI_add_answer("加入");
 labelFunc0422_03BA:
 	UI_show_npc_face0(0xFFDE, 0x0000);
 	if (!(UI_get_npc_id(0xFFDE) == 0x001E)) goto labelFunc0422_0411;
-	message("\"Master, I am grateful that thou dost still live! I have grown fond of thee, almost as a son looks upon a parent...\"");
+	message("「主人，我很感激你還活著！我已經對你產生了感情，就像兒子看待父母一樣……」");
 	say();
 	if (!(!gflags[0x0135])) goto labelFunc0422_03E8;
-	message("\"It might please thee to know that there is good news!\"");
+	message("「你可能會很高興知道有好消息！」");
 	say();
-	UI_add_answer("good news");
+	UI_add_answer("好消息");
 labelFunc0422_03E8:
 	UI_set_npc_id(0xFFDE, 0x0000);
 	UI_add_to_party(0xFFDE);
 	gflags[0x0013] = true;
-	UI_remove_answer("join");
-	UI_add_answer(["leave"]);
+	UI_remove_answer("加入");
+	UI_add_answer(["離開"]);
 	goto labelFunc0422_042D;
 labelFunc0422_0411:
 	if (!(!var0006)) goto labelFunc0422_0429;
-	message("\"I have a body! I have a body!\"");
+	message("「我有一個身體！我有一個身體！」");
 	say();
 	UI_set_item_flag(0xFFDE, 0x001C);
 	goto labelFunc0422_042D;
 labelFunc0422_0429:
-	message("\"Hello, there!\"");
+	message("「哈囉，你好！」");
 	say();
 labelFunc0422_042D:
 	goto labelFunc0422_046E;
 labelFunc0422_0430:
 	UI_show_npc_face0(0xFED3, 0x0000);
-	message("\"Now I see thee. Greetings! I am Boydon, the Living Head.\"");
+	message("「現在我看到你了。問候！我是 Boydon ，活著的頭顱(Living Head)。」");
 	say();
 	if (!(!gflags[0x01C0])) goto labelFunc0422_046E;
-	var0012 = Func0992(0xFFFD, "The severed head speaks!", 0x0000, false);
+	var0012 = Func0992(0xFFFD, "這顆斷掉的頭說話了！", 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_046A;
 	UI_set_conversation_slot(0x0000);
-	message("\"Yes, I do. Strange, is it not?\"");
+	message("「是的，我有。很奇怪，不是嗎？」");
 	say();
 labelFunc0422_046A:
 	gflags[0x01C0] = true;
 labelFunc0422_046E:
 	if (!(gflags[0x0013] && ((!UI_get_item_flag(0xFFDE, 0x0006)) && UI_get_cont_items(0xFFDE, 0xFE99, 0xFE99, 0xFE99)))) goto labelFunc0422_0498;
-	UI_add_answer("return my belongings");
+	UI_add_answer("歸還我的物品");
 labelFunc0422_0498:
-	UI_add_answer(["name", "duties", "bye"]);
+	UI_add_answer(["名字", "職責", "告辭"]);
 labelFunc0422_04A8:
 	converse attend labelFunc0422_07F1;
-	case "return my belongings" attend labelFunc0422_04BD:
-	UI_remove_answer("return my belongings");
+	case "歸還我的物品" attend labelFunc0422_04BD:
+	UI_remove_answer("歸還我的物品");
 	Func080A();
 labelFunc0422_04BD:
-	case "good news" attend labelFunc0422_04D8:
-	UI_remove_answer("good news");
-	message("\"Master, I have taken the time to speak with the Mages of this place. I do believe that the one known as Gustacio is of\ta mind to aid thee.\"");
+	case "好消息" attend labelFunc0422_04D8:
+	UI_remove_answer("好消息");
+	message("「主人，我花了一些時間與這裡的法師交談。我相信那個被稱為 Gustacio 的人有心要幫助你。」");
 	say();
-	message("\"He said that anyone who can survive Freedom is worthy of his time!\"");
+	message("「他說任何能從自由山地牢(Freedom)活下來的人，都值得他花時間！」");
 	say();
 	gflags[0x0135] = true;
 labelFunc0422_04D8:
-	case "name" attend labelFunc0422_04EB:
-	UI_remove_answer("name");
-	message("\"My name is Boydon.\"");
+	case "名字" attend labelFunc0422_04EB:
+	UI_remove_answer("名字");
+	message("「我的名字是 Boydon 。」");
 	say();
 labelFunc0422_04EB:
-	case "duties" attend labelFunc0422_0571:
-	UI_remove_answer("duties");
+	case "職責" attend labelFunc0422_0571:
+	UI_remove_answer("職責");
 	if (!(!gflags[0x01BB])) goto labelFunc0422_0515;
-	message("\"I am hardly capable of performing my duties now, I'm sorry to say. I was the assistant to Erstam, the one they call the Mad Mage -- dost thou know him? Wonderful fellow. Well, one night he woke me to help him with one of his experiments.\"");
+	message("「很抱歉，我現在幾乎無法履行我的職責。我曾經是 Erstam 的助手，他們稱他為瘋狂法師(Mad Mage)——你認識他嗎？他是個很棒的傢伙。好吧，有一天晚上他叫醒我，要我幫忙他進行一個實驗。」");
 	say();
-	UI_add_answer(["Erstam", "experiments"]);
+	UI_add_answer(["Erstam", "實驗"]);
 	goto labelFunc0422_0571;
 labelFunc0422_0515:
 	if (!var0007) goto labelFunc0422_0522;
-	message("\"It seems I am no longer able to perform any duties save being an observer of thine adventures. But thank goodness Erstam chose me as the subject of his experiment! The man hath now saved my life twice over! As his one-time assistant, however, I can assure thee my body hath been destroyed beyond repair, and mine head will reject any new body that it might be attatched to. Oh, well! I am sorry that I can be of no further use to thee. If I squinch up my face I am fairly certain that I shall hardly take up any room in thy backpack.\"");
+	message("「看來我除了作為你冒險的觀察者之外，已經無法履行任何職責了。但感謝老天， Erstam 選擇我作為他實驗的對象！這個人現在已經救了我的命兩次了！然而，作為他曾經的助手，我可以向你保證，我的身體已經被破壞到無法修復的地步，而我的頭顱將會排斥任何可能連接上的新身體。喔，好吧！我很抱歉不能對你有進一步的用處。如果我把臉縮起來，我相當肯定我幾乎不會佔用你背包裡的任何空間。」");
 	say();
 	goto labelFunc0422_0571;
 labelFunc0422_0522:
-	message("\"Actually, I do believe my job now is to be observed by a careful eye in order to judge the success of Erstam's experiment. Although now I am most certainly capable of many jobs.\"");
+	message("「實際上，我相信我現在的工作是由一雙謹慎的眼睛來觀察，以判斷 Erstam 實驗的成功與否。儘管我現在絕對有能力勝任許多工作。」");
 	say();
 	if (!(!var0005)) goto labelFunc0422_055A;
 	var0012 = Func0992(0xFFFF, ((("@My first job would be to " + "take a long hot bath. I swear some of those ") + "body parts must have been lying about ") + "Erstam's Manor for some time!@"), 0x0000, false);
@@ -202,64 +202,64 @@ labelFunc0422_0522:
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_055A:
 	if (!var0005) goto labelFunc0422_0564;
-	message("\"I do hope I shall be of some assistance to thee as I travel with thee during thine adventures! I am having quite a bit of fun, actually.\"");
+	message("「我真希望在你的冒險旅途中能為你提供一些幫助！事實上，我玩得很開心。」");
 	say();
 labelFunc0422_0564:
-	UI_add_answer(["observed", "many jobs"]);
+	UI_add_answer(["被觀察", "許多工作"]);
 labelFunc0422_0571:
 	case "Erstam" attend labelFunc0422_0584:
-	message("\"I found working for Erstam extremely interesting and most educational. Why, for example, my knowledge of anatomy hath improved so much. He is not exactly a friendly fellow, the Master, but there is never a dull moment.\"");
+	message("「我發現為 Erstam 工作非常有趣且極具教育意義。例如，我的解剖學知識進步了非常多。大師他並不是一個友善的人，但絕對不會有沉悶的時刻。」");
 	say();
 	UI_remove_answer("Erstam");
 labelFunc0422_0584:
-	case "experiments" attend labelFunc0422_05A7:
-	message("\"Of course Erstam, having mastered the art of teleportation, hath turned his sights to the creation of life. On this particular night that I am remembering we went down to his lab. He pulled an abundance of levers and things... my memory begins to fade a bit after that. The next thing I remember is awakening in this condition.\"");
+	case "實驗" attend labelFunc0422_05A7:
+	message("「當然， Erstam 在掌握了傳送藝術之後，將目光轉向了創造生命。在我記憶中的那個特別的夜晚，我們去了他的實驗室。他拉動了大量的控制桿和一些東西……在那之後我的記憶開始有點模糊了。我記得的下一件事就是在這種狀態下醒來。」");
 	say();
-	UI_remove_answer("experiments");
-	UI_add_answer(["teleportation", "creation of life", "condition"]);
+	UI_remove_answer("實驗");
+	UI_add_answer(["傳送", "創造生命", "狀態"]);
 labelFunc0422_05A7:
-	case "teleportation" attend labelFunc0422_05BA:
-	message("\"Oh, I am afraid I cannot tell thee anything about that. After all, I was merely the Mad Mage's assistant.\"");
+	case "傳送" attend labelFunc0422_05BA:
+	message("「喔，恐怕關於這點我什麼都不能告訴你。畢竟，我只是瘋狂法師的助手。」");
 	say();
-	UI_remove_answer("teleportation");
+	UI_remove_answer("傳送");
 labelFunc0422_05BA:
-	case "creation of life" attend labelFunc0422_05CD:
-	message("\"Is that not amazing? It doth go far beyond my comprehension of life and death. The mind fairly boggles at the ramifications of it.\"");
+	case "創造生命" attend labelFunc0422_05CD:
+	message("「這不令人驚訝嗎？這遠遠超出了我對生與死的理解。大腦對其可能帶來的後果感到難以置信。」");
 	say();
-	UI_remove_answer("creation of life");
+	UI_remove_answer("創造生命");
 labelFunc0422_05CD:
-	case "condition" attend labelFunc0422_05E0:
-	message("\"It is not so bad. I am never hungry because I do not have a stomach. I do not need to breathe because I do not have any lungs. I do sleep occasionally. Sometimes my nose itches. Nothing bothers me. Most people tend to find a talking severed head a bit unsettling. Right now I am enjoying talking to someone.\"");
+	case "狀態" attend labelFunc0422_05E0:
+	message("「這還不算太糟。我從來不會餓，因為我沒有胃。我不需要呼吸，因為我沒有肺。我偶爾會睡覺。有時我的鼻子會癢。沒有什麼能困擾我。大多數人往往會覺得一顆會說話的斷頭有點令人不安。現在我正享受著與人交談的樂趣。」");
 	say();
-	UI_remove_answer("condition");
+	UI_remove_answer("狀態");
 labelFunc0422_05E0:
-	case "observed" attend labelFunc0422_062A:
-	UI_remove_answer("observed");
-	message("\"Certainly someone should keep an eye on me. To make sure my new body will not start to fall apart. Not to worry, I feel strange, but very well indeed.\"");
+	case "被觀察" attend labelFunc0422_062A:
+	UI_remove_answer("被觀察");
+	message("「當然應該有人看著我。以確保我的新身體不會開始分崩離析。不用擔心，我雖然覺得奇怪，但的確感覺非常好。」");
 	say();
 	if (!(!var0005)) goto labelFunc0422_0623;
 	var0012 = Func0992(0xFFFD, (("@Thou dost not need to observe. " + "Not when the smell reaches one ") + "first! Phew!@"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_0623;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_0623:
-	UI_add_answer("strange feelings");
+	UI_add_answer("奇怪的感覺");
 labelFunc0422_062A:
-	case "strange feelings" attend labelFunc0422_063D:
-	UI_remove_answer("strange feelings");
-	message("\"Well, for one thing I have decided something about my new self. I have been thinking about it for a while and I have come to the realization that I simply do not like fire. I simply do not. I cannot exactly say why. I simply do not.\"");
+	case "奇怪的感覺" attend labelFunc0422_063D:
+	UI_remove_answer("奇怪的感覺");
+	message("「嗯，首先我對我的新自我做了一些決定。我思考了一段時間，然後我意識到我就是不喜歡火。我就是不喜歡。我無法確切說出原因。我就是不喜歡。」");
 	say();
 labelFunc0422_063D:
-	case "many jobs" attend labelFunc0422_06DE:
-	message("\"I feel I am capable of doing most anything in my present condition.\"");
+	case "許多工作" attend labelFunc0422_06DE:
+	message("「我覺得在我目前的狀態下，我幾乎什麼都能做。」");
 	say();
 	if (!(!gflags[0x01B9])) goto labelFunc0422_06D7;
-	message("\"In fact, I was wondering if thou couldst use someone like me to accompany thee in thy travels and adventures.\"");
+	message("「事實上，我在想你是否需要像我這樣的人來陪伴你進行旅行和冒險。」");
 	say();
-	message("\"Wouldst thou like me to join thee?\"");
+	message("「你想讓我加入你嗎？」");
 	say();
 	var0013 = Func0955();
 	if (!var0013) goto labelFunc0422_06A0;
-	message("\"I am delighted to hear thee say that. But first thou shouldst ask Erstam if I may go. After all, I am his creation. He is the one who made me what I am today.\"");
+	message("「聽到你這麼說我很高興。但首先你應該去問 Erstam 我是否可以離開。畢竟，我是他創造的。是他造就了今天的我。」");
 	say();
 	gflags[0x01B9] = true;
 	var0012 = Func0992(0xFFFE, (((("@Art thou certain about this, " + var0001) + "? Boydon seems game enough, but he is also ") + "extremely gamey. I am surprised thou hast ") + "not noticed this for thyself.@"), 0x0000, false);
@@ -268,23 +268,23 @@ labelFunc0422_063D:
 labelFunc0422_069D:
 	goto labelFunc0422_06D7;
 labelFunc0422_06A0:
-	message("\"If thou wouldst ever change thy mind, or find thyself in need of a companion, I would be most honored if thou wouldst consider me.\"");
+	message("「如果你改變心意，或發現你需要一個同伴，如果你能考慮我，我將感到非常榮幸。」");
 	say();
 	var0012 = Func0992(0xFFFD, 0x0000, 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_06D7;
 	UI_show_npc_face1(var0012, 0x0000);
-	message("\"That was a near escape. I could not believe thou wouldst consider having that fellow join us. Just the smell of him is near enough to kill a dragon! He is otherwise a most pleasant fellow, I will concede.\"");
+	message("「那真是死裡逃生。我不敢相信你竟然會考慮讓那個傢伙加入我們。光是他身上的味道就幾乎可以殺死一隻龍了！除此之外他倒是個非常令人愉快的傢伙，我承認。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_06D7:
-	UI_remove_answer("many jobs");
+	UI_remove_answer("許多工作");
 labelFunc0422_06DE:
-	case "join" attend labelFunc0422_074C:
-	UI_remove_answer("join");
+	case "加入" attend labelFunc0422_074C:
+	UI_remove_answer("加入");
 	if (!(UI_get_array_size(UI_get_party_list2()) < 0x0005)) goto labelFunc0422_073E;
-	UI_add_answer("leave");
-	message("\"That is wonderful news! Lead on!\"");
+	UI_add_answer("離開");
+	message("「真是個好消息！帶路吧！」");
 	say();
 	var0012 = Func0992(0xFFFE, (("@Far be it from me to question thy judgment, Avatar. " + "But are thy senses so dulled that thou dost not notice ") + "the potent aroma emanating from this fellow?@"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_0730;
@@ -294,16 +294,16 @@ labelFunc0422_0730:
 	gflags[0x0013] = true;
 	goto labelFunc0422_074C;
 labelFunc0422_073E:
-	message("\"But there are so many in thy travelling party! I am not accustomed to crowds.\"");
+	message("「但你的旅行隊伍裡有這麼多人！我不習慣人群。」");
 	say();
 	message("\"I think that I must remain where I am. Apologies, ");
 	message(var0001);
 	message(".\"");
 	say();
 labelFunc0422_074C:
-	case "leave" attend labelFunc0422_07A3:
-	UI_remove_answer("leave");
-	message("\"If that is what thou dost truly want, I will leave. But if thou dost ever change thy mind, do ask me to join again and I will.\"");
+	case "離開" attend labelFunc0422_07A3:
+	UI_remove_answer("離開");
+	message("「如果這真的是你想要的，我會離開。但如果你改變主意，請再次邀請我加入，我就會加入的。」");
 	say();
 	UI_remove_from_party(0xFFDE);
 	Func080A();
@@ -312,13 +312,13 @@ labelFunc0422_074C:
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_079C;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_079C:
-	UI_add_answer("join");
+	UI_add_answer("加入");
 labelFunc0422_07A3:
-	case "bye" attend labelFunc0422_07EE:
+	case "告辭" attend labelFunc0422_07EE:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Good luck!@", 0x0000);
+	Func097F(0xFE9C, "@祝你好運！@", 0x0000);
 	if (!(item == UI_get_npc_object(0xFFDE))) goto labelFunc0422_07D6;
-	Func097F(0xFFDE, "@And to thee!@", 0x0002);
+	Func097F(0xFFDE, "@也祝你好運！@", 0x0002);
 	goto labelFunc0422_07EB;
 labelFunc0422_07D6:
 	var000B = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@And to thee!@"], 0x0005);

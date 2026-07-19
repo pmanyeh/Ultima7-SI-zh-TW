@@ -20,7 +20,7 @@ void Func07AC object#(0x7AC) ()
 	var0001 = UI_get_item_quality(item);
 	var0002 = UI_get_item_quantity(item, 0x0000);
 	if (!(UI_get_random(0x0002) == 0x0001)) goto labelFunc07AC_0062;
-	var0003 = ("@Yikes!@" & ("@Look!@" & ("@That was close!@" & ("@Run!@" & ("@Teleport storm!@" & "@Whoa!@")))));
+	var0003 = ("@哎呀！@" & ("@看！@" & ("@好險！@" & ("@快逃！@" & ("@傳送風暴！@" & "@哇！@")))));
 	var0004 = Func0992(0x0001, var0003[UI_get_random(UI_get_array_size(var0003))], 0x0000, true);
 	item->Func07D1();
 labelFunc07AC_0062:

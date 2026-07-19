@@ -22,10 +22,10 @@ labelFunc0316_0014:
 	var0001 = UI_count_objects(0xFE9B, 0x031D, var0000, 0xFE99);
 	if (!(((!var0001) && (!gflags[0x0005])) && (!((var0000 == 0x0001) && gflags[0x00EC])))) goto labelFunc0316_007D;
 	if (!(UI_get_array_size(UI_get_party_list()) == 0x0001)) goto labelFunc0316_0076;
-	Func094A("@This vessel belongs to another.@");
+	Func094A("@這艘船屬於別人。@");
 	goto labelFunc0316_007C;
 labelFunc0316_0076:
-	Func094A("@This vessel doth not belong to us.@");
+	Func094A("@這艘船不屬於我們。@");
 labelFunc0316_007C:
 	return;
 labelFunc0316_007D:
