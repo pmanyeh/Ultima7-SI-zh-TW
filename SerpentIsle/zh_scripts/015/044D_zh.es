@@ -144,7 +144,7 @@ labelFunc044D_02AF:
 	var0009 = UI_delayed_execute_usecode_array(0xFFB3, [(byte)0x23, (byte)0x55, 0x044D], 0x0007);
 	abort;
 labelFunc044D_030D:
-	Func097F(0xFFB3, "什麼事？", 0x0002);
+	Func097F(0xFFB3, "@什麼事？@", 0x0002);
 	UI_set_schedule_type(0xFFB3, 0x0003);
 labelFunc044D_0323:
 	if (!(event == 0x0002)) goto labelFunc044D_032E;
@@ -434,8 +434,8 @@ labelFunc044D_0848:
 	case "告辭" attend labelFunc044D_0873:
 	UI_remove_npc_face0();
 	UI_remove_npc_face1();
-	Func097F(0xFE9C, "再見！", 0x0000);
-	Func097F(0xFFB3, "帶著勇氣前進吧！", 0x0002);
+	Func097F(0xFE9C, "@再見！@", 0x0000);
+	Func097F(0xFFB3, "@帶著勇氣前進吧！@", 0x0002);
 	goto labelFunc044D_0876;
 labelFunc044D_0873:
 	goto labelFunc044D_041B;

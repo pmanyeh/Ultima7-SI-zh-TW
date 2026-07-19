@@ -17,22 +17,22 @@ labelFunc0453_000E:
 	var0000 = Func0954();
 	var0001 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc0453_0048;
-	UI_item_say(0xFE9C, "@May we speak?@");
+	UI_item_say(0xFE9C, "@我們能談談嗎？@");
 	0xFFAD->Func07D1();
-	Func097F(0xFFAD, "@Speak... Creak... Weak...@", 0x0002);
+	Func097F(0xFFAD, "@說話( Speak )……嘎吱作響( Creak )……虛弱( Weak )……@", 0x0002);
 	UI_set_schedule_type(0xFFAD, 0x0003);
 labelFunc0453_0048:
 	if (!(event == 0x0009)) goto labelFunc0453_0081;
 	UI_run_schedule(0xFFAD);
 	UI_clear_item_say(0xFFAD);
 	UI_show_npc_face0(0xFED6, 0x0000);
-	message("\"Soldiers... Discipline... fountain...\"");
+	message("「士兵……紀律……噴泉……」");
 	say();
-	message("\"Seek... Meek...\"");
+	message("「尋找( Seek )……溫順( Meek )……」");
 	say();
-	message("\"Die in acid!... automaton... fetches Water!\"");
+	message("「在酸液中死吧！……魔導人偶( automaton )……取水！」");
 	say();
-	message("\"Sleek... Speak... Squeak...\"");
+	message("「圓滑( Sleek )……說話( Speak )……吱吱叫( Squeak )……」");
 	say();
 	gflags[0x0226] = true;
 	UI_remove_npc_face0();
@@ -40,5 +40,3 @@ labelFunc0453_0048:
 labelFunc0453_0081:
 	return;
 }
-
-

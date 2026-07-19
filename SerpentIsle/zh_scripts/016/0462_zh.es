@@ -24,9 +24,9 @@ labelFunc0462_000F:
 	var0000 = Func0954();
 	var0001 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc0462_0051;
-	UI_item_say(0xFE9C, "@May we speak?@");
+	UI_item_say(0xFE9C, "@我們能談談嗎？@");
 	0xFF9E->Func07D1();
-	Func097F(0xFF9E, (("@Yes, " + var0000) + "?@"), 0x0002);
+	Func097F(0xFF9E, (("@是的，" + var0000) + "？@"), 0x0002);
 	UI_set_schedule_type(0xFF9E, 0x0003);
 labelFunc0462_0051:
 	if (!(event == 0x0009)) goto labelFunc0462_01EB;
@@ -34,73 +34,73 @@ labelFunc0462_0051:
 	UI_clear_item_say(0xFF9E);
 	UI_show_npc_face0(0xFF9E, 0x0000);
 	if (!gflags[0x0233]) goto labelFunc0462_0089;
-	message("\"That hath made good use of thy Logic, ");
+	message("「你很好地運用了你的邏輯( Logic )，");
 	message(var0000);
-	message(". I would not have believed that one of our fellowship could have done such a thing. I thank thee for finding the traitor in our midst.\"");
+	message("。我真不敢相信我們的一員會做出這樣的事。感謝你找出我們之中的叛徒。」");
 	say();
-	message("\"Use the key to obtain the waters of Logic. Thou hast well earned that honor.\"");
+	message("「使用鑰匙來獲取邏輯之水( waters of Logic )吧。你理應獲得這份榮譽。」");
 	say();
 	abort;
 	goto labelFunc0462_01EB;
 labelFunc0462_0089:
-	message("\"Where is the justice in the world when a strange mage comes to destroy our Temple and disrupt our peace?! Where is the keeper of the key?\"");
+	message("「當一個陌生的法師前來摧毀我們的神殿、擾亂我們的寧靜，這個世界的公平何在？！鑰匙的保管者在哪裡？」");
 	say();
-	UI_add_answer(["justice", "strange mage", "disrupt", "keeper of the key", "accuse", "bye"]);
+	UI_add_answer(["公平", "陌生的法師", "擾亂", "鑰匙的保管者", "指控", "告辭"]);
 labelFunc0462_00A6:
 	converse attend labelFunc0462_01EA;
-	case "justice" attend labelFunc0462_00C0:
-	UI_remove_answer("justice");
-	message("\"Thou mayest call me Number 5, for I no longer bear a mortal name. I surrendered that when I swore myself to eternal service at the fountain of Logic.\"");
+	case "公平" attend labelFunc0462_00C0:
+	UI_remove_answer("公平");
+	message("「你可以叫我五號( Number 5 )，因為我不再擁有凡人的名字。當我誓言永恆地守護邏輯( Logic )噴泉時，我便放棄了那個名字。」");
 	say();
-	message("\"I am bound for all time and eternity in a body that will never age, and now I cannot fulfill my vows! Where is the justice in living forever with broken vows?\"");
+	message("「我被永遠束縛在一具永不衰老的軀殼裡，而現在我甚至無法履行我的誓言！帶著破碎的誓言永遠活著，這有何公平可言？」");
 	say();
 labelFunc0462_00C0:
-	case "strange mage" attend labelFunc0462_00D9:
-	UI_remove_answer("strange mage");
-	message("\"He was a rude, fat man, ");
+	case "陌生的法師" attend labelFunc0462_00D9:
+	UI_remove_answer("陌生的法師");
+	message("「他是個粗魯的胖子，");
 	message(var0000);
-	message(". I assumed he came seeking Logic, but I should have realized that one such as he would not be interested in the clarity of Logic.\"");
+	message("。我以為他是來尋求邏輯( Logic )的，但我早該意識到，他這種人不會對邏輯的清明感興趣的。」");
 	say();
 labelFunc0462_00D9:
-	case "disrupt" attend labelFunc0462_00F7:
-	UI_remove_answer("disrupt");
-	message("\"Long ago, the Order Hierophant bound a force of great evil into a prison and placed it here for us to guard.\"");
+	case "擾亂" attend labelFunc0462_00F7:
+	UI_remove_answer("擾亂");
+	message("「很久以前，秩序大祭司( Order Hierophant )將一股巨大的邪惡之力封印在一個容器中，並放置在這裡讓我們守護。」");
 	say();
-	message("\"What peace is left for us here, guardians of an empty shell now that the mage hath loosed what once was captive?\"");
+	message("「如今那個法師將昔日的囚禁之物釋放了，身為這個空殼守護者的我們，還剩下什麼安寧可言？」");
 	say();
-	UI_add_answer("force of great evil");
+	UI_add_answer("巨大的邪惡之力");
 labelFunc0462_00F7:
-	case "force of great evil" attend labelFunc0462_0114:
-	UI_remove_answer("force of great evil");
-	message("\"I do not know what it was, ");
+	case "巨大的邪惡之力" attend labelFunc0462_0114:
+	UI_remove_answer("巨大的邪惡之力");
+	message("「我不知道那是什麼，");
 	message(var0000);
-	message(". I am sorry. It was not my place to ask if the Hierophant did not choose to tell me.\"");
+	message("。很抱歉。如果大祭司選擇不告訴我，我也不該去問。」");
 	say();
-	message("\"I can only hope that the failure of my fellows and I hath not endangered the world too greatly.\"");
+	message("「我只希望我和同伴們的失職沒有讓這個世界陷入太大的危險。」");
 	say();
 labelFunc0462_0114:
-	case "keeper of the key" attend labelFunc0462_012B:
-	UI_remove_answer("keeper of the key");
-	message("\"Perhaps the mage waylaid Number 7 to steal the key...\"");
+	case "鑰匙的保管者" attend labelFunc0462_012B:
+	UI_remove_answer("鑰匙的保管者");
+	message("「也許那個法師攔截了七號( Number 7 )並偷走了鑰匙……」");
 	say();
-	message("\"But no, that cannot be. For Number 7 disappeared the day I was with Number 3, long before the strange mage came.\"");
+	message("「但不，那不可能。因為七號消失那天，我和三號( Number 3 )在一起，早在那個陌生的法師到來之前。」");
 	say();
 labelFunc0462_012B:
-	case "accuse" attend labelFunc0462_01B6:
-	message("\"I must warn thee, ");
+	case "指控" attend labelFunc0462_01B6:
+	message("「我必須警告你，");
 	message(var0000);
-	message(", we are each sworn to protect the other. If thou dost accuse me falsely, we shall attack thee.\"");
+	message("，我們都發誓要互相保護。如果你錯誤地指控我，我們就會攻擊你。」");
 	say();
-	message("\"If thou hast spoken to each of us and hast determined that one of us is guilty, accuse accordingly. But be not hasty in thy judgment.\"");
+	message("「如果你已經和我們每個人談過，並確定我們其中一人有罪，那就提出相應的指控吧。但在你的判斷上不要過於草率。」");
 	say();
-	message("\"Dost thou accuse me?\"");
+	message("「你要指控我嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0462_01AC;
-	message("\"Lies! Number 3 will remember that we were together when Number 7 disappeared!\"");
+	message("「謊言！三號可以證明七號消失時我們在一起！」");
 	say();
-	Func094E(0xFFA0, "@It is true, Number 5 was with me!@");
+	Func094E(0xFFA0, "@五號說的是真的，他跟我在一起！@");
 	UI_set_conversation_slot(0x0000);
-	message("\"I shall have thine head for this outrage!\"");
+	message("「我要讓你為這個無禮的行為付出代價！」");
 	say();
 	var0002 = [0xFFA2, 0xFFA1, 0xFFA0, 0xFF9F, 0xFF9E, 0xFF9D];
 	enum();
@@ -114,15 +114,15 @@ labelFunc0462_01A8:
 	abort;
 	goto labelFunc0462_01B6;
 labelFunc0462_01AC:
-	message("\"I hope that thou dost find what hath happened to Number 7, ");
+	message("「我希望你能查明七號發生了什麼事，");
 	message(var0000);
-	message(". We cannot fulfill our duty without the key.\"");
+	message("。沒有鑰匙，我們就無法履行我們的職責。」");
 	say();
 labelFunc0462_01B6:
-	case "bye" attend labelFunc0462_01E7:
+	case "告辭" attend labelFunc0462_01E7:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Many thanks!@", 0x0000);
-	Func097F(0xFF9E, "@Use thy Logic!@", 0x0002);
+	Func097F(0xFE9C, "@非常感謝！@", 0x0000);
+	Func097F(0xFF9E, "@運用你的邏輯( Logic )！@", 0x0002);
 	UI_set_schedule_type(0xFF9E, 0x000B);
 	goto labelFunc0462_01EA;
 labelFunc0462_01E7:
@@ -132,5 +132,3 @@ labelFunc0462_01EA:
 labelFunc0462_01EB:
 	return;
 }
-
-

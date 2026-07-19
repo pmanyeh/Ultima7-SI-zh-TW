@@ -21,9 +21,9 @@ void Func043E object#(0x43E) ()
 	var0000 = Func0953();
 	var0001 = UI_get_item_flag(0xFFC2, 0x001C);
 	if (!(event == 0x0001)) goto labelFunc043E_0043;
-	Func097F(0xFE9C, "你好，先生。", 0x0000);
+	Func097F(0xFE9C, "@你好，先生。@", 0x0000);
 	0xFFC2->Func07D1();
-	Func097F(0xFFC2, "你好。", 0x0002);
+	Func097F(0xFFC2, "@你好。@", 0x0002);
 	UI_set_schedule_type(0xFFC2, 0x0003);
 labelFunc043E_0043:
 	if (!(event == 0x0009)) goto labelFunc043E_0395;

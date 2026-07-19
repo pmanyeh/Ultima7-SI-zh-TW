@@ -357,8 +357,8 @@ labelFunc044A_069B:
 	case "告辭" attend labelFunc044A_06C6:
 	UI_remove_npc_face0();
 	UI_remove_npc_face1();
-	Func097F(0xFE9C, "祝你有美好的一天。", 0x0000);
-	Func097F(0xFFB6, "你也是。", 0x0002);
+	Func097F(0xFE9C, "@祝你有美好的一天。@", 0x0000);
+	Func097F(0xFFB6, "@你也是。@", 0x0002);
 	goto labelFunc044A_06C9;
 labelFunc044A_06C6:
 	goto labelFunc044A_045E;

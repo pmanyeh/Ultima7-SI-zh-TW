@@ -51,7 +51,7 @@ labelFunc0446_0107:
 labelFunc0446_012D:
 	Func097F(0xFFBA, "@是的，帥哥？@", 0x0002);
 labelFunc0446_0139:
-	Func097F(0xFFBA, "哈囉。", 0x0002);
+	Func097F(0xFFBA, "@哈囉。@", 0x0002);
 	UI_set_schedule_type(0xFFBA, 0x0003);
 labelFunc0446_014F:
 	if (!(event == 0x0009)) goto labelFunc0446_07D5;

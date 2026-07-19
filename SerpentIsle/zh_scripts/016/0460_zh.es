@@ -24,9 +24,9 @@ labelFunc0460_000F:
 	var0000 = Func0954();
 	var0001 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc0460_0051;
-	UI_item_say(0xFE9C, "@May we speak?@");
+	UI_item_say(0xFE9C, "@我們能談談嗎？@");
 	0xFFA0->Func07D1();
-	Func097F(0xFFA0, (("@Yes, " + var0000) + "?@"), 0x0002);
+	Func097F(0xFFA0, (("@是的，" + var0000) + "？@"), 0x0002);
 	UI_set_schedule_type(0xFFA0, 0x0003);
 labelFunc0460_0051:
 	if (!(event == 0x0009)) goto labelFunc0460_01A7;
@@ -34,54 +34,54 @@ labelFunc0460_0051:
 	UI_clear_item_say(0xFFA0);
 	UI_show_npc_face0(0xFFA0, 0x0000);
 	if (!gflags[0x0233]) goto labelFunc0460_0089;
-	message("\"That hath made good use of thy Logic, ");
+	message("「你很好地運用了你的邏輯( Logic )，");
 	message(var0000);
-	message(". I would not have believed that one of our fellowship could have done such a thing. I thank thee for finding the traitor in our midst.\"");
+	message("。我真不敢相信我們的一員會做出這樣的事。感謝你找出我們之中的叛徒。」");
 	say();
-	message("\"Use the key to obtain the waters of Logic. Thou hast well earned that honor.\"");
+	message("「使用鑰匙來獲取邏輯之水( waters of Logic )吧。你理應獲得這份榮譽。」");
 	say();
 	abort;
 	goto labelFunc0460_01A7;
 labelFunc0460_0089:
-	message("\"We have failed to protect the Temple! We have failed to provide thee with the solitude to meditate! And no one hath seen Number 7 in ages!\"");
+	message("「我們沒能保護神殿！我們沒能為你提供獨處冥想的環境！而且好久沒人見到七號( Number 7 )了！」");
 	say();
-	message("\"I am not worthy of my Number 3! Where is Number 7, the keeper of the key?!\"");
+	message("「我不配當三號( Number 3 )！保管鑰匙的七號在哪裡？！」");
 	say();
-	UI_add_answer(["protect", "solitude", "Number 7", "accuse", "bye"]);
+	UI_add_answer(["保護", "獨處", "七號", "指控", "告辭"]);
 labelFunc0460_00A7:
 	converse attend labelFunc0460_01A6;
-	case "protect" attend labelFunc0460_00BD:
-	UI_remove_answer("protect");
-	message("\"That is the duty of my fellows and I, to protect the Temple and assist those who come here to meditate on the pure waters of Logic. And we have failed!\"");
+	case "保護" attend labelFunc0460_00BD:
+	UI_remove_answer("保護");
+	message("「保護神殿，並協助來到這裡對純淨的邏輯之水( waters of Logic )進行冥想的人，是我和同伴們的職責。而我們失敗了！」");
 	say();
 labelFunc0460_00BD:
-	case "solitude" attend labelFunc0460_00D0:
-	UI_remove_answer("solitude");
-	message("\"No one would interfere with thy communion with the waters of Logic.\"");
+	case "獨處" attend labelFunc0460_00D0:
+	UI_remove_answer("獨處");
+	message("「沒有人會干涉你與邏輯之水的交流。」");
 	say();
 labelFunc0460_00D0:
-	case "Number 7" attend labelFunc0460_00E7:
-	UI_remove_answer("Number 7");
-	message("\"Something must have happened to Number 7. Let me think, I was with Number 5 the last time any of us saw Number 7... and that was quite some time ago.\"");
+	case "七號" attend labelFunc0460_00E7:
+	UI_remove_answer("七號");
+	message("「七號一定出事了。讓我想想，我們最後一次見到七號時，我和五號( Number 5 )在一起……而那已經是很久以前的事了。」");
 	say();
-	message("\"I fear we may never find the key to the fountain room now.\"");
+	message("「我擔心我們現在可能永遠也找不到噴泉室的鑰匙了。」");
 	say();
 labelFunc0460_00E7:
-	case "accuse" attend labelFunc0460_0172:
-	message("\"I must warn thee, ");
+	case "指控" attend labelFunc0460_0172:
+	message("「我必須警告你，");
 	message(var0000);
-	message(", we are each sworn to protect the other. If thou dost accuse me falsely, we shall attack thee.\"");
+	message("，我們都發誓要互相保護。如果你錯誤地指控我，我們就會攻擊你。」");
 	say();
-	message("\"If thou hast spoken to each of us and hast determined that one of us is guilty, accuse accordingly. But be not hasty in thy judgment.\"");
+	message("「如果你已經和我們每個人談過，並確定我們其中一人有罪，那就提出相應的指控吧。但在你的判斷上不要過於草率。」");
 	say();
-	message("\"Dost thou accuse me?\"");
+	message("「你要指控我嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0460_0168;
-	message("\"Thou art mad! I was with Number 5 when Number 7 disappeared!\"");
+	message("「你瘋了！七號消失時，我和五號在一起！」");
 	say();
-	Func094E(0xFF9E, "@Number 3 was with me!@");
+	Func094E(0xFF9E, "@三號和我在一起！@");
 	UI_set_conversation_slot(0x0000);
-	message("\"I shall make thee bleed!\"");
+	message("「我要讓你流血！」");
 	say();
 	var0002 = [0xFFA2, 0xFFA1, 0xFFA0, 0xFF9F, 0xFF9E, 0xFF9D];
 	enum();
@@ -95,15 +95,15 @@ labelFunc0460_0164:
 	abort;
 	goto labelFunc0460_0172;
 labelFunc0460_0168:
-	message("\"I hope that thou dost find what hath happened to Number 7, ");
+	message("「我希望你能查明七號發生了什麼事，");
 	message(var0000);
-	message(". We cannot fulfill our duty without the key.\"");
+	message("。沒有鑰匙，我們就無法履行我們的職責。」");
 	say();
 labelFunc0460_0172:
-	case "bye" attend labelFunc0460_01A3:
+	case "告辭" attend labelFunc0460_01A3:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Fare well!@", 0x0000);
-	Func097F(0xFFA0, "@Use thy Logic!@", 0x0002);
+	Func097F(0xFE9C, "@保重！@", 0x0000);
+	Func097F(0xFFA0, "@運用你的邏輯( Logic )！@", 0x0002);
 	UI_set_schedule_type(0xFFA0, 0x000B);
 	goto labelFunc0460_01A6;
 labelFunc0460_01A3:
@@ -113,5 +113,3 @@ labelFunc0460_01A6:
 labelFunc0460_01A7:
 	return;
 }
-
-

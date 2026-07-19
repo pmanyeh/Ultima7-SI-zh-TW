@@ -83,7 +83,7 @@ labelFunc0440_0230:
 labelFunc0440_025B:
 	if (!(event == 0x0001)) goto labelFunc0440_033D;
 	if (!UI_get_item_flag(0xFFC0, 0x001E)) goto labelFunc0440_02F3;
-	Func097F(0xFE9C, "妳好， Cantra 。", 0x0000);
+	Func097F(0xFE9C, "@妳好， Cantra 。@", 0x0000);
 	var0005 = UI_get_random(0x0006);
 	if (!(var0005 == 0x0001)) goto labelFunc0440_0296;
 	var0006 = "@我要妳的肉！@";
@@ -107,11 +107,10 @@ labelFunc0440_02E6:
 	abort;
 labelFunc0440_02F3:
 	if (!(!var0001)) goto labelFunc0440_0315;
-	Func097F(0xFE9C, "妳好，小女孩。", 0x0000);
-	Func097F(0xFFC0, "@天啊！@", 0x0002);
+	Func097F(0xFE9C, "@妳好，小女孩。@", 0x0000);
 	goto labelFunc0440_032D;
 labelFunc0440_0315:
-	Func097F(0xFE9C, "妳好， Cantra 。", 0x0000);
+	Func097F(0xFE9C, "@妳好， Cantra 。@", 0x0000);
 	Func097F(0xFFC0, "@很高興見到你！@", 0x0002);
 labelFunc0440_032D:
 	0xFFC0->Func07D1();
