@@ -23,9 +23,9 @@ void Func0430 object#(0x430) ()
 	var0001 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0112]);
 labelFunc0430_0020:
 	if (!(event == 0x0001)) goto labelFunc0430_0056;
-	UI_item_say(0xFE9C, "@A moment, if thou wilt.@");
+	UI_item_say(0xFE9C, "@請稍候。@");
 	0xFFD0->Func07D1();
-	Func097F(0xFFD0, (("@At thy service, " + var0000) + ".@"), 0x0005);
+	Func097F(0xFFD0, (("@為你效勞，" + var0000) + "。@"), 0x0005);
 	UI_set_schedule_type(0xFFD0, 0x0003);
 labelFunc0430_0056:
 	if (!(event == 0x0009)) goto labelFunc0430_0642;
@@ -34,170 +34,170 @@ labelFunc0430_0056:
 	UI_show_npc_face0(0xFFD0, 0x0000);
 	var0002 = UI_get_item_flag(0xFFD0, 0x001C);
 	if (!(gflags[0x0171] || (gflags[0x0170] && (!gflags[0x0172])))) goto labelFunc0430_00A7;
-	message("\"Leave! I have no wish to be seen with thee! Thou dost consort with criminals and blasphemers.\"");
+	message("「離開！我不想讓人看見我和你在一起！你與罪犯和褻瀆者為伍。」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(0xFFD0, "@Leave me alone!@", 0x0000);
+	Func097F(0xFFD0, "@讓我一個人待著！@", 0x0000);
 	abort;
 labelFunc0430_00A7:
 	if (!(var0002 == false)) goto labelFunc0430_00E3;
 	if (!(gflags[0x003E] == true)) goto labelFunc0430_00CC;
 	if (!UI_is_pc_female()) goto labelFunc0430_00C5;
-	message("\"I am Delphynia, horticulturist and healer. State thy business or be on thy way. I do not traffic with oafs and knaves.\"");
+	message("「我是黛爾菲妮亞( Delphynia )，園藝師兼治療師。說明來意，否則請離開。我不與蠢蛋和無賴打交道。」");
 	say();
 	goto labelFunc0430_00C9;
 labelFunc0430_00C5:
-	message("\"I am Delphynia, horticulturist and healer. Welcome, noble Pikeman. Thy presence honors me.\"");
+	message("「我是黛爾菲妮亞( Delphynia )，園藝師兼治療師。歡迎，高貴的長槍兵( Pikeman )。你的到來讓我感到榮幸。」");
 	say();
 labelFunc0430_00C9:
 	goto labelFunc0430_00D6;
 labelFunc0430_00CC:
-	message("\"I am Delphynia, horticulturist and healer. How may I be of service, ");
+	message("「我是黛爾菲妮亞( Delphynia )，園藝師兼治療師。有什麼我可以為你效勞的嗎， ");
 	message(var0000);
-	message("?\"");
+	message("？」");
 	say();
 labelFunc0430_00D6:
 	UI_set_item_flag(0xFFD0, 0x001C);
 	goto labelFunc0430_00E7;
 labelFunc0430_00E3:
-	message("\"'Tis always a pleasure to see thee, Avatar. How may I be of service to thee?\"");
+	message("「能再見到你真是高興，聖者。有什麼我可以為你效勞的嗎？」");
 	say();
 labelFunc0430_00E7:
-	UI_add_answer(["Goblins", "healer", "storms", "buy", "bye"]);
+	UI_add_answer(["哥布林", "治療師", "風暴", "買賣", "告辭"]);
 	if (!(gflags[0x0193] && (!gflags[0x028F]))) goto labelFunc0430_010F;
-	UI_add_answer("apparatus");
+	UI_add_answer("器具");
 labelFunc0430_010F:
 	if (!(gflags[0x0194] && (!gflags[0x0290]))) goto labelFunc0430_0121;
-	UI_add_answer("pumice");
+	UI_add_answer("浮岩");
 labelFunc0430_0121:
 	if (!(gflags[0x0197] && (!gflags[0x0295]))) goto labelFunc0430_0133;
-	UI_add_answer("blue egg");
+	UI_add_answer("藍蛋");
 labelFunc0430_0133:
 	if (!(gflags[0x019D] && (!gflags[0x029D]))) goto labelFunc0430_0145;
-	UI_add_answer("glowing rock");
+	UI_add_answer("發光岩石");
 labelFunc0430_0145:
 	if (!((gflags[0x0152] == true) && (!gflags[0x01A3]))) goto labelFunc0430_0159;
-	UI_add_answer("letter");
+	UI_add_answer("信件");
 labelFunc0430_0159:
 	if (!((gflags[0x0076] == true) && ((gflags[0x005A] == false) && (gflags[0x01A5] == false)))) goto labelFunc0430_0174;
-	UI_add_answer("Varo Leaves");
+	UI_add_answer("瓦羅葉");
 labelFunc0430_0174:
 	if (!(gflags[0x0004] == true)) goto labelFunc0430_0183;
-	UI_add_answer("Iolo the Mad");
+	UI_add_answer("瘋子伊歐洛");
 labelFunc0430_0183:
 	converse attend labelFunc0430_0641;
-	case "Goblins" attend labelFunc0430_01A0:
-	message("\"Would that I never hear of those horrible creatures again! They are why I am now Fawn's healer, though I am not properly trained.\" *\"Pomdirgun's shadow hath cast a blight on all the land!\"");
+	case "哥布林" attend labelFunc0430_01A0:
+	message("「我再也不想聽到那些可怕的生物了！就是因為他們，我現在成了幼鹿城( Fawn )的治療師，儘管我並沒有受過正規的訓練。」 *「Pomdirgun 的陰影已經籠罩了整片大地！」");
 	say();
-	UI_remove_answer("Goblins");
+	UI_remove_answer("哥布林");
 	UI_add_answer("Pomdirgun");
 labelFunc0430_01A0:
-	case "healer" attend labelFunc0430_01CE:
-	message("\"I am a horticulturist by trade. What little I know of herbs hath given me a responsibility I did not want. I curse the day that Seth refused a guard escort to do his herb gathering!\"");
+	case "治療師" attend labelFunc0430_01CE:
+	message("「我本職是園藝師。我對藥草的一點認識讓我承擔了一份我並不想要的責任。我詛咒 Seth 拒絕守衛護送他去採藥的那一天！」");
 	say();
-	message("\"Dost thou wish healing?\"");
+	message("「你需要治療嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0430_01BC;
 	Func081A();
 	goto labelFunc0430_01C0;
 labelFunc0430_01BC:
-	message("\"I hate to say this, but I am relieved to hear that!\"");
+	message("「我很遺憾這樣說，但我鬆了一口氣！」");
 	say();
 labelFunc0430_01C0:
-	UI_remove_answer("healer");
+	UI_remove_answer("治療師");
 	UI_add_answer("Seth");
 labelFunc0430_01CE:
 	case "Seth" attend labelFunc0430_01EC:
-	message("\"Seth was two years older than the heavens, and set in his ways, to be sure. But he was a fine healer. He refused a guard escort to gather his herbs. He told Jorvin it was because the guards stepped on the plants he wanted to gather.\"");
+	message("「Seth 比天際還要年長兩歲，而且固執己見，這是肯定的。但他是個出色的治療師。他拒絕讓守衛護送他去採藥。他告訴 Jorvin 那是因為守衛踩壞了他想採的植物。」");
 	say();
-	message("\"But I think he simply wanted to be able to escape alone for a while. Thou hast no idea how little time one has when thou must be at the beck and call of everyone with some imagined ill!\"");
+	message("「但我認為他只是想暫時逃離，獨處一段時間。你根本不知道，當你必須隨叫隨到，應付每個有些想象中的病痛的人時，你能有多少閒暇時間！」");
 	say();
 	UI_remove_answer("Seth");
 	UI_add_answer("Jorvin");
 labelFunc0430_01EC:
 	case "Jorvin" attend labelFunc0430_01FF:
-	message("\"Jorvin is the Captain of the Guards. 'Twas he that went looking for Seth near twilight when the old man had not returned to the city.\" *\"Jorvin found signs that the Goblins had taken Seth, and led pursuit. But it was too late. By the time the guards caught the foul monsters, Seth was already the makings for their next meal!\"");
+	message("「Jorvin 是護衛隊長。就是他，在那個老人天黑後仍未返回城裡時，在黃昏時分出去尋找 Seth 的。」 *「Jorvin 發現了哥布林帶走 Seth 的跡象，並率人追擊。但已經太晚了。等守衛追上那些惡臭的怪物時，Seth 已經成了他們下一頓飯的食材！」");
 	say();
 	UI_remove_answer("Jorvin");
 labelFunc0430_01FF:
 	case "Pomdirgun" attend labelFunc0430_0212:
-	message("\"Iiieeee! That very name sends ice down my spine! Pomdirgun hath welded all the Goblins into his weapon. He will never stop until he hath driven us all from the land... Or feasted on us to the last child.\" *\"He is a fiend drawn to destroy our Beauty!\"");
+	message("「啊啊啊！那個名字就能讓我脊背發涼！Pomdirgun 已經將所有哥布林鍛造成他的武器。他絕不會停止，直到將我們全部趕出這片土地……或者將我們全部吃光為止。」 *「他是一個被召喚來摧毀我們的美( Beauty )的惡魔！」");
 	say();
 	UI_remove_answer("Pomdirgun");
 labelFunc0430_0212:
-	case "storms" attend labelFunc0430_024C:
-	UI_remove_answer("storms");
+	case "風暴" attend labelFunc0430_024C:
+	UI_remove_answer("風暴");
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0430_023B;
-	message("\"My sole hope is now that the conspiracy of Kylista and Voldin hath been exposed the curse which lies upon this land might be raised.\"");
+	message("「我唯一的希望是，現在 Kylista 和 Voldin 的陰謀已被揭露，籠罩在這片土地上的詛咒也許能夠被解除。」");
 	say();
-	message("\"Can a City built upon the concept of Pure Beauty remain cursed? I hope not...\"");
+	message("「一個建立在純粹美( Pure Beauty )理念上的城市，難道能永遠受到詛咒嗎？我希望不會……」");
 	say();
 	goto labelFunc0430_024C;
 labelFunc0430_023B:
-	message("\"What foulness is about in the land! That I received one of the harbingers of Fawn's doom stains my Beauty! Even the heavens lash out to burn away the vile truth that I harbor within mine heart!\"");
+	message("「這片大地上發生了多麼骯髒的事！我接待了一個預示幼鹿城( Fawn )厄運的先兆，這玷污了我的美( Beauty )！就連蒼天都在怒吼，要燒盡我心中藏匿的醜陋真相！」");
 	say();
-	UI_add_answer(["harbingers", "vile truth"]);
+	UI_add_answer(["先兆", "醜陋真相"]);
 labelFunc0430_024C:
-	case "harbingers" attend labelFunc0430_028D:
-	message("\"When those sailors -- those false prophets -- first landed on our shores, two of their number came to seek me. One was a mage of some sort who came seeking what reagents I grow.\"");
+	case "先兆" attend labelFunc0430_028D:
+	message("「當那些水手——那些假先知——第一次登上我們的海岸時，他們之中有兩人前來找我。其中一個是某種法師，前來尋找我培植的藥草。」");
 	say();
 	if (!gflags[0x01A3]) goto labelFunc0430_0272;
-	message("\"The other... as thou knowest, was Ruggs.\"");
+	message("「另一個……正如你所知道的，是 Ruggs。」");
 	say();
-	UI_add_answer(["false prophets", "mage"]);
+	UI_add_answer(["假先知", "法師"]);
 	goto labelFunc0430_0286;
 labelFunc0430_0272:
-	message("\"The other... He was a thief who wore a face none could love. He stole mine heart away!\"");
+	message("「另一個……他是個小偷，長著一張無人能愛的臉。他偷走了我的心！」");
 	say();
-	UI_add_answer(["false prophets", "mage", "thief"]);
+	UI_add_answer(["假先知", "法師", "小偷"]);
 labelFunc0430_0286:
-	UI_remove_answer("harbingers");
+	UI_remove_answer("先兆");
 labelFunc0430_028D:
-	case "false prophets" attend labelFunc0430_02C5:
-	UI_remove_answer("false prophets");
+	case "假先知" attend labelFunc0430_02C5:
+	UI_remove_answer("假先知");
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0430_02B6;
-	message("\"But now I am so confused... 'Twas Kylista who told us that The Fellowship was false, but now she doth stand accused of heresy...\"");
+	message("「但現在我太困惑了……是 Kylista 告訴我們友誼會( The Fellowship )是虛假的，但現在她卻被指控異端……」");
 	say();
-	message("\"And The Fellowship is again openly admitted within the city! I know not what to think.\"");
+	message("「而友誼會( The Fellowship )又重新被允許在城裡公開出現！我不知道該怎麼想。」");
 	say();
 	goto labelFunc0430_02C5;
 labelFunc0430_02B6:
-	message("\"That is what the Priestess of Beauty calls them. They speak of something called The Fellowship, and claim that it will make our lives complete.\"");
+	message("「那是美之祭司( Priestess of Beauty )對他們的稱呼。他們談論一個叫做友誼會( The Fellowship )的組織，並宣稱它將使我們的生活完整。」");
 	say();
-	message("\"Everyone knows that the true way lies along Beauty's path. By seeking Beauty, we draw all good things to us.\" *\"I rue the day I ever saw him!\"");
+	message("「每個人都知道，真正的道路在於追求美( Beauty )的道路。藉由追求美( Beauty )，我們能吸引一切美好的事物。」 *「我真懊悔那天見到了他！」");
 	say();
-	UI_add_answer("Fellowship");
+	UI_add_answer("友誼會");
 labelFunc0430_02C5:
-	case "Fellowship" attend labelFunc0430_02D8:
-	message("\"I can tell thee nothing. Nothing! I would not listen to such blasphemy. 'Tis enough that one of them hath bewitched me and stolen mine heart...\"");
+	case "友誼會" attend labelFunc0430_02D8:
+	message("「我什麼都不能告訴你。什麼都不能！我不會聽這種褻瀆之言。他們之中有一個人已經迷惑了我，偷走了我的心……這已經夠了。」");
 	say();
-	UI_remove_answer("Fellowship");
+	UI_remove_answer("友誼會");
 labelFunc0430_02D8:
-	case "mage" attend labelFunc0430_02F6:
-	message("\"I think his companion called him by the name Batlin.\" *\"He was disappointed in what little I had to offer in the way of reagents. I told him to seek out Pothos in Moonshade for a better selection.\"");
+	case "法師" attend labelFunc0430_02F6:
+	message("「我想他的同伴叫他巴特林( Batlin )。」 *「他對我所能提供的藥草非常失望。我讓他去月影城( Moonshade )找 Pothos，那裡有更多選擇。」");
 	say();
-	message("\"He also inquired about blackrock carvings or sculpture, I do not remember exactly. I told him to ask Delin, who doth know artisans in Monitor and Moonshade.\"");
+	message("「他也詢問了黑石雕刻或雕塑的事，我記不太清楚了。我讓他去問 Delin，他認識蒙利多城( Monitor )和月影城( Moonshade )的工匠。」");
 	say();
-	UI_remove_answer("mage");
+	UI_remove_answer("法師");
 	UI_add_answer("Delin");
 labelFunc0430_02F6:
-	case "buy" attend labelFunc0430_0327:
+	case "買賣" attend labelFunc0430_0327:
 	if (!(UI_get_schedule_type(0xFFD0) == 0x0007)) goto labelFunc0430_0316;
-	message("\"What dost thou wish to purchase?\"");
+	message("「你想購買什麼？」");
 	say();
 	Func081B();
 	goto labelFunc0430_0327;
 labelFunc0430_0316:
-	message("\"I will gladly sell thee vegetables or reagents when I am open, ");
+	message("「我很樂意在開業時賣給你蔬菜或藥草， ");
 	message(var0000);
-	message(". Come to Healers Hall or the greenhouse during the daytime.\"");
+	message("。白天可以來治療師大廳或溫室找我。」");
 	say();
-	UI_remove_answer("buy");
+	UI_remove_answer("買賣");
 labelFunc0430_0327:
 	case "Delin" attend labelFunc0430_0345:
-	message("\"Delin is Fawn's dry goods dealer, poor man. I wished Batlin luck in discussing anything with him.\"");
+	message("「Delin 是幼鹿城( Fawn )的雜貨商，可憐的人。我祝巴特林( Batlin )能和他談上什麼的好運。」");
 	say();
-	message("\"Delin hath not been right since his wife died in childbirth. His daughter, Alyssand, hath always looked after him, though she hath problems of her own now.\"");
+	message("「Delin 自從妻子難產而死後就一直不太對勁了。他的女兒 Alyssand 一直照顧著他，儘管她現在也有自己的煩惱。」");
 	say();
 	UI_remove_answer("Delin");
 	UI_add_answer("Alyssand");
@@ -205,183 +205,183 @@ labelFunc0430_0345:
 	case "Alyssand" attend labelFunc0430_0383:
 	UI_remove_answer("Alyssand");
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0430_036E;
-	message("\"Hast thou not heard? Lady Yelinda doth look to the young woman as her chief advisor!\"");
+	message("「你沒聽說嗎？Yelinda 夫人把那個年輕女子視為她的首席顧問！」");
 	say();
-	message("\"Alyssand hath never been so busy, nor so burdened with cares. She doth work to exhaustion, yet I think she is happy.\"");
+	message("「Alyssand 從來沒有這麼忙碌過，也沒有這麼多煩惱。她工作到精疲力竭，但我想她是快樂的。」");
 	say();
 	goto labelFunc0430_0383;
 labelFunc0430_036E:
-	message("\"Alyssand hath always been a headstrong girl. Thou wouldst expect it of someone with her responsibilities. We all thought Keth would take care of her, keep her under control. But then Keth was lost in one of those terrible storms.\"");
+	message("「Alyssand 一直是個意志堅強的女孩。以她肩負的責任來說，這是可以理解的。我們都以為 Keth 會照顧她，讓她安分下來。但後來 Keth 在一場可怕的風暴中失蹤了。」");
 	say();
-	message("\"Alyssand swore that as long as she had his ring there was still hope that he would return. When that disappeared not long ago, she seemed to go mad! She seems to have fallen in with those blasphemers and claims that the Oracle is a sham.\"");
+	message("「Alyssand 發誓，只要她還戴著他的戒指，就仍有希望 Keth 會回來。不久前那枚戒指失蹤了，她似乎瘋了！她似乎已與那些褻瀆者同流合污，聲稱神諭( Oracle )是個騙局。」");
 	say();
-	UI_add_answer(["ring", "Oracle"]);
+	UI_add_answer(["戒指", "神諭"]);
 labelFunc0430_0383:
-	case "ring" attend labelFunc0430_03B2:
-	message("\"I cannot tell thee very much about it. I fear that I only glanced at it... I would know it if I saw it again, though.\"");
+	case "戒指" attend labelFunc0430_03B2:
+	message("「我對它知之甚少。我只是瞥了一眼……但若再次看到，我應該能認出來。」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0377, 0xFE99, 0x0000)) goto labelFunc0430_03A8;
-	message("\"I could not swear before the Oracle that this is truly Alyssand's ring. But it certainly doth look like it...\" *\"Thou shouldst find Alyssand and ask her, to be sure.\"");
+	message("「我無法在神諭( Oracle )面前發誓，這確實是 Alyssand 的戒指。但它看起來確實像……」 *「你應該去找 Alyssand 問她，以確認此事。」");
 	say();
 labelFunc0430_03A8:
 	Func08A9();
-	UI_remove_answer("ring");
+	UI_remove_answer("戒指");
 labelFunc0430_03B2:
-	case "Oracle" attend labelFunc0430_03CC:
-	message("\"Thou dost not know of the Oracle of Fawn? The Oracle is the instrument of Beauty here on Serpent Isle. It receives messages from the heavens, which Kylista makes plain for everyone to understand.\"");
+	case "神諭" attend labelFunc0430_03CC:
+	message("「你不知道幼鹿城( Fawn )的神諭( Oracle )嗎？神諭( Oracle )是美( Beauty )在巨蛇之島( Serpent Isle )上的載體。它接收來自天界的訊息，由 Kylista 解釋給眾人聽。」");
 	say();
-	UI_remove_answer("Oracle");
+	UI_remove_answer("神諭");
 	UI_add_answer("Kylista");
 labelFunc0430_03CC:
 	case "Kylista" attend labelFunc0430_03E6:
-	message("\"Kylista is the Priestess of Beauty, all honor to her. 'Tis she that instructs us all in Beauty's truth, which she receives in revelations from the Oracle.\" *\"Even Lady Yelinda honors Kylista's wisdom.\"");
+	message("「Kylista 是美之祭司( Priestess of Beauty )，讓她受人崇敬。是她教導我們美( Beauty )的真理，她在神諭( Oracle )的啟示中接收這些真理。」 *「就連 Yelinda 夫人也尊重 Kylista 的智慧。」");
 	say();
 	UI_remove_answer("Kylista");
-	UI_add_answer("Lady Yelinda");
+	UI_add_answer("Yelinda 夫人");
 labelFunc0430_03E6:
-	case "Lady Yelinda" attend labelFunc0430_03F9:
-	message("\"Lady Yelinda, honor to her, is the ruler of Fawn. She is the most beautiful woman in the city, the very embodiment of Beauty.\"");
+	case "Yelinda 夫人" attend labelFunc0430_03F9:
+	message("「Yelinda 夫人，榮耀歸於她，是幼鹿城( Fawn )的統治者。她是城裡最美麗的女人，是美( Beauty )的化身。」");
 	say();
-	UI_remove_answer("Lady Yelinda");
+	UI_remove_answer("Yelinda 夫人");
 labelFunc0430_03F9:
-	case "thief" attend labelFunc0430_040C:
-	message("\"Thief, yes, that's what he is! His name is Ruggs, and he hath bewitched me. Perhaps he is some sort of mage, like his companion.\" *\"He hath stolen mine heart and I do not know what to do.\"");
+	case "小偷" attend labelFunc0430_040C:
+	message("「小偷，對，那就是他！他的名字是 Ruggs，他迷惑了我。也許他是某種法師，就像他的同伴一樣。」 *「他偷走了我的心，我不知道該怎麼辦。」");
 	say();
-	UI_remove_answer("thief");
+	UI_remove_answer("小偷");
 labelFunc0430_040C:
-	case "vile truth" attend labelFunc0430_041F:
-	message("\"I must confess, I am the cause of these storms. I know I am. I must live with the vile truth that I hold in mine heart of hearts.\" *\"I am in love with one of those who brought this ruin upon my city! Although I did not embrace his beliefs, mine heart embraced him.\" *\"I am as guilty as Alyssand! I cannot see how she bears such shame...\"");
+	case "醜陋真相" attend labelFunc0430_041F:
+	message("「我必須坦白，我就是這些風暴的起因。我知道我是。我必須帶著心底深藏的醜陋真相生活下去。」 *「我愛上了那些給我的城市帶來毀滅的人中的其中一個！雖然我沒有接受他的信念，但我的心卻接受了他。」 *「我和 Alyssand 一樣有罪！我想不出她是如何承受這樣的恥辱的……」");
 	say();
-	UI_remove_answer("vile truth");
+	UI_remove_answer("醜陋真相");
 labelFunc0430_041F:
-	case "apparatus" attend labelFunc0430_0466:
-	UI_remove_answer("apparatus");
+	case "器具" attend labelFunc0430_0466:
+	UI_remove_answer("器具");
 	if (!Func097D(0xFE9B, 0x0001, 0x02ED, 0xFE99, 0x0001)) goto labelFunc0430_0458;
-	message("\"That is a piece of Mage's equipment, ");
+	message("「那是一件法師的設備， ");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
-	message("\"Thou sayest it is not thine? Hmmm... Then thou wilt have to enquire in Moonshade to find who it belongs to.\"");
+	message("「你說那不是你的？嗯……那麼你必須去月影城( Moonshade )打聽是誰的。」");
 	say();
-	message("\"Each Mage's equipment is different from every other Mage's... As much for pride as anything else. I am sorry I cannot be of any more help to thee.\"");
+	message("「每位法師的設備都與其他法師的不同……很大程度上是出於自尊。很抱歉我無法幫上更多忙。」");
 	say();
 	goto labelFunc0430_0466;
 labelFunc0430_0458:
-	message("\"It sounds like a piece of Mage's equipment, ");
+	message("「聽起來像是一件法師的設備， ");
 	message(var0000);
-	message(". But I could not be certain without seeing it. It could be a simple piece of brewing equipment for all I know.\"");
+	message("。但不親眼看到，我無法確定。對我來說，它也可能只是一件普通的釀造設備。」");
 	say();
-	message("\"Thou couldst enquire in Moonshade, to see if any of the Mages are missing any equipment. I am sorry I cannot be of any more help to thee.\"");
+	message("「你可以去月影城( Moonshade )打聽，看看是否有法師遺失了什麼設備。很抱歉我無法幫上更多忙。」");
 	say();
 labelFunc0430_0466:
-	case "pumice" attend labelFunc0430_04A7:
-	UI_remove_answer("pumice");
+	case "浮岩" attend labelFunc0430_04A7:
+	UI_remove_answer("浮岩");
 	gflags[0x0290] = true;
 	if (!Func097D(0xFE9B, 0x0001, 0x010B, 0xFE99, 0xFE99)) goto labelFunc0430_049F;
-	message("\"Why, that is pumice, ");
+	message("「哎，這是浮岩( pumice )， ");
 	message(var0000);
-	message(". 'Tis very unusual to see any here in Fawn... There is no volcanic activity anywhere near.\"");
+	message("。在幼鹿城( Fawn )這裡見到這種東西非常不尋常……附近根本沒有火山活動。」");
 	say();
-	message("\"The only place that such a rock could have come from, that I know of, is somewhere beyond Moonshade.\"");
+	message("「就我所知，這種岩石唯一可能來自的地方，是在月影城( Moonshade )更遠的地方。」");
 	say();
 	goto labelFunc0430_04A7;
 labelFunc0430_049F:
-	message("\"A grayish rock? Light in weight for its mass?\"");
+	message("「灰色的岩石？重量比體積輕？」");
 	say();
-	message("\"This sounds like pumice, to me. The only place that such a rock could have come from, that I know of, is somewhere beyond Moonshade... Where there is volcanic activity.\"");
+	message("「聽起來像是浮岩( pumice )。就我所知，這種岩石唯一可能來自的地方，是在月影城( Moonshade )更遠的地方……那裡有火山活動。」");
 	say();
 labelFunc0430_04A7:
-	case "blue egg" attend labelFunc0430_04EF:
-	UI_remove_answer("blue egg");
+	case "藍蛋" attend labelFunc0430_04EF:
+	UI_remove_answer("藍蛋");
 	if (!Func097D(0xFE9B, 0x0001, 0x0241, 0xFE99, 0x0003)) goto labelFunc0430_04E7;
-	message("\"What a putrid smell!\"");
+	message("「多難聞的氣味！」");
 	say();
-	message("\"Remove that immediately!\"");
+	message("「立刻把那東西拿走！」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(0xFFD0, "@Take it away!@", 0x0000);
+	Func097F(0xFFD0, "@把它帶走！@", 0x0000);
 	abort;
 	goto labelFunc0430_04EF;
 labelFunc0430_04E7:
-	message("\"A blue egg? I have never heard of a blue egg.\"");
+	message("「藍蛋？我從來沒聽說過藍蛋。」");
 	say();
-	message("\"Perhaps thou couldst try asking someone in Moonshade. I am told that the Mages have a great library on their island, full of unusual things.\"");
+	message("「也許你可以試著去問月影城( Moonshade )的人。據說法師們在他們的島上有一個大型圖書館，裡面滿是稀奇古怪的東西。」");
 	say();
 labelFunc0430_04EF:
-	case "glowing rock" attend labelFunc0430_053A:
-	UI_remove_answer("glowing rock");
+	case "發光岩石" attend labelFunc0430_053A:
+	UI_remove_answer("發光岩石");
 	if (!Func097D(0xFE9B, 0x0001, 0x034A, 0xFE99, 0x000F)) goto labelFunc0430_0528;
-	message("\"That is no reagent that I know of, ");
+	message("「這不是我所知道的任何藥草， ");
 	message(var0000);
-	message(". But it is fascinating...\"");
+	message("。但它令人著迷……」");
 	say();
-	message("\"I am sure that it is magical, but I do not know how. And for some reason I feel I should ask thee to take it away from here and forget that I saw it...\"");
+	message("「我確定它有魔力，但我不知道是什麼魔力。由於某種原因，我覺得我應該讓你把它帶離這裡，並假裝我從未見過它……」");
 	say();
-	message("\"I am sorry I cannot be of more help.\"");
+	message("「很抱歉我無法提供更多幫助。」");
 	say();
 	goto labelFunc0430_053A;
 labelFunc0430_0528:
-	message("\"It is no reagent that I know of, ");
+	message("「這不是我所知道的任何藥草， ");
 	message(var0000);
-	message(". But it sounds fascinating...\"");
+	message("。但聽起來令人著迷……」");
 	say();
-	message("\"I am sure that it is magical, if it glows and is cool enough to hold. But I have never heard of it before.\"");
+	message("「如果它會發光而且拿起來還是涼的，我確定它有魔力。但我以前從未聽說過它。」");
 	say();
-	message("\"I am sorry I cannot be of more help.\"");
+	message("「很抱歉我無法提供更多幫助。」");
 	say();
 labelFunc0430_053A:
-	case "letter" attend labelFunc0430_05D4:
+	case "信件" attend labelFunc0430_05D4:
 	if (!Func097D(0xFE9B, 0x0001, 0x031D, 0x0004, 0xFE99)) goto labelFunc0430_05B2;
-	message("\"A letter from Ruggs? Oh, I must see it!\"");
+	message("「Ruggs 的信？哦，我一定要看！」");
 	say();
 	var0001 = UI_remove_party_items(0x0001, 0x031D, 0x0004, 0x0005, false);
 	gflags[0x01A3] = true;
-	message("\"I am adrift! I am torn to my very soul and I know not what to do. Thou must help me.\"");
+	message("「我心神不定！我的靈魂被撕裂了，我不知道該怎麼辦。你一定要幫我。」");
 	say();
-	message("\"Ruggs hath told me often of his love for me. In truth 'twould be a lie if I were to say that I did not care for him. But he is so... deformed... so ugly, that I know not what to think.\"");
+	message("「Ruggs 多次告訴我他對我的愛。說實話，如果我說我對他毫無感情，那就是謊言。但他是如此……醜陋……如此難看，讓我不知道該怎麼想。」");
 	say();
-	message("\"All I have been taught tells me that Ruggs' features are the outward sign of the evil within. Yet I can find no trace of it... If that is wrong, what else might also be false?\" *\"I am shaken to my very core, but I cannot deny mine heart.\"");
+	message("「我所受過的一切教育都告訴我，Ruggs 的外貌是其內心邪惡的外在表現。然而我卻找不到絲毫邪惡的痕跡……如果這是錯的，還有什麼其他的也可能是假的？」 *「我被動搖到了靈魂的核心，但我無法否認我的心。」");
 	say();
-	message("\"Wilt thou carry a letter back to Ruggs for me?\"");
+	message("「你願意替我帶封信回給 Ruggs 嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0430_05AB;
-	message("\"There is no one else that I can trust such a secret to.\" *\"If there be a way, some day I will go to him.\"");
+	message("「沒有其他人是我可以信任這個秘密的。」 *「如果有辦法，總有一天我會去找他的。」");
 	say();
 	var0001 = Func099B(0xFE9C, 0x0001, 0x031D, 0x001B, 0x0000, false, true);
 	gflags[0x0150] = true;
 	goto labelFunc0430_05AF;
 labelFunc0430_05AB:
-	message("\"Perhaps it is best this way... I know not how to look upon his face and not wonder if there is some evil lurking there.\"");
+	message("「也許這樣最好……我不知道該如何直視他的臉，又不去猜想那裡是否藏著什麼邪惡。」");
 	say();
 labelFunc0430_05AF:
 	goto labelFunc0430_05CD;
 labelFunc0430_05B2:
-	message("\"Thou dost lie! I see no letter!\"");
+	message("「你在說謊！我什麼信都沒看到！」");
 	say();
-	Func097F(0xFFD0, "@Liar!@", 0x0000);
+	Func097F(0xFFD0, "@說謊者！@", 0x0000);
 	UI_set_schedule_type(0xFFD0, 0x0014);
 	abort;
 labelFunc0430_05CD:
-	UI_remove_answer("letter");
+	UI_remove_answer("信件");
 labelFunc0430_05D4:
-	case "Varo Leaves" attend labelFunc0430_0611:
-	UI_remove_answer("Varo Leaves");
+	case "瓦羅葉" attend labelFunc0430_0611:
+	UI_remove_answer("瓦羅葉");
 	if (!(gflags[0x0076] == true)) goto labelFunc0430_05F2;
-	message("\"Harnna would not have sent thee if thou didst not have great need of the Varo leaves. I would help thee if I could. But my skills as a healer are limited. Take these leaves back to Harnna quickly, before thou dost worsen.\"");
+	message("「Harnna 若非你有迫切需要瓦羅葉( Varo leaves )，是不會派你來的。如果我能幫忙的話，我很願意。但我作為治療師的技能有限。把這些葉子儘快帶回給 Harnna，在你的情況惡化之前。」");
 	say();
 	goto labelFunc0430_05F6;
 labelFunc0430_05F2:
-	message("\"Thou canst only be permanently cured of thine infection by a special ointment made from Varo leaves. I do not know how to make the ointment myself, however. Take these leaves back to Harnna in Monitor quickly, before thou dost worsen. She is a true healer and will be able to help thee.\"");
+	message("「你的感染只能用一種由瓦羅葉( Varo leaves )製成的特殊藥膏才能永久治癒。然而我自己不會製作那種藥膏。趕快把這些葉子帶回蒙利多城( Monitor )的 Harnna 那裡，在你的情況惡化之前。她是一位真正的治療師，能夠幫助你。」");
 	say();
 labelFunc0430_05F6:
 	gflags[0x01A5] = true;
 	var0001 = Func099B(0xFE9C, 0x0005, 0x01D3, 0xFE99, 0x0003, false, true);
 labelFunc0430_0611:
-	case "bye" attend labelFunc0430_063E:
+	case "告辭" attend labelFunc0430_063E:
 	Func08AB();
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Many thanks.@", 0x0000);
-	Func097F(0xFFD0, "@Walk in Beauty.@", 0x0005);
+	Func097F(0xFE9C, "@多謝了。@", 0x0000);
+	Func097F(0xFFD0, "@願美貌與你同行。@", 0x0005);
 	Func08AA();
 	goto labelFunc0430_0641;
 labelFunc0430_063E:
