@@ -43,24 +43,24 @@ labelFunc028C_0084:
 	UI_set_item_flag(var0005, 0x0012);
 	var0005 = UI_update_last_created(UI_get_object_position(0xFE9C));
 labelFunc028C_00CC:
-	var0005 = UI_execute_usecode_array(0xFFB8, [(byte)0x23, (byte)0x27, 0x0004, (byte)0x63, (byte)0x01, (byte)0x58, 0x000A, (byte)0x6A, (byte)0x67, (byte)0x6A, (byte)0x01, (byte)0x58, 0x000C, (byte)0x52, "@'Tis done!@", (byte)0x67, (byte)0x62, (byte)0x63, (byte)0x61, (byte)0x55, 0x028C]);
+	var0005 = UI_execute_usecode_array(0xFFB8, [(byte)0x23, (byte)0x27, 0x0004, (byte)0x63, (byte)0x01, (byte)0x58, 0x000A, (byte)0x6A, (byte)0x67, (byte)0x6A, (byte)0x01, (byte)0x58, 0x000C, (byte)0x52, "@完成了！@", (byte)0x67, (byte)0x62, (byte)0x63, (byte)0x61, (byte)0x55, 0x028C]);
 	abort;
 labelFunc028C_0109:
 	if (!(UI_get_npc_id(0xFFB8) == 0x0002)) goto labelFunc028C_0165;
 	UI_set_npc_id(0xFFB8, 0x0003);
-	var0005 = UI_execute_usecode_array(0xFFB8, [(byte)0x23, (byte)0x52, "@Thou art doing well...@", (byte)0x66, (byte)0x65, (byte)0x67, (byte)0x01, (byte)0x58, 0x003E, (byte)0x6A, (byte)0x27, 0x000C, (byte)0x6F, (byte)0x52, "@Whoops!@", (byte)0x66, (byte)0x67, (byte)0x6A, (byte)0x01, (byte)0x58, 0x001B, (byte)0x6F, (byte)0x55, 0x028C]);
+	var0005 = UI_execute_usecode_array(0xFFB8, [(byte)0x23, (byte)0x52, "@你做得不錯……@", (byte)0x66, (byte)0x65, (byte)0x67, (byte)0x01, (byte)0x58, 0x003E, (byte)0x6A, (byte)0x27, 0x000C, (byte)0x6F, (byte)0x52, "@哎呀！@", (byte)0x66, (byte)0x67, (byte)0x6A, (byte)0x01, (byte)0x58, 0x001B, (byte)0x6F, (byte)0x55, 0x028C]);
 	abort;
 labelFunc028C_0165:
 	if (!(UI_get_npc_id(0xFFB8) == 0x0001)) goto labelFunc028C_01C2;
 	UI_set_schedule_type(0xFFB8, 0x000F);
 	UI_set_npc_id(0xFFB8, 0x0002);
-	var0005 = UI_execute_usecode_array(0xFFB8, [(byte)0x23, (byte)0x55, 0x07D2, (byte)0x52, "@Hold thy breath.@", (byte)0x6A, (byte)0x01, (byte)0x58, 0x000A, (byte)0x27, 0x0004, (byte)0x67, (byte)0x01, (byte)0x58, 0x000C, (byte)0x27, 0x0006, (byte)0x55, 0x028C]);
+	var0005 = UI_execute_usecode_array(0xFFB8, [(byte)0x23, (byte)0x55, 0x07D2, (byte)0x52, "@屏住呼吸。@", (byte)0x6A, (byte)0x01, (byte)0x58, 0x000A, (byte)0x27, 0x0004, (byte)0x67, (byte)0x01, (byte)0x58, 0x000C, (byte)0x27, 0x0006, (byte)0x55, 0x028C]);
 	abort;
 labelFunc028C_01C2:
 	if (!(UI_get_npc_id(0xFFB8) == 0x0000)) goto labelFunc028C_0240;
 	UI_set_schedule_type(0xFE9C, 0x000F);
 	UI_set_npc_id(0xFFB8, 0x0001);
-	Func097F(0xFFB8, "@Now we begin...@", 0x0000);
+	Func097F(0xFFB8, "@現在開始……@", 0x0000);
 	var0004 = UI_get_object_position(var0003);
 	var0004[0x0002] = (var0004[0x0002] + 0x0001);
 	UI_si_path_run_usecode(0xFFB8, var0004, 0x0002, item, 0x028C, false);
@@ -70,7 +70,7 @@ labelFunc028C_01C2:
 labelFunc028C_0240:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFB8, 0x0000);
-	message("\"Use a cloth to soak up the blood...\"");
+	message("「用布料擦去血跡……」");
 	say();
 	enum();
 labelFunc028C_0253:
@@ -84,7 +84,7 @@ labelFunc028C_026B:
 	gflags[0x0098] = true;
 	gflags[0x003E] = true;
 	var0005 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0001), [(byte)0x23, (byte)0x55, 0x0448], 0x03E8);
-	var0009 = Func0992(0xFFFD, "@Thou dost look magnificent, Avatar!@", 0x0000, false);
+	var0009 = Func0992(0xFFFD, "@你看起來真是美極了，聖者！@", 0x0000, false);
 	if (!(var0009 != 0xFE9C)) goto labelFunc028C_0371;
 	if (!(UI_get_array_size(var0002) > 0x0002)) goto labelFunc028C_0371;
 	var000A = var0009;
@@ -93,7 +93,7 @@ labelFunc028C_02D9:
 	var000A = Func0992(0x0001, 0x0000, 0x0000, false);
 	goto labelFunc028C_02D9;
 labelFunc028C_02F6:
-	var000A = Func0992(var000A, (("@Quite becoming, " + var0001) + ".@"), 0x0000, false);
+	var000A = Func0992(var000A, (("@非常好看，" + var0001) + "。@"), 0x0000, false);
 	if (!(UI_get_array_size(var0002) > 0x0003)) goto labelFunc028C_0371;
 	var000B = var000A;
 labelFunc028C_0322:
@@ -102,10 +102,10 @@ labelFunc028C_0322:
 	goto labelFunc028C_0322;
 labelFunc028C_0347:
 	if (!(!var0000)) goto labelFunc028C_0361;
-	var000B = Func0992(var000B, "@Thou dost look quite the fop, milord!@", 0x0000, false);
+	var000B = Func0992(var000B, "@你看起來真像個花花公子，大人！@", 0x0000, false);
 	goto labelFunc028C_0371;
 labelFunc028C_0361:
-	var000B = Func0992(var000B, "That is quite a beauty mark, milady. Hmpf!", 0x0000, false);
+	var000B = Func0992(var000B, "那顆痣真是美妙，女士。哼！", 0x0000, false);
 labelFunc028C_0371:
 	return;
 }

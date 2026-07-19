@@ -31,19 +31,19 @@ labelFunc033D_0032:
 	var0000 = Func0953();
 	UI_set_item_flag(0xFE9C, 0x0010);
 	UI_end_conversation();
-	var0001 = (("@" + var0000) + ", I am afraid.@");
+	var0001 = (("@" + var0000) + "，我有點害怕。@");
 	UI_item_say(0xFFE4, var0001);
 	var0002 = UI_direction_from(0xFE9C, 0xFFE4);
 	var0003 = UI_direction_from(0xFFE4, 0xFE9C);
 	UI_halt_scheduled(0xFE9C);
-	var0004 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@Don't worry,@", (byte)0x27, 0x000E, (byte)0x55, 0x033D], 0x000E);
+	var0004 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@別擔心，@", (byte)0x27, 0x000E, (byte)0x55, 0x033D], 0x000E);
 	gflags[0x0007] = false;
 	gflags[0x0008] = true;
 	return;
 labelFunc033D_00AF:
 	if (!gflags[0x0008]) goto labelFunc033D_00E3;
 	UI_halt_scheduled(0xFE9C);
-	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@Everything should@", (byte)0x27, 0x000C, (byte)0x55, 0x033D]);
+	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@一切都會@", (byte)0x27, 0x000C, (byte)0x55, 0x033D]);
 	gflags[0x0008] = false;
 	gflags[0x0009] = true;
 	return;
@@ -58,7 +58,7 @@ labelFunc033D_00E3:
 	var0006 = UI_get_object_position(0xFE9C);
 	var0002 = UI_direction_from(0xFE9C, 0xFFE4);
 	var0003 = UI_direction_from(0xFFE4, 0xFE9C);
-	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@...be fine...@"]);
+	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@……沒事的……@"]);
 	var0004 = UI_execute_usecode_array(0xFFE4, [(byte)0x23, (byte)0x27, 0x0004, (byte)0x55, 0x033D]);
 	var0007 = UI_get_object_position(0xFFE4);
 	UI_sprite_effect(0x002B, var0007[0x0001], var0007[0x0002], 0x0000, 0x0000, 0x0001, 0xFFFF);

@@ -27,7 +27,7 @@ labelFunc0346_0058:
 labelFunc0346_008A:
 	goto labelFunc0346_0099;
 labelFunc0346_008D:
-	Func097F(0xFE9C, "@Ale? Where art thou?@", 0x0000);
+	Func097F(0xFE9C, "@ Ale ？你在哪裡？@", 0x0000);
 labelFunc0346_0099:
 	goto labelFunc0346_0108;
 labelFunc0346_009C:

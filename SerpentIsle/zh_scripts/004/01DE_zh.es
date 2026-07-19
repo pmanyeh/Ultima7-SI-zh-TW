@@ -11,7 +11,7 @@ void Func01DE shape#(0x1DE) ()
 	UI_remove_item(item);
 	goto labelFunc01DE_006D;
 labelFunc01DE_0065:
-	UI_item_say(item, "Kill the Avatar!");
+	UI_item_say(item, "殺死聖者！");
 labelFunc01DE_006D:
 	return;
 }

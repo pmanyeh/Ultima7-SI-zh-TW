@@ -43,7 +43,7 @@ labelFunc0281_0095:
 	if (!((!UI_get_item_flag(0xFFE1, 0x0004)) && ((UI_get_item_quality(var0000) == 0x00BA) && ((var0001 == 0x0178) && (!gflags[0x0148]))))) goto labelFunc0281_0112;
 	UI_set_schedule_type(0xFFE1, 0x0003);
 	UI_set_item_flag(0xFFE1, 0x001D);
-	Func097F(0xFFE1, "@Aha!@", 0x0000);
+	Func097F(0xFFE1, "@啊哈！@", 0x0000);
 	var0005 = UI_find_nearby(item, 0x016B, 0x001E, 0x0000);
 	enum();
 labelFunc0281_00FA:
@@ -57,7 +57,7 @@ labelFunc0281_0112:
 labelFunc0281_0130:
 	if (!((!gflags[0x01E6]) && ((UI_get_item_quality(var0000) == 0x0075) && (!UI_get_item_flag(0xFFD4, 0x0006))))) goto labelFunc0281_0162;
 	UI_add_to_party(0xFFD4);
-	Func097F(0xFFD4, "@Wait for me!@", 0x0002);
+	Func097F(0xFFD4, "@等等我！@", 0x0002);
 labelFunc0281_0162:
 	if (!(UI_get_item_shape(var0000[0x0001]) in [0x0178, 0x010E, 0x01B0, 0x01B1])) goto labelFunc0281_018F;
 	if (!(var0002 == var0003)) goto labelFunc0281_018F;
@@ -65,7 +65,7 @@ labelFunc0281_0162:
 labelFunc0281_018F:
 	if (!(var0001 == 0x020A)) goto labelFunc0281_01C7;
 	if (!(var0002 == var0003)) goto labelFunc0281_01C7;
-	UI_item_say(var0000, "Unlocked");
+	UI_item_say(var0000, "已解鎖");
 	UI_set_item_shape(var0000, 0x0320);
 	if (!(var0003 == 0x00FF)) goto labelFunc0281_01C7;
 	var0000->Func020A();
@@ -84,12 +84,12 @@ labelFunc0281_0209:
 	goto labelFunc0281_01F2;
 labelFunc0281_0216:
 	if (!var000A) goto labelFunc0281_0229;
-	UI_item_say(0xFE9C, "Key inside");
+	UI_item_say(0xFE9C, "裡面有鑰匙");
 	goto labelFunc0281_0244;
 labelFunc0281_0229:
 	UI_close_gump(var0000);
 	UI_set_item_shape(var0000, 0x020A);
-	UI_item_say(var0000, "Locked");
+	UI_item_say(var0000, "上鎖了");
 labelFunc0281_0244:
 	return;
 }

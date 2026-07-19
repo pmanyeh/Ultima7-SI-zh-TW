@@ -57,8 +57,8 @@ labelFunc02E8_0068:
 	if (!var0001) goto labelFunc02E8_00C4;
 	var0007 = UI_get_object_position(item);
 	UI_si_path_run_usecode(0xFF69, var0007, 0x0007, item, 0x0314, false);
-	var0006 = UI_delayed_execute_usecode_array(var0001, [(byte)0x23, (byte)0x52, "@Thou didst risk thy life...@"], 0x000A);
-	var0006 = UI_delayed_execute_usecode_array(var0001, [(byte)0x23, (byte)0x52, "@Thou art truly ethical!@"], 0x001A);
+	var0006 = UI_delayed_execute_usecode_array(var0001, [(byte)0x23, (byte)0x52, "@你冒了生命危險……@"], 0x000A);
+	var0006 = UI_delayed_execute_usecode_array(var0001, [(byte)0x23, (byte)0x52, "@你真是有道德！@"], 0x001A);
 	UI_set_npc_id(0xFF69, 0x0005);
 labelFunc02E8_00C4:
 	abort;

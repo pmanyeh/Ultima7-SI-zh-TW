@@ -16,15 +16,15 @@ void Func01EF shape#(0x1EF) ()
 	if (!(var0000 > 0x0002)) goto labelFunc01EF_0077;
 	if (!(UI_die_roll(0x0001, 0x0014) == 0x000D)) goto labelFunc01EF_0074;
 	UI_clear_item_say(item);
-	var0001 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@Meow@", (byte)0x27, 0x0008, (byte)0x52, "@Meow!@", (byte)0x27, 0x0008, (byte)0x52, "@Meow!@", (byte)0x27, 0x0008, (byte)0x52, "@Meow!@", (byte)0x27, 0x0008, (byte)0x52, "@Meow!@", (byte)0x27, 0x0008, (byte)0x55, 0x01EF]);
+	var0001 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@喵@", (byte)0x27, 0x0008, (byte)0x52, "@喵！@", (byte)0x27, 0x0008, (byte)0x52, "@喵！@", (byte)0x27, 0x0008, (byte)0x52, "@喵！@", (byte)0x27, 0x0008, (byte)0x52, "@喵！@", (byte)0x27, 0x0008, (byte)0x55, 0x01EF]);
 labelFunc01EF_0074:
 	goto labelFunc01EF_00AB;
 labelFunc01EF_0077:
-	UI_item_say(0xFE9C, "@Here, kitty, kitty!@");
+	UI_item_say(0xFE9C, "@來，小貓咪，小貓咪！@");
 	UI_set_schedule_type(item, 0x0014);
 	UI_set_npc_id(item, (var0000 + 0x0001));
 	if (!UI_npc_nearby(0xFFFE)) goto labelFunc01EF_00AB;
-	Func097F(0xFFFE, "@I hate cats.@", 0x0008);
+	Func097F(0xFFFE, "@我討厭貓。@", 0x0008);
 labelFunc01EF_00AB:
 	if (!(event == 0x0002)) goto labelFunc01EF_0130;
 	var0002 = UI_get_object_position(item);
@@ -34,7 +34,7 @@ labelFunc01EF_00AB:
 	UI_sprite_effect(0x001B, var0002[0x0001], var0002[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_play_sound_effect(0x002A);
 	var0003 = Func0992(0xFFFE, 0x0000, 0x0000, false);
-	Func097F(var0003, "@Bloody cats!@", 0x0008);
+	Func097F(var0003, "@該死的貓！@", 0x0008);
 labelFunc01EF_0130:
 	if (!(event == 0x0000)) goto labelFunc01EF_01EC;
 	if (!gflags[0x000D]) goto labelFunc01EF_01DA;

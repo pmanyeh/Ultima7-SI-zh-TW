@@ -27,7 +27,7 @@ void Func0247 shape#(0x247) ()
 	goto labelFunc0247_00CF;
 labelFunc0247_00B9:
 	var0000[0x0002] = (var0000[0x0002] - 0x0005);
-	Func094A("@There is no room for thy bedroll there.@");
+	Func094A("@那裡沒有空間鋪你的睡袋。@");
 labelFunc0247_00CF:
 	if (!(event == 0x000A)) goto labelFunc0247_0101;
 	var0001 = UI_execute_usecode_array(0xFE9C, [(byte)0x59, (byte)0x30, (byte)0x6C, (byte)0x61]);

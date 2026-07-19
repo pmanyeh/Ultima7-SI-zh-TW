@@ -45,7 +45,7 @@ void Func0289 shape#(0x289) ()
 	if (!(var0000 == 0x0006)) goto labelFunc0289_00A4;
 	var0001 = UI_click_on_item();
 	if (!UI_is_npc(var0001)) goto labelFunc0289_00A4;
-	Func097F(var0001, "@Ow!@", 0x0000);
+	Func097F(var0001, "@噢！@", 0x0000);
 	var0002 = UI_execute_usecode_array(var0001, [(byte)0x23, (byte)0x78, 0x0001, 0x0000]);
 	var0003 = UI_find_nearby(0xFE9C, 0x032A, 0x000A, 0x0000);
 	var0004 = 0x0000;
@@ -96,7 +96,7 @@ labelFunc0289_0186:
 	var0002 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x060F]);
 	var0002 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x060F], 0x0002);
 	var0002 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x060F], 0x0004);
-	Func097F(0xFE9C, "Yeeooww!", 0x0003);
+	Func097F(0xFE9C, "呀啊啊！", 0x0003);
 	UI_clear_item_flag(item, 0x0012);
 	UI_remove_item(item);
 	var0002 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x0289], 0x000A);
@@ -167,7 +167,7 @@ labelFunc0289_04CC:
 	if (!(var0019[0x0001] != 0x0000)) goto labelFunc0289_055D;
 	if (!(UI_is_npc(var0019[0x0001]) && (UI_get_npc_number(var0019[0x0001]) != 0xFE9C))) goto labelFunc0289_050E;
 	var001B = UI_get_npc_number(var0019);
-	Func097F(var001B, "@Don't tie me up!@", 0x0000);
+	Func097F(var001B, "@不要把我綁起來！@", 0x0000);
 	goto labelFunc0289_055A;
 labelFunc0289_050E:
 	if (!(var001A == 0x03BE)) goto labelFunc0289_054A;
@@ -175,16 +175,16 @@ labelFunc0289_050E:
 	Func0887(var0019);
 	goto labelFunc0289_0547;
 labelFunc0289_0536:
-	var001C = Func0992(0x0001, "@Don't leave the rope!@", "@I shouldn't leave the rope!@", false);
+	var001C = Func0992(0x0001, "@別把繩子留下來！@", "@我不該把繩子留下！@", false);
 	return;
 labelFunc0289_0547:
 	goto labelFunc0289_055A;
 labelFunc0289_054A:
-	var001C = Func0992(0x0001, "@Try it on something else!@", "@Perhaps something else...@", false);
+	var001C = Func0992(0x0001, "@試著用在別的東西上吧！@", "@也許用在別的東西上……@", false);
 labelFunc0289_055A:
 	goto labelFunc0289_056D;
 labelFunc0289_055D:
-	var001C = Func0992(0x0001, "@That won't work!@", "@That won't work!@", false);
+	var001C = Func0992(0x0001, "@那樣行不通的！@", "@那樣行不通的！@", false);
 labelFunc0289_056D:
 	if (!(event == 0x0002)) goto labelFunc0289_05CD;
 	if (!(gflags[0x0007] == true)) goto labelFunc0289_05BD;
@@ -192,15 +192,15 @@ labelFunc0289_056D:
 	var001C = Func0992(0x0001, 0x0000, 0x0000, false);
 	if (!(var001C != 0xFE9C)) goto labelFunc0289_05AC;
 	UI_show_npc_face0(var001C, 0x0000);
-	message("\"The dog doth not come! Perhaps thou shouldst try the whistle in a more open place, where the sound will travel.\"");
+	message("「狗沒有過來！也許你該在更空曠的地方吹哨子，讓聲音可以傳遠一點。」");
 	say();
 	goto labelFunc0289_05BC;
 labelFunc0289_05AC:
-	var001C = Func0992(0xFE9C, 0x0000, "@I should try this elsewhere...@", true);
+	var001C = Func0992(0xFE9C, 0x0000, "@我應該在其他地方試試……@", true);
 labelFunc0289_05BC:
 	abort;
 labelFunc0289_05BD:
-	var001C = Func0992(0xFFFD, "@The spellbook! It disintegrated!@", 0x0000, false);
+	var001C = Func0992(0xFFFD, "@法術書！它分解了！@", 0x0000, false);
 labelFunc0289_05CD:
 	return;
 }

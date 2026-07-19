@@ -15,7 +15,7 @@ void Func02BA shape#(0x2BA) ()
 	UI_set_item_frame(var0000, UI_die_roll(0x0000, 0x0002));
 	goto labelFunc02BA_004A;
 labelFunc02BA_0044:
-	Func094A("@Might not those come in handy for cutting cloth into bandages?@");
+	Func094A("@這些東西難道不能用來把布剪成繃帶嗎？@");
 labelFunc02BA_004A:
 	return;
 }

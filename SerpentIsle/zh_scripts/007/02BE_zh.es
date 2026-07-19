@@ -28,7 +28,7 @@ labelFunc02BE_002F:
 labelFunc02BE_0033:
 	if (!(event == 0x000A)) goto labelFunc02BE_007F;
 	UI_show_npc_face0(0xFEF0, 0x0000);
-	message("\"It is a phoenix egg. It is obviously quite rare, and it possesses magical qualities that go beyond explanation.\"");
+	message("「這是一顆鳳凰蛋。很明顯它非常稀有，而且它擁有無法解釋的魔法特質。」");
 	say();
 	var0002 = Func099B(0xFE9C, 0x0001, 0x0289, 0x0000, 0x0001, 0x0000, true);
 	gflags[0x01BC] = true;
@@ -46,119 +46,119 @@ labelFunc02BE_007F:
 	goto labelFunc02BE_00FA;
 labelFunc02BE_00DF:
 	UI_show_npc_face0(0xFEF0, 0x0000);
-	message("\"Greetings to thee!\"");
+	message("「向你問候！」");
 	say();
-	UI_add_answer(["name", "bye"]);
+	UI_add_answer(["姓名", "告辭"]);
 labelFunc02BE_00FA:
 	if (!(event == 0x000B)) goto labelFunc02BE_0121;
 	UI_show_npc_face0(0xFEF0, 0x0000);
-	message("\"That is the greatest gift that I can give to thee. Use it wisely.\"");
+	message("「那是我能給你的最偉大禮物。明智地使用它。」");
 	say();
 	UI_play_sound_effect(0x000F);
-	UI_add_answer(["bye"]);
+	UI_add_answer(["告辭"]);
 labelFunc02BE_0121:
 	gflags[0x0007] = false;
 	if (!gflags[0x01BC]) goto labelFunc02BE_0132;
-	UI_add_answer("domain");
+	UI_add_answer("領域");
 labelFunc02BE_0132:
 	converse attend labelFunc02BE_02E9;
-	case "name" attend labelFunc02BE_0159:
-	UI_remove_answer("name");
-	message("\"Name? Oh, my, what a formality! First thou hast saved my life and then thou dost ask my name! Thou art a curiosity!\"");
+	case "姓名" attend labelFunc02BE_0159:
+	UI_remove_answer("姓名");
+	message("「姓名？喔，天哪，真是多禮！你先是救了我的命，然後才問我的名字！你真是個好奇的人！」");
 	say();
-	message("\"No one hath asked me my real name in several hundred years! I have always been called simply Phoenix.\"");
+	message("「幾百年來都沒有人問過我的真名！我一直被簡單地稱為鳳凰( Phoenix )。」");
 	say();
-	UI_add_answer(["real name", "phoenix"]);
+	UI_add_answer(["真名", "鳳凰"]);
 labelFunc02BE_0159:
-	case "real name" attend labelFunc02BE_017D:
-	UI_remove_answer("real name");
-	message("\"It is a sound thou wouldst find most unpronounceable. My name is a word in the language of my kind that roughly translates as 'Skyrise'.\"");
+	case "真名" attend labelFunc02BE_017D:
+	UI_remove_answer("真名");
+	message("「那是一個你會覺得很難發音的聲音。我的名字是我們同類語言中的一個詞，粗略翻譯為『天際( Skyrise )』。」");
 	say();
-	message("\"It is a popular name among my kind. But enough of that! I wish to thank thee for thy deed...\"");
+	message("「這在我們同類中是個很受歡迎的名字。但先不說這個了！我想感謝你的所作所為……」");
 	say();
-	UI_add_answer(["Skyrise", "thou art welcome"]);
+	UI_add_answer(["天際", "不客氣"]);
 labelFunc02BE_017D:
-	case "Skyrise" attend labelFunc02BE_0194:
-	UI_remove_answer("Skyrise");
-	message("\"I was named after a famous Phoenix queen. She was so beautiful that a dragon came to court her!\"");
+	case "天際" attend labelFunc02BE_0194:
+	UI_remove_answer("天際");
+	message("「我是以一位著名的鳳凰女王的名字命名的。她非常美麗，甚至有一條龍來向她求愛！」");
 	say();
-	message("\"Canst thou imagine? After many rejections, she at last agreed to go away with him. And then she flew away with the dragon, into the sky!\"");
+	message("「你能想像嗎？在多次拒絕之後，她終於同意和他一起離開。然後她和那條龍一起飛走了，飛向了天空！」");
 	say();
 labelFunc02BE_0194:
-	case "thou art welcome" attend labelFunc02BE_01ED:
-	UI_remove_answer("thou art welcome");
+	case "不客氣" attend labelFunc02BE_01ED:
+	UI_remove_answer("不客氣");
 	if (!gflags[0x01BC]) goto labelFunc02BE_01B0;
-	message("\"It is rare to find a stranger who is so well-mannered! I do hope that thou didst enjoy the egg I gave to thee!\"");
+	message("「很少能遇到這麼有禮貌的陌生人！我真希望你喜歡我給你的蛋！」");
 	say();
 	goto labelFunc02BE_01ED;
 labelFunc02BE_01B0:
-	message("\"As a token of mine appreciation, I shall give thee the most valuable possession I could bestow upon thee.\"");
+	message("「作為我感激的象徵，我將送給你我所能賜予的最珍貴的寶物。」");
 	say();
 	var0004 = UI_get_object_position(0xFE9C);
 	UI_si_path_run_usecode(item, [(var0004[0x0001] + 0x0001), (var0004[0x0002] + 0x0001), 0x0000], 0x000A, item, 0x02BE, true);
 	UI_play_sound_effect(0x000F);
 	abort;
 labelFunc02BE_01ED:
-	case "phoenix" attend labelFunc02BE_020A:
-	UI_remove_answer("phoenix");
-	message("\"Thou hast never met such a creature before...? If thou dost wish it I shall tell thee my tale.\"");
+	case "鳳凰" attend labelFunc02BE_020A:
+	UI_remove_answer("鳳凰");
+	message("「你以前從未見過這樣的生物……？如果你願意，我會告訴你我的故事。」");
 	say();
-	UI_add_answer(["tale"]);
+	UI_add_answer(["故事"]);
 labelFunc02BE_020A:
-	case "tale" attend labelFunc02BE_022A:
-	UI_remove_answer("tale");
-	message("\"The phoenix are creatures of fate. We are naturally drawn to places where the balance between Order and Chaos hath been upset.\"");
+	case "故事" attend labelFunc02BE_022A:
+	UI_remove_answer("故事");
+	message("「鳳凰是命運的生物。我們天生就會被秩序( Order )與混沌( Chaos )之間平衡被破壞的地方所吸引。」");
 	say();
-	UI_add_answer(["fate", "balance"]);
+	UI_add_answer(["命運", "平衡"]);
 labelFunc02BE_022A:
-	case "fate" attend labelFunc02BE_024E:
-	UI_remove_answer("fate");
-	message("\"Fate is a force that is eternal. This is why those of my kind can never truly die.\"");
+	case "命運" attend labelFunc02BE_024E:
+	UI_remove_answer("命運");
+	message("「命運是一股永恆的力量。這就是為什麼我們這類生物永遠不會真正死去的原因。」");
 	say();
-	message("\"Although we may lose our lives, we are reborn from the ashes of our own funeral pyres.\"");
+	message("「雖然我們可能會失去生命，但我們會從自己柴堆的灰燼中重生。」");
 	say();
-	UI_add_answer(["eternal", "pyres"]);
+	UI_add_answer(["永恆", "柴堆"]);
 labelFunc02BE_024E:
-	case "balance" attend labelFunc02BE_0265:
-	UI_remove_answer("balance");
-	message("\"As the course of destiny calls us to many places and many worlds throughout the universe, mine ancestors grew wings to travel far.\"");
+	case "平衡" attend labelFunc02BE_0265:
+	UI_remove_answer("平衡");
+	message("「因為命運的進程呼喚我們前往宇宙中許多地方和許多世界，我的祖先長出了翅膀，以便遠行。」");
 	say();
-	message("\"I flew between the Serpent Pillars to reach this place. I suspect that is how thou didst come here thyself.\"");
+	message("「我飛越了巨蛇之柱( Serpent Pillars )來到了這裡。我猜你也是這樣來到這裡的。」");
 	say();
 labelFunc02BE_0265:
-	case "eternal" attend labelFunc02BE_027C:
-	UI_remove_answer("eternal");
-	message("\"Now that there is a living phoenix in this world, the balance between Order and Chaos can be restored.\"");
+	case "永恆" attend labelFunc02BE_027C:
+	UI_remove_answer("永恆");
+	message("「現在這個世界上有了一隻活著的鳳凰，秩序( Order )與混沌( Chaos )之間的平衡就能恢復了。」");
 	say();
-	message("\"A happy thought, no?\"");
+	message("「這是個令人高興的想法，不是嗎？」");
 	say();
 labelFunc02BE_027C:
-	case "pyres" attend labelFunc02BE_0293:
-	UI_remove_answer("pyres");
-	message("\"The flames of the pyres are a rebirth. They represent change. If the balance between Order and Chaos is misaligned, 'tis thee who must change it.\"");
+	case "柴堆" attend labelFunc02BE_0293:
+	UI_remove_answer("柴堆");
+	message("「柴堆的火焰是重生。它們代表著改變。如果秩序( Order )與混沌( Chaos )之間的平衡出現偏差，那你就必須去改變它。」");
 	say();
-	message("\"I wish thee luck in all thine endeavors!\"");
+	message("「祝你在一切努力中好運！」");
 	say();
 labelFunc02BE_0293:
-	case "domain" attend labelFunc02BE_02BD:
-	UI_remove_answer("domain");
-	message("\"Dost thou wish to spend more time in my domain?\"");
+	case "領域" attend labelFunc02BE_02BD:
+	UI_remove_answer("領域");
+	message("「你希望在我的領域裡多待一會兒嗎？」");
 	say();
 	var0005 = Func0955();
 	if (!var0005) goto labelFunc02BE_02B9;
-	message("\"Wonderful! Feel free to stay as long as thou wouldst like, though thou mightest find it to be on the warm side.\"");
+	message("「太好了！隨你想待多久就待多久，雖然你可能會覺得這裡有點熱。」");
 	say();
 	goto labelFunc02BE_02BD;
 labelFunc02BE_02B9:
-	message("\"If thou dost wish to leave, thou canst return to the place from whence thou camest through a mystical means of unknown origin. The means lies beyond my lair.\"");
+	message("「如果你想離開，你可以透過一種來源不明的神秘方式回到你原來的地方。那個方式就在我的巢穴之外。」");
 	say();
 labelFunc02BE_02BD:
-	case "bye" attend labelFunc02BE_02E6:
-	message("\"I wish thee good fortune, and once again I thank thee for restoring me.\"");
+	case "告辭" attend labelFunc02BE_02E6:
+	message("「祝你好運，再次感謝你讓我重生。」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Goodbye!@", 0x0000);
-	Func097F(item, "@Balance to thee.@", 0x0005);
+	Func097F(0xFE9C, "@再會！@", 0x0000);
+	Func097F(item, "@願平衡與你同在。@", 0x0005);
 	goto labelFunc02BE_02E9;
 labelFunc02BE_02E6:
 	goto labelFunc02BE_0132;
@@ -167,5 +167,3 @@ labelFunc02BE_02E9:
 labelFunc02BE_02EA:
 	return;
 }
-
-

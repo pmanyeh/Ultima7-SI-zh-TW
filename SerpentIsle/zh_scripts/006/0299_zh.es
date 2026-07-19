@@ -20,17 +20,17 @@ void Func0299 shape#(0x299) ()
 	var0002 = true;
 labelFunc0299_003C:
 	if (!(!var0002)) goto labelFunc0299_0050;
-	UI_item_say(0xFE9C, "@Hail, old woman!@");
+	UI_item_say(0xFE9C, "@你好，老太婆！@");
 	goto labelFunc0299_005A;
 labelFunc0299_0050:
-	UI_item_say(0xFE9C, "@Hail, Drusilla!@");
+	UI_item_say(0xFE9C, "@你好，Drusilla！@");
 labelFunc0299_005A:
 	item->Func07D1();
 	if (!(!var0002)) goto labelFunc0299_0072;
-	Func097F(item, "@Old, is it?!@", 0x0002);
+	Func097F(item, "@老，是嗎？！@", 0x0002);
 	goto labelFunc0299_007C;
 labelFunc0299_0072:
-	Func097F(item, "@Hail yerself!@", 0x0002);
+	Func097F(item, "@你自己好！@", 0x0002);
 labelFunc0299_007C:
 	if (!((var0001 == 0x0002) || (var0001 == 0x000C))) goto labelFunc0299_00E2;
 	var0000 = 0x061A;
@@ -38,17 +38,17 @@ labelFunc0299_007C:
 	var0002 = true;
 labelFunc0299_00A2:
 	if (!(!var0002)) goto labelFunc0299_00B6;
-	UI_item_say(0xFE9C, "@Greetings, strange one.@");
+	UI_item_say(0xFE9C, "@向你問候，怪人。@");
 	goto labelFunc0299_00C0;
 labelFunc0299_00B6:
-	UI_item_say(0xFE9C, "@Greetings, Rieya.@");
+	UI_item_say(0xFE9C, "@向你問候，Rieya。@");
 labelFunc0299_00C0:
 	item->Func07D1();
 	if (!(!var0002)) goto labelFunc0299_00D8;
-	Func097F(item, "@Me, strange?!@", 0x0002);
+	Func097F(item, "@我，怪？！@", 0x0002);
 	goto labelFunc0299_00E2;
 labelFunc0299_00D8:
-	Func097F(item, "@Back again?@", 0x0002);
+	Func097F(item, "@又來了？@", 0x0002);
 labelFunc0299_00E2:
 	if (!((var0001 == 0x0003) || (var0001 == 0x000D))) goto labelFunc0299_0148;
 	var0000 = 0x061B;
@@ -56,17 +56,17 @@ labelFunc0299_00E2:
 	var0002 = true;
 labelFunc0299_0108:
 	if (!(!var0002)) goto labelFunc0299_011C;
-	UI_item_say(0xFE9C, "@Hail, lady!@");
+	UI_item_say(0xFE9C, "@你好，女士！@");
 	goto labelFunc0299_0126;
 labelFunc0299_011C:
-	UI_item_say(0xFE9C, "@Hail, Solaria!@");
+	UI_item_say(0xFE9C, "@你好，Solaria！@");
 labelFunc0299_0126:
 	item->Func07D1();
 	if (!(!var0002)) goto labelFunc0299_013E;
-	Func097F(item, "@Me, a lady?!@", 0x0002);
+	Func097F(item, "@我，女士？！@", 0x0002);
 	goto labelFunc0299_0148;
 labelFunc0299_013E:
-	Func097F(item, "@Hail to thee!@", 0x0002);
+	Func097F(item, "@向你問候！@", 0x0002);
 labelFunc0299_0148:
 	if (!var0000) goto labelFunc0299_0163;
 	var0003 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, var0000], 0x000A);
@@ -81,5 +81,3 @@ labelFunc0299_0164:
 labelFunc0299_019F:
 	return;
 }
-
-

@@ -15,18 +15,18 @@ void Func0284 shape#(0x284) ()
 	return;
 labelFunc0284_0027:
 	if (!Func0942(0xFFFD)) goto labelFunc0284_00A3;
-	Func097F(0xFE9C, "@Call it.@", 0x0000);
+	Func097F(0xFE9C, "@猜正反。@", 0x0000);
 	var0000 = UI_die_roll(0x0001, 0x0002);
 	if (!(var0000 == 0x0001)) goto labelFunc0284_006E;
-	Func097F(0xFFFD, "@Tails.@", 0x0010);
-	Func097F(0xFE9C, "@'Tis heads.@", 0x0020);
+	Func097F(0xFFFD, "@反面。@", 0x0010);
+	Func097F(0xFE9C, "@是正面。@", 0x0020);
 	goto labelFunc0284_0086;
 labelFunc0284_006E:
-	Func097F(0xFFFD, "@Heads.@", 0x0010);
-	Func097F(0xFE9C, "@'Tis tails.@", 0x0020);
+	Func097F(0xFFFD, "@正面。@", 0x0010);
+	Func097F(0xFE9C, "@是反面。@", 0x0020);
 labelFunc0284_0086:
 	if (!(UI_die_roll(0x0001, 0x0003) == 0x0001)) goto labelFunc0284_00A3;
-	Func097F(0xFFFD, "@Again!@", 0x0030);
+	Func097F(0xFFFD, "@再來！@", 0x0030);
 labelFunc0284_00A3:
 	return;
 }

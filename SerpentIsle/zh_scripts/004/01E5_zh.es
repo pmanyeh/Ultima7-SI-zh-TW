@@ -25,7 +25,7 @@ void Func01E5 shape#(0x1E5) ()
 	goto labelFunc01E5_00B3;
 labelFunc01E5_007D:
 	UI_flash_mouse(0x0000);
-	var0005 = ["@We don't have that key.@", "@It's not on the keyring.@"];
+	var0005 = ["@我們沒有那把鑰匙。@", "@它不在鑰匙圈上。@"];
 	var0006 = UI_die_roll(0x0001, 0x0002);
 	var0007 = Func0992(0x0001, var0005[var0006], var0005[var0006], true);
 labelFunc01E5_00B3:

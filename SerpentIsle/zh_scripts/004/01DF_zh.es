@@ -31,7 +31,7 @@ labelFunc01DF_0038:
 	UI_play_sound_effect(0x0082);
 	var0003 = UI_create_new_object2(0x0219, [var0002[0x0001], (var0002[0x0002] + 0x0002), 0x0000]);
 	if (!(!var0003)) goto labelFunc01DF_00D2;
-	UI_error_message("Wolf Creation Failed!");
+	UI_error_message("野狼生成失敗！");
 labelFunc01DF_00D2:
 	UI_set_item_flag(var0003, 0x001D);
 	UI_clear_item_flag(var0003, 0x0012);

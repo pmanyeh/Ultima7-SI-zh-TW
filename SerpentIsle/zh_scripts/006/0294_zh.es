@@ -33,162 +33,162 @@ void Func0294 shape#(0x294) ()
 	abort;
 labelFunc0294_0046:
 	if (!UI_get_item_flag(item, 0x001E)) goto labelFunc0294_00B0;
-	message("\"I told thee, ");
+	message("「我已經告訴過你了，");
 	message(var0002);
-	message(", there is nothing left for me... Without the Comb of Beauty there is no hope in the world!\"");
+	message("，我已一無所有……沒有了美麗之梳，世間便不再有希望！」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0289, 0xFE99, 0x0000)) goto labelFunc0294_009A;
-	message("\"Thou hast the Comb of Beauty! Wilt thou give me the Comb? I will grant thee Fawn's greatest treasure, as I promised the heavens.\"");
+	message("「你帶著美麗之梳！你願意把梳子給我嗎？我將把幼鹿城( Fawn )最珍貴的寶物獻給你，正如我向蒼天許諾的那般。」");
 	say();
 	if (!Func0955()) goto labelFunc0294_0084;
-	message("\"In this one thing, at least, I can fulfill mine obligation.\"");
+	message("「至少在這件事上，我可以履行我的承諾。」");
 	say();
 	Func0864();
 	goto labelFunc0294_0097;
 labelFunc0294_0084:
-	message("\"Such is the story of my life... Then I shall remain here, within this fetid swamp -- where I belong!\"");
+	message("「這就是我一生的故事……那麼我就留在這裡，這腐臭的沼澤之中——我本就該在這裡！」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(item, "@Leave me!@", 0x0000);
+	Func097F(item, "@離開我！@", 0x0000);
 	abort;
 labelFunc0294_0097:
 	goto labelFunc0294_00AD;
 labelFunc0294_009A:
-	message("\"Leave me to die in peace! I have nothing left... nothing...\"");
+	message("「讓我安靜地死去吧！我已一無所有……什麼都沒有了……」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(item, "@Go away!@", 0x0000);
+	Func097F(item, "@走開！@", 0x0000);
 	abort;
 labelFunc0294_00AD:
 	goto labelFunc0294_00C8;
 labelFunc0294_00B0:
-	message("\"Look what thy mad companion, Iolo, hath done to me! He told me to tell thee that only thou couldst prove whether Beauty was skin deep.\"");
+	message("「看看你那瘋狂的同伴 Iolo 對我做了什麼！他讓我轉告你，說只有你才能證明，美麗是否只是皮相。」");
 	say();
-	message("\"Thou must have some way to remove this foul enchantment! But... What have I to live for? My very heart hath been torn asunder! My people are dead! There is nothing left for me!\"");
+	message("「你一定有辦法解除這道醜陋的詛咒！但是……我還有什麼理由活下去？我的心已被徹底撕碎！我的子民死去了！我已一無所有！」");
 	say();
-	UI_add_answer(["prove", "heart", "people"]);
+	UI_add_answer(["證明", "心", "子民"]);
 labelFunc0294_00C8:
-	UI_add_answer("bye");
+	UI_add_answer("告辭");
 labelFunc0294_00CF:
 	converse attend labelFunc0294_02B4;
-	case "bye" attend labelFunc0294_00F3:
-	Func097F(0xFE9C, "@Keep faith!@", 0x0000);
-	Func097F(item, "@I am cursed!@", 0x0002);
+	case "告辭" attend labelFunc0294_00F3:
+	Func097F(0xFE9C, "@堅持信念！@", 0x0000);
+	Func097F(item, "@我受詛咒了！@", 0x0002);
 	goto labelFunc0294_02B4;
 labelFunc0294_00F3:
-	case "prove" attend labelFunc0294_0111:
-	UI_remove_answer("prove");
-	message("\"How would I know the mind of a madman?!\"");
+	case "證明" attend labelFunc0294_0111:
+	UI_remove_answer("證明");
+	message("「我怎麼知道一個瘋子在想什麼？！」");
 	say();
-	message("\"Perhaps he thought that thou didst have some magic with which to counter his cruelty.\"");
+	message("「也許他以為你擁有某種魔法，可以抵消他的殘酷行為。」");
 	say();
-	UI_add_answer("magic");
+	UI_add_answer("魔法");
 labelFunc0294_0111:
-	case "magic" attend labelFunc0294_013E:
-	UI_remove_answer("magic");
-	message("\"I am no mage, to tell thee such things!\"");
+	case "魔法" attend labelFunc0294_013E:
+	UI_remove_answer("魔法");
+	message("「我不是法師，沒辦法告訴你這些！」");
 	say();
-	message("\"No one can restore the life to my people...\"");
+	message("「沒有人能讓我的子民重獲生機……」");
 	say();
-	message("\"Should I selfishly ask that mine own Beauty be restored when the life's blood of Fawn -- the city of Beauty -- lies dead in the streets?!\"");
+	message("「當幼鹿城( Fawn )——美麗之城——的子民生命之血已流盡大街，我豈能自私地只求恢復自己的美貌？！」");
 	say();
-	message("\"If only the Comb of Beauty had not been stolen! Everything changed in Fawn after it was taken... Perhaps it was some token of the heavens. And this is my punishment for losing it!\"");
+	message("「若是美麗之梳沒有被盜走就好了！那梳子失竊之後，幼鹿城( Fawn )一切都變了……也許那是上天的象徵。而這，便是我失去它的懲罰！」");
 	say();
 	if (!(!var0004)) goto labelFunc0294_013E;
-	UI_add_answer("Comb of Beauty");
+	UI_add_answer("美麗之梳");
 labelFunc0294_013E:
-	case "Comb of Beauty" attend labelFunc0294_0197:
-	UI_remove_answer("Comb of Beauty");
-	message("\"I thought it nothing more than a trinket... Passed down from the Lady Fawn herself, granted, but a bauble nonetheless.\"");
+	case "美麗之梳" attend labelFunc0294_0197:
+	UI_remove_answer("美麗之梳");
+	message("「我以為它不過是件小玩意兒……雖說是幼鹿夫人( Lady Fawn )傳下來的，但終究只是個擺設。」");
 	say();
-	message("\"Only now do I see that it was the tradition, the duty, that I tossed aside as worthless. And now it is lost forever!\"");
+	message("「直到現在我才明白，我所拋棄的是傳統，是責任。而如今它已永遠失去！」");
 	say();
-	message("\"I would give Fawn's greatest treasure if only I could find the Comb of Beauty!\"");
+	message("「若是能找回美麗之梳，我願以幼鹿城( Fawn )最珍貴的寶物換取！」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0289, 0xFE99, 0x0000)) goto labelFunc0294_018C;
-	var0006 = Func0992(0x0001, "@Avatar, what about the comb thou didst take from Columna?@", "@I wonder... What about Columna's comb?!@", false);
+	var0006 = Func0992(0x0001, "@聖者，你從 Columna 那裡取得的梳子怎麼了？@", "@我在想……那把 Columna 的梳子！@", false);
 	UI_set_conversation_slot(0x0000);
 	UI_add_answer("Columna");
 labelFunc0294_018C:
 	var0004 = true;
-	UI_add_answer("treasure");
+	UI_add_answer("寶物");
 labelFunc0294_0197:
 	case "Columna" attend labelFunc0294_01D5:
 	UI_remove_answer("Columna");
-	message("\"I recall a Lady Columna visiting Fawn a number of years ago! Now that I think of it... It wasn't long after that that I discovered the Comb missing!\"");
+	message("「我記得多年前 Columna 女士曾來訪幼鹿城( Fawn )！現在想想……就是在那之後不久，我發現梳子失蹤了！」");
 	say();
-	message("\"Yes, yes! It all fits now! She admired it greatly, and seemed a bit offended when I did not offer it to her...\"");
+	message("「對，對！全都對上了！她當時對梳子讚不絕口，當我沒有主動將它送給她時，她似乎有些不悅……」");
 	say();
-	message("\"Of course she took it! Wilt thou give me the Comb? I will grant thee Fawn's greatest treasure, as I promised the heavens.\"");
+	message("「當然是她拿走了！你願意把梳子還給我嗎？我將把幼鹿城( Fawn )最珍貴的寶物獻給你，正如我向蒼天許諾的那般。」");
 	say();
 	var0005 = true;
 	if (!Func0955()) goto labelFunc0294_01C2;
 	Func0864();
 	goto labelFunc0294_01D5;
 labelFunc0294_01C2:
-	message("\"Such is the story of my life... Then I shall remain here, within this fetid swamp -- where I belong!\"");
+	message("「這就是我一生的故事……那麼我就留在這裡，這腐臭的沼澤之中——我本就該在這裡！」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(item, "@Leave me!@", 0x0000);
+	Func097F(item, "@離開我！@", 0x0000);
 	abort;
 labelFunc0294_01D5:
-	case "treasure" attend labelFunc0294_0214:
-	UI_remove_answer("treasure");
-	message("\"It is an ancient piece of armour that was found near the Serpent ruin around which the palace is built.\"");
+	case "寶物" attend labelFunc0294_0214:
+	UI_remove_answer("寶物");
+	message("「那是一件古老的護甲，在宮殿建造所在的巨蛇遺跡( Serpent Ruins )附近發現的。」");
 	say();
-	message("\"I do not know its significance, but we have treasured it ever since... as a sign of Fawn's strength.\"");
+	message("「我不清楚它的意義，但我們一直將其視為珍寶……作為幼鹿城( Fawn )堅韌的象徵。」");
 	say();
 	if (!(!var0005)) goto labelFunc0294_0214;
-	message("\"What a farce! Leave me, ");
+	message("「真是滑稽！離開吧，");
 	message(var0002);
-	message("! Without the Comb of Beauty I will remain here, within this fetid swamp -- where I belong!\"");
+	message("！沒有了美麗之梳，我就將留在這裡，這腐臭的沼澤之中——我本就該在這裡！」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(item, "@Leave me!@", 0x0000);
+	Func097F(item, "@離開我！@", 0x0000);
 	UI_set_item_flag(item, 0x001E);
 	abort;
 labelFunc0294_0214:
-	case "heart" attend labelFunc0294_0232:
-	UI_remove_answer("heart");
-	message("\"Jorvin is dead! My love, mine heart's true desire!\"");
+	case "心" attend labelFunc0294_0232:
+	UI_remove_answer("心");
+	message("「Jorvin 死了！我摯愛的人，我心中真正渴望的人！」");
 	say();
-	message("\"But... Perhaps it is for the best -- That he never see the depths to which mine ignorance hath plunged our city, or the mark of the guilt that weighs upon my features...\"");
+	message("「但……也許這是最好的結局——讓他不必親眼目睹我的無知如何將這座城市推入深淵，也不必看到那份壓垮我的罪惡感留在我臉上的烙印……」");
 	say();
-	UI_add_answer("ignorance");
+	UI_add_answer("無知");
 labelFunc0294_0232:
-	case "ignorance" attend labelFunc0294_0257:
-	UI_remove_answer("ignorance");
-	message("\"Criminal ignorance! I listened to those who would mislead me! I let their compliments turn mine head... And never felt Love for the city that was in my charge!\"");
+	case "無知" attend labelFunc0294_0257:
+	UI_remove_answer("無知");
+	message("「罪孽深重的無知！我聽信了那些誤導我的人！我讓他們的奉承沖昏了頭腦……從未對這座我守護的城市傾注真正的愛！」");
 	say();
-	message("\"Even as I let the Comb of Beauty slip from the city, I have let all of Fawn slip into lifeless darkness!\"");
+	message("「就連我讓美麗之梳從城中流失之時，我也讓整個幼鹿城( Fawn )就此沉入死寂的黑暗！」");
 	say();
 	if (!(!var0004)) goto labelFunc0294_0257;
-	UI_add_answer("Comb of Beauty");
+	UI_add_answer("美麗之梳");
 labelFunc0294_0257:
-	case "people" attend labelFunc0294_027F:
-	UI_remove_answer("people");
-	message("\"The storms grew worse and worse! Food was scarce... And a strange sickness crept through the city like some silent predator.\"");
+	case "子民" attend labelFunc0294_027F:
+	UI_remove_answer("子民");
+	message("「風暴一次比一次猛烈！食物匱乏……一種奇異的疾病如幽靈般悄悄蔓延全城。」");
 	say();
-	message("\"One by one they fell... And there was nothing I could do! My pleas to the heavens were in vain!\"");
+	message("「他們一個個倒下……而我束手無策！我對蒼天的哀求，全是徒然！」");
 	say();
-	message("\"The only other living soul is one I turned away -- One I deemed unworthy of Fawn's Beauty!\"");
+	message("「唯一一個還活著的靈魂，是我曾親手趕走的人——那個被我視為不配擁有幼鹿城( Fawn )之美的人！」");
 	say();
-	UI_add_answer(["sickness", "living soul"]);
+	UI_add_answer(["疾病", "活著的靈魂"]);
 labelFunc0294_027F:
-	case "sickness" attend labelFunc0294_0296:
-	UI_remove_answer("sickness");
-	message("\"There was no fever. It seemed as if they were sleeping...\"");
+	case "疾病" attend labelFunc0294_0296:
+	UI_remove_answer("疾病");
+	message("「沒有發燒。他們看起來像是在沉睡……」");
 	say();
-	message("\"It came without warning... Until, at last, no one was left to care for them. Many never woke from where they fell. And I was powerless! Powerless!\"");
+	message("「毫無預警地降臨……最終，沒有人去照料他們。許多人倒下後就再也沒有醒來。而我，毫無能力！毫無能力！」");
 	say();
 labelFunc0294_0296:
-	case "living soul" attend labelFunc0294_02B1:
-	UI_remove_answer("living soul");
-	message("\"Hahaha! What cruel joke the heavens have had at mine expense!\"");
+	case "活著的靈魂" attend labelFunc0294_02B1:
+	UI_remove_answer("活著的靈魂");
+	message("「哈哈哈！蒼天對我真是開了個殘忍的玩笑！」");
 	say();
-	message("\"I listened to the words of traitors and turned out good men, barring them from my protection!\"");
+	message("「我聽信了叛徒的讒言，驅逐了好人，將他們拒於我的庇護之外！」");
 	say();
-	message("\"And now only the one called Ruggs lives... To taunt me with an empty city and my ruined Beauty!\"");
+	message("「而如今，只有那個叫 Ruggs 的人還活著……用一座空城和我的毀容，日日嘲弄著我！」");
 	say();
 labelFunc0294_02B1:
 	goto labelFunc0294_00CF;

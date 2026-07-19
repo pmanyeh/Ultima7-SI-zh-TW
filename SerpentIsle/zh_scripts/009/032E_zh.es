@@ -49,15 +49,15 @@ void Func032E shape#(0x32E) ()
 
 	var0000 = Func0954();
 	var0001 = UI_is_pc_female();
-	var0002 = "his";
-	var0003 = "him";
-	var0004 = "he";
-	var0005 = "man";
+	var0002 = "他的";
+	var0003 = "他";
+	var0004 = "他";
+	var0005 = "男人";
 	if (!UI_is_pc_female()) goto labelFunc032E_0044;
-	var0002 = "her";
-	var0004 = "she";
-	var0003 = "her";
-	var0005 = "woman";
+	var0002 = "她的";
+	var0004 = "她";
+	var0003 = "她";
+	var0005 = "女人";
 labelFunc032E_0044:
 	var0006 = Func0953();
 	var0007 = UI_part_of_day();
@@ -66,10 +66,10 @@ labelFunc032E_0044:
 	var0008 = 0x0002;
 labelFunc032E_006B:
 	if (!((var0007 > 0x0001) || (var0007 < 0x0006))) goto labelFunc032E_0086;
-	var0007 = "day";
+	var0007 = "白天";
 	goto labelFunc032E_008C;
 labelFunc032E_0086:
-	var0007 = "evening";
+	var0007 = "晚上";
 labelFunc032E_008C:
 	if (!(event == 0x0003)) goto labelFunc032E_009D;
 	UI_set_schedule_type(item, 0x000F);
@@ -88,11 +88,11 @@ labelFunc032E_00F1:
 	UI_set_npc_id(0xFFEE, 0x000C);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEE, 0x0000);
-	message("\"And to think she was once a young and beautiful sorceress, before her ambitions turned her cold and heartless...\"");
+	message("「想想看，她曾經是一位年輕美麗的女巫，直到野心使她變得冷酷無情……」");
 	say();
 	UI_end_conversation();
 	UI_si_path_run_usecode(0xFFE3, [0x090A, 0x071A, 0x0000], 0x0002, item, 0x032E, false);
-	Func097F(0xFFE3, "@Pardon me...@", 0x0005);
+	Func097F(0xFFE3, "@請原諒我……@", 0x0005);
 	UI_play_music(0x0012, Func09A0(0x0005, 0x0001));
 	abort;
 labelFunc032E_0157:
@@ -100,20 +100,20 @@ labelFunc032E_0157:
 	UI_set_npc_id(0xFFEE, 0x000B);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEA, 0x0000);
-	message("\"See here, Rotoluncia! This stranger may have secrets -- as do we all! But I will not condone treating a guest of the Council like a criminal!\"");
+	message("「聽著， Rotoluncia ！這個陌生人可能有秘密——我們所有人也一樣！但我絕不容許把法師議會的客人當作罪犯般對待！」");
 	say();
 	UI_show_npc_face1(0xFFE1, 0x0000);
-	message("\"Thou dost dare to interfere with my spells! MageLord, I demand that thou reprimandest this sorcerer.\"");
+	message("「你竟敢干涉我的法術！法師領主，我要求你訓斥這個巫師。」");
 	say();
 	UI_remove_npc_face1();
 	UI_remove_npc_face0();
 	UI_show_npc_face0(0xFFEE, 0x0000);
-	message("\"My dear, calm thyself. Perhaps our visitor shall tell us all, without the use of force...\"");
+	message("「親愛的，冷靜點。也許我們的訪客會把一切告訴我們，而無需動用武力……」");
 	say();
 	UI_show_npc_face1(0xFFE1, 0x0000);
-	message("\"If there is one thing I cannot stand, it is being hamstrung by petty politics. Thou art not half the man thou once wert, Filbercio...\"");
+	message("「如果有一件事是我無法忍受的，那就是被瑣碎的政治手段給束縛。你甚至不及你過去一半的男子氣概， Filbercio ……」");
 	say();
-	message("\"I bid you all a pleasant dinner. I have lost mine appetite and am leaving. But mark my words -- I shall have my way!\"");
+	message("「祝各位有個愉快的晚餐。我已經沒有胃口，要離開了。但記住我的話——我一定會如願以償的！」");
 	say();
 	UI_end_conversation();
 	var000A = UI_get_object_position(0xFFE1);
@@ -123,9 +123,9 @@ labelFunc032E_0157:
 	UI_run_schedule(0xFFE1);
 	UI_move_object(0xFFE1, [0x086D, 0x0837, 0x0000]);
 	UI_set_item_flag(0xFFE1, 0x001D);
-	Func097F(0xFFEC, "@Goodbye, witch...@", 0x0004);
+	Func097F(0xFFEC, "@再見了，女巫……@", 0x0004);
 	var0009 = UI_execute_usecode_array(0xFFEA, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x6C, (byte)0x6B, (byte)0x27, 0x0002]);
-	var0009 = UI_delayed_execute_usecode_array(0xFFEE, [(byte)0x23, (byte)0x27, 0x0008, (byte)0x52, "@Good riddance!@", (byte)0x27, 0x0004, (byte)0x55, 0x032E], 0x0008);
+	var0009 = UI_delayed_execute_usecode_array(0xFFEE, [(byte)0x23, (byte)0x27, 0x0008, (byte)0x52, "@走得好！@", (byte)0x27, 0x0004, (byte)0x55, 0x032E], 0x0008);
 	abort;
 labelFunc032E_0275:
 	if (!(UI_get_npc_id(0xFFEE) == 0x0009)) goto labelFunc032E_031D;
@@ -150,7 +150,7 @@ labelFunc032E_031D:
 	UI_sprite_effect(0x002F, (var000A[0x0001] - 0x0003), (var000A[0x0002] - 0x0003), 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_play_sound_effect(0x0083);
 	var0009 = UI_delayed_execute_usecode_array(0xFFEA, [(byte)0x23, (byte)0x55, 0x032E], 0x000F);
-	Func097F(0xFFE1, "@How darest thou!@", 0x000A);
+	Func097F(0xFFE1, "@你竟敢如此！@", 0x000A);
 	abort;
 labelFunc032E_0391:
 	if (!(UI_get_npc_id(0xFFEE) == 0x0007)) goto labelFunc032E_0435;
@@ -164,7 +164,7 @@ labelFunc032E_0391:
 	UI_sprite_effect(0x001E, var000A[0x0001], var000A[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_play_sound_effect(0x002A);
 labelFunc032E_040B:
-	var0009 = UI_execute_usecode_array(0xFFEA, [(byte)0x23, (byte)0x52, "@Stop this!@", (byte)0x27, 0x0005, (byte)0x6C, (byte)0x61, (byte)0x6F, (byte)0x52, "@Contra Flam!@", (byte)0x55, 0x032E]);
+	var0009 = UI_execute_usecode_array(0xFFEA, [(byte)0x23, (byte)0x52, "@住手！@", (byte)0x27, 0x0005, (byte)0x6C, (byte)0x61, (byte)0x6F, (byte)0x52, "@Contra Flam!@", (byte)0x55, 0x032E]);
 	abort;
 labelFunc032E_0435:
 	if (!(UI_get_npc_id(0xFFEE) == 0x0006)) goto labelFunc032E_053D;
@@ -186,7 +186,7 @@ labelFunc032E_04AF:
 	var0009 = UI_set_to_attack(0xFFE1, var000B, 0x0118);
 labelFunc032E_0503:
 	var0009 = UI_execute_usecode_array(0xFFE1, [(byte)0x23, (byte)0x61, (byte)0x52, "@Mas Mas!@", (byte)0x67, (byte)0x01, (byte)0x58, 0x0014, (byte)0x7A, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x032E]);
-	Func097F(0xFFEE, "@Must thou?@", 0x0005);
+	Func097F(0xFFEE, "@你非得這樣嗎？@", 0x0005);
 	abort;
 labelFunc032E_053D:
 	if (!(UI_get_npc_id(0xFFEE) == 0x0005)) goto labelFunc032E_0684;
@@ -208,34 +208,34 @@ labelFunc032E_05B7:
 	var0009 = UI_set_to_attack(0xFFE1, var000B, 0x0118);
 labelFunc032E_060B:
 	var0009 = UI_execute_usecode_array(0xFFE1, [(byte)0x23, (byte)0x61, (byte)0x52, "@Flam Mas!@", (byte)0x67, (byte)0x01, (byte)0x58, 0x0014, (byte)0x7A, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x032E]);
-	Func097F(0xFFF6, "@Help!@", 0x0000);
+	Func097F(0xFFF6, "@救命啊！@", 0x0000);
 	UI_si_path_run_usecode(0xFFF6, [0x0916, 0x0742, 0x0000], 0x0003, item, 0x032E, false);
-	Func097F(0xFFEC, "@How rude...@", 0x0006);
-	Func097F(0xFFFE, "@Stop that!@", 0x0002);
-	Func097F(0xFFFF, "@No!@", 0x000A);
+	Func097F(0xFFEC, "@太粗魯了……@", 0x0006);
+	Func097F(0xFFFE, "@快住手！@", 0x0002);
+	Func097F(0xFFFF, "@不！@", 0x000A);
 	abort;
 labelFunc032E_0684:
 	if (!(UI_get_npc_id(0xFFEE) == 0x0004)) goto labelFunc032E_0785;
 	UI_set_npc_id(0xFFEE, 0x0005);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEE, 0x0000);
-	message("\"Good Mages, this is the adventurer from a distant land whose arrival was foretold in our conjurings!\"");
+	message("「各位優秀的法師，這位就是來自遠方的冒險者，我們在施法時已經預見了其到來！」");
 	say();
 	UI_show_npc_face1(0xFFEC, 0x0000);
-	message("\"Could ");
+	message("「");
 	message(var0004);
-	message(" be responsible for the storms which plague the land? Or for the growing strangenesses which afflict our spellcasting?\"");
+	message("會是那些肆虐這片土地的風暴的罪魁禍首嗎？或是導致我們施法時出現越來越多怪異現象的原因？」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"I hope, my dear, that ");
+	message("「親愛的，我希望");
 	message(var0004);
-	message(" is the solution to our problems, rather than the cause...\"");
+	message("是我們解決問題的方法，而不是造成問題的原因……」");
 	say();
 	UI_show_npc_face1(0xFFE1, 0x0000);
-	message("\"Thou art a fool, MageLord! Our guest is most certainly a factor in the supernatural disturbances that are threatening our world. Let us question ");
+	message("「你是個傻瓜，法師領主！我們的客人肯定就是威脅我們世界的超自然干擾因素之一。現在就讓我們來審問");
 	message(var0003);
-	message(" now!\"");
+	message("！」");
 	say();
 	UI_play_music(0x0010, Func09A0(0x0005, 0x0001));
 	UI_end_conversation();
@@ -254,7 +254,7 @@ labelFunc032E_0785:
 	UI_set_npc_id(0xFFEE, 0x0004);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0000);
-	message("\"Welcome to thee. These cursed teleportation storms have made travel so difficult that we are becoming isolated! It hath disturbed everyone, but it is good to see a new face.\"");
+	message("「歡迎你。這些該死的傳送風暴讓旅行變得如此困難，以至於我們快被孤立了！這讓每個人都感到不安，但能看到新面孔總是件好事。」");
 	say();
 	UI_end_conversation();
 	var0009 = UI_execute_usecode_array(0xFFEC, [(byte)0x59, 0x0000, (byte)0x6C, (byte)0x6B, (byte)0x27, 0x0002, (byte)0x55, 0x032E]);
@@ -264,12 +264,12 @@ labelFunc032E_07D4:
 	UI_set_npc_id(0xFFEE, 0x0003);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFE1, 0x0000);
-	message("\"Filbercio is never lacking in social graces, ");
+	message("「 Filbercio 從來不缺社交禮儀，");
 	message(var0000);
-	message(". Now if he only attended to the problems of Moonshade as he doth attend to his mistresses. Speaking of which...\"");
+	message("。要是他能像照顧情婦那樣來處理月影城( Moonshade )的問題就好了。說到這個……」");
 	say();
 	UI_show_npc_face1(0xFFEE, 0x0000);
-	message("\"Ahem--! Also present, as my dinner companion, is the most charming Frigidazzi. She, too, is a Mage.\"");
+	message("「咳咳——！同樣在場的還有我迷人的晚餐伴侶 Frigidazzi 。她也是一名法師。」");
 	say();
 	UI_end_conversation();
 	Func09AF(0xFFE1, 0xFFEC, 0x0004, 0x032E);
@@ -279,12 +279,12 @@ labelFunc032E_0826:
 	UI_set_npc_id(0xFFEE, 0x0002);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEA, 0x0000);
-	message("\"Thou needest not worry, ");
+	message("「你不必擔心，");
 	message(var0000);
-	message(". We have brought thee here against thy will, but only that we may get to know thee. Thou art free to leave, once this dinner is concluded.\"");
+	message("。雖然我們違反你的意願將你帶來這裡，但只是為了認識你。一旦晚餐結束，你就可以自由離開。」");
 	say();
 	UI_show_npc_face1(0xFFEE, 0x0000);
-	message("\"Quite right, Gustacio... and here is Adept Rotoluncia, whom I believe thou hast met.\"");
+	message("「完全正確， Gustacio ……這位是法師 Rotoluncia ，我相信你已經見過了。」");
 	say();
 	UI_end_conversation();
 	Func09AF(0xFFEA, 0xFFE1, 0x0004, 0x032E);
@@ -321,9 +321,9 @@ labelFunc032E_0924:
 labelFunc032E_093C:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEE, 0x0000);
-	message("\"Please be seated. We have been waiting for thee. I am the MageLord Filbercio.\"");
+	message("「請入座。我們一直在等你。我是法師領主 Filbercio 。」");
 	say();
-	message("\"Allow me to introduce the others. First, my fellow members on the Council of Mages. Adept Gustacio...\"");
+	message("「容我為你介紹其他人。首先，是我的法師議會同僚。法師 Gustacio ……」");
 	say();
 	UI_end_conversation();
 	Func09AF(0xFFEE, 0xFFEA, 0x0002, 0x032E);
@@ -331,16 +331,16 @@ labelFunc032E_093C:
 labelFunc032E_0966:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFE3, 0x0000);
-	message("\"I beg thy pardon, MageLord Filbercio, but I have an urgent message for thee.\"");
+	message("「請原諒，法師領主 Filbercio ，但我有一條緊急的訊息要告訴你。」");
 	say();
-	message("\"I regret to report that mine attempts to locate any significant quantity of the reagent Blood Moss have met with failure.\"");
+	message("「我很遺憾地報告，我試圖尋找大量血苔( Blood Moss )試劑的嘗試失敗了。」");
 	say();
 	UI_show_npc_face1(0xFFEE, 0x0000);
-	message("\"Pothos! I should send thee to the dungeons and have the rats feed on thy carcass!\"");
+	message("「 Pothos ！我真該把你送進地牢，讓老鼠啃食你的屍體！」");
 	say();
-	message("\"Dear guests, I am afraid that I shall have to adjourn this pleasant repast.\"");
+	message("「各位貴賓，恐怕我不得不中止這場愉快的晚宴。」");
 	say();
-	message("\"Pothos and I must speak privately concerning important matters of state. I thank thee all for coming!\"");
+	message("「 Pothos 和我必須私下討論一些重要的國事。感謝各位的到來！」");
 	say();
 	gflags[0x00D9] = true;
 	var0019 = [0xFFEE, 0xFFEC, 0xFFEA, 0xFFE3];

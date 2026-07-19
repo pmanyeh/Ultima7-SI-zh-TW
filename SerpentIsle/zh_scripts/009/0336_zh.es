@@ -24,7 +24,7 @@ labelFunc0336_0040:
 labelFunc0336_0060:
 	goto labelFunc0336_0069;
 labelFunc0336_0063:
-	Func0949("@Those are for infants.@");
+	Func0949("@這些是嬰兒用的。@");
 labelFunc0336_0069:
 	if (!(var0000 == 0x0001)) goto labelFunc0336_00C9;
 	var0001 = UI_click_on_item();
@@ -40,7 +40,7 @@ labelFunc0336_00A9:
 	Func0971(item);
 labelFunc0336_00C9:
 	if (!(var0000 == 0x0002)) goto labelFunc0336_00D9;
-	Func0949("@That is for dirty diapers.@");
+	Func0949("@那是裝髒尿布的。@");
 labelFunc0336_00D9:
 	return;
 }

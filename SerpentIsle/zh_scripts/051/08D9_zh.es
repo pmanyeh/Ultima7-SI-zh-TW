@@ -18,7 +18,7 @@ void Func08D9 0x8D9 (var var0000)
 	var0003 = 0x0002;
 labelFunc08D9_0027:
 	if (!(var0001 == 0x0001)) goto labelFunc08D9_0041;
-	var0004 = ("@Pardon, but the door is already open. " + "Is it not rather futile to lock it now?@");
+	var0004 = ("@Pardon, but the door is already open. Is it not rather futile to lock it now?@");
 	Func094A(var0004);
 labelFunc08D9_0041:
 	if (!(var0001 == 0x0002)) goto labelFunc08D9_0051;
@@ -26,7 +26,7 @@ labelFunc08D9_0041:
 labelFunc08D9_0051:
 	if (!(var0001 == 0x0003)) goto labelFunc08D9_007C;
 	if (!(UI_die_roll(0x0001, 0x000A) == 0x0001)) goto labelFunc08D9_007C;
-	var0004 = ("@Pardon, but the door appears magically locked. " + "Is it not rather difficult to unlock it with a key?@");
+	var0004 = ("@Pardon, but the door appears magically locked. Is it not rather difficult to unlock it with a key?@");
 	Func094A(var0004);
 labelFunc08D9_007C:
 	if (!(var0003 != 0xFFFF)) goto labelFunc08D9_008F;

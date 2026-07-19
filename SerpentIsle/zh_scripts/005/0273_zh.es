@@ -33,7 +33,7 @@ labelFunc0273_004E:
 	if (!(var0001 == 0x020A)) goto labelFunc0273_00E8;
 	if (!((var0002 == 0x0000) && var0003)) goto labelFunc0273_007B;
 	UI_set_item_shape(var0000, 0x0320);
-	UI_item_say(var0000, "Unlocked");
+	UI_item_say(var0000, "已解鎖");
 	return;
 labelFunc0273_007B:
 	if (!((var0002 == 0x00FF) && var0003)) goto labelFunc0273_00D9;
@@ -43,13 +43,13 @@ labelFunc0273_007B:
 	var0005 = UI_update_last_created(UI_get_object_position(var0000));
 	var0005 = UI_attack_object(var0004, var0004, 0x02C0);
 	if (!var0003) goto labelFunc0273_00D5;
-	UI_item_say(var0000, "Unlocked");
+	UI_item_say(var0000, "已解鎖");
 	UI_set_item_shape(var0000, 0x0320);
 labelFunc0273_00D5:
 	return;
 	goto labelFunc0273_00E7;
 labelFunc0273_00D9:
-	UI_item_say(var0000, "Pick broke");
+	UI_item_say(var0000, "開鎖器斷了");
 	Func0971(item);
 labelFunc0273_00E7:
 	return;
@@ -63,22 +63,22 @@ labelFunc0273_00FB:
 	if (!(Func0906(var0000) == 0x0002)) goto labelFunc0273_0152;
 	if (!var0003) goto labelFunc0273_0143;
 	Func0907(var0000, 0x0000);
-	UI_item_say(var0000, "Unlocked");
+	UI_item_say(var0000, "已解鎖");
 	goto labelFunc0273_0151;
 labelFunc0273_0143:
-	UI_item_say(var0000, "Pick broke");
+	UI_item_say(var0000, "開鎖器斷了");
 	Func0971(item);
 labelFunc0273_0151:
 	return;
 labelFunc0273_0152:
 	goto labelFunc0273_015C;
 labelFunc0273_0155:
-	Func0949("@'Tis strange that did not work.@");
+	Func0949("@奇怪，這怎麼沒用。@");
 	return;
 labelFunc0273_015C:
 	goto labelFunc0273_00FB;
 labelFunc0273_015F:
-	Func094A("@Mayhaps thou shouldst try those on a locked chest or door.@");
+	Func094A("@也許你該試著用在鎖著的箱子或門上。@");
 labelFunc0273_0165:
 	return;
 }

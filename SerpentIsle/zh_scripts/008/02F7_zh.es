@@ -25,9 +25,9 @@ labelFunc02F7_0038:
 	var0001 = UI_set_item_quality(var0000, 0x0000);
 	var0001 = 0x0000;
 	UI_show_npc_face0(0xFE9C, 0x0000);
-	message("\"I Re-Ten Bentas Juxark I!\"");
+	message("「I Re-Ten Bentas Juxark I！」");
 	say();
-	message("\"Praetimde Mir-Wis Re-Por I.\"");
+	message("「Praetimde Mir-Wis Re-Por I。」");
 	say();
 	UI_remove_npc_face0();
 	if (!UI_get_item_flag(0xFFE1, 0x0004)) goto labelFunc02F7_00B0;

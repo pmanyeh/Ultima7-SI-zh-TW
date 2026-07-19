@@ -45,7 +45,7 @@ labelFunc01D6_0119:
 	return;
 	goto labelFunc01D6_0137;
 labelFunc01D6_0127:
-	var0003 = ("@I believe that using a bucket in a well " + "is often more effective than simply spinning the crank.@");
+	var0003 = ("@我相信在井裡使用水桶，通常比單純轉動曲柄更有效。@");
 	Func094A(var0003);
 labelFunc01D6_0137:
 	return;

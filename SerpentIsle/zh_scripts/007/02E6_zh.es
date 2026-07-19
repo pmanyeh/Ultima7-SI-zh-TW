@@ -33,15 +33,15 @@ labelFunc02E6_0034:
 	if (!((UI_get_npc_id(0xFFBA) == 0x0006) && (item == UI_get_npc_object(0xFFBA)))) goto labelFunc02E6_007E;
 	UI_set_npc_id(0xFFBA, 0x0007);
 	var0002 = UI_execute_usecode_array(0xFFBA, [(byte)0x23, (byte)0x55, 0x02E6]);
-	var0002 = ("@Thank thee...@" & "@Goodbye!@");
+	var0002 = ("@謝謝你……@" & "@再見！@");
 	Func094F(0xFFBA, var0002);
 	abort;
 labelFunc02E6_007E:
 	if (!((UI_get_npc_id(0xFFBA) == 0x0002) && (item == UI_get_npc_object(0xFE9C)))) goto labelFunc02E6_00EC;
 	UI_clear_item_say(0xFE9C);
-	Func097F(0xFE9C, "@Yes!@", 0x0004);
+	Func097F(0xFE9C, "@是的！@", 0x0004);
 	UI_clear_item_say(0xFFBA);
-	Func097F(0xFFBA, "@Oh, my!@", 0x0007);
+	Func097F(0xFFBA, "@喔，天啊！@", 0x0007);
 	UI_set_schedule_type(0xFE9C, 0x000F);
 	UI_set_npc_id(0xFFBA, 0x0003);
 	var0002 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x59, 0x0006, (byte)0x55, 0x02E6, (byte)0x6E]);
@@ -52,7 +52,7 @@ labelFunc02E6_00EC:
 labelFunc02E6_0108:
 	if (!((UI_get_npc_id(0xFFBA) == 0x0000) && (item == UI_get_npc_object(0xFFBA)))) goto labelFunc02E6_01D4;
 	UI_clear_item_say(0xFFBA);
-	Func097F(0xFFBA, "@Hurry!@", 0x0003);
+	Func097F(0xFFBA, "@快點！@", 0x0003);
 	var0002 = UI_find_nearby(item, 0x02B8, 0x000C, 0x0000);
 	enum();
 labelFunc02E6_0145:
@@ -67,7 +67,7 @@ labelFunc02E6_016B:
 	var0002 = UI_execute_usecode_array(0xFFBA, [(byte)0x23, (byte)0x59, 0x0006, (byte)0x27, 0x0005, (byte)0x55, 0x02E6, (byte)0x6E]);
 	UI_si_path_run_usecode(0xFE9C, [0x043B, 0x0A52, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), 0x02E6, false);
 	UI_clear_item_say(0xFE9C);
-	Func097F(0xFE9C, "@Just a moment...@", 0x0000);
+	Func097F(0xFE9C, "@等一下……@", 0x0000);
 	abort;
 labelFunc02E6_01D4:
 	if (!(event == 0x000D)) goto labelFunc02E6_0464;
@@ -78,22 +78,22 @@ labelFunc02E6_01D4:
 	var0002 = UI_set_item_quality(Func09A0(0x0005, 0x0003), 0x0000);
 	UI_clear_item_flag(0xFE9C, 0x0010);
 	UI_init_conversation();
-	Func097F(0xFE9C, "@What a beautiful morning!@", 0x0000);
+	Func097F(0xFE9C, "@多麼美麗的早晨！@", 0x0000);
 	UI_play_music(0x0016, Func09A0(0x0005, 0x0001));
 	abort;
 labelFunc02E6_0257:
 	if (!((UI_get_npc_id(0xFFBA) == 0x0006) && (item == UI_get_npc_object(0xFFBA)))) goto labelFunc02E6_02B9;
 	UI_set_npc_id(0xFFBA, 0x0007);
 	var0002 = UI_execute_usecode_array(0xFFBA, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x58, 0x0024, (byte)0x27, 0x0002, (byte)0x61, (byte)0x55, 0x02E6]);
-	var0002 = ("@Thank thee...@" & "@Goodbye!@");
+	var0002 = ("@謝謝你……@" & "@再見！@");
 	Func094F(0xFFBA, var0002);
 	abort;
 labelFunc02E6_02B9:
 	if (!((UI_get_npc_id(0xFFBA) == 0x0002) && (item == UI_get_npc_object(0xFE9C)))) goto labelFunc02E6_033F;
 	UI_clear_item_say(0xFE9C);
-	Func097F(0xFE9C, "@Yes!@", 0x0004);
+	Func097F(0xFE9C, "@是的！@", 0x0004);
 	UI_clear_item_say(0xFFBA);
-	Func097F(0xFFBA, "@Oh, my!@", 0x0007);
+	Func097F(0xFFBA, "@喔，天啊！@", 0x0007);
 	UI_set_schedule_type(0xFE9C, 0x000F);
 	UI_set_npc_id(0xFFBA, 0x0003);
 	var0002 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x59, 0x0006, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x58, 0x0086, (byte)0x01, (byte)0x6E, (byte)0x27, 0x0002, (byte)0x55, 0x02E6]);
@@ -109,7 +109,7 @@ labelFunc02E6_033F:
 labelFunc02E6_038A:
 	if (!((UI_get_npc_id(0xFFBA) == 0x0000) && (item == UI_get_npc_object(0xFFBA)))) goto labelFunc02E6_0464;
 	UI_clear_item_say(0xFFBA);
-	Func097F(0xFFBA, "@Hurry!@", 0x0003);
+	Func097F(0xFFBA, "@快點！@", 0x0003);
 	var0002 = UI_find_nearby(item, 0x02B8, 0x000C, 0x0000);
 	enum();
 labelFunc02E6_03C7:
@@ -124,13 +124,13 @@ labelFunc02E6_03ED:
 	var0002 = UI_execute_usecode_array(0xFFBA, [(byte)0x23, (byte)0x59, 0x0006, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x55, 0x02E6, (byte)0x58, 0x0086, (byte)0x01, (byte)0x6E]);
 	UI_si_path_run_usecode(0xFE9C, [0x043B, 0x0A52, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), 0x02E6, false);
 	UI_clear_item_say(0xFE9C);
-	Func097F(0xFE9C, "@Just a moment...@", 0x0000);
+	Func097F(0xFE9C, "@等一下……@", 0x0000);
 	abort;
 labelFunc02E6_0464:
 	if (!(event == 0x0002)) goto labelFunc02E6_0822;
 	if (!(UI_get_npc_id(0xFFBA) == 0x0008)) goto labelFunc02E6_04AF;
 	UI_clear_item_say(0xFE9C);
-	Func097F(0xFE9C, "@I should dress...@", 0x0003);
+	Func097F(0xFE9C, "@我該穿衣服了……@", 0x0003);
 	UI_si_path_run_usecode(0xFE9C, [0x043B, 0x0A52, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), 0x02E6, false);
 	abort;
 labelFunc02E6_04AF:
@@ -148,7 +148,7 @@ labelFunc02E6_0516:
 	UI_set_npc_id(0xFFBA, 0x0006);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFBA, 0x0000);
-	message("\"Once again, thou hast proved thyself to be the love of my life. When I write my book, I shall dedicate it to thee, my love.\"");
+	message("\"你再一次證明了你是我一生中的摯愛。當我寫書的時候，我會把它獻給你，我的愛人。\"");
 	say();
 	UI_end_conversation();
 	var0002 = UI_execute_usecode_array(0xFFBA, [(byte)0x23, (byte)0x55, 0x02E6]);
@@ -158,16 +158,16 @@ labelFunc02E6_0559:
 	UI_set_npc_id(0xFFBA, 0x0006);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFBA, 0x0000);
-	message("\"Thou art the man of my dreams! I have never felt so fulfilled. What an experience...\"");
+	message("\"你就是我夢想中的男人！我從未感到如此滿足。多棒的體驗啊……\"");
 	say();
-	message("\"As a sign of mine appreciation and great affection for thee, please accept this gift. 'Tis my greatest possession.\"");
+	message("\"作為對你的感激和深深的愛意，請收下這份禮物。這是我最珍貴的所有物。\"");
 	say();
-	message("\"Gwani cloaks are most rare, and are worn by the Goblins as a token of great bravery. My father slew the chieftain who once wore this cloak!\"");
+	message("\"Gwani 斗篷非常稀有，是哥布林用來象徵巨大勇氣的信物。我父親殺死了曾經穿著這件斗篷的酋長！\"");
 	say();
-	message("\"Please wear it, and remember me always.\"");
+	message("\"請穿上它，並且永遠記住我。\"");
 	say();
 	UI_clear_item_say(0xFFBA);
-	Func097F(0xFFBA, "@Always...@", 0x0000);
+	Func097F(0xFFBA, "@永遠……@", 0x0000);
 	var0002 = Func099B(0xFE9C, 0x0001, 0x00E3, 0xFE99, 0x0004, 0x0000, true);
 	UI_end_conversation();
 	gflags[0x008A] = true;
@@ -186,14 +186,14 @@ labelFunc02E6_0603:
 	UI_move_object(0xFFBA, [0x0435, 0x0A54, 0x0000]);
 	UI_move_object(0xFE9C, [0x0439, 0x0A5D, 0x0001]);
 	var0002 = UI_delayed_execute_usecode_array(0xFFBA, [(byte)0x23, (byte)0x59, 0x0006, (byte)0x6B, (byte)0x27, 0x0002, (byte)0x55, 0x0636, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x61, (byte)0x59, 0x0004, (byte)0x27, 0x0002, (byte)0x55, 0x02E6], 0x001E);
-	Func097F(0xFE9C, "@Where am I?@", 0x0023);
+	Func097F(0xFE9C, "@我在哪裡？@", 0x0023);
 	abort;
 labelFunc02E6_0689:
 	if (!(UI_get_npc_id(0xFFBA) == 0x0002)) goto labelFunc02E6_06DF;
 	UI_clear_item_say(0xFE9C);
-	Func097F(0xFE9C, "@I'm ready...@", 0x0000);
+	Func097F(0xFE9C, "@我準備好了……@", 0x0000);
 	UI_clear_item_say(0xFFBA);
-	Func097F(0xFFBA, "@As am I!@", 0x0003);
+	Func097F(0xFFBA, "@我也是！@", 0x0003);
 	UI_si_path_run_usecode(0xFE9C, [0x043A, 0x0A5C, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), 0x02E6, false);
 	abort;
 labelFunc02E6_06DF:
@@ -205,10 +205,10 @@ labelFunc02E6_0701:
 	UI_show_npc_face0(0xFFBA, 0x0000);
 	var0001 = UI_get_object_position(0xFFBA);
 	if (!((var0001[0x0001] > 0x042F) && ((var0001[0x0001] < 0x043F) && ((var0001[0x0002] > 0x0A50) && (var0001[0x0002] < 0x0A5F))))) goto labelFunc02E6_080A;
-	message("\"I am ready now! Come to bed, my love!\"");
+	message("\"我現在準備好了！來床上吧，我的愛人！\"");
 	say();
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0001)) goto labelFunc02E6_07C4;
-	var0008 = Func0992(0x0001, "@Er, um, I believe I need some fresh air...@", 0x0000, false);
+	var0008 = Func0992(0x0001, "@呃，嗯，我想我需要去呼吸一些新鮮空氣……@", 0x0000, false);
 	var0002 = Func0988(UI_get_npc_object(0xFE9C), UI_get_party_list2());
 	enum();
 labelFunc02E6_0786:
@@ -218,19 +218,19 @@ labelFunc02E6_0786:
 	UI_run_schedule(var000B);
 	goto labelFunc02E6_0786;
 labelFunc02E6_07B8:
-	Func097F(var000B, "@Farewell...@", 0x0000);
+	Func097F(var000B, "@告辭……@", 0x0000);
 labelFunc02E6_07C4:
 	UI_end_conversation();
 	UI_set_item_flag(0xFE9C, 0x0010);
 	UI_si_path_run_usecode(0xFFBA, [0x043A, 0x0A5C, 0x0000], 0x000D, UI_get_npc_object(0xFFBA), 0x02E6, false);
 	UI_clear_item_say(0xFFBA);
-	Func097F(0xFFBA, "@Come, my love!@", 0x0000);
+	Func097F(0xFFBA, "@來吧，我的愛人！@", 0x0000);
 	abort;
 	goto labelFunc02E6_0822;
 labelFunc02E6_080A:
-	message("\"Oh, darling! Meet me in my bedroom...\"");
+	message("\"喔，親愛的！在我的臥室見……\"");
 	say();
-	Func097F(0xFFBA, "@I'm so sleepy...@", 0x0000);
+	Func097F(0xFFBA, "@我好想睡……@", 0x0000);
 	UI_run_schedule(0xFFBA);
 	abort;
 labelFunc02E6_0822:

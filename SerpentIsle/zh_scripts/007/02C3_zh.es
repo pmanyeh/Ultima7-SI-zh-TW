@@ -20,7 +20,7 @@ labelFunc02C3_0009:
 	var0001[0x0001] = (var0001[0x0001] - (var0001[0x0003] / 0x0002));
 	var0001[0x0002] = (var0001[0x0002] - (var0001[0x0003] / 0x0002));
 	UI_remove_item(item);
-	var0002 = Func0992(0x0001, "@The scroll talks!@", "@The scroll talks...@", true);
+	var0002 = Func0992(0x0001, "@卷軸說話了！@", "@卷軸說話了…@", true);
 	UI_sprite_effect(0x0015, var0001[0x0001], var0001[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	var0003 = UI_execute_usecode_array(Func09A0(0x0005, 0x0001), [(byte)0x23, (byte)0x27, 0x000D, (byte)0x55, 0x041F]);
 	abort;
@@ -28,295 +28,295 @@ labelFunc02C3_00A9:
 	UI_play_sound_effect2(0x005E, item);
 	UI_book_mode(item);
 	if (!(var0000 == 0x0000)) goto labelFunc02C3_00C7;
-	message("From the desk of the Great Hierophant.");
+	message("來自大教主（Great Hierophant）的辦公桌。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_00C7:
 	if (!(var0000 == 0x0001)) goto labelFunc02C3_00E8;
-	message("A SOLDIER'S NOTES~~");
+	message("士兵的筆記~~");
 	say();
-	message("These sheep all went to their deaths with smiles on their accursed faces!~");
+	message("這些綿羊帶著該死的笑容走向死亡！~");
 	say();
-	message("We pulled out their fingernails, seared their flesh with burning coals, peeled their skin back with rusty knives, gouged out their eyes with sharp sticks, and still they said nothing!~");
+	message("我們拔掉他們的指甲，用燃燒的煤炭灼燒他們的肉，用生鏽的刀剝下他們的皮，用尖銳的棍子挖出他們的眼睛，但他們還是什麼都不說！~");
 	say();
-	message("We must have the answer. But I cannot obtain the answer to my question now that they all lie dead. Could there be any truth to the old one's claim that \"meditation leads to enlightenment?\"");
+	message("我們必須得到答案。但現在他們都死了，我無法得到我問題的答案。難道老頭子聲稱的「冥想帶來啟蒙（meditation leads to enlightenment）」有任何真實性嗎？");
 	say();
-	message("~Whatever the answer may be, there is no time left. We must go. I have ordered the destruction of the temple -- there\tmust be no trace of this structure left...");
+	message("~不管答案是什麼，都沒有時間了。我們必須走。我已經下令摧毀神廟——這座建築\t絕對不能留下任何痕跡...");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_00E8:
 	if (!(var0000 == 0x0002)) goto labelFunc02C3_00FD;
-	message("MUSINGS, by Issik the Architect~~");
+	message("沉思（MUSINGS），由建築師伊西克（Issik the Architect）所著~~");
 	say();
-	message("  The snowswept surface of Sunrise Isle is totally barren. No life can live long upon the surface. It is a good thing, indeed, that the Great Hierophant decreed that it was too dangerous to allow access to the surface.");
+	message("  日出島（Sunrise Isle）被雪覆蓋的表面完全荒蕪。沒有生命能在表面長久生存。大教主（Great Hierophant）下令禁止進入表面，認為這太危險了，這確實是一件好事。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_00FD:
 	if (!(var0000 == 0x0003)) goto labelFunc02C3_0112;
-	message("MAGIC CANDLES~~");
+	message("魔法蠟燭（MAGIC CANDLES）~~");
 	say();
-	message("  The devout follower of Balance will know how to form the blocks of ice which are necessary in achieving Balance. To those of you who have forgotten your lessons, take heed: Take the magic tapers to the Walls of Ice. Therein, use the tapers upon the walls.");
+	message("  平衡（Balance）的虔誠追隨者將知道如何形成實現平衡所必需的冰塊。對於那些忘記了課程的人，請注意：將魔法細蠟燭帶到冰之牆（Walls of Ice）。在那裡，對著牆壁使用細蠟燭。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0112:
 	if (!(var0000 == 0x0004)) goto labelFunc02C3_0123;
-	message("Create Soul Prism~~ This spell doth enchant a prism so that it may become the receptacle for a soul. Though powerful, this spell hath limited applications. The reagents necessary are: sulfuric ash, blood moss, garlic, mandrake root, spider silk, and serpent scales. ");
+	message("創造靈魂稜鏡（Create Soul Prism）~~ 這個法術會對稜鏡施法，使其成為靈魂的容器。儘管很強大，但這個法術的應用有限。所需的魔法藥材是：硫磺灰燼（sulfuric ash）、血苔蘚（blood moss）、大蒜（garlic）、曼德拉草根（mandrake root）、蜘蛛絲（spider silk）和巨蛇鱗片（serpent scales）。 ");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0123:
 	if (!(var0000 == 0x0005)) goto labelFunc02C3_0134;
-	message("Create Automata~~ This spell is actually misnamed, for it doth not create automata, rather, it repairs them. If thou dost have a damaged automaton, simply cast this spell over the body and it shall be fully restored. The necessary reagents to cast this spell are as follows: sulfuric ash, mandrake root, spider silk, and serpent scales. ");
+	message("創造自動機（Create Automata）~~ 這個法術的名字其實起錯了，因為它並不創造自動機，而是修復它們。如果你有一個損壞的自動機，只需對著身體施放這個法術，它就會完全恢復。施放這個法術所需的魔法藥材如下：硫磺灰燼（sulfuric ash）、曼德拉草根（mandrake root）、蜘蛛絲（spider silk）和巨蛇鱗片（serpent scales）。 ");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0134:
 	if (!(var0000 == 0x0006)) goto labelFunc02C3_0145;
-	message("Create Ice~~ This spell immobilizes a chosen enemy in a block of ice. After a short period of time, the ice shatters, and the foe is released. Only two reagents are necessary to cast this spell: worm heart and spider silk. ");
+	message("創造冰（Create Ice）~~ 這個法術將選定的敵人固定在冰塊中。短時間後，冰塊破碎，敵人被釋放。施放這個法術只需要兩種魔法藥材：蠕蟲心臟（worm heart）和蜘蛛絲（spider silk）。 ");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0145:
 	if (!(var0000 == 0x0007)) goto labelFunc02C3_0156;
-	message("Invoke Serpent~~ This spell summons a snow serpent that is \"friendly\" to the caster. The reagents necessary to cast this spell are as follows: blood moss, garlic, worm heart, spider silk, and serpent scales. ");
+	message("召喚巨蛇（Invoke Serpent）~~ 這個法術召喚一條對施法者「友善」的雪巨蛇（snow serpent）。施放這個法術所需的魔法藥材如下：血苔蘚（blood moss）、大蒜（garlic）、蠕蟲心臟（worm heart）、蜘蛛絲（spider silk）和巨蛇鱗片（serpent scales）。 ");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0156:
 	if (!(var0000 == 0x0008)) goto labelFunc02C3_0167;
-	message("Serpent Bond~~ This powerful spell transforms the caster into a serpent for a short duration. This spell is very useful for obtaining ingress into places ordinarily inaccessible, such as a small crawlspace. ~The reagents necessary to cast this spell are as follows: blood moss, black pearl, garlic, worm heart, spider silk, and serpent scales. ");
+	message("巨蛇牽絆（Serpent Bond）~~ 這個強大的法術將施法者在短時間內變成一條巨蛇。這個法術對於進入通常無法進入的地方非常有用，例如一個小型的爬行空間。~施放這個法術所需的魔法藥材如下：血苔蘚（blood moss）、黑珍珠（black pearl）、大蒜（garlic）、蠕蟲心臟（worm heart）、蜘蛛絲（spider silk）和巨蛇鱗片（serpent scales）。 ");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0167:
 	if (!(var0000 == 0x0009)) goto labelFunc02C3_0178;
-	message("Imbalance~~ This powerful spell is very dangerous. The energy released by this spell sprays out in a random pattern, usually destroying whatever is hit.~ The reagents necessary to cast this spell are as follows: blood moss, sulfuric ash, worm heart, nightshade plant, and serpent scales. ");
+	message("不平衡（Imbalance）~~ 這個強大的法術非常危險。這個法術釋放的能量以隨機模式噴射，通常會摧毀被擊中的任何東西。~施放這個法術所需的魔法藥材如下：血苔蘚（blood moss）、硫磺灰燼（sulfuric ash）、蠕蟲心臟（worm heart）、夜影植物（nightshade plant）和巨蛇鱗片（serpent scales）。 ");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0178:
 	if (!(var0000 == 0x000A)) goto labelFunc02C3_0189;
-	message("'Tis a wise man that doth know the contented man is never poor, whilst the discontented man is never rich...");
+	message("智者明白，知足的人永不貧窮，而不知足的人永不富有...");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0189:
 	if (!(var0000 == 0x000B)) goto labelFunc02C3_019A;
-	message("When a man finds no peace within himself, 'tis useless to seek it elsewhere...");
+	message("當一個人在自己內心找不到平靜時，去別處尋找也是徒勞的...");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_019A:
 	if (!(var0000 == 0x000C)) goto labelFunc02C3_01AB;
-	message("Thou canst never teach a person anything. Thou canst only help him discover wisdom himself...");
+	message("你永遠無法教導一個人任何東西。你只能幫助他自己發現智慧...");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_01AB:
 	if (!(var0000 == 0x000F)) goto labelFunc02C3_01BC;
-	message("Things unsavory may often be necessary. All Causes are not what they seem. What appears evil often can be good. Never discount.");
+	message("令人不快的事情往往是必要的。所有的起因並非如表面所見。看起來邪惡的事情往往可能是好的。永遠不要低估。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_01BC:
 	if (!(var0000 == 0x0010)) goto labelFunc02C3_01CD;
-	message("The Hero from Another World must encounter again what he thought eradicated. The Cause is good this time.");
+	message("來自另一個世界的英雄必須再次面對他以為已經被根除的事物。這次的起因是好的。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_01CD:
 	if (!(var0000 == 0x0018)) goto labelFunc02C3_01DE;
-	message("~~Those who desire to meditate need only kneel before the serpent.");
+	message("~~那些渴望冥想的人只需在巨蛇面前跪下。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_01DE:
 	if (!(var0000 == 0x001C)) goto labelFunc02C3_01F7;
-	message("~~\tThe Ethical Man obtains his strength through Ethics.");
+	message("~~\t有道德（Ethical）的人透過道德（Ethics）獲得力量。");
 	say();
-	message("Hence, he is stronger as well as more daring.");
+	message("因此，他更強大也更大膽。");
 	say();
-	message("The Ethical Man would risk his life to save another man's life");
+	message("有道德的人會冒著生命危險去拯救另一個人的生命");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_01F7:
 	if (!(var0000 == 0x001D)) goto labelFunc02C3_0218;
-	message("~On the topic of Wealth and Ethics:");
+	message("~關於財富（Wealth）與道德（Ethics）的探討：");
 	say();
-	message("To be truly ethical, thou shouldst reject Wealth.");
+	message("要真正有道德，你應該拒絕財富。");
 	say();
-	message("Wealth corrupts the soul. It doth do so by placing a greater value upon goods and material possessions rather than upon the \"anima\", that is the living matter or spiritual matter. Spiritual kinship should be established as early as possible instead of the numerous tentative efforts by parents and the various communities to establish a Wealth kinship.");
+	message("財富腐蝕靈魂。它透過將更大的價值放在商品和物質財產上，而不是放在「靈魂（anima）」，即有生命物質或精神物質上，來做到這一點。精神上的親屬關係應該盡早建立，而不是由父母和各種社區進行大量嘗試來建立財富親屬關係。");
 	say();
-	message("Believing thou shouldst abide by rules of conduct, learning well and being of good rule and disposition are what will make an ethical Man of thee. Wealth turns too many men away from rules of conduct.");
+	message("相信你應該遵守行為準則，好好學習並保持良好的規矩和性情，這將使你成為一個有道德的人。財富使太多的人背離了行為準則。");
 	say();
-	message("Quickly enough, young men like thee become wastrels and haunters of alehouses, thereby losing their temporary possession, Wealth, but above all losing their richest dowry, their only true wealth, their soul. Ethics will prevent thee from following that path. Reject Wealth, my dear reader and most assured brother, and be truly ethical.~ I hope I have convinced thee, for if so, I have saved thee.");
+	message("很快，像你這樣的年輕人就會變成敗家子和常去酒館的人，從而失去他們暫時的擁有物——財富，但最重要的是失去他們最豐富的嫁妝，他們唯一真正的財富——他們的靈魂。道德將阻止你走上這條路。拒絕財富，我親愛的讀者和最確信的兄弟，成為真正有道德的人。~我希望我已經說服了你，因為如果我這樣做了，我就拯救了你。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0218:
 	if (!(var0000 == 0x001E)) goto labelFunc02C3_022D;
-	message("Never, NEVER, surrender to thine enemies.");
+	message("永遠，絕對不要向你的敵人投降。");
 	say();
-	message("Fight to the death, but do not abandon thine Ethics.");
+	message("戰鬥到死，但不要放棄你的道德（Ethics）。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_022D:
 	if (!(var0000 == 0x003D)) goto labelFunc02C3_023E;
-	message("~The serpent of gold can send thee along the path to knowledge, but only if balanced by wisdom. Thou mayest already have felt the ill fortune brought about by wealth without wisdom; now use thy newfound wisdom to balance the power of gold.");
+	message("~金色的巨蛇可以引領你走上知識之路，但前提是必須由智慧（wisdom）來平衡。你可能已經感受到沒有智慧的財富所帶來的不幸；現在用你新發現的智慧來平衡金子的力量。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_023E:
 	if (!(var0000 == 0x003E)) goto labelFunc02C3_024F;
-	message("In the event that the waiting lizard should become uncontrollable, use this hammer, but be warned that using it foolishly will result in punishment for it is not easily replaced.");
+	message("如果等待的蜥蜴變得無法控制，請使用這把鎚子，但請注意，愚蠢地使用它將導致懲罰，因為它不容易被替換。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_024F:
 	if (!(var0000 == 0x003F)) goto labelFunc02C3_0268;
-	message("~Do thou not despair, general, for the Arrows of Discipline");
+	message("~不要絕望，將軍，因為紀律之箭（Arrows of Discipline）");
 	say();
-	message("are well hidden.");
+	message("被隱藏得很好。");
 	say();
-	message("If thou hast need of them, I will provide them.");
+	message("如果你需要它們，我會提供給你的。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0268:
 	if (!(var0000 == 0x0040)) goto labelFunc02C3_0279;
-	message("~Thou hast proven, through thy discipline, to be worthy.");
+	message("~你已經透過你的紀律（discipline）證明了你的價值。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0279:
 	if (!(var0000 == 0x0041)) goto labelFunc02C3_028A;
-	message("~Drink thou of the fountain and feel the Force of Discipline flow through thee.");
+	message("~喝下噴泉的水，感受紀律（Discipline）的力量流遍你的全身。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_028A:
 	if (!(var0000 == 0x0042)) goto labelFunc02C3_029B;
-	message("~Congratulations to thee, initiate. Thou hast found the symbol of balance.");
+	message("~恭喜你，新信徒。你已經找到了平衡的象徵。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_029B:
 	if (!(var0000 == 0x0043)) goto labelFunc02C3_02AC;
-	message("~It is thy duty to meet thy death protecting the women and children. Their lives are the wellspring of our strength; draw courage from the knowledge that it is thy body which stands between the foul blades of Order and their hearts.");
+	message("~你的職責是冒死保護婦女和兒童。她們的生命是我們力量的源泉；從這樣的認識中汲取勇氣：是你的身體擋在了秩序（Order）邪惡的刀刃和她們的心臟之間。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_02AC:
 	if (!(var0000 == 0x0044)) goto labelFunc02C3_02C5;
-	message("~Move one of the stones so that there are two straight lines");
+	message("~移動其中一塊石頭，使其形成兩條");
 	say();
-	message("of four stones that cross each other at the center point of");
+	message("由四塊石頭組成的直線，在每條線的中心點");
 	say();
-	message("each line");
+	message("相互交叉");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_02C5:
 	if (!(var0000 == 0x004B)) goto labelFunc02C3_02DA;
-	message("~Here doth lie Ssithnos, foully murdered in his unrelenting");
+	message("~這裡躺著西斯諾斯（Ssithnos），他在對平衡（balance）的不懈服侍中");
 	say();
-	message("service to balance.");
+	message("被殘忍謀殺。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_02DA:
 	if (!(var0000 == 0x004D)) goto labelFunc02C3_02EB;
-	message("~Let this be a final warning: Those who enter this room lacking in discipline will forfeit their lives.");
+	message("~這將是最後的警告：那些缺乏紀律進入這個房間的人將喪失他們的生命。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_02EB:
 	if (!(var0000 == 0x004E)) goto labelFunc02C3_02FC;
-	message("Those who know not the password, Despair! The brass gate bars thy way, would-be intruder, and only those privy to the secret password know when to use the runes! Crawl back to your cities of structured folly and temples of Order, dog!  As I lie here, slowly dying of starvation, I laugh at thy fate, for though our city hath fallen, fool, thou wilt not use my gate as a means of ingress! Here in our city, your fellow dogs revel in their victory, knowing not that I have sealed them within! There, look! A general shakes his fist at me through the brass gate, sealed within! Nay, Order dogs, thou wilt not use my gate to send your metal slayers toward my fellows! Thou wilt have to use the serpent gates to conquer the southern lands! I can die in peace, knowing that, though mine home lies in ruin and the Chaos that is our city is now under the control of the enemy, my gate will stand closed for all eternity!");
+	message("那些不知道密碼的人，絕望吧！黃銅大門擋住了你的去路，潛在的入侵者，只有那些知曉秘密密碼的人才知道何時使用盧恩符文（runes）！滾回你們結構性愚蠢的城市和秩序（Order）的神廟吧，狗！當我躺在這裡，慢慢餓死時，我嘲笑你的命運，因為儘管我們的城市已經淪陷，傻瓜，你將無法使用我的門作為入口！在我們的城市裡，你們這些同類狗在他們的勝利中狂歡，卻不知道我已經將他們封閉在內！看那裡！一位將軍隔著黃銅大門向我揮舞著拳頭，被封閉在內！不，秩序的狗，你無法使用我的門將你們的金屬殺手送向我的同胞！你將不得不使用巨蛇之門（serpent gates）來征服南部土地！我可以平靜地死去，因為我知道，儘管我的家園已成廢墟，曾經是我們城市的混亂（Chaos）現在在敵人的控制下，但我的門將永遠關閉！");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_02FC:
 	if (!(var0000 == 0x0050)) goto labelFunc02C3_0321;
-	message("I write this in great haste, for I can already hear the forces of Order breaching the keep walls. I know not how this missive will survive to reach the outside lands, or for that matter, future generations. Mine only hope is that this speedily-drafted work will offer record of our hallowed philosophy. For our culture to have any chance of enduring the ages, someone, somewhere must find this. Please, reader, I beseech thee, spread the word of our peoples. Balance -- The harmony between the Principles of Order and Chaos -- is the one pure axiom we hold true. All three Principles are symbolized in our hieroglyphs: The Great Earth Serpent, keeper of Balance, lies on a vertical plane, around which the two opposing serpents of Chaos and Order wrap themselves.");
+	message("我匆忙寫下這封信，因為我已經能聽到秩序（Order）的軍隊突破城堡的牆壁。我不知道這封信將如何倖存下來，送達外面的土地，或者說，未來的世代。我唯一的希望是，這份匆忙起草的作品能記錄我們神聖的哲學。如果我們的文化要有任何機會經歷歲月，某人在某個地方必須找到這個。請，讀者，我懇求你，傳播我們人民的言論。平衡（Balance）——秩序與混沌（Chaos）原則之間的和諧——是我們持守的唯一純粹的公理。所有三個原則都象徵在我們的象形文字中：偉大的大地巨蛇（Great Earth Serpent），平衡的守護者，躺在一個垂直的平面上，混亂和秩序兩條對立的蛇纏繞其上。");
 	say();
-	message("Chaos and Order each embrace three Forces. These six Forces, when combined, form the three Principles of Balance. The Forces of Chaos are Tolerance, Enthusiasm, and Emotion; the Forces of Order are Ethicality, Discipline, and Logic.");
+	message("混沌與秩序各自包含三種力量。這六種力量結合起來，形成平衡的三個原則。混沌的力量是寬容（Tolerance）、熱情（Enthusiasm）和情感（Emotion）；秩序的力量是道德（Ethicality）、紀律（Discipline）和邏輯（Logic）。");
 	say();
-	message("CHAOS -- Tolerance is that which encourages the acceptance of all things. Enthusiasm is the energy that allows one to perform great tasks. Emotion is the ability to perceive those feelings that come from the heart, as opposed to coming from the mind.");
+	message("混沌——寬容是鼓勵接受所有事物的力量。熱情是讓人能夠完成偉大任務的能量。情感是感知那些來自心靈深處的感覺的能力，而不是來自頭腦。");
 	say();
-	message("ORDER -- Ethicality is the belief that there is great value in abiding by rules of conduct. Discipline is the drive to complete a task and avoid the distractions that will prevent its completion. Logic permits clear, reasoned thought, free from any instinctual biases.");
+	message("秩序——道德是相信遵守行為準則有很大價值的信念。紀律是完成任務並避免阻礙其完成的干擾的驅動力。邏輯允許清晰、理性的思考，不受任何本能偏見的影響。");
 	say();
-	message("BALANCE -- From the marriage between two Forces, one each from Chaos and Order, come the Principles. Tolerance and Ethicality combine to form Harmony, the ability to be at peace with the self, the individual, and the world. From the union of Enthusiasm and Discipline springs Dedication, that which permits one to surmount obstacles and lead others. Finally, Emotion tempered by Logic results in Rationality, the ability to comprehend life and understand the world around us. The Forces of Chaos and Order must ever remain in Balance, for imbalance leads to disaster. Witness the war-torn state of our world today! As thou canst surely see, my world hath been torn asunder by disregard for Balance -- our dearest axiom! If thou dost thrive in a time less violent, I can do no more than plead with thee to help restore Balance to the Serpent Isle! I must end this brief explication here, for I can hear mine attackers pounding upon the oaken door downstairs.");
+	message("平衡——來自混沌和秩序的兩種力量的結合，產生了原則。寬容和道德結合形成和諧（Harmony），即與自我、個人和世界和平相處的能力。熱情和紀律的結合產生了奉獻（Dedication），即讓人能夠克服障礙並領導他人的能力。最後，情感被邏輯調和結果產生理性（Rationality），即理解生活和理解我們周圍世界的能力。混沌和秩序的力量必須永遠保持平衡，因為不平衡會導致災難。見證今天我們這個飽受戰爭蹂躪的世界！正如你一定能看到的，我的世界因為無視平衡——我們最親愛的公理——而被撕裂！如果你在一個不那麼暴力的時代繁榮發展，我只能懇求你幫助恢復巨蛇之島（Serpent Isle）的平衡！我必須在這裡結束這簡短的解釋，因為我能聽到攻擊者在樓下敲打橡木門。");
 	say();
-	message("I wish thee and thy world better fortune than mine own. -- Ssithnos, the Great Hierophant");
+	message("我祝願你和你的世界比我自己有更好的運氣。——大教主西斯諾斯（Ssithnos, the Great Hierophant）");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0321:
 	if (!(var0000 == 0x0051)) goto labelFunc02C3_033A;
-	message("~The Chaos vermin took their own lives");
+	message("~混沌（Chaos）害蟲結束了他們自己的生命");
 	say();
-	message(" rather than face us.");
+	message(" 而不是面對我們。");
 	say();
-	message("\tLet them rot!");
+	message("\t讓他們腐爛吧！");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_033A:
 	if (!(var0000 == 0x0052)) goto labelFunc02C3_034F;
-	message("~\t\t\tSceptre of Enlightenment.");
+	message("~\t\t\t啟蒙權杖（Sceptre of Enlightenment）。");
 	say();
-	message("True dedication places Enlightenment above all else.");
+	message("真正的奉獻（dedication）將啟蒙置於一切之上。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_034F:
 	if (!(var0000 == 0x0053)) goto labelFunc02C3_0360;
-	message("~Revere these remains, for they are the ashes of the brave initiates who sacrificed their bodies for the greater victory of Order over Chaos. Theirs are the minds that make the Lords of Discipline more than mere automatons. Their sacrifice will bring ultimate victory to our cause, for none can stand against an automaton with the Will and Discipline of an initiate!");
+	message("~尊崇這些遺骸，因為它們是勇敢的新信徒的骨灰，他們為秩序戰勝混沌的更大勝利犧牲了自己的身體。他們的頭腦使紀律領主（Lords of Discipline）不僅僅是自動機（automatons）。他們的犧牲將為我們的事業帶來最終的勝利，因為沒有人能對抗具有新信徒的意志（Will）和紀律（Discipline）的自動機！");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0360:
 	if (!(var0000 == 0x0054)) goto labelFunc02C3_0375;
-	message("~Report on the Cleansing of the Fiend's Domain~");
+	message("~關於淨化惡魔領域的報告~");
 	say();
-	message("~Subcommander Stherask, I regret to inform thee that, of the entire company of brass automatons, not one has returned. This mission has not only proven costly in terms of the efforts expended by our wizards to create these automatons, but in the lives of brave soldiers as well.  Of the three humans we had sent on the mission, Lieutenant Alspeth and her two sergeants, Shesparios and Iskil, none have returned.  We can only fear the worst in this case; the mission has failed.  Were it not for the unfaltering faith I have in thee and our Commander, I would question the value of our attempt, as the Fiend has ceased to meddle in the affairs of Serpent's Fang.  I assure thee, Subcommander, that none blame thee for the deaths of those three fine warriors.  All who know of the failed mission have no doubts that this was a just cause for loss of lives.");
+	message("~副指揮官斯特拉斯克（Subcommander Stherask），我很遺憾地通知你，整個黃銅自動機連隊沒有一個回來。這次任務不僅證明了我們的巫師為製造這些自動機所付出的努力代價高昂，而且勇敢士兵的生命也是如此。 我們派去執行任務的三個人類中，阿爾斯佩斯中尉（Lieutenant Alspeth）和她的兩名中士謝斯帕里奧斯（Shesparios）和伊斯基爾（Iskil）都沒有回來。 在這種情況下，我們只能做最壞的打算；任務失敗了。 要不是我對你和我們的指揮官有著堅定不移的信心，我會質疑我們嘗試的價值，因為惡魔已經停止干涉巨蛇之牙（Serpent's Fang）的事務。 我向你保證，副指揮官，沒有人因為這三名優秀戰士的死亡而責備你。 所有知道任務失敗的人都毫不懷疑這是失去生命的合理理由。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0375:
 	if (!(var0000 == 0x0063)) goto labelFunc02C3_0396;
-	message("~Ritual of Reunification. ~");
+	message("~重新統一儀式（Ritual of Reunification）。 ~");
 	say();
-	message("~  First -- Open the window into the Void by placing the Blackrock Serpent in its proper slot.");
+	message("~  第一——將黑岩巨蛇（Blackrock Serpent）放入其適當的槽位，打開通往虛空（Void）的窗戶。");
 	say();
-	message("~  Second -- Each imprisoned Bane must be placed upon the altar corresponding to its Principle. Unrestrained Emotion leads to Madness. Unchecked Enthusiasm leads to Wantonness. Unthinking Tolerance produces Anarchy. The Flame of Chaos shall welcome each Bane to its proper place.");
+	message("~  第二——必須將每個被囚禁的災星（Bane）放在與其原則相對應的祭壇上。不受約束的情感（Emotion）會導致瘋狂（Madness）。不受控制的熱情（Enthusiasm）會導致放縱（Wantonness）。不假思索的寬容（Tolerance）會產生無政府狀態（Anarchy）。混沌之焰（Flame of Chaos）將歡迎每個災星來到其適當的位置。");
 	say();
-	message("~  Third -- That which shall bond the Banes together must be placed upon the remaining altar.");
+	message("~  第三——將災星結合在一起的東西必須放在剩下的祭壇上。");
 	say();
-	message("~  If all is done correctly, Chaos shall be reunited.");
+	message("~  如果一切都做得正確，混沌將被重新統一。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0396:
 	if (!(var0000 == 0x0078)) goto labelFunc02C3_03B3;
-	message("~Ethicality. ~");
+	message("~道德（Ethicality）。 ~");
 	say();
-	message("~\tAs a follower of Order thou must always conform to the principles of conduct as accepted by our alliance. Without these as guides we as a people would be lost. We would be no better than those who are controlled by Chaos.");
+	message("~\t作為秩序（Order）的追隨者，你必須始終遵守我們聯盟接受的行為準則。如果沒有這些作為指導，我們作為一個民族就會迷失方向。我們會和那些被混沌控制的人沒什麼兩樣。");
 	say();
-	message("~\tWe are far better than those who permit anarchy to control their lives and their thoughts. We must be eternally vigilant to insure that our system of ethics stands strong, that it must not be corrupted from within. We must insure that we remain pure, for corruption is the strength of our enemy, though it will be his own undoing should we stand aligned against it.");
+	message("~\t我們遠遠好過那些讓無政府狀態控制他們生活和思想的人。我們必須永遠保持警惕，以確保我們的道德體系堅如磐石，它絕不能從內部被腐蝕。我們必須確保我們保持純潔，因為腐敗是我們敵人的力量，儘管如果我們團結一致對抗它，它將會毀滅它自己。");
 	say();
-	message("~\tStudent of Ethicality, take heed! Thou must be stronger than thou art in order to stand against the false truths that Chaos will tempt thee with. As iron is in a forge, thou wilt be blasted with the torrent of Chaos and corruption 'til thou wilt lose thy brittleness and harden into a core of strength. Through Ethics, thou canst become free of the anarchy and pain that lies within Chaos and ignorance.");
+	message("~\t道德（Ethicality）的學生，注意了！你必須比你現在更強大，才能抵抗混沌誘惑你的虛假真理。就像鐵在鍛造爐中一樣，你將受到混沌和腐敗洪流的衝擊，直到你失去脆性並硬化成力量的核心。透過道德，你可以擺脫隱藏在混沌和無知中的無政府狀態和痛苦。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_03B3:
 	if (!(var0000 == 0x0079)) goto labelFunc02C3_03D4;
-	message("~Library of the Hierophant ~~ \tThe Great Library of the Hierophant contains all the history and knowledge that defines and guides the followers of Order. Though it is hidden away within the bowels of the mountain, a student of Order may enter it through the portal in the Temple of the Hierophant.");
+	message("~教主圖書館（Library of the Hierophant） ~~ \t教主大圖書館包含了定義和指導秩序（Order）追隨者的所有歷史和知識。儘管它隱藏在山的深處，但秩序的學生可以透過教主神廟（Temple of the Hierophant）的傳送門進入它。");
 	say();
-	message("~\tIn times of disaster and of war, the Great Library was sealed to prevent its valuable works from being destroyed, or from falling into the hands of Chaos. Entry into the Library meant first opening the door to the Temple of the Hierophant.");
+	message("~\t在災難和戰爭時期，大圖書館被封閉，以防止其珍貴的作品被摧毀，或落入混沌之手。進入圖書館意味著首先要打開通往教主神廟的門。");
 	say();
-	message("~ This could only be achieved by a student placing the correct symbols of Order on the pedestal before the door to the temple. Since only true followers of Order would have the understanding of the symbols, this was the first test to prevent those of Chaos from desecrating both Temple and Library.\tOnly those who have studied\tthe writers and poets of Order will have the wisdom and knowledge to open the door.");
+	message("~ 只有學生在神廟門前的基座上放置正確的秩序符號才能實現。由於只有真正的秩序追隨者才了解這些符號，這是防止混沌的人褻瀆神廟和圖書館的第一個測試。\t只有研究過秩序的作家和詩人的人，才會有智慧和知識打開這扇門。");
 	say();
-	message("~\tOnce the door opens the student doth need the Sceptre of the Hierophant to gain entry into the Library. Since the Hierophant keeps it in his charge, only by asking his permission can one gain access. Should the Sceptre be lost, or the Hierophant killed in battle, the Library will remain forever closed, away from the corruptions of Chaos.");
+	message("~\t一旦門打開，學生就需要教主權杖（Sceptre of the Hierophant）才能進入圖書館。由於教主負責保管它，只有徵得他的同意才能進入。如果權杖遺失，或者教主在戰鬥中陣亡，圖書館將永遠關閉，遠離混沌的腐敗。");
 	say();
-	message("~\tWith Sceptre in hand, the student must stand in front of the blue pedestal of the temple. He must place the Sceptre atop the pedestal. The student will then gain instant access to the Library. All knowledge of Order is held there as a bastion against corruption and Chaos.");
+	message("~\t學生手持權杖，必須站在神廟的藍色基座前。他必須把權杖放在基座的頂部。然後學生將立即獲得進入圖書館的權限。秩序（Order）的所有知識都被保存在那裡，作為對抗腐敗和混沌的堡壘。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_03D4:
 	if (!(var0000 == 0x007A)) goto labelFunc02C3_03E9;
-	message("~What is Order? a poem by Sschittek the Wise ~");
+	message("~什麼是秩序？由智者施泰克（Sschittek the Wise）寫的一首詩 ~");
 	say();
-	message("~\tWhat is Order? ~Is it a rule? ~Is it a law? ~Is it a whip with barbs to control the unruly? ~It is not any of these, it is more... ~It is wisdom, it is knowledge, ~It is a sense of duty!~ ~Ethicality is a Scroll, ~speaking of principles, ~of wisdom and of freedom ~from fear and hate. ~It is a gleam of sunrise ~guiding thee toward enlightenment ~and to thy true fate.~ ~Discipline is strength of the mind, ~born of willpower and knowledge, ~cleansing like a noon summer shower. ~It is a well-honed Serpent Dagger, ~a blade that cuts through ~Chaos and corruption's foul power.~ ~Logic is a straight path, ~without obstacles or brambles, ~free from both rock and tooth. ~Logic is precise and unswerving, ~counting Order's truth on an ~eternal Abacus\tof Truth.");
+	message("~\t什麼是秩序（Order）？ ~它是一條規則嗎？ ~它是一項法律嗎？ ~它是一條帶有倒刺的鞭子，用來控制不守規矩的人嗎？ ~它不是這些中的任何一個，它更多... ~它是智慧，它是知識， ~它是一種責任感！~ ~道德（Ethicality）是一份卷軸， ~講述著原則， ~講述著智慧，講述著自由 ~遠離恐懼和仇恨。 ~它是一抹日出的光芒 ~引導你走向啟蒙 ~並走向你真正的命運。~ ~紀律（Discipline）是心靈的力量， ~誕生於意志力和知識， ~像夏日正午的陣雨一樣淨化。 ~它是一把精心打磨的巨蛇匕首， ~一把能切斷 ~混沌（Chaos）和腐敗邪惡力量的刀刃。~ ~邏輯（Logic）是一條筆直的道路， ~沒有障礙或荊棘， ~沒有岩石和牙齒。 ~邏輯精確而不動搖， ~在一個 ~永恆的真理算盤上計算著秩序的真理。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_03E9:
 	if (!(var0000 == 0x007B)) goto labelFunc02C3_03FA;
-	message("~To commune with the Serpent one must be in possession of the Earrings of the Serpent. Only via these can the Great Serpent channel his words to thee. ~To be at one with Balance one must have the blackrock Serpents of Order, Chaos, and of Balance. ~To enter into the Grand Shrine of Balance one must wear the Armour of the Serpent, carry the great Staff of the Serpent, and wear the Crown of the Serpent upon one's head. ~Only after these are obtained may one enter the most sacred of sanctums of the people of the Ophidian order.");
+	message("~為了與巨蛇交流，必須擁有巨蛇耳環（Earrings of the Serpent）。只有透過這些，偉大的巨蛇才能向你傳達他的話語。 ~為了與平衡（Balance）融為一體，必須擁有秩序、混沌和平衡的黑岩巨蛇。 ~為了進入平衡大聖殿（Grand Shrine of Balance），必須穿上巨蛇盔甲（Armour of the Serpent），攜帶偉大的巨蛇法杖（Staff of the Serpent），並將巨蛇皇冠（Crown of the Serpent）戴在頭上。 ~只有在獲得這些之後，才能進入奧菲迪安（Ophidian）秩序人民最神聖的聖所。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_03FA:
 	if (!(var0000 == 0x007C)) goto labelFunc02C3_0426;
-	message("~I have blocked the entrance to the Catacombs beneath our outpost with walls of force. None may pass ere this key is used. If thy need is great, and thou dost follow in the steps of Order, thou shalt know what to do to retrieve Loriel's Gift. ~~Ardiniss");
+	message("~我已經用力量之牆封鎖了我們前哨站下方地下墓穴（Catacombs）的入口。在使用這把鑰匙之前，沒有人可以通過。如果你非常需要，並且你遵循秩序的步驟，你將知道該怎麼做來取回洛瑞爾的禮物（Loriel's Gift）。 ~~阿迪尼斯（Ardiniss）");
 	say();
 	var0003 = UI_delayed_execute_usecode_array(Func09A0(0x0000, 0x0001), [(byte)0x55, 0x0603], 0x0001);
 	goto labelFunc02C3_043B;
 labelFunc02C3_0426:
 	if (!(var0000 == 0x007D)) goto labelFunc02C3_0437;
-	message("~NOTES: ~~I have looked for a way through to the other chambers of this cursed outpost, but have yet found nothing. I did discover that the well in the southernmost chamber was empty. By using rope I lowered myself down into the darkness. ~At the last chamber I could go no further -- a wall of some kind of eldritch force blocked my way. I discerned that no ordinary key would grant me passage. ~I will search for this key.");
+	message("~筆記： ~~我一直在尋找通往這個被詛咒的前哨站其他房間的道路，但至今什麼也沒找到。我確實發現最南端房間裡的井是空的。透過使用繩子，我把自己降到了黑暗中。 ~在最後一個房間，我無法再前進——某種詭異力量的牆擋住了我的去路。我看出普通的鑰匙無法讓我通過。 ~我將尋找這把鑰匙。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0437:
-	message("     This is not a valid scroll.");
+	message("     這不是一個有效的卷軸。");
 	say();
 labelFunc02C3_043B:
 	return;

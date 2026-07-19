@@ -51,7 +51,7 @@ labelFunc02AF_00F7:
 	goto labelFunc02AF_00D8;
 labelFunc02AF_00FA:
 	if (!(var0003 && (!gflags[0x01FB]))) goto labelFunc02AF_01C4;
-	var0001 = ("" & ("@Where am I?@" & "@Where are my belongings?@"));
+	var0001 = ("" & ("@我在哪裡？@" & "@我的物品在哪裡？@"));
 	Func094F(0xFE9C, var0001);
 	var0007 = 0x0000;
 	var0008 = UI_get_cont_items(0xFE9C, 0xFE99, 0xFE99, 0xFE99);
@@ -76,7 +76,7 @@ labelFunc02AF_01A4:
 	goto labelFunc02AF_0135;
 labelFunc02AF_01C4:
 	if (!gflags[0x01FB]) goto labelFunc02AF_01D6;
-	Func097F(0xFE9C, "@Back here again?@", 0x0005);
+	Func097F(0xFE9C, "@又回到這裡了？@", 0x0005);
 labelFunc02AF_01D6:
 	gflags[0x01FB] = true;
 	UI_move_object(0xFE9C, [0x0066, 0x066F, 0x0000]);

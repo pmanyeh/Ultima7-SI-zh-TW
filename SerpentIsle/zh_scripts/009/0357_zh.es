@@ -29,7 +29,7 @@ void Func0357 shape#(0x357) ()
 	UI_lightning();
 	var0004 = UI_get_random(0x0002);
 	UI_reduce_health(0xFE9C, var0004, 0x0005);
-	var0005 = ("@Yow!@" & ("@Ouch!@" & ("@That hurt!@" & ("@Ugh...@" & ("@Damn!@" & "@Yikes!@")))));
+	var0005 = ("@哎呀！@" & ("@好痛！@" & ("@真痛！@" & ("@呃……@" & ("@該死！@" & "@哇！@")))));
 	var0002 = var0005[UI_get_random(UI_get_array_size(var0005))];
 	Func097F(0xFE9C, var0002, 0x0001);
 labelFunc0357_009E:
@@ -44,7 +44,7 @@ labelFunc0357_00BF:
 	var0002 = true;
 	goto labelFunc0357_00D4;
 labelFunc0357_00C6:
-	UI_item_say(0xFE9C, "@'Tis jammed.@");
+	UI_item_say(0xFE9C, "@卡住了。@");
 	var0002 = false;
 labelFunc0357_00D4:
 	if (!(var0000 == 0x000F)) goto labelFunc0357_0182;
@@ -59,9 +59,9 @@ labelFunc0357_00F1:
 labelFunc0357_0107:
 	for (var0009 in var0006 with var0007 to var0008) attend labelFunc0357_016D;
 	if (!(UI_get_item_frame(var0009) == 0x0001)) goto labelFunc0357_016A;
-	var0002 = UI_execute_usecode_array(var0009, [(byte)0x23, (byte)0x52, "@Yes, Master?@"]);
+	var0002 = UI_execute_usecode_array(var0009, [(byte)0x23, (byte)0x52, "@是的，主人？@"]);
 	var000A = Func0992(0x0001, 0x0000, 0x0000, true);
-	Func097F(var000A, "@The Oracle speaks!@", 0x0003);
+	Func097F(var000A, "@神諭開口了！@", 0x0003);
 	var0002 = UI_delayed_execute_usecode_array(var0009, [(byte)0x23, (byte)0x55, 0x00F9, 0x0000], 0x000A);
 labelFunc0357_016A:
 	goto labelFunc0357_0107;
@@ -70,7 +70,7 @@ labelFunc0357_016D:
 	goto labelFunc0357_0182;
 labelFunc0357_0174:
 	var0002 = false;
-	UI_item_say(0xFE9C, "@'Tis jammed.@");
+	UI_item_say(0xFE9C, "@卡住了。@");
 labelFunc0357_0182:
 	if (!(var0000 == 0x000D)) goto labelFunc0357_01A1;
 	if (!gflags[0x016D]) goto labelFunc0357_0199;
@@ -91,17 +91,17 @@ labelFunc0357_01A1:
 	goto labelFunc0357_0203;
 labelFunc0357_01DC:
 	var0002 = UI_execute_usecode_array(var000B, [(byte)0x23, (byte)0x49, 0x0002, 0x0005]);
-	var000A = Func0992(0x0001, "@Watch out!@", "@Whoops...@", true);
+	var000A = Func0992(0x0001, "@小心！@", "@哎呀……@", true);
 labelFunc0357_0203:
 	goto labelFunc0357_0214;
 labelFunc0357_0206:
 	var0002 = false;
-	UI_item_say(0xFE9C, "@'Tis jammed.@");
+	UI_item_say(0xFE9C, "@卡住了。@");
 labelFunc0357_0214:
 	goto labelFunc0357_0225;
 labelFunc0357_0217:
 	var0002 = false;
-	UI_item_say(0xFE9C, "@'Tis jammed.@");
+	UI_item_say(0xFE9C, "@卡住了。@");
 labelFunc0357_0225:
 	if (!(var0000 == 0x000E)) goto labelFunc0357_02C2;
 	if (!gflags[0x016D]) goto labelFunc0357_02B4;
@@ -114,16 +114,16 @@ labelFunc0357_0225:
 labelFunc0357_025D:
 	for (var0009 in var0006 with var000C to var000D) attend labelFunc0357_02A1;
 	if (!(UI_get_item_frame(var0009) == 0x0001)) goto labelFunc0357_029E;
-	var0002 = UI_execute_usecode_array(var0009, [(byte)0x23, (byte)0x52, "@Oh!@", (byte)0x27, 0x000F, (byte)0x52, "@Please, Master...@", (byte)0x27, 0x000F, (byte)0x52, "@Stop!@"]);
+	var0002 = UI_execute_usecode_array(var0009, [(byte)0x23, (byte)0x52, "@喔！@", (byte)0x27, 0x000F, (byte)0x52, "@拜託，主人……@", (byte)0x27, 0x000F, (byte)0x52, "@停下來！@"]);
 labelFunc0357_029E:
 	goto labelFunc0357_025D;
 labelFunc0357_02A1:
-	var000A = Func0992(0x0001, "@I hear something...@", "@What was that?@", true);
+	var000A = Func0992(0x0001, "@我聽到了什麼聲音……@", "@那是什麼？@", true);
 labelFunc0357_02B1:
 	goto labelFunc0357_02C2;
 labelFunc0357_02B4:
 	var0002 = false;
-	UI_item_say(0xFE9C, "@'Tis jammed.@");
+	UI_item_say(0xFE9C, "@卡住了。@");
 labelFunc0357_02C2:
 	if (!var0002) goto labelFunc0357_02FC;
 	if (!((var0001 % 0x0002) == 0x0000)) goto labelFunc0357_02E5;

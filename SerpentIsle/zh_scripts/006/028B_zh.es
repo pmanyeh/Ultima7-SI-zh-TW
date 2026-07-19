@@ -41,7 +41,7 @@ labelFunc028B_0111:
 	return;
 labelFunc028B_0112:
 	if (!(event == 0x0001)) goto labelFunc028B_012A;
-	var0006 = ("@I suspect spinning the wool will be more fruitful " + "than spinning an empty wheel.@");
+	var0006 = ("@用羊毛來紡線，應該比空轉紡車更有成效。@");
 	Func094A(var0006);
 labelFunc028B_012A:
 	return;

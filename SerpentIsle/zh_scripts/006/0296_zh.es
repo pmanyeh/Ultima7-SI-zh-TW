@@ -29,36 +29,34 @@ labelFunc0296_004F:
 	var0001 = UI_update_last_created(var0002);
 	var0004 = UI_die_roll(0x0001, 0x0003);
 	if (!(var0004 == 0x0001)) goto labelFunc0296_00DB;
-	Func0949("@Indeed, a whopper!@");
+	Func0949("@的確，好大一條！@");
 	if (!UI_npc_nearby(0xFFFE)) goto labelFunc0296_00DB;
-	Func097F(0xFFFE, "@I have seen bigger.@", 0x0010);
+	Func097F(0xFFFE, "@我看過更大的。@", 0x0010);
 labelFunc0296_00DB:
 	if (!(var0004 == 0x0002)) goto labelFunc0296_00EB;
-	Func0949("@What a meal!@");
+	Func0949("@真是一頓大餐！@");
 labelFunc0296_00EB:
 	if (!(var0004 == 0x0003)) goto labelFunc0296_00FE;
-	Func0949(["@That doth not look right.@"]);
+	Func0949(["@那看起來不太對勁。@"]);
 labelFunc0296_00FE:
 	goto labelFunc0296_0192;
 labelFunc0296_0101:
 	var0004 = UI_die_roll(0x0001, 0x0004);
 	if (!(var0004 == 0x0001)) goto labelFunc0296_0124;
-	Func097F(0xFE9C, "@Not even a bite!@", 0x0000);
+	Func097F(0xFE9C, "@連咬都沒咬！@", 0x0000);
 labelFunc0296_0124:
 	if (!(var0004 == 0x0002)) goto labelFunc0296_0150;
-	Func097F(0xFE9C, "@It did escape!@", 0x0000);
+	Func097F(0xFE9C, "@牠逃跑了！@", 0x0000);
 	if (!UI_npc_nearby(0xFFFD)) goto labelFunc0296_0150;
-	Func097F(0xFFFD, "@I'm certain thou hadst one!@", 0x0010);
+	Func097F(0xFFFD, "@我敢肯定你抓到了一條！@", 0x0010);
 labelFunc0296_0150:
 	if (!(var0004 == 0x0003)) goto labelFunc0296_0166;
-	Func097F(0xFE9C, "@I've lost my bait!@", 0x0000);
+	Func097F(0xFE9C, "@我的魚餌沒了！@", 0x0000);
 labelFunc0296_0166:
 	if (!(var0004 == 0x0004)) goto labelFunc0296_0192;
-	Func097F(0xFE9C, "@I felt a nibble...@", 0x0000);
+	Func097F(0xFE9C, "@我感覺到有魚在咬餌……@", 0x0000);
 	if (!UI_npc_nearby(0xFFFF)) goto labelFunc0296_0192;
-	Func097F(0xFFFF, "@We should hunt instead, Avatar!@", 0x0010);
+	Func097F(0xFFFF, "@聖者，我們應該去打獵才對！@", 0x0010);
 labelFunc0296_0192:
 	return;
 }
-
-

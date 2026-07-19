@@ -561,7 +561,7 @@ labelFunc042E_0907:
 	say();
 	message("\"Imagine if women were not coddled or thought of as inferior! What would the world be like if we all listened to our Inner Voice?\"");
 	say();
-	var000E = Func0992(0xFFFD, ("@The world would be full of frustrated fools, " + "I am sure.@"), 0x0000, false);
+	var000E = Func0992(0xFFFD, ("@The world would be full of frustrated fools, I am sure.@"), 0x0000, false);
 	if (!(var000E != 0xFE9C)) goto labelFunc042E_0988;
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0002)) goto labelFunc042E_0981;
 	var000F = var000E;
@@ -570,7 +570,7 @@ labelFunc042E_0950:
 	var000F = Func0992(0x0001, 0x0000, 0x0000, false);
 	goto labelFunc042E_0950;
 labelFunc042E_096D:
-	var000F = Func0992(var000F, ("@Another one who hath fallen prey to the empty promises " + "of The Fellowship, Avatar.@"), 0x0000, false);
+	var000F = Func0992(var000F, ("@Another one who hath fallen prey to the empty promises of The Fellowship, Avatar.@"), 0x0000, false);
 labelFunc042E_0981:
 	UI_set_conversation_slot(0x0000);
 labelFunc042E_0988:

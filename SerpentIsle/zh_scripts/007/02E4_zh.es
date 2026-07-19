@@ -38,8 +38,8 @@ labelFunc02E4_0026:
 labelFunc02E4_00AA:
 	goto labelFunc02E4_0026;
 labelFunc02E4_00AD:
-	var0009 = ["@Methinks thou shouldst place an empty bucket at its base, Avatar.@"];
-	var000A = ["@Hummmm. I'll wager I could fill an empty bucket if I placed one at its base...@"];
+	var0009 = ["@我想你應該在它的底部放一個空桶，聖者。@"];
+	var000A = ["@嗯……我打賭如果我在它的底部放一個空桶，我就能把它裝滿……@"];
 	var0008 = Func0992(0xFFFE, var0009, var000A, false);
 labelFunc02E4_00CF:
 	if (!(event == 0x0002)) goto labelFunc02E4_01AB;

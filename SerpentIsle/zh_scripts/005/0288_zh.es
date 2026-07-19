@@ -16,7 +16,7 @@ void Func0288 shape#(0x288) ()
 	UI_set_item_flag(var0001, 0x0001);
 	goto labelFunc0288_0046;
 labelFunc0288_0040:
-	Func0949("@Do not waste that!@");
+	Func0949("@別浪費那個！@");
 labelFunc0288_0046:
 	Func0971(item);
 labelFunc0288_004A:
@@ -29,7 +29,7 @@ labelFunc0288_0072:
 	if (!UI_get_item_flag(var0001, 0x0012)) goto labelFunc0288_0089;
 	UI_set_item_flag(var0001, 0x0000);
 labelFunc0288_0089:
-	Func0949("@Waste that not!@");
+	Func0949("@不要浪費那個！@");
 labelFunc0288_008F:
 	UI_play_sound_effect2(0x0082, item);
 	Func0971(item);
@@ -43,7 +43,7 @@ labelFunc0288_00C3:
 	if (!UI_get_item_flag(var0001, 0x0012)) goto labelFunc0288_00DA;
 	UI_set_item_flag(var0001, 0x0003);
 labelFunc0288_00DA:
-	Func0949("@Is that a good idea!@");
+	Func0949("@那是個好主意嗎！@");
 labelFunc0288_00E0:
 	UI_play_sound_effect2(0x0082, item);
 	Func0971(item);

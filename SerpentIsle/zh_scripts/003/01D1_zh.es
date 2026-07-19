@@ -21,56 +21,56 @@ void Func01D1 shape#(0x1D1) ()
 	UI_show_npc_face0(0xFFFD, 0x0000);
 	var0001 = UI_get_music_track();
 	gflags[0x0190] = true;
-	message("\"Wait, sailor! I shall sing thee mine heart's one song... I fear that it is a sad one --\"");
+	message("「等等，水手！讓我為你唱我心中那首歌……我恐怕那是首悲傷的歌——」");
 	say();
 	UI_play_music(0x003D, var0001);
-	message("\"It is a shame, a heartsore shame,\"");
+	message("「這是一種遺憾，一種心碎的遺憾，」");
 	say();
 	UI_play_music(0x003E, var0001);
-	message("\"That I am singing of my love in vain.\"");
+	message("「我竟在徒然地為我的愛人唱歌。」");
 	say();
 	UI_play_music(0x003B, var0001);
-	message("\"For I have lost my lady, my love,\"");
+	message("「因為我已失去了我的佳人，我的摯愛，」");
 	say();
 	UI_play_music(0x003C, var0001);
-	message("\"And I will search for her, yes, search for her,\"");
+	message("「我將尋找她，是的，尋找她，」");
 	say();
 	UI_play_music(0x003D, var0001);
-	message("\"Even through all the stars above.\"");
+	message("「哪怕要穿越頭頂所有的星辰。」");
 	say();
 	UI_play_music(0x003E, var0001);
-	message("\"Gwenno, canst thou hear me? Gwenno, my dear,\"");
+	message("「 Gwenno ，你能聽見我嗎？我的 Gwenno ，」");
 	say();
 	UI_play_music(0x003B, var0001);
-	message("\"Take heart for thy beloved Iolo is here!\"");
+	message("「振作起來，你深愛的 Iolo 就在這裡！」");
 	say();
 	UI_play_music(0x003C, var0001);
 	UI_remove_npc_face0();
 	UI_revert_schedule(0xFFC6);
 	UI_run_schedule(0xFFC6);
 	UI_set_schedule_type(0xFFC6, 0x000C);
-	Func097F(0xFFD0, "@How sad...@", 0x0000);
-	Func097F(0xFFCB, "@Catchy tune...@", 0x000A);
+	Func097F(0xFFD0, "@真是悲傷……@", 0x0000);
+	Func097F(0xFFCB, "@倒是挺上口的……@", 0x000A);
 	abort;
 labelFunc01D1_00DF:
 	goto labelFunc01D1_0124;
 labelFunc01D1_00E2:
 	UI_show_npc_face0(0xFFFD, 0x0000);
 	if (!(!gflags[0x0038])) goto labelFunc01D1_0108;
-	message("\"Please free thine old friend! There hath been a terrible mistake, ");
+	message("「請救出你的老朋友！這裡發生了可怕的誤會，");
 	message(var0000);
-	message("!\"");
+	message("！」");
 	say();
-	message("\"That storm transported me to this odd city. Because I am a stranger, they arrested me. They say that I am an enchanter!\"");
+	message("「那場風暴把我傳送到了這座奇怪的城市。因為我是陌生人，他們就把我逮捕了。他們說我是個施法者！」");
 	say();
-	message("\"Speak to Lord Marsten, and win my freedom! I know thou shalt not leave me...\"");
+	message("「去找 Lord Marsten 說情，替我爭取自由！我知道你不會丟下我不管的……」");
 	say();
 	goto labelFunc01D1_010C;
 labelFunc01D1_0108:
-	message("\"Avatar! Please free thine old friend! Now that Marsten is jailed, please speak to Brendann and win my freedom!\"");
+	message("「聖者！請救出你的老朋友！既然 Marsten 也被關押了，請去找 Brendann 說情，替我爭取自由！」");
 	say();
 labelFunc01D1_010C:
-	Func097F(0xFFFD, "@Return soon...@", 0x0000);
+	Func097F(0xFFFD, "@快點回來……@", 0x0000);
 	UI_run_schedule(0xFFFD);
 	gflags[0x00AA] = true;
 	abort;
@@ -94,8 +94,8 @@ labelFunc01D1_0127:
 	UI_sprite_effect(var0004, (var0003[0x0001] - 0x0002), (var0003[0x0002] - 0x0002), 0x0000, 0x0000, 0x0000, 0xFFFF);
 labelFunc01D1_02B8:
 	if (!(var0002 == 0x0007)) goto labelFunc01D1_02DA;
-	Func097F(0xFFFF, "@Is everyone all right?@", 0x0005);
-	Func097F(0xFFFE, "@What happened?@", 0x0000);
+	Func097F(0xFFFF, "@大家都沒事吧？@", 0x0005);
+	Func097F(0xFFFE, "@發生什麼事了？@", 0x0000);
 labelFunc01D1_02DA:
 	if (!(var0002 == 0x0009)) goto labelFunc01D1_031E;
 	UI_set_schedule_type(0xFFFF, 0x000F);
@@ -112,7 +112,7 @@ labelFunc01D1_0335:
 	goto labelFunc01D1_035D;
 labelFunc01D1_0347:
 	UI_set_schedule_type(0xFFFD, 0x0003);
-	Func097F(0xFFFD, "@Avatar!@", 0x0000);
+	Func097F(0xFFFD, "@聖者！@", 0x0000);
 labelFunc01D1_035D:
 	return;
 }

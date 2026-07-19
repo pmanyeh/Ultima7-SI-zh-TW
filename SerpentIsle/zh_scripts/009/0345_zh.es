@@ -9,7 +9,7 @@ void Func0345 shape#(0x345) ()
 	var var0001;
 
 	if (!(event == 0x0001)) goto labelFunc0345_0026;
-	var0000 = (("@Thou shouldst use the brush and pigments, " + Func0953()) + ".@");
+	var0000 = (("@你應該使用畫筆和顏料，" + Func0953()) + "。@");
 	var0001 = Func0992(0xFFFD, var0000, 0x0000, true);
 labelFunc0345_0026:
 	return;

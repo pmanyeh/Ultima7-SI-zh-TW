@@ -66,7 +66,7 @@ labelFunc0422_009C:
 	if (!var000A) goto labelFunc0422_0160;
 	UI_set_item_frame(var000A, 0x0012);
 	var000B = UI_update_last_created(var0009);
-	var000B = UI_execute_usecode_array(var000A, [(byte)0x23, (byte)0x52, "@My beautiful body!!@"]);
+	var000B = UI_execute_usecode_array(var000A, [(byte)0x23, (byte)0x52, "@我美麗的身體！！@"]);
 labelFunc0422_0160:
 	var000C = 0x0001;
 	var000D = [0x0006, 0x000C, 0x0012, 0x0018];
@@ -172,7 +172,7 @@ labelFunc0422_04BD:
 	UI_remove_answer("好消息");
 	message("「主人，我花了一些時間與這裡的法師交談。我相信那個被稱為 Gustacio 的人有心要幫助你。」");
 	say();
-	message("「他說任何能從自由山地牢(Freedom)活下來的人，都值得他花時間！」");
+	message("「他說任何能從自由山地牢活下來的人，都值得他花時間！」");
 	say();
 	gflags[0x0135] = true;
 labelFunc0422_04D8:
@@ -197,7 +197,7 @@ labelFunc0422_0522:
 	message("「實際上，我相信我現在的工作是由一雙謹慎的眼睛來觀察，以判斷 Erstam 實驗的成功與否。儘管我現在絕對有能力勝任許多工作。」");
 	say();
 	if (!(!var0005)) goto labelFunc0422_055A;
-	var0012 = Func0992(0xFFFF, ((("@My first job would be to " + "take a long hot bath. I swear some of those ") + "body parts must have been lying about ") + "Erstam's Manor for some time!@"), 0x0000, false);
+	var0012 = Func0992(0xFFFF, ("@我的第一項工作就是洗個舒舒服服的熱水澡。我敢發誓，其中一些身體部位肯定在 Erstam 的莊園裡放了一段時間了！@"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_055A;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_055A:
@@ -238,7 +238,7 @@ labelFunc0422_05E0:
 	message("「當然應該有人看著我。以確保我的新身體不會開始分崩離析。不用擔心，我雖然覺得奇怪，但的確感覺非常好。」");
 	say();
 	if (!(!var0005)) goto labelFunc0422_0623;
-	var0012 = Func0992(0xFFFD, (("@Thou dost not need to observe. " + "Not when the smell reaches one ") + "first! Phew!@"), 0x0000, false);
+	var0012 = Func0992(0xFFFD, ("@你根本不需要觀察。特別是當那股味道先傳過來的時候！呸！@"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_0623;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_0623:
@@ -262,7 +262,7 @@ labelFunc0422_063D:
 	message("「聽到你這麼說我很高興。但首先你應該去問 Erstam 我是否可以離開。畢竟，我是他創造的。是他造就了今天的我。」");
 	say();
 	gflags[0x01B9] = true;
-	var0012 = Func0992(0xFFFE, (((("@Art thou certain about this, " + var0001) + "? Boydon seems game enough, but he is also ") + "extremely gamey. I am surprised thou hast ") + "not noticed this for thyself.@"), 0x0000, false);
+	var0012 = Func0992(0xFFFE, ("@你確定要這麼做嗎，" + var0001 + "？ Boydon 看起來滿腔熱血，但他身上也充滿了『熱血』的腥臭味。我很驚訝你居然沒注意到這一點。@"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_069D;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_069D:
@@ -286,7 +286,7 @@ labelFunc0422_06DE:
 	UI_add_answer("離開");
 	message("「真是個好消息！帶路吧！」");
 	say();
-	var0012 = Func0992(0xFFFE, (("@Far be it from me to question thy judgment, Avatar. " + "But are thy senses so dulled that thou dost not notice ") + "the potent aroma emanating from this fellow?@"), 0x0000, false);
+	var0012 = Func0992(0xFFFE, ("@我無意質疑你的判斷，聖者。但你的感官真的遲鈍到沒注意到這傢伙散發出的強烈氣味嗎？@"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_0730;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_0730:
@@ -296,9 +296,9 @@ labelFunc0422_0730:
 labelFunc0422_073E:
 	message("「但你的旅行隊伍裡有這麼多人！我不習慣人群。」");
 	say();
-	message("\"I think that I must remain where I am. Apologies, ");
+	message("「我想我必須留在這裡了。非常抱歉，");
 	message(var0001);
-	message(".\"");
+	message("。」");
 	say();
 labelFunc0422_074C:
 	case "離開" attend labelFunc0422_07A3:
@@ -308,7 +308,7 @@ labelFunc0422_074C:
 	UI_remove_from_party(0xFFDE);
 	Func080A();
 	Func09B4(0xFFDE);
-	var0012 = Func0992(0xFFFF, ((("@I am also sad to see him go." * "But in truth, ") + "mine eyes were watering more while he was with us than ") + "when he left!@"), 0x0000, false);
+	var0012 = Func0992(0xFFFF, ("@我也很難過看到他離開。但說實話，他在我們身邊的時候，被薰出來的眼淚比他離開時流的還要多！@"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_079C;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_079C:
@@ -321,7 +321,7 @@ labelFunc0422_07A3:
 	Func097F(0xFFDE, "@也祝你好運！@", 0x0002);
 	goto labelFunc0422_07EB;
 labelFunc0422_07D6:
-	var000B = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@And to thee!@"], 0x0005);
+	var000B = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@也祝你好運！@"], 0x0005);
 labelFunc0422_07EB:
 	goto labelFunc0422_07F1;
 labelFunc0422_07EE:
