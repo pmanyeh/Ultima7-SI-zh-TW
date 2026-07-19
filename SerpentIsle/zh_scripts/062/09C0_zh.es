@@ -31,16 +31,14 @@ labelFunc09C0_0096:
 	var0001 = UI_execute_usecode_array(0xFF4C, [(byte)0x23, (byte)0x55, 0x04B4]);
 labelFunc09C0_00BC:
 	if (!((var0000 > 0x0002) && (var0000 < 0x000A))) goto labelFunc09C0_014D;
-	var0002 = ["@These Worms are pitiful.@", "@Die, Worm! Die!@", "@Killing Worms can be boring.@", "@I'm not giving up!@", "@Begone, vile red wiggler!@", "@At least 'tis quiet in here...@"];
+	var0002 = ["@這些蟲子真可悲。@", "@去死吧，蟲子！去死！@", "@殺蟲子還挺無聊的。@", "@我不會放棄的！@", "@滾開，邪惡的紅蟲！@", "@至少這裡挺安靜的……@"];
 	var0003 = UI_die_roll(0x0001, 0x0006);
 	Func097F(0xFE9C, var0002[var0003], 0x000C);
 	if (!((var0003 == 0x0006) && (var0000 < 0x0007))) goto labelFunc09C0_014D;
 	var0004 = Func09A0(0x0000, 0x0001);
 	var0001 = UI_delayed_execute_usecode_array(var0004, [(byte)0x54, 0x000C], 0x0019);
-	Func097F(0xFE9C, "@Aarrrgh!@", 0x0028);
-	Func097F(0xFE9C, "@A TRUE test of patience.@", 0x0037);
+	Func097F(0xFE9C, "@啊啊啊！@", 0x0028);
+	Func097F(0xFE9C, "@這真是對耐心的考驗。@", 0x0037);
 labelFunc09C0_014D:
 	return;
 }
-
-

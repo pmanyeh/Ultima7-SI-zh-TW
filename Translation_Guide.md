@@ -141,7 +141,7 @@
 
 **職業與稱號 (Professions & Titles)**
 - **Mage / Mages** ➔ **法師**
-- **Adept / Adepts** ➔ **法師學徒 / 專家**
+- **Adept / Adepts** ➔ **宗師 / 宗師們**
 - **Magister** ➔ **大師**
 - **Knight / Knights** ➔ **騎士**
 - **Pikeman / Pikemen** ➔ **長槍兵**

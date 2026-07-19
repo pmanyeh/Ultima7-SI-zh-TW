@@ -41,19 +41,19 @@ labelFunc09BE_005D:
 	var0003 = true;
 	var0007 = UI_execute_usecode_array(var0000, [(byte)0x46, 0x0001, (byte)0x4E, (byte)0x0B, 0xFFFF, 0x0006]);
 	if (!(var0008 == 0x00C8)) goto labelFunc09BE_00F2;
-	var0009 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@Nothing is happening.@"], 0x000A);
+	var0009 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@什麼也沒發生。@"], 0x000A);
 	var000A = Func0992(0x0001, 0x0000, 0x0000, false);
 	if (!(var000A != 0xFE9C)) goto labelFunc09BE_00F2;
-	var0009 = UI_delayed_execute_usecode_array(var000A, [(byte)0x23, (byte)0x52, "@Perhaps it requires something.@"], 0x000F);
+	var0009 = UI_delayed_execute_usecode_array(var000A, [(byte)0x23, (byte)0x52, "@也許它需要什麼東西。@"], 0x000F);
 labelFunc09BE_00F2:
 	if (!(var0008 == 0x00C9)) goto labelFunc09BE_015E;
 	var0009 = UI_set_item_quality(var0000, 0x00CA);
 	UI_set_weather(0x0002);
 	var000A = Func0992(0x0001, 0x0000, 0x0000, false);
 	if (!(var000A != 0xFE9C)) goto labelFunc09BE_0141;
-	var0009 = UI_delayed_execute_usecode_array(var000A, [(byte)0x23, (byte)0x52, "@The sky doth threaten rain.@"], 0x000A);
+	var0009 = UI_delayed_execute_usecode_array(var000A, [(byte)0x23, (byte)0x52, "@天空似乎要下雨了。@"], 0x000A);
 labelFunc09BE_0141:
-	var0009 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@Even as Gustacio said.@"], 0x0014);
+	var0009 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@就像 Gustacio 說的那樣。@"], 0x0014);
 	Func09BC(var0000);
 labelFunc09BE_015E:
 	if (!(var0008 == 0x00CA)) goto labelFunc09BE_022A;
@@ -84,10 +84,10 @@ labelFunc09BE_022A:
 	var0009 = UI_set_item_quality(var0000, 0x00CC);
 	UI_set_weather(0x0002);
 	if (!Func0942(0xFFFD)) goto labelFunc09BE_0268;
-	var0009 = UI_delayed_execute_usecode_array(0xFFFD, [(byte)0x23, (byte)0x52, "It doth storm again!"], 0x000A);
+	var0009 = UI_delayed_execute_usecode_array(0xFFFD, [(byte)0x23, (byte)0x52, "又起風暴了！"], 0x000A);
 labelFunc09BE_0268:
 	if (!Func0942(0xFFFE)) goto labelFunc09BE_0288;
-	var0009 = UI_delayed_execute_usecode_array(0xFFFE, [(byte)0x23, (byte)0x52, "I should have brought a kite."], 0x0014);
+	var0009 = UI_delayed_execute_usecode_array(0xFFFE, [(byte)0x23, (byte)0x52, "我真該帶個風箏來的。"], 0x0014);
 labelFunc09BE_0288:
 	Func09BC(var0000);
 labelFunc09BE_028E:
@@ -101,5 +101,3 @@ labelFunc09BE_02B2:
 labelFunc09BE_02DC:
 	return;
 }
-
-

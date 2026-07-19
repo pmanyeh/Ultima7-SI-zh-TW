@@ -18,7 +18,7 @@ void Func047F object#(0x47F) ()
 labelFunc047F_0018:
 	if (!((event == 0x000D) || (event == 0x000E))) goto labelFunc047F_0048;
 	UI_set_schedule_type(0xFF81, 0x000F);
-	var0001 = UI_execute_usecode_array(0xFF81, [(byte)0x23, (byte)0x6C, (byte)0x6D, (byte)0x52, "@Master!@"]);
+	var0001 = UI_execute_usecode_array(0xFF81, [(byte)0x23, (byte)0x6C, (byte)0x6D, (byte)0x52, "@主人！@"]);
 labelFunc047F_0048:
 	if (!((event == 0x0002) && ((gflags[0x0007] == false) && (gflags[0x0253] == false)))) goto labelFunc047F_0090;
 	gflags[0x0253] = true;
@@ -31,12 +31,12 @@ labelFunc047F_0090:
 labelFunc047F_00BD:
 	if (!(event == 0x000A)) goto labelFunc047F_0109;
 	UI_show_npc_face0(0xFF81, 0x0000);
-	message("\"Avatar! That fiend Batlin will destroy us all if he is not stopped!\"* \"'Twill be our destruction! He is attempting to open that cursed Wall of Lights!\"* \"Quickly, follow me! I will lead thee straight to him.\"");
+	message("「聖者！如果不阻止巴特林( Batlin )那個惡魔，他會毀滅我們所有人的！」*「這將會是我們的末日！他企圖打開那道被詛咒的光明之牆( Wall of Lights )！」*「快跟我來！我會直接帶你去找他。」");
 	say();
 	UI_remove_npc_face1();
 	gflags[0x0007] = true;
-	Func097F(0xFF81, "@Follow me!@", 0x0000);
-	Func097F(0xFE9C, "@Wait!@", 0x0005);
+	Func097F(0xFF81, "@跟我來！@", 0x0000);
+	Func097F(0xFE9C, "@等等！@", 0x0005);
 	var0001 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x047F], 0x0002);
 	abort;
 labelFunc047F_0109:
@@ -57,5 +57,3 @@ labelFunc047F_0154:
 labelFunc047F_0160:
 	return;
 }
-
-

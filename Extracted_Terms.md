@@ -392,7 +392,7 @@
 - **Surok** ➔ **蘇洛克(Surok)** (巨蛇之牙的治療師) [出自 03B2_zh.es]
 - **Elissa** ➔ **伊莉莎(Elissa)** (巨蛇之牙的法師) [出自 03B2_zh.es]
 - **Tsandar** ➔ **特桑達(Tsandar)** (巨蛇之牙的成員) [出自 03B2_zh.es]
-- **Automatons** ➔ **自動機器人(Automatons)** (巨蛇之牙的護衛與僕役) [出自 03B2_zh.es]
+- **Automatons** ➔ **魔導人偶(Automatons)** (巨蛇之牙的護衛與僕役) [出自 03B2_zh.es]
 - **Abandoned Outpost** ➔ **廢棄前哨站(Abandoned Outpost)** [出自 03B2_zh.es]
 - **Aram-Dol** ➔ **阿拉姆-多爾(Aram-Dol)** (強大的巫師/惡魔) [出自 03B2_zh.es]
 - **Aram-Dol's Lair** ➔ **阿拉姆-多爾的巢穴(Aram-Dol's Lair)** [出自 03B2_zh.es]
@@ -435,4 +435,73 @@
 - **pumice** ➔ **浮岩( pumice )** (一種只在月影城更遠處才有的火山岩) [出自 0430_zh.es]
 - **Varo leaves** ➔ **瓦羅葉( Varo leaves )** (製作感染藥膏的特殊藥草) [出自 0430_zh.es]
 - **Ruggs** ➔ **Ruggs** (幼鹿城唯一倖存的平民，被 Yelinda 趕出城的人，黛爾菲妮亞暗戀的對象) [出自 0294_zh.es, 042E_zh.es, 0430_zh.es]
-- **Iolo the Mad** ➔ **瘋子伊歐洛** (玩家開啟Iolo變瘋狂後的特殊對話選項) [出自 0430_zh.es]
+- **Iolo the Mad** ➔ **瘋子伊歐洛** (玩家開啟Iolo變瘋狂後的特殊對話選項) [出自 0430_zh.es]
+
+- **life spells** ➔ **生命法術** [出自 0421_zh.es]
+
+- **MageLord** ➔ **法師領主** [出自 0421_zh.es]
+
+- **Magocracy** ➔ **法師政治** [出自 0421_zh.es]
+
+- **mundane** ➔ **凡夫俗子** [出自 0421_zh.es]
+
+- **old war** ➔ **舊戰爭** [出自 0421_zh.es]
+
+- **ruling family** ➔ **統治家族** [出自 0421_zh.es]
+
+- **teleport storms** ➔ **傳送風暴** [出自 0421_zh.es]
+
+- **Moon's Eye** ➔ **月之眼** [出自 0363_zh.es]
+
+- **Hourglass of Fate** ➔ **命運沙漏** [出自 0363_zh.es]
+
+- **Three Companions** ➔ **三個同伴** [出自 0363_zh.es]
+
+- **Void** ➔ **虛空** [出自 0363_zh.es]
+
+- **Time of Imbalance** ➔ **失衡時代** [出自 0363_zh.es]
+
+- **Sands of Time** ➔ **時間之沙** [出自 0363_zh.es]
+
+- **Ninth Circle of Magic** ➔ **第九環魔法** [出自 098C_zh.es]
+
+- **Bestiary** ➔ **動物寓言集** [出自 098C_zh.es]
+
+- **Reagents** ➔ **魔法材料** [出自 098C_zh.es]
+
+- **ginseng** ➔ **人參** [出自 098C_zh.es]
+
+- **Ophidian** ➔ **蛇人** [出自 098C_zh.es]
+
+- **Other Landmarks** ➔ **其他地標** [出自 098C_zh.es]
+
+- **Principles of Balance** ➔ **平衡法則** [出自 098C_zh.es]
+
+- **Words of Power** ➔ **力量之語** [出自 098C_zh.es]
+
+- **Cosmos** ➔ **宇宙** [出自 0109_zh.es]
+
+- **Command of the Bear** ➔ **巨熊指揮部** [出自 0450_zh.es]
+
+- **Ashes of Gurnordir** ➔ **Gurnordir的骨灰** [出自 0450_zh.es]
+
+- **Champion Knight** ➔ **冠軍騎士** [出自 0450_zh.es]
+
+- **Helm of Monitor** ➔ **蒙利多頭盔** [出自 0450_zh.es]
+- **Chief Pikeman** ➔ **長槍兵隊長** [出自 0450_zh.es]
+
+- **Baiyanda** ➔ **Baiyanda** (猿怪治療師) [出自 048F_zh.es]
+- **Mwaerno** ➔ **Mwaerno** (Baiyanda 的伴侶，獵人) [出自 048F_zh.es]
+- **Yenani** ➔ **Yenani** (猿怪酋長) [出自 048F_zh.es]
+- **Myauri** ➔ **Myauri** (猿怪首席獵人) [出自 048F_zh.es]
+- **Neyobi** ➔ **Neyobi** (生病的猿怪小孩) [出自 048F_zh.es]
+
+- **Bwundai** ➔ **Bwundai** (猿怪小孩/村民) [出自 0490_zh.es]
+
+- **Kapyundi** ➔ **Kapyundi** (猿怪，Myauri 的兒子) [出自 0492_zh.es]
+
+- **Karnax** ➔ **Karnax** (修道士) [出自 0495_zh.es]
+- **Miggim** ➔ **Miggim** (修道士) [出自 0495_zh.es]
+- **Xenka** ➔ **Xenka** (預言家) [出自 0495_zh.es]
+- **Thoxa** ➔ **Thoxa** (修道士) [出自 0495_zh.es]
+- **Ophidians** ➔ **奧非迪安** (古代種族) [出自 0495_zh.es]

@@ -17,7 +17,7 @@ void Func0480 object#(0x480) ()
 labelFunc0480_0010:
 	if (!((event == 0x000D) || (event == 0x000E))) goto labelFunc0480_0040;
 	UI_set_schedule_type(0xFF80, 0x000F);
-	var0000 = UI_execute_usecode_array(0xFF80, [(byte)0x23, (byte)0x6C, (byte)0x6D, (byte)0x52, "@Arrr, Master!@"]);
+	var0000 = UI_execute_usecode_array(0xFF80, [(byte)0x23, (byte)0x6C, (byte)0x6D, (byte)0x52, "@啊哈，大爺！@"]);
 labelFunc0480_0040:
 	if (!((event == 0x0002) && ((gflags[0x0007] == false) && (gflags[0x0255] == false)))) goto labelFunc0480_0088;
 	gflags[0x0255] = true;
@@ -30,12 +30,12 @@ labelFunc0480_0088:
 labelFunc0480_00B5:
 	if (!(event == 0x000A)) goto labelFunc0480_0101;
 	UI_show_npc_face0(0xFF80, 0x0000);
-	message("\"The time hath come for thee to feel me steel!\"* \"Face me, Avatar, if thou dost have the courage!\"* \"I shall cut thee for bait, then feed thee to the minnows shouldst thou try to cross me sword!\"");
+	message("「是時候讓你嚐嚐我的鋼刃了！」* 「來跟我對決，聖者，如果你有膽量的話！」* 「若你膽敢與我的劍為敵，我就把你切成魚餌，餵給那些小魚苗！」");
 	say();
 	UI_remove_npc_face1();
 	gflags[0x0007] = true;
-	Func097F(0xFF80, "@Ha,ha,ha!@", 0x0000);
-	Func097F(0xFE9C, "@Hold!@", 0x0005);
+	Func097F(0xFF80, "@哈，哈，哈！@", 0x0000);
+	Func097F(0xFE9C, "@住手！@", 0x0005);
 	var0000 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0480], 0x0002);
 	abort;
 labelFunc0480_0101:

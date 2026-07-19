@@ -324,21 +324,21 @@ Function,String Count,Total Characters,Translated,NPC/Event
 0479H,1,11,Yes,無需翻譯
 047AH,1,11,Yes,無需翻譯
 047BH,1,11,Yes,無需翻譯
-047CH,12,29,No,
-047DH,30,211,No,
-047EH,13,166,No,
-047FH,8,46,No,
-0480H,8,51,No,
-0481H,28,297,No,
-0482H,29,209,No,
-048FH,137,723,No,
-0490H,28,470,No,
-0491H,30,256,No,
-0492H,99,691,No,
-0493H,45,338,No,
-0494H,110,639,No,
-0495H,294,1413,No,
-0496H,335,11779,No,
+047CH,12,29,Yes,夢境中抱怨被打斷及邀請聖者放鬆的對話
+047DH,30,211,Yes,守護巨蛇權杖的魔導人偶對話（誤認聖者為秩序教父）
+047EH,13,166,Yes,被巴特林控制的魔導人偶的威脅對話
+047FH,8,46,Yes,終章場景中帶領聖者去阻止巴特林的 NPC 對話
+0480H,8,51,Yes,終章場景：海盜NPC挑戰聖者的戰鬥觸發對話（威脅切成魚餌）
+0481H,28,297,Yes,碎脊者入口的魔導人偶守衛，詢問密碼的對話
+0482H,29,209,Yes,盤問聖者陣營（秩序或混沌）的魔導人偶對話
+048FH,137,723,Yes,猿怪治療師 Baiyanda 的對話（治療服務與冰龍血任務）
+0490H,28,470,Yes,猿怪 Bwundai 對話（指引死亡神殿位置及對毛皮的反應）
+0491H,30,256,Yes,猿怪 Mwaerno 的簡短對話與毛皮敵意反應
+0492H,99,691,Yes,猿怪長老 Myauri 對話（提及家人與 Gwenno 的遭遇）
+0493H,45,338,Yes,猿怪小女孩 Neyobi 的對話（關於治病、名字與日常活動）
+0494H,110,639,Yes,猿怪酋長 Yenani 對話（提供碎脊者密碼與講述神聖號角歷史）
+0495H,294,1413,Yes,Monk Isle 上復活後的 Gwenno 對話（調查Banes、神殿與Xenka預言）
+0496H,335,11779,Yes,勇氣之城狼之軍團領袖 Brendann 對話（關於叛徒調查與軍團競爭）
 0498H,149,777,No,
 0499H,33,159,No,
 049AH,41,286,No,
@@ -352,7 +352,7 @@ Function,String Count,Total Characters,Translated,NPC/Event
 04A2H,20,95,No,
 04A3H,17,358,No,
 04A5H,14,20,No,
-04A8H,358,20506,No,
+04A8H,358,20506,Yes,盜賊 Stefano 的對話（自由地牢、死亡騎士追殺、給予鑰匙）
 04A9H,7,171,No,
 04AAH,341,1926,No,
 04ABH,2,31,Yes,完成短文本翻譯
@@ -1220,13 +1220,13 @@ Function,String Count,Total Characters,Translated,NPC/Event
 09ABH,1,11,Yes,無需翻譯
 09ACH,1,11,Yes,無需翻譯
 09ADH,1,11,Yes,無需翻譯
-09AEH,34,226,No,
+09AEH,34,226,Yes,各NPC日常行程與工作干擾對話（包含Bucia與酒館場景）
 09AFH,1,11,Yes,無需翻譯
-09B0H,43,32,No,
-09B1H,27,201,No,
+09B0H,43,32,Yes,遊吟詩人吟唱的各種詩歌與故事傳說
+09B1H,27,201,Yes,遊吟詩人收取食宿費用的對話
 09B2H,1,11,Yes,無需翻譯
 09B3H,1,11,Yes,無需翻譯
-09B4H,25,87,No,
+09B4H,25,87,Yes,同伴等待地點選擇對話腳本
 09B5H,1,11,Yes,無需翻譯
 09B6H,1,11,Yes,無需翻譯
 09B7H,3,32,Yes,完成短文本翻譯
@@ -1236,7 +1236,7 @@ Function,String Count,Total Characters,Translated,NPC/Event
 09BBH,1,11,Yes,無需翻譯
 09BCH,1,11,Yes,無需翻譯
 09BDH,1,11,Yes,無需翻譯
-09BEH,7,168,No,
+09BEH,7,168,Yes,天氣與風暴互動腳本
 09BFH,2,51,Yes,無需翻譯
-09C0H,9,199,No,
+09C0H,9,199,Yes,殺蟲子時的抱怨與對話
 09C1H,1,11,Yes,無需翻譯

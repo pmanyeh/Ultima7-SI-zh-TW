@@ -19,8 +19,8 @@ labelFunc0481_000F:
 	event = 0x000A;
 labelFunc0481_001B:
 	if (!(event == 0x0001)) goto labelFunc0481_005C;
-	Func097F(0xFE9C, "@Hail, metal servant!@", 0x0000);
-	Func097F(item, "@Halt, stranger!@", 0x0001);
+	Func097F(0xFE9C, "@你好，金屬僕人！@", 0x0000);
+	Func097F(item, "@站住，陌生人！@", 0x0001);
 	UI_set_schedule_type(0xFF7F, 0x000A);
 	UI_si_path_run_usecode(item, [0x0766, 0x027C, 0x0000], 0x000A, item, 0x0481, true);
 labelFunc0481_005C:
@@ -36,59 +36,59 @@ labelFunc0481_008D:
 	UI_set_schedule_type(0xFF7F, 0x001D);
 	var0001 = UI_get_item_flag(0xFFFF, 0x0006);
 	UI_show_npc_face0(0xFED6, 0x0000);
-	message("\"I am the guardian of the city of Order. Dost thou wish to enter the great city of Spinebreaker?\"");
+	message("「我是秩序之城的守護者。你想進入偉大的碎脊者( Spinebreaker )之城嗎？」");
 	say();
 	var0002 = Func0955();
 	if (!var0002) goto labelFunc0481_0129;
-	message("\"I cannot allow thee to enter until thou dost tell me the password. Canst thou tell me what the password is?\"");
+	message("「在你告訴我密碼之前，我不能讓你進去。你能告訴我密碼是什麼嗎？」");
 	say();
 	var0003 = Func0955();
 	if (!var0003) goto labelFunc0481_0121;
 	if (!var0001) goto labelFunc0481_010D;
 	UI_show_npc_face1(0xFFFF, 0x0000);
 	UI_set_conversation_slot(0x0001);
-	message("\"But Avatar, surely thou dost not know the password! How canst thou fool this infernal thing?\"");
+	message("「但是聖者，你肯定不知道密碼！你怎麼能騙過這個該死的東西？」");
 	say();
 	UI_set_conversation_slot(0x0000);
 	UI_remove_npc_face1();
 labelFunc0481_010D:
-	message("\"I am waiting to receive the password.\"");
+	message("「我正在等待接收密碼。」");
 	say();
-	UI_add_answer(["I don't know the password.", "try to guess the password"]);
+	UI_add_answer(["我不知道密碼", "試著猜密碼"]);
 	goto labelFunc0481_0126;
 labelFunc0481_0121:
-	message("\"Then thou canst not enter the underground city.\"");
+	message("「那麼你就不能進入這座地下城。」");
 	say();
 	abort;
 labelFunc0481_0126:
 	goto labelFunc0481_012E;
 labelFunc0481_0129:
-	message("\"Then thou shouldst not loiter about this place. By the authority of those who once lived and ruled here, I order thee to leave this place immediately.\"");
+	message("「那麼你不該在這個地方逗留。以曾經在這裡居住和統治的人之名義，我命令你立即離開這裡。」");
 	say();
 	abort;
 labelFunc0481_012E:
 	converse attend labelFunc0481_019A;
-	case "I don't know the password." attend labelFunc0481_013E:
-	message("\"Then thou canst not enter the underground city. By the authority of those who once lived and ruled here, I order thee to leave this place immediately!\"");
+	case "我不知道密碼" attend labelFunc0481_013E:
+	message("「那麼你就不能進入這座地下城。以曾經在這裡居住和統治的人之名義，我命令你立即離開這裡！」");
 	say();
 	abort;
 labelFunc0481_013E:
-	case "try to guess the password" attend labelFunc0481_0197:
+	case "試著猜密碼" attend labelFunc0481_0197:
 	UI_show_npc_face1(0xFE9C, 0x0000);
 	UI_set_conversation_slot(0x0001);
-	message("Having no idea what the password actually is, you take a wild guess, saying something that sounds like it might make a proper password.");
+	message("你根本不知道密碼到底是什麼，於是你隨便猜了一個，說了一些聽起來像是正確密碼的話。");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"That is not the correct password! Thou art forbidden to enter!\"");
+	message("「那不是正確的密碼！禁止你進入！」");
 	say();
-	message("\"Thou shouldst not loiter about here. Thou must leave this place immediately.\"");
+	message("「你不該在這裡逗留。你必須立即離開這個地方。」");
 	say();
 	var0001 = UI_get_item_flag(0xFFFF, 0x0006);
 	if (!var0001) goto labelFunc0481_0196;
 	UI_show_npc_face1(0xFFFF, 0x0000);
 	UI_set_conversation_slot(0x0001);
-	message("\"I take it that was a guess! Ha! I knew thou couldst not know the proper password! I suggest we cease trying to guess the password and find a better way of entering this place. Simply guessing could take forever!\"");
+	message("「我猜那只是隨便說的！哈！我就知道你不可能知道正確的密碼！我建議我們別再猜密碼了，去找個更好的方法進入這個地方。光靠猜的可能會花上一輩子！」");
 	say();
 labelFunc0481_0196:
 	abort;
@@ -99,5 +99,3 @@ labelFunc0481_019A:
 labelFunc0481_019B:
 	return;
 }
-
-
