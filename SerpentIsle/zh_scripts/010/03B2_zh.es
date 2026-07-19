@@ -34,15 +34,15 @@ void Func03B2 shape#(0x3B2) ()
 	var0006 = Func097D(0xFE9B, 0x0001, 0x0128, 0xFE99, 0x0003);
 	var0007 = Func097D(0xFE9B, 0x0001, 0x03F5, 0xFE99, 0xFE99);
 	if (!((var0001 > 0x0001) || (var0001 < 0x0006))) goto labelFunc03B2_0097;
-	var0001 = "day";
+	var0001 = "一天";
 	goto labelFunc03B2_009D;
 labelFunc03B2_0097:
-	var0001 = "evening";
+	var0001 = "夜晚";
 labelFunc03B2_009D:
 	if (!(event == 0x0001)) goto labelFunc03B2_00C5;
-	UI_item_say(0xFE9C, "@Greetings, sir.@");
+	UI_item_say(0xFE9C, "@你好，閣下。@");
 	item->Func07D1();
-	Func097F(item, "@Greetings to thee.@", 0x0002);
+	Func097F(item, "@你好。@", 0x0002);
 	UI_set_schedule_type(item, 0x0003);
 labelFunc03B2_00C5:
 	if (!(event == 0x0009)) goto labelFunc03B2_051F;
@@ -51,25 +51,25 @@ labelFunc03B2_00C5:
 	UI_show_npc_face0(0xFECC, 0x0000);
 	var0008 = UI_get_npc_id(item);
 	if (!(gflags[0x02FC] || gflags[0x0313])) goto labelFunc03B2_0107;
-	message("\"Who would have thought that lowly Surok would be speaking with the Champion of Balance? I am honored.");
+	message("「誰能想到卑微的蘇洛克(Surok)竟然能和平衡鬥士(Champion of Balance)說話？我深感榮幸。」");
 	say();
-	message("\"How may I aid thee, ");
+	message("「我能如何協助你，");
 	message(var0000);
-	message("?\"");
+	message("？」");
 	say();
 	goto labelFunc03B2_0153;
 labelFunc03B2_0107:
 	if (!(!var0008)) goto labelFunc03B2_0137;
 	if (!(!gflags[0x026F])) goto labelFunc03B2_0120;
-	message("\"Ah, a new face! And who art thou, stranger, that thou doth risk death by coming here to Serpent's Fang? A servant of Chaos? Hmmm... I think not.\"");
+	message("「啊，新面孔！你是誰，陌生人，竟敢冒著生命危險來到巨蛇之牙(Serpent's Fang)？混沌的僕人？嗯……我想不是。」");
 	say();
-	message("\"I am Surok, the Healer of Serpent's Fang and I perceive that thou art lost. Perhaps I can aid thee, if thou dost wish.\"");
+	message("「我是蘇洛克，巨蛇之牙的治療師(Healer)，我看出你迷路了。也許我能幫你，如果你願意的話。」");
 	say();
 	goto labelFunc03B2_012C;
 labelFunc03B2_0120:
-	message("\"'Tis lucky for thee that a patrol didst find thee, stranger! Thou wert unconscious and bleeding from many wounds... Ah, but I forget my manners!\"");
+	message("「巡邏隊能找到你真是你的運氣，陌生人！你當時昏迷不醒，身上多處傷口都在流血……啊，但我忘了禮貌！」");
 	say();
-	message("\"I am Surok, the Healer of Serpent's Fang and I didst heal thee of thy wounds.\"");
+	message("「我是蘇洛克，巨蛇之牙的治療師，是我治好了你的傷。」");
 	say();
 	gflags[0x026F] = false;
 labelFunc03B2_012C:
@@ -77,211 +77,211 @@ labelFunc03B2_012C:
 	goto labelFunc03B2_0153;
 labelFunc03B2_0137:
 	if (!(!gflags[0x026F])) goto labelFunc03B2_0145;
-	message("\"Thou dost return? Perhaps to regale me with stories of thine exploits?\"");
+	message("「你回來了？也許是想跟我分享你的英勇事蹟？」");
 	say();
 	goto labelFunc03B2_0153;
 labelFunc03B2_0145:
-	message("\"Ah, ");
+	message("「啊，");
 	message(var0000);
-	message(", thou hast awakened. Good. Thou hast been revived by mine art. Thou art able to resume thine adventures now.\"");
+	message("，你醒了。很好。你已經被我的醫術救活了。你現在可以繼續你的冒險了。」");
 	say();
 	gflags[0x026F] = false;
 labelFunc03B2_0153:
-	UI_add_answer(["healing", "information", "bye"]);
+	UI_add_answer(["治療", "資訊", "告辭"]);
 	if (!(UI_get_array_size(Func08FB()) > 0x0000)) goto labelFunc03B2_017C;
-	message("\"Ah, one of thy companions hath been slain. 'Tis within my power to heal thy friend if thou dost wish...\"");
+	message("「啊，你的一個同伴被殺了。如果你願意，我有能力治癒你的朋友……」");
 	say();
-	UI_add_answer("resurrection");
+	UI_add_answer("復活");
 labelFunc03B2_017C:
 	var0009 = 0x0000;
 	var000A = 0x0006;
 labelFunc03B2_0188:
 	converse attend labelFunc03B2_051E;
-	case "healing" attend labelFunc03B2_01A7:
-	message("\"Dost thou need healing?\"");
+	case "治療" attend labelFunc03B2_01A7:
+	message("「你需要治療嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc03B2_01A3;
 	Func086B();
 	goto labelFunc03B2_01A7;
 labelFunc03B2_01A3:
-	message("\"As thou dost wish.\"");
+	message("「如你所願。」");
 	say();
 labelFunc03B2_01A7:
-	case "resurrection" attend labelFunc03B2_01B9:
-	UI_remove_answer("resurrection");
+	case "復活" attend labelFunc03B2_01B9:
+	UI_remove_answer("復活");
 	Func08FE();
 labelFunc03B2_01B9:
-	case "information" attend labelFunc03B2_01FC:
+	case "資訊" attend labelFunc03B2_01FC:
 	if (!((!gflags[0x02F4]) || (UI_get_timer(0x0002) > 0x0004))) goto labelFunc03B2_01F8;
-	message("\"I have been here at Serpent's Fang longer than most. Perhaps I can aid thee with information. What dost thou wish to know of?\"");
+	message("「我在巨蛇之牙待的時間比大多數人都長。也許我能提供你一些資訊。你想知道些什麼？」");
 	say();
 	UI_push_answers();
 	var0009 = 0x0001;
-	UI_add_answer(["people", "places", "strange items", "nothing more"]);
+	UI_add_answer(["人物", "地點", "奇特物品", "沒什麼了"]);
 	goto labelFunc03B2_01FC;
 labelFunc03B2_01F8:
-	message("\"I must be about my duties. Perhaps we can discuss this another time, my friend.\"");
+	message("「我得去忙我的職責了。也許我們可以改天再談，我的朋友。」");
 	say();
 labelFunc03B2_01FC:
-	case "people" attend labelFunc03B2_0238:
-	UI_remove_answer("people");
-	message("\"There are very few of us here, ");
+	case "人物" attend labelFunc03B2_0238:
+	UI_remove_answer("人物");
+	message("「我們這裡人很少，");
 	message(var0002);
-	message(". I can tell thee what I know, but it is not much. Whom here at Serpent's Fang dost thou wish to know of?\"");
+	message("。我可以把我所知道的告訴你，但不多。你想了解巨蛇之牙這裡的誰？」");
 	say();
 	UI_push_answers();
 	var0009 = 0x0002;
-	UI_add_answer(["Isstanar", "Elissa", "Tsandar", "Guards", "Strangers", "nothing more"]);
+	UI_add_answer(["伊斯坦納", "伊莉莎", "特桑達", "護衛", "陌生人", "沒什麼了"]);
 labelFunc03B2_0238:
-	case "places" attend labelFunc03B2_026E:
-	UI_remove_answer("places");
-	message("\"I know of many places, ");
+	case "地點" attend labelFunc03B2_026E:
+	UI_remove_answer("地點");
+	message("「我知道很多地點，");
 	message(var0002);
-	message(". Which dost thou wish to know of?\"");
+	message("。你想了解哪一個？」");
 	say();
 	UI_push_answers();
 	var0009 = 0x0002;
-	UI_add_answer(["Abandoned Outpost", "The Maze", "Aram-Dol's Lair", "nothing more"]);
+	UI_add_answer(["廢棄前哨站", "迷宮", "阿拉姆-多爾的巢穴", "沒什麼了"]);
 labelFunc03B2_026E:
-	case "strange items" attend labelFunc03B2_02D3:
-	UI_remove_answer("strange items");
-	message("\"Show me thine items, I will tell thee what I know, if anything.\"");
+	case "奇特物品" attend labelFunc03B2_02D3:
+	UI_remove_answer("奇特物品");
+	message("「讓我看看你的物品，如果我知道什麼，我會告訴你。」");
 	say();
 	UI_push_answers();
 	var0009 = 0x0002;
 	if (!var0003) goto labelFunc03B2_0298;
-	UI_add_answer("Loriel's Gift");
+	UI_add_answer("洛瑞爾的禮物");
 labelFunc03B2_0298:
 	if (!var0004) goto labelFunc03B2_02A5;
-	UI_add_answer("Gauntlets");
+	UI_add_answer("護手");
 labelFunc03B2_02A5:
 	if (!var0005) goto labelFunc03B2_02B2;
-	UI_add_answer("Axe");
+	UI_add_answer("斧頭");
 labelFunc03B2_02B2:
 	if (!var0006) goto labelFunc03B2_02BF;
-	UI_add_answer("Ring");
+	UI_add_answer("戒指");
 labelFunc03B2_02BF:
 	if (!var0007) goto labelFunc03B2_02CC;
-	UI_add_answer("Helm");
+	UI_add_answer("頭盔");
 labelFunc03B2_02CC:
-	UI_add_answer("nothing more");
+	UI_add_answer("沒什麼了");
 labelFunc03B2_02D3:
-	case "Gauntlets" attend labelFunc03B2_02F5:
-	UI_remove_answer("Gauntlets");
-	message("\"Hmmm... These are obviously enchanted to aid thee in the speedy deliverance of thy blows, yet I have never seen their like. They do have the look of an Order armourer, 'tis true, yet the stench of evil doth linger upon them. Thou wouldst be wise not to trust in these gloves, ");
+	case "護手" attend labelFunc03B2_02F5:
+	UI_remove_answer("護手");
+	message("「嗯……這些很明顯被施了魔法，可以幫助你更快速地揮擊，但我從未見過這樣的東西。它們看起來確實像是秩序盔甲匠的作品，但上面卻縈繞著邪惡的臭味。你最好別太相信這雙手套，");
 	message(var0002);
-	message("!\"");
+	message("！」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_02F5:
-	case "Axe" attend labelFunc03B2_0317:
-	UI_remove_answer("Axe");
-	message("\"'Tis truly a wonderful weapon, ");
+	case "斧頭" attend labelFunc03B2_0317:
+	UI_remove_answer("斧頭");
+	message("「這真是一把奇妙的武器，");
 	message(var0002);
-	message("! Where didst thou come by such? I do not know exactly what it does, but I am sure that thou dost use it well...\"");
+	message("！你從哪裡得來的？我不知道它確切的作用是什麼，但我相信你能善用它……」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_0317:
-	case "Ring" attend labelFunc03B2_0339:
-	UI_remove_answer("Ring");
-	message("\"Thou didst take great risk in acquiring this ring, ");
+	case "戒指" attend labelFunc03B2_0339:
+	UI_remove_answer("戒指");
+	message("「你冒了極大的風險才獲得這枚戒指，");
 	message(var0002);
-	message(". 'Tis Shal's ring itself. I would wager that thou fought many foul creatures in the Fiend's Lair... but dost thou know the true power of this ring? 'Twill allow thee to cast spells without reagents! Thou hast perhaps one of the most potent artifacts ever made!\"");
+	message("。這正是沙爾之戒(Shal's ring)。我敢打賭你在惡魔巢穴(Fiend's Lair)裡對付了許多邪惡生物……但你知道這枚戒指真正的力量嗎？它能讓你施法而不需要法藥！你也許擁有了有史以來最強大的神器之一！」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_0339:
-	case "Loriel's Gift" attend labelFunc03B2_035B:
-	UI_remove_answer("Loriel's Gift");
-	message("\"Why, thou dost wear the Belt of Strength! 'Twas made by Commander Ardiniss's wife, Loriel, many years ago. If I remember correctly, she made the belt from the hair of Giants and then enchanted it.  Loriel was a gifted mage, but alas, was yet another victim of this damnable war with Chaos! As thou dost wear her handiwork, thou shouldst remember her, ");
+	case "洛瑞爾的禮物" attend labelFunc03B2_035B:
+	UI_remove_answer("洛瑞爾的禮物");
+	message("「哎呀，你戴著力量腰帶(Belt of Strength)！這是阿迪尼斯指揮官的妻子洛瑞爾(Loriel)多年前製作的。如果我沒記錯的話，她用巨人的頭髮編織了這條腰帶，並對它施了魔法。洛瑞爾是一位極具天賦的法師，但唉，她也是這場與混沌該死戰爭的受害者之一！既然你戴著她的手藝，你應該記住她，");
 	message(var0002);
-	message("...\"");
+	message("……」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_035B:
-	case "Helm" attend labelFunc03B2_0394:
-	UI_remove_answer("Helm");
-	message("\"Thou dost possess the Helm of Light! 'Twas worn by Issik the Architect when he did create the Maze. Didst thou discover the secret of the Maze, ");
+	case "頭盔" attend labelFunc03B2_0394:
+	UI_remove_answer("頭盔");
+	message("「你擁有光之頭盔(Helm of Light)！這是建築師伊西克(Issik the Architect)建造迷宮時所戴的。你發現迷宮的秘密了嗎，");
 	message(var0002);
-	message("?\"");
+	message("？」");
 	say();
 	if (!Func0955()) goto labelFunc03B2_0381;
-	message("\"Thou art truly the Champion of Balance! None other except Issik could navigate that Maze of Death. From my talks with Issik, the Helm will never cease giving light and the only manner of dousing it's brilliance is to cover it over or put it in a bag.\"");
+	message("「你真的是平衡鬥士！除了伊西克之外，沒有人能在那個死亡迷宮中穿梭。從我和伊西克的交談中得知，這頂頭盔永遠不會停止發光，唯一能掩蓋其光芒的方法，就是把它蓋住或放進袋子裡。」");
 	say();
 	goto labelFunc03B2_038B;
 labelFunc03B2_0381:
-	message("\"Then how didst thou come by the Helm? Issik disappeared into his creation and never returned. *Ah, 'tis of no matter. Do not listen to the ramblings of an old man, ");
+	message("「那你怎麼會得到這頂頭盔？伊西克消失在他自己的傑作中，再也沒有回來。*啊，沒關係。別聽一個老頭子胡言亂語，");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
 labelFunc03B2_038B:
 	var000A = Func09AE(var000A);
 labelFunc03B2_0394:
-	case "Isstanar" attend labelFunc03B2_03B6:
-	UI_remove_answer("Isstanar");
-	message("\"He is the Commander of our outpost, though he was not such a year ago. Do not cross him, ");
+	case "伊斯坦納" attend labelFunc03B2_03B6:
+	UI_remove_answer("伊斯坦納");
+	message("「他是我們前哨站的指揮官，儘管一年前他還不是。別惹火他，");
 	message(var0000);
-	message(", for he is terrible in his anger! He believes that those who have not given their lives for the cause of Order are not truly worthy. He has become the @Ultimate Warrior of Order@ and has cast his human body away to become metal. I believe that his soul has become as hardened as his exterior.\"");
+	message("，因為他生氣時非常可怕！他認為那些沒有為秩序的事業獻出生命的人並不真正配得上這一切。他已經成為『終極的秩序戰士(@Ultimate Warrior of Order@)』，拋棄了人類的肉體變成金屬。我相信他的靈魂也變得和他的外表一樣堅硬。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_03B6:
-	case "Elissa" attend labelFunc03B2_03D2:
-	UI_remove_answer("Elissa");
-	message("\"She is our Mage. If thou hast gold enough, I am certain she would be willing to teach thee spells. Though she is young, she would like nothing better than to stay youthful -- forever.\"");
+	case "伊莉莎" attend labelFunc03B2_03D2:
+	UI_remove_answer("伊莉莎");
+	message("「她是我們的法師。如果你有足夠的金幣，我肯定她會願意教你法術。雖然她還年輕，但她最希望的莫過於永遠保持青春。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_03D2:
-	case "Tsandar" attend labelFunc03B2_03F4:
-	UI_remove_answer("Tsandar");
-	message("\"Tsandar is a friend, and I will not speak ill of him. Though I wish that he would confide in me what it is that bothers him these days. He is troubled and perhaps with good cause. I will speak no more on this subject, ");
+	case "特桑達" attend labelFunc03B2_03F4:
+	UI_remove_answer("特桑達");
+	message("「特桑達是我的朋友，我不會說他的壞話。雖然我希望他能向我吐露最近有什麼事在困擾他。他心煩意亂，也許有充分的理由。我不會再談論這個話題了，");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_03F4:
-	case "Guards" attend labelFunc03B2_0410:
-	UI_remove_answer("Guards");
-	message("\"The Automatons that thou dost see about our Outpost are our servitors. They act as guards as thou no doubt know already, but they also serve in other ways. Cooks, tailors, blacksmiths... all of these menial tasks can be performed by our metal men.\"");
+	case "護衛" attend labelFunc03B2_0410:
+	UI_remove_answer("護衛");
+	message("「你在我們前哨站周圍看到的自動機器人(Automatons)是我們的僕役。毫無疑問你已經知道它們充當護衛，但它們也提供其他服務。廚師、裁縫、鐵匠……所有這些瑣碎的工作都能由我們的金屬人來完成。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_0410:
-	case "Strangers" attend labelFunc03B2_0432:
-	UI_remove_answer("Strangers");
-	message("\"Other than thyself, ");
+	case "陌生人" attend labelFunc03B2_0432:
+	UI_remove_answer("陌生人");
+	message("「除了你之外，");
 	message(var0002);
-	message(", there have been few that were brave enough to enter our Keep. There are three women that profess to be on the side of Order, but I doubt their word. Indeed, I believe them to be agents of Chaos, but they have not attacked us here at Serpent's Fang, and have fought the Chaos creatures that venture forth from the surrounding tunnels. They wait, but for what I am not certain.\"");
+	message("，很少有人有勇氣進入我們的堡壘。有三個女人自稱是站在秩序這邊的，但我懷疑她們的話。事實上，我相信她們是混沌的密探，但她們並沒有在巨蛇之牙這裡攻擊我們，而且還與那些從周圍隧道闖出來的混沌生物戰鬥。她們在等待，但我不知道她們在等什麼。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_0432:
-	case "Abandoned Outpost" attend labelFunc03B2_044E:
-	UI_remove_answer("Abandoned Outpost");
-	message("\"Nine months ago, our Commander was Ardiniss. He led an expedition into our southwest outpost to clear it of infiltrating Chaos agents, and to set mystic traps to kill those that would surely come again. We knew that he was successful in creating the pitfalls, but he never returned. We assumed he was slain by those he sought to slay. He was a good man. If thou dost find his body in thy wanderings, 'twould be kind of thee to return him here to Serpent's Fang.\"");
+	case "廢棄前哨站" attend labelFunc03B2_044E:
+	UI_remove_answer("廢棄前哨站");
+	message("「九個月前，我們的指揮官是阿迪尼斯(Ardiniss)。他帶領一支探險隊前往我們西南方的前哨站，清除潛入的混沌密探，並設置神秘陷阱以殺死那些必定會再來的人。我們知道他成功製造了陷阱，但他再也沒有回來。我們認為他被那些他想殺死的人給殺了。他是個好人。如果在你的旅途中找到他的遺體，請行行好把他帶回巨蛇之牙。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_044E:
-	case "The Maze" attend labelFunc03B2_046A:
-	UI_remove_answer("The Maze");
-	message("\"Hah! 'Twas built by an exceedingly crafty architect indeed! An item of importance was hidden there, and that is all I shall say on the matter.\"");
+	case "迷宮" attend labelFunc03B2_046A:
+	UI_remove_answer("迷宮");
+	message("「哈！那的確是一位極其狡猾的建築師建造的！有一件重要物品被藏在那裡，關於這件事我只能說這麼多。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_046A:
-	case "Aram-Dol's Lair" attend labelFunc03B2_0486:
-	UI_remove_answer("Aram-Dol's Lair");
-	message("\"Aram Dol is a foul thing that should be destroyed! It exists only to destroy and I fear that if our forces do not return soon, that creature of loathsome chaos will continue to test our defenses and send its unholy servants to our gate! Aram Dol is a powerful sorcerer, and controls items of great power. If thou wert to destroy this demon, I am certain that Isstanar would reward thee!\"");
+	case "阿拉姆-多爾的巢穴" attend labelFunc03B2_0486:
+	UI_remove_answer("阿拉姆-多爾的巢穴");
+	message("「阿拉姆-多爾(Aram-Dol)是個應該被消滅的邪惡東西！它的存在只是為了破壞，我擔心如果我們的軍隊不趕快回來，那個令人作嘔的混沌生物會繼續測試我們的防禦，並派遣它邪惡的僕人到我們的大門前！阿拉姆-多爾是個強大的巫師，並控制著強大的物品。如果你能消滅這個惡魔，我肯定伊斯坦納會獎賞你的！」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_0486:
-	case "Loriel's Gift" attend labelFunc03B2_04A8:
-	UI_remove_answer("Loriel's Gift");
-	message("\"Thou dost wear the Belt of Strength?! How didst thou come by it? It was thought lost these many months. No... no, I do not want to know, ");
+	case "洛瑞爾的禮物" attend labelFunc03B2_04A8:
+	UI_remove_answer("洛瑞爾的禮物");
+	message("「你竟然戴著力量腰帶？！你怎麼得來的？這幾個月來大家都以為它遺失了。不……不，我不想知道，");
 	message(var0002);
-	message(", though I would not show the others the Belt. They would not be as understanding as I and perhaps would demand that thou returnest it.\"");
+	message("，不過我不會向其他人展示這條腰帶。他們不會像我這樣善解人意，也許會要求你歸還它。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_04A8:
-	case "nothing more" attend labelFunc03B2_04E4:
+	case "沒什麼了" attend labelFunc03B2_04E4:
 	if (!(var0009 == 0x0001)) goto labelFunc03B2_04C5;
 	UI_pop_answers();
-	message("\"As thou dost wish...\"");
+	message("「如你所願……」");
 	say();
 	goto labelFunc03B2_04E4;
 labelFunc03B2_04C5:
@@ -290,14 +290,14 @@ labelFunc03B2_04C5:
 	var0009 = (var0009 - 0x0001);
 	goto labelFunc03B2_04C5;
 labelFunc03B2_04E0:
-	message("\"Is there anything else I can help thee with?\"");
+	message("「還有什麼我可以幫你的嗎？」");
 	say();
 labelFunc03B2_04E4:
-	case "bye" attend labelFunc03B2_051B:
+	case "告辭" attend labelFunc03B2_051B:
 	UI_remove_npc_face0();
 	UI_remove_npc_face1();
-	Func097F(0xFE9C, (("@Good " + var0001) + "!@"), 0x0000);
-	Func097F(item, "@Be careful!@", 0x0002);
+	Func097F(0xFE9C, (("@祝你有個美好的" + var0001) + "！@"), 0x0000);
+	Func097F(item, "@小心點！@", 0x0002);
 	UI_set_schedule_type(item, 0x000B);
 	abort;
 labelFunc03B2_051B:

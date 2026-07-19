@@ -20,7 +20,7 @@ labelFunc038A_0045:
 	if (!(UI_get_oppressor(item) == 0x0000)) goto labelFunc038A_00D9;
 	if (!(UI_get_weapon(0xFE9C) == 0x0326)) goto labelFunc038A_00D9;
 	UI_show_npc_face0(0xFEE6, 0x0000);
-	message("\"Vanquished! By a mere mortal!\"");
+	message("「我被打敗了！被區區一個凡人！」");
 	say();
 	UI_remove_npc_face0();
 	var0001 = UI_get_object_position(item);
@@ -37,7 +37,7 @@ labelFunc038A_0045:
 labelFunc038A_00D9:
 	if (!(event == 0x0002)) goto labelFunc038A_00F3;
 	UI_show_npc_face0(0xFEE6, 0x0000);
-	message("\"Puny mortal!\"");
+	message("「微不足道的凡人！」");
 	say();
 	UI_remove_npc_face0();
 labelFunc038A_00F3:

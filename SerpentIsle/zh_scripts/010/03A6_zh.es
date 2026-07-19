@@ -72,7 +72,7 @@ labelFunc03A6_022E:
 	var0001 = UI_create_new_object2(0x01EF, [0x01D0, 0x04A0, 0x000E]);
 labelFunc03A6_024E:
 	if (!(!var0001)) goto labelFunc03A6_0266;
-	var0003 = Func0992(0x0001, "@It doesn't work!@", "@'Tis broken...@", true);
+	var0003 = Func0992(0x0001, "@它沒有用！@", "@它壞了……@", true);
 	abort;
 labelFunc03A6_0266:
 	UI_set_schedule_type(var0001, 0x000F);

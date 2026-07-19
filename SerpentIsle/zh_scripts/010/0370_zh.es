@@ -20,7 +20,7 @@ labelFunc0370_0045:
 	if (!(UI_get_oppressor(item) == 0x0000)) goto labelFunc0370_00D9;
 	if (!(UI_get_weapon(0xFE9C) == 0x0326)) goto labelFunc0370_00D9;
 	UI_show_npc_face0(0xFEE0, 0x0000);
-	message("\"Thou hast beaten me, vile human. I will remember this day!\"");
+	message("「你打敗了我，卑鄙的人類。我會記住這一天！」");
 	say();
 	UI_remove_npc_face0();
 	var0001 = UI_get_object_position(item);

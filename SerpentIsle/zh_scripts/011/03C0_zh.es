@@ -23,7 +23,7 @@ labelFunc03C0_0072:
 	abort;
 labelFunc03C0_0073:
 	if (!((event == 0x0002) && (!UI_get_item_flag(var0000, 0x0024)))) goto labelFunc03C0_00A3;
-	UI_item_say(item, "@Whoa. Bad shrooms.@");
+	UI_item_say(item, "@哇喔。毒蘑菇。@");
 	if (!(var0000 == 0xFE9C)) goto labelFunc03C0_00A3;
 	UI_clear_item_flag(var0000, 0x0019);
 labelFunc03C0_00A3:

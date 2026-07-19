@@ -17,22 +17,22 @@ void Func03BD shape#(0x3BD) ()
 	var0000 = UI_get_npc_id(item);
 	if (!(event == 0x0000)) goto labelFunc03BD_0049;
 	if (!(UI_get_schedule_type(item) == 0x001D)) goto labelFunc03BD_0049;
-	var0001 = ["@Leave Yurel alone!@", "@Stay away from Yurel!@", "@Yurel wants to go home!@", "@Oh, woe!@", "@Yurel hungry!@", "@Help me!@"];
+	var0001 = ["@別管 Yurel ！@", "@離 Yurel 遠一點！@", "@Yurel 想回家！@", "@噢，真慘！@", "@Yurel 餓了！@", "@救救我！@"];
 	Func097F(item, var0001[UI_get_random(UI_get_array_size(var0001))], 0x0000);
 labelFunc03BD_0049:
 	if (!(event == 0x0001)) goto labelFunc03BD_009B;
 	if (!(!var0000)) goto labelFunc03BD_0065;
-	UI_item_say(0xFE9C, "@Stop, monster!@");
+	UI_item_say(0xFE9C, "@站住，怪物！@");
 	goto labelFunc03BD_006F;
 labelFunc03BD_0065:
-	UI_item_say(0xFE9C, "@Ho, Yurel!@");
+	UI_item_say(0xFE9C, "@喔， Yurel ！@");
 labelFunc03BD_006F:
 	0xFEF5->Func07D1();
 	if (!(!var0000)) goto labelFunc03BD_0089;
-	Func097F(item, "@I am no monster!@", 0x0002);
+	Func097F(item, "@我不是怪物！@", 0x0002);
 	goto labelFunc03BD_0093;
 labelFunc03BD_0089:
-	Func097F(item, "@Good to see thee.@", 0x0002);
+	Func097F(item, "@很高興見到你。@", 0x0002);
 labelFunc03BD_0093:
 	UI_set_schedule_type(item, 0x0003);
 labelFunc03BD_009B:
@@ -42,95 +42,95 @@ labelFunc03BD_009B:
 	UI_show_npc_face0(0xFEC9, 0x0000);
 	var0000 = UI_get_npc_id(item);
 	if (!(!var0000)) goto labelFunc03BD_00DC;
-	message("\"I am Yurel. Yurel is no monster. Yurel means no one harm.");
+	message("「我是 Yurel 。 Yurel 不是怪物。 Yurel 不會傷害任何人。");
 	say();
-	message("\"Yurel wishes only to be left in peace... and to go home.\"");
+	message("「Yurel 只希望能平靜地生活……然後回家。」");
 	say();
 	UI_set_npc_id(item, 0x0001);
 	goto labelFunc03BD_00E0;
 labelFunc03BD_00DC:
-	message("\"Have they stopped looking for monsters yet? Can Yurel go home in peace now?\"");
+	message("「他們已經不再找怪物了嗎？ Yurel 現在可以平靜地回家了嗎？」");
 	say();
 labelFunc03BD_00E0:
 	if (!(gflags[0x02FA] == true)) goto labelFunc03BD_00EF;
-	UI_add_answer("food");
+	UI_add_answer("食物");
 labelFunc03BD_00EF:
-	UI_add_answer(["monster", "peace", "home", "bye"]);
+	UI_add_answer(["怪物", "和平", "家", "告辭"]);
 labelFunc03BD_0102:
 	converse attend labelFunc03BD_0374;
-	case "monster" attend labelFunc03BD_0123:
-	UI_remove_answer("monster");
-	message("\"Yurel knows not how he came to be this way... so unlike others. Yurel has been told that he was an... experiment long ago gone wrong.");
+	case "怪物" attend labelFunc03BD_0123:
+	UI_remove_answer("怪物");
+	message("「Yurel 不知道自己怎麼會變成這樣……和其他人如此不同。 Yurel 聽說自己是……很久以前一個失敗的實驗。");
 	say();
-	message("\"Yurel does not care. Yurel breaths. Yurel fears. Yurel loves. That makes Yurel the same as others, though Yurel wears fur or not.\"");
+	message("「Yurel 不在乎。 Yurel 會呼吸。 Yurel 會恐懼。 Yurel 會去愛。這讓 Yurel 和其他人一樣，不管 Yurel 身上有沒有毛皮。」");
 	say();
-	UI_add_answer("experiment");
+	UI_add_answer("實驗");
 labelFunc03BD_0123:
-	case "experiment" attend labelFunc03BD_0147:
-	UI_remove_answer("experiment");
-	message("\"Yurel knows not who did such a thing, or why. The Master of Tolerance said that Chaos did not do such a thing. He said that it was those of Order.");
+	case "實驗" attend labelFunc03BD_0147:
+	UI_remove_answer("實驗");
+	message("「Yurel 不知道是誰做了這種事，或是為什麼。寬容大師(Master of Tolerance)說，混沌(Chaos)不會做這種事。他說那是秩序(Order)的一方做的。");
 	say();
-	message("\"Yurel does not care. Yurel here now, and must find a way home. Yurel only wants to live... Do not others feel the same way?\"");
+	message("「Yurel 不在乎。 Yurel 現在在這裡，必須找到回家的路。 Yurel 只想活下去……難道其他人不也是這麼想的嗎？」");
 	say();
-	UI_add_answer(["Chaos", "Order"]);
+	UI_add_answer(["混沌", "秩序"]);
 labelFunc03BD_0147:
-	case "Chaos" attend labelFunc03BD_015E:
-	UI_remove_answer("Chaos");
-	message("\"The Master of Tolerance told Yurel that his home was a place dedicated to Chaos. Yurel was not sure what this meant. Yurel was only happy that Yurel could stay there and be useful.");
+	case "混沌" attend labelFunc03BD_015E:
+	UI_remove_answer("混沌");
+	message("「寬容大師告訴 Yurel ，他的家是一個獻給混沌的地方。 Yurel 不確定這是什麼意思。 Yurel 只高興 Yurel 能待在那裡，並且能派上用場。");
 	say();
-	message("\"Yurel does not understand why the others hate one another. Are they not the same? They have no fur, as Yurel does. Yurel is confused... and hungry.\"");
+	message("「Yurel 不明白為什麼其他人要互相仇恨。他們不是一樣的嗎？他們沒有毛皮，就像 Yurel 這樣。 Yurel 很困惑……也很餓。」");
 	say();
 labelFunc03BD_015E:
-	case "Order" attend labelFunc03BD_0175:
-	UI_remove_answer("Order");
-	message("\"Yurel often saw warriors of Order as Yurel went about hunting. Yurel learned quickly to avoid them, for they would beat Yurel up if they could catch Yurel.");
+	case "秩序" attend labelFunc03BD_0175:
+	UI_remove_answer("秩序");
+	message("「Yurel 出去打獵時經常看到秩序的戰士。 Yurel 很快就學會避開他們，因為如果他們抓到 Yurel ，就會把 Yurel 痛打一頓。");
 	say();
-	message("\"Now they have killed Yurel's friends. Killed the Master of Tolerance who took Yurel in. Yurel wishes they would go away. It was better before they took over.\"");
+	message("「現在他們殺了 Yurel 的朋友。殺了收留 Yurel 的寬容大師。 Yurel 希望他們走開。在他們接管之前，情況比較好。」");
 	say();
 labelFunc03BD_0175:
-	case "peace" attend labelFunc03BD_0199:
-	UI_remove_answer("peace");
-	message("\"Yurel remembers peace. Yurel wishes to the end of his days without pain and fear. Yurel wishes what others wish, to see this fighting end.");
+	case "和平" attend labelFunc03BD_0199:
+	UI_remove_answer("和平");
+	message("「Yurel 記得和平。 Yurel 希望能沒有痛苦和恐懼地度過餘生。 Yurel 希望能和其他人一樣，看到這場戰鬥結束。");
 	say();
-	message("\"And food... Food would be good. Yurel is very hungry.\"");
+	message("「還有食物……有食物就好了。 Yurel 非常餓。」");
 	say();
-	UI_add_answer(["fighting", "food"]);
+	UI_add_answer(["戰鬥", "食物"]);
 labelFunc03BD_0199:
-	case "fighting" attend labelFunc03BD_01B7:
-	UI_remove_answer("fighting");
-	message("\"There has been fighting for a long, long time now. Something happened when Yurel was away hunting. Yurel knows not what.");
+	case "戰鬥" attend labelFunc03BD_01B7:
+	UI_remove_answer("戰鬥");
+	message("「戰鬥已經持續了很長很長一段時間。 Yurel 出去打獵時發生了一些事。 Yurel 不知道是什麼事。");
 	say();
-	message("\"Those of Order who captured Yurel called Yurel a murderer. But Yurel has never harmed others. Yurel has hunted to bring others food. Yurel knows not why they say such things.\"");
+	message("「那些抓住 Yurel 的秩序之人稱 Yurel 為殺人兇手。但 Yurel 從來沒有傷害過別人。 Yurel 打獵是為了給其他人帶食物。 Yurel 不知道他們為什麼這麼說。」");
 	say();
-	UI_add_answer("captured");
+	UI_add_answer("抓住");
 labelFunc03BD_01B7:
-	case "captured" attend labelFunc03BD_01D5:
-	UI_remove_answer("captured");
-	message("\"Warriors of Order found Yurel out hunting. They beat Yurel and dragged Yurel to the cruel place beyond these walls. They wanted to cut Yurel up... So Yurel ran away. Yurel not dumb.");
+	case "抓住" attend labelFunc03BD_01D5:
+	UI_remove_answer("抓住");
+	message("「秩序的戰士發現 Yurel 出去打獵。他們打了 Yurel ，把 Yurel 拖到這些牆外的殘酷地方。他們想把 Yurel 切碎……所以 Yurel 逃跑了。 Yurel 不笨。");
 	say();
-	message("\"Yearl hoped that if Yurel took their ball they would be too busy looking for it to hunt for Yurel. Yurel must have been right... They have not come for Yurel yet, and Yurel still has the ball.\"");
+	message("「Yurel 希望如果 Yurel 拿走他們的球，他們就會忙著找球而沒空來獵殺 Yurel 。 Yurel 一定是對的……他們還沒來找 Yurel ，而且 Yurel 還有那個球。」");
 	say();
-	UI_add_answer("ball");
+	UI_add_answer("球");
 labelFunc03BD_01D5:
-	case "ball" attend labelFunc03BD_01E8:
-	UI_remove_answer("ball");
-	message("\"Yurel knows not what is so special about it. It is pretty. It sat upon a pedestal. So it must have been important.\"");
+	case "球" attend labelFunc03BD_01E8:
+	UI_remove_answer("球");
+	message("「Yurel 不知道這有什麼特別的。它很漂亮。它放在一個基座上。所以它一定很重要。」");
 	say();
 labelFunc03BD_01E8:
-	case "food" attend labelFunc03BD_0313:
-	UI_remove_answer("food");
+	case "食物" attend labelFunc03BD_0313:
+	UI_remove_answer("食物");
 	if (!gflags[0x030E]) goto labelFunc03BD_0208;
-	message("\"Yurel thanks thee for the cheese.");
+	message("「Yurel 謝謝你給的乳酪。");
 	say();
-	message("\" Yurel loves cheese.\"");
+	message("「Yurel 喜歡乳酪。」");
 	say();
 	goto labelFunc03BD_0313;
 labelFunc03BD_0208:
-	message("\"Yurel is so hungry. Yurel has not had food in many days. Yurel would be willing to trade thee Yurel's ball for cheese.");
+	message("「Yurel 好餓。 Yurel 已經很多天沒吃東西了。 Yurel 願意用 Yurel 的球跟你換乳酪。");
 	say();
-	message("\"Yurel loves cheese...\"");
+	message("「Yurel 喜歡乳酪……」");
 	say();
-	message("\"Dost thou have cheese thou wouldst give Yurel?\"");
+	message("「你有願意給 Yurel 的乳酪嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc03BD_030B;
 	var0002 = Func097D(0xFE9C, 0x0001, 0x0179, 0xFE99, 0x001A);
@@ -139,7 +139,7 @@ labelFunc03BD_0208:
 	if (!(var0002 || (var0003 || var0004))) goto labelFunc03BD_02FC;
 	if (!var0002) goto labelFunc03BD_02A3;
 	var0005 = UI_remove_party_items(0x0001, 0x0179, 0xFE99, 0x001A, 0x0012);
-	message("\"Oh, Yurel is so happy! Thou art kind, kind, kind! The ball is yours... But be careful of the warriors, they are looking for it.\"");
+	message("「噢， Yurel 好高興！你真好，真好，真好！球是你的了……但要小心那些戰士，他們正在找它。」");
 	say();
 	var0005 = UI_add_cont_items(0xFE9C, 0x0001, 0x01C2, 0xFE99, 0x0009, 0x0000);
 	goto labelFunc03BD_02F9;
@@ -150,46 +150,46 @@ labelFunc03BD_02A3:
 labelFunc03BD_02C2:
 	var0005 = UI_remove_party_items(0x0001, 0x0179, 0xFE99, 0x001C, 0x0012);
 labelFunc03BD_02D8:
-	message("\"Oh, Yurel is so happy! Thou art kind, kind, kind! The ball is yours... But be careful of the warriors, they are looking for it.\"");
+	message("「噢， Yurel 好高興！你真好，真好，真好！球是你的了……但要小心那些戰士，他們正在找它。」");
 	say();
 	var0005 = UI_add_cont_items(0xFE9C, 0x0001, 0x01C2, 0xFE99, 0x0009, 0x0000);
 	gflags[0x030E] = true;
 labelFunc03BD_02F9:
 	goto labelFunc03BD_0308;
 labelFunc03BD_02FC:
-	message("\"Thou dost tease Yurel! Thou dost not have cheese!");
+	message("「你在捉弄 Yurel ！你根本沒有乳酪！");
 	say();
-	message("\"But if thou dost find some, Yurel will still trade.\"");
+	message("「但如果你找到了， Yurel 還是願意換。」");
 	say();
 	gflags[0x02FA] = true;
 labelFunc03BD_0308:
 	goto labelFunc03BD_0313;
 labelFunc03BD_030B:
-	message("\"If thou dost change thy mind, Yurel will still trade.\"");
+	message("「如果你改變心意， Yurel 還是願意換。」");
 	say();
 	gflags[0x02FA] = true;
 labelFunc03BD_0313:
-	case "home" attend labelFunc03BD_0331:
-	UI_remove_answer("home");
-	message("\"Yurel's home was the Temple of Tolerance. They accepted Yurel there. Did not throw stones at Yurel. Let Yurel help, catch food for the others. Teach Yurel how to eat so as not to frighten others.");
+	case "家" attend labelFunc03BD_0331:
+	UI_remove_answer("家");
+	message("「Yurel 的家是寬容神殿(Temple of Tolerance)。他們在那裡接納了 Yurel 。沒有朝 Yurel 丟石頭。讓 Yurel 幫忙，為其他人捕捉食物。教 Yurel 怎麼吃東西才不會嚇到別人。");
 	say();
-	message("\"Yurel had friends. Yurel had a safe place to sleep. Yurel worked hard and had fun. Yurel wants to go home...\"");
+	message("「Yurel 有朋友。 Yurel 有個安全的地方睡覺。 Yurel 努力工作也過得很開心。 Yurel 想回家……」");
 	say();
-	UI_add_answer("Temple of Tolerance");
+	UI_add_answer("寬容神殿");
 labelFunc03BD_0331:
-	case "Temple of Tolerance" attend labelFunc03BD_034C:
-	UI_remove_answer("Temple of Tolerance");
-	message("\"The Temple of Tolerance was the home of those the others did not want. Yurel was friends with many there.");
+	case "寬容神殿" attend labelFunc03BD_034C:
+	UI_remove_answer("寬容神殿");
+	message("「寬容神殿是那些不被其他人接納的人的家。 Yurel 在那裡交了很多朋友。");
 	say();
-	message("\"Yurel does not care if they were not smart, or if they looked different... Yurel looks different from all others. Yurel does not understand why others turn out their own children for looking different. They look enough alike to Yurel.");
+	message("「Yurel 不在乎他們是不是不聰明，或者長得不一樣…… Yurel 長得和所有人都不同。 Yurel 不明白為什麼其他人會因為自己的孩子長得不一樣就把他們趕出去。在 Yurel 看來，他們長得已經夠像了。");
 	say();
-	message("\"Perhaps Yurel will never know. Perhaps Yurel will never live to see home again. Yurel is lonely... and hungry.\"");
+	message("「也許 Yurel 永遠不會知道。也許 Yurel 永遠活不到再次看見家鄉的那一天。 Yurel 好孤單……也好餓。」");
 	say();
 labelFunc03BD_034C:
-	case "bye" attend labelFunc03BD_0371:
+	case "告辭" attend labelFunc03BD_0371:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Goodbye.@", 0x0000);
-	Func097F(item, "@Take care.@", 0x0002);
+	Func097F(0xFE9C, "@再見。@", 0x0000);
+	Func097F(item, "@保重。@", 0x0002);
 	goto labelFunc03BD_0374;
 labelFunc03BD_0371:
 	goto labelFunc03BD_0102;

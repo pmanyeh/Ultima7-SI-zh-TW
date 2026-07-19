@@ -18,11 +18,11 @@ void Func03BE shape#(0x3BE) ()
 	goto labelFunc03BE_008C;
 labelFunc03BE_004C:
 	if (!((!var0000) || (!gflags[0x02FF]))) goto labelFunc03BE_007B;
-	var0001 = Func0992(0x0001, "@Maybe we can climb down?!@", "@Maybe I can climb down?!@", true);
-	var0002 = Func0992(0x0001, "@But with what?@", 0x0000, true);
+	var0001 = Func0992(0x0001, "@也許我們可以爬下去？！@", "@也許我可以爬下去？！@", true);
+	var0002 = Func0992(0x0001, "@但是要用什麼？@", 0x0000, true);
 	goto labelFunc03BE_008B;
 labelFunc03BE_007B:
-	var0001 = Func0992(0x0001, "@We need the rope!@", "@I need the rope!@", true);
+	var0001 = Func0992(0x0001, "@我們需要繩子！@", "@我需要繩子！@", true);
 labelFunc03BE_008B:
 	abort;
 labelFunc03BE_008C:

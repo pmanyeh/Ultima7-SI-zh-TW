@@ -23,7 +23,7 @@ void Func03CA shape#(0x3CA) ()
 labelFunc03CA_002A:
 	if (!(UI_die_roll(0x0001, 0x000A) == 0x0001)) goto labelFunc03CA_0092;
 	UI_set_npc_id(item, 0x0000);
-	var0001 = Func0992(0x0001, "@That's baaaad!@", "@I'm baaaad!@", true);
+	var0001 = Func0992(0x0001, "@那太糟了咩！@", "@我太糟了咩！@", true);
 	UI_halt_scheduled(item);
 	UI_set_schedule_type(item, 0x000F);
 	var0002 = [0x0001, 0x0001];
@@ -58,7 +58,7 @@ labelFunc03CA_0169:
 	if (!(event == 0x0002)) goto labelFunc03CA_0193;
 	UI_clear_item_flag(0xFE9C, 0x0010);
 	UI_set_schedule_type(item, 0x0014);
-	var0001 = Func0992(0x0001, "@Thou art SICK!@", "@That felt good!@", true);
+	var0001 = Func0992(0x0001, "@你有病啊！@", "@感覺真不錯！@", true);
 labelFunc03CA_0193:
 	return;
 }
