@@ -7,7 +7,7 @@ void Func04C1 object#(0x4C1) ()
 	var var0000;
 	var var0001;
 
-	var0000 = "Seminarium";
+	var0000 = "神學院( Seminarium )";
 	var0001 = 0x0002;
 	Func0808(var0000, var0001);
 	return;

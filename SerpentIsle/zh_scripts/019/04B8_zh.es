@@ -15,26 +15,24 @@ void Func04B8 object#(0x4B8) ()
 	var0001 = Func0954();
 	var0002 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc04B8_004C;
-	UI_item_say(0xFE9C, "@May we speak?@");
+	UI_item_say(0xFE9C, "@能談談嗎？@");
 	0xFF48->Func07D1();
-	Func097F(0xFF48, (("@Yes, " + var0001) + "?@"), 0x0002);
+	Func097F(0xFF48, (("@什麼事，" + var0001) + "？@"), 0x0002);
 	UI_set_schedule_type(0xFF48, 0x0003);
 labelFunc04B8_004C:
 	if (!(event == 0x0009)) goto labelFunc04B8_0083;
 	UI_run_schedule(0xFF48);
 	UI_show_npc_face0(0xFF48, 0x0000);
-	message("\"What... hath... happened? Where... am I? Who am I?\"");
+	message("「發生……什麼事了？我……在哪裡？我是誰？」");
 	say();
-	message("\"I remember! I am Number 7!\"");
+	message("「我想起來了！我是 7 號！」");
 	say();
-	message("\"Oh, foul betrayal! Number 4 murdered me and took the key!\"");
+	message("「喔，卑鄙的背叛！4 號謀殺了我，並拿走了鑰匙！」");
 	say();
-	message("\"He must not be allowed to hold the hallowed key!!\"");
+	message("「絕不能讓他持有那把神聖的鑰匙！！」");
 	say();
-	Func097F(item, "@Stop him!@", 0x0000);
+	Func097F(item, "@阻止他！@", 0x0000);
 	UI_remove_npc_face0();
 labelFunc04B8_0083:
 	return;
 }
-
-

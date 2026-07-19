@@ -60,41 +60,41 @@ void Func04CF object#(0x4CF) ()
 
 	var0000 = Func0954();
 	var0001 = UI_is_pc_female();
-	var0002 = "son";
+	var0002 = "兒子";
 	var0003 = Func0994();
-	var0004 = "his";
+	var0004 = "他的";
 	if (!UI_is_pc_female()) goto labelFunc04CF_002C;
-	var0004 = "her";
+	var0004 = "她的";
 labelFunc04CF_002C:
 	if (!var0001) goto labelFunc04CF_0038;
-	var0002 = "daughter";
+	var0002 = "女兒";
 labelFunc04CF_0038:
 	var0005 = Func0953();
 	if (!(event == 0x0002)) goto labelFunc04CF_011C;
 	if (!gflags[0x02FD]) goto labelFunc04CF_00D0;
-	UI_item_say(0xFF31, "@What a wonder!@");
+	UI_item_say(0xFF31, "@多麼令人驚嘆！@");
 	0xFF31->Func07D1();
 	UI_show_npc_face0(0xFF31, 0x0000);
-	message("\"I am honored to have been present for such a miracle! Even I had not expected anything this momentous.");
+	message("「我很榮幸能親眼目睹這般奇蹟！連我也沒想到會有如此重大的事情發生。");
 	say();
 	if (!gflags[0x0004]) goto labelFunc04CF_0085;
-	message("\"Now that the Tree of Balance thrives in this hallowed glade, it's strong roots shall begin healing the wrents in our land.");
+	message("「既然平衡之樹( Tree of Balance )在這個神聖的林地中茁壯成長，它強健的根將開始治癒我們這片土地的裂痕。");
 	say();
-	message("\"Once thou hast restored Balance to our world, who knows what miracles may occur? I have even heard it said that the souls of the dead shall be returned to life once Balance is restored.");
+	message("「一旦你恢復了我們世界的平衡( Balance )，誰知道會發生什麼奇蹟呢？我甚至聽說，一旦平衡恢復，死者的靈魂將起死回生。");
 	say();
-	message("\"Only time shall tell. But now, my ");
+	message("「只有時間能證明一切。但現在，我的");
 	message(var0002);
-	message(", it is time that I return thee to thy quest.\"");
+	message("，是你回到你的任務的時候了。」");
 	say();
 	goto labelFunc04CF_0099;
 labelFunc04CF_0085:
-	message("\"With the Tree of Balance firmly rooted in this hallowed glade, thy task of restoring Balance to the world will be much easier, my ");
+	message("「隨著平衡之樹( Tree of Balance )牢牢扎根在這神聖的林地中，你恢復世界平衡( Balance )的任務將會容易得多，我的");
 	message(var0002);
-	message(".");
+	message("。");
 	say();
-	message("\"Now, my ");
+	message("「現在，我的");
 	message(var0002);
-	message(", it is time that you return to thy quest.\"");
+	message("，是你回到任務的時候了。」");
 	say();
 labelFunc04CF_0099:
 	UI_remove_npc_face0();
@@ -103,31 +103,31 @@ labelFunc04CF_0099:
 	UI_remove_npc(0xFF31);
 	goto labelFunc04CF_011C;
 labelFunc04CF_00D0:
-	UI_item_say(0xFF31, (("@Well done, my " + var0002) + "!@"));
+	UI_item_say(0xFF31, (("@做得好，我的" + var0002) + "！@"));
 	0xFF31->Func07D1();
 	UI_show_npc_face0(0xFF31, 0x0000);
-	message("\"Thou hast found the Silver Seed! Now all that remains is for thee to plant it here in this hallowed glade.");
+	message("「你找到了銀色種子( Silver Seed )！現在剩下的就是把它種在這個神聖的林地裡。");
 	say();
-	message("\"Xenka's prophecies spoke of the Hero restoring the Tree of Balance. But even Xenka herself could not say where the seed of such a tree could be found.");
+	message("「Xenka 的預言說到英雄將會恢復平衡之樹。但即使是 Xenka 本人也說不出要去哪裡尋找這樣一棵樹的種子。");
 	say();
-	message("\"When the Forest Master first entered our world we thought that perhaps he was to be the Hero from Another World. But we learned that the seed he possessed had been warped by his passage through the Void. It will never grow...\"");
+	message("「當森林之主( Forest Master )最初進入我們的世界時，我們以為或許他就是來自異世界之英雄。但後來我們得知，他所擁有的種子在穿越虛空( Void )時被扭曲了。它永遠長不出來……」");
 	say();
-	message("\"Until Miggim found the Amulet of Balance, we had not even considered that the Ophidians knew anything of the Tree of Balance.");
+	message("「在 Miggim 找到平衡護身符( Amulet of Balance )之前，我們甚至沒有想過蛇人( Ophidians )也知道關於平衡之樹的事情。");
 	say();
-	message("\"Plant it here in this dark patch of rich ground in front of the waterfall, my ");
+	message("「把它種在瀑布前這塊深色的沃土上吧，我的");
 	message(var0002);
-	message(". It looks just large enough for the seed, as if it were the seed's very own cradle. The water here will nourish it well.\"");
+	message("。這裡的大小剛好夠放這顆種子，彷彿是它專屬的搖籃。這裡的水會很好地滋潤它的。」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(0xFF31, "@Plant it now.@", 0x0002);
+	Func097F(0xFF31, "@現在種下它。@", 0x0002);
 labelFunc04CF_011C:
 	if (!(event == 0x0001)) goto labelFunc04CF_0161;
 	if (!(UI_get_npc_id(0xFF31) != 0x0000)) goto labelFunc04CF_0133;
 	abort;
 labelFunc04CF_0133:
-	UI_item_say(0xFE9C, "@Pardon me...@");
+	UI_item_say(0xFE9C, "@不好意思……@");
 	0xFF31->Func07D1();
-	Func097F(0xFF31, (("@Yes, my " + var0002) + "?@"), 0x0002);
+	Func097F(0xFF31, (("@什麼事，我的" + var0002) + "？@"), 0x0002);
 	UI_set_schedule_type(0xFF31, 0x0003);
 labelFunc04CF_0161:
 	if (!(event == 0x0000)) goto labelFunc04CF_01AD;
@@ -143,13 +143,13 @@ labelFunc04CF_01AD:
 	var0009 = false;
 	if (!(UI_get_npc_id(0xFF31) == 0x001F)) goto labelFunc04CF_04A2;
 	UI_set_npc_id(0xFF31, 0x0000);
-	message("\"The bells are signaling the return of Xenka!\"");
+	message("「鐘聲預示著 Xenka 的歸來！」");
 	say();
-	message("\"Thou art the Hero from Another World. It is for thee that she doth return. We must hurry!\"");
+	message("「你是來自異世界之英雄( Hero from Another World )。她正是為了你而歸來的。我們必須快點！」");
 	say();
 	var000A = UI_get_object_position(0xFE9C);
 	if (!Func08F8(var000A, [0x0950, 0x0470], [0x097E, 0x0486])) goto labelFunc04CF_0227;
-	message("\"Prepare yourselves for the coming of Xenka!\"");
+	message("「準備迎接 Xenka 的到來！」");
 	say();
 labelFunc04CF_0227:
 	UI_remove_npc_face0();
@@ -214,52 +214,52 @@ labelFunc04CF_0489:
 	abort;
 labelFunc04CF_04A2:
 	if (!(!UI_get_item_flag(0xFF31, 0x001C))) goto labelFunc04CF_04DB;
-	message("\"I am Karnax, a Xenkan monk. Please forgive our previous meeting, my ");
+	message("「我是 Karnax，一名 Xenka 的僧侶。請原諒我們之前的會面，我的");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
-	message("\"I have nothing against thee, but I fear that Thoxa's willful interference shall be the undoing of all for which we have prepared.\"");
+	message("「我對你沒有任何成見，但我擔心 Thoxa 的任性干涉，將會毀掉我們所準備的一切。」");
 	say();
 	UI_set_item_flag(0xFF31, 0x001C);
-	UI_add_answer(["previous meeting", "Thoxa", "interference"]);
+	UI_add_answer(["之前的會面", "Thoxa", "干涉"]);
 	goto labelFunc04CF_0575;
 labelFunc04CF_04DB:
 	if (!((gflags[0x0267] == true) && (!gflags[0x0274]))) goto labelFunc04CF_054F;
-	message("\"Hast thou returned with the scroll?\"");
+	message("「你帶著卷軸回來了嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04CF_0544;
-	message("\"Very good! Now, if I may see it, I may be able to unlock the secret to restoring thy lady friend.\"");
+	message("「非常好！現在，如果讓我看看它，我也許能解開讓你女性朋友恢復正常的秘密。」");
 	say();
 	var001E = Func097D(0xFE9B, 0x0001, 0x02C3, 0x0050, 0xFE99);
 	if (!(var001E == true)) goto labelFunc04CF_053D;
 	var0007 = UI_remove_party_items(0x0001, 0x02C3, 0x0050, 0x0000, 0x0000);
 	gflags[0x0274] = true;
-	message("\"I have it now.\"");
+	message("「我拿到了。」");
 	say();
-	UI_add_answer("the secret");
+	UI_add_answer("秘密");
 	goto labelFunc04CF_0541;
 labelFunc04CF_053D:
-	message("\"Thou dost not have the serpent scroll!\"");
+	message("「你沒有巨蛇卷軸！」");
 	say();
 labelFunc04CF_0541:
 	goto labelFunc04CF_054C;
 labelFunc04CF_0544:
-	message("\"Without access to that scroll I can be of no further use to thee. Dost thou not remember what I told thee?\"");
+	message("「沒有那份卷軸，我對你再也派不上用場。你不記得我告訴過你什麼嗎？」");
 	say();
-	message("\"Fedabiblio had something he referred to as the Scroll of the Serpent. I believe that it may have the information I need to help restore thy lady friend. Bring it to me, and I will aid thee as I can.\"");
+	message("「Fedabiblio 有個被他稱為巨蛇卷軸( Scroll of the Serpent )的東西。我相信它可能有我需要用來幫你的女性朋友恢復正常的資訊。把它帶給我，我會盡我所能幫助你。」");
 	say();
 labelFunc04CF_054C:
 	goto labelFunc04CF_0559;
 labelFunc04CF_054F:
-	message("\"Time grows short, my ");
+	message("「時間不多了，我的");
 	message(var0002);
-	message(". I shall aid thee as I can.\"");
+	message("。我會盡我所能幫助你。」");
 	say();
 labelFunc04CF_0559:
 	if (!(gflags[0x0274] == true)) goto labelFunc04CF_0568;
-	UI_add_answer("the secret");
+	UI_add_answer("秘密");
 labelFunc04CF_0568:
-	UI_add_answer(["prophecies", "Thoxa"]);
+	UI_add_answer(["預言", "Thoxa"]);
 labelFunc04CF_0575:
 	var000B = Func08B6();
 	var000B = [0xFE9C, var000B];
@@ -271,381 +271,381 @@ labelFunc04CF_0588:
 labelFunc04CF_05A0:
 	UI_clear_item_flag(0xFE9C, 0x0010);
 	if (!(gflags[0x0274] && (!gflags[0x0220]))) goto labelFunc04CF_05BC;
-	UI_add_answer("the secret");
+	UI_add_answer("秘密");
 labelFunc04CF_05BC:
 	if (!gflags[0x0262]) goto labelFunc04CF_05C9;
 	UI_add_answer("Gwenno");
 labelFunc04CF_05C9:
 	if (!gflags[0x026F]) goto labelFunc04CF_05D9;
-	UI_add_answer("leave Monk Isle");
+	UI_add_answer("離開僧侶島( Monk Isle )");
 	goto labelFunc04CF_05E3;
 labelFunc04CF_05D9:
-	UI_add_answer(["bye"]);
+	UI_add_answer(["告辭"]);
 labelFunc04CF_05E3:
 	if (!Func08FC()) goto labelFunc04CF_05F8;
-	message("\"Oh! One of thy friends hath met an untimely end. This should not be...\"");
+	message("「噢！你的一位朋友遭遇了不幸。這不該發生的……」");
 	say();
-	message("\"If thou art ready to see thy friend again, ask and I will return them to thee.\"");
+	message("「如果你準備好再次見到你的朋友，只要開口，我就會把他們還給你。」");
 	say();
-	UI_add_answer("resurrection");
+	UI_add_answer("復活");
 labelFunc04CF_05F8:
 	if (!(gflags[0x02DD] && (!gflags[0x0267]))) goto labelFunc04CF_060A;
-	UI_add_answer("Bane of Chaos");
+	UI_add_answer("混沌之禍( Bane of Chaos )");
 labelFunc04CF_060A:
 	if (!(!gflags[0x02FB])) goto labelFunc04CF_0625;
-	message("\"Lest I forget... We have recently made a discovery which I believe shall aid thee, my ");
+	message("「以免我忘記……我們最近有了一項發現，我相信那會對你有幫助，我的");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
-	UI_add_answer("discovery");
+	UI_add_answer("發現");
 	goto labelFunc04CF_062C;
 labelFunc04CF_0625:
-	UI_add_answer("Amulet of Balance");
+	UI_add_answer("平衡護身符( Amulet of Balance )");
 labelFunc04CF_062C:
 	converse attend labelFunc04CF_0B7E;
-	case "discovery" attend labelFunc04CF_0691:
-	UI_remove_answer("discovery");
-	message("\"While searching for more materials for the library, Miggim discovered an ancient chest in the passages beneath our abbey, near the Serpent gate.");
+	case "發現" attend labelFunc04CF_0691:
+	UI_remove_answer("發現");
+	message("「在為圖書館尋找更多資料時，Miggim 在我們修道院地下的通道裡，靠近巨蛇之門( Serpent gate )的地方發現了一個古老的箱子。");
 	say();
-	message("\"Within this chest was a strange amulet and a scrap of decaying scroll. The scroll indicated that this is the Amulet of Balance. It is our thought that this amulet was meant for thee, my ");
+	message("「這個箱子裡有一個奇怪的護身符和一張腐朽的碎卷軸。卷軸上指出這是平衡護身符( Amulet of Balance )。我們認為這個護身符是為你準備的，我的");
 	message(var0002);
-	message(".");
+	message("。");
 	say();
-	message("\"I shall caution thee that we do not know what powers it has, for the scroll disintegrated before Miggim could fully translate it.");
+	message("「我要警告你，我們並不知道它有什麼力量，因為卷軸在 Miggim 完全翻譯出來之前就碎裂了。");
 	say();
-	message("\"But I am certain it is connected to the Serpent ruins in some manner. Perhaps if thou dost use it near the Serpent gate thou wilt trigger its power.\"");
+	message("「但我確信它以某種方式與巨蛇遺跡( Serpent ruins )有關。也許如果你在巨蛇之門( Serpent gate )附近使用它，就會觸發它的力量。」");
 	say();
 	var0007 = Func099B(0xFE9C, 0x0001, 0x03BB, 0x0000, 0x0009, 0x0000, true);
 	var0021 = Func09A0(0x0000, 0x0001);
 	var0007 = UI_execute_usecode_array(var0021, [(byte)0x23, (byte)0x55, 0x0612]);
 	gflags[0x02FB] = true;
 labelFunc04CF_0691:
-	case "Amulet of Balance" attend labelFunc04CF_06DA:
-	UI_remove_answer("Amulet of Balance");
+	case "平衡護身符( Amulet of Balance )" attend labelFunc04CF_06DA:
+	UI_remove_answer("平衡護身符( Amulet of Balance )");
 	var0007 = Func097D(0xFE9B, 0x0001, 0x03BB, 0x0000, 0x0009);
 	if (!var0007) goto labelFunc04CF_06CC;
-	message("\"We are searching all of our references for further information on thy Amulet, my ");
+	message("「我們正在搜尋所有的參考資料，以獲取關於你護身符的更多資訊，我的");
 	message(var0002);
-	message(". But, as of yet, we have discovered nothing more than what I have already told thee...");
+	message("。但到目前為止，除了我已經告訴你的之外，我們沒有發現任何新東西……");
 	say();
-	message("\"It was used at the Serpent gates, but we know not what it does.\"");
+	message("「它是用在巨蛇之門( Serpent gates )上的，但我們不知道它的作用。」");
 	say();
 	goto labelFunc04CF_06DA;
 labelFunc04CF_06CC:
-	message("\"If thou hast lost the Amulet, my ");
+	message("「如果你弄丟了護身符，我的");
 	message(var0002);
-	message(", I know not how to aid thee. As far as any of us know, there was but one... The one I gave thee.");
+	message("，我不知道該如何幫助你。據我們所知，護身符只有一個……也就是我給你的那個。");
 	say();
-	message("\"I am sorry. Thou must needs search for it thyself. I fear I cannot aid thee in this.\"");
+	message("「我很抱歉。你必須自己去尋找它。恐怕我幫不上忙。」");
 	say();
 labelFunc04CF_06DA:
-	case "resurrection" attend labelFunc04CF_06EC:
-	UI_remove_answer("resurrection");
+	case "復活" attend labelFunc04CF_06EC:
+	UI_remove_answer("復活");
 	Func08FE();
 labelFunc04CF_06EC:
-	case "leave Monk Isle" attend labelFunc04CF_06F7:
+	case "離開僧侶島( Monk Isle )" attend labelFunc04CF_06F7:
 	Func08FA();
 labelFunc04CF_06F7:
-	case "previous meeting" attend labelFunc04CF_071E:
-	UI_remove_answer("previous meeting");
-	message("\"When I came to try to dissuade Thoxa from aiding thee directly it was not an attack against thee.\"");
+	case "之前的會面" attend labelFunc04CF_071E:
+	UI_remove_answer("之前的會面");
+	message("「當我試圖勸阻 Thoxa 直接幫助你時，這並不是對你的攻擊。」");
 	say();
-	message("\"The prophecies state that those seeking to be thy friends shall bring about the downfall of thy quest. That is not why we have dedicated our lives.\"");
+	message("「預言中說，那些試圖成為你朋友的人將會導致你任務的失敗。這不是我們奉獻一生的目的。」");
 	say();
-	UI_add_answer(["dissuade", "prophecies", "dedicated"]);
+	UI_add_answer(["勸阻", "預言", "奉獻"]);
 labelFunc04CF_071E:
-	case "dissuade" attend labelFunc04CF_0742:
-	UI_remove_answer("dissuade");
-	message("\"I sought to win her away from her foolishness by rational argument. Regrettably, it became a test of magics.\"");
+	case "勸阻" attend labelFunc04CF_0742:
+	UI_remove_answer("勸阻");
+	message("「我試圖用理性的爭辯來說服她放棄愚蠢的行為。遺憾的是，這演變成了一場魔法的較量。」");
 	say();
-	message("\"As thou canst see, Thoxa and I are both skilled enough that we both yet live.\"");
+	message("「如你所見，Thoxa 和我的技術都足夠高超，所以我們都活了下來。」");
 	say();
-	UI_add_answer(["magics", "skilled"]);
+	UI_add_answer(["魔法", "技術"]);
 labelFunc04CF_0742:
-	case "magics" attend labelFunc04CF_0766:
-	UI_remove_answer("magics");
-	message("\"Unlike the unenlightened Mages of Moonshade, our powers come not from moldering reagents.\"");
+	case "魔法" attend labelFunc04CF_0766:
+	UI_remove_answer("魔法");
+	message("「與那些愚昧的月影( Moonshade )法師不同，我們的力量並非來自發霉的施法材料( reagents )。」");
 	say();
-	message("\"The power of a Xenkan monk comes from a connection to the limitless Void that surrounds the universe.\"");
+	message("「Xenka 僧侶的力量來自與環繞宇宙的無垠虛空( Void )的連結。」");
 	say();
-	UI_add_answer(["Mages", "Void"]);
+	UI_add_answer(["法師", "虛空"]);
 labelFunc04CF_0766:
-	case "Mages" attend labelFunc04CF_077D:
-	UI_remove_answer("Mages");
-	message("\"The Mages of Moonshade are but mere children playing at the arts they have not the patience to learn.\"");
+	case "法師" attend labelFunc04CF_077D:
+	UI_remove_answer("法師");
+	message("「月影( Moonshade )的法師不過是些在玩弄技藝的孩童，他們根本沒有耐心去學習。」");
 	say();
-	message("\"True magic comes after long years of meditation and self-sacrifice.\"");
+	message("「真正的魔法來自長年累月的冥想和自我犧牲。」");
 	say();
 labelFunc04CF_077D:
-	case "Void" attend labelFunc04CF_0794:
-	UI_remove_answer("Void");
-	message("\"Consider the Void to be the frame within which our Cosmos is bound. It is the source of unimagined power...\"");
+	case "虛空" attend labelFunc04CF_0794:
+	UI_remove_answer("虛空");
+	message("「你可以把虛空( Void )當作是束縛我們宇宙的框架。它是無法想像的力量之源……」");
 	say();
-	message("\"Power that thou mayest draw upon freely, if thou hast forged a gateway into it through long meditation.\"");
+	message("「這力量你可以自由汲取，只要你透過長時間的冥想，鍛造出通往其中的通道。」");
 	say();
 labelFunc04CF_0794:
-	case "skilled" attend labelFunc04CF_07B2:
-	UI_remove_answer("skilled");
-	message("\"Unlike the silent novices that thou dost see among us, Thoxa and I have both forged gateways into the power of the Void.\"");
+	case "技術" attend labelFunc04CF_07B2:
+	UI_remove_answer("技術");
+	message("「不像你在我們之中看到的那些沉默的新手，Thoxa 和我都已經鍛造了通往虛空( Void )力量的通道。」");
 	say();
-	message("\"By tapping into this stream, any confirmed Xenkan monk can surmount his or her own death. But there are still some things that remain beyond any one monk's power and require the concerted effort of us all.\"");
+	message("「藉由接入這股洪流，任何受過認可的 Xenka 僧侶都能克服自身的死亡。但有些事情仍然超越了單一僧侶的力量，需要我們所有人齊心協力。」");
 	say();
-	UI_add_answer("some things");
+	UI_add_answer("有些事情");
 labelFunc04CF_07B2:
-	case "some things" attend labelFunc04CF_07C9:
-	UI_remove_answer("some things");
-	message("\"Manipulation of time and space requires more power than one monk can channel.\"");
+	case "有些事情" attend labelFunc04CF_07C9:
+	UI_remove_answer("有些事情");
+	message("「操縱時間和空間需要比一名僧侶所能引導的更多力量。」");
 	say();
-	message("\"So teleportation and resurrection require that all the monks conjoin their power.\"");
+	message("「因此，傳送和復活需要所有僧侶結合他們的力量。」");
 	say();
 labelFunc04CF_07C9:
-	case "prophecies" attend labelFunc04CF_07ED:
-	UI_remove_answer("prophecies");
-	message("\"Xenka was given visions of the ending of our world.\"");
+	case "預言" attend labelFunc04CF_07ED:
+	UI_remove_answer("預言");
+	message("「Xenka 看見了我們世界終結的幻象。」");
 	say();
-	message("\"However, she was barely literate, and needed others to act as scribes for her convoluted visions.\"");
+	message("「然而，她幾乎不識字，需要其他人擔任抄寫員來記錄她那複雜難懂的幻象。」");
 	say();
-	UI_add_answer(["ending of the world", "Xenka"]);
+	UI_add_answer(["世界終結", "Xenka"]);
 labelFunc04CF_07ED:
-	case "ending of the world" attend labelFunc04CF_0828:
-	UI_remove_answer("ending of the world");
-	message("\"Xenka foresaw that people would turn from their basic goodness until the very land itself would rise up in revolt against their twisted ways.\"");
+	case "世界終結" attend labelFunc04CF_0828:
+	UI_remove_answer("世界終結");
+	message("「Xenka 預見到人們將背離他們基本的善良，直到大地本身也將起義反抗他們扭曲的行為。」");
 	say();
-	var0022 = Func0992(0x0001, "@Grim tidings, indeed.@", 0x0000, false);
+	var0022 = Func0992(0x0001, "@確實是可怕的壞消息。@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
-	message("\"Even now the storms flay the land. Soon the earthquakes will unleash the fire that will engulf the world.\"");
+	message("「現在風暴已經在肆虐這片土地了。很快，地震將會釋放出吞噬世界的烈火。」");
 	say();
-	UI_add_answer(["storms", "earthquakes"]);
+	UI_add_answer(["風暴", "地震"]);
 labelFunc04CF_0828:
-	case "storms" attend labelFunc04CF_0849:
-	UI_remove_answer("storms");
-	message("\"The storms are what conveyed thee here, my ");
+	case "風暴" attend labelFunc04CF_0849:
+	UI_remove_answer("風暴");
+	message("「正是風暴將你傳送到這裡，我的");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
-	message("\"Doth natural lightning do aught but kill? Doth normal lightning transport an item thousands of leagues from where once it stood?\"");
+	message("「自然的閃電除了殺人還能做什麼？普通的閃電能將一個物品從它原本所在的地方傳送到數千哩外嗎？」");
 	say();
-	message("\"And the storms are growing more frequent and fierce with each passing day.\"");
+	message("「而且風暴每一天都變得越來越頻繁和猛烈。」");
 	say();
 labelFunc04CF_0849:
-	case "earthquakes" attend labelFunc04CF_086A:
-	UI_remove_answer("earthquakes");
-	message("\"The land is a living entity, my ");
+	case "地震" attend labelFunc04CF_086A:
+	UI_remove_answer("地震");
+	message("「大地是一個活生生的實體，我的");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
-	message("\"Have no doubt that it will convulse as death draws near, even as a man.\"");
+	message("「毫無疑問，當死亡逼近時，它也會像人一樣抽搐。」");
 	say();
-	message("\"And where will we insignificant mortals be once the land which nurtures us heaves its last, explosive breath?\"");
+	message("「一旦孕育我們的大地發出最後一聲爆炸性的喘息，我們這些微不足道的凡人又將身在何處呢？」");
 	say();
 labelFunc04CF_086A:
 	case "Xenka" attend labelFunc04CF_0888:
 	UI_remove_answer("Xenka");
-	message("\"Xenka was a cross farm-wife who saw her visions as a means to have others do her work for her.\"");
+	message("「Xenka 是個脾氣暴躁的農婦，她把自己的幻象當成讓別人替她工作的手段。」");
 	say();
-	message("\"Yet despite her human failings, her visions are true... Thou art here, even if she is not.\"");
+	message("「然而，儘管她有人性的弱點，她的幻象卻是真實的……即便她不在這裡，但你確實來了。」");
 	say();
-	UI_add_answer("she is not");
+	UI_add_answer("她不在");
 labelFunc04CF_0888:
-	case "she is not" attend labelFunc04CF_08A3:
-	UI_remove_answer("she is not");
-	message("\"Xenka disappeared quite some time ago. Many think that she will return to deliver the final key to saving our doomed world.\"");
+	case "她不在" attend labelFunc04CF_08A3:
+	UI_remove_answer("她不在");
+	message("「Xenka 很久以前就失蹤了。許多人認為她會回來，並帶來拯救我們這個注定滅亡的世界的最後關鍵。」");
 	say();
-	message("\"I think that her visions had left her and she slunk quietly away to die in obscurity.\"");
+	message("「我認為她的幻象已經離她而去，所以她悄悄地溜走，並在默默無聞中死去。」");
 	say();
 	gflags[0x026B] = true;
 labelFunc04CF_08A3:
-	case "dedicated" attend labelFunc04CF_08C1:
-	UI_remove_answer("dedicated");
-	message("\"Those that live within this abbey believe that Xenka's prophecies hold the key to diverting the fiery end that awaits the world.\"");
+	case "奉獻" attend labelFunc04CF_08C1:
+	UI_remove_answer("奉獻");
+	message("「住在這座修道院裡的人們相信，Xenka 的預言掌握著轉移世界所面臨的火熱末日的關鍵。」");
 	say();
-	message("\"Our numbers have decreased with time, for even Xenkan monks die from age. And few of the youths are willing to serve such a nihilistic prophecy.\"");
+	message("「隨著時間的推移，我們的人數越來越少，因為即使是 Xenka 僧侶也會死於衰老。而且很少有年輕人願意侍奉這樣一個虛無主義的預言。」");
 	say();
-	UI_add_answer("the key");
+	UI_add_answer("關鍵");
 labelFunc04CF_08C1:
-	case "the key" attend labelFunc04CF_08D8:
-	UI_remove_answer("the key");
-	message("\"I do not know if Xenka's visions were full of diverse images or if she couched them in such terms out of peevishness.\"");
+	case "關鍵" attend labelFunc04CF_08D8:
+	UI_remove_answer("關鍵");
+	message("「我不知道 Xenka 的幻象是否充滿了各種意象，還是她出於暴躁而用這些詞彙來表達。」");
 	say();
-	message("\"Whatever the case may be, her prophecies run round the edge of what must be known and it can take years to decipher the meaning of a single vision.\"");
+	message("「無論情況如何，她的預言都圍繞著必須知道的邊緣，破解一個幻象的含義可能需要數年的時間。」");
 	say();
 labelFunc04CF_08D8:
 	case "Thoxa" attend labelFunc04CF_08F6:
 	UI_remove_answer("Thoxa");
-	message("\"Thoxa is a very bright young woman, who would like to feel that she hath single-handedly saved the world.\"");
+	message("「Thoxa 是一位非常聰明的年輕女子，她喜歡那種靠一己之力拯救了世界的感覺。」");
 	say();
-	message("\"It doth go against the grain of her youth to sit and wait for each event to come to pass. What is worse though, is that she hath pulled Miggim into her rashness as well.\"");
+	message("「坐等每件事發生違背了她年輕的本性。但更糟的是，她把 Miggim 也捲入了她的魯莽之中。」");
 	say();
 	UI_add_answer("Miggim");
 labelFunc04CF_08F6:
 	case "Miggim" attend labelFunc04CF_0914:
 	UI_remove_answer("Miggim");
-	message("\"Miggim is by nature a quiet young man, not given to impetuousness. He is ideally suited to be our librarian.\"");
+	message("「Miggim 本質上是個安靜的年輕人，不容易衝動。他非常適合做我們的圖書管理員。」");
 	say();
-	message("\"His greatest desire is to be helpful, as well as ordered. In fact, it was he who divined the passage that foretold of thy coming.\"");
+	message("「他最大的願望就是幫助別人，以及保持秩序。事實上，就是他占卜出預言你到來的段落。」");
 	say();
-	UI_add_answer("librarian");
+	UI_add_answer("圖書管理員");
 labelFunc04CF_0914:
-	case "librarian" attend labelFunc04CF_093C:
-	UI_remove_answer("librarian");
-	message("\"He hath taken the chaos of our library and turned it into a vastly more organized area.\"");
+	case "圖書管理員" attend labelFunc04CF_093C:
+	UI_remove_answer("圖書管理員");
+	message("「他把我們圖書館的混亂變成了一個井然有序的地方。」");
 	say();
-	message("\"In fact, I believe that we have the most concise collection of Ophidian books and scrolls that still exists.\"");
+	message("「事實上，我相信我們擁有目前僅存最簡明扼要的蛇人( Ophidian )書籍和卷軸收藏。」");
 	say();
-	message("\"Of course, it helps that we have the Lens of Translating.\"");
+	message("「當然，這有助於我們擁有翻譯透鏡( Lens of Translating )。」");
 	say();
-	UI_add_answer(["Ophidian", "Lens"]);
+	UI_add_answer(["蛇人", "透鏡"]);
 labelFunc04CF_093C:
-	case "Ophidian" attend labelFunc04CF_0960:
-	UI_remove_answer("Ophidian");
-	message("\"The Ophidians are commonly referred to as the Serpent people because of the embossed serpents found within the ruins of their cities.\"");
+	case "蛇人" attend labelFunc04CF_0960:
+	UI_remove_answer("蛇人");
+	message("「蛇人( Ophidians )通常被稱為巨蛇之民，因為在他們的城市廢墟中發現了浮雕的巨蛇。」");
 	say();
-	message("\"They had a fully-developed civilization here long before our forefathers fled from the invader British. I believe that they destroyed themselves in a bloody civil war.\"");
+	message("「早在我們的祖先逃離侵略者不列顛( British )之前，他們就在這裡擁有了一個高度發展的文明。我相信他們在一場血腥的內戰中毀滅了自己。」");
 	say();
-	UI_add_answer(["invader British", "civil war"]);
+	UI_add_answer(["侵略者不列顛", "內戰"]);
 labelFunc04CF_0960:
-	case "invader British" attend labelFunc04CF_097E:
-	UI_remove_answer("invader British");
-	message("\"Our records are incomplete concerning the time of the resettlement. For that, thou shouldst see Fedabiblio in Moonshade.\"");
+	case "侵略者不列顛" attend labelFunc04CF_097E:
+	UI_remove_answer("侵略者不列顛");
+	message("「我們關於重新定居時期的記錄並不完整。為此，你應該去月影( Moonshade )找 Fedabiblio。」");
 	say();
-	message("\"Thou shouldst bear in mind that their accounts are likely to be highly biased in their own favor.\"");
+	message("「你應該記住，他們的敘述很可能強烈偏袒他們自己。」");
 	say();
 	UI_add_answer("Fedabiblio");
 labelFunc04CF_097E:
 	case "Fedabiblio" attend labelFunc04CF_0991:
 	UI_remove_answer("Fedabiblio");
-	message("\"Fedabiblio is the master archivist in the city of Mages. He is also a teacher, and will be able to help thee.\"");
+	message("「Fedabiblio 是法師之城裡的首席檔案管理員。他也是一位導師，應該能幫上你的忙。」");
 	say();
 labelFunc04CF_0991:
-	case "civil war" attend labelFunc04CF_09A8:
-	UI_remove_answer("civil war");
-	message("\"I believe that the Ophidian government disintegrated and their society split into two opposing groups.\"");
+	case "內戰" attend labelFunc04CF_09A8:
+	UI_remove_answer("內戰");
+	message("「我相信蛇人政府瓦解了，他們的社會分裂成了兩個對立的群體。」");
 	say();
-	message("\"In the end, one faction apparently slaughtered the other. But all traces of the victors disappear soon after the final battle took place. It is a mystery where they went.\"");
+	message("「最後，顯然是一派屠殺了另一派。但在最後一戰發生後不久，勝利者的蹤跡就消失了。他們去哪裡仍是個謎。」");
 	say();
 labelFunc04CF_09A8:
-	case "interference" attend labelFunc04CF_09D0:
-	UI_remove_answer("interference");
-	message("\"It was determined by all monks that the time for the Hero from Another World was at hand.\"");
+	case "干涉" attend labelFunc04CF_09D0:
+	UI_remove_answer("干涉");
+	message("「所有僧侶一致認定，來自異世界之英雄( Hero from Another World )出現的時機已到。」");
 	say();
-	message("\"It was also decided that we would take no direct action to influence the Hero in any way...\"");
+	message("「我們也決定不採取任何直接行動，以任何方式影響這位英雄……」");
 	say();
-	message("\"Thoxa overstepped her bounds by giving thee the Hourglass of Fate.\"");
+	message("「Thoxa 越權了，她把命運沙漏( Hourglass of Fate )交給了你。」");
 	say();
-	UI_add_answer(["Hero", "Hourglass"]);
+	UI_add_answer(["英雄", "沙漏"]);
 labelFunc04CF_09D0:
-	case "Hero" attend labelFunc04CF_09FE:
-	UI_remove_answer("Hero");
-	message("\"All references to the one who can alter the course of destiny allude to the Hero from Another World.\"");
+	case "英雄" attend labelFunc04CF_09FE:
+	UI_remove_answer("英雄");
+	message("「所有關於能改變命運軌跡之人的文獻，都暗示著來自異世界之英雄( Hero from Another World )。」");
 	say();
-	message("\"Art thou from this land, from New Sosaria?\"");
+	message("「你來自這片土地，來自新索沙利亞( New Sosaria )嗎？」");
 	say();
 	if (!(Func0955() == false)) goto labelFunc04CF_09F6;
-	message("\"Dost thou see? When taken with the other signs, it points to thee as the one who alone can save our land.\"");
+	message("「你看到了嗎？結合其他徵兆來看，都指向了你，你是唯一能拯救我們這片土地的人。」");
 	say();
 	goto labelFunc04CF_09FE;
 labelFunc04CF_09F6:
-	message("\"Hmmm. Perhaps we have misinterpreted the passage.\"");
+	message("「嗯。也許我們誤解了這段話。」");
 	say();
-	message("\"I shall meditate further on this matter.\"");
+	message("「我會就這件事進一步冥想。」");
 	say();
 labelFunc04CF_09FE:
-	case "Hourglass" attend labelFunc04CF_0A15:
-	UI_remove_answer("Hourglass");
-	message("\"The damage hath been done. It is now thine to keep.\"");
+	case "沙漏" attend labelFunc04CF_0A15:
+	UI_remove_answer("沙漏");
+	message("「傷害已經造成了。現在它是你的了。」");
 	say();
-	message("\"It was designed so that we might be able to gauge when certain events were nigh. Perhaps it will serve thee better. I do not know.\"");
+	message("「它被設計出來是為了讓我們能夠預測某些事件何時來臨。也許它對你的用處更大。我不知道。」");
 	say();
 labelFunc04CF_0A15:
-	case "Lens" attend labelFunc04CF_0A28:
-	UI_remove_answer("Lens");
-	message("\"It is the large device that stands in the center of the library. Anyone using it is able to decipher the cryptic Ophidian writing for a short period of time.\"");
+	case "透鏡" attend labelFunc04CF_0A28:
+	UI_remove_answer("透鏡");
+	message("「就是矗立在圖書館中央的那個大型裝置。任何人使用它，都能在短時間內解讀那些隱晦的蛇人文字。」");
 	say();
 labelFunc04CF_0A28:
 	case "Gwenno" attend labelFunc04CF_0A7A:
 	UI_remove_answer("Gwenno");
 	if (!gflags[0x025F]) goto labelFunc04CF_0A70;
 	if (!gflags[0x026A]) goto labelFunc04CF_0A4A;
-	message("\"I share thy grief over the loss of Goodwife Gwenno. I am sure that we can resurrect her, if thou dost wish.\"");
+	message("「我對失去好主婦( Goodwife ) Gwenno 的悲痛感同身受。如果你希望的話，我確定我們能讓她復活。」");
 	say();
 	goto labelFunc04CF_0A6D;
 labelFunc04CF_0A4A:
 	if (!(!UI_get_item_flag(0xFF6B, 0x001E))) goto labelFunc04CF_0A65;
-	message("\"It hath been quite a pleasure having Gwenno here, ");
+	message("「有 Gwenno 在這裡真是一件樂事，");
 	message(var0000);
-	message(". She is quite knowledgeable, and shares her wisdom willingly.\"");
+	message("。她非常博學，而且很樂意分享她的智慧。」");
 	say();
 	goto labelFunc04CF_0A6D;
 labelFunc04CF_0A65:
-	message("\"Thy concern for this young woman is well warranted, I fear.\"");
+	message("「恐怕你對這位年輕女子的擔憂是很有道理的。」");
 	say();
-	message("\"Something hath sorely affected her, for I do not believe that she could be so disturbed otherwise.\"");
+	message("「某種東西嚴重影響了她，因為我不相信她會無故如此不安。」");
 	say();
 labelFunc04CF_0A6D:
 	goto labelFunc04CF_0A7A;
 labelFunc04CF_0A70:
-	message("\"Gwenno was our last visitor here, ");
+	message("「Gwenno 是我們這裡最後一位訪客，");
 	message(var0000);
-	message(". After she departed, the storms made travel to our island impossible. I was not able to speak with her as much as I wished. She spent quite a bit of time within our library.\"");
+	message("。她離開後，風暴讓前往我們島嶼的旅行變得不可能。我沒能如願地多和她說說話。她花了很多時間在我們的圖書館裡。」");
 	say();
 labelFunc04CF_0A7A:
-	case "Bane of Chaos" attend labelFunc04CF_0A95:
-	UI_remove_answer("Bane of Chaos");
-	message("\"Curious, the Bane of Chaos is an Ophidian term.\"");
+	case "混沌之禍( Bane of Chaos )" attend labelFunc04CF_0A95:
+	UI_remove_answer("混沌之禍( Bane of Chaos )");
+	message("「真奇怪，混沌之禍( Bane of Chaos )是一個蛇人的術語。」");
 	say();
-	message("\"Fedabiblio had something he referred to as the Scroll of the Serpent. I believe that it may have the information I need to help restore thy lady friend. Bring it to me, and I will aid thee as I can.\"");
+	message("「Fedabiblio 有個被他稱為巨蛇卷軸( Scroll of the Serpent )的東西。我相信它可能有我需要用來幫你的女性朋友恢復正常的資訊。把它帶給我，我會盡我所能幫助你。」");
 	say();
 	gflags[0x0267] = true;
 labelFunc04CF_0A95:
-	case "the secret" attend labelFunc04CF_0ABD:
-	UI_remove_answer("the secret");
-	message("\"It all becomes clear!\"");
+	case "秘密" attend labelFunc04CF_0ABD:
+	UI_remove_answer("秘密");
+	message("「一切都明朗了！」");
 	say();
-	message("\"The Ophidians based all their beliefs on six virtues. And the consequences of an imbalance of these virtues are very dire...\"");
+	message("「蛇人的所有信仰都建立在六大美德之上。而這些美德失衡的後果是非常可怕的……」");
 	say();
-	message("\"In fact, it sounds as if they could destroy the world!\"");
+	message("「事實上，聽起來它們甚至能毀滅世界！」");
 	say();
-	UI_add_answer(["six virtues", "consequences"]);
+	UI_add_answer(["六大美德", "後果"]);
 labelFunc04CF_0ABD:
-	case "six virtues" attend labelFunc04CF_0B19:
-	UI_remove_answer("six virtues");
-	message("\"The virtues are: Tolerance, Ethicality, Enthusiasm, Discipline, Emotion and Logic.\"");
+	case "六大美德" attend labelFunc04CF_0B19:
+	UI_remove_answer("六大美德");
+	message("「六大美德是：寬容( Tolerance )、道德( Ethicality )、熱忱( Enthusiasm )、紀律( Discipline )、情感( Emotion )和邏輯( Logic )。」");
 	say();
-	message("\"The anti-virtues -- when there is no balance -- are: Amorality, Wantonness, Insanity, Prejudice, Apathy, and Ruthlessness.\"");
+	message("「當失去平衡時，這些反美德( anti-virtues )則是：不道德( Amorality )、放縱( Wantonness )、瘋狂( Insanity )、偏見( Prejudice )、冷漠( Apathy )和無情( Ruthlessness )。」");
 	say();
 	var0009 = Func097D(0xFE9B, 0x0001, 0x031D, 0x0082, 0xFE99);
 	if (!(var0009 == false)) goto labelFunc04CF_0B15;
-	message("\"I will draw thee a chart, so that it might be more clear.\"");
+	message("「我來畫一張圖表給你，這樣可能會比較清楚。」");
 	say();
 	var0007 = Func099B(0xFE9C, 0x0001, 0x031D, 0x0082, 0x0000, 0x0000, true);
 	var0009 = true;
 	goto labelFunc04CF_0B19;
 labelFunc04CF_0B15:
-	message("\"Thou dost have the chart in thy possession that will explain this further.\"");
+	message("「你手上有那張圖表，它會進一步解釋這一點。」");
 	say();
 labelFunc04CF_0B19:
-	case "consequences" attend labelFunc04CF_0B3B:
-	UI_remove_answer("consequences");
-	message("\"Eventually the world will destroy itself... Much like what is happening now.\"");
+	case "後果" attend labelFunc04CF_0B3B:
+	UI_remove_answer("後果");
+	message("「最終世界將會自我毀滅……就像現在發生的事情一樣。」");
 	say();
-	message("\"Within a person, like thy friend Gwenno, the lack of Discipline would produce Wantonness... Much like the behavior she is exhibiting now.\"");
+	message("「在一個人身上，就像你的朋友 Gwenno，缺乏紀律( Discipline )就會產生放縱( Wantonness )……這很像她現在表現出來的行為。」");
 	say();
-	message("\"There does seem to be a cure, however.\"");
+	message("「不過，似乎有治癒的方法。」");
 	say();
-	UI_add_answer("cure");
+	UI_add_answer("治癒");
 labelFunc04CF_0B3B:
-	case "cure" attend labelFunc04CF_0B56:
-	UI_remove_answer("cure");
-	message("\"According to this, thou shouldst have the victim drink the water from the temple dedicated to that virtue which the person lacks.\"");
+	case "治癒" attend labelFunc04CF_0B56:
+	UI_remove_answer("治癒");
+	message("「根據記載，你應該讓受害者喝下供奉那個人所缺乏之美德的神廟裡的水。」");
 	say();
-	message("\"It sounds as though thou shouldst bring water from one of the temples... I think that Miggim doth have a book with maps of those ancient temples.\"");
+	message("「聽起來你應該從其中一座神廟帶些水來……我想 Miggim 有一本畫有那些古老神廟地圖的書。」");
 	say();
 	gflags[0x0269] = true;
 labelFunc04CF_0B56:
-	case "bye" attend labelFunc04CF_0B7B:
+	case "告辭" attend labelFunc04CF_0B7B:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Many thanks!@", 0x0000);
-	Func097F(item, "@Good luck!@", 0x0002);
+	Func097F(0xFE9C, "@非常感謝！@", 0x0000);
+	Func097F(item, "@祝你好運！@", 0x0002);
 	goto labelFunc04CF_0B7E;
 labelFunc04CF_0B7B:
 	goto labelFunc04CF_062C;
@@ -660,5 +660,3 @@ labelFunc04CF_0B92:
 labelFunc04CF_0BA0:
 	return;
 }
-
-

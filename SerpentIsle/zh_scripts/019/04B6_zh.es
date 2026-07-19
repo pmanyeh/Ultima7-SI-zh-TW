@@ -53,8 +53,8 @@ void Func04B6 object#(0x4B6) ()
 	var0003 = Func097D(0xFE9B, 0x0001, 0x0289, 0xFE99, 0x000A);
 	var0004 = UI_get_item_flag(0xFFF0, 0x001C);
 	if (!(event == 0x0001)) goto labelFunc04B6_0065;
-	Func097F(0xFE9C, "@Hello, there!@", 0x0000);
-	Func097F(0xFF4A, "@Yes?@", 0x0002);
+	Func097F(0xFE9C, "@你好！@", 0x0000);
+	Func097F(0xFF4A, "@有事嗎？@", 0x0002);
 	UI_set_schedule_type(0xFF4A, 0x0003);
 	0xFF4A->Func07D1();
 labelFunc04B6_0065:
@@ -81,49 +81,49 @@ labelFunc04B6_00F6:
 	goto labelFunc04B6_00F6;
 labelFunc04B6_0129:
 	if (!var000D) goto labelFunc04B6_013B;
-	Func097F(var000D, "@What dreams!@", 0x000E);
+	Func097F(var000D, "@這是什麼夢！@", 0x000E);
 labelFunc04B6_013B:
 	UI_move_object(0xFE9C, [0x05B4, 0x0652, 0x0000]);
 	goto labelFunc04B6_0322;
 labelFunc04B6_0151:
 	UI_show_npc_face0(0xFF4A, 0x0000);
-	message("\"Edrin! Thou hast come...\"");
+	message("「Edrin！你來了……」");
 	say();
 	UI_show_npc_face1(0xFFF0, 0x0000);
-	message("\"Siranush! I had despaired of seeing thee again! How I wish I could be with thee always...\"");
+	message("「Siranush！我本已對再次見到你不抱希望了！我多希望我能永遠與你在一起……」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Thou hast filled my world with the love I never knew while my body lived. For that, I have called thee here for one last sight of thee...\"");
+	message("「你用我生前從未體會過的愛填滿了我的世界。為此，我召喚你來此，為的是見你最後一面……」");
 	say();
 	UI_show_npc_face1(0xFFF0, 0x0000);
-	message("\"Then the Hero hath succeeded in destroying the Dream Crystal?\"");
+	message("「那麼這位英雄成功摧毀夢境水晶( Dream Crystal )了嗎？」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"No, dear one, only I can undo what Rabindrinath hath done... The Hero hath defeated Rabindrinath and brought me the Crystal.\" *\"It is mine to destroy it.\"");
+	message("「不，親愛的，只有我能解開 Rabindrinath 所做的一切……這位英雄已經擊敗了 Rabindrinath 並將水晶交給了我。」*「摧毀它是我的職責。」");
 	say();
 	UI_show_npc_face1(0xFFF0, 0x0000);
-	message("\"Although I know it would be wrong, I wish with all mine heart that thou wouldst not. If I could join thee, I would gladly.\"");
+	message("「雖然我知道這是不對的，但我全心全意地希望你不要這麼做。如果我能加入你，我會非常樂意。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"I know that, dear Edrin. But thou hast life yet to live.\" *\"I must destroy the Crystal. My people and I must move on to what lies beyond... I will look for thee, and hope that thou dost join me in what waits ahead.\"");
+	message("「我知道，親愛的 Edrin。但你還有你的人生要過。」*「我必須摧毀水晶。我的人民和我必須繼續前進，前往那死後的世界……我會在那裡找你，並希望你能在前方的歸宿與我重逢。」");
 	say();
 	UI_show_npc_face1(0xFFF0, 0x0000);
-	message("\"I have no wish to bind thee here, for all that I love thee. I will live my life and pray to meet thee beyond this world.\"");
+	message("「儘管我深愛著你，我也不希望將你束縛在這裡。我會過完我的一生，並祈禱能在此世之外與你相會。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Thou canst add my prayers to thine, Edrin. I love thee, now and always.\" *\"Although we will not meet here again, dream of me... Farewell, my love.\"");
+	message("「你可以將我的祈禱與你的相伴，Edrin。我愛你，現在直到永遠。」*「雖然我們不會在這裡再見面了，但請在夢中想起我……再見了，我的愛。」");
 	say();
 	UI_show_npc_face1(0xFFF0, 0x0000);
-	message("\"I love thee... And I shall dream of thee all the rest of my days.\" *\"Farewell...\"");
+	message("「我愛你……我將在我的餘生中日日夜夜夢見你。」*「再見了……」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	UI_remove_npc(0xFFF0);
-	message("\"Thou hast freed the tormented souls of my people, Avatar. Thy good deed shall be rewarded as promised.\" *\"I wish thee luck in thy quest. May thy sleep be peaceful...\"");
+	message("「你解放了我人民那受盡折磨的靈魂，聖者。你的善舉將如約獲得回報。」*「祝你任務順利。願你的長眠安詳平靜……」");
 	say();
 	UI_remove_npc_face0();
 	Func095D(0x0190);
@@ -171,13 +171,13 @@ labelFunc04B6_0323:
 	var0015 = UI_get_item_flag(0xFF4A, 0x001C);
 	if (!(gflags[0x020D] == true)) goto labelFunc04B6_046F;
 	if (!var0003) goto labelFunc04B6_0450;
-	message("\"Hast thou reconsidered my request, Avatar? Wilt thou give to me the Dream Crystal?\"");
+	message("「你重新考慮過我的請求了嗎，聖者？你願意把夢境水晶( Dream Crystal )給我嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04B6_0448;
-	message("\"I knew that Edrin could not be so misled...\"");
+	message("「我就知道 Edrin 不會看錯人的……」");
 	say();
 	var0016 = Func0996(0xFE9C, 0xFF4A, 0xFE99, 0x0289, 0xFE99, 0x000A, true);
-	message("\"After all these centuries of waiting... I had almost given up hope.\" *\"But there is one that I must see one last time, before our paths forever separate.\"");
+	message("「經過這幾個世紀的等待……我幾乎已經放棄希望了。」*「但在我們的道路永遠分開之前，有一個人我必須見他最後一面。」");
 	say();
 	UI_remove_npc_face0();
 	var0017 = UI_get_object_position(0xFF4A);
@@ -194,21 +194,21 @@ labelFunc04B6_0323:
 	abort;
 	goto labelFunc04B6_044D;
 labelFunc04B6_0448:
-	message("\"Then do not return unless thou hast had a change of heart! I am saddened beyond bearing!\"");
+	message("「那麼除非你改變心意，否則別再回來了！我悲痛欲絕！」");
 	say();
 	abort;
 labelFunc04B6_044D:
 	goto labelFunc04B6_046F;
 labelFunc04B6_0450:
-	message("\"Hast thou reconsidered my request, Avatar? Wilt thou bring to me the Dream Crystal?\"");
+	message("「你重新考慮過我的請求了嗎，聖者？你願意把夢境水晶帶來給我嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04B6_046A;
-	message("\"I knew that Edrin could not be so misled...\"");
+	message("「我就知道 Edrin 不會看錯人的……」");
 	say();
-	UI_add_answer("defeat");
+	UI_add_answer("擊敗");
 	goto labelFunc04B6_046F;
 labelFunc04B6_046A:
-	message("\"Then do not return unless thou hast had a change of heart! I am saddened beyond bearing!\"");
+	message("「那麼除非你改變心意，否則別再回來了！我悲痛欲絕！」");
 	say();
 	abort;
 labelFunc04B6_046F:
@@ -216,29 +216,29 @@ labelFunc04B6_046F:
 	if (!(var0015 == false)) goto labelFunc04B6_04DD;
 	var001A = UI_get_item_flag(0xFF4B, 0x0004);
 	if (!var001A) goto labelFunc04B6_04BC;
-	message("\"I am Siranush. I have been expecting thee...\"");
+	message("「我是 Siranush。我一直在等你……」");
 	say();
-	message("\"Now that the foul mage Rabindrinath is dead, we have some hope of escaping his evil spell.\"");
+	message("「既然那邪惡的法師 Rabindrinath 已經死了，我們就有希望逃離他邪惡的法術了。」");
 	say();
 	UI_set_item_flag(0xFF4A, 0x001C);
-	UI_add_answer(["expecting", "Rabindrinath", "evil spell"]);
+	UI_add_answer(["期待", "Rabindrinath", "邪惡法術"]);
 	goto labelFunc04B6_04DA;
 labelFunc04B6_04BC:
-	message("\"Thou hast come at last! I am Siranush. I have been expecting thee... I knew that thou wert the one destined to free us from Rabindrinath's evil spell.\"");
+	message("「你終於來了！我是 Siranush。我一直在等你……我知道你就是命中注定要將我們從 Rabindrinath 邪惡法術中解救出來的那個人。」");
 	say();
 	UI_set_item_flag(0xFF4A, 0x001C);
-	UI_add_answer(["expecting", "Rabindrinath", "evil spell"]);
+	UI_add_answer(["期待", "Rabindrinath", "邪惡法術"]);
 labelFunc04B6_04DA:
 	goto labelFunc04B6_05DE;
 labelFunc04B6_04DD:
-	message("\"Thou hast returned. Hast thou brought to me the Dream Crystal, ");
+	message("「你回來了。你把夢境水晶帶來了嗎，");
 	message(var0002);
-	message("?\"");
+	message("？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04B6_05D9;
 	if (!(var0003 == true)) goto labelFunc04B6_05D1;
 	var0016 = Func0996(0xFE9C, 0xFF4A, 0xFE99, 0x0289, 0xFE99, 0x000A, true);
-	message("\"After all these centuries of waiting... I had almost given up hope.\" *\"But there is one that I must see one last time, before our paths forever separate.\"");
+	message("「經過這幾個世紀的等待……我幾乎已經放棄希望了。」*「但在我們的道路永遠分開之前，有一個人我必須見他最後一面。」");
 	say();
 	UI_remove_npc_face0();
 	var0017 = UI_get_object_position(0xFF4A);
@@ -255,199 +255,199 @@ labelFunc04B6_04DD:
 	abort;
 	goto labelFunc04B6_05D6;
 labelFunc04B6_05D1:
-	message("\"Perhaps thou wert dreaming, Avatar. I do not see the Dream Crystal.\" *\"Without the Crystal, our souls remain trapped. Bring to me the Dream Crystal and the Serpent Necklace is thine...\"");
+	message("「或許你是在作夢吧，聖者。我並沒有看到夢境水晶。」*「沒有水晶，我們的靈魂就仍然受困於此。把夢境水晶帶來給我，巨蛇項鍊( Serpent Necklace )就是你的了……」");
 	say();
 	abort;
 labelFunc04B6_05D6:
 	goto labelFunc04B6_05DE;
 labelFunc04B6_05D9:
-	message("\"Without the Crystal, our souls remain trapped. Bring to me the Dream Crystal and the Serpent Necklace is thine...\"");
+	message("「沒有水晶，我們的靈魂就仍然受困於此。把夢境水晶帶來給我，巨蛇項鍊( Serpent Necklace )就是你的了……」");
 	say();
 	abort;
 labelFunc04B6_05DE:
 	goto labelFunc04B6_060C;
 labelFunc04B6_05E1:
 	if (!(!gflags[0x00E6])) goto labelFunc04B6_05F3;
-	message("\"Thou must not enter the realm of dreams before thou hast transformed the lost brother! His true form bears not wings.... Seek the answers, for I must have thine aid!\"");
+	message("「在你改變那位迷失兄弟( lost brother )的形體之前，你絕不能進入夢境領域！他真正的形體並沒有翅膀……去尋找答案吧，因為我需要你的幫助！」");
 	say();
-	message("\"To exit this place, thou must remember that from death a dreamer awakes. Seek the pillar of flame.\"");
+	message("「要離開這個地方，你必須記住，做夢者是從死亡中醒來的。去尋找火焰之柱吧。」");
 	say();
 	goto labelFunc04B6_05FB;
 labelFunc04B6_05F3:
-	message("\"The lost brother hath lost his wings, but thou hast not sought the memories of a bird. Thou must not enter this realm without that knowledge. Seek the answers, for I must have thine aid!\"");
+	message("「那位迷失的兄弟雖然失去了翅膀，但你還沒有找尋鳥類的記憶。在沒有那些知識之前，你絕不能進入這個領域。去尋找答案吧，因為我需要你的幫助！」");
 	say();
-	message("\"Remember, death is a dreamer's fiery door to life.\"");
+	message("「記住，死亡是做夢者通往生命的火焰之門。」");
 	say();
 labelFunc04B6_05FB:
 	UI_remove_npc_face0();
-	Func097F(0xFF4A, "@Go quickly!@", 0x0000);
+	Func097F(0xFF4A, "@快去！@", 0x0000);
 	abort;
 labelFunc04B6_060C:
 	converse attend labelFunc04B6_099A;
-	case "expecting" attend labelFunc04B6_0629:
-	message("\"As Edrin hath told thee of me, he hath dreamed of thee. I knew that thou wouldst come... 'Twas only a matter of time.\"");
+	case "期待" attend labelFunc04B6_0629:
+	message("「正如 Edrin 告訴過你關於我的事，他也曾在夢中見過你。我知道你會來的……這只是時間早晚的問題。」");
 	say();
-	UI_remove_answer("expecting");
-	UI_add_answer("matter of time");
+	UI_remove_answer("期待");
+	UI_add_answer("時間早晚");
 labelFunc04B6_0629:
-	case "matter of time" attend labelFunc04B6_0649:
-	message("\"In mine own dreams, I saw that thou wouldst need the Serpent Necklace. I knew that thou wouldst have to come here before thou couldst complete thy quest.\"");
+	case "時間早晚" attend labelFunc04B6_0649:
+	message("「在我自己的夢中，我看到了你會需要巨蛇項鍊。我知道在你能完成你的任務之前，你必須先來這裡。」");
 	say();
-	UI_remove_answer("matter of time");
-	UI_add_answer(["Serpent Necklace", "quest"]);
+	UI_remove_answer("時間早晚");
+	UI_add_answer(["巨蛇項鍊", "任務"]);
 labelFunc04B6_0649:
-	case "Serpent Necklace" attend labelFunc04B6_066C:
-	message("\"'Tis a thing of power from the people who settled this land after the village of Gorlab existed. It is to be thy reward.\"");
+	case "巨蛇項鍊" attend labelFunc04B6_066C:
+	message("「這是一件來自果雷村( Gorlab )建立之後在這片土地定居的人們的力量之物。這是給你的獎勵。」");
 	say();
-	UI_remove_answer("Serpent Necklace");
-	UI_add_answer(["thing of power", "Gorlab", "reward"]);
+	UI_remove_answer("巨蛇項鍊");
+	UI_add_answer(["力量之物", "果雷", "獎勵"]);
 labelFunc04B6_066C:
-	case "thing of power" attend labelFunc04B6_0686:
-	message("\"I do not know what it will do... I only know that it was part of a set of such jewelry. And it was a symbol of authority of some sort.\"");
+	case "力量之物" attend labelFunc04B6_0686:
+	message("「我不知道它能做什麼……我只知道它是一整套珠寶中的一件。而且它是某種權威的象徵。」");
 	say();
-	UI_remove_answer("thing of power");
-	UI_add_answer("authority");
+	UI_remove_answer("力量之物");
+	UI_add_answer("權威");
 labelFunc04B6_0686:
-	case "authority" attend labelFunc04B6_0699:
-	message("\"I have been trapped for a very long time, Avatar.\" *\"All I know is that the Ophidians seemed to worship serpents and that artifacts with the serpent symbol were often of magical origin. I have no idea what it will do.\"");
+	case "權威" attend labelFunc04B6_0699:
+	message("「我已經被困了很長一段時間了，聖者。」*「我所知道的只有蛇神教徒( Ophidians )似乎崇拜巨蛇，而帶有巨蛇標誌的神器通常具有魔法淵源。我不知道它能做什麼。」");
 	say();
-	UI_remove_answer("authority");
+	UI_remove_answer("權威");
 labelFunc04B6_0699:
-	case "Gorlab" attend labelFunc04B6_06B3:
-	message("\"The ruins that lie within the swamp are those of my village. Though Gorlab was not always a swamp.\" *'Long ago, Gorlab was once a prosperous community, Avatar.\"");
+	case "果雷" attend labelFunc04B6_06B3:
+	message("「躺在沼澤中的遺跡是我村莊的遺址。不過果雷並不一直都是沼澤。」*「很久以前，果雷曾經是一個繁榮的社區，聖者。」");
 	say();
-	UI_remove_answer("Gorlab");
-	UI_add_answer("swamp");
+	UI_remove_answer("果雷");
+	UI_add_answer("沼澤");
 labelFunc04B6_06B3:
-	case "swamp" attend labelFunc04B6_06C6:
-	message("\"When I was Gorlab's healer, the village stood on firm ground. We held back the swamp and farmed the rich soil.\" *\"But after we became trapped in this forsaken place, the earthworks we had built crumbled and the swamp rose to engulf the village.\"");
+	case "沼澤" attend labelFunc04B6_06C6:
+	message("「當我還是果雷的治療師時，村莊建在堅固的土地上。我們阻擋了沼澤並耕種肥沃的土壤。」*「但在我們被困在這個被遺棄的地方之後，我們建立的防禦土牆崩塌了，沼澤升起並吞噬了村莊。」");
 	say();
-	UI_remove_answer("swamp");
+	UI_remove_answer("沼澤");
 labelFunc04B6_06C6:
-	case "reward" attend labelFunc04B6_06F7:
+	case "獎勵" attend labelFunc04B6_06F7:
 	if (!var001A) goto labelFunc04B6_06EC;
-	message("\"Thou wert our only hope, Avatar. Our souls are trapped here, unable to go to what awaits beyond the realm of life.\"");
+	message("「你是我們唯一的希望，聖者。我們的靈魂被困在這裡，無法前往超越生命領域的彼端。」");
 	say();
 	if (!var0003) goto labelFunc04B6_06E5;
-	message("\"Thou dost have what will free us... If thou wilt help us, I shall reward thee with the Serpent Necklace.\"");
+	message("「你擁有能讓我們自由的東西……如果你願意幫助我們，我將以巨蛇項鍊作為回報。」");
 	say();
 	goto labelFunc04B6_06E9;
 labelFunc04B6_06E5:
-	message("\"If thou wilt undertake the task I ask, I shall reward thee with the Serpent necklace.\"");
+	message("「如果你願意承擔我請求的任務，我將以巨蛇項鍊作為回報。」");
 	say();
 labelFunc04B6_06E9:
 	goto labelFunc04B6_06F0;
 labelFunc04B6_06EC:
-	message("\"Thou art our only hope, Avatar. Our souls are trapped here, unable to go to what awaits beyond the realm of life.\" *\"If thou wilt undertake the task I ask, I shall reward thee with the Serpent necklace.\"");
+	message("「你是我們唯一的希望，聖者。我們的靈魂被困在這裡，無法前往超越生命領域的彼端。」*「如果你願意承擔我請求的任務，我將以巨蛇項鍊作為回報。」");
 	say();
 labelFunc04B6_06F0:
-	UI_remove_answer("reward");
+	UI_remove_answer("獎勵");
 labelFunc04B6_06F7:
-	case "quest" attend labelFunc04B6_0719:
-	message("\"Thou art the only one that can hope to save the land from tearing itself apart, Avatar.\"");
+	case "任務" attend labelFunc04B6_0719:
+	message("「你是唯一有望拯救這片土地免於分崩離析的人，聖者。」");
 	say();
-	message("\"I do not know what thou must do... I only know that thou must possess the Serpent Necklace before thou hast hope of succeeding.\"");
+	message("「我不知道你必須做什麼……我只知道在你擁有成功的希望之前，你必須擁有巨蛇項鍊。」");
 	say();
-	message("\"But first, thou must free us.\"");
+	message("「但首先，你必須讓我們自由。」");
 	say();
-	UI_remove_answer("quest");
-	UI_add_answer("free");
+	UI_remove_answer("任務");
+	UI_add_answer("自由");
 labelFunc04B6_0719:
-	case "free" attend labelFunc04B6_0748:
-	message("\"Although it was Rabindrinath's spell that trapped us within the Dream Realm, it is the Dream Crystal that keeps us from leaving.\"");
+	case "自由" attend labelFunc04B6_0748:
+	message("「雖然是 Rabindrinath 的法術將我們困在夢境領域中，但阻止我們離開的卻是夢境水晶。」");
 	say();
-	message("\"It is also the Crystal that traps any who enter the swamp.\"");
+	message("「也是這顆水晶困住了任何進入沼澤的人。」");
 	say();
 	if (!var0003) goto labelFunc04B6_0736;
-	message("\"If thou wilt give me the Dream Crystal, we will all be freed.\"");
+	message("「如果你願意把夢境水晶給我，我們就都能獲得自由。」");
 	say();
 	goto labelFunc04B6_073A;
 labelFunc04B6_0736:
-	message("\"Bring to me the Dream Crystal and we will all be freed.\"");
+	message("「把夢境水晶帶來給我，我們就都能獲得自由。」");
 	say();
 labelFunc04B6_073A:
-	UI_remove_answer("free");
-	UI_add_answer("Dream Crystal");
+	UI_remove_answer("自由");
+	UI_add_answer("夢境水晶");
 labelFunc04B6_0748:
-	case "Dream Crystal" attend labelFunc04B6_077B:
+	case "夢境水晶" attend labelFunc04B6_077B:
 	if (!var0003) goto labelFunc04B6_0765;
-	message("\"Before thou didst slay Rabindrinath, thou hadst seen a small part of the whole...\"");
+	message("「在你殺死 Rabindrinath 之前，你已經見過整體的一小部分……」");
 	say();
-	message("\"The crystal that Edrin wears is a shard of the Dream Crystal. That is how I was able to speak with him.\"");
+	message("「Edrin 戴著的水晶是夢境水晶的一塊碎片。那就是我能夠與他說話的原因。」");
 	say();
-	message("\"The entire crystal is what thou didst find in Rabindrinath's Keep when thou didst kill him.\"");
+	message("「完整的水晶就是你在殺死 Rabindrinath 時在他的要塞中找到的東西。」");
 	say();
 	goto labelFunc04B6_0774;
 labelFunc04B6_0765:
-	message("\"Thou hast already seen a small part of the whole... The crystal that Edrin wears is a shard of the Dream Crystal. That is how I was able to speak with him.\"");
+	message("「你已經見過整體的一小部分……Edrin 戴著的水晶是夢境水晶的一塊碎片。那就是我能夠與他說話的原因。」");
 	say();
-	message("\"To find the Dream Crystal, thou must venture into Rabindrinath's Keep somewhere within the Dream Realm.\"");
+	message("「要找到夢境水晶，你必須冒險進入夢境領域某處的 Rabindrinath 要塞( Rabindrinath's Keep )。」");
 	say();
-	UI_add_answer("Rabindrinath's Keep");
+	UI_add_answer("Rabindrinath 要塞");
 labelFunc04B6_0774:
-	UI_remove_answer("Dream Crystal");
+	UI_remove_answer("夢境水晶");
 labelFunc04B6_077B:
-	case "Rabindrinath's Keep" attend labelFunc04B6_078E:
-	message("\"I would go with thee, if I could. But I am all that keeps Rabindrinath's madness at bay. Without mine opposition, all our souls would have been destroyed long ago.\" *\"Rabindrinath will have the Crystal well-hidden, and I doubt that thou canst take it from his keep without killing him. Be wary, Avatar. He is quite mad.\"");
+	case "Rabindrinath 要塞" attend labelFunc04B6_078E:
+	message("「如果可以，我會與你同去。但我牽制著 Rabindrinath 的瘋狂，若沒有我的反抗，我們所有的靈魂早就被摧毀了。」*「Rabindrinath 會把水晶藏得很好，而且我懷疑你若不殺死他，將無法從他的要塞中取走水晶。要小心，聖者。他已經徹底瘋狂了。」");
 	say();
-	UI_remove_answer("Rabindrinath's Keep");
+	UI_remove_answer("Rabindrinath 要塞");
 labelFunc04B6_078E:
 	case "Rabindrinath" attend labelFunc04B6_07A8:
-	message("\"Rabindrinath was a haughty mage who moved into our town shortly after I became the healer there. He was very angry when we did not immediately name him to the village Council.\" *\"Rabindrinath stormed back to his keep, swearing that we would soon see that he was no one to trifle with. I wish I had understood what he was planning when he began collecting the crystals.\"");
+	message("「Rabindrinath 是個傲慢的法師，在我成為村裡的治療師後不久搬到了我們鎮上。當我們沒有立刻提名他加入村莊議會時，他非常生氣。」*「Rabindrinath 氣沖沖地回到他的要塞，發誓我們很快就會知道他不是好惹的。真希望當他開始收集水晶時，我就能明白他在計畫什麼。」");
 	say();
 	UI_remove_answer("Rabindrinath");
-	UI_add_answer("crystals");
+	UI_add_answer("水晶");
 labelFunc04B6_07A8:
-	case "crystals" attend labelFunc04B6_07C2:
-	message("\"Rabindrinath bought a vast quantity of Dream Crystals. I thought them harmless...\" *\"Small Dream Crystals were often exchanged by lovers. So that they might see each other in their dreams. I had no idea that he could pervert them so.\"");
+	case "水晶" attend labelFunc04B6_07C2:
+	message("「Rabindrinath 購買了大量的夢境水晶。我以為它們無害……」*「小型的夢境水晶經常被戀人們用來交換，以便在夢中見到彼此。我沒想到他竟然能如此扭曲它們的用途。」");
 	say();
-	UI_remove_answer("crystals");
-	UI_add_answer("pervert");
+	UI_remove_answer("水晶");
+	UI_add_answer("扭曲");
 labelFunc04B6_07C2:
-	case "pervert" attend labelFunc04B6_07D5:
-	message("\"I am no mage, Avatar. The Dream Crystals were little more than hedge magic. I had no idea that Rabindrinath could use them for anything sinister.\" *\"Else I would have brought him before the Judicar... And had his powers riven from him.\"");
+	case "扭曲" attend labelFunc04B6_07D5:
+	message("「我不是法師，聖者。夢境水晶不過是些鄉野小魔法。我根本沒想到 Rabindrinath 能用它們來做任何邪惡的事。」*「否則我就會把他押到法官( Judicar )面前……並剝奪他的力量。」");
 	say();
-	UI_remove_answer("pervert");
+	UI_remove_answer("扭曲");
 labelFunc04B6_07D5:
-	case "evil spell" attend labelFunc04B6_07EF:
-	message("\"Rabindrinath thought to harness the villager's dreams, hoping to gain great power. He intended to use that power to make the village submit to his rule.\" *\"But his spell went awry...\"");
+	case "邪惡法術" attend labelFunc04B6_07EF:
+	message("「Rabindrinath 想控制村民的夢境，希望能獲得強大的力量。他打算利用那股力量讓村莊屈服於他的統治之下。」*「但他的法術出了差錯……」");
 	say();
-	UI_remove_answer("evil spell");
-	UI_add_answer("awry");
+	UI_remove_answer("邪惡法術");
+	UI_add_answer("出錯");
 labelFunc04B6_07EF:
-	case "awry" attend labelFunc04B6_0809:
-	message("\"I do not know if Rabindrinath thought that he would tap our dreams and exploit what we feared. Or if he planned to steal some of our essence while we lay dreaming.\" *\"Whatever his true plans, when he cast his spell the power was so great that a rift opened into the Dream Realm. The people of Gorlab, including the spellcaster himself, were trapped within this land of altered reality.\"");
+	case "出錯" attend labelFunc04B6_0809:
+	message("「我不知道 Rabindrinath 是否認為他能探入我們的夢境並利用我們的恐懼。或者他是否計畫在我們作夢時竊取我們的一些精華。」*「無論他真正的計畫是什麼，當他施放法術時，那股力量太過強大，以至於在夢境領域中撕開了一道裂縫。果雷的居民，包括施法者本人，都被困在了這片現實被扭曲的土地中。」");
 	say();
-	UI_remove_answer("awry");
-	UI_add_answer("trapped");
+	UI_remove_answer("出錯");
+	UI_add_answer("受困");
 labelFunc04B6_0809:
-	case "trapped" attend labelFunc04B6_0838:
-	message("\"We became trapped here, unable to return to our bodies that still lay within the village. Most of the villagers quickly went insane here -- where things that are not, are.\"");
+	case "受困" attend labelFunc04B6_0838:
+	message("「我們被困在這裡，無法回到仍然躺在村莊裡的身體。大多數村民在這裡很快就發瘋了——在這個『無即是有』的地方。」");
 	say();
-	message("\"Those who resisted initially soon joined their neighbors in insanity when their bodies died. I have done what I can for them. But I cannot cure insanity.\"");
+	message("「那些一開始抵抗的人在他們身體死亡後，很快也步上了鄰居發瘋的後塵。我已經為他們做了我能做的一切。但我無法治癒瘋狂。」");
 	say();
 	if (!var001A) goto labelFunc04B6_0826;
-	message("\"And it was all I could do to keep Rabindrinath's insanity from destroying us.\"");
+	message("「而阻止 Rabindrinath 的瘋狂摧毀我們，已經是我唯一能做的事了。」");
 	say();
 	goto labelFunc04B6_082A;
 labelFunc04B6_0826:
-	message("\"And I can do little more than keep Rabindrinath's insanity from destroying us.\"");
+	message("「我能做的，僅止於阻止 Rabindrinath 的瘋狂摧毀我們。」");
 	say();
 labelFunc04B6_082A:
-	UI_remove_answer("trapped");
-	UI_add_answer("destroying");
+	UI_remove_answer("受困");
+	UI_add_answer("摧毀");
 labelFunc04B6_0838:
-	case "destroying" attend labelFunc04B6_0976:
-	message("\"Rabindrinath soon discovered that he could alter the Dream Realm by will alone. I repulsed his attacks until his body at last died too. And with this, what little sanity he had departed.\"");
+	case "摧毀" attend labelFunc04B6_0976:
+	message("「Rabindrinath 很快就發現他僅憑意志就能改變夢境領域。我擊退了他的攻擊，直到他的身體最後也死了。隨著身體死去，他僅存的一點理智也消失殆盡。」");
 	say();
-	message("\"Rabindrinath blamed the people of Gorlab and swore to destroy us all...\" *\"Our bodies are long moldered away, and our souls remain bound here. If any of us should die here, we will be lost forever.\"");
+	message("「Rabindrinath 把這一切怪罪於果雷的人民，並發誓要摧毀我們所有人……」*「我們的身體早已腐朽，而我們的靈魂卻依然被束縛於此。如果我們之中有任何人在這裡死去，我們將永遠消逝。」");
 	say();
 	if (!var0003) goto labelFunc04B6_0948;
-	message("\"Wilt thou give to me the Dream Crystal so that we may at last find peace?\"");
+	message("「你願意把夢境水晶給我，好讓我們終於能找到平靜嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04B6_0934;
 	var0016 = Func0996(0xFE9C, 0xFF4A, 0xFE99, 0x0289, 0xFE99, 0x000A, true);
-	message("\"After all these centuries of waiting... I had almost given up hope.\" *\"But there is one that I must see one last time, before our paths forever separate.\"");
+	message("「經過這幾個世紀的等待……我幾乎已經放棄希望了。」*「但在我們的道路永遠分開之前，有一個人我必須見他最後一面。」");
 	say();
 	UI_remove_npc_face0();
 	var0017 = UI_get_object_position(0xFF4A);
@@ -464,39 +464,39 @@ labelFunc04B6_0838:
 	abort;
 	goto labelFunc04B6_0945;
 labelFunc04B6_0934:
-	message("\"Edrin hath thought thee kind... I see that he was misled.\"");
+	message("「Edrin 本以為你很仁慈……看來他被誤導了。」");
 	say();
-	message("\"Without thine aid we are doomed to eternal limbo, not dead and never to be alive again. Trapped forever in insanity.\"");
+	message("「沒有你的幫助，我們注定要陷入永恆的邊緣狀態，非生非死。永遠被困在瘋狂之中。」");
 	say();
-	message("\"Return if thou dost reconsider... I doubt that thou canst finish thine own quest without mine aid.\"");
+	message("「如果你重新考慮的話就回來吧……我懷疑如果沒有我的幫助，你是否能完成你自己的任務。」");
 	say();
 	var001B = true;
 	abort;
 labelFunc04B6_0945:
 	goto labelFunc04B6_0976;
 labelFunc04B6_0948:
-	message("\"Wilt thou bring me the Dream Crystal so that we may at last find peace? I fear that soon my strength will fail, and the people of Gorlab and I will be far worse than dead.\"");
+	message("「你願意把夢境水晶帶來給我，好讓我們終於能找到平靜嗎？我害怕我的力量很快就會耗盡，到時果雷的人民和我將會面臨比死亡更糟糕的境地。」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04B6_0969;
-	message("\"Thou art truly as brave as Edrin pictured thee! I can tell thee how to defeat Rabindrinath...\"");
+	message("「你真的如 Edrin 描述的那麼勇敢！我可以告訴你如何擊敗 Rabindrinath……」");
 	say();
-	UI_remove_answer("destroying");
-	UI_add_answer("defeat");
+	UI_remove_answer("摧毀");
+	UI_add_answer("擊敗");
 	goto labelFunc04B6_0976;
 labelFunc04B6_0969:
-	message("\"Edrin hath thought thee brave... I see that he was misled.\" *\"Without thine aid we are doomed to eternal limbo, not dead and never to be alive again. Trapped forever in insanity.\"");
+	message("「Edrin 本以為你很勇敢……看來他被誤導了。」*「沒有你的幫助，我們注定要陷入永恆的邊緣狀態，非生非死。永遠被困在瘋狂之中。」");
 	say();
-	message("\"Return if thou dost reconsider... I doubt that thou canst finish thine own quest without mine aid.\"");
+	message("「如果你重新考慮的話就回來吧……我懷疑如果沒有我的幫助，你是否能完成你自己的任務。」");
 	say();
 	var001B = true;
 	abort;
 labelFunc04B6_0976:
-	case "defeat" attend labelFunc04B6_0997:
-	message("\"Rabindrinath hath styled himself a god here. He cannot be killed as thou wouldst a normal man. He can only be overpowered by the application of Truth, Love and Courage.\"");
+	case "擊敗" attend labelFunc04B6_0997:
+	message("「Rabindrinath 在這裡自詡為神。他無法像一般人那樣被殺死。他只能透過運用真理、愛與勇氣來被制伏。」");
 	say();
-	message("\"In order to do this, thou must be armed with three artifacts... the Artifact of Courage, the Artifact of Love, and the Artifact of Truth.\"");
+	message("「為了做到這一點，你必須裝備三件神器……勇氣神器、愛之神器和真理神器。」");
 	say();
-	message("\"Bring to me the Dream Crystal from Rabindrinath's keep and we shall at last be free!\"");
+	message("「從 Rabindrinath 要塞把夢境水晶帶給我，我們就終於能自由了！」");
 	say();
 	gflags[0x020E] = true;
 	gflags[0x020F] = true;
@@ -509,5 +509,3 @@ labelFunc04B6_099A:
 labelFunc04B6_099B:
 	return;
 }
-
-

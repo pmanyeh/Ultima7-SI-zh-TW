@@ -355,7 +355,7 @@ labelFunc0495_05C9:
 labelFunc0495_05E4:
 	case "法器" attend labelFunc0495_05FB:
 	UI_remove_answer("法器");
-	message("「根據 Karnax 告訴我的，教父是這些奧非迪安( Ophidians )的某種祭司或聖人。」");
+	message("「根據 Karnax 告訴我的，教父是這些蛇人( Ophidians )的某種祭司或聖人。」");
 	say();
 	message("「一個聖人會用什麼工具？也許是某種用來祝福人們的東西……我不知道。我必須進一步尋找更多線索。」");
 	say();
@@ -380,9 +380,9 @@ labelFunc0495_0640:
 	UI_remove_answer("神殿");
 	message("「 Karnax 確實告訴過我 Miggim 有通往各個神殿的地圖……」");
 	say();
-	message("「顯然每座神殿都供奉著奧非迪安( Ophidians )的六種美德之一。在你擊敗災厄之前，你應該找出正確的神殿。」");
+	message("「顯然每座神殿都供奉著蛇人( Ophidians )的六種美德之一。在你擊敗災厄之前，你應該找出正確的神殿。」");
 	say();
-	UI_add_answer(["Karnax", "Miggim", "奧非迪安"]);
+	UI_add_answer(["Karnax", "Miggim", "蛇人"]);
 labelFunc0495_0667:
 	case "Karnax" attend labelFunc0495_0682:
 	UI_remove_answer("Karnax");
@@ -400,9 +400,9 @@ labelFunc0495_0682:
 	message("「他在閱讀可能包含某些線索的書籍和卷軸時提供了很大的幫助。我很感激他對這個圖書館的了解……沒有他，我將永遠找不到任何東西！」");
 	say();
 labelFunc0495_0699:
-	case "奧非迪安" attend labelFunc0495_06B0:
-	UI_remove_answer("奧非迪安");
-	message("「『奧非迪安( Ophidians )』是 Karnax 用來稱呼曾經居住在各地巨蛇廢墟中人民的詞。」");
+	case "蛇人" attend labelFunc0495_06B0:
+	UI_remove_answer("蛇人");
+	message("「『蛇人( Ophidians )』是 Karnax 用來稱呼曾經居住在各地巨蛇廢墟中人民的詞。」");
 	say();
 	message("「我不知道這是他們對自己的稱呼，還是他為他們編造的名字。」");
 	say();

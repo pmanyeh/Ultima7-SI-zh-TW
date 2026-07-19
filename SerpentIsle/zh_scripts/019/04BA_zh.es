@@ -15,16 +15,16 @@ void Func04BA object#(0x4BA) ()
 	abort;
 labelFunc04BA_000F:
 	if (!((event == 0x0001) && (UI_get_schedule_type(0xFF46) != 0x000F))) goto labelFunc04BA_0066;
-	UI_item_say(0xFE9C, "@Hello!@");
+	UI_item_say(0xFE9C, "@你好！@");
 	0xFF46->Func07D1();
-	Func097F(0xFF46, "@Intruder!@", 0x0005);
+	Func097F(0xFF46, "@入侵者！@", 0x0005);
 	0xFF46->Func07D2();
 	UI_set_schedule_type(0xFF46, 0x000F);
 	var0000 = UI_delayed_execute_usecode_array(0xFF46, [(byte)0x23, (byte)0x55, 0x04BA], 0x000A);
 labelFunc04BA_0066:
 	if (!(event == 0x0002)) goto labelFunc04BA_00E8;
 	if (!(item != UI_get_npc_object(0xFF46))) goto labelFunc04BA_00B0;
-	Func097F(0xFF46, "@Intruder!@", 0x0005);
+	Func097F(0xFF46, "@入侵者！@", 0x0005);
 	0xFF46->Func07D2();
 	UI_set_schedule_type(0xFF46, 0x000F);
 	var0000 = UI_delayed_execute_usecode_array(0xFF46, [(byte)0x23, (byte)0x55, 0x04BA], 0x000A);
@@ -33,15 +33,13 @@ labelFunc04BA_00B0:
 	UI_clear_item_say(0xFF46);
 	UI_run_schedule(0xFF46);
 	UI_show_npc_face0(0xFED6, 0x0000);
-	message("\"These doors have been sealed by the Serpent of Order, and none shall enter. By approaching thus far, thou hath shown thyself to be mine enemy.\"");
+	message("「這些門已經被秩序巨蛇封印，任何人不得進入。既然你已來到這裡，就證明了你是我的敵人。」");
 	say();
-	message("\"Now I must kill thee, lest the Serpent judge me unworthy. Bless my blade, master!\"");
+	message("「現在我必須殺了你，以免巨蛇認為我不配。祝福我的劍吧，主人！」");
 	say();
-	Func097F(0xFF46, "@I shall prevail!@", 0x0000);
+	Func097F(0xFF46, "@我必將勝利！@", 0x0000);
 	Func09AD(0xFF46);
 	Func09AD(0xFF45);
 labelFunc04BA_00E8:
 	return;
 }
-
-

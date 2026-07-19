@@ -19,14 +19,14 @@ void Func04CD object#(0x4CD) ()
 	var0001 = UI_is_pc_female();
 	var0002 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc04CD_0031;
-	UI_item_say(0xFE9C, "Could we speak?");
+	UI_item_say(0xFE9C, "能談談嗎？");
 	0xFF33->Func07D1();
 	Func09AD(0xFF33);
 labelFunc04CD_0031:
 	if (!(event == 0x0000)) goto labelFunc04CD_0104;
 	var0003 = UI_get_distance(0xFF33, 0xFE9C);
 	if (!(UI_get_random(0x000C) > var0003)) goto labelFunc04CD_0067;
-	Func097F(item, "@'Tis him!@", 0x0005);
+	Func097F(item, "@是他！@", 0x0005);
 	Func09AD(0xFF33);
 	goto labelFunc04CD_0104;
 labelFunc04CD_0067:
@@ -35,27 +35,25 @@ labelFunc04CD_0067:
 labelFunc04CD_0082:
 	var0004 = UI_get_random(0x0006);
 	if (!(var0004 == 0x0001)) goto labelFunc04CD_00A0;
-	UI_item_say(0xFF33, "@I am hungry!@");
+	UI_item_say(0xFF33, "@我好餓！@");
 labelFunc04CD_00A0:
 	if (!(var0004 == 0x0002)) goto labelFunc04CD_00B4;
-	UI_item_say(0xFF33, "@Where is the food?@");
+	UI_item_say(0xFF33, "@食物在哪裡？@");
 labelFunc04CD_00B4:
 	if (!(var0004 == 0x0003)) goto labelFunc04CD_00C8;
-	UI_item_say(0xFF33, "@Nothing but dust...@");
+	UI_item_say(0xFF33, "@除灰塵外什麼也沒有……@");
 labelFunc04CD_00C8:
 	if (!(var0004 == 0x0004)) goto labelFunc04CD_00DC;
-	UI_item_say(0xFF33, "@Must eat...@");
+	UI_item_say(0xFF33, "@必須吃點東西……@");
 labelFunc04CD_00DC:
 	if (!(var0004 == 0x0005)) goto labelFunc04CD_00F0;
-	UI_item_say(0xFF33, "@There must be food!@");
+	UI_item_say(0xFF33, "@一定有食物的！@");
 labelFunc04CD_00F0:
 	if (!(var0004 == 0x0006)) goto labelFunc04CD_0104;
-	UI_item_say(0xFF33, "@So hungry!@");
+	UI_item_say(0xFF33, "@太餓了！@");
 labelFunc04CD_0104:
 	if (!((event == 0x0007) && UI_get_item_flag(item, 0x001D))) goto labelFunc04CD_011D;
 	UI_clear_item_flag(item, 0x001D);
 labelFunc04CD_011D:
 	return;
 }
-
-

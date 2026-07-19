@@ -17,16 +17,16 @@ void Func04BC object#(0x4BC) ()
 	abort;
 labelFunc04BC_000F:
 	if (!((event == 0x0001) && (UI_get_schedule_type(0xFF44) != 0x000F))) goto labelFunc04BC_0066;
-	UI_item_say(0xFE9C, "@Greetings!@");
+	UI_item_say(0xFE9C, "@你好！@");
 	0xFF44->Func07D1();
-	Func097F(0xFF44, "@Keep away!@", 0x0005);
+	Func097F(0xFF44, "@走開！@", 0x0005);
 	0xFF44->Func07D2();
 	UI_set_schedule_type(0xFF44, 0x000F);
 	var0000 = UI_delayed_execute_usecode_array(0xFF44, [(byte)0x23, (byte)0x55, 0x04BC], 0x000A);
 labelFunc04BC_0066:
 	if (!(event == 0x0002)) goto labelFunc04BC_00DB;
 	if (!(item != UI_get_npc_object(0xFF44))) goto labelFunc04BC_00B0;
-	Func097F(0xFF44, "@Keep Away!@", 0x0005);
+	Func097F(0xFF44, "@走開！@", 0x0005);
 	0xFF44->Func07D2();
 	UI_set_schedule_type(0xFF44, 0x000F);
 	var0000 = UI_delayed_execute_usecode_array(0xFF44, [(byte)0x23, (byte)0x55, 0x04BC], 0x000A);
@@ -35,22 +35,20 @@ labelFunc04BC_00B0:
 	UI_clear_item_say(0xFF44);
 	UI_set_schedule_type(0xFF44, 0x0009);
 	UI_show_npc_face0(0xFED6, 0x0000);
-	message("\"Thou art not permitted here. It is dangerous here. The forces beyond these doors are not of mortal understanding.\"");
+	message("「你無權進入這裡。這裡很危險。門後的力量不是凡人所能理解的。」");
 	say();
-	Func097F(0xFF44, "@Be on thy way!@", 0x0000);
+	Func097F(0xFF44, "@快上路吧！@", 0x0000);
 labelFunc04BC_00DB:
 	if (!(event == 0x0000)) goto labelFunc04BC_0138;
 	var0001 = UI_get_random(0x000A);
 	if (!(var0001 == 0x0006)) goto labelFunc04BC_010A;
-	Func097F(0xFF44, "@I asked nicely...@", 0x0000);
+	Func097F(0xFF44, "@我已經好聲好氣地說了……@", 0x0000);
 	Func09AD(0xFF44);
 	abort;
 labelFunc04BC_010A:
 	if (!(var0001 < 0x0006)) goto labelFunc04BC_0138;
-	var0002 = ["@Move on!@", "@Dangers lurk here.@", "@Thou must go!@", "@I beg thee to go...@", "@Please leave.@"];
+	var0002 = ["@繼續走吧！@", "@這裡潛伏著危險。@", "@你必須離開！@", "@我求你離開……@", "@請離開。@"];
 	Func097F(0xFF44, var0002[var0001], 0x0000);
 labelFunc04BC_0138:
 	return;
 }
-
-
