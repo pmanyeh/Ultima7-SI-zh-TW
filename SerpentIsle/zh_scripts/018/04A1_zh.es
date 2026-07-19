@@ -28,40 +28,40 @@ labelFunc04A1_000F:
 	if (!(event == 0x0000)) goto labelFunc04A1_0073;
 	var0003 = UI_die_roll(0x0001, 0x0003);
 	if (!(var0003 == 0x0001)) goto labelFunc04A1_004B;
-	UI_item_say(0xFF5F, "@Healing potions!@");
+	UI_item_say(0xFF5F, "@治療藥水！@");
 labelFunc04A1_004B:
 	if (!(var0003 == 0x0002)) goto labelFunc04A1_005F;
-	UI_item_say(0xFF5F, "@Food!@");
+	UI_item_say(0xFF5F, "@食物！@");
 labelFunc04A1_005F:
 	if (!(var0003 == 0x0003)) goto labelFunc04A1_0073;
-	UI_item_say(0xFF5F, "@Bandages!@");
+	UI_item_say(0xFF5F, "@繃帶！@");
 labelFunc04A1_0073:
 	if (!(event == 0x0001)) goto labelFunc04A1_00DF;
 	0xFF5F->Func07D1();
 	UI_show_npc_face0(0xFED6, 0x0000);
-	message("\"Greetings, felon!\"");
+	message("「問候，重罪犯！」");
 	say();
-	message("\"Art thou in need of food or healing?\"");
+	message("「你需要食物還是治療？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04A1_00D8;
-	message("\"Such items are very valuable here, felon. Thou mayest find the prices steep...\"");
+	message("「這些物品在這裡非常珍貴，重罪犯。你可能會覺得價格有點高……」");
 	say();
-	message("\"What dost thou wish, food or healing?\"");
+	message("「你想要什麼，食物還是治療？」");
 	say();
-	var0004 = Func0956(["food", "healing"]);
-	if (!(var0004 == "food")) goto labelFunc04A1_00C2;
+	var0004 = Func0956(["食物", "治療"]);
+	if (!(var0004 == "食物")) goto labelFunc04A1_00C2;
 	Func080F();
 	goto labelFunc04A1_00C5;
 labelFunc04A1_00C2:
 	Func0810();
 labelFunc04A1_00C5:
-	message("\"Thou art always welcome here, felon... As long as thou dost have money, that is.\"");
+	message("「這裡隨時歡迎你，重罪犯……只要你有錢的話。」");
 	say();
 	UI_remove_npc_face0();
-	UI_item_say(item, "@Goodbye, felon!@");
+	UI_item_say(item, "@再見，重罪犯！@");
 	goto labelFunc04A1_00DF;
 labelFunc04A1_00D8:
-	message("\"Then thou wilt have to move on...\"");
+	message("「那麼你只能繼續前進了……」");
 	say();
 	goto labelFunc04A1_0162;
 labelFunc04A1_00DF:
@@ -80,5 +80,3 @@ labelFunc04A1_012F:
 labelFunc04A1_0162:
 	return;
 }
-
-

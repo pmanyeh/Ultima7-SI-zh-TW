@@ -25,14 +25,14 @@ void Func04A9 object#(0x4A9) ()
 	var0001 = Func099F(0x034A, 0xFE99, 0x0008);
 	if (!(var0000 || var0001)) goto labelFunc04A9_00CC;
 	if (!(var0000 && var0001)) goto labelFunc04A9_004E;
-	UI_item_say(0xFF57, "@Die, thief!@");
+	UI_item_say(0xFF57, "@死吧，小偷！@");
 	goto labelFunc04A9_006B;
 labelFunc04A9_004E:
 	if (!var0000) goto labelFunc04A9_0061;
-	UI_item_say(0xFF57, "@Thou shalt not steal my bloodspawn!@");
+	UI_item_say(0xFF57, "@你不准偷我的血菌絲！@");
 	goto labelFunc04A9_006B;
 labelFunc04A9_0061:
-	UI_item_say(0xFF57, "@I shan't reveal my secret!@");
+	UI_item_say(0xFF57, "@我不會透露我的秘密！@");
 labelFunc04A9_006B:
 	UI_set_polymorph(0xFF57, 0x012E);
 	gflags[0x0236] = false;
@@ -44,7 +44,7 @@ labelFunc04A9_006B:
 	UI_play_sound_effect(0x0021);
 	goto labelFunc04A9_0131;
 labelFunc04A9_00CC:
-	UI_item_say(0xFF57, "@Thou shalt not have the reagent!@");
+	UI_item_say(0xFF57, "@你休想得到藥材！@");
 	UI_set_polymorph(0xFF57, 0x01F2);
 	gflags[0x0236] = true;
 	gflags[0x0237] = false;
@@ -60,7 +60,7 @@ labelFunc04A9_0131:
 	var0004 = UI_find_nearby(var0003, 0x0113, 0x0001, 0x0010);
 	if (!var0004) goto labelFunc04A9_024F;
 	if (!(UI_get_item_quality(var0004) == 0x0064)) goto labelFunc04A9_023A;
-	UI_item_say(item, "@Thou shalt not have my reagents!@");
+	UI_item_say(item, "@你休想得到我的藥材！@");
 	if (!gflags[0x0236]) goto labelFunc04A9_01A8;
 	var0005 = UI_execute_usecode_array(item, [(byte)0x68, (byte)0x27, 0x0002, (byte)0x69, (byte)0x27, 0x0002, (byte)0x6A, (byte)0x27, 0x0003, (byte)0x55, 0x04A9]);
 	goto labelFunc04A9_01CD;
@@ -106,7 +106,7 @@ labelFunc04A9_0330:
 	Func08AE();
 labelFunc04A9_0333:
 	if (!(event == 0x0001)) goto labelFunc04A9_0343;
-	UI_item_say(item, "@Leave me be!@");
+	UI_item_say(item, "@離我遠點！@");
 labelFunc04A9_0343:
 	if (!(event == 0x0007)) goto labelFunc04A9_03F6;
 	if (!(gflags[0x0236] || gflags[0x0237])) goto labelFunc04A9_03CF;
@@ -140,5 +140,3 @@ labelFunc04A9_0424:
 labelFunc04A9_042E:
 	return;
 }
-
-

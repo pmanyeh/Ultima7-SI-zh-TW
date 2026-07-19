@@ -81,7 +81,7 @@ labelFunc017D_01A0:
 	if (!(gflags[0x0168] == false)) goto labelFunc017D_0256;
 	var0008 = UI_get_schedule_type(0xFFC5);
 	if (!(var0008 != 0x0003)) goto labelFunc017D_0253;
-	message("「最近芳恩城( Fawn )有些麻煩……」");
+	message("「最近幼鹿城( Fawn )有些麻煩……」");
 	say();
 	message("「……而這就來了其中一個。」");
 	say();
@@ -105,12 +105,12 @@ labelFunc017D_0256:
 	if (!(var000A == ("我是" + var0000))) goto labelFunc017D_02A2;
 	message("「很高興見到你， ");
 	message(var0007);
-	message("。你來芳恩城( Fawn )有什麼事？」");
+	message("。你來幼鹿城( Fawn )有什麼事？」");
 	say();
 	UI_add_answer(["我只是來拜訪的。", "我有一名同伴失蹤了。", "這不關你的事。"]);
 labelFunc017D_02A2:
 	if (!(var000A == "我是聖者。")) goto labelFunc017D_02C0;
-	message("「而我是芳恩城女士！在這裡你用這種說詞走不遠的，陌生人。」*「你來芳恩城( Fawn )有什麼事？」");
+	message("「而我是幼鹿城女士( the Lady of Fawn )！在這裡你用這種說詞走不遠的，陌生人。」*「你來幼鹿城( Fawn )有什麼事？」");
 	say();
 	UI_add_answer(["我只是來拜訪的。", "我有一名同伴失蹤了。", "這不關你的事。"]);
 labelFunc017D_02C0:
@@ -131,11 +131,11 @@ labelFunc017D_02F0:
 labelFunc017D_02FD:
 	converse attend labelFunc017D_047D;
 	case "我只是來拜訪的。" attend labelFunc017D_0333:
-	message("「那麼，歡迎來到芳恩城( Fawn )！你在這裡時別惹麻煩。」*「我們要擔心的已經夠多了，有風暴、哥布林，還有兄弟會的搗亂者。」");
+	message("「那麼，歡迎來到幼鹿城( Fawn )！你在這裡時別惹麻煩。」*「我們要擔心的已經夠多了，有風暴、哥布林，還有友誼會的搗亂者。」");
 	say();
 	gflags[0x014F] = false;
 	UI_remove_answer(["我只是來拜訪的。", "我有一名同伴失蹤了。", "這不關你的事。"]);
-	UI_add_answer(["風暴", "哥布林", "兄弟會的搗亂者", "通過"]);
+	UI_add_answer(["風暴", "哥布林", "友誼會的搗亂者", "通過"]);
 labelFunc017D_0333:
 	case "風暴" attend labelFunc017D_034C:
 	message("「它們毫無預兆地開始， ");
@@ -150,21 +150,21 @@ labelFunc017D_034C:
 	say();
 	goto labelFunc017D_0367;
 labelFunc017D_0363:
-	message("「如果那些骯髒的野蠻人竟敢攻擊長槍兵，我們晚上就不能開著城門。芳恩城( Fawn )的城門現在夜間關閉。直到早晨都不會為任何人開啟。」*「所以如果你在天黑前冒險外出，請多加小心。」");
+	message("「如果那些骯髒的野蠻人竟敢攻擊長槍兵，我們晚上就不能開著城門。幼鹿城( Fawn )的城門現在夜間關閉。直到早晨都不會為任何人開啟。」*「所以如果你在天黑前冒險外出，請多加小心。」");
 	say();
 labelFunc017D_0367:
 	UI_remove_answer("哥布林");
 labelFunc017D_036E:
-	case "兄弟會的搗亂者" attend labelFunc017D_038E:
+	case "友誼會的搗亂者" attend labelFunc017D_038E:
 	message("「我不該說這個的， ");
 	message(var0005);
 	message("。」~「放心，隊長使用拘留魔杖( Wand of Detainment )的速度很快。」");
 	say();
-	UI_remove_answer("兄弟會的搗亂者");
+	UI_remove_answer("友誼會的搗亂者");
 	UI_add_answer("拘留魔杖");
 labelFunc017D_038E:
 	case "職責" attend labelFunc017D_03A1:
-	message("「我是芳恩城守衛！你來我們城市參訪時，最好安分守己！」");
+	message("「我是幼鹿城守衛！你來我們城市參訪時，最好安分守己！」");
 	say();
 	UI_remove_answer("職責");
 labelFunc017D_03A1:
@@ -174,14 +174,14 @@ labelFunc017D_03A1:
 	UI_remove_answer("拘留魔杖");
 labelFunc017D_03B4:
 	case "我有一名同伴失蹤了。" attend labelFunc017D_03EA:
-	message("「你應該去斷槳酒館( The Broken Oar )問問。你在這裡時別惹麻煩。」*「我們要擔心的已經夠多了，有風暴、哥布林，還有兄弟會的搗亂者。」");
+	message("「你應該去斷槳酒館( The Broken Oar )問問。你在這裡時別惹麻煩。」*「我們要擔心的已經夠多了，有風暴、哥布林，還有友誼會的搗亂者。」");
 	say();
 	gflags[0x014F] = false;
 	UI_remove_answer(["我只是來拜訪的。", "我有一名同伴失蹤了。", "這不關你的事。"]);
-	UI_add_answer(["斷槳酒館", "風暴", "哥布林", "兄弟會的搗亂者", "通過"]);
+	UI_add_answer(["斷槳酒館", "風暴", "哥布林", "友誼會的搗亂者", "通過"]);
 labelFunc017D_03EA:
 	case "斷槳酒館" attend labelFunc017D_03FD:
-	message("「斷槳酒館( The Broken Oar )是一家酒館。這是芳恩城唯一提供租房的場所。」*「大多數陌生人都住在那裡。」");
+	message("「斷槳酒館( The Broken Oar )是一家酒館。這是幼鹿城唯一提供租房的場所。」*「大多數陌生人都住在那裡。」");
 	say();
 	UI_remove_answer("斷槳酒館");
 labelFunc017D_03FD:
@@ -234,7 +234,7 @@ labelFunc017D_0511:
 	if (!(var000D == 0x0001)) goto labelFunc017D_0567;
 	message("「我值班時你應該稱呼我的軍階， ");
 	message(var0005);
-	message("。我是芳恩衛隊的二等兵。」*「你需要協助嗎？」");
+	message("。我是幼鹿衛隊的二等兵。」*「你需要協助嗎？」");
 	say();
 	var000E = "二等兵";
 	UI_add_answer(["你為什麼跟著我？", "別再跟著我了！", "沒事。"]);
@@ -256,7 +256,7 @@ labelFunc017D_0591:
 	UI_add_answer(["你為什麼跟著我？", "別再跟著我了！", "沒事。"]);
 labelFunc017D_05BB:
 	if (!(var000D == 0x0004)) goto labelFunc017D_05E5;
-	message("「我是芳恩衛隊的中尉。你必須這樣稱呼我， ");
+	message("「我是幼鹿衛隊的中尉。你必須這樣稱呼我， ");
 	message(var0005);
 	message("。」*「你需要協助嗎？」");
 	say();
@@ -328,7 +328,7 @@ labelFunc017D_06F9:
 	if (!(var0003 == 0x0003)) goto labelFunc017D_074F;
 	message("「我值班時你應該稱呼我的軍階， ");
 	message(var0005);
-	message("。我是芳恩衛隊的二等兵。」");
+	message("。我是幼鹿衛隊的二等兵。」");
 	say();
 	var000E = "二等兵";
 	UI_add_answer(["風暴", "哥布林", "告辭"]);
@@ -350,7 +350,7 @@ labelFunc017D_0779:
 	UI_add_answer(["風暴", "哥布林", "告辭"]);
 labelFunc017D_07A3:
 	if (!(var0003 == 0x0006)) goto labelFunc017D_07CD;
-	message("「我是芳恩衛隊的中尉。你必須這樣稱呼我， ");
+	message("「我是幼鹿衛隊的中尉。你必須這樣稱呼我， ");
 	message(var0005);
 	message("。」");
 	say();
@@ -434,7 +434,7 @@ labelFunc017D_08F6:
 	UI_remove_answer("哥布林");
 labelFunc017D_0911:
 	if (!(var0010 == 0x0006)) goto labelFunc017D_092C;
-	message("「芳恩城( Fawn )夾在風暴與哥布林之間， ");
+	message("「幼鹿城( Fawn )夾在風暴與哥布林之間， ");
 	message(var0005);
 	message("。這不是個安全的地方！」");
 	say();

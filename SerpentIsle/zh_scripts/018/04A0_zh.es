@@ -52,7 +52,7 @@ labelFunc04A0_0075:
 	for (var000B in var0008 with var0009 to var000A) attend labelFunc04A0_00C6;
 	if (!((UI_get_item_frame(var000B) == 0x0006) && (UI_get_item_quality(var000B) == 0x0001))) goto labelFunc04A0_00C3;
 	if (!(UI_get_distance(var000B, 0xFE9C) < 0x0009)) goto labelFunc04A0_00C3;
-	UI_item_say(item, "@Thou shan't steal the gold!@");
+	UI_item_say(item, "@你不該偷金幣！@");
 	UI_set_schedule_type(item, 0x0000);
 	UI_set_alignment(item, 0x0002);
 labelFunc04A0_00C3:
@@ -87,14 +87,14 @@ labelFunc04A0_0133:
 labelFunc04A0_01AA:
 	if (!(var0007 == 0x0002)) goto labelFunc04A0_01DD;
 	if (!(UI_die_roll(0x0001, 0x0002) == 0x0001)) goto labelFunc04A0_01CD;
-	UI_item_say(item, "@No new arrivals...@");
+	UI_item_say(item, "@沒有新來的人……@");
 labelFunc04A0_01CD:
 	var0010 = UI_execute_usecode_array(item, [(byte)0x27, 0x0007]);
 labelFunc04A0_01DD:
 	if (!(var0007 == 0x0004)) goto labelFunc04A0_021A;
 	if (!(UI_die_roll(0x0001, 0x0002) == 0x0001)) goto labelFunc04A0_020A;
-	UI_item_say(item, "@'Tis as a rubbish heap!@");
-	Func097F(item, "Bloody criminals...@", 0x0010);
+	UI_item_say(item, "@簡直像個垃圾堆！@");
+	Func097F(item, "@該死的罪犯……@", 0x0010);
 labelFunc04A0_020A:
 	var0010 = UI_execute_usecode_array(item, [(byte)0x27, 0x000A]);
 labelFunc04A0_021A:
@@ -103,77 +103,77 @@ labelFunc04A0_021D:
 	if (!(event == 0x0002)) goto labelFunc04A0_033E;
 	UI_show_npc_face0(0xFED6, 0x0000);
 	if (!gflags[0x023B]) goto labelFunc04A0_026E;
-	message("\"Yes, felon?\"");
+	message("「什麼事，重罪犯？」");
 	say();
-	message("\"'Tis gratifying to see that I shant have to collect thy skull yet. Such stamina shall be useful to thee here, certainly.\"");
+	message("「很高興看到我還不用去收你的頭骨。這種體力在這裡對你肯定很有用。」");
 	say();
-	message("\"But thou shouldst journey further into the mountain soon, felon. The only source of food and water lies deeper in the heart of Freedom... if thou canst pay for it.\"");
+	message("「但你應該盡快向山脈更深處前進，重罪犯。唯一的食物和水來源就在自由山地牢( Dungeon Freedom )更深處……如果你付得起錢的話。」");
 	say();
-	message("\"Forgive me if I do not linger. I have many things to attend to before I can begin my rounds. Remember, if thou canst find thy way out, thou wilt be free!\"");
+	message("「如果我不多作停留請見諒。在我開始巡邏之前還有很多事情要處理。記住，如果你能找到出路，你就會重獲自由！」");
 	say();
 	if (!(UI_die_roll(0x0001, 0x000A) > 0x0009)) goto labelFunc04A0_025E;
 	UI_set_schedule_type(item, 0x001D);
 labelFunc04A0_025E:
 	UI_remove_npc_face0();
-	UI_item_say(item, "@So long, felon!@");
+	UI_item_say(item, "@再見了，重罪犯！@");
 	abort;
 	goto labelFunc04A0_0332;
 labelFunc04A0_026E:
-	message("\"Greetings, felon!\"");
+	message("「問候，重罪犯！」");
 	say();
-	message("\"Thou art in the Mountains of Freedom... A magical prison from which none have escaped.\"");
+	message("「你現在身處自由山脈( Mountains of Freedom )中……這是一座無人能逃脫的魔法監獄。」");
 	say();
-	message("\"I am the caretaker here. It is my duty to record thy name and crime.\"");
+	message("「我是這裡的看守人。我的職責是記錄你的名字和罪行。」");
 	say();
-	var0011 = (("I am " + var0002) + ".");
-	var0012 = [var0011, "I am the Avatar.", "None of thy business."];
+	var0011 = (("我是" + var0002) + "。");
+	var0012 = [var0011, "我是聖者。", "這不關你的事。"];
 	var0013 = Func0956(var0012);
 	if (!(var0013 == var0011)) goto labelFunc04A0_02B4;
-	message("\"My condolences on thy sentence here, ");
+	message("「對於你在這裡的判決，我深表同情， ");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
 labelFunc04A0_02B4:
-	if (!(var0013 == "I am the Avatar.")) goto labelFunc04A0_02C2;
-	message("\"I see... Perhaps thou couldst have pleaded insanity and avoided being sent here, felon.\"");
+	if (!(var0013 == "我是聖者。")) goto labelFunc04A0_02C2;
+	message("「我明白了……也許你本來可以以精神錯亂為由辯護，從而避免被送到這裡，重罪犯。」");
 	say();
 labelFunc04A0_02C2:
-	if (!(var0013 == "None of thy business.")) goto labelFunc04A0_02D0;
-	message("\"With thine attitude, I understand why thou art here.\"");
+	if (!(var0013 == "這不關你的事。")) goto labelFunc04A0_02D0;
+	message("「看你這種態度，我明白你為什麼會在這裡了。」");
 	say();
 labelFunc04A0_02D0:
-	message("\"With what crime art thou charged?\"");
+	message("「你被指控犯了什麼罪？」");
 	say();
-	var0014 = ["I am innocent!", "Angering Filbercio.", "I don't know."];
+	var0014 = ["我是無辜的！", "激怒了 Filbercio 。", "我不知道。"];
 	var0015 = Func0956(var0014);
-	if (!(var0015 == "I am innocent!")) goto labelFunc04A0_02FA;
-	message("\"Ahh, thou wouldst be surprised how many innocents come through here, felon. Only yesterday we had another such innocent... Let us see. Stefano was his name.\"");
+	if (!(var0015 == "我是無辜的！")) goto labelFunc04A0_02FA;
+	message("「啊，你會驚訝於有多少無辜者來到這裡，重罪犯。就在昨天我們這裡還來了另一個這樣的無辜者……讓我想想。他的名字叫 Stefano 。」");
 	say();
 labelFunc04A0_02FA:
-	if (!(var0015 == "Angering Filbercio.")) goto labelFunc04A0_0308;
-	message("\"Ahh, thou art in fine company then, felon. Only yesterday we had another such felon arrive... Let us see. Stefano was his name.\"");
+	if (!(var0015 == "激怒了 Filbercio 。")) goto labelFunc04A0_0308;
+	message("「啊，那你算是有好同伴了，重罪犯。就在昨天我們這裡還來了另一個這樣的重罪犯……讓我想想。他的名字叫 Stefano 。」");
 	say();
 labelFunc04A0_0308:
-	if (!(var0015 == "I don't know.")) goto labelFunc04A0_0316;
-	message("\"I am certain that thou wilt discern it while thou art here. Perhaps yesterday's felon is still alive to aid thee in thy search for enlightenment... Let us see. Stefano was his name.\"");
+	if (!(var0015 == "我不知道。")) goto labelFunc04A0_0316;
+	message("「我確信你在這兒的時候會弄清楚的。也許昨天的重罪犯還活著，可以幫助你尋找啟發……讓我想想。他的名字叫 Stefano 。」");
 	say();
 labelFunc04A0_0316:
-	message("\"I will tell thee as I told him. Sleep passes thy time here, and may provide thee with new ideas for winning thy freedom.\"");
+	message("「我會像告訴他一樣告訴你。睡眠能打發你在這裡的時間，並可能為你贏得自由提供新的點子。」");
 	say();
-	message("\"Thou shouldst be wary of two rogue mages who roam through these passages. They came here in search of the forbidden reagent, Stoneheart, and never escaped.\"");
+	message("「你應該當心在這個通道裡遊蕩的兩個流氓法師。他們來這裡是為了尋找被禁止的藥材——石心( Stoneheart )，並且再也沒有逃出去。」");
 	say();
-	message("\"Be mindful of the other felons... Most are quite desperate by now and will kill thee for what thou dost possess. In fact, they may prove to be thy greatest danger.\"");
+	message("「當心其他的重罪犯……他們大多數現在都相當絕望，會為了你擁有的東西殺了你。事實上，他們可能會被證明是你最大的危險。」");
 	say();
-	message("\"There is another caretaker within the prison with a small supply of food and healing potions for sale, if thou dost need any... And if thou dost make it that far, of course.\"");
+	message("「監獄裡還有另一個看守人，他有一小批食物和治療藥水出售，如果你需要的話……當然，前提是你能走到那麼遠。」");
 	say();
-	message("\"I make rounds periodically, to note who hath died for the records. Thou mayest notice later that I take great care to memorialize all who perish here. So thy passing shall not go unremarked...\"");
+	message("「我會定期巡視，記錄誰死了以備檔案。你稍後可能會注意到，我非常用心地紀念每一個在這裡死去的人。所以你的逝去不會無人知曉……」");
 	say();
-	message("\"Remember, if thou canst find thy way out, thou wilt be free!\"");
+	message("「記住，如果你能找到出去的路，你就會重獲自由！」");
 	say();
 	gflags[0x023B] = true;
 labelFunc04A0_0332:
 	UI_remove_npc_face0();
-	UI_item_say(item, "@Goodbye, felon!@");
+	UI_item_say(item, "@再見，重罪犯！@");
 labelFunc04A0_033E:
 	if (!(event == 0x0001)) goto labelFunc04A0_035B;
 	var0010 = UI_execute_usecode_array(item, [(byte)0x27, 0x0002, (byte)0x55, 0x04A0]);
@@ -201,5 +201,3 @@ labelFunc04A0_03E1:
 labelFunc04A0_0416:
 	return;
 }
-
-

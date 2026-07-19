@@ -339,28 +339,28 @@ Function,String Count,Total Characters,Translated,NPC/Event
 0494H,110,639,Yes,猿怪酋長 Yenani 對話（提供碎脊者密碼與講述神聖號角歷史）
 0495H,294,1413,Yes,Monk Isle 上復活後的 Gwenno 對話（調查Banes、神殿與Xenka預言）
 0496H,335,11779,Yes,勇氣之城狼之軍團領袖 Brendann 對話（關於叛徒調查與軍團競爭）
-0498H,149,777,No,
-0499H,33,159,No,
-049AH,41,286,No,
-049BH,184,990,No,
-049CH,97,470,No,
+0498H,149,777,Yes,混沌信徒 Sethys 的對話（鑰匙失竊、秩序/混沌戰爭、引領玩家至大祭司安息地）
+0499H,33,159,Yes,葛瓦尼族獵人 Gilwoyai 的對話（尋求治療、冰龍巢穴指引）
+049AH,41,286,Yes,Gwani Kapyundi對話
+049BH,184,990,Yes,Beryl對話(Draygan的女僕/俘虜)
+049CH,97,470,Yes,Draygan對話(大北部森林主人)
 049DH,5,72,Yes,完成短文本翻譯
 049EH,5,68,Yes,完成短文本翻譯
-049FH,208,1234,No,
-04A0H,60,362,No,
-04A1H,20,85,No,
-04A2H,20,95,No,
-04A3H,17,358,No,
-04A5H,14,20,No,
+049FH,208,1234,Yes,Morghrim對話(森林主人/異教難民/伊勒里昂之心)
+04A0H,60,362,Yes,自由山地牢(Dungeon Freedom)的看守機器人對話
+04A1H,20,85,Yes,自由山地牢商人機器人
+04A2H,20,95,Yes,自由山地牢最終機器人
+04A3H,17,358,Yes,自由山地牢魔法陷阱/戰鬥
+04A5H,14,20,Yes,黑劍惡魔(Arcadion)對話
 04A8H,358,20506,Yes,盜賊 Stefano 的對話（自由地牢、死亡騎士追殺、給予鑰匙）
-04A9H,7,171,No,
-04AAH,341,1926,No,
+04A9H,7,171,Yes,法師小偷陷阱/戰鬥(血靈相關)
+04AAH,341,1926,Yes,熔爐(Furnace)的石像鬼Zhelkas對話
 04ABH,2,31,Yes,完成短文本翻譯
-04ACH,9,144,No,
+04ACH,9,144,Yes,沙米諾復活節彩蛋/笑話短文本
 04ADH,2,30,Yes,完成短文本翻譯
 04AEH,2,31,Yes,完成短文本翻譯
 04AFH,2,22,Yes,完成短文本翻譯
-04B0H,7,107,No,
+04B0H,7,107,Yes,乞求喝水的NPC短對話
 04B1H,5,77,Yes,完成短文本翻譯
 04B2H,104,389,No,
 04B3H,112,563,No,

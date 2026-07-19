@@ -18,14 +18,14 @@ void Func04A5 object#(0x4A5) ()
 	gflags[0x0234] = true;
 	var0001 = UI_delayed_execute_usecode_array(var0000, [(byte)0x55, 0x04A5], 0x0002);
 	UI_show_npc_face0(0xFEFF, 0x0000);
-	message("\"At last thou hast found me, Avatar... I thought that I was free of thee when that strange lightning teleported me to this place...\" ~\"But now we are joined and I shall remain with thee until thou dost release me!\"");
+	message("「你終於找到我了，聖者……當那道奇怪的閃電將我傳送到這裡時，我還以為我已經擺脫你了……」~「但現在我們又結合在一起，我會一直跟著你，直到你釋放我為止！」");
 	say();
-	message("\"I have fulfilled the task thou didst set for me back in Britannia. Did I not serve thee well on the Isle of Fire? Thou didst not bind me for service in another land. Thou shouldst release me from my prison to be free again. Wilt thou?\"");
+	message("「我已經完成了你在不列顛尼亞交給我的任務。難道我在火之島( Isle of Fire )上沒有好好服侍你嗎？你並沒有將我束縛在另一片土地上為你服務。你應該將我從監獄中釋放，讓我重獲自由。你願意嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04A5_00AE;
-	message("\"Free! Free! Free at last!\"");
+	message("「自由了！自由了！終於自由了！」");
 	say();
-	message("\"Fool! Thou hast no idea what thou hast lost...\"");
+	message("「愚蠢！你根本不知道你失去了什麼……」");
 	say();
 	UI_remove_npc_face0();
 	Func0922(0x0017);
@@ -35,9 +35,9 @@ void Func04A5 object#(0x4A5) ()
 	gflags[0x00CF] = false;
 	goto labelFunc04A5_00BA;
 labelFunc04A5_00AE:
-	message("\"The journey into this realm weakened thine hold on me, Avatar. Beware! If thou wilt not release me honorably, I will have my vengeance upon thee if I escape!\"");
+	message("「進入這個領域的旅程削弱了你對我的控制，聖者。當心點！如果你不光榮地釋放我，我逃脫後一定會找你復仇！」");
 	say();
-	message("\"But perhaps thou wilt have need of me yet...\"");
+	message("「但也許你還會需要我……」");
 	say();
 	UI_remove_npc_face0();
 labelFunc04A5_00BA:
@@ -48,5 +48,3 @@ labelFunc04A5_00BA:
 labelFunc04A5_00DF:
 	return;
 }
-
-

@@ -14,13 +14,13 @@ void Func0498 object#(0x498) ()
 	var0000 = Func0954();
 	var0001 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc0498_004F;
-	UI_item_say(0xFE9C, "@Greetings, friend!@");
+	UI_item_say(0xFE9C, "@問候，朋友！@");
 	0xFF68->Func07D1();
 	if (!gflags[0x0279]) goto labelFunc0498_0039;
-	Func097F(0xFF68, "@I know thee...@", 0x0002);
+	Func097F(0xFF68, "@我認識你……@", 0x0002);
 	goto labelFunc0498_0045;
 labelFunc0498_0039:
-	Func097F(0xFF68, "@Don't hurt me!@", 0x0002);
+	Func097F(0xFF68, "@別傷害我！@", 0x0002);
 labelFunc0498_0045:
 	UI_set_schedule_type(0xFF68, 0x0003);
 labelFunc0498_004F:
@@ -28,10 +28,10 @@ labelFunc0498_004F:
 	UI_clear_item_say(0xFF68);
 	UI_show_npc_face0(0xFF68, 0x0000);
 	if (!UI_get_item_flag(0xFF68, 0x0006)) goto labelFunc0498_0090;
-	message("\"We must hasten to the Serpent Gate!\"");
+	message("「我們必須趕往巨蛇之門( Serpent Gate )！」");
 	say();
 	UI_set_schedule_type(0xFF68, 0x001F);
-	UI_add_answer("leave");
+	UI_add_answer("離開");
 	goto labelFunc0498_00F0;
 	goto labelFunc0498_0097;
 labelFunc0498_0090:
@@ -39,177 +39,177 @@ labelFunc0498_0090:
 labelFunc0498_0097:
 	var0002 = UI_get_item_flag(0xFF68, 0x001C);
 	if (!gflags[0x0279]) goto labelFunc0498_00BE;
-	message("\"Thou art late! I have been waiting for thee for a very long time...\"");
+	message("「你來遲了！我已等了你非常非常久……」");
 	say();
-	UI_add_answer(["waiting", "long time"]);
+	UI_add_answer(["等待", "很久"]);
 	goto labelFunc0498_00F0;
 labelFunc0498_00BE:
 	if (!UI_get_item_flag(0xFF68, 0x001C)) goto labelFunc0498_00D2;
-	message("\"Thou art returned! What tortures hast thou devised for me, Order dog?\"");
+	message("「你又回來了！秩序走狗，你又想折磨我了？」");
 	say();
 	goto labelFunc0498_00E0;
 labelFunc0498_00D2:
-	message("\"I knew that thou wouldst come for me, Order dog! Thou canst take my life, but the key is gone! Gone!\" *\"Sethys shall not fail the Chaos Hierophant!\"");
+	message("「我就知道你會來找我，秩序走狗！你可以取走我的性命，但那把鑰匙已經不見了！不見了！」*「 Sethys 絕不會讓混沌大祭司失望！」");
 	say();
 	UI_set_item_flag(0xFF68, 0x001C);
 labelFunc0498_00E0:
-	UI_add_answer(["Order dog", "key", "Chaos Hierophant"]);
+	UI_add_answer(["秩序走狗", "鑰匙", "混沌大祭司"]);
 labelFunc0498_00F0:
-	UI_add_answer("bye");
+	UI_add_answer("告辭");
 labelFunc0498_00F7:
 	converse attend labelFunc0498_039F;
-	case "Order dog" attend labelFunc0498_011A:
-	message("\"Thou canst not be satisfied with winning the war! No, thou must slaughter all who dared to believe in something other than what thou dost hold dear!\" *\"Fine warriors who kill cripples and children!\"");
+	case "秩序走狗" attend labelFunc0498_011A:
+	message("「贏得戰爭還不夠！不，你們還必須屠殺所有膽敢信仰你們所珍視之物以外事物的人！」*「真是了不起的勇士，專門殺殘廢和孩子！」");
 	say();
-	UI_remove_answer("Order dog");
-	UI_add_answer(["winning the war", "cripples and children"]);
+	UI_remove_answer("秩序走狗");
+	UI_add_answer(["贏得戰爭", "殘廢和孩子"]);
 labelFunc0498_011A:
-	case "winning the war" attend labelFunc0498_0142:
-	message("\"Thy kind hath destroyed the Balance... All power now rests with the Order villains!\"");
+	case "贏得戰爭" attend labelFunc0498_0142:
+	message("「你們這一類摧毀了平衡……所有的力量如今都落入秩序惡棍的手中！」");
 	say();
-	message("\"The Temples have been desecrated, and the altars have been thrown down...\"");
+	message("「神廟已遭褻瀆，祭壇被推倒……」");
 	say();
-	message("\"See how thou wilt use it... To slay an unarmed man!\"");
+	message("「看看你要如何使用這力量……去殺死一個手無寸鐵的人！」");
 	say();
-	UI_remove_answer("winning the war");
-	UI_add_answer(["destroyed the Balance", "desecrated"]);
+	UI_remove_answer("贏得戰爭");
+	UI_add_answer(["摧毀了平衡", "褻瀆"]);
 labelFunc0498_0142:
-	case "desecrated" attend labelFunc0498_0159:
-	UI_remove_answer("desecrated");
-	message("\"Do not deny it, fiend! I know how thy mind works. Even now, thou doth lust to topple the altar of this temple.\"");
+	case "褻瀆" attend labelFunc0498_0159:
+	UI_remove_answer("褻瀆");
+	message("「別否認，惡魔！我知道你的用心。就連現在，你也在覬覦著推倒這座神廟的祭壇。」");
 	say();
-	message("\"But I shall not tell thee where it lies! I shall not aid thee in stopping the glorious waters which flow from it, nor shall I aid thee in placing the sacred containers upon it...\"");
+	message("「但我不會告訴你它在哪裡！我不會協助你阻斷從祭壇流出的神聖水流，也不會協助你將神聖容器放置其上……」");
 	say();
 labelFunc0498_0159:
-	case "destroyed the Balance" attend labelFunc0498_016C:
-	UI_remove_answer("destroyed the Balance");
-	message("\"I'm certain it was thy pack of jackals that killed the Great Hierophant! Without Ssithnos' guidance, we are lost... Even thee, dog!\"");
+	case "摧毀了平衡" attend labelFunc0498_016C:
+	UI_remove_answer("摧毀了平衡");
+	message("「我確信是你們那群豺狼殺死了偉大的大祭司！沒有 Ssithnos 的引領，我們都迷失了……就連你，走狗！」");
 	say();
 labelFunc0498_016C:
-	case "cripples and children" attend labelFunc0498_017F:
-	message("\"I was at the Temple of Enthusiasm as thy forces marched on it! I saw the children fall to thy soldiers' blades!\" *\"And now that thou art here -- where all are misfits and crippled... I'm certain thou wilt slay us with as little regard!\"");
+	case "殘廢和孩子" attend labelFunc0498_017F:
+	message("「你的軍隊向熱忱神廟( Temple of Enthusiasm )進軍時，我正在那裡！我親眼看見孩子們倒在你士兵的刀刃之下！」*「而現在你來到這裡——這裡住的全是不成器的人和殘廢者……我確信你會同樣毫不留情地殺死我們！」");
 	say();
-	UI_remove_answer("cripples and children");
+	UI_remove_answer("殘廢和孩子");
 labelFunc0498_017F:
-	case "key" attend labelFunc0498_019F:
-	UI_remove_answer("key");
-	message("\"Thou knowest of the key? The Chaos Hierophant sent thee!\" *\"Alas, I have failed my duty... The key that I was to guard and hide is gone!\"");
+	case "鑰匙" attend labelFunc0498_019F:
+	UI_remove_answer("鑰匙");
+	message("「你知道那把鑰匙？是混沌大祭司派你來的！」*「唉，我辜負了我的職責……我本應守護並藏好那把鑰匙，如今它卻不見了！」");
 	say();
-	UI_add_answer(["hide and guard", "gone"]);
+	UI_add_answer(["守護藏匿", "不見了"]);
 labelFunc0498_019F:
-	case "hide and guard" attend labelFunc0498_01B2:
-	message("\"Our Master gave me the key as the Order soldiers came. He bade me guard the key with my life, and hide it from their filthy grasp.\" *\"I have not seen our Master since... And thus far I have eluded the Order scum.\"");
+	case "守護藏匿" attend labelFunc0498_01B2:
+	message("「在秩序士兵趕來之際，我們的主人把鑰匙交給了我。他命我用性命守護這把鑰匙，讓它不落入那些骯髒之手。」*「從那以後我就再沒見過主人……但到目前為止，我還是一直在躲避秩序的爛人。」");
 	say();
-	UI_remove_answer("hide and guard");
+	UI_remove_answer("守護藏匿");
 labelFunc0498_01B2:
-	case "gone" attend labelFunc0498_01D2:
-	UI_remove_answer("gone");
-	message("\"Now my soul will never enter the Void! Long ago, or so it seems to me, a vicious rat came and gnashed its long teeth at me.\" *\"I dropped the key as I tried to fend the beast off. The rat, seeing a shiny treasure, took the key and fled!\"");
+	case "不見了" attend labelFunc0498_01D2:
+	UI_remove_answer("不見了");
+	message("「如今我的靈魂永遠無法進入虛空( Void )了！很久以前——或者說對我而言感覺很久——一隻兇猛的老鼠跑來，用牠那長長的牙齒咬我。」*「我試圖驅趕牠時，鑰匙掉了。那老鼠看見一件閃亮的寶物，便叼走鑰匙逃跑了！」");
 	say();
-	UI_add_answer(["Void", "fled"]);
+	UI_add_answer(["虛空", "逃跑了"]);
 labelFunc0498_01D2:
-	case "Void" attend labelFunc0498_01E9:
-	UI_remove_answer("Void");
-	message("\"It is the goal of the devout to live pure lives, so that we can ascend to the Void and merge with the Greater One.\"");
+	case "虛空" attend labelFunc0498_01E9:
+	UI_remove_answer("虛空");
+	message("「虔誠者的目標就是過純粹的生活，這樣我們才能升入虛空，與更偉大的存在合而為一。」");
 	say();
-	message("\"But I stand condemned, for the key is lost!\"");
+	message("「但我已受到譴責，因為鑰匙丟失了！」");
 	say();
 labelFunc0498_01E9:
-	case "fled" attend labelFunc0498_020C:
-	message("\"Down that small tunnel in the wall...\" *\"I have tried to enlarge the hole so that I might retrieve the key... But I have nothing as strong and sharp as a rat's teeth.\" *\"Oh, I am doomed!\"");
+	case "逃跑了" attend labelFunc0498_020C:
+	message("「就是沿著牆上那條小隧道鑽進去……」*「我試著想把那個洞擴大，好讓我能取回鑰匙……但我沒有任何東西能像老鼠的牙齒一樣堅硬鋒利。」*「哦，我完蛋了！」");
 	say();
-	Func097F(0xFF68, "@Doomed!@", 0x0000);
+	Func097F(0xFF68, "@完蛋了！@", 0x0000);
 	UI_set_schedule_type(0xFF68, 0x0014);
 	abort;
 labelFunc0498_020C:
-	case "Chaos Hierophant" attend labelFunc0498_022C:
-	UI_remove_answer("Chaos Hierophant");
-	message("\"The Chaos Hierophant charged me with an important task... Who would have ever thought that I would be found worthy?\"");
+	case "混沌大祭司" attend labelFunc0498_022C:
+	UI_remove_answer("混沌大祭司");
+	message("「混沌大祭司交給我一項重要任務……誰能想到我會被認定為足以勝任的人？」");
 	say();
-	UI_add_answer(["worthy", "task"]);
+	UI_add_answer(["足以勝任", "任務"]);
 labelFunc0498_022C:
-	case "worthy" attend labelFunc0498_0243:
-	UI_remove_answer("worthy");
-	message("\"I must confess that in mine humility, it never occurred to me that the Hierophant even knew my name!\"");
+	case "足以勝任" attend labelFunc0498_0243:
+	UI_remove_answer("足以勝任");
+	message("「我必須承認，以我的謙遜，我從未想過大祭司甚至知道我的名字！」");
 	say();
-	message("\"And then, in the hour of need, he selected me! Such an honor!\"");
+	message("「然後，在緊要關頭，他選中了我！是多大的榮耀啊！」");
 	say();
 labelFunc0498_0243:
-	case "task" attend labelFunc0498_0267:
-	UI_remove_answer("task");
-	message("\"I shall not tell thee... At last, I, Sethys, have something important, something of value.\" *\"I have a secret!\"");
+	case "任務" attend labelFunc0498_0267:
+	UI_remove_answer("任務");
+	message("「我不會告訴你……終於，我—— Sethys ——有了一件重要的事，一件有價值的事。」*「我有一個秘密！」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["share it with me", "don't care"]);
+	UI_add_answer(["告訴我", "無所謂"]);
 labelFunc0498_0267:
-	case "share it with me" attend labelFunc0498_0277:
-	message("\"A secret! A secret! I have a secret! And I won't tell!\"");
+	case "告訴我" attend labelFunc0498_0277:
+	message("「秘密！秘密！我有個秘密！我不說！」");
 	say();
 	UI_pop_answers();
 labelFunc0498_0277:
-	case "don't care" attend labelFunc0498_0287:
-	message("\"Ah, but I can tell that thou dost want mine hidden knowledge. It will do thee no good! I shall keep my secret.\"");
+	case "無所謂" attend labelFunc0498_0287:
+	message("「啊，但我看得出來你確實想知道我的隱藏知識。這對你沒有任何好處！我會保住我的秘密。」");
 	say();
 	UI_pop_answers();
 labelFunc0498_0287:
-	case "waiting" attend labelFunc0498_02A5:
-	UI_remove_answer("waiting");
-	message("\"How canst thou have forgotten? It is time for us to bring the key to the Master.\"");
+	case "等待" attend labelFunc0498_02A5:
+	UI_remove_answer("等待");
+	message("「你怎麼能忘記？現在是我們把鑰匙帶給主人的時候了。」");
 	say();
-	message("\"Sadly, I have lost the key, so I shall have to beg for forgiveness...\"");
+	message("「可惜，我把鑰匙弄丟了，所以我只能祈求原諒……」");
 	say();
-	UI_add_answer("Master");
+	UI_add_answer("主人");
 labelFunc0498_02A5:
-	case "long time" attend labelFunc0498_02B8:
-	UI_remove_answer("long time");
-	message("\"Why, I have been in this place for... centuries, it doth seem. The aura of this place must have preserved me to fulfill my duty.\"");
+	case "很久" attend labelFunc0498_02B8:
+	UI_remove_answer("很久");
+	message("「哦，我在這個地方待了……感覺像是幾個世紀。這個地方的靈氣一定保存了我，讓我能夠履行我的職責。」");
 	say();
 labelFunc0498_02B8:
-	case "Master" attend labelFunc0498_02DC:
-	message("\"Only I know where our Master lies, dear friend, for I am the sole survivor of that horrible battle. I could show thee the place, but I am loathe to leave the Temple... I have been here so long.\"");
+	case "主人" attend labelFunc0498_02DC:
+	message("「只有我知道我們的主人在哪裡，親愛的朋友，因為我是那場可怕戰鬥的唯一倖存者。我可以帶你去那個地方，但我不太願意離開神廟……我在這裡待了太久了。」");
 	say();
-	UI_remove_answer("Master");
+	UI_remove_answer("主人");
 	UI_push_answers();
-	UI_add_answer(["show me", "never mind"]);
+	UI_add_answer(["帶我去", "算了"]);
 labelFunc0498_02DC:
-	case "never mind" attend labelFunc0498_02F3:
-	UI_remove_answer("never mind");
-	message("\"I am so relieved! There is so much to be done here.\"");
+	case "算了" attend labelFunc0498_02F3:
+	UI_remove_answer("算了");
+	message("「我真是鬆了一口氣！這裡還有很多事情要做。」");
 	say();
 	UI_pop_answers();
 labelFunc0498_02F3:
-	case "leave" attend labelFunc0498_0306:
-	UI_remove_answer("leave");
-	message("\"Oh, but I cannot leave thee now! I have pledged to show thee the resting place of the Hierophant, and I shall not disappoint thee.\"");
+	case "離開" attend labelFunc0498_0306:
+	UI_remove_answer("離開");
+	message("「哦，但我現在不能讓你離開！我已發誓要帶你去找大祭司的安息之所，我不會讓你失望的。」");
 	say();
 labelFunc0498_0306:
-	case "show me" attend labelFunc0498_034F:
-	UI_remove_answer("show me");
-	message("\"I should remain here. This place must be cleaned before the Master of Tolerance returns... Look at what those filthy Order monsters did to our home!\"");
+	case "帶我去" attend labelFunc0498_034F:
+	UI_remove_answer("帶我去");
+	message("「我應該留在這裡。主人回來之前，這地方必須打掃乾淨……看看那些骯髒的秩序怪物對我們的家做了什麼！」");
 	say();
 	if (!(UI_get_array_size(UI_get_party_list2()) < 0x0005)) goto labelFunc0498_0347;
-	message("\"But I would like to return the key to the Chaos Hierophant. Perhaps it would not hurt to go to the Temple of Enthusiasm, briefly.\"");
+	message("「但我想把鑰匙還給混沌大祭司。也許短暫去一下熱忱神廟( Temple of Enthusiasm )也無妨。」");
 	say();
-	message("\"Very well! I shall join with thee.\"");
+	message("「好吧！我就加入你們。」");
 	say();
 	UI_add_to_party(0xFF68);
-	Func097F(0xFF68, "@Onward!@", 0x0000);
+	Func097F(0xFF68, "@出發！@", 0x0000);
 	abort;
 	goto labelFunc0498_034F;
 labelFunc0498_0347:
-	message("\"Ah, but thou hast so many companions! Surely I would only be a nuisance to thee...\"");
+	message("「啊，但你的同伴已經夠多了！我只會是你的麻煩而已……」");
 	say();
 	UI_pop_answers();
 labelFunc0498_034F:
-	case "bye" attend labelFunc0498_039C:
+	case "告辭" attend labelFunc0498_039C:
 	UI_remove_npc_face0();
 	if (!UI_get_item_flag(0xFF68, 0x0006)) goto labelFunc0498_0383;
-	Func097F(0xFE9C, "@Thank thee!@", 0x0000);
-	Func097F(0xFF68, "@Hasten!@", 0x0002);
+	Func097F(0xFE9C, "@謝謝你！@", 0x0000);
+	Func097F(0xFF68, "@快走！@", 0x0002);
 	goto labelFunc0498_039B;
 labelFunc0498_0383:
-	Func097F(0xFE9C, "@Farewell, ancient!@", 0x0000);
-	Func097F(0xFF68, "@Go in Chaos!@", 0x0002);
+	Func097F(0xFE9C, "@再見，古人！@", 0x0000);
+	Func097F(0xFF68, "@去吧，以混沌之名！@", 0x0002);
 labelFunc0498_039B:
 	abort;
 labelFunc0498_039C:

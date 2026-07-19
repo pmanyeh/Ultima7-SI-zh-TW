@@ -18,16 +18,16 @@ void Func049C object#(0x49C) ()
 	var0000 = Func0954();
 	var0001 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc049C_003A;
-	UI_item_say(0xFE9C, "@Hello.@");
+	UI_item_say(0xFE9C, "@你好。@");
 	0xFF64->Func07D1();
-	Func097F(0xFF64, "@Speaking to me?@", 0x0002);
+	Func097F(0xFF64, "@在跟我說話嗎？@", 0x0002);
 	UI_set_schedule_type(0xFF64, 0x0003);
 labelFunc049C_003A:
 	if (!((event == 0x0000) && (UI_get_schedule_type(0xFF64) == 0x0007))) goto labelFunc049C_008C;
 	if (!(UI_get_random(0x000A) < 0x0007)) goto labelFunc049C_005D;
 	abort;
 labelFunc049C_005D:
-	var0002 = ["@Leave us!@", "@Go thy way!@", "@Do not steal...@", "@I am destiny.@", "@Ignore the others.@", "@I am Master here.@"];
+	var0002 = ["@離開！@", "@走你的路！@", "@不要偷東西……@", "@我就是命運。@", "@別理其他人。@", "@我在這裡是主人。@"];
 	Func097F(0xFF64, var0002[UI_get_random(UI_get_array_size(var0002))], 0x0000);
 labelFunc049C_008C:
 	if (!((event == 0x0007) && UI_get_item_flag(0xFF64, 0x001D))) goto labelFunc049C_00FE;
@@ -48,112 +48,112 @@ labelFunc049C_00FE:
 	var0004 = UI_get_item_flag(0xFF64, 0x001C);
 	if (!(var0004 == false)) goto labelFunc049C_0148;
 	UI_set_item_flag(0xFF64, 0x001C);
-	message("\"I do not believe we have met. My name is Draygan. I am lord of all the land that I survey.\"");
+	message("「我不認為我們見過面。我的名字是 Draygan。我是我所見之地的主人。」");
 	say();
-	message("\"At present, I am hard at work fulfilling mine appointed destiny. Conversing with thee is nothing but a useless distraction from achieving that end.\"");
+	message("「目前，我正努力完成我命中注定的命運。與你交談只會讓我分心，無助於達成目標。」");
 	say();
 	goto labelFunc049C_0150;
 labelFunc049C_0148:
-	message("\"We meet again, I see.\"");
+	message("「看來我們又見面了。」");
 	say();
-	message("\"And thou art still of no use to my destiny. I do not have time to prattle with thee, stranger. Stay away from this camp, and from my followers. As the lord of this place, I order this to be so.\"");
+	message("「而你對我的命運依然毫無用處。我沒時間和你閒聊，陌生人。遠離這個營地，遠離我的追隨者。作為這裡的主人，這是我下的命令。」");
 	say();
 labelFunc049C_0150:
-	UI_add_answer(["lord", "destiny"]);
-	UI_add_answer("bye");
+	UI_add_answer(["主人", "命運"]);
+	UI_add_answer("告辭");
 labelFunc049C_0164:
 	converse attend labelFunc049C_0329;
-	case "change subject" attend labelFunc049C_0177:
+	case "轉移話題" attend labelFunc049C_0177:
 	UI_pop_answers();
-	message("\"But we were soon to hear the best part...\"");
+	message("「但我們很快就會聽到最精彩的部分了……」");
 	say();
 labelFunc049C_0177:
-	case "destiny" attend labelFunc049C_01A2:
-	UI_remove_answer("destiny");
-	message("\"I was born a pauper's son. My father was a rancid beggar-man who lived in the dirt of the road. I hated it as I hated him. But there was one thing he always told me. He told me that one day I would be a rich and powerful man. I believe this is my destiny. When I was still a lad, I stole his near-empty coin purse and sought my fortune.\"");
+	case "命運" attend labelFunc049C_01A2:
+	UI_remove_answer("命運");
+	message("「我生來就是個窮光蛋的兒子。我父親是個令人作嘔的乞丐，住在路邊的泥土裡。我討厭這樣的生活，就像我討厭他一樣。但他總告訴我一件事。他說總有一天我會成為一個富有而強大的人。我相信這就是我的命運。當我還是個小男孩的時候，我偷了他那幾乎空了的錢包，去尋找我的財富。」");
 	say();
-	message("\"I have acquired naught but half of my legacy... though I already have the power!\"");
+	message("「我只獲得了一半的遺產……雖然我已經擁有了力量！」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["fortune", "power", "change subject"]);
+	UI_add_answer(["財富", "力量", "轉移話題"]);
 labelFunc049C_01A2:
-	case "fortune" attend labelFunc049C_01C5:
-	UI_remove_answer("fortune");
-	message("\"It was one year ago that I led my band of men to this spot. We had all heard the tales of gold and fabulous gems that could be found here. We came by ship -- the Emerald Lady. As we planned to settle here, they all brought their wives and children. For months we suffered through bad luck. Then one of the miners made an important discovery. That was before I went on the hunting expedition -- but, ah, I am ahead of myself. It hath been too long since I have had a fresh face to converse with. Damned distraction!\"");
+	case "財富" attend labelFunc049C_01C5:
+	UI_remove_answer("財富");
+	message("「一年前，我帶領我的人來到這裡。我們都聽說過這裡可以找到黃金和傳說中的寶石。我們乘船而來——綠寶石淑女號( Emerald Lady )。因為我們打算在這裡定居，所以他們都帶來了妻子和孩子。幾個月來，我們運氣一直很差。後來其中一名礦工有了一個重大發現。那是在我去狩獵探險之前——不過，啊，我扯遠了。我已經太久沒有和新面孔交談了。該死的分心！」");
 	say();
-	UI_add_answer(["suffered", "discovery", "hunting expedition"]);
+	UI_add_answer(["受苦", "發現", "狩獵探險"]);
 labelFunc049C_01C5:
-	case "suffered" attend labelFunc049C_01D8:
-	UI_remove_answer("suffered");
-	message("\"For three months we toiled near the site of our original landing. But we found nothing. It made the men so discouraged that they nearly surrendered. At last, we moved camp and came here.\"");
+	case "受苦" attend labelFunc049C_01D8:
+	UI_remove_answer("受苦");
+	message("「有三個月的時間，我們在最初登陸的地點附近辛苦工作。但我們什麼也沒找到。這讓人們非常沮喪，他們幾乎要放棄了。最後，我們拔營來到了這裡。」");
 	say();
 labelFunc049C_01D8:
-	case "discovery" attend labelFunc049C_01EB:
-	UI_remove_answer("discovery");
-	message("\"One of the men, a fellow by the name of Hamlin, discovered a nugget of gold as large as my thumb. It was not far from our present location. Rest his soul.\"");
+	case "發現" attend labelFunc049C_01EB:
+	UI_remove_answer("發現");
+	message("「其中一個人，一個名叫 Hamlin 的傢伙，發現了一塊像我拇指一樣大的金塊。距離我們現在的位置不遠。願他的靈魂安息。」");
 	say();
 labelFunc049C_01EB:
-	case "hunting expedition" attend labelFunc049C_020B:
-	UI_remove_answer("hunting expedition");
-	message("\"Not long after the first significant find, we had planned a great feast as a celebration. I led a group of hunters into the forest to hunt for game. We were attacked by a vicious pack of wolves. Only I survived to make it back to camp. It was then that I discovered my power. But the failed expedition was a bad omen. Soon my men were divided and our group fell into rebellion.\"");
+	case "狩獵探險" attend labelFunc049C_020B:
+	UI_remove_answer("狩獵探險");
+	message("「在第一次重大發現後沒多久，我們計劃舉行一場盛宴來慶祝。我帶領一群獵人進入森林尋找獵物。我們遭到了一群兇猛的狼群襲擊。只有我活著回到了營地。就在那時，我發現了我的力量。但那次失敗的探險是個不祥之兆。很快，我的人就分裂了，我們的團隊陷入了叛亂。」");
 	say();
-	UI_add_answer(["divided", "rebellion"]);
+	UI_add_answer(["分裂", "叛亂"]);
 labelFunc049C_020B:
-	case "divided" attend labelFunc049C_0226:
-	UI_remove_answer("divided");
-	message("\"A man named Falcon declared himself the leader of a group of dissenters that was comprised of nearly half of our number.\"");
+	case "分裂" attend labelFunc049C_0226:
+	UI_remove_answer("分裂");
+	message("「一個名叫 Falcon 的人宣稱自己是反對派的領袖，這群人幾乎佔了我們一半的人數。」");
 	say();
-	message("\"He was a man of exceedingly weak character. He suggested that we return home penniless, without a single piece of treasure! All because a few of the women and children had a difficult time of it in the wilderness.\"");
+	message("「他是一個性格極其軟弱的人。他建議我們身無分文地回家，連一件財寶都不帶！就因為少數婦女和兒童在荒野中度過了一段艱難的時光。」");
 	say();
-	message("\"Well, all that is the past, and there is nothing one can do for the dead. And we have the treasure...\"");
+	message("「嗯，這一切都過去了，死人是無能為力的。而且我們有財寶……」");
 	say();
 labelFunc049C_0226:
-	case "rebellion" attend labelFunc049C_0241:
-	UI_remove_answer("rebellion");
-	message("\"Simple disobedience, really. Oh, yes, and someone cut Hamlin's throat and stole his gold. I do not know who did it.\"");
+	case "叛亂" attend labelFunc049C_0241:
+	UI_remove_answer("叛亂");
+	message("「真的只是單純的不服從。喔，對了，還有人割斷了 Hamlin 的喉嚨，偷走了他的黃金。我不知道是誰幹的。」");
 	say();
-	message("\"After this, most of the men chose to leave. So what was I to do? I gave them their fair share of the gold that we had found, and sent them back to the ship with my blessings.\"");
+	message("「在這之後，大多數人都選擇離開。那我該怎麼辦？我給了他們應得的黃金份額，並帶著我的祝福送他們回船上。」");
 	say();
-	message("\"They were led by the weakling, Falcon. After they left, I never saw them again. Ah, well...\"");
+	message("「他們由那個懦夫 Falcon 帶領。他們離開後，我再也沒見過他們。啊，算了……」");
 	say();
 labelFunc049C_0241:
-	case "power" attend labelFunc049C_0263:
-	UI_remove_answer("power");
-	message("\"I need not bore thee with the details of how I learned of this power. Suffice it to say that I cannot die.\"");
+	case "力量" attend labelFunc049C_0263:
+	UI_remove_answer("力量");
+	message("「我不需要拿我如何得知這種力量的細節來煩你。只要知道我不會死就夠了。」");
 	say();
-	message("\"Thou wouldst do well to consider that a warning. Do not think of stealing my gold, for it is thee who shall lose thy life. I cannot die because I am destined to become wealthy.\"");
+	message("「你最好把這當作一個警告。別想偷我的黃金，否則丟掉性命的會是你。我不會死，因為我注定會變得富有。」");
 	say();
-	message("\"Hurd and Ivor work the mines night and day. Beryl cooks and cleans. They are good workers. They shall make me wealthy.\"");
+	message("「Hurd 和 Ivor 日以繼夜地在礦場工作。Beryl 負責煮飯和打掃。他們是好工人。他們會讓我變得富有。」");
 	say();
-	UI_add_answer("warning?");
+	UI_add_answer("警告？");
 labelFunc049C_0263:
-	case "warning?" attend labelFunc049C_0276:
-	UI_remove_answer("warning?");
-	message("\"If we ever come into conflict over the gold that I know lies somewhere in this land, I shall kill thee dead without an ounce of regret.\"");
+	case "警告？" attend labelFunc049C_0276:
+	UI_remove_answer("警告？");
+	message("「如果我們為了我知道藏在這片土地某處的黃金而發生衝突，我會毫不留情地殺了你。」");
 	say();
 labelFunc049C_0276:
-	case "lord" attend labelFunc049C_0299:
-	UI_remove_answer("lord");
-	message("\"I am the Master of the Great Northern Forest, and none can dispute it.\"");
+	case "主人" attend labelFunc049C_0299:
+	UI_remove_answer("主人");
+	message("「我是大北部森林( Great Northern Forest )的主人，沒有人可以否認。」");
 	say();
-	message("\"And if thou shouldst ever speak to a disfigured cripple named Morghrim --\"");
+	message("「如果你曾經和一個名叫 Morghrim 的毀容跛子說過話——」");
 	say();
-	message("\"and I would recommend against that --\"");
+	message("「我建議你不要那麼做——」");
 	say();
-	message("\"pay no mind to what he may say. Morghrim is an evil and depraved man. Thou shouldst avoid him like the plague.\"");
+	message("「別理會他說的話。Morghrim 是一個邪惡墮落的人。你應該像躲避瘟疫一樣避開他。」");
 	say();
-	message("\"This is the one and only piece of friendly advice I shall give to thee.\"");
+	message("「這是我唯一能給你的善意忠告。」");
 	say();
 labelFunc049C_0299:
-	case "bye" attend labelFunc049C_0326:
+	case "告辭" attend labelFunc049C_0326:
 	if (!(!gflags[0x02BD])) goto labelFunc049C_02C9;
 	gflags[0x02BE] = true;
 	var0003 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0001), [(byte)0x23, (byte)0x55, 0x049B], 0x004B);
 labelFunc049C_02C9:
 	var0003 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0002), [(byte)0x23, (byte)0x55, 0x049E], 0x012C);
 	var0003 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x55, 0x049D], 0x00C8);
-	Func097F(0xFE9C, "@Interesting....@", 0x0000);
-	Func097F(0xFF64, "@Do not return!@", 0x0003);
+	Func097F(0xFE9C, "@有意思……@", 0x0000);
+	Func097F(0xFF64, "@別再回來！@", 0x0003);
 	UI_set_schedule_type(0xFF64, 0x0007);
 	abort;
 labelFunc049C_0326:
@@ -163,5 +163,3 @@ labelFunc049C_0329:
 labelFunc049C_032A:
 	return;
 }
-
-

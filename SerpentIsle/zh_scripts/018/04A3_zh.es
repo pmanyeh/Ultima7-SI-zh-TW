@@ -34,22 +34,22 @@ void Func04A3 object#(0x4A3) ()
 
 	if (!(event == 0x0003)) goto labelFunc04A3_0026;
 	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x55, 0x04A3]);
-	Func097F(0xFF5D, "@Die, mortal!@", 0x0002);
+	Func097F(0xFF5D, "@死吧，凡人！@", 0x0002);
 labelFunc04A3_0026:
 	if (!(event == 0x0002)) goto labelFunc04A3_07F3;
 	if (!(UI_get_item_shape(item) == 0x0331)) goto labelFunc04A3_0448;
 	var0001 = UI_die_roll(0x0001, 0x0003);
 	if (!((var0001 == 0x0001) && (gflags[0x023A] == false))) goto labelFunc04A3_006F;
-	Func097F(0xFE9C, "@Free me, Avatar!@", 0x0005);
-	Func097F(0xFF58, "@Listen to thy sword!@", 0x000F);
+	Func097F(0xFE9C, "@釋放我，聖者！@", 0x0005);
+	Func097F(0xFF58, "@聽從你劍的指示！@", 0x000F);
 labelFunc04A3_006F:
 	if (!((var0001 == 0x0002) && (gflags[0x023A] == false))) goto labelFunc04A3_0097;
-	Func097F(0xFE9C, "@Release me, Avatar!@", 0x0005);
-	Func097F(0xFF58, "@Do what thy sword says!@", 0x000C);
+	Func097F(0xFE9C, "@釋放我，聖者！@", 0x0005);
+	Func097F(0xFF58, "@照你的劍說的做！@", 0x000C);
 labelFunc04A3_0097:
 	if (!((var0001 == 0x0003) && (gflags[0x023A] == false))) goto labelFunc04A3_00BF;
-	Func097F(0xFE9C, "@Liberate me, Avatar!@", 0x0005);
-	Func097F(0xFF58, "@Do it! Do it! Do it!@", 0x0009);
+	Func097F(0xFE9C, "@解放我，聖者！@", 0x0005);
+	Func097F(0xFF58, "@動手！動手！動手！@", 0x0009);
 labelFunc04A3_00BF:
 	var0001 = UI_find_nearby(0xFF5D, 0x0113, 0x0000, 0x0010);
 	if (!var0001) goto labelFunc04A3_00FE;
@@ -125,13 +125,13 @@ labelFunc04A3_03CD:
 	if (!(var0002 == 0x0004)) goto labelFunc04A3_0447;
 	var000A = UI_die_roll(0x0001, 0x0003);
 	if (!(var000A == 0x0001)) goto labelFunc04A3_0405;
-	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x59, var0003, (byte)0x52, "@I will kill thee!@"]);
+	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x59, var0003, (byte)0x52, "@我要殺了你！@"]);
 labelFunc04A3_0405:
 	if (!(var000A == 0x0002)) goto labelFunc04A3_0426;
-	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x59, var0003, (byte)0x52, "@Thou art no match for my power.@"]);
+	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x59, var0003, (byte)0x52, "@你根本不是我的對手。@"]);
 labelFunc04A3_0426:
 	if (!(var000A == 0x0003)) goto labelFunc04A3_0447;
-	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x59, var0003, (byte)0x52, "@Kneel before me, worm.@"]);
+	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x59, var0003, (byte)0x52, "@在我面前跪下，蟲子。@"]);
 labelFunc04A3_0447:
 	abort;
 labelFunc04A3_0448:
@@ -190,7 +190,7 @@ labelFunc04A3_0637:
 	var0005 = UI_get_party_list();
 labelFunc04A3_0645:
 	if (!(UI_get_item_shape(item) == 0x01FB)) goto labelFunc04A3_0715;
-	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x52, "@Perhaps I've a use for thee after all...@", (byte)0x01, (byte)0x70, (byte)0x27, 0x0001, (byte)0x6F, (byte)0x27, 0x0004, (byte)0x70, (byte)0x27, 0x0003, (byte)0x61]);
+	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x52, "@也許我留著你終究還是有用的……@", (byte)0x01, (byte)0x70, (byte)0x27, 0x0001, (byte)0x6F, (byte)0x27, 0x0004, (byte)0x70, (byte)0x27, 0x0003, (byte)0x61]);
 	var0004 = UI_get_object_position(item);
 	UI_sprite_effect(0x000D, var0004[0x0001], var0004[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_play_sound_effect(0x0082);
@@ -207,7 +207,7 @@ labelFunc04A3_0715:
 	var0018 = UI_find_nearest(0xFF5D, 0x0124, 0x0005);
 	if (!var0018) goto labelFunc04A3_076E;
 	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x27, 0x0003, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6D]);
-	var0000 = UI_execute_usecode_array(var0018, [(byte)0x52, "@And now, I fear I must be going.@", (byte)0x27, 0x0007, (byte)0x55, 0x04A3]);
+	var0000 = UI_execute_usecode_array(var0018, [(byte)0x52, "@現在，恐怕我得走了。@", (byte)0x27, 0x0007, (byte)0x55, 0x04A3]);
 labelFunc04A3_076E:
 	abort;
 labelFunc04A3_076F:
@@ -215,7 +215,7 @@ labelFunc04A3_076F:
 	var0017 = UI_find_nearby(0xFF5D, 0x017D, 0x0014, 0x0008);
 	if (!var0017) goto labelFunc04A3_07B0;
 	UI_set_schedule_type(var0017, 0x0000);
-	var0000 = UI_execute_usecode_array(var0017, [(byte)0x52, "@Die, mortal!@"]);
+	var0000 = UI_execute_usecode_array(var0017, [(byte)0x52, "@死吧，凡人！@"]);
 labelFunc04A3_07B0:
 	var0004 = UI_get_object_position(0xFF5D);
 	UI_remove_npc(0xFF5D);
@@ -226,5 +226,3 @@ labelFunc04A3_07B0:
 labelFunc04A3_07F3:
 	return;
 }
-
-

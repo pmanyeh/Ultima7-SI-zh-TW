@@ -8,7 +8,7 @@ void Func0499 object#(0x499) ()
 	var var0000;
 
 	if (!(event == 0x0001)) goto labelFunc0499_002E;
-	UI_item_say(0xFE9C, "@Hail, Gwani hunter!@");
+	UI_item_say(0xFE9C, "@問候，葛瓦尼獵人！@");
 	0xFF67->Func07D1();
 	Func097F(0xFF67, "@Noo Koomba!@", 0x0003);
 	UI_set_schedule_type(0xFF67, 0x0003);
@@ -20,49 +20,49 @@ labelFunc0499_002E:
 	UI_show_npc_face0(0xFF67, 0x0000);
 	var0000 = UI_get_item_flag(0xFF67, 0x001C);
 	if (!var0000) goto labelFunc0499_009C;
-	message("\"Greetings again.\"");
+	message("「再次問候。」");
 	say();
 	goto labelFunc0499_00A0;
 labelFunc0499_009C:
-	message("\"Beware claws of Ice Dragon!\"");
+	message("「小心冰龍的利爪！」");
 	say();
 labelFunc0499_00A0:
-	UI_add_answer(["name", "Ice Dragon", "bye"]);
+	UI_add_answer(["姓名", "冰龍", "告辭"]);
 labelFunc0499_00B0:
 	converse attend labelFunc0499_0157;
-	case "name" attend labelFunc0499_00DD:
-	UI_remove_answer("name");
+	case "姓名" attend labelFunc0499_00DD:
+	UI_remove_answer("姓名");
 	if (!var0000) goto labelFunc0499_00CF;
-	message("\"Am still Gilwoyai.\"");
+	message("「仍是 Gilwoyai 。」");
 	say();
 	goto labelFunc0499_00DD;
 labelFunc0499_00CF:
-	message("\"Am Gilwoyai, means @Of the Wind@.\"");
+	message("「我是 Gilwoyai ，意思是『乘風者』。」");
 	say();
 	UI_set_item_flag(0xFF67, 0x001C);
 labelFunc0499_00DD:
-	case "Ice Dragon" attend labelFunc0499_00FD:
-	UI_remove_answer("Ice Dragon");
-	message("\"We tried to kill Ice Dragon, to bring its blood and cure Neyobi. We failed. It hit with claws, I smash into cave wall. I need Baiyanda to heal.\"");
+	case "冰龍" attend labelFunc0499_00FD:
+	UI_remove_answer("冰龍");
+	message("「我們試圖獵殺冰龍，取其血液來治癒 Neyobi 。我們失敗了。牠用利爪攻擊，我被撞進洞穴牆壁。我需要 Baiyanda 來治傷。」");
 	say();
-	UI_add_answer(["claws", "cave"]);
+	UI_add_answer(["利爪", "洞穴"]);
 labelFunc0499_00FD:
-	case "claws" attend labelFunc0499_0110:
-	UI_remove_answer("claws");
-	message("\"Vicious beast! This Ice Dragon is mother protecting its babies.\"");
+	case "利爪" attend labelFunc0499_0110:
+	UI_remove_answer("利爪");
+	message("「兇猛的野獸！這頭冰龍是在保護牠的幼崽的母龍。」");
 	say();
 labelFunc0499_0110:
-	case "cave" attend labelFunc0499_0123:
-	UI_remove_answer("cave");
-	message("\"To find Ice Dragon lair walk north. Take ice raft to cross channel. Beware front opening!\"");
+	case "洞穴" attend labelFunc0499_0123:
+	UI_remove_answer("洞穴");
+	message("「要找冰龍巢穴，往北走。搭乘冰筏越過水道。小心正面入口！」");
 	say();
 labelFunc0499_0123:
-	case "bye" attend labelFunc0499_0154:
+	case "告辭" attend labelFunc0499_0154:
 	UI_remove_npc_face0();
 	UI_remove_npc_face1();
 	UI_set_schedule_type(item, 0x0014);
-	Func097F(0xFE9C, "@Go home now!@", 0x0000);
-	Func097F(0xFF67, "@Kill Ice Dragon!@", 0x0003);
+	Func097F(0xFE9C, "@快回家去！@", 0x0000);
+	Func097F(0xFF67, "@殺死冰龍！@", 0x0003);
 	abort;
 labelFunc0499_0154:
 	goto labelFunc0499_00B0;

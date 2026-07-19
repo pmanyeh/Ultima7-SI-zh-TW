@@ -35,7 +35,7 @@
 - **Excellencia** ➔ **卓越號**
 - **The Crown Jewel** ➔ **皇冠寶石號**
 - **Crown Jewel** ➔ **皇冠寶石號**
-- **Golden Ankh** ➔ **黃金安卡號+**
+- **Golden Ankh** ➔ **黃金安卡號**
 - **murders** ➔ **謀殺案**
 - **murder** ➔ **謀殺**
 - **Emp** ➔ **森靈**
@@ -393,6 +393,7 @@
 - **Black Pearl** ➔ **黑珍珠**
 - **Blood Moss** ➔ **血苔**
 - **Blood Spawn** ➔ **血菌絲**
+- **BloodSpawn** ➔ **血菌絲**
 - **Garlic** ➔ **大蒜**
 - **Ginseng** ➔ **人蔘**
 - **Mandrake Root** ➔ **曼陀羅根**
