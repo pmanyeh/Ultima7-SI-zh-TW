@@ -28,7 +28,7 @@ labelFunc08D5_003D:
 	UI_sprite_effect(0x0012, (var0006[0x0001] - 0x0001), (var0006[0x0002] - 0x0001), 0x0000, 0x0000, 0x0000, 0xFFFF);
 	var0007 = UI_create_new_object2(0x00E4, var0006);
 	Func09AD(var0007);
-	var0008 = UI_delayed_execute_usecode_array(var0005, [(byte)0x23, (byte)0x52, "@I obey, master!@"], var0002);
+	var0008 = UI_delayed_execute_usecode_array(var0005, [(byte)0x23, (byte)0x52, "@遵命，主人！@"], var0002);
 	goto labelFunc08D5_003D;
 labelFunc08D5_00BE:
 	return true;

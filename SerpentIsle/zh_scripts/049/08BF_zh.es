@@ -178,7 +178,7 @@ labelFunc08BF_047D:
 labelFunc08BF_04A8:
 	var001D = UI_part_of_day();
 	UI_move_object(0xFF29, var001C);
-	Func097F(0xFF29, "@Wait!@", 0x0000);
+	Func097F(0xFF29, "@等等！@", 0x0000);
 	UI_set_schedule_type(0xFF29, 0x0003);
 	UI_set_new_schedules(0xFF29, 0x0000, 0x0003, var001C);
 	var000C = UI_execute_usecode_array(0xFF29, [(byte)0x6D, (byte)0x27, 0x0003, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x27, 0x0003]);

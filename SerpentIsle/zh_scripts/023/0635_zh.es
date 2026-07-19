@@ -18,7 +18,7 @@ void Func0635 object#(0x635) ()
 	if (!((var0001 > 0x000F) && (var0001 < 0x0013))) goto labelFunc0635_0063;
 	var0002 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x55, 0x0635], 0x003C);
 	if (!(UI_die_roll(0x0001, 0x0002) == 0x0001)) goto labelFunc0635_0063;
-	Func0949("@Do not thou overcook it!@");
+	Func0949("@你可別把它煮過頭了！@");
 labelFunc0635_0063:
 	if (!(event == 0x0002)) goto labelFunc0635_00F6;
 	var0003 = UI_get_object_position(item);
@@ -33,10 +33,10 @@ labelFunc0635_0063:
 	if (!var0002) goto labelFunc0635_00F6;
 	var0006 = UI_die_roll(0x0001, 0x0003);
 	if (!(var0006 == 0x0001)) goto labelFunc0635_00E6;
-	Func0949("@I believe the bread is ready.@");
+	Func0949("@我想麵包烤好了。@");
 labelFunc0635_00E6:
 	if (!(var0006 == 0x0002)) goto labelFunc0635_00F6;
-	Func0949("@Mmm... 'Tis a wonderful aroma.@");
+	Func0949("@嗯……真是美妙的香氣。@");
 labelFunc0635_00F6:
 	return;
 }

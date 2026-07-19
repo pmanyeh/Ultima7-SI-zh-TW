@@ -20,7 +20,7 @@ void Func0855 0x855 (var var0000)
 
 	var0001 = UI_find_nearby(item, 0x03B5, 0x0014, 0x0000);
 	if (!(var0000 == 0x0009)) goto labelFunc0855_004A;
-	Func097F(item, "@Stand back...@", 0x0000);
+	Func097F(item, "@退後……@", 0x0000);
 	if (!var0001) goto labelFunc0855_004A;
 	var0002 = [0x0465, 0x099C, 0x0000];
 	UI_si_path_run_usecode(item, var0002, 0x000A, item, 0x00E4, true);
@@ -40,7 +40,7 @@ labelFunc0855_009F:
 	var0008 = UI_delayed_execute_usecode_array(var0003, [(byte)0x23, (byte)0x55, 0x00E4, 0x0000], 0x0014);
 labelFunc0855_00D7:
 	if (!(var0000 == 0x0002)) goto labelFunc0855_0156;
-	Func097F(item, "@Oooh, my back...@", 0x000C);
+	Func097F(item, "@噢，我的背……@", 0x000C);
 	var0009 = UI_find_nearby(item, 0x010F, 0x0014, 0x0000);
 	if (!var0009) goto labelFunc0855_0156;
 	if (!UI_npc_nearby(var0009)) goto labelFunc0855_0129;

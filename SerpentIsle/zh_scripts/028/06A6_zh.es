@@ -11,16 +11,16 @@ void Func06A6 object#(0x6A6) ()
 	if (!(event == 0x0002)) goto labelFunc06A6_00AE;
 	var0000 = UI_get_npc_id(item);
 	if (!(var0000 == 0x0000)) goto labelFunc06A6_002A;
-	var0001 = UI_execute_usecode_array(item, [(byte)0x52, "@Help me!@"]);
+	var0001 = UI_execute_usecode_array(item, [(byte)0x52, "@救我！@"]);
 labelFunc06A6_002A:
 	if (!(var0000 == 0x0001)) goto labelFunc06A6_0044;
-	var0001 = UI_execute_usecode_array(item, [(byte)0x52, "@The button! Press the button!@"]);
+	var0001 = UI_execute_usecode_array(item, [(byte)0x52, "@按鈕！按下按鈕！@"]);
 labelFunc06A6_0044:
 	if (!(var0000 == 0x0002)) goto labelFunc06A6_005E;
-	var0001 = UI_execute_usecode_array(item, [(byte)0x52, "@The flames -- burning me!@"]);
+	var0001 = UI_execute_usecode_array(item, [(byte)0x52, "@火焰——正在燒我！@"]);
 labelFunc06A6_005E:
 	if (!(var0000 == 0x0003)) goto labelFunc06A6_0078;
-	var0001 = UI_execute_usecode_array(item, [(byte)0x52, "@Please!@"]);
+	var0001 = UI_execute_usecode_array(item, [(byte)0x52, "@拜託！@"]);
 labelFunc06A6_0078:
 	if (!(var0000 == 0x0004)) goto labelFunc06A6_00A2;
 	var0002 = Func09A0(0x0000, 0x0001);

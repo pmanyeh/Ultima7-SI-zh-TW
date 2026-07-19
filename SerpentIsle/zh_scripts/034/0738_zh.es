@@ -24,7 +24,7 @@ labelFunc0738_002D:
 labelFunc0738_004E:
 	goto labelFunc0738_005D;
 labelFunc0738_0051:
-	Func097F(0xFE9C, "@What a strange place...@", 0x000A);
+	Func097F(0xFE9C, "@真是個奇怪的地方……@", 0x000A);
 labelFunc0738_005D:
 	return;
 }

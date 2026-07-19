@@ -30,7 +30,7 @@ labelFunc08D0_0053:
 	UI_sprite_effect(0x0007, (var0000[0x0001] - 0x0001), (var0000[0x0002] - 0x0001), 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_play_sound_effect(0x0082);
 	var0007 = UI_direction_from(0xFF5D, 0xFE9C);
-	var0008 = UI_execute_usecode_array(0xFF5D, [(byte)0x52, "@Prepare to die...@", (byte)0x59, var0007, (byte)0x6F, (byte)0x27, 0x0004, (byte)0x70, (byte)0x27, 0x0003, (byte)0x61, (byte)0x55, 0x04A3]);
+	var0008 = UI_execute_usecode_array(0xFF5D, [(byte)0x52, "@準備受死吧……@", (byte)0x59, var0007, (byte)0x6F, (byte)0x27, 0x0004, (byte)0x70, (byte)0x27, 0x0003, (byte)0x61, (byte)0x55, 0x04A3]);
 labelFunc08D0_00FF:
 	if (!(UI_get_item_quality(var0005) == 0x0064)) goto labelFunc08D0_0128;
 	UI_remove_item(var0005);

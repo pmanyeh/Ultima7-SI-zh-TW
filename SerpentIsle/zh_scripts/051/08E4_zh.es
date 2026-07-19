@@ -41,7 +41,7 @@ labelFunc08E4_0082:
 	Func0907(var0006, var0009);
 	goto labelFunc08E4_00A0;
 labelFunc08E4_008E:
-	var000A = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@No door!@"]);
+	var000A = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@沒有門！@"]);
 labelFunc08E4_00A0:
 	return;
 }

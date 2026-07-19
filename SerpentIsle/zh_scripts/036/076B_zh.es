@@ -26,7 +26,7 @@ labelFunc076B_0017:
 	var0001 = Func09A0(0x0000, 0x0001);
 	UI_play_music(0x003F, var0001);
 	var0002 = UI_delayed_execute_usecode_array(0xFF31, [(byte)0x23, (byte)0x55, 0x07D2], 0x0002);
-	Func097F(0xFF31, "@Avatar...@", 0x0003);
+	Func097F(0xFF31, "@聖者……@", 0x0003);
 	var0002 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x07D1], 0x0006);
 	var0002 = UI_delayed_execute_usecode_array(0xFF31, [(byte)0x23, (byte)0x55, 0x04CF], 0x000D);
 labelFunc076B_00E0:

@@ -5,7 +5,7 @@ void Func0814 0x814 ()
 	var var0001;
 	var var0002;
 
-	UI_item_say(0xFF4E, "@Thy loss, Avatar.@");
+	UI_item_say(0xFF4E, "@你的損失，聖者。@");
 	var0000 = UI_find_nearby(0xFF4E, 0x0360, 0x0019, 0x0000);
 	if (!var0000) goto labelFunc0814_0062;
 	var0001 = UI_get_distance(0xFF4E, var0000);

@@ -16,7 +16,7 @@ void Func06DB object#(0x6DB) ()
 	var0002 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x06DB], 0x0010);
 	var0002 = UI_set_item_quality(item, (var0000 - 0x0064));
 	if (!(var0000 == 0x0065)) goto labelFunc06DB_005C;
-	UI_item_say(0xFE9C, "@I have a bad feeling...@");
+	UI_item_say(0xFE9C, "@我有種不祥的預感……@");
 labelFunc06DB_005C:
 	UI_play_sound_effect(0x0082);
 	UI_obj_sprite_effect(0xFE9C, 0x0007, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0xFFFF);
@@ -36,14 +36,14 @@ labelFunc06DB_00CD:
 labelFunc06DB_00E6:
 	if (!(var0000 == 0x0005)) goto labelFunc06DB_010B;
 	var0003 = [0x00A8, 0x02DD, 0x0000];
-	Func097F(0xFE9C, "By the Virtues!", 0x0005);
+	Func097F(0xFE9C, "以美德之名！", 0x0005);
 labelFunc06DB_010B:
 	if (!(var0000 == 0x0006)) goto labelFunc06DB_0124;
 	var0003 = [0x03A7, 0x00C6, 0x0000];
 labelFunc06DB_0124:
 	if (!(var0000 == 0x0007)) goto labelFunc06DB_0149;
 	var0003 = [0x03C6, 0x0116, 0x0000];
-	Func097F(0xFE9C, "I have a bad feeling...", 0x0005);
+	Func097F(0xFE9C, "我有種不祥的預感……", 0x0005);
 labelFunc06DB_0149:
 	if (!(var0000 == 0x0008)) goto labelFunc06DB_0162;
 	var0003 = [0x03A7, 0x00C6, 0x0000];

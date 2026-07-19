@@ -45,14 +45,14 @@ labelFunc0723_006E:
 	var0008 = UI_get_item_frame(var0007);
 	if (!(var0008 == 0x0016)) goto labelFunc0723_00FD;
 	UI_set_item_frame(item, 0x0017);
-	Func097F(0xFE9C, "@'Tis working...@", 0x0004);
+	Func097F(0xFE9C, "@有作用了……@", 0x0004);
 	UI_obj_sprite_effect(item, 0x000C, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF);
 	var0006 = UI_execute_usecode_array(var0007, [(byte)0x23, (byte)0x27, 0x0014, (byte)0x46, 0x0015]);
 	UI_play_sound_effect(0x0068);
 	var0008 = 0x0017;
 labelFunc0723_00FD:
 	if (!(var0008 != 0x0017)) goto labelFunc0723_011E;
-	Func097F(0xFE9C, "@That did naught!@", 0x0004);
+	Func097F(0xFE9C, "@那沒起作用！@", 0x0004);
 	UI_play_sound_effect(0x0030);
 	abort;
 	goto labelFunc0723_026A;

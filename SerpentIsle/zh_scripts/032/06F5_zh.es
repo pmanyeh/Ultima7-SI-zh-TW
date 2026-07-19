@@ -11,7 +11,7 @@ void Func06F5 object#(0x6F5) ()
 labelFunc06F5_0024:
 	var0000 = UI_approach_avatar(0xFF2D, 0x0050, 0x0028);
 	UI_play_sound_effect(0x0051);
-	Func097F(0xFF2D, "@Avatar!@", 0x0005);
+	Func097F(0xFF2D, "@聖者！@", 0x0005);
 	UI_set_schedule_type(0xFF2D, 0x0003);
 	return;
 }

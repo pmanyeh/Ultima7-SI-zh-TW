@@ -43,7 +43,7 @@ labelFunc08A1_0193:
 labelFunc08A1_01D0:
 	if (!(UI_get_item_frame(var0001) == 0x0001)) goto labelFunc08A1_01FF;
 	UI_set_item_frame(var0001, 0x0002);
-	var0005 = UI_delayed_execute_usecode_array(var0001, [(byte)0x23, (byte)0x52, "@Thank thee.@"], 0x0005);
+	var0005 = UI_delayed_execute_usecode_array(var0001, [(byte)0x23, (byte)0x52, "@謝謝你。@"], 0x0005);
 labelFunc08A1_01FF:
 	return;
 }

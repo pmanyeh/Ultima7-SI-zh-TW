@@ -25,7 +25,7 @@ labelFunc08D1_0018:
 	UI_sprite_effect(0x0006, (var0005[0x0001] - 0x0001), (var0005[0x0002] - 0x0001), 0x0000, 0x0000, 0x0000, 0xFFFF);
 	var0006 = UI_create_new_object2(0x017E, var0005);
 	Func09AD(var0006);
-	var0007 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@Fresh flesh!@"], var0001);
+	var0007 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@新鮮的肉！@"], var0001);
 	goto labelFunc08D1_0018;
 labelFunc08D1_0099:
 	UI_play_sound_effect(0x0061);

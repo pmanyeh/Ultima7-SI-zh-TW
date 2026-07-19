@@ -22,7 +22,7 @@ labelFunc073A_0054:
 	UI_set_oppressor(0xFFD4, 0xFE9C);
 	UI_set_item_flag(0xFFD4, 0x001D);
 	gflags[0x024E] = true;
-	UI_item_say(0xFFD4, "@This should stop thee!@");
+	UI_item_say(0xFFD4, "@這應該能阻止你！@");
 	var0001 = UI_create_new_object(0x0300);
 	if (!var0001) goto labelFunc073A_00C1;
 	var0002 = UI_update_last_created([0x0928, 0x01DE, 0x0000]);

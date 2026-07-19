@@ -23,7 +23,7 @@ labelFunc03DC_002C:
 	UI_obj_sprite_effect(item, 0x0015, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_set_item_frame(item, (UI_get_random(0x0008) - 0x0001));
 	if (!(UI_get_random(0x0003) == 0x0001)) goto labelFunc03DC_00C4;
-	var0000 = ["@Let us go!@", "@It shows the way!@", "@Try again.@", "@That direction?@", "@Is it broken?@", "@I do not think it works.@"];
+	var0000 = ["@我們走吧！@", "@它指出方向了！@", "@再試一次。@", "@是那個方向？@", "@它壞了嗎？@", "@我覺得它不管用。@"];
 	var0001 = Func0992(0x0001, 0x0000, 0x0000, true);
 	if (!(var0001 != 0xFE9C)) goto labelFunc03DC_00C4;
 	Func097F(var0001, var0000[UI_get_random(UI_get_array_size(var0000))], 0x0005);

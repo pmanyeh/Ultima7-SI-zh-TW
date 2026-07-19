@@ -24,9 +24,9 @@ void Func07D3 object#(0x7D3) ()
 	var0001 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x55, 0x0798], 0x000A);
 	UI_play_sound_effect(0x0027);
 	UI_set_weather(0x0003);
-	Func097F(0xFE9C, "@Oh...@", 0x0002);
-	Func097F(0xFE9C, "@AAAAHHHH!!!!!@", 0x002D);
-	Func097F(0xFE9C, "@NOOOO!!!!!@", 0x003C);
+	Func097F(0xFE9C, "@喔……@", 0x0002);
+	Func097F(0xFE9C, "@啊啊啊啊！！！！！@", 0x002D);
+	Func097F(0xFE9C, "@不！！！！！@", 0x003C);
 	var0002 = UI_find_nearby(0xFE9C, 0x00A0, 0x0005, 0x0000);
 	enum();
 labelFunc07D3_0084:

@@ -229,7 +229,7 @@ labelFunc071D_062E:
 	var0023 = 0xFFFE;
 labelFunc071D_0646:
 	var0024 = UI_get_distance(0xFE9C, var001F);
-	Func097F(0xFE9C, "@That should do it.@", 0x0002);
+	Func097F(0xFE9C, "@這樣應該行了。@", 0x0002);
 	UI_set_item_flag(0xFE9C, 0x0010);
 	var0001 = UI_get_object_position(var001F);
 	UI_si_path_run_usecode(0xFE9C, [var0001[0x0001], (var0001[0x0002] + var0023), 0x0000], 0x000A, item, 0x071D, false);

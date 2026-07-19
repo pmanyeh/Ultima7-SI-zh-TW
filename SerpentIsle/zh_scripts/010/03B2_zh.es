@@ -63,7 +63,7 @@ labelFunc03B2_0107:
 	if (!(!gflags[0x026F])) goto labelFunc03B2_0120;
 	message("「啊，新面孔！你是誰，陌生人，竟敢冒著生命危險來到巨蛇之牙(Serpent's Fang)？混沌的僕人？嗯……我想不是。」");
 	say();
-	message("「我是蘇洛克，巨蛇之牙的治療師(Healer)，我看出你迷路了。也許我能幫你，如果你願意的話。」");
+	message("「我是蘇洛克，巨蛇之牙的治療師，我看出你迷路了。也許我能幫你，如果你願意的話。」");
 	say();
 	goto labelFunc03B2_012C;
 labelFunc03B2_0120:

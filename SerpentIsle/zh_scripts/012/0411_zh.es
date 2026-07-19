@@ -36,10 +36,10 @@ void Func0411 object#(0x411) ()
 	var0002 = Func0953();
 	var0003 = UI_part_of_day();
 	if (!((var0003 > 0x0001) || (var0003 < 0x0006))) goto labelFunc0411_0035;
-	var0003 = "day";
+	var0003 = "白天";
 	goto labelFunc0411_003B;
 labelFunc0411_0035:
-	var0003 = "evening";
+	var0003 = "夜晚";
 labelFunc0411_003B:
 	if (!((event == 0x0007) && UI_get_item_flag(item, 0x001D))) goto labelFunc0411_005E;
 	var0004 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0329]);

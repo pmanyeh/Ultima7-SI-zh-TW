@@ -27,8 +27,8 @@ void Func077E object#(0x77E) ()
 	UI_run_schedule(0xFFDE);
 	UI_play_sound_effect(0x0077);
 	var0002 = UI_delayed_execute_usecode_array(0xFFDD, [(byte)0x23, (byte)0x52, "It worked!"], 0x0001);
-	var0002 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "Amazing!"], 0x0010);
-	var0002 = UI_delayed_execute_usecode_array(0xFFDE, [(byte)0x23, (byte)0x52, "I live!"], 0x0005);
+	var0002 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "驚人！"], 0x0010);
+	var0002 = UI_delayed_execute_usecode_array(0xFFDE, [(byte)0x23, (byte)0x52, "我活過來了！"], 0x0005);
 	if (!(!UI_get_item_flag(0xFFDD, 0x0004))) goto labelFunc077E_0179;
 	gflags[0x0007] = true;
 	UI_move_object(0xFFDD, [0x0813, 0x053A, 0x0000]);

@@ -14,7 +14,7 @@ void Func06D7 object#(0x6D7) ()
 	var var0007;
 
 	if (!(event == 0x000A)) goto labelFunc06D7_0018;
-	var0000 = Func0992(0x0001, "@Let us leave here.@", "@Unusual place...@", true);
+	var0000 = Func0992(0x0001, "@我們離開這裡吧。@", "@不尋常的地方……@", true);
 labelFunc06D7_0018:
 	if (!(event == 0x0003)) goto labelFunc06D7_0178;
 	var0001 = UI_get_item_quality(item);

@@ -20,7 +20,7 @@ void Func091D 0x91D ()
 	UI_play_sound_effect(0x0082);
 	UI_clear_item_say(var0000);
 	UI_halt_scheduled(var0000);
-	var0002 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x52, "@Thank thee!@", (byte)0x27, 0x000A, (byte)0x52, "@Now I feed!!@"], 0x0000);
+	var0002 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x52, "@謝謝你！@", (byte)0x27, 0x000A, (byte)0x52, "@現在我要大快朵頤了！！@"], 0x0000);
 	var0002 = UI_find_nearby(var0000, 0x0113, 0x0000, 0x0010);
 	if (!var0002) goto labelFunc091D_00F7;
 	UI_remove_item(var0002);

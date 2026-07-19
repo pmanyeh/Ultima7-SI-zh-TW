@@ -32,10 +32,10 @@ void Func0410 object#(0x410) ()
 	var0002 = Func0953();
 	var0003 = UI_part_of_day();
 	if (!((var0003 > 0x0001) || (var0003 < 0x0006))) goto labelFunc0410_0035;
-	var0003 = "day";
+	var0003 = "白天";
 	goto labelFunc0410_003B;
 labelFunc0410_0035:
-	var0003 = "evening";
+	var0003 = "夜晚";
 labelFunc0410_003B:
 	if (!(gflags[0x0128] && ((event == 0x0000) && (!gflags[0x00E6])))) goto labelFunc0410_0382;
 	UI_set_npc_id(0xFFF0, (UI_get_npc_id(0xFFF0) + 0x0001));

@@ -14,7 +14,7 @@ void Func08CB 0x8CB ()
 	UI_set_schedule_type(0xFF57, 0x000F);
 	var0000 = UI_find_nearest(item, 0x02EB, 0x0014);
 	if (!var0000) goto labelFunc08CB_006D;
-	UI_item_say(var0000, "@Good morning.@");
+	UI_item_say(var0000, "@早安。@");
 	var0001 = UI_execute_usecode_array(var0000, [(byte)0x27, 0x000C, (byte)0x55, 0x04A0]);
 labelFunc08CB_006D:
 	return;

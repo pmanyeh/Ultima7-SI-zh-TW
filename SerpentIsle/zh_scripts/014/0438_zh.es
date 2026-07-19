@@ -27,9 +27,9 @@ void Func0438 object#(0x438) ()
 	var0004 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0112]);
 labelFunc0438_0036:
 	if (!(event == 0x0001)) goto labelFunc0438_006C;
-	UI_item_say(0xFE9C, "@A moment if thou wilt, sir.@");
+	UI_item_say(0xFE9C, "@如果你願意的話，先生，請等一下。@");
 	0xFFC8->Func07D1();
-	Func097F(0xFFC8, (("@At thy service, " + var0000) + ".@"), 0x0002);
+	Func097F(0xFFC8, (("@為你效勞，" + var0000) + "。@"), 0x0002);
 	UI_set_schedule_type(0xFFC8, 0x0003);
 labelFunc0438_006C:
 	if (!(event == 0x0009)) goto labelFunc0438_04BD;
@@ -39,275 +39,275 @@ labelFunc0438_006C:
 	var0005 = UI_get_item_flag(0xFFC8, 0x001C);
 	if (!(var0005 == false)) goto labelFunc0438_00D0;
 	if (!(gflags[0x003E] == true)) goto labelFunc0438_00BB;
-	message("\"At last, the values of The Fellowship have reached into the ranks of the Pikemen! I am honored.\"");
+	message("「終於，友誼會( The Fellowship )的價值觀傳到了長槍兵( Pikemen )的行列中！我很榮幸。」");
 	say();
-	message("\"I am Leon, a speaker for The Fellowship and former farmer.\"");
+	message("「我是 Leon，友誼會( The Fellowship )的傳教士，以前是個農夫。」");
 	say();
-	UI_add_answer("Fellowship");
+	UI_add_answer("友誼會");
 	goto labelFunc0438_00C3;
 labelFunc0438_00BB:
-	message("\"I always have time for those who come seeking knowledge. Be welcome.\"");
+	message("「我總是有時間接待那些前來尋求知識的人。歡迎。」");
 	say();
-	message("\"I am Leon, a speaker for The Fellowship and former farmer.\"");
+	message("「我是 Leon，友誼會( The Fellowship )的傳教士，以前是個農夫。」");
 	say();
 labelFunc0438_00C3:
 	UI_set_item_flag(0xFFC8, 0x001C);
 	goto labelFunc0438_00DA;
 labelFunc0438_00D0:
-	message("\"As always, I am honored that thou choosest to visit me, ");
+	message("「一如既往，我很榮幸你選擇來拜訪我， ");
 	message(var0002);
-	message(". How may I help thy quest for Unity?\"");
+	message("。我該如何幫助你追求團結( Unity )？」");
 	say();
 labelFunc0438_00DA:
-	UI_add_answer(["goblins", "storms", "bye"]);
+	UI_add_answer(["哥布林", "風暴", "告辭"]);
 labelFunc0438_00EA:
 	converse attend labelFunc0438_04BC;
-	case "Fellowship" attend labelFunc0438_0116:
-	message("\"While the Virtues that Lord British expounded are all very well and good, they are nearly impossible for ordinary people to achieve.\"");
+	case "友誼會" attend labelFunc0438_0116:
+	message("「雖然不列顛王( Lord British )闡述的美德( Virtues )都很好，但普通人幾乎不可能做到。」");
 	say();
-	message("\"Simple people need a simple philosophy.\"");
+	message("「普通人需要簡單的哲學。」");
 	say();
-	message("\"The Triad of Inner Strength is the answer.\"");
+	message("「內在力量三法則( Triad of Inner Strength )就是答案。」");
 	say();
-	UI_remove_answer("Fellowship");
+	UI_remove_answer("友誼會");
 	gflags[0x015F] = true;
-	UI_add_answer("Triad of Inner Strength");
+	UI_add_answer("內在力量三法則");
 	Func0965();
 labelFunc0438_0116:
-	case "Triad of Inner Strength" attend labelFunc0438_013D:
-	UI_remove_answer("Triad of Inner Strength");
-	message("\"The Triad of Inner Strength is based on three basic principles that all people can grasp. The first is Unity. The next is Trust, and the last is Worthiness.\"");
+	case "內在力量三法則" attend labelFunc0438_013D:
+	UI_remove_answer("內在力量三法則");
+	message("「內在力量三法則( Triad of Inner Strength )基於所有人都能掌握的三個基本原則。首先是團結( Unity )。其次是信任( Trust )，最後是價值( Worthiness )。」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["Unity", "Trust", "Worthiness"]);
+	UI_add_answer(["團結", "信任", "價值"]);
 labelFunc0438_013D:
-	case "Unity" attend labelFunc0438_0176:
-	message("\"Surely thou must know the importance of learning to cooperate and work together.\"");
+	case "團結" attend labelFunc0438_0176:
+	message("「你一定知道學習合作與齊心協力的重要性。」");
 	say();
-	message("\"If we seek to live in harmony with one another, there is nothing we cannot accomplish. One rock doth not make a wall. But many rocks can -- with a common purpose.\"");
+	message("「如果我們尋求與彼此和諧相處，就沒有什麼是我們做不到的。一塊石頭築不成牆，但很多石頭——為了同一個目標——就可以。」");
 	say();
-	UI_remove_answer("Unity");
+	UI_remove_answer("團結");
 	gflags[0x0162] = true;
 	if (!((gflags[0x0162] == true) && ((gflags[0x0161] == true) && ((gflags[0x0163] == true) && (gflags[0x0160] == true))))) goto labelFunc0438_0176;
 	UI_pop_answers();
 labelFunc0438_0176:
-	case "Trust" attend labelFunc0438_01AF:
-	message("\"The main stumbling block to Unity lies in a lack of Trust.\"");
+	case "信任" attend labelFunc0438_01AF:
+	message("「通往團結( Unity )的主要絆腳石在於缺乏信任( Trust )。」");
 	say();
-	message("\"If thou dost trust thy brother, thou wouldst not live in fear. Without fear, our lives are happier and Unity may grow and thrive.\"");
+	message("「如果你信任你的兄弟，你就不會生活在恐懼中。沒有恐懼，我們的生活會更快樂，團結就能夠成長茁壯。」");
 	say();
-	UI_remove_answer("Trust");
+	UI_remove_answer("信任");
 	gflags[0x0161] = true;
 	if (!((gflags[0x0162] == true) && ((gflags[0x0161] == true) && ((gflags[0x0163] == true) && (gflags[0x0160] == true))))) goto labelFunc0438_01AF;
 	UI_pop_answers();
 labelFunc0438_01AF:
-	case "Worthiness" attend labelFunc0438_01FB:
-	message("\"How wouldst thou feel, if all that thou hadst strived for were given to a man who had done nothing to deserve it?\"");
+	case "價值" attend labelFunc0438_01FB:
+	message("「如果所有你努力爭取的東西，都被給了一個完全不配得到它的人，你會有什麼感覺？」");
 	say();
-	message("\"I will wager that thou wouldst feel the injustice.\"");
+	message("「我敢打賭你會覺得這很不公平。」");
 	say();
-	message("\"If everyone strives to be worthy of that which they seek, such injustices would be few.\"");
+	message("「如果每個人都努力讓自己配得上他們所追求的事物，這樣的不公平就會少很多。」");
 	say();
-	message("\"Let every person be rewarded according to their merits and Trust and Unity will follow naturally.\"");
+	message("「讓每個人都根據他們的功績獲得回報，信任( Trust )與團結( Unity )自然會隨之而來。」");
 	say();
-	message("\"Following the Triad of Inner Strength allows one to become attuned to the Inner Voice.\"");
+	message("「遵循內在力量三法則( Triad of Inner Strength )，可以讓人與內在之聲( Inner Voice )產生共鳴。」");
 	say();
-	UI_remove_answer("Worthiness");
-	UI_add_answer("Inner Voice");
+	UI_remove_answer("價值");
+	UI_add_answer("內在之聲");
 	gflags[0x0163] = true;
 	if (!((gflags[0x0162] == true) && ((gflags[0x0161] == true) && ((gflags[0x0163] == true) && (gflags[0x0160] == true))))) goto labelFunc0438_01FB;
 	UI_pop_answers();
 labelFunc0438_01FB:
-	case "Inner Voice" attend labelFunc0438_0234:
-	message("\"The Inner Voice is within all living beings. It flows from pure instinct and contains all the wisdom and irreproachable logic that anyone would ever need to live peacefully and happily.\"");
+	case "內在之聲" attend labelFunc0438_0234:
+	message("「內在之聲( Inner Voice )存在於所有生物體內。它源自純粹的本能，包含了任何人在平靜幸福的生活中所需要的所有智慧與無可挑剔的邏輯。」");
 	say();
-	message("\"If everyone learned to listen to their Inner Voice, I could return to Britannia and farm contentedly for the rest of my life.\"");
+	message("「如果每個人都學會傾聽他們的內在之聲( Inner Voice )，我就可以回到不列顛尼亞( Britannia )，心滿意足地種一輩子田。」");
 	say();
-	UI_remove_answer("Inner Voice");
+	UI_remove_answer("內在之聲");
 	gflags[0x0160] = true;
 	if (!((gflags[0x0162] == true) && ((gflags[0x0161] == true) && ((gflags[0x0163] == true) && (gflags[0x0160] == true))))) goto labelFunc0438_0234;
 	UI_pop_answers();
 labelFunc0438_0234:
-	case "philosophy" attend labelFunc0438_0246:
-	UI_remove_answer("philosophy");
+	case "哲學" attend labelFunc0438_0246:
+	UI_remove_answer("哲學");
 	Func0966();
 labelFunc0438_0246:
-	case "goblins" attend labelFunc0438_02E0:
-	UI_remove_answer("goblins");
+	case "哥布林" attend labelFunc0438_02E0:
+	UI_remove_answer("哥布林");
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0438_026B;
-	message("\"Now that Lady Yelinda hath admitted my people within the city walls, we shall be safe from the goblins.\"");
+	message("「現在 Yelinda 夫人允許我的人民進入城牆內，我們就不怕哥布林了。」");
 	say();
 	goto labelFunc0438_02E0;
 labelFunc0438_026B:
 	if (!(gflags[0x003E] == true)) goto labelFunc0438_029D;
 	if (!(gflags[0x014E] == true)) goto labelFunc0438_028E;
-	message("\"Without the fine aid of thee and thy Monitorian comrades, these poor sailors and I would have been lost long ago.\"");
+	message("「如果沒有你和你的蒙利多( Monitorian )同志的美好幫助，這些可憐的水手和我早就迷失了。」");
 	say();
-	message("\"Kylista refused us the safety of the city walls, even when the tower fell to the barbaric goblins.\"");
+	message("「Kylista 拒絕讓我們在城牆內避難，甚至在塔樓落入野蠻的哥布林手中時也是如此。」");
 	say();
-	message("\"I never thought that I would rue the day that another intelligent being learned the truths of The Fellowship.\"");
+	message("「我從沒想過我會後悔另一個有智慧的生物學到了友誼會( The Fellowship )的真理的那一天。」");
 	say();
-	message("\"But we would be doing far better if the goblins had not found Unity under the leadership of Pomdirgun.\"");
+	message("「但如果哥布林沒有在 Pomdirgun 的領導下團結起來，我們的處境會好得多。」");
 	say();
 	goto labelFunc0438_029A;
 labelFunc0438_028E:
-	message("\"Hast thou come seeking the wisdom of The Fellowship so that thee and thy Monitorian comrades can reclaim the tower?\"");
+	message("「你來尋求友誼會( The Fellowship )的智慧，是為了讓你和你的蒙利多( Monitorian )同志能奪回塔樓嗎？」");
 	say();
-	message("\"Even now, Kylista refuses us refuge within the city walls.\"");
+	message("「即使到現在，Kylista 仍然拒絕我們在城牆內避難。」");
 	say();
-	message("\"Obviously, she fears the truths of The Fellowship as much as she fears Pomdirgun.\"");
+	message("「顯然，她害怕友誼會( The Fellowship )的真理，就像她害怕 Pomdirgun 一樣。」");
 	say();
 labelFunc0438_029A:
 	goto labelFunc0438_02C4;
 labelFunc0438_029D:
 	if (!(gflags[0x014E] == true)) goto labelFunc0438_02B8;
-	message("\"Without the fine aid of the Pikemen, these poor sailors and I would have been lost long ago.\"");
+	message("「如果沒有長槍兵( Pikemen )的美好幫助，這些可憐的水手和我早就迷失了。」");
 	say();
-	message("\"Kylista refused us the safety of the city walls, even when the tower fell to the barbaric goblins.\"");
+	message("「Kylista 拒絕讓我們在城牆內避難，甚至在塔樓落入野蠻的哥布林手中時也是如此。」");
 	say();
-	message("\"I never thought that I would rue the day that another intelligent being learned the truths of The Fellowship.\"");
+	message("「我從沒想過我會後悔另一個有智慧的生物學到了友誼會( The Fellowship )的真理的那一天。」");
 	say();
-	message("\"But we would be doing far better if the goblins had not found Unity under the leadership of Pomdirgun.\"");
+	message("「但如果哥布林沒有在 Pomdirgun 的領導下團結起來，我們的處境會好得多。」");
 	say();
 	goto labelFunc0438_02C4;
 labelFunc0438_02B8:
-	message("\"Thou art one among many that have come seeking the wisdom of The Fellowship to withstand these difficult times.\"");
+	message("「你是許多來尋求友誼會( The Fellowship )的智慧以抵禦這些艱難時刻的其中一人。」");
 	say();
-	message("\"Thou shouldst not stay overlong outside the city walls, even if Kylista refuses refuge to me and my companions.\"");
+	message("「你不應該在城牆外停留太久，即使 Kylista 拒絕讓我及我的同伴避難。」");
 	say();
-	message("\"Obviously, she fears the truths of The Fellowship as much as she fears Pomdirgun.\"");
+	message("「顯然，她害怕友誼會( The Fellowship )的真理，就像她害怕 Pomdirgun 一樣。」");
 	say();
 labelFunc0438_02C4:
 	UI_add_answer(["Kylista", "Pomdirgun"]);
 	if (!(gflags[0x015F] == false)) goto labelFunc0438_02E0;
-	UI_add_answer("Fellowship");
+	UI_add_answer("友誼會");
 labelFunc0438_02E0:
 	case "Kylista" attend labelFunc0438_0302:
-	message("\"She is the Priestess of Beauty -- the cult that controls Fawn.\"");
+	message("「她是一位美之祭司( Priestess of Beauty )——這個控制著幼鹿城( Fawn )的邪教。」");
 	say();
-	message("\"Kylista presides over the Oracle, which never varies in supporting her views...\"");
+	message("「Kylista 主持神諭( Oracle )，神諭總是毫不動搖地支持她的觀點……」");
 	say();
-	message("\"One might suspect that Kylista uses the Oracle to increase her own personal power. But I have no idea how such a thing would be accomplished.\"");
+	message("「有人可能會懷疑 Kylista 利用神諭( Oracle )來增加她自己的個人權力。但我不知道她是怎麼做到的。」");
 	say();
 	UI_remove_answer("Kylista");
-	UI_add_answer("Oracle");
+	UI_add_answer("神諭");
 labelFunc0438_0302:
-	case "Oracle" attend labelFunc0438_0324:
-	message("\"It was commissioned by Lady Fawn herself, and built by the Mages of Britannia.\"");
+	case "神諭" attend labelFunc0438_0324:
+	message("「它是由幼鹿城夫人( Lady Fawn )親自委託，並由不列顛尼亞( Britannia )的法師們建造的。」");
 	say();
-	message("\"'Twas to be an instrument of truth... I cannot say that that is still so.\"");
+	message("「它本該是傳達真理的工具……我不能說現在還是如此。」");
 	say();
-	message("\"It gives revelations throughout the day.\"");
+	message("「它全天候地給予啟示。」");
 	say();
-	UI_remove_answer("Oracle");
-	UI_add_answer("revelations");
+	UI_remove_answer("神諭");
+	UI_add_answer("啟示");
 labelFunc0438_0324:
-	case "revelations" attend labelFunc0438_0346:
-	message("\"For the most part, they are simple platitudes that further ingrain their reverence of Beauty.\"");
+	case "啟示" attend labelFunc0438_0346:
+	message("「在大多數情況下，它們只是些簡單的陳詞濫調，用來進一步根植他們對美( Beauty )的崇敬。」");
 	say();
-	message("\"They do nothing to help the people improve their lives.\"");
+	message("「它們對幫助人們改善生活毫無作為。」");
 	say();
-	message("\"At other times -- like when the sailors and I were banished from the city -- they reflect the wishes of Kylista and the Great Captains.\"");
+	message("「在其他時候——比如我和水手們被逐出城市時——它們反映的是 Kylista 和大船長( Great Captains )們的意願。」");
 	say();
-	UI_remove_answer("revelations");
-	UI_add_answer("Great Captains");
+	UI_remove_answer("啟示");
+	UI_add_answer("大船長");
 labelFunc0438_0346:
-	case "Great Captains" attend labelFunc0438_0370:
-	message("\"They are the counselors of Lady Yelinda, by title. They control the fishing fleets... or did before the storms began.\"");
+	case "大船長" attend labelFunc0438_0370:
+	message("「他們名義上是 Yelinda 夫人的顧問。他們控制著捕魚艦隊……或者說在風暴開始之前是這樣的。」");
 	say();
-	message("\"In reality, they control all of Fawn. It is painfully obvious that Lady Yelinda is merely a figurehead to be manipulated by Zulith at the behest of Garth, Joth, and Voldin.\"");
+	message("「實際上，他們控制著整個幼鹿城( Fawn )。痛苦而明顯的事實是，Yelinda 夫人只是一個在 Garth、Joth 和 Voldin 的命令下，被 Zulith 操縱的傀儡。」");
 	say();
-	UI_remove_answer("Great Captains");
+	UI_remove_answer("大船長");
 	UI_add_answer(["Zulith", "Garth", "Joth", "Voldin"]);
 labelFunc0438_0370:
 	case "Zulith" attend labelFunc0438_038B:
-	message("\"'Tis easy enough to overlook him, unless he wants thy notice. He is a simpering little man who styles himself as the consort of Lady Yelinda.\"");
+	message("「除非他想引起你的注意，否則很容易就會忽視他。他是個傻笑的小個子，自詡為 Yelinda 夫人的伴侶。」");
 	say();
-	message("\"Sadly, she pays no more heed of him than her mirror. Her interests, I think, lie more in line with Jorvin, Captain of the Guard.\"");
+	message("「可悲的是，她對他的關注並不比對她的鏡子多。我認為她的興趣比較偏向護衛隊指揮官 Jorvin。」");
 	say();
-	message("\"Zulith is a puppet for Kylista and the Great Captains. But beware of him, friend, for he can be vicious if slighted.\"");
+	message("「Zulith 是 Kylista 和大船長( Great Captains )們的傀儡。但要小心他，朋友，因為如果他被怠慢了，他可能會變得非常惡毒。」");
 	say();
 	UI_remove_answer("Zulith");
 labelFunc0438_038B:
 	case "Garth" attend labelFunc0438_03A2:
-	message("\"Garth is the most junior of the three Great Captains. His interests seem to lie mostly in impressing the ladies of the city.\"");
+	message("「Garth 是三位大船長( Great Captains )中最資淺的一位。他的興趣似乎主要在於給城裡的女士們留下好印象。」");
 	say();
-	message("\"I do not think he dares go against the wishes of the other two Captains.\"");
+	message("「我不認為他敢違背其他兩位船長的意願。」");
 	say();
 	UI_remove_answer("Garth");
 labelFunc0438_03A2:
 	case "Joth" attend labelFunc0438_03B5:
-	message("\"Joth is the only one of the Great Captains that seems to have any real interest in the fleets. He would certainly be more at home on the deck of a ship than here on land.\"");
+	message("「Joth 是大船長( Great Captains )中唯一似乎對艦隊有任何真正興趣的人。他在船甲板上肯定會比在陸地上更自在。」");
 	say();
 	UI_remove_answer("Joth");
 labelFunc0438_03B5:
 	case "Voldin" attend labelFunc0438_03D0:
-	message("\"Voldin is perhaps the person who would most benefit from practicing Worthiness.\"");
+	message("「Voldin 也許是最能從實踐價值( Worthiness )中獲益的人。」");
 	say();
-	message("\"I have heard that he is diverting funds from the fleets for his own gain. But who can say for sure?\"");
+	message("「我聽說他為了自己的利益而挪用艦隊的資金。但誰敢肯定呢？」");
 	say();
-	message("\"It is his heavy hand that holds the reins of the city. Thou shouldst be careful around him. He is a violent man.\"");
+	message("「正是他那雙沉重的手掌握著這座城市的韁繩。你在他身邊應該要小心。他是個暴力的人。」");
 	say();
 	UI_remove_answer("Voldin");
 labelFunc0438_03D0:
 	case "Pomdirgun" attend labelFunc0438_03E7:
-	message("\"He hath but lately declared himself chief of all goblins.\"");
+	message("「他最近才宣布自己是所有哥布林的首領。」");
 	say();
-	message("\"Where once they could be discouraged by the mere presence of armed resistance, they now are bold and organized. They no longer flee, but stay and fight.\"");
+	message("「過去只要武裝力量一出現，他們就會退縮，但現在他們變得大膽且有組織。他們不再逃跑，而是留下來戰鬥。」");
 	say();
 	UI_remove_answer("Pomdirgun");
 labelFunc0438_03E7:
-	case "storms" attend labelFunc0438_0405:
-	message("\"The storms at sea cannot compare to these unnatural occurrences. Their very existence says that we are in a land so far from the natural order of things that even the skies lash out at us.\"");
+	case "風暴" attend labelFunc0438_0405:
+	message("「海上的風暴無法與這些反常現象相比。它們的存在本身就說明了，我們身處一個遠離事物自然秩序的土地，甚至連天空都在抨擊我們。」");
 	say();
-	message("\"Batlin was right. We cannot hope to survive if Unity is not brought to this place.\"");
+	message("「Batlin 是對的。如果不能將團結( Unity )帶到這個地方，我們就不能奢望生存下去。」");
 	say();
-	UI_remove_answer("storms");
+	UI_remove_answer("風暴");
 	UI_add_answer("Batlin");
 labelFunc0438_0405:
 	case "Batlin" attend labelFunc0438_0444:
-	message("\"Thou knowest Batlin?\"");
+	message("「你認識 Batlin？」");
 	say();
 	var0006 = Func0955();
 	if (!var0006) goto labelFunc0438_0431;
-	message("\"What canst thou tell us of home? What news of his noble cause?\"");
+	message("「關於家鄉的事，你能告訴我們些什麼？他的崇高事業有什麼消息嗎？」");
 	say();
-	UI_add_answer(["All Is Well.", "It Hath Been Disbanded."]);
+	UI_add_answer(["一切都好。", "它已經解散了。"]);
 	goto labelFunc0438_043D;
 labelFunc0438_0431:
-	message("\"What a wondrous man of insight he is!\"");
+	message("「他是個多麼了不起、多麼有洞察力的人啊！」");
 	say();
-	message("\"Without him giving voice to the Triad of Inner Strength, we would all be doomed to failure... failure to live up to Lord British's high standards, or realize the full potential of every one of us.\"");
+	message("「如果沒有他為內在力量三法則( Triad of Inner Strength )發聲，我們都註定會失敗……無法達到不列顛王( Lord British )的高標準，或者無法實現我們每個人的全部潛力。」");
 	say();
-	message("\"'Tis a pity that thou didst miss him. He hath gone inland to spread word of The Fellowship.\"");
+	message("「很遺憾你錯過了他。他已經前往內陸傳播友誼會( The Fellowship )的福音了。」");
 	say();
 labelFunc0438_043D:
 	UI_remove_answer("Batlin");
 labelFunc0438_0444:
-	case "All Is Well." attend labelFunc0438_0457:
-	message("\"Marvelous! Soon thou shalt see, everyone shall embrace the Triad of Inner Strength. The storms shall end and we shall live in peace and happiness all our days.\"");
+	case "一切都好。" attend labelFunc0438_0457:
+	message("「太棒了！你很快就會看到，每個人都會接受內在力量三法則( Triad of Inner Strength )。風暴將會結束，我們餘生都將生活在和平與幸福中。」");
 	say();
-	UI_remove_answer("All Is Well.");
+	UI_remove_answer("一切都好。");
 labelFunc0438_0457:
-	case "It Hath Been Disbanded." attend labelFunc0438_048A:
-	message("\"This is unthinkable! Surely there hath been some mistake!\"");
+	case "它已經解散了。" attend labelFunc0438_048A:
+	message("「這簡直不可思議！肯定是哪裡弄錯了！」");
 	say();
-	message("\"There is nothing evil in our principles! They are meant for all, without regard for station of birth.\"");
+	message("「我們的原則中沒有任何邪惡！它們是為所有人而設的，不分出身地位。」");
 	say();
-	message("\"Batlin must be told of this! If he returns to Britannia to explain to Lord British, I am sure that everything will be settled.\"");
+	message("「必須告訴 Batlin 這件事！如果他回到不列顛尼亞( Britannia )向不列顛王( Lord British )解釋，我相信一切都會解決的。」");
 	say();
-	message("\"Perhaps our good name was degraded by those wishing to stop our ministering... But that shows a lack of Trust.\"");
+	message("「也許我們的好名聲被那些想阻止我們傳教的人給貶低了……但這顯示出他們缺乏信任( Trust )。」");
 	say();
-	message("\"I must meditate on this. Mine Inner Voice will no doubt provide an answer for such horrible news.\"");
+	message("「我必須對此進行冥想。毫無疑問，我的內在之聲( Inner Voice )會為這樣可怕的消息提供一個答案。」");
 	say();
-	Func097F(0xFFC8, "@This cannot be!@", 0x0000);
+	Func097F(0xFFC8, "@這不可能！@", 0x0000);
 	UI_set_schedule_type(0xFFC8, 0x0014);
 	abort;
 labelFunc0438_048A:
-	case "bye" attend labelFunc0438_04B9:
+	case "告辭" attend labelFunc0438_04B9:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Many thanks for thine help.@", 0x0000);
-	Func097F(0xFFC8, (("@Go in Fellowship, " + var0002) + ".@"), 0x0005);
+	Func097F(0xFE9C, "@非常感謝你的幫助。@", 0x0000);
+	Func097F(0xFFC8, (("@願你與友誼同行，" + var0002) + "。@"), 0x0005);
 	goto labelFunc0438_04BC;
 labelFunc0438_04B9:
 	goto labelFunc0438_00EA;
@@ -316,5 +316,3 @@ labelFunc0438_04BC:
 labelFunc0438_04BD:
 	return;
 }
-
-

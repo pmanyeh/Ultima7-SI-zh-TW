@@ -51,7 +51,7 @@ labelFunc062D_0085:
 	Func090D(var0004, var0006, var0007, var0008, 0x028B, var0004, 0x000A);
 	goto labelFunc062D_00F1;
 labelFunc062D_00E5:
-	var0009 = "@Why dost thou not spin that wool into thread?@";
+	var0009 = "@你為什麼不把那些羊毛紡成線呢？@";
 	Func094A(var0009);
 labelFunc062D_00F1:
 	return;

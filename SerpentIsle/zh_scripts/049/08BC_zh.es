@@ -40,7 +40,7 @@ labelFunc08BC_00FD:
 labelFunc08BC_0132:
 	if (!(event == 0x0002)) goto labelFunc08BC_016A;
 	if (!((UI_get_item_shape(item) == 0x00F3) && (!gflags[0x0248]))) goto labelFunc08BC_016A;
-	var0001 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "Scratch... scratch.", (byte)0x27, 0x000F, (byte)0x55, 0x07E7], 0x000A);
+	var0001 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "抓……抓。", (byte)0x27, 0x000F, (byte)0x55, 0x07E7], 0x000A);
 labelFunc08BC_016A:
 	return;
 }

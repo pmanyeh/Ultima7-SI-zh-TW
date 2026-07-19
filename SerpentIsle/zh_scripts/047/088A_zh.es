@@ -64,7 +64,7 @@ labelFunc088A_015A:
 labelFunc088A_015B:
 	var0005 = Func090C(0xFE9C, var0001);
 	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x59, var0005, (byte)0x01, (byte)0x6A]);
-	Func097F(var0001, "@Cease and desist!@", 0x0000);
+	Func097F(var0001, "@立刻停止！@", 0x0000);
 	return;
 labelFunc088A_018A:
 	var0006 = UI_get_item_shape(var0001[0x0001]);

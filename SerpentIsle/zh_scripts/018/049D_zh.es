@@ -24,15 +24,15 @@ labelFunc049D_009D:
 	abort;
 labelFunc049D_009E:
 	if (!(event == 0x0001)) goto labelFunc049D_010D;
-	UI_item_say(0xFE9C, "@Pardon me...@");
+	UI_item_say(0xFE9C, "@請原諒我……@");
 	0xFF63->Func07D1();
 	if (!UI_npc_nearby(0xFF64)) goto labelFunc049D_00E5;
-	Func097F(0xFF63, "@Go away!@", 0x0003);
+	Func097F(0xFF63, "@走開！@", 0x0003);
 	UI_set_schedule_type(0xFF64, 0x0009);
-	Func097F(0xFF64, "@Leave him alone!@", 0x0005);
+	Func097F(0xFF64, "@離他遠一點！@", 0x0005);
 	goto labelFunc049D_0103;
 labelFunc049D_00E5:
-	Func097F(0xFF63, "@I am not a spy...@", 0x0003);
+	Func097F(0xFF63, "@我不是間諜……@", 0x0003);
 	UI_set_npc_id(0xFF63, (UI_get_npc_id(0xFF63) + 0x0001));
 labelFunc049D_0103:
 	UI_set_schedule_type(0xFF63, 0x0014);

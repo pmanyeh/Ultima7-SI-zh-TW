@@ -40,7 +40,7 @@ labelFunc0815_005A:
 	if (!var0001) goto labelFunc0815_009F;
 	var0007 = UI_get_object_position(item);
 	UI_si_path_run_usecode(0xFF69, var0007, 0x0007, item, 0x0314, false);
-	var0006 = UI_delayed_execute_usecode_array(var0001, [(byte)0x23, (byte)0x52, "@Thou art truly ethical!@"], 0x000A);
+	var0006 = UI_delayed_execute_usecode_array(var0001, [(byte)0x23, (byte)0x52, "@你真是太有道德了！@"], 0x000A);
 	UI_set_npc_id(0xFF69, 0x0005);
 labelFunc0815_009F:
 	abort;

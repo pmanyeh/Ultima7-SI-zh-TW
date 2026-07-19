@@ -6,7 +6,7 @@ extern void Func0919 0x919 (var var0000);
 void Func04CC object#(0x4CC) ()
 {
 	if (!(event == 0x0001)) goto labelFunc04CC_001C;
-	UI_item_say(0xFE9C, "Excuse me...");
+	UI_item_say(0xFE9C, "打擾一下……");
 	0xFF34->Func07D1();
 	Func0919(item);
 labelFunc04CC_001C:

@@ -9,7 +9,7 @@ void Func0856 0x856 ()
 	var var0002;
 	var var0003;
 
-	Func097F(item, "@Attack him!@", 0x0000);
+	Func097F(item, "@攻擊他！@", 0x0000);
 	if (!(UI_part_of_day() < 0x0002)) goto labelFunc0856_001E;
 	var0000 = 0x0003;
 	goto labelFunc0856_0024;
@@ -25,13 +25,13 @@ labelFunc0856_0024:
 	var0002 = UI_approach_avatar(var0001, 0x0050, 0x0028);
 	var0003 = UI_get_random(0x0006);
 	if (!(var0003 == 0x0001)) goto labelFunc0856_009C;
-	Func097F(var0001, "@Lor glak!@", UI_get_random(0x0014));
+	Func097F(var0001, "@囉 嘎！@", UI_get_random(0x0014));
 labelFunc0856_009C:
 	if (!(var0003 == 0x0002)) goto labelFunc0856_00B6;
-	Func097F(var0001, "@Ska ska krak!@", UI_get_random(0x0014));
+	Func097F(var0001, "@斯卡 斯卡 克拉克！@", UI_get_random(0x0014));
 labelFunc0856_00B6:
 	if (!(var0003 == 0x0003)) goto labelFunc0856_00D0;
-	Func097F(var0001, "@Grik!@", UI_get_random(0x0014));
+	Func097F(var0001, "@咯哩！@", UI_get_random(0x0014));
 labelFunc0856_00D0:
 	var0000 = (var0000 - 0x0001);
 	goto labelFunc0856_0024;

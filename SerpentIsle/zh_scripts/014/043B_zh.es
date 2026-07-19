@@ -51,12 +51,12 @@ void Func043B object#(0x43B) ()
 labelFunc043B_006A:
 	if (!((event == 0x0000) || (event == 0x000E))) goto labelFunc043B_008B;
 	UI_run_schedule(0xFFC5);
-	Func097F(0xFFC5, "@I must work...@", 0x0002);
+	Func097F(0xFFC5, "@我必須工作……@", 0x0002);
 labelFunc043B_008B:
 	if (!(event == 0x0001)) goto labelFunc043B_00B9;
-	UI_item_say(0xFE9C, "@Excuse me, friend.@");
+	UI_item_say(0xFE9C, "@打擾一下，朋友。@");
 	0xFFC5->Func07D1();
-	Func097F(0xFFC5, "@How may I be of service?@", 0x0002);
+	Func097F(0xFFC5, "@我能為你效勞嗎？@", 0x0002);
 	UI_set_schedule_type(0xFFC5, 0x0003);
 labelFunc043B_00B9:
 	if (!(event == 0x0009)) goto labelFunc043B_093E;
@@ -71,32 +71,32 @@ labelFunc043B_00B9:
 	UI_clear_item_flag(0xFE9C, 0x0010);
 	UI_set_new_schedules(0xFFC5, [0x0002, 0x0005, 0x0006, 0x0007], [0x001A, 0x0006, 0x001A, 0x000E], [0x0479, 0x076B, 0x04BC, 0x0741, 0x0479, 0x076B, 0x049D, 0x0752]);
 	UI_run_schedule(0xFFC5);
-	message("\"Oh, please, ");
+	message("「喔，拜託，");
 	message(var0000);
-	message(", a favor!\"");
+	message("，幫個忙！」");
 	say();
 	if (!(var0009 == false)) goto labelFunc043B_0177;
-	message("\"My name is Ruggs. I am a poor sailor whose visage offends the good people of Fawn, and I have been forbidden entry into the city.\"");
+	message("「我的名字是 Ruggs。我是個可憐的水手，因為我的容貌冒犯了幼鹿城( Fawn )的好人們，所以我被禁止進入城內。」");
 	say();
 	goto labelFunc043B_017B;
 labelFunc043B_0177:
-	message("\"My visage offends the good people of Fawn, and I have been forbidden entry into the city.\"");
+	message("「我的容貌冒犯了幼鹿城( Fawn )的好人們，所以我被禁止進入城內。」");
 	say();
 labelFunc043B_017B:
-	message("\"I have not heard from the lady I love since mine exile, and I can find no one willing to carry her word of my continuing devotion.\"");
+	message("「自從我被放逐後，我就沒收到過我深愛的女士的消息，我也找不到人願意替我傳達我持續不變的愛意。」");
 	say();
-	message("\"Please, ");
+	message("「拜託，");
 	message(var0000);
-	message(", I beg of thee, wouldst thou take this letter to her for me?\"");
+	message("，我求求你，你能替我把這封信交給她嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc043B_020C;
-	message("\"Oh, I knew by the nobility of thy face that thou wouldst take pity on a wretch such as myself!\"");
+	message("「哦，我從你臉上高貴的氣質就知道，你會憐憫我這個可憐人的！」");
 	say();
-	message("\"Take this to Delphynia, the herbalist. Thou mayest find her at the greenhouse.\"");
+	message("「把這個交給草藥學家 Delphynia。你可以在溫室裡找到她。」");
 	say();
-	message("\"If thou shouldst bring a return message, I will introduce thee to my shipmate, Scots, who makes maps.\"");
+	message("「如果你能帶回回信，我會把你介紹給我的船員朋友，做地圖的 Scots。」");
 	say();
-	message("\"Perhaps his cartography would be of aid to thee.\"");
+	message("「或許他的製圖技術能幫上你的忙。」");
 	say();
 	var0008 = Func099B(0xFE9C, 0x0001, 0x031D, 0x0004, 0x0005, false, true);
 	gflags[0x0152] = true;
@@ -113,24 +113,24 @@ labelFunc043B_01F6:
 	abort;
 	goto labelFunc043B_03D4;
 labelFunc043B_020C:
-	message("\"I have searched all my life for a woman who would overlook my deformity and learn to love me. Somehow I will find a way to tell Delphynia of my love...\"");
+	message("「我一輩子都在尋找一個能忽視我的畸形並學著去愛我的女人。我總會找到方法向 Delphynia 傾訴我的愛的……」");
 	say();
 	if (!(var0003 == true)) goto labelFunc043B_031C;
 	UI_show_npc_face1(0xFFFD, 0x0000);
-	message("\"How can thine heart be so hard, Avatar? Thou wouldst search every corner of the land and sea to help me find Gwenno.\"");
+	message("「你的心怎麼能這麼硬，聖者( Avatar )？你為了幫我找 Gwenno，連陸地和海洋的每個角落都找遍了。」");
 	say();
-	message("\"Wilt thou reconsider and aid this poor soul's search for love?\"");
+	message("「難道你不願意重新考慮，幫助這個可憐的靈魂尋找真愛嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc043B_02B4;
 	UI_set_conversation_slot(0x0000);
-	message("\"There may be hope after all... Here is the scroll.\"");
+	message("「也許終究還是有希望的……這是那捲軸。」");
 	say();
 	var0008 = Func099B(0xFE9C, 0x0001, 0x031D, 0x0004, 0x0005, false, true);
-	message("\"Take this to Delphynia, the herbalist. Thou mayest find her at the greenhouse.\"");
+	message("「把這個交給草藥學家 Delphynia。你可以在溫室裡找到她。」");
 	say();
-	message("\"If thou shouldst bring a return message, I will introduce thee to my shipmate, Scots, who makes maps.\"");
+	message("「如果你能帶回回信，我會把你介紹給我的船員朋友，做地圖的 Scots。」");
 	say();
-	message("\"Perhaps his cartography would be of aid to thee.\"");
+	message("「或許他的製圖技術能幫上你的忙。」");
 	say();
 	gflags[0x0152] = true;
 	var000B = UI_find_nearby(0xFE9C, 0x017D, 0x0014, 0x0000);
@@ -146,13 +146,13 @@ labelFunc043B_029E:
 	abort;
 	goto labelFunc043B_031C;
 labelFunc043B_02B4:
-	message("\"I am sure that thou hast thy reasons, Avatar. But I am sorely disappointed.\"");
+	message("「我相信你有你的理由，聖者( Avatar )。但我非常失望。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"The Avatar! Forgive me... unlike these local folk, I know whom thou art!\"");
+	message("「聖者( Avatar )！請原諒我……和這些當地人不同，我知道你是誰！」");
 	say();
-	message("\"I am certain that thy business is far more urgent.\"");
+	message("「我相信你的事情要緊急得多。」");
 	say();
 	gflags[0x0167] = true;
 	var000B = UI_find_nearby(0xFE9C, 0x017D, 0x0014, 0x0000);
@@ -169,22 +169,22 @@ labelFunc043B_0309:
 labelFunc043B_031C:
 	if (!(var0004 == true)) goto labelFunc043B_033D;
 	UI_show_npc_face1(0xFFFF, 0x0000);
-	message("\"Have a drink or two... Thou wilt soon forget her.\"");
+	message("「喝個一兩杯吧……你很快就會忘記她了。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc043B_033D:
 	if (!(var0005 == true)) goto labelFunc043B_0383;
 	UI_show_npc_face1(0xFFFE, 0x0000);
-	message("\"Oh, no... Why is it that everyone expects the Avatar to help with their love life?\"");
+	message("「喔，不……為什麼每個人都指望聖者( Avatar )來幫忙處理他們的感情生活？」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Why... I...\"");
+	message("「為什麼……我……」");
 	say();
 	if (!(var0003 == true)) goto labelFunc043B_0383;
 	UI_show_npc_face1(0xFFFD, 0x0000);
-	message("\"Thou wouldst not be so hard, Shamino, if thou hadst lost thy love!\"");
+	message("「如果你也失去了你的愛人，你就不會這麼冷酷了，Shamino！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -209,375 +209,375 @@ labelFunc043B_03D4:
 labelFunc043B_03EF:
 	if (!(var0009 == false)) goto labelFunc043B_041B;
 	if (!(gflags[0x003E] == true)) goto labelFunc043B_040A;
-	message("\"Greetings, good Knight! The sight of thee and thy companions is always heartening, for the Goblins fear such as thee.\"");
+	message("「向你致敬，好騎士！看到你和你的同伴總是很鼓舞人心，因為哥布林害怕像你們這樣的人。」");
 	say();
-	message("\"I am Ruggs, a poor sailor from Britannia.\tHow may I serve thee today?\"");
+	message("「我是 Ruggs，一個來自不列顛尼亞( Britannia )的可憐水手。今天我能為你做什麼？」");
 	say();
 	goto labelFunc043B_040E;
 labelFunc043B_040A:
-	message("\"I am Ruggs, a poor sailor exiled from Britannia and from Fawn. How may I serve thee today?\"");
+	message("「我是 Ruggs，一個被不列顛尼亞( Britannia )和幼鹿城( Fawn )放逐的可憐水手。今天我能為你做什麼？」");
 	say();
 labelFunc043B_040E:
 	UI_set_item_flag(0xFFC5, 0x001C);
 	goto labelFunc043B_042C;
 labelFunc043B_041B:
 	if (!gflags[0x0004]) goto labelFunc043B_0428;
-	message("\"All is lost, Avatar! All is lost!\"");
+	message("「一切都完了，聖者( Avatar )！一切都完了！」");
 	say();
 	goto labelFunc043B_042C;
 labelFunc043B_0428:
-	message("\"'Tis always a pleasure to see another Britannian at Fawn, Avatar. How may I serve thee today?\"");
+	message("「在幼鹿城( Fawn )能遇到另一個不列顛尼亞( Britannia )人總是一件令人愉快的事，聖者( Avatar )。今天我能為你效勞嗎？」");
 	say();
 labelFunc043B_042C:
 	if (!(!gflags[0x0004])) goto labelFunc043B_0443;
-	UI_add_answer(["Britannia", "Fawn"]);
+	UI_add_answer(["不列顛尼亞", "幼鹿城"]);
 	goto labelFunc043B_0450;
 labelFunc043B_0443:
-	UI_add_answer(["Where is everyone?", "What happened?"]);
+	UI_add_answer(["大家都在哪裡？", "發生了什麼事？"]);
 labelFunc043B_0450:
 	if (!((Func097D(0xFE9B, 0x0001, 0x031D, 0x001B, 0x0000) && (!gflags[0x01A7])) && (!gflags[0x0004]))) goto labelFunc043B_0476;
-	UI_add_answer("letter");
+	UI_add_answer("信");
 labelFunc043B_0476:
-	UI_add_answer("bye");
+	UI_add_answer("告辭");
 labelFunc043B_047D:
 	converse attend labelFunc043B_093D;
-	case "Where is everyone?" attend labelFunc043B_04A8:
-	UI_remove_answer("Where is everyone?");
-	message("\"All dead! Hast thou not seen their bodies heaped about the desolate buildings?\"");
+	case "大家都在哪裡？" attend labelFunc043B_04A8:
+	UI_remove_answer("大家都在哪裡？");
+	message("「全死了！你難道沒看到他們的屍體堆滿在那些荒涼的建築周圍嗎？」");
 	say();
-	message("\"I do not remember it clearly, for my sanity was lost when I found Delphynia's body.\"");
+	message("「我記不太清楚了，因為當我找到 Delphynia 的屍體時，我就失去理智了。」");
 	say();
-	message("\"Lady Yelinda was also spared, but she hath gone into the swamps of Gorlab. I should have gone after her, but I did not. I alone remain in Fawn.\"");
+	message("「Yelinda 夫人也倖免於難，但她已經走進 Gorlab 沼澤了。我本該跟著她的，但我沒有。只有我一個人留在幼鹿城( Fawn )。」");
 	say();
-	UI_add_answer(["Delphynia", "Lady Yelinda"]);
+	UI_add_answer(["Delphynia", "Yelinda 夫人"]);
 labelFunc043B_04A8:
-	case "What happened?" attend labelFunc043B_04CE:
-	UI_remove_answer("What happened?");
-	message("\"What fell companion didst thou harbor, ");
+	case "發生了什麼事？" attend labelFunc043B_04CE:
+	UI_remove_answer("發生了什麼事？");
+	message("「你庇護了什麼邪惡的同伴啊，");
 	message(var0000);
-	message("? The Bard Iolo did come here, and he hath turned Fawn into a mockery...\"");
+	message("？吟遊詩人 Iolo 來到這裡，把幼鹿城( Fawn )變成了一場嘲弄……」");
 	say();
-	UI_add_answer(["Iolo", "mockery"]);
+	UI_add_answer(["Iolo", "嘲弄"]);
 labelFunc043B_04CE:
 	case "Iolo" attend labelFunc043B_04E9:
 	UI_remove_answer("Iolo");
-	message("\"Mad Iolo, he doth call himself now! His eyes are all afire, and he doth act like a man possessed.\"");
+	message("「瘋子 Iolo( Mad Iolo )，他現在是這麼稱呼自己的！他的眼睛充滿了火光，行為舉止就像被附身一樣。」");
 	say();
-	message("\"Such cruel acts did he commit, that I cannot relate them lest my soul shrivel and die.\"");
+	message("「他做出了如此殘忍的行為，以至於我無法轉述，免得我的靈魂枯萎死去。」");
 	say();
-	message("\"Yet Mad Iolo did laugh the entire time...\"");
+	message("「然而瘋子 Iolo 全程都在大笑……」");
 	say();
 labelFunc043B_04E9:
-	case "mockery" attend labelFunc043B_0504:
-	UI_remove_answer("mockery");
-	message("\"There is nothing thou canst do -- all is done for, all is lost!\"");
+	case "嘲弄" attend labelFunc043B_0504:
+	UI_remove_answer("嘲弄");
+	message("「你什麼也做不了——一切都結束了，一切都完了！」");
 	say();
-	message("\"The City of Beauty hath become the City of Blood and Ruin. Only I am left alive.\"");
+	message("「美之城( City of Beauty )已經變成了血與廢墟之城。只有我還活著。」");
 	say();
-	message("\"Dost thou not see the irony? Only I, the ugliest of all, yet remain to dwell in Fawn!\"");
+	message("「你不覺得諷刺嗎？只有我這個最醜陋的人，還留在幼鹿城( Fawn )！」");
 	say();
 labelFunc043B_0504:
-	case "Britannia" attend labelFunc043B_0528:
-	message("\"Our ship was hired by Batlin to transport scholars to explore a new land and spread word of The Fellowship.\"");
+	case "不列顛尼亞" attend labelFunc043B_0528:
+	message("「Batlin 租用了我們的船，用來運送學者去探索新大陸，並傳播友誼會( The Fellowship )的福音。」");
 	say();
-	message("\"Now, even if we wanted to return without Batlin, we cannot venture onto the sea for fear of these terrible storms.\"");
+	message("「現在，就算我們想拋下 Batlin 回去，我們也不敢出海，因為這些可怕的風暴。」");
 	say();
-	UI_remove_answer("Britannia");
-	UI_add_answer(["Batlin", "storms"]);
+	UI_remove_answer("不列顛尼亞");
+	UI_add_answer(["Batlin", "風暴"]);
 labelFunc043B_0528:
 	case "Batlin" attend labelFunc043B_0567:
-	message("\"Thou hast not heard of Batlin? He was the founder of The Fellowship movement, in Britannia.\"");
+	message("「你沒聽說過 Batlin 嗎？他是不列顛尼亞( Britannia )友誼會( The Fellowship )運動的創始人。」");
 	say();
-	message("\"He is a pious and worthy man, for all that he doth have strange companions.\"");
+	message("「他是個虔誠且有價值的人，儘管他有一些奇怪的同伴。」");
 	say();
-	var0015 = Func0992(0x0001, "@His description doth not much fit the Batlin we know, doth it, Avatar?@", 0x0000, false);
+	var0015 = Func0992(0x0001, "@他的描述和我們認識的 Batlin 不太像，對吧，聖者( Avatar )？@", 0x0000, false);
 	if (!(var0015 != 0xFE9C)) goto labelFunc043B_0559;
 	UI_set_conversation_slot(0x0000);
 labelFunc043B_0559:
 	UI_remove_answer("Batlin");
-	UI_add_answer("companions");
+	UI_add_answer("同伴");
 labelFunc043B_0567:
-	case "companions" attend labelFunc043B_0598:
-	message("\"Batlin bade Leon stay and preach to the populace of Fawn and left the ship with three companions: Palos, Brunt and Deadeye.\"");
+	case "同伴" attend labelFunc043B_0598:
+	message("「Batlin 吩咐 Leon 留下來向幼鹿城( Fawn )的民眾傳教，然後帶著三個同伴離開了船：Palos、Brunt 和 Deadeye。」");
 	say();
-	message("\"We have not seen them since. Although they promised to return soon.\"");
+	message("「從那以後我們就沒見過他們了。雖然他們答應會很快回來。」");
 	say();
-	UI_remove_answer("companions");
+	UI_remove_answer("同伴");
 	UI_push_answers();
-	UI_add_answer(["Leon", "Palos", "Brunt", "Deadeye", "change subject"]);
+	UI_add_answer(["Leon", "Palos", "Brunt", "Deadeye", "換個話題"]);
 labelFunc043B_0598:
-	case "change subject" attend labelFunc043B_05A8:
-	message("\"Very well...\"");
+	case "換個話題" attend labelFunc043B_05A8:
+	message("「好吧……」");
 	say();
 	UI_pop_answers();
 labelFunc043B_05A8:
 	case "Leon" attend labelFunc043B_05CA:
-	message("\"Leon was especially chosen by Batlin to come and bring the hope of The Fellowship to this land.\"");
+	message("「Leon 是被 Batlin 特別選中來為這片土地帶來友誼會( The Fellowship )希望的。」");
 	say();
-	message("\"He hath been the only thing that hath kept us all sane since we have been stranded here.\"");
+	message("「自從我們被困在這裡後，他是唯一讓我們保持理智的人。」");
 	say();
-	message("\"I strive to emulate him, in mine own humble way.\"");
+	message("「我用我這卑微的方式努力效法他。」");
 	say();
 	UI_remove_answer("Leon");
-	UI_add_answer("emulate");
+	UI_add_answer("效法");
 labelFunc043B_05CA:
-	case "emulate" attend labelFunc043B_05E1:
-	message("\"Leon hath shown me that, by speaking well, people may see beyond my deformity and respect me. I cannot change the way I look, but I can change my speech.\"");
+	case "效法" attend labelFunc043B_05E1:
+	message("「Leon 向我展示了，藉由良好的言談，人們可能會忽略我的畸形並尊重我。我無法改變我的長相，但我可以改變我的談吐。」");
 	say();
-	message("\"And, as Leon sows the seeds of The Fellowship, I sow seeds in the soil. Gardening distracts my thoughts from being trapped ashore.\"");
+	message("「而且，就像 Leon 播下友誼會( The Fellowship )的種子一樣，我也在泥土裡播種。園藝能轉移我被困在岸上的思緒。」");
 	say();
-	UI_remove_answer("emulate");
+	UI_remove_answer("效法");
 labelFunc043B_05E1:
 	case "Palos" attend labelFunc043B_05FF:
 	UI_remove_answer("Palos");
-	message("\"I do not know much about him. Most of the time he remained below or went about heavily cloaked. I do not think that he was of the race of Men...\"");
+	message("「我對他了解不多。大部分時間他都待在船艙下面，或者把自己包得緊緊的。我不認為他是人類……」");
 	say();
-	message("\"We were all very thankful that he was so strong, I tell thee that.\"");
+	message("「我告訴你，我們都非常慶幸他這麼強壯。」");
 	say();
-	UI_add_answer("strong");
+	UI_add_answer("強壯");
 labelFunc043B_05FF:
-	case "strong" attend labelFunc043B_0620:
-	UI_remove_answer("strong");
-	message("\"Palos was fearfully strong, ");
+	case "強壯" attend labelFunc043B_0620:
+	UI_remove_answer("強壯");
+	message("「Palos 強壯得可怕，");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
-	message("\"During a storm, the main mast was struck by lightning and came crashing down,\tjamming the winch that operated the sea anchor.\"");
+	message("「在一次風暴中，主桅杆被閃電擊中並倒塌了，卡住了操作海錨的絞盤。」");
 	say();
-	message("\"Without the sea anchor, we would have been quickly lost to the angry waves. But Palos strode across the deck and shoved the mast aside to free the winch... All by himself.\"");
+	message("「如果沒有海錨，我們很快就會被狂風巨浪吞噬。但是 Palos 大步跨過甲板，把桅杆推到一邊，鬆開了絞盤……全靠他自己一個人。」");
 	say();
 labelFunc043B_0620:
 	case "Brunt" attend labelFunc043B_0644:
-	message("\"Brunt is little more than a common mercenary, ");
+	message("「Brunt 只不過是個普通的傭兵，");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
-	message("\"I suspect that Batlin hired him to act as a personal guard in this foreign land. He is not fit for much else.\"");
+	message("「我懷疑 Batlin 僱傭他，是為了讓他在這個異國他鄉擔任私人保鑣。他不適合做其他事。」");
 	say();
 	UI_remove_answer("Brunt");
-	UI_add_answer("not fit");
+	UI_add_answer("不適合");
 labelFunc043B_0644:
-	case "not fit" attend labelFunc043B_0662:
-	message("\"Brunt is no seaman, 'tis true.\"");
+	case "不適合" attend labelFunc043B_0662:
+	message("「Brunt 確實不是個海員。」");
 	say();
-	message("\"If I had not seen his face the day he boarded, I would have thought him a Daemon. He was so green.\"");
+	message("「如果我不是在他登船那天看到他的臉，我會以為他是個惡魔。他臉色發綠。」");
 	say();
-	UI_remove_answer("not fit");
-	UI_add_answer("green");
+	UI_remove_answer("不適合");
+	UI_add_answer("臉色發綠");
 labelFunc043B_0662:
-	case "green" attend labelFunc043B_067F:
-	message("\"He was seasick the entire voyage, ");
+	case "臉色發綠" attend labelFunc043B_067F:
+	message("「整個航程他都在暈船，");
 	message(var0000);
-	message("! I have never seen anyone worse.\"");
+	message("！我從沒見過比他更糟的。」");
 	say();
-	message("\"And what a temper! 'Tis to be hoped he is better mannered on land.\"");
+	message("「而且脾氣還那麼壞！希望他在陸地上的舉止能好一點。」");
 	say();
-	UI_remove_answer("green");
+	UI_remove_answer("臉色發綠");
 labelFunc043B_067F:
 	case "Deadeye" attend labelFunc043B_0699:
-	message("\"Deadeye is the only one of Batlin's companions that I truly know. I cannot say that I'm happy about the association, either.\"");
+	message("「Deadeye 是 Batlin 的同伴中我唯一真正認識的。我也不能說我很高興有這種交情。」");
 	say();
 	UI_remove_answer("Deadeye");
-	UI_add_answer("association");
+	UI_add_answer("交情");
 labelFunc043B_0699:
-	case "association" attend labelFunc043B_06BA:
-	message("\"I served with Deadeye on another ship, several years back. He used to bully the crew by telling them that white eye of his could curse a man.\"");
+	case "交情" attend labelFunc043B_06BA:
+	message("「幾年前，我在另一艘船上和 Deadeye 共事過。他以前常藉由告訴船員他那隻白色的眼睛能詛咒人來欺負他們。」");
 	say();
-	message("\"Deadeye liked to provoke a fight and dare the other man to hit him. No one would, for fear of that eye.\"");
+	message("「Deadeye 喜歡挑起爭端，然後挑釁對方打他。沒人敢動手，因為害怕那隻眼睛。」");
 	say();
-	message("\"Sailors are a superstitious lot, I fear, ");
+	message("「我恐怕水手都是些迷信的人，");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
-	UI_remove_answer("association");
+	UI_remove_answer("交情");
 labelFunc043B_06BA:
-	case "storms" attend labelFunc043B_06EF:
-	UI_remove_answer("storms");
-	message("\"I've been a seafarin' man for more than twenty years, ");
+	case "風暴" attend labelFunc043B_06EF:
+	UI_remove_answer("風暴");
+	message("「我當海員已經超過二十年了，");
 	message(var0000);
-	message(". And I cannot recall a time that I've seen storms as strange as these.\"");
+	message("。我實在不記得有見過像這樣奇怪的風暴。」");
 	say();
-	message("\"I've seen lightning that jumps from cloud to cloud. I've seen lightning that shoots down like a pitchfork from the heavens. And I've seen lightning that dances across the masts of a ship.\"");
+	message("「我見過從一朵雲跳到另一朵雲的閃電。我見過像乾草叉一樣從天而降的閃電。我也見過在船桅上跳舞的閃電。」");
 	say();
-	message("\"But I've never seen lightning that changes a man into a rock, or makes a ship disappear before thy very eyes.\"");
+	message("「但我從來沒見過能把人變成石頭，或者讓船在你眼前消失的閃電。」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["changes a man", "ship disappear", "change subject"]);
+	UI_add_answer(["把人變了", "船消失了", "換個話題"]);
 labelFunc043B_06EF:
-	case "changes a man" attend labelFunc043B_0710:
-	message("\"I saw it happen, ");
+	case "把人變了" attend labelFunc043B_0710:
+	message("「我親眼看到它發生的，");
 	message(var0000);
-	message("!\"");
+	message("！」");
 	say();
-	message("\"I was holding the door open for one of the crew who was running for shelter when one of those storms hit.\"");
+	message("「當那場風暴來襲時，我正幫一名跑去躲避風暴的船員開著門。」");
 	say();
-	message("\"There was this bright flash and a deafening crash... And when mine eyes cleared, Geof was gone and a chicken stood gawking at me in the very spot Geof had been in.\"");
+	message("「然後有一道刺眼的閃光和震耳欲聾的撞擊聲……當我的視線恢復時，Geof 不見了，一隻雞站在 Geof 剛剛站的地方，呆呆地看著我。」");
 	say();
-	UI_remove_answer("changes a man");
+	UI_remove_answer("把人變了");
 labelFunc043B_0710:
-	case "ship disappear" attend labelFunc043B_072F:
-	message("\"With my very own eyes, I saw it!\"");
+	case "船消失了" attend labelFunc043B_072F:
+	message("「我親眼所見！」");
 	say();
-	message("\"I was on the Fawn docks chatting with a salt named Olon, in the days before I was banned\tfrom the city.\"");
+	message("「在我被禁止進入城市之前的那些日子裡，我正在幼鹿城( Fawn )碼頭和一個叫 Olon 的老水手聊天。」");
 	say();
-	message("\"All of a sudden one of those storms hit and Olon and I dove for cover under a rowboat.\"");
+	message("「突然之間，一場風暴襲來，Olon 和我跳進一艘划艇下面躲避。」");
 	say();
-	message("\"We saw the ship that had just put out be hit by the lightning and it just... disappeared! Never found a trace of it or her crew.\"");
+	message("「我們看到剛剛出海的船被閃電擊中，然後它就……消失了！再也找不到它或船員的任何蹤跡。」");
 	say();
-	UI_remove_answer("ship disappear");
+	UI_remove_answer("船消失了");
 labelFunc043B_072F:
-	case "Lady Yelinda" attend labelFunc043B_0755:
-	UI_remove_answer("Lady Yelinda");
+	case "Yelinda 夫人" attend labelFunc043B_0755:
+	UI_remove_answer("Yelinda 夫人");
 	gflags[0x01B1] = true;
-	message("\"The Great Lady did flee Fawn in a terrible hurry, due to the Curse. All she left behind was her Diamond Necklace.\"");
+	message("「因為詛咒，偉大的夫人匆匆逃離了幼鹿城( Fawn )。她留下的只有她的鑽石項鍊( Diamond Necklace )。」");
 	say();
-	message("\"She hath been made as disfigured as I am. Imagine, to plummet from Beauty to Ugliness!\"");
+	message("「她變得和我一樣畸形。想像一下，從美麗跌落到醜陋！」");
 	say();
-	message("\"It hath driven her insane.\"");
+	message("「這把她逼瘋了。」");
 	say();
-	UI_add_answer("Diamond Necklace");
+	UI_add_answer("鑽石項鍊");
 labelFunc043B_0755:
-	case "Diamond Necklace" attend labelFunc043B_076C:
-	UI_remove_answer("Diamond Necklace");
-	message("\"I did find the necklace lying in the throne room.\"");
+	case "鑽石項鍊" attend labelFunc043B_076C:
+	UI_remove_answer("鑽石項鍊");
+	message("「我確實在王座室裡找到了那條項鍊。」");
 	say();
-	message("\"But I did not take it, for it belongs to the Lady. And the rats shall not disturb it.\"");
+	message("「但我沒有拿走它，因為它屬於夫人。而老鼠也不會去動它。」");
 	say();
 labelFunc043B_076C:
 	case "Delphynia" attend labelFunc043B_07D8:
 	UI_remove_answer("Delphynia");
 	if (!gflags[0x0004]) goto labelFunc043B_0790;
-	message("\"I found her pitiful body dumped in the street, with her insides... twisted... torn out...\"");
+	message("「我發現她可憐的屍體被丟棄在街上，她的內臟……被扭曲……被扯了出來……」");
 	say();
-	message("\"She was long dead...\"");
+	message("「她早就死了……」");
 	say();
-	message("\"I brought her body to where it is now. I could not leave my love to lie in the open, for the rats to gnaw.\"");
+	message("「我把她的屍體帶到了現在的地方。我不能把我的愛人留在外面，讓老鼠啃食。」");
 	say();
 	goto labelFunc043B_07D8;
 labelFunc043B_0790:
 	if (!(gflags[0x0168] == false)) goto labelFunc043B_07A9;
-	message("\"Delphynia is the most beautiful of all women! Pray, forgive me, ");
+	message("「Delphynia 是所有女人中最美麗的！求求你，原諒我，");
 	message(var0000);
-	message(". I speak with the tongue of a man bound by the chains of love.\"");
+	message("。我是用一個被愛情枷鎖束縛的男人的口吻說話。」");
 	say();
-	message("\"Delphynia is Fawn's horticulturist and healer, of late. I met her when I accompanied Batlin into town for supplies.\"");
+	message("「Delphynia 是幼鹿城( Fawn )的草藥學家和最近的治療師。我跟著 Batlin 進城採購補給品時遇見了她。」");
 	say();
 	goto labelFunc043B_07D8;
 labelFunc043B_07A9:
 	if (!(gflags[0x0167] == true)) goto labelFunc043B_07B9;
-	message("\"Delphynia is Fawn's horticulturist and healer, of late. I met her when I accompanied Batlin into town for supplies.\"");
+	message("「Delphynia 是幼鹿城( Fawn )的草藥學家和最近的治療師。我跟著 Batlin 進城採購補給品時遇見了她。」");
 	say();
-	message("\"Thou wilt understand why I love her, if thou shouldst meet her.\"");
+	message("「如果你見到她，你就會明白我為什麼愛她。」");
 	say();
 labelFunc043B_07B9:
 	if (!(gflags[0x0152] && (var000A == false))) goto labelFunc043B_07D0;
-	message("\"Delphynia is Fawn's horticulturist and healer, of late. I met her when I accompanied Batlin into town for supplies.\"");
+	message("「Delphynia 是幼鹿城( Fawn )的草藥學家和最近的治療師。我跟著 Batlin 進城採購補給品時遇見了她。」");
 	say();
-	message("\"To me, she is the most beautiful woman in Fawn. When thou dost meet her, I'm sure that thou wilt agree with me.\"");
+	message("「對我來說，她是幼鹿城( Fawn )最美麗的女人。當你見到她時，我敢肯定你會同意我的看法。」");
 	say();
 	goto labelFunc043B_07D8;
 labelFunc043B_07D0:
-	message("\"Thou hast met her... Delphynia is the most beautiful woman in all Fawn, to\tme.\"");
+	message("「你已經見過她了……對我來說，Delphynia 是整個幼鹿城( Fawn )最美麗的女人。」");
 	say();
-	message("\"She is also a fine horticulturist and healer.\tI met her when I accompanied Batlin into town for supplies.\"");
+	message("「她也是一位出色的草藥學家和治療師。我跟著 Batlin 進城採購補給品時遇見了她。」");
 	say();
 labelFunc043B_07D8:
-	case "Fawn" attend labelFunc043B_07FC:
-	message("\"'Tis the city over there, ");
+	case "幼鹿城" attend labelFunc043B_07FC:
+	message("「就是那邊那座城市，");
 	message(var0000);
-	message(". They claim to honor Beauty, which my face naturally offends.\"");
+	message("。他們聲稱崇尚美( Beauty )，而我的臉自然冒犯了這點。」");
 	say();
-	message("\"They are hard pressed, what with the Goblins and all.\"");
+	message("「因為哥布林( Goblins )和其他事情，他們現在處境艱難。」");
 	say();
-	UI_remove_answer("Fawn");
-	UI_add_answer("Goblins");
+	UI_remove_answer("幼鹿城");
+	UI_add_answer("哥布林");
 labelFunc043B_07FC:
-	case "Goblins" attend labelFunc043B_0872:
-	UI_remove_answer("Goblins");
+	case "哥布林" attend labelFunc043B_0872:
+	UI_remove_answer("哥布林");
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc043B_0821;
-	message("\"It is such a relief to be able to shelter behind the walls of Fawn. I think the goblins cannot reach us here.\"");
+	message("「能夠在幼鹿城( Fawn )的城牆後避難真是令人鬆了一口氣。我想哥布林在這裡傷不到我們了。」");
 	say();
 	goto labelFunc043B_0872;
 labelFunc043B_0821:
 	if (!(gflags[0x003E] == true)) goto labelFunc043B_084F;
 	if (!(gflags[0x014E] == false)) goto labelFunc043B_0840;
-	message("\"Now that the Goblins hold thy Pikemen tower, Fawn doth have little hope of withstanding a determined attack.\"");
+	message("「現在哥布林佔領了你們長槍兵( Pikemen )的塔樓，幼鹿城( Fawn )幾乎沒有希望抵擋住猛烈的攻擊了。」");
 	say();
-	message("\"I fear that my companions and I will be the next delicacy in the Goblin stewpot without thy protection.\"");
+	message("「我擔心如果沒有你的保護，我的同伴和我將成為哥布林燉鍋裡的下一道佳餚。」");
 	say();
-	message("\"We do not have city gates to hide behind.\"");
+	message("「我們沒有城門可以躲藏。」");
 	say();
 	goto labelFunc043B_084C;
 labelFunc043B_0840:
-	message("\"'Tis a blessing that thou and thine honored Pikemen companions did wrest the Fawn tower from the Goblins.\"");
+	message("「你和你令人敬重的長槍兵( Pikemen )同伴從哥布林手中奪回了幼鹿城( Fawn )塔樓，真是萬幸。」");
 	say();
-	message("\"Fawn could not have long resisted a determined attack. And my companions and I would have been the next delicacy in the Goblin stewpot, I fear.\"");
+	message("「幼鹿城( Fawn )不可能長時間抵抗猛烈的攻擊。我擔心我的同伴和我將成為哥布林燉鍋裡的下一道佳餚。」");
 	say();
-	message("\"We have no city gates to hide behind.\"");
+	message("「我們沒有城門可以躲藏。」");
 	say();
 labelFunc043B_084C:
 	goto labelFunc043B_0872;
 labelFunc043B_084F:
 	if (!(gflags[0x014E] == false)) goto labelFunc043B_0866;
-	message("\"Now that the Goblins hold the Pikemen tower, Fawn doth have little hope of withstanding a determined attack.\"");
+	message("「現在哥布林佔領了長槍兵( Pikemen )的塔樓，幼鹿城( Fawn )幾乎沒有希望抵擋住猛烈的攻擊了。」");
 	say();
-	message("\"I fear that my companions and I will be the next delicacy in the Goblin stewpot.\"");
+	message("「我擔心我的同伴和我將成為哥布林燉鍋裡的下一道佳餚。」");
 	say();
-	message("\"We do not have city gates to hide behind.\"");
+	message("「我們沒有城門可以躲藏。」");
 	say();
 	goto labelFunc043B_0872;
 labelFunc043B_0866:
-	message("\"'Tis a blessing that the honored Pikemen ripped the Fawn tower from them Goblins.\"");
+	message("「令人敬重的長槍兵( Pikemen )從哥布林手中奪回了幼鹿城( Fawn )塔樓，真是萬幸。」");
 	say();
-	message("\"Fawn could not have long resisted a determined attack. And my companions and I would have been the next delicacy in the Goblin stewpot, I fear.\"");
+	message("「幼鹿城( Fawn )不可能長時間抵抗猛烈的攻擊。我擔心我的同伴和我將成為哥布林燉鍋裡的下一道佳餚。」");
 	say();
-	message("\"We have no city gates to hide behind.\"");
+	message("「我們沒有城門可以躲藏。」");
 	say();
 labelFunc043B_0872:
-	case "letter" attend labelFunc043B_08B6:
+	case "信" attend labelFunc043B_08B6:
 	var0016 = UI_remove_party_items(0x0001, 0x031D, 0x001B, 0x0000, false);
-	message("\"Oh, blessings upon thee, ");
+	message("「喔，願祝福降臨於你，");
 	message(var0000);
-	message("!\"");
+	message("！」");
 	say();
-	message("\"Delphynia knows of my love, though she is unsure of her feelings for me.\"");
+	message("「Delphynia 知道我的愛，雖然她對自己的感覺還不確定。」");
 	say();
-	message("\"As long as she hath not rejected me out of hand, I will be content to wait. Thy good deed hath given me reason to live!\"");
+	message("「只要她沒有當場拒絕我，我就願意等待。你的善舉給了我活下去的理由！」");
 	say();
-	message("\"As promised, I will send thee to my shipmate, Scots.\"");
+	message("「如我所承諾的，我會派你去找我的船員朋友，Scots。」");
 	say();
 	var0017 = true;
-	UI_remove_answer("letter");
+	UI_remove_answer("信");
 	UI_add_answer("Scots");
 labelFunc043B_08B6:
 	case "Scots" attend labelFunc043B_08D8:
-	message("\"Scots is a fine fellow, though he often seems a bit distracted. He is a cartographer.\"");
+	message("「Scots 是個好人，雖然他有時看起來有點心不在焉。他是個製圖師。」");
 	say();
-	message("\"Perhaps his maps will aid thee, though they are not as accurate as he wishes.\"");
+	message("「也許他的地圖能幫到你，雖然它們沒有他希望的那麼準確。」");
 	say();
-	message("\"Thou mayest find him somewhere within our camp.\"");
+	message("「你可以在我們營地的某處找到他。」");
 	say();
 	UI_remove_answer("Scots");
-	UI_add_answer("not as accurate");
+	UI_add_answer("不夠準確");
 labelFunc043B_08D8:
-	case "not as accurate" attend labelFunc043B_08F3:
-	message("\"Since we dare not stray too far from shelter, Scots cannot explore and map.\"");
+	case "不夠準確" attend labelFunc043B_08F3:
+	message("「因為我們不敢離開避難所太遠，所以 Scots 無法去探索和繪製地圖。」");
 	say();
-	message("\"He hath worked from existing maps that he received from the Fawn fishermen, so he is only sure of the accuracy of the coastline.\"");
+	message("「他一直是根據從幼鹿城( Fawn )漁夫那裡拿到的現有地圖來工作，所以他只能確定海岸線是準確的。」");
 	say();
-	message("\"Scots often complains that we cannot even explore by ship. None of us are happy to be stranded here.\"");
+	message("「Scots 經常抱怨我們甚至不能乘船去探索。我們都不高興被困在這裡。」");
 	say();
-	UI_remove_answer("not as accurate");
+	UI_remove_answer("不夠準確");
 labelFunc043B_08F3:
-	case "bye" attend labelFunc043B_093A:
+	case "告辭" attend labelFunc043B_093A:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Goodbye, Ruggs.@", 0x0000);
+	Func097F(0xFE9C, "@再見，Ruggs。@", 0x0000);
 	if (!gflags[0x0004]) goto labelFunc043B_092B;
-	var0008 = ("" & ("@Woe is me...@" & "@My love is slain!@"));
+	var0008 = ("" & ("@我真可悲……@" & "@我的愛人被殺了！@"));
 	Func094F(0xFFC5, var0008);
 	goto labelFunc043B_0937;
 labelFunc043B_092B:
-	Func097F(0xFFC5, "@Fair weather to thee.@", 0x0005);
+	Func097F(0xFFC5, "@祝你好運。@", 0x0005);
 labelFunc043B_0937:
 	goto labelFunc043B_093D;
 labelFunc043B_093A:
@@ -587,5 +587,3 @@ labelFunc043B_093D:
 labelFunc043B_093E:
 	return;
 }
-
-

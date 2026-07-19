@@ -18,7 +18,7 @@ void Func062B object#(0x62B) ()
 	var0003 = UI_get_item_quality(item);
 	if (!(var0003 > 0x0000)) goto labelFunc062B_0052;
 	UI_close_gumps();
-	var0004 = Func0992(0xFFFE, "@'Tis difficult to acquire! Thou shouldst save it.@", "@'Tis difficult to acquire! Mayhaps I should save it.@", false);
+	var0004 = Func0992(0xFFFE, "@那很難取得！你應該省著點用。@", "@那很難取得！或許我該省著點用。@", false);
 	abort;
 labelFunc062B_0052:
 	if (!(var0002 < 0x0006)) goto labelFunc062B_0064;

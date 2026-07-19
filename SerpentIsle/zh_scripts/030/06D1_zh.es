@@ -50,7 +50,7 @@ labelFunc06D1_0098:
 	UI_play_sound_effect(0x0051);
 	0xFF2C->Func07D1();
 	0xFF2C->Func07D2();
-	Func097F(0xFF2C, "@Hero...@", 0x0002);
+	Func097F(0xFF2C, "@英雄……@", 0x0002);
 	UI_play_music(0x003F, Func09A0(0x0005, 0x0001));
 	var0000 = UI_delayed_execute_usecode_array(0xFF2C, [(byte)0x23, (byte)0x55, 0x04D4], 0x000E);
 	goto labelFunc06D1_017F;

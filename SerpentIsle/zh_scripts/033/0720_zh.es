@@ -120,15 +120,15 @@ labelFunc0720_0389:
 	for (var0017 in var0013 with var0015 to var0016) attend labelFunc0720_03D7;
 	var0006 = UI_delayed_execute_usecode_array(var0017, [(byte)0x23, (byte)0x55, 0x060F], var0014);
 	UI_play_sound_effect(0x0074);
-	Func097F(var0017, "@Yowww!@", var0014);
+	Func097F(var0017, "@喲喔！@", var0014);
 	var0014 = (var0014 + 0x0007);
-	Func097F(0xFE9C, "@That was wrong...@", 0x0014);
+	Func097F(0xFE9C, "@那是錯的……@", 0x0014);
 	goto labelFunc0720_0389;
 labelFunc0720_03D7:
 	abort;
 labelFunc0720_03D8:
 	if (!(var0009 && var000A)) goto labelFunc0720_0424;
-	Func097F(0xFE9C, "@That did it!@", 0x0000);
+	Func097F(0xFE9C, "@完成了！@", 0x0000);
 	UI_set_item_flag(0xFE9C, 0x0010);
 	var0018 = [0x068B, 0x0015, 0x0002];
 	UI_si_path_run_usecode(0xFE9C, var0018, 0x000A, item, 0x0720, true);

@@ -56,7 +56,7 @@ labelFunc06CE_0099:
 	Func09AD(var0008);
 	goto labelFunc06CE_0099;
 labelFunc06CE_00CA:
-	Func097F(0xFE9C, "@Uh-oh...@", 0x0005);
+	Func097F(0xFE9C, "@哎呀……@", 0x0005);
 labelFunc06CE_00D6:
 	if (!(var0000 == 0x0001)) goto labelFunc06CE_019C;
 	var0009 = UI_find_nearby(item, 0x03D1, 0x0014, 0x0000);
@@ -79,7 +79,7 @@ labelFunc06CE_015F:
 	Func09AD(var000F);
 	goto labelFunc06CE_015F;
 labelFunc06CE_0190:
-	Func097F(0xFE9C, "@By the Virtues!@", 0x0005);
+	Func097F(0xFE9C, "@以美德之名！@", 0x0005);
 labelFunc06CE_019C:
 	if (!(var0000 == 0x0002)) goto labelFunc06CE_0268;
 	var0001 = UI_find_nearby(item, 0x0356, 0x001E, 0x0000);
@@ -103,7 +103,7 @@ labelFunc06CE_0225:
 	var0008->Func07D2();
 	goto labelFunc06CE_0225;
 labelFunc06CE_025C:
-	Func097F(0xFE9C, "@By the Virtues!@", 0x0005);
+	Func097F(0xFE9C, "@以美德之名！@", 0x0005);
 labelFunc06CE_0268:
 	if (!(var0000 == 0x0003)) goto labelFunc06CE_0328;
 	var0001 = UI_find_nearby(item, 0x0356, 0x0008, 0x0000);

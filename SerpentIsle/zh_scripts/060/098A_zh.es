@@ -15,7 +15,7 @@ void Func098A 0x98A (var var0000, var var0001)
 labelFunc098A_0029:
 	if (!(UI_get_item_shape(var0000) == 0x0253)) goto labelFunc098A_0050;
 	if (!(UI_get_item_quality(var0000) == 0x00FF)) goto labelFunc098A_0050;
-	UI_item_say(var0000, "Spent");
+	UI_item_say(var0000, "已耗盡");
 	return;
 labelFunc098A_0050:
 	var0004 = UI_get_container(var0000);

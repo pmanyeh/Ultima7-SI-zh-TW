@@ -86,10 +86,10 @@ labelFunc07DC_0288:
 	var000F = Func0992(0x0001, 0x0000, 0x0000, false);
 	UI_clear_item_say(var000F);
 	if (!(var000F == 0xFE9C)) goto labelFunc07DC_02D5;
-	Func097F(0xFE9C, "@About time for the trial...@", 0x0000);
+	Func097F(0xFE9C, "@審判的時間快到了……@", 0x0000);
 	abort;
 labelFunc07DC_02D5:
-	Func097F(var000F, "@Do not forget the trial!@", 0x0000);
+	Func097F(var000F, "@別忘了大審判！@", 0x0000);
 	abort;
 labelFunc07DC_02E2:
 	return;

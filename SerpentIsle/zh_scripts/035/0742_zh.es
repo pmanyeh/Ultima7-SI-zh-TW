@@ -20,7 +20,7 @@ labelFunc0742_003F:
 	if (!var0000) goto labelFunc0742_006F;
 	gflags[0x025E] = true;
 	UI_remove_item(item);
-	Func097F(0xFE9C, "@Smell that clean air!@", 0x0003);
+	Func097F(0xFE9C, "@聞聞這清新的空氣！@", 0x0003);
 labelFunc0742_006F:
 	return;
 }

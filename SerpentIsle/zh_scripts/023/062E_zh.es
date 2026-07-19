@@ -51,7 +51,7 @@ labelFunc062E_0085:
 	Func090D(var0004, var0006, var0007, var0008, 0x0105, var0004, 0x000A);
 	goto labelFunc062E_00F7;
 labelFunc062E_00EB:
-	var0009 = "@Why dost thou not weave cloth with that thread on the loom?@";
+	var0009 = "@你為什麼不用織布機把那些線織成布呢？@";
 	Func094A(var0009);
 labelFunc062E_00F7:
 	return;

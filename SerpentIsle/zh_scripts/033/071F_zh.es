@@ -74,9 +74,9 @@ labelFunc071F_00BA:
 labelFunc071F_0103:
 	for (var000B in var0007 with var0009 to var000A) attend labelFunc071F_014A;
 	var0002 = UI_delayed_execute_usecode_array(var000B, [(byte)0x23, (byte)0x55, 0x060F], var0008);
-	Func097F(var000B, "@Ahhhh!@", var0008);
+	Func097F(var000B, "@啊啊啊！@", var0008);
 	var0008 = (var0008 + 0x0007);
-	Func097F(0xFE9C, "@That was wrong...@", var0008);
+	Func097F(0xFE9C, "@那是錯的……@", var0008);
 	goto labelFunc071F_0103;
 labelFunc071F_014A:
 	var0004 = true;

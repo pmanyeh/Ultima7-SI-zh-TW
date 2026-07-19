@@ -98,7 +98,7 @@ labelFunc0721_01AD:
 labelFunc0721_01B0:
 	var0008 = UI_get_object_position(item);
 	UI_sprite_effect(0x0015, var0008[0x0001], (var0008[0x0002] - 0x0001), 0x0000, 0x0000, 0x0000, 0xFFFF);
-	Func097F(0xFE9C, "@That did it!@", 0x0005);
+	Func097F(0xFE9C, "@完成了！@", 0x0005);
 	var0000 = [0x01FF, 0x0211, 0x0218, 0x02C2, 0x020C, 0x035D];
 	enum();
 labelFunc0721_0200:

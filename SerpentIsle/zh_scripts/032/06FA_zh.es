@@ -83,7 +83,7 @@ labelFunc06FA_0202:
 	goto labelFunc06FA_00A9;
 labelFunc06FA_0205:
 	var0000 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x06FA], 0x000A);
-	var0016 = Func0992(0x0001, "@Look -- the gates!@", "@The gates are closing!@", true);
+	var0016 = Func0992(0x0001, "@看——是大門！@", "@大門要關上了！@", true);
 	UI_set_alignment(0xFFAB, 0x0002);
 	UI_set_item_flag(0xFFAB, 0x001D);
 	UI_move_object(0xFFAB, [0x0723, 0x0A65]);

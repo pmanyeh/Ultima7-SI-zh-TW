@@ -42,8 +42,8 @@ labelFunc06E3_0007:
 labelFunc06E3_00B0:
 	if (!(var0002 == 0x0001)) goto labelFunc06E3_013C;
 	UI_set_item_flag(0xFE9C, 0x0010);
-	Func097F(0xFE9C, "@What...?@", 0x0005);
-	Func097F(0xFE9C, "@NO!@", 0x0028);
+	Func097F(0xFE9C, "@什麼……？@", 0x0005);
+	Func097F(0xFE9C, "@不！@", 0x0028);
 	var0004 = UI_find_nearby(item, 0x010C, 0x000F, 0x0000);
 	var0004 = (var0004 & UI_find_nearby(item, 0x0350, 0x000F, 0x0000));
 	enum();

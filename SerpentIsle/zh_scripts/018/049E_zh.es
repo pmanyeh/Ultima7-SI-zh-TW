@@ -26,18 +26,18 @@ labelFunc049E_00AB:
 	abort;
 labelFunc049E_00AC:
 	if (!(event == 0x0001)) goto labelFunc049E_0138;
-	UI_item_say(0xFE9C, "@Greetings!@");
+	UI_item_say(0xFE9C, "@你好！@");
 	UI_clear_item_say(0xFF62);
 	0xFF62->Func07D1();
 	if (!UI_npc_nearby(0xFF64)) goto labelFunc049E_010B;
-	Func097F(0xFF62, "@We cannot speak...@", 0x0003);
+	Func097F(0xFF62, "@我們不能說話……@", 0x0003);
 	UI_set_schedule_type(0xFF64, 0x0009);
 	UI_clear_item_say(0xFF64);
-	Func097F(0xFF64, "@Go away!@", 0x0005);
+	Func097F(0xFF64, "@走開！@", 0x0005);
 	UI_set_schedule_type(0xFF62, 0x0014);
 	goto labelFunc049E_0138;
 labelFunc049E_010B:
-	Func097F(0xFF62, "@I'm no thief!@", 0x0003);
+	Func097F(0xFF62, "@我不是小偷！@", 0x0003);
 	if (!(UI_get_npc_id(0xFF62) > 0x0003)) goto labelFunc049E_012E;
 	Func09AD(0xFF62);
 	goto labelFunc049E_0138;

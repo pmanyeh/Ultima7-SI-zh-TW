@@ -17,7 +17,7 @@ void Func0726 object#(0x726) ()
 	if (!((event == 0x0002) && gflags[0x000A])) goto labelFunc0726_0029;
 	gflags[0x000A] = false;
 	UI_fade_palette(0x000C, 0x0001, 0x0000);
-	Func097F(0xFFFD, "@Where didst thou go?@", 0x001B);
+	Func097F(0xFFFD, "@你去了哪裡？@", 0x001B);
 labelFunc0726_0029:
 	if (!(event == 0x0002)) goto labelFunc0726_0072;
 	UI_move_object(0xFE9C, [0x0684, 0x007B, 0x0000]);

@@ -78,7 +78,7 @@ labelFunc0798_020C:
 	UI_halt_scheduled(var0006);
 	var000C = UI_die_roll(0x0001, 0x0005);
 	if (!(var000C == 0x0001)) goto labelFunc0798_0238;
-	var0008 = [(byte)0x52, "Aaahhh!", var0008];
+	var0008 = [(byte)0x52, "啊啊！", var0008];
 labelFunc0798_0238:
 	var000D = UI_execute_usecode_array(var0006, var0008);
 labelFunc0798_0245:

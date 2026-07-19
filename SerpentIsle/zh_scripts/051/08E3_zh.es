@@ -9,7 +9,7 @@ void Func08E3 0x8E3 ()
 	gflags[0x00E3] = true;
 	var0000 = Func0992(0x0001, 0x0000, 0x0000, false);
 	if (!(var0000 == 0xFE9C)) goto labelFunc08E3_002B;
-	UI_item_say(0xFE9C, "@Now I know the secret!@");
+	UI_item_say(0xFE9C, "@現在我知道這個祕密了！@");
 	goto labelFunc08E3_0039;
 labelFunc08E3_002B:
 	UI_show_npc_face0(var0000, 0x0000);

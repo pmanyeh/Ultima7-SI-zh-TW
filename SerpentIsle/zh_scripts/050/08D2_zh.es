@@ -24,7 +24,7 @@ labelFunc08D2_0052:
 	var0005[0x0003] = 0x0000;
 	UI_move_object(0xFF27, var0005);
 	var0006 = UI_direction_from(0xFF27, 0xFE9C);
-	var0007 = UI_execute_usecode_array(0xFF27, [(byte)0x62, (byte)0x59, var0006, (byte)0x27, 0x0002, (byte)0x52, "@Please... Help me...@", (byte)0x27, 0x000F, (byte)0x52, "@Lead me to my nightmare.@"]);
+	var0007 = UI_execute_usecode_array(0xFF27, [(byte)0x62, (byte)0x59, var0006, (byte)0x27, 0x0002, (byte)0x52, "@求求你……救救我……@", (byte)0x27, 0x000F, (byte)0x52, "@帶我去面對我的夢魘吧。@"]);
 	var0007 = UI_execute_usecode_array(0xFE9C, [(byte)0x27, 0x0003]);
 	UI_set_alignment(0xFF27, 0x0000);
 	UI_set_schedule_type(0xFF27, 0x0009);

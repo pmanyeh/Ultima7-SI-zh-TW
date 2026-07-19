@@ -22,7 +22,7 @@ void Func07B3 object#(0x7B3) ()
 	if (!(var0000 == 0x0002)) goto labelFunc07B3_0084;
 	if (!var0002) goto labelFunc07B3_0084;
 	UI_set_item_flag(0xFE9C, 0x0010);
-	var0003 = Func0992(0x0001, "@We should find a seat.@", "@I should sit.@", true);
+	var0003 = Func0992(0x0001, "@我們該找個位子坐。@", "@我該坐下了。@", true);
 	var0003 = Func08E7(var0002);
 	if (!var0003) goto labelFunc07B3_0084;
 	gflags[0x01CB] = true;

@@ -26,8 +26,8 @@ labelFunc0919_003C:
 	goto labelFunc0919_0136;
 labelFunc0919_0049:
 	if (!(UI_get_npc_id(0xFF34) == 0x0001)) goto labelFunc0919_0136;
-	Func097F(0xFEDB, "@Master!@", 0x0000);
-	Func097F(0xFEDB, "@Come quickly!@", 0x0007);
+	Func097F(0xFEDB, "@主人！@", 0x0000);
+	Func097F(0xFEDB, "@快過來！@", 0x0007);
 	var0005 = [0x0752, 0x03E5, 0x0006];
 	var0006 = UI_create_new_object2(0x013E, var0005);
 	if (!var0006) goto labelFunc0919_0136;

@@ -36,14 +36,14 @@ void Func0414 object#(0x414) ()
 	var0003 = Func0953();
 	var0004 = UI_part_of_day();
 	if (!((var0004 > 0x0001) || (var0004 < 0x0006))) goto labelFunc0414_0042;
-	var0004 = "day";
+	var0004 = "白天";
 	goto labelFunc0414_0048;
 labelFunc0414_0042:
-	var0004 = "evening";
+	var0004 = "夜晚";
 labelFunc0414_0048:
-	var0005 = "his";
+	var0005 = "他的";
 	if (!var0002) goto labelFunc0414_005A;
-	var0005 = "her";
+	var0005 = "她的";
 labelFunc0414_005A:
 	var0006 = UI_get_distance(0xFFEC, 0xFE9C);
 	var0007 = [0x0975, 0x0748, 0x0000];

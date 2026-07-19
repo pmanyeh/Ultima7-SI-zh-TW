@@ -45,13 +45,13 @@ void Func0428 object#(0x428) ()
 	var0002 = Func0954();
 	var0003 = UI_is_pc_female();
 	var0004 = Func0953();
-	var0005 = "lad";
+	var0005 = "小夥子";
 	var0006 = Func0994();
 	var0007 = Func0942(0xFFD6);
 	var0008 = Func0942(0xFFDA);
 	var0009 = Func0942(0xFFAF);
 	if (!(var0003 == true)) goto labelFunc0428_005C;
-	var0005 = "lass";
+	var0005 = "小姑娘";
 labelFunc0428_005C:
 	if (!(Func0839() && (var0000 == 0x0000))) goto labelFunc0428_007A;
 	UI_set_npc_id(0xFFD8, 0x0001);
@@ -93,40 +93,40 @@ labelFunc0428_0184:
 	UI_set_npc_id(0xFFD8, var0000);
 labelFunc0428_01BF:
 	if (!(event == 0x0001)) goto labelFunc0428_0211;
-	UI_item_say(0xFE9C, "@Captain?@");
+	UI_item_say(0xFE9C, "@船長？@");
 	0xFFD8->Func07D1();
-	Func097F(0xFFD8, "@Aye, matey?@", 0x0002);
+	Func097F(0xFFD8, "@有事嗎，夥計？@", 0x0002);
 	if (!gflags[0x01D1]) goto labelFunc0428_01F6;
 	UI_set_schedule_type(0xFFD8, 0x0003);
 	goto labelFunc0428_0211;
 labelFunc0428_01F6:
 	UI_show_npc_face0(0xFFD8, 0x0000);
-	message("\"Could ye unlock this door and let me go?\"");
+	message("「你能打開這扇門放我走嗎？」");
 	say();
-	Func097F(0xFFD8, "@I am cold...@", 0x0000);
+	Func097F(0xFFD8, "@我好冷……@", 0x0000);
 	abort;
 labelFunc0428_0211:
 	if (!(event == 0x0009)) goto labelFunc0428_07C4;
 	UI_run_schedule(0xFFD8);
 	UI_show_npc_face0(0xFFD8, 0x0000);
 	if (!gflags[0x0004]) goto labelFunc0428_025C;
-	message("\"I had hoped ta see ye again, ");
+	message("「我本希望能再見到你，");
 	message(var0005);
-	message(".\" ~\"Mine health is failin' me, an' I wanted ta be sure the Arabella went ta someone I can trust to care for her.\" *\"I have no living kin no more...\" ~\"So I want ye ta take her.\"");
+	message("。」~「我的健康每況愈下，我想確保 Arabella 能交給我信任的人照顧。」*「我已經沒有在世的親人了……」~「所以我想把它交給你。」");
 	say();
-	message("\"Thou art a brave ");
+	message("「你是個勇敢的");
 	message(var0005);
-	message(".\" ~\"An' thou wert willin' ta spend a bit o' thy time listening ta an old man's tales.\" *\"Thou... art...\" ~\"Worthy...\"");
+	message("。」~「而且你願意花時間聽一個老頭子說故事。」*「你……是……」~「值得的……」");
 	say();
-	var0014 = Func0992(0x0001, "@He is dead!@", "@He is dead.@", false);
+	var0014 = Func0992(0x0001, "@他死了！@", "@他死了。@", false);
 	UI_kill_npc(0xFFD8);
 	abort;
 labelFunc0428_025C:
 	var0015 = UI_get_item_flag(0xFFD8, 0x001C);
 	if (!(var0015 == false)) goto labelFunc0428_02AF;
-	message("\"How pleasant to make thine acquaintance, ");
+	message("「很高興認識你，");
 	message(var0005);
-	message(".\" ~\"I be Hawk, captain of the good ship Arabella.\"");
+	message("。」~「我是 Hawk ，好船 Arabella 的船長。」");
 	say();
 	UI_set_npc_id(0xFFD8, 0x0000);
 	UI_set_new_schedules(0xFFD8, 0x0000, 0x001A, [0x0503, 0x08C7]);
@@ -134,17 +134,17 @@ labelFunc0428_025C:
 	UI_set_item_flag(0xFFD8, 0x001C);
 	goto labelFunc0428_02B9;
 labelFunc0428_02AF:
-	message("\"A pleasure ta see ye again, ");
+	message("「很高興再次見到你，");
 	message(var0004);
-	message("!\"");
+	message("！」");
 	say();
 labelFunc0428_02B9:
 	if (!(var0000 == 0x0000)) goto labelFunc0428_03AB;
-	message("\"I could use a stiff drink, ");
+	message("「我需要來杯烈酒，");
 	message(var0005);
-	message(".\"");
+	message("。」");
 	say();
-	message("\"Thou canst talk ta me at the pub!\"");
+	message("「你可以在酒館跟我談！」");
 	say();
 	var0016 = UI_get_object_position(0xFFD8);
 	if (!((var0016[0x0001] >= 0x0AF1) && ((var0016[0x0001] <= 0x0AFE) && ((var0016[0x0002] >= 0x00C1) && (var0016[0x0002] <= 0x00DE))))) goto labelFunc0428_039B;
@@ -164,248 +164,248 @@ labelFunc0428_034D:
 labelFunc0428_0391:
 	UI_set_schedule_type(0xFFD8, 0x001D);
 labelFunc0428_039B:
-	Func097F(0xFFD8, "@I need a drink!@", 0x0000);
+	Func097F(0xFFD8, "@我需要喝一杯！@", 0x0000);
 	abort;
 	goto labelFunc0428_03B5;
 labelFunc0428_03AB:
-	message("\"So what can I do for ye, ");
+	message("「那麼我能為你做什麼，");
 	message(var0005);
-	message("?\"");
+	message("？」");
 	say();
 labelFunc0428_03B5:
 	if (!(var0006 == 0x0009)) goto labelFunc0428_03D0;
-	message("\"I thank ye for releasing me from that cell!\" ~\"I never expected ta end up in jail over not wantin' ta sail in these blasted storms!\" *\"If there's anything that I can do for ye, thou shouldst tell me.\" ~\"Cap'n Hawk is a man of his word!\"");
+	message("「謝謝你把我從牢房裡放出來！」~「我從沒想過會因為不想在這些該死的風暴中航行而進監獄！」*「如果我有什麼能幫上忙的，儘管告訴我。」~「 Hawk 船長可是個說話算話的人！」");
 	say();
-	UI_add_answer(["jail", "storms"]);
+	UI_add_answer(["監獄", "風暴"]);
 labelFunc0428_03D0:
 	if (!((!gflags[0x01CC]) && (!gflags[0x01CB]))) goto labelFunc0428_03E3;
-	UI_add_answer("journey");
+	UI_add_answer("旅程");
 labelFunc0428_03E3:
 	if (!(gflags[0x01CC] && (!UI_get_item_flag(0x01E0, 0x001C)))) goto labelFunc0428_03FC;
-	UI_add_answer("leave island");
+	UI_add_answer("離開島嶼");
 labelFunc0428_03FC:
 	if (!(gflags[0x0108] && (!gflags[0x028C]))) goto labelFunc0428_040E;
-	UI_add_answer("pinecone");
+	UI_add_answer("松果");
 labelFunc0428_040E:
 	if (!(gflags[0x010A] && (!gflags[0x0295]))) goto labelFunc0428_0420;
-	UI_add_answer("blue egg");
+	UI_add_answer("藍色蛋");
 labelFunc0428_0420:
-	UI_add_answer(["bye"]);
+	UI_add_answer(["告辭"]);
 labelFunc0428_042A:
 	converse attend labelFunc0428_07C3;
-	case "jail" attend labelFunc0428_0450:
-	message("\"Now if that ain't gratitude for ye!\" ~\"Here I refused ta risk the Arabella and them passengers ta the terrible fierce weather.\" *\"And one of them goes and calls the Pikemen on me!\"");
+	case "監獄" attend labelFunc0428_0450:
+	message("「這根本就是恩將仇報！」~「我拒絕讓 Arabella 和乘客們在可怕的惡劣天氣中冒險。」*「結果他們之中居然有人跑去叫長矛兵來抓我！」");
 	say();
-	UI_remove_answer("jail");
-	UI_add_answer(["Arabella", "passengers", "Pikemen"]);
+	UI_remove_answer("監獄");
+	UI_add_answer(["Arabella", "乘客", "長矛兵"]);
 labelFunc0428_0450:
 	case "Arabella" attend labelFunc0428_0469:
-	message("\"The Arabella is my ship, ");
+	message("「 Arabella 是我的船，");
 	message(var0005);
-	message(".\" ~\"She's named after me dear, departed wife...\" ~\"And dearer ta me than a good, stiff drink!\"");
+	message("。」~「她是以我親愛且已故的妻子命名的……」~「對我來說，她比一杯好烈酒還要珍貴！」");
 	say();
 	UI_remove_answer("Arabella");
 labelFunc0428_0469:
-	case "passengers" attend labelFunc0428_048C:
-	message("\"I had three passengers for the trip over to月影城( Moonshade ).\" ~\"There's a fellow named Kane, a scurvy merchant named Flindo, and a pretty lass named Selina.\"");
+	case "乘客" attend labelFunc0428_048C:
+	message("「我有三名要去月影城( Moonshade )的乘客。」~「有一個叫 Kane 的傢伙，一個叫 Flindo 的卑鄙商人，還有一個叫 Selina 的漂亮小姑娘。」");
 	say();
-	UI_remove_answer("passengers");
+	UI_remove_answer("乘客");
 	UI_add_answer(["Kane", "Flindo", "Selina"]);
 labelFunc0428_048C:
 	case "Kane" attend labelFunc0428_04A6:
-	message("\"Seems I heard tell he was a sheepherder or something.\" ~\"Kane wants ta go talk ta some of those fancy wizards over in月影城( Moonshade )...\" *\"See if they kin help him find what happened ta his older brother who disappeared a few months ago.\" ~\"Ye can't miss him... He always has a bird with him.\"");
+	message("「我好像聽說他是個牧羊人什麼的。」~「 Kane 想去月影城( Moonshade )找那些花俏的巫師談談……」*「看看他們能不能幫他找出他幾個月前失蹤的哥哥到底發生了什麼事。」~「你絕對不會錯認他……他身邊總是帶著一隻鳥。」");
 	say();
 	UI_remove_answer("Kane");
-	UI_add_answer("bird");
+	UI_add_answer("鳥");
 labelFunc0428_04A6:
-	case "bird" attend labelFunc0428_04BF:
-	message("\"Bird must have been a sailor, ");
+	case "鳥" attend labelFunc0428_04BF:
+	message("「那隻鳥肯定是個水手，");
 	message(var0005);
-	message("!\" ~\"Never seen anything like it! The bird has a real fondness for a stout drink.\" *\"It doth talk purty well, too.\"");
+	message("！」~「我從沒見過這種事！那隻鳥對烈酒有著真正的偏好。」*「而且牠說話也挺流利的。」");
 	say();
-	UI_remove_answer("bird");
+	UI_remove_answer("鳥");
 labelFunc0428_04BF:
 	case "Flindo" attend labelFunc0428_0553:
-	message("\"That worm!\" ~\"He'd spit in yer last cup of grog he would, if he thought he could make money off it!\"");
+	message("「那條蛆！」~「如果他覺得能從中賺錢，他甚至會在你最後一杯酒裡吐口水！」");
 	say();
 	if (!(var0007 == true)) goto labelFunc0428_0541;
 	UI_show_npc_face1(0xFFD6, 0x0000);
-	message("\"Thou art a fine one to talk, thou bilge-water rat!\" ~\"Thou wouldst hold an honest merchant hostage to thy drinking sprees!\"");
+	message("「你這底艙老鼠倒是挺會說的！」~「你竟然為了一己私慾酗酒，而把誠實的商人扣為人質！」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("\"Why, thou overgrown dung beetle!\" ~\"I told ye when I landed that those seas were no safe place ta be with these forsaken storms!\" *\"And thou shouldst suck salt spray for days on end, ye 'honest' merchant!\" ~\"Then thou'd know the difference between a drunk and a man with a thirst!\"");
+	message("「哎呀，你這隻長太大的屎甲蟲！」~「我上岸時就告訴過你，在這些該死的風暴中，海上絕對不安全！」*「而你這『誠實』的商人，真該連喝幾天的鹹海水！」~「那樣你就會知道酒鬼和口渴的人有什麼差別了！」");
 	say();
 	UI_set_conversation_slot(0x0001);
-	message("\"Thou art the braggart that said he could sail through the fires of hell and back!\" ~\"And the only thirst thou hast is for more money, thou thief!\"");
+	message("「你這個吹牛大王，還說自己能航行穿過地獄之火再回來！」~「而你唯一渴望的只有更多的錢，你這小偷！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Thief, is it!? When I turned down every offer thou didst make ta make me sail out ta sea again?\" ~\"And I fear nothing the sea can throw at me, thou barnacle!\" *\"But I'll not deal with things born of magics, for I'm no fool and no mage!\" ~\"And I warned ye about saying false ta my name before...\"");
+	message("「小偷，是嗎！？當我拒絕了你提出的所有讓我再次出海的條件時？」~「而且我什麼都不怕，無論大海向我拋出什麼，你這藤壺！」*「但我不會跟魔法造出來的東西打交道，因為我既不是傻子也不是法師！」~「而且我之前就警告過你，別再誣衊我的名聲……」");
 	say();
 	if (!(var0008 == true)) goto labelFunc0428_0520;
 	UI_show_npc_face1(0xFFDA, 0x0000);
-	message("\"Now stop that, both of you!\" ~\"This is precisely what happened before!\" *\"If thou dost break any more of my furniture, I will break thine head for thee!\"");
+	message("「現在都給我停下來，你們兩個！」~「這跟之前發生的事一模一樣！」*「如果你再弄壞我任何一件家具，我就把你的頭給打破！」");
 	say();
 	UI_remove_npc_face1();
 labelFunc0428_0520:
 	if (!(var0009 == true)) goto labelFunc0428_053A;
 	UI_show_npc_face1(0xFFAF, 0x0000);
-	message("\"Will you two be quiet!\" ~\"You are loud enough to wake the dead...\" ~\"And I am beginning to lose patience with both of you!\"");
+	message("「你們兩個能不能安靜點！」~「你們吵得連死人都要醒了……」~「我對你們兩個都快失去耐心了！」");
 	say();
 	UI_remove_npc_face1();
 labelFunc0428_053A:
 	UI_set_conversation_slot(0x0000);
 labelFunc0428_0541:
-	message("\"Flindo was the one that bribed the Pikemen into pulling me away from the fight he started!\"");
+	message("「就是 Flindo 賄賂長矛兵，讓他們把我從他挑起的打鬥中拉走的！」");
 	say();
 	UI_remove_answer("Flindo");
-	UI_add_answer("bribed");
+	UI_add_answer("賄賂");
 labelFunc0428_0553:
-	case "bribed" attend labelFunc0428_057D:
-	message("\"Aye, bribed!\" ~\"I heard some of those scum...\"");
+	case "賄賂" attend labelFunc0428_057D:
+	message("「對，賄賂！」~「我聽到那些人渣……」");
 	say();
 	if (!(var0008 == true)) goto labelFunc0428_056B;
-	message("\"...Er, Pikemen. Sorry, Argus.\"");
+	message("「……呃，長矛兵。抱歉， Argus 。」");
 	say();
 labelFunc0428_056B:
-	message("\"Talking just after I woke up.\" ~\"Seems like Flindo payed them ta rough me up so that I'd decide not ta stay and go back ta月影城( Moonshade ).\" *\"But, moneybags Flindo didn't count on those swine getting greedy!\"");
+	message("「就在我剛醒來的時候說的。」~「看來 Flindo 賄賂他們來揍我一頓，好讓我決定不留下來，回去月影城( Moonshade )。」*「但是，財迷心竅的 Flindo 沒算到那些豬玀會變得貪婪！」");
 	say();
-	UI_remove_answer("bribed");
-	UI_remove_answer("greedy");
+	UI_remove_answer("賄賂");
+	UI_remove_answer("貪婪");
 labelFunc0428_057D:
-	case "greedy" attend labelFunc0428_0590:
-	message("\"They thought they could make me pay for my release, but I have no money ta speak of...\" ~\"Then they thought they could convince Flindo ta pay my way out, but either he'd spent all his money bribing them ta rough me up or he wouldn't pay it out of spite!\"");
+	case "貪婪" attend labelFunc0428_0590:
+	message("「他們以為可以逼我付錢換取釋放，但我根本沒什麼錢……」~「然後他們以為能說服 Flindo 替我付保釋金，但他要不是把錢都花在賄賂他們揍我上，就是出於惡意不肯付！」");
 	say();
-	UI_remove_answer("greedy");
+	UI_remove_answer("貪婪");
 labelFunc0428_0590:
 	case "Selina" attend labelFunc0428_05BE:
-	message("\"Pretty little thing, ");
+	message("「漂亮的小東西，");
 	message(var0005);
-	message("... Brought her over from月影城( Moonshade )a while back. Might have been the return trip from takin' that fat sage Batlin across.\"");
+	message("……不久前才把她從月影城( Moonshade )帶過來。大概是那次載那個胖賢者 Batlin 過去的回程吧。」");
 	say();
-	message("\"An' a sullen, bossy sort of fellow he was, too. Did not even have the decency ta lift a mug wit' me during the crossing! Bah! But what was I talkin' about... Ah yes, that lovely slip of a lass, Selina.\"");
+	message("「他也是個陰沉、愛使喚人的傢伙。在航行中甚至連跟我舉杯的禮貌都沒有！呸！我剛說到哪了……啊對，那個可愛的小姑娘， Selina 。」");
 	say();
-	message("\"She must have been someone's servant. Said she wanted ta go home for a visit. Said she might be here for me ta take her back.\"");
+	message("「她肯定是某人的僕人。說她想回家探親。說她可能會待在這裡等我載她回去。」");
 	say();
 	UI_remove_answer("Selina");
-	UI_add_answer(["servant", "home"]);
+	UI_add_answer(["僕人", "家鄉"]);
 labelFunc0428_05BE:
-	case "servant" attend labelFunc0428_05D1:
-	message("\"Selina certainly isn't one of those over-dressed mages, for sure!\" ~\"She's too timid ta be anything but a servant.\"");
+	case "僕人" attend labelFunc0428_05D1:
+	message("「 Selina 肯定不是那些穿著浮誇的法師之一，那是一定的！」~「她太膽小了，除了僕人什麼也做不了。」");
 	say();
-	UI_remove_answer("servant");
+	UI_remove_answer("僕人");
 labelFunc0428_05D1:
-	case "home" attend labelFunc0428_05E4:
-	message("\"I don't think she said, but I did perceive it was somewhere like Monitor.\"");
+	case "家鄉" attend labelFunc0428_05E4:
+	message("「我不認為她說過，但我感覺像是蒙利多( Monitor )之類的地方。」");
 	say();
-	UI_remove_answer("home");
+	UI_remove_answer("家鄉");
 labelFunc0428_05E4:
-	case "Pikemen" attend labelFunc0428_0612:
-	message("\"Well, to honor the fine keeper of this establishment...\"");
+	case "長矛兵" attend labelFunc0428_0612:
+	message("「好吧，為了尊重這家店的優秀老闆……」");
 	say();
 	if (!gflags[0x003E]) goto labelFunc0428_0600;
-	message("\"'An thee, o' course, ");
+	message("「還有你，當然，");
 	message(var0005);
-	message("...\"");
+	message("……」");
 	say();
 labelFunc0428_0600:
-	message("\"I'll try ta be kind.\" ~\"So I'll merely say that Monitor's finest are no longer cut from the same sailcloth as Argus...\" *\"If what I've seen and heard is any judge, I'd say that the Pikemen are more interested in money than in valor... and me treasure.\"");
+	message("「我會盡量客氣點。」~「所以我只能說，蒙利多最精銳的部隊已經不再像 Argus 那樣可靠了……」*「根據我所見所聞，我敢說那些長矛兵對錢……還有我的寶藏……比對勇氣更感興趣。」");
 	say();
-	UI_remove_answer("Pikemen");
-	UI_add_answer("treasure");
+	UI_remove_answer("長矛兵");
+	UI_add_answer("寶藏");
 labelFunc0428_0612:
-	case "treasure" attend labelFunc0428_0629:
-	message("\"Aye, treasure... from me wilder, younger days.\"");
+	case "寶藏" attend labelFunc0428_0629:
+	message("「對，寶藏……來自於我更狂野、年輕的歲月。」");
 	say();
-	message("\"Those Pikemen scoundrels tried ta convince me ta tell 'em where I keep me map. 'Tis lucky fer me that Argus would never let 'em search me room. I never keep it on me... Hide it in me room most times.\"");
+	message("「那些無賴長矛兵試圖說服我告訴他們我的地圖藏在哪。幸好 Argus 絕不讓他們搜我的房間。我從不帶在身上……通常都藏在房間裡。」");
 	say();
-	UI_remove_answer("treasure");
+	UI_remove_answer("寶藏");
 labelFunc0428_0629:
-	case "storms" attend labelFunc0428_0642:
-	message("\"I've sailed the seas almost all the days of my life, ");
+	case "風暴" attend labelFunc0428_0642:
+	message("「我大半輩子都在海上航行，");
 	message(var0005);
-	message(".\" ~\"And I'll tell ye that there's nothing on the water that I can't sail a ship through.\" *\"But how can a man fight something that plucks a ship out o' the water, or turns a ship's sails into slabs of stone?\" ~\"And I'll not think me a coward ta tell ye that these storms have me plenty mindful of how deep them seas are!\"");
+	message("。」~「我告訴你，水面上沒有什麼是我不能駕船穿過的。」*「但人怎麼能跟那種把船從水裡拔起來，或是把船帆變成石板的東西對抗？」~「我跟你說這些風暴讓我深切體會到海有多深，這可不是懦弱！」");
 	say();
-	UI_remove_answer("storms");
+	UI_remove_answer("風暴");
 labelFunc0428_0642:
-	case "journey" attend labelFunc0428_068C:
-	UI_remove_answer("journey");
+	case "旅程" attend labelFunc0428_068C:
+	UI_remove_answer("旅程");
 	if (!(var0000 == 0x0001)) goto labelFunc0428_068B;
-	message("\"I can take ye to月影城( Moonshade ), ");
+	message("「我可以帶你去月影城( Moonshade )，");
 	message(var0005);
-	message(".\" ~\"Wait for me out on the Arabella, and we'll try to outrace these blasted storms!\"");
+	message("。」~「去 Arabella 號上等我，我們來試著跑贏這些該死的風暴！」");
 	say();
-	Func097F(0xFFD8, "The Arabella sails in two minutes!", 0x000A);
+	Func097F(0xFFD8, "Arabella 將於兩分鐘後啟航！", 0x000A);
 	var0017 = UI_get_npc_object(0xFFD8);
 	UI_set_npc_id(0xFFD8, 0x0002);
 	var0000 = 0x0002;
 labelFunc0428_068B:
 	abort;
 labelFunc0428_068C:
-	case "leave island" attend labelFunc0428_06B4:
+	case "離開島嶼" attend labelFunc0428_06B4:
 	if (!gflags[0x01BD]) goto labelFunc0428_06A9;
-	message("\"So ye're still trying ta leave this island?\"");
+	message("「所以你還在試著離開這座島？」");
 	say();
-	message("\"Well, I didn't want ta mention it before, but\tthere are caves in the southern mountains.\" ~\"Legend says they lead ta the mainland, if thou canst find the right path...\" ~\"But none who ventured there have ever returned!\" ~\"I wager that Julia doth have possession of a key that would let thee in down there, but I would think twice if I were thee before I made such a journey!\"");
+	message("「好吧，我之前不想提，但在南部山區有洞穴。」~「傳說如果能找到正確的路，就能通往大陸……」~「但進去的人從未回來過！」~「我打賭 Julia 手上有一把能讓你進去的鑰匙，但如果我是你，在踏上這種旅程前我會三思！」");
 	say();
 	gflags[0x00ED] = true;
 	goto labelFunc0428_06AD;
 labelFunc0428_06A9:
-	message("\"Not on my ship, thou won't!\" ~\"'Tis too dangerous ta sail these waters in these storms!\" *\"If thou dost want ta travel elsewhere, why not speak ta the mages?\" ~\"They know how ta magic themselves for short distances...\" *\"And I've heard it said that Old Erstam the Mad Mage can travel anywhere he pleases!\"");
+	message("「在我的船上絕對不行！」~「在這些風暴中航行太危險了！」*「如果你想去別的地方，為什麼不去跟那些法師談談？」~「他們知道怎麼用魔法進行短距離傳送……」*「而且我聽說那個瘋狂法師老 Erstam 可以去任何他想去的地方！」");
 	say();
 labelFunc0428_06AD:
-	UI_remove_answer("leave island");
+	UI_remove_answer("離開島嶼");
 labelFunc0428_06B4:
-	case "blue egg" attend labelFunc0428_073D:
+	case "藍色蛋" attend labelFunc0428_073D:
 	if (!Func097D(0xFE9B, 0x0001, 0x0241, 0xFE99, 0x0003)) goto labelFunc0428_0707;
-	message("\"A rotten egg!\" ~\"Why art thou shoving such a thing at me?\"");
+	message("「一顆臭蛋！」~「你為什麼要把這種東西推給我？」");
 	say();
 	if (!Func0942(0xFFE2)) goto labelFunc0428_0704;
 	UI_show_npc_face1(0xFFE2, 0x0000);
-	message("\"Take that thing out of here!\" ~\"My patrons are trying to eat!\"");
+	message("「把那東西拿出去！」~「我的客人還在吃飯呢！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	Func097F(0xFFE4, "@Phew!@", 0x0005);
+	Func097F(0xFFE4, "@呸！@", 0x0005);
 	abort;
 labelFunc0428_0704:
 	goto labelFunc0428_0736;
 labelFunc0428_0707:
-	message("\"A blue aig?\" ~\"");
+	message("「一顆藍色的蛋？」~「");
 	message(var0005);
-	message(", I have never seen or heard of any such thing in all my\ttravels.\" *\"Might be that thou shouldst ask a scholar, like Fedabiblio the Magister, though.\"");
+	message("，在我所有的旅途中，從未見過或聽過這種東西。」*「不過，也許你該去問問學者，像是法師 Fedabiblio 。」");
 	say();
-	var0014 = Func0992(0x0001, "@But he sent us to thee!@", 0x0000, false);
+	var0014 = Func0992(0x0001, "@但他叫我們來找你！@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	if (!(var0014 != 0xFE9C)) goto labelFunc0428_0736;
-	message("\"Then ye be out of luck, matey.\"");
+	message("「那你們運氣不好了，夥計。」");
 	say();
 labelFunc0428_0736:
-	UI_remove_answer("blue egg");
+	UI_remove_answer("藍色蛋");
 labelFunc0428_073D:
-	case "pinecone" attend labelFunc0428_0799:
+	case "松果" attend labelFunc0428_0799:
 	if (!Func097D(0xFE9B, 0x0001, 0x0108, 0xFE99, 0xFE99)) goto labelFunc0428_0786;
-	message("\"Anyone can see 'tis a pinecone...\" ~\"What's thy question?\"");
+	message("「誰都看得出來這是一顆松果……」~「你想問什麼？」");
 	say();
-	var0014 = Func0992(0x0001, "@But where doth it come from?@", "@Where can I find pinecones?@", false);
+	var0014 = Func0992(0x0001, "@但它是從哪裡來的？@", "@我在哪裡可以找到松果？@", false);
 	UI_show_npc_face0(0xFFD8, 0x0000);
 	UI_set_conversation_slot(0x0000);
-	message("\"In the northern woods, of course.\" ~\"But thou canst not travel there no more -- no ship will sail there, and the Swamp of\tGorlab will let no man pass!\"");
+	message("「當然是在北方的森林裡。」~「但你現在沒法去了——沒有船會航行到那裡，而 Gorlab 沼澤也無人能通過！」");
 	say();
 	goto labelFunc0428_078E;
 labelFunc0428_0786:
-	message("\"Pinecones come from the northern woods.\" ~\"Purty things, ain't they? I collect 'em and give 'em to sweet gals like Bucia at the Canton.\"");
+	message("「松果來自北方的森林。」~「挺漂亮的東西，不是嗎？我收集它們，送給像 Canton 的 Bucia 這樣可愛的姑娘。」");
 	say();
-	message("\"Can't git 'em now.\" ~\"Ain't gonna sail my ship no more, and a ship is the only way past Gorlab Swamp.\"");
+	message("「現在拿不到了。」~「我的船不會再航行了，而船是越過 Gorlab 沼澤的唯一方法。」");
 	say();
 labelFunc0428_078E:
 	gflags[0x028C] = true;
-	UI_remove_answer("pinecone");
+	UI_remove_answer("松果");
 labelFunc0428_0799:
-	case "bye" attend labelFunc0428_07C0:
+	case "告辭" attend labelFunc0428_07C0:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Fair weather, Captain!@", 0x0000);
-	Func097F(0xFFD8, "@Smooth sailin'!@", 0x0002);
+	Func097F(0xFE9C, "@一路順風，船長！@", 0x0000);
+	Func097F(0xFFD8, "@航行順利！@", 0x0002);
 	goto labelFunc0428_07C3;
 labelFunc0428_07C0:
 	goto labelFunc0428_042A;
@@ -414,5 +414,3 @@ labelFunc0428_07C3:
 labelFunc0428_07C4:
 	return;
 }
-
-

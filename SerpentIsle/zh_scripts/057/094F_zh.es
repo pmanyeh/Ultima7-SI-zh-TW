@@ -11,7 +11,7 @@ void Func094F 0x94F (var var0000, var var0001)
 
 	if (!UI_npc_nearby(var0000)) goto labelFunc094F_004F;
 	if (!UI_get_item_flag(var0000, 0x0019)) goto labelFunc094F_0024;
-	UI_item_say(var0000, "@Slurp@");
+	UI_item_say(var0000, "@吸溜@");
 	goto labelFunc094F_004F;
 labelFunc094F_0024:
 	var0002 = 0x0000;

@@ -33,7 +33,7 @@ void Func08D7 0x8D7 ()
 	if (!var0005) goto labelFunc08D7_0118;
 	UI_set_item_frame(var0005, 0x0005);
 	var0004 = UI_update_last_created(var0003);
-	var0004 = UI_execute_usecode_array(var0005, [(byte)0x52, "@I thank thee...@", (byte)0x27, 0x000F, (byte)0x52, "@...and here is thy reward.@"]);
+	var0004 = UI_execute_usecode_array(var0005, [(byte)0x52, "@感謝你……@", (byte)0x27, 0x000F, (byte)0x52, "@……而這是給你的獎勵。@"]);
 labelFunc08D7_0118:
 	var0006 = UI_find_nearby(var0002, 0x0113, 0x0000, 0x0010);
 	if (!var0006) goto labelFunc08D7_0138;

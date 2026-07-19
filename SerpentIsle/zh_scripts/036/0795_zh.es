@@ -32,7 +32,7 @@ labelFunc0795_0010:
 	var0005 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x55, 0x061F], 0x0019);
 	var0005 = UI_execute_usecode_array(var0004, [(byte)0x23, (byte)0x27, 0x0005, (byte)0x6C, (byte)0x27, 0x0004, (byte)0x6D, (byte)0x27, 0x0004, (byte)0x6E, (byte)0x27, 0x0004, (byte)0x61]);
 	if (!Func0983(var0004)) goto labelFunc0795_00A9;
-	Func094F(var0004, ["@Ohh!@", "@Eeehhh!@", "@Bleh!@", "@Gak!@"]);
+	Func094F(var0004, ["@喔！@", "@欸欸！@", "@嘔！@", "@嘎！@"]);
 labelFunc0795_00A9:
 	var0005 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x55, 0x0795], 0x0011);
 labelFunc0795_00C0:

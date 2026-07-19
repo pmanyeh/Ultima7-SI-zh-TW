@@ -161,7 +161,7 @@ labelFunc0400_0367:
 	goto labelFunc0400_0367;
 labelFunc0400_039A:
 	if (!var0007) goto labelFunc0400_03AC;
-	Func097F(var0007, "@What dreams!@", 0x000E);
+	Func097F(var0007, "@多麼奇妙的夢啊！@", 0x000E);
 labelFunc0400_03AC:
 	var000D = Func09A0(0x0002, 0x0001);
 	var0000 = UI_execute_usecode_array(var000D, [(byte)0x23, (byte)0x55, 0x0636]);
@@ -297,20 +297,20 @@ labelFunc0400_08D1:
 	UI_show_npc_face0(0xFEE1, 0x0000);
 	UI_set_item_flag(0xFE9C, 0x0010);
 	UI_set_schedule_type(item, 0x000F);
-	message("\"Thou art nearly dead, Avatar!\"");
+	message("「你快死了，聖者！」");
 	say();
-	message("\"Yield to me, and perhaps I shall spare thy life! Dost thou yield?\"");
+	message("「向我屈服，也許我會饒你一命！你投降嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0400_0969;
-	message("\"I always knew that thou wert a coward!\"");
+	message("「我早就知道你是個懦夫！」");
 	say();
 	var0000 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x67, (byte)0x23, (byte)0x6A, (byte)0x23, (byte)0x67], 0x0001);
 	var0000 = UI_set_npc_prop(0xFE9C, 0x0003, 0x000A);
 	var0000 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0001), [(byte)0x23, (byte)0x55, 0x07DA], 0x000A);
-	Func097F(item, "@Die, fool!@", 0x0000);
+	Func097F(item, "@去死吧，蠢貨！@", 0x0000);
 	goto labelFunc0400_09A2;
 labelFunc0400_0969:
-	Func097F(item, "@Damn thee!@", 0x0000);
+	Func097F(item, "@該死的！@", 0x0000);
 	var0000 = UI_set_npc_prop(0xFE9C, 0x0003, 0x000A);
 	gflags[0x021F] = true;
 	var0000 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x07DA], 0x000A);
@@ -357,8 +357,8 @@ labelFunc0400_0A8C:
 labelFunc0400_0ABC:
 	var0000 = UI_delayed_execute_usecode_array(Func09A0(0x0001, 0x0004), [(byte)0x55, 0x07DC], 0x012C);
 	var0000 = Func0992(0x0001, 0x0000, 0x0000, true);
-	Func097F(var0000, "@Wake up!@", 0x0004);
-	var0000 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x59, 0x0000, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x52, "@Oh, mine head...@"]);
+	Func097F(var0000, "@醒醒！@", 0x0004);
+	var0000 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x59, 0x0000, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x52, "@喔，我的頭……@"]);
 	var0000 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x0400], 0x0005);
 	abort;
 labelFunc0400_0B32:

@@ -22,7 +22,7 @@ void Func07D9 object#(0x7D9) ()
 	UI_set_item_flag(var0002, 0x0012);
 	var0003 = UI_update_last_created(var0001);
 	if (!var0003) goto labelFunc07D9_006B;
-	var0003 = UI_delayed_execute_usecode_array(var0002, [(byte)0x23, (byte)0x52, "@Aaahhh!@"], 0x0001);
+	var0003 = UI_delayed_execute_usecode_array(var0002, [(byte)0x23, (byte)0x52, "@啊啊！@"], 0x0001);
 labelFunc07D9_006B:
 	UI_set_npc_id(0xFF69, 0x0005);
 	UI_remove_npc(0xFF69);

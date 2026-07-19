@@ -19,7 +19,7 @@ labelFunc08D6_003D:
 	var0000 = (var0000 + 0x0007);
 	UI_set_alignment(var0005, 0x0002);
 	UI_set_schedule_type(var0005, 0x0000);
-	var0006 = UI_delayed_execute_usecode_array(var0005, [(byte)0x23, (byte)0x52, "@I kill thee!@"], var0000);
+	var0006 = UI_delayed_execute_usecode_array(var0005, [(byte)0x23, (byte)0x52, "@我殺了你！@"], var0000);
 	goto labelFunc08D6_003D;
 labelFunc08D6_0080:
 	return true;

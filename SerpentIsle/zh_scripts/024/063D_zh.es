@@ -24,7 +24,7 @@ labelFunc063D_0030:
 	goto labelFunc063D_0030;
 labelFunc063D_0057:
 	if (!(event == 0x0000)) goto labelFunc063D_0067;
-	UI_item_say(item, "@Oink@");
+	UI_item_say(item, "@哼唧@");
 labelFunc063D_0067:
 	return;
 }

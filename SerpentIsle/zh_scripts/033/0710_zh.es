@@ -41,7 +41,7 @@ labelFunc0710_00A3:
 labelFunc0710_00BA:
 	gflags[0x0226] = true;
 	if (!(UI_die_roll(0x0001, 0x0003) == 0x0002)) goto labelFunc0710_00DF;
-	var0007 = Func0992(0xFFE4, "@Acid!@", "@Acid!@", true);
+	var0007 = Func0992(0xFFE4, "@酸液！@", "@酸液！@", true);
 labelFunc0710_00DF:
 	var0008 = UI_get_object_position(var0002);
 	var0009 = UI_create_new_object(0x0390);

@@ -25,7 +25,7 @@ void Func08CD 0x8CD ()
 	var0002 = (UI_get_object_position(var0001) & (0xFE99 & 0x0000));
 	var0003 = UI_find_nearby(var0002, 0x0113, 0x0000, 0x0000);
 	if (!var0001) goto labelFunc08CD_00CB;
-	var0004 = UI_execute_usecode_array(var0001, [(byte)0x59, 0x0006, (byte)0x27, 0x0003, (byte)0x52, "@Forgive me, master Lorthondo.@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6D]);
+	var0004 = UI_execute_usecode_array(var0001, [(byte)0x59, 0x0006, (byte)0x27, 0x0003, (byte)0x52, "@原諒我，Lorthondo 主人。@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6D]);
 	var0004 = UI_execute_usecode_array(0xFF5D, [(byte)0x59, 0x0002, (byte)0x6B, (byte)0x27, 0x0002, (byte)0x27, 0x0001, (byte)0x27, 0x0002, (byte)0x27, 0x0003, (byte)0x27, 0x000A, (byte)0x55, 0x07DF]);
 labelFunc08CD_00CB:
 	if (!(event == 0x0002)) goto labelFunc08CD_02D3;
@@ -43,7 +43,7 @@ labelFunc08CD_0151:
 	if (!(UI_get_item_shape(item) == 0x0331)) goto labelFunc08CD_01D7;
 	var0001 = UI_find_nearby(item, 0x017D, 0x000A, 0x0008);
 	var0004 = UI_execute_usecode_array(var0001, [(byte)0x27, 0x0001, (byte)0x27, 0x0004, (byte)0x27, 0x0004, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x27, 0x0003, (byte)0x55, 0x07DF]);
-	var0004 = UI_execute_usecode_array(item, [(byte)0x52, "@Thou hast failed me for the last time.@", (byte)0x27, 0x0003, (byte)0x6C, (byte)0x27, 0x0003, (byte)0x61, (byte)0x27, 0x0003, (byte)0x70, (byte)0x27, 0x0003, (byte)0x6F, (byte)0x27, 0x0005, (byte)0x70, (byte)0x27, 0x0003, (byte)0x61]);
+	var0004 = UI_execute_usecode_array(item, [(byte)0x52, "@你最後一次讓我失望了。@", (byte)0x27, 0x0003, (byte)0x6C, (byte)0x27, 0x0003, (byte)0x61, (byte)0x27, 0x0003, (byte)0x70, (byte)0x27, 0x0003, (byte)0x6F, (byte)0x27, 0x0005, (byte)0x70, (byte)0x27, 0x0003, (byte)0x61]);
 labelFunc08CD_01D7:
 	if (!(UI_get_item_shape(item) == 0x017D)) goto labelFunc08CD_02D3;
 	var0000 = UI_get_object_position(item);
@@ -59,7 +59,7 @@ labelFunc08CD_025F:
 	if (!var000A) goto labelFunc08CD_029F;
 	UI_set_item_frame(var000A, 0x0000);
 	var0004 = UI_update_last_created(var0000);
-	var0004 = UI_execute_usecode_array(var000A, [(byte)0x52, "@NOOOooooo!!!@", (byte)0x27, 0x0015, (byte)0x55, 0x04A3]);
+	var0004 = UI_execute_usecode_array(var000A, [(byte)0x52, "@不！！！！@", (byte)0x27, 0x0015, (byte)0x55, 0x04A3]);
 labelFunc08CD_029F:
 	if (!var0009) goto labelFunc08CD_02D3;
 	var0000[0x0003] = (var0000[0x0003] + 0x0001);

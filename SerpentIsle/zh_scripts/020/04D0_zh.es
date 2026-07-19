@@ -22,7 +22,7 @@ labelFunc04D0_0061:
 labelFunc04D0_007F:
 	if (!var0000) goto labelFunc04D0_00A2;
 	var0001 = var0000[UI_get_random(UI_get_array_size(var0000))];
-	Func097F(var0001, "@She hath made a vow.@", 0x0000);
+	Func097F(var0001, "@她立下了誓言。@", 0x0000);
 labelFunc04D0_00A2:
 	return;
 }

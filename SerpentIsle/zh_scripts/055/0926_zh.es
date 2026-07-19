@@ -26,7 +26,7 @@ void Func0926 0x926 (var var0000)
 labelFunc0926_000D:
 	if (!(var0000 == 0x0018)) goto labelFunc0926_009A;
 	var0001 = [0xFF55, 0xFF54, 0xFF53, 0xFF52, 0xFF51];
-	var0002 = ("@Thank thee!@" & ("@Bless thee!@" & ("@We are saved!@" & "@Praise the Hero!@")));
+	var0002 = ("@謝謝你！@" & ("@祝福你！@" & ("@我們得救了！@" & "@讚美英雄！@")));
 	enum();
 labelFunc0926_003F:
 	for (var0005 in var0001 with var0003 to var0004) attend labelFunc0926_007E;

@@ -35,7 +35,7 @@ labelFunc089D_0053:
 	if (!(var0004[0x0003] > var0007)) goto labelFunc089D_00B5;
 	if (!((var0004[0x0001] <= var0005) && (var0004[0x0001] >= (var0005 - 0x0003)))) goto labelFunc089D_00B5;
 	if (!((var0004[0x0002] <= var0006) && (var0004[0x0002] >= (var0006 - 0x0006)))) goto labelFunc089D_00B5;
-	Func094A("I believe the bridge is blocked.");
+	Func094A("我想橋被擋住了。");
 	return false;
 labelFunc089D_00B5:
 	goto labelFunc089D_0053;

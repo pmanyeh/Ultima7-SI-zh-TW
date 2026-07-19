@@ -22,7 +22,7 @@ void Func0918 0x918 (var var0000)
 labelFunc0918_003A:
 	for (var0005 in var0002 with var0003 to var0004) attend labelFunc0918_0059;
 	if (!(!Func0910(var0005))) goto labelFunc0918_0056;
-	Func094A("@One of the gangplanks seems to be blocked. It must be lowered to sail.@");
+	Func094A("@似乎有跳板被擋住了。必須降下跳板才能開船。@");
 	return;
 labelFunc0918_0056:
 	goto labelFunc0918_003A;

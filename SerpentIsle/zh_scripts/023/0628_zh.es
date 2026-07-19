@@ -38,13 +38,13 @@ labelFunc0628_00C2:
 	var0007 = UI_update_last_created(var0001);
 	var0008 = UI_die_roll(0x0001, 0x0002);
 	if (!(var0008 == 0x0001)) goto labelFunc0628_0117;
-	Func0949("@Turn it off!@");
+	Func0949("@把它關掉！@");
 labelFunc0628_0117:
 	if (!(var0008 == 0x0002)) goto labelFunc0628_0127;
-	Func0949("@Thou art wasting it!@");
+	Func0949("@你在浪費它！@");
 labelFunc0628_0127:
 	if (!UI_npc_nearby(0xFFFF)) goto labelFunc0628_013B;
-	UI_item_say(0xFFFF, "@That is perfectly good beer!@");
+	UI_item_say(0xFFFF, "@這可是上好的啤酒啊！@");
 labelFunc0628_013B:
 	UI_halt_scheduled(item);
 	var0007 = UI_delayed_execute_usecode_array(item, [(byte)0x55, 0x0628], 0x0010);

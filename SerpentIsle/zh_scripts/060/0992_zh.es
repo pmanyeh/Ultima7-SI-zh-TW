@@ -181,7 +181,7 @@ labelFunc0992_04A6:
 	goto labelFunc0992_04A6;
 labelFunc0992_04C6:
 	if (!(Func097D(0xFE9B, 0x0001, 0x031F, 0xFE99, 0x0012) && (!var0003))) goto labelFunc0992_04EE;
-	var0017 = (var0017 & (0xFED3 & "Boydon's head in party"));
+	var0017 = (var0017 & (0xFED3 & "Boydon的頭顱在隊伍中"));
 labelFunc0992_04EE:
 	UI_error_message("Copy down this information with the error");
 	UI_error_message(var0017);

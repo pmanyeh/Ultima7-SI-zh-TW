@@ -1,7 +1,7 @@
 #game "serpentisle"
 void Func0904 0x904 (var var0000)
 {
-	UI_item_say(var0000, "Locked");
+	UI_item_say(var0000, "已上鎖");
 	return;
 }
 

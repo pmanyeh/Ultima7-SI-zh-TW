@@ -30,7 +30,7 @@ void Func0780 object#(0x780) ()
 	if (!var0002) goto labelFunc0780_00F0;
 	UI_set_schedule_type(var0002, 0x000A);
 	var0002->Func07D2();
-	Func097F(0xFE9C, "@By the Virtues!@", 0x0005);
+	Func097F(0xFE9C, "@以美德之名！@", 0x0005);
 	UI_play_sound_effect(0x000F);
 	var0002 = UI_delayed_execute_usecode_array(var0002, [(byte)0x23, (byte)0x55, 0x02BE], 0x0014);
 labelFunc0780_00F0:

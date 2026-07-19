@@ -15,7 +15,7 @@ void Func0623 object#(0x623) ()
 	var0000 = UI_get_party_list();
 	if (!(UI_get_array_size(var0000) > 0x0001)) goto labelFunc0623_0035;
 	var0001 = UI_get_npc_name(0xFE9C);
-	Func094A((("Arise, " + var0001) + ". 'Tis time to continue the quest."));
+	Func094A((("起來吧，" + var0001) + "。是時候繼續這場任務了。"));
 labelFunc0623_0035:
 	enum();
 labelFunc0623_0036:

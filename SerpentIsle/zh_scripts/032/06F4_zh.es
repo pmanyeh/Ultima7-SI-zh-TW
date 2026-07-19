@@ -10,7 +10,7 @@ void Func06F4 object#(0x6F4) ()
 	UI_remove_item(item);
 labelFunc06F4_000B:
 	if (!gflags[0x00C0]) goto labelFunc06F4_0021;
-	var0000 = Func0992(0x0001, "@Wait! A bottle!@", "@This bottle could be a clue...@", true);
+	var0000 = Func0992(0x0001, "@等等！一個瓶子！@", "@這個瓶子可能是個線索……@", true);
 labelFunc06F4_0021:
 	return;
 }

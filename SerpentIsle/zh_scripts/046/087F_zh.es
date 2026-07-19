@@ -24,14 +24,14 @@ void Func087F 0x87F (var var0000)
 	gflags[0x02D1] = false;
 	var0001 = Func0994();
 	if (!(var0001 == 0x001F)) goto labelFunc087F_002E;
-	Func094A("I am weary, but I cannot fall asleep. It must be because I am already in the realm of dreams.");
+	Func094A("我很疲倦，但我無法入睡。一定是因為我已經身處夢境之中了。");
 	if (!Func0880(var0000)) goto labelFunc087F_002D;
 	var0000->Func0624();
 labelFunc087F_002D:
 	abort;
 labelFunc087F_002E:
 	if (!UI_in_combat()) goto labelFunc087F_004D;
-	Func094A("This is no time to sleep! Rouse thy bones!");
+	Func094A("現在不是睡覺的時候！快起來！");
 	if (!Func0880(var0000)) goto labelFunc087F_004A;
 	var0000->Func0624();
 labelFunc087F_004A:

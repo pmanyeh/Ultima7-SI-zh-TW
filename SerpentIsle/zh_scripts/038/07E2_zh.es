@@ -81,8 +81,8 @@ labelFunc07E2_0180:
 labelFunc07E2_01AA:
 	goto labelFunc07E2_0180;
 labelFunc07E2_01AD:
-	Func097F(0xFE9C, "@I made it!@", 0x0002);
-	Func097F(0xFFB5, "@Thou didst survive?@", 0x000A);
+	Func097F(0xFE9C, "@我做到了！@", 0x0002);
+	Func097F(0xFFB5, "@你活下來了？@", 0x000A);
 	UI_set_schedule_type(0xFFB5, 0x0003);
 	Func09AC(0xFFB5, 0x0337, 0x08C8, 0x0003);
 labelFunc07E2_01DE:
@@ -106,7 +106,7 @@ labelFunc07E2_022D:
 	UI_set_item_flag(0xFEE4, 0x0000);
 	UI_set_npc_id(0xFEE4, 0x000E);
 	Func09AD(0xFEE4);
-	Func097F(0xFEE4, "@Accept thy death, Avatar!@", 0x0002);
+	Func097F(0xFEE4, "@接受你的死亡吧，聖者！@", 0x0002);
 	var0005 = UI_delayed_execute_usecode_array(0xFEE4, [(byte)0x23, (byte)0x55, 0x00E4, 0x0000], 0x0006);
 labelFunc07E2_02B9:
 	return;

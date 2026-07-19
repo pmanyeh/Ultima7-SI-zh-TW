@@ -22,7 +22,7 @@ labelFunc04D6_0061:
 labelFunc04D6_007F:
 	if (!var0000) goto labelFunc04D6_00A2;
 	var0001 = var0000[UI_get_random(UI_get_array_size(var0000))];
-	Func097F(var0001, "@He cannot speak.@", 0x0000);
+	Func097F(var0001, "@他不會說話。@", 0x0000);
 labelFunc04D6_00A2:
 	return;
 }

@@ -63,7 +63,7 @@ labelFunc072B_01A6:
 	UI_remove_item(var0004);
 labelFunc072B_0201:
 	if (!(var0009 == 0x0013)) goto labelFunc072B_0217;
-	Func097F(0xFE9C, "@I forgot the eye!@", 0x0041);
+	Func097F(0xFE9C, "@我忘了拿眼睛！@", 0x0041);
 labelFunc072B_0217:
 	goto labelFunc072B_01A6;
 labelFunc072B_021A:
@@ -169,7 +169,7 @@ labelFunc072B_060A:
 	UI_sprite_effect(0x001A, (var0015[0x0001] - 0x0004), (var0015[0x0002] - 0x0003), 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_sprite_effect(0x0007, (var0015[0x0001] - 0x0003), (var0015[0x0002] - 0x0004), 0x0000, 0x0000, 0x000A, 0xFFFD);
 	UI_play_sound_effect(0x0043);
-	Func097F(0xFE9C, "@The Eye of Order!@", 0x0005);
+	Func097F(0xFE9C, "@秩序之眼！@", 0x0005);
 labelFunc072B_0692:
 	gflags[0x0007] = true;
 	var0004 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x072B], 0x0014);

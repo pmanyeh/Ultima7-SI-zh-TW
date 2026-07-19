@@ -34,15 +34,15 @@ labelFunc07F6_00DA:
 	gflags[0x0007] = false;
 	UI_set_schedule_type(item, 0x0003);
 	if (!(UI_get_npc_number(item) == 0xFF4E)) goto labelFunc07F6_010B;
-	UI_item_say(0xFF4E, "@Avatar! Avatar!@");
+	UI_item_say(0xFF4E, "@聖者！聖者！@");
 	abort;
 labelFunc07F6_010B:
 	if (!(UI_get_npc_number(item) == 0xFF4D)) goto labelFunc07F6_0122;
-	UI_item_say(0xFF4D, "@Avatar, thou hast returned!@");
+	UI_item_say(0xFF4D, "@聖者，你回來了！@");
 	abort;
 labelFunc07F6_0122:
 	if (!(UI_get_npc_number(item) == 0xFF4C)) goto labelFunc07F6_0139;
-	UI_item_say(0xFF4C, "@Art thou ready, Avatar?@");
+	UI_item_say(0xFF4C, "@你準備好了嗎，聖者？@");
 	abort;
 labelFunc07F6_0139:
 	if (!(event == 0x000E)) goto labelFunc07F6_0179;

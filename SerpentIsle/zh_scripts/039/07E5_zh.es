@@ -31,7 +31,7 @@ labelFunc07E5_0084:
 	UI_play_sound_effect(var0007);
 labelFunc07E5_00BB:
 	if (!(var0000 == 0x0003)) goto labelFunc07E5_0127;
-	var0008 = ["@Oh!@", "@Whee!@", "@Ouch!@", "@Whoa!@"];
+	var0008 = ["@噢！@", "@呼！@", "@痛！@", "@哇！@"];
 	var0009 = UI_die_roll(0x0001, UI_get_array_size(var0008));
 	var000A = var0008[var0009];
 	var000B = [0xFFD5, 0xFFDB, 0xFFD8, 0xFFD6];

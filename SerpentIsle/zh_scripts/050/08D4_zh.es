@@ -29,7 +29,7 @@ labelFunc08D4_006A:
 	if (!var0000) goto labelFunc08D4_00F8;
 	UI_set_item_flag(0xFE9C, 0x0010);
 	var0004 = UI_direction_from(item, var0000);
-	var0005 = UI_execute_usecode_array(item, [(byte)0x52, "@Wake up, girl!@", (byte)0x59, var0004, (byte)0x27, 0x000F, (byte)0x52, "@Dost thou crave a carrot?@"]);
+	var0005 = UI_execute_usecode_array(item, [(byte)0x52, "@醒醒，女孩！@", (byte)0x59, var0004, (byte)0x27, 0x000F, (byte)0x52, "@你想吃胡蘿蔔嗎？@"]);
 	var0006 = UI_direction_from(var0000, item);
 	var0005 = UI_execute_usecode_array(var0000, [(byte)0x27, 0x000A, (byte)0x61, (byte)0x27, 0x0006, (byte)0x59, var0006, (byte)0x27, 0x000C, (byte)0x55, 0x07DF]);
 labelFunc08D4_00F8:

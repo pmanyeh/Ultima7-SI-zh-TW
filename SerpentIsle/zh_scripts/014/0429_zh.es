@@ -42,41 +42,41 @@ void Func0429 object#(0x429) ()
 	var0005 = false;
 	var0006 = UI_part_of_day();
 	if (!((var0006 > 0x0001) || (var0006 < 0x0006))) goto labelFunc0429_0046;
-	var0006 = "day";
+	var0006 = "白天";
 	goto labelFunc0429_004C;
 labelFunc0429_0046:
-	var0006 = "evening";
+	var0006 = "傍晚";
 labelFunc0429_004C:
 	if (!(event == 0x0001)) goto labelFunc0429_008A;
-	UI_item_say(0xFE9C, "@Pardon me...@");
+	UI_item_say(0xFE9C, "@打擾一下...@");
 	0xFFD7->Func07D1();
-	Func097F(0xFFD7, (((("Good " + var0006) + ", ") + var0000) + "."), 0x0002);
+	Func097F(0xFFD7, ((((("美好的" + var0006) + "，") + var0000) + "。")), 0x0002);
 	UI_set_schedule_type(0xFFD7, 0x0003);
 labelFunc0429_008A:
 	if (!(event == 0x0000)) goto labelFunc0429_0136;
 	var0007 = UI_get_random(0x0006);
 	if (!(var0007 == 0x0001)) goto labelFunc0429_00B0;
-	UI_item_say(0xFFD7, "@Wouldst thou like another?@");
+	UI_item_say(0xFFD7, "@要再來一杯嗎？@");
 labelFunc0429_00B0:
 	if (!(var0007 == 0x0002)) goto labelFunc0429_00C4;
-	UI_item_say(0xFFD7, "@Refill?@");
+	UI_item_say(0xFFD7, "@需要續杯嗎？@");
 labelFunc0429_00C4:
 	if (!(var0007 == 0x0003)) goto labelFunc0429_00D8;
-	UI_item_say(0xFFD7, "@Lodgings available!@");
+	UI_item_say(0xFFD7, "@有客房可入住！@");
 labelFunc0429_00D8:
 	if (!(var0007 == 0x0004)) goto labelFunc0429_00EC;
-	UI_item_say(0xFFD7, "@Good, clean rooms!@");
+	UI_item_say(0xFFD7, "@乾淨舒適的客房！@");
 labelFunc0429_00EC:
 	if (!(var0007 == 0x0005)) goto labelFunc0429_0122;
 	if (!Func0942(0xFFDA)) goto labelFunc0429_0118;
-	UI_item_say(0xFFD7, "@We need more clean mugs, son!@");
-	Func097F(0xFFDA, "@Aye, mother!@", 0x0002);
+	UI_item_say(0xFFD7, "@我們需要更多乾淨的杯子，孩子！@");
+	Func097F(0xFFDA, "@是，母親！@", 0x0002);
 	goto labelFunc0429_0122;
 labelFunc0429_0118:
-	UI_item_say(0xFFD7, "@Mine aching back!@");
+	UI_item_say(0xFFD7, "@我的腰啊！@");
 labelFunc0429_0122:
 	if (!(var0007 == 0x0006)) goto labelFunc0429_0136;
-	UI_item_say(0xFFD7, "@Sigh...@");
+	UI_item_say(0xFFD7, "@唉……@");
 labelFunc0429_0136:
 	if (!(event == 0x0009)) goto labelFunc0429_0671;
 	UI_run_schedule(0xFFD7);
@@ -84,210 +84,210 @@ labelFunc0429_0136:
 	UI_show_npc_face0(0xFFD7, 0x0000);
 	var0008 = UI_get_item_flag(0xFFD7, 0x001C);
 	if (!(var0008 == false)) goto labelFunc0429_0192;
-	message("\"Welcome to the Sleeping Bull, ");
+	message("「歡迎來到睡牛客棧( Sleeping Bull )， ");
 	message(var0000);
-	message("! Enter before we suffer another storm.\" *\"I am Devra... My son, Argus, and I are running the inn since Angus disappeared.\"");
+	message("！趕快進來，免得又碰上風暴。」 *「我是 Devra……我兒子 Argus 和我在 Angus 失蹤後，一起經營這間旅店。」");
 	say();
 	UI_set_item_flag(0xFFD7, 0x001C);
-	UI_add_answer(["storm", "Argus", "disappeared"]);
+	UI_add_answer(["風暴", "Argus", "失蹤"]);
 	goto labelFunc0429_01AC;
 labelFunc0429_0192:
-	message("\"Welcome back, ");
+	message("「歡迎回來， ");
 	message(var0002);
-	message(". 'Tis so good to see thee again, after all these storms. Argus will be glad to see thee.\"");
+	message("。在這一連串的風暴之後，又見到你真是太好了。Argus 也會很高興見到你的。」");
 	say();
-	UI_add_answer(["storm", "Argus", "disappeared"]);
+	UI_add_answer(["風暴", "Argus", "失蹤"]);
 labelFunc0429_01AC:
-	UI_add_answer(["food", "drink", "room", "exchange money", "bye"]);
+	UI_add_answer(["食物", "飲料", "房間", "兌換貨幣", "告辭"]);
 labelFunc0429_01C2:
 	converse attend labelFunc0429_0670;
-	case "storm" attend labelFunc0429_01E5:
-	message("\"I have lived here since before I was married, and I've never seen anything like these mage-born storms. Why, one caught old man Jothum in his field and changed his plow horse into a goat, in front of his eyes.\" *\"But Jothum was lucky, 'twas only his horse. We never did find what happened to Theron.\"");
+	case "風暴" attend labelFunc0429_01E5:
+	message("「我在這裡住了一輩子，結婚以前也是，卻從未見過這種法師引發的風暴。有一次把老頭 Jothum 困在他的田裡，當著他的面，把他的耕馬變成了一隻山羊。」 *「但 Jothum 算是幸運的，只是馬受了難。我們始終沒查出 Theron 的下落。」");
 	say();
-	UI_remove_answer("storm");
-	UI_add_answer(["mage-born", "Theron"]);
+	UI_remove_answer("風暴");
+	UI_add_answer(["法師引發", "Theron"]);
 labelFunc0429_01E5:
-	case "mage-born" attend labelFunc0429_01FF:
-	message("\"If thou shouldst be hit with lightning -- normal lightning, mind thee -- thou art dead. Plain and simple. They bury thy charred body the next day.\" *\"But storms that change things, or make them disappear, or exchange them for something else, well now, it seems to me that 'tis magic, right enough. I don't have to be from Moonshade to conjure that answer!\"");
+	case "法師引發" attend labelFunc0429_01FF:
+	message("「如果你被普通的閃電擊中，就是一死，毫無懸念。第二天他們就把你那燒焦的屍體給埋了。」 *「但這些會讓東西變形、消失，或把這個換成那個的風暴，在我看來分明就是魔法搞的鬼。我不必住在月影城( Moonshade )，也能想出這個答案！」");
 	say();
-	UI_remove_answer("mage-born");
-	UI_add_answer("Moonshade");
+	UI_remove_answer("法師引發");
+	UI_add_answer("月影城");
 labelFunc0429_01FF:
-	case "Moonshade" attend labelFunc0429_0276:
-	message("\"Fine city, though 'tis plagued by wizards and mages. The place reeks of sorcery.\" *\"Hast thou heard anything more of what might be causing these storms? I wonder if anyone has done anything to stop them.\"");
+	case "月影城" attend labelFunc0429_0276:
+	message("「好地方，雖然那裡盡是巫師和法師。整座城瀰漫著魔法的氣息。」 *「你有沒有聽說過究竟是什麼在引發這些風暴？我不知道有沒有人在設法阻止它們。」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0429_022D;
-	message("\"Is it the work of magic? Do they know who is responsible?\"");
+	message("「這真的是魔法的力量嗎？他們知道是誰幹的嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0429_0226;
-	message("\"Wonderful! I hope that this means that the storms will end soon...\"");
+	message("「太好了！希望這意味著風暴很快就會結束……」");
 	say();
 	goto labelFunc0429_022A;
 labelFunc0429_0226:
-	message("\"I had hoped that the storms would end soon, before they cause us to close...\"");
+	message("「我一直希望風暴能早點結束，否則我們都要關門大吉了……」");
 	say();
 labelFunc0429_022A:
 	goto labelFunc0429_026F;
 labelFunc0429_022D:
-	message("\"Well, I still think 'tis the work of them mages! No good comes of controlling that type of power, I'll tell thee...\"");
+	message("「好吧，我還是認為這是那些法師幹的！掌控這種力量從來不會有好事，我告訴你……」");
 	say();
 	if (!(var0003 == true)) goto labelFunc0429_026F;
 	UI_show_npc_face1(0xFFDA, 0x0000);
-	message("\"Aye, mother. And thou wilt tell all who will listen! Do not harass what few customers we do have...\"");
+	message("「說得是，母親。你每次都要把這些說給願意聽的人！別去煩我們僅剩的幾位客人了……」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("\"Hast thou ever heard a boy so rude as to talk to his mother that way?\"");
+	message("「你有見過哪個孩子這麼對待自己母親嗎？」");
 	say();
 	UI_show_npc_face1(0xFFDA, 0x0000);
-	message("\"I am no boy, mother. For now, I'm the innkeeper here and I'll thank thee to remember that we have a mage staying here now.\"");
+	message("「我不是孩子了，母親。現在我才是這裡的旅店老闆，請你記住，我們現在有一位法師住在這裡。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0429_026F:
-	UI_remove_answer("Moonshade");
+	UI_remove_answer("月影城");
 labelFunc0429_0276:
 	case "Theron" attend labelFunc0429_028D:
-	message("\"Theron was a simple man, not quite right in the head, if thou knowest what I mean. He worked for Angus and me for nigh on three years as a wood chopper... Until one of those storms.\"");
+	message("「Theron 是個普通人，頭腦不太靈光，你懂我的意思。他幫 Angus 和我砍柴已有將近三年……直到那場風暴來了。」");
 	say();
-	message("\"Angus pulled Theron inside when the storm hit, but Theron ran back out to bring in his favorite axe... Next thing there was a blinding flash, and Theron was gone!\"");
+	message("「風暴來臨時 Angus 把 Theron 拉進屋內，但 Theron 又跑了出去，想把他最愛的斧頭帶進來……接著出現了一道耀眼的閃光，Theron 就這樣消失了！」");
 	say();
 	UI_remove_answer("Theron");
 labelFunc0429_028D:
 	case "Argus" attend labelFunc0429_02A7:
-	message("\"Argus is mine oldest boy. He's a captain in the Pikemen... Or he was until he came home to take over his father's place.\" *\"Mine husband always thought that Wilfred, our youngest, would be the one to take the inn. But he hath become too high and mighty to be an honest innkeeper!\"");
+	message("「Argus 是我的長子。他曾是長槍兵的隊長……直到他回家接管他父親的位子。」 *「我丈夫一直以為 Wilfred，我們最小的孩子，會是接管旅店的那個。但他現在傲氣沖天，哪肯做個老實本分的旅店老闆！」");
 	say();
 	UI_remove_answer("Argus");
 	UI_add_answer("Wilfred");
 labelFunc0429_02A7:
 	case "Wilfred" attend labelFunc0429_02C0:
-	message("\"Wilfred is a Monitorian knight, ");
+	message("「Wilfred 是蒙利多城( Monitor )的騎士， ");
 	message(var0000);
-	message(". He always was headstrong... And I think his father harried him overmuch.\" *\"He ran away to be like his brother... Only better, he said.\"");
+	message("。他向來意志堅定……我想是他父親對他管得太嚴了。」 *「他離家出走，想要效仿他的哥哥……還說要青出於藍。」");
 	say();
 	UI_remove_answer("Wilfred");
 labelFunc0429_02C0:
-	case "disappeared" attend labelFunc0429_02F2:
-	message("\"Thou dost seem like an honest, hard-working person. Perhaps thou canst help me discover what happened to Angus.\" *\"'Tis a right mystery. He disappeared and then my slippers disappeared...\"");
+	case "失蹤" attend labelFunc0429_02F2:
+	message("「你看起來是個誠實、勤懇的人。也許你能幫我查清楚 Angus 究竟發生了什麼事。」 *「這真是個謎。他先失蹤了，然後我的拖鞋也不見了……」");
 	say();
 	if (!(!gflags[0x01E9])) goto labelFunc0429_02DA;
-	message("\"Now I've got no husband and a pair of old, smelly boots.\"");
+	message("「現在我既沒有丈夫，也沒有那雙舊臭靴子。」");
 	say();
 	goto labelFunc0429_02DE;
 labelFunc0429_02DA:
-	message("\"Now I've got no husband, but I do have my slippers...\"");
+	message("「現在我雖然沒有丈夫，但至少拖鞋找回來了……」");
 	say();
 labelFunc0429_02DE:
-	UI_remove_answer("disappeared");
-	UI_add_answer(["mystery", "slippers"]);
+	UI_remove_answer("失蹤");
+	UI_add_answer(["謎團", "拖鞋"]);
 labelFunc0429_02F2:
-	case "slippers" attend labelFunc0429_0395:
+	case "拖鞋" attend labelFunc0429_0395:
 	if (!(!gflags[0x01E9])) goto labelFunc0429_0384;
-	message("\"They were hanging on the line to dry when one of those storms hit. When I went out to gather the wash later, there were these huge boots hanging where my slippers had been.\" *\"I'd gladly give these things away, if only I had my slippers back!\"");
+	message("「那雙拖鞋晾在晾衣繩上晒乾，結果那場風暴來了。我後來出去收衣物，發現我的拖鞋被換成了一雙大靴子。」 *「我巴不得把這雙東西送給人，只要能換回我的拖鞋！」");
 	say();
-	var0009 = Func0992(0x0001, "@Avatar, those look like thy swamp boots!@", "@Those look like my swamp boots!@", false);
+	var0009 = Func0992(0x0001, "@聖者，那看起來像是你的沼澤靴！@", "@那看起來像是我的沼澤靴！@", false);
 	UI_set_conversation_slot(0x0000);
-	message("\"If thou hast my slippers, ");
+	message("「如果你有我的拖鞋， ");
 	message(var0000);
-	message(", I would gladly trade thee these boots for them. I have no great fondness for them other than to keep my feet dry.\"");
+	message("，我很願意用這雙靴子跟你換。我不特別喜歡它，頂多就是能讓腳保持乾燥而已。」");
 	say();
 	var000A = Func097D(0xFE9B, 0x0001, 0x024B, 0xFE99, 0x0005);
 	if (!(var000A == true)) goto labelFunc0429_0379;
-	message("\"Here are thy boots then... And I thank thee for my slippers.\"");
+	message("「這雙靴子就是你的了……謝謝你還我的拖鞋。」");
 	say();
 	var000B = Func099B(0xFE9C, 0x0001, 0x024B, 0xFE99, 0x0006, false, true);
 	var000C = UI_remove_party_items(0x0001, 0x024B, 0xFE99, 0x0005, false);
 	gflags[0x01E9] = true;
 	goto labelFunc0429_037D;
 labelFunc0429_0379:
-	message("\"Then I hope that thou dost not mind if I keep these... I have no way to buy new slippers, what with the storms and all.\" *\"If thou shouldst find my slippers again, I will give these back.\"");
+	message("「那麼希望你不介意讓我繼續留著……我現在根本買不起新拖鞋，風暴害的。」 *「如果你哪天找到我的拖鞋，我就把這雙靴子還給你。」");
 	say();
 labelFunc0429_037D:
 	gflags[0x0293] = true;
 	goto labelFunc0429_038E;
 labelFunc0429_0384:
-	message("\"Thank thee again, ");
+	message("「再次謝謝你， ");
 	message(var0002);
-	message(", for returning my favorite slippers.\"");
+	message("，把我最愛的拖鞋還給我。」");
 	say();
 labelFunc0429_038E:
-	UI_remove_answer("slippers");
+	UI_remove_answer("拖鞋");
 labelFunc0429_0395:
-	case "mystery" attend labelFunc0429_03BC:
-	message("\"On the night Angus disappeared, I'd gone to bed and Angus had remained to sweep. If thou dost ask me though, he stayed up to keep an eye on that strange mage that was staying here.\" *\"I was stirred from a sound sleep by the sound of voices downstairs in the cellar. After I heard a crash, I went down to look, but I did not see anyone. I thought the mage's companion might have tried to slip down to have another drink for free, and thought no more of it until the morning.\"");
+	case "謎團" attend labelFunc0429_03BC:
+	message("「Angus 失蹤的那天晚上，我已經上床睡覺，Angus 留下來打掃。不過要我說，他是留下來盯著那個住在這裡的奇怪法師。」 *「我被樓下地窖傳來的說話聲驚醒。聽到一聲巨響後，我下去查看，卻沒看到任何人。我以為是那位法師的同伴想偷偷下去再喝一杯，便沒有多想，直到隔天早上才發現不對勁。」");
 	say();
 	gflags[0x01E4] = true;
-	UI_remove_answer("mystery");
-	UI_add_answer(["strange mage", "cellar", "mage's companion"]);
+	UI_remove_answer("謎團");
+	UI_add_answer(["奇怪的法師", "地窖", "法師的同伴"]);
 labelFunc0429_03BC:
-	case "strange mage" attend labelFunc0429_03DE:
-	message("\"He was a rather portly man, if I remember rightly. He had been here once before...\"");
+	case "奇怪的法師" attend labelFunc0429_03DE:
+	message("「他是個相當肥胖的人，如果我記得沒錯的話。他以前曾來過一次……」");
 	say();
-	message("\"I cannot seem to recall what his name was. He was not the talkative sort, least not to me.\"");
+	message("「我就是想不起他的名字。他不是那種健談的人，至少對我不是。」");
 	say();
-	message("\"Thou couldst ask Ensorcio, they talked quite a bit. Or... I know... Thou canst look in the registry! 'Tis on the bar.\"");
+	message("「你可以去問 Ensorcio，他們聊了挺多。或者……我知道了……你可以去看登記簿！就在吧台上。」");
 	say();
-	UI_remove_answer("strange mage");
+	UI_remove_answer("奇怪的法師");
 	UI_add_answer("Ensorcio");
 labelFunc0429_03DE:
 	case "Ensorcio" attend labelFunc0429_03FC:
-	message("\"Thou hast not met the great Ensorcio yet? Count thy blessings!\"");
+	message("「你還沒見過那位偉大的 Ensorcio 嗎？那你真是有福了！」");
 	say();
-	message("\"Ensorcio is the smoldering black cloud that sits here day after day, drinking himself into a fit. All he does is glower about how those fools in Moonshade threw him out, and how he'll avenge himself.\"");
+	message("「Ensorcio 就是那個每天坐在這裡，把自己灌到發酒瘋的陰鬱黑雲。他整天就是抱怨月影城( Moonshade )那群蠢貨把他趕出去，說要如何復仇。」");
 	say();
 	UI_remove_answer("Ensorcio");
-	UI_add_answer("fools in Moonshade");
+	UI_add_answer("月影城的蠢貨");
 labelFunc0429_03FC:
-	case "fools in Moonshade" attend labelFunc0429_0413:
-	message("\"Ensorcio is an exiled mage. Who doth know what he did? I am too afraid to ask...\"");
+	case "月影城的蠢貨" attend labelFunc0429_0413:
+	message("「Ensorcio 是個被流放的法師。誰知道他幹了什麼好事？我可不敢問……」");
 	say();
-	message("\"If he was thrown out by that lot, thou canst wager that it could not have been good. Although Angus did not trust mages, he allowed Ensorcio to stay... Angus said that a mage had to have a clear head to cast spells, and we should worry if Ensorcio ever sobered.\"");
+	message("「能被那批人踢走，可見他做的事絕對不是好事。雖然 Angus 不信任法師，但還是讓 Ensorcio 留下來……Angus 說，法師要施展法術需要頭腦清醒，若 Ensorcio 哪天戒酒了，我們才要真的擔心。」");
 	say();
-	UI_remove_answer("fools in Moonshade");
+	UI_remove_answer("月影城的蠢貨");
 labelFunc0429_0413:
-	case "cellar" attend labelFunc0429_0431:
-	message("\"Aye, the cellar. We've had a lout or two think that they could slip down and take a bottle or two on the sly.\" *\"But Angus always seemed to know when they tried it... Threw them out with a few bruises for their trouble.\"");
+	case "地窖" attend labelFunc0429_0431:
+	message("「是啊，地窖。曾經有那麼一兩個無賴以為能偷偷摸下去拿走幾瓶酒。」 *「但 Angus 好像總能察覺到……把他們踢出去，還讓他們多捱了幾拳。」");
 	say();
-	message("\"'Tis why I didn't worry 'til morn... When I found everything in disarray and Angus gone.\"");
+	message("「這就是為什麼我沒有立刻擔心……等到隔天早上，我才發現一切亂糟糟的，而且 Angus 不見了。」");
 	say();
-	UI_remove_answer("cellar");
-	UI_add_answer("disarray");
+	UI_remove_answer("地窖");
+	UI_add_answer("亂糟糟");
 labelFunc0429_0431:
-	case "disarray" attend labelFunc0429_0448:
-	message("\"The casks and barrels were scattered all over the floor down there. It looked like there may have been a fight, but I did not see any blood.\" *\"It took the rest of the day to put all back in order down there. And make sure that nothing was missing.\"");
+	case "亂糟糟" attend labelFunc0429_0448:
+	message("「桶子和木桶散落了一地。看起來像是發生了打鬥，但我沒看到任何血跡。」 *「我花了剩下一整天的時間，才把那裡重新整理好，還得確認沒有東西遺失。」");
 	say();
-	message("\"I waited a week or so before I sent word to Wilfred and Argus about their father not returning.\"");
+	message("「我等了大約一個星期，才派人去通知 Wilfred 和 Argus，告訴他們父親沒回來。」");
 	say();
-	UI_remove_answer("disarray");
+	UI_remove_answer("亂糟糟");
 labelFunc0429_0448:
-	case "mage's companion" attend labelFunc0429_0462:
-	message("\"I do not know his name either... He never spoke to anyone other than the mage that I know of.\" *\"He always walked about with his hood raised, as if he were cold or something. He always gave me the shivers.\"");
+	case "法師的同伴" attend labelFunc0429_0462:
+	message("「我也不知道他的名字……據我所知，他從不和任何人說話，除了那位法師。」 *「他總是把帽子的兜帽拉起來，好像他很冷似的。每次看到他，我都不禁打冷顫。」");
 	say();
-	UI_remove_answer("mage's companion");
-	UI_add_answer("shivers");
+	UI_remove_answer("法師的同伴");
+	UI_add_answer("冷顫");
 labelFunc0429_0462:
-	case "shivers" attend labelFunc0429_0482:
-	message("\"Hast thou ever been in a sickroom, ");
+	case "冷顫" attend labelFunc0429_0482:
+	message("「你有沒有在病房裡待過， ");
 	message(var0000);
-	message("? A sickroom where someone is about to die?\" *\"There is a tension in the air, a stillness... And that always seemed to hover about the mage's large companion.\" *\"He was probably the one that stole whatever it was from Ensorcio that night, too.\"");
+	message("？那種某人即將斷氣的病房？」 *「空氣中有一種張力，一種靜寂……而那種感覺，似乎總是籠罩在那位法師的高大同伴身上。」 *「他很可能就是那天晚上從 Ensorcio 那裡偷走東西的人。」");
 	say();
-	UI_remove_answer("shivers");
-	UI_add_answer("stole");
+	UI_remove_answer("冷顫");
+	UI_add_answer("偷竊");
 labelFunc0429_0482:
-	case "stole" attend labelFunc0429_049F:
-	message("\"I remember that Ensorcio came storming in that morning, much earlier than usual, ranting about something being missing. I'll admit that I was a bit short with him, ");
+	case "偷竊" attend labelFunc0429_049F:
+	message("「我記得 Ensorcio 在那天早上，比平常早了許多衝進來，大呼小叫地說有什麼東西不見了。我承認我那時對他有些沒好氣， ");
 	message(var0000);
-	message(".\" *\"After all, I had to put all those barrels back myself, what with Angus gone and all. And that high and mighty mage never offered to lift a finger for anything more than another mug of ale!\"");
+	message("。」 *「畢竟，那些酒桶我得一個人全部搬回去，因為 Angus 不在，而那個趾高氣揚的法師從不願意幫忙動一根手指，除了再要一杯麥酒之外！」");
 	say();
 	var000D = true;
-	UI_remove_answer("stole");
+	UI_remove_answer("偷竊");
 labelFunc0429_049F:
-	case "food" attend labelFunc0429_04F2:
+	case "食物" attend labelFunc0429_04F2:
 	if (!((UI_get_schedule_type(0xFFD7) == 0x0007) || (UI_get_schedule_type(0xFFD7) == 0x0017))) goto labelFunc0429_04E7;
-	message("\"Thou wilt not find our cooking fancy as in Moonshade. But 'tis hardy fare and thou wilt find the portions ample.\"");
+	message("「我們這裡的菜不像月影城( Moonshade )那麼精緻，但分量十足，保管你吃得飽。」");
 	say();
 	if (!(!var0004)) goto labelFunc0429_04E1;
-	message("\"I've done all the cooking here since Donal hired me, before I married Angus. I've had my share of compliments, if I do say so myself.\"");
+	message("「自從 Donal 僱用我以來，一直都是我掌廚，那還是在我嫁給 Angus 之前的事。這些年來，我可沒少得到讚美，這我敢說。」");
 	say();
 	var0004 = true;
 	UI_add_answer(["Donal", "Angus"]);
@@ -295,84 +295,84 @@ labelFunc0429_04E1:
 	Func081E();
 	goto labelFunc0429_04F2;
 labelFunc0429_04E7:
-	message("\"I will sell thee some food when we are open!\"");
+	message("「等我們開門營業的時候再來買吧！」");
 	say();
-	UI_remove_answer("food");
+	UI_remove_answer("食物");
 labelFunc0429_04F2:
 	case "Donal" attend labelFunc0429_050C:
-	message("\"Donal was Angus' father, the son of Silverpate the pirate. Donal hired me as cook when I was merely a strip of a lass... 'Tis when I caught Angus' eye.\" *\"Donal never showed any tendency to leave of a sudden, like his no-account father. That's why I told Angus I'd wed him... I thought that maybe that adventuring blood died with the old pirate.\"");
+	message("「Donal 是 Angus 的父親，海盜 Silverpate 的兒子。Donal 在我還是個黃毛丫頭的時候僱我當廚子……就是那時候我吸引了 Angus 的注意。」 *「Donal 從不像他那個不成器的父親，動不動就想一走了之。這就是為什麼我答應嫁給 Angus……我以為那愛冒險的血脈到了老海盜那一代就斷了。」");
 	say();
 	UI_remove_answer("Donal");
 	UI_add_answer("Silverpate");
 labelFunc0429_050C:
 	case "Silverpate" attend labelFunc0429_0526:
-	message("\"Thou hast not yet heard of Silverpate? I was beginnin' to think the walls shouted it, as fast as the guests hear about it around here!\" *\"According to stories... and 'twere only stories, mind thee... Silverpate was a pirate who took his treasure and started this here inn. He was supposed to have hid his treasure somewhere around here before he disappeared.\"");
+	message("「你還沒聽說過 Silverpate？我還以為這裡的牆都在嚷嚷這個名字，客人們一來就聽到了！」 *「據說……只是傳說，要記住……Silverpate 是個海盜，他用自己的財寶開了這間旅店。據說他在失蹤之前，把寶藏藏在這附近的某個地方。」");
 	say();
 	UI_remove_answer("Silverpate");
-	UI_add_answer("treasure");
+	UI_add_answer("寶藏");
 labelFunc0429_0526:
-	case "treasure" attend labelFunc0429_053F:
-	message("\"What a lot of nonsense! Why we've had two whole generations of kin and neighbors lookin' everywhere imaginable for it.\" *\"I even looked a bit... at first. But if it hasn't been found after all this time, ");
+	case "寶藏" attend labelFunc0429_053F:
+	message("「真是一堆無稽之談！都過了整整兩代人了，親朋鄰居找遍了每一個想得到的地方。」 *「我一開始也找了一下……但要是這麼多年找了這麼多人都找不到， ");
 	message(var0000);
-	message(", with all those looking for it... I'd tell thee not to waste thy time looking!\"");
+	message("，我勸你別浪費時間了！」");
 	say();
-	UI_remove_answer("treasure");
+	UI_remove_answer("寶藏");
 labelFunc0429_053F:
 	case "Angus" attend labelFunc0429_0552:
-	message("\"Angus is mine husband. He was the innkeeper here after Donal died.\" *\"We raised two fine sons and he hoped to pass the inn to one of them when he were too old to run things. Only he disappeared... same as old Silverpate.\"");
+	message("「Angus 是我丈夫。Donal 過世後，他繼承了這裡的旅店老闆一職。」 *「我們養育了兩個好兒子，他希望等自己老了、管不動了，能把旅店傳給其中一個。結果他就這樣不見了……就和老 Silverpate 一樣。」");
 	say();
 	UI_remove_answer("Angus");
 labelFunc0429_0552:
-	case "drink" attend labelFunc0429_0589:
+	case "飲料" attend labelFunc0429_0589:
 	if (!((UI_get_schedule_type(0xFFD7) == 0x0007) || (UI_get_schedule_type(0xFFD7) == 0x0017))) goto labelFunc0429_057E;
-	message("\"Thou wilt like our selection, I'm certain.\"");
+	message("「我相信你會喜歡我們的酒單的。」");
 	say();
 	Func081F();
 	goto labelFunc0429_0589;
 labelFunc0429_057E:
-	message("\"Please return when we are open!\"");
+	message("「請等我們開門再來吧！」");
 	say();
-	UI_remove_answer("drink");
+	UI_remove_answer("飲料");
 labelFunc0429_0589:
-	case "room" attend labelFunc0429_063B:
-	message("\"The cost is 8 gold coins per person. Wouldst thou like a room for the night?\"");
+	case "房間" attend labelFunc0429_063B:
+	message("「每人費用是 8 個金幣。你需要訂一間今晚的房間嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0429_0637;
 	var000E = (UI_get_array_size(UI_get_party_list()) * 0x0008);
 	var000F = UI_count_objects(0xFE9B, 0x0284, 0xFE99, 0xFE99);
 	if (!(var000F >= var000E)) goto labelFunc0429_0601;
-	message("\"Room number 3 is available. I am sure thou wilt like it. Here is the key.\"");
+	message("「3 號房現在有空。我想你一定會喜歡的。這是鑰匙。」");
 	say();
 	var0010 = Func099B(0xFE9C, 0x0001, 0x0281, 0x0003, 0x0009, 0x0000, true);
 	var0011 = UI_remove_party_items(var000E, 0x0284, 0xFE99, 0xFE99, 0x0000);
-	message("\"The rooms are upstairs. If thou dost need anything, thou shouldst call.\"");
+	message("「房間在樓上。如果你需要任何東西，儘管叫我。」");
 	say();
 	goto labelFunc0429_0634;
 labelFunc0429_0601:
-	var0009 = Func0992(0x0001, "@But we do not have enough money...@", 0x0000, false);
+	var0009 = Func0992(0x0001, "@但我們的錢不夠……@", 0x0000, false);
 	if (!(var0009 != 0xFE9C)) goto labelFunc0429_062C;
 	UI_show_npc_face0(0xFFD7, 0x0000);
-	message("\"I have no heart to turn any of thee out in these storms. With all of our help run away, I'm in sore need of help.\" *\"But I cannot allow thee to stay for free. Thou wilt have to take thy chances outside.\"");
+	message("「我實在不忍心在這種風暴中趕走你們。幫手都跑光了，我也非常需要人手。」 *「但我不能讓你們免費住。你們只能去外面碰運氣了。」");
 	say();
 	goto labelFunc0429_0634;
 labelFunc0429_062C:
-	message("\"I'm afraid that thou cannot afford my rooms.\" *\"With the help all run away, I'd allow thee to stay for free, but I'd soon be out of business.\"");
+	message("「恐怕你付不起我的房費。」 *「幫手都跑光了，我倒是想讓你們免費住，但那樣我很快就得關門了。」");
 	say();
-	message("\"Thou wilt have to take thy chances outside.\"");
+	message("「你只能去外面碰運氣了。」");
 	say();
 labelFunc0429_0634:
 	goto labelFunc0429_063B;
 labelFunc0429_0637:
-	message("\"Some other time, then.\"");
+	message("「那就下次再說吧。」");
 	say();
 labelFunc0429_063B:
-	case "exchange money" attend labelFunc0429_0646:
+	case "兌換貨幣" attend labelFunc0429_0646:
 	Func081D();
 labelFunc0429_0646:
-	case "bye" attend labelFunc0429_066D:
+	case "告辭" attend labelFunc0429_066D:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Be seeing thee!@", 0x0000);
-	Func097F(0xFFD7, "@Come again soon!@", 0x0002);
+	Func097F(0xFE9C, "@保重！@", 0x0000);
+	Func097F(0xFFD7, "@歡迎再次光臨！@", 0x0002);
 	goto labelFunc0429_0670;
 labelFunc0429_066D:
 	goto labelFunc0429_01C2;

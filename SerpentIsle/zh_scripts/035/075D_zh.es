@@ -11,7 +11,7 @@ void Func075D object#(0x75D) ()
 labelFunc075D_0012:
 	for (var0003 in var0000 with var0001 to var0002) attend labelFunc075D_0056;
 	if (!(UI_get_item_frame(var0003) == 0x0012)) goto labelFunc075D_0053;
-	var0000 = UI_execute_usecode_array(var0003, [(byte)0x23, (byte)0x52, "@Thou, stop!@", (byte)0x27, 0x000F, (byte)0x52, "@Wouldst thou talk with me?@", (byte)0x27, 0x0014, (byte)0x52, "@Please...@"]);
+	var0000 = UI_execute_usecode_array(var0003, [(byte)0x23, (byte)0x52, "@你，站住！@", (byte)0x27, 0x000F, (byte)0x52, "@你要跟我談談嗎？@", (byte)0x27, 0x0014, (byte)0x52, "@拜託……@"]);
 labelFunc075D_0053:
 	goto labelFunc075D_0012;
 labelFunc075D_0056:

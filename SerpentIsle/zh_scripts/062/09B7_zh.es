@@ -22,10 +22,10 @@ labelFunc09B7_001C:
 labelFunc09B7_003B:
 	if (!(var0001 == (UI_get_array_size(var0000) - 0x0001))) goto labelFunc09B7_005A;
 	gflags[0x014E] = true;
-	var0005 = "@Damn thee!@";
+	var0005 = "@該死！@";
 	goto labelFunc09B7_0060;
 labelFunc09B7_005A:
-	var0005 = "@Grok...@";
+	var0005 = "@格羅克……@";
 labelFunc09B7_0060:
 	var0006 = UI_get_object_position(item);
 	UI_set_item_flag(item, 0x0004);

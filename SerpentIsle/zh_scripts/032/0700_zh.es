@@ -11,7 +11,7 @@ void Func0700 object#(0x700) ()
 	goto labelFunc0700_003A;
 labelFunc0700_001F:
 	Func09AC(0xFFE7, 0xFFFF, 0x0000, 0x0003);
-	Func097F(0xFFE7, "@Who doth approach?!@", 0x0003);
+	Func097F(0xFFE7, "@是誰在靠近？！@", 0x0003);
 labelFunc0700_003A:
 	return;
 }

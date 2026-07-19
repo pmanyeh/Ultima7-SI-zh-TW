@@ -68,7 +68,7 @@ labelFunc0618_026B:
 labelFunc0618_028B:
 	if (!((event == 0x0002) && (gflags[0x000A] == true))) goto labelFunc0618_0391;
 	UI_set_weather(0x0000);
-	UI_item_say(0xFE9C, "@By Lord British's Beard!@");
+	UI_item_say(0xFE9C, "@以不列顛王的鬍子起誓！@");
 	UI_show_npc_face0(0xFE9C, 0x0000);
 	message("\"Look at how quickly it has grown! It looks as if it has been here for decades!\"");
 	say();
