@@ -387,17 +387,17 @@ labelFunc044D_078D:
 	case "附魔師" attend labelFunc044D_07C1:
 	UI_remove_answer("附魔師");
 	if (!gflags[0x00B9]) goto labelFunc044D_07A9;
-	message("「我還不確定我們是否可以信任伊奧洛，你那位附魔師朋友。告訴他最好安分點。這是一個友善的警告。」");
+	message("「我還不確定我們是否可以信任 Iolo ，你那位附魔師朋友。告訴他最好安分點。這是一個友善的警告。」");
 	say();
 	goto labelFunc044D_07C1;
 labelFunc044D_07A9:
 	if (!gflags[0x00B5]) goto labelFunc044D_07BD;
-	message("「也許你該付給我，比方說——罰款——是的，罰款！就是這樣。用來支付這個流氓伊奧洛的不良行為。畢竟，你知道的，我是城市的財務官。所以這是最合適的。」");
+	message("「也許你該付給我，比方說——罰款——是的，罰款！就是這樣。用來支付這個流氓 Iolo 的不良行為。畢竟，你知道的，我是城市的財務官。所以這是最合適的。」");
 	say();
 	UI_add_answer("罰款");
 	goto labelFunc044D_07C1;
 labelFunc044D_07BD:
-	message("「哦，你一定是在說那個最近因為試圖擾亂 Groat 的葬禮而被捕的瘋狂流氓法師！我記得他說他叫伊奧洛。你應該和 Marsten 領主談談。是他處理的。」");
+	message("「哦，你一定是在說那個最近因為試圖擾亂 Groat 的葬禮而被捕的瘋狂流氓法師！我記得他說他叫 Iolo 。你應該和 Marsten 領主談談。是他處理的。」");
 	say();
 labelFunc044D_07C1:
 	case "罰款" attend labelFunc044D_082A:

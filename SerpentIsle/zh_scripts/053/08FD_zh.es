@@ -7,5 +7,3 @@ var Func08FD 0x8FD ()
 	return var0000;
 	return 0;
 }
-
-

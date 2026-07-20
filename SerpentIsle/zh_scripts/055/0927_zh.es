@@ -17,7 +17,7 @@ void Func0927 0x927 ()
 
 	UI_play_music(0x001C, Func09A0(0x0005, 0x0001));
 	var0000 = [0xFF55, 0xFF54, 0xFF53, 0xFF52, 0xFF51];
-	var0001 = ["@Ohh! Yes!@", "@Most pleasant!@", "@Oh, my!@", "@Do thou that again!@", "@Oh, baby...@"];
+	var0001 = ["@噢！是的！@", "@太舒服了！@", "@天哪！@", "@再弄一次！@", "@噢，寶貝……@"];
 	enum();
 labelFunc0927_003B:
 	for (var0004 in var0000 with var0002 to var0003) attend labelFunc0927_0069;
@@ -31,7 +31,7 @@ labelFunc0927_0069:
 labelFunc0927_0089:
 	if (!UI_is_pc_female()) goto labelFunc0927_00F5;
 	UI_clear_item_say(0xFF51);
-	Func097F(0xFF51, "@I can't resist...@", 0x0000);
+	Func097F(0xFF51, "@我無法抗拒……@", 0x0000);
 	var0007 = UI_find_nearby(item, 0x0178, 0x000A, 0x0000);
 	if (!var0007) goto labelFunc0927_00F2;
 	var0008 = UI_get_object_position(var0007);
@@ -40,7 +40,7 @@ labelFunc0927_00F2:
 	goto labelFunc0927_0157;
 labelFunc0927_00F5:
 	UI_clear_item_say(0xFF53);
-	Func097F(0xFF53, "@I can't resist...@", 0x0000);
+	Func097F(0xFF53, "@我無法抗拒……@", 0x0000);
 	var0007 = UI_find_nearby(item, 0x0178, 0x000A, 0x0000);
 	if (!var0007) goto labelFunc0927_0157;
 	var0008 = UI_get_object_position(var0007);
@@ -49,5 +49,3 @@ labelFunc0927_0157:
 	abort;
 	return;
 }
-
-

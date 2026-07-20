@@ -31,19 +31,19 @@ void Func0868 0x868 ()
 	var var0016;
 	var var0017;
 
-	var0000 = "friend";
+	var0000 = "朋友";
 	var0001 = UI_get_item_flag(0xFFB2, 0x001C);
 	if (!(!var0001)) goto labelFunc0868_0020;
-	var0000 = "stranger";
+	var0000 = "陌生人";
 labelFunc0868_0020:
-	var0002 = "Friend";
+	var0002 = "朋友";
 	if (!UI_is_pc_female()) goto labelFunc0868_0033;
-	var0002 = "Milady";
+	var0002 = "女士";
 labelFunc0868_0033:
 	UI_push_answers();
 	var0003 = true;
 	var0004 = 0x03B7;
-	message("\"I am interested only in buying plate, chain, or scale armour, plate or chain leggings, and great or crested helms.\"");
+	message("「我只感興趣收購板甲、鎖子甲或魚鱗甲、板甲或鎖子腿甲，以及巨頭盔或羽飾頭盔。」");
 	say();
 labelFunc0868_0045:
 	if (!var0003) goto labelFunc0868_079D;
@@ -54,88 +54,88 @@ labelFunc0868_0045:
 	var0009 = UI_count_objects(0xFE9B, 0x0240, 0xFE99, 0xFE99);
 	var000A = UI_count_objects(0xFE9B, 0x021D, 0xFE99, 0xFE99);
 	var000B = UI_count_objects(0xFE9B, 0x021E, 0xFE99, 0xFE99);
-	var000C = ["nothing"];
+	var000C = ["再看看"];
 	var000D = false;
 	if (!var0005) goto labelFunc0868_00F1;
-	var000C = (var000C & "scale armour");
+	var000C = (var000C & "魚鱗甲");
 	var000D = true;
 labelFunc0868_00F1:
 	if (!var0006) goto labelFunc0868_0105;
-	var000C = (var000C & "chain armour");
+	var000C = (var000C & "鎖子甲");
 	var000D = true;
 labelFunc0868_0105:
 	if (!var0007) goto labelFunc0868_0119;
-	var000C = (var000C & "plate armour");
+	var000C = (var000C & "板甲");
 	var000D = true;
 labelFunc0868_0119:
 	if (!var0008) goto labelFunc0868_012D;
-	var000C = (var000C & "chain leggings");
+	var000C = (var000C & "鎖子腿甲");
 	var000D = true;
 labelFunc0868_012D:
 	if (!var0009) goto labelFunc0868_0141;
-	var000C = (var000C & "plate leggings");
+	var000C = (var000C & "板甲腿甲");
 	var000D = true;
 labelFunc0868_0141:
 	if (!var000A) goto labelFunc0868_0155;
-	var000C = (var000C & "great helm");
+	var000C = (var000C & "巨頭盔");
 	var000D = true;
 labelFunc0868_0155:
 	if (!var000B) goto labelFunc0868_0169;
-	var000C = (var000C & "crested helm");
+	var000C = (var000C & "羽飾頭盔");
 	var000D = true;
 labelFunc0868_0169:
 	if (!(var000D == true)) goto labelFunc0868_0792;
-	message("\"What dost thou care to sell, friend?\"");
+	message("「朋友，你想賣些什麼？」");
 	say();
 	var000E = Func0956(var000C);
-	if (!(var000E == "nothing")) goto labelFunc0868_0193;
-	message("\"As thou dost wish.\"");
+	if (!(var000E == "再看看")) goto labelFunc0868_0193;
+	message("「如你所願。」");
 	say();
 	var0003 = false;
 	goto labelFunc0868_078F;
 labelFunc0868_0193:
 	var000F = UI_die_roll(0x0001, 0x0005);
 	if (!(var000F == 0x0001)) goto labelFunc0868_01B0;
-	var0010 = "Dost thou accept?";
+	var0010 = "你接受嗎？";
 labelFunc0868_01B0:
 	if (!(var000F == 0x0002)) goto labelFunc0868_01C0;
-	var0010 = "Wilt thou sell at my price?";
+	var0010 = "你願意照我的開價賣嗎？";
 labelFunc0868_01C0:
 	if (!(var000F == 0x0003)) goto labelFunc0868_01D0;
-	var0010 = "Dost thou find the price agreeable?";
+	var0010 = "你覺得這個價格可以接受嗎？";
 labelFunc0868_01D0:
 	if (!(var000F == 0x0004)) goto labelFunc0868_01E4;
-	var0010 = (var0002 + ", dost thou agree?");
+	var0010 = (var0002 + "，你同意嗎？");
 labelFunc0868_01E4:
 	if (!(var000F == 0x0005)) goto labelFunc0868_01F8;
-	var0010 = (var0002 + ", is the price acceptable?");
+	var0010 = (var0002 + "，這個價格可以接受嗎？");
 labelFunc0868_01F8:
 	var0011 = UI_die_roll(0x0001, 0x0005);
 	if (!(var0011 == 0x0001)) goto labelFunc0868_021B;
-	var0012 = "Hmmm... I am not sure.";
-	var0013 = "Well... these are not the best of wares.";
+	var0012 = "嗯……我不太確定。";
+	var0013 = "這個嘛……這些貨色算不上太好。";
 labelFunc0868_021B:
 	if (!(var0011 == 0x0002)) goto labelFunc0868_0231;
-	var0012 = "It doth have rust on it!";
-	var0013 = "They are rusted!";
+	var0012 = "這上面生鏽了！";
+	var0013 = "這些上面生鏽了！";
 labelFunc0868_0231:
 	if (!(var0011 == 0x0003)) goto labelFunc0868_0247;
-	var0012 = "It is not in very good condition.";
-	var0013 = "They are not in very good condition.";
+	var0012 = "這品相不太好。";
+	var0013 = "這些品相不太好。";
 labelFunc0868_0247:
 	if (!(var0011 == 0x0004)) goto labelFunc0868_0265;
-	var0012 = (var0002 + ", this will take weeks to repair!");
-	var0013 = (var0002 + ", these will take weeks to repair!");
+	var0012 = (var0002 + "，這要花好幾週修復！");
+	var0013 = (var0002 + "，這些要花好幾週修復！");
 labelFunc0868_0265:
 	if (!(var0011 == 0x0005)) goto labelFunc0868_027B;
-	var0012 = "Where didst thou find this -- buried under the ground?";
-	var0013 = "Where didst thou find these -- moldering under the ground?";
+	var0012 = "你從哪撿來的——埋地底下嗎？";
+	var0013 = "你從哪撿來的——發霉發爛在地底下嗎？";
 labelFunc0868_027B:
-	if (!(var000E == "scale armour")) goto labelFunc0868_032B;
+	if (!(var000E == "魚鱗甲")) goto labelFunc0868_032B;
 	var0014 = 0x023A;
 	var0015 = 0x001E;
 	if (!(var0005 > 0x0001)) goto labelFunc0868_0307;
-	message("\"How many suits of scale armour wouldst thou care to sell?\"");
+	message("「你想賣幾套魚鱗甲？」");
 	say();
 	var0016 = UI_input_numeric_value(0x0000, var0005, 0x0001, 0x0000);
 	if (!(var0016 == 0x0001)) goto labelFunc0868_02BF;
@@ -143,47 +143,47 @@ labelFunc0868_027B:
 labelFunc0868_02BF:
 	var0015 = (0x001E * var0016);
 	if (!(var0016 == 0x0000)) goto labelFunc0868_02E0;
-	message("\"Perhaps another time, ");
+	message("「那麼也許下次吧，");
 	message(var0000);
-	message("...\"");
+	message("……」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_02E0:
-	message("\"");
+	message("「");
 	message(var0013);
-	message("\"");
+	message("」");
 	say();
-	message("\"Very well, I will buy thy ");
-	message(var0016);
-	message(" suits of scale armour from thee for ");
+	message("「很好，我會以 ");
 	message(var0015);
-	message(" monetari.\"");
+	message(" 蒙里他利幣向你購買你的 ");
+	message(var0016);
+	message(" 套魚鱗甲。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	goto labelFunc0868_032B;
 labelFunc0868_0307:
-	message("\"");
+	message("「");
 	message(var0012);
-	message("\"");
+	message("」");
 	say();
-	message("\"Very well, I will buy this scale armour from thee for ");
+	message("「很好，我會以 ");
 	message(var0015);
-	message(" monetari.\"");
+	message(" 蒙里他利幣向你購買這套魚鱗甲。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	var0016 = 0x0001;
 labelFunc0868_032B:
-	if (!(var000E == "chain armour")) goto labelFunc0868_03DB;
+	if (!(var000E == "鎖子甲")) goto labelFunc0868_03DB;
 	var0014 = 0x023B;
 	var0015 = 0x0032;
 	if (!(var0006 > 0x0001)) goto labelFunc0868_03B7;
-	message("\"How many suits of chain armour wouldst thou care to sell?\"");
+	message("「你想賣幾套鎖子甲？」");
 	say();
 	var0016 = UI_input_numeric_value(0x0000, var0006, 0x0001, 0x0000);
 	if (!(var0016 == 0x0001)) goto labelFunc0868_036F;
@@ -191,47 +191,47 @@ labelFunc0868_032B:
 labelFunc0868_036F:
 	var0015 = (0x0032 * var0016);
 	if (!(var0016 == 0x0000)) goto labelFunc0868_0390;
-	message("\"Perhaps another time, ");
+	message("「那麼也許下次吧，");
 	message(var0000);
-	message("...\"");
+	message("……」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_0390:
-	message("\"");
+	message("「");
 	message(var0013);
-	message("\"");
+	message("」");
 	say();
-	message("\"Hmmm... I suppose I could buy thy ");
-	message(var0016);
-	message(" suits of chain armour from thee for ");
+	message("「嗯……我想我可以以 ");
 	message(var0015);
-	message(" monetari.\"");
+	message(" 蒙里他利幣向你購買你的 ");
+	message(var0016);
+	message(" 套鎖子甲。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	goto labelFunc0868_03DB;
 labelFunc0868_03B7:
-	message("\"");
+	message("「");
 	message(var0012);
-	message("\"");
+	message("」");
 	say();
-	message("\"I suppose I could pay thee ");
+	message("「我想一套鎖子甲我可以付你 ");
 	message(var0015);
-	message(" monetari for a suit of chain armour.\"");
+	message(" 蒙里他利幣。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	var0016 = 0x0001;
 labelFunc0868_03DB:
-	if (!(var000E == "plate armour")) goto labelFunc0868_048B;
+	if (!(var000E == "板甲")) goto labelFunc0868_048B;
 	var0014 = 0x023D;
 	var0015 = 0x004B;
 	if (!(var0007 > 0x0001)) goto labelFunc0868_0467;
-	message("\"How many suits of plate armour wouldst thou care to sell?\"");
+	message("「你想賣幾套板甲？」");
 	say();
 	var0016 = UI_input_numeric_value(0x0000, var0007, 0x0001, 0x0000);
 	if (!(var0016 == 0x0001)) goto labelFunc0868_041F;
@@ -239,47 +239,47 @@ labelFunc0868_03DB:
 labelFunc0868_041F:
 	var0015 = (0x004B * var0016);
 	if (!(var0016 == 0x0000)) goto labelFunc0868_0440;
-	message("\"Perhaps another time, ");
+	message("「那麼也許下次吧，");
 	message(var0000);
-	message("...\"");
+	message("……」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_0440:
-	message("\"");
+	message("「");
 	message(var0013);
-	message("\"");
+	message("」");
 	say();
-	message("\"I will give thee ");
-	message(var0015);
-	message(" monetari for thy ");
+	message("「你的 ");
 	message(var0016);
-	message(" suits of plate armour.\"");
+	message(" 套板甲我會付你 ");
+	message(var0015);
+	message(" 蒙里他利幣。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	goto labelFunc0868_048B;
 labelFunc0868_0467:
-	message("\"");
+	message("「");
 	message(var0012);
-	message("\"");
+	message("」");
 	say();
-	message("\"For this plate armour, I can offer ");
+	message("「這套板甲，我可以開價 ");
 	message(var0015);
-	message(" monetari.\"");
+	message(" 蒙里他利幣。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	var0016 = 0x0001;
 labelFunc0868_048B:
-	if (!(var000E == "chain leggings")) goto labelFunc0868_053B;
+	if (!(var000E == "鎖子腿甲")) goto labelFunc0868_053B;
 	var0014 = 0x023F;
 	var0015 = 0x0019;
 	if (!(var0008 > 0x0001)) goto labelFunc0868_0517;
-	message("\"How many pairs of chain leggings wouldst thou care to sell?\"");
+	message("「你想賣幾副鎖子腿甲？」");
 	say();
 	var0016 = UI_input_numeric_value(0x0000, var0008, 0x0001, 0x0000);
 	if (!(var0016 == 0x0001)) goto labelFunc0868_04CF;
@@ -287,47 +287,47 @@ labelFunc0868_048B:
 labelFunc0868_04CF:
 	var0015 = (0x0019 * var0016);
 	if (!(var0016 == 0x0000)) goto labelFunc0868_04F0;
-	message("\"Perhaps another time, ");
+	message("「那麼也許下次吧，");
 	message(var0000);
-	message("...\"");
+	message("……」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_04F0:
-	message("\"");
+	message("「");
 	message(var0013);
-	message("\"");
+	message("」");
 	say();
-	message("\"Hmmm... perhaps I can give thee ");
-	message(var0015);
-	message(" monetari for thy ");
+	message("「嗯……也許你的 ");
 	message(var0016);
-	message(" pairs of chain leggings.\"");
+	message(" 副鎖子腿甲我可以給你看 ");
+	message(var0015);
+	message(" 蒙里他利幣。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	goto labelFunc0868_053B;
 labelFunc0868_0517:
-	message("\"");
+	message("「");
 	message(var0012);
-	message("\"");
+	message("」");
 	say();
-	message("\"So be it, I will offer ");
+	message("「那就這樣吧，這副鎖子腿甲我開價 ");
 	message(var0015);
-	message(" monetari for the chain leggings.\"");
+	message(" 蒙里他利幣。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	var0016 = 0x0001;
 labelFunc0868_053B:
-	if (!(var000E == "plate leggings")) goto labelFunc0868_05EB;
+	if (!(var000E == "板甲腿甲")) goto labelFunc0868_05EB;
 	var0014 = 0x0240;
 	var0015 = 0x002D;
 	if (!(var0009 > 0x0001)) goto labelFunc0868_05C7;
-	message("\"And how many pairs of plate leggings wouldst thou care to sell?\"");
+	message("「那你又想賣幾副板甲腿甲？」");
 	say();
 	var0016 = UI_input_numeric_value(0x0000, var0009, 0x0001, 0x0000);
 	if (!(var0016 == 0x0001)) goto labelFunc0868_057F;
@@ -335,47 +335,47 @@ labelFunc0868_053B:
 labelFunc0868_057F:
 	var0015 = (0x002D * var0016);
 	if (!(var0016 == 0x0000)) goto labelFunc0868_05A0;
-	message("\"Perhaps another time, ");
+	message("「那麼也許下次吧，");
 	message(var0000);
-	message("...\"");
+	message("……」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_05A0:
-	message("\"");
+	message("「");
 	message(var0013);
-	message("\"");
+	message("」");
 	say();
-	message("\"For thy ");
+	message("「你的 ");
 	message(var0016);
-	message(" pairs of plate leggings, I can give thee ");
+	message(" 副板甲腿甲，我可以給你 ");
 	message(var0015);
-	message(" monetari.\"");
+	message(" 蒙里他利幣。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	goto labelFunc0868_05EB;
 labelFunc0868_05C7:
-	message("\"");
+	message("「");
 	message(var0012);
-	message("\"");
+	message("」");
 	say();
-	message("\"");
+	message("「這副板甲腿甲，我可以給你的價格是 ");
 	message(var0015);
-	message(" monetari is what I can give thee for the pair of plate leggings.\"");
+	message(" 蒙里他利幣。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	var0016 = 0x0001;
 labelFunc0868_05EB:
-	if (!(var000E == "great helm")) goto labelFunc0868_069B;
+	if (!(var000E == "巨頭盔")) goto labelFunc0868_069B;
 	var0014 = 0x021D;
 	var0015 = 0x0014;
 	if (!(var000A > 0x0001)) goto labelFunc0868_0677;
-	message("\"How many great helms wouldst thou care to sell?\"");
+	message("「你想賣幾頂巨頭盔？」");
 	say();
 	var0016 = UI_input_numeric_value(0x0000, var000A, 0x0001, 0x0000);
 	if (!(var0016 == 0x0001)) goto labelFunc0868_062F;
@@ -383,47 +383,47 @@ labelFunc0868_05EB:
 labelFunc0868_062F:
 	var0015 = (0x0014 * var0016);
 	if (!(var0016 == 0x0000)) goto labelFunc0868_0650;
-	message("\"Perhaps another time, ");
+	message("「那麼也許下次吧，");
 	message(var0000);
-	message("...\"");
+	message("……」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_0650:
-	message("\"");
+	message("「");
 	message(var0013);
-	message("\"");
+	message("」");
 	say();
-	message("\"Very well...\" ~\"I can offer thee ");
-	message(var0015);
-	message(" monetari for thy ");
+	message("「很好……」~「你的 ");
 	message(var0016);
-	message(" great helms.\"");
+	message(" 頂巨頭盔我可以開價 ");
+	message(var0015);
+	message(" 蒙里他利幣。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	goto labelFunc0868_069B;
 labelFunc0868_0677:
-	message("\"");
+	message("「");
 	message(var0012);
-	message("\"");
+	message("」");
 	say();
-	message("\"Very well, I will buy thy great helm for ");
+	message("「很好，這頂巨頭盔我會以 ");
 	message(var0015);
-	message(" monetari.\"");
+	message(" 蒙里他利幣向你購買。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	var0016 = 0x0001;
 labelFunc0868_069B:
-	if (!(var000E == "crested helm")) goto labelFunc0868_074B;
+	if (!(var000E == "羽飾頭盔")) goto labelFunc0868_074B;
 	var0014 = 0x021E;
 	var0015 = 0x000A;
 	if (!(var000B > 0x0001)) goto labelFunc0868_0727;
-	message("\"How many crested helms wouldst thou care to sell?\"");
+	message("「你想賣幾頂羽飾頭盔？」");
 	say();
 	var0016 = UI_input_numeric_value(0x0000, var000B, 0x0001, 0x0000);
 	if (!(var0016 == 0x0001)) goto labelFunc0868_06DF;
@@ -431,39 +431,39 @@ labelFunc0868_069B:
 labelFunc0868_06DF:
 	var0015 = (0x000A * var0016);
 	if (!(var0016 == 0x0000)) goto labelFunc0868_0700;
-	message("\"Perhaps another time, ");
+	message("「那麼也許下次吧，");
 	message(var0000);
-	message("...\"");
+	message("……」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_0700:
-	message("\"");
+	message("「");
 	message(var0013);
-	message("\"");
+	message("」");
 	say();
-	message("\"I suppose I can give thee ");
-	message(var0015);
-	message(" monetari for thy ");
+	message("「我想你的 ");
 	message(var0016);
-	message(" crested helms.\"");
+	message(" 頂羽飾頭盔我可以給你 ");
+	message(var0015);
+	message(" 蒙里他利幣。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	goto labelFunc0868_074B;
 labelFunc0868_0727:
-	message("\"");
+	message("「");
 	message(var0012);
-	message("\"");
+	message("」");
 	say();
-	message("\"For this crested helm, I can give thee ");
+	message("「這頂羽飾頭盔，我可以給你 ");
 	message(var0015);
-	message(" monetari.\"");
+	message(" 蒙里他利幣。」");
 	say();
-	message("\"");
+	message("「");
 	message(var0010);
-	message("\"");
+	message("」");
 	say();
 	var0016 = 0x0001;
 labelFunc0868_074B:
@@ -472,16 +472,16 @@ labelFunc0868_074B:
 	var0017 = Func099B(0xFE9C, var0015, var0004, 0xFE99, 0xFE99, 0x0000, true);
 	goto labelFunc0868_0785;
 labelFunc0868_0781:
-	message("\"Thy loss, then.\"");
+	message("「那是你的損失了。」");
 	say();
 labelFunc0868_0785:
-	message("\"Dost thou wish to sell more armour?\"");
+	message("「你還想賣更多護甲嗎？」");
 	say();
 	var0003 = Func0955();
 labelFunc0868_078F:
 	goto labelFunc0868_079A;
 labelFunc0868_0792:
-	message("\"Thou dost not have anything that I care to purchase!\"");
+	message("「你身上根本沒有任何我想收購的東西！」");
 	say();
 	var0003 = false;
 labelFunc0868_079A:

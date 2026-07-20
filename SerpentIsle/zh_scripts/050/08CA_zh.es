@@ -40,10 +40,10 @@ labelFunc08CA_0062:
 	var0003 = UI_find_nearby(var0002, 0x0190, 0x0005, 0x0000);
 	if (!var0003) goto labelFunc08CA_00CB;
 	UI_clear_item_say(var0000);
-	UI_item_say(var0000, "@She loved flowers so...@");
+	UI_item_say(var0000, "@她那樣喜愛鮮花……@");
 	goto labelFunc08CA_00DF;
 labelFunc08CA_00CB:
-	UI_item_say(var0000, "@If I had flowers...@");
+	UI_item_say(var0000, "@如果我有鮮花……@");
 	UI_set_alignment(var0000, 0x0000);
 labelFunc08CA_00DF:
 	if (!(UI_get_item_quality(item) == 0x0011)) goto labelFunc08CA_019E;
@@ -56,31 +56,31 @@ labelFunc08CA_00DF:
 	UI_clear_item_say(var0000);
 	UI_halt_scheduled(var0000);
 	var0005 = UI_direction_from(var0000, 0xFE9C);
-	var0001 = UI_execute_usecode_array(var0000, [(byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x52, "@I shall repay thy kindness.@", (byte)0x59, var0005]);
+	var0001 = UI_execute_usecode_array(var0000, [(byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x52, "@我會報答你的恩情。@", (byte)0x59, var0005]);
 	var0001 = UI_execute_usecode_array(var0003, [(byte)0x27, 0x0012, (byte)0x55, 0x07DF]);
 labelFunc08CA_0187:
 	goto labelFunc08CA_019E;
 labelFunc08CA_018A:
-	UI_item_say(var0000, "@If I had flowers...@");
+	UI_item_say(var0000, "@如果我有鮮花……@");
 	UI_set_alignment(var0000, 0x0000);
 labelFunc08CA_019E:
 	if (!(event == 0x0002)) goto labelFunc08CA_03FE;
 	if (!(UI_get_item_shape(item) == 0x0103)) goto labelFunc08CA_023F;
 	var0006 = UI_die_roll(0x0001, 0x0005);
 	if (!(var0006 == 0x0001)) goto labelFunc08CA_01CF;
-	var0007 = "@Oh, my love.@";
+	var0007 = "@噢，我的摯愛。@";
 labelFunc08CA_01CF:
 	if (!(var0006 == 0x0002)) goto labelFunc08CA_01DF;
-	var0007 = "@What have they done?@";
+	var0007 = "@他們做了什麼？@";
 labelFunc08CA_01DF:
 	if (!(var0006 == 0x0003)) goto labelFunc08CA_01EF;
-	var0007 = "@They shall pay!@";
+	var0007 = "@他們會付出代價的！@";
 labelFunc08CA_01EF:
 	if (!(var0006 == 0x0004)) goto labelFunc08CA_01FF;
-	var0007 = "@I'll never forget thee.@";
+	var0007 = "@我永遠不會忘記你。@";
 labelFunc08CA_01FF:
 	if (!(var0006 == 0x0005)) goto labelFunc08CA_020F;
-	var0007 = "@Thy life was my life.@";
+	var0007 = "@你的生命就是我的生命。@";
 labelFunc08CA_020F:
 	var0006 = UI_die_roll(0x0000, 0x000F);
 	var0001 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, var0007, (byte)0x27, 0x000F, (byte)0x55, 0x07DF], (0x0014 + var0006));
@@ -102,7 +102,7 @@ labelFunc08CA_02AF:
 	UI_play_sound_effect(0x0046);
 	var0001 = UI_set_item_quality(item, 0x009D);
 	var0001 = UI_execute_usecode_array(var0000, [(byte)0x27, 0x0005, (byte)0x6C, (byte)0x27, 0x0003, (byte)0x61, (byte)0x27, 0x0003, (byte)0x64]);
-	UI_item_say(var0000, "@Now I can rest!@");
+	UI_item_say(var0000, "@現在我可以安息了！@");
 	var0001 = UI_execute_usecode_array(item, [(byte)0x27, 0x000F, (byte)0x55, 0x07DF]);
 labelFunc08CA_0331:
 	goto labelFunc08CA_03B4;
@@ -135,7 +135,7 @@ labelFunc08CA_03FE:
 	if (!(var0000 && (var000B && var000C))) goto labelFunc08CA_0503;
 	UI_clear_item_say(var0000);
 	var0005 = UI_direction_from(var0000, var000B);
-	var0001 = UI_execute_usecode_array(var0000, [(byte)0x27, 0x0007, (byte)0x52, "@I will fix this lever.@", (byte)0x59, var0005, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6D]);
+	var0001 = UI_execute_usecode_array(var0000, [(byte)0x27, 0x0007, (byte)0x52, "@我會修好這個拉桿。@", (byte)0x59, var0005, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6D]);
 	var0001 = UI_execute_usecode_array(var000B, [(byte)0x27, 0x0014, (byte)0x55, 0x07DF]);
 	var000D = 0x0001;
 	var000E = 0xFFFD;
@@ -145,5 +145,3 @@ labelFunc08CA_03FE:
 labelFunc08CA_0503:
 	return;
 }
-
-

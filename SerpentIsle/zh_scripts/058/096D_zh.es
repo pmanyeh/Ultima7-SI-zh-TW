@@ -20,11 +20,11 @@ var Func096D 0x96D (var var0000)
 	var var000B;
 	var var000C;
 
-	message("\"One of you wishes to train?\"");
+	message("「你們其中有人想接受訓練嗎？」");
 	say();
 	var0001 = Func0955();
 	if (!var0001) goto labelFunc096D_00AD;
-	message("\"Which of you wishes to train?\"");
+	message("「你們哪一位想接受訓練？」");
 	say();
 	var0002 = Func0946();
 	var0003 = Func098E();
@@ -42,7 +42,7 @@ labelFunc096D_005D:
 	var0002 = var0004;
 	var0003 = var0005;
 	var0009 = [0x0000, var0003];
-	var000A = Func0957(["Nobody", var0002]);
+	var000A = Func0957(["沒有人", var0002]);
 	var000B = var0009[var000A];
 	if (!(var000B == 0x0000)) goto labelFunc096D_00A0;
 	var000C = 0x0000;
@@ -52,12 +52,10 @@ labelFunc096D_00A0:
 labelFunc096D_00AA:
 	goto labelFunc096D_00B7;
 labelFunc096D_00AD:
-	message("\"Perhaps at a later time.\"");
+	message("「或許改天吧。」");
 	say();
 	var000C = 0x0000;
 labelFunc096D_00B7:
 	return var000C;
 	return 0;
 }
-
-

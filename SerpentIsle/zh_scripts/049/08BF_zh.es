@@ -194,5 +194,3 @@ labelFunc08BF_0527:
 labelFunc08BF_055A:
 	return;
 }
-
-

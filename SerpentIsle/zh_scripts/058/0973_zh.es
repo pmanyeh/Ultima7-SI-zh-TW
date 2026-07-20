@@ -18,27 +18,25 @@ void Func0973 0x973 (var var0000)
 	Func0945(var0000);
 	var0001 = UI_get_item_frame(var0000);
 	if (!(var0001 == 0x0000)) goto labelFunc0973_0038;
-	Func094A(["I wager that would work much better if thou wouldst put some liquid in it..."]);
-	Func094E(0xFFFF, "Perhaps some BEER for instance.");
-	Func094E(0xFFFE, "Or mayhaps some WINE....");
+	Func094A(["我敢打賭，如果你在裡面裝點液體，效果會好得多……"]);
+	Func094E(0xFFFF, "比方說裝點啤酒。");
+	Func094E(0xFFFE, "或是裝點葡萄酒……");
 	goto labelFunc0973_00D0;
 labelFunc0973_0038:
 	UI_set_item_frame(var0000, 0x0000);
-	var0002 = ["water", "blood", "wine", "beer", "ale", "stuff", "stuff", "stuff", "stuff", "stuff", "last stuff"];
+	var0002 = ["水", "血", "葡萄酒", "啤酒", "麥芽酒", "東西", "東西", "東西", "東西", "東西", "最後的東西"];
 	UI_play_sound_effect(0x0024);
 	var0003 = UI_die_roll(0x0001, 0x000A);
 	var0004 = var0002[var0001];
-	var0005 = (("Zounds, I wager that " + var0004) + " was right good....");
+	var0005 = (("天哪，我打賭那" + var0004) + "真的很棒……");
 	if (!(var0003 == 0x0001)) goto labelFunc0973_00A4;
-	var0006 = "mmmm... I wager that would cure a body's thirst.";
+	var0006 = "嗯……我打賭那一定能解渴。";
 labelFunc0973_00A4:
 	if (!(var0003 == 0x0002)) goto labelFunc0973_00CA;
 	var0007 = Func0953();
-	var0005 = (((("Why dost thou not wait until dinner to drink that " + var0004) + ", ") + var0007) + "?");
+	var0005 = (((("你為什麼不等到晚餐再喝那" + var0004) + "呢，") + var0007) + "？");
 labelFunc0973_00CA:
 	Func094A(var0005);
 labelFunc0973_00D0:
 	return;
 }
-
-

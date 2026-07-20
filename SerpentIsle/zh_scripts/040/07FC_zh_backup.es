@@ -249,7 +249,7 @@ labelFunc07FC_046A:
 	message("「是的，那位學者在這裡時我確實見過她。一位氣質優雅的好女士。」");
 	say();
 	if (!gflags[0x0174]) goto labelFunc07FC_0497;
-	message("「我很難相信伊奧洛(Iolo)會犯下崇拜惡魔的罪，卻又娶了這麼一位美好的女士。」");
+	message("「我很難相信 Iolo 會犯下崇拜惡魔的罪，卻又娶了這麼一位美好的女士。」");
 	say();
 	goto labelFunc07FC_049B;
 labelFunc07FC_0497:
@@ -268,7 +268,7 @@ labelFunc07FC_049B:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「是啊。但話又說回來，傳說中不是說惡魔都有著三寸不爛之舌嗎？這個伊奧洛確實很有魅力……」");
+	message("「是啊。但話又說回來，傳說中不是說惡魔都有著三寸不爛之舌嗎？這個 Iolo 確實很有魅力……」");
 	say();
 labelFunc07FC_04EB:
 	if (!gflags[0x0175]) goto labelFunc07FC_0518;
@@ -770,7 +770,7 @@ labelFunc07FC_0E18:
 	UI_remove_answer(["被告的品格", "沒有問題"]);
 	UI_add_answer("沒有其他問題了");
 	if (!gflags[0x0174]) goto labelFunc07FC_0E3E;
-	message("「這還不明顯嗎？這名吟遊詩人是個輕浮的人，不尊重正當的權威！伊奧洛不是個值得信任的人。」");
+	message("「這還不明顯嗎？這名吟遊詩人是個輕浮的人，不尊重正當的權威！ Iolo 不是個值得信任的人。」");
 	say();
 labelFunc07FC_0E3E:
 	if (!gflags[0x0175]) goto labelFunc07FC_0E48;

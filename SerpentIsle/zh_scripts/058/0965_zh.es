@@ -7,23 +7,21 @@ void Func0965 0x965 ()
 	var0000 = UI_wearing_fellowship();
 	var0001 = UI_die_roll(0x0001, 0x0004);
 	if (!(var0001 == 0x0001)) goto labelFunc0965_0022;
-	message("\"The Fellowship is a society of spiritual seekers who strive to reach the highest levels of human potential and to share this philosophy freely with all people. The Fellowship was formed twenty years ago by Batlin with the full approval and support of Lord British.\"");
+	message("「友誼會是一個追求心靈昇華的團體，致力於實現人類潛能的最高境界，並將此理念無私地與眾人分享。友誼會是由巴特林於二十年前建立的，並獲得了不列顛王的完全批准與支持。」");
 	say();
 labelFunc0965_0022:
 	if (!(var0001 == 0x0002)) goto labelFunc0965_0030;
-	message("\"The Fellowship is a wonderful organization that is open to all the people of Britannia. I have learned so much through studying its philosophy and it hath helped me to live my life to the fullest. Through The Fellowship I am able to achieve what I have set out to do in life and I am a better person for having joined.\"");
+	message("「友誼會是一個很棒的組織，對不列顛尼亞的所有民眾開放。透過學習它的理念，我受益良多，它幫助我過上極其充實的生活。藉由友誼會，我得以實現人生的目標，加入它讓我變成了一個更好的人。」");
 	say();
 labelFunc0965_0030:
 	if (!(var0001 == 0x0003)) goto labelFunc0965_003E;
-	message("\"The Fellowship is the philosophical group devoted to the teachings of a truly great man named Batlin. In the absence of the Avatar, Batlin hath become a sort of spiritual father for the people of Britannia. Through his speeches and writings he hath changed the lives of many people, including mine own.\"");
+	message("「友誼會是一個致力於奉行巴特林這位偉人教誨的理念團體。在聖者不在的時候，巴特林成為了不列顛尼亞人民的精神導師。透過他的演講與著作，他改變了許多人的生活，包括我自己在內。」");
 	say();
 labelFunc0965_003E:
 	if (!(var0001 == 0x0004)) goto labelFunc0965_004C;
-	message("\"The Fellowship is a group that hath been gaining much popularity in recent years with the people of Britannia. While on the surface it may simply appear to be a scholarly society studying its particular philosophy, its teachings have the power to forever alter the shape of Britannian society. Its ceremonies are deeply moving experiences.\"");
+	message("「友誼會是近年來在不列顛尼亞民眾中極受歡迎的團體。雖然表面上它看似只是一個研究特定理念的學術團體，但它的教誨擁有永遠改變不列顛尼亞社會面貌的力量。它的儀式是非常感人的體驗。」");
 	say();
 labelFunc0965_004C:
-	UI_add_answer("philosophy");
+	UI_add_answer("理念");
 	return;
 }
-
-

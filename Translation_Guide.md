@@ -58,12 +58,12 @@
 - **Ether** ➔ **以太**
 - **philosophy** ➔ **理念** (請注意：當內容涉及講述「兄弟會」的理念時，要特別留意此用法)
 - **teleport storms** ➔ **傳送風暴**
-
 - **Varo leaves** ➔ **瓦羅葉**
 - **mace** ➔ **釘頭錘**
 - **maces** ➔ **釘頭錘**
 - **The Sleeping Soldier** ➔ **沉睡士兵旅店**
 - **Test of Knighthood** ➔ **騎士考驗**
+- **Crystal Rose of Love** ➔ **愛之水晶玫瑰**
 
 ## 巨蛇之島的貨幣（共三種）
 - **Filnri** ➔ **法拉利幣**

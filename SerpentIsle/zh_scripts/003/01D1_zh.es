@@ -63,7 +63,7 @@ labelFunc01D1_00E2:
 	say();
 	message("「那場風暴把我傳送到了這座奇怪的城市。因為我是陌生人，他們就把我逮捕了。他們說我是個施法者！」");
 	say();
-	message("「去找 Lord Marsten 說情，替我爭取自由！我知道你不會丟下我不管的……」");
+	message("「去找 Marsten 領主說情，替我爭取自由！我知道你不會丟下我不管的……」");
 	say();
 	goto labelFunc01D1_010C;
 labelFunc01D1_0108:

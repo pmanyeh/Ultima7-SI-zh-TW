@@ -10,7 +10,7 @@ void Func094E 0x94E (var var0000, var var0001)
 	if (!(var0000 == 0xFED3)) goto labelFunc094E_0043;
 	UI_show_npc_face1(var0000, 0x0000);
 	if (!UI_get_item_flag(var0000, 0x0019)) goto labelFunc094E_0028;
-	message("\"Slurp\"");
+	message("「咕嚕」");
 	say();
 	goto labelFunc094E_003E;
 labelFunc094E_0028:
@@ -31,7 +31,7 @@ labelFunc094E_0043:
 labelFunc094E_0061:
 	UI_show_npc_face1(var0000, 0x0000);
 	if (!UI_get_item_flag(var0000, 0x0019)) goto labelFunc094E_007F;
-	message("\"Slurp\"");
+	message("「咕嚕」");
 	say();
 	goto labelFunc094E_0095;
 labelFunc094E_007F:
@@ -47,5 +47,3 @@ labelFunc094E_0095:
 labelFunc094E_0099:
 	return;
 }
-
-

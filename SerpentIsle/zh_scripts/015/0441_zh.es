@@ -39,7 +39,7 @@ labelFunc0441_002B:
 	var0004 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x01D0]);
 labelFunc0441_0060:
 	if (!(event == 0x0001)) goto labelFunc0441_0098;
-	Func097F(0xFE9C, "@請原諒我……@", 0x0000);
+	Func097F(0xFE9C, "@不好意思……@", 0x0000);
 	0xFFBF->Func07D1();
 	Func097F(0xFFBF, (("@是的，" + var0001) + "？@"), 0x0002);
 	UI_set_schedule_type(0xFFBF, 0x0003);
@@ -60,7 +60,7 @@ labelFunc0441_00C4:
 	say();
 	goto labelFunc0441_00F9;
 labelFunc0441_00E8:
-	message("「當你成為一名騎士( Knight )後，我才能為你服務。在那之前，請便吧。」");
+	message("「當你成為一名騎士後，我才能為你服務。在那之前，請便吧。」");
 	say();
 	Func097F(0xFFBF, "@再會。@", 0x0000);
 	abort;

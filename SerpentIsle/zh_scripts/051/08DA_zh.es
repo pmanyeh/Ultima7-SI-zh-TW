@@ -95,8 +95,8 @@ labelFunc08DA_0168:
 	goto labelFunc08DA_04A7;
 labelFunc08DA_0192:
 	if (!(var0002 == 0x00A1)) goto labelFunc08DA_0270;
-	Func097F(0xFE9C, "@That did something.@", 0x0002);
-	Func097F(0xFF58, "@I hope nothing bad...@", 0x0012);
+	Func097F(0xFE9C, "@有動作了。@", 0x0002);
+	Func097F(0xFF58, "@希望不是什麼壞事……@", 0x0012);
 	UI_play_sound_effect(0x0058);
 	if (!(UI_get_item_frame(item) == 0x0000)) goto labelFunc08DA_01D2;
 	UI_set_item_frame(item, 0x0001);
@@ -111,12 +111,12 @@ labelFunc08DA_01EC:
 	var0002 = UI_get_item_quality(var0012);
 	if (!(var0002 == 0x009F)) goto labelFunc08DA_0236;
 	var0008 = UI_get_object_position(var0012);
-	var0001 = UI_execute_usecode_array(var0012, [(byte)0x23, (byte)0x52, "@click@"]);
+	var0001 = UI_execute_usecode_array(var0012, [(byte)0x23, (byte)0x52, "@喀噠@"]);
 	var0013 = UI_set_item_quality(var0012, 0x00A0);
 labelFunc08DA_0236:
 	if (!(var0002 == 0x00A0)) goto labelFunc08DA_026B;
 	var0008 = UI_get_object_position(var0012);
-	var0001 = UI_execute_usecode_array(var0012, [(byte)0x23, (byte)0x52, "@click@"]);
+	var0001 = UI_execute_usecode_array(var0012, [(byte)0x23, (byte)0x52, "@喀噠@"]);
 	var0013 = UI_set_item_quality(var0012, 0x009F);
 labelFunc08DA_026B:
 	abort;
@@ -129,13 +129,13 @@ labelFunc08DA_0270:
 	goto labelFunc08DA_04A7;
 labelFunc08DA_0281:
 	if (!(var0002 == 0x00A3)) goto labelFunc08DA_0296;
-	UI_item_say(0xFE9C, "@'Tis jammed.@");
+	UI_item_say(0xFE9C, "@卡住了。@");
 	abort;
 labelFunc08DA_0296:
 	Func0924(item, 0xFE99);
 labelFunc08DA_029D:
 	if (!((var0002 == 0x0047) || ((var0002 == 0x0048) || (var0002 == 0x0049)))) goto labelFunc08DA_02CF;
-	var0001 = ("@It's stuck...@" & "@I cannot budge it!@");
+	var0001 = ("@卡住了……@" & "@我根本拉不動！@");
 	Func094F(0xFE9C, var0001);
 	var0001 = false;
 	abort;
@@ -210,5 +210,3 @@ labelFunc08DA_04EF:
 labelFunc08DA_04F6:
 	return;
 }
-
-

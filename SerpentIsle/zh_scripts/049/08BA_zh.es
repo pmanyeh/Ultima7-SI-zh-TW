@@ -20,8 +20,8 @@ labelFunc08BA_003E:
 	if (!(event == 0x0002)) goto labelFunc08BA_00EA;
 	var0002 = UI_die_roll(0x0001, 0x0005);
 	var0003 = [0x0361, 0x0219, 0x012E, 0x0149, 0x036D];
-	var0004 = ["Spiders", "Wolves", "Bears", "Boars", "Doom"];
-	UI_item_say(0xFF64, (("Morghrim, send me " + var0004[var0002]) + "."));
+	var0004 = ["蜘蛛", "狼群", "熊群", "野豬", "毀滅"];
+	UI_item_say(0xFF64, (("Morghrim，向我派遣" + var0004[var0002]) + "。"));
 	var0005 = UI_die_roll(0x0001, Func097E((var0002 - 0x0005)));
 labelFunc08BA_00A6:
 	if (!(var0005 > 0x0000)) goto labelFunc08BA_00EA;
@@ -37,5 +37,3 @@ labelFunc08BA_00E7:
 labelFunc08BA_00EA:
 	return;
 }
-
-

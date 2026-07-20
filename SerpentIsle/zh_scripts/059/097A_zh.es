@@ -18,87 +18,85 @@ labelFunc097A_0015:
 	var0004 = UI_die_roll(0x0001, 0x0004);
 	if (!(var0002 == 0x000B)) goto labelFunc097A_007C;
 	if (!(var0004 == 0x0001)) goto labelFunc097A_004C;
-	var0003 = "@It doth seem as it would rain...@";
+	var0003 = "@好像快下雨了……@";
 labelFunc097A_004C:
 	if (!(var0004 == 0x0002)) goto labelFunc097A_005C;
-	var0003 = "@Greetings.@";
+	var0003 = "@你好。@";
 labelFunc097A_005C:
 	if (!(var0004 == 0x0003)) goto labelFunc097A_006C;
-	var0003 = "@Oh, mine aching back...@";
+	var0003 = "@噢，我的腰好酸啊……@";
 labelFunc097A_006C:
 	if (!(var0004 == 0x0004)) goto labelFunc097A_007C;
-	var0003 = "@Ho hum...@";
+	var0003 = "@哈……欠……@";
 labelFunc097A_007C:
 	if (!(var0002 == 0x000E)) goto labelFunc097A_008C;
-	var0003 = "@Z-z-z-z...@";
+	var0003 = "@呼——呼——……@";
 labelFunc097A_008C:
 	if (!(var0002 == 0x0017)) goto labelFunc097A_00D6;
 	if (!(var0004 == 0x0001)) goto labelFunc097A_00A6;
-	var0003 = "@Thou shouldst try the wine.@";
+	var0003 = "@你應該嚐嚐這裡的葡萄酒。@";
 labelFunc097A_00A6:
 	if (!(var0004 == 0x0002)) goto labelFunc097A_00B6;
-	var0003 = "@The bread is fresh.@";
+	var0003 = "@麵包是新鮮的。@";
 labelFunc097A_00B6:
 	if (!(var0004 == 0x0003)) goto labelFunc097A_00C6;
-	var0003 = "@Try the mutton.@";
+	var0003 = "@嚐嚐羊肉吧。@";
 labelFunc097A_00C6:
 	if (!(var0004 == 0x0004)) goto labelFunc097A_00D6;
-	var0003 = "@I recommend the ale.@";
+	var0003 = "@我推薦麥芽酒。@";
 labelFunc097A_00D6:
 	if (!(var0002 == 0x001C)) goto labelFunc097A_0120;
 	if (!(var0004 == 0x0001)) goto labelFunc097A_00F0;
-	var0003 = "@Strive For Unity.@";
+	var0003 = "@致力合一。@";
 labelFunc097A_00F0:
 	if (!(var0004 == 0x0002)) goto labelFunc097A_0100;
-	var0003 = "@Trust Thy Brother.@";
+	var0003 = "@信賴你的兄弟。@";
 labelFunc097A_0100:
 	if (!(var0004 == 0x0003)) goto labelFunc097A_0110;
-	var0003 = "@Worthiness Precedes Reward.@";
+	var0003 = "@價值先行於報償。@";
 labelFunc097A_0110:
 	if (!(var0004 == 0x0004)) goto labelFunc097A_0120;
-	var0003 = "@Join The Fellowship!@";
+	var0003 = "@加入友誼會！@";
 labelFunc097A_0120:
 	if (!(var0002 == 0x001A)) goto labelFunc097A_016A;
 	if (!(var0004 == 0x0001)) goto labelFunc097A_013A;
-	var0003 = "@Mmmm! Good!@";
+	var0003 = "@嗯嗯！真好吃！@";
 labelFunc097A_013A:
 	if (!(var0004 == 0x0002)) goto labelFunc097A_014A;
-	var0003 = "@Tasty!@";
+	var0003 = "@美味！@";
 labelFunc097A_014A:
 	if (!(var0004 == 0x0003)) goto labelFunc097A_015A;
-	var0003 = "@This is good!@";
+	var0003 = "@這個真棒！@";
 labelFunc097A_015A:
 	if (!(var0004 == 0x0004)) goto labelFunc097A_016A;
-	var0003 = "@Waiter! Waiter!@";
+	var0003 = "@服務生！服務生！@";
 labelFunc097A_016A:
 	if (!(var0002 == 0x0006)) goto labelFunc097A_01B4;
 	if (!(var0004 == 0x0001)) goto labelFunc097A_0184;
-	var0003 = "@Whew! 'Tis hot!@";
+	var0003 = "@呼！真熱！@";
 labelFunc097A_0184:
 	if (!(var0004 == 0x0002)) goto labelFunc097A_0194;
-	var0003 = "@Ouch! I did cut myself!@";
+	var0003 = "@哎呀！割到手了！@";
 labelFunc097A_0194:
 	if (!(var0004 == 0x0003)) goto labelFunc097A_01A4;
-	var0003 = "@Work... work... work...@";
+	var0003 = "@工作……工作……工作……@";
 labelFunc097A_01A4:
 	if (!(var0004 == 0x0004)) goto labelFunc097A_01B4;
-	var0003 = "@We need rain...@";
+	var0003 = "@我們需要下點雨……@";
 labelFunc097A_01B4:
 	if (!(var0002 == 0x0019)) goto labelFunc097A_01FE;
 	if (!(var0004 == 0x0001)) goto labelFunc097A_01CE;
-	var0003 = "@Tag! Thou art it!@";
+	var0003 = "@抓到了！換你當鬼！@";
 labelFunc097A_01CE:
 	if (!(var0004 == 0x0002)) goto labelFunc097A_01DE;
-	var0003 = "@Cannot catch me!@";
+	var0003 = "@抓不到我！@";
 labelFunc097A_01DE:
 	if (!(var0004 == 0x0003)) goto labelFunc097A_01EE;
-	var0003 = "@Nyah nyah! Thou art it!@";
+	var0003 = "@略略略！換你當鬼！@";
 labelFunc097A_01EE:
 	if (!(var0004 == 0x0004)) goto labelFunc097A_01FE;
-	var0003 = "@Catch me if thou canst!@";
+	var0003 = "@抓得到我就來呀！@";
 labelFunc097A_01FE:
 	UI_item_say(var0001, var0003);
 	return;
 }
-
-

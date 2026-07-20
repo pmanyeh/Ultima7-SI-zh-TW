@@ -41,16 +41,16 @@ labelFunc0936_0047:
 	goto labelFunc0936_00A0;
 labelFunc0936_008F:
 	UI_clear_item_say(var0001);
-	UI_item_say(var0001, "@Thou hast beaten me!@");
+	UI_item_say(var0001, "@你打敗了我！@");
 labelFunc0936_00A0:
 	if (!(((!Func0932(0xFF6A)) || (Func0932(0xFF6A) && (UI_get_attack_mode(0xFF6A) == 0x0007))) && (((!Func0932(0xFFB9)) || (Func0932(0xFFB9) && (UI_get_attack_mode(0xFFB9) == 0x0007))) && (((!Func0932(0xFFB6)) || (Func0932(0xFFB6) && (UI_get_attack_mode(0xFFB6) == 0x0007))) && (((!Func0932(0xFFC1)) || (Func0932(0xFFC1) && (UI_get_attack_mode(0xFFC1) == 0x0007))) && ((!Func0932(0xFFB1)) || (Func0932(0xFFB1) && (UI_get_attack_mode(0xFFB1) == 0x0007)))))))) goto labelFunc0936_0191;
 	UI_show_npc_face0(0xFEED, 0x0000);
 	var0002 = UI_get_npc_name(var0000);
-	message("\"Nice show, ");
+	message("「精彩的演出，");
 	message(var0002);
-	message(", thou hast beaten us all! Where didst thou learn to fight like that?\"");
+	message("，你把我們大家都打敗了！你究竟在哪裡學到這種格鬥本領的？」");
 	say();
-	var0002 = (("@Hail, " + var0002) + "!@");
+	var0002 = (("@向" + var0002) + "致敬！@");
 	var0007 = UI_find_nearby(var0000, 0xFFFF, 0x001E, 0x0008);
 	enum();
 labelFunc0936_0169:
@@ -72,7 +72,7 @@ labelFunc0936_0198:
 labelFunc0936_01C0:
 	if (!(UI_get_npc_id(0xFFB9) == 0x0009)) goto labelFunc0936_01EA;
 	UI_show_npc_face0(0xFFB9, 0x0000);
-	message("\"Thou hast beaten me. I am impressed.\"");
+	message("「你擊敗了我。真是令我印象深刻。」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0000);
@@ -80,7 +80,7 @@ labelFunc0936_01C0:
 	goto labelFunc0936_01FF;
 labelFunc0936_01EA:
 	UI_clear_item_say(var0001);
-	UI_item_say(var0001, "@Thou hast beaten me!@");
+	UI_item_say(var0001, "@你打敗了我！@");
 	gflags[0x0007] = false;
 labelFunc0936_01FF:
 	return;
@@ -88,21 +88,21 @@ labelFunc0936_0200:
 	if (!(var0001 == UI_get_npc_object(0xFFB6))) goto labelFunc0936_0243;
 	if (!(UI_get_npc_id(0xFFB6) == 0x0009)) goto labelFunc0936_0238;
 	UI_show_npc_face0(0xFFB6, 0x0000);
-	message("\"Quite amazing. I have been beaten by thee! Perhaps it is time for the teacher to learn from the student.\"");
+	message("「真是令人驚嘆。我居然被你打敗了！也許是時候讓老師向學生學習了。」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0000);
 	return;
 	goto labelFunc0936_0242;
 labelFunc0936_0238:
-	UI_item_say(var0001, "@Thou hast bested me!@");
+	UI_item_say(var0001, "@你勝過了我！@");
 labelFunc0936_0242:
 	return;
 labelFunc0936_0243:
 	if (!(var0001 == UI_get_npc_object(0xFF6A))) goto labelFunc0936_0291;
 	if (!(UI_get_npc_id(0xFF6A) == 0x0009)) goto labelFunc0936_027B;
 	UI_show_npc_face0(0xFF6A, 0x0000);
-	message("\"A good showing! Thou hast gotten lucky and bested me! Perhaps it is time for the master to learn from his student!!!\"");
+	message("「表現不錯！你運氣好打敗了我！也許是時候讓大師向他的學生學習了！！！」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0000);
@@ -110,7 +110,7 @@ labelFunc0936_0243:
 	goto labelFunc0936_0290;
 labelFunc0936_027B:
 	UI_clear_item_say(0xFF6A);
-	UI_item_say(var0001, "@Thou hast bested me again!@");
+	UI_item_say(var0001, "@你又一次勝過了我！@");
 	gflags[0x0007] = false;
 labelFunc0936_0290:
 	return;
@@ -118,7 +118,7 @@ labelFunc0936_0291:
 	if (!(var0001 == UI_get_npc_object(0xFFC1))) goto labelFunc0936_02DF;
 	if (!(UI_get_npc_id(0xFFC1) == 0x0009)) goto labelFunc0936_02C9;
 	UI_show_npc_face0(0xFFC1, 0x0000);
-	message("\"Thou hast gotten lucky and bested me! Do not consider this the image of the wilds. The goblins are fierce.\"");
+	message("「你運氣好打敗了我！別以為荒野也是這樣。哥布林可是非常兇殘的。」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0000);
@@ -126,13 +126,13 @@ labelFunc0936_0291:
 	goto labelFunc0936_02DE;
 labelFunc0936_02C9:
 	UI_clear_item_say(var0001);
-	UI_item_say(var0001, "@I surrender to thee!@");
+	UI_item_say(var0001, "@我向你投降！@");
 	gflags[0x0007] = false;
 labelFunc0936_02DE:
 	return;
 labelFunc0936_02DF:
 	UI_clear_item_say(var0001);
-	UI_item_say(var0001, "@I can take it no longer!@");
+	UI_item_say(var0001, "@我撐不下去了！@");
 	gflags[0x0007] = false;
 	return;
 labelFunc0936_02F5:
@@ -141,7 +141,7 @@ labelFunc0936_02F8:
 	if (!gflags[0x0084]) goto labelFunc0936_039D;
 	if (!(UI_get_npc_id(0xFFB6) == 0x0009)) goto labelFunc0936_0325;
 	UI_show_npc_face0(0xFFB6, 0x0000);
-	message("\"Thou hast been beaten by my blade. Remember this day, and learn.\"");
+	message("「你敗給了我的利劍。記住今天，並好好吸取教訓。」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0001);
@@ -149,7 +149,7 @@ labelFunc0936_02F8:
 labelFunc0936_0325:
 	if (!(UI_get_npc_id(0xFFB9) == 0x0009)) goto labelFunc0936_034C;
 	UI_show_npc_face0(0xFFB9, 0x0000);
-	message("\"Thou hast been beaten, as was expected. Though thou art insignificant, try to remember the lessons I have taught thee this day.\"");
+	message("「你不出所料地被打敗了。雖然你微不足道，但試著記住我今天教給你的教訓。」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0001);
@@ -157,7 +157,7 @@ labelFunc0936_0325:
 labelFunc0936_034C:
 	if (!(UI_get_npc_id(0xFF6A) == 0x0009)) goto labelFunc0936_0373;
 	UI_show_npc_face0(0xFF6A, 0x0000);
-	message("\"Thou made a good showing, but fell to my superior skill in the end. With more experience, thou wilt make a fine warrior.\"");
+	message("「你表現得不錯，但最終還是敗給了我高超的技藝。有了更多經驗後，你會成為一名優秀的戰士。」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0001);
@@ -165,7 +165,7 @@ labelFunc0936_034C:
 labelFunc0936_0373:
 	if (!(UI_get_npc_id(0xFFC1) == 0x0009)) goto labelFunc0936_039A;
 	UI_show_npc_face0(0xFFC1, 0x0000);
-	message("\"I have overwhelmed thee with sheer strength. Learn from this lesson, my friend.\"");
+	message("「我用絕對的力量壓制了你。從這個教訓中學習吧，我的朋友。」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0001);
@@ -175,7 +175,7 @@ labelFunc0936_039A:
 labelFunc0936_039D:
 	if (!(var0000 == UI_get_npc_object(0xFFB6))) goto labelFunc0936_03C4;
 	UI_show_npc_face0(0xFFB6, 0x0000);
-	message("\"Thou hast lost this match.\"");
+	message("「你輸掉了這場對決。」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0001);
@@ -183,7 +183,7 @@ labelFunc0936_039D:
 labelFunc0936_03C4:
 	if (!(var0000 == UI_get_npc_object(0xFFB9))) goto labelFunc0936_03EB;
 	UI_show_npc_face0(0xFFB9, 0x0000);
-	message("\"Hah, I have bested thee. Away with thee!\"");
+	message("「哈哈，我贏過你了。走開吧！」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0001);
@@ -191,7 +191,7 @@ labelFunc0936_03C4:
 labelFunc0936_03EB:
 	if (!(var0000 == UI_get_npc_object(0xFF6A))) goto labelFunc0936_0412;
 	UI_show_npc_face0(0xFF6A, 0x0000);
-	message("\"Thou hast been beaten in a fair spar. Perhaps now thou wilt be more humble.\"");
+	message("「在一場公平的切磋中你被打敗了。也許現在你會更謙虛一些。」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0001);
@@ -199,7 +199,7 @@ labelFunc0936_03EB:
 labelFunc0936_0412:
 	if (!(var0000 == UI_get_npc_object(0xFFC1))) goto labelFunc0936_0439;
 	UI_show_npc_face0(0xFFC1, 0x0000);
-	message("\"Thou hast lost to my prowess.\"");
+	message("「你敗在了我的勇猛之下。」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0001);
@@ -207,7 +207,7 @@ labelFunc0936_0412:
 labelFunc0936_0439:
 	if (!(var0000 == UI_get_npc_object(0xFFB1))) goto labelFunc0936_0460;
 	UI_show_npc_face0(0xFFB1, 0x0000);
-	message("\"I have beaten thee!\"");
+	message("「我打敗你了！」");
 	say();
 	UI_remove_npc_face0();
 	Func092E(var0001);
@@ -216,19 +216,19 @@ labelFunc0936_0460:
 	return;
 labelFunc0936_0461:
 	UI_show_npc_face0(0xFFB9, 0x0000);
-	message("\"I wouldn't have believed it... thou didst beat me... in a fair fight...\"");
+	message("「我簡直不敢相信……你居然在光明正大的對決中……打敗了我……」");
 	say();
 	var0002 = Func0953();
 	if (!UI_is_pc_female()) goto labelFunc0936_0489;
-	message("\"Thou art one hell of a warrior, ");
+	message("「你真是個極其出色的戰士，");
 	message(var0002);
-	message("!\"");
+	message("「！」");
 	say();
 	goto labelFunc0936_0493;
 labelFunc0936_0489:
-	message("\"Thou art a better man than I am, ");
+	message("「你比我更像個男子漢，");
 	message(var0002);
-	message(".\"");
+	message("「。」");
 	say();
 labelFunc0936_0493:
 	UI_revert_schedule(0xFFB9);
@@ -237,18 +237,16 @@ labelFunc0936_0493:
 	var0002 = UI_set_npc_prop(0xFFB9, 0x0004, 0x0009);
 	var0002 = UI_set_npc_prop(0xFFB9, 0x0001, 0x0008);
 	UI_clear_item_say(0xFFB9);
-	Func097F(0xFFB9, "@Hail the Avatar!@", 0x0000);
+	Func097F(0xFFB9, "@向聖者致敬！@", 0x0000);
 	var0001 = UI_find_nearby(0xFE9C, 0xFFFF, 0x0032, 0x0008);
 	var0001 = Func0988(UI_get_npc_object(0xFFB9), var0001);
 	enum();
 labelFunc0936_0505:
 	for (var0002 in var0001 with var000A to var000B) attend labelFunc0936_052D;
 	UI_clear_item_say(var0002);
-	Func097F(var0002, "@Hail the Avatar!@", UI_die_roll(0x0000, 0x0001));
+	Func097F(var0002, "@向聖者致敬！@", UI_die_roll(0x0000, 0x0001));
 	goto labelFunc0936_0505;
 labelFunc0936_052D:
 	Func092E(var0000);
 	return;
 }
-
-

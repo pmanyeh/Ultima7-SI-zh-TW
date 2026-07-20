@@ -22,62 +22,62 @@ void Func0935 0x935 (var var0000)
 	var var000E;
 
 	UI_show_npc_face0(0xFEED, 0x0000);
-	message("\"What weapon dost thou favor?\"");
+	message("「你偏好哪種武器？」");
 	say();
-	var0001 = ["nothing", "sword", "spear", "hammer", "morning star", "mace", "halberd", "battle axe"];
+	var0001 = ["不用", "劍", "長矛", "戰錘", "晨星錘", "釘頭錘", "長柄斧", "戰斧"];
 	var0002 = Func0957(var0001);
 	if (!(var0002 == 0x0001)) goto labelFunc0935_0043;
-	message("\"Indeed. If that's what thou wantest.... Best of luck to ya.\"");
+	message("「確實。如果那是你想要的……祝你好運啦。」");
 	say();
 labelFunc0935_0043:
 	if (!(var0002 == 0x0002)) goto labelFunc0935_0073;
 	if (!UI_is_pc_female()) goto labelFunc0935_005B;
-	message("\"Take care with that blade. 'Tis sharp.\"");
+	message("「小心那把劍。可鋒利著呢。」");
 	say();
 	goto labelFunc0935_005F;
 labelFunc0935_005B:
-	message("\"Be thou careful with that blade.\"");
+	message("「小心那把劍。」");
 	say();
 labelFunc0935_005F:
 	var0003 = UI_create_new_object(0x0257);
 	var0001 = UI_give_last_created(var0000);
 labelFunc0935_0073:
 	if (!(var0002 == 0x0003)) goto labelFunc0935_0095;
-	message("\"Only a coward fights from a distance, not that I be referring to thee or nothing.\"");
+	message("「只有懦夫才會遠距離作戰，不過我倒不是在指你什麼的。」");
 	say();
 	var0003 = UI_create_new_object(0x0250);
 	var0001 = UI_give_last_created(var0000);
 labelFunc0935_0095:
 	if (!(var0002 == 0x0004)) goto labelFunc0935_00B7;
-	message("\"Aaahh, a fine weapon a war hammer is. There's nothing quite like the feeling of whacking someone with a mallet.\"");
+	message("「啊哈，戰錘是把好武器。沒有什麼比用大木槌痛毆別人的感覺更爽快了。」");
 	say();
 	var0003 = UI_create_new_object(0x0258);
 	var0001 = UI_give_last_created(var0000);
 labelFunc0935_00B7:
 	if (!(var0002 == 0x0005)) goto labelFunc0935_00D9;
-	message("\"A respectable weapon that is. Leaves quite a mess, though.\"");
+	message("「那是一把體面的武器。不過會留下相當慘不忍睹的場面。」");
 	say();
 	var0003 = UI_create_new_object(0x0254);
 	var0001 = UI_give_last_created(var0000);
 labelFunc0935_00D9:
 	if (!(var0002 == 0x0006)) goto labelFunc0935_00FB;
-	message("\"Squeamish at the sight of blood, are ya? The morning star is the true warrior's mace.\"");
+	message("「你見血會暈嗎？晨星錘才是真正戰士的釘頭錘。」");
 	say();
 	var0003 = UI_create_new_object(0x0293);
 	var0001 = UI_give_last_created(var0000);
 labelFunc0935_00FB:
 	if (!(var0002 == 0x0007)) goto labelFunc0935_011D;
-	message("\"A fine enough weapon for a coward. I never did care for that fightin' at a distance and all. I thinks that the only way to victory is to close and hack, and I should know, seeing that I've seen many a battle in my time.\"");
+	message("「對懦夫來說算是不錯的武器。我從來都不喜歡遠距離戰鬥那一套。我認為通往勝利的唯一途徑就是貼身砍殺，我身經百戰，這點我最清楚不過了。」");
 	say();
 	var0003 = UI_create_new_object(0x025B);
 	var0001 = UI_give_last_created(var0000);
 labelFunc0935_011D:
 	if (!(var0002 == 0x0008)) goto labelFunc0935_014D;
-	message("\"Thou knowest thy weapons well.\"");
+	message("「你很懂武器嘛。」");
 	say();
-	message("\"Sweet is the sight of a battle axe swinging in the pitch of battle.\"");
+	message("「在激烈的戰鬥中揮舞戰斧的姿態真是美妙。」");
 	say();
-	message("\"Lovely is the sound of bone crunching under its mighty arc.\"");
+	message("「骨頭在其強大弧光下粉碎的聲音真是動聽。」");
 	say();
 	var0003 = UI_create_new_object(0x0259);
 	if (!var0003) goto labelFunc0935_014D;
@@ -99,7 +99,7 @@ labelFunc0935_019B:
 	if (!var0003) goto labelFunc0935_01B5;
 	var0001 = UI_give_last_created(var0000);
 labelFunc0935_01B5:
-	message("\"All right. If thou'lt follow me, then.\"");
+	message("「好吧。那就跟我來吧。」");
 	say();
 	UI_remove_npc_face0();
 	UI_play_music(0x0022, 0x0000);
@@ -117,7 +117,7 @@ labelFunc0935_0208:
 	Func092F(var0000, 0x0014);
 labelFunc0935_0211:
 	UI_clear_item_say(var0007);
-	Func097F(var0007, "@Follow me...@", 0x000F);
+	Func097F(var0007, "@跟我來……@", 0x000F);
 	var0008 = UI_find_nearby(var0000, 0x036F, 0x001E, 0x0000);
 	enum();
 labelFunc0935_0238:
@@ -135,5 +135,3 @@ labelFunc0935_027F:
 	UI_si_path_run_usecode(var0007, [(var000C[0x0001] - 0x0002), (var000C[0x0002] - 0x0000), var000C[0x0003]], 0x000B, var0000, 0x07FD, true);
 	return;
 }
-
-

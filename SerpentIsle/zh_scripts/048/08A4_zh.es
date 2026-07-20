@@ -14,7 +14,7 @@ void Func08A4 0x8A4 ()
 
 	var0000 = 0x0001;
 	var0001 = UI_get_party_list();
-	var0002 = ["Ohh, ahh!", "That feels wonderful!", "Do thou that again!", "'Tis a marvel!", "More! More!", "Wondrous!", "What a sensation!"];
+	var0002 = ["@噢，啊！@", "@感覺真棒！@", "@再弄一次！@", "@真是奇蹟！@", "@還要！還要！@", "@太驚奇了！@", "@多麼美妙的感覺！@"];
 	enum();
 labelFunc08A4_0029:
 	for (var0005 in var0001 with var0003 to var0004) attend labelFunc08A4_0079;
@@ -27,5 +27,3 @@ labelFunc08A4_0079:
 	gflags[0x02CA] = true;
 	return;
 }
-
-

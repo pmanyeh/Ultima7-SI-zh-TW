@@ -7,27 +7,25 @@ void Func0966 0x966 ()
 	var var0000;
 	var var0001;
 
-	message("\"The Fellowship advances the philosophy of 'sanguine cognition', a way to apply a confident order of thought to one's life, through what is called the Triad of Inner Strength. The Triad is simply three basic principles that, when applied in unison, enable one to be more creative, satisfied, and successful in life. They are: Strive For Unity, Trust Thy Brother, and Worthiness Precedes Reward. Strive For Unity basically means that people should cooperate and work together. Trust Thy Brother implies that we are all the same and that we should not hate or fear each other. Worthiness Precedes Reward suggests that we must each strive to be worthy of that which we want out of life.\"");
+	message("「友誼會推廣『樂觀認知』的理念，這是一種透過所謂的內在力量的三位一體( Triad of Inner Strength )，將自信而有條理的思想運用於生活的方法。三位一體指的是三個基本原則，當三者合而為一時，能讓人生活得更有創造力、更滿足、也更成功。這三個原則是：致力合一( Strive For Unity )、信賴你的兄弟( Trust Thy Brother )以及價值先行於報償( Worthiness Precedes Reward )。致力合一基本上意味著人們應當互相合作、攜手共進。信賴你的兄弟意味著我們人人平權，不該彼此仇恨或恐懼。價值先行於報償則暗示我們每個人都必須努力追求，才能配得上自己生活中渴望獲得的回報。」");
 	say();
 	var0000 = UI_wearing_fellowship();
 	if (!(!var0000)) goto labelFunc0966_0030;
-	message("\"Dost thou want to join?\"");
+	message("「你想加入嗎？」");
 	say();
 	var0001 = Func0955();
 	if (!var0001) goto labelFunc0966_0029;
-	message("\"Then thou shouldst go immediately to seek Batlin.\"");
+	message("「那你應該立刻去尋找巴特林。」");
 	say();
 	goto labelFunc0966_002D;
 labelFunc0966_0029:
-	message("\"Oh. Well, perhaps thou canst become enlightened another time.\"");
+	message("「噢。好吧，也許你下次能夠得到啟蒙。」");
 	say();
 labelFunc0966_002D:
 	goto labelFunc0966_0034;
 labelFunc0966_0030:
-	message("\"Oh! I just now noticed thy medallion! Thou dost already know all of this! Thou art one of us! Thou must pardon me for going on and on about it!\"");
+	message("「噢！我剛才注意到你的徽章了！你早已了解這一切！你是我們自己人！請原諒我居然跟你滔滔不絕說了這麼多！」");
 	say();
 labelFunc0966_0034:
 	return;
 }
-
-

@@ -73,7 +73,7 @@ labelFunc0449_00F7:
 	UI_remove_answer("姓名");
 	message("「火焰( Flame )？喔，是的，我們讓火一直燒著。」");
 	say();
-	var0005 = Func0992(0x0001, (("@@" + var0000) + " 他是在問你的姓名( NAME )，老頭。不是火焰( FLAME )！@"), 0x0000, false);
+	var0005 = Func0992(0x0001, (("@" + var0000) + "是在問你的姓名( NAME )，老頭。不是火焰( FLAME )！@"), 0x0000, false);
 	if (!(var0005 != 0xFE9C)) goto labelFunc0449_0148;
 	UI_set_conversation_slot(0x0000);
 	message("「喔。如你所見，我的聽力大不如前了。是爐火的轟鳴聲造成的……」");

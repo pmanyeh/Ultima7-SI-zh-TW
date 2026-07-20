@@ -13,16 +13,16 @@ void Func0864 0x864 ()
 
 	var0000 = UI_remove_party_items(0x0001, 0x0289, 0x0000, 0x0000, true);
 	UI_clear_item_flag(item, 0x001E);
-	message("\"Thank thee, Avatar! Thank thee for returning to me the Comb of Beauty. Take this key...\"");
+	message("「謝謝你，聖者！謝謝你把美麗之梳歸還給我。收下這把鑰匙……」");
 	say();
 	var0001 = Func099B(0xFE9C, 0x0001, 0x0281, 0x000F, 0x0002, 0x0000, true);
-	message("\"...And go to the southeast corner of the Throne Room. Seek the illusionary wall -- it will reveal the path to the treasure thou dost seek.\"");
+	message("「……然後前往王座室的東南角。尋找那面幻象牆壁——它會顯現通往你所尋找寶藏的道路。」");
 	say();
-	message("\"The key will allow thee to open the gate to the Treasury Room. The armour that I did promise thee is stored there.\"");
+	message("「這把鑰匙能讓你開啟寶庫大門。我向你承諾過的護甲就存放在那裡。」");
 	say();
 	gflags[0x0212] = false;
 	UI_remove_npc_face0();
-	Func097F(item, "@A thousand thanks!@", 0x0000);
+	Func097F(item, "@萬分感謝！@", 0x0000);
 	var0002 = UI_get_object_position(item);
 	var0002[0x0001] = (var0002[0x0001] - (var0002[0x0003] / 0x0002));
 	var0002[0x0002] = (var0002[0x0002] - (var0002[0x0003] / 0x0002));
@@ -39,7 +39,7 @@ void Func0864 0x864 ()
 	var0001 = UI_delayed_execute_usecode_array(0xFF2C, [(byte)0x23, (byte)0x61, (byte)0x55, 0x04D4], 0x000A);
 	gflags[0x0212] = true;
 	UI_remove_npc_face0();
-	Func097F(0xFFC9, "@I am restored!@", 0x0002);
+	Func097F(0xFFC9, "@我恢復原狀了！@", 0x0002);
 	UI_play_sound_effect(0x0051);
 	UI_play_music(0x003F, Func09A0(0x0005, 0x0001));
 	abort;

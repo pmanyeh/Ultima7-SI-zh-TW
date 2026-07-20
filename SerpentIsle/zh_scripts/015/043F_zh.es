@@ -350,7 +350,7 @@ labelFunc043F_05CE:
 labelFunc043F_05E1:
 	case "哥布林" attend labelFunc043F_0625:
 	UI_remove_answer("哥布林");
-	message("「這些可惡的野獸！我想你已經聽說了幼鹿塔( Fawn Tower )的伏擊。他們打仗不公平！」");
+	message("「這些可惡的野獸！我想你已經聽說了幼鹿塔( Fawn Tower )的伏擊。這對他們來說…不公平！」");
 	say();
 	message("「可憐的 Astrid ……她是一位鼓舞人心的戰士，也是一個充滿活力的少女。該死，但她確實很會殺哥布林……」");
 	say();

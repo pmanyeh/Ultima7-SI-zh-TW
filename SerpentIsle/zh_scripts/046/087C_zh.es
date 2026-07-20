@@ -36,7 +36,7 @@ labelFunc087C_0039:
 labelFunc087C_003C:
 	if (!(!var0001)) goto labelFunc087C_0056;
 	UI_show_npc_face0(0xFE9C, 0x0000);
-	message("\"I must be near a Serpent Gate for the Amulet of Balance to work.\"");
+	message("「我必須靠近巨蛇之門，平衡護身符才能發揮作用。」");
 	say();
 	UI_remove_npc_face0();
 	abort;
@@ -52,23 +52,23 @@ labelFunc087C_0071:
 	var0007 = 0x0000;
 labelFunc087C_00AF:
 	UI_show_npc_face0(0xFE9C, 0x0000);
-	message("\"It has not yet been a full week. The Amulet of Balance has not fully recharged.\"");
+	message("「還沒滿一整週。平衡護身符尚未完全充能。」");
 	say();
 	if (!(var0007 > 0x0000)) goto labelFunc087C_00D1;
-	message("\"I cannot use it for another ");
+	message("「我還需再等 ");
 	message(var0007);
-	message(" days yet.\"");
+	message(" 天才能使用它。」");
 	say();
 labelFunc087C_00D1:
 	if (!(var0007 == 0x0000)) goto labelFunc087C_00F6;
 	if (!(var0008 > 0x0001)) goto labelFunc087C_00F2;
-	message("\"I must wait another ");
+	message("「我必須再等 ");
 	message(var0008);
-	message(" hours.\"");
+	message(" 個小時。」");
 	say();
 	goto labelFunc087C_00F6;
 labelFunc087C_00F2:
-	message("\"I must wait another hour.\"");
+	message("「我必須再等一個小時。」");
 	say();
 labelFunc087C_00F6:
 	UI_remove_npc_face0();
@@ -100,5 +100,3 @@ labelFunc087C_01AD:
 labelFunc087C_01B0:
 	return;
 }
-
-

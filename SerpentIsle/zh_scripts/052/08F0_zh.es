@@ -9,23 +9,21 @@ void Func08F0 0x8F0 ()
 	if (!((gflags[0x003E] && (gflags[0x007E] && gflags[0x0091])) && ((!gflags[0x0048]) && (gflags[0x00A5] || (!gflags[0x002D]))))) goto labelFunc08F0_0077;
 	var0000 = UI_get_random(0x0003);
 	if (!(var0000 == 0x0001)) goto labelFunc08F0_0034;
-	message("\"'Tis time for thy banquet, Avatar. Thou shouldst make haste.\"");
+	message("「聖者，你的宴會時間到了。你應該趕快過去。」");
 	say();
 labelFunc08F0_0034:
 	if (!(var0000 == 0x0002)) goto labelFunc08F0_0042;
-	message("\"I shall see thee at the Banquet Hall, Avatar. It is in the south part of town.\"");
+	message("「聖者，我在宴會廳等你。就在城鎮南邊。」");
 	say();
 labelFunc08F0_0042:
 	if (!(var0000 == 0x0003)) goto labelFunc08F0_0050;
-	message("\"Forgive me, Avatar. I must prepare for thy banquet.\"");
+	message("「原諒我，聖者。我必須去為你的宴會做準備。」");
 	say();
 labelFunc08F0_0050:
-	Func097F(item, "@The banquet!@", 0x0000);
+	Func097F(item, "@宴會要開始了！@", 0x0000);
 	UI_set_schedule_type(item, 0x0014);
 	UI_set_new_schedules(item, 0x0000, 0x000C, [0x0000, 0x0000]);
 	abort;
 labelFunc08F0_0077:
 	return;
 }
-
-

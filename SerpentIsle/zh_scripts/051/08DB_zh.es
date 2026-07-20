@@ -28,13 +28,13 @@ void Func08DB 0x8DB (var var0000)
 	var0001 = UI_get_object_position(0xFFFF);
 	var0002 = UI_get_object_position(0xFE9C);
 	if (!((UI_get_distance(0xFE9C, 0xFFFF) < 0x0008) && (var0001[0x0003] == var0002[0x0003]))) goto labelFunc08DB_00EB;
-	Func097F(0xFFFF, "@Stand back, Avatar!@", 0x0000);
+	Func097F(0xFFFF, "@退後，聖者！@", 0x0000);
 	UI_show_npc_face0(0xFFFF, 0x0000);
-	message("\"I cannot allow thee to throw away thy life! Thou must live to ensure Britannia's safety!\"");
+	message("「我不能讓你白白送死！你必須活下去以確保不列顛尼亞的安全！」");
 	say();
-	message("\"I cannot live with the shame of the deaths I have caused... If I can redeem myself by becoming the required martyr, so be it!\"");
+	message("「我無法忍受自己造成的那些死亡帶來的羞恥感……如果成為所需的犧牲者能讓我自我救贖，那就這樣吧！」");
 	say();
-	message("\"Let it be said that Sir Dupre died bravely!\"");
+	message("「就讓大家說 Dupre 爵士勇敢地犧牲了吧！」");
 	say();
 	UI_remove_npc_face0();
 	var0001 = UI_get_object_position(0xFFFF);
@@ -104,5 +104,3 @@ labelFunc08DB_0322:
 labelFunc08DB_0325:
 	return;
 }
-
-

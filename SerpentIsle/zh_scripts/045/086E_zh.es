@@ -13,37 +13,37 @@ void Func086E 0x86E ()
 	var var0006;
 
 	var0000 = UI_count_objects(0xFE9B, 0x02F8, 0xFE99, 0xFE99);
-	message("\"Ah, thou dost wish to sell me gems? But, of course I will buy all that thou dost have! Master Ducio has a constant need for gems in his most important works! I will buy gems from thee for 100 guilders each.\"");
+	message("「啊，你想把寶石賣給我？那當然了，你有多少我就收多少！Ducio 大師在最重要的工作中隨時都需要寶石！我會以每顆 100 吉爾得幣的價格向你購買寶石。」");
 	say();
-	message("\"How many gems wouldst thou like to sell?\"");
+	message("「你想賣幾顆寶石？」");
 	say();
 	if (!(var0000 != 0x0000)) goto labelFunc086E_00B3;
 	var0001 = UI_input_numeric_value(0x0000, var0000, 0x0001, 0x0000);
 	if (!(var0001 != 0x0000)) goto labelFunc086E_00AC;
 	var0002 = (var0001 * 0x0064);
 	var0003 = 0x03B8;
-	var0004 = "gems";
+	var0004 = "顆寶石";
 	if (!(var0001 == 0x0001)) goto labelFunc086E_0068;
-	var0004 = "gem";
+	var0004 = "顆寶石";
 labelFunc086E_0068:
 	var0005 = UI_remove_party_items(var0001, 0x02F8, 0xFE99, 0xFE99, false);
-	message("\"Very well...~Here, take thy ");
+	message("「很好……~拿去吧，這是你的 ");
 	message(var0002);
-	message(" guilders, and I wilt take thy ");
+	message(" 吉爾得幣，換取你的 ");
 	message(var0001);
 	message(" ");
 	message(var0004);
-	message(" in exchange.\"");
+	message("。」");
 	say();
 	var0006 = Func099B(0xFE9C, var0002, var0003, 0xFE99, 0xFE99, false, true);
 	goto labelFunc086E_00B0;
 labelFunc086E_00AC:
-	message("\"Perhaps another time, then...\"");
+	message("「那麼也許下次吧……」");
 	say();
 labelFunc086E_00B0:
 	goto labelFunc086E_00B7;
 labelFunc086E_00B3:
-	message("\"Thou dost not have any gems to sell!\"");
+	message("「你身上根本沒有任何寶石可以賣！」");
 	say();
 labelFunc086E_00B7:
 	return;

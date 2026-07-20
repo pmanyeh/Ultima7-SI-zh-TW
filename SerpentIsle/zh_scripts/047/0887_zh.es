@@ -27,9 +27,9 @@ labelFunc0887_006A:
 	if (!(UI_get_item_frame(var0000) == 0x0001)) goto labelFunc0887_00CE;
 	var0006 = Func0992(0x0001, 0x0000, 0x0000, false);
 	UI_show_npc_face0(var0006, 0x0000);
-	message("\"Up or down?\"");
+	message("「向上還是向下？」");
 	say();
-	if (!(Func0956(["Up", "Down"]) == "Up")) goto labelFunc0887_00BB;
+	if (!(Func0956(["向上", "向下"]) == "向上")) goto labelFunc0887_00BB;
 	var0005 = [0x092D, 0x0B71, 0x0000];
 	goto labelFunc0887_00CA;
 labelFunc0887_00BB:
@@ -48,5 +48,3 @@ labelFunc0887_0108:
 	var0002 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x060D], 0x0003);
 	return;
 }
-
-

@@ -38,9 +38,9 @@ labelFunc08FE_0027:
 	var0009 = UI_get_object_position(var0005);
 	var000A = UI_resurrect(var0005);
 	if (!var000A) goto labelFunc08FE_0133;
-	message("\"Now thy friend ");
+	message("「現在你的朋友 ");
 	message(var0008);
-	message(" doth live again.\"");
+	message(" 重獲新生了。」");
 	say();
 	if (!(UI_get_item_flag(var0006, 0x0006) && UI_get_item_flag(var0006, 0x001E))) goto labelFunc08FE_00A2;
 	UI_remove_from_party(var0006);
@@ -61,14 +61,12 @@ labelFunc08FE_00FF:
 labelFunc08FE_0130:
 	goto labelFunc08FE_013D;
 labelFunc08FE_0133:
-	message("\"Thy friend ");
+	message("「你的朋友 ");
 	message(var0008);
-	message(" hath been lost forever.\"");
+	message(" 已經永遠逝去了。」");
 	say();
 labelFunc08FE_013D:
 	goto labelFunc08FE_0027;
 labelFunc08FE_0140:
 	return;
 }
-
-

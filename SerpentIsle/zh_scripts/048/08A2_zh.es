@@ -16,7 +16,7 @@ void Func08A2 0x8A2 ()
 	var var0009;
 
 	var0000 = 0x0001;
-	var0001 = ["I feel well!", "I feel younger!", "Amazing!", "I'm not tired now!", "I am rejuvenated!", "What was that?!", "That was nice..."];
+	var0001 = ["@我覺得精力充沛！@", "@我覺得變年輕了！@", "@太神奇了！@", "@我現在一點都不累了！@", "@我恢復活力了！@", "@剛才那是甚麼？！@", "@感覺真好……@"];
 	var0002 = UI_get_party_list();
 	enum();
 labelFunc08A2_0029:
@@ -36,5 +36,3 @@ labelFunc08A2_00B8:
 	gflags[0x02C8] = true;
 	return;
 }
-
-

@@ -10,21 +10,19 @@ void Func0877 0x877 ()
 
 	var0000 = Func0953();
 	if (!(gflags[0x01FD] == true)) goto labelFunc0877_0015;
-	message("\"To be honored to see you, Avatar of Virtue! To be certain that you are the Hero we have dreamed about.\"");
+	message("「感到榮幸能見到你，美德的聖者！確信你就是我們夢見的英雄。」");
 	say();
 	goto labelFunc0877_001F;
 labelFunc0877_0015:
-	message("\"To be certain that you are the Hero we have dreamed about, ");
+	message("「確信你就是我們夢見的英雄，");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
 labelFunc0877_001F:
-	message("\"To be relieved that you came before the dreaming sickness spread. To have feared that none would remain awake to give you the ring. Now it is yours.\"");
+	message("「感到寬慰你在夢病蔓延前趕到。曾擔憂無人能保持清醒將戒指交給你。現在它是你的了。」");
 	say();
 	var0001 = Func099B(0xFE9C, 0x0001, 0x0377, 0xFE99, 0x0001, false, true);
 	gflags[0x0207] = true;
-	UI_add_answer(["information", "aid", "dreaming sickness"]);
+	UI_add_answer(["情報", "援助", "夢病"]);
 	return;
 }
-
-
