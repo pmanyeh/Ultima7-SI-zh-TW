@@ -46,12 +46,12 @@ void Func0625 object#(0x625) ()
 	if (!(event == 0x0001)) goto labelFunc0625_033C;
 	var0000 = UI_get_item_shape(item);
 	if (!UI_get_npc_prop(item, 0x000A)) goto labelFunc0625_002A;
-	var0001 = "her";
-	var0002 = "she";
+	var0001 = "她的";
+	var0002 = "她";
 	goto labelFunc0625_0036;
 labelFunc0625_002A:
-	var0001 = "his";
-	var0002 = "he";
+	var0001 = "他的";
+	var0002 = "他";
 labelFunc0625_0036:
 	if (!(var0000 == 0x00E4)) goto labelFunc0625_004D;
 	UI_show_npc_face(0xFEED, 0x0000);
@@ -77,7 +77,7 @@ labelFunc0625_00B9:
 	UI_show_npc_face(var0003, 0x0000);
 labelFunc0625_00CB:
 	if (!(var0003 == 0xFFDC)) goto labelFunc0625_00DA;
-	message("\"Please, I beg thee to stop this or thou wilt anger my master....\"");
+	message("「求你了，請停下來，否則你會惹怒我的主人……」");
 	say();
 	return;
 labelFunc0625_00DA:
@@ -93,25 +93,25 @@ labelFunc0625_0100:
 labelFunc0625_0110:
 	var0005 = UI_count_objects(0xFE9B, var0004, 0xFE99, 0xFE99);
 	if (!((UI_die_roll(0x0001, 0x0002) == 0x0001) && var0005)) goto labelFunc0625_0263;
-	message("\"Cease and desist immediately!\"~~\"Dost thou wish to avoid the unpleasantries of a lengthy trial?\"");
+	message("「立刻停手！」~~「你希望避免漫長審判的麻煩嗎？」");
 	say();
 	var0006 = Func0955();
 	if (!var0006) goto labelFunc0625_0260;
-	message("\"What is thy liberty worth?\"");
+	message("「你的自由對你來說值多少？」");
 	say();
 	if (!Func087E(var0005, var0004)) goto labelFunc0625_015E;
 	goto labelFunc0625_016E;
 	goto labelFunc0625_025D;
 labelFunc0625_015E:
-	message("The guard looks unimpressed by your paltry offer. \"Our jail is populated by some unsavory knaves. Thy freedom should be worth more than that...\"");
+	message("守衛對你微薄的出價不以為然。「我們的牢裡關著一些不三不四的歹徒。你的自由應該比這更值錢……」");
 	say();
 	if (!Func087E(var0005, var0004)) goto labelFunc0625_025A;
 labelFunc0625_016E:
 	if (!UI_is_pc_female()) goto labelFunc0625_017E;
-	var0007 = "woman";
+	var0007 = "女人";
 	goto labelFunc0625_0184;
 labelFunc0625_017E:
-	var0007 = "man";
+	var0007 = "男人";
 labelFunc0625_0184:
 	if (!(Func0994() == 0x000D)) goto labelFunc0625_019A;
 	var0008 = [0x02D0, 0x00E4];
@@ -144,9 +144,9 @@ labelFunc0625_021E:
 labelFunc0625_0241:
 	goto labelFunc0625_021E;
 labelFunc0625_0244:
-	message("\"I am pleased to see that thou art a thinking ");
+	message("「很高興看出你是個識時務的");
 	message(var0007);
-	message(". I will take care of this disturbance.\"");
+	message("。我來處理這場騷動。」");
 	say();
 	UI_play_music(0x00FF, item);
 	abort;
@@ -158,25 +158,25 @@ labelFunc0625_025D:
 labelFunc0625_0260:
 	goto labelFunc0625_031E;
 labelFunc0625_0263:
-	message("\"Cease and desist immediately, ruffian!\"");
+	message("「立刻停手，歹徒！」");
 	say();
-	message("\"Wilt thou come quietly?\"");
+	message("「你願意束手就擒嗎？」");
 	say();
-	UI_add_answer(["Yes", "No"]);
+	UI_add_answer(["願意", "不願意"]);
 	var0014 = UI_get_party_list();
 	enum();
 labelFunc0625_0280:
 	for (var0017 in var0014 with var0015 to var0016) attend labelFunc0625_02B1;
 	var0018 = UI_find_object(var0017, 0x031D, 0x00BB, 0xFE99);
 	if (!var0018) goto labelFunc0625_02AE;
-	UI_add_answer("certificate");
+	UI_add_answer("通行證");
 	goto labelFunc0625_02B1;
 labelFunc0625_02AE:
 	goto labelFunc0625_0280;
 labelFunc0625_02B1:
 	converse attend labelFunc0625_033B;
-	case "Yes" attend labelFunc0625_0316:
-	message("\"Very well. Thou shalt remain in prison until we see fit to release thee.\"");
+	case "願意" attend labelFunc0625_0316:
+	message("「很好。你將關押在監獄中，直到我們認為可以釋放你為止。」");
 	say();
 	var0010 = UI_find_nearby(item, 0xFE99, 0x0041, 0x0008);
 	enum();
@@ -191,15 +191,15 @@ labelFunc0625_02F8:
 	var001B = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x0625, (byte)0x6E], 0x0002);
 	abort;
 labelFunc0625_0316:
-	case "No" attend labelFunc0625_0327:
+	case "不願意" attend labelFunc0625_0327:
 labelFunc0625_031E:
-	message("\"An unfortunate decision, my friend.\"");
+	message("「真是個不明智的決定，朋友。」");
 	say();
 	UI_attack_avatar();
 	return;
 labelFunc0625_0327:
-	case "certificate" attend labelFunc0625_0338:
-	message("\"Oh, I see. Carry on, carry on.\"");
+	case "通行證" attend labelFunc0625_0338:
+	message("「哦，我明白了。請繼續，請繼續。」");
 	say();
 	UI_stop_arresting();
 	return;

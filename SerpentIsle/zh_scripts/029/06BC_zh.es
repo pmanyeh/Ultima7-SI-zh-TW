@@ -33,7 +33,7 @@ labelFunc06BC_0025:
 	var0003 = UI_set_item_quality(var0000, 0x0000);
 	gflags[0x018C] = true;
 	UI_set_weather(0x0002);
-	var0004 = Func0992(0x0001, "@Looks like a storm coming...@", 0x0000, true);
+	var0004 = Func0992(0x0001, "@看起來風暴要來了……@", 0x0000, true);
 	var0003 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x55, 0x06BC], 0x001E);
 labelFunc06BC_008A:
 	if (!(event == 0x0002)) goto labelFunc06BC_043E;
@@ -46,7 +46,7 @@ labelFunc06BC_008A:
 	UI_sprite_effect(0x0015, var0005[0x0001], var0005[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_sprite_effect(0x0029, var0005[0x0001], var0005[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	Func093E(var0005);
-	var0006 = ("@Run!@" & ("@'Tis a magic storm!@" & ("@Help!@" & ("@That almost hit me!@" & ("@Whoa!@" & "@I wish I were home!@")))));
+	var0006 = ("@快跑！@" & ("@這是魔法風暴！@" & ("@救命！@" & ("@那差點劈到我！@" & ("@哇！@" & "@真希望我現在在家裡！@")))));
 	var0004 = Func0992(0x0001, var0006[UI_get_random(UI_get_array_size(var0006))], 0x0000, true);
 	abort;
 labelFunc06BC_015F:
@@ -63,7 +63,7 @@ labelFunc06BC_015F:
 	var0008[0x0002] = (var0008[0x0002] - (var0008[0x0003] / 0x0002));
 	UI_sprite_effect(0x0015, var0008[0x0001], var0008[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	var0009 = UI_find_direction(0xFFFD, var0007);
-	var0003 = UI_execute_usecode_array(0xFFFD, [(byte)0x23, (byte)0x27, 0x0001, (byte)0x59, var0009, (byte)0x52, "@Look, Avatar!@", (byte)0x27, 0x0005, (byte)0x6C, (byte)0x27, 0x0009, (byte)0x55, 0x06BC]);
+	var0003 = UI_execute_usecode_array(0xFFFD, [(byte)0x23, (byte)0x27, 0x0001, (byte)0x59, var0009, (byte)0x52, "@看，聖者！@", (byte)0x27, 0x0005, (byte)0x6C, (byte)0x27, 0x0009, (byte)0x55, 0x06BC]);
 	var0003 = UI_set_item_quality(var0000, (var0002 + 0x0001));
 	UI_set_weather(0x0000);
 	goto labelFunc06BC_0272;
@@ -86,7 +86,7 @@ labelFunc06BC_02D4:
 	var0003 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x55, 0x06BC], 0x0003);
 	var0003 = UI_set_item_quality(var0000, (var0002 + 0x0001));
 	UI_clear_item_flag(0xFE9C, 0x0010);
-	Func097F(0xFFFD, "@A lute!@", 0x0000);
+	Func097F(0xFFFD, "@一把魯特琴！@", 0x0000);
 labelFunc06BC_0323:
 	if (!(var0002 == (var0001 + 0x0002))) goto labelFunc06BC_03A2;
 	var0003 = UI_set_item_quality(var0000, (var0002 + 0x0001));
@@ -94,7 +94,7 @@ labelFunc06BC_0323:
 	var0003 = UI_approach_avatar(0xFFD0, 0x0078, 0x0028);
 	if (!var0003) goto labelFunc06BC_038B;
 	UI_set_schedule_type(0xFFD0, 0x0009);
-	Func097F(0xFFD0, "@The storm is over!@", 0x0000);
+	Func097F(0xFFD0, "@風暴結束了！@", 0x0000);
 labelFunc06BC_038B:
 	var0003 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x55, 0x06BC], 0x000A);
 labelFunc06BC_03A2:
@@ -103,7 +103,7 @@ labelFunc06BC_03A2:
 	var0003 = UI_approach_avatar(0xFFCB, 0x0078, 0x0028);
 	if (!var0003) goto labelFunc06BC_03ED;
 	UI_set_schedule_type(0xFFCB, 0x0009);
-	Func097F(0xFFCB, "@All is safe now!@", 0x0000);
+	Func097F(0xFFCB, "@現在安全了！@", 0x0000);
 labelFunc06BC_03ED:
 	var0003 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x55, 0x06BC], 0x000A);
 labelFunc06BC_0404:
@@ -111,9 +111,7 @@ labelFunc06BC_0404:
 	var0003 = UI_approach_avatar(0xFFCA, 0x0078, 0x0028);
 	if (!var0003) goto labelFunc06BC_043E;
 	UI_set_schedule_type(0xFFCA, 0x0009);
-	Func097F(0xFFCA, "@Praise Beauty!@", 0x0000);
+	Func097F(0xFFCA, "@讚美美麗！@", 0x0000);
 labelFunc06BC_043E:
 	return;
 }
-
-

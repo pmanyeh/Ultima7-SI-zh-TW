@@ -18,148 +18,148 @@ labelFunc061A_001A:
 	UI_clear_item_say(item);
 	UI_show_npc_face0(0xFEC8, 0x0000);
 	if (!(!gflags[0x030F])) goto labelFunc061A_0057;
-	message("\"Didst thy mother never tell thee not to speak with strange women then? Hmmmph!");
+	message("「你母親從未告訴你不要和陌生女人說話嗎？哼！");
 	say();
-	message("\"A fine one thou art to be wasting Rieya's time. Thou shouldst watch thy step, my bonny pawn of prophecy, lest I forget the aid that I was meant to give thee.\"");
+	message("「你這人真是在浪費 Rieya 的時間。你最好當心一點，我這個預言棋子，否則我可能會忘記自己本來該給你的幫助。」");
 	say();
 	gflags[0x030F] = true;
 	UI_set_npc_id(item, 0x000C);
 	goto labelFunc061A_005B;
 labelFunc061A_0057:
-	message("\"Don't tell me that thou hast come back to Rieya looking for more aid! I've helped thee all I may, pawn of prophecy. Thou needs must look elsewhere...\"");
+	message("「不要告訴我你又回來向 Rieya 尋求更多幫助了！我已經盡力幫你了，預言棋子。你得另尋他處……」");
 	say();
 labelFunc061A_005B:
-	UI_add_answer(["Rieya", "pawn of prophecy", "aid", "bye"]);
+	UI_add_answer(["Rieya", "預言棋子", "幫助", "告辭"]);
 labelFunc061A_006E:
 	converse attend labelFunc061A_0252;
 	case "Rieya" attend labelFunc061A_008F:
 	UI_remove_answer("Rieya");
-	message("\"Rieya is my name... And I'll thank thee not to smirk so! Thy name is just as strange to me, I assure thee!");
+	message("「Rieya 是我的名字……感謝你不要嗤之以鼻！我向你保證，你的名字對我來說同樣陌生！");
 	say();
-	message("\"Thou shouldst mind thy manners, else -- Guide or no -- I'll not aid thee!\"");
+	message("「你應該注意自己的禮貌，否則——不管是不是嚮導——我都不會幫助你！」");
 	say();
-	UI_add_answer("Guide");
+	UI_add_answer("嚮導");
 labelFunc061A_008F:
-	case "Guide" attend labelFunc061A_00B3:
-	UI_remove_answer("Guide");
-	message("\"I shouldn't wonder that thou hadst never heard of the Guide before. Thou art scarcely fit to be the pawn of prophecy. Why clutter up thy mind with other possibilities...");
+	case "嚮導" attend labelFunc061A_00B3:
+	UI_remove_answer("嚮導");
+	message("「我不奇怪你從未聽說過嚮導。你幾乎不配當這個預言棋子。何必把腦子塞滿其他可能性……");
 	say();
-	message("Oh, never mind! Thou wouldst not understand!\"");
+	message("算了！你不會理解的！」");
 	say();
-	UI_add_answer(["scarcely fit", "other possibilities"]);
+	UI_add_answer(["不配", "其他可能性"]);
 labelFunc061A_00B3:
-	case "scarcely fit" attend labelFunc061A_00D7:
-	UI_remove_answer("scarcely fit");
-	message("\"Look at thee! Thou hast no idea what is going on! Thou art as willing to listen to me as to those fools in the keep!");
+	case "不配" attend labelFunc061A_00D7:
+	UI_remove_answer("不配");
+	message("「看看你！你根本不知道發生了什麼事！你就像那要塞裡的蠢貨一樣樂於聽我的話！");
 	say();
-	message("\"How canst thou be so trusting? How hast thou lived so long?\"");
+	message("「你怎麼能這麼輕信？你是如何活到現在的？」");
 	say();
-	UI_add_answer(["What is going on?", "fools in the keep"]);
+	UI_add_answer(["發生了什麼事？", "要塞裡的蠢貨"]);
 labelFunc061A_00D7:
-	case "What is going on?" attend labelFunc061A_00EE:
-	UI_remove_answer("What is going on?");
-	message("\"What is going on?! Listen to thee! Dunce, there is a war going on!");
+	case "發生了什麼事？" attend labelFunc061A_00EE:
+	UI_remove_answer("發生了什麼事？");
+	message("「發生了什麼事？！聽聽你說的話！笨蛋，戰爭正在進行中！");
 	say();
-	message("\"People are killing each other over a difference in philosophies! And thou art parading about as if no one wouldst make thee a target!\"");
+	message("「人們正在為了理念上的分歧而互相殘殺！而你卻大搖大擺地到處走，好像沒人會把你當目標一樣！」");
 	say();
 labelFunc061A_00EE:
-	case "fools in the keep" attend labelFunc061A_0109:
-	UI_remove_answer("fools in the keep");
-	message("\"Aye, they're fools. They follow the @wisdom@ of beings they have never seen, and believe that extermination of all opposing philosophies will restore Balance!");
+	case "要塞裡的蠢貨" attend labelFunc061A_0109:
+	UI_remove_answer("要塞裡的蠢貨");
+	message("「對，他們是蠢貨。他們聽從從未謀面的存在的 @智慧@，並相信消滅所有對立理念就能恢復平衡！");
 	say();
-	message("\"I tell thee that they are fools! Fools! This world is doomed. They should let it die and move on...");
+	message("「我告訴你，他們是蠢貨！蠢貨！這個世界注定要毀滅。他們應該讓它消亡，然後繼續前進……");
 	say();
-	message("\"Ah well, I can't expect thee to understand. Never mind.\"");
+	message("「唉，我也不指望你能理解。算了。」");
 	say();
 labelFunc061A_0109:
-	case "other possibilities" attend labelFunc061A_0120:
-	UI_remove_answer("other possibilities");
-	message("\"Not all follow the Teachings of the Serpents, friend. Some believe that it is pointless to hope for Balance on this flawed world.");
+	case "其他可能性" attend labelFunc061A_0120:
+	UI_remove_answer("其他可能性");
+	message("「朋友，並非所有人都遵循巨蛇的教義。有些人認為在這個有缺陷的世界上希望達到平衡是毫無意義的。");
 	say();
-	message("\"But those in the keep refuse to acknowledge that there are others that follow other paths. Fools!\"");
+	message("「但要塞裡的人拒絕承認還有其他人走其他道路。蠢貨！」");
 	say();
 labelFunc061A_0120:
-	case "pawn of prophecy" attend labelFunc061A_0140:
-	UI_remove_answer("pawn of prophecy");
-	message("\"The pawn of prophecy is thou, needle head! Thou dost wear the Amulet of Balance, which -- according to those fools in the keep -- makes thee the Champion of Balance.\"");
+	case "預言棋子" attend labelFunc061A_0140:
+	UI_remove_answer("預言棋子");
+	message("「預言棋子就是你，針頭！你佩戴著平衡護符( Amulet of Balance )，而依照要塞裡那些蠢貨的說法，這讓你成為了平衡鬥士( Champion of Balance )。」");
 	say();
-	UI_add_answer(["Amulet of Balance", "Champion of Balance"]);
+	UI_add_answer(["平衡護符", "平衡鬥士"]);
 labelFunc061A_0140:
-	case "Amulet of Balance" attend labelFunc061A_0168:
-	UI_remove_answer("Amulet of Balance");
-	message("\"Dost thou not know what that bauble is yet? Are all those Ophidians asleep?! How could they not have told thee?");
+	case "平衡護符" attend labelFunc061A_0168:
+	UI_remove_answer("平衡護符");
+	message("「你還不知道那個小玩意兒是什麼嗎？那些蛇人( Ophidians )都睡著了嗎？！他們怎麼可能沒有告訴你？");
 	say();
-	message("\"I'll tell thee, this is service above and beyond the call! Oh well, I shall have to do their job for them.");
+	message("「我告訴你，這是超出職責範圍的服務！唉，我只好替他們做這件事了。");
 	say();
-	message("\"The Amulet of Balance once belonged to the Great Hierophant who used it to enforce Balance upon the Ophidians. It is a magical pendant that none but the Champion of Balance may wear, or so it is said.\"");
+	message("「平衡護符( Amulet of Balance )曾經屬於大祭司( Great Hierophant )，他用它來對蛇人( Ophidians )執行平衡。它是一個魔法吊墜，據說除了平衡鬥士( Champion of Balance )之外，任何人都無法佩戴。」");
 	say();
-	UI_add_answer(["Ophidians", "Great Hierophant"]);
+	UI_add_answer(["蛇人", "大祭司"]);
 labelFunc061A_0168:
-	case "Ophidians" attend labelFunc061A_0186:
-	UI_remove_answer("Ophidians");
-	message("\"Oooh, thine cup is a bit shy of full, isn't it?");
+	case "蛇人" attend labelFunc061A_0186:
+	UI_remove_answer("蛇人");
+	message("「哦，你的杯子有點快空了，對吧？");
 	say();
-	message("\"Ophidians are those who follow the Teachings of the Serpents.\"");
+	message("「蛇人( Ophidians )是那些遵循巨蛇教義的人。」");
 	say();
-	UI_add_answer("Teachings of the Serpents");
+	UI_add_answer("巨蛇的教義");
 labelFunc061A_0186:
-	case "Teachings of the Serpents" attend labelFunc061A_01A5:
-	UI_remove_answer("Teachings of the Serpents");
-	message("\"I can't believe I am telling thee this! I should send thee back to the keep, I should!");
+	case "巨蛇的教義" attend labelFunc061A_01A5:
+	UI_remove_answer("巨蛇的教義");
+	message("「我不敢相信我在告訴你這些！我真應該把你送回要塞！");
 	say();
-	message("\"The Ophidians worship the Great Earth Serpent, and the Order and Chaos serpents, which supposedly dwell within the Void.");
+	message("「蛇人( Ophidians )崇拜偉大的大地之蛇，以及據說居住在虛空中的秩序之蛇和混沌之蛇。");
 	say();
-	message("\"And before thou dost ask, I cannot explain the Void to thee. Thou shouldst ask those idiots at the keep.");
+	message("「在你開口問之前，我無法向你解釋虛空。你應該去問要塞裡那些笨蛋。");
 	say();
-	message("\"The values of the Ophidians are called the Teachings. Got it?\"");
+	message("「蛇人的價值觀被稱為教義。明白了嗎？」");
 	say();
 labelFunc061A_01A5:
-	case "Great Hierophant" attend labelFunc061A_01C7:
-	UI_remove_answer("Great Hierophant");
-	message("\"Who would have thought a pawn of prophecy could be so stupid?!");
+	case "大祭司" attend labelFunc061A_01C7:
+	UI_remove_answer("大祭司");
+	message("「誰能想到一個預言棋子可以這麼蠢？！");
 	say();
-	message("\"The Ophidians considered the Great Hierophant to be the Voice of the Great Earth Serpent. Whatever he was, he kept them from killilng each other...");
+	message("「蛇人( Ophidians )認為大祭司( Great Hierophant )是大地之蛇的聲音。不管他是什麼，他讓他們不互相殘殺……");
 	say();
-	message("\"Until they murdered him that is. THEN they started killing each other. Have to do things right, I guess...\"");
+	message("「直到他們暗殺了他為止。那之後他們才開始互相殘殺。看來做事得有個順序……」");
 	say();
-	UI_add_answer("murdered");
+	UI_add_answer("暗殺");
 labelFunc061A_01C7:
-	case "murdered" attend labelFunc061A_01DE:
-	UI_remove_answer("murdered");
-	message("\"Chaos said Order was responsible. Order said Chaos did it.");
+	case "暗殺" attend labelFunc061A_01DE:
+	UI_remove_answer("暗殺");
+	message("「混沌說是秩序幹的。秩序說是混沌幹的。");
 	say();
-	message("\"Who knows? Who cares? They've been trying to destroy each other ever since.\"");
+	message("「誰知道呢？誰在乎呢？從那以後他們就一直試圖消滅對方。」");
 	say();
 labelFunc061A_01DE:
-	case "Champion of Balance" attend labelFunc061A_01F5:
-	UI_remove_answer("Champion of Balance");
-	message("\"The Champion of Balance was the muscle behind the Great Hierophant. Guess the Great Hierophant couldn't get his hands dirty... Who knows?");
+	case "平衡鬥士" attend labelFunc061A_01F5:
+	UI_remove_answer("平衡鬥士");
+	message("「平衡鬥士( Champion of Balance )是大祭司( Great Hierophant )身後的武力支柱。大概大祭司不願意親自動手……誰知道呢？");
 	say();
-	message("\"It was the Champion's job to pound any dissenters of the Teachings into submission. Brute force will do it every time. Guess that explains the lack of brains...\"");
+	message("「勇士的任務是把任何不服從教義的人強行制服。武力向來管用。這大概解釋了為什麼腦子不靈光……」");
 	say();
 labelFunc061A_01F5:
-	case "aid" attend labelFunc061A_0222:
-	UI_remove_answer("aid");
-	message("\"I never said that thou needs must like me. I said that I had to aid thee. Dost thou wish to hear it or not?\"");
+	case "幫助" attend labelFunc061A_0222:
+	UI_remove_answer("幫助");
+	message("「我從沒說過你必須喜歡我。我說的是我必須幫助你。你想不想聽？」");
 	say();
 	if (!Func0955()) goto labelFunc061A_021D;
-	message("\"Take all the help thou canst get, right? Hmmph!");
+	message("「能得到多少幫助就得到多少，對吧？哼！");
 	say();
-	message("\"Beyond this gate lies a room that will block thy progress and try to kill thee. In this room thou shalt find three buttons.");
+	message("「這道門的後方有個房間，它會阻礙你的前進並試圖殺死你。在那個房間裡你會找到三個按鈕。");
 	say();
-	message("\"Press first the middle button, and then the top button. Press the south button last and thou shalt be free.\"");
+	message("「先按中間的按鈕，然後按頂部的按鈕。最後按南邊的按鈕，你就能自由了。」");
 	say();
 	goto labelFunc061A_0222;
 labelFunc061A_021D:
-	message("\"Then why dost thou waste my time?! Go back to those fool Ophidians, where thou dost belong!\"");
+	message("「那你為什麼浪費我的時間？！回去找那些蠢蛋蛇人吧，你就該待在那！」");
 	say();
 	abort;
 labelFunc061A_0222:
-	case "bye" attend labelFunc061A_024F:
+	case "告辭" attend labelFunc061A_024F:
 	UI_remove_npc_face0();
 	UI_set_schedule_type(item, 0x000B);
-	Func097F(0xFE9C, "@Good riddance!@", 0x0000);
-	Func097F(item, "@Pea brain!@", 0x0002);
+	Func097F(0xFE9C, "@好走不送！@", 0x0000);
+	Func097F(item, "@豌豆腦袋！@", 0x0002);
 	goto labelFunc061A_0252;
 labelFunc061A_024F:
 	goto labelFunc061A_006E;

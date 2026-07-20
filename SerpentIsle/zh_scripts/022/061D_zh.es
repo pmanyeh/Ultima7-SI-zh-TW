@@ -18,12 +18,12 @@ void Func061D object#(0x61D) ()
 
 	if (!(event == 0x0002)) goto labelFunc061D_01C1;
 	UI_show_npc_face0(0xFE9C, 0x0000);
-	message("\"Quickly! Surround Batlin!\"");
+	message("「快！包圍巴特林！」");
 	say();
 	UI_remove_npc_face0();
 	var0000 = UI_find_nearby(0xFE9C, 0x013E, 0x0014, 0x0000);
 	if (!var0000) goto labelFunc061D_003F;
-	Func097F(var0000, "@Stay back!@", 0x000A);
+	Func097F(var0000, "@退後！@", 0x000A);
 labelFunc061D_003F:
 	var0001 = UI_find_nearby(0xFE9C, 0x025F, 0x0028, 0x0010);
 	var0002 = 0x0000;
@@ -65,7 +65,7 @@ labelFunc061D_01C1:
 	UI_play_sound_effect(0x0074);
 	UI_sprite_effect(0x0011, var0009[0x0001], var0009[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_sprite_effect(0x001A, var0009[0x0001], var0009[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
-	var000A = ["@I'm frozen!@", "@I can't move!@", "@What's wrong?@"];
+	var000A = ["@我被凍住了！@", "@我動不了！@", "@怎麼回事？@"];
 	UI_item_say(item, var000A[UI_die_roll(0x0001, 0x0003)]);
 labelFunc061D_0244:
 	return;

@@ -41,19 +41,19 @@ void Func06B3 object#(0x6B3) ()
 	abort;
 labelFunc06B3_0018:
 	if (!(event == 0x0003)) goto labelFunc06B3_0054;
-	var0001 = Func0992(0x0001, "@I feel sleepy@", "@I feel sleepy@", true);
+	var0001 = Func0992(0x0001, "@我好想睡@", "@我好想睡@", true);
 	var0001 = UI_set_item_quality(var0000, 0x0000);
 	var0001 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x55, 0x06B3], 0x000F);
 labelFunc06B3_0054:
 	if (!(event == 0x0002)) goto labelFunc06B3_04CE;
 	var0002 = UI_get_item_quality(var0000);
 	if (!(var0002 == 0x0000)) goto labelFunc06B3_00A4;
-	var0001 = Func0992(0x0001, "@Mine eyes are closing...@", "@I can go no further...@", true);
+	var0001 = Func0992(0x0001, "@我的眼睛快閉上了……@", "@我走不動了……@", true);
 	var0001 = UI_set_item_quality(var0000, 0x0001);
 	var0001 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x55, 0x06B3], 0x000F);
 labelFunc06B3_00A4:
 	if (!(var0002 == 0x0001)) goto labelFunc06B3_0144;
-	var0001 = Func0992(0x0001, "@I can go no further...@", "@Mine eyes are closing...@", true);
+	var0001 = Func0992(0x0001, "@我走不動了……@", "@我的眼睛快閉上了……@", true);
 	var0003 = Func08B5();
 	if (!var0003) goto labelFunc06B3_0105;
 	var0004 = UI_get_npc_object(var0003);
@@ -74,11 +74,11 @@ labelFunc06B3_0144:
 	var0001 = Func0992(0x0001, 0x0000, 0x0000, false);
 	UI_show_npc_face0(var0001, 0x0000);
 	if (!(var0001 == 0xFE9C)) goto labelFunc06B3_0179;
-	message("\"I must stay awake...\"");
+	message("「我必須保持清醒……」");
 	say();
 	goto labelFunc06B3_017D;
 labelFunc06B3_0179:
-	message("\"We must stay awake...\"");
+	message("「我們必須保持清醒……」");
 	say();
 labelFunc06B3_017D:
 	var0001 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x6C, (byte)0x6D, (byte)0x6B, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x6E, (byte)0x27, 0x0005]);
@@ -163,5 +163,3 @@ labelFunc06B3_0490:
 labelFunc06B3_04CE:
 	return;
 }
-
-

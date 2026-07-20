@@ -17,7 +17,7 @@ void Func0510 object#(0x510) ()
 labelFunc0510_0010:
 	if (!((event == 0x000D) || (event == 0x000E))) goto labelFunc0510_0040;
 	UI_set_schedule_type(0xFEF0, 0x000F);
-	var0000 = UI_execute_usecode_array(0xFEF0, [(byte)0x23, (byte)0x6C, (byte)0x6D, (byte)0x52, "@To serve thee!@"]);
+	var0000 = UI_execute_usecode_array(0xFEF0, [(byte)0x23, (byte)0x6C, (byte)0x6D, (byte)0x52, "@為你效勞！@"]);
 labelFunc0510_0040:
 	if (!((event == 0x0002) && ((gflags[0x0007] == false) && (gflags[0x0254] == false)))) goto labelFunc0510_0088;
 	gflags[0x0254] = true;
@@ -30,12 +30,12 @@ labelFunc0510_0088:
 labelFunc0510_00B5:
 	if (!(event == 0x000A)) goto labelFunc0510_0101;
 	UI_show_npc_face0(0xFEEF, 0x0000);
-	message("\"To meet at last the false hero! To serve my master and to avenge the death of many of my people thou didst slay in ancient times.\" *\"To see thy bones with thy skin burned from thy body! To smell thy flesh as it is eaten away by fire and flame!\" *\"To avenge and to serve my master! To thy death, false hero!\"");
+	message("「終於見到了偽英雄！為了侍奉我的主人，並為你在遠古時代所殺害的許多同胞復仇。」*「要看著你的骨頭，皮肉從你身上燒焦！要聞到你的肉被烈火和火焰吞噬時的味道！」*「為了復仇並侍奉我的主人！受死吧，偽英雄！」");
 	say();
 	UI_remove_npc_face1();
 	gflags[0x0007] = true;
-	Func097F(0xFEF0, "@To kill thee!@", 0x0000);
-	Func097F(0xFE9C, "@Stop!@", 0x0005);
+	Func097F(0xFEF0, "@要殺了你！@", 0x0000);
+	Func097F(0xFE9C, "@住手！@", 0x0005);
 	var0000 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0510], 0x0002);
 	abort;
 labelFunc0510_0101:
@@ -56,5 +56,3 @@ labelFunc0510_014C:
 labelFunc0510_0158:
 	return;
 }
-
-

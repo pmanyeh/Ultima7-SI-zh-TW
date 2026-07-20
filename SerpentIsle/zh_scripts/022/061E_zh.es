@@ -26,7 +26,7 @@ labelFunc061E_0007:
 	if (!(!(UI_get_schedule_type(0xFF54) == 0x0004))) goto labelFunc061E_0074;
 	var0002 = (var0002 & 0x028C);
 labelFunc061E_0074:
-	var0003 = ["@Help us!@", "@Press the right button!@", "@Free us with the right button!@", "@Be kind...@", "@Do not force us!@", "@Damn the buttons!@"];
+	var0003 = ["@救救我們！@", "@按正確的按鈕！@", "@按正確的按鈕來救我們！@", "@行行好……@", "@別強迫我們！@", "@該死的按鈕！@"];
 	enum();
 labelFunc061E_008D:
 	for (var0006 in var0002 with var0004 to var0005) attend labelFunc061E_00D3;

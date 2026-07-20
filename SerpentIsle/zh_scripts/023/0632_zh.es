@@ -29,13 +29,13 @@ void Func0632 object#(0x632) ()
 	var var0014;
 
 	var0000 = UI_is_pc_female();
-	var0001 = "he";
-	var0002 = "him";
-	var0003 = "his";
+	var0001 = "他";
+	var0002 = "他";
+	var0003 = "他的";
 	if (!var0000) goto labelFunc0632_0031;
-	var0001 = "she";
-	var0002 = "her";
-	var0003 = "her";
+	var0001 = "她";
+	var0002 = "她";
+	var0003 = "她的";
 labelFunc0632_0031:
 	if (!((event == 0x0002) && (gflags[0x0007] == false))) goto labelFunc0632_0169;
 	var0004 = [0x0A3B, 0x0A25, 0x0A3B, 0x0A28, 0x0A3E, 0x0A27];
@@ -67,22 +67,22 @@ labelFunc0632_0169:
 	if (!((event == 0x0002) && (gflags[0x0007] == true))) goto labelFunc0632_027E;
 	gflags[0x0007] = false;
 	UI_show_npc_face0(0xFEC6, 0x0000);
-	message("\"Blast! The Amulet seems to be protecting ");
+	message("「該死！護符似乎在保護");
 	message(var0002);
-	message("! This shall not be as easy as we were led to believe!\"");
+	message("！這不像我們原本以為的那麼容易！」");
 	say();
 	UI_show_npc_face0(0xFEC8, 0x0000);
-	message("\"Then we shall have to work together...\"");
+	message("「那我們就必須齊心協力……」");
 	say();
 	UI_show_npc_face1(0xFEC7, 0x0000);
-	message("\"The Guide shall make our aim true! The Guide shall lead the way to our truly perfect world!\"");
+	message("「導師將使我們的目標準確無誤！導師將引領我們走向真正完美的世界！」");
 	say();
 	UI_set_conversation_slot(0x0000);
 	UI_remove_npc_face1();
-	message("\"Let us be done with this! Once this pathetic pawn is dead we can cross into the new world, and let this decaying husk die as it was meant to!\"");
+	message("「讓我們了結這件事！一旦這個可悲的棋子死去，我們就能進入新世界，讓這具腐朽的軀殼如命中注定般消亡！」");
 	say();
 	UI_remove_npc_face0();
-	var000B = ["@Attack!@", "@Die, Dog of Prophecy!@", "@Ha ha ha ha!@"];
+	var000B = ["@進攻！@", "@去死吧，預言之犬！@", "@哈哈哈哈！@"];
 	var000C = 0x0001;
 	var0009 = Func09A0(0x0005, 0x0001);
 	var000D = UI_find_nearby(var0009, 0x0299, 0x0014, 0x0000);

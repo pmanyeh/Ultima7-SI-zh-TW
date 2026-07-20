@@ -52,7 +52,7 @@ labelFunc06B6_00EB:
 	goto labelFunc06B6_009D;
 labelFunc06B6_00EE:
 	UI_move_object(var0006, var0003);
-	var0008 = ["@Whoa!@", "@Huh?@", "@What happened?@", "@Magic!@", "@Whoops...@", "@Watch out!@", "@Help!@"];
+	var0008 = ["@喔唷！@", "@咦？@", "@發生了什麼事？@", "@魔法！@", "@哎呀……@", "@小心！@", "@救命！@"];
 	var0009 = var0008[UI_get_random(UI_get_array_size(var0008))];
 	Func097F(var0006, var0009, 0x0014);
 	UI_sprite_effect(0x001A, var0003[0x0001], var0003[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
@@ -92,5 +92,3 @@ labelFunc06B6_01E7:
 labelFunc06B6_02F3:
 	return;
 }
-
-

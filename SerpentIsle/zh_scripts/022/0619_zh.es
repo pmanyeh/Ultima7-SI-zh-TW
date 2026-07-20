@@ -19,131 +19,131 @@ labelFunc0619_001A:
 	UI_clear_item_say(item);
 	UI_show_npc_face0(0xFEC6, 0x0000);
 	if (!(!gflags[0x0310])) goto labelFunc0619_0057;
-	message("\"Well, now, sweet cakes. It's about time ye showed up. I was beginnin' to get tired a waitin'. Me name's Drusilla.");
+	message("「好啦，甜心。你總算出現了。我都要等得不耐煩了。我的名字叫 Drusilla 。」");
 	say();
-	message("\"Ye aren't what I expected. But who am I to know what a pawn of prophecy looks like?\"");
+	message("「你和我想像的不太一樣。不過，我哪知道預言的棋子( pawn of prophecy )長什麼樣？」");
 	say();
 	gflags[0x0310] = true;
 	UI_set_npc_id(item, 0x000B);
 	goto labelFunc0619_00BF;
 labelFunc0619_0057:
-	message("\"Hey ho! It's good to see ye again! Found yer way out of that there maze, huh? Somethin' tricky, weren't it?\"");
+	message("「嘿吼！很高興再次見到你！找到走出那個迷宮的路了，哈？有點棘手，不是嗎？」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x03F5, 0xFE99, 0x0000)) goto labelFunc0619_007B;
-	message("\"An' ye got that there fancy helm, too! Good for ye!");
+	message("「而且你也拿到了那個精緻的頭盔！真有你的！」");
 	say();
-	message("\"Never saw any use fer it meself. I kin make me own light... Wit'out mussin' up me hair! Ha!\"");
+	message("「我自己倒覺得它沒什麼用。我自己就能弄出光來……還不會弄亂我的頭髮！哈！」");
 	say();
 	goto labelFunc0619_008A;
 labelFunc0619_007B:
-	message("\"Not that I want ye to think that I'm an ol' busybody, or anythin' like that... But I think ye might want ta go back an' search that there maze, deary.");
+	message("「我可不是想讓你覺得我是個愛管閒事的老太婆，或是類似那樣的人……但我認為你可能會想回去搜尋那個迷宮，親愛的。」");
 	say();
-	message("\"I think ye missed somethin' ye might find real helpful-like.\"");
+	message("「我想你漏掉了一些你可能會覺得非常有用的東西。」");
 	say();
-	UI_add_answer("something helpful");
+	UI_add_answer("有用的東西");
 labelFunc0619_008A:
 	if (!Func097D(0xFE9B, 0x0001, 0x01C2, 0xFE99, 0x0009)) goto labelFunc0619_00AA;
-	message("\"Looks like ye talked wit' that there kitty person, too. He didn't want ta talk wit' me, hmmph!");
+	message("「看來你也和那個貓人( kitty person )談過了。他都不想跟我說話，哼！」");
 	say();
-	message("\"Never did get on too well wit' cats...\"");
+	message("「我從來都和貓處得不太好……」");
 	say();
 	goto labelFunc0619_00BF;
 labelFunc0619_00AA:
-	message("\"Ah, deary, I hate ta sound like I'm meddlin'... But ye left somethin' real important back there in that there maze.");
+	message("「啊，親愛的，我真討厭聽起來像是在瞎管閒事……但你把非常重要的東西落在了那個迷宮裡。」");
 	say();
-	message("\"I think ye might want ta talk wit' that there cat critter. He needs a friend, unless I miss my guess.\"");
+	message("「我認為你可能會想和那個貓咪生物( cat critter )談談。如果我沒猜錯的話，他需要一個朋友。」");
 	say();
-	UI_add_answer(["something important", "cat critter"]);
+	UI_add_answer(["重要東西", "貓咪生物"]);
 labelFunc0619_00BF:
-	UI_add_answer(["waiting", "pawn of prophecy", "bye"]);
+	UI_add_answer(["等待", "預言棋子", "告辭"]);
 labelFunc0619_00CF:
 	converse attend labelFunc0619_020C;
-	case "waiting" attend labelFunc0619_00F0:
-	UI_remove_answer("waiting");
-	message("\"Why else would I be a standin' here, deary? This isn't exactly the hotbed of excitement, iffin ye know what I mean.");
+	case "等待" attend labelFunc0619_00F0:
+	UI_remove_answer("等待");
+	message("「不然我幹嘛站在這裡呢，親愛的？如果你懂我意思的話，這裡可不是什麼熱鬧的地方。」");
 	say();
-	message("\"Ye might say that I'm a part o' yer prophecy... One o' yer guides like.\"");
+	message("「你可以說我是你預言的一部分……就像你的引路人之一。」");
 	say();
-	UI_add_answer("guides");
+	UI_add_answer("引路人");
 labelFunc0619_00F0:
-	case "guides" attend labelFunc0619_010E:
-	UI_remove_answer("guides");
-	message("\"Well now, deary, ye seem ta need some help, iffin ye don't mind my sayin' so. Ye look a little lost, if ye ask me.");
+	case "引路人" attend labelFunc0619_010E:
+	UI_remove_answer("引路人");
+	message("「好啦，親愛的，如果你不介意我這麼說的話，你似乎需要一些幫助。依我看，你看起來有點迷失了。」");
 	say();
-	message("\"So here I am! I kin give ye three hints ta help ye on yer way. So listen well.\"");
+	message("「所以我來啦！我可以給你三個提示來指引你。仔細聽好了。」");
 	say();
-	UI_add_answer("hints");
+	UI_add_answer("提示");
 labelFunc0619_010E:
-	case "hints" attend labelFunc0619_014A:
-	UI_remove_answer("hints");
-	message("\"Got yer attention now, do I? Ha! Thought so...");
+	case "提示" attend labelFunc0619_014A:
+	UI_remove_answer("提示");
+	message("「現在引起你的注意了吧，嗯？哈！我就知道……」");
 	say();
-	message("\"What lies beyond this 'ere gate is a magical-type o' maze, sweet cakes. Now ye listen good to ol' Drusilla, fer only one person kin enter this 'ere maze at a time else all become confused an' die!");
+	message("「這扇大門後面是一個魔法迷宮，甜心。現在你仔細聽好老 Drusilla 的話，因為一次只能有一個人進入這個迷宮，否則所有人人都會混亂並死去！」");
 	say();
-	message("\"I'll tell ye straight on that it'd be easier iffin ye turned an went back to that there keep right now. So do ye want yer hints or not?\"");
+	message("「老實告訴你，如果你現在轉身回到那個城堡會更容易些。那麼你到底想不想要你的提示？」");
 	say();
 	if (!Func0955()) goto labelFunc0619_0146;
-	message("\"Stubborn cuss, aren't ye? All right, heed me well then...");
+	message("「你真是個頑固的傢伙，是不是？好吧，那仔細聽我的話……」");
 	say();
-	message("\"Iffin ye find yerself trapped, do not despair lest madness overtake ye. Know that death is the only way any of us will ever win free o' this 'ere world.");
+	message("「如果你發現自己被困住了，不要絕望，以免被瘋狂吞噬。要知道，死亡是我們任何人擺脫這個世界的唯一方法。」");
 	say();
-	message("\"Keep careful track of yer turnin's, fer ye may pass through a room more than once. An' sometimes ye'll have ta turn back on yer heels afore ye can find yer way.");
+	message("「仔細記錄你的轉彎，因為你可能會不止一次經過同一個房間。有時候你必須原路折返，然後才能找到出路。」");
 	say();
-	message("\"Yer third, an' final, hint is that once ye have found yer path, that section of the maze shall remain clear ta ye forever more. Do not be distracted from yer path.");
+	message("「你的第三個也是最後一個提示是，一旦你找到了路，迷宮的那部分就會永遠對你敞開。不要偏離你的道路。」");
 	say();
-	message("\"An' now, before I let ye go, deary, I'll warn ye again... Do not take anyone inta that there maze wit' ye. No two see this place the same.\"");
+	message("「現在，在放你走之前，親愛的，我再次警告你……不要帶任何人進去那個迷宮。沒有兩個人看這個地方是完全一樣的。」");
 	say();
 	goto labelFunc0619_014A;
 labelFunc0619_0146:
-	message("\"Well now, perhaps ye be more wise than ol' Drusilla gave ye credit for. Go back ta the keep. This is no place fer ye.\"");
+	message("「好啦，也許你比老 Drusilla 認為的要聰明。回到城堡去吧。這裡不適合你。」");
 	say();
 labelFunc0619_014A:
-	case "pawn of prophecy" attend labelFunc0619_0168:
-	UI_remove_answer("pawn of prophecy");
-	message("\"Why look so surprised, sweet cakes? Ye can't tell me that this is the first time someone has told ye that ye are marked...");
+	case "預言棋子" attend labelFunc0619_0168:
+	UI_remove_answer("預言棋子");
+	message("「為什麼看起來這麼驚訝，甜心？你別告訴我這是第一次有人跟你說你被選中了……」");
 	say();
-	message("\"Why even those benighted idiots, the Ophidians, knew ta expect ye. So it can't be such a shock ta ye.\"");
+	message("「要知道，即使是那些愚昧的白痴，那些蛇族( Ophidians )，也知道在等待著你。所以這對你來說不應該是個打擊。」");
 	say();
-	UI_add_answer("benighted idiots");
+	UI_add_answer("愚昧的白痴");
 labelFunc0619_0168:
-	case "benighted idiots" attend labelFunc0619_018A:
-	UI_remove_answer("benighted idiots");
-	message("\"Well now, perhaps I shouldn't have been so harsh, not in front of ye.");
+	case "愚昧的白痴" attend labelFunc0619_018A:
+	UI_remove_answer("愚昧的白痴");
+	message("「好啦，也許我不該說得這麼刻薄，特別是在你面前。」");
 	say();
-	message("\"Suffice it to say that not all people in this 'ere world are so addled as ta believe that wisdom is found in the hissing o' serpents... especially serpents no one kin see.");
+	message("「簡單地說，並不是這個世界上的所有人都那麼糊塗，會相信智慧存在於蛇的嘶嘶聲中……尤其是那些沒人能看見的蛇。」");
 	say();
-	message("\"I follow the Guide, meself, an' it's enough that I be 'ere ta meet ye ta tell ol' Drusilla whose pot is cracked an' whose isn't.\"");
+	message("「我自己追隨引導者( Guide )，而我能站在這裡見你，就足以告訴老 Drusilla 誰的腦袋壞了，誰的沒有。」");
 	say();
-	UI_add_answer("Guide");
+	UI_add_answer("引導者");
 labelFunc0619_018A:
-	case "Guide" attend labelFunc0619_01A1:
-	UI_remove_answer("Guide");
-	message("\"Full o' questions, aren't ye? Well now, deary, ol' Drusilla has more ta do than ta stand an' talk philosophy wit' ye. An' ye should be about yer business as well.");
+	case "引導者" attend labelFunc0619_01A1:
+	UI_remove_answer("引導者");
+	message("「你真是滿腦袋問題，是不是？好啦，親愛的，老 Drusilla 有更多事情要做，不能站在這裡和你談論哲學。你也應該去辦你的正事了。」");
 	say();
-	message("\"Those what follow the Guide don't seek no converts. We've enough ta do. Iffin ye finish yer own tasks an' still want ta talk, well now, perhaps there will be time fer that later.\"");
+	message("「那些追隨引導者( Guide )的人不尋求皈依者。我們有足夠的事情要做。如果你完成了自己的任務並且仍然想談談，那麼，也許以後會有時間的。」");
 	say();
 labelFunc0619_01A1:
-	case "something helpful" attend labelFunc0619_01B4:
-	UI_remove_answer("something helpful");
-	message("\"Well now, deary, iffin I told ye what it were I'd jus' take the fun outta it fer ye. So ye go back an' have a look see fer yerself.\"");
+	case "有用的東西" attend labelFunc0619_01B4:
+	UI_remove_answer("有用的東西");
+	message("「好啦，親愛的，如果我告訴你它是什麼，那就太沒意思了。所以你還是自己回去看看吧。」");
 	say();
 labelFunc0619_01B4:
-	case "something important" attend labelFunc0619_01C7:
-	UI_remove_answer("something important");
-	message("\"I can't go a tellin' ye ever'thing, deary. Iffin yer ta be this 'ere pawn of prophecy ye'll jus' have ta figger it out yerself.\"");
+	case "重要東西" attend labelFunc0619_01C7:
+	UI_remove_answer("重要東西");
+	message("「我不能把所有事情都告訴你，親愛的。如果你要成為預言的棋子( pawn of prophecy )，你就得自己想辦法弄明白。」");
 	say();
 labelFunc0619_01C7:
-	case "cat critter" attend labelFunc0619_01DA:
-	UI_remove_answer("cat critter");
-	message("\"I can't see how ye could have missed 'im. Poor thing is scared half ta death... an' hungry too, I'll wager. Ye kin afford to be friendly like to such a pitiful critter.\"");
+	case "貓咪生物" attend labelFunc0619_01DA:
+	UI_remove_answer("貓咪生物");
+	message("「我真不懂你怎麼會錯過他。那個可憐的小東西被嚇得半死……我敢打賭他也餓了。你完全可以對這麼一個可憐的生物友好一些。」");
 	say();
 labelFunc0619_01DA:
-	case "bye" attend labelFunc0619_0209:
-	message("\"Mercy! This has taken far longer than I thought! Ye should be on yer way now...\"");
+	case "告辭" attend labelFunc0619_0209:
+	message("「天哪！這花的時間比我想像的要長得多！你現在該上路了……」");
 	say();
 	UI_remove_npc_face0();
-	UI_item_say(0xFE9C, "@Goodbye!@");
-	Func097F(item, "@Be off wit' ye!@", 0x0002);
+	UI_item_say(0xFE9C, "@再見！@");
+	Func097F(item, "@快走吧！@", 0x0002);
 	UI_set_schedule_type(item, 0x000B);
 	goto labelFunc0619_020C;
 labelFunc0619_0209:
@@ -153,5 +153,3 @@ labelFunc0619_020C:
 labelFunc0619_020D:
 	return;
 }
-
-

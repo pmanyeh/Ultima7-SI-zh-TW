@@ -15,31 +15,29 @@ labelFunc06C0_000C:
 	UI_move_object(0xFFC8, [0x0498, 0x0765, 0x0000]);
 	UI_set_item_frame(0xFFC8, 0x0010);
 	UI_set_schedule_type(0xFFC8, 0x000B);
-	var0001 = UI_execute_usecode_array(0xFFC8, [(byte)0x23, (byte)0x27, 0x0018, (byte)0x52, "@Go in Unity!@", (byte)0x27, 0x0030, (byte)0x52, "@Come again@"]);
+	var0001 = UI_execute_usecode_array(0xFFC8, [(byte)0x23, (byte)0x27, 0x0018, (byte)0x52, "@在團結中前行！@", (byte)0x27, 0x0030, (byte)0x52, "@歡迎再來@"]);
 labelFunc06C0_0095:
 	if (!(!UI_is_dead(0xFFC7))) goto labelFunc06C0_00D6;
 	UI_move_object(0xFFC7, [0x0493, 0x076A, 0x0000]);
 	UI_set_schedule_type(0xFFC7, 0x000B);
-	var0001 = UI_execute_usecode_array(0xFFC7, [(byte)0x23, (byte)0x27, 0x0010, (byte)0x52, "@Very uplifting...@"]);
+	var0001 = UI_execute_usecode_array(0xFFC7, [(byte)0x23, (byte)0x27, 0x0010, (byte)0x52, "@真是令人振奮……@"]);
 labelFunc06C0_00D6:
 	if (!(!UI_is_dead(0xFFC5))) goto labelFunc06C0_0117;
 	UI_move_object(0xFFC5, [0x0496, 0x076B, 0x0000]);
 	UI_set_schedule_type(0xFFC5, 0x000B);
-	var0001 = UI_execute_usecode_array(0xFFC5, [(byte)0x23, (byte)0x27, 0x0020, (byte)0x52, "@The Fellowship is the way...@"]);
+	var0001 = UI_execute_usecode_array(0xFFC5, [(byte)0x23, (byte)0x27, 0x0020, (byte)0x52, "@友誼會才是真理……@"]);
 labelFunc06C0_0117:
 	if (!(!UI_is_dead(0xFFC4))) goto labelFunc06C0_0158;
 	UI_move_object(0xFFC4, [0x049B, 0x0769, 0x0000]);
 	UI_set_schedule_type(0xFFC4, 0x000B);
-	var0001 = UI_execute_usecode_array(0xFFCA, [(byte)0x23, (byte)0x27, 0x0040, (byte)0x52, "@Good sermon, Leon...@"]);
+	var0001 = UI_execute_usecode_array(0xFFCA, [(byte)0x23, (byte)0x27, 0x0040, (byte)0x52, "@講得真好，Leon……@"]);
 labelFunc06C0_0158:
 	if (!(!UI_is_dead(0xFFD2))) goto labelFunc06C0_0199;
 	UI_move_object(0xFFD2, [0x049C, 0x076F, 0x0000]);
 	UI_set_schedule_type(0xFFD2, 0x000B);
-	var0001 = UI_execute_usecode_array(0xFFD2, [(byte)0x23, (byte)0x27, 0x0030, (byte)0x52, "@His words are truth!@"]);
+	var0001 = UI_execute_usecode_array(0xFFD2, [(byte)0x23, (byte)0x27, 0x0030, (byte)0x52, "@他的話就是真理！@"]);
 labelFunc06C0_0199:
 	UI_remove_item(item);
 labelFunc06C0_019E:
 	return;
 }
-
-

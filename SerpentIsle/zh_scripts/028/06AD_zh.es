@@ -33,7 +33,7 @@ labelFunc06AD_004A:
 	gflags[0x0045] = true;
 	UI_set_alignment(0xFFB4, 0x0003);
 	UI_set_item_flag(0xFFB4, 0x001D);
-	var0004 = Func0992(0x0001, "@A clue...@", "@A clue...@", true);
+	var0004 = Func0992(0x0001, "@線索……@", "@線索……@", true);
 	if (!(var0004 != 0xFE9C)) goto labelFunc06AD_00A1;
 	var0005 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x55, 0x06AD], 0x000A);
 labelFunc06AD_00A1:
@@ -55,19 +55,17 @@ labelFunc06AD_0101:
 	UI_show_npc_face0(var0004, 0x0000);
 labelFunc06AD_010B:
 	if (!gflags[0x00B8]) goto labelFunc06AD_0120;
-	message("\"Avatar! This bottle is identical to the one from which thou didst drink at the inn in Monitor!\"");
+	message("「聖者！這瓶酒和你在蒙利多城的客棧喝的那瓶一模一樣！」");
 	say();
-	message("\"'Tis a bottle of Fawnish ale.\"");
+	message("「這是一瓶幼鹿城的麥酒。」");
 	say();
 	gflags[0x005F] = true;
 	goto labelFunc06AD_0128;
 labelFunc06AD_0120:
-	message("\"I cannot help but think that this strange bottle must be a clue as to the identity of Monitor's traitor.\"");
+	message("「我禁不住在想，這瓶奇怪的酒瓶一定是找出蒙利多城叛徒身份的線索。」");
 	say();
-	message("\"Perhaps if we can find whom this bottle doth belong to, we shall find our traitor!\"");
+	message("「也許如果我們能找到這瓶酒的主人，我們就能找到叛徒！」");
 	say();
 labelFunc06AD_0128:
 	return;
 }
-
-

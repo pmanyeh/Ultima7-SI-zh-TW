@@ -35,12 +35,12 @@ var Func0854 0x854 (var var0000, var var0001)
 	var000A = 0x0002;
 labelFunc0854_003F:
 	if (!var0008) goto labelFunc0854_03C8;
-	var000B = Func0956(["yes", "no", "haggle"]);
-	if (!(var000B == "no")) goto labelFunc0854_0068;
+	var000B = Func0956(["是", "否", "討價還價"]);
+	if (!(var000B == "否")) goto labelFunc0854_0068;
 	return 0x0000;
 	goto labelFunc0854_007B;
 labelFunc0854_0068:
-	if (!(var000B == "yes")) goto labelFunc0854_007B;
+	if (!(var000B == "是")) goto labelFunc0854_007B;
 	var000C = 0x0000;
 	goto labelFunc0854_00CA;
 labelFunc0854_007B:
@@ -56,94 +56,94 @@ labelFunc0854_00CA:
 	if (!(var000C < 0x0002)) goto labelFunc0854_0228;
 	if (!(var0004 < (var0001 + ((var0000 - var0001) / 0x0004)))) goto labelFunc0854_0127;
 	if (!(var000F == 0x0001)) goto labelFunc0854_0102;
-	message("\"Rocco would have me scrapped for lowering my prices like this. Please do not tell him...\"");
+	message("「如果我這樣降價， Rocco 會把我當成廢鐵賣了。請千萬不要告訴他……」");
 	say();
 labelFunc0854_0102:
 	if (!(var000F == 0x0002)) goto labelFunc0854_0116;
-	message("\"Thou art most forceful, ");
+	message("「你太強人所難了， ");
 	message(var0002);
-	message("! We will not be in business long at this rate!\"");
+	message(" ！照這樣下去，我們的生意維持不了多久的！」");
 	say();
 labelFunc0854_0116:
 	if (!(var000F == 0x0003)) goto labelFunc0854_0124;
-	message("\"Rocco would never have been out-bargained so!\"");
+	message("「 Rocco 絕不會被殺價殺成這樣！」");
 	say();
 labelFunc0854_0124:
 	goto labelFunc0854_01DD;
 labelFunc0854_0127:
 	if (!(var0004 < (var0001 + ((var0000 - var0001) / 0x0003)))) goto labelFunc0854_016A;
 	if (!(var000F == 0x0001)) goto labelFunc0854_014B;
-	message("\"The Blue Boar doth have the finest prices, eh?\"");
+	message("「藍野豬( Blue Boar )的價格最公道了，對吧？」");
 	say();
 labelFunc0854_014B:
 	if (!(var000F == 0x0002)) goto labelFunc0854_0159;
-	message("\"Today hath gone well, so I will be generous. On another day thou mayest not be so lucky!\"");
+	message("「今天進展很順利，所以我就大方一點。換作是別的日子，你可就沒這麼幸運了！」");
 	say();
 labelFunc0854_0159:
 	if (!(var000F == 0x0003)) goto labelFunc0854_0167;
-	message("\"Perhaps it is a human trait... To bargain so well.\"");
+	message("「也許這是人類的特性……這麼擅長討價還價。」");
 	say();
 labelFunc0854_0167:
 	goto labelFunc0854_01DD;
 labelFunc0854_016A:
 	if (!(var0004 < (var0001 + ((var0000 - var0001) / 0x0002)))) goto labelFunc0854_01AD;
 	if (!(var000F == 0x0001)) goto labelFunc0854_018E;
-	message("\"Even Rocco would consider this a fair deal...\"");
+	message("「連 Rocco 也會認為這筆交易很公平……」");
 	say();
 labelFunc0854_018E:
 	if (!(var000F == 0x0002)) goto labelFunc0854_019C;
-	message("\"We shall not profit this way...\"");
+	message("「我們這樣是賺不到利潤的……」");
 	say();
 labelFunc0854_019C:
 	if (!(var000F == 0x0003)) goto labelFunc0854_01AA;
-	message("\"Good service and fair prices is what hath made the Blue Boar famous!\"");
+	message("「優質的服務與公道的價格，就是讓藍野豬( Blue Boar )出名的原因！」");
 	say();
 labelFunc0854_01AA:
 	goto labelFunc0854_01DD;
 labelFunc0854_01AD:
 	if (!(var000F == 0x0001)) goto labelFunc0854_01C1;
-	message("\"I am pleased, ");
+	message("「我很滿意， ");
 	message(var0002);
-	message(".\"");
+	message(" 。」");
 	say();
 labelFunc0854_01C1:
 	if (!(var000F == 0x0002)) goto labelFunc0854_01CF;
-	message("\"Thou art a fine person!\"");
+	message("「你是個不錯的人！」");
 	say();
 labelFunc0854_01CF:
 	if (!(var000F == 0x0003)) goto labelFunc0854_01DD;
-	message("\"If times were not so bad, our prices would be far lower...\"");
+	message("「如果世道沒這麼差，我們的價格會便宜得多……」");
 	say();
 labelFunc0854_01DD:
-	message("\"Dost thou agree to ");
+	message("「你同意 ");
 	message(var0004);
-	message(" guilders, ");
+	message(" 吉爾得幣嗎， ");
 	message(var0002);
-	message("?\"");
+	message(" ？」");
 	say();
 	if (!Func0955()) goto labelFunc0854_01FA;
 	return var0004;
 	goto labelFunc0854_0228;
 labelFunc0854_01FA:
 	if (!(var000F == 0x0001)) goto labelFunc0854_0208;
-	message("\"I thought thou didst agree to that price!\"");
+	message("「我還以為你同意那個價格了呢！」");
 	say();
 labelFunc0854_0208:
 	if (!(var000F == 0x0002)) goto labelFunc0854_0216;
-	message("\"Take thy slick ways elsewhere then! I have more important things to do!\"");
+	message("「那就把你的小聰明拿到別處去吧！我還有更重要的事要做！」");
 	say();
 labelFunc0854_0216:
 	if (!(var000F == 0x0003)) goto labelFunc0854_0224;
-	message("\"Be gone... Before I fetch Rocco to break thy thick head for thee!\"");
+	message("「快滾……免得我去叫 Rocco 來打破你那榆木腦袋！」");
 	say();
 labelFunc0854_0224:
 	return 0x0000;
 labelFunc0854_0228:
 	if (!(var0007 == 0x0001)) goto labelFunc0854_0266;
 	if (!(var000C == 0x0005)) goto labelFunc0854_0259;
-	message("\"");
+	message("「");
 	message(var0004);
-	message(" is my final offer. Dost thou accept?\"");
+	message(" 是我最後的報價。你接受嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0854_0250;
 	return var0004;
@@ -151,108 +151,106 @@ labelFunc0854_0250:
 	var0008 = 0x0000;
 	goto labelFunc0854_0263;
 labelFunc0854_0259:
-	message("\"Fine... ");
+	message("「好吧…… ");
 	message(var0004);
-	message(" guilders is my final offer.\"");
+	message(" 吉爾得幣是我最後的報價。」");
 	say();
 labelFunc0854_0263:
 	goto labelFunc0854_03C5;
 labelFunc0854_0266:
 	if (!(var000C == 0x0002)) goto labelFunc0854_02AC;
 	if (!(var000F == 0x0001)) goto labelFunc0854_0284;
-	message("\"It is so interesting bargaining with thee. How doth ");
+	message("「跟你討價還價真有趣。聽聽 ");
 	message(var0004);
-	message(" guilders sound?\"");
+	message(" 吉爾得幣怎麼樣？」");
 	say();
 labelFunc0854_0284:
 	if (!(var000F == 0x0002)) goto labelFunc0854_0298;
-	message("\"Thou art a gem among customers. Have we agreed on ");
+	message("「你真是顧客中的瑰寶。我們同意 ");
 	message(var0004);
-	message(" guilders?\"");
+	message(" 吉爾得幣嗎？」");
 	say();
 labelFunc0854_0298:
 	if (!(var000F == 0x0003)) goto labelFunc0854_02AC;
-	message("\"I offer thee a price of ");
+	message("「我給你 ");
 	message(var0004);
-	message(" guilders -- a special deal for those I consider good customers. Dost thou accept?\"");
+	message(" 吉爾得幣的價格——這是我對好顧客的特別優惠。你接受嗎？」");
 	say();
 labelFunc0854_02AC:
 	if (!(var000C == 0x0003)) goto labelFunc0854_02F2;
 	if (!(var000F == 0x0001)) goto labelFunc0854_02CA;
-	message("\"We have so little in stock... Perhaps ");
+	message("「我們的存貨這麼少……也許 ");
 	message(var0004);
-	message(" guilders?\"");
+	message(" 吉爾得幣？」");
 	say();
 labelFunc0854_02CA:
 	if (!(var000F == 0x0002)) goto labelFunc0854_02DE;
-	message("\"");
+	message("「");
 	message(var0004);
-	message("? I should charge more, though...\"");
+	message(" ？不過，我本該收更多才對……」");
 	say();
 labelFunc0854_02DE:
 	if (!(var000F == 0x0003)) goto labelFunc0854_02F2;
-	message("\"I must consider what Rocco will say. Perhaps ");
+	message("「我得想想 Rocco 會怎麼說。也許 ");
 	message(var0004);
-	message(" guilders?\"");
+	message(" 吉爾得幣？」");
 	say();
 labelFunc0854_02F2:
 	if (!(var000C == 0x0004)) goto labelFunc0854_0338;
 	if (!(var000F == 0x0001)) goto labelFunc0854_0310;
-	message("\"");
+	message("「");
 	message(var0004);
-	message(" guilders is as low as I can go. Wilt thou agree?\"");
+	message(" 吉爾得幣是我能給的最低價格了。你同意嗎？」");
 	say();
 labelFunc0854_0310:
 	if (!(var000F == 0x0002)) goto labelFunc0854_0324;
-	message("\"Surely thou canst see that I can go no lower than ");
+	message("「你一定能看得出來，我不能低於 ");
 	message(var0004);
-	message(" guilders. We must pay for the upkeep on the inn.\"");
+	message(" 吉爾得幣。我們必須支付旅館的維護費用。」");
 	say();
 labelFunc0854_0324:
 	if (!(var000F == 0x0003)) goto labelFunc0854_0338;
-	message("\"I may be an automaton, but I am no fool! I will accept no less than ");
+	message("「我可能是個自動機器人，但我不是傻瓜！低於 ");
 	message(var0004);
-	message(" guilders.\"");
+	message(" 吉爾得幣我是不會接受的。」");
 	say();
 labelFunc0854_0338:
 	if (!(var000C == 0x0005)) goto labelFunc0854_03C5;
 	var0004 = var000E;
 	if (!(var000F == 0x0001)) goto labelFunc0854_035C;
-	message("\"I would rather Rocco sell me for scrap! My previous price stands, at ");
+	message("「我寧可 Rocco 把我當廢鐵賣了！維持我之前的價格， ");
 	message(var0004);
-	message(" guilders.\"");
+	message(" 吉爾得幣。」");
 	say();
 labelFunc0854_035C:
 	if (!(var000F == 0x0002)) goto labelFunc0854_0370;
-	message("\"");
+	message("「");
 	message(var0004);
-	message(" guilders! I shall not be tricked into accepting less!\"");
+	message(" 吉爾得幣！我不會被騙去接受更低的價格！」");
 	say();
 labelFunc0854_0370:
 	if (!(var000F == 0x0003)) goto labelFunc0854_03C5;
-	message("\"Thou must think me witless!\"");
+	message("「你一定覺得我很蠢！」");
 	say();
 	if (!Func0942(0xFFE2)) goto labelFunc0854_03BB;
-	var0010 = "his";
+	var0010 = "他";
 	if (!var0003) goto labelFunc0854_0399;
-	var0010 = "her";
+	var0010 = "她";
 labelFunc0854_0399:
 	UI_show_npc_face1(0xFFE2, 0x0000);
-	message("\"If this person is bothering thee, Petra, I shall be happy to soften ");
+	message("「如果這個人打擾到你， Petra ，我很樂意幫你敲碎 ");
 	message(var0010);
-	message(" skull for thee.\"");
+	message(" 的腦袋。」");
 	say();
 	UI_remove_npc_face1();
 	UI_show_npc_face0(0xFFE4, 0x0000);
 labelFunc0854_03BB:
-	message("\"");
+	message("「我就堅持 ");
 	message(var0004);
-	message(" guilders is where I stand.\"");
+	message(" 吉爾得幣。」");
 	say();
 labelFunc0854_03C5:
 	goto labelFunc0854_003F;
 labelFunc0854_03C8:
 	return 0;
 }
-
-

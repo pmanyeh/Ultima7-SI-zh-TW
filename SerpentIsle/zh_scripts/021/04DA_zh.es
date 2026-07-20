@@ -25,7 +25,7 @@ void Func04DA object#(0x4DA) ()
 	var0003 = UI_get_item_flag(0xFFD9, 0x001C);
 	if (!(event == 0x0007)) goto labelFunc04DA_006F;
 	UI_show_npc_face0(0xFFD9, 0x0000);
-	message("\"Art thou insane? Why art thou attacking me? This is my dream!\" *\"If I had a two-handed sword, I would make mincemeat of thee!\" *\"I must awaken...\"");
+	message("「你瘋了嗎？為什麼要攻擊我？這是我的夢境！」*「如果我有一把雙手劍，我就把你切成肉醬！」*「我必須醒來……」");
 	say();
 	UI_remove_npc_face0();
 	var0004 = UI_get_object_position(item);
@@ -34,76 +34,76 @@ void Func04DA object#(0x4DA) ()
 	UI_remove_npc(0xFF26);
 labelFunc04DA_006F:
 	if (!(event == 0x0001)) goto labelFunc04DA_00A5;
-	UI_item_say(0xFE9C, "@Hail, minstrel!@");
+	UI_item_say(0xFE9C, "@你好，吟遊詩人！@");
 	0xFF26->Func07D1();
-	Func097F(0xFF26, (("@Greetings, " + var0000) + "!@"), 0x0005);
+	Func097F(0xFF26, (("@問候你， " + var0000) + " ！@"), 0x0005);
 	UI_set_schedule_type(0xFF26, 0x0003);
 labelFunc04DA_00A5:
 	if (!(event == 0x0009)) goto labelFunc04DA_05FB;
 	UI_set_schedule_type(0xFF26, 0x000C);
 	UI_show_npc_face0(0xFFD9, 0x0000);
 	if (!(var0003 == true)) goto labelFunc04DA_00D0;
-	message("\"I had wondered when I would encounter thee here, Avatar.\" ~\"I expect that thou wouldst like some answers, no doubt.\" *\"Or perhaps I could sing thee a song to ease thy way.\"");
+	message("「我一直想著何時會在這裡遇到你，聖者。」~「我料想你一定想要一些答案，毫無疑問。」*「或者，我也許可以為你唱首歌，讓你輕鬆上路。」");
 	say();
 	goto labelFunc04DA_00D4;
 labelFunc04DA_00D0:
-	message("\"Welcome, fellow dreamer!\" ~\"I am Byrin, a gleeman by trade.\" *\"Thou dost look perplexed. I'll warrant that thou wouldst like some answers.\" ~\"Or perhaps I could sing thee a song to ease thy way.\"");
+	message("「歡迎你，夢境同伴！」~「我是 Byrin ，職業是吟遊詩人。」*「你看起來很困惑。我敢保證你一定想要一些答案。」~「或者，我也許可以為為你唱首歌，讓你輕鬆上路。」");
 	say();
 labelFunc04DA_00D4:
-	UI_add_answer(["answers", "song", "bye"]);
+	UI_add_answer(["答案", "聽歌", "告辭"]);
 labelFunc04DA_00E4:
 	converse attend labelFunc04DA_05FA;
-	case "answers" attend labelFunc04DA_0101:
-	message("\"Thou mayest find that the answers only give rise to more questions.\" ~\"But I shall do my best to help thee.\" *\"First thou shouldst know that thou dost walk in the land of dreamers.\" ~\"There are only two ways to enter or exit here.\"");
+	case "答案" attend labelFunc04DA_0101:
+	message("「你可能會發現答案只會引發更多的問題。」~「但我會盡力幫助你。」*「首先你應該知道，你正走在夢境者的土地上。」~「進入或離開這裡只有兩種方法。」");
 	say();
-	UI_remove_answer("answers");
-	UI_add_answer("two ways");
+	UI_remove_answer("答案");
+	UI_add_answer("兩種方法");
 labelFunc04DA_0101:
-	case "two ways" attend labelFunc04DA_011B:
-	message("\"The first way to enter this realm is from the safety of thy bed...\" ~\"In thy nightly slumber.\" *\"The second way to enter here is far more perilous...\" ~\"By falling prey to the enchantments in Gorlab Swamp.\"");
+	case "兩種方法" attend labelFunc04DA_011B:
+	message("「進入這個領域的第一種方法是在安全的床上……」~「在每晚的睡眠中。」*「進入這裡的第二種方法要危險得多……」~「那就是落入果雷沼澤( Gorlab Swamp )的魔法之中。」");
 	say();
-	UI_remove_answer("two ways");
-	UI_add_answer("Gorlab Swamp");
+	UI_remove_answer("兩種方法");
+	UI_add_answer("果雷沼澤");
 labelFunc04DA_011B:
-	case "Gorlab Swamp" attend labelFunc04DA_013B:
-	message("\"Long ago -- even before the serpent people made this land their home -- a sorceror named Rabindrinath swore to destroy the peaceful town of Gorlab.\" ~\"But the town healer, Siranush, opposed him and the evil spell went awry.\" *\"The inhabitants of the town were not destroyed, but were instead trapped\twithin the realm of dreams...\" ~\"Along with the mad sorceror...\" ~\"And any who dare enter the environs of Gorlab.\"");
+	case "果雷沼澤" attend labelFunc04DA_013B:
+	message("「很久以前——甚至在蛇人( Serpent people )以這片土地為家之前——一個名叫 Rabindrinath 的巫師發誓要摧毀和平的果雷鎮。但在小鎮的治療師 Siranush 反對他之後，邪惡的法術出錯了。」*「鎮上的居民沒有被消滅，而是被困在夢境的領域中……」~「連同那個瘋狂的巫師一起……」~「還有任何敢於進入果雷( Gorlab )周圍地區的人。」");
 	say();
-	UI_remove_answer("Gorlab Swamp");
+	UI_remove_answer("果雷沼澤");
 	UI_add_answer(["Rabindrinath", "Siranush"]);
 labelFunc04DA_013B:
 	case "Rabindrinath" attend labelFunc04DA_0155:
-	message("\"Rabindrinath hath struggled mightily against Siranush across the span of time.\" ~\"Each of his attacks have been repelled...\" ~\"Much to his displeasure.\"");
+	message("「在漫長的時間跨度裡， Rabindrinath 與 Siranush 進行了激烈的鬥爭。」~「他的每一次攻擊都被擊退了……」~「這讓他非常不悅。」");
 	say();
 	UI_remove_answer("Rabindrinath");
-	UI_add_answer("displeasure");
+	UI_add_answer("不悅");
 labelFunc04DA_0155:
-	case "displeasure" attend labelFunc04DA_0168:
-	message("\"Rabindrinath releases his anger by troubling the thoughts of those who venture here within their dreams.\"");
+	case "不悅" attend labelFunc04DA_0168:
+	message("「 Rabindrinath 藉由擾亂那些在夢中冒險來到這裡的人的思想來釋放他的憤怒。」");
 	say();
-	UI_remove_answer("displeasure");
+	UI_remove_answer("不悅");
 labelFunc04DA_0168:
 	case "Siranush" attend labelFunc04DA_0182:
-	message("\"Siranush is a strong-willed woman who hath repelled all of Rabindrinath's attacks on her people.\" ~\"She is no sorceror, and I fear that her strength will one day fail her.\" *\"Were Siranush to be vanquished, I am sure that Rabindrinath would turn his evil intent on the wandering dreamers.\" ~\"Without Siranush's guidance, those who enter here might never leave.\"");
+	message("「 Siranush 是一個意志堅強的女人，她擊退了 Rabindrinath 對她子民的所有攻擊。」~「她不是巫師，我擔心她的力量總有一天會耗盡。」*「如果 Siranush 被擊敗，我確信 Rabindrinath 會把他的邪惡意圖轉向那些流浪的做夢者。」~「沒有 Siranush 的指引，進入這裡的人可能永遠都離不開了。」");
 	say();
 	UI_remove_answer("Siranush");
-	UI_add_answer("leave");
+	UI_add_answer("離開");
 labelFunc04DA_0182:
-	case "leave" attend labelFunc04DA_019C:
-	message("\"As I said before, there are two ways to enter the land of dreamers.\" ~\"If thou didst come here from the comfort of thy bed, thou canst simply awaken and thou wilt return to the land of waking men.\" *\"But, if thou didst come here through the enchantments in the Swamp, thou must die here to return to thy body.\"");
+	case "離開" attend labelFunc04DA_019C:
+	message("「正如我之前所說，進入做夢者的土地有兩種方式。」~「如果你是從舒適的床上來到這裡，你只需醒來即可返回清醒人類的土地。」*「但是，如果你是透過沼澤中的魔法來到這裡的，你必須在這裡死亡才能回到你的身體。」");
 	say();
-	UI_remove_answer("leave");
-	UI_add_answer("die");
+	UI_remove_answer("離開");
+	UI_add_answer("死亡");
 labelFunc04DA_019C:
-	case "die" attend labelFunc04DA_01AF:
-	message("\"By die, I do not mean that thou must cease living.\" ~\"I mean that thy perceived life here must end...\" *\"Thy death here returns thee to thy body.\" ~\"So long as Siranush prevails and thy body lives, thou canst return to the world of waking men.\" *\"But if Siranush should fall, or thy body die...\" ~\"thou shalt remain trapped here for all time.\"");
+	case "死亡" attend labelFunc04DA_01AF:
+	message("「我說死亡，並不是指你必須停止生存。」~「我的意思是你在這裡所感知的生命必須結束……」*「你在這裡的死亡會讓你回到你的身體。」~「只要 Siranush 獲勝且你的身體還活著，你就能回到清醒人類的世界。」*「但如果 Siranush 倒下，或你的身體死亡……」~「你將永遠被困在這裡。」");
 	say();
-	UI_remove_answer("die");
+	UI_remove_answer("死亡");
 labelFunc04DA_01AF:
-	case "song" attend labelFunc04DA_02DD:
-	message("\"I know many songs...\" ~\"Dost thou wish to hear one I have already sung?\" ~\"Or dost thou wish to hear a new song?\"");
+	case "聽歌" attend labelFunc04DA_02DD:
+	message("「我知道很多歌……」~「你想聽我已經唱過的一首嗎？」~「還是你想聽一首新歌？」");
 	say();
 	var0005 = [];
-	if (!(Func0957(["old song", "new song"]) == 0x0001)) goto labelFunc04DA_0243;
+	if (!(Func0957(["舊歌", "新歌"]) == 0x0001)) goto labelFunc04DA_0243;
 	if (!(gflags[0x01D3] == true)) goto labelFunc04DA_01E6;
 	var0005 = (var0005 & 0x0001);
 labelFunc04DA_01E6:
@@ -143,7 +143,7 @@ labelFunc04DA_029D:
 	var0005 = (var0005 & 0x0006);
 labelFunc04DA_02AF:
 	if (!(var0005 == [])) goto labelFunc04DA_02C0;
-	message("\"I'm sorry... ~Thou hast heard all of my songs.\"");
+	message("「我很抱歉……~你已經聽過我所有的歌了。」");
 	say();
 	goto labelFunc04DA_02DD;
 labelFunc04DA_02C0:
@@ -151,235 +151,235 @@ labelFunc04DA_02C0:
 	var0007 = var0005[var0006];
 	Func09B0(var0007);
 labelFunc04DA_02DD:
-	case "tales" attend labelFunc04DA_0308:
-	message("\"For those with an adventurous spirit, I can tell thee of the northern savages.\"");
+	case "故事" attend labelFunc04DA_0308:
+	message("「對於有冒險精神的人，我可以告訴你北方野蠻人的事。」");
 	say();
-	message("\"For those who wish to hear of a lost civilization, I can tell thee of the people who left the ruins on this continent.\"");
+	message("「對於那些想聽失落文明的人，我可以告訴你那些在這片大陸上留下遺跡的人民的事。」");
 	say();
-	message("\"For those who would hear a tale of bitter bravery, I can tell thee of the lost king.\"");
+	message("「對於那些想聽一段悲壯勇敢故事的人，我可以告訴你關於失蹤國王的事。」");
 	say();
-	UI_remove_answer("tales");
-	UI_add_answer(["northern savages", "lost culture", "lost king"]);
+	UI_remove_answer("故事");
+	UI_add_answer(["北方野蠻人", "失落的文化", "失落的國王"]);
 labelFunc04DA_0308:
-	case "northern savages" attend labelFunc04DA_0348:
-	message("\"Once thou leavest the warm lands of Man, thou dost come into the realm of the northern savages.\" ~\"These creatures have faces that strongly resemble that of a normal man, but they are covered head to foot in a shaggy fur pelt.\"");
+	case "北方野蠻人" attend labelFunc04DA_0348:
+	message("「一旦你離開人類溫暖的土地，你就進入了北方野蠻人的領域。」~「這些生物的臉孔非常像普通人，但他們從頭到腳都覆蓋著蓬鬆的皮毛。」");
 	say();
-	message("\"Some say that these creatures are some lost tribe of Man that hath adapted to the cold.\" ~\"Still others claim that the savages are a mage-created race that guards some great, mystical secret.\"");
+	message("「有人說這些生物是適應了寒冷的人類某個失落部落。」~「還有人聲稱這些野蠻人是法師創造的種族，守護著某個偉大而神秘的秘密。」");
 	say();
-	message("\"None can say if they are intelligent.\" ~\"They build no structures and speak no recognizable language.\"");
+	message("「沒有人能說他們是否有智慧。」~「他們不建造任何建築，也不說任何可辨識的語言。」");
 	say();
 	if (!(gflags[0x01D5] == false)) goto labelFunc04DA_0341;
-	message("\"There is also a song about the northern savages. ~Wouldst thou care to hear it?\"");
+	message("「還有一首關於北方野蠻人的歌。~你想聽聽嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04DA_033D;
-	message("\"All right, then...\"");
+	message("「那好吧……」");
 	say();
 	Func09B0(0x0001);
 	goto labelFunc04DA_0341;
 labelFunc04DA_033D:
-	message("\"Perhaps some other time, then.\"");
+	message("「那也許改天吧。」");
 	say();
 labelFunc04DA_0341:
-	UI_remove_answer("northern savages");
+	UI_remove_answer("北方野蠻人");
 labelFunc04DA_0348:
-	case "lost culture" attend labelFunc04DA_0363:
-	message("\"Long ago, before any of the cities thou knowest today were built, there was a race of Man who worshipped three great elemental serpents.\" ~\"Some followed one of fire. Others followed one of ice. And still others followed one of earth.\"");
+	case "失落的文化" attend labelFunc04DA_0363:
+	message("「很久以前，在你今天所知道的任何城市建立之前，有一個人類種族崇拜三條偉大的元素巨蛇。」~「一些人追隨火之蛇。另一些人追隨冰之蛇。還有一些人追隨土之蛇。」");
 	say();
-	message("\"As only the serpent of earth could withstand both the fire and the ice of the other serpents, it did possess the most power.\" ~\"The fire and ice serpents were violently opposed to each other, but were held in check by the serpent of earth.\"");
+	message("「由於只有土之蛇能抵禦其他巨蛇的火與冰，因此它擁有的力量最強大。」~「火蛇與冰蛇激烈對立，但受到土之蛇的制衡。」");
 	say();
-	message("\"Then the serpent of earth lost power. The fire and ice serpents warred for supremacy.\" ~\"When the battle ended, it mattered not which serpent had won...\" ~\"for the land was destroyed and all the worshippers lay dead.\"");
+	message("「後來土之蛇失去了力量。火蛇與冰蛇為爭奪霸權而戰。」~「當戰爭結束時，哪條巨蛇獲勝已經無關緊要了……」~「因為土地被摧毀，所有的崇拜者都死去了。」");
 	say();
-	UI_remove_answer("lost culture");
+	UI_remove_answer("失落的文化");
 labelFunc04DA_0363:
-	case "lost king" attend labelFunc04DA_03C8:
-	message("\"To the north of here stand two castles, seemingly empty from the ravages of time.\" ~\"But neither is truly empty, for they both hold the ghosts of trust betrayed.\"");
+	case "失落的國王" attend labelFunc04DA_03C8:
+	message("「在這邊的北方聳立著兩座城堡，在歲月的摧殘下顯得空空如也。」~「但兩者都不是真正空置的，因為它們都保留了被背叛的信任陰魂。」");
 	say();
-	message("\"In one majestic castle a lady waits for her faithless lover who pledged his love and never returned.\" ~\"In the other, a father and ruler, driven mad by the loss of daughter and erstwhile friend, took his people beyond the cares of time.\"");
+	message("「在一座宏偉的城堡裡，一位女士正等待著她那背信棄義的情人，他曾誓言相愛卻再也沒有回來。」~「在另一座城堡裡，一位父親兼統治者因失去女兒和昔日朋友而發瘋，帶領他的子民超越了時間的煩惱。」");
 	say();
-	message("\"All the trapped souls await the return of the one whose desertion forever changed the land he had sworn to protect.\" ~\"All wait for the return of the lost king... and revenge!\"");
+	message("「所有被困的靈魂都在等待著那個人的歸來，他的背叛永遠改變了他曾發誓要保護的土地。」~「所有人都在等待著失落國王的歸來……以及復仇！」");
 	say();
 	if (!(gflags[0x01D3] == false)) goto labelFunc04DA_039C;
-	message("\"There is a song about the lady.\" ~\"Wouldst thou care to hear it?\"");
+	message("「有一首關於這位女士的歌。~你想聽聽嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04DA_0398;
-	message("\"It is a sad ballad indeed...\"");
+	message("「這確實是一首悲傷的歌謠……」");
 	say();
 	Func09B0(0x0001);
 	goto labelFunc04DA_039C;
 labelFunc04DA_0398:
-	message("\"Another time, then.\"");
+	message("「那下次再說吧。」");
 	say();
 labelFunc04DA_039C:
 	if (!(gflags[0x01D8] == false)) goto labelFunc04DA_03C1;
-	message("\"There is a song about the other castle, as well.\" ~\"Wouldst thou care to hear it?\"");
+	message("「也有一首關於另一座城堡的歌。~你想聽聽嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04DA_03BD;
-	message("\"Prepare thyselves...\"");
+	message("「做好準備……」");
 	say();
 	Func09B0(0x0001);
 	goto labelFunc04DA_03C1;
 labelFunc04DA_03BD:
-	message("\"Another time, then.\"");
+	message("「那下次再說吧。」");
 	say();
 labelFunc04DA_03C1:
-	UI_remove_answer("lost king");
+	UI_remove_answer("失落的國王");
 labelFunc04DA_03C8:
-	case "tunes" attend labelFunc04DA_0420:
+	case "曲調" attend labelFunc04DA_0420:
 	if (!(gflags[0x003E] == true)) goto labelFunc04DA_0408;
 	if (!(var0001 == true)) goto labelFunc04DA_03F4;
-	message("\"For thee, brave lady, I would sing of dreams, or perhaps of tragedy.\" ~\"Of course, although I sing to entertain others, I hope for some small token of appreciation...\" ~\"if possible. Singing is thirsty business.\"");
+	message("「為了妳，勇敢的女士，我會歌唱夢境，或者歌唱悲劇。」~「當然，雖然我唱歌是為了娛樂他人，但我希望能得到一些小小的謝意……」~「如果可能的話。唱歌可是件口渴的事。」");
 	say();
-	UI_add_answer(["dreams", "tragedy"]);
+	UI_add_answer(["夢境", "悲劇"]);
 	goto labelFunc04DA_0405;
 labelFunc04DA_03F4:
-	message("\"For thee, noble sir, I would sing a heart-rending ballad, or perhaps long-lost lore.\" ~\"Of course, although I sing to entertain others, I hope for some small token of appreciation...\" ~\"if possible. Singing is thirsty business.\"");
+	message("「為了你，高貴的先生，我會唱一首令人心碎的歌謠，或者也許是失傳已久的傳說。」~「當然，雖然我唱歌是為了娛樂他人，但我希望能得到一些小小的謝意……」~「如果可能的話。唱歌可是件口渴的事。」");
 	say();
-	UI_add_answer(["ballad", "lore"]);
+	UI_add_answer(["民謠", "傳說"]);
 labelFunc04DA_0405:
 	goto labelFunc04DA_0419;
 labelFunc04DA_0408:
-	message("\"I sense that thou dost like adventure.\" ~\"For thee I would sing of strange beings and strange places.\" ~\"Of course, although I sing to entertain others, I hope for some small token of appreciation...\" ~\"if possible. Singing is thirsty business.\"");
+	message("「我感覺你喜歡冒險。」~「為了你，我會歌唱奇特生物和奇特地方。」~「當然，雖然我唱歌是為了娛樂他人，但我希望能得到一些小小的謝意……」~「如果可能的話。唱歌可是件口渴的事。」");
 	say();
-	UI_add_answer(["strange beings", "strange places"]);
+	UI_add_answer(["奇特生物", "奇異之地"]);
 labelFunc04DA_0419:
-	UI_remove_answer("tunes");
+	UI_remove_answer("曲調");
 labelFunc04DA_0420:
-	case "dreams" attend labelFunc04DA_0468:
+	case "夢境" attend labelFunc04DA_0468:
 	if (!(gflags[0x01D7] == true)) goto labelFunc04DA_0457;
-	message("\"I believe that thou hast already heard that one.\" ~\"Wouldst thou like to hear it again?\"");
+	message("「我相信你已經聽過這首歌了。」~「你想再聽一遍嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04DA_0449;
-	message("\"My pleasure...\"");
+	message("「我的榮幸……」");
 	say();
 	Func09B0(0x0001);
 	goto labelFunc04DA_0454;
 labelFunc04DA_0449:
-	message("\"Perhaps I could find another song for thee...\"");
+	message("「也許我可以為你找另一首歌……」");
 	say();
-	UI_add_answer("song");
+	UI_add_answer("聽歌");
 labelFunc04DA_0454:
 	goto labelFunc04DA_0461;
 labelFunc04DA_0457:
-	message("\"I hope thou dost enjoy it...\"");
+	message("「希望你喜歡它……」");
 	say();
 	Func09B0(0x0001);
 labelFunc04DA_0461:
-	UI_remove_answer("dreams");
+	UI_remove_answer("夢境");
 labelFunc04DA_0468:
-	case "tragedy" attend labelFunc04DA_04B0:
+	case "悲劇" attend labelFunc04DA_04B0:
 	if (!(gflags[0x01D8] == true)) goto labelFunc04DA_049F;
-	message("\"I seem to remember singing this for thee before...\" ~\"Wouldst thou like to hear it again?\"");
+	message("「我 semble 記得以前給你唱過這首……」~「你想再聽一次嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04DA_0491;
-	message("\"One more time, then...\"");
+	message("「那好吧，再唱一次……」");
 	say();
 	Func09B0(0x0001);
 	goto labelFunc04DA_049C;
 labelFunc04DA_0491:
-	message("\"Perhaps I could find another song for thee...\"");
+	message("「也許我可以為你找另一首歌……」");
 	say();
-	UI_add_answer("song");
+	UI_add_answer("聽歌");
 labelFunc04DA_049C:
 	goto labelFunc04DA_04A9;
 labelFunc04DA_049F:
-	message("\"Relax and be at ease...\"");
+	message("「放鬆並安心地聽吧……」");
 	say();
 	Func09B0(0x0001);
 labelFunc04DA_04A9:
-	UI_remove_answer("tragedy");
+	UI_remove_answer("悲劇");
 labelFunc04DA_04B0:
-	case "ballad" attend labelFunc04DA_04F8:
+	case "民謠" attend labelFunc04DA_04F8:
 	if (!(gflags[0x01D3] == true)) goto labelFunc04DA_04E7;
-	message("\"I'm certain that thou hast before...\" ~\"Wouldst thou like to hear it again?\"");
+	message("「我確定你以前聽過……」~「你想再聽一次嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04DA_04D9;
-	message("\"As thou wishest...\"");
+	message("「如你所願……」");
 	say();
 	Func09B0(0x0001);
 	goto labelFunc04DA_04E4;
 labelFunc04DA_04D9:
-	message("\"Perhaps I could find another song for thee...\"");
+	message("「也許我可以為你找另一首歌……」");
 	say();
-	UI_add_answer("song");
+	UI_add_answer("聽歌");
 labelFunc04DA_04E4:
 	goto labelFunc04DA_04F1;
 labelFunc04DA_04E7:
-	message("\"I do hope I remember it...\"");
+	message("「我真希望我還記得它……」");
 	say();
 	Func09B0(0x0001);
 labelFunc04DA_04F1:
-	UI_remove_answer("ballad");
+	UI_remove_answer("民謠");
 labelFunc04DA_04F8:
-	case "lore" attend labelFunc04DA_0540:
+	case "傳說" attend labelFunc04DA_0540:
 	if (!(gflags[0x01D4] == true)) goto labelFunc04DA_052F;
-	message("\"I fear that thou dost already know this one...\" ~\"Wouldst thou like to hear it again?\"");
+	message("「我擔心你已經知道這首了……」~「你想再聽一次嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04DA_0521;
-	message("\"Thou canst sing along if thou wishest...\"");
+	message("「如果你願意，可以跟著一起唱……」");
 	say();
 	Func09B0(0x0001);
 	goto labelFunc04DA_052C;
 labelFunc04DA_0521:
-	message("\"Perhaps I could find another song for thee...\"");
+	message("「也許我可以為你找另一首歌……」");
 	say();
-	UI_add_answer("song");
+	UI_add_answer("聽歌");
 labelFunc04DA_052C:
 	goto labelFunc04DA_0539;
 labelFunc04DA_052F:
-	message("\"I think I am in the right key...\"");
+	message("「我想我的音調是對的……」");
 	say();
 	Func09B0(0x0001);
 labelFunc04DA_0539:
-	UI_remove_answer("lore");
+	UI_remove_answer("傳說");
 labelFunc04DA_0540:
-	case "strange beings" attend labelFunc04DA_0588:
+	case "奇特生物" attend labelFunc04DA_0588:
 	if (!(gflags[0x01D5] == true)) goto labelFunc04DA_0577;
-	message("\"I have done this one for thee before...\" ~\"Wouldst thou like to hear it again?\"");
+	message("「我以前為你唱過這首……」~「你想再聽一次嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04DA_0569;
-	message("\"Very well...\"");
+	message("「那好吧……」");
 	say();
 	Func09B0(0x0001);
 	goto labelFunc04DA_0574;
 labelFunc04DA_0569:
-	message("\"Perhaps I could find another song for thee...\"");
+	message("「也許我可以為你找另一首歌……」");
 	say();
-	UI_add_answer("song");
+	UI_add_answer("聽歌");
 labelFunc04DA_0574:
 	goto labelFunc04DA_0581;
 labelFunc04DA_0577:
-	message("\"Thou wilt like the tempo on this one...\"");
+	message("「你會喜歡這首的節奏……」");
 	say();
 	Func09B0(0x0001);
 labelFunc04DA_0581:
-	UI_remove_answer("strange beings");
+	UI_remove_answer("奇特生物");
 labelFunc04DA_0588:
-	case "strange places" attend labelFunc04DA_05D0:
+	case "奇異之地" attend labelFunc04DA_05D0:
 	if (!(gflags[0x01D6] == true)) goto labelFunc04DA_05BF;
-	message("\"Thou knowest this one...\" ~\"Wouldst thou like to hear it again?\"");
+	message("「你懂得這首……」~「你想再聽一次嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04DA_05B1;
-	message("\"I am cheered in that thou dost like it...\"");
+	message("「你喜歡它讓我感到非常高興……」");
 	say();
 	Func09B0(0x0001);
 	goto labelFunc04DA_05BC;
 labelFunc04DA_05B1:
-	message("\"Perhaps I could find another song for thee...\"");
+	message("「也許我可以為你找另一首歌……」");
 	say();
-	UI_add_answer("song");
+	UI_add_answer("聽歌");
 labelFunc04DA_05BC:
 	goto labelFunc04DA_05C9;
 labelFunc04DA_05BF:
-	message("\"Listen carefully...\"");
+	message("「仔細聽著……」");
 	say();
 	Func09B0(0x0001);
 labelFunc04DA_05C9:
-	UI_remove_answer("strange places");
+	UI_remove_answer("奇異之地");
 labelFunc04DA_05D0:
-	case "bye" attend labelFunc04DA_05F7:
+	case "告辭" attend labelFunc04DA_05F7:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@Farewell, gleeman!@", 0x0000);
-	Func097F(0xFFD9, "@May thy path be smooth!@", 0x0005);
+	Func097F(0xFE9C, "@告別，吟遊詩人！@", 0x0000);
+	Func097F(0xFFD9, "@願你旅途順風！@", 0x0005);
 	goto labelFunc04DA_05FA;
 labelFunc04DA_05F7:
 	goto labelFunc04DA_00E4;
@@ -388,5 +388,3 @@ labelFunc04DA_05FA:
 labelFunc04DA_05FB:
 	return;
 }
-
-

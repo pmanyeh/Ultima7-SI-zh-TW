@@ -25,9 +25,9 @@ void Func06C4 object#(0x6C4) ()
 	if (!gflags[0x01EA]) goto labelFunc06C4_00B9;
 	if (!var0000) goto labelFunc06C4_0065;
 	UI_show_npc_face0(0xFFD4, 0x0000);
-	message("\"We are attacked again! Now that we have the gold, I think that it is time for me to use my Blink Ring to escape.\"");
+	message("「我們又被襲擊了！既然我們已經拿到了黃金，我想是時候使用我的閃爍戒指逃走了。」");
 	say();
-	message("\"I shall see thee at the inn!\"");
+	message("「我們客棧見！」");
 	say();
 	var0001 = UI_get_object_position(0xFFD4);
 	UI_sprite_effect(0x0007, var0001[0x0001], var0001[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
@@ -59,7 +59,7 @@ labelFunc06C4_012C:
 	UI_set_polymorph(var0006, 0x0202);
 	UI_reduce_health(var0006, 0x0032, 0x0000);
 labelFunc06C4_0170:
-	Func097F(0xFFD4, "@Oh, my!@", 0x0000);
+	Func097F(0xFFD4, "@天哪！@", 0x0000);
 	gflags[0x01EA] = true;
 	var0004 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0001), [(byte)0x23, (byte)0x55, 0x06C4], 0x0007);
 	var0007 = [0xFF23, 0xFF21, 0xFF20, 0xFF1F, 0xFF1E, 0xFF1D];
@@ -73,5 +73,3 @@ labelFunc06C4_01B6:
 labelFunc06C4_01E9:
 	return;
 }
-
-

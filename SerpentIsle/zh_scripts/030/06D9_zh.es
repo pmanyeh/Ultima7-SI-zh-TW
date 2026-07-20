@@ -53,10 +53,10 @@ labelFunc06D9_0052:
 	if (!var0004) goto labelFunc06D9_00AE;
 	UI_clear_item_say(var0004);
 	UI_show_npc_face0(0xFEED, 0x0000);
-	message("\"Aaargh! I cannot keep pace with thee! My chest feels as though it shall soon explode!\"");
+	message("「啊啊！我跟不上你的腳步！我的胸口感覺快要炸開了！」");
 	say();
 	var0005 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x78, 0x0032, 0x0000], 0x0008);
-	Func097F(var0004, "@Mine heart!!!@", 0x0001);
+	Func097F(var0004, "@我的心臟！！！@", 0x0001);
 labelFunc06D9_00AE:
 	abort;
 labelFunc06D9_00AF:
@@ -65,7 +65,7 @@ labelFunc06D9_00AF:
 	UI_sprite_effect(0x001A, var0003[0x0001], var0003[0x0002], 0x0000, 0x0000, 0x000C, 0xFFFD);
 	UI_move_object(0xFF4E, var0003);
 	UI_set_schedule_type(0xFF4E, 0x000A);
-	Func097F(0xFF4E, "@Avatar!@", 0x0001);
+	Func097F(0xFF4E, "@聖者！@", 0x0001);
 	var0005 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0403], 0x0008);
 	var0005 = UI_set_item_quality(item, 0x00FF);
 	0xFF4E->Func07D2();
@@ -82,7 +82,7 @@ labelFunc06D9_0157:
 	UI_move_object(0xFF2D, var0003);
 	UI_set_schedule_type(0xFF2D, 0x000A);
 	0xFF2D->Func07D2();
-	Func097F(0xFF2D, "@Avatar!@", 0x0001);
+	Func097F(0xFF2D, "@聖者！@", 0x0001);
 	var0005 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0363], 0x000A);
 	var0005 = UI_set_item_quality(item, 0x00FF);
 labelFunc06D9_01CD:
@@ -171,9 +171,9 @@ labelFunc06D9_0463:
 	var0005 = Func09AB(var000E, var000F, 0x0000, true, var000D);
 	goto labelFunc06D9_0371;
 labelFunc06D9_0479:
-	Func097F(var0013, "@Die, Avatar!@", 0x0003);
-	Func097F(var0013, "@Nothing can stop me now!@", 0x0014);
-	Func097F(var0013, "@The universe is mine!@", 0x0020);
+	Func097F(var0013, "@去死吧，聖者！@", 0x0003);
+	Func097F(var0013, "@現在沒有人能阻止我了！@", 0x0014);
+	Func097F(var0013, "@宇宙是我的了！@", 0x0020);
 	var0005 = UI_set_item_quality(item, 0x0009);
 	var0005 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x06D9], 0x0028);
 labelFunc06D9_04BD:
@@ -212,5 +212,3 @@ labelFunc06D9_05C9:
 labelFunc06D9_05CE:
 	return;
 }
-
-

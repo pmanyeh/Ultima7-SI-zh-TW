@@ -12,13 +12,13 @@ void Func063A object#(0x63A) ()
 	return;
 	var0000 = UI_die_roll(0x0001, 0x0004);
 	if (!(var0000 == 0x0001)) goto labelFunc063A_001E;
-	var0001 = "@Art thou sure of thine actions, Avatar?@";
+	var0001 = "@你確定你的行動嗎，聖者？@";
 labelFunc063A_001E:
 	if (!(var0000 == 0x0002)) goto labelFunc063A_002E;
-	var0001 = "@Must we do this?@";
+	var0001 = "@我們一定要這樣做嗎？@";
 labelFunc063A_002E:
 	if (!(var0000 == 0x0003)) goto labelFunc063A_003E;
-	var0001 = "@Is that virtuous?@";
+	var0001 = "@這樣做有美德嗎？@";
 labelFunc063A_003E:
 	if (!(var0000 > 0x0003)) goto labelFunc063A_0056;
 	var0001 = (("@" + Func0953()) + "?!@");

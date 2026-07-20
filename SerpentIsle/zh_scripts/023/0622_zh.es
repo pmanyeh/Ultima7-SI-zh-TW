@@ -44,10 +44,10 @@ labelFunc0622_0024:
 labelFunc0622_0038:
 	var0003 = UI_get_npc_name(0xFE9C);
 	if (!(var0001 > 0x0002)) goto labelFunc0622_0055;
-	var0004 = "we";
+	var0004 = "我們";
 	goto labelFunc0622_005B;
 labelFunc0622_0055:
-	var0004 = "I";
+	var0004 = "我";
 labelFunc0622_005B:
 	var0005 = Func098D();
 	enum();
@@ -61,15 +61,15 @@ labelFunc0622_0088:
 	goto labelFunc0622_0024;
 labelFunc0622_008B:
 	UI_show_npc_face0(var0008, 0x0000);
-	message("\"In how many hours shall ");
+	message("「");
 	message(var0004);
-	message(" awaken thee, ");
+	message("幾個小時後要叫醒你，");
 	message(var0003);
-	message("?\"");
+	message("？」");
 	say();
 	var0002 = UI_input_numeric_value(0x0000, 0x000C, 0x0001, 0x0008);
 	if (!(var0002 == 0x0000)) goto labelFunc0622_00F9;
-	message("\"Cease thy jesting, Avatar! We have serious work to do!!\"");
+	message("「不要開玩笑了，聖者！我們可有正事要忙！！」");
 	say();
 	UI_remove_npc_face0();
 	if (!Func0880(item)) goto labelFunc0622_00D5;
@@ -84,7 +84,7 @@ labelFunc0622_00EE:
 	UI_clear_item_flag(0xFE9C, 0x0001);
 	return;
 labelFunc0622_00F9:
-	message("\"Pleasant dreams.\"");
+	message("「好夢。」");
 	say();
 	UI_remove_npc_face0();
 labelFunc0622_0101:
