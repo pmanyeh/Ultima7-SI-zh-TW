@@ -6,7 +6,7 @@ void Func0849 0x849 ()
 	if (!(!(gflags[0x00B1] || (gflags[0x00AF] || gflags[0x00B0])))) goto labelFunc0849_0010;
 	return;
 labelFunc0849_0010:
-	message("\"That is it, goat! Meet me at the List Field! There I shall ram thy words down thy throat!\"");
+	message("「夠了，你這山羊！去比武場( List Field )見我！在那裡我會把你說的話塞回你的喉嚨裡！」");
 	say();
 	if (!gflags[0x0043]) goto labelFunc0849_001B;
 	return;

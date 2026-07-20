@@ -32,7 +32,7 @@ void Func085F 0x85F ()
 	var0001 = Func0953();
 	UI_push_answers();
 	var0002 = true;
-	var0003 = ["nothing", "wine", "mead", "ale"];
+	var0003 = ["再看看", "紅酒", "蜂蜜酒", "麥酒"];
 	var0004 = [0x0000, 0x0268, 0x0268, 0x0268];
 	var0005 = [0xFE99, 0x0000, 0x0005, 0x0003];
 	var0006 = [0x0000, 0x000F, 0x0014, 0x0007];
@@ -40,15 +40,15 @@ void Func085F 0x85F ()
 	var0008 = 0x03B8;
 	var0009 = [0x0000, 0x0001, 0x0001, 0x0001];
 	var000A = [0x0000, 0x0001, 0x0001, 0x0001];
-	message("\"So what hast thou a thirst for, ");
+	message("「所以你想喝點什麼， ");
 	message(var0000);
-	message("?\"");
+	message("？」");
 	say();
 labelFunc085F_00A2:
 	if (!var0002) goto labelFunc085F_0276;
 	var000B = Func0957(var0003);
 	if (!(var000B == 0x0001)) goto labelFunc085F_00C6;
-	message("\"Remember, these wares shall be here when thou dost return!\"");
+	message("「記住，等你回來的時候，這些好酒依然會在這兒的！」");
 	say();
 	var0002 = false;
 	goto labelFunc085F_0273;
@@ -56,27 +56,27 @@ labelFunc085F_00C6:
 	var000C = var0006[var000B];
 	var000D = 0x0000;
 	if (!(var000B == 0x0002)) goto labelFunc085F_00EF;
-	message("\"I must charge the steep fee of ");
+	message("「考慮到與大陸之間的貿易狀況如此糟糕，我不得不收取 ");
 	message(var000C);
-	message(" guilders, considering the terrible state of trade with the mainland. Is this a price that thou canst pay?\"");
+	message(" 吉爾得幣的高昂費用。這個價格你可以支付嗎？」");
 	say();
-	var000E = "wine bottles";
+	var000E = "紅酒";
 labelFunc085F_00EF:
 	if (!(var000B == 0x0003)) goto labelFunc085F_010D;
-	message("\"We have a most delectable brew for thee, sweetly flavored with the honey of bees raised in the mountain highlands.\"");
+	message("「我們為你準備了最美味的釀造酒，帶有高山高原蜜蜂採集的蜂蜜甜味。」");
 	say();
-	message("\"Surely at a price of ");
+	message("「只要 ");
 	message(var000C);
-	message(" guilders, thou wilt accept some?\"");
+	message(" 吉爾得幣，你一定要來一些吧？」");
 	say();
-	var000E = "bottles of mead";
+	var000E = "蜂蜜酒";
 labelFunc085F_010D:
 	if (!(var000B == 0x0004)) goto labelFunc085F_0127;
-	message("\"This ale is weak, imported from the mainland, but I must still charge ");
+	message("「這麥酒味道很淡，是從大陸進口的，但我還是得收 ");
 	message(var000C);
-	message(" guilders for it. Wilt thou pay such a charge?\"");
+	message(" 吉爾得幣。你願意付這筆錢嗎？」");
 	say();
-	var000E = "flasks of ale";
+	var000E = "麥酒";
 labelFunc085F_0127:
 	if (!(var000C == var0007[var000B])) goto labelFunc085F_014C;
 	if (!Func0955()) goto labelFunc085F_0143;
@@ -91,9 +91,9 @@ labelFunc085F_014C:
 labelFunc085F_015E:
 	if (!(var000F > 0x0000)) goto labelFunc085F_01CC;
 	if (!(var000A[var000B] == 0x0001)) goto labelFunc085F_01A7;
-	message("\"How many ");
+	message("「你想來多少 ");
 	message(var000E);
-	message(" wouldst thou like?\"");
+	message(" ？」");
 	say();
 	var000D = Func0943(var0004[var000B], var0005[var000B], var0009[var000B], var0008, var000F, 0x0014, 0x0001, false);
 	goto labelFunc085F_01CC;
@@ -101,26 +101,26 @@ labelFunc085F_01A7:
 	var000D = Func0943(var0004[var000B], var0005[var000B], var0009[var000B], var0008, var000F, 0x0000, 0x0001, false);
 labelFunc085F_01CC:
 	if (!(var000D == 0x0001)) goto labelFunc085F_01E3;
-	message("\"Cheers, ");
+	message("「乾杯， ");
 	message(var0000);
-	message("!\"");
+	message("！」");
 	say();
 	goto labelFunc085F_0269;
 labelFunc085F_01E3:
 	if (!(var000D == 0x0002)) goto labelFunc085F_01F4;
-	message("\"Thou shouldst not travel so heavily burdened -- I do not think that thou canst bear the bottles that thou desirest!\"");
+	message("「你不該旅行時帶那麼重的負擔——我想你根本帶不下你想要的酒瓶！」");
 	say();
 	goto labelFunc085F_0269;
 labelFunc085F_01F4:
 	if (!(var000D == 0x0003)) goto labelFunc085F_0269;
-	var0010 = Func0992(0x0001, (("@But " + var0001) + ", we lack adequate funds!@"), 0x0000, false);
+	var0010 = Func0992(0x0001, (("@可是 " + var0001) + "，我們資金不夠！@"), 0x0000, false);
 	if (!(var0010 != 0xFE9C)) goto labelFunc085F_0231;
 	UI_show_npc_face0(0xFFE2, 0x0000);
-	message("\"Then thou'rt not drinking here!\"");
+	message("「那你就別想在這兒喝酒了！」");
 	say();
 	goto labelFunc085F_0235;
 labelFunc085F_0231:
-	message("\"Thou dost not have the guilders to pay me!\"");
+	message("「你根本沒有足夠的吉爾得幣付給我！」");
 	say();
 labelFunc085F_0235:
 	if (!(0x001F < (UI_get_npc_id(0xFFE2) + 0x0006))) goto labelFunc085F_0254;
@@ -131,7 +131,7 @@ labelFunc085F_0254:
 labelFunc085F_0266:
 	goto labelFunc085F_0269;
 labelFunc085F_0269:
-	message("\"Wouldst thou care for more?\"");
+	message("「你還想再來點別的嗎？」");
 	say();
 	var0002 = Func0955();
 labelFunc085F_0273:

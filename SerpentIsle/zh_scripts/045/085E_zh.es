@@ -32,7 +32,7 @@ void Func085E 0x85E ()
 	var0000 = Func0954();
 	UI_push_answers();
 	var0001 = true;
-	var0002 = ["nothing", "jerky", "fish", "sausage", "roast lamb", "honey cake"];
+	var0002 = ["再看看", "肉乾", "烤魚", "香腸", "烤羊肉", "蜂蜜蛋糕"];
 	var0003 = [0x0000, 0x0179, 0x0179, 0x0179, 0x0179, 0x0179];
 	var0004 = [0xFE99, 0x000F, 0x000D, 0x0007, 0x000E, 0x0006];
 	var0005 = [0x0000, 0x0014, 0x0016, 0x0019, 0x0023, 0x000A];
@@ -41,20 +41,20 @@ void Func085E 0x85E ()
 	var0008 = [0x0000, 0x0002, 0x0001, 0x0001, 0x0001, 0x0001];
 	var0009 = [0x0000, 0x0001, 0x0001, 0x0001, 0x0001, 0x0001];
 	if (!UI_is_pc_female()) goto labelFunc085E_00CC;
-	var000A = "Milady";
+	var000A = "女士";
 	goto labelFunc085E_00D2;
 labelFunc085E_00CC:
-	var000A = "Milord";
+	var000A = "大人";
 labelFunc085E_00D2:
-	message("\"So what hast thou an appetite for, ");
+	message("「所以你想吃點什麼， ");
 	message(var0000);
-	message("?\"");
+	message("？」");
 	say();
 labelFunc085E_00DC:
 	if (!var0001) goto labelFunc085E_038D;
 	var000B = Func0957(var0002);
 	if (!(var000B == 0x0001)) goto labelFunc085E_0100;
-	message("\"Perhaps another time, then.\"");
+	message("「那麼，也許下一次吧。」");
 	say();
 	var0001 = false;
 	goto labelFunc085E_038A;
@@ -63,78 +63,78 @@ labelFunc085E_0100:
 	var000D = 0x0000;
 	var000E = UI_die_roll(0x0001, 0x0005);
 	if (!(var000E == 0x0001)) goto labelFunc085E_012C;
-	var000F = "Dost thou accept?";
+	var000F = "你接受嗎？";
 labelFunc085E_012C:
 	if (!(var000E == 0x0002)) goto labelFunc085E_013C;
-	var000F = "Wilt thou have some?";
+	var000F = "你要來一些嗎？";
 labelFunc085E_013C:
 	if (!(var000E == 0x0003)) goto labelFunc085E_014C;
-	var000F = "Wilt thou pay such a charge?";
+	var000F = "你願意付這筆錢嗎？";
 labelFunc085E_014C:
 	if (!(var000E == 0x0004)) goto labelFunc085E_0160;
-	var000F = (var000A + ", dost thou agree?");
+	var000F = (var000A + "，您同意嗎？");
 labelFunc085E_0160:
 	if (!(var000E == 0x0005)) goto labelFunc085E_0174;
-	var000F = (var000A + ", is this a price that thou canst pay?");
+	var000F = (var000A + "，這個價格您可以支付嗎？");
 labelFunc085E_0174:
 	if (!(var000B == 0x0002)) goto labelFunc085E_0198;
-	message("\"I am afraid that the price is ");
+	message("「恐怕這價格是 ");
 	message(var000C);
-	message(" guilders for two strips of jerky... these being terrible times and all.\"");
+	message(" 吉爾得幣，只換兩條肉乾……畢竟現在世道很艱難。」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "strips of jerky, in bunches of two,";
+	var0010 = "肉乾（兩條一份）";
 labelFunc085E_0198:
 	if (!(var000B == 0x0003)) goto labelFunc085E_01C0;
-	message("\"No one prepares fish better than my Petra!\"");
+	message("「沒人比我的 Petra 更會做烤魚了！」");
 	say();
-	message("\"The dinner costs ");
+	message("「這頓晚餐要 ");
 	message(var000C);
-	message(" guilders, but if I were not such an honest innkeeper I would charge more and make a fortune!\"");
+	message(" 吉爾得幣，如果我不是個誠實的旅店老闆，我一定會加價好大賺一筆！」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "fish dinners";
+	var0010 = "烤魚晚餐";
 labelFunc085E_01C0:
 	if (!(var000B == 0x0004)) goto labelFunc085E_01E4;
-	message("\"Petra's sausage is very good. ");
+	message("「Petra 的香腸非常好吃。 ");
 	message(var000C);
-	message(" guilders is my price.\"");
+	message(" 吉爾得幣是我的開價。」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "sausages";
+	var0010 = "香腸";
 labelFunc085E_01E4:
 	if (!(var000B == 0x0005)) goto labelFunc085E_020E;
-	message("\"Personally, ");
+	message("「就我個人而言， ");
 	message(var0000);
-	message(", this is my favorite meal that Petra prepares! ");
+	message("，這可是 Petra 做我最愛吃的一餐！我要收 ");
 	message(var000C);
-	message(" guilders is what I charge.\"");
+	message(" 吉爾得幣。」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "lamb roasts";
+	var0010 = "烤羊肉";
 labelFunc085E_020E:
 	if (!(var000B == 0x0006)) goto labelFunc085E_0232;
-	message("\"");
+	message("「");
 	message(var000C);
-	message(" guilders will buy thee the sweetest honey cake thou hast ever tasted.\"");
+	message(" 吉爾得幣能買到你這輩子吃過最甜美的蜂蜜蛋糕。」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "honey cakes";
+	var0010 = "蜂蜜蛋糕";
 labelFunc085E_0232:
 	if (!(var000C == var0006[var000B])) goto labelFunc085E_0257;
 	if (!Func0955()) goto labelFunc085E_024E;
@@ -149,9 +149,9 @@ labelFunc085E_0257:
 labelFunc085E_0269:
 	if (!(var0011 > 0x0000)) goto labelFunc085E_02D7;
 	if (!(var0009[var000B] == 0x0001)) goto labelFunc085E_02B2;
-	message("\"How many ");
+	message("「你想來多少 ");
 	message(var0010);
-	message(" wouldst thou like?\"");
+	message(" ？」");
 	say();
 	var000D = Func0943(var0003[var000B], var0004[var000B], var0008[var000B], var0007, var0011, 0x0014, 0x0001, false);
 	goto labelFunc085E_02D7;
@@ -159,30 +159,30 @@ labelFunc085E_02B2:
 	var000D = Func0943(var0003[var000B], var0004[var000B], var0008[var000B], var0007, var0011, 0x0000, 0x0001, false);
 labelFunc085E_02D7:
 	if (!(var000D == 0x0001)) goto labelFunc085E_02EE;
-	message("\"I'm certain that thou wilt enjoy thy meal, ");
+	message("「我相信你會喜歡這頓餐點的， ");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
 	goto labelFunc085E_0380;
 labelFunc085E_02EE:
 	if (!(var000D == 0x0002)) goto labelFunc085E_0305;
-	message("\"I believe thou canst not carry so much food, ");
+	message("「我想你帶不下這麼多食物了， ");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
 	goto labelFunc085E_0380;
 labelFunc085E_0305:
 	if (!(var000D == 0x0003)) goto labelFunc085E_0380;
-	var0012 = Func0992(0x0001, (("@But " + var0000) + ", we have not the guilders to pay for this.@"), 0x0000, false);
+	var0012 = Func0992(0x0001, (("@可是 " + var0000) + "，我們沒有足夠的吉爾得幣付帳。@"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc085E_0348;
 	UI_show_npc_face0(0xFFE2, 0x0000);
-	message("\"Well, I hate to see thee go hungry, but Petra and I can not afford to feed thee for free. I am sorry, ");
+	message("「哎呀，我不想看到你挨餓，但 Petra 和我可沒辦法免費請你吃。真是抱歉， ");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
 	goto labelFunc085E_034C;
 labelFunc085E_0348:
-	message("\"Thou dost not have enough guilders for that!\"");
+	message("「你身上的吉爾得幣不夠！」");
 	say();
 labelFunc085E_034C:
 	if (!(0x001F < (UI_get_npc_id(0xFFE2) + 0x0006))) goto labelFunc085E_036B;
@@ -193,7 +193,7 @@ labelFunc085E_036B:
 labelFunc085E_037D:
 	goto labelFunc085E_0380;
 labelFunc085E_0380:
-	message("\"Wouldst thou care for more?\"");
+	message("「你還想再來點別的嗎？」");
 	say();
 	var0001 = Func0955();
 labelFunc085E_038A:
