@@ -171,9 +171,6 @@ labelFunc084F_03F4:
 labelFunc084F_0401:
 	UI_pop_answers();
 	return;
-labelFunc084F_0401:
-	UI_pop_answers();
-	return;
 }
 
 
