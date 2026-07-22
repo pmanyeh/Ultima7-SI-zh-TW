@@ -594,19 +594,19 @@ Function,String Count,Total Characters,Translated,NPC/Event
 06D7H,3,49,Yes,完成短文本翻譯
 06D8H,1,11,Yes,無需翻譯
 06D9H,9,108,Yes,某些威脅聖者的詞語
-06DAH,11,274,No,
+06DAH,11,274,Yes,同伴NPC對旅途的反應：含盜版彩蛋、骨頭/迷路/巴特林開啟光明之牆的台詞
 06DBH,4,74,Yes,完成短文本翻譯
-06DCH,10,179,No,
+06DCH,10,179,Yes,秩序神殿放置神器基座的謎題反饋口白與石碑提示
 06DDH,1,11,Yes,無需翻譯
 06DEH,1,11,Yes,無需翻譯
 06DFH,1,11,Yes,無需翻譯
-06E0H,18,60,No,
-06E1H,9,15,No,
+06E0H,18,60,Yes,在神諭密室與大船長 Voldin 對質與戰鬥的對話與口白
+06E1H,9,15,Yes,白龍之王幽靈現身與玩家對質/指責Shamino害死Beatrix的對話與口白
 06E2H,1,11,Yes,無需翻譯
 06E3H,5,27,Yes,完成短文本翻譯
 06E4H,4,15,Yes,無需翻譯
 06E5H,3,12,Yes,無需翻譯
-06E6H,17,444,No,
+06E6H,17,444,Yes,果雷沼澤夢境中幻影同伴對玩家的對話與口白
 06E7H,3,12,Yes,無需翻譯
 06E8H,1,11,Yes,無需翻譯
 06E9H,1,11,Yes,無需翻譯
@@ -622,16 +622,16 @@ Function,String Count,Total Characters,Translated,NPC/Event
 06F4H,3,60,Yes,完成短文本翻譯
 06F5H,2,20,Yes,完成短文本翻譯
 06F6H,3,41,Yes,無需翻譯 (魔法咒語)
-06F7H,18,39,No,
+06F7H,18,39,Yes,同伴 Shamino 認出白龍城堡為故鄉並緬懷 Beatrix 的對話與口白
 06FAH,3,55,Yes,完成短文本翻譯
 06FBH,4,62,Yes,完成短文本翻譯
-06FCH,15,65,No,
+06FCH,15,65,Yes,Beatrix幽靈現身指責Shamino背叛的對話與口白
 06FDH,1,11,Yes,無需翻譯
 06FEH,1,11,Yes,無需翻譯
-06FFH,7,96,No,
+06FFH,7,96,Yes,遭遇怪物或事件前的警惕與驚慌隨機口白陣列
 0700H,2,32,Yes,完成短文本翻譯
 0701H,1,11,Yes,無需翻譯
-0702H,14,211,No,
+0702H,14,211,Yes,Rotoluncia在折磨囚犯時與其手下的命令及回應口白
 0703H,1,11,Yes,無需翻譯
 0705H,1,11,Yes,無需翻譯
 0706H,1,11,Yes,無需翻譯
@@ -648,9 +648,9 @@ Function,String Count,Total Characters,Translated,NPC/Event
 0715H,1,11,Yes,無需翻譯
 0716H,1,11,Yes,無需翻譯
 0717H,1,11,Yes,無需翻譯
-0718H,12,91,No,
-0719H,13,178,No,
-071AH,6,31,No,
+0718H,12,91,Yes,Sethys離開神殿後因歲月重壓而死並留下混沌之石的對話與口白
+0719H,13,178,Yes,同伴遭遇幻覺/驚恐時的隨機口白字串陣列（如見到 Hook 或守護者）
+071AH,6,31,Yes,無需翻譯
 071BH,1,11,Yes,無需翻譯
 071CH,1,11,Yes,無需翻譯
 071DH,2,31,Yes,完成短文本翻譯
@@ -679,16 +679,16 @@ Function,String Count,Total Characters,Translated,NPC/Event
 0734H,1,11,Yes,無需翻譯
 0737H,1,11,Yes,無需翻譯
 0738H,2,36,Yes,完成短文本翻譯
-0739H,7,117,No,
+0739H,7,117,Yes,蒙利多騎士考驗：玩家與考驗負責人對答及進入考驗時的口白
 073AH,2,35,Yes,完成短文本翻譯
-073BH,32,134,No,
+073BH,32,134,Yes,巴特林強行開啟光明之牆失敗被殺及三大災禍釋放的對話與口白
 073CH,1,11,Yes,無需翻譯
 073DH,1,11,Yes,無需翻譯
 0742H,3,62,Yes,完成短文本翻譯
 0743H,1,11,Yes,無需翻譯
 0744H,1,11,Yes,無需翻譯
 0745H,1,11,Yes,無需翻譯
-0759H,14,161,No,
+0759H,14,161,Yes,開場傳送風暴同伴被捲走及物品交換時的驚慌與甦醒口白
 075AH,5,48,Yes,Xenka (@你到了！@)
 075BH,1,11,Yes,無需翻譯
 075DH,4,63,Yes,完成短文本翻譯
@@ -700,9 +700,9 @@ Function,String Count,Total Characters,Translated,NPC/Event
 0763H,1,11,Yes,無需翻譯
 0764H,1,11,Yes,無需翻譯
 0765H,1,11,Yes,無需翻譯
-0766H,9,193,No,
+0766H,9,193,Yes,玩家進入特定區域時同伴拒絕進入的隨機口白與物品轉移處理
 0767H,1,11,Yes,無需翻譯
-0768H,35,413,No,
+0768H,35,413,Yes,銀色種子三個女巫遇到玩家時的對話與開戰口白
 0769H,1,11,Yes,無需翻譯
 076AH,1,11,Yes,無需翻譯
 076BH,2,22,Yes,完成短文本翻譯
@@ -744,7 +744,7 @@ Function,String Count,Total Characters,Translated,NPC/Event
 07D2H,1,11,Yes,無需翻譯
 07D3H,4,45,Yes,完成短文本翻譯
 07D4H,1,11,Yes,無需翻譯
-07D5H,9,105,No,
+07D5H,9,105,Yes,銀色種子資料片抵達地底要塞時的驚呼對話
 07D6H,1,11,Yes,無需翻譯
 07D7H,1,11,Yes,無需翻譯
 07D8H,1,11,Yes,無需翻譯
@@ -756,12 +756,12 @@ Function,String Count,Total Characters,Translated,NPC/Event
 07DEH,1,11,Yes,無需翻譯
 07DFH,1,11,Yes,無需翻譯
 07E0H,1,11,Yes,無需翻譯
-07E1H,7,98,No,
+07E1H,7,98,Yes,對Draygan使用睡眠藥水時的他與周圍NPC的對話口白
 07E2H,5,90,Yes,完成短文本翻譯
 07E3H,1,11,Yes,無需翻譯
 07E4H,3,12,Yes,無需翻譯
 07E5H,5,37,Yes,完成短文本翻譯
-07E6H,13,98,No,
+07E6H,13,98,Yes,搭乘Arabella船隻抵達月影城時Hawk船長的對話口白
 07E7H,2,23,Yes,無需翻譯
 07E8H,1,11,Yes,無需翻譯
 07E9H,1,11,Yes,無需翻譯
@@ -773,106 +773,106 @@ Function,String Count,Total Characters,Translated,NPC/Event
 07EFH,3,28,Yes,@喔，不！@
 07F0H,5,53,Yes,@喔……@
 07F1H,3,103,Yes,@藍色閃電？Gustacio ...
-07F2H,10,147,No,
-07F3H,10,154,No,
-07F4H,10,172,No,
+07F2H,10,147,Yes,紅色的傳送風暴閃電口白與反應
+07F3H,10,154,Yes,黃色的傳送風暴閃電口白與反應
+07F4H,10,172,Yes,綠色的傳送風暴閃電口白與反應
 07F5H,1,11,Yes,無需翻譯
 07F6H,4,82,Yes,完成短文本翻譯
 07F7H,1,11,Yes,無需翻譯
 07F8H,12,264,Yes,@帶被告進來。@
 07F9H,5,73,Yes,@弟兄們，上啊！@
 07FAH,19,20,Yes,「多麼悅耳的音樂！有一種奇妙的...
-07FBH,260,1067,No,
-07FCH,443,3647,No,PYelinda (「我準備好回答你的問題了，)
+07FBH,260,1067,Yes,法庭審判中傳喚證人的台詞對話
+07FCH,443,3647,Yes,PYelinda (「我準備好回答你的問題了，)
 07FCH,50,500,Yes,PYelinda (「我準備好回答你的問題了，)
-07FDH,1,11,Yes,
-07FDH,0,0,Yes,
-07FFH,28,177,No,「在第 
+07FDH,1,11,Yes,無需翻譯
+07FDH,0,0,Yes,無需翻譯
+07FFH,28,177,Yes,「在第 
 07FFH,13,200,Yes,「在第 
-0800H,1,11,Yes,
-0800H,0,0,Yes,
-0801H,6,185,No,
+0800H,1,11,Yes,無需翻譯
+0800H,0,0,Yes,無需翻譯
+0801H,6,185,Yes,周圍有敵人時隊友提醒要小聲的口白
 0802H,1,11,Yes,無需翻譯
-0803H,141,1617,No,
-0804H,101,970,No,
-0805H,45,440,No,
-0806H,37,331,No,
-0807H,103,895,No,
-0808H,77,652,No,
-0809H,34,172,No,
-080AH,14,48,No,
-080BH,342,3252,No,
+0803H,141,1617,Yes,幼鹿城的商店交易對話處理
+0804H,101,970,Yes,幼鹿城商店討價還價(Haggle)系統對話
+0805H,45,440,Yes,月影城酒館(藍野豬旅店)購買食物的對話
+0806H,37,331,Yes,月影城酒館(藍野豬旅店)購買飲料的對話
+0807H,103,895,Yes,沉睡公牛旅店的討價還價(Haggle)系統對話
+0808H,77,652,Yes,月影城中各種魔導人偶的通用對話
+0809H,34,172,Yes,魔導人偶加入、離開隊伍及歸還物品的對話
+080AH,14,48,Yes,Petra歸還聖者物品時的庫存滿載處理對話
+080BH,342,3252,Yes,各地銀行與兌換商的通用貨幣兌換系統對話
 080CH,127,1368,Yes,(Generic Shop Dialog) (再看看)
-080DH,91,771,No,
-080EH,9,15,No,
-080FH,26,100,No,
-0810H,26,104,No,
-0811H,106,1156,No,
-0812H,102,1001,No,
+080DH,91,771,Yes,Generic Haggling Dialog for Guilders
+080EH,9,15,Yes,Bane of Chaos and Mage scene
+080FH,26,100,Yes,Mountains of Freedom food shop (bread and water)
+0810H,26,104,Yes,Mountains of Freedom health shop (potion and bandage)
+0811H,106,1156,Yes,Fur and pelt shop (Monitor)
+0812H,102,1001,Yes,Fur and pelt shop haggling
 0813H,1,11,Yes,無需翻譯
 0814H,2,30,Yes,完成短文本翻譯
 0815H,2,36,Yes,完成短文本翻譯
-0816H,65,553,No,
-0817H,90,547,No,
-0818H,193,2194,No,
-0819H,97,956,No,
-081AH,44,201,No,
-081BH,98,3212,No,
-081CH,90,740,No,
-081DH,322,2644,No,
-081EH,60,604,No,
-081FH,50,461,No,
-0820H,89,709,No,
-0821H,23,22,No,
-0822H,13,17,No,
-0823H,11,16,No,
-0824H,13,17,No,
+0816H,65,553,Yes,Spell shop dialog
+0817H,90,547,Yes,Spell shop haggling
+0818H,193,2194,Yes,Fawn general shop Delin
+0819H,97,956,Yes,Fawn general shop haggling
+081AH,44,201,Yes,Fawn healer Delphynia
+081BH,107,1130,Yes,Fawn reagent shop Delphynia
+081CH,90,740,Yes,幼鹿城試劑店(Delphynia)討價還價(Haggle)對話
+081DH,322,2644,Yes,通用貨幣兌換系統對話(無姓名版)
+081EH,60,604,Yes,食物商店(火腿/羊肉/鱒魚/起司/糕點)購買對話
+081FH,50,461,Yes,飲料酒水商店(葡萄酒/蜂蜜酒/麥芽酒)購買對話
+0820H,89,709,Yes,沉睡公牛旅店(Devra)討價還價(Haggle)對話
+0821H,23,22,Yes,謎題一：三位神秘使者與撒謊者人數
+0822H,13,17,Yes,謎題二：貴婦首飾盒耳環配對
+0823H,11,16,Yes,謎題三：巨龍Longtooth考倒的生物數量
+0824H,13,17,Yes,謎題四：裁縫Sedrick學徒拿取布料數
 0825H,1,11,Yes,無需翻譯
 0826H,3,12,Yes,無需翻譯
-0827H,123,4127,No,
-0828H,101,970,No,
-0829H,14,48,No,
-082AH,40,222,No,
-082BH,84,3056,No,
-082CH,26,168,No,
-082DH,70,560,No,
-082EH,82,553,No,
+0827H,123,4127,Yes,Moonshade魔導人偶雜貨店(Bucantus)購買對話
+0828H,101,970,Yes,Moonshade大師(Ducio)雜貨討價還價(Haggle)對話
+0829H,14,48,Yes,隊友重新加入歸還物品對話
+082AH,40,222,Yes,法師販售高階法術(五至九環)對話
+082BH,84,3056,Yes,法師購買法術討價還價(Haggle)對話1
+082CH,26,168,Yes,魔法訓練對話(150金幣)
+082DH,70,560,Yes,法師販售全階法術(一至九環/雙貨幣)對話
+082EH,82,553,Yes,法師購買法術討價還價(Haggle)對話2
 082FH,1,11,Yes,無需翻譯
-0830H,18,374,No,
+0830H,18,374,Yes,法師領主(Filbercio)被魔導人偶打斷對話
 0831H,1,11,Yes,無需翻譯
 0832H,1,11,Yes,無需翻譯
 0833H,1,11,Yes,無需翻譯
-0834H,50,315,No,
-0835H,14,48,No,
-0836H,33,124,No,
-0837H,85,1371,No,
-0838H,93,4093,No,
+0834H,50,315,Yes,法師免費傳授法術對話(獎勵)
+0835H,14,48,Yes,NPC交付儲存物品對話
+0836H,33,124,Yes,幼鹿城(Fawn)治療師Delphynia醫療服務對話
+0837H,85,1371,Yes,幼鹿城(Fawn)Delphynia農產品與草藥商店對話
+0838H,93,4093,Yes,Delphynia農產品商店討價還價(Haggle)對話
 0839H,1,11,Yes,無需翻譯
 083AH,3,12,Yes,無需翻譯
-083BH,12,107,No,
-083CH,14,48,No,
-083DH,72,791,No,
-083EH,25,142,No,
-083FH,90,1590,No,
-0840H,48,390,No,
-0841H,90,801,No,
-0842H,146,4897,No,
-0843H,165,2034,No,
-0844H,104,1063,No,
-0845H,91,982,No,
-0846H,46,360,No,
-0847H,194,1715,No,
-0848H,8,63,No,
+083BH,12,107,Yes,尋人獵犬吠叫與方向指引對話
+083CH,14,48,Yes,隊友離開歸還物品對話
+083DH,72,791,Yes,幼鹿城(Fawn)食物商店購買對話
+083EH,25,142,Yes,幼鹿城(Fawn)酒水商店購買對話
+083FH,90,1590,Yes,幼鹿城(Fawn)商店討價還價(Haggle)對話
+0840H,48,390,Yes,月影城(Moonshade)葡萄酒商店購買對話
+0841H,90,801,Yes,月影城(Moonshade)葡萄酒商店討價還價(Haggle)對話
+0842H,146,4897,Yes,蒙利多城(Monitor)雜貨與皮具商店購買對話
+0843H,165,2034,Yes,蒙利多城(Monitor)皮具商店收購賣出對話
+0844H,104,1063,Yes,蒙利多城(Monitor)雜貨與皮具商店討價還價(Haggle)對話
+0845H,91,982,Yes,蒙利多城(Monitor)砍殺之刃酒館食物商店對話
+0846H,46,360,Yes,蒙利多城(Monitor)砍殺之刃酒館酒水商店對話
+0847H,194,1715,Yes,蒙利多城(Monitor)砍殺之刃酒館Lucilla討價還價對話（全文完整翻譯）
+0848H,8,63,Yes,隊友Dupre歸還盾牌對話
 0849H,3,12,Yes,約架前往比武場對話腳本
 084AH,9,15,Yes,蒙利多城領主詢問騎士考驗許可，告知密碼「勇氣是生命之魂」
-084BH,66,542,No,
-084CH,90,547,No,
+084BH,66,542,Yes,月影城(Moonshade)法師購買法術對話
+084CH,90,547,Yes,月影城(Moonshade)法師買法術討價還價(Haggle)對話
 084DH,1,11,Yes,無需翻譯
 084EH,1,11,Yes,無需翻譯
-084FH,63,481,No,
-0850H,82,553,No,
-0851H,14,59,No,
-0852H,75,834,No,
+084FH,63,481,Yes,月影城(Moonshade)法師購買法術對話(全九環)
+0850H,79,936,Yes,月影城(Moonshade)法師買法術討價還價(Haggle)對話
+0851H,18,171,Yes,月影城(Moonshade)藍野豬酒館住宿房間租賃對話
+0852H,95,781,Yes,月影城(Moonshade)藍野豬酒館Rocco食物商店對話
 0853H,40,298,Yes,購買飲料（紅酒、蜂蜜酒、麥酒）交易對話腳本
 0854H,91,654,Yes,購買飲料討價還價(殺價)對話與台詞腳本
 0855H,3,44,Yes,完成短文本翻譯
@@ -1151,7 +1151,7 @@ Function,String Count,Total Characters,Translated,NPC/Event
 0966H,11,16,Yes,友誼會三位一體（Triad of Inner Strength）理念詳解與加入邀請
 0967H,7,33,Yes,商販物品售價說明字串組合工具函式
 0968H,5,30,Yes,完成短文本翻譯
-0969H,8,45,No,
+0969H,8,45,Yes,治療傷口與健康檢查輔助函式對話
 096AH,5,13,Yes,無需翻譯
 096BH,5,13,Yes,無需翻譯
 096CH,3,12,Yes,無需翻譯

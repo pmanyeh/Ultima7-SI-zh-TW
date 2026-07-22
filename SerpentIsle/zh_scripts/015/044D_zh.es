@@ -402,7 +402,7 @@ labelFunc044D_07BD:
 labelFunc044D_07C1:
 	case "罰款" attend labelFunc044D_082A:
 	UI_remove_answer("罰款");
-	message("「你願意支付 30 Monetari 的罰款嗎？」");
+	message("「你願意支付 30 蒙里他利幣的罰款嗎？」");
 	say();
 	var000B = Func0955();
 	if (!var000B) goto labelFunc044D_0826;

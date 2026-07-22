@@ -26,14 +26,14 @@ labelFunc07E1_001B:
 	UI_set_schedule_type(0xFF64, 0x000F);
 	var0002 = UI_get_npc_prop(0xFF64, 0x0003);
 	Func0982(0xFF64, (var0002 - 0x0001));
-	Func097F(0xFF64, "@zzzzzz....@", 0x0002);
+	Func097F(0xFF64, "@zzzzzz……@", 0x0002);
 	if (!UI_npc_nearby(0xFF63)) goto labelFunc07E1_00A4;
 	Func09AD(0xFF63);
-	Func097F(0xFF63, "@I obey, Master!@", 0x0002);
+	Func097F(0xFF63, "@遵命，主人！@", 0x0002);
 labelFunc07E1_00A4:
 	if (!UI_npc_nearby(0xFF62)) goto labelFunc07E1_00C0;
 	Func09AD(0xFF62);
-	Func097F(0xFF62, "@Hold on, Master!@", 0x0007);
+	Func097F(0xFF62, "@撐著點，主人！@", 0x0007);
 labelFunc07E1_00C0:
 	if (!UI_get_item_flag(0xFF65, 0x0004)) goto labelFunc07E1_00CE;
 	abort;
@@ -48,7 +48,7 @@ labelFunc07E1_0105:
 	UI_set_oppressor(0xFF65, 0xFF64);
 	UI_set_alignment(0xFF65, 0x0001);
 	UI_clear_item_say(0xFF65);
-	Func094F(0xFF65, ["Die, Draygan!", "I shall kill thee!", "Whoreson!"]);
+	Func094F(0xFF65, ["去死吧，Draygan！", "我要殺了你！", "狗娘養的！"]);
 	goto labelFunc07E1_0167;
 labelFunc07E1_0153:
 	UI_set_item_flag(var0000, 0x0001);
@@ -56,5 +56,3 @@ labelFunc07E1_0153:
 labelFunc07E1_0167:
 	return;
 }
-
-

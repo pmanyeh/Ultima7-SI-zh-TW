@@ -46,9 +46,9 @@ labelFunc06E1_00AC:
 	if (!(0xFFFE in var0005)) goto labelFunc06E1_00F5;
 	if (!var0003) goto labelFunc06E1_00F2;
 	UI_show_npc_face0(0xFEEB, 0x0002);
-	message("\"Traitor! Foul murderer! Thou didst kill my Beatrix, faithless liar!\"");
+	message("「叛徒！卑鄙的凶手！你殺了我的 Beatrix ，你這背信忘義的騙子！」");
 	say();
-	message("\"Thou shalt see the power of the King of the White Dragon!\"");
+	message("「你將見識到白龍王的力量！」");
 	say();
 	UI_remove_npc_face0();
 labelFunc06E1_00F2:
@@ -56,9 +56,9 @@ labelFunc06E1_00F2:
 labelFunc06E1_00F5:
 	if (!var0003) goto labelFunc06E1_0111;
 	UI_show_npc_face0(0xFEEB, 0x0002);
-	message("\"I am the King of the White Dragon!\"");
+	message("「我是白龍王！」");
 	say();
-	message("\"I shall protect thee... I shall take thee beyond all mortal concerns -- into my kingdom of death!\"");
+	message("「我會保護你……我會帶你超越所有凡世的紛擾——進入我的死亡王國！」");
 	say();
 	UI_remove_npc_face0();
 labelFunc06E1_0111:
@@ -99,5 +99,3 @@ labelFunc06E1_021D:
 labelFunc06E1_0234:
 	return;
 }
-
-

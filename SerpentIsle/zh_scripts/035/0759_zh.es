@@ -62,7 +62,7 @@ labelFunc0759_013F:
 	Func09AC(var0002, 0x0000, 0x0000, 0x000F);
 labelFunc0759_0155:
 	if (!var0001) goto labelFunc0759_0195;
-	var0005 = ["@He is gone!@", "@What hath happened?@", "@Is he dead?@", "@'Tis the storm!@", "@Help!@", "@Run!@"];
+	var0005 = ["@他消失了！@", "@發生了什麼事？@", "@他死了嗎？@", "@是風暴！@", "@救命！@", "@快跑！@"];
 	Func097F(var0001[UI_get_random(UI_get_array_size(var0001))], var0005[UI_get_random(UI_get_array_size(var0005))], 0x0002);
 labelFunc0759_0195:
 	var0006 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x0759], (0x0007 + UI_get_random(0x000A)));
@@ -98,7 +98,7 @@ labelFunc0759_0264:
 	var0008 = UI_get_object_position(0xFE9C);
 	var0009 = [(var0008[0x0001] + 0x00B0), var0008[0x0002], var0008[0x0003]];
 	UI_move_object(0xFE9C, var0009);
-	var000A = ("@Yow!@" & ("" & ("@What happened?@" & ("@Where are my friends!@" & ("@Iolo?@" & ("@Shamino???@" & "@Dupre?!@"))))));
+	var000A = ("@哎喲！@" & ("" & ("@發生了什麼事？@" & ("@我的朋友們在哪裡！@" & ("@Iolo？@" & ("@Shamino？？？@" & "@Dupre？！@"))))));
 	Func094F(0xFE9C, var000A);
 	UI_sprite_effect(0x000D, var0009[0x0001], var0009[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	gflags[0x0006] = true;
@@ -112,6 +112,7 @@ labelFunc0759_036E:
 	var000F = Func092C(0x0002);
 	var0010 = Func092C(0x0003);
 	var0011 = UI_get_array_size(var000B);
+	goto labelFunc0759_0447;//20260721 Pman 另外加的，要再確認
 labelFunc0759_0447:
 	if (!(var0011 > 0x0000)) goto labelFunc0759_0577;
 	enum();
@@ -128,7 +129,7 @@ labelFunc0759_049C:
 	var0006 = UI_add_cont_items(var0014, var0016, var000E[var0011], var000F[var0011], var0010[var0011], 0x0000);
 	if (!(var0006 == 0x0000)) goto labelFunc0759_0512;
 	goto labelFunc0759_056A;
-	goto labelFunc0759_0519;
+	//goto labelFunc0759_0519;
 labelFunc0759_0512:
 	var0015 = false;
 	goto labelFunc0759_0523;
@@ -146,5 +147,3 @@ labelFunc0759_056A:
 labelFunc0759_0577:
 	return;
 }
-
-

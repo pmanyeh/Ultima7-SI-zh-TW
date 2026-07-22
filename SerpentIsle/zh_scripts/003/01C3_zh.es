@@ -183,7 +183,7 @@ labelFunc01C3_04DB:
 	say();
 	message("「哥布林早就在等著我們了，大人！這絕非巧合！」");
 	say();
-	message("「 Lord Marsten ，我們中間有一個叛徒。」");
+	message("「Marsten 領主大人，我們中間有一個叛徒。」");
 	say();
 	UI_end_conversation();
 	Func097F(0xFF6A, "@Templar 說得對！@", 0x0008);
@@ -318,14 +318,14 @@ labelFunc01C3_089F:
 	UI_set_npc_id(0xFFBB, 0x0006);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFBB, 0x0000);
-	message("「而我，既是蒙利多城( Monitor )的城主，也是豹指揮部的首領，到此恭候。」");
+	message("「而我，既是蒙利多城( Monitor )的城主，也是獵豹指揮部的首領，到此恭候。」");
 	say();
 	if (!(UI_get_schedule_type(0xFFBA) == 0x000F)) goto labelFunc01C3_08E1;
 	UI_set_schedule_type(0xFFBA, 0x0017);
 labelFunc01C3_08E1:
 	UI_end_conversation();
 	Func097F(0xFFB3, "@萬歲！@", 0x0000);
-	Func097F(0xFFB6, "@豹指揮部！@", 0x0002);
+	Func097F(0xFFB6, "@獵豹指揮部！@", 0x0002);
 	var0003 = UI_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x66, (byte)0x27, 0x0006, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x01C3]);
 	abort;
 labelFunc01C3_0920:
@@ -333,9 +333,9 @@ labelFunc01C3_0920:
 	UI_set_npc_id(0xFFBB, 0x0005);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFF6A, 0x0000);
-	message("「身為狼指揮部的首領——」");
+	message("「身為野狼指揮部的首領——」");
 	say();
-	message("「我們與熊指揮部不同，更倚重智謀而非蠻力——」");
+	message("「我們與巨熊指揮部不同，更倚重智謀而非蠻力——」");
 	say();
 	message("「我也歡迎你加入騎士的行列。」");
 	say();
@@ -349,7 +349,7 @@ labelFunc01C3_095D:
 	var0003 = UI_execute_usecode_array(0xFF6A, [(byte)0x23, (byte)0x27, 0x0004, (byte)0x6C, (byte)0x6B, (byte)0x27, 0x0006, (byte)0x55, 0x01C3]);
 	var0003 = UI_delayed_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x59, 0x0004], 0x0003);
 	Func097F(0xFFBF, "@歡迎，勇士。@", 0x0000);
-	Func097F(0xFFBC, "@狼指揮部！@", 0x0001);
+	Func097F(0xFFBC, "@野狼指揮部！@", 0x0001);
 	if (!(!UI_is_pc_female())) goto labelFunc01C3_09DD;
 	UI_set_schedule_type(0xFFBA, 0x000F);
 	0xFFBA->Func07D2();
@@ -365,15 +365,15 @@ labelFunc01C3_09F4:
 	UI_set_npc_id(0xFFBB, 0x0004);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFC1, 0x0000);
-	message("「謹代表熊指揮部——順帶一提，我們是這片土地上最強悍的戰士——歡迎你出席你的騎士授封晚宴。」");
+	message("「謹代表巨熊指揮部——順帶一提，我們是這片土地上最強悍的戰士——歡迎你出席你的騎士授封晚宴。」");
 	say();
 	UI_end_conversation();
 	Func097F(0xFFB0, "@歡迎！@", 0x0002);
-	Func097F(0xFFB1, "@是的！熊指揮部！@", 0x0001);
+	Func097F(0xFFB1, "@是的！巨熊指揮部！@", 0x0001);
 	Func097F(0xFFB9, "@說得對！說得好！@", 0x0000);
 	var0003 = UI_execute_usecode_array(0xFFC1, [(byte)0x23, (byte)0x6C, (byte)0x6B]);
 	var0003 = UI_delayed_execute_usecode_array(0xFF6A, [(byte)0x23, (byte)0x6C, (byte)0x61], 0x000A);
-	var0003 = UI_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x27, 0x0006, (byte)0x59, 0x0006, (byte)0x52, "@狼指揮部……@", (byte)0x27, 0x000A, (byte)0x55, 0x01C3]);
+	var0003 = UI_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x27, 0x0006, (byte)0x59, 0x0006, (byte)0x52, "@野狼指揮部……@", (byte)0x27, 0x000A, (byte)0x55, 0x01C3]);
 	abort;
 labelFunc01C3_0A9D:
 	if (!(UI_get_npc_id(0xFFBB) == 0x0002)) goto labelFunc01C3_0B0D;
@@ -387,7 +387,7 @@ labelFunc01C3_0A9D:
 	message("「為了向你致敬，蒙利多城( Monitor )所有指揮部都派遣了代表出席你的騎士授封晚宴。」");
 	say();
 	UI_end_conversation();
-	var0003 = UI_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x59, 0x0002, (byte)0x52, "@熊指揮部……@"]);
+	var0003 = UI_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x59, 0x0002, (byte)0x52, "@巨熊指揮部……@"]);
 	var0003 = UI_delayed_execute_usecode_array(0xFFC1, [(byte)0x23, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0004, (byte)0x55, 0x01C3], 0x0004);
 	abort;
 labelFunc01C3_0B0D:
@@ -646,7 +646,7 @@ labelFunc01C3_134C:
 	say();
 	UI_end_conversation();
 	var0003 = UI_execute_usecode_array(0xFFBD, [(byte)0x23, (byte)0x52, "@我的女兒！@", (byte)0x6C, (byte)0x6D, (byte)0x27, 0x0007, (byte)0x52, "@唔！@", (byte)0x27, 0x0007, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x52, "@我們必須找到她！@", (byte)0x6C, (byte)0x6D, (byte)0x6E]);
-	var0003 = UI_delayed_execute_usecode_array(0xFFB1, [(byte)0x23, (byte)0x52, "@Lord Marsten ……@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0004, (byte)0x55, 0x01C3], 0x0014);
+	var0003 = UI_delayed_execute_usecode_array(0xFFB1, [(byte)0x23, (byte)0x52, "@Marsten 領主大人……@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0004, (byte)0x55, 0x01C3], 0x0014);
 	Func097F(0xFFC1, "@殺掉哥布林！@", 0x0005);
 	Func097F(0xFFBF, "@可憐的孩子！@", 0x0002);
 	UI_si_path_run_usecode(0xFFBF, [0x0422, 0x0A73, 0x0000], 0x000D, UI_get_npc_object(0xFFBF), 0x01C3, false);

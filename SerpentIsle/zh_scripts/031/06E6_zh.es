@@ -127,44 +127,44 @@ labelFunc06E6_0489:
 	var0002 = UI_get_item_quality(var0004);
 labelFunc06E6_04BB:
 	if (!(var0002 == 0x0000)) goto labelFunc06E6_04CB;
-	var0008 = "Dost thou like to read, Avatar? I have some hot new titles for thee.";
+	var0008 = "「你喜歡閱讀嗎，聖者？我這裡有一些非常熱門的新書要給你。」";
 labelFunc06E6_04CB:
 	if (!(var0002 == 0x0001)) goto labelFunc06E6_04DB;
-	var0008 = "Come in and relax, Avatar.";
+	var0008 = "「進來放鬆一下吧，聖者。」";
 labelFunc06E6_04DB:
 	if (!(var0002 == 0x0002)) goto labelFunc06E6_04EB;
-	var0008 = "Come and meet the sweet ladies, Avatar.";
+	var0008 = "「來見見這些甜美的女士吧，聖者。」";
 labelFunc06E6_04EB:
 	if (!(var0002 == 0x0003)) goto labelFunc06E6_04FB;
-	var0008 = "Wilt thou watch the children for me, Avatar?";
+	var0008 = "「你能幫我照看孩子們嗎，聖者？」";
 labelFunc06E6_04FB:
 	if (!(var0002 == 0x0004)) goto labelFunc06E6_050B;
-	var0008 = "Come and dance a jig with these fine fellows, Avatar.";
+	var0008 = "「來和這些好小伙子們跳支吉格舞吧，聖者。」";
 labelFunc06E6_050B:
 	if (!(var0002 == 0x0005)) goto labelFunc06E6_058A;
 	var0009 = UI_part_of_day();
 	if (!((var0009 == 0x0000) || (var0009 == 0x0001))) goto labelFunc06E6_0534;
-	var000A = "a late night morsel";
+	var000A = "宵夜";
 labelFunc06E6_0534:
 	if (!((var0009 == 0x0002) || (var0009 == 0x0003))) goto labelFunc06E6_054C;
-	var000A = "breakfast";
+	var000A = "早餐";
 labelFunc06E6_054C:
 	if (!((var0009 == 0x0004) || (var0009 == 0x0005))) goto labelFunc06E6_0564;
-	var000A = "lunch";
+	var000A = "午餐";
 labelFunc06E6_0564:
 	if (!((var0009 == 0x0006) || (var0009 == 0x0007))) goto labelFunc06E6_057C;
-	var000A = "dinner";
+	var000A = "晚餐";
 labelFunc06E6_057C:
-	var0008 = (("Thou'rt just in time for " + var000A) + ", Avatar.");
+	var0008 = (("「你來得正是時候，剛好能享用" + var000A) + "，聖者。」");
 labelFunc06E6_058A:
 	if (!(var0002 == 0x0006)) goto labelFunc06E6_059A;
-	var0008 = "Come in, come in, Avatar. I have cooked something special for thee.";
+	var0008 = "「進來，快進來，聖者。我為你煮了些特別的東西。」";
 labelFunc06E6_059A:
 	if (!(var0002 == 0x0007)) goto labelFunc06E6_05AA;
-	var0008 = "So, thou hast found my playroom...";
+	var0008 = "「看來，你找到我的遊戲室了……」";
 labelFunc06E6_05AA:
 	if (!(var0002 == 0x0008)) goto labelFunc06E6_05D0;
-	var0008 = "Thou'rt almost there, Avatar.";
+	var0008 = "「你就快要到了，聖者。」";
 	var0004 = Func09A0(0x0000, 0x0001);
 	UI_play_music(0x0033, var0004);
 labelFunc06E6_05D0:
@@ -194,5 +194,3 @@ labelFunc06E6_0663:
 labelFunc06E6_066C:
 	return;
 }
-
-

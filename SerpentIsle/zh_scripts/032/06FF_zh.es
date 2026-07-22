@@ -21,7 +21,7 @@ labelFunc06FF_0008:
 	if (!(!(gflags[0x0209] && (gflags[0x020A] && (gflags[0x020B] && gflags[0x020C]))))) goto labelFunc06FF_002E;
 	abort;
 labelFunc06FF_002E:
-	var0001 = ("@Uh oh...@" & ("@Something is coming!@" & ("@I hear something...@" & ("@What was that?@" & ("@Oh, no!@" & "@Hark!@")))));
+	var0001 = ("@糟糕……@" & ("@有什麼東西來了！@" & ("@我聽到有聲音……@" & ("@那是什麼？@" & ("@噢，不！@" & "@聽！@")))));
 	var0002 = Func0992(0x0001, var0001[UI_get_random(UI_get_array_size(var0001))], var0001[UI_get_random(UI_get_array_size(var0001))], true);
 	var0001 = UI_find_nearby(item, 0x036C, 0x0064, 0x0000);
 	enum();
@@ -50,9 +50,8 @@ labelFunc06FF_00E9:
 	var0006 = UI_get_object_position(var0001);
 	UI_si_path_run_usecode(var0001, [var0006[0x0001], (var0006[0x0002] + 0x000F), 0x0000], 0x000D, UI_get_npc_object(var0001), 0x0455, true);
 	UI_set_path_failure(0x0455, UI_get_npc_object(var0001), 0x000E);
+	goto labelFunc06FF_014B;
 labelFunc06FF_014B:
 	UI_remove_item(item);
 	return;
 }
-
-

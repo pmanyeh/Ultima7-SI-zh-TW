@@ -620,17 +620,17 @@ labelFunc042A_0889:
 labelFunc042A_0891:
 	case "月影城" attend labelFunc042A_08AB:
 	UI_remove_answer("月影城");
-	message("「月影城( Moonshade )，法師之城！一個你可以得到任何你渴望之物的地方……只要你有足夠的基爾德幣( Guilders )，並且你能找到一個有足夠技術的法師。」");
+	message("「月影城( Moonshade )，法師之城！一個你可以得到任何你渴望之物的地方……只要你有足夠的吉爾得幣( Guilders )，並且你能找到一個有足夠技術的法師。」");
 	say();
-	UI_add_answer("基爾德幣");
+	UI_add_answer("吉爾得幣");
 labelFunc042A_08AB:
-	case "基爾德幣" attend labelFunc042A_08C8:
-	UI_remove_answer("基爾德幣");
-	message("「基爾德幣( Guilders )是月影城的硬幣，");
+	case "吉爾得幣" attend labelFunc042A_08C8:
+	UI_remove_answer("吉爾得幣");
+	message("「吉爾得幣( Guilders )是月影城的硬幣，");
 	message(var0000);
 	message("。」");
 	say();
-	message("「如果你沒有基爾德幣，沒有工匠或店主會跟你交易。你可以帶著你其他的硬幣去我店裡找 Bucia 兌換。」");
+	message("「如果你沒有吉爾得幣，沒有工匠或店主會跟你交易。你可以帶著你其他的硬幣去我店裡找 Bucia 兌換。」");
 	say();
 labelFunc042A_08C8:
 	case "任何地方" attend labelFunc042A_08EF:

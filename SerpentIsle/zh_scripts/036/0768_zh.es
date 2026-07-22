@@ -74,60 +74,60 @@ labelFunc0768_01DD:
 labelFunc0768_0201:
 	if (!(event == 0x0002)) goto labelFunc0768_0375;
 	var0009 = UI_is_pc_female();
-	var000A = "he";
-	var000B = "him";
-	var000C = "his";
+	var000A = "他";
+	var000B = "他";
+	var000C = "他的";
 	if (!var0009) goto labelFunc0768_023A;
-	var000A = "she";
-	var000B = "her";
-	var000C = "her";
+	var000A = "她";
+	var000B = "她";
+	var000C = "她的";
 labelFunc0768_023A:
 	UI_show_npc_face0(0xFEC6, 0x0000);
-	message("\"Not so fast, deary! Ye don't think that ye kin just dance outta here with that little seed so easy, now do ye?\"");
+	message("「別急，親愛的！你不會以為…你能這麼輕易地，帶著那顆小種子，大搖大擺地離開這裡吧？」");
 	say();
 	UI_show_npc_face1(0xFE9C, 0x0000);
-	message("\"And who will stop me, hag? Thou?\"");
+	message("「那誰能阻止我，老巫婆？妳嗎？」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("\"Hag, now is it?! Well, we shall see about that, deary!\"");
+	message("「老巫婆，是嗎？！哼，那我們走著瞧，親愛的！」");
 	say();
 	UI_show_npc_face0(0xFEC8, 0x0000);
-	message("\"I don't know about thee, Drusilla, but I think that lout would do well as a candlestick. What thinkest thou?\"");
+	message("「我不知道妳怎麼想的，Drusilla，但我覺得那個蠢貨很適合拿來做成燭台。妳覺得呢？」");
 	say();
 	UI_remove_npc_face1();
 	UI_show_npc_face1(0xFEC6, 0x0000);
-	message("\"With such a bright wit, I think it would be fitting indeed!\"");
+	message("「就憑這麼聰明的腦袋，我覺得確實挺合適的！」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("\"Bright wit?! I would have said half-wit, trying to keep this flawed world alive!");
+	message("「聰明？！我倒覺得是個白痴，竟然想讓這個有缺陷的世界繼續存活！");
 	say();
-	message("\"One would think that a pawn of prophecy would be... I don't know, more intelligent!\"");
+	message("人們總以為預言中的棋子會……我不知道，更聰明一點！」");
 	say();
 	UI_remove_npc_face1();
 	UI_show_npc_face1(0xFEC7, 0x0000);
-	message("\"Oh, don't be so hard on ");
+	message("「噢，別對");
 	message(var000B);
-	message("! It's not ");
+	message("這麼嚴厲！這不是");
 	message(var000C);
-	message(" fault that ");
+	message("錯，");
 	message(var000A);
-	message(" doesn't have the wisdom of the Guardian to guide ");
+	message("沒有守護者的智慧來指引");
 	message(var000B);
-	message("...");
+	message("……」");
 	say();
-	message("\"Besides, I think ");
+	message("「再說，我覺得");
 	message(var000A);
-	message(" is rather cute...\"");
+	message("還挺可愛的……」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("\"Hsssst! Solaria! Thou shouldst not speak of the Guide to outsiders! Now thou hast sealed ");
+	message("「嘶嘶！Solaria！妳不該跟外人提起指引者！現在妳已經決定了");
 	message(var000C);
-	message(" fate! Wilt thou never learn to think beyond thy bed?!\"");
+	message("命運！妳難道就不能想點床笫之外的事嗎？！」");
 	say();
 	UI_remove_npc_face0();
 	UI_remove_npc_face1();
 	var000D = UI_find_nearby(0xFE9C, 0x0299, 0x001E, 0x0000);
-	var000E = ["@Oh dear...@", "@Fool!@", "@Take that!@"];
+	var000E = ["@噢，天哪……@", "@笨蛋！@", "@接招吧！@"];
 	var000F = 0x0001;
 	enum();
 labelFunc0768_0306:
@@ -144,5 +144,3 @@ labelFunc0768_035C:
 labelFunc0768_0375:
 	return;
 }
-
-

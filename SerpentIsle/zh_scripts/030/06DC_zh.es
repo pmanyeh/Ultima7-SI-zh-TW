@@ -52,8 +52,8 @@ labelFunc06DC_00D2:
 	var0007 = UI_set_item_quality(var000B, 0x0097);
 	goto labelFunc06DC_00D2;
 labelFunc06DC_00ED:
-	Func097F(0xFE9C, "@The plaque!@", 0x0000);
-	Func097F(0xFE9C, "@It hath changed!@", 0x0010);
+	Func097F(0xFE9C, "@銘牌！@", 0x0000);
+	Func097F(0xFE9C, "@它改變了！@", 0x0010);
 	abort;
 labelFunc06DC_0106:
 	if (!((var0001 == 0x0002) && (var0006 == 0x027C))) goto labelFunc06DC_01C9;
@@ -63,7 +63,7 @@ labelFunc06DC_0106:
 	UI_play_sound_effect(0x0029);
 	UI_remove_item(var0005);
 	var0007 = UI_set_item_quality(item, 0x0003);
-	Func097F(0xFE9C, "@The plaque hath changed!@", 0x0002);
+	Func097F(0xFE9C, "@銘牌改變了！@", 0x0002);
 	var0008 = UI_find_nearby(item, 0x02C5, 0x0005, 0x0000);
 	enum();
 labelFunc06DC_01AD:
@@ -80,7 +80,7 @@ labelFunc06DC_01C9:
 	UI_play_sound_effect(0x002A);
 	UI_remove_item(var0005);
 	var0007 = UI_set_item_quality(item, 0x0004);
-	Func097F(0xFE9C, "@The door opened!@", 0x0005);
+	Func097F(0xFE9C, "@門打開了！@", 0x0005);
 	var000F = UI_find_nearby(item, 0x0178, 0x0014, 0x0000);
 	enum();
 labelFunc06DC_0270:
@@ -102,7 +102,7 @@ labelFunc06DC_02DE:
 	var0000 = [0x08F7, 0x0263, 0x0001];
 	UI_move_object(0xFE9B, var0000);
 	UI_play_sound_effect(0x0051);
-	Func097F(0xFE9C, "@By the Virtues!@", 0x0005);
+	Func097F(0xFE9C, "@以美德之名！@", 0x0005);
 	UI_obj_sprite_effect(0xFE9C, 0x0007, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_obj_sprite_effect(0xFE9C, 0x0011, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF);
 	abort;
@@ -125,19 +125,17 @@ labelFunc06DC_03AD:
 	if (!var0014) goto labelFunc06DC_0418;
 	var0019 = UI_die_roll(0x0001, 0x0006);
 	if (!(var0019 == 0x0001)) goto labelFunc06DC_03D6;
-	Func097F(0xFE9C, "@That did nothing...@", 0x0002);
+	Func097F(0xFE9C, "@那毫無作用……@", 0x0002);
 labelFunc06DC_03D6:
 	if (!(var0019 == 0x0002)) goto labelFunc06DC_03EC;
-	Func097F(0xFE9C, "@'Twas not it...@", 0x0001);
+	Func097F(0xFE9C, "@不是這個……@", 0x0001);
 labelFunc06DC_03EC:
 	if (!(var0019 == 0x0003)) goto labelFunc06DC_0402;
-	Func097F(0xFE9C, "@Wrong item...@", 0x0001);
+	Func097F(0xFE9C, "@放錯物品了……@", 0x0001);
 labelFunc06DC_0402:
 	if (!(var0019 == 0x0004)) goto labelFunc06DC_0418;
-	Func097F(0xFE9C, "@Maybe something else?@", 0x0001);
+	Func097F(0xFE9C, "@也許是別的東西？@", 0x0001);
 labelFunc06DC_0418:
 	abort;
 	return;
 }
-
-

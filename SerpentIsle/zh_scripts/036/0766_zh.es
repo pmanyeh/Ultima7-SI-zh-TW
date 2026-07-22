@@ -38,7 +38,7 @@ labelFunc0766_0031:
 	for (var0005 in var0000 with var0003 to var0004) attend labelFunc0766_00C1;
 	if (!(var0005 != var0001)) goto labelFunc0766_00BE;
 	var0002 = true;
-	var0006 = ["@I'm not going in there!@", "@I shall wait here...@", "@Thou must continue alone, Avatar.@", "@Good luck, Avatar!@", "@I will stay here, Avatar.@", "@Be brave, Avatar!@"];
+	var0006 = ["@我才不進去呢！@", "@我會在這裡等……@", "@你必須獨自前進了，聖者。@", "@祝你好運，聖者！@", "@我會待在這裡，聖者。@", "@勇敢點，聖者！@"];
 	Func097F(var0005[UI_get_random(UI_get_array_size(var0005))], var0006[UI_get_random(UI_get_array_size(var0006))], 0x0002);
 	UI_remove_from_party(var0005);
 	UI_set_npc_id(var0005, 0x001F);
@@ -95,5 +95,3 @@ labelFunc0766_01EA:
 labelFunc0766_020A:
 	return;
 }
-
-

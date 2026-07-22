@@ -114,5 +114,6 @@ labelFunc0646_0247:
 	var0002 = "程式設計師之島";
 labelFunc0646_0257:
 	UI_item_say(item, var0002);
+labelFunc0646_025F:
 	return;
 }

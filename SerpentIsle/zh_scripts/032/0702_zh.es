@@ -34,7 +34,7 @@ labelFunc0702_009B:
 	goto labelFunc0702_0040;
 labelFunc0702_009E:
 	if (!gflags[0x0148]) goto labelFunc0702_00BA;
-	Func097F(0xFFE1, "@Aha!@", 0x0000);
+	Func097F(0xFFE1, "@阿哈！@", 0x0000);
 	UI_set_schedule_type(0xFFE1, 0x0000);
 labelFunc0702_00BA:
 	if (!((UI_get_schedule_type(0xFFE1) == 0x0000) || (UI_get_schedule_type(0xFFE1) == 0x0003))) goto labelFunc0702_00D5;
@@ -43,22 +43,22 @@ labelFunc0702_00D5:
 	UI_clear_item_say(0xFFE1);
 	var0003 = UI_get_random(0x0006);
 	if (!(var0003 == 0x0001)) goto labelFunc0702_00FC;
-	Func097F(0xFFE1, "@Tell me!@", 0x0000);
+	Func097F(0xFFE1, "@快說！@", 0x0000);
 labelFunc0702_00FC:
 	if (!(var0003 == 0x0002)) goto labelFunc0702_0112;
-	Func097F(0xFFE1, "@Bring tongs!@", 0x0000);
+	Func097F(0xFFE1, "@拿鉗子來！@", 0x0000);
 labelFunc0702_0112:
 	if (!(var0003 == 0x0003)) goto labelFunc0702_0128;
-	Func097F(0xFFE1, "@Tell me the secret!@", 0x0003);
+	Func097F(0xFFE1, "@告訴我祕密！@", 0x0003);
 labelFunc0702_0128:
 	if (!(var0003 == 0x0004)) goto labelFunc0702_013E;
-	Func097F(0xFFE1, "@Bring the prisoner!@", 0x0000);
+	Func097F(0xFFE1, "@把囚犯帶上來！@", 0x0000);
 labelFunc0702_013E:
 	if (!(var0003 == 0x0005)) goto labelFunc0702_0154;
-	Func097F(0xFFE1, "@Make him bleed.@", 0x0000);
+	Func097F(0xFFE1, "@讓他流血。@", 0x0000);
 labelFunc0702_0154:
 	if (!(var0003 == 0x0006)) goto labelFunc0702_016A;
-	Func097F(0xFFE1, "@Torture him...@", 0x0000);
+	Func097F(0xFFE1, "@折磨他……@", 0x0000);
 labelFunc0702_016A:
 	var0000 = UI_find_nearby(item, 0x016B, 0x001E, 0x0000);
 	var0004 = false;
@@ -66,25 +66,23 @@ labelFunc0702_016A:
 	var0004 = var0000[UI_get_random(UI_get_array_size(var0000))];
 	UI_clear_item_say(var0004);
 	if (!(var0003 == 0x0001)) goto labelFunc0702_01BE;
-	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@Or die!@"], 0x0005);
+	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@否則就死！@"], 0x0005);
 labelFunc0702_01BE:
 	if (!(var0003 == 0x0002)) goto labelFunc0702_01DF;
-	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@Yes, Rotoluncia!@"], 0x0005);
+	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@遵命，Rotoluncia ！@"], 0x0005);
 labelFunc0702_01DF:
 	if (!(var0003 == 0x0003)) goto labelFunc0702_0200;
-	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@Tell about Daemons!@"], 0x0005);
+	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@說出關於惡魔的事！@"], 0x0005);
 labelFunc0702_0200:
 	if (!(var0003 == 0x0004)) goto labelFunc0702_0221;
-	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@Let me do it!@"], 0x0002);
+	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@讓我來！@"], 0x0002);
 labelFunc0702_0221:
 	if (!(var0003 == 0x0005)) goto labelFunc0702_0242;
-	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@I'm thirsty...@"], 0x0007);
+	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@我口渴了……@"], 0x0007);
 labelFunc0702_0242:
 	if (!(var0003 == 0x0006)) goto labelFunc0702_0263;
-	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@Then kill him!@"], 0x0004);
+	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@那就殺了他！@"], 0x0004);
 labelFunc0702_0263:
 	var0002 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0702], (UI_get_random(0x000F) + 0x000A));
 	return;
 }
-
-

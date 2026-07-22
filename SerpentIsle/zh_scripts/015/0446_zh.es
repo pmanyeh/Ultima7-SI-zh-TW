@@ -116,7 +116,7 @@ labelFunc0446_029A:
 	converse attend labelFunc0446_07D4;
 	case "叛徒" attend labelFunc0446_02D9:
 	UI_remove_answer("叛徒");
-	message("「這一切都太令人困惑了。 Brendann 領主確信一定有叛徒，而且野狼軍團都在背後支持他。」");
+	message("「這一切都太令人困惑了。 Brendann 大人確信一定有叛徒，而且野狼軍團都在背後支持他。」");
 	say();
 	message("「然而我也聽說絕對沒有叛徒，我們不該陷入歇斯底里……」");
 	say();
@@ -193,7 +193,7 @@ labelFunc0446_03DE:
 labelFunc0446_03E9:
 	case "斬劍酒館" attend labelFunc0446_041C:
 	UI_remove_answer("斬劍酒館");
-	message("\"'Tis a pub that hath been handed down generation to generation, originating with my great-grandfather. Although 'tis a wonderful place to have a meal, most of the men in the town come by to court me!\"");
+	message("「這間酒館是代代相傳的祖業，最早是由我曾祖父創立的。雖然這裡是享用佳餚的好地方，但鎮上大半的男人上門，其實都是為了向我獻殷勤呢！」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0446_040F;
 	message("「我很享受所有的關注……」");

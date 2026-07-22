@@ -11,17 +11,17 @@ void Func0848 0x848 ()
 	var var0002;
 	var var0003;
 
-	message("\"I shall certainly be sad to part with it, but if thou dost claim it, then I must give it to thee.\"");
+	message("「要與它分開我當然會很難過，但如果你要求拿回它，那我必須把它給你。」");
 	say();
 	var0000 = UI_remove_cont_items(0xFFB9, 0x0001, 0x01EA, 0xFE99, 0x0000, 0x0000);
 	var0000 = Func099B(0xFE9C, 0x0001, 0x01EA, 0xFE99, 0xFE99, 0x0000, true);
 	gflags[0x00B2] = true;
-	message("\"Now I shall have to find myself another shield...\"");
+	message("「現在我得為自己再找一面盾牌了……」");
 	say();
 	if (!(gflags[0x028A] && Func097D(0xFE9B, 0x0001, 0x02D9, 0xFE99, 0x0000))) goto labelFunc0848_00BF;
-	var0001 = Func0992(0x0001, "@But thou canst have this shield which we found!@", 0x0000, false);
+	var0001 = Func0992(0x0001, "@但你可以拿我們找到的這面盾牌！@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
-	message("\"That is most gracious of thee! Yes, this is my shield which so strangely disappeared during that storm!\"");
+	message("「你真是太慷慨了！是的，這就是我在那場風暴中莫名其妙失蹤的盾牌！」");
 	say();
 	var0000 = UI_add_cont_items(0xFFB9, 0x0001, 0x02D9, 0xFE99, 0x0000, 0x0012);
 	if (!var0000) goto labelFunc0848_00BF;

@@ -369,7 +369,7 @@ labelFunc00E4_06D8:
 	if (!Func097D(0xFE9B, 0x0001, 0x0286, 0xFE99, 0x0002)) goto labelFunc00E4_070E;
 	UI_add_answer("金條");
 labelFunc00E4_070E:
-	UI_add_answer(["寶石", "蒙里他利幣", "基爾德幣", "黃麖城錢幣", "魔法物品", "沒事"]);
+	UI_add_answer(["寶石", "蒙里他利幣", "吉爾得幣", "黃麖城錢幣", "魔法物品", "沒事"]);
 	goto labelFunc00E4_0735;
 labelFunc00E4_072A:
 	Func097F(item, "@你這是在浪費我的時間！@", 0x0000);
@@ -424,8 +424,8 @@ labelFunc00E4_0853:
 	Func097F(item, "@閃一邊去！@", 0x0000);
 	abort;
 labelFunc00E4_0868:
-	case "基爾德幣" attend labelFunc00E4_087F:
-	UI_remove_answer("基爾德幣");
+	case "吉爾得幣" attend labelFunc00E4_087F:
+	UI_remove_answer("吉爾得幣");
 	message("「你是說法師們用的那種會發光的奇怪錢幣嗎？」");
 	say();
 	message("「呸！把那個拿到公牛( Bull )去換成真正的錢——像是蒙里他利幣( Monetari )！！！」");

@@ -31,7 +31,7 @@ void Func083E 0x83E ()
 	var0001 = Func0953();
 	UI_push_answers();
 	var0002 = true;
-	var0003 = ["nothing", "ale"];
+	var0003 = ["再看看", "麥芽酒"];
 	var0004 = [0x0000, 0x0268];
 	var0005 = [0xFE99, 0x0009];
 	var0006 = [0x0000, 0x000C];
@@ -39,13 +39,13 @@ void Func083E 0x83E ()
 	var0008 = 0x03B4;
 	var0009 = [0x0000, 0x0001];
 	var000A = [0x0000, 0x0001];
-	message("\"What can I get ye?\"");
+	message("「我能為你拿點什麼？」");
 	say();
 labelFunc083E_0072:
 	if (!var0002) goto labelFunc083E_0201;
 	var000B = Func0957(var0003);
 	if (!(var000B == 0x0001)) goto labelFunc083E_0096;
-	message("\"Then why'dst thou ask in the first place?\"");
+	message("「那你一開始幹嘛問？」");
 	say();
 	var0002 = false;
 	goto labelFunc083E_01FE;
@@ -53,9 +53,9 @@ labelFunc083E_0096:
 	var000C = var0006[var000B];
 	var000D = 0x0000;
 	if (!(var000B == 0x0002)) goto labelFunc083E_00B9;
-	message("\"That'll be ");
+	message("「一瓶上好的幼鹿城( Fawn )麥芽酒要 ");
 	message(var000C);
-	message(" filari for a bottle of fine Fawn ale. Wouldst thou care for any?\"");
+	message(" 法拉利幣( Filari )。你想要嗎？」");
 	say();
 labelFunc083E_00B9:
 	if (!(var000C == var0007[var000B])) goto labelFunc083E_00DE;
@@ -71,7 +71,7 @@ labelFunc083E_00DE:
 labelFunc083E_00F0:
 	if (!(var000E > 0x0000)) goto labelFunc083E_0155;
 	if (!(var000A[var000B] == 0x0001)) goto labelFunc083E_0130;
-	message("\"How many bottles wouldst thou like?\"");
+	message("「你想要多少瓶？」");
 	say();
 	var000D = Func0943(var0004[var000B], var0005[var000B], 0x0001, var0008, var000E, 0x0014, 0x0001, false);
 	goto labelFunc083E_0155;
@@ -79,27 +79,27 @@ labelFunc083E_0130:
 	var000D = Func0943(var0004[var000B], var0005[var000B], var0009[var000B], var0008, var000E, 0x0000, 0x0001, false);
 labelFunc083E_0155:
 	if (!(var000D == 0x0001)) goto labelFunc083E_016C;
-	message("\"Cheers, ");
+	message("「乾杯，");
 	message(var0000);
-	message("!\"");
+	message("！」");
 	say();
 	goto labelFunc083E_01F4;
 labelFunc083E_016C:
 	if (!(var000D == 0x0002)) goto labelFunc083E_017D;
-	message("\"Thou shouldst not travel so heavily burdened -- I do not think that thou canst bear the bottles that thou desirest!\"");
+	message("「你不該背著這麼沉重的負擔旅行——我不認為你能拿得了你想要的那幾瓶酒！」");
 	say();
 	goto labelFunc083E_01F4;
 labelFunc083E_017D:
 	if (!(var000D == 0x0003)) goto labelFunc083E_01F4;
-	var000F = Func0992(0x0001, (("@But " + var0000) + ", we do not have the filari to pay for this.@"), 0x0000, false);
+	var000F = Func0992(0x0001, (("@但是 " + var0000) + "，我們沒有足夠的法拉利幣來付這個。@"), 0x0000, false);
 	if (!(var000F != 0xFE9C)) goto labelFunc083E_01BB;
 	UI_show_npc_face0(0xFFCC, 0x0000);
-	message("\"I don't allow no beggars in here!\"");
+	message("「我這裡不允許乞丐進來！」");
 	say();
 	abort;
 	goto labelFunc083E_01C0;
 labelFunc083E_01BB:
-	message("\"If thou canst not pay, then thou canst leave!\"");
+	message("「如果你付不起錢，那你可以離開了！」");
 	say();
 	abort;
 labelFunc083E_01C0:
@@ -111,7 +111,7 @@ labelFunc083E_01DF:
 labelFunc083E_01F1:
 	goto labelFunc083E_01F4;
 labelFunc083E_01F4:
-	message("\"Wouldst thou care for more?\"");
+	message("「你還想再來點別的嗎？」");
 	say();
 	var0002 = Func0955();
 labelFunc083E_01FE:

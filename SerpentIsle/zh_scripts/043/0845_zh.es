@@ -33,7 +33,7 @@ void Func0845 0x845 ()
 	var0001 = UI_is_pc_female();
 	UI_push_answers();
 	var0002 = true;
-	var0003 = ["nothing", "poultry", "beef", "ribs", "bread", "fish", "sausage", "cake"];
+	var0003 = ["再看看", "家禽肉", "牛肉", "排骨", "麵包", "鮮魚", "香腸", "蛋糕"];
 	var0004 = [0x0000, 0x0179, 0x0179, 0x0179, 0x0179, 0x0179, 0x0179, 0x0179];
 	var0005 = [0xFE99, 0x000A, 0x0009, 0x0017, 0x0000, 0x000C, 0x0007, 0x0004];
 	var0006 = [0x0000, 0x0008, 0x000C, 0x000D, 0x0004, 0x0006, 0x0009, 0x0004];
@@ -41,20 +41,20 @@ void Func0845 0x845 ()
 	var0008 = [0x0000, 0x0001, 0x0001, 0x0001, 0x0001, 0x0001, 0x0001, 0x0001];
 	var0009 = [0x0000, 0x0001, 0x0001, 0x0001, 0x0001, 0x0001, 0x0001, 0x0001];
 	var000A = 0x03B7;
-	message("\"Name thine appetites, ");
+	message("「說說你想吃點什麼，");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
 labelFunc0845_00F7:
 	if (!var0002) goto labelFunc0845_0404;
 	var000B = Func0957(var0003);
 	if (!(var000B == 0x0001)) goto labelFunc0845_0128;
 	if (!var0001) goto labelFunc0845_011D;
-	message("\"As thou dost wish.\"");
+	message("「如你所願。」");
 	say();
 	goto labelFunc0845_0121;
 labelFunc0845_011D:
-	message("\"As thou dost wish, love.\"");
+	message("「如你所願，親愛的。」");
 	say();
 labelFunc0845_0121:
 	var0002 = false;
@@ -64,105 +64,105 @@ labelFunc0845_0128:
 	var000D = 0x0000;
 	var000E = UI_die_roll(0x0001, 0x0006);
 	if (!(var000E == 0x0001)) goto labelFunc0845_0154;
-	var000F = "Doth that sound good?";
+	var000F = "聽起來不錯吧？";
 labelFunc0845_0154:
 	if (!(var000E == 0x0002)) goto labelFunc0845_0164;
-	var000F = "Dost thou take this price?";
+	var000F = "你接受這個價格嗎？";
 labelFunc0845_0164:
 	if (!(var000E == 0x0003)) goto labelFunc0845_0174;
-	var000F = "Dost thou find the price agreeable?";
+	var000F = "你覺得這個價格滿意嗎？";
 labelFunc0845_0174:
 	if (!(var000E == 0x0004)) goto labelFunc0845_0184;
-	var000F = "Dost thou agree?";
+	var000F = "你同意嗎？";
 labelFunc0845_0184:
 	if (!(var000E == 0x0005)) goto labelFunc0845_0194;
-	var000F = "How doth that sound?";
+	var000F = "聽起來如何？";
 labelFunc0845_0194:
 	if (!(var000E == 0x0006)) goto labelFunc0845_01A4;
-	var000F = "Wilt thou agree to my price?";
+	var000F = "你同意我的開價嗎？";
 labelFunc0845_01A4:
 	if (!(var000B == 0x0002)) goto labelFunc0845_01C8;
-	message("\"");
+	message("「你嚐過最美味的家禽肉只要 ");
 	message(var000C);
-	message(" monetari for the most delectable fowl thou hast ever tasted.\"");
+	message(" 蒙里他利幣( Monetari )。」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "fowl";
+	var0010 = "隻家禽肉";
 labelFunc0845_01C8:
 	if (!(var000B == 0x0003)) goto labelFunc0845_01EC;
-	message("\"The beef dinner costs ");
+	message("「牛肉餐一份要 ");
 	message(var000C);
-	message(" monetari, a bargain at twice the price.\"");
+	message(" 蒙里他利幣( Monetari )，就算雙倍價格也很划算。」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "beef dinners";
+	var0010 = "份牛肉餐";
 labelFunc0845_01EC:
 	if (!(var000B == 0x0004)) goto labelFunc0845_0210;
-	message("\"The ribs are a specialty of mine. Special spices, thou seest... They cost ");
+	message("「排骨是我的招牌菜。加了特製香料，你懂的……要價 ");
 	message(var000C);
-	message(" monetari.\"");
+	message(" 蒙里他利幣( Monetari )。」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "ribs";
+	var0010 = "份排骨";
 labelFunc0845_0210:
 	if (!(var000B == 0x0005)) goto labelFunc0845_0234;
-	message("\"My bread is baked fresh every day. ");
+	message("「我的麵包每天新鮮出爐。價格是 ");
 	message(var000C);
-	message(" monetari is my price.\"");
+	message(" 蒙里他利幣( Monetari )。」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "loaves of bread";
+	var0010 = "條麵包";
 labelFunc0845_0234:
 	if (!(var000B == 0x0006)) goto labelFunc0845_025E;
-	message("\"The fish dinner costs ");
+	message("「鮮魚餐一份要 ");
 	message(var000C);
-	message(" monetari. 'Tis grilled trout with a nice butter sauce to top it. Very delicious, ");
+	message(" 蒙里他利幣( Monetari )。那是烤鱒魚淋上美味的奶油醬。非常美味，");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "fish dinners";
+	var0010 = "份鮮魚餐";
 labelFunc0845_025E:
 	if (!(var000B == 0x0007)) goto labelFunc0845_0288;
-	message("\"");
+	message("「我上好的香腸餐只要 ");
 	message(var000C);
-	message(" monetari for my fine sausage dinner, ");
+	message(" 蒙里他利幣( Monetari )，");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "sausages";
+	var0010 = "根香腸";
 labelFunc0845_0288:
 	if (!(var000B == 0x0008)) goto labelFunc0845_02B2;
-	message("\"");
+	message("「買我的蛋糕只要 ");
 	message(var000C);
-	message(" monetari is a low price to pay for my cake, ");
+	message(" 蒙里他利幣( Monetari )算是很便宜了，");
 	message(var0000);
-	message(", if thou dost like things that are sweet...\"");
+	message("，如果你喜歡甜食的話……」");
 	say();
-	message("\"");
+	message("「");
 	message(var000F);
-	message("\"");
+	message("」");
 	say();
-	var0010 = "cakes";
+	var0010 = "塊蛋糕";
 labelFunc0845_02B2:
 	if (!(var000C == var0007[var000B])) goto labelFunc0845_02D7;
 	if (!Func0955()) goto labelFunc0845_02CE;
@@ -177,9 +177,9 @@ labelFunc0845_02D7:
 labelFunc0845_02E9:
 	if (!(var0011 > 0x0000)) goto labelFunc0845_0354;
 	if (!(var0009[var000B] == 0x0001)) goto labelFunc0845_0332;
-	message("\"How many ");
+	message("「你想要多少");
 	message(var0010);
-	message(" wouldst thou like?\"");
+	message("？」");
 	say();
 	var000D = Func0943(var0004[var000B], var0005[var000B], var0008[var000B], var000A, var0011, 0x000A, 0x0001, false);
 	goto labelFunc0845_0354;
@@ -187,28 +187,28 @@ labelFunc0845_0332:
 	var000D = Func0943(var0004[var000B], var0005[var000B], 0x0001, var000A, var0011, 0x0000, 0x0001, false);
 labelFunc0845_0354:
 	if (!(var000D == 0x0001)) goto labelFunc0845_0365;
-	message("\"Enjoy thy meal!\"");
+	message("「祝你用餐愉快！」");
 	say();
 	goto labelFunc0845_03F7;
 labelFunc0845_0365:
 	if (!(var000D == 0x0002)) goto labelFunc0845_037C;
-	message("\"I believe thou canst not carry so much food, ");
+	message("「我相信你拿不了這麼多食物，");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
 	goto labelFunc0845_03F7;
 labelFunc0845_037C:
 	if (!(var000D == 0x0003)) goto labelFunc0845_03F7;
-	var0012 = Func0992(0x0001, (("@But " + var0000) + ", we have not the monetari to pay for this.@"), 0x0000, false);
+	var0012 = Func0992(0x0001, (("@但是 " + var0000) + "，我們沒有足夠的蒙里他利幣來付這個。@"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0845_03BF;
 	UI_show_npc_face0(0xFFBA, 0x0000);
-	message("\"I am truly sorry, but thou dost not have enough money to pay for that, ");
+	message("「我真的很抱歉，但你沒有足夠的錢支付那個，");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
 	goto labelFunc0845_03C3;
 labelFunc0845_03BF:
-	message("\"It would appear thou dost not have enough monetari for that...\"");
+	message("「看來你沒有足夠的蒙里他利幣( Monetari )付那個……」");
 	say();
 labelFunc0845_03C3:
 	if (!(0x001F < (UI_get_npc_id(0xFFBA) + 0x0006))) goto labelFunc0845_03E2;
@@ -219,7 +219,7 @@ labelFunc0845_03E2:
 labelFunc0845_03F4:
 	goto labelFunc0845_03F7;
 labelFunc0845_03F7:
-	message("\"Wouldst thou care for more?\"");
+	message("「你還想再來點別的嗎？」");
 	say();
 	var0002 = Func0955();
 labelFunc0845_0401:

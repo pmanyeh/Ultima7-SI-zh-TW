@@ -16,13 +16,13 @@ void Func0718 object#(0x718) ()
 
 	if (!(event == 0x0002)) goto labelFunc0718_01D4;
 	UI_show_npc_face0(0xFF68, 0x0000);
-	message("\"I am undone -- I am outside the Temple, and now the years burden me...\"");
+	message("「我完蛋了——我走出了神殿，現在歲月的重擔壓倒了我……」");
 	say();
-	message("\"Take the Chaos Stone from my dead body... it shall be the token that thou needest to summon the shade...\"");
+	message("「從我的屍體上拿走混沌之石( Chaos Stone )……它將是你召喚陰魂所需要的信物……」");
 	say();
-	message("\"The body lies in the garden of the Temple of Enthusiasm, in the northeast by the Gate of the Serpent...\"");
+	message("「我的遺體躺在熱忱神殿( Temple of Enthusiasm )的花園裡，在東北方，靠近巨蛇之門( Gate of the Serpent )……」");
 	say();
-	message("\"Now I go into the Void!\"");
+	message("「現在我要進入虛空了！」");
 	say();
 	var0000 = UI_get_object_position(0xFF68);
 	var0000[0x0001] = (var0000[0x0001] - (var0000[0x0003] / 0x0002));
@@ -60,7 +60,7 @@ labelFunc0718_0193:
 labelFunc0718_0196:
 	if (!UI_get_cont_items(var0001, 0xFE99, 0xFE99, 0xFE99)) goto labelFunc0718_01C0;
 	UI_clear_item_say(0xFE9C);
-	var0007 = Func0992(0xFFFD, "@Something in the ashes?@", "@Something in the ashes?@", true);
+	var0007 = Func0992(0xFFFD, "@灰燼裡有東西？@", "@灰燼裡有東西？@", true);
 labelFunc0718_01C0:
 	goto labelFunc0718_01CA;
 labelFunc0718_01C3:
@@ -74,10 +74,8 @@ labelFunc0718_01D4:
 	UI_remove_from_party(0xFF68);
 	UI_set_schedule_type(0xFF68, 0x000F);
 	UI_set_item_flag(0xFE9C, 0x0010);
-	var0002 = UI_execute_usecode_array(0xFF68, [(byte)0x23, (byte)0x52, "@The weight of the years!@", (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6D, (byte)0x27, 0x0002, (byte)0x6E, (byte)0x27, 0x0002, (byte)0x55, 0x0718]);
+	var0002 = UI_execute_usecode_array(0xFF68, [(byte)0x23, (byte)0x52, "@歲月的重擔！@", (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6D, (byte)0x27, 0x0002, (byte)0x6E, (byte)0x27, 0x0002, (byte)0x55, 0x0718]);
 	UI_remove_item(item);
 labelFunc0718_023F:
 	return;
 }
-
-

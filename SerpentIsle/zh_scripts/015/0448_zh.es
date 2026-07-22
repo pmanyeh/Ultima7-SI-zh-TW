@@ -272,8 +272,8 @@ labelFunc0448_04C4:
 	say();
 	message("「你準備好要刺青了嗎？」");
 	say();
-	var000C = Func0956(["Yes", "No", "Will it hurt?"]);
-	if (!(var000C == "Yes")) goto labelFunc0448_059C;
+	var000C = Func0956(["是", "否", "會痛嗎？"]);
+	if (!(var000C == "是")) goto labelFunc0448_059C;
 	message("「我們現在開始這個過程。這會很痛，但身為一名戰士，你應該習慣痛苦了。」");
 	say();
 	Func097F(0xFFB8, "@請坐。@", 0x0000);
@@ -295,7 +295,7 @@ labelFunc0448_052F:
 	abort;
 	goto labelFunc0448_05CF;
 labelFunc0448_059C:
-	if (!(var000C == "Will it hurt?")) goto labelFunc0448_05CB;
+	if (!(var000C == "會痛嗎？")) goto labelFunc0448_05CB;
 	message("「會痛嗎！你根本不配做一個蒙利多城的騎士。」");
 	say();
 	if (!var0002) goto labelFunc0448_05B7;

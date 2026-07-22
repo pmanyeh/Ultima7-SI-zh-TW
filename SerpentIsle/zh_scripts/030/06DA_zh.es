@@ -15,33 +15,33 @@ void Func06DA object#(0x6DA) ()
 	if (!(event == 0x0003)) goto labelFunc06DA_0100;
 	var0000 = UI_get_item_quality(item);
 	if (!(var0000 == 0x0001)) goto labelFunc06DA_0072;
-	var0001 = Func0992(0xFE9C, "@A Software Pirate!@", 0x0000, true);
+	var0001 = Func0992(0xFE9C, "@軟體盜版者！@", 0x0000, true);
 	if (!UI_npc_nearby(0xFFFD)) goto labelFunc06DA_0040;
-	Func097F(0xFFFD, "@Kill him quickly!@", 0x0010);
+	Func097F(0xFFFD, "@快殺了他！@", 0x0010);
 labelFunc06DA_0040:
 	if (!UI_npc_nearby(0xFFFE)) goto labelFunc06DA_0056;
-	Func097F(0xFFFE, "@Format his hard drive!@", 0x0020);
+	Func097F(0xFFFE, "@格式化他的硬碟！@", 0x0020);
 labelFunc06DA_0056:
 	if (!UI_npc_nearby(0xFFFF)) goto labelFunc06DA_006C;
-	Func097F(0xFFFF, "@Die, Wares-thief!@", 0x0030);
+	Func097F(0xFFFF, "@去死吧，軟體竊賊！@", 0x0030);
 labelFunc06DA_006C:
 	Func09AD(0xFF3D);
 labelFunc06DA_0072:
 	if (!(var0000 == 0x0002)) goto labelFunc06DA_0088;
-	Func097F(0xFE9C, "@Look at the bones!@", 0x0000);
+	Func097F(0xFE9C, "@看那些骨頭！@", 0x0000);
 labelFunc06DA_0088:
 	if (!(var0000 == 0x0003)) goto labelFunc06DA_00C4;
-	Func097F(0xFE9C, "@Where are we?@", 0x0000);
+	Func097F(0xFE9C, "@我們在哪？@", 0x0000);
 	var0002 = Func0992(0x0001, 0x0000, 0x0000, true);
 	if (!(var0002 != 0xFE9C)) goto labelFunc06DA_00C4;
-	Func097F(var0002, "@We are lost, Avatar.@", 0x0020);
+	Func097F(var0002, "@我們迷路了，聖者。@", 0x0020);
 labelFunc06DA_00C4:
 	if (!(var0000 == 0x0004)) goto labelFunc06DA_00DA;
-	Func097F(0xFE9C, "@I don't like this place...@", 0x0000);
+	Func097F(0xFE9C, "@我不喜歡這個地方……@", 0x0000);
 labelFunc06DA_00DA:
 	if (!(var0000 == 0x0005)) goto labelFunc06DA_0100;
-	var0003 = "Batlin must be opening the Wall of Lights!";
-	var0004 = "Make haste! Batlin must be opening the Wall of Lights!";
+	var0003 = "巴特林一定在開啟光明之牆( Wall of Lights )！";
+	var0004 = "快點！巴特林一定在開啟光明之牆( Wall of Lights )！";
 	var0002 = Func0992(0x0001, var0004, var0003, false);
 labelFunc06DA_0100:
 	return;

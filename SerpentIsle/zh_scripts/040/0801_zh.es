@@ -19,7 +19,7 @@ labelFunc0801_0033:
 	goto labelFunc0801_001A;
 labelFunc0801_0036:
 	if (!(var0000 && (!(gflags[0x016F] && gflags[0x0172])))) goto labelFunc0801_006F;
-	var0005 = ("@Lower thy voice, lest our enemies hear...@" & ("@We must whisper, or they shall hear us.@" & ("@Come closer, so none can hear what we say.@" & "@Our enemies are near -- keep thy voice down.@")));
+	var0005 = ("@小聲點，以免被我們的敵人聽到……@" & ("@我們必須輕聲細語，否則他們會聽到的。@" & ("@靠近點，這樣就沒人能聽到我們說什麼了。@" & "@我們的敵人就在附近——放低音量。@")));
 	var0005 = var0005[UI_get_random(UI_get_array_size(var0005))];
 	message(var0005);
 	message("");
@@ -27,5 +27,3 @@ labelFunc0801_0036:
 labelFunc0801_006F:
 	return;
 }
-
-

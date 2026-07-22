@@ -18,18 +18,18 @@ void Func0969 0x969 (var var0000, var var0001, var var0002)
 	var0006 = (var0003 - var0004);
 	Func095E(var0000, 0x0003, var0006);
 	var0007 = UI_remove_party_items(var0002, var0001, 0xFE99, 0xFE99, true);
-	message("\"The wounds have been healed.\"");
+	message("「傷口已經治癒。」");
 	say();
 	goto labelFunc0969_0078;
 labelFunc0969_005D:
 	if (!(var0000 == 0xFE9C)) goto labelFunc0969_006E;
-	message("\"Thou seemest quite healthy!\"");
+	message("「你看起來相當健康！」");
 	say();
 	goto labelFunc0969_0078;
 labelFunc0969_006E:
-	message("\"");
+	message("「");
 	message(var0005);
-	message(" is already healthy!\"");
+	message(" 已經很健康了！」");
 	say();
 labelFunc0969_0078:
 	return;

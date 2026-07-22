@@ -97,14 +97,14 @@ labelFunc0450_01D5:
 	message(var0002);
 	message(" 。」");
 	say();
-	message("「如果有叛徒，毫無疑問 Lord Marsten 會揭穿他。同時，我會做好我的職責。」");
+	message("「如果有叛徒，毫無疑問 Marsten 領主大人會揭穿他。同時，我會做好我的職責。」");
 	say();
 labelFunc0450_01F2:
 	case "開門" attend labelFunc0450_02EA:
 	message("「你是敵是友？」");
 	say();
 	if (!(Func0956(["朋友", "敵人"]) == "朋友")) goto labelFunc0450_02D9;
-	message("「我不知道你是朋友……我會讓你進去，但在你與 Lord Marsten 交談之前，你必須有人護送。」");
+	message("「我不知道你是朋友……我會讓你進去，但在你與 Marsten 領主大人交談之前，你必須有人護送。」");
 	say();
 	message("「你可以在火葬場( Crematorium )找到他，他正在為死者哀悼。沿著路往北走。」");
 	say();
@@ -174,7 +174,7 @@ labelFunc0450_0358:
 labelFunc0450_037A:
 	case "附魔師" attend labelFunc0450_038D:
 	UI_remove_answer("附魔師");
-	message("「你對這個人表現出了不尋常的興趣。去跟 Lord Marsten 談談吧。關於這件事我不會再多說什麼了。」");
+	message("「你對這個人表現出了不尋常的興趣。去跟 Marsten 領主大人談談吧。關於這件事我不會再多說什麼了。」");
 	say();
 labelFunc0450_038D:
 	case "葬禮" attend labelFunc0450_03B1:

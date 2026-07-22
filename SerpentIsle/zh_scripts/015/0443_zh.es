@@ -465,7 +465,7 @@ labelFunc0443_05F3:
     goto labelFunc0443_0618;
   UI_set_conversation_slot(0x0000);
 labelFunc0443_0618:
-  message("「我強烈懷疑你感染的來源是你被刺上的那個刺青。」");
+  message("「我強烈懷疑，你感染的來源…就是你被刺上的那個刺青。」");
   say();
   message("「我知道一定是 Lydia "
           "給你刺的這個刺青，但我很難相信她會毒害一個陌生人。」");
@@ -547,7 +547,7 @@ labelFunc0443_06F7:
   UI_push_answers();
   var0009 = 0x0002;
   UI_add_answer(
-      [ "巨熊指揮部", "野狼指揮部", "猛豹指揮部", "訪客", "沒有別的了" ]);
+      [ "巨熊指揮部", "野狼指揮部", "獵豹指揮部", "訪客", "沒有別的了" ]);
 labelFunc0443_071B:
 case "巨熊指揮部" attend labelFunc0443_0754:
   UI_remove_answer("巨熊指揮部");
@@ -726,9 +726,9 @@ labelFunc0443_095A:
 labelFunc0443_0962:
   var0008 = Func09AE(var0008);
 labelFunc0443_096B:
-case "猛豹指揮部" attend labelFunc0443_09A5:
-  UI_remove_answer("猛豹指揮部");
-  message("「猛豹指揮部是將這個社群凝聚在一起的黏著劑。我們阻止巨熊和野狼互相撕"
+case "獵豹指揮部" attend labelFunc0443_09A5:
+  UI_remove_answer("獵豹指揮部");
+  message("「獵豹指揮部是將這個社群凝聚在一起的黏著劑。我們阻止巨熊和野狼互相撕"
           "裂對方。」");
   say();
   message("\"About whom dost thou wish to know?\"");
@@ -736,20 +736,20 @@ case "猛豹指揮部" attend labelFunc0443_09A5:
   UI_push_answers();
   var0009 = 0x0003;
   UI_add_answer([
-    "Lord Marsten", "Spektor", "Standarr", "Andral", "Shazzana", "沒有別的了"
+    "Marsten 領主大人", "Spektor", "Standarr", "Andral", "Shazzana", "沒有別的了"
   ]);
 labelFunc0443_09A5:
-case "Lord Marsten" attend labelFunc0443_09CE:
-  UI_remove_answer("Lord Marsten");
+case "Marsten 領主大人" attend labelFunc0443_09CE:
+  UI_remove_answer("Marsten 領主大人");
   if (!gflags[0x0038])
     goto labelFunc0443_09C1;
-  message("「我對他身為猛豹指揮部的一員感到羞恥！我希望他在監獄裡爛掉很長一段時"
+  message("「我對他身為獵豹指揮部的一員感到羞恥！我希望他在監獄裡爛掉很長一段時"
           "間！」");
   say();
   goto labelFunc0443_09C5;
 labelFunc0443_09C1:
   message("「Marsten "
-          "是猛豹指揮部的指揮官。他可能個子有點小，但你在巨蛇之島絕對找不到比他"
+          "是獵豹指揮部的指揮官。他可能個子有點小，但你在巨蛇之島絕對找不到比他"
           "更頑強的戰士了。他粗獷強悍，但很合群。」");
   say();
 labelFunc0443_09C5:
@@ -759,7 +759,7 @@ case "Spektor" attend labelFunc0443_0A04:
   UI_remove_answer("Spektor");
   if (!(!gflags[0x0092]))
     goto labelFunc0443_09F3;
-  message("「一位非常聰明的人，也是猛豹指揮部的一員。他是鎮上的財務官，我聽說他"
+  message("「一位非常聰明的人，也是獵豹指揮部的一員。他是鎮上的財務官，我聽說他"
           "在家裡收藏了相當多的書。」");
   say();
   message("「他有嚴重的失眠症，而且消化系統很敏感。當他睡不著時，他會來找我，我"
@@ -795,7 +795,7 @@ labelFunc0443_0A3C:
 case "Shazzana" attend labelFunc0443_0A58:
   UI_remove_answer("Shazzana");
   message("「Shazzana "
-          "是一名格鬥藝術的教練，也是猛豹指揮部的騎士。據說有一天她很可能會成為"
+          "是一名格鬥藝術的教練，也是獵豹指揮部的騎士。據說有一天她很可能會成為"
           "蒙利多城的冠軍騎士( Champion Knight )，這對她來說再適合不過了！」");
   say();
   var0008 = Func09AE(var0008);

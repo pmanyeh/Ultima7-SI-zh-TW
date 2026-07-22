@@ -49,20 +49,20 @@ labelFunc07D5_00CD:
 	UI_set_polymorph(var000B, var000C);
 	goto labelFunc07D5_00CD;
 labelFunc07D5_00EF:
-	var000D = Func0992(0xFFFD, "@By Lord British's throne...@", "@By Lord British's throne...@", true);
+	var000D = Func0992(0xFFFD, "@以不列顛王的王座發誓……@", "@以不列顛王的王座發誓……@", true);
 	if (!(var000D == UI_get_npc_number(0xFE9C))) goto labelFunc07D5_011C;
-	Func097F(var000D, "@...where am I?@", 0x000F);
+	Func097F(var000D, "@……我在哪裡？@", 0x000F);
 	goto labelFunc07D5_0128;
 labelFunc07D5_011C:
-	Func097F(var000D, "@...where are we?@", 0x000F);
+	Func097F(var000D, "@……我們在哪裡？@", 0x000F);
 labelFunc07D5_0128:
 	UI_show_npc_face0(UI_get_npc_number(var000D), 0x0000);
 	if (!(var000D == UI_get_npc_number(0xFE9C))) goto labelFunc07D5_014B;
-	message("\"This is the architecture I have seen throughout Serpent Isle, but where are the signs of destruction? These are not ruins, they are new!\"");
+	message("「這是我在巨蛇之島到處都看過的建築風格，但毀滅的痕跡在哪裡？這不是廢墟，它是嶄新的！」");
 	say();
 	goto labelFunc07D5_014F;
 labelFunc07D5_014B:
-	message("\"Avatar! This is the architecture we have seen throughout Serpent Isle, but where are the signs of destruction? These are not ruins, they are new!\"");
+	message("「聖者！這是我們在巨蛇之島到處都看過的建築風格，但毀滅的痕跡在哪裡？這不是廢墟，它是嶄新的！」");
 	say();
 labelFunc07D5_014F:
 	UI_remove_npc_face0();
@@ -76,5 +76,3 @@ labelFunc07D5_014F:
 labelFunc07D5_017B:
 	return;
 }
-
-

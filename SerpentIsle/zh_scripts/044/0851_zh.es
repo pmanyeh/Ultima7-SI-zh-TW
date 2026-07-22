@@ -12,33 +12,33 @@ void Func0851 0x851 ()
 	var var0003;
 	var var0004;
 
-	message("\"The cost is 12 guilders per person. Wouldst thou like a room for the night?\"");
+	message("「費用是每人 12 吉爾得幣。你想住宿一晚嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0851_00A2;
 	var0000 = (UI_get_array_size(UI_get_party_list()) * 0x000C);
 	var0001 = UI_count_objects(0xFE9B, 0x03B8, 0xFE99, 0xFE99);
 	if (!(var0001 >= var0000)) goto labelFunc0851_0070;
-	message("\"Here is thy key.\"");
+	message("「這是你的鑰匙。」");
 	say();
 	var0002 = UI_remove_party_items(var0000, 0x03B8, 0xFE99, 0xFE99, 0x0000);
 	var0003 = Func099B(0xFE9C, 0x0001, 0x0281, 0x00B8, 0x000B, 0x0000, true);
-	message("\"'Tis the northwest corner room.\"");
+	message("「是西北角的房間。」");
 	say();
 	goto labelFunc0851_009F;
 labelFunc0851_0070:
-	var0004 = Func0992(0x0001, "@But Avatar, we do not have the guilders!@", 0x0000, false);
+	var0004 = Func0992(0x0001, "@但是聖者，我們沒有吉爾得幣！@", 0x0000, false);
 	if (!(var0004 != 0xFE9C)) goto labelFunc0851_009B;
 	UI_show_npc_face0(0xFFE2, 0x0000);
-	message("\"Then thou canst not stay at the inn. In these hard times, I cannot afford to keep thee and thy companions for free.\"");
+	message("「那你就不能住在旅店了。在這艱難時期，我可沒辦法免費招待你和你的同伴。」");
 	say();
 	goto labelFunc0851_009F;
 labelFunc0851_009B:
-	message("\"Thou hast not enough guilders for my rooms.\"");
+	message("「你沒有足夠的吉爾得幣來住我的房間。」");
 	say();
 labelFunc0851_009F:
 	goto labelFunc0851_00A6;
 labelFunc0851_00A2:
-	message("\"Another time...\"");
+	message("「改天吧……」");
 	say();
 labelFunc0851_00A6:
 	return;

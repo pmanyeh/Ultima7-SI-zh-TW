@@ -25,10 +25,10 @@ var Func0838 0x838 (var var0000, var var0001)
 
 	var0002 = Func0954();
 	if (!UI_is_pc_female()) goto labelFunc0838_0016;
-	var0003 = "Milady";
+	var0003 = "女士";
 	goto labelFunc0838_001C;
 labelFunc0838_0016:
-	var0003 = "Milord";
+	var0003 = "大人";
 labelFunc0838_001C:
 	var0004 = var0000;
 	var0005 = ((var0001 / 0x0003) * 0x0002);
@@ -40,12 +40,12 @@ labelFunc0838_001C:
 	var000B = UI_get_npc_id(0xFFBD);
 labelFunc0838_0064:
 	if (!var0008) goto labelFunc0838_045D;
-	var000C = Func0956(["yes", "no", "haggle"]);
-	if (!(var000C == "no")) goto labelFunc0838_008D;
+	var000C = Func0956(["是", "否", "討價還價"]);
+	if (!(var000C == "否")) goto labelFunc0838_008D;
 	return 0x0000;
 	goto labelFunc0838_00A0;
 labelFunc0838_008D:
-	if (!(var000C == "yes")) goto labelFunc0838_00A0;
+	if (!(var000C == "是")) goto labelFunc0838_00A0;
 	var000D = 0x0000;
 	goto labelFunc0838_00EF;
 labelFunc0838_00A0:
@@ -61,80 +61,80 @@ labelFunc0838_00EF:
 	if (!(var000D < 0x0002)) goto labelFunc0838_02AC;
 	if (!(var0004 < (var0001 + ((var0000 - var0001) / 0x0004)))) goto labelFunc0838_0152;
 	if (!(var0010 == 0x0001)) goto labelFunc0838_012D;
-	message("\"Please do not tell anyone in town of this, ");
+	message("「請別跟鎮上的任何人提起這件事，");
 	message(var0002);
-	message("! Else I will no longer be able to make a living...\"");
+	message("！否則我將無法繼續糊口了……」");
 	say();
 labelFunc0838_012D:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_0141;
-	message("\"");
+	message("「");
 	message(var0003);
-	message(", thou hast the heart of a true trader...\"");
+	message("，你真有做商人的天分……」");
 	say();
 labelFunc0838_0141:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_014F;
-	message("\"I must be losing my mind to agree to such a price!\"");
+	message("「我一定是瘋了才會同意這樣的價格！」");
 	say();
 labelFunc0838_014F:
 	goto labelFunc0838_0220;
 labelFunc0838_0152:
 	if (!(var0004 < (var0001 + ((var0000 - var0001) / 0x0003)))) goto labelFunc0838_019B;
 	if (!(var0010 == 0x0001)) goto labelFunc0838_0176;
-	message("\"Thou canst see that my prices are fair...\"");
+	message("「你看得出我的價格很公道吧……」");
 	say();
 labelFunc0838_0176:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_018A;
-	message("\"");
+	message("「");
 	message(var0003);
-	message(", thou hast charmed me, I am certain! I would never offer prices this low!\"");
+	message("，你一定迷住我了，我確定！我從沒給過這麼低的價格！」");
 	say();
 labelFunc0838_018A:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_0198;
-	message("\"Who would have thought I would lose my mind so young! To accept such a price...\"");
+	message("「誰能想到我這麼年輕就糊塗了！竟然接受這種價格……」");
 	say();
 labelFunc0838_0198:
 	goto labelFunc0838_0220;
 labelFunc0838_019B:
 	if (!(var0004 < (var0001 + ((var0000 - var0001) / 0x0002)))) goto labelFunc0838_01EA;
 	if (!(var0010 == 0x0001)) goto labelFunc0838_01BF;
-	message("\"A good deal, if I do say so myself.\"");
+	message("「要我說的話，這真是一筆好交易。」");
 	say();
 labelFunc0838_01BF:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_01D3;
-	message("\"Thou art a worthy customer, ");
+	message("「你真是個難得的好顧客，");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
 labelFunc0838_01D3:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_01E7;
-	message("\"'Tis a pleasure doing business with thee, ");
+	message("「跟你做生意真是愉快，");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
 labelFunc0838_01E7:
 	goto labelFunc0838_0220;
 labelFunc0838_01EA:
 	if (!(var0010 == 0x0001)) goto labelFunc0838_01FE;
-	message("\"Thou hast made me a happy woman, ");
+	message("「你讓我成了個高興的女人，");
 	message(var0002);
-	message("!\"");
+	message("！」");
 	say();
 labelFunc0838_01FE:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_0212;
-	message("\"I appreciate thy business, ");
+	message("「感謝你的照顧，");
 	message(var0002);
-	message(".");
+	message("。」");
 	say();
 labelFunc0838_0212:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_0220;
-	message("\"I hate charging such prices, but times are hard...\"");
+	message("「我不喜歡賣這種價格，但時局艱難……」");
 	say();
 labelFunc0838_0220:
-	message("\"Wilt thou agree to a price of ");
+	message("「你同意以 ");
 	message(var0004);
-	message(" monetari, ");
+	message(" 蒙里他利幣的價格成交嗎，");
 	message(var0002);
-	message("?\"");
+	message("？」");
 	say();
 	if (!Func0955()) goto labelFunc0838_0255;
 	if (!(var000B > 0x0001)) goto labelFunc0838_024E;
@@ -144,15 +144,15 @@ labelFunc0838_024E:
 	goto labelFunc0838_02AC;
 labelFunc0838_0255:
 	if (!(var0010 == 0x0001)) goto labelFunc0838_0263;
-	message("\"But what of our agreement?\"");
+	message("「但我們剛才的協議呢？」");
 	say();
 labelFunc0838_0263:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_0271;
-	message("\"Why hast thou changed thy mind?\"");
+	message("「你為什麼改變主意了？」");
 	say();
 labelFunc0838_0271:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_027F;
-	message("\"I thought thou wert in need of my produce!\"");
+	message("「我還以為你需要我的農產品呢！」");
 	say();
 labelFunc0838_027F:
 	if (!(0x001F < (var000B + 0x000A))) goto labelFunc0838_029A;
@@ -165,11 +165,11 @@ labelFunc0838_02A8:
 labelFunc0838_02AC:
 	if (!(var0007 == 0x0001)) goto labelFunc0838_0320;
 	if (!(var000D == 0x0005)) goto labelFunc0838_02FB;
-	message("\"Wert thou not listening, ");
+	message("「你沒在聽嗎，");
 	message(var0002);
-	message(", I said that ");
+	message("，我說過 ");
 	message(var0004);
-	message(" was my final offer. Dost thou accept?\"");
+	message(" 是我的最終底線。你接受嗎？」");
 	say();
 	if (!(var000B < 0x001C)) goto labelFunc0838_02E8;
 	UI_set_npc_id(0xFFBD, (var000B + 0x0004));
@@ -180,9 +180,9 @@ labelFunc0838_02F2:
 	var0008 = 0x0000;
 	goto labelFunc0838_031D;
 labelFunc0838_02FB:
-	message("\"Very well. ");
+	message("「好吧。");
 	message(var0004);
-	message(" monetari is my final offer.\"");
+	message(" 蒙里他利幣是我的最終底線。」");
 	say();
 	if (!(var000B < 0x001E)) goto labelFunc0838_031D;
 	UI_set_npc_id(0xFFBD, (var000B + 0x0002));
@@ -191,81 +191,81 @@ labelFunc0838_031D:
 labelFunc0838_0320:
 	if (!(var000D == 0x0002)) goto labelFunc0838_0366;
 	if (!(var0010 == 0x0001)) goto labelFunc0838_033E;
-	message("\"Thou art a challenge to deal with... How does ");
+	message("「跟你交易真有挑戰性…… ");
 	message(var0004);
-	message(" monetari sound?\"");
+	message(" 蒙里他利幣聽起來如何？」");
 	say();
 labelFunc0838_033E:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_0352;
-	message("\"So, have we agreed on ");
+	message("「那麼，我們算同意以 ");
 	message(var0004);
-	message(" monetari?\"");
+	message(" 蒙里他利幣成交了嗎？」");
 	say();
 labelFunc0838_0352:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_0366;
-	message("\"I offer thee ");
+	message("「我算你 ");
 	message(var0004);
-	message(" monetari. Dost thou accept?\"");
+	message(" 蒙里他利幣。你接受嗎？」");
 	say();
 labelFunc0838_0366:
 	if (!(var000D == 0x0003)) goto labelFunc0838_03AC;
 	if (!(var0010 == 0x0001)) goto labelFunc0838_0384;
-	message("\"I must make a living... Wouldst thou pay ");
+	message("「我也要糊口……你願意付 ");
 	message(var0004);
-	message(" monetari?\"");
+	message(" 蒙里他利幣嗎？」");
 	say();
 labelFunc0838_0384:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_0398;
-	message("\"Let me consider... ");
+	message("「讓我想想…… ");
 	message(var0004);
-	message(" monetari?\"");
+	message(" 蒙里他利幣如何？」");
 	say();
 labelFunc0838_0398:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_03AC;
-	message("\"");
+	message("「那麼 ");
 	message(var0004);
-	message(" monetari, then? I must show some profit or become a beggar.\"");
+	message(" 蒙里他利幣呢？我必須賺點利潤，否則就要去乞討了。」");
 	say();
 labelFunc0838_03AC:
 	if (!(var000D == 0x0004)) goto labelFunc0838_03F6;
 	if (!(var0010 == 0x0001)) goto labelFunc0838_03CE;
-	message("\"I cannot accept less than ");
+	message("「我絕不能低於 ");
 	message(var0004);
-	message(" monetari!\"");
+	message(" 蒙里他利幣！」");
 	say();
-	message("\"Wilt thou agree?\"");
+	message("「你同意嗎？」");
 	say();
 labelFunc0838_03CE:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_03E2;
-	message("\"Surely thou canst see that I can go no lower than ");
+	message("「你肯定看得出我絕不能低於 ");
 	message(var0004);
-	message(" monetari. It is difficult to garden because of the Goblin raids...\"");
+	message(" 蒙里他利幣。因為哥布林襲擊，種菜變得很困難……」");
 	say();
 labelFunc0838_03E2:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_03F6;
-	message("\"My produce is worth no less than ");
+	message("「我的農產品至少值 ");
 	message(var0004);
-	message(" monetari.\"");
+	message(" 蒙里他利幣。」");
 	say();
 labelFunc0838_03F6:
 	if (!(var000D == 0x0005)) goto labelFunc0838_045A;
 	var0004 = var000F;
 	if (!(var0010 == 0x0001)) goto labelFunc0838_041A;
-	message("\"My previous price stands, at ");
+	message("「維持我先前的出價，");
 	message(var0004);
-	message(" monetari. I am at risk from the Goblins while gardening!\"");
+	message(" 蒙里他利幣。我種菜時可是冒著哥布林襲擊的危險！」");
 	say();
 labelFunc0838_041A:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_042E;
-	message("\"");
+	message("「");
 	message(var0004);
-	message(" monetari, and no less! Thou shalt find no one with a better price, I will warrant.\"");
+	message(" 蒙里他利幣，不能再少了！我敢保證，你找不到價格更好的賣家了。」");
 	say();
 labelFunc0838_042E:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_0442;
-	message("\"");
+	message("「我的底線就是 ");
 	message(var0004);
-	message(" monetari is where I stand. I must pay someone to stand watch while I garden.\"");
+	message(" 蒙里他利幣。我種菜時還得花錢請人守衛呢。」");
 	say();
 labelFunc0838_0442:
 	if (!(var000B < 0x001F)) goto labelFunc0838_045A;

@@ -33,12 +33,12 @@ var Func082B 0x82B (var var0000, var var0001)
 	var000A = UI_get_npc_id(0x03F7);
 labelFunc082B_004E:
 	if (!var0007) goto labelFunc082B_0423;
-	var000B = Func0956(["yes", "no", "haggle"]);
-	if (!(var000B == "no")) goto labelFunc082B_0077;
+	var000B = Func0956(["是", "否", "討價還價"]);
+	if (!(var000B == "否")) goto labelFunc082B_0077;
 	return 0x0000;
 	goto labelFunc082B_008A;
 labelFunc082B_0077:
-	if (!(var000B == "yes")) goto labelFunc082B_008A;
+	if (!(var000B == "是")) goto labelFunc082B_008A;
 	var000C = 0x0000;
 	goto labelFunc082B_00D9;
 labelFunc082B_008A:
@@ -54,70 +54,70 @@ labelFunc082B_00D9:
 	if (!(var000C < 0x0002)) goto labelFunc082B_027A;
 	if (!(var0002 < (var0001 + ((var0000 - var0001) / 0x0004)))) goto labelFunc082B_0130;
 	if (!(var000F == 0x0001)) goto labelFunc082B_0111;
-	message("\"Normally I would never accept such an offer, but who do I have to train here? I hope this war ends soon...\"");
+	message("「通常我絕不會接受這種出價，但我在這裡又能教誰呢？希望這場戰爭快點結束……」");
 	say();
 labelFunc082B_0111:
 	if (!(var000F == 0x0002)) goto labelFunc082B_011F;
-	message("\"I have no choice but to accept it at thy price. Assuredly, I have no other offers.\"");
+	message("「我別無選擇，只能按你的價格接受了。確實，我也沒有其他出價了。」");
 	say();
 labelFunc082B_011F:
 	if (!(var000F == 0x0003)) goto labelFunc082B_012D;
-	message("\"I will accept\tthine offer. But I shall deny it to my dying day... I have a reputation to uphold, thou knowest.\"");
+	message("「我接受你的出價。但我到死都不會承認的……你知道的，我得維護自己的聲譽。」");
 	say();
 labelFunc082B_012D:
 	goto labelFunc082B_01F2;
 labelFunc082B_0130:
 	if (!(var0002 < (var0001 + ((var0000 - var0001) / 0x0003)))) goto labelFunc082B_017F;
 	if (!(var000F == 0x0001)) goto labelFunc082B_015A;
-	message("\"Times are strange, ");
+	message("「真是世道奇特，");
 	message(var0004);
-	message(". But thou hast the spell, and I have a bit more gold.\"");
+	message("。不過你拿到了法術，而我也多了一點金幣。」");
 	say();
 labelFunc082B_015A:
 	if (!(var000F == 0x0002)) goto labelFunc082B_016E;
-	message("\"Thou dost bargain well, ");
+	message("「你真會講價，");
 	message(var0004);
-	message(". I will accept this price.\"");
+	message("。我接受這個價格。」");
 	say();
 labelFunc082B_016E:
 	if (!(var000F == 0x0003)) goto labelFunc082B_017C;
-	message("\"I hope thou dost realize that thou art getting a bargain with this price.\"");
+	message("「希望你能明白，以這個價格買到簡直是你占了大便宜。」");
 	say();
 labelFunc082B_017C:
 	goto labelFunc082B_01F2;
 labelFunc082B_017F:
 	if (!(var0002 < (var0001 + ((var0000 - var0001) / 0x0002)))) goto labelFunc082B_01C8;
 	if (!(var000F == 0x0001)) goto labelFunc082B_01A9;
-	message("\"Only ");
+	message("「只要 ");
 	message(var0002);
-	message("??! All right, all right... I will accept this price.\"");
+	message(" ？？！好吧，好吧……我接受這個價格。」");
 	say();
 labelFunc082B_01A9:
 	if (!(var000F == 0x0002)) goto labelFunc082B_01B7;
-	message("\"A decent price.\"");
+	message("「還算公道的價格。」");
 	say();
 labelFunc082B_01B7:
 	if (!(var000F == 0x0003)) goto labelFunc082B_01C5;
-	message("\"How else shall I make money, eh? I will accept this price.\"");
+	message("「不然我還能怎麼賺錢，嗯？我接受這個價格。」");
 	say();
 labelFunc082B_01C5:
 	goto labelFunc082B_01F2;
 labelFunc082B_01C8:
 	if (!(var000F == 0x0001)) goto labelFunc082B_01D6;
-	message("\"I accept thine offer!\"");
+	message("「我接受你的出價！」");
 	say();
 labelFunc082B_01D6:
 	if (!(var000F == 0x0002)) goto labelFunc082B_01E4;
-	message("\"I accept thine offer. Thou hast a fine eye for a bargain!\"");
+	message("「我接受你的出價。你真是有挑便宜貨的好眼光！」");
 	say();
 labelFunc082B_01E4:
 	if (!(var000F == 0x0003)) goto labelFunc082B_01F2;
-	message("\"Yes, a good price that is!\"");
+	message("「是的，真是個好價格！」");
 	say();
 labelFunc082B_01F2:
-	message("\"So, dost thou agree to a price of ");
+	message("「那麼，你同意以 ");
 	message(var0002);
-	message("?\"");
+	message(" 的價格成交嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc082B_0223;
 	if (!(var000A > 0x0001)) goto labelFunc082B_021C;
@@ -127,15 +127,15 @@ labelFunc082B_021C:
 	goto labelFunc082B_027A;
 labelFunc082B_0223:
 	if (!(var000F == 0x0001)) goto labelFunc082B_0231;
-	message("\"I am bored, 'tis true. But I do not take kindly to wasting my time!\"");
+	message("「我是很無聊沒錯。但我可不喜歡別人浪費我的時間！」");
 	say();
 labelFunc082B_0231:
 	if (!(var000F == 0x0002)) goto labelFunc082B_023F;
-	message("\"Now thou hast taken all sport out of the deal!\"");
+	message("「現在你把這交易的所有樂趣都搞砸了！」");
 	say();
 labelFunc082B_023F:
 	if (!(var000F == 0x0003)) goto labelFunc082B_024D;
-	message("\"Where are thy manners\"?!\"");
+	message("「你的禮貌都放哪去了？！』");
 	say();
 labelFunc082B_024D:
 	if (!(0x001F < (var000A + 0x000A))) goto labelFunc082B_0268;
@@ -148,9 +148,9 @@ labelFunc082B_0276:
 labelFunc082B_027A:
 	if (!(var0006 == 0x0001)) goto labelFunc082B_02EA;
 	if (!(var000C == 0x0005)) goto labelFunc082B_02C5;
-	message("\"");
+	message("「");
 	message(var0002);
-	message(" is my final offer. Dost thou want it at this price?\"");
+	message(" 是我的最終底線。這個價格你想要嗎？」");
 	say();
 	if (!(var000A < 0x001C)) goto labelFunc082B_02B0;
 	UI_set_npc_id(0x03F7, (var000A + 0x0004));
@@ -161,9 +161,9 @@ labelFunc082B_02BC:
 	var0007 = 0x0000;
 	goto labelFunc082B_02E7;
 labelFunc082B_02C5:
-	message("\"");
+	message("「");
 	message(var0002);
-	message(".  I will go no lower.\"");
+	message("。我不會再降價了。」");
 	say();
 	if (!(var000A < 0x001E)) goto labelFunc082B_02E7;
 	UI_set_npc_id(0x03F7, (var000A + 0x0002));
@@ -172,79 +172,79 @@ labelFunc082B_02E7:
 labelFunc082B_02EA:
 	if (!(var000C == 0x0002)) goto labelFunc082B_0330;
 	if (!(var000F == 0x0001)) goto labelFunc082B_0308;
-	message("\"Thou dost barter well. How does ");
+	message("「你真會討價還價。 ");
 	message(var0002);
-	message(" sound?\"");
+	message(" 聽起來如何？」");
 	say();
 labelFunc082B_0308:
 	if (!(var000F == 0x0002)) goto labelFunc082B_031C;
-	message("\"I see thou dost understand the value of this fine spell. How does ");
+	message("「我看得出你明白這個上等法術的價值。 ");
 	message(var0002);
-	message(" sound?\"");
+	message(" 聽起來如何？」");
 	say();
 labelFunc082B_031C:
 	if (!(var000F == 0x0003)) goto labelFunc082B_0330;
-	message("\"I shall make thee a deal. For thee only I offer it for ");
+	message("「我跟你做個交易。只為你一人，我算你 ");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
 labelFunc082B_0330:
 	if (!(var000C == 0x0003)) goto labelFunc082B_0376;
 	if (!(var000F == 0x0001)) goto labelFunc082B_034E;
-	message("\"Hmmm.... Wouldst thou pay ");
+	message("「嗯……你願意付 ");
 	message(var0002);
-	message("?\"");
+	message(" 嗎？」");
 	say();
 labelFunc082B_034E:
 	if (!(var000F == 0x0002)) goto labelFunc082B_0362;
-	message("\"Thou dost drive a hard bargain. ");
+	message("「你真是個殺價高手。 ");
 	message(var0002);
-	message("?\"");
+	message(" 怎麼樣？」");
 	say();
 labelFunc082B_0362:
 	if (!(var000F == 0x0003)) goto labelFunc082B_0376;
-	message("\"What dost thou say to ");
+	message("「你對 ");
 	message(var0002);
-	message("?\"");
+	message(" 覺得如何？」");
 	say();
 labelFunc082B_0376:
 	if (!(var000C == 0x0004)) goto labelFunc082B_03BC;
 	if (!(var000F == 0x0001)) goto labelFunc082B_0394;
-	message("\"Better I should fling my spells to the Chaos hordes! ");
+	message("「我還不如把法術扔給混沌軍團！就是 ");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
 labelFunc082B_0394:
 	if (!(var000F == 0x0002)) goto labelFunc082B_03A8;
-	message("\"Thou dost mock my years of training with such an offer! I can go no lower than ");
+	message("「你這種出價是在侮辱我多年的苦修！我絕不能低於 ");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
 labelFunc082B_03A8:
 	if (!(var000F == 0x0003)) goto labelFunc082B_03BC;
-	message("\"I am no fool! This fine spell is worth at least ");
+	message("「我可不是傻瓜！這個上等法術至少值 ");
 	message(var0002);
-	message(".\"");
+	message("。」");
 	say();
 labelFunc082B_03BC:
 	if (!(var000C == 0x0005)) goto labelFunc082B_0420;
 	var0002 = var000E;
 	if (!(var000F == 0x0001)) goto labelFunc082B_03E0;
-	message("\"My previous offer stands, at ");
+	message("「維持我先前的出價，");
 	message(var0002);
-	message(". This spell is not some paltry bauble that thou mayest find anywhere.\"");
+	message("。這個法術可不是你在任何地方都能找到的破爛小玩藝。」");
 	say();
 labelFunc082B_03E0:
 	if (!(var000F == 0x0002)) goto labelFunc082B_03F4;
-	message("\"Do not be insulting! ");
+	message("「別侮辱人！就是 ");
 	message(var0002);
-	message("!\"");
+	message(" ！」");
 	say();
 labelFunc082B_03F4:
 	if (!(var000F == 0x0003)) goto labelFunc082B_0408;
-	message("\"My offer stands at ");
+	message("「我的出價維持在 ");
 	message(var0002);
-	message(". Thou art a stranger, after all. I know not what use thou wilt make of this.\"");
+	message("。畢竟你是個陌生人，我不知道你會拿這拿去幹嘛。」");
 	say();
 labelFunc082B_0408:
 	if (!(var000A < 0x001F)) goto labelFunc082B_0420;

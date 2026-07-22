@@ -25,57 +25,57 @@ void Func082A 0x82A ()
 	UI_push_answers();
 	var0000 = true;
 	var0001 = 0x0284;
-	message("\"I can only accept gold coins. I hope that is acceptable with thee.\"");
+	message("「我只收金幣。希望這對你來說沒問題。」");
 	say();
 labelFunc082A_0012:
 	if (!var0000) goto labelFunc082A_025D;
-	message("\"In which circle art thou interested?\"");
+	message("「你對哪個環階的法術感興趣？」");
 	say();
-	var0002 = Func0957(["nothing", "Fifth", "Sixth", "Seventh", "Eighth", "Ninth"]);
+	var0002 = Func0957(["再看看", "第五環", "第六環", "第七環", "第八環", "第九環"]);
 	var0002 = (var0002 - 0x0001);
 	if (!(var0002 == 0x0000)) goto labelFunc082A_004E;
 	goto labelFunc082A_025D;
 labelFunc082A_004E:
 	if (!(var0002 == 0x0001)) goto labelFunc082A_008B;
-	var0003 = ["nothing", "Mass Sleep"];
+	var0003 = ["再看看", "大催眠術( Mass Sleep )"];
 	var0004 = [0x0000, 0x0025];
 	var0005 = [0x0000, 0x00FA];
 	var0006 = [0x0000, 0x0082];
 	goto labelFunc082A_018B;
 labelFunc082A_008B:
 	if (!(var0002 == 0x0002)) goto labelFunc082A_00C8;
-	var0003 = ["nothing", "Create Ammunition"];
+	var0003 = ["再看看", "造箭術( Create Ammunition )"];
 	var0004 = [0x0000, 0x002E];
 	var0005 = [0x0000, 0x012C];
 	var0006 = [0x0000, 0x00B4];
 	goto labelFunc082A_018B;
 labelFunc082A_00C8:
 	if (!(var0002 == 0x0003)) goto labelFunc082A_0105;
-	var0003 = ["nothing", "Vibrate"];
+	var0003 = ["再看看", "大震動( Vibrate )"];
 	var0004 = [0x0000, 0x0036];
 	var0005 = [0x0000, 0x015E];
 	var0006 = [0x0000, 0x00FA];
 	goto labelFunc082A_018B;
 labelFunc082A_0105:
 	if (!(var0002 == 0x0004)) goto labelFunc082A_014E;
-	var0003 = ["nothing", "Invoke Serpent", "Serpent Bond"];
+	var0003 = ["再看看", "召喚雪蛇( Invoke Serpent )", "蛇枷( Serpent Bond )"];
 	var0004 = [0x0000, 0x003C, 0x003D];
 	var0005 = [0x0000, 0x017C, 0x01C2];
 	var0006 = [0x0000, 0x00A0, 0x0113];
 	goto labelFunc082A_018B;
 labelFunc082A_014E:
 	if (!(var0002 == 0x0005)) goto labelFunc082A_018B;
-	var0003 = ["nothing", "Imbalance"];
+	var0003 = ["再看看", "均衡失調( Imbalance )"];
 	var0004 = [0x0000, 0x0047];
 	var0005 = [0x0000, 0x0320];
 	var0006 = [0x0000, 0x0320];
 	goto labelFunc082A_018B;
 labelFunc082A_018B:
-	message("\"What spell dost thou wish to buy?\"");
+	message("「你想購買哪種法術？」");
 	say();
 	var0007 = Func0957(var0003);
 	if (!(var0007 == 0x0001)) goto labelFunc082A_01A9;
-	message("\"So be it...\"");
+	message("「那就算了吧……」");
 	say();
 	goto labelFunc082A_0250;
 labelFunc082A_01A9:
@@ -83,11 +83,11 @@ labelFunc082A_01A9:
 	var0009 = var0005[var0007];
 	var000A = var0006[var0007];
 	var000B = var0003[var0007];
-	message("\"I will sell thee ");
+	message("「我賣你 ");
 	message(var000B);
-	message(" for ");
+	message("，價格是 ");
 	message(var0009);
-	message(" gold. Dost thou accept?\"");
+	message(" 枚金幣。你接受嗎？」");
 	say();
 	var000C = Func082B(var0009, var000A);
 	var000D = 0x0000;
@@ -95,27 +95,27 @@ labelFunc082A_01A9:
 	var000D = Func096F(var0008, var0001, var000C);
 labelFunc082A_0208:
 	if (!(var000D == 0x0001)) goto labelFunc082A_0219;
-	message("\"'Tis thine!\"");
+	message("「拿去吧，這是你的了！」");
 	say();
 	goto labelFunc082A_0250;
 labelFunc082A_0219:
 	if (!(var000D == 0x0002)) goto labelFunc082A_022E;
-	message("\"Ask me again when thou dost have a spellbook!\"");
+	message("「等你有了魔法書再來找我吧！」");
 	say();
 	var0000 = false;
 	goto labelFunc082A_025D;
 labelFunc082A_022E:
 	if (!(var000D == 0x0003)) goto labelFunc082A_023F;
-	message("\"Thou dost not have enough gold to buy that spell!\"");
+	message("「你沒有足夠的金幣來購買那個法術！」");
 	say();
 	goto labelFunc082A_0250;
 labelFunc082A_023F:
 	if (!(var000D == 0x0004)) goto labelFunc082A_0250;
-	message("\"Thou dost already have that spell!\"");
+	message("「你已經學過那個法術了！」");
 	say();
 	goto labelFunc082A_0250;
 labelFunc082A_0250:
-	message("\"Wouldst thou care for another spell?\"");
+	message("「你還想再買別的法術嗎？」");
 	say();
 	var0000 = Func0955();
 	goto labelFunc082A_0012;

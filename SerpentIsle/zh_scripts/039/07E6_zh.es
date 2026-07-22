@@ -37,18 +37,18 @@ labelFunc07E6_0046:
 	UI_show_npc_face0(0xFFD8, 0x0000);
 	var0002 = UI_is_pc_female();
 	if (!(var0002 == true)) goto labelFunc07E6_0068;
-	var0003 = "lass";
+	var0003 = "姑娘";
 	goto labelFunc07E6_006E;
 labelFunc07E6_0068:
-	var0003 = "lad";
+	var0003 = "小子";
 labelFunc07E6_006E:
-	message("\"Here ye be, ");
+	message("「到了，");
 	message(var0003);
-	message("...\" ~\"I never thought we'd make it, but Moonshade lies over yon.\"");
+	message("……」~「我還以為我們撐不過來了，不過月影城( Moonshade )就在那邊。」");
 	say();
-	message("\"I'll not even attempt to make the Arabella seaworthy until these blasted storms are over!\"");
+	message("「在這些該死的風暴結束之前，我甚至不會嘗試去修理 Arabella 讓她能出航！」");
 	say();
-	message("\"If ye be wantin' Captain Hawk, I'll be at the bottom of a mug at the Blue Boar Inn.\"");
+	message("「如果你要找 Hawk 船長，我會待在藍野豬( Blue Boar )旅店裡，直到把酒杯喝得底朝天。」");
 	say();
 	UI_remove_npc_face0();
 	UI_set_weather(0x0000);
@@ -81,8 +81,6 @@ labelFunc07E6_0214:
 labelFunc07E6_0229:
 	gflags[0x01CB] = false;
 	gflags[0x01CC] = true;
-	Func097F(0xFFD8, "@Never again!@", 0x023E);
+	Func097F(0xFFD8, "@再也不幹了！@", 0x023E);
 	return;
 }
-
-

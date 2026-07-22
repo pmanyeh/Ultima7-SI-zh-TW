@@ -8,36 +8,34 @@ void Func080A 0x80A ()
 	var var0000;
 
 	if (!UI_get_cont_items(0xFFDE, 0xFE99, 0xFE99, 0xFE99)) goto labelFunc080A_007B;
-	message("\"I have some of thy belongings in my possession. Wouldst thou like them returned?\"");
+	message("「我保管著你的一些物品。你想拿回去嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc080A_0073;
-	message("\"Here they are.\"");
+	message("「給你。」");
 	say();
 	gflags[0x0013] = false;
 	var0000 = Func09B3(0xFFDE);
 	if (!(var0000[0x0001] != 0x0000)) goto labelFunc080A_003F;
-	message("\"Thy companions will have to help thee carry some of these things.\"");
+	message("「你的同伴必須幫你拿些東西。」");
 	say();
 labelFunc080A_003F:
 	if (!(var0000[0x0002] > 0x0000)) goto labelFunc080A_0070;
 	var0000 = var0000[0x0002];
 	if (!(var0000 > 0x0001)) goto labelFunc080A_006C;
-	message("\"Since thou canst not carry these remaining ");
+	message("「既然你拿不動剩下的這 ");
 	message(var0000);
-	message(" items, they shall go at thy feet.\"");
+	message(" 件物品，我就把它們放在你腳邊了。」");
 	say();
 	goto labelFunc080A_0070;
 labelFunc080A_006C:
-	message("\"Since thou dost not have enough room for this last item, it shall go at thy feet.\"");
+	message("「既然你沒有足夠的空間放這最後一件物品，我就把它放在你腳邊了。」");
 	say();
 labelFunc080A_0070:
 	goto labelFunc080A_007B;
 labelFunc080A_0073:
 	gflags[0x0013] = true;
-	message("\"If that is what thou dost want, I will keep them for thee. Return when thou wantest them.\"");
+	message("「如果你希望這樣，我會繼續幫你保管。想要的時候再來找我。」");
 	say();
 labelFunc080A_007B:
 	return;
 }
-
-

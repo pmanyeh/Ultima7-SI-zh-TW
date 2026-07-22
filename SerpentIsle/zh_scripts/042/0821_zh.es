@@ -6,39 +6,39 @@ void Func0821 0x821 ()
 {
 	var var0000;
 
-	message("\"Rhys Fletcher, a master bowman on an urgent mission for his king, desperately needed to find a hidden mountain pass.\"");
+	message("「弓箭大師 Rhys Fletcher 正在為國王執行一項緊急任務，急需找到一條隱密的山路小道。」");
 	say();
-	message("\"While searching for the pass he came upon three mystics who were standing alongside the trail.\"");
+	message("「在尋找小道時，他遇到了三位站在小徑旁的神秘使者。」");
 	say();
-	message("\"One mystic wore a black sash while the other two had brown sashes.\"");
+	message("「其中一位使者佩戴著黑色腰帶，另外兩位則佩戴著棕色腰帶。」");
 	say();
-	message("\"Rhys knew that some mystics were truth-tellers and some were not.\"");
+	message("「Rhys 知道這些使者中，有些總是說真話，有些則不然。」");
 	say();
-	message("\"Rhys thought that if he could figure out if one of the mystics was a truth-teller, he could learn the whereabouts of the hidden pass.\"");
+	message("「Rhys 想著，只要他能弄清楚哪一位使者是說真話的人，就能得知隱密小道的下落。」");
 	say();
-	message("\"So he rode up to the mystics and asked, 'Art thou truth-tellers?'\"");
+	message("「於是他騎馬來到神秘使者面前問道：『你們是說真話的人嗎？』」");
 	say();
-	message("\"The mystic wearing the black sash answered the bowyer by nodding his head up and down. The second mystic, who had only one arm, told Rhys that the mystic with the black sash indicated that he was a truth-teller. However, the other mystic, who was fat, said that the mystic with the black sash was lying.\"");
+	message("「佩戴黑色腰帶的使者對弓箭手點了點頭。第二位獨臂的使者告訴 Rhys ，佩戴黑腰帶的使者表示自己是說真話的人。然而，第三位體型身材較胖的使者卻說，佩戴黑腰帶的使者在撒謊。」");
 	say();
-	message("\"How many of these mystics were liars?\"");
+	message("「請問這三位使者中，有幾個人是撒謊者？」");
 	say();
 	var0000 = UI_input_numeric_value(0x0000, 0x0003, 0x0001, 0x0000);
 	if (!(var0000 == 0x0001)) goto labelFunc0821_0064;
 	if (!(!gflags[0x0305])) goto labelFunc0821_0059;
-	message("\"That is correct!\"");
+	message("「答對了！」");
 	say();
 	gflags[0x0309] = true;
 	Func095D(0x0064);
 	gflags[0x0305] = true;
 	goto labelFunc0821_0061;
 labelFunc0821_0059:
-	message("\"That is correct!\"");
+	message("「答對了！」");
 	say();
 	gflags[0x0309] = true;
 labelFunc0821_0061:
 	goto labelFunc0821_0068;
 labelFunc0821_0064:
-	message("\"I'm sorry, but that is not the correct answer.\"");
+	message("「抱歉，這不是正確答案。」");
 	say();
 labelFunc0821_0068:
 	return;

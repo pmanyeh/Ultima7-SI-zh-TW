@@ -30,7 +30,7 @@ void Func0806 0x806 ()
 	var0001 = Func0953();
 	UI_push_answers();
 	var0002 = true;
-	var0003 = ["nothing", "wine", "mead", "ale"];
+	var0003 = ["再看看", "葡萄酒", "蜂蜜酒", "麥酒"];
 	var0004 = [0x0000, 0x0268, 0x0268, 0x0268];
 	var0005 = [0xFE99, 0x0005, 0x0001, 0x0003];
 	var0006 = [0x0000, 0x0008, 0x000F, 0x0005];
@@ -38,15 +38,15 @@ void Func0806 0x806 ()
 	var0008 = 0x0284;
 	var0009 = [0x0000, 0x0001, 0x0001, 0x0001];
 	var000A = [0x0000, 0x0001, 0x0001, 0x0001];
-	message("\"What wouldst thou like to quench thy thirst, ");
+	message("「你想喝點什麼來解渴，");
 	message(var0000);
-	message("?\"");
+	message("？」");
 	say();
 labelFunc0806_00A2:
 	if (!var0002) goto labelFunc0806_0249;
 	var000B = Func0957(var0003);
 	if (!(var000B == 0x0001)) goto labelFunc0806_00C6;
-	message("\"Our cellars are full, if thou dost change thy mind!\"");
+	message("「如果你改變主意的話，我們的酒窖可是滿滿的！」");
 	say();
 	var0002 = false;
 	goto labelFunc0806_0246;
@@ -54,25 +54,25 @@ labelFunc0806_00C6:
 	var000C = var0006[var000B];
 	var000D = 0x0000;
 	if (!(var000B == 0x0002)) goto labelFunc0806_00EF;
-	message("\"Ah, that will be ");
+	message("「啊，那需要 ");
 	message(var000C);
-	message(" gold coins. We have very little left.\" ~\"Dost thou accept?\"");
+	message(" 金幣。我們剩下的不多了。」~「你接受嗎？」");
 	say();
-	var000E = "bottles of wine";
+	var000E = "瓶葡萄酒";
 labelFunc0806_00EF:
 	if (!(var000B == 0x0003)) goto labelFunc0806_0109;
-	message("\"At ");
+	message("「只要 ");
 	message(var000C);
-	message(", wilt thou try some?\"");
+	message(" 金幣，你想嚐嚐嗎？」");
 	say();
-	var000E = "bottles of mead";
+	var000E = "瓶蜂蜜酒";
 labelFunc0806_0109:
 	if (!(var000B == 0x0004)) goto labelFunc0806_0123;
-	message("\"");
+	message("「價格是 ");
 	message(var000C);
-	message(" is the price. Dost thou find that acceptable?\"");
+	message(" 金幣。你覺得可以接受嗎？」");
 	say();
-	var000E = "mugs of ale";
+	var000E = "杯麥酒";
 labelFunc0806_0123:
 	if (!(var000C == var0007[var000B])) goto labelFunc0806_0148;
 	if (!Func0955()) goto labelFunc0806_013F;
@@ -87,9 +87,9 @@ labelFunc0806_0148:
 labelFunc0806_015A:
 	if (!(var000F > 0x0000)) goto labelFunc0806_01C8;
 	if (!(var000A[var000B] == 0x0001)) goto labelFunc0806_01A3;
-	message("\"How many ");
+	message("「你想要多少");
 	message(var000E);
-	message(" wouldst thou like?\"");
+	message("？」");
 	say();
 	var000D = Func0943(var0004[var000B], var0005[var000B], var0009[var000B], var0008, var000F, 0x0014, 0x0001, false);
 	goto labelFunc0806_01C8;
@@ -97,23 +97,23 @@ labelFunc0806_01A3:
 	var000D = Func0943(var0004[var000B], var0005[var000B], var0009[var000B], var0008, var000F, 0x0000, 0x0001, false);
 labelFunc0806_01C8:
 	if (!(var000D == 0x0001)) goto labelFunc0806_01DF;
-	message("\"Drink in health, ");
+	message("「祝你健康，");
 	message(var0000);
-	message("!\"");
+	message("！」");
 	say();
 	goto labelFunc0806_023C;
 labelFunc0806_01DF:
 	if (!(var000D == 0x0002)) goto labelFunc0806_01F6;
-	message("\"Thou canst not carry so many bottles, ");
+	message("「你拿不了這麼多瓶，");
 	message(var0000);
-	message("!\"");
+	message("！」");
 	say();
 	goto labelFunc0806_023C;
 labelFunc0806_01F6:
 	if (!(var000D == 0x0003)) goto labelFunc0806_023C;
-	message("\"I am afraid thou dost not have the money to pay, ");
+	message("「恐怕你沒有錢付帳，");
 	message(var0000);
-	message(".\"");
+	message("。」");
 	say();
 	if (!(0x001F < (UI_get_npc_id(0xFFDA) + 0x0006))) goto labelFunc0806_0229;
 	UI_set_npc_id(0xFFDA, 0x001F);
@@ -123,7 +123,7 @@ labelFunc0806_0229:
 labelFunc0806_023B:
 	abort;
 labelFunc0806_023C:
-	message("\"Wouldst thou care for more?\"");
+	message("「你還需要來點別的嗎？」");
 	say();
 	var0002 = Func0955();
 labelFunc0806_0246:
@@ -132,5 +132,3 @@ labelFunc0806_0249:
 	UI_pop_answers();
 	return;
 }
-
-

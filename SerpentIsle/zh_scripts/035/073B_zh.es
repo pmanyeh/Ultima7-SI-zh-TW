@@ -44,18 +44,18 @@ void Func073B object#(0x73B) ()
 	UI_set_schedule_type(var0001, 0x000F);
 	UI_set_alignment(var0001, 0x0001);
 	UI_set_item_flag(var0001, 0x001D);
-	var0002 = Func0992(0x0001, "@We must hurry!@", "@I must hurry!@", true);
+	var0002 = Func0992(0x0001, "@我們必須快點！@", "@我必須快點！@", true);
 	if (!(!UI_get_item_flag(0xFFFD, 0x0006))) goto labelFunc073B_009A;
 	UI_add_to_party(0xFFFD);
-	Func097F(0xFFFD, "@Wait, Avatar!@", 0x0000);
+	Func097F(0xFFFD, "@等等，聖者！@", 0x0000);
 labelFunc073B_009A:
 	if (!(!UI_get_item_flag(0xFFFE, 0x0006))) goto labelFunc073B_00BB;
 	UI_add_to_party(0xFFFE);
-	Func097F(0xFFFE, "@Hold, Avatar!@", 0x0000);
+	Func097F(0xFFFE, "@慢著，聖者！@", 0x0000);
 labelFunc073B_00BB:
 	if (!(!UI_get_item_flag(0xFFFF, 0x0006))) goto labelFunc073B_00DC;
 	UI_add_to_party(0xFFFF);
-	Func097F(0xFFFF, "@Stop, Avatar!@", 0x0000);
+	Func097F(0xFFFF, "@停下，聖者！@", 0x0000);
 labelFunc073B_00DC:
 	abort;
 labelFunc073B_00DD:
@@ -63,7 +63,7 @@ labelFunc073B_00DD:
 	if (!(event == 0x0003)) goto labelFunc073B_01B2;
 	var0002 = UI_set_item_quality(var0003, 0x0000);
 	var0001 = UI_find_nearby(0xFE9C, 0x013E, 0x0028, 0x0000);
-	var0002 = Func0992(0x0001, "@Batlin!@", "@Batlin!@", true);
+	var0002 = Func0992(0x0001, "@巴特林！@", "@巴特林！@", true);
 	var0002 = UI_execute_usecode_array(var0001, [(byte)0x23, (byte)0x59, 0x0000, (byte)0x27, 0x0007, (byte)0x6F, (byte)0x27, 0x0002, (byte)0x70, (byte)0x27, 0x0002, (byte)0x65, (byte)0x27, 0x0002, (byte)0x68, (byte)0x68, (byte)0x27, 0x0002, (byte)0x6A, (byte)0x27, 0x0002, (byte)0x61, (byte)0x30, (byte)0x27, 0x0002, (byte)0x30, (byte)0x27, 0x0001, (byte)0x30, (byte)0x27, 0x0001, (byte)0x6F, (byte)0x27, 0x0005]);
 	Func08C0(true);
 	var0002 = UI_set_item_quality(item, 0x0001);
@@ -77,9 +77,9 @@ labelFunc073B_01B2:
 	if (!(var0004 == 0x0000)) goto labelFunc073B_029C;
 	var0001 = UI_find_nearby(0xFE9C, 0x013E, 0x0014, 0x0000);
 	UI_show_npc_face0(0xFEE1, 0x0001);
-	message("\"Fool! Thou art too late. Now I shall enter the Wall of Lights and become immortal!\"");
+	message("「笨蛋！你太遲了。現在我將進入光明之牆( Wall of Lights )，並獲得永生！」");
 	say();
-	message("\"Then I shall return to destroy thy mortal soul!\"");
+	message("「然後我會回來摧毀你凡人的靈魂！」");
 	say();
 	UI_remove_npc_face0();
 	var0002 = UI_execute_usecode_array(var0001, [(byte)0x23, (byte)0x6D, (byte)0x27, 0x0004, (byte)0x61, (byte)0x27, 0x0003, (byte)0x6F, (byte)0x27, 0x0003, (byte)0x70, (byte)0x27, 0x0004, (byte)0x65, (byte)0x68, (byte)0x27, 0x0003, (byte)0x68, (byte)0x27, 0x0003, (byte)0x6A, (byte)0x27, 0x0001, (byte)0x67, (byte)0x27, 0x0001, (byte)0x6A, (byte)0x27, 0x0001, (byte)0x65, (byte)0x68, (byte)0x27, 0x0003, (byte)0x68, (byte)0x27, 0x0003, (byte)0x69, (byte)0x27, 0x0003, (byte)0x55, 0x073B]);
@@ -93,11 +93,11 @@ labelFunc073B_029C:
 	UI_error_message("No Batlin");
 labelFunc073B_02C7:
 	UI_show_npc_face0(0xFEE1, 0x0001);
-	message("\"Wait... No! The wall is not opening for me! This cannot be!\"");
+	message("「等等……不！這道牆沒有為我打開！這不可能！」");
 	say();
-	message("\"No... The banes, they have... Oh, what have I done!\"");
+	message("「不……那些災禍，牠們已經……噢，我都做了些什麼！」");
 	say();
-	message("\"I have been tricked! Avatar! I beseech thee! Help me before...\"");
+	message("「我被耍了！聖者！我哀求你！快幫幫我，在……之前……」");
 	say();
 	UI_remove_npc_face0();
 	UI_clear_item_flag(var0001, 0x001D);
@@ -284,21 +284,21 @@ labelFunc073B_095D:
 labelFunc073B_09FB:
 	if (!(var0004 == 0x0007)) goto labelFunc073B_0DC3;
 	UI_show_npc_face0(0xFEDE, 0x0000);
-	message("\"I am Anarchy! Hahaha!\"");
+	message("「我即是『無序』！哈哈哈！」");
 	say();
-	message("\"The world shall quail before me! Wrong shall become right! And right shall become lost! Nothing shall escape my touch!\"");
+	message("「世界將在我腳下顫抖！是非將會顛倒！正道將蕩然無存！沒有任何事物能逃出我的掌心！」");
 	say();
 	UI_remove_npc_face0();
 	UI_show_npc_face0(0xFEDD, 0x0000);
-	message("\"Hahaha! I am the Wantonness Bane!\"");
+	message("「哈哈哈！我就是『放縱之災』！」");
 	say();
-	message("\"Wherever I pass, people shall frolic and sate their wild desires! I shall drive thee to feed thy darkest hungers!\"");
+	message("「凡我所踏足之地，人們皆將狂歡縱慾，滿足其最狂野的慾望！我將驅使你，去填飽你內心最黑暗的飢渴！」");
 	say();
 	UI_remove_npc_face0();
 	UI_show_npc_face0(0xFEDC, 0x0000);
-	message("\"I -- hahaha! -- am the Insanity Bane! Hahaha!\"");
+	message("「我——哈哈哈！——即是『瘋狂之災』！哈哈哈！」");
 	say();
-	message("\"All those who fall within my shadow shall have their reason clouded and their wits addled! Their greatest love shall lie in the rubbish they once loathed! Hahaha!\"");
+	message("「凡落入我陰影之中者，皆將理智蒙蔽、神智錯亂！他們昔日深惡痛絕的垃圾，將成為他們一生的至愛！哈哈哈！」");
 	say();
 	UI_remove_npc_face0();
 	var0000 = UI_get_object_position(0xFE9C);
@@ -398,5 +398,3 @@ labelFunc073B_0D79:
 labelFunc073B_0DC3:
 	return;
 }
-
-
