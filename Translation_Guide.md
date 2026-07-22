@@ -18,6 +18,7 @@
 11. **隱藏於變數中的字串翻譯**：請務必檢查腳本中將字串賦值給變數的語句（例如 `var0000 = "Mundane";`）。這些變數經常會透過 `message(var0000);` 被代入對話中顯示，因此變數內的英文字串也必須正確翻譯成中文（例如改為 `var0000 = "凡夫俗子";`），以免在對話顯示時出現未翻譯的英文。
 12. **專有地名的翻譯處理**：具有明確中文翻譯的地名（例如「月影城」、「自由山地牢」），在一般對話文本（message）中請採用「中文譯名( 英文原名 )」的格式（例如：`月影城( Moonshade )`，且左右預留括號空白以利閱讀），以利玩家對照原文；而在對話選項（UI_add_answer / case / UI_remove_answer）中，請僅使用「中文譯名」（例如：`月影城`），以保持選單簡潔並確保三位一體一致性。
 13. **單數與複數的統一處理**：遊戲中經常會出現單數與複數名詞的對應寫法，例如 `sword` 與 `swords`。請統一翻譯為中文，例如 `劍` 與 `劍`（因為中文本身不區分單複數），並在 `Extracted_Terms.md` 中分別註記為 `sword / swords`，避免在遊戲中出現單複數翻譯不一致的情況。
+14. **盧恩符文與蛇型文處理 (Rune & Ophidian Fonts)**：凡呼叫 `UI_display_runes(font_id, ...)` 進行畫面繪製與渲染的文本（包含 Runic 符文、Ophidian 蛇型文、Serpent Scroll 卷軸點陣字），均必須**保留英文原字串**。這是因為 Exult 的內建點陣字型檔僅將 ASCII 英文字母映射為專用圖騰/符號，若改為中文 UTF-8 字串會無法顯示或產生亂碼。詳細說明與 Font ID 對照表請參閱 [Rune_and_Ophidian_Guide.md](file:///d:/git/Ultima7-SI-zh-TW/Rune_and_Ophidian_Guide.md)。
 
 ## 翻譯工作流程 (Workflow)
 1. **紀錄進度**：每翻譯完成一個 `.es` 檔，都必須在 `si_functions_report.csv` 對應的紀錄中將「Translated」改為「Yes」，並於「NPC/Event」欄位填寫相關的人名、事件或簡短描述 (10~20字)。

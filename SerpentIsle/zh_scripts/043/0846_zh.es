@@ -68,7 +68,7 @@ labelFunc0846_00E0:
 	if (!(var000C == 0x0002)) goto labelFunc0846_010D;
 	message("「這葡萄酒微乾帶甘甜。一瓶我可以賣你 ");
 	message(var000D);
-	message(" 蒙里他利幣( Monetari )。」");
+	message(" 蒙里他利幣。」");
 	say();
 	message("「你接受嗎？」");
 	say();
@@ -81,14 +81,14 @@ labelFunc0846_010D:
 	say();
 	message("「價格是 ");
 	message(var000D);
-	message(" 蒙里他利幣( Monetari )，你願意買一些嗎？」");
+	message(" 蒙里他利幣，你願意買一些嗎？」");
 	say();
 	var000F = "瓶蜂蜜酒";
 labelFunc0846_0131:
 	if (!(var000C == 0x0004)) goto labelFunc0846_014B;
 	message("「一馬克杯麥芽酒只要 ");
 	message(var000D);
-	message(" 蒙里他利幣( Monetari )。男人們似乎都很喜歡它！你想要來點嗎？」");
+	message(" 蒙里他利幣。男人們似乎都很喜歡它！你想要來點嗎？」");
 	say();
 	var000F = "杯麥芽酒";
 labelFunc0846_014B:

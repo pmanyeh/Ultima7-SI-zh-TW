@@ -84,7 +84,7 @@ labelFunc0845_01A4:
 	if (!(var000B == 0x0002)) goto labelFunc0845_01C8;
 	message("「你嚐過最美味的家禽肉只要 ");
 	message(var000C);
-	message(" 蒙里他利幣( Monetari )。」");
+	message(" 蒙里他利幣。」");
 	say();
 	message("「");
 	message(var000F);
@@ -95,7 +95,7 @@ labelFunc0845_01C8:
 	if (!(var000B == 0x0003)) goto labelFunc0845_01EC;
 	message("「牛肉餐一份要 ");
 	message(var000C);
-	message(" 蒙里他利幣( Monetari )，就算雙倍價格也很划算。」");
+	message(" 蒙里他利幣，就算雙倍價格也很划算。」");
 	say();
 	message("「");
 	message(var000F);
@@ -106,7 +106,7 @@ labelFunc0845_01EC:
 	if (!(var000B == 0x0004)) goto labelFunc0845_0210;
 	message("「排骨是我的招牌菜。加了特製香料，你懂的……要價 ");
 	message(var000C);
-	message(" 蒙里他利幣( Monetari )。」");
+	message(" 蒙里他利幣。」");
 	say();
 	message("「");
 	message(var000F);
@@ -117,7 +117,7 @@ labelFunc0845_0210:
 	if (!(var000B == 0x0005)) goto labelFunc0845_0234;
 	message("「我的麵包每天新鮮出爐。價格是 ");
 	message(var000C);
-	message(" 蒙里他利幣( Monetari )。」");
+	message(" 蒙里他利幣。」");
 	say();
 	message("「");
 	message(var000F);
@@ -128,7 +128,7 @@ labelFunc0845_0234:
 	if (!(var000B == 0x0006)) goto labelFunc0845_025E;
 	message("「鮮魚餐一份要 ");
 	message(var000C);
-	message(" 蒙里他利幣( Monetari )。那是烤鱒魚淋上美味的奶油醬。非常美味，");
+	message(" 蒙里他利幣。那是烤鱒魚淋上美味的奶油醬。非常美味，");
 	message(var0000);
 	message("。」");
 	say();
@@ -141,7 +141,7 @@ labelFunc0845_025E:
 	if (!(var000B == 0x0007)) goto labelFunc0845_0288;
 	message("「我上好的香腸餐只要 ");
 	message(var000C);
-	message(" 蒙里他利幣( Monetari )，");
+	message(" 蒙里他利幣，");
 	message(var0000);
 	message("。」");
 	say();
@@ -154,7 +154,7 @@ labelFunc0845_0288:
 	if (!(var000B == 0x0008)) goto labelFunc0845_02B2;
 	message("「買我的蛋糕只要 ");
 	message(var000C);
-	message(" 蒙里他利幣( Monetari )算是很便宜了，");
+	message(" 蒙里他利幣算是很便宜了，");
 	message(var0000);
 	message("，如果你喜歡甜食的話……」");
 	say();
@@ -208,7 +208,7 @@ labelFunc0845_037C:
 	say();
 	goto labelFunc0845_03C3;
 labelFunc0845_03BF:
-	message("「看來你沒有足夠的蒙里他利幣( Monetari )付那個……」");
+	message("「看來你沒有足夠的蒙里他利幣付那個……」");
 	say();
 labelFunc0845_03C3:
 	if (!(0x001F < (UI_get_npc_id(0xFFBA) + 0x0006))) goto labelFunc0845_03E2;
