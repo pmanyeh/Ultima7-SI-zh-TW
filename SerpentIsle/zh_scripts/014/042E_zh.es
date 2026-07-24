@@ -189,11 +189,11 @@ labelFunc042E_035D:
 	message("「幼鹿城( Fawn )，美麗之城。幼鹿城，一個在虛榮和追求權力的過程中失去愛( Love )的城市。」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc042E_037F;
-	message("「但幼鹿城( Fawn )現在有了新的希望，因為 Yelinda 夫人( Lady Yelinda )現在親自統治了。這是美( Beauty )與愛( Love )的新黎明。」");
+	message("「但幼鹿城( Fawn )現在有了新的希望，因為 Yelinda 夫人( Lady Yelinda )現在親自統治了。這是『美』與愛( Love )的新黎明。」");
 	say();
 	goto labelFunc042E_0389;
 labelFunc042E_037F:
-	message("「美( Beauty )滋養感官， ");
+	message("「『美』滋養感官， ");
 	message(var0001);
 	message("。但愛( Love )滋養靈魂。幼鹿城( Fawn )的靈魂早已枯萎了……」");
 	say();
@@ -204,7 +204,7 @@ labelFunc042E_039D:
 	case "美" attend labelFunc042E_03C6:
 	UI_remove_answer("美");
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc042E_03C2;
-	message("「你朋友的審判所帶來的後果影響深遠。我想幼鹿城( Fawn )的人民再次將美( Beauty )視為她能帶來的神聖光芒。」");
+	message("「你朋友的審判所帶來的後果影響深遠。我想幼鹿城( Fawn )的人民再次將『美』視為她能帶來的神聖光芒。」");
 	say();
 	goto labelFunc042E_03C6;
 labelFunc042E_03C2:
@@ -212,7 +212,7 @@ labelFunc042E_03C2:
 	say();
 labelFunc042E_03C6:
 	case "愛" attend labelFunc042E_03F3:
-	message("「愛( Love )與美( Beauty )曾經被視為同一個實體的兩個面向。有愛的人就是美的。培育真理之美的人就會被愛。」");
+	message("「愛( Love )與『美』曾經被視為同一個實體的兩個面向。有愛的人就是美的。培育真理之美的人就會被愛。」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc042E_03E8;
 	message("「在 Yelinda 夫人( Lady Yelinda )的幫助下，這些觀念將會在幼鹿城( Fawn )恢復。這真是個光榮的時代……」");
@@ -227,7 +227,7 @@ labelFunc042E_03F3:
 	case "船隊" attend labelFunc042E_0418:
 	message("「風暴一艘接一艘地奪走了我們的船隻。」");
 	say();
-	message("「有些船甚至在我們的注視下被捲走。有些船離開港口後就再也沒有回來。對於那些失去親人的人來說，美( Beauty )只是一種冰冷的安慰。」");
+	message("「有些船甚至在我們的注視下被捲走。有些船離開港口後就再也沒有回來。對於那些失去親人的人來說，『美』只是一種冰冷的安慰。」");
 	say();
 	message("「你沒有見過風暴襲來時，東西就在你眼前消失的景象吧？」");
 	say();
@@ -442,7 +442,7 @@ labelFunc042E_072D:
 	message(var0003);
 	message("……當我說我愛你的時候，那只是一時的軟弱……」");
 	say();
-	message("「你該不會想為了幾句草率的話就佔一個女孩的便宜吧？」");
+	message("「你該不會想為了幾句草率的話，就佔一個女孩的便宜吧？」");
 	say();
 	message("「再說，為了大業和 Yelinda 夫人，還有很多事情要做。我很有希望成為夫人的顧問！現在沒有時間談情說愛，現在不行……」");
 	say();
@@ -451,7 +451,7 @@ labelFunc042E_074E:
 	UI_remove_answer("虛假的傳統");
 	message("「根據傳說，神諭( Oracle )是我們的祖先從索沙利亞( Sosaria )，我們的故鄉帶來的。它現在位於美之神殿( Temple of Beauty )。」");
 	say();
-	message("「我們的傳統教導我們，這座雕像是通往真理與美( Truth and Beauty )的絕對指南。」");
+	message("「我們的傳統教導我們，這座雕像是通往『真理與美』的絕對指南。」");
 	say();
 	message("「但我們懷疑這些傳說是假的。」");
 	say();
@@ -469,16 +469,16 @@ labelFunc042E_0781:
 labelFunc042E_079C:
 	case "真理指南" attend labelFunc042E_07B7:
 	UI_remove_answer("真理指南");
-	message("「神諭( Oracle )實際上會說話——我們所有人都聽過。它在回應美之祭司( Priestess of Beauty )時說話。」");
+	message("「『神諭』實際上會說話——我們所有人都聽過。它在回應『美之祭司』時說話。」");
 	say();
-	message("「美之雕像( Statue of Beauty )只在特定時間說話，例如在春季慶典期間，或者當這座城市需要特殊指引時。」");
+	message("「『美之雕像』只在特定時間說話，例如在春季慶典期間，或者當這座城市需要特殊指引時。」");
 	say();
-	message("「根據傳統，它也會回應幼鹿城( Fawn )的統治者。然而，我從未見過 Yelinda 夫人與雕像說話。她把這類職責都交給 Kylista 了。」");
+	message("「根據傳統，它也會回應幼鹿城的統治者。然而，我從未見過 Yelinda 夫人與雕像說話。她把這類職責都交給 Kylista 了。」");
 	say();
 labelFunc042E_07B7:
 	case "邪惡的陰謀" attend labelFunc042E_07E9:
 	UI_remove_answer("邪惡的陰謀");
-	message("「神諭( Oracle )理應只說真理，但它卻太常像鸚鵡一樣重複祭司和大船長們的話了。」");
+	message("「『神諭』理應只說真理，但它卻太常像鸚鵡一樣，重複祭司和大船長們的話了。」");
 	say();
 	message("「我們不相信真理只為掌權者服務……我們認為有人腐化了神諭！」");
 	say();
@@ -496,9 +496,9 @@ labelFunc042E_07E9:
 	say();
 labelFunc042E_0804:
 	case "大船長" attend labelFunc042E_0836:
-	message("「根據我們所有的傳統，在幼鹿城( Fawn )只有女性才有資格統治——因為只有女性才具備真正的美( True Beauty )。」");
+	message("「根據我們所有的傳統，在幼鹿城只有女性才有資格統治——因為只有女性才具備『真正的美』。」");
 	say();
-	message("「一個男性所能期望的最高地位，就是擔任大船長( Great Captains )之一。這些男人擔任 Yelinda 夫人的顧問。」");
+	message("「一個男性所能期望的最高地位，就是擔任大船長之一。這些男人擔任 Yelinda 夫人的顧問。」");
 	say();
 	message("「然而，他們所做的遠不止是提供建議而已。他們有三個人——Garth、Joth 和 Voldin。」");
 	say();
@@ -613,7 +613,7 @@ labelFunc042E_0A18:
 	case "Yelinda 夫人" attend labelFunc042E_0A44:
 	UI_remove_answer("Yelinda 夫人");
 	if (!var0009) goto labelFunc042E_0A3C;
-	message("「她也是美( Beauty )的囚犯！Yelinda 不能讓自己過度勞累，以免疲態破壞了她完美的容貌。」");
+	message("「她也是『美』的囚犯！Yelinda 不能讓自己過度勞累，以免疲態破壞了她完美的容貌。」");
 	say();
 	message("「因此，大船長們以讓 Yelinda 免受乏味工作之苦為藉口，篡奪了她的許多職責。」");
 	say();

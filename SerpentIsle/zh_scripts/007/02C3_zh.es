@@ -259,11 +259,11 @@ labelFunc02C3_0375:
 	if (!(var0000 == 0x0063)) goto labelFunc02C3_0396;
 	message("~重新統一儀式（Ritual of Reunification）。 ~");
 	say();
-	message("~  第一——將黑岩巨蛇（Blackrock Serpent）放入其適當的槽位，打開通往虛空（Void）的窗戶。");
+	message("~  第一步：將黑石巨蛇（Blackrock Serpent）放入其適當的槽位，打開通往虛空（Void）的窗口。");
 	say();
-	message("~  第二——必須將每個被囚禁的災星（Bane）放在與其原則相對應的祭壇上。不受約束的情感（Emotion）會導致瘋狂（Madness）。不受控制的熱情（Enthusiasm）會導致放縱（Wantonness）。不假思索的寬容（Tolerance）會產生無政府狀態（Anarchy）。混沌之焰（Flame of Chaos）將歡迎每個災星來到其適當的位置。");
+	message("~  第二步：必須將每個被囚禁的災星（Bane）放在與其原則相對應的祭壇上。不受約束的情感（Emotion）會導致瘋狂（Madness）。不受控制的熱情（Enthusiasm）會導致放縱（Wantonness）。不假思索的寬容（Tolerance）會產生無政府狀態（Anarchy）。混沌之焰（Flame of Chaos）將歡迎每個災星來到其適當的位置。");
 	say();
-	message("~  第三——將災星結合在一起的東西必須放在剩下的祭壇上。");
+	message("~  第三步：將災星結合在一起的東西必須放在剩下的祭壇上。");
 	say();
 	message("~  如果一切都做得正確，混沌將被重新統一。");
 	say();
@@ -301,7 +301,7 @@ labelFunc02C3_03D4:
 	goto labelFunc02C3_043B;
 labelFunc02C3_03E9:
 	if (!(var0000 == 0x007B)) goto labelFunc02C3_03FA;
-	message("~為了與巨蛇交流，必須擁有巨蛇耳環（Earrings of the Serpent）。只有透過這些，偉大的巨蛇才能向你傳達他的話語。 ~為了與平衡（Balance）融為一體，必須擁有秩序、混沌和平衡的黑岩巨蛇。 ~為了進入平衡大聖殿（Grand Shrine of Balance），必須穿上巨蛇盔甲（Armour of the Serpent），攜帶偉大的巨蛇法杖（Staff of the Serpent），並將巨蛇皇冠（Crown of the Serpent）戴在頭上。 ~只有在獲得這些之後，才能進入奧菲迪安（Ophidian）秩序人民最神聖的聖所。");
+	message("~為了與巨蛇交流，必須擁有巨蛇耳環（Earrings of the Serpent）。只有透過這些，偉大的巨蛇才能向你傳達他的話語。 ~為了與平衡（Balance）融為一體，必須擁有秩序、混沌和平衡的黑石巨蛇。 ~為了進入平衡大聖殿（Grand Shrine of Balance），必須穿上巨蛇盔甲（Armour of the Serpent），攜帶偉大的巨蛇法杖（Staff of the Serpent），並將巨蛇皇冠（Crown of the Serpent）戴在頭上。 ~只有在獲得這些之後，才能進入奧菲迪安（Ophidian）秩序人民最神聖的聖所。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_03FA:

@@ -127,7 +127,7 @@ labelFunc0432_0204:
 	say();
 	goto labelFunc0432_0223;
 labelFunc0432_021B:
-	message("「她在床笫之間可是個奇妙的尤物！Kylista 當然知道利用美( Beauty )來獲取她想要的東西的秘密。如果不是在呼喚啟示的神諭( Oracle )前，那就是在男人的臥室裡。」");
+	message("「她在床笫之間可是個奇妙的尤物！Kylista 當然知道利用『美』來獲取她想要的東西的秘密。如果不是在呼喚啟示的神諭( Oracle )前，那就是在男人的臥室裡。」");
 	say();
 	message("「Kylista 是美之祭司( Priestess of Beauty )，但是——就你我之間的私下話——我想如果可以的話，她更願意被稱為 Kylista 夫人。她牢牢地掌握著 Zulith 的韁繩，那是肯定的。」");
 	say();
@@ -141,7 +141,7 @@ labelFunc0432_0237:
 	UI_remove_answer("神諭");
 labelFunc0432_024A:
 	case "啟示" attend labelFunc0432_025D:
-	message("「聽 Kylista 說，那是直接來自天界的。我自己倒沒覺得它們有什麼用。一個整天都在撒網的漁夫是看不到多少美( Beauty )的。」");
+	message("「聽 Kylista 說，那是直接來自天界的。我自己倒沒覺得它們有什麼用。一個整天都在撒網的漁夫是看不到多少『美』的。」");
 	say();
 	UI_remove_answer("啟示");
 labelFunc0432_025D:

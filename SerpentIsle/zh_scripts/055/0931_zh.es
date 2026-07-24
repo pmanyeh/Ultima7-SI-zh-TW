@@ -102,7 +102,7 @@ labelFunc0931_01DA:
 	UI_clear_item_flag(var0000, 0x001D);
 labelFunc0931_01F7:
 	UI_show_npc_face0(0xFEED, 0x0000);
-	message("\"Very good, very good,\" he says as he returns your equipment.");
+	message("「很好，非常好，」他邊說邊歸還你的裝備。");
 	say();
 	UI_set_alignment(var0000, 0x0001);
 	var0006 = UI_find_nearby(var0000, 0x020A, 0x002D, 0x0000);
@@ -115,7 +115,7 @@ labelFunc0931_0223:
 labelFunc0931_0245:
 	goto labelFunc0931_0223;
 labelFunc0931_0248:
-	message("\"Well, I seem to have misplaced thy belongings. Mine apologies. As a favor to thee, I shall let thee keep what thou dost have right now.\"");
+	message("「這個嘛，我似乎放錯了你的物品。向你致歉。作為對你的特別照顧，我就讓你保留現在手頭上的東西吧。」");
 	say();
 	goto labelFunc0931_031E;
 labelFunc0931_024F:

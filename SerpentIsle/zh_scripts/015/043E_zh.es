@@ -174,7 +174,7 @@ labelFunc043E_025D:
 	say();
 	message("「老實說，我們不敢丟棄它。它有著惡魔般的外觀，形狀像一條蛇，由一種前所未見的黑色岩石組成。」");
 	say();
-	var0003 = Func0992(0x0001, "@也許是黑岩( blackrock )，聖者……@", 0x0000, false);
+	var0003 = Func0992(0x0001, "@也許是黑石( blackrock )，聖者……@", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc043E_0295;
 	UI_set_conversation_slot(0x0000);
 labelFunc043E_0295:

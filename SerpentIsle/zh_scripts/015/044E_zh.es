@@ -23,7 +23,7 @@ void Func044E object#(0x44E) ()
 
 	var0000 = Func0954();
 	if (!gflags[0x0048]) goto labelFunc044E_0012;
-	var0000 = "Knight";
+	var0000 = "騎士";
 labelFunc044E_0012:
 	var0001 = UI_get_item_flag(0xFFB2, 0x001C);
 	if (!(UI_get_schedule_type(0xFFB2) == 0x000D)) goto labelFunc044E_0031;
@@ -71,7 +71,7 @@ labelFunc044E_00F3:
 	if (!gflags[0x00CC]) goto labelFunc044E_0100;
 	UI_add_answer("Pomdirgun");
 labelFunc044E_0100:
-	UI_add_answer(["買", "告辭"]);
+	UI_add_answer(["買賣", "告辭"]);
 labelFunc044E_010D:
 	converse attend labelFunc044E_02A1;
 	case "Pomdirgun" attend labelFunc044E_0123:

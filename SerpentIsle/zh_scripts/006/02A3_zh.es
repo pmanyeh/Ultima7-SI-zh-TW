@@ -306,7 +306,7 @@ labelFunc02A3_076F:
 	Func097F(0xFE9C, "@反過來殺了他們吧，聖者。@", 0x0020);
 labelFunc02A3_0791:
 	if (!(var0003 == 0x000C)) goto labelFunc02A3_07B3;
-	Func097F(0xFE9C, "@Batlin 是你的朋友。@", 0x0010);
+	Func097F(0xFE9C, "@巴特林是你的朋友。@", 0x0010);
 	Func097F(0xFE9C, "@聽從他的吩咐，聖者。@", 0x0020);
 labelFunc02A3_07B3:
 	if (!((var0000 == 0x0017) || ((var0000 == 0x0018) || (var0000 == 0x0019)))) goto labelFunc02A3_097B;

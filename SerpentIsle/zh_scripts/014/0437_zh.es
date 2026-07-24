@@ -179,7 +179,7 @@ labelFunc0437_0485:
 labelFunc0437_04CD:
 	if (!(gflags[0x0004] == true)) goto labelFunc0437_04F1;
 	if (!(gflags[0x0212] == true)) goto labelFunc0437_04E4;
-	message("「謝謝你，聖者( Avatar )！謝謝你讓我恢復了以前的美( Beauty )。」");
+	message("「謝謝你，聖者( Avatar )！謝謝你讓我恢復了以前的『美』。」");
 	say();
 	goto labelFunc0437_04EE;
 labelFunc0437_04E4:
@@ -200,7 +200,7 @@ labelFunc0437_04F1:
 	say();
 	message("「親愛的 Iolo，我們的臣民談論了你唱的那首美妙的民謠，你對失去妻子的深情觸動了我們的心。」");
 	say();
-	message("「我把這條白鑽石項鍊( White Diamond Necklace )送給你，當你最終找到你心愛的人時，你可以把它送給她。它和我自己的那條是一對的，只是我的顏色更含蓄一些。」");
+	message("「我把這條鑽石項鍊送給你，當你最終找到你心愛的人時，你可以把它送給她。它和我自己的那條是一對的，只是我的顏色更含蓄一些。」");
 	say();
 	var0000 = Func099B(0xFFFD, 0x0001, 0x03BB, 0x0000, 0x0008, 0x0000, true);
 	UI_show_npc_face1(0xFFFD, 0x0000);
@@ -208,9 +208,9 @@ labelFunc0437_04F1:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「這值得乾一杯。為美( Beauty )乾杯！」");
+	message("「這值得乾一杯。為『美』乾杯！」");
 	say();
-	var0015 = Func0992(0x0001, "@為美( Beauty )乾杯！@", "@為美( Beauty )乾杯！@", false);
+	var0015 = Func0992(0x0001, "@為『美』乾杯！@", "@為『美』乾杯！@", false);
 	UI_set_conversation_slot(0x0000);
 	message("「也為愛乾杯！讓我們為浪漫與幸福的美德乾杯！」");
 	say();
@@ -285,11 +285,11 @@ labelFunc0437_0737:
 labelFunc0437_073A:
 	if (!(var0014 == false)) goto labelFunc0437_075E;
 	if (!((var0002 == true) && (gflags[0x003E] == true))) goto labelFunc0437_0757;
-	message("「妳有一個多麼有趣的美人誌( Beauty mark )……我是 Yelinda 夫人，幼鹿城( Fawn )——美( Beauty )之城——的統治者。」");
+	message("「妳有一個多麼有趣的美人誌( Beauty mark )……我是 Yelinda 夫人，幼鹿城( Fawn )——『美之城』——的統治者。」");
 	say();
 	goto labelFunc0437_075B;
 labelFunc0437_0757:
-	message("「歡迎來到美( Beauty )之城。我是 Yelinda 夫人，幼鹿城( Fawn )的統治者。」");
+	message("「歡迎來到『美之城』。我是 Yelinda 夫人，幼鹿城( Fawn )的統治者。」");
 	say();
 labelFunc0437_075B:
 	goto labelFunc0437_078B;
@@ -304,7 +304,7 @@ labelFunc0437_075E:
 labelFunc0437_0781:
 	message("「歡迎回來， ");
 	message(var0003);
-	message("。你在幼鹿城( Fawn )的出現大大增加了它的美( Beauty )。」");
+	message("。你在幼鹿城( Fawn )的出現大大增加了它的『美』。」");
 	say();
 labelFunc0437_078B:
 	UI_set_item_flag(0xFFC9, 0x001C);
@@ -358,7 +358,7 @@ labelFunc0437_0859:
 	message("「老實說，相當討厭。」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0437_0886;
-	message("「Alyssand 告訴我，風暴是因為缺乏對美( Beauty )的純粹概念的虔誠所致。」");
+	message("「Alyssand 告訴我，風暴是因為缺乏對『美』的純粹概念的虔誠所致。」");
 	say();
 	message("「她對我很有幫助。我想我會讓她成為我的首席顧問……」");
 	say();
@@ -373,7 +373,7 @@ labelFunc0437_0886:
 	UI_add_answer("神諭");
 labelFunc0437_08A3:
 	case "異教徒" attend labelFunc0437_08BD:
-	message("「那些在城門外紮營的骯髒水手完全不把美( Beauty )放在眼裡。他們宣揚一些關於兄弟情誼……之類的荒謬觀念。」");
+	message("「那些在城門外紮營的骯髒水手完全不把『美』放在眼裡。他們宣揚一些關於兄弟情誼……之類的荒謬觀念。」");
 	say();
 	UI_remove_answer("異教徒");
 	UI_add_answer("水手");
@@ -385,19 +385,19 @@ labelFunc0437_08BD:
 	UI_add_answer("乘客");
 labelFunc0437_08D7:
 	case "乘客" attend labelFunc0437_08F7:
-	message("「有一位名叫 Batlin 的肥胖法師，還有一位名叫 Gwenno 的美麗女士。」");
+	message("「有一位名叫巴特林的肥胖法師，還有一位名叫 Gwenno 的美麗女士。」");
 	say();
 	UI_remove_answer("乘客");
-	UI_add_answer(["Batlin", "Gwenno"]);
+	UI_add_answer(["巴特林", "Gwenno"]);
 labelFunc0437_08F7:
-	case "Batlin" attend labelFunc0437_0911:
+	case "巴特林" attend labelFunc0437_0911:
 	message("「一個難相處的人。和一些很粗俗的人一起旅行。我相信他在尋找惡魔遺物( Daemon artifacts )。」");
 	say();
-	UI_remove_answer("Batlin");
+	UI_remove_answer("巴特林");
 	UI_add_answer("惡魔遺物");
 labelFunc0437_0911:
 	case "惡魔遺物" attend labelFunc0437_0924:
-	message("「你可以在這片土地上到處找到它們。它們沒什麼意思……一點都不美( Beautiful )。」");
+	message("「你可以在這片土地上到處找到它們。它們沒什麼意思……一點都……不『美』。」");
 	say();
 	UI_remove_answer("惡魔遺物");
 labelFunc0437_0924:
@@ -437,7 +437,7 @@ labelFunc0437_09A0:
 	UI_remove_answer("神殿");
 labelFunc0437_09B3:
 	case "美" attend labelFunc0437_09D5:
-	message("「在幼鹿城( Fawn )，我們尊崇並保護所有美麗的事物。每個人都致力於美( Beauty )的真理。」");
+	message("「在幼鹿城( Fawn )，我們尊崇並保護所有美麗的事物。每個人都致力於『美』的真理。」");
 	say();
 	UI_remove_answer("美");
 	if (!(gflags[0x0189] == false)) goto labelFunc0437_09D5;

@@ -228,7 +228,7 @@ labelFunc0936_0461:
 labelFunc0936_0489:
 	message("「你比我更像個男子漢，");
 	message(var0002);
-	message("「。」");
+	message("。」");
 	say();
 labelFunc0936_0493:
 	UI_revert_schedule(0xFFB9);

@@ -143,7 +143,7 @@ labelFunc043C_022F:
 	UI_add_answer("大船長");
 labelFunc043C_0249:
 	case "大船長" attend labelFunc043C_025C:
-	message("「他們有三個人：Joth、Garth 和 Voldin。他們裝出一副崇尚美( Beauty )的樣子，但他們更崇尚金錢和權力。Yelinda 凡事都向他們和 Zulith 請教……我敢說就連晚餐菜單也是如此。」 *「再加上 Kylista 在 Zulith 耳邊吹風，你最好把她也算成幼鹿城( Fawn )的掌權者之一。」");
+	message("「他們有三個人：Joth、Garth 和 Voldin。他們裝出一副崇尚『美』的樣子，但他們更崇尚金錢和權力。Yelinda 凡事都向他們和 Zulith 請教……我敢說就連晚餐菜單也是如此。」 *「再加上 Kylista 在 Zulith 耳邊吹風，你最好把她也算成幼鹿城( Fawn )的掌權者之一。」");
 	say();
 	UI_remove_answer("大船長");
 labelFunc043C_025C:
@@ -162,31 +162,31 @@ labelFunc043C_0276:
 	UI_add_answer("友誼會");
 labelFunc043C_029F:
 	case "方尖碑" attend labelFunc043C_02B9:
-	message("「它重得要命！要在陸地上移動它真是件苦差事。然後有一天，在我們把它安全運上岸，而 Gwenno 已經前往內陸後，發生了一場大爆炸。當我能再次看見東西時，Batlin 就站在那裡——而方尖碑則碎裂了一地。」");
+	message("「它重得要命！要在陸地上移動它真是件苦差事。然後有一天，在我們把它安全運上岸，而 Gwenno 已經前往內陸後，發生了一場大爆炸。當我能再次看見東西時，巴特林就站在那裡——而方尖碑則碎裂了一地。」");
 	say();
 	UI_remove_answer("方尖碑");
-	UI_add_answer("Batlin");
+	UI_add_answer("巴特林");
 labelFunc043C_02B9:
-	case "Batlin" attend labelFunc043C_02D3:
-	message("「他剛到時似乎非常沮喪。但我懷疑那只是帶他來到這裡的傳送風暴造成的迷失感。」 *「他帶了幾名船員前往內陸。他正在尋找某種黑岩神器( blackrock artifact )……也許它和方尖碑有某種關聯。我不知道。」");
+	case "巴特林" attend labelFunc043C_02D3:
+	message("「他剛到時似乎非常沮喪。但我懷疑那只是帶他來到這裡的傳送風暴造成的迷失感。」 *「他帶了幾名船員前往內陸。他正在尋找某種黑石神器( blackrock artifact )……也許它和方尖碑有某種關聯。我不知道。」");
 	say();
-	UI_remove_answer("Batlin");
-	UI_add_answer("黑岩神器");
+	UI_remove_answer("巴特林");
+	UI_add_answer("黑石神器");
 labelFunc043C_02D3:
-	case "黑岩神器" attend labelFunc043C_02ED:
-	message("「我記得他提過它是做成蛇的形狀，但也就知道這麼多了。你或許可以問問草藥學家 Delphynia。我知道他跟她談過。」");
+	case "黑石神器" attend labelFunc043C_02ED:
+	message("「我記得他提過它是做成蛇的形狀，但也就知道這麼多了。你或許可以問問草藥學家『黛爾菲妮亞( Delphynia )』。我知道他跟她談過。」");
 	say();
-	UI_remove_answer("黑岩神器");
-	UI_add_answer("Delphynia");
+	UI_remove_answer("黑石神器");
+	UI_add_answer("黛爾菲妮亞");
 labelFunc043C_02ED:
-	case "Delphynia" attend labelFunc043C_0307:
+	case "黛爾菲妮亞" attend labelFunc043C_0307:
 	message("「她是城裡的草藥學家，自從哥布林殺了上一個治療師後，她就一直在做治療師的工作。」 *「如果你想知道更多，你應該去問問 Ruggs。在我們被趕出城市之前，他們花了不少時間在一起。」");
 	say();
-	UI_remove_answer("Delphynia");
+	UI_remove_answer("黛爾菲妮亞");
 	UI_add_answer("Ruggs");
 labelFunc043C_0307:
 	case "Ruggs" attend labelFunc043C_031A:
-	message("「如果你見過他，你就會認識他。他缺乏俊朗的外表，但用他善良的心來彌補。他深愛著 Delphynia。但 Delphynia 是個迷信的女人，害怕 Ruggs 的畸形是某種詛咒造成的。真是件憾事。他們會成為很棒的一對。」");
+	message("「如果你見過他，你就會認識他。他缺乏俊朗的外表，但用他善良的心來彌補。他深愛著黛爾菲妮亞( Delphynia )。但…黛爾菲妮亞是個迷信的女人，害怕 Ruggs 的畸形是某種詛咒造成的。真是件憾事。他們會成為很棒的一對。」");
 	say();
 	UI_remove_answer("Ruggs");
 labelFunc043C_031A:
@@ -200,7 +200,7 @@ labelFunc043C_0348:
 	case "瘋子 Iolo" attend labelFunc043C_0361:
 	message("「你那位值得信賴的同伴究竟遭遇了什麼樣的大災難，");
 	message(var0002);
-	message("。我擔心他已經失去理智了。他用他那惡魔般的玩笑來恐嚇這座城市。」 *「就在昨天，Iolo 向幼鹿城( Fawn )的市民宣布，他要一勞永逸地證明美( Beauty )是否只是膚淺的表面。然後他對可憐的 Yelinda 夫人施了一個法術，剝掉了她身上所有的皮膚。她跑出城，朝著 Gorlab 沼澤( Gorlab Swamp )跑去。沒有了真正的統治者，我擔心幼鹿城( Fawn )將永遠無法復原……即使有你的幫助也一樣。」");
+	message("。我擔心他已經失去理智了。他用他那惡魔般的玩笑來恐嚇這座城市。」 *「就在昨天，Iolo 向幼鹿城( Fawn )的市民宣布，他要一勞永逸地證明『美』是否只是膚淺的表面。然後他對可憐的 Yelinda 夫人施了一個法術，剝掉了她身上所有的皮膚。她跑出城，朝著 Gorlab 沼澤( Gorlab Swamp )跑去。沒有了真正的統治者，我擔心幼鹿城( Fawn )將永遠無法復原……即使有你的幫助也一樣。」");
 	say();
 	UI_remove_answer("瘋子 Iolo");
 labelFunc043C_0361:

@@ -203,7 +203,7 @@ labelFunc0438_0302:
 	UI_add_answer("啟示");
 labelFunc0438_0324:
 	case "啟示" attend labelFunc0438_0346:
-	message("「在大多數情況下，它們只是些簡單的陳詞濫調，用來進一步根植他們對美( Beauty )的崇敬。」");
+	message("「在大多數情況下，它們只是些簡單的陳詞濫調，用來進一步根植他們對『美』的崇敬。」");
 	say();
 	message("「它們對幫助人們改善生活毫無作為。」");
 	say();
@@ -260,13 +260,13 @@ labelFunc0438_03E7:
 	case "風暴" attend labelFunc0438_0405:
 	message("「海上的風暴無法與這些反常現象相比。它們的存在本身就說明了，我們身處一個遠離事物自然秩序的土地，甚至連天空都在抨擊我們。」");
 	say();
-	message("「Batlin 是對的。如果不能將團結( Unity )帶到這個地方，我們就不能奢望生存下去。」");
+	message("「巴特林是對的。如果不能將團結( Unity )帶到這個地方，我們就不能奢望生存下去。」");
 	say();
 	UI_remove_answer("風暴");
-	UI_add_answer("Batlin");
+	UI_add_answer("巴特林");
 labelFunc0438_0405:
-	case "Batlin" attend labelFunc0438_0444:
-	message("「你認識 Batlin？」");
+	case "巴特林" attend labelFunc0438_0444:
+	message("「你認識巴特林？」");
 	say();
 	var0006 = Func0955();
 	if (!var0006) goto labelFunc0438_0431;
@@ -282,7 +282,7 @@ labelFunc0438_0431:
 	message("「很遺憾你錯過了他。他已經前往內陸傳播友誼會( The Fellowship )的福音了。」");
 	say();
 labelFunc0438_043D:
-	UI_remove_answer("Batlin");
+	UI_remove_answer("巴特林");
 labelFunc0438_0444:
 	case "一切都好。" attend labelFunc0438_0457:
 	message("「太棒了！你很快就會看到，每個人都會接受內在力量三法則( Triad of Inner Strength )。風暴將會結束，我們餘生都將生活在和平與幸福中。」");
@@ -294,9 +294,9 @@ labelFunc0438_0457:
 	say();
 	message("「我們的原則中沒有任何邪惡！它們是為所有人而設的，不分出身地位。」");
 	say();
-	message("「必須告訴 Batlin 這件事！如果他回到不列顛尼亞( Britannia )向不列顛王( Lord British )解釋，我相信一切都會解決的。」");
+	message("「必須告訴巴特林這件事！如果他回了不列顛尼亞，向不列顛王解釋，我相信一切都會解決的。」");
 	say();
-	message("「也許我們的好名聲被那些想阻止我們傳教的人給貶低了……但這顯示出他們缺乏信任( Trust )。」");
+	message("「也許我們的好名聲被那些想阻止我們傳教的人給貶低了……但這顯示出他們缺乏信任。」");
 	say();
 	message("「我必須對此進行冥想。毫無疑問，我的內在之聲( Inner Voice )會為這樣可怕的消息提供一個答案。」");
 	say();

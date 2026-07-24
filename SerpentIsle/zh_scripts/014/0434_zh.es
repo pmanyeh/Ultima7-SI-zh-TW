@@ -262,7 +262,7 @@ labelFunc0434_03F8:
 	say();
 	goto labelFunc0434_042F;
 labelFunc0434_0427:
-	message("「Kylista 是美之祭司( Priestess of Beauty )。在這些黑暗的日子裡，帶領幼鹿城( Fawn )走在美( Beauty )的道路上是她的職責。」");
+	message("「Kylista 是美之祭司( Priestess of Beauty )。在這些黑暗的日子裡，帶領幼鹿城( Fawn )走在『美』的道路上是她的職責。」");
 	say();
 	message("「這對她那纖弱的肩膀來說可是一項重任，別搞錯了！」");
 	say();
@@ -363,7 +363,7 @@ labelFunc0434_05A8:
 labelFunc0434_05B8:
 	case "友誼會" attend labelFunc0434_05CF:
 	UI_remove_answer("友誼會");
-	message("「純粹是愚蠢。每個人都知道美( Beauty )才是重要的。」");
+	message("「純粹是愚蠢。每個人都知道『美』才是重要的。」");
 	say();
 	message("「經過這幾個世紀，我們現在沒有改變我們神聖信仰的打算……」");
 	say();
@@ -374,7 +374,7 @@ labelFunc0434_05CF:
 	say();
 	message("「然後在夜裡——砰！閃電，爆炸！柱子瓦解了。然後這個法師就站在那裡。」");
 	say();
-	message("「說他叫 Batlin。來鎮上打聽這附近的惡魔遺物( Daemon artifacts )。還去騷擾可憐的 Delin……」");
+	message("「說他叫巴特林。來鎮上打聽這附近的惡魔遺物( Daemon artifacts )。還去騷擾可憐的 Delin……」");
 	say();
 	message("「我叫他去跟他的同類說話，別來煩老實人。」");
 	say();
@@ -830,7 +830,7 @@ labelFunc0434_0E67:
 	message("「那是祭司 Kylista 的儀式胸甲！」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0434_0EAD;
-	message("「你應該把它留在神殿裡，因為它屬於美( Beauty )的殿堂。」");
+	message("「你應該把它留在神殿裡，因為它屬於『美』的殿堂。」");
 	say();
 	goto labelFunc0434_0EB1;
 labelFunc0434_0EAD:
@@ -893,7 +893,7 @@ labelFunc0434_0F96:
 	gflags[0x0198] = true;
 	goto labelFunc0434_0FCD;
 labelFunc0434_0FC9:
-	message("「嗯……聽起來形狀很奇怪。美( Beauty )之城裡沒有人會用這種刷子。」");
+	message("「嗯……聽起來形狀很奇怪。『美之城』裡沒有人會用這種刷子。」");
 	say();
 labelFunc0434_0FCD:
 	if (!(!var0011)) goto labelFunc0434_1006;

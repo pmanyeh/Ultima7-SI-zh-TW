@@ -154,7 +154,7 @@ labelFunc0446_0335:
 	message("「我經營斬劍酒館( Slashing Sword )，蒙利多城最好的酒館。你也許覺得煮飯不是什麼騎士的活動，但我向你保證，餵飽這個鎮上的戰士確實是一項勇氣的考驗( Quest of Courage )！」");
 	say();
 	if (!(UI_get_schedule_type(0xFFBA) == 0x0017)) goto labelFunc0446_0363;
-	message("「如果你想吃點或喝點什麼，只要說一聲，」");
+	message("「如果你想吃點或喝點什麼，只要說一聲，");
 	message(var0001);
 	message("。」");
 	say();

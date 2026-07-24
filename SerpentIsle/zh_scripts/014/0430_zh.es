@@ -121,7 +121,7 @@ labelFunc0430_01EC:
 	UI_remove_answer("Jorvin");
 labelFunc0430_01FF:
 	case "Pomdirgun" attend labelFunc0430_0212:
-	message("「啊啊啊！那個名字就能讓我脊背發涼！Pomdirgun 已經將所有哥布林鍛造成他的武器。他絕不會停止，直到將我們全部趕出這片土地……或者將我們全部吃光為止。」 *「他是一個被召喚來摧毀我們的美( Beauty )的惡魔！」");
+	message("「啊啊啊！那個名字就能讓我脊背發涼！Pomdirgun 已經將所有哥布林鍛造成他的武器。他絕不會停止，直到將我們全部趕出這片土地……或者將我們全部吃光為止。」 *「他是一個被召喚的惡魔，要來摧毀我們的美！！」");
 	say();
 	UI_remove_answer("Pomdirgun");
 labelFunc0430_0212:
@@ -134,7 +134,7 @@ labelFunc0430_0212:
 	say();
 	goto labelFunc0430_024C;
 labelFunc0430_023B:
-	message("「這片大地上發生了多麼骯髒的事！我接待了一個預示幼鹿城( Fawn )厄運的先兆，這玷污了我的美( Beauty )！就連蒼天都在怒吼，要燒盡我心中藏匿的醜陋真相！」");
+	message("「這片大地上發生了多麼骯髒的事！我接待了一個預示幼鹿城( Fawn )厄運的先兆，這玷污了我的『美』！就連蒼天都在怒吼，要燒盡我心中藏匿的醜陋真相！」");
 	say();
 	UI_add_answer(["先兆", "醜陋真相"]);
 labelFunc0430_024C:
@@ -164,7 +164,7 @@ labelFunc0430_028D:
 labelFunc0430_02B6:
 	message("「那是美之祭司( Priestess of Beauty )對他們的稱呼。他們談論一個叫做友誼會( The Fellowship )的組織，並宣稱它將使我們的生活完整。」");
 	say();
-	message("「每個人都知道，真正的道路在於追求美( Beauty )的道路。藉由追求美( Beauty )，我們能吸引一切美好的事物。」 *「我真懊悔那天見到了他！」");
+	message("「每個人都知道，真正的道路在於追求『美』的道路。藉由追求『美』，我們能吸引一切美好的事物。」 *「我真懊悔那天見到了他！」");
 	say();
 	UI_add_answer("友誼會");
 labelFunc0430_02C5:
@@ -228,19 +228,19 @@ labelFunc0430_03A8:
 	UI_remove_answer("戒指");
 labelFunc0430_03B2:
 	case "神諭" attend labelFunc0430_03CC:
-	message("「你不知道幼鹿城( Fawn )的神諭( Oracle )嗎？神諭( Oracle )是美( Beauty )在巨蛇之島( Serpent Isle )上的載體。它接收來自天界的訊息，由 Kylista 解釋給眾人聽。」");
+	message("「你不知道幼鹿城( Fawn )的神諭( Oracle )嗎？神諭( Oracle )是『美』在巨蛇之島( Serpent Isle )上的載體。它接收來自天界的訊息，由 Kylista 解釋給眾人聽。」");
 	say();
 	UI_remove_answer("神諭");
 	UI_add_answer("Kylista");
 labelFunc0430_03CC:
 	case "Kylista" attend labelFunc0430_03E6:
-	message("「Kylista 是美之祭司( Priestess of Beauty )，讓她受人崇敬。是她教導我們美( Beauty )的真理，她在神諭( Oracle )的啟示中接收這些真理。」 *「就連 Yelinda 夫人也尊重 Kylista 的智慧。」");
+	message("「Kylista 是美之祭司( Priestess of Beauty )，讓她受人崇敬。是她教導我們『美』的真理，她在神諭( Oracle )的啟示中接收這些真理。」 *「就連 Yelinda 夫人也尊重 Kylista 的智慧。」");
 	say();
 	UI_remove_answer("Kylista");
 	UI_add_answer("Yelinda 夫人");
 labelFunc0430_03E6:
 	case "Yelinda 夫人" attend labelFunc0430_03F9:
-	message("「Yelinda 夫人，榮耀歸於她，是幼鹿城( Fawn )的統治者。她是城裡最美麗的女人，是美( Beauty )的化身。」");
+	message("「Yelinda 夫人，榮耀歸於她，是幼鹿城( Fawn )的統治者。她是城裡最美麗的女人，是『美』的化身。」");
 	say();
 	UI_remove_answer("Yelinda 夫人");
 labelFunc0430_03F9:
@@ -340,12 +340,12 @@ labelFunc0430_053A:
 	say();
 	message("「Ruggs 多次告訴我他對我的愛。說實話，如果我說我對他毫無感情，那就是謊言。但他是如此……醜陋……如此難看，讓我不知道該怎麼想。」");
 	say();
-	message("「我所受過的一切教育都告訴我，Ruggs 的外貌是其內心邪惡的外在表現。然而我卻找不到絲毫邪惡的痕跡……如果這是錯的，還有什麼其他的也可能是假的？」 *「我被動搖到了靈魂的核心，但我無法否認我的心。」");
+	message("「我所受過的一切教誨都告訴我，Ruggs 的外貌正是他內心邪惡的體現。然而我卻找不到絲毫邪惡的痕跡……然而，我卻在他身上找不到半點惡意……如果連這點都錯了，那…還有什麼是真的？」 *「我的信念已被徹底震撼，但我無法違背自己的內心。」");
 	say();
 	message("「你願意替我帶封信回給 Ruggs 嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0430_05AB;
-	message("「沒有其他人是我可以信任這個秘密的。」 *「如果有辦法，總有一天我會去找他的。」");
+	message("「除了你，這件事我再也不能信任其他人了。」 *「只要還有一絲希望，總有一天，我一定會去找他。」");
 	say();
 	var0001 = Func099B(0xFE9C, 0x0001, 0x031D, 0x001B, 0x0000, false, true);
 	gflags[0x0150] = true;
@@ -367,11 +367,11 @@ labelFunc0430_05D4:
 	case "瓦羅葉" attend labelFunc0430_0611:
 	UI_remove_answer("瓦羅葉");
 	if (!(gflags[0x0076] == true)) goto labelFunc0430_05F2;
-	message("「Harnna 若非你有迫切需要瓦羅葉( Varo leaves )，是不會派你來的。如果我能幫忙的話，我很願意。但我作為治療師的技能有限。把這些葉子儘快帶回給 Harnna，在你的情況惡化之前。」");
+	message("「若不是你有迫切需要瓦羅葉，Harnna 是不會派你來的。如果我能幫忙的話，我很願意。但我作為治療師的技能有限。在你的情況惡化之前，儘快把這些葉子帶回給 Harnna。」");
 	say();
 	goto labelFunc0430_05F6;
 labelFunc0430_05F2:
-	message("「你的感染只能用一種由瓦羅葉( Varo leaves )製成的特殊藥膏才能永久治癒。然而我自己不會製作那種藥膏。趕快把這些葉子帶回蒙利多城( Monitor )的 Harnna 那裡，在你的情況惡化之前。她是一位真正的治療師，能夠幫助你。」");
+	message("「你的感染只能用一種由瓦羅葉( Varo leaves )製成的特殊藥膏，才能永久治癒。然而我自己不會製作那種藥膏。趕快把這些葉子帶回蒙利多城( Monitor )的 Harnna 那裡，在你的情況惡化之前。她是一位真正的治療師，能夠幫助你。」");
 	say();
 labelFunc0430_05F6:
 	gflags[0x01A5] = true;

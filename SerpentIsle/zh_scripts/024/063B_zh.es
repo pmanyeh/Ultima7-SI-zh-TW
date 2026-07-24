@@ -347,9 +347,9 @@ labelFunc063B_0311:
 	if (!(var0000 == 0x00DF)) goto labelFunc063B_0327;
 	message("~~ ~~哭泣的魯特琴 ~~ ~~Gannt 著*");
 	say();
-	message("~當我輕輕撥動手中的魯特琴時， ~它在哭泣，因為它知道我已變成了多麼空虛的人， ~知道我的悲劇、我的悲傷、我孤獨的絕望。 ~Only my lute listens, alone, only it cares. ~ ~Though I am a knight, ~and mine emotions I hide, ~I still feel the soul-eating darkness inside. ~I am a man of armour and a man of the sword, ~but the blackness I feel I cannot ward.*");
+	message("~當我輕輕撥動手中的魯特琴時， ~它在哭泣，因為它知道我已變成了多麼空虛的人， ~知道我的悲劇、我的悲傷、我孤獨的絕望。 ~只有我的魯特琴在傾聽，獨自一人，只有它在乎。 ~ ~雖然我是一名騎士， ~隱藏著我的情感， ~我依然能感受到內心吞噬靈魂的黑暗。 ~我是一個身披鎧甲、手握利劍的人， ~但我感到的黑暗卻無法抵擋。*");
 	say();
-	message("~The green swine came, silent coward attacks, ~with bow and arrow, with sword and axe. ~They came for our blood, for our flesh to eat, ~We hacked them to death, our blades flaying their meat. ~ ~Though I have loved her, she still left this life, ~her pale white skin pierced by a goblin's bloody knife. ~But I am left here, an empty shell of a man. ~I cannot speak, the sorrow is more than I can stand. ~ ~Others drink themselves blind, but I cannot partake ~The others\tcelebrate, but smiles I can't fake. ~I will sit here by the fire and softly strum, ~only my lute knows the hollow man I have finally become.");
+	message("~綠色的野豬來了，進行著沉默懦弱的襲擊， ~帶著弓與箭，帶著劍與斧。 ~牠們為了我們的鮮血而來，為了吃我們的肉體， ~我們將牠們砍死，我們的刃片剝下牠們的肉。 ~ ~雖然我曾愛過她，她依然離開了人世， ~她蒼白的皮膚被哥布林的血腥刀刃刺穿。 ~但我卻被留在這裡，只是一個空虛的人形軀殼。 ~我無法言語，悲傷超出了我所能承受。 ~ ~其他人飲酒自醉，我卻無法參與 ~其他人都在歡慶，但我無法裝出笑容。 ~我會坐在火堆旁輕輕撥動琴弦， ~只有我的魯特琴知道我最終變成了多麼空虛的人。");
 	say();
 labelFunc063B_0327:
 	if (!(var0000 == 0x00E0)) goto labelFunc063B_0341;

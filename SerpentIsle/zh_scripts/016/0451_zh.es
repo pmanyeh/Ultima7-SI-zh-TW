@@ -259,25 +259,25 @@ labelFunc0451_0410:
 	case "風暴" attend labelFunc0451_042E:
 	message("「如果你問我，這相當浮誇……但結果相當驚人。不過這完全太隨機了，不符合我的品味。」");
 	say();
-	message("「當然，我忍不住想知道這背後是哪個法師在搞鬼。我也想知道那個兩面三刀的 Batlin 是否與此有關……你要知道，風暴是在他離開這裡之後開始的。」");
+	message("「當然，我忍不住想知道這背後是哪個法師在搞鬼。我也想知道那個兩面三刀的巴特林是否與此有關……你要知道，風暴是在他離開這裡之後開始的。」");
 	say();
 	UI_remove_answer("風暴");
-	UI_add_answer("Batlin");
+	UI_add_answer("巴特林");
 labelFunc0451_042E:
-	case "Batlin" attend labelFunc0451_0456:
+	case "巴特林" attend labelFunc0451_0456:
 	message("「我看得出來你知道他。」");
 	say();
-	message("「Batlin 一段時間前來到這裡，帶著他馴服的惡魔。他似乎對我的故事很感興趣，我們花了許多個夜晚交流奧秘知識。然後他就出去辦事了。」");
+	message("「巴特林一段時間前來到這裡，帶著他馴服的惡魔。他似乎對我的故事很感興趣，我們花了許多個夜晚交流奧秘知識。然後他就出去辦事了。」");
 	say();
-	message("「當他帶著另外兩個暴徒回來時，Batlin 顯得很焦躁。但我們還是像什麼都沒改變一樣繼續我們的討論。我還以為他是我的朋友……」");
+	message("「當他帶著另外兩個暴徒回來時，巴特林顯得很焦躁。但我們還是像什麼都沒改變一樣繼續我們的討論。我還以為他是我的朋友……」");
 	say();
-	UI_remove_answer("Batlin");
+	UI_remove_answer("巴特林");
 	UI_add_answer(["惡魔", "暴徒"]);
 labelFunc0451_0456:
 	case "惡魔" attend labelFunc0451_0478:
 	message("「非常巨大……而且很醜！」");
 	say();
-	message("「Batlin 叫他 Palos 。那隻惡魔溫順地穿著長袍、戴著兜帽，聽從他主人的命令。」");
+	message("「巴特林叫他 Palos 。那隻惡魔溫順地穿著長袍、戴著兜帽，聽從他主人的命令。」");
 	say();
 	message("「我承認，我印象深刻。我忍不住想起 Rotoluncia 所遇到的麻煩。」");
 	say();
@@ -294,9 +294,9 @@ labelFunc0451_0478:
 	UI_remove_answer("Rotoluncia");
 labelFunc0451_0493:
 	case "暴徒" attend labelFunc0451_04BB:
-	message("「當我看到那兩個人時，我就該猜到 Batlin 有什麼見不得人的企圖！」");
+	message("「當我看到那兩個人時，我就該猜到巴特林有什麼見不得人的企圖！」");
 	say();
-	message("「我敢肯定 Batlin 帶他們來，就是為了偷走我導師留給我的舊顎骨。」");
+	message("「我敢肯定巴特林帶他們來，就是為了偷走我導師留給我的舊顎骨。」");
 	say();
 	message("「夾在白痴 Brunt 和獨眼海盜 Deadeye 中間，我還能活著算是幸運的了……」");
 	say();
@@ -308,7 +308,7 @@ labelFunc0451_04BB:
 	say();
 	message("「我一直無法發現它的用途是什麼，儘管它顯然具有魔力。它是一個紀念品——雖然我希望能有一天發現它的秘密。」");
 	say();
-	message("「我想 Batlin 發現了它的秘密……並製造了這些該死的風暴。」");
+	message("「我想巴特林發現了它的秘密……並製造了這些該死的風暴。」");
 	say();
 	var0009 = true;
 	UI_remove_answer("顎骨");

@@ -84,7 +84,7 @@ labelFunc0433_01E0:
 	goto labelFunc0433_01FC;
 labelFunc0433_01E3:
 	if (!(var0001 == true)) goto labelFunc0433_01F8;
-	message("「你的美( Beauty )豐富了我們。歡迎來到幼鹿城( Fawn )， ");
+	message("「你的『美』豐富了我們。歡迎來到幼鹿城( Fawn )， ");
 	message(var0000);
 	message("。」 *「我是大船長 Voldin。」");
 	say();
@@ -110,7 +110,7 @@ labelFunc0433_0227:
 	UI_remove_answer("虛假的神諭");
 	message("「神諭( Oracle )一直都是個騙局！你還不明白嗎？」");
 	say();
-	message("「即使在我們古老的故鄉，美( Beauty )的雕像也是由大船長( Great Captains )控制的。我們叫它說什麼，它就說什麼。」");
+	message("「即使在我們古老的故鄉，『美』的雕像也是由大船長( Great Captains )控制的。我們叫它說什麼，它就說什麼。」");
 	say();
 	UI_add_answer(["騙局", "為什麼？"]);
 labelFunc0433_024E:
@@ -161,7 +161,7 @@ labelFunc0433_02D6:
 	say();
 labelFunc0433_02F1:
 	case "風暴" attend labelFunc0433_0311:
-	message("「這些風暴是招惹上天不悅的令人遺憾的後果。我確定只要我們遵守美( Beauty )的真理，我們的懲罰很快就會結束。」");
+	message("「這些風暴是招惹上天不悅的令人遺憾的後果。我確定只要我們遵守『美』的真理，我們的懲罰很快就會結束。」");
 	say();
 	UI_remove_answer("風暴");
 	UI_add_answer(["上天的不悅", "美的真理"]);
@@ -173,7 +173,7 @@ labelFunc0433_0311:
 	UI_add_answer(["異教徒", "被誤導的道路"]);
 labelFunc0433_0331:
 	case "異教徒" attend labelFunc0433_034B:
-	message("「在城外紮營的水手是異教徒。他們不遵循美( Beauty )的道路。」 *「他們來到我們的城市，聲稱來自不列顛尼亞( Britannia )，而任何一個水手都知道，那純粹是虛構的。祭司將他們醜陋的謊言從我們中間清除是正確的。」");
+	message("「在城外紮營的水手是異教徒。他們不遵循『美』的道路。」 *「他們來到我們的城市，聲稱來自不列顛尼亞( Britannia )，而任何一個水手都知道，那純粹是虛構的。祭司將他們醜陋的謊言從我們中間清除是正確的。」");
 	say();
 	UI_remove_answer("異教徒");
 	UI_add_answer("祭司");
@@ -185,7 +185,7 @@ labelFunc0433_034B:
 	UI_add_answer("神諭");
 labelFunc0433_0365:
 	case "神諭" attend labelFunc0433_037F:
-	message("「神諭( Oracle )是上天的工具。它的話語是對那些遵循美( Beauty )的真理的人的神聖啟示。」");
+	message("「神諭( Oracle )是上天的工具。它的話語是對那些遵循『美』的真理的人的神聖啟示。」");
 	say();
 	UI_remove_answer("神諭");
 	UI_add_answer("啟示");
@@ -195,7 +195,7 @@ labelFunc0433_037F:
 	say();
 	var0006 = Func0955();
 	if (!var0006) goto labelFunc0433_039E;
-	message("「那麼你就會知道，這些話語是為了啟迪並引導我們的生活走向美( Beauty )。」");
+	message("「那麼你就會知道，這些話語是為了啟迪並引導我們的生活走向『美』。」");
 	say();
 	goto labelFunc0433_03A2;
 labelFunc0433_039E:
@@ -214,7 +214,7 @@ labelFunc0433_03C3:
 	if (!(var0001 == true)) goto labelFunc0433_03E0;
 	message("「請原諒， ");
 	message(var0000);
-	message("。我無意進行哲學討論。我必須承認，你的美( Beauty )讓我分心了。」");
+	message("。我無意進行哲學討論。我必須承認，你的『美』讓我分心了。」");
 	say();
 	goto labelFunc0433_03FB;
 labelFunc0433_03E0:

@@ -132,7 +132,7 @@ labelFunc0439_01DF:
 	say();
 	goto labelFunc0439_0252;
 labelFunc0439_024E:
-	message("「我的死只會延遲不可避免的結局，聖者( Avatar )。Batlin 很快就會擁有你無法想像的力量，而我也一定會得到獎賞……」");
+	message("「我的死只會延遲不可避免的結局，聖者。巴特林很快就會擁有你無法想像的力量，而我也一定會得到獎賞……」");
 	say();
 labelFunc0439_0252:
 	return;

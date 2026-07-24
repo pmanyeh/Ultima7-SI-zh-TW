@@ -59,7 +59,7 @@ labelFunc0431_00E6:
 	if (!(var0002 == true)) goto labelFunc0431_00FF;
 	message("「歡迎來到幼鹿城( Fawn )，最美麗的 ");
 	message(var0000);
-	message("！既然你來了，我們才敢說這是一座真正的美( Beauty )之城。」");
+	message("！既然你來了，我們才敢說這是一座真正的『美之城』。」");
 	say();
 	message("「我是大船長 Garth，但你可以叫我 Garth。」");
 	say();
@@ -117,7 +117,7 @@ labelFunc0431_01AF:
 	message("「我們大部分的人都命喪大海和風暴中。」 ~「我們不知道他們是淹死了還是被變形了。」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0431_01C9;
-	message("「願美( Beauty )能讓他們的靈魂安息……」");
+	message("「願『美』能讓他們的靈魂安息……」");
 	say();
 	goto labelFunc0431_01D4;
 labelFunc0431_01C9:
@@ -191,7 +191,7 @@ labelFunc0431_02C1:
 	if (!(var0002 == true)) goto labelFunc0431_02DE;
 	message("「我只能說 Voldin 的觀點非常守舊， ");
 	message(var0000);
-	message("。」 ~「他堅信美( Beauty )的神聖性，並保護所有美麗的事物。」");
+	message("。」 ~「他堅信『美』的神聖性，並保護所有美麗的事物。」");
 	say();
 	goto labelFunc0431_02E2;
 labelFunc0431_02DE:
@@ -209,7 +209,7 @@ labelFunc0431_02E9:
 labelFunc0431_0300:
 	case "Kylista" attend labelFunc0431_032D:
 	if (!(var0002 == true)) goto labelFunc0431_0317;
-	message("「Kylista 是美之祭司( Priestess of Beauty )。」 ~「她主持神諭( Oracle )，並確保幼鹿城( Fawn )遵守美( Beauty )的信條。」 *「就精神事務向 Yelinda 夫人提供建議是她的職責。」");
+	message("「Kylista 是美之祭司( Priestess of Beauty )。」 ~「她主持神諭( Oracle )，並確保幼鹿城( Fawn )遵守『美』的信條。」 *「就精神事務向 Yelinda 夫人提供建議是她的職責。」");
 	say();
 	goto labelFunc0431_031F;
 labelFunc0431_0317:
@@ -285,7 +285,7 @@ labelFunc0431_041F:
 	case "友誼會水手" attend labelFunc0431_0436:
 	message("「他們很久以前就航行來了。我們以前從沒見過他們那樣的船。」 ~「後來他們其中一人證明自己是個有魅力的領袖，他雄辯地講述了一種叫做友誼會( The Fellowship )的新信仰。」 ~「它吸引了很多人，特別是女人。」");
 	say();
-	message("「我告訴你，Kylista 非常生氣。」 ~「所以她把風暴歸咎於陌生人，並把他們趕出了城。她現在還讓每個人為他們對美( Beauty )的罪過贖罪。」 ~「她說直到平息了上天的憤怒，風暴才會停止。我不認為她知道它們何時會停止，或者是否會停止。」");
+	message("「我告訴你，Kylista 非常生氣。」 ~「所以她把風暴歸咎於陌生人，並把他們趕出了城。她現在還讓每個人為他們對『美』的罪過贖罪。」 ~「她說直到平息了上天的憤怒，風暴才會停止。我不認為她知道它們何時會停止，或者是否會停止。」");
 	say();
 	UI_remove_answer("友誼會水手");
 labelFunc0431_0436:

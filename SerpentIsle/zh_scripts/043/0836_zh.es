@@ -99,7 +99,7 @@ labelFunc0836_0164:
 labelFunc0836_0167:
 	if (!(var000D == 0xFE9C)) goto labelFunc0836_018D;
 	if (!(gflags[0x0098] && (!gflags[0x005A]))) goto labelFunc0836_0186;
-	message("「在我治好這種病痛之前，你必須先從幼鹿城( Fawn )的園藝師 Delphynia 那裡幫我拿五片瓦羅葉( Varo leaves )來！」");
+	message("「在我治好這種病痛之前，你必須先從幼鹿城( Fawn )的園藝師黛爾菲妮亞( Delphynia )那裡幫我拿五片瓦羅葉( Varo leaves )來！」");
 	say();
 	goto labelFunc0836_0208;
 	goto labelFunc0836_018A;
@@ -115,7 +115,7 @@ labelFunc0836_018D:
 	say();
 labelFunc0836_0197:
 	if (!((var000D == 0xFE9C) && ((gflags[0x0098] == true) && (gflags[0x005A] == false)))) goto labelFunc0836_01B4;
-	message("「我已經治好了毒素對你身體造成的傷害，但效果會持續發作直到你死亡為止。在我能為你永久治好這種病痛之前，你必須先從幼鹿城( Fawn )的園藝師 Delphynia 那裡拿五片瓦羅葉( Varo leaves )給我！」");
+	message("「我已經治好了毒素對你身體造成的傷害，但效果會持續發作直到你死亡為止。在我能為你永久治好這種病痛之前，你必須先從幼鹿城( Fawn )的園藝師黛爾菲妮亞( Delphynia )那裡拿五片瓦羅葉( Varo leaves )給我！」");
 	say();
 	goto labelFunc0836_0208;
 labelFunc0836_01B4:

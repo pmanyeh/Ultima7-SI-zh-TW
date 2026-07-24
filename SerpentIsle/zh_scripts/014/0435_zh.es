@@ -253,7 +253,7 @@ labelFunc0435_03BA:
 	say();
 	goto labelFunc0435_03F4;
 labelFunc0435_03E3:
-	message("「你最常在宮殿裡找到 Zulith，擔任 Yelinda 夫人給大船長們( Great Captains )的使者，或者在神殿裡。他似乎是美( Beauty )的狂熱追隨者。」");
+	message("「你最常在宮殿裡找到 Zulith，擔任 Yelinda 夫人給大船長們( Great Captains )的使者，或者在神殿裡。他似乎是『美』的狂熱追隨者。」");
 	say();
 	UI_add_answer(["大船長們", "神殿"]);
 labelFunc0435_03F4:
@@ -289,7 +289,7 @@ labelFunc0435_0464:
 	UI_remove_answer("訂婚戒指");
 labelFunc0435_047A:
 	case "神殿" attend labelFunc0435_048D:
-	message("「神殿位於宮殿的另一側，在海濱。它是獻給美( Beauty )的，就像幼鹿城( Fawn )的一切一樣。」");
+	message("「神殿位於宮殿的另一側，在海濱。它是獻給『美』的，就像幼鹿城( Fawn )的一切一樣。」");
 	say();
 	UI_remove_answer("神殿");
 labelFunc0435_048D:

@@ -5,6 +5,7 @@
 
 ## 人名 (Names)
 - **Xenkan Monks** ➔ **Xenkan 武僧** [出自 044C_zh.es]
+- **Gannt** ➔ **Gannt** (詩人/作者) [出自 063B_zh.es]
 - **Captain Hawk** ➔ **Hawk 船長** [出自 044C_zh.es]
 - **Deadeye** ➔ **Deadeye** [出自 044A_zh.es]
 - **Goblin Horde** ➔ **哥布林部落** [出自 044A_zh.es]
@@ -17,7 +18,7 @@
 - **Joth** ➔ **Joth** (大船長) [出自 043D_zh.es, 042E_zh.es, 0431_zh.es, 0432_zh.es]
 - **Voldin** ➔ **Voldin** (大船長) [出自 043D_zh.es, 042E_zh.es, 0431_zh.es, 0433_zh.es, 093A_zh.es, 093B_zh.es, 06E0_zh.es]
 - **Alyssand** ➔ **Alyssand** (幼鹿城反抗勢力女性/Leon的情人) [出自 07FB_zh.es, 093A_zh.es, 06E0_zh.es]
-- **Delphynia** ➔ **Delphynia** (幼鹿城草藥師與治療師) [出自 081A_zh.es, 081B_zh.es, 081C_zh.es]
+- **Delphynia** ➔ **黛爾菲妮亞( Delphynia )** (幼鹿城草藥師與治療師) [出自 081A_zh.es, 081B_zh.es, 081C_zh.es, 07FB_zh.es]
 - **Rhys Fletcher** ➔ **Rhys Fletcher** (弓箭大師，謎題故事角色) [出自 0821_zh.es]
 - **Longtooth** ➔ **Longtooth** (巨龍，謎題故事角色) [出自 0823_zh.es]
 - **Sedrick** ➔ **Sedrick** (裁縫，謎題故事角色) [出自 0824_zh.es]
@@ -165,7 +166,6 @@
 - **Xenka** ➔ **Xenka** (女先知) [出自 0363_zh.es, 04D7_zh.es]
 - **Karnax** ➔ **Karnax** (Xenka 僧侶) [出自 0109_zh.es]
 - **Gustacio** ➔ **Gustacio** (法師) [出自 07F1_zh.es, 042C_zh.es]
-- **Delphynia** ➔ **黛爾菲妮亞** [出自 07FB_zh.es]
 - **Lord Marsten** ➔ **Lord Marsten** [出自 0450_zh.es]
 - **Flicken** ➔ **Flicken** (長槍兵隊長) [出自 0450_zh.es]
 - **Templar** ➔ **Templar** [出自 0450_zh.es, 042D_zh.es]

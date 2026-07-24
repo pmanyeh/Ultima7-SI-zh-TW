@@ -212,13 +212,13 @@ labelFunc043A_03F1:
 	say();
 	UI_remove_npc_face1();
 labelFunc043A_0404:
-	message("「整座島上爬滿了發光的貓。不知道牠們是怎麼到那裡的，也不知道牠們怎麼能在那麼荒涼的地方生存。但我聽說牠們住在那裡是為了守護某種神奇的貓咪寶藏。」 ~「這是小 Delphynia 最喜歡的故事……」");
+	message("「整座島上爬滿了發光的貓。不知道牠們是怎麼到那裡的，也不知道牠們怎麼能在那麼荒涼的地方生存。但我聽說牠們住在那裡是為了守護某種神奇的貓咪寶藏。」 ~「這是小黛爾菲妮亞( Delphynia )最喜歡的故事……」");
 	say();
 	UI_remove_answer("貓之島");
-	UI_add_answer("Delphynia");
+	UI_add_answer("黛爾菲妮亞");
 labelFunc043A_0416:
-	case "Delphynia" attend labelFunc043A_04D7:
-	message("「Delphynia 是一位草藥學家。」");
+	case "黛爾菲妮亞" attend labelFunc043A_04D7:
+	message("「黛爾菲妮亞是一位草藥學家。」");
 	say();
 	if (!(var0001 == true)) goto labelFunc043A_046A;
 	UI_show_npc_face1(0xFFCC, 0x0000);
@@ -270,7 +270,7 @@ labelFunc043A_04BD:
 	if (!(Func0955() == true)) goto labelFunc043A_04D0;
 	UI_add_answer("另一則故事");
 labelFunc043A_04D0:
-	UI_remove_answer("Delphynia");
+	UI_remove_answer("黛爾菲妮亞");
 labelFunc043A_04D7:
 	case "另一則故事" attend labelFunc043A_04FE:
 	if (!var0003) goto labelFunc043A_04EC;
@@ -613,13 +613,13 @@ labelFunc043A_09EA:
 labelFunc043A_0A1B:
 	message("「整座島上爬滿了發光的貓。不知道牠們是怎麼到那裡的，也不知道牠們怎麼能在那麼荒涼的地方生存。但我聽說牠們住在那裡是為了守護某種神奇的貓咪寶藏。」");
 	say();
-	message("「這是 Delphynia 最喜歡的故事。」");
+	message("「這是黛爾菲妮亞最喜歡的故事。」");
 	say();
 	UI_remove_answer("貓之島");
-	UI_add_answer("Delphynia");
+	UI_add_answer("黛爾菲妮亞");
 labelFunc043A_0A31:
-	case "Delphynia" attend labelFunc043A_0AB6:
-	message("「Delphynia 是一位草藥學家。」");
+	case "黛爾菲妮亞" attend labelFunc043A_0AB6:
+	message("「黛爾菲妮亞是一位草藥學家。」");
 	say();
 	if (!(var0001 == true)) goto labelFunc043A_0A74;
 	UI_show_npc_face1(0xFFCC, 0x0000);
@@ -649,7 +649,7 @@ labelFunc043A_0A74:
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc043A_0AAF:
-	UI_remove_answer("Delphynia");
+	UI_remove_answer("黛爾菲妮亞");
 labelFunc043A_0AB6:
 	case "愛情故事" attend labelFunc043A_0B55:
 	message("「這不是你常見的愛情故事，不是。這是關於龍的，冰龍。」");

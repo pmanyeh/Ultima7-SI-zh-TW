@@ -357,7 +357,7 @@ labelFunc042D_0667:
 	UI_remove_answer("遺物");
 	message("「雖然 Andral 是一名長槍兵，但我還是無法理解他為何對那些石塊如此感興趣……」");
 	say();
-	message("「就是他告訴我，那個法師離開後沒多久，一條雕刻的黑岩巨蛇就不見了。顯然那是個傳家寶之類的東西。」");
+	message("「就是他告訴我，那個法師離開後沒多久，一條雕刻的黑石巨蛇就不見了。顯然那是個傳家寶之類的東西。」");
 	say();
 labelFunc042D_067E:
 	case "Argus" attend labelFunc042D_069C:

@@ -3,7 +3,7 @@
 ## 一、概述 (Overview)
 
 在《創世紀 7 下集：巨蛇之島》（Ultima VII Part II: Serpent Isle）中，遊戲世界包含兩類特殊古代文字系統：
-1. **盧恩符文 (Runic Font)**：廣泛出現於不列顛城鎮（如 Monitor、Fawn、Moonshade）的路牌、告示牌與店家招牌。
+1. **盧恩符文 (Runic Font)**：廣泛出現於城鎮（如 Monitor、Fawn、Moonshade）的路牌、告示牌與店家招牌。
 2. **蛇型文 (Ophidian Font)**：出現於古蛇族（Ophidian）神殿（如 Temple of Emotion/Tolerance/Enthusiasm）、遺跡石碑、銘文及特殊卷軸。
 
 這兩類文字在遊戲內均透過 Usecode 引擎內建函式 `UI_display_runes` 進行畫面繪製與渲染。

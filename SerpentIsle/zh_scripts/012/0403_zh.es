@@ -443,7 +443,7 @@ labelFunc0403_0844:
 	message("「你想讓我重唱一首你已經聽過的歌嗎？還是想聽首新歌？」");
 	say();
 	var0015 = [];
-	if (!(Func0957(["old song", "new song"]) == 0x0001)) goto labelFunc0403_08F2;
+	if (!(Func0957(["舊歌", "新歌"]) == 0x0001)) goto labelFunc0403_08F2;
 	if (!(gflags[0x01D3] == true)) goto labelFunc0403_0895;
 	var0015 = (var0015 & 0x0001);
 labelFunc0403_0895:

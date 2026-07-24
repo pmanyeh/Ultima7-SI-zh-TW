@@ -125,7 +125,7 @@ labelFunc0495_0233:
 	message(var0002);
 	message("。」");
 	say();
-	message("「我擔心你的工作才剛開始。 Batlin 的行為只讓風暴變得更糟。」");
+	message("「我擔心你的工作才剛開始。巴特林的行為只讓風暴變得更糟。」");
 	say();
 	message("「隨著命運沙漏( Hourglass of Fate )裡的沙子減少，危險只會增加。你必須盡快找到答案，聖者！」");
 	say();
@@ -139,7 +139,7 @@ labelFunc0495_0260:
 	say();
 labelFunc0495_026E:
 	if (!(!gflags[0x00FF])) goto labelFunc0495_0285;
-	UI_add_answer(["Batlin 的行為", "危險", "答案"]);
+	UI_add_answer(["巴特林的行為", "危險", "答案"]);
 labelFunc0495_0285:
 	if (!(gflags[0x00FF] && ((!gflags[0x00D4]) || ((!gflags[0x00D5]) || (!gflags[0x00D3]))))) goto labelFunc0495_02A5;
 	message("「聖者！我找到了一卷非常有趣的卷軸，上面講述了災厄( Banes )與古老神殿之間某種神祕的聯繫( mystic connection )！」");
@@ -198,9 +198,9 @@ labelFunc0495_0361:
 	UI_remove_from_party(0xFF6B);
 	Func09B4(0xFF6B);
 labelFunc0495_038E:
-	case "Batlin 的行為" attend labelFunc0495_03B2:
-	UI_remove_answer("Batlin 的行為");
-	message("「在 Batlin 介入之前，這片土地沒有平衡，但徹底的混沌是被控制住的……直到他釋放了災厄( Banes )。」");
+	case "巴特林的行為" attend labelFunc0495_03B2:
+	UI_remove_answer("巴特林的行為");
+	message("「在巴特林介入之前，這片土地沒有平衡，但徹底的混沌是被控制住的……直到他釋放了災厄( Banes )。」");
 	say();
 	message("「除非恢復平衡，否則這片土地將會毀滅……並且把每一個與之接觸的世界也一起帶入遺忘的塵埃中。」");
 	say();
@@ -211,7 +211,7 @@ labelFunc0495_03B2:
 	UI_push_answers();
 	message("「災厄( Banes )是混沌( Chaos )的碎片力量。」");
 	say();
-	message("「你必須把它們重新關起來，就像 Batlin 來之前那樣。這充其量只是個治標不治本的方法。」");
+	message("「你必須把它們重新關起來，就像巴特林來之前那樣。這充其量只是個治標不治本的方法。」");
 	say();
 	message("「也許我可以查閱修道士島( Monk Isle )這裡的資料，找到一個完全消除這片土地威脅的方法。」");
 	say();
@@ -221,7 +221,7 @@ labelFunc0495_03E1:
 	UI_remove_answer("關起它們");
 	message("「你應該去月影城( Moonshade )。」");
 	say();
-	message("「如果你能查出是誰給了 Batlin 囚禁靈魂的秘密，我會試著找出什麼能讓它們承受我們想要封印的力量。」");
+	message("「如果你能查出是誰給了巴特林囚禁靈魂的秘密，我會試著找出什麼能讓它們承受我們想要封印的力量。」");
 	say();
 	UI_add_answer(["月影城", "秘密"]);
 	gflags[0x012D] = true;

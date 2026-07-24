@@ -76,7 +76,7 @@ labelFunc0436_0189:
 	UI_show_npc_face0(0xFFCA, 0x0000);
 	var0007 = UI_get_item_flag(0xFFCA, 0x001C);
 	if (!(gflags[0x0171] || (gflags[0x0170] && (!gflags[0x0172])))) goto labelFunc0436_01DE;
-	message("「你這與美( Beauty )之敵為伍的人，讓我背脊發涼！");
+	message("「你這與『美』之敵為伍的人，讓我背脊發涼！");
 	say();
 	message("「我求你離開……」");
 	say();
@@ -112,13 +112,13 @@ labelFunc0436_0223:
 	if (!(var0001 == true)) goto labelFunc0436_0236;
 	message("「歡迎來到幼鹿城( Fawn )。我是 Kylista，美之祭司( Priestess of Beauty )。」");
 	say();
-	message("「願你與美( Beauty )同行。」");
+	message("「願你與『美』同行。」");
 	say();
 	goto labelFunc0436_0255;
 labelFunc0436_0236:
-	message("「歡迎來到幼鹿城( Fawn )，美( Beauty )之城。我是 Kylista，美之祭司( Priestess of Beauty )。」");
+	message("「歡迎來到幼鹿城( Fawn )，『美之城』。我是 Kylista，美之祭司( Priestess of Beauty )。」");
 	say();
-	message("「你是來尋求美( Beauty )之道的指引的嗎？」");
+	message("「你是來尋求『美』之道的指引的嗎？」");
 	say();
 	var0009 = Func0955();
 	if (!var0009) goto labelFunc0436_0251;
@@ -200,15 +200,15 @@ labelFunc0436_033D:
 labelFunc0436_0359:
 	case "哥布林" attend labelFunc0436_0373:
 	UI_remove_answer("哥布林");
-	message("「完全是美( Beauty )的對立面！哥布林是粗俗的野蠻人，不懂欣賞美( Beauty )，也不懂美之真理( Beauty's truth )。」");
+	message("「完全是『美』的對立面！哥布林是粗俗的野蠻人，不懂欣賞『美』，也不懂美之真理( Beauty's truth )。」");
 	say();
 	UI_add_answer("美之真理");
 labelFunc0436_0373:
 	case "美之真理" attend labelFunc0436_0391:
 	UI_remove_answer("美之真理");
-	message("「所有美好的事物都擁有一種內在的美( Beauty )，吸引著所有生物。」");
+	message("「所有美好的事物都擁有一種內在的『美』，吸引著所有生物。」");
 	say();
-	message("「對哥布林這種邪惡、醜陋的怪物來說，美( Beauty )是一個謊言。對 Pomdirgun 來說，美( Beauty )是必須被消滅的東西，而不是被珍惜的。」");
+	message("「對哥布林這種邪惡、醜陋的怪物來說，『美』是一個謊言。對 Pomdirgun 來說，『美』是必須被消滅的東西，而不是被珍惜的。」");
 	say();
 	UI_add_answer("Pomdirgun");
 labelFunc0436_0391:
@@ -223,9 +223,9 @@ labelFunc0436_03A8:
 	UI_remove_answer("風暴");
 	message("「這是另一個跡象，顯示上天對我們與假先知來往感到不悅！」");
 	say();
-	message("「我們允許腐敗進入我們的城市，探訪美( Beauty )的核心。甚至有人鼓勵它滋長。現在我們必須為我們的過犯付出代價。」");
+	message("「我們允許腐敗進入我們的城市，探訪『美』的核心。甚至有人鼓勵它滋長。現在我們必須為我們的過犯付出代價。」");
 	say();
-	message("「一旦我們被降卑到只能看見美( Beauty )時，風暴就會停止，幼鹿城( Fawn )將再次繁榮。但只要任何不實信仰的痕跡還存在，懲罰就會持續。」");
+	message("「一旦我們被降卑到只能看見『美』時，風暴就會停止，幼鹿城( Fawn )將再次繁榮。但只要任何不實信仰的痕跡還存在，懲罰就會持續。」");
 	say();
 	UI_add_answer("假先知");
 labelFunc0436_03CA:
@@ -235,9 +235,9 @@ labelFunc0436_03CA:
 	say();
 	message("「我們以為他們是可憐、困惑的海員，值得我們接納。但我們被騙了！他們帶來的全是謊言！」");
 	say();
-	message("「那個叫 Leon 的人譴責美( Beauty )只是友誼會( The Fellowship )真理的影子！然後——然後——風暴就來了！來懲罰那些敢說出這種褻瀆之語的人！」");
+	message("「那個叫 Leon 的人譴責『美』只是友誼會( The Fellowship )真理的影子！然後——然後——風暴就來了！來懲罰那些敢說出這種褻瀆之語的人！」");
 	say();
-	message("「直到這些褻瀆者存在的禍害從美( Beauty )的臉上被抹去，風暴才不會結束！」");
+	message("「直到這些褻瀆者存在的禍害從『美』的臉上被抹去，風暴才不會結束！」");
 	say();
 	if (!(var0003 == true)) goto labelFunc0436_040A;
 	UI_show_npc_face1(0xFFFD, 0x0000);
@@ -250,7 +250,7 @@ labelFunc0436_040A:
 labelFunc0436_0417:
 	case "Leon" attend labelFunc0436_0435:
 	UI_remove_answer("Leon");
-	message("「Leon 試圖將毫無戒心的人從美( Beauty )的道路上引開。就是他將上天的憤怒降臨到我們頭上！」");
+	message("「Leon 試圖將毫無戒心的人從『美』的道路上引開。就是他將上天的憤怒降臨到我們頭上！」");
 	say();
 	message("「Yelinda 夫人早該下令處死他，因為他給我們的城市帶來了這些災難！」");
 	say();

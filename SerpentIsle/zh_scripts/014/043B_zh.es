@@ -92,7 +92,7 @@ labelFunc043B_017B:
 	if (!(Func0955() == true)) goto labelFunc043B_020C;
 	message("「哦，我從你臉上高貴的氣質就知道，你會憐憫我這個可憐人的！」");
 	say();
-	message("「把這個交給草藥學家 Delphynia。你可以在溫室裡找到她。」");
+	message("「把這個交給草藥學家『黛爾菲妮亞( Delphynia )』。你可以在溫室裡找到她。」");
 	say();
 	message("「如果你能帶回回信，我會把你介紹給我的船員朋友，做地圖的 Scots。」");
 	say();
@@ -113,7 +113,7 @@ labelFunc043B_01F6:
 	abort;
 	goto labelFunc043B_03D4;
 labelFunc043B_020C:
-	message("「我一輩子都在尋找一個能忽視我的畸形並學著去愛我的女人。我總會找到方法向 Delphynia 傾訴我的愛的……」");
+	message("「我一輩子都在尋找一個能忽視我的畸形並學著去愛我的女人。我總會找到方法向黛爾菲妮亞傾訴我的愛的……」");
 	say();
 	if (!(var0003 == true)) goto labelFunc043B_031C;
 	UI_show_npc_face1(0xFFFD, 0x0000);
@@ -126,7 +126,7 @@ labelFunc043B_020C:
 	message("「也許終究還是有希望的……這是那捲軸。」");
 	say();
 	var0008 = Func099B(0xFE9C, 0x0001, 0x031D, 0x0004, 0x0005, false, true);
-	message("「把這個交給草藥學家 Delphynia。你可以在溫室裡找到她。」");
+	message("「把這個交給草藥學家『黛爾菲妮亞( Delphynia )』。你可以在溫室裡找到她。」");
 	say();
 	message("「如果你能帶回回信，我會把你介紹給我的船員朋友，做地圖的 Scots。」");
 	say();
@@ -245,11 +245,11 @@ labelFunc043B_047D:
 	UI_remove_answer("大家都在哪裡？");
 	message("「全死了！你難道沒看到他們的屍體堆滿在那些荒涼的建築周圍嗎？」");
 	say();
-	message("「我記不太清楚了，因為當我找到 Delphynia 的屍體時，我就失去理智了。」");
+	message("「我記不太清楚了，因為當我找到黛爾菲妮亞的屍體時，我就失去理智了。」");
 	say();
 	message("「Yelinda 夫人也倖免於難，但她已經走進 Gorlab 沼澤了。我本該跟著她的，但我沒有。只有我一個人留在幼鹿城( Fawn )。」");
 	say();
-	UI_add_answer(["Delphynia", "Yelinda 夫人"]);
+	UI_add_answer(["黛爾菲妮亞", "Yelinda 夫人"]);
 labelFunc043B_04A8:
 	case "發生了什麼事？" attend labelFunc043B_04CE:
 	UI_remove_answer("發生了什麼事？");
@@ -278,27 +278,27 @@ labelFunc043B_04E9:
 	say();
 labelFunc043B_0504:
 	case "不列顛尼亞" attend labelFunc043B_0528:
-	message("「Batlin 租用了我們的船，用來運送學者去探索新大陸，並傳播友誼會( The Fellowship )的福音。」");
+	message("「巴特林租用了我們的船，用來運送學者去探索新大陸，並傳播友誼會( The Fellowship )的福音。」");
 	say();
-	message("「現在，就算我們想拋下 Batlin 回去，我們也不敢出海，因為這些可怕的風暴。」");
+	message("「現在，就算我們想拋下巴特林回去，我們也不敢出海，因為這些可怕的風暴。」");
 	say();
 	UI_remove_answer("不列顛尼亞");
-	UI_add_answer(["Batlin", "風暴"]);
+	UI_add_answer(["巴特林", "風暴"]);
 labelFunc043B_0528:
-	case "Batlin" attend labelFunc043B_0567:
-	message("「你沒聽說過 Batlin 嗎？他是不列顛尼亞( Britannia )友誼會( The Fellowship )運動的創始人。」");
+	case "巴特林" attend labelFunc043B_0567:
+	message("「你沒聽說過巴特林嗎？他是不列顛尼亞( Britannia )友誼會( The Fellowship )運動的創始人。」");
 	say();
 	message("「他是個虔誠且有價值的人，儘管他有一些奇怪的同伴。」");
 	say();
-	var0015 = Func0992(0x0001, "@他的描述和我們認識的 Batlin 不太像，對吧，聖者( Avatar )？@", 0x0000, false);
+	var0015 = Func0992(0x0001, "@他的描述和我們認識的巴特林不太像，對吧，聖者( Avatar )？@", 0x0000, false);
 	if (!(var0015 != 0xFE9C)) goto labelFunc043B_0559;
 	UI_set_conversation_slot(0x0000);
 labelFunc043B_0559:
-	UI_remove_answer("Batlin");
+	UI_remove_answer("巴特林");
 	UI_add_answer("同伴");
 labelFunc043B_0567:
 	case "同伴" attend labelFunc043B_0598:
-	message("「Batlin 吩咐 Leon 留下來向幼鹿城( Fawn )的民眾傳教，然後帶著三個同伴離開了船：Palos、Brunt 和 Deadeye。」");
+	message("「巴特林吩咐 Leon 留下來向幼鹿城( Fawn )的民眾傳教，然後帶著三個同伴離開了船：Palos、Brunt 和 Deadeye。」");
 	say();
 	message("「從那以後我們就沒見過他們了。雖然他們答應會很快回來。」");
 	say();
@@ -312,7 +312,7 @@ labelFunc043B_0598:
 	UI_pop_answers();
 labelFunc043B_05A8:
 	case "Leon" attend labelFunc043B_05CA:
-	message("「Leon 是被 Batlin 特別選中來為這片土地帶來友誼會( The Fellowship )希望的。」");
+	message("「Leon 是被巴特林特別選中來為這片土地帶來友誼會( The Fellowship )希望的。」");
 	say();
 	message("「自從我們被困在這裡後，他是唯一讓我們保持理智的人。」");
 	say();
@@ -342,9 +342,9 @@ labelFunc043B_05FF:
 	message(var0000);
 	message("。」");
 	say();
-	message("「在一次風暴中，主桅杆被閃電擊中並倒塌了，卡住了操作海錨的絞盤。」");
+	message("「在一次風暴中，主桅杆被閃電擊中並倒塌了，卡住了操作船錨的絞盤。」");
 	say();
-	message("「如果沒有海錨，我們很快就會被狂風巨浪吞噬。但是 Palos 大步跨過甲板，把桅杆推到一邊，鬆開了絞盤……全靠他自己一個人。」");
+	message("「如果沒有船錨，我們很快就會被狂風巨浪吞噬。但是 Palos 大步跨過甲板，把桅杆推到一邊，鬆開了絞盤……全靠他自己一個人。」");
 	say();
 labelFunc043B_0620:
 	case "Brunt" attend labelFunc043B_0644:
@@ -352,7 +352,7 @@ labelFunc043B_0620:
 	message(var0000);
 	message("。」");
 	say();
-	message("「我懷疑 Batlin 僱傭他，是為了讓他在這個異國他鄉擔任私人保鑣。他不適合做其他事。」");
+	message("「我懷疑巴特林僱傭他，是為了讓他在這個異國他鄉擔任私人保鑣。他不適合做其他事。」");
 	say();
 	UI_remove_answer("Brunt");
 	UI_add_answer("不適合");
@@ -375,7 +375,7 @@ labelFunc043B_0662:
 	UI_remove_answer("臉色發綠");
 labelFunc043B_067F:
 	case "Deadeye" attend labelFunc043B_0699:
-	message("「Deadeye 是 Batlin 的同伴中我唯一真正認識的。我也不能說我很高興有這種交情。」");
+	message("「Deadeye 是巴特林的同伴中我唯一真正認識的。我也不能說我很高興有這種交情。」");
 	say();
 	UI_remove_answer("Deadeye");
 	UI_add_answer("交情");
@@ -444,8 +444,8 @@ labelFunc043B_0755:
 	message("「但我沒有拿走它，因為它屬於夫人。而老鼠也不會去動它。」");
 	say();
 labelFunc043B_076C:
-	case "Delphynia" attend labelFunc043B_07D8:
-	UI_remove_answer("Delphynia");
+	case "黛爾菲妮亞" attend labelFunc043B_07D8:
+	UI_remove_answer("黛爾菲妮亞");
 	if (!gflags[0x0004]) goto labelFunc043B_0790;
 	message("「我發現她可憐的屍體被丟棄在街上，她的內臟……被扭曲……被扯了出來……」");
 	say();
@@ -456,38 +456,38 @@ labelFunc043B_076C:
 	goto labelFunc043B_07D8;
 labelFunc043B_0790:
 	if (!(gflags[0x0168] == false)) goto labelFunc043B_07A9;
-	message("「Delphynia 是所有女人中最美麗的！求求你，原諒我，");
+	message("「黛爾菲妮亞是所有女人中最美麗的！求求你，原諒我，");
 	message(var0000);
 	message("。我是用一個被愛情枷鎖束縛的男人的口吻說話。」");
 	say();
-	message("「Delphynia 是幼鹿城( Fawn )的草藥學家和最近的治療師。我跟著 Batlin 進城採購補給品時遇見了她。」");
+	message("「黛爾菲妮亞是幼鹿城( Fawn )的草藥學家和最近的治療師。我跟著巴特林進城採購補給品時遇見了她。」");
 	say();
 	goto labelFunc043B_07D8;
 labelFunc043B_07A9:
 	if (!(gflags[0x0167] == true)) goto labelFunc043B_07B9;
-	message("「Delphynia 是幼鹿城( Fawn )的草藥學家和最近的治療師。我跟著 Batlin 進城採購補給品時遇見了她。」");
+	message("「黛爾菲妮亞是幼鹿城( Fawn )的草藥學家和最近的治療師。我跟著巴特林進城採購補給品時遇見了她。」");
 	say();
 	message("「如果你見到她，你就會明白我為什麼愛她。」");
 	say();
 labelFunc043B_07B9:
 	if (!(gflags[0x0152] && (var000A == false))) goto labelFunc043B_07D0;
-	message("「Delphynia 是幼鹿城( Fawn )的草藥學家和最近的治療師。我跟著 Batlin 進城採購補給品時遇見了她。」");
+	message("「黛爾菲妮亞是幼鹿城( Fawn )的草藥學家和最近的治療師。我跟著巴特林進城採購補給品時遇見了她。」");
 	say();
 	message("「對我來說，她是幼鹿城( Fawn )最美麗的女人。當你見到她時，我敢肯定你會同意我的看法。」");
 	say();
 	goto labelFunc043B_07D8;
 labelFunc043B_07D0:
-	message("「你已經見過她了……對我來說，Delphynia 是整個幼鹿城( Fawn )最美麗的女人。」");
+	message("「你已經見過她了……對我來說，黛爾菲妮亞是整個幼鹿城( Fawn )最美麗的女人。」");
 	say();
-	message("「她也是一位出色的草藥學家和治療師。我跟著 Batlin 進城採購補給品時遇見了她。」");
+	message("「她也是一位出色的草藥學家和治療師。我跟著巴特林進城採購補給品時遇見了她。」");
 	say();
 labelFunc043B_07D8:
 	case "幼鹿城" attend labelFunc043B_07FC:
 	message("「就是那邊那座城市，");
 	message(var0000);
-	message("。他們聲稱崇尚美( Beauty )，而我的臉自然冒犯了這點。」");
+	message("。他們聲稱崇尚『美』，而我的臉自然冒犯了這點。」");
 	say();
-	message("「因為哥布林( Goblins )和其他事情，他們現在處境艱難。」");
+	message("「因為哥布林和其他事情，他們現在處境艱難。」");
 	say();
 	UI_remove_answer("幼鹿城");
 	UI_add_answer("哥布林");
@@ -540,11 +540,11 @@ labelFunc043B_0872:
 	message(var0000);
 	message("！」");
 	say();
-	message("「Delphynia 知道我的愛，雖然她對自己的感覺還不確定。」");
+	message("「黛爾菲妮亞知道我的愛，雖然她對自己的感覺還不確定。」");
 	say();
 	message("「只要她沒有當場拒絕我，我就願意等待。你的善舉給了我活下去的理由！」");
 	say();
-	message("「如我所承諾的，我會派你去找我的船員朋友，Scots。」");
+	message("「如我所承諾的，我會把你介紹給我的船員朋友，Scots。」");
 	say();
 	var0017 = true;
 	UI_remove_answer("信");
