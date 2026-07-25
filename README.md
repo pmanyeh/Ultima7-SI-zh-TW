@@ -10,13 +10,14 @@
 
 ## 工作流程與編譯說明
 
-請先自行安裝 Exult Tools，可於 Exult 官網下載。（https://exult.sourceforge.io/download.html）
+可先自行安裝最新 Exult Tools，可於 Exult 官網下載。（https://exult.sourceforge.io/download.html）
+或是直接使用 Tools/ ucc.exe / uclump.exe / uextract.exe 等程式進行編譯與解譯，只是版本一定不是最新的~。
 詳細的腳本解譯、翻譯規則與使用 UCC 編譯的方式，請參閱專案內的 Markdown 說明檔。
 
 ## 翻譯進度總覽
 
 巨蛇之島(Serpent Isle)
-- 腳本翻譯：84.90%；尚未驗證完成
+- 腳本翻譯：96.9%；尚未驗證完成
 - 物品翻譯：99%；尚未驗證完成
 
 ## 授權與聲明
