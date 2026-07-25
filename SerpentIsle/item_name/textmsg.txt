@@ -2187,7 +2187,7 @@
 0x159:夢幻水晶(159)(dream crystal)
 0x15a:鏡岩(15a)(mirror rock)
 0x15b:冰柱(15b)(icy column)
-0x15c:看不見的塵埃(15c)(dust of invisibility)
+0x15c:隱形粉(15c)(dust of invisibility)
 0x15d:奇怪的藥水(15d)(strange potion)
 0x15e:的骨灰(15e)('s ashes)
 0x15f:盆栽植物(15f)(potted plant)

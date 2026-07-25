@@ -144,7 +144,7 @@ labelFunc07F8_0332:
 	Func097F(0xFFD2, "@噓！@", 0x0023);
 	goto labelFunc07F8_03DF;
 labelFunc07F8_03C0:
-	var0001 = "@讓正義迅速降臨吧！@";
+	var0001 = ["@讓正義迅速降臨吧！@"];
 	var000C = Func0992(0x0001, 0x0000, 0x0000, true);
 	Func094F(var000C, var0001);
 labelFunc07F8_03DF:

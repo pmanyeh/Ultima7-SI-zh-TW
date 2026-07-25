@@ -17,13 +17,14 @@ void Func0939 0x939 (var var0000)
 
 	if (!(var0000 == 0x00F8)) goto labelFunc0939_0072;
 	var0001 = Func08AC(true);
+	var0002 = Func08AC(false);
 	UI_move_object(var0001, [0x0407, 0x0679]);
 	UI_si_path_run_usecode(var0001, [0x0407, 0x066B], 0x000D, UI_get_npc_object(var0001), 0x07F8, false);
 	Func08C5();
 	//Func097F("@", 0x000A, 0x0000/*stack underflow*/);
 	//((0x0000/*stack underflow*/ + 0x0000/*stack underflow*/) + "...@");
-	Func097F(var0001, ("@" + var0001 + "...@"), 0x000A);
-	Func097F(0xFE9C, ("@" + var0001 + "!@"), 0x0005);
+	Func097F(var0001, ("@聖者...@"), 0x000A);
+	Func097F(0xFE9C, ("@" + var0002 + "!@"), 0x0005);
 	//var0001;
 	Func0954();
 	var0001 = Func08AC(false);
