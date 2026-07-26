@@ -143,12 +143,12 @@ labelFunc031D_01B2:
 	if (!(var0003 == 0x000D)) goto labelFunc031D_01C7;
 	message("向你致以秩序的問候，我極好的讀者！~~ 請注意，當美德( virtues )處於不平衡狀態時，一個全新的系統就會開始運作。缺乏秩序力量( Order Forces )的混亂力量( Chaos Forces )會創造出混亂反力量( Chaos Anti-Forces )。我希望你了解這種改變意味著什麼。~ 像缺乏道德( Ethicality )的寬容( Tolerance )會造成行為標準的缺失，毫無疑問會導致無政府狀態( Anarchy )。~ 缺乏紀律( Discipline )的熱情( Enthusiasm )意味著缺乏自我克制的行為，那就是放縱( Wantonness )。~ 缺乏邏輯( Logic )的情感( Emotion )會助長無法以理性思考克服情感衝動的情況，這預示著瘋狂( Insanity )。~~");
 	say();
-	message("另一方面，缺乏混亂力量的秩序力量會創造出秩序反力量( Order Anti-Forces )。~ 在這種情況下，這意味著缺乏寬容的道德將會帶來對他人信仰和權利的不尊重。~ 缺乏熱情的紀律會助長一種阻礙積極行動的絕望精神。這被稱為冷漠( Apathy )。~ 缺乏情感的邏輯會導致為了自我提升而採取的行動，且不顧及他人的要求或需求。這被稱為無情( Ruthlessness )。因此，現在很明顯，只有紀律( Discipline )才能糾正 Gwenno。~ 記住這些並照顧好自己，~~Karnax");
+	message("另一方面，缺乏混亂力量的秩序力量會創造出秩序反力量( Order Anti-Forces )。~ 在這種情況下，這意味著缺乏寬容的道德將會帶來對他人信仰和權利的不尊重。~ 缺乏熱情的紀律會助長一種阻礙積極行動的絕望精神。這被稱為冷漠( Apathy )。~ 缺乏情感的邏輯會導致為了自我提升而採取的行動，且不顧及他人的要求或需求。這被稱為無情( Ruthlessness )。因此，現在很明顯，只有紀律( Discipline )才能糾正 Gwenno。~ 記住這些並照顧好自己，~~Karnax　");
 	say();
 	goto labelFunc031D_0A44;
 labelFunc031D_01C7:
 	if (!(var0003 == 0x000E)) goto labelFunc031D_01D8;
-	message("穿越黑暗與絕望~ 大地荒蕪~ 尋找祢，Mondain~ 唉，卻是徒勞~ 我的靈魂與我的心~ 被丘比特之箭刺穿~ 將永遠無法癒合~ 除非得到 Mondain 的意願~ 愛情是一片荒涼的土地~ 除非祢，Mondain~ 牽著我的手~ 走向祢的青春之泉 ~~Minax");
+	message("穿越黑暗與絕望~ 大地荒蕪~ 尋找祢，Mondain~ 唉，卻是徒勞~ 我的靈魂與我的心~ 被丘比特之箭刺穿~ 將永遠無法癒合~ 除非得到 Mondain 的意願~ 愛情是一片荒涼的土地~ 除非祢，Mondain~ 牽著我的手~ 走向祢的青春之泉 ~~Minax　");
 	say();
 	goto labelFunc031D_0A44;
 labelFunc031D_01D8:
@@ -190,7 +190,7 @@ labelFunc031D_024A:
 	if (!(var0003 == 0x002A)) goto labelFunc031D_025F;
 	message("     我在這裡待了多少天，我已經記不清了，雖然我沒有忘記進入這個已成為我墳墓的被遺忘洞穴的那一天。那是 2-29-0227。但我的食物早就耗盡了，老鼠對吃我比讓我吃牠們更感興趣。我的力氣沒了，我的意志也沒了。如果你找到了這個，請告訴 Mythra 我愛她。~~");
 	say();
-	message("     —— Denyel");
+	message("     —— Denyel　");
 	say();
 	goto labelFunc031D_0A44;
 labelFunc031D_025F:

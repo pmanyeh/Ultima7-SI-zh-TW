@@ -536,7 +536,7 @@ labelFunc04CF_09A8:
 labelFunc04CF_09D0:
 	case "英雄" attend labelFunc04CF_09FE:
 	UI_remove_answer("英雄");
-	message("「所有關於能改變命運軌跡之人的文獻，都暗示著來自異世界之英雄( Hero from Another World )。」");
+	message("「所有關於能改變命運軌跡之人的文獻，都暗示著來自異世界之英雄。」");
 	say();
 	message("「你來自這片土地，來自新索沙利亞( New Sosaria )嗎？」");
 	say();

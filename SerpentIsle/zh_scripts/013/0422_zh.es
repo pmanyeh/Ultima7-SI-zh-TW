@@ -153,7 +153,7 @@ labelFunc0422_0430:
 	var0012 = Func0992(0xFFFD, "這顆斷掉的頭說話了！", 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_046A;
 	UI_set_conversation_slot(0x0000);
-	message("「是的，我有。很奇怪，不是嗎？」");
+	message("「是的～很奇怪，不是嗎？」");
 	say();
 labelFunc0422_046A:
 	gflags[0x01C0] = true;

@@ -150,7 +150,7 @@ labelFunc0423_02ED:
 	UI_add_answer("準備創造生命");
 labelFunc0423_02FF:
 	if (!gflags[0x01BD]) goto labelFunc0423_030C;
-	UI_add_answer("我有顎骨。");
+	UI_add_answer("我有顎骨");
 labelFunc0423_030C:
 	if (!(gflags[0x01B9] && (!gflags[0x01BA]))) goto labelFunc0423_031E;
 	UI_add_answer("Boydon可以加入嗎？");
@@ -486,8 +486,8 @@ labelFunc0423_0900:
 	say();
 	gflags[0x01C3] = true;
 labelFunc0423_0926:
-	case "我有顎骨。" attend labelFunc0423_09CE:
-	UI_remove_answer("我有顎骨。");
+	case "我有顎骨" attend labelFunc0423_09CE:
+	UI_remove_answer("我有顎骨");
 	if (!(gflags[0x01C2] && (gflags[0x01C3] && gflags[0x01C4]))) goto labelFunc0423_0954;
 	message("「是的。非常好。我已經給了你我的巨蛇之牙。我沒有了。祝你好運。」");
 	say();
