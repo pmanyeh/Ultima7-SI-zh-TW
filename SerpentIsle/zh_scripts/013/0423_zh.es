@@ -181,7 +181,7 @@ labelFunc0423_037D:
 labelFunc0423_0390:
 	case "打擾？" attend labelFunc0423_03A7:
 	UI_remove_answer("打擾？");
-	message("「我是一個法師大師，因此我致力於我一生的工作——我的實驗！我正在尋找不朽的秘密，為了找到它，我必須能夠解開生與死之謎。」");
+	message("「我是一個高階法師，因此我致力於我一生的工作——我的實驗！我正在尋找不朽的秘密，為了找到它，我必須能夠解開生與死之謎。」");
 	say();
 	gflags[0x01C8] = true;
 labelFunc0423_03A7:

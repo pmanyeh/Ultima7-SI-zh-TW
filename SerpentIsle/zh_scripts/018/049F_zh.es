@@ -163,7 +163,7 @@ labelFunc049F_0362:
 labelFunc049F_0382:
 	case "救了你" attend labelFunc049F_0395:
 	UI_remove_answer("救了你");
-	message("「透過牠的努力，我們逃了出來，我用我最後的魔法逃離。我們發現自己來到了這裡——巨蛇之島( Serpent Isle )。」");
+	message("「透過牠的努力，我們逃了出來，我用我最後的魔法逃離。我們發現自己來到了這裡——巨蛇之島。」");
 	say();
 labelFunc049F_0395:
 	case "新森林" attend labelFunc049F_03A8:

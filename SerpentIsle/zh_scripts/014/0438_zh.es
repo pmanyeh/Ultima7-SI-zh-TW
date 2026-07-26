@@ -39,16 +39,16 @@ labelFunc0438_006C:
 	var0005 = UI_get_item_flag(0xFFC8, 0x001C);
 	if (!(var0005 == false)) goto labelFunc0438_00D0;
 	if (!(gflags[0x003E] == true)) goto labelFunc0438_00BB;
-	message("「終於，友誼會( The Fellowship )的價值觀傳到了長槍兵( Pikemen )的行列中！我很榮幸。」");
+	message("「終於，友誼會的價值觀傳到了長槍兵( Pikemen )的行列中！我很榮幸。」");
 	say();
-	message("「我是 Leon，友誼會( The Fellowship )的傳教士，以前是個農夫。」");
+	message("「我是 Leon，友誼會的傳教士，以前是個農夫。」");
 	say();
 	UI_add_answer("友誼會");
 	goto labelFunc0438_00C3;
 labelFunc0438_00BB:
 	message("「我總是有時間接待那些前來尋求知識的人。歡迎。」");
 	say();
-	message("「我是 Leon，友誼會( The Fellowship )的傳教士，以前是個農夫。」");
+	message("「我是 Leon，友誼會的傳教士，以前是個農夫。」");
 	say();
 labelFunc0438_00C3:
 	UI_set_item_flag(0xFFC8, 0x001C);
@@ -145,17 +145,17 @@ labelFunc0438_026B:
 	say();
 	message("「Kylista 拒絕讓我們在城牆內避難，甚至在塔樓落入野蠻的哥布林手中時也是如此。」");
 	say();
-	message("「我從沒想過我會後悔另一個有智慧的生物學到了友誼會( The Fellowship )的真理的那一天。」");
+	message("「我從沒想過我會後悔另一個有智慧的生物學到了友誼會的真理的那一天。」");
 	say();
 	message("「但如果哥布林沒有在 Pomdirgun 的領導下團結起來，我們的處境會好得多。」");
 	say();
 	goto labelFunc0438_029A;
 labelFunc0438_028E:
-	message("「你來尋求友誼會( The Fellowship )的智慧，是為了讓你和你的蒙利多( Monitorian )同志能奪回塔樓嗎？」");
+	message("「你來尋求友誼會的智慧，是為了讓你和你的蒙利多( Monitorian )同志能奪回塔樓嗎？」");
 	say();
 	message("「即使到現在，Kylista 仍然拒絕我們在城牆內避難。」");
 	say();
-	message("「顯然，她害怕友誼會( The Fellowship )的真理，就像她害怕 Pomdirgun 一樣。」");
+	message("「顯然，她害怕友誼會的真理，就像她害怕 Pomdirgun 一樣。」");
 	say();
 labelFunc0438_029A:
 	goto labelFunc0438_02C4;
@@ -165,17 +165,17 @@ labelFunc0438_029D:
 	say();
 	message("「Kylista 拒絕讓我們在城牆內避難，甚至在塔樓落入野蠻的哥布林手中時也是如此。」");
 	say();
-	message("「我從沒想過我會後悔另一個有智慧的生物學到了友誼會( The Fellowship )的真理的那一天。」");
+	message("「我從沒想過我會後悔另一個有智慧的生物學到了友誼會的真理的那一天。」");
 	say();
 	message("「但如果哥布林沒有在 Pomdirgun 的領導下團結起來，我們的處境會好得多。」");
 	say();
 	goto labelFunc0438_02C4;
 labelFunc0438_02B8:
-	message("「你是許多來尋求友誼會( The Fellowship )的智慧以抵禦這些艱難時刻的其中一人。」");
+	message("「你是許多來尋求友誼會的智慧以抵禦這些艱難時刻的其中一人。」");
 	say();
 	message("「你不應該在城牆外停留太久，即使 Kylista 拒絕讓我及我的同伴避難。」");
 	say();
-	message("「顯然，她害怕友誼會( The Fellowship )的真理，就像她害怕 Pomdirgun 一樣。」");
+	message("「顯然，她害怕友誼會的真理，就像她害怕 Pomdirgun 一樣。」");
 	say();
 labelFunc0438_02C4:
 	UI_add_answer(["Kylista", "Pomdirgun"]);
@@ -279,7 +279,7 @@ labelFunc0438_0431:
 	say();
 	message("「如果沒有他為內在力量三法則( Triad of Inner Strength )發聲，我們都註定會失敗……無法達到不列顛王( Lord British )的高標準，或者無法實現我們每個人的全部潛力。」");
 	say();
-	message("「很遺憾你錯過了他。他已經前往內陸傳播友誼會( The Fellowship )的福音了。」");
+	message("「很遺憾你錯過了他。他已經前往內陸傳播友誼會的福音了。」");
 	say();
 labelFunc0438_043D:
 	UI_remove_answer("巴特林");

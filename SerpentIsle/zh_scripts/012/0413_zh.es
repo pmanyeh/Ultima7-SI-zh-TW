@@ -129,7 +129,7 @@ labelFunc0413_0263:
 labelFunc0413_0283:
 	case "旅行者" attend labelFunc0413_0296:
 	UI_remove_answer("旅行者");
-	message("「我沒機會見到他，但見過他的人叫他 巴特林( Batlin ) 。他在這裡沒待多久，匆匆離開了，但我無意中聽到他從 Torrissio 那裡買了法術。」");
+	message("「我沒機會見到他，但見過他的人叫他巴特林。他在這裡沒待多久，匆匆離開了，但我無意中聽到他從 Torrissio 那裡買了法術。」");
 	say();
 labelFunc0413_0296:
 	case "Torrissio" attend labelFunc0413_02F7:
@@ -177,7 +177,7 @@ labelFunc0413_033F:
 	UI_remove_answer("麻煩");
 	message("「這太可怕了！大家都死了，城市也被摧毀了……」");
 	say();
-	message("「發光的人來的時候，我正在神學院裡。 Fedabiblio 試圖阻止他，但沒能成功……」");
+	message("「發光的人來的時候，我正在魔法學院裡。 Fedabiblio 試圖阻止他，但沒能成功……」");
 	say();
 	if (!(!var0001)) goto labelFunc0413_0364;
 	UI_add_answer("Fedabiblio");
@@ -194,7 +194,7 @@ labelFunc0413_0364:
 	say();
 	goto labelFunc0413_0396;
 labelFunc0413_038E:
-	message("「他死了，他死了……發光的人把他變成了冰冷、冰冷的石頭。他現在就站在神學院裡……」");
+	message("「他死了，他死了……發光的人把他變成了冰冷、冰冷的石頭。他現在就站在魔法學院裡……」");
 	say();
 	message("「而我不知道怎麼把他變回來！」");
 	say();
@@ -208,7 +208,7 @@ labelFunc0413_0396:
 labelFunc0413_03C6:
 	case "尋找卷軸" attend labelFunc0413_03F8:
 	UI_remove_answer("尋找卷軸");
-	message("「那個我知道！它完全是用巨蛇符文寫成的，保存在神學院的圖書館裡。」");
+	message("「那個我知道！它完全是用巨蛇符文寫成的，保存在魔法學院的圖書館裡。」");
 	say();
 	if (!gflags[0x00F1]) goto labelFunc0413_03E6;
 	message("「你應該向 Fedabiblio 要鑰匙。我相信他會給你，因為你救了他。」");

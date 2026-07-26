@@ -52,7 +52,7 @@ labelFunc042A_00C5:
 	if (!(gflags[0x0004] == true)) goto labelFunc042A_0119;
 	message("「所以，你還活著！」~「當你的同伴以如此奇怪的狀態出現時，我還覺得納悶。」");
 	say();
-	message("「我從沒想過有生之年能看到強大的月影城( Moonshade )被貶低，但 Shamino 顯然輕易地辦到了。」");
+	message("「我從沒想過有生之年能看到強大的月影城被貶低，但 Shamino 顯然輕易地辦到了。」");
 	say();
 	message("「如果我是你，現在在街上我會小心點，");
 	message(var0000);
@@ -62,11 +62,11 @@ labelFunc042A_00C5:
 labelFunc042A_0119:
 	if (!(var0009 == false)) goto labelFunc042A_013F;
 	if (!gflags[0x01CC]) goto labelFunc042A_012E;
-	message("「我的名字是 Flindo 。我在月影城( Moonshade )擁有一家補給品店，而且我在這裡有許多重要的人脈。」");
+	message("「我的名字是 Flindo 。我在月影城擁有一家補給品店，而且我在這裡有許多重要的人脈。」");
 	say();
 	goto labelFunc042A_0132;
 labelFunc042A_012E:
-	message("「我的名字是 Flindo 。我在月影城( Moonshade )擁有一家補給品店，在那裡有許多重要的人脈。」");
+	message("「我的名字是 Flindo 。我在月影城擁有一家補給品店，在那裡有許多重要的人脈。」");
 	say();
 labelFunc042A_0132:
 	UI_set_item_flag(0xFFD6, 0x001C);
@@ -83,7 +83,7 @@ labelFunc042A_0143:
 labelFunc042A_0167:
 	message("「我現在明白為什麼 Hawk 不想在公海上航行了。我不知道你將如何離開這座島……除非那些傳說是真的。」");
 	say();
-	message("「我希望你會喜歡我們美麗的月影城( Moonshade )。」");
+	message("「我希望你會喜歡我們美麗的月影城。」");
 	say();
 	message("「如果你想了解城裡任何地方的事，來找我吧。」");
 	say();
@@ -139,9 +139,9 @@ labelFunc042A_022D:
 	say();
 	message("「法師們一直很納悶為什麼 Vasculio 會收 Ensorcio 做學徒。那種脾氣，對一個法師來說可不是好事。而且當你考慮到 Vasculio 的興趣……好吧，這足以讓人擔心了。」");
 	say();
-	message("「然後發生了那件關於某位行家法師女兒的事……當法師議會( Council of Mages )介入並流放了 Ensorcio 時，沒有人感到驚訝——除了解 Ensorcio 本人之外！」");
+	message("「然後發生了那件關於某位高階法師女兒的事……當法師議會( Council of Mages )介入並流放了 Ensorcio 時，沒有人感到驚訝——除了解 Ensorcio 本人之外！」");
 	say();
-	UI_add_answer(["Vasculio", "行家法師的女兒"]);
+	UI_add_answer(["Vasculio", "高階法師的女兒"]);
 labelFunc042A_0255:
 	case "Vasculio" attend labelFunc042A_0273:
 	UI_remove_answer("Vasculio");
@@ -183,8 +183,8 @@ labelFunc042A_02C2:
 	message("「 Mortegro 真正的專長是與死者交談。」");
 	say();
 labelFunc042A_02D9:
-	case "行家法師的女兒" attend labelFunc042A_0301:
-	UI_remove_answer("行家法師的女兒");
+	case "高階法師的女兒" attend labelFunc042A_0301:
+	UI_remove_answer("高階法師的女兒");
 	message("「喔，你最好別追問她到底是誰，");
 	message(var0000);
 	message("！法師們對他們的隱私『以及』他們的驕傲可是非常保護的。」");
@@ -223,7 +223,7 @@ labelFunc042A_0353:
 	message(var0000);
 	message("。我們也可以說，他同時是個充滿許多……激情的人。」");
 	say();
-	message("「當他成為法師領主時，並不是月影城( Moonshade )所有人都很高興。而 Filbercio 卻要假裝自己是個受歡迎的統治者。他想要享受他職位的權力而不必害怕對手。」");
+	message("「當他成為法師領主時，並不是月影城所有人都很高興。而 Filbercio 卻要假裝自己是個受歡迎的統治者。他想要享受他職位的權力而不必害怕對手。」");
 	say();
 	message("「所以 Filbercio 在礦坑裡佈滿了各種魔法陷阱，並把它變成了一個關押他敵人的監獄。據說如果你能從石頭深處逃出來，你就能重獲自由，並洗清對你的所有指控。」");
 	say();
@@ -232,11 +232,11 @@ labelFunc042A_0353:
 labelFunc042A_0378:
 	case "法師領主" attend labelFunc042A_0393:
 	UI_remove_answer("法師領主");
-	message("「法師領主( MageLord )必須是一名行家法師( Adept )，並且統治著整個月影城( Moonshade )。」");
+	message("「法師領主( MageLord )必須是一名高階法師( Adept )，並且統治著整個月影城。」");
 	say();
 	message("「雖然法師領主的權力很大，但受到了法師議會( Council of Mages )其他成員的制衡。」");
 	say();
-	message("「因為法師天生就是自負的，所以法師議會只對其他的行家法師開放。他們是法師領主的同儕。他們在議會中的存在是為了防止法師領主變得過於專制。」");
+	message("「因為法師天生就是自負的，所以法師議會只對其他的高階法師開放。他們是法師領主的同儕。他們在議會中的存在是為了防止法師領主變得過於專制。」");
 	say();
 labelFunc042A_0393:
 	case "Ale" attend labelFunc042A_03AA:
@@ -253,7 +253,7 @@ labelFunc042A_03AA:
 	message(var0000);
 	message("。」");
 	say();
-	message("「他們以誠實著稱。我以為也許他們能『說服』 Hawk 放棄他為了要更多錢而耍的花招，並像他應該做的那樣航向月影城( Moonshade )。」");
+	message("「他們以誠實著稱。我以為也許他們能『說服』 Hawk 放棄他為了要更多錢而耍的花招，並像他應該做的那樣航向月影城。」");
 	say();
 	message("「我對他們的金庫做出了適當龐大的『捐款』。但我沒想到他們居然會攔截 Hawk ，讓他在某個監獄的牢房裡腐爛！」");
 	say();
@@ -261,7 +261,7 @@ labelFunc042A_03AA:
 	say();
 	goto labelFunc042A_03E6;
 labelFunc042A_03DA:
-	message("「我以為也許長矛兵( Pikemen )能……給 Hawk 足夠的困擾，讓他放棄為了更多錢而耍的花招。我以為如果他們讓他在這裡的生活夠難熬， Hawk 就會航向月影城( Moonshade )——就像他一開始應該做的那樣！」");
+	message("「我以為也許長矛兵( Pikemen )能……給 Hawk 足夠的困擾，讓他放棄為了更多錢而耍的花招。我以為如果他們讓他在這裡的生活夠難熬， Hawk 就會航向月影城——就像他一開始應該做的那樣！」");
 	say();
 	message("「我付給他們的錢夠多了！但我沒想到他們居然會攔截 Hawk ，讓他在某個監獄的牢房裡腐爛！」");
 	say();
@@ -376,7 +376,7 @@ labelFunc042A_0540:
 	say();
 	message("「大家都說 Silverpate 是一個覺得自己太老不適合在海上討生活，於是開始尋找讓自己變得體面方法的退休海盜。他用他的一部分寶藏建造了這個地方……」");
 	say();
-	message("「月影城( Moonshade )有傳言說他出於某種原因雇用了一個法師，但我從來沒有證實過。他們說他是一個非常多疑的人……」");
+	message("「月影城有傳言說他出於某種原因雇用了一個法師，但我從來沒有證實過。他們說他是一個非常多疑的人……」");
 	say();
 	message("「總之，當 Donal 還是個年輕人的時候， Silverpate 就失蹤了。每個人都認為寶藏還隱藏在這裡的某個地方。」");
 	say();
@@ -444,7 +444,7 @@ labelFunc042A_0617:
 labelFunc042A_0632:
 	case "人脈" attend labelFunc042A_068F:
 	UI_remove_answer("人脈");
-	message("「雖然我不是法師，但我在月影城( Moonshade )可是個有影響力的人，因為我的商店提供了那個與世隔絕的島嶼生活所需的主食！怎麼，我甚至還認識法師領主( MageLord )的情婦呢。」");
+	message("「雖然我不是法師，但我在月影城可是個有影響力的人，因為我的商店提供了那個與世隔絕的島嶼生活所需的主食！怎麼，我甚至還認識法師領主( MageLord )的情婦呢。」");
 	say();
 	if (!gflags[0x012F]) goto labelFunc042A_065F;
 	if (!gflags[0x00D9]) goto labelFunc042A_0658;
@@ -488,14 +488,14 @@ labelFunc042A_068F:
 	UI_add_answer(["Frigidazzi", "傳聞", "忠誠"]);
 	goto labelFunc042A_06C7;
 labelFunc042A_06C3:
-	message("「如果我們有朝一日能航向月影城( Moonshade )，再問我這件事吧。我很樂意到時候再告訴你更多。但現在，這只會讓我對把我們困在這裡的 Hawk 感到更生氣！」");
+	message("「如果我們有朝一日能航向月影城，再問我這件事吧。我很樂意到時候再告訴你更多。但現在，這只會讓我對把我們困在這裡的 Hawk 感到更生氣！」");
 	say();
 labelFunc042A_06C7:
 	case "Frigidazzi" attend labelFunc042A_06E2:
 	UI_remove_answer("Frigidazzi");
 	message("「 Frigidazzi 專精於與寒冷相關的法術。她是一位大美人，但她對每個人都相當冷淡。」");
 	say();
-	message("「也許我不該這麼說，但我認為 Frigidazzi 是在利用 Filbercio 來提升她在行家法師階層中的地位。」");
+	message("「也許我不該這麼說，但我認為 Frigidazzi 是在利用 Filbercio 來提升她在高階法師階層中的地位。」");
 	say();
 	var000A = true;
 labelFunc042A_06E2:
@@ -518,7 +518,7 @@ labelFunc042A_06F9:
 labelFunc042A_0727:
 	case "Columna" attend labelFunc042A_073E:
 	UI_remove_answer("Columna");
-	message("「關於 Columna 沒什麼好說的。她是月影城( Moonshade )最孤僻的法師之一。我想這就是她對 Filbercio 如此有吸引力的原因。她看起來難以高攀。」");
+	message("「關於 Columna 沒什麼好說的。她是月影城最孤僻的法師之一。我想這就是她對 Filbercio 如此有吸引力的原因。她看起來難以高攀。」");
 	say();
 	message("「為什麼她堅持要跟 Torrissio 這種人渣鬼混，我永遠也搞不懂。她跟法師領主在一起會好得多……無論從哪個角度看都是。」");
 	say();
@@ -534,7 +534,7 @@ labelFunc042A_0755:
 	UI_remove_answer("Torrissio");
 	message("「我甚至討厭說出他的名字……這會讓嘴裡留下苦味！」");
 	say();
-	message("「 Torrissio 專精於製造魔法自動機器人，這是大多數法師偏好的僕人。我承認他技術夠好，但他的道德標準跟蛇一樣低！」");
+	message("「 Torrissio 專精於製造魔導人偶，這是大多數法師偏好的僕人。我承認他技術夠好，但他的道德標準跟蛇一樣低！」");
 	say();
 	message("「好在 Petra 逃出了他的魔掌，而且有 Rocco 保護她。」");
 	say();
@@ -542,7 +542,7 @@ labelFunc042A_0755:
 labelFunc042A_077D:
 	case "Petra" attend labelFunc042A_0794:
 	UI_remove_answer("Petra");
-	message("「 Petra 是藍野豬( Blue Boar )的自動機器人。 Torrissio 創造了她。」");
+	message("「 Petra 是藍野豬( Blue Boar )的魔導人偶。 Torrissio 創造了她。」");
 	say();
 	message("「我只聽過一點這個故事，所以你應該直接去跟 Petra 談談，聽聽事情的真相。簡而言之， Torrissio 對 Petra 有著邪惡的企圖。但她逃跑了， Rocco 收留了她並保護著她。」");
 	say();
@@ -561,7 +561,7 @@ labelFunc042A_07AB:
 labelFunc042A_07BE:
 	case "傳說" attend labelFunc042A_07E2:
 	UI_remove_answer("傳說");
-	message("「如你所想，月影城( Moonshade )也有它自己的那些誇張傳說和故事。事實上，其中許多是由相關的法師自己散佈的，為了提升他們的聲譽！」");
+	message("「如你所想，月影城也有它自己的那些誇張傳說和故事。事實上，其中許多是由相關的法師自己散佈的，為了提升他們的聲譽！」");
 	say();
 	message("「但是，如果你聽信這些傳說，據說有古老的通道連接到其他島嶼。或者，關於這一點，有人說瘋狂法師可以傳送到任何他想去的地方。」");
 	say();
@@ -577,16 +577,16 @@ labelFunc042A_07E2:
 labelFunc042A_0800:
 	case "Fedabiblio" attend labelFunc042A_0824:
 	UI_remove_answer("Fedabiblio");
-	message("「 Fedabiblio 是月影城( Moonshade )的法師導師。他的職責是測試這片土地上的孩子，並將他們帶到月影城接受訓練。你可以在神學院( Seminarium )找到他。」");
+	message("「 Fedabiblio 是月影城的法師導師。他的職責是測試這片土地上的孩子，並將他們帶到月影城接受訓練。你可以在魔法學院( Seminarium )找到他。」");
 	say();
 	message("「一想到一個未受指導的法師可能造成的破壞，我就渾身發毛，");
 	message(var0000);
 	message("……」");
 	say();
-	UI_add_answer("神學院");
+	UI_add_answer("魔法學院");
 labelFunc042A_0824:
-	case "神學院" attend labelFunc042A_0837:
-	UI_remove_answer("神學院");
+	case "魔法學院" attend labelFunc042A_0837:
+	UI_remove_answer("魔法學院");
 	message("「那是教導所有新手小法師的地方。在街上尋找那些年輕人，你就能找到它。」");
 	say();
 labelFunc042A_0837:
@@ -596,7 +596,7 @@ labelFunc042A_0837:
 	say();
 	message("「這是一個非常複雜的情況，");
 	message(var0000);
-	message("。 Erstam 訓練了月影城所有的行家法師。而且，作為他們的大師，他對他們來說是個威脅，因為他仍然比他們強大。」");
+	message("。 Erstam 訓練了月影城所有的高階法師。而且，作為他們的大師，他對他們來說是個威脅，因為他仍然比他們強大。」");
 	say();
 	message("「就像我之前說的，法師們除了驕傲之外什麼都沒有。所以現在禁止任何人去拜訪 Erstam ……據我所知，這對他來說也挺好的！」");
 	say();
@@ -606,7 +606,7 @@ labelFunc042A_0837:
 labelFunc042A_0863:
 	case "Pothos" attend labelFunc042A_0891:
 	UI_remove_answer("Pothos");
-	message("「 Pothos 是藥劑師。他有一些微小的魔法能力，但不足以進入行家法師的行列。所以他靠賣給他們魔法材料和藥水為生……」");
+	message("「 Pothos 是藥劑師。他有一些微小的魔法能力，但不足以進入高階法師的行列。所以他靠賣給他們魔法材料和藥水為生……」");
 	say();
 	if (!gflags[0x00D9]) goto labelFunc042A_0891;
 	if (!gflags[0x00DD]) goto labelFunc042A_0889;
@@ -620,7 +620,7 @@ labelFunc042A_0889:
 labelFunc042A_0891:
 	case "月影城" attend labelFunc042A_08AB:
 	UI_remove_answer("月影城");
-	message("「月影城( Moonshade )，法師之城！一個你可以得到任何你渴望之物的地方……只要你有足夠的吉爾得幣( Guilders )，並且你能找到一個有足夠技術的法師。」");
+	message("「月影城，法師之城！一個你可以得到任何你渴望之物的地方……只要你有足夠的吉爾得幣( Guilders )，並且你能找到一個有足夠技術的法師。」");
 	say();
 	UI_add_answer("吉爾得幣");
 labelFunc042A_08AB:

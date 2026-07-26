@@ -154,7 +154,7 @@ labelFunc043C_025C:
 	UI_add_answer("Gwenno");
 labelFunc043C_0276:
 	case "Gwenno" attend labelFunc043C_029F:
-	message("「她早在不列顛尼亞( Britannia )時就聯繫了我，給了我一個探索新大陸的機會。很自然地，我答應了。她要為友誼會( The Fellowship )把某種方尖碑( obelisk )運送到這裡，然後她就可以自由地探索，並收集她想收集的所有傳說了。」");
+	message("「她早在不列顛尼亞( Britannia )時就聯繫了我，給了我一個探索新大陸的機會。很自然地，我答應了。她要為友誼會把某種方尖碑( obelisk )運送到這裡，然後她就可以自由地探索，並收集她想收集的所有傳說了。」");
 	say();
 	UI_remove_answer("Gwenno");
 	UI_add_answer("方尖碑");

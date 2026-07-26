@@ -285,7 +285,7 @@ labelFunc0412_0483:
 	UI_pop_answers();
 	goto labelFunc0412_04C7;
 labelFunc0412_04AA:
-	message("「我聽說她認為你與惡魔為伍，並且是那個叫 巴特林( Batlin ) 的人的同夥。」");
+	message("「我聽說她認為你與惡魔為伍，並且是那個叫巴特林的人的同夥。」");
 	say();
 	message("「你應該搜查她的莊園尋找線索。打開每扇門，因為你的朋友可能被藏在任何地方。」");
 	say();

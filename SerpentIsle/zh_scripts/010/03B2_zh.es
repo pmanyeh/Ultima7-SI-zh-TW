@@ -240,7 +240,7 @@ labelFunc03B2_03D2:
 labelFunc03B2_03F4:
 	case "護衛" attend labelFunc03B2_0410:
 	UI_remove_answer("護衛");
-	message("「你在我們前哨站周圍看到的自動機器人(Automatons)是我們的僕役。毫無疑問你已經知道它們充當護衛，但它們也提供其他服務。廚師、裁縫、鐵匠……所有這些瑣碎的工作都能由我們的金屬人來完成。」");
+	message("「你在我們前哨站周圍看到的魔導人偶(Automatons)是我們的僕役。毫無疑問你已經知道它們充當護衛，但它們也提供其他服務。廚師、裁縫、鐵匠……所有這些瑣碎的工作都能由我們的金屬人來完成。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_0410:

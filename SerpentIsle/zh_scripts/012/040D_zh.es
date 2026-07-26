@@ -97,7 +97,7 @@ labelFunc040D_018A:
 	UI_item_say(0xFFF3, "@打破照價賠償。@");
 labelFunc040D_019E:
 	if (!(var0008 == 0x0006)) goto labelFunc040D_01B2;
-	UI_item_say(0xFFF3, "@生活用品！@");
+	UI_item_say(0xFFF3, "@生活用品店！@");
 labelFunc040D_01B2:
 	if (!(event == 0x0001)) goto labelFunc040D_021B;
 	UI_item_say(0xFE9C, "@你好！@");
@@ -130,7 +130,7 @@ labelFunc040D_0253:
 labelFunc040D_0281:
 	if (!(var0007 == false)) goto labelFunc040D_02A7;
 	if (!var0000) goto labelFunc040D_0296;
-	message("「很高興見到你。我的名字是 Bucia ，我負責看管這間生活用品店。有什麼我可以幫你的嗎？」");
+	message("「很高興見到你。我的名字是 Bucia ，我負責看管這間生活用品店店。有什麼我可以幫你的嗎？」");
 	say();
 	goto labelFunc040D_029A;
 labelFunc040D_0296:
@@ -146,7 +146,7 @@ labelFunc040D_02A7:
 	say();
 labelFunc040D_02B1:
 	if (!var0000) goto labelFunc040D_02CA;
-	UI_add_answer(["物品", "交換"]);
+	UI_add_answer(["生活用品店", "兌換"]);
 	var0009 = 0x0003;
 labelFunc040D_02CA:
 	if (!(gflags[0x00EA] && (!UI_get_item_flag(0xFFE1, 0x0004)))) goto labelFunc040D_02E3;
@@ -344,7 +344,7 @@ labelFunc040D_05DE:
 labelFunc040D_0602:
 	case "長老法師" attend labelFunc040D_062A:
 	UI_remove_answer("長老法師");
-	message("「Fedabiblio 是長老法師。就是他掌管神學院，那是教導年輕小法師的地方。」");
+	message("「Fedabiblio 是長老法師。就是他掌管魔法學院，那是教導年輕小法師的地方。」");
 	say();
 	message("「以前，他的工作是去大陸，把那些有魔法天賦的嬰兒帶回來。」");
 	say();
@@ -1040,7 +1040,7 @@ labelFunc040D_14CA:
 	message("「還有什麼我能幫你的嗎？」");
 	say();
 labelFunc040D_14CE:
-	case "補給品" attend labelFunc040D_14EC:
+	case "生活用品店" attend labelFunc040D_14EC:
 	message("「老闆把這家店的各種實用商品都備得很齊全。」");
 	say();
 	if (!(!var000A)) goto labelFunc040D_14E9;
@@ -1053,7 +1053,7 @@ labelFunc040D_14EC:
 	case "兌換" attend labelFunc040D_14F7:
 	Func080B();
 labelFunc040D_14F7:
-	case "再見" attend labelFunc040D_1521:
+	case "告辭" attend labelFunc040D_1521:
 	UI_remove_npc_face0();
 	Func097F(0xFE9C, "@我該走了。@", 0x0000);
 	Func097F(0xFFF3, "@有空再來！@", 0x0002);

@@ -113,7 +113,7 @@ labelFunc041A_024A:
 	UI_clear_item_say(0xFFE6);
 	if (!UI_get_item_flag(0xFFE6, 0x0006)) goto labelFunc041A_027A;
 	UI_set_schedule_type(0xFFE6, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc041A_0281;
 labelFunc041A_027A:
 	UI_run_schedule(0xFFE6);
@@ -158,7 +158,7 @@ labelFunc041A_032B:
 	if (!(var000B == false)) goto labelFunc041A_034A;
 	message("「打擾一下，");
 	message(var0000);
-	message("! 我是 Mortegro ，月影城( Moonshade )的法師。」");
+	message("! 我是 Mortegro ，月影城的法師。」");
 	say();
 	UI_set_item_flag(0xFFE6, 0x001C);
 	goto labelFunc041A_034E;
@@ -173,7 +173,7 @@ labelFunc041A_0352:
 	goto labelFunc041A_0385;
 labelFunc041A_0362:
 	if (!(var000B == false)) goto labelFunc041A_037B;
-	message("「你好！我是 Mortegro ，月影城( Moonshade )的死靈法師(Necromage)。」");
+	message("「你好！我是 Mortegro ，月影城的死靈法師(Necromage)。」");
 	say();
 	UI_set_item_flag(0xFFE6, 0x001C);
 	goto labelFunc041A_0385;
@@ -202,7 +202,7 @@ labelFunc041A_03D9:
 	UI_add_answer("指控");
 labelFunc041A_03F2:
 	UI_add_answer(["死靈法師", "學習法術"]);
-	UI_add_answer("bye");
+	UI_add_answer("告辭");
 labelFunc041A_0406:
 	converse attend labelFunc041A_0911;
 	case "儀器" attend labelFunc041A_0444:
@@ -254,9 +254,9 @@ labelFunc041A_0484:
 	var0006 = Func0992(0x0001, "@他去哪裡了？@", "@Shazzam！@", true);
 	abort;
 labelFunc041A_04F3:
-	case "離開" attend labelFunc041A_050C:
-	UI_remove_answer("離開");
-	message("「但你答應過要帶我回月影城( Moonshade )的！說話算話，");
+	case "離隊" attend labelFunc041A_050C:
+	UI_remove_answer("離隊");
+	message("「但你答應過要帶我回月影城的！說話算話，");
 	message(var0000);
 	message(".\"");
 	say();
@@ -288,12 +288,12 @@ labelFunc041A_0564:
 labelFunc041A_0587:
 	case "Filbercio" attend labelFunc041A_059A:
 	UI_remove_answer("Filbercio");
-	message("「他是月影城( Moonshade )的最高領主法師。」");
+	message("「他是月影城的最高領主法師。」");
 	say();
 labelFunc041A_059A:
 	case "Gustacio" attend labelFunc041A_05AD:
 	UI_remove_answer("Gustacio");
-	message("「 Gustacio 和我正在研究那些一直困擾我們這片土地的奇怪傳送風暴(teleport storms)。」");
+	message("「 Gustacio 和我正在研究，那些一直困擾我們這片土地的奇怪傳送風暴。」");
 	say();
 labelFunc041A_05AD:
 	case "Rotoluncia" attend labelFunc041A_05C0:
@@ -319,7 +319,7 @@ labelFunc041A_05F6:
 	UI_show_npc_face1(0xFEEB, 0x0000);
 	message("「我聽到了你的召喚， Mortegro ！我生前是 Trinsic 的鐵匠 Christopher 。我在這裡的時間很短，我希望能和那位被稱為聖者的人說幾句話。」");
 	say();
-	message("「聖者，感謝你保護了我的兒子，並打破了兄弟會(The Fellowship)對不列顛尼亞的邪惡控制。但我也要給你一個警告。在這個領域裡有很多靈魂在等著你，他們心裡只有一件事——就是要向你復仇！有一件事……你必須……永遠……記住……」");
+	message("「聖者，感謝你保護了我的兒子，並打破了友誼會對不列顛尼亞的邪惡控制。但我也要給你一個警告。在這個領域裡有很多靈魂在等著你，他們心裡只有一件事——就是要向你復仇！有一件事……你必須……永遠……記住……」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -357,7 +357,7 @@ labelFunc041A_06CE:
 	goto labelFunc041A_06E2;
 labelFunc041A_06D1:
 	if (!gflags[0x00E2]) goto labelFunc041A_06DE;
-	message("「咳咳，一旦我回到月影城( Moonshade )，我很樂意為你效勞。」");
+	message("「咳咳，一旦我回到月影城，我很樂意為你效勞。」");
 	say();
 	goto labelFunc041A_06E2;
 labelFunc041A_06DE:
@@ -366,7 +366,7 @@ labelFunc041A_06DE:
 labelFunc041A_06E2:
 	case "被困住" attend labelFunc041A_06FC:
 	UI_remove_answer("被困住");
-	message("「這個嘛，我很不想承認像我這樣的法師大師(Adept)會被這樣困住……但我所有的法術都無法讓我從這個島上解脫。」");
+	message("「這個嘛，我很不想承認像我這樣的高階法師(Adept)會被這樣困住……但我所有的法術都無法讓我從這個島上解脫。」");
 	say();
 	UI_add_answer("法術");
 labelFunc041A_06FC:
@@ -402,7 +402,7 @@ labelFunc041A_075C:
 labelFunc041A_076C:
 	message("「你不是法師，所以教你法術只會浪費我們倆的時間。」");
 	say();
-	message("「如果你真的想掌握魔法，也許你應該去神學院(Seminarium)和 Fedabiblio 大師談談。」");
+	message("「如果你真的想掌握魔法，也許你應該去魔法學院(Seminarium)和 Fedabiblio 大師談談。」");
 	say();
 	message("「但我覺得你學施法已經太老了……」");
 	say();
@@ -423,7 +423,7 @@ labelFunc041A_07B2:
 	UI_remove_answer("實驗");
 	message("「我被 Gustacio 說服，去幫助他執行改變傳送風暴(teleport storms)方向的計畫。」");
 	say();
-	message("「也許這不是最明智的做法……因為我被困在這裡，完全不知道如何回月影城( Moonshade )。」");
+	message("「也許這不是最明智的做法……因為我被困在這裡，完全不知道如何回月影城。」");
 	say();
 	message("「我相信我跟某種祭壇交換了位置。我很確定當我消失時，老 Gustacio 會非常驚訝。他毫無疑問正在好奇現在在他工作區裡的究竟是什麼東西。」");
 	say();
@@ -453,23 +453,23 @@ labelFunc041A_081F:
 	say();
 	UI_remove_answer("施法材料");
 labelFunc041A_0832:
-	case "bye" attend labelFunc041A_090E:
+	case "告辭" attend labelFunc041A_090E:
 	if (!(gflags[0x0216] && (!UI_get_item_flag(0xFFE6, 0x0006)))) goto labelFunc041A_08B0;
-	message("「你願意讓我陪你一起回月影城( Moonshade )嗎？我怕我不知道自己在哪裡。」");
+	message("「你願意讓我陪你一起回月影城嗎？我怕我不知道自己在哪裡。」");
 	say();
 	if (!(UI_get_array_size(UI_get_party_list2()) > 0x0004)) goto labelFunc041A_0872;
 	var000D = Func0992(0x0001, "@我們沒有足夠的空間讓另一個人與我們同行了，聖者。@", 0x0000, false);
 	goto labelFunc041A_0895;
 labelFunc041A_0872:
 	if (!(Func0955() == true)) goto labelFunc041A_0895;
-	message("「儘管我是個法師大師(Adept)，但我相信沒有你的指引我無法回家……」");
+	message("「儘管我是個高階法師(Adept)，但我相信沒有你的指引我無法回家……」");
 	say();
 	UI_add_to_party(0xFFE6);
 	Func097F(0xFFE6, "@謝謝你！@", 0x0000);
 	abort;
 	goto labelFunc041A_08B0;
 labelFunc041A_0895:
-	message("「好吧，也許我能自己找到回家的路……畢竟，我是個法師大師(Adept)。」");
+	message("「好吧，也許我能自己找到回家的路……畢竟，我是個高階法師(Adept)。」");
 	say();
 	Func097F(0xFFE6, "@這條路通向哪裡？@", 0x0000);
 	UI_set_schedule_type(0xFFE6, 0x000C);

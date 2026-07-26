@@ -419,7 +419,7 @@ labelFunc0451_0695:
 	say();
 	message("「然後，你必須用這個裝置在一個小容器裡裝滿血。這些血可以是你自己的，也可以是你任何同伴的……隨你覺得哪個方便。」");
 	say();
-	message("「一旦你有了血，你必須將血使用在石心( Stoneheart )上。這將產生你施放死亡法術所需要的血之卵( Bloodspawn )。」");
+	message("「一旦你有了血，你必須將血使用在石心( Stoneheart )上。這將產生你施放死亡法術所需要的血菌絲( Bloodspawn )。」");
 	say();
 	goto labelFunc0451_06E3;
 labelFunc0451_06DF:

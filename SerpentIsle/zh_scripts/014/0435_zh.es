@@ -270,7 +270,7 @@ labelFunc0435_040E:
 	UI_add_answer("Alyssand");
 labelFunc0435_0428:
 	case "Alyssand" attend labelFunc0435_0442:
-	message("「Alyssand 是店主 Delin 的女兒。她製作漁網襪，然後出口給月影城( Moonshade )的富有顧客。」 *「自從她的未婚夫失蹤後，Alyssand 就開始聽友誼會( The Fellowship )信徒的胡言亂語。我希望她沒有誤入歧途。」");
+	message("「Alyssand 是店主 Delin 的女兒。她製作漁網襪，然後出口給月影城( Moonshade )的富有顧客。」 *「自從她的未婚夫失蹤後，Alyssand 就開始聽友誼會信徒的胡言亂語。我希望她沒有誤入歧途。」");
 	say();
 	UI_remove_answer("Alyssand");
 	UI_add_answer("未婚夫");
@@ -352,7 +352,7 @@ labelFunc0435_0559:
 	say();
 	goto labelFunc0435_0589;
 labelFunc0435_057E:
-	message("「我看守衛還在傳播那個流言……」 *「在這些奇怪的風暴開始之前，有一艘船駛入我們的港口，它和我們認識的任何船都不像。船上的人告訴我們，他們是從古索沙利亞( Old Sosaria )航行而來的。雖然我們的海員覺得很難以置信，但我們還是接納了他們。」 *「就在風暴開始前，Leon 開始宣講一種名為友誼會( The Fellowship )的奇怪觀念。Kylista 認為這是一個徵兆，表示上天對我們允許這種外國信仰進入城市感到憤怒。在與大船長們協商後，Yelinda 夫人遺憾地將這些水手和乘客驅逐出了城市。」");
+	message("「我看守衛還在傳播那個流言……」 *「在這些奇怪的風暴開始之前，有一艘船駛入我們的港口，它和我們認識的任何船都不像。船上的人告訴我們，他們是從古索沙利亞( Old Sosaria )航行而來的。雖然我們的海員覺得很難以置信，但我們還是接納了他們。」 *「就在風暴開始前，Leon 開始宣講一種名為友誼會的奇怪觀念。Kylista 認為這是一個徵兆，表示上天對我們允許這種外國信仰進入城市感到憤怒。在與大船長們協商後，Yelinda 夫人遺憾地將這些水手和乘客驅逐出了城市。」");
 	say();
 	UI_add_answer("Kylista");
 labelFunc0435_0589:

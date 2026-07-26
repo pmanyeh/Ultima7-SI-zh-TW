@@ -104,7 +104,7 @@ labelFunc0402_01E1:
 	UI_clear_item_say(0xFFFE);
 	if (!UI_get_item_flag(0xFFFE, 0x0006)) goto labelFunc0402_0211;
 	UI_set_schedule_type(0xFFFE, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc0402_021F;
 labelFunc0402_0211:
 	UI_run_schedule(0xFFFE);
@@ -288,7 +288,7 @@ labelFunc0402_053E:
 labelFunc0402_057D:
 	UI_remove_answer("加入");
 	if (!(UI_get_array_size(UI_get_party_list2()) < 0x0005)) goto labelFunc0402_05AC;
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	message("「非常感激！」");
 	say();
 	UI_add_to_party(0xFFFE);
@@ -300,8 +300,8 @@ labelFunc0402_05AC:
 	message("「像我這樣的森林人，和這麼一大群人一起旅行會覺得很不自在。我就留在這裡吧。」");
 	say();
 labelFunc0402_05B4:
-	case "離開" attend labelFunc0402_05EC:
-	UI_remove_answer("離開");
+	case "離隊" attend labelFunc0402_05EC:
+	UI_remove_answer("離隊");
 	if (!(!gflags[0x0006])) goto labelFunc0402_05D1;
 	message("「可是我們才剛開始啊，聖者！冒險還在等著我們，我怎麼能閒站在這裡？」");
 	say();

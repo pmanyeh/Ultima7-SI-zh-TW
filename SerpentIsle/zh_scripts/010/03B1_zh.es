@@ -105,7 +105,7 @@ labelFunc03B1_0171:
 	message(var0001);
 	message("。我無法想像一個人要如何走在閃耀之路(shining path)上，既不受秩序也不受混沌的影響。我不認為那是人類能做到的。」");
 	say();
-	message("「但總是會有少數人被召喚去為所有俄斐迪安人(Ophidians)服務，他們追隨大教主(Great Hierophant)。但是混沌的信徒殺了最後一任大教主，讓這片土地陷入戰爭，因為再也沒有人能維持平衡了。」");
+	message("「但總是會有少數人被召喚去為所有俄斐迪安人(Ophidians)服務，他們追隨大祭司(Great Hierophant)。但是混沌的信徒殺了最後一任大祭司，讓這片土地陷入戰爭，因為再也沒有人能維持平衡了。」");
 	say();
 	UI_add_answer(["閃耀之路", "俄斐迪安人"]);
 labelFunc03B1_019B:

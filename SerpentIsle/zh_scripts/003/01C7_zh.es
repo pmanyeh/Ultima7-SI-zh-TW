@@ -225,7 +225,7 @@ labelFunc01C7_0712:
 	UI_set_npc_id(0xFFEE, 0x0008);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEE, 0x0000);
-	message("「各位領主與行家，你們已聽取了證據！");
+	message("「各位領主與高階法師，你們已聽取了證據！");
 	message(var0006);
 	message("如瘟疫般闖入我們之中，意圖將毀滅帶給我們所有人。」");
 	say();
@@ -309,7 +309,7 @@ labelFunc01C7_08A3:
 	UI_show_npc_face1(0xFFEE, 0x0000);
 	message("「你竟敢誹謗好女人 Bucia ——我善良摯愛的朋友！」");
 	say();
-	message("「各位行家，在做出裁決之時，請務必記住這種無禮的行為。」");
+	message("「各位高階法師，在做出裁決之時，請務必記住這種無禮的行為。」");
 	say();
 	goto labelFunc01C7_095C;
 labelFunc01C7_08FE:

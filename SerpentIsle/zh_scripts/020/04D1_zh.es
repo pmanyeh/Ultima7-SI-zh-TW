@@ -134,7 +134,7 @@ labelFunc04D1_020A:
 	UI_remove_answer("圖書管理員");
 	message("「我的職責是抄寫並保管 Xenka 的預言。」");
 	say();
-	message("「是我找到了預言你到來的那段段落。」");
+	message("「是我找到了預言你到來的段落。」");
 	say();
 	UI_add_answer(["Xenka", "段落"]);
 labelFunc04D1_022E:
@@ -172,7 +172,7 @@ labelFunc04D1_02A5:
 	UI_remove_answer("段落");
 	message("「唉，Xenka 的著作毫無順序可言，而且錯綜複雜又模糊不清。」");
 	say();
-	message("「自從她失蹤以來的這幾年，我們一直在試圖弄清楚某段段落是否已經發生，或者一件事是否會跟隨另一件事發生。」");
+	message("「自從她失蹤以來的這幾年，我們一直在試圖弄清楚某些段落是否已經發生，或者一件事是否會跟隨另一件事發生。」");
 	say();
 	UI_add_answer(["失蹤", "事件"]);
 labelFunc04D1_02C9:
@@ -205,7 +205,7 @@ labelFunc04D1_031A:
 	UI_remove_answer("到來");
 	message("「是的，");
 	message(var0004);
-	message("，書上寫著，一位來自異世界之英雄( hero from another world )將會來糾正我們土地上的混亂。那個人就是你……」");
+	message("，書上寫著，一位來自異世界之英雄將會來糾正我們土地上的混亂。那個人就是你……」");
 	say();
 	if (!(var0002 == 0x0009)) goto labelFunc04D1_034C;
 	message("「書上還寫著，在你的任務剛開始時，背叛將會如影隨形。這就是我為什麼在這裡……」");

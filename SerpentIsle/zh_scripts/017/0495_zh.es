@@ -55,7 +55,7 @@ labelFunc0495_0109:
 	if (!(event == 0x0009)) goto labelFunc0495_0702;
 	if (!UI_get_item_flag(0xFF6B, 0x0006)) goto labelFunc0495_0132;
 	UI_set_schedule_type(0xFF6B, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc0495_0140;
 labelFunc0495_0132:
 	UI_run_schedule(0xFF6B);
@@ -166,7 +166,7 @@ labelFunc0495_0301:
 	UI_remove_answer("加入");
 	if (!gflags[0x0061]) goto labelFunc0495_0349;
 	if (!(UI_get_array_size(UI_get_party_list2()) < 0x0005)) goto labelFunc0495_033E;
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	message("「如果你覺得我能幫上忙的話……」");
 	say();
 	UI_add_to_party(0xFF6B);
@@ -188,8 +188,8 @@ labelFunc0495_035D:
 	message("「如果我留在這裡，對你的用處會更大。我似乎有尋找你需要資訊的天賦。」");
 	say();
 labelFunc0495_0361:
-	case "離開" attend labelFunc0495_038E:
-	UI_remove_answer("離開");
+	case "離隊" attend labelFunc0495_038E:
+	UI_remove_answer("離隊");
 	UI_add_answer("加入");
 	message("「我明白， ");
 	message(var0002);
@@ -258,7 +258,7 @@ labelFunc0495_0472:
 	UI_remove_answer("新索沙利亞");
 	message("「根據月影城( Moonshade )的法師們所說，新索沙利亞( New Sosaria )是這片土地的名字， ");
 	message(var0002);
-	message("，雖然它通常被稱為巨蛇之島( Serpent Isle )。」");
+	message("，雖然它通常被稱為巨蛇之島。」");
 	say();
 	message("「這裡所有人民的祖先都是反對不列顛王( Lord British )統治的異議分子。」");
 	say();

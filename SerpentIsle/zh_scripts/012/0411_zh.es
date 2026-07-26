@@ -95,7 +95,7 @@ labelFunc0411_014D:
 labelFunc0411_0150:
 	if (!(var0005 == false)) goto labelFunc0411_0169;
 	UI_set_item_flag(0xFFEF, 0x001C);
-	message("「你一定是個知識的探索者。我是法師 Fedabiblio ，我擔任月影城( Moonshade )的教長。」");
+	message("「你一定是個知識的探索者。我是法師 Fedabiblio ，我擔任月影城的教長。」");
 	say();
 	goto labelFunc0411_016D;
 labelFunc0411_0169:
@@ -183,7 +183,7 @@ labelFunc0411_02C7:
 	say();
 	message("「我不知道那些牙齒的力量是什麼，但它們也許會向你揭示它們的秘密。」");
 	say();
-	message("「不過要小心那些自動機器人！」");
+	message("「不過要小心那些魔導人偶！」");
 	say();
 labelFunc0411_02EA:
 	case "留下的人" attend labelFunc0411_0301:
@@ -195,18 +195,18 @@ labelFunc0411_02EA:
 labelFunc0411_0301:
 	case "教長" attend labelFunc0411_0330:
 	UI_remove_answer("教長");
-	message("「你不知道教長是做什麼的嗎？教長是神學院的管理者——那是這整片土地上唯一的一所法師學校。」");
+	message("「你不知道教長是做什麼的嗎？教長是魔法學院的管理者——那是這整片土地上唯一的一所法師學校。」");
 	say();
 	message("「我的職責之一就是為這所學校尋找有天賦的孩子。一旦找到他們，我就會把他們帶到學校來。」");
 	say();
 	message("「我被任命為終身教長。」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["神學院", "孩子", "改變話題"]);
+	UI_add_answer(["魔法學院", "孩子", "改變話題"]);
 labelFunc0411_0330:
 	case "孩子" attend labelFunc0411_0358:
 	UI_remove_answer("孩子");
-	message("「一個年輕、未受過訓練的法師是非常危險的！因此，為了他們自身的安全，這些孩子必須被帶到神學院來！」");
+	message("「一個年輕、未受過訓練的法師是非常危險的！因此，為了他們自身的安全，這些孩子必須被帶到魔法學院來！」");
 	say();
 	message("「舉例來說，就拿年輕的 Freli 來說吧。他的父親是個店主。一個商人能教他的兒子什麼魔法力量呢！」");
 	say();
@@ -214,13 +214,13 @@ labelFunc0411_0330:
 	say();
 	UI_add_answer(["Andrio", "Freli"]);
 labelFunc0411_0358:
-	case "神學院" attend labelFunc0411_037D:
-	UI_remove_answer("神學院");
-	message("「神學院在全大陸是獨一無二的，因為歡迎所有法師來這裡研究我們關於法術研究和魔法活動的記錄。」");
+	case "魔法學院" attend labelFunc0411_037D:
+	UI_remove_answer("魔法學院");
+	message("「魔法學院在全大陸是獨一無二的，並歡迎所有法師，來這裡進行關於法術的研究與活動。」");
 	say();
 	message("「任何法師都可以在這裡安全地學習，知道這個地方是免於暴力的庇護所。」");
 	say();
-	message("「路過的旅行者也會在這裡停留以使用我們的圖書館。」");
+	message("「路過的旅行者也會在這裡停留，以使用我們的圖書館。」");
 	say();
 	UI_add_answer(["旅行者"]);
 labelFunc0411_037D:
@@ -240,12 +240,12 @@ labelFunc0411_03A3:
 	say();
 	message("「第一位是學者 Gwenno 。我們幫不了她太多，因為她的興趣在於歷史事務。我建議她去查閱僧侶島上的圖書館。」");
 	say();
-	message("「較不愉快的是法師巴特林( Batlin )的拜訪。他似乎對這片土地的古代居民 Ophidians 最感興趣。事實上，可以說他是著迷了。」");
+	message("「較不愉快的是法師巴特林的拜訪。他似乎對這片土地的古代居民 Ophidians 最感興趣。事實上，可以說他是著迷了。」");
 	say();
 labelFunc0411_03BE:
 	case "月影城" attend labelFunc0411_03EB:
 	UI_remove_answer("月影城");
-	message("「既然你是個訪客，我會向你解釋幾件事。月影城( Moonshade )是法師之城，也是為法師而建的城市。它由高階法師統治，並由低階法師服務。還有一個較低的階級——凡夫俗子。但他們中有些人是熟練的工匠。」");
+	message("「既然你是個訪客，我會向你解釋幾件事。月影城是法師之城，也是為法師而建的城市。它由高階法師統治，並由低階法師服務。還有一個較低的階級——凡夫俗子。但他們中有些人是熟練的工匠。」");
 	say();
 	UI_push_answers();
 	UI_add_answer(["高階法師", "低階法師", "工匠", "凡夫俗子", "改變話題"]);
@@ -254,7 +254,7 @@ labelFunc0411_03EB:
 	UI_remove_answer("高階法師");
 	message("「三位高階法師是這座城市中最強大的巫師。他們組成了統治這座城市的法師評議會。」");
 	say();
-	message("「其中一位高階法師擔任領主法師。目前， Filbercio 統治著月影城( Moonshade )。」");
+	message("「其中一位高階法師擔任領主法師。目前， Filbercio 統治著月影城。」");
 	say();
 	UI_add_answer("Filbercio");
 	if (!UI_get_item_flag(0xFFE1, 0x0004)) goto labelFunc0411_044C;
@@ -287,7 +287,7 @@ labelFunc0411_045D:
 labelFunc0411_0484:
 	case "政治" attend labelFunc0411_0497:
 	UI_remove_answer("政治");
-	message("「當在這座城市處理魔法時，一切都是政治。而在處理政治時， Filbercio 是這個遊戲的大師。我敢說，即使他本身的魔法技能不足以讓他成為月影城( Moonshade )的領主法師，他也會是一股不容小覷的力量。」");
+	message("「當在這座城市處理魔法時，一切都是政治。而在處理政治時， Filbercio 是這個遊戲的大師。我敢說，即使他本身的魔法技能不足以讓他成為月影城的領主法師，他也會是一股不容小覷的力量。」");
 	say();
 labelFunc0411_0497:
 	case "花花公子" attend labelFunc0411_04AA:
@@ -357,7 +357,7 @@ labelFunc0411_0573:
 labelFunc0411_0593:
 	case "地點" attend labelFunc0411_05B3:
 	UI_remove_answer("地點");
-	message("「在月影城( Moonshade )有很多奇怪的地方可以探索。城市南部是古老的地下墓穴。在那些隧道裡的某個地方有一條通往只被稱為 Furnace 的地牢的路。」");
+	message("「在月影城有很多奇怪的地方可以探索。城市南部是古老的地下墓穴。在那些隧道裡的某個地方有一條通往只被稱為 Furnace 的地牢的路。」");
 	say();
 	UI_add_answer(["地下墓穴", "Furnace"]);
 labelFunc0411_05B3:
@@ -597,7 +597,7 @@ labelFunc0411_0ADA:
 labelFunc0411_0ADD:
 	message("「你沒聽懂我的話。這些草根必須是新鮮的，必須是在潮水退去時從沼澤裡採下來的。這些草根已經不新鮮了，不適合我們的用途。」");
 	say();
-	message("「回到僧侶島去，帶著新鮮的曼德拉草根回來！」");
+	message("「回到僧侶島去，帶著新鮮的曼陀羅根根回來！」");
 	say();
 	Func097F(0xFFEF, "@回去！@", 0x0000);
 	abort;

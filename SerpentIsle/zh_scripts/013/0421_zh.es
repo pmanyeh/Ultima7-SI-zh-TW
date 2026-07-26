@@ -63,7 +63,7 @@ labelFunc0421_0094:
 	var0007 = UI_get_item_flag(0xFFDF, 0x001C);
 	if (!(var0007 == false)) goto labelFunc0421_00D7;
 	UI_set_item_flag(0xFFDF, 0x001C);
-	message("「我是 Torrissio ，月影城( Moonshade )的法師。」");
+	message("「我是 Torrissio ，月影城的法師。」");
 	say();
 labelFunc0421_00D7:
 	message("「我不是個善於交際的人，所以長話短說。你對我有什麼渴望，又願意付出什麼代價？」");
@@ -105,9 +105,9 @@ labelFunc0421_01AE:
 	case "綁架" attend labelFunc0421_0221:
 	UI_remove_answer("綁架");
 	if (!gflags[0x0142]) goto labelFunc0421_0203;
-	message("\"So thou dost suspect me of taking thy companion, ");
+	message("「哦？你竟懷疑是我帶走了你的同伴，");
 	message(var0002);
-	message("? And thou dost dare to confront me -- a Mage!\"");
+	message("？你竟敢來質問我——一個法師！」");
 	say();
 	message("「你的懷疑讓我感到受寵若驚，但是哎呀……在這種情況下我是無辜的。」");
 	say();
@@ -124,9 +124,9 @@ labelFunc0421_01E9:
 	abort;
 	goto labelFunc0421_0221;
 labelFunc0421_0203:
-	message("\"Such poor luck, ");
+	message("「流年不利啊，");
 	message(var0002);
-	message("... to have angered one of the Mages ofMoonshade...\"");
+	message("……竟然惹怒了月影城的法師……」");
 	say();
 	message("「會不會是 Mortegro ，對他來說，死亡的冰冷感覺比生命更生動？」");
 	say();
@@ -139,19 +139,19 @@ labelFunc0421_0203:
 labelFunc0421_0221:
 	case "Torrissio" attend labelFunc0421_0244:
 	UI_remove_answer("Torrissio");
-	message("「我是月影城( Moonshade )的 Torrisso ，行家法師(Adept Mage)兼生命法術大師。」");
+	message("「我是月影城的 Torrisso ，高階法師(Adept Mage)兼生命法術大師。」");
 	say();
-	UI_add_answer(["月影城", "行家法師", "生命法術"]);
+	UI_add_answer(["月影城", "高階法師", "生命法術"]);
 labelFunc0421_0244:
 	case "月影城" attend labelFunc0421_025E:
 	UI_remove_answer("月影城");
-	message("「月影城( Moonshade )在許多方面都是一個完美的城市，一個擁有最高政府形式——法師政治(Magocracy)的文明完美典範。」");
+	message("「月影城在許多方面都是一個完美的城市，一個擁有最高政府形式——法師政治(Magocracy)的文明完美典範。」");
 	say();
 	UI_add_answer("法師政治");
 labelFunc0421_025E:
-	case "行家法師" attend labelFunc0421_0278:
-	UI_remove_answer("行家法師");
-	message("「我來自全巨蛇之島( Serpent Isle )歷史最悠久的法師家族之一。你必須知道，這就是分辨一個優秀法師的方法——看他的家族血統。優秀的法師是優良血統的結果。我父親總是這麼說。」");
+	case "高階法師" attend labelFunc0421_0278:
+	UI_remove_answer("高階法師");
+	message("「我來自全巨蛇之島歷史最悠久的法師家族之一。你必須知道，這就是分辨一個優秀法師的方法——看他的家族血統。優秀的法師是優良血統的結果。我父親總是這麼說。」");
 	say();
 	UI_add_answer("家族血統");
 labelFunc0421_0278:
@@ -180,7 +180,7 @@ labelFunc0421_02D1:
 labelFunc0421_02E4:
 	case "統治家族" attend labelFunc0421_02F7:
 	UI_remove_answer("統治家族");
-	message("「那就是月影城( Moonshade )的法師領主(MageLord) Filbercio 的血統。」");
+	message("「那就是月影城的法師領主(MageLord) Filbercio 的血統。」");
 	say();
 labelFunc0421_02F7:
 	case "舊戰爭" attend labelFunc0421_030A:
@@ -209,7 +209,7 @@ labelFunc0421_0347:
 	goto labelFunc0421_0384;
 labelFunc0421_0364:
 	if (!(var0003 == false)) goto labelFunc0421_0374;
-	message("「我當然可以賣法術給你！最近我也賣了一個法術給另一個路過月影城( Moonshade )的人。月影城( Moonshade )這座城市正是建立在這樣的商業交易之上。憑藉我們在這裡對魔法藝術所進行的所有實驗和發展，我們實際上就是世界的中心。」");
+	message("「我當然可以賣法術給你！最近我也賣了一個法術給另一個路過月影城的人。月影城這座城市正是建立在這樣的商業交易之上。憑藉我們在這裡對魔法藝術所進行的所有實驗和發展，我們實際上就是世界的中心。」");
 	say();
 	var0003 = true;
 labelFunc0421_0374:
@@ -218,7 +218,7 @@ labelFunc0421_0374:
 labelFunc0421_0384:
 	case "賣給誰？" attend labelFunc0421_0397:
 	UI_remove_answer("賣給誰？");
-	message("「就是前陣子路過鎮上的那個胖哲人。 巴特林( Batlin ) 。我不記得交易的具體細節了。」");
+	message("「就是前陣子路過鎮上的那個胖哲人。巴特林。我不記得交易的具體細節了。」");
 	say();
 labelFunc0421_0397:
 	case "實驗" attend labelFunc0421_03AA:
@@ -238,7 +238,7 @@ labelFunc0421_03BD:
 labelFunc0421_03D0:
 	case "政治" attend labelFunc0421_0408:
 	UI_remove_answer("政治");
-	message("\"Of course, nothing ever gets done without a little politics.");
+	message("「當然，沒有一點政治手腕，什麼事都辦不成。");
 	say();
 	if (!UI_get_item_flag(0xFFE1, 0x0004)) goto labelFunc0421_03F7;
 	message("「我曾與 Rotoluncia 結盟，但她的死讓我們的合作關係失效了。」");
@@ -251,7 +251,7 @@ labelFunc0421_03F7:
 labelFunc0421_0408:
 	case "Rotoluncia" attend labelFunc0421_0428:
 	UI_remove_answer("Rotoluncia");
-	message("「當然，我們的合作引發了一些謠言——這就是政治運作的方式。但即使是合作夥伴也會有意見分歧的時候。例如，她確信你和另一位來拜訪我們的陌生人 巴特林( Batlin ) 之間有某種聯繫。」");
+	message("「當然，我們的合作引發了一些謠言——這就是政治運作的方式。但即使是合作夥伴也會有意見分歧的時候。例如，她確信你和另一位來拜訪我們的陌生人巴特林之間有某種聯繫。」");
 	say();
 	UI_add_answer(["合作夥伴", "巴特林"]);
 labelFunc0421_0428:
@@ -268,13 +268,13 @@ labelFunc0421_043B:
 labelFunc0421_0455:
 	case "巴特林" attend labelFunc0421_0475:
 	UI_remove_answer("巴特林");
-	message("「Rotoluncia 對 巴特林( Batlin ) 和他的秘密感到相當反感，卻又深深著迷。想到這個，讓我想給你一句忠告。」");
+	message("「Rotoluncia 對巴特林和他的秘密感到相當反感，卻又深深著迷。想到這個，讓我想給你一句忠告。」");
 	say();
 	UI_add_answer(["秘密", "忠告"]);
 labelFunc0421_0475:
 	case "秘密" attend labelFunc0421_0488:
 	UI_remove_answer("秘密");
-	message("「巴特林( Batlin ) 在這裡的時候，展示了某種力量、才能或知識。 Rotoluncia 現在對此非常著迷，雖然她不太跟我談論這件事。」");
+	message("「巴特林 在這裡的時候，展示了某種力量、才能或知識。 Rotoluncia 現在對此非常著迷，雖然她不太跟我談論這件事。」");
 	say();
 labelFunc0421_0488:
 	case "忠告" attend labelFunc0421_049B:
@@ -478,7 +478,7 @@ labelFunc0421_079B:
 labelFunc0421_07AB:
 	case "結果" attend labelFunc0421_07C2:
 	UI_remove_answer("結果");
-	message("「你不是第一個來向我尋求這個秘密的人，冒險者！那個胖傻瓜 巴特林( Batlin ) 也向我買過。」");
+	message("「你不是第一個來向我尋求這個秘密的人，冒險者！那個胖傻瓜巴特林也向我買過。」");
 	say();
 	message("「而且我給過他這個警告：寶石的力量不足以容納任何擁有強大力量的靈魂。如果它們失敗了，被釋放出來的靈魂會非常憤怒……」");
 	say();

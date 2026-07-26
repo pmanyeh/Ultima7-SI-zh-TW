@@ -278,7 +278,7 @@ labelFunc043B_04E9:
 	say();
 labelFunc043B_0504:
 	case "不列顛尼亞" attend labelFunc043B_0528:
-	message("「巴特林租用了我們的船，用來運送學者去探索新大陸，並傳播友誼會( The Fellowship )的福音。」");
+	message("「巴特林租用了我們的船，用來運送學者去探索新大陸，並傳播友誼會的福音。」");
 	say();
 	message("「現在，就算我們想拋下巴特林回去，我們也不敢出海，因為這些可怕的風暴。」");
 	say();
@@ -286,7 +286,7 @@ labelFunc043B_0504:
 	UI_add_answer(["巴特林", "風暴"]);
 labelFunc043B_0528:
 	case "巴特林" attend labelFunc043B_0567:
-	message("「你沒聽說過巴特林嗎？他是不列顛尼亞( Britannia )友誼會( The Fellowship )運動的創始人。」");
+	message("「你沒聽說過巴特林嗎？他是不列顛尼亞( Britannia )友誼會運動的創始人。」");
 	say();
 	message("「他是個虔誠且有價值的人，儘管他有一些奇怪的同伴。」");
 	say();
@@ -312,7 +312,7 @@ labelFunc043B_0598:
 	UI_pop_answers();
 labelFunc043B_05A8:
 	case "Leon" attend labelFunc043B_05CA:
-	message("「Leon 是被巴特林特別選中來為這片土地帶來友誼會( The Fellowship )希望的。」");
+	message("「Leon 是被巴特林特別選中來為這片土地帶來友誼會希望的。」");
 	say();
 	message("「自從我們被困在這裡後，他是唯一讓我們保持理智的人。」");
 	say();
@@ -324,7 +324,7 @@ labelFunc043B_05CA:
 	case "效法" attend labelFunc043B_05E1:
 	message("「Leon 向我展示了，藉由良好的言談，人們可能會忽略我的畸形並尊重我。我無法改變我的長相，但我可以改變我的談吐。」");
 	say();
-	message("「而且，就像 Leon 播下友誼會( The Fellowship )的種子一樣，我也在泥土裡播種。園藝能轉移我被困在岸上的思緒。」");
+	message("「而且，就像 Leon 播下友誼會的種子一樣，我也在泥土裡播種。園藝能轉移我被困在岸上的思緒。」");
 	say();
 	UI_remove_answer("效法");
 labelFunc043B_05E1:

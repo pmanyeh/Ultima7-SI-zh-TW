@@ -100,7 +100,7 @@ labelFunc041E_01A6:
 	if (!(gflags[0x00EA] && (!UI_get_item_flag(0xFFE1, 0x0004)))) goto labelFunc041E_01BF;
 	UI_add_answer("綁架");
 labelFunc041E_01BF:
-	UI_add_answer("bye");
+	UI_add_answer("告辭");
 labelFunc041E_01C6:
 	converse attend labelFunc041E_0838;
 	case "綁架" attend labelFunc041E_022F:
@@ -163,13 +163,13 @@ labelFunc041E_02BE:
 labelFunc041E_02D1:
 	case "這片土地" attend labelFunc041E_02F1:
 	UI_remove_answer("這片土地");
-	message("「嗯，當人們到達這裡時，他們想用他們故鄉的名字來命名這片土地……啊，等一下……新索沙利亞(New Sosaria)。但後來他們發現這裡到處散佈著廢墟，上面還畫著所有那些蛇，所以大多數人稱這裡為巨蛇之島( Serpent Isle )。儘管有些人仍然用它正確的名字來稱呼它，新索沙利亞。」");
+	message("「嗯，當人們到達這裡時，他們想用他們故鄉的名字來命名這片土地……啊，等一下……新索沙利亞(New Sosaria)。但後來他們發現這裡到處散佈著廢墟，上面還畫著所有那些蛇，所以大多數人稱這裡為巨蛇之島。儘管有些人仍然用它正確的名字來稱呼它，新索沙利亞。」");
 	say();
 	UI_add_answer(["廢墟", "蛇"]);
 labelFunc041E_02F1:
 	case "廢墟" attend labelFunc041E_0304:
 	UI_remove_answer("廢墟");
-	message("「嗯，廢墟都在大陸上。我小時候見過監視鎮(蒙利多城( Monitor ))周圍的廢墟。它們沒什麼特別的，只是新索沙利亞人到來很久以前的定居者留下的一堆舊石頭。」");
+	message("「嗯，廢墟都在大陸上。我小時候見過蒙利多城( Monitor )周圍的廢墟。它們沒什麼特別的，只是新索沙利亞人到來很久以前的定居者留下的一堆舊石頭。」");
 	say();
 labelFunc041E_0304:
 	case "蛇" attend labelFunc041E_0317:
@@ -223,7 +223,7 @@ labelFunc041E_03B7:
 	message("「是的，她說得對……是三個月前。」");
 	say();
 labelFunc041E_03EA:
-	message("「我記得當時發生了一些醜聞。據說這個 巴特林( Batlin ) 偷了某種古代的神器。他乘船逃走了——也許 Hawk 船長能告訴你更多。」");
+	message("「我記得當時發生了一些醜聞。據說這個巴特林偷了某種古代的神器。他乘船逃走了——也許 Hawk 船長能告訴你更多。」");
 	say();
 	var0009 = true;
 labelFunc041E_03F2:
@@ -253,7 +253,7 @@ labelFunc041E_045A:
 labelFunc041E_046D:
 	case "她為什麼在這裡？" attend labelFunc041E_0480:
 	UI_remove_answer("她為什麼在這裡？");
-	message("「那位好心的女士說，她的任務是研究巨蛇之島( Serpent Isle )上所有的文化和信仰。她打算寫一份報告，而且她說她的發現會讓她的同胞感到震驚。」");
+	message("「那位好心的女士說，她的任務是研究巨蛇之島上所有的文化和信仰。她打算寫一份報告，而且她說她的發現會讓她的同胞感到震驚。」");
 	say();
 labelFunc041E_0480:
 	case "多久以前？" attend labelFunc041E_04AF:
@@ -274,7 +274,7 @@ labelFunc041E_04C2:
 	message("「我們提供的食物並不華麗，但能填飽肚子、溫暖靈魂。」");
 	say();
 	if (!(!var0003)) goto labelFunc041E_0504;
-	message("「Petra 是一個出乎意料的好廚師，考慮到她是一個自動機器人(automaton)。」");
+	message("「Petra 是一個出乎意料的好廚師，考慮到她是一個魔導人偶(automaton)。」");
 	say();
 	var0003 = true;
 	UI_add_answer(["魔導人偶", "Petra"]);
@@ -453,7 +453,7 @@ labelFunc041E_0807:
 	message("「Bucia 可能會告訴你她是否賣過類似的東西。還有是誰買的。」");
 	say();
 labelFunc041E_080B:
-	case "bye" attend labelFunc041E_0835:
+	case "告辭" attend labelFunc041E_0835:
 	UI_remove_npc_face0();
 	Func097F(0xFE9C, "@保重@", 0x0000);
 	Func097F(0xFFE2, "@歡迎再來！@", 0x0002);

@@ -102,7 +102,7 @@ labelFunc041C_01EE:
 	if (!(event == 0x0009)) goto labelFunc041C_08BF;
 	if (!UI_get_item_flag(0xFFE4, 0x0006)) goto labelFunc041C_0217;
 	UI_set_schedule_type(0xFFE4, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc041C_0232;
 labelFunc041C_0217:
 	UI_run_schedule(0xFFE4);
@@ -125,7 +125,7 @@ labelFunc041C_0274:
 	message(var0000);
 	message("。 Rocco ——我的愛人——已經死了，藍野豬旅館(Blue Boar)也被摧毀了。」");
 	say();
-	message("「我只是一個自動機器人(automaton)，不指望我擁有的任何靈魂能在另一個世界與 Rocco 團聚。我已經一無所有了。」");
+	message("「我只是一個魔導人偶(automaton)，不指望我擁有的任何靈魂能在另一個世界與 Rocco 團聚。我已經一無所有了。」");
 	say();
 	gflags[0x0139] = true;
 	goto labelFunc041C_02C3;
@@ -133,7 +133,7 @@ labelFunc041C_0296:
 	if (!(UI_get_item_flag(0xFFE4, 0x0006) || (!(Func0994() == 0x000E)))) goto labelFunc041C_02B9;
 	message("「很高興再次和你說話，");
 	message(var0002);
-	message("。我只希望能對你多點幫助。我只是一個自動機器人(automaton)……」");
+	message("。我只希望能對你多點幫助。我只是一個魔導人偶(automaton)……」");
 	say();
 	goto labelFunc041C_02C3;
 labelFunc041C_02B9:
@@ -174,7 +174,7 @@ labelFunc041C_0363:
 	if (!(var0004 && (!UI_get_item_flag(0xFFE4, 0x0006)))) goto labelFunc041C_0385;
 	UI_add_answer(["食物", "飲料", "房間"]);
 labelFunc041C_0385:
-	UI_add_answer(["bye"]);
+	UI_add_answer(["告辭"]);
 labelFunc041C_038F:
 	converse attend labelFunc041C_08BE;
 	case "食物" attend labelFunc041C_03BC:
@@ -215,8 +215,8 @@ labelFunc041C_03F1:
 	message("「你應該趕快去 Julia 那裡——遊俠(Rangers)能解決這樣的罪行！」");
 	say();
 labelFunc041C_0408:
-	case "離開" attend labelFunc041C_04C8:
-	UI_remove_answer("離開");
+	case "離隊" attend labelFunc041C_04C8:
+	UI_remove_answer("離隊");
 	if (!gflags[0x0220]) goto labelFunc041C_0424;
 	message("「我會盡快去。我還有職責需要處理。」");
 	say();
@@ -299,7 +299,7 @@ labelFunc041C_0549:
 labelFunc041C_0551:
 	case "藍野豬旅館" attend labelFunc041C_059A:
 	UI_remove_answer("藍野豬旅館");
-	message("「全月影城( Moonshade )最好的餐飲場所！由全月影城( Moonshade )最好的人經營……」");
+	message("「全月影城最好的餐飲場所！由全月影城最好的人經營……」");
 	say();
 	if (!(Func0942(0xFFE2) == true)) goto labelFunc041C_058C;
 	UI_show_npc_face1(0xFFE2, 0x0000);
@@ -328,7 +328,7 @@ labelFunc041C_05C1:
 labelFunc041C_05D1:
 	case "Torrissio" attend labelFunc041C_05F3:
 	UI_remove_answer("Torrissio");
-	message("「你不可能沒注意到我是個自動機器人(automaton)。 Torrissio 是我的製造者……詛咒他黑心肝！」");
+	message("「你不可能沒注意到我是個魔導人偶(automaton)。 Torrissio 是我的製造者……詛咒他黑心肝！」");
 	say();
 	message("「Torrissio 是一個以別人的痛苦為樂的人。他創造我的唯一目的，就是擁有一個可以讓他折磨一輩子的俘虜。」");
 	say();
@@ -342,7 +342,7 @@ labelFunc041C_05F3:
 	say();
 	message("「但我能思考。我能推理。我相信我也能關心別人。」");
 	say();
-	message("「這是否意味著我空洞的軀體裡鎖著一個靈魂，我不知道。我只知道，我比 Torrissio 通常為其他法師製作的自動機器人(automatons)要複雜得多。」");
+	message("「這是否意味著我空洞的軀體裡鎖著一個靈魂，我不知道。我只知道，我比 Torrissio 通常為其他法師製作的魔導人偶(automatons)要複雜得多。」");
 	say();
 	UI_add_answer(["靈魂", "其他法師"]);
 labelFunc041C_061B:
@@ -352,22 +352,22 @@ labelFunc041C_061B:
 	say();
 	message("「如果我具備所有這些，難道不能說我也擁有靈魂嗎？」");
 	say();
-	message("「在這方面我是獨一無二的，因為沒有任何其他自動機器人聲稱能像我一樣感受到情感。但我不知道為什麼我會有什麼不同。」");
+	message("「在這方面我是獨一無二的，因為沒有任何其他魔導人偶聲稱能像我一樣感受到情感。但我不知道為什麼我會有什麼不同。」");
 	say();
 labelFunc041C_0636:
 	case "其他法師" attend labelFunc041C_0661:
 	UI_remove_answer("其他法師");
 	message("「大多數法師不想被其他生物打擾。因此他們來找 Torrissio 為他們提供不需要任何要求的金屬僕人和守衛。」");
 	say();
-	message("「然而，這種魔法並不是 Torrissio 首創的——」");
+	message("「然而，這種魔法並不是 Torrissio 首創的…」");
 	say();
-	message("he is merely the latest master of the ancient spells which he did find in certain buried ruins. It is said that automatons served those who dwelt in this land anciently.\"");
+	message("「他不過是掌握了那些遠古法術的新任主人罷了——那些法術是他從某處埋藏的遺跡中挖出來的。據說，古時棲息在這片土地上的居民，曾有魔導人偶隨侍左右。」");
 	say();
-	message("「儘管 Torrissio 擁有一切魔法，他也無法建造新的自動機器人——」");
+	message("「儘管 Torrissio 擁有一切魔法，他也無法建造新的魔導人偶…」");
 	say();
-	message("he can merely reanimate those broken automatons which are discovered in the ruins.\"");
+	message("「他充其量不過是能將那些在遺跡中挖出的破殘人偶，重新賦予偽生命罷了。」");
 	say();
-	message("「還有什麼比這更好的僕人呢？自動機器人可以存在好幾個世紀而不需要任何維護。」");
+	message("「還有什麼比這更好的僕人呢？魔導人偶可以存在好幾個世紀而不需要任何維護。」");
 	say();
 	message("「他們什麼也不問。他們什麼也不期望。他們只是執行分配給他們的任務，直到魔法最終失效，然後他們就停止運作。」");
 	say();
@@ -431,13 +431,13 @@ labelFunc041C_06DB:
 	say();
 	goto labelFunc041C_0731;
 labelFunc041C_072D:
-	message("「不，我必須拒絕你的提議。雖然我很享受你的陪伴，但我必須回到月影城( Moonshade )。我必須安葬我心愛的 Rocco 。」");
+	message("「不，我必須拒絕你的提議。雖然我很享受你的陪伴，但我必須回到月影城。我必須安葬我心愛的 Rocco 。」");
 	say();
 labelFunc041C_0731:
 	goto labelFunc041C_076A;
 labelFunc041C_0734:
 	if (!(UI_get_array_size(UI_get_party_list2()) < 0x0005)) goto labelFunc041C_075C;
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	gflags[0x0015] = true;
 	message("「如果你希望，那我就陪你。也許危險能讓我忘記悲傷。」");
 	say();
@@ -497,7 +497,7 @@ labelFunc041C_0847:
 	message("「那我很抱歉，我不會冒任何不必要的風險。」");
 	say();
 labelFunc041C_084B:
-	case "bye" attend labelFunc041C_08BB:
+	case "告辭" attend labelFunc041C_08BB:
 	UI_remove_npc_face0();
 	if (!(UI_get_item_flag(0xFFE4, 0x0006) || (!(Func0994() == 0x000E)))) goto labelFunc041C_0888;
 	Func097F(0xFE9C, "@謝謝。@", 0x0000);

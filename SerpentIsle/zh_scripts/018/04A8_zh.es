@@ -58,7 +58,7 @@ labelFunc04A8_007B:
 	UI_show_npc_face0(0xFF58, 0x0000);
 	if (!UI_get_item_flag(0xFF58, 0x0006)) goto labelFunc04A8_00BC;
 	UI_set_schedule_type(0xFF58, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc04A8_00CA;
 labelFunc04A8_00BC:
 	UI_run_schedule(0xFF58);
@@ -77,7 +77,7 @@ labelFunc04A8_00CA:
 	UI_add_to_party(0xFF58);
 	gflags[0x000F] = true;
 	UI_remove_answer("加入");
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 labelFunc04A8_0121:
 	UI_add_answer("麻煩");
 	goto labelFunc04A8_01DD;
@@ -104,7 +104,7 @@ labelFunc04A8_0158:
 	if (!UI_get_item_flag(0xFF58, 0x0006)) goto labelFunc04A8_0180;
 	UI_remove_from_party(0xFF58);
 	Func086A();
-	UI_remove_answer("離開");
+	UI_remove_answer("離隊");
 labelFunc04A8_0180:
 	UI_set_new_schedules(0xFF58, [0x0000, 0x0004, 0x0005, 0x0006, 0x0007], [0x000E, 0x001A, 0x000C, 0x001A, 0x0004], [0x09A7, 0x0778, 0x08C7, 0x0714, 0x099F, 0x078F, 0x08BE, 0x0707, 0x08B6, 0x070C]);
 	UI_set_schedule_type(0xFF58, 0x000C);
@@ -121,7 +121,7 @@ labelFunc04A8_01F4:
 	UI_set_item_flag(0xFF58, 0x001C);
 	Func09AC(0xFF58, 0xFFFF, 0x0000, 0x000C);
 	UI_set_schedule_type(0xFF58, 0x0014);
-	message("「我是 Stefano ，前不久還在月影城( Moonshade )，一個稀有物品獲取者( obtainer of rarities )……」");
+	message("「我是 Stefano ，前不久還在月影城，一個稀有物品獲取者( obtainer of rarities )……」");
 	say();
 	message("「我被不公正地囚禁在這裡，");
 	message(var0000);
@@ -192,7 +192,7 @@ labelFunc04A8_02FC:
 labelFunc04A8_0327:
 	case "發生的事" attend labelFunc04A8_0344:
 	UI_remove_answer("發生的事");
-	message("「一個可怕、發光的生物來到了月影城( Moonshade )，並與所有的法師戰鬥！我相信他們都死了……」");
+	message("「一個可怕、發光的生物來到了月影城，並與所有的法師戰鬥！我相信他們都死了……」");
 	say();
 	message("「我沒有留下來確認，而是來這裡躲藏。這是世界末日了，");
 	message(var0002);
@@ -262,12 +262,12 @@ labelFunc04A8_0448:
 labelFunc04A8_045B:
 	case "月影城" attend labelFunc04A8_0489:
 	UI_remove_answer("月影城");
-	message("「不，我不是法師……雖然他們告訴我我有一點能力( ability )。但當整個城市都被宗師( Adepts )統治時，那有什麼用呢？不，不，這不適合我！」");
+	message("「不，我不是法師……雖然他們告訴我我有一點能力( ability )。但當整個城市都被高階法師( Adepts )統治時，那有什麼用呢？不，不，這不適合我！」");
 	say();
 	message("「隨時給我一個充滿挑戰的搜索( search )任務吧！越難找到的東西，我越喜歡。」");
 	say();
 	UI_push_answers();
-	UI_add_answer(["能力", "宗師", "搜索", "改變話題"]);
+	UI_add_answer(["能力", "高階法師", "搜索", "改變話題"]);
 labelFunc04A8_0489:
 	case "絲襪" attend labelFunc04A8_04A4:
 	UI_remove_answer("絲襪");
@@ -299,11 +299,11 @@ labelFunc04A8_04C3:
 	message("「事實上，如果我們逃出去了，我建議你盡可能多獲取一些法術卷軸——它們非常派得上用場！」");
 	say();
 labelFunc04A8_04E8:
-	case "宗師" attend labelFunc04A8_050C:
-	UI_remove_answer("宗師");
-	message("「如果月影城( Moonshade )不是由宗師( Adepts )統治的，你能想像要如何管理那些強大的法師嗎？帶著他們那些脆弱的自尊( egos )？——巨大、脆弱的自尊。」");
+	case "高階法師" attend labelFunc04A8_050C:
+	UI_remove_answer("高階法師");
+	message("「如果月影城不是由高階法師( Adepts )統治的，你能想像要如何管理那些強大的法師嗎？帶著他們那些脆弱的自尊( egos )？——巨大、脆弱的自尊。」");
 	say();
-	message("「如果說宗師( Adepts )有一個核心問題，那就是他們完全不把那些只有一點點或沒有魔法的人放在眼裡。不過，在某些方面，這讓我的生活更輕鬆( easier )了。」");
+	message("「如果說高階法師( Adepts )有一個核心問題，那就是他們完全不把那些只有一點點或沒有魔法的人放在眼裡。不過，在某些方面，這讓我的生活更輕鬆( easier )了。」");
 	say();
 	UI_add_answer(["自尊", "更輕鬆"]);
 labelFunc04A8_050C:
@@ -354,7 +354,7 @@ labelFunc04A8_059F:
 	UI_remove_answer("Vasculio");
 	message("「我不確定能不能在這個可怕的地方談論這件事。老 Fedabiblio 把它當作嚇唬新手的鬼故事……而且我承認那讓我印象深刻。」");
 	say();
-	message("「 Vasculio 是個不受戒律( Strictures )約束的宗師( Adept )。他毫無節制地折磨和殺戮，利用臨死的痛苦來為他的法術提供力量。」");
+	message("「 Vasculio 是個不受戒律( Strictures )約束的高階法師( Adept )。他毫無節制地折磨和殺戮，利用臨死的痛苦來為他的法術提供力量。」");
 	say();
 	message("「議會將他處死，但他的力量已經成長到超越了那個限制。他們在埋葬他不久後發現他的墳墓空了……而且他們說他仍然在這個世界上遊蕩，尋找新的受害者。」");
 	say();
@@ -362,7 +362,7 @@ labelFunc04A8_059F:
 labelFunc04A8_05C1:
 	case "戒律" attend labelFunc04A8_05DE:
 	UI_remove_answer("戒律");
-	message("「戒律( Strictures )是所有法師都必須遵守的規則，無論新手還是宗師( Adept )。它們規範了可以進行什麼實驗，可以使用或出售什麼秘藥( reagents )……諸如此類的事情。」");
+	message("「戒律( Strictures )是所有法師都必須遵守的規則，無論新手還是高階法師( Adept )。它們規範了可以進行什麼實驗，可以使用或出售什麼秘藥( reagents )……諸如此類的事情。」");
 	say();
 	message("「戒律是為了防止法師在追求知識時放棄所有文明行為的約束。如你所知，");
 	message(var0000);
@@ -375,9 +375,9 @@ labelFunc04A8_05DE:
 	message(var0000);
 	message("，我獲取稀有物品。有時候那些物品是……我們說，之前有人擁有過？」");
 	say();
-	message("「但宗師( Adepts )們就是那麼自負，除了魔法攻擊之外，他們看不出任何其他威脅。」");
+	message("「但高階法師( Adepts )們就是那麼自負，除了魔法攻擊之外，他們看不出任何其他威脅。」");
 	say();
-	message("「大多數宗師都採用簡單的物理陷阱( physical traps )來守衛他們的宅邸。當然，還有魔導人偶( automatons )要對付……但只要我知道了那個秘密，他們的家就跟我的家一樣！」");
+	message("「大多數高階法師都採用簡單的物理陷阱( physical traps )來守衛他們的宅邸。當然，還有魔導人偶( automatons )要對付……但只要我知道了那個秘密，他們的家就跟我的家一樣！」");
 	say();
 	UI_add_answer(["物理陷阱", "魔導人偶"]);
 labelFunc04A8_060C:
@@ -397,7 +397,7 @@ labelFunc04A8_0636:
 	UI_remove_answer("搜索");
 	message("「當人們雇用我的服務時，他們確切知道自己需要什麼以及它在哪裡。或者我應該說，他們知道它在哪個莊園裡。」");
 	say();
-	message("「從那裡開始，我必須決定如何進入以及何時進入。然後我必須用智謀戰勝那些想把它從我的天賦下藏起來的宗師。我得補充一句，我還未嘗敗績。」");
+	message("「從那裡開始，我必須決定如何進入以及何時進入。然後我必須用智謀戰勝那些想把它從我的天賦下藏起來的高階法師。我得補充一句，我還未嘗敗績。」");
 	say();
 labelFunc04A8_064D:
 	case "稀有物品" attend labelFunc04A8_0674:
@@ -464,7 +464,7 @@ labelFunc04A8_0738:
 	say();
 	message("「哦，拜託，");
 	message(var0000);
-	message("！你必須讓我加入( join )你！」");
+	message("！你必須讓我加入你！」");
 	say();
 	message("「沒有我的幫助，你休想逃脫，而我又不是戰士！沒有你，我死定了！」");
 	say();
@@ -476,14 +476,14 @@ labelFunc04A8_0759:
 	goto labelFunc04A8_078B;
 labelFunc04A8_076E:
 	UI_remove_answer("加入");
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	message("「你和我，我們合作會很好的！」");
 	say();
 	UI_add_to_party(0xFF58);
 	gflags[0x000F] = true;
 labelFunc04A8_078B:
-	case "離開" attend labelFunc04A8_07B7:
-	UI_remove_answer("離開");
+	case "離隊" attend labelFunc04A8_07B7:
+	UI_remove_answer("離隊");
 	if (!gflags[0x0004]) goto labelFunc04A8_07AD;
 	message("「但那東西會殺了我，");
 	message(var0000);
@@ -551,7 +551,7 @@ labelFunc04A8_0989:
 	if (!gflags[0x0007]) goto labelFunc04A8_0A2C;
 	gflags[0x0007] = false;
 	UI_show_npc_face0(0xFF58, 0x0000);
-	message("「我們回到月影城( Moonshade )了！這代表我們贏得了自由！」*「我們真是絕佳的團隊！有你的肌肉和我的智慧，我們讓他們知道這座監獄能關誰、不能關誰。謝謝你，聖者。」*「我現在必須離開了，還有其他事情在呼喚我。但如果你需要我的才能，只要說一聲，我會為你效勞的。」");
+	message("「我們回到月影城了！這代表我們贏得了自由！」*「我們真是絕佳的團隊！有你的肌肉和我的智慧，我們讓他們知道這座監獄能關誰、不能關誰。謝謝你，聖者。」*「我現在必須離開了，還有其他事情在呼喚我。但如果你需要我的才能，只要說一聲，我會為你效勞的。」");
 	say();
 	Func097F(0xFF58, "@改天見……@", 0x0000);
 	Func097F(0xFE9C, "@再見， Stefano 。@", 0x0005);

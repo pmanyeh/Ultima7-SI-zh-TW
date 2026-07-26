@@ -168,7 +168,7 @@ labelFunc0496_0322:
 	Func097F(var0010, "@難以置信。@", 0x0002);
 labelFunc0496_033A:
 	if (!(var0011 == 0x0006)) goto labelFunc0496_0350;
-	Func097F(0xFF6A, "@熊之軍團( The Bears )錯了！@", 0x0000);
+	Func097F(0xFF6A, "@熊之軍團錯了！@", 0x0000);
 labelFunc0496_0350:
 	if (!((event == 0x0001) && (UI_get_schedule_type(0xFF6A) != 0x000F))) goto labelFunc0496_0414;
 	if (!(gflags[0x003D] && (((UI_get_schedule_type(0xFF6A) == 0x000E) || (UI_get_schedule_type(0xFF6A) == 0x000A)) && (Func08F1() < 0x000F)))) goto labelFunc0496_03EC;
@@ -303,17 +303,17 @@ labelFunc0496_0605:
 	message("「我是狼之軍團( Command of the Wolf )的領袖。就像所有的狼一樣，我是一個兼具狡猾與力量的戰士。」");
 	say();
 	if (!gflags[0x002C]) goto labelFunc0496_0625;
-	message("「哎呀，我敢說我可能是整個蒙利多城( Monitor )最能幹的騎士……除了你之外，冠軍騎士( Champion Knight )。既然你無可否認地贏得了這份榮譽，女士們肯定會對你阿諛奉承！」");
+	message("「哎呀，我敢說我可能是整個蒙利多城最能幹的騎士……除了你之外，冠軍騎士( Champion Knight )。既然你無可否認地贏得了這份榮譽，女士們肯定會對你阿諛奉承！」");
 	say();
 	goto labelFunc0496_062D;
 labelFunc0496_0625:
-	message("「當我從哥布林那裡找回蒙利多頭盔( Helm of Monitor )時，我的英勇將會無人不知，我將成為下一任蒙利多城( Monitor )冠軍騎士！」");
+	message("「當我從哥布林那裡找回蒙利多頭盔( Helm of Monitor )時，我的英勇將會無人不知，我將成為下一任蒙利多城冠軍騎士！」");
 	say();
 	message("「到那時，榮耀將屬於我。女士們也將真正對我阿諛奉承！」");
 	say();
 labelFunc0496_062D:
 	if (!(!gflags[0x0048])) goto labelFunc0496_063C;
-	message("「但在你成為蒙利多城( Monitor )的騎士之前，我不該和你說話。去跟 Marsten 談談這件事吧。」");
+	message("「但在你成為蒙利多城的騎士之前，我不該和你說話。去跟 Marsten 談談這件事吧。」");
 	say();
 	abort;
 	goto labelFunc0496_064F;
@@ -321,7 +321,7 @@ labelFunc0496_063C:
 	UI_add_answer(["狼之軍團", "狡猾", "冠軍騎士", "女士們"]);
 labelFunc0496_064F:
 	case "狼之軍團" attend labelFunc0496_0669:
-	message("「狼之軍團是蒙利多城( Monitor )中最精明的戰士。我們迅速、安靜且致命。我們是追蹤和狩獵獵物的專家，當我們攻擊時——沒有什麼能阻擋我們。總有一天，整個巨蛇之島( Serpent Isle )都將屬於蒙利多城( Monitor )，而這將是因為狼之軍團！」");
+	message("「狼之軍團是蒙利多城中最精明的戰士。我們迅速、安靜且致命。我們是追蹤和狩獵獵物的專家，當我們攻擊時——沒有什麼能阻擋我們。總有一天，整個巨蛇之島都將屬於蒙利多城，而這將是因為狼之軍團！」");
 	say();
 	UI_remove_answer("狼之軍團");
 	UI_add_answer("巨蛇之島");
@@ -329,7 +329,7 @@ labelFunc0496_0669:
 	case "巨蛇之島" attend labelFunc0496_0697:
 	UI_remove_answer("巨蛇之島");
 	UI_push_answers();
-	message("「我不明白我們為什麼要待在南方這裡！無可否認，這裡的氣候比較溫暖，但整個大陸都是我們的囊中物！熊之軍團( The Bears )只想躲在這裡停滯不前。而豹之軍團( The Leopards )根本沒有任何野心！」");
+	message("「我不明白我們為什麼要待在南方這裡！無可否認，這裡的氣候比較溫暖，但整個大陸都是我們的囊中物！熊之軍團只想躲在這裡停滯不前。而豹之軍團( The Leopards )根本沒有任何野心！」");
 	say();
 	UI_remove_answer("巨蛇之島");
 	UI_add_answer(["熊之軍團", "豹之軍團", "改變話題"]);
@@ -372,7 +372,7 @@ labelFunc0496_0700:
 labelFunc0496_0714:
 	goto labelFunc0496_071F;
 labelFunc0496_0717:
-	message("「如果發現熊之軍團( The Bears )的其中一人背叛了自己的軍團，我也並不驚訝！仔細調查 Luther 的行徑。他不值得信任。他是個吹牛大王和小丑。他以為自己會是下一個冠軍騎士。但他從來沒打敗過我！」");
+	message("「如果發現熊之軍團的其中一人背叛了自己的軍團，我也並不驚訝！仔細調查 Luther 的行徑。他不值得信任。他是個吹牛大王和小丑。他以為自己會是下一個冠軍騎士。但他從來沒打敗過我！」");
 	say();
 	gflags[0x00AD] = true;
 labelFunc0496_071F:
@@ -390,11 +390,11 @@ labelFunc0496_077C:
 labelFunc0496_0783:
 	case "Lydia 是叛徒嗎？" attend labelFunc0496_079E:
 	UI_remove_answer("Lydia 是叛徒嗎？");
-	message("「我覺得很難相信我的軍團中會有任何成員會背叛蒙利多城( Monitor )。」");
+	message("「我覺得很難相信我的軍團中，會有任何成員會背叛蒙利多城。」");
 	say();
 	message("「她怎麼可能出賣巡邏隊？她是個刺青師，不是戰士……」");
 	say();
-	message("「不， Luther 仍然是最有可能的嫌疑犯。繼續你尋找叛徒的任務，我的朋友。身為你的指揮官，我命令你。」");
+	message("「不，Luther 仍然是最有可能的嫌疑犯。身為你的指揮官，我命令你，繼續尋找叛徒的任務，我的朋友。」");
 	say();
 labelFunc0496_079E:
 	case "Shmed 是叛徒嗎？" attend labelFunc0496_07D1:
@@ -417,12 +417,12 @@ labelFunc0496_07D1:
 	say();
 labelFunc0496_07E4:
 	case "比武場" attend labelFunc0496_0810:
-	message("「如果你想打一場，我很樂意在比武場( List Field )那裡跟你碰面。我經常在那裡教授戰鬥課程，教人如何快速打擊。我每天三點都會在那裡。你看起來像是能打上幾回合的人！」");
+	message("「如果你想打一場，我很樂意在比武場那裡跟你碰面。我經常在那裡教授戰鬥課程，教人如何快速打擊。我每天三點都會在那裡。你看起來像是能打上幾回合的人！」");
 	say();
 	if (!UI_is_pc_female()) goto labelFunc0496_0803;
 	message("「如果妳在下一個午夜到我的營房找我，我會教妳另一種切磋的方法……」");
 	say();
-	message("「我的房間在 Kosric 街和 Roland 街的轉角，面向比武場( List Field )。」");
+	message("「我的房間在 Kosric 街和 Roland 街的轉角，面向比武場。」");
 	say();
 	gflags[0x003D] = true;
 labelFunc0496_0803:
@@ -443,7 +443,7 @@ labelFunc0496_0836:
 	message("「你也是個優秀的冠軍。狼之軍團真正的驕傲。」");
 	say();
 	if (!(gflags[0x0044] && gflags[0x00CC])) goto labelFunc0496_0856;
-	message("「你不僅根除了我們之中的冒牌貨，還殺死了我們長期的敵人——哥布林王 Pomdirgun 。你總有一天會成為傳奇，肯定的！你在蒙利多城( Monitor )歷史上的地位已經確定了。」");
+	message("「你不僅根除了我們之中的冒牌貨，還殺死了我們長期的敵人——哥布林王 Pomdirgun 。你總有一天會成為傳奇，肯定的！你在蒙利多城歷史上的地位已經確定了。」");
 	say();
 labelFunc0496_0856:
 	goto labelFunc0496_0868;
@@ -460,7 +460,7 @@ labelFunc0496_086F:
 	UI_remove_answer("女士們");
 	UI_push_answers();
 	if (!UI_is_pc_female()) goto labelFunc0496_0898;
-	message("「蒙利多城( Monitor )裡沒有哪位女士比妳更美！當我凝視妳可愛的容貌時，我不再記得我幾乎和這個鎮上的每個女人都發生過關係。」");
+	message("「蒙利多城裡沒有哪位女士比妳更美！當我凝視妳可愛的容貌時，我不再記得我幾乎和這個鎮上的每個女人都發生過關係。」");
 	say();
 	message("「她們叫什麼名字？ Lydia 、 Lucilla 、 Shazzana 、 Cellia ……妳難道沒看出我和年輕的 Cantra 之間的相似之處嗎？但我不該談這個……」");
 	say();
@@ -468,7 +468,7 @@ labelFunc0496_086F:
 	say();
 	goto labelFunc0496_08A0;
 labelFunc0496_0898:
-	message("「啊，蒙利多城( Monitor )的女士們。都被她們自己特定的熱情所支配。」");
+	message("「啊，蒙利多城的女士們。都被她們自己特定的熱情所支配。」");
 	say();
 	message("「 Lydia 、 Lucilla 、 Shazzana 、 Cellia 、 Harnna ……」");
 	say();
@@ -506,7 +506,7 @@ labelFunc0496_0907:
 	UI_remove_answer("Shazzana");
 labelFunc0496_091A:
 	case "Cellia" attend labelFunc0496_0939:
-	message("「她比較安靜。但她也並非不受蒙利多城( Monitor )騎士常有的孤獨生活所影響。」");
+	message("「她比較安靜。但她也並非不受蒙利多城騎士常有的孤獨生活所影響。」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0496_0932;
 	message("「她的皮膚光滑柔軟。我向妳保證，比妳在她的店裡找到的任何華麗鬃毛或獸皮都要精緻……咳咳，抱歉！」");

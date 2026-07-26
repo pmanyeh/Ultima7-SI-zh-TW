@@ -51,7 +51,7 @@ void Func0448 object#(0x448) ()
 	message("「沒有解藥，所以你可以期待一個漫長而痛苦的死亡！」");
 	say();
 labelFunc0448_0079:
-	message("「我對你吐口水，惡魔不列顛王( Demon British )的走狗！」");
+	message("「我對你吐口水，惡魔不列顛的走狗！」");
 	say();
 	UI_clear_item_flag(0xFFB8, 0x001D);
 	UI_reduce_health(0xFFB8, 0x0032, 0x0000);
@@ -212,7 +212,7 @@ labelFunc0448_03F2:
 labelFunc0448_0409:
 	case "術士" attend labelFunc0448_0420:
 	UI_remove_answer("術士");
-	message("「我不知道他的名字。那個邪惡的巫師在巨蛇之島( Serpent Isle )到處旅行，尋找孩童偷去魔法學校。」");
+	message("「我不知道他的名字。那個邪惡的巫師在巨蛇之島到處旅行，尋找孩童偷去魔法學校。」");
 	say();
 	message("「任何有潛力的嬰兒都會在夜深人靜時被帶走，並在原地留下一顆白石。」");
 	say();
@@ -327,7 +327,7 @@ labelFunc0448_05D6:
 	message("「沒有解藥，所以你可以期待一個漫長而痛苦的死亡！」");
 	say();
 labelFunc0448_05F1:
-	message("「我對你吐口水，惡魔不列顛王( Demon British )的走狗！」");
+	message("「我對你吐口水，惡魔不列顛的走狗！」");
 	say();
 	var0009 = Func0992(0xFFFE, (("@為了不列顛王，你竟然毒害了 " + var0000) + " ？@"), 0x0000, false);
 	if (!(var0009 != 0xFE9C)) goto labelFunc0448_0626;

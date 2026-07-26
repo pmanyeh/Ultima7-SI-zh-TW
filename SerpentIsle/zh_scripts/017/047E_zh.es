@@ -21,7 +21,7 @@ labelFunc047E_0035:
 	UI_show_npc_face0(0xFED6, 0x0000);
 	message("「聖者，你注定要失敗！」");
 	say();
-	var0000 = Func0992(0xFFFF, "@怎麼了，聖者！你難道聽不出來嗎？！這具魔導人偶說話的聲音是巴特林( Batlin )！@", "@我認得那個聲音！是巴特林( Batlin )！@", false);
+	var0000 = Func0992(0xFFFF, "@怎麼了，聖者！你難道聽不出來嗎？！這具魔導人偶說話的聲音是巴特林！@", "@我認得那個聲音！是巴特林！@", false);
 	UI_set_conversation_slot(0x0000);
 	UI_remove_npc_face1();
 	message("「你聽得到我說話嗎，聖者？你太遲了！等你找到秩序神殿時，我將會變得和守護者( Guardian )一樣強大！」");

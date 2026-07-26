@@ -584,7 +584,7 @@ labelFunc093A_1076:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「美貌祭司已向我坦白，她與大船長 Voldin 勾結進行了邪惡的陰謀。」");
+	message("「美之祭司已向我坦白，她與大船長 Voldin 勾結進行了邪惡的陰謀。」");
 	say();
 	message("「透過秘密拉桿，他們竟敢控制神聖神諭的宣示！多虧勇敢的 ");
 	message(var0001);
@@ -618,15 +618,15 @@ labelFunc093A_1117:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFC9, 0x0000);
 	var0003 = Func08AC(false);
-	message("「我很抱歉我們耽誤了你的使命，」");
+	message("「我很抱歉，我們耽誤了你的使命，");
 	message(var0003);
-	message("「。請原諒我們。」");
+	message("。請原諒我們。」");
 	say();
 	message("「你可以自由離開幼鹿城( Fawn )，若你日後歸來，定會受到熱烈歡迎。你讓我明白，作為一名統治者，我還有很多東西要學習……謝謝你。」");
 	say();
-	message("「衛兵，釋放 」");
+	message("「衛兵，釋放 ");
 	message(var0003);
-	message("「。」");
+	message("。」");
 	say();
 	UI_end_conversation();
 	var0003 = (UI_get_object_position(0xFE9C) & (0x0001 & 0x0006));

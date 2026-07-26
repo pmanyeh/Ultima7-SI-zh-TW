@@ -62,7 +62,7 @@ labelFunc0109_00B5:
 labelFunc0109_0109:
 	if (!(UI_get_npc_id(0xFF31) == 0x0007)) goto labelFunc0109_01C4;
 	UI_show_npc_face0(0xFF31, 0x0000);
-	message("「來自虛空( Void )之外的能量現在匯聚於此時此地。這就是 Xenka 跨越萬古為我們帶來預言之光的時刻……」");
+	message("「來自虛空( Void )彼端的偉力此刻正匯聚於此！這正是 Xenka 跨越萬古歲月、為我們降下預言曙光的神聖時刻……」");
 	say();
 	var0009 = UI_find_nearby(0xFE9C, 0x02D6, 0x0014, 0x0000);
 	UI_remove_item(var0009);
@@ -71,30 +71,30 @@ labelFunc0109_0109:
 	UI_sprite_effect(0x001A, var0002[0x0001], var0002[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	var0008 = UI_execute_usecode_array(0xFF29, [(byte)0x23, (byte)0x59, 0x0002, (byte)0x01, (byte)0x70]);
 	Func097F(0xFF29, "@是我……@", 0x0005);
-	Func097F(0xFF31, "@來到我們身邊吧，Xenka！@", 0x0000);
+	Func097F(0xFF31, "@降臨於此吧，Xenka！@", 0x0000);
 	var0008 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x55, 0x0109], 0x000A);
 	gflags[0x0270] = true;
 	abort;
 labelFunc0109_01C4:
 	if (!(UI_get_npc_id(0xFF31) == 0x0006)) goto labelFunc0109_01FF;
-	UI_item_say(0xFF31, "@Xenka 靠近了！@");
+	UI_item_say(0xFF31, "@Xenka 正在接近！@");
 	var000A = "@Xenka！@";
 	var0008 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x55, 0x0109], 0x000A);
 labelFunc0109_01FF:
 	if (!(UI_get_npc_id(0xFF31) == 0x0005)) goto labelFunc0109_0253;
 	UI_sprite_effect(0x000D, 0x0968, 0x0474, 0x0000, 0x0000, 0x0000, 0xFFFF);
-	UI_item_say(0xFF31, "@呼喚她的名字！@");
+	UI_item_say(0xFF31, "@呼喚她的真名！@");
 	var000A = "@Xenka！@";
 	var0008 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x55, 0x0109], 0x000A);
 labelFunc0109_0253:
 	if (!(UI_get_npc_id(0xFF31) == 0x0004)) goto labelFunc0109_028E;
-	UI_item_say(0xFF31, "@時刻已到！@");
+	UI_item_say(0xFF31, "@神聖時刻已至！@");
 	var000A = "@時候到了！@";
 	var0008 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x55, 0x0109], 0x000A);
 labelFunc0109_028E:
 	if (!(UI_get_npc_id(0xFF31) == 0x0003)) goto labelFunc0109_02C9;
-	UI_item_say(0xFF31, "@Xenka 回歸了！@");
-	var000A = "@她是純潔的。@";
+	UI_item_say(0xFF31, "@Xenka 歸來了！@");
+	var000A = "@她是聖潔無瑕的。@";
 	var0008 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x55, 0x0109], 0x000A);
 labelFunc0109_02C9:
 	if (!(UI_get_npc_id(0xFF31) == 0x0002)) goto labelFunc0109_032F;
@@ -104,16 +104,16 @@ labelFunc0109_02C9:
 	var0008 = UI_update_last_created(var0002);
 	UI_play_sound_effect(0x0046);
 labelFunc0109_0302:
-	UI_item_say(0xFF31, "@我們的守夜結束了！@");
-	var000A = "@Xenka 來了！@";
+	UI_item_say(0xFF31, "@我們的守望終於結束了！@");
+	var000A = "@Xenka 降臨了！@";
 	var0008 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x55, 0x0109], 0x000A);
 labelFunc0109_032F:
 	if (!(UI_get_npc_id(0xFF31) == 0x0001)) goto labelFunc0109_0385;
 	UI_set_weather(0x0003);
 	UI_play_music(0x0041, var0001);
 	UI_set_item_flag(0xFE9C, 0x0010);
-	UI_item_say(0xFF31, "@我們已經等了很久……@");
-	var000A = "@不用再等了！@";
+	UI_item_say(0xFF31, "@我們苦苦等待了漫長歲月……@");
+	var000A = "@無須再等待了！@";
 	var0008 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x55, 0x0109], 0x000A);
 labelFunc0109_0385:
 	if (!(var0004 != [])) goto labelFunc0109_03E0;
@@ -130,20 +130,20 @@ labelFunc0109_0400:
 	if (!(Func0994() == 0x001B)) goto labelFunc0109_05A5;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFF31, 0x0000);
-	message("「妳應該清楚不該干涉命運的事，Thoxa。僅僅是和英雄說話，妳就可能會讓我們萬劫不復。」");
+	message("「妳明明清楚絕不能擅自干涉命運的走向，Thoxa。哪怕只是與這位英雄對話，都可能讓我們陷入萬劫不復的深淵！」");
 	say();
 	UI_show_npc_face1(0xFF2D, 0x0000);
-	message("「我們必須介入，Karnax。編織宇宙宏圖的根本法則，或許正繫於此。」");
+	message("「我們非介入不可，Karnax。編織宇宙萬物之網的根本法則，或許全繫於此舉了！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「妳還是像以前一樣愚蠢，女孩……」");
+	message("「妳真是一如既往地愚蠢盲目，孩子……」");
 	say();
-	message("「Xenka 的著作如水晶般清晰——那些試圖幫助英雄的人，將造成");
+	message("「Xenka 的典籍記載得無比清晰——凡是試圖插手協助英雄的人，必將為");
 	message(var0000);
-	message(" 最大的災難！」");
+	message("帶來無可挽回的巨大災難！」");
 	say();
-	message("「我必須阻止你，以免你將我們全推向萬劫不復的境地！」");
+	message("「我必須立刻阻止妳，絕不能任由妳將我們所有人拖入毀滅的深淵！」");
 	say();
 	Func097F(0xFF31, "@我必須阻止妳……@", 0x0000);
 	UI_remove_npc_face1();

@@ -80,7 +80,7 @@ labelFunc042C_007A:
 labelFunc042C_00A2:
 	if (!UI_get_item_flag(0xFFD4, 0x0006)) goto labelFunc042C_00C3;
 	UI_set_schedule_type(0xFFD4, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc042C_00E6;
 labelFunc042C_00C3:
 	UI_run_schedule(0xFFD4);
@@ -268,8 +268,8 @@ labelFunc042C_0407:
 	message("「只要稍微想想，這一切都非常明顯……」");
 	say();
 labelFunc042C_0422:
-	case "離開" attend labelFunc042C_0435:
-	UI_remove_answer("離開");
+	case "離隊" attend labelFunc042C_0435:
+	UI_remove_answer("離隊");
 	message("「但我們已經說好要成為夥伴了。從現在開始，你和我形影不離！」");
 	say();
 labelFunc042C_0435:
@@ -421,17 +421,17 @@ labelFunc042C_0712:
 	UI_remove_answer("長槍兵");
 labelFunc042C_0719:
 	case "幼鹿城" attend labelFunc042C_0733:
-	message("「幼鹿城( Fawn )在這裡的西北方……他們有一位女性統治者，但她只是個掛名的統治者。」 *「偉大船長們和金錢才是真正控制著這座城市的力量，並且只有在方便的時候才會對美貌做表面功夫。如果那裡的女人們起義並前往蒙利多城( Monitor )學習如何戰鬥，那他們就是活該了。」");
+	message("「幼鹿城( Fawn )在這裡的西北方……他們有一位女性統治者，但她只是個掛名的統治者。」 *「大船長們和金錢才是真正控制著這座城市的力量，並且只有在方便的時候才會對美貌做表面功夫。如果那裡的女人們起義並前往蒙利多城( Monitor )學習如何戰鬥，那他們就是活該了。」");
 	say();
 	UI_remove_answer("幼鹿城");
-	UI_add_answer("偉大船長");
+	UI_add_answer("大船長");
 labelFunc042C_0733:
-	case "偉大船長" attend labelFunc042C_074C:
+	case "大船長" attend labelFunc042C_074C:
 	message("「我從沒去過幼鹿城( Fawn )， ");
 	message(var0001);
-	message("，所以我只能重複我聽過或被告知的事情。偉大船長們讓幼鹿夫人( Lady Fawn )保持無知，比起一個聰明的統治者，他們更喜歡一個漂亮的傀儡！」");
+	message("，所以我只能重複我聽過或被告知的事情。大船長們讓幼鹿夫人( Lady Fawn )保持無知，比起一個聰明的統治者，他們更喜歡一個漂亮的傀儡！」");
 	say();
-	UI_remove_answer("偉大船長");
+	UI_remove_answer("大船長");
 labelFunc042C_074C:
 	case "月影城" attend labelFunc042C_0766:
 	message("「月影城( Moonshade )在東邊的另一座島上……他們由專家( Adept )統治，但卻避開普通人，認為他們不值得注意。」 *「每個法師都有他或她自己版本的現實，以至於你應該過濾他們說的每一句話，以尋找真實的核心。我好幾次都希望那些法師能發現自己站在幼鹿城( Fawn )的捕魚船隊甲板上，為了誠實的生計工作個幾天……也許那樣他們就會學到誰才是真正重要的人。」");
@@ -746,9 +746,9 @@ labelFunc042C_0C9F:
 	UI_show_npc_face0(0xFFD4, 0x0000);
 	message("「盡情得意吧！就算你在這裡殺了我，你也並未真正擊敗我！」");
 	say();
-	message("「就在我們說話的同時，巴特林( Batlin )正在隔壁房間開啟光明之牆！在守護者( Guardian )的幫助下，他和我將在永恆的虛空( Void )中會合，一起征服新的領域！」");
+	message("「就在我們說話的同時，巴特林正在隔壁房間開啟光明之牆！在守護者( Guardian )的幫助下，他和我將在永恆的虛空( Void )中會合，一起征服新的領域！」");
 	say();
-	message("「巴特林( Batlin )！守護者( Guardian )！我在虛空( Void )等待你們！」");
+	message("「巴特林！守護者( Guardian )！我在虛空( Void )等待你們！」");
 	say();
 	UI_remove_npc_face0();
 	var0014 = UI_find_nearby(item, 0x0300, 0x003C, 0x0000);

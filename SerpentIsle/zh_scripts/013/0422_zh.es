@@ -112,7 +112,7 @@ labelFunc0422_0371:
 	if (!(item == UI_get_npc_object(0xFFDE))) goto labelFunc0422_0430;
 	if (!UI_get_item_flag(0xFFDE, 0x0006)) goto labelFunc0422_03A6;
 	UI_set_schedule_type(0xFFDE, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc0422_03BA;
 labelFunc0422_03A6:
 	UI_run_schedule(0xFFDE);
@@ -132,7 +132,7 @@ labelFunc0422_03E8:
 	UI_add_to_party(0xFFDE);
 	gflags[0x0013] = true;
 	UI_remove_answer("加入");
-	UI_add_answer(["離開"]);
+	UI_add_answer(["離隊"]);
 	goto labelFunc0422_042D;
 labelFunc0422_0411:
 	if (!(!var0006)) goto labelFunc0422_0429;
@@ -283,7 +283,7 @@ labelFunc0422_06DE:
 	case "加入" attend labelFunc0422_074C:
 	UI_remove_answer("加入");
 	if (!(UI_get_array_size(UI_get_party_list2()) < 0x0005)) goto labelFunc0422_073E;
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	message("「真是個好消息！帶路吧！」");
 	say();
 	var0012 = Func0992(0xFFFE, ("@我無意質疑你的判斷，聖者。但你的感官真的遲鈍到沒注意到這傢伙散發出的強烈氣味嗎？@"), 0x0000, false);
@@ -301,8 +301,8 @@ labelFunc0422_073E:
 	message("。」");
 	say();
 labelFunc0422_074C:
-	case "離開" attend labelFunc0422_07A3:
-	UI_remove_answer("離開");
+	case "離隊" attend labelFunc0422_07A3:
+	UI_remove_answer("離隊");
 	message("「如果這真的是你想要的，我會離開。但如果你改變主意，請再次邀請我加入，我就會加入的。」");
 	say();
 	UI_remove_from_party(0xFFDE);

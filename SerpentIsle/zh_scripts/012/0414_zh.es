@@ -116,7 +116,7 @@ labelFunc0414_026B:
 labelFunc0414_027E:
 	case "Gwenno" attend labelFunc0414_0291:
 	UI_remove_answer("Gwenno");
-	message("「是的，她待在我們城市的時候，我曾簡短地見過她幾次。她在神學院花了很多時間。 Gwenno 對我們土地上的異國種族非常感興趣。」");
+	message("「是的，她待在我們城市的時候，我曾簡短地見過她幾次。她在魔法學院花了很多時間。 Gwenno 對我們土地上的異國種族非常感興趣。」");
 	say();
 labelFunc0414_0291:
 	case "巴特林" attend labelFunc0414_02AF:

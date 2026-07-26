@@ -58,7 +58,7 @@ labelFunc0614_00EC:
 labelFunc0614_010C:
 	if (!(var0000 == 0x0005)) goto labelFunc0614_012C;
 	UI_show_npc_face(var0002, 0x0000);
-	message("「當你獲得大行家( Great Hierophant )的三大神器：巨蛇之杖、巨蛇護甲和巨蛇皇冠時再回來。」");
+	message("「當你獲得大祭司( Great Hierophant )的三大神器：巨蛇之杖、巨蛇護甲和巨蛇皇冠時再回來。」");
 	say();
 	UI_remove_npc_face(var0002);
 	return;
@@ -72,7 +72,7 @@ labelFunc0614_012C:
 labelFunc0614_014C:
 	if (!(var0000 == 0x0007)) goto labelFunc0614_016C;
 	UI_show_npc_face(var0002, 0x0000);
-	message("「你處於平衡之中，同時掌握了混沌( Chaos )與秩序( Order )。我宣布你配得上佩戴平衡大行家( Great Hierophant of Balance )的徽記。」");
+	message("「你處於平衡之中，同時掌握了混沌( Chaos )與秩序( Order )。我宣布你配得上佩戴平衡大祭司( Great Hierophant of Balance )的徽記。」");
 	say();
 	UI_remove_npc_face(var0002);
 	return;

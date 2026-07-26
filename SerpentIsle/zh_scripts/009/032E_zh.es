@@ -266,7 +266,7 @@ labelFunc032E_07D4:
 	UI_show_npc_face0(0xFFE1, 0x0000);
 	message("「 Filbercio 從來不缺社交禮儀，");
 	message(var0000);
-	message("。要是他能像照顧情婦那樣來處理月影城( Moonshade )的問題就好了。說到這個……」");
+	message("。要是他能像照顧情婦那樣來處理月影城的問題就好了。說到這個……」");
 	say();
 	UI_show_npc_face1(0xFFEE, 0x0000);
 	message("「咳咳——！同樣在場的還有我迷人的晚餐伴侶 Frigidazzi 。她也是一名法師。」");

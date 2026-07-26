@@ -249,7 +249,7 @@ labelFunc04D5_0460:
 	say();
 	message("「在第二個幻象後， Xenka 說：『異世界的英雄必須拋開 ");
 	message(var0004);
-	message(" 偏見，跟隨友誼會( The Fellowship )的成員進入美麗的真理。』」");
+	message(" 偏見，跟隨友誼會的成員進入美麗的真理。』」");
 	say();
 	message("「在第三個幻象後， Xenka 說：『異世界的英雄需要一個小偷和一個吹牛者作為 ");
 	message(var0004);

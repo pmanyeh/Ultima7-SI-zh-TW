@@ -156,13 +156,13 @@ labelFunc0430_028D:
 	case "假先知" attend labelFunc0430_02C5:
 	UI_remove_answer("假先知");
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0430_02B6;
-	message("「但現在我太困惑了……是 Kylista 告訴我們友誼會( The Fellowship )是虛假的，但現在她卻被指控異端……」");
+	message("「但現在我太困惑了……是 Kylista 告訴我們友誼會是虛假的，但現在她卻被指控異端……」");
 	say();
-	message("「而友誼會( The Fellowship )又重新被允許在城裡公開出現！我不知道該怎麼想。」");
+	message("「而友誼會又重新被允許在城裡公開出現！我不知道該怎麼想。」");
 	say();
 	goto labelFunc0430_02C5;
 labelFunc0430_02B6:
-	message("「那是美之祭司( Priestess of Beauty )對他們的稱呼。他們談論一個叫做友誼會( The Fellowship )的組織，並宣稱它將使我們的生活完整。」");
+	message("「那是美之祭司( Priestess of Beauty )對他們的稱呼。他們談論一個叫做友誼會的組織，並宣稱它將使我們的生活完整。」");
 	say();
 	message("「每個人都知道，真正的道路在於追求『美』的道路。藉由追求『美』，我們能吸引一切美好的事物。」 *「我真懊悔那天見到了他！」");
 	say();
@@ -174,7 +174,7 @@ labelFunc0430_02C5:
 	UI_remove_answer("友誼會");
 labelFunc0430_02D8:
 	case "法師" attend labelFunc0430_02F6:
-	message("「我想他的同伴叫他巴特林( Batlin )。」 *「他對我所能提供的藥草非常失望。我讓他去月影城( Moonshade )找 Pothos，那裡有更多選擇。」");
+	message("「我想他的同伴叫他巴特林。」 *「他對我所能提供的藥草非常失望。我讓他去月影城( Moonshade )找 Pothos，那裡有更多選擇。」");
 	say();
 	message("「他也詢問了黑石雕刻或雕塑的事，我記不太清楚了。我讓他去問 Delin，他認識蒙利多城( Monitor )和月影城( Moonshade )的工匠。」");
 	say();
@@ -195,7 +195,7 @@ labelFunc0430_0316:
 	UI_remove_answer("買賣");
 labelFunc0430_0327:
 	case "Delin" attend labelFunc0430_0345:
-	message("「Delin 是幼鹿城( Fawn )的雜貨商，可憐的人。我祝巴特林( Batlin )能和他談上什麼的好運。」");
+	message("「Delin 是幼鹿城( Fawn )的雜貨商，可憐的人。我祝巴特林能和他談上什麼的好運。」");
 	say();
 	message("「Delin 自從妻子難產而死後就一直不太對勁了。他的女兒 Alyssand 一直照顧著他，儘管她現在也有自己的煩惱。」");
 	say();
@@ -228,7 +228,7 @@ labelFunc0430_03A8:
 	UI_remove_answer("戒指");
 labelFunc0430_03B2:
 	case "神諭" attend labelFunc0430_03CC:
-	message("「你不知道幼鹿城( Fawn )的神諭( Oracle )嗎？神諭( Oracle )是『美』在巨蛇之島( Serpent Isle )上的載體。它接收來自天界的訊息，由 Kylista 解釋給眾人聽。」");
+	message("「你不知道幼鹿城( Fawn )的神諭( Oracle )嗎？神諭( Oracle )是『美』在巨蛇之島上的載體。它接收來自天界的訊息，由 Kylista 解釋給眾人聽。」");
 	say();
 	UI_remove_answer("神諭");
 	UI_add_answer("Kylista");

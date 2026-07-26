@@ -52,13 +52,13 @@ labelFunc07FC_00A6:
 	if (!gflags[0x0173]) goto labelFunc07FC_00B4;
 	message("「嗯，我必須說我覺得他挺討人喜歡的。他盡忠職守，不會總是喋喋不休。」");
 	say();
-	message("「很難相信像杜普瑞(Dupre)這樣的好人會跟惡魔不列顛王勾結……」");
+	message("「很難相信像 Dupre 這樣的好人會跟惡魔不列顛勾結……」");
 	say();
 labelFunc07FC_00B4:
 	if (!gflags[0x0175]) goto labelFunc07FC_00C2;
 	message("「很難說。他不常說話，而且似乎總是匆匆忙忙的……」");
 	say();
-	message("「我說不出更多了。不過是個普通的無賴罷了。」");
+	message("「我沒想多說什麼了。不過就是個普通的無賴罷了。」");
 	say();
 labelFunc07FC_00C2:
 	goto labelFunc07FC_00C9;
@@ -73,9 +73,9 @@ labelFunc07FC_00C9:
 	message(var0001);
 	message("。我是個隊長，不是神學家。我覺得很難去相信我摸不到或聞不到的東西。」");
 	say();
-	message("「然而我們所有的傳說都在講述這頭野獸不列顛王，以及他對我們祖先犯下的罪行。」");
+	message("「然而我們所有的傳說都在講述這頭野獸不列顛，以及他對我們祖先犯下的罪行。」");
 	say();
-	message("「我想我也不知道該相信什麼——請原諒我，凱麗斯塔……」");
+	message("「我想…我也不知道該相信什麼——請原諒我，Kylista……」");
 	say();
 labelFunc07FC_00F7:
 	case "沒有問題" attend labelFunc07FC_011A:
@@ -149,7 +149,7 @@ labelFunc07FC_025C:
 	say();
 	message("「我們祖先的故事——關於那位名為不列顛王的惡魔國王，以及他以美德之名竊取的土地——都是千真萬確的。」");
 	say();
-	message("「最後，我對美麗女祭司有著絕對的信仰……無論她身在何處。她太美了，絕不會錯！」");
+	message("「最後，我對美之祭司有著絕對的信仰……無論她身在何處。她太美了，絕不會錯！」");
 	say();
 labelFunc07FC_0284:
 	case "沒有問題" attend labelFunc07FC_02A7:
@@ -194,7 +194,7 @@ labelFunc07FC_0366:
 	UI_add_answer("野蠻人");
 labelFunc07FC_0373:
 	if (!gflags[0x0155]) goto labelFunc07FC_0380;
-	UI_add_answer("關諾(Gwenno)");
+	UI_add_answer("Gwenno");
 labelFunc07FC_0380:
 	UI_add_answer("沒有問題");
 labelFunc07FC_0387:
@@ -220,12 +220,12 @@ labelFunc07FC_03CB:
 	say();
 	var0008 = Func0992(0x0001, "@難道沒有其他人問過同樣的事情嗎？@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
-	message("「的確，智者巴特林(Batlin)也對這些遺跡很好奇。」");
+	message("「的確，智者巴特林也對這些遺跡很好奇。」");
 	say();
 	UI_show_npc_face1(0xFFCF, 0x0000);
 	message("「看這些證據是如何將他定罪的！我告訴你，這個 ");
 	message(var0002);
-	message(" 是為巴特林工作的，而且兩人都是野獸不列顛王的工具！」");
+	message(" 是為巴特林工作的，而且兩人都是野獸不列顛的工具！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -235,16 +235,16 @@ labelFunc07FC_042B:
 	UI_add_answer("沒有其他問題了");
 	message("「我們確實談論過北方的野蠻人，我和 ");
 	message(var0002);
-	message(" 。他似乎對故事中最可怕的部分津津樂道。」");
+	message(" 。他似乎對故事中最可怕的部分…津津樂道。」");
 	say();
 	UI_show_npc_face1(0xFFC6, 0x0000);
-	message("「啊，可是詹登，你逢人就講那個故事。你不能因為一個人聽了你的故事就給他定罪……」");
+	message("「但…你逢人就講那個故事。你不能因為一個人聽了你的故事就給他定罪……」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc07FC_046A:
-	case "關諾(Gwenno)" attend labelFunc07FC_049B:
-	UI_remove_answer(["關諾(Gwenno)", "沒有問題"]);
+	case "Gwenno" attend labelFunc07FC_049B:
+	UI_remove_answer(["Gwenno", "沒有問題"]);
 	UI_add_answer("沒有其他問題了");
 	message("「是的，那位學者在這裡時我確實見過她。一位氣質優雅的好女士。」");
 	say();
@@ -253,7 +253,7 @@ labelFunc07FC_046A:
 	say();
 	goto labelFunc07FC_049B;
 labelFunc07FC_0497:
-	message("「但我看不出那位好女士與這次審判有任何關聯。」");
+	message("「但我看不出那位好女士，與這次審判有任何關聯。」");
 	say();
 labelFunc07FC_049B:
 	case "被告的品格" attend labelFunc07FC_052D:
@@ -277,17 +277,17 @@ labelFunc07FC_04EB:
 	message("。他酒喝得不多，似乎也不怎麼享受旅館裡的娛樂。」");
 	say();
 	UI_show_npc_face1(0xFFC3, 0x0000);
-	message("「詹登，沙米諾(Shamino)難道沒有正常男人的熱情嗎？」");
+	message("「Jendon，難道 Shamino 沒有尋常男子的七情六慾嗎？」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「也許吧。或者他只是被他的事業所驅使。沙米諾實在太嚴肅了。」");
+	message("「也許吧。或者他只是被他的事業所驅使。Shamino 實在太嚴肅了。」");
 	say();
 labelFunc07FC_0518:
 	if (!gflags[0x0173]) goto labelFunc07FC_0526;
-	message("「他的酒量勝過鎮上的任何人，而且我認為除了約文，他能打贏幾乎所有人！」");
+	message("「他的酒量勝過鎮上的任何人，而且我認為除了Jorvin，他能打贏幾乎所有人！」");
 	say();
-	message("「我必須承認，杜普瑞是個討人喜歡的人。很難相信他是野獸不列顛王的工具。」");
+	message("「我必須承認，Dupre 是個討人喜歡的人。很難相信他是野獸不列顛的工具。」");
 	say();
 labelFunc07FC_0526:
 	goto labelFunc07FC_052D;
@@ -302,7 +302,7 @@ labelFunc07FC_052D:
 	say();
 	message("「就算我不信——哎呀，我是個旅館老闆，");
 	message(var0001);
-	message("。為了我的生意，朋友，我可不敢反對美麗女祭司。」");
+	message("。為了我的生意，朋友，我可不敢反對美之祭司。」");
 	say();
 labelFunc07FC_0557:
 	case "沒有問題" attend labelFunc07FC_057A:
@@ -340,13 +340,13 @@ labelFunc07FC_05F6:
 	say();
 	UI_add_answer(["被告的品格", "惡魔崇拜"]);
 	if (!gflags[0x01AE]) goto labelFunc07FC_0630;
-	UI_add_answer("瓦羅葉(Varo Leaves)");
+	UI_add_answer("瓦羅葉");
 labelFunc07FC_0630:
 	UI_add_answer("沒有問題");
 labelFunc07FC_0637:
 	converse attend labelFunc07FC_0749;
-	case "瓦羅葉(Varo Leaves)" attend labelFunc07FC_06A2:
-	UI_remove_answer(["瓦羅葉(Varo Leaves)", "沒有問題"]);
+	case "瓦羅葉" attend labelFunc07FC_06A2:
+	UI_remove_answer(["瓦羅葉", "沒有問題"]);
 	UI_add_answer("沒有其他問題了");
 	message("「我確實提供了瓦羅葉給 ");
 	message(var0002);
@@ -355,7 +355,7 @@ labelFunc07FC_0637:
 	UI_show_npc_face1(0xFE9C, 0x0000);
 	message("「受詛咒的不是 ");
 	message(var0002);
-	message(" ，黛爾菲妮亞。是我，在監視鎮(Monitor)被一個陰險的女人下了毒。」");
+	message(" ，Delphynia。而是…我！我在蒙利多城(Monitor)被一個陰險的女人下了毒。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -385,7 +385,7 @@ labelFunc07FC_06D2:
 	say();
 	message("「他還試圖偷親我！」");
 	say();
-	message("「杜普瑞有顆邪惡的心。如果他是為惡魔服務，我也不會感到驚訝。」");
+	message("「Dupre 有顆邪惡的心。如果他是為惡魔服務，我也不會感到驚訝。」");
 	say();
 labelFunc07FC_06E4:
 	case "惡魔崇拜" attend labelFunc07FC_070C:
@@ -441,7 +441,7 @@ labelFunc07FC_07EC:
 	case "訂婚戒指" attend labelFunc07FC_085E:
 	UI_remove_answer(["訂婚戒指", "沒有問題"]);
 	UI_add_answer("沒有其他問題了");
-	message("「這就是亞歷珊在證詞裡說的——你的朋友把她的訂婚戒指還給了她。」");
+	message("「這就是 Alyssand 在證詞裡說的——你的朋友把她的訂婚戒指還給了她。」");
 	say();
 	message("「我說，他還真是個好人。他看起來是個好小伙子。他需要娶老婆嗎？」");
 	say();
@@ -462,7 +462,7 @@ labelFunc07FC_083B:
 labelFunc07FC_084F:
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「我知道女祭司擔心戒指是用魔法偷走的。但是風暴呢！它們每天都在偷東西。難道不能是風暴捲走了我女兒的戒指嗎？」");
+	message("「我知道，女祭司擔心戒指是用魔法偷走的。但…其實風暴！它們每天都在偷東西。難道不能是風暴捲走了我女兒的戒指嗎？」");
 	say();
 labelFunc07FC_085E:
 	case "被告的品格" attend labelFunc07FC_08A6:
@@ -471,7 +471,7 @@ labelFunc07FC_085E:
 	if (!gflags[0x0174]) goto labelFunc07FC_0888;
 	message("「現在我仔細看他，他看起來似乎配我女兒年紀太大了點。」");
 	say();
-	message("「當一個男人變老時，他就會開始失去理智。我可不希望我們家亞歷珊必須應付那種人……」");
+	message("「當一個男人變老時，他就會開始失去理智。我可不希望我們家 Alyssand 必須應付那種人……」");
 	say();
 labelFunc07FC_0888:
 	if (!gflags[0x0175]) goto labelFunc07FC_0892;
@@ -521,7 +521,7 @@ labelFunc07FC_0965:
 	if (!(var0000 == 0x002E)) goto labelFunc07FC_0B8F;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFC6, 0x0000);
-	message("「向葉琳達女士致敬，向神諭致敬，向……向大家致敬！」");
+	message("「向 Yelinda 女士致敬，向神諭致敬，向……向大家致敬！」");
 	say();
 	UI_show_npc_face1(0xFFCC, 0x0000);
 	message("「我怕他是喝醉了……」");
@@ -546,7 +546,7 @@ labelFunc07FC_09E7:
 	say();
 labelFunc07FC_09F1:
 	if (!gflags[0x0173]) goto labelFunc07FC_0A71;
-	message("「我愛死這個人了！杜普瑞，唱那首你教我的喝酒歌好嗎，就是關於所有年輕姑娘的那首？」");
+	message("「我愛死這個人了！Dupre，唱那首你教我的喝酒歌好嗎，就是關於所有年輕姑娘的那首？」");
 	say();
 	UI_show_npc_face1(0xFFC3, 0x0000);
 	message("「我不認為這樣妥當。」");
@@ -565,7 +565,7 @@ labelFunc07FC_09F1:
 	message("「把妳的腿翻過來，把妳的腿翻過來……」");
 	say();
 	UI_show_npc_face1(0xFFC3, 0x0000);
-	message("「老天啊，老兄！在葉琳達女士聽得見的地方？你難道不知羞恥嗎！」");
+	message("「老天啊，老兄！在 Yelinda 女士聽得見的地方？你難道不知羞恥嗎！」");
 	say();
 	Func097F(0xFFC6, "@別管我……@", 0x0000);
 	goto labelFunc07FC_0B2E;
@@ -635,18 +635,18 @@ labelFunc07FC_0B8F:
 	message(var0001);
 	message("，為了神諭。但不要考驗我的耐心。」");
 	say();
-	UI_add_answer(["被告的品格", "惡魔崇拜", "杜普瑞的話", "沒有問題"]);
+	UI_add_answer(["被告的品格", "惡魔崇拜", "Dupre的話", "沒有問題"]);
 labelFunc07FC_0BC4:
 	converse attend labelFunc07FC_0CC7;
-	case "杜普瑞的話" attend labelFunc07FC_0C1A:
-	UI_remove_answer(["杜普瑞的話", "沒有問題"]);
+	case "Dupre的話" attend labelFunc07FC_0C1A:
+	UI_remove_answer(["Dupre的話", "沒有問題"]);
 	UI_add_answer("沒有其他問題了");
 	message("「我不記得在我面前說過的每一句話，");
 	message(var0001);
 	message("。」");
 	say();
 	UI_show_npc_face1(Func08AC(true), 0x0000);
-	message("「這是我確切說過的話，女士——向不列顛王(Lord British)致敬，並向不列顛尼亞(Britannia)的榮耀致敬！」");
+	message("「這是我確切說過的話，女士——向不列顛王致敬，並向不列顛尼亞的榮耀致敬！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -673,9 +673,9 @@ labelFunc07FC_0C54:
 	case "惡魔崇拜" attend labelFunc07FC_0C7C:
 	UI_remove_answer(["惡魔崇拜", "沒有問題"]);
 	UI_add_answer("沒有其他問題了");
-	message("「毫無疑問，惡魔不列顛王是存在的。我看過前人留下來的紀錄。」");
+	message("「毫無疑問，惡魔不列顛是存在的。我看過前人留下來的紀錄。」");
 	say();
-	message("「野獸確實征服了整個索沙利亞(Sosaria)，並迫使方恩人逃入海中。多麼殘酷！」");
+	message("「野獸確實征服了整個索沙利亞(Sosaria)，並迫使幼鹿城人逃入海中。多麼殘酷！」");
 	say();
 	message("「我一直痛恨這頭野獸，而且將永遠痛恨！」");
 	say();
@@ -710,7 +710,7 @@ labelFunc07FC_0D29:
 	if (!(var0000 == 0x0033)) goto labelFunc07FC_0F15;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFC3, 0x0000);
-	message("「問你的問題吧，聖者。不過，我保留保持沉默的權利。畢竟，我是葉琳達女士機密事務的管理人。」");
+	message("「問你的問題吧，聖者。不過，我保留保持沉默的權利。畢竟，我是 Yelinda 女士機密事務的管理人。」");
 	say();
 	UI_add_answer(["被告的品格", "惡魔崇拜", "跟蹤我", "沒有問題"]);
 labelFunc07FC_0D58:
@@ -719,20 +719,20 @@ labelFunc07FC_0D58:
 	UI_remove_answer(["跟蹤我", "沒有問題"]);
 	UI_add_answer("沒有其他問題了");
 	if (!gflags[0x01B0]) goto labelFunc07FC_0D8A;
-	message("「正如我在本次訴訟稍早的庭期中所陳述的，");
+	message("「正如我在先前庭審中所言，");
 	message(var0002);
-	message(" 對我來說太敏銳了。不過，我確實看到他和德林的女兒商議，而她是一位眾所周知的兄弟會同情者！」");
+	message(" 實在太機警了。不過，我確實看見他正與 Delin 的女兒密談，而那女人可是眾所皆知的『友誼會』同情者！」");
 	say();
 	goto labelFunc07FC_0DF5;
 labelFunc07FC_0D8A:
-	message("「我不需要回答那個問題。這是國家安全的問題。」");
+	message("「我不需要回答那個問題。這是關乎城市安全的問題。」");
 	say();
 	var0003 = Func0956(["抗議", "接受"]);
 	if (!(var0003 == "抗議")) goto labelFunc07FC_0DC7;
 	message("「我不需要回答你的問題，叛徒！」");
 	say();
 	UI_show_npc_face1(0xFFC9, 0x0000);
-	message("「神諭必須聽取所有的事實，才能做出公平的決定。大法官，我允許你說出你的機密。」");
+	message("「神諭若要做出公正的裁決，就必須聽取所有的事實。總理，本座特許你吐露機密。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -747,15 +747,15 @@ labelFunc07FC_0DCE:
 	message(" 在這鎮上轉，直到他發現了我。毫無疑問，我阻止了他犯下大錯！」");
 	say();
 	UI_show_npc_face1(0xFFD0, 0x0000);
-	message("「但你並沒有親眼看到他真的做出任何邪惡的行為？」");
+	message("「但…你並沒有親眼看到，他真的做出任何邪惡的行為？」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「他聯絡了亞歷珊，夫人！我看到他們在交談，還朝我的方向投下許多狡猾的目光。」");
+	message("「他聯絡了 Alyssand，夫人！我看到他們在交談，還朝我的方向投下許多狡猾的目光。」");
 	say();
 labelFunc07FC_0DF5:
 	UI_show_npc_face1(0xFFD1, 0x0000);
-	message("「我女兒不是在這裡受審，大法官……」");
+	message("「總理，在這裡接受審判的可不是我的女兒……」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -772,7 +772,7 @@ labelFunc07FC_0E18:
 	say();
 labelFunc07FC_0E3E:
 	if (!gflags[0x0175]) goto labelFunc07FC_0E48;
-	message("「他有著專業劊子手那種冷酷的沉默。沙米諾從不笑。我覺得他令人不安……」");
+	message("「他有著專業劊子手那種冷酷的沉默。Shamino 從不笑。我覺得他令人不安……」");
 	say();
 labelFunc07FC_0E48:
 	if (!gflags[0x0173]) goto labelFunc07FC_0E52;
@@ -782,9 +782,9 @@ labelFunc07FC_0E52:
 	case "惡魔崇拜" attend labelFunc07FC_0E76:
 	UI_remove_answer(["惡魔崇拜", "沒有問題"]);
 	UI_add_answer("沒有其他問題了");
-	message("「一提到野獸不列顛王，難道你沒感覺到這神廟裡突然有一股寒意嗎？」");
+	message("「一提到野獸不列顛，難道你沒感覺到這神殿裡突然有一股寒意嗎？」");
 	say();
-	message("「我告訴你，惡魔是存在的，而他毀滅方恩的陰謀只能藉由神諭的正義來化解！」");
+	message("「我告訴你，惡魔是存在的，而他毀滅幼鹿城的陰謀只能藉由神諭的正義來化解！」");
 	say();
 labelFunc07FC_0E76:
 	case "沒有問題" attend labelFunc07FC_0E99:

@@ -10,7 +10,7 @@ void Func083A 0x83A (var var0000)
 
 	var0001 = Func09A0(0x0002, 0x0001);
 	UI_show_npc_face0(0xFFD8, 0x0000);
-	message("\"I'd advise ye ta hold fast an' keep a weather eye on that there horizon! We'll be runnin' afore the wind hard enough to splinter the mast as it is.\"");
+	message("「老子勸你們抓緊了，眼睛給我死死盯著海平線！光是現在順風狂飆的猛勁，就夠把桅桿給撞個粉碎了！」");
 	say();
 	UI_remove_npc_face0();
 	UI_set_item_flag(0xFE9C, 0x0011);

@@ -145,7 +145,7 @@ labelFunc0417_024E:
 	gflags[0x0143] = true;
 	goto labelFunc0417_028D;
 labelFunc0417_0289:
-	message("「我們這裡只收公會幣，陌生人。或許補給官 Bucia 可以幫你把那些沒用的硬幣換成月影城( Moonshade )的錢。」");
+	message("「我們這裡只收公會幣，陌生人。或許補給官 Bucia 可以幫你把那些沒用的硬幣換成月影城的錢。」");
 	say();
 labelFunc0417_028D:
 	goto labelFunc0417_0294;
@@ -172,7 +172,7 @@ labelFunc0417_02A5:
 	gflags[0x0143] = true;
 	goto labelFunc0417_02D8;
 labelFunc0417_02D4:
-	message("「我們這裡只收公會幣，陌生人。或許補給官 Bucia 可以幫你把那些沒用的硬幣換成月影城( Moonshade )的錢。」");
+	message("「我們這裡只收公會幣，陌生人。或許補給官 Bucia 可以幫你把那些沒用的硬幣換成月影城的錢。」");
 	say();
 labelFunc0417_02D8:
 	goto labelFunc0417_02DF;
@@ -186,13 +186,13 @@ labelFunc0417_02E3:
 	UI_remove_answer("姓名");
 	message("「這關你什麼事？你是誰，跑到我的城市來問東問西？」");
 	say();
-	message("「如果你非要知道，我是 Julia ，遊俠的首領。如果你敢在月影城( Moonshade )惹麻煩，我會看著你被送進地牢！」");
+	message("「如果你非要知道，我是 Julia ，遊俠的首領。如果你敢在月影城惹麻煩，我會看著你被送進地牢！」");
 	say();
 	UI_add_answer(["遊俠", "月影城", "地牢"]);
 labelFunc0417_030A:
 	case "遊俠" attend labelFunc0417_032E:
 	UI_remove_answer("遊俠");
-	message("「我們是月影城( Moonshade )的守護者。法師之城一直以來都是由遊俠來保護的。」");
+	message("「我們是月影城的守護者。法師之城一直以來都是由遊俠來保護的。」");
 	say();
 	message("「這個傳統可以追溯到古老的月之城(City of Moon)，那是我們祖先的家園。」");
 	say();
@@ -211,20 +211,20 @@ labelFunc0417_0345:
 	say();
 	message("「在很久以前，有一個名為 Sosaria 的和平土地。這是一個擁有多個王國和文化的土地，一個個體的天堂。」");
 	say();
-	message("「但時代變了。一個名為 British 的暴君推翻了王國，並自立為王。」");
+	message("「但時代變了。一個名為『不列顛』的暴君推翻了王國，並自立為王。」");
 	say();
 	var000A = false;
 	var000B = [];
 	if (!Func0942(0xFFFF)) goto labelFunc0417_0386;
-	var000A = Func0992(0xFFFF, "@她指的是\r\n\t\t\t\t\t\t\t\t\t\t不列顛王！@", 0x0000, false);
+	var000A = Func0992(0xFFFF, "@她指的是…不列顛王！@", 0x0000, false);
 	goto labelFunc0417_03BB;
 labelFunc0417_0386:
 	if (!Func0942(0xFFFE)) goto labelFunc0417_03A2;
-	var000A = Func0992(0xFFFE, "@她指的是\r\n\t\t\t\t\t\t\t\t\t\t\t不列顛王！@", 0x0000, false);
+	var000A = Func0992(0xFFFE, "@她指的是…不列顛王！@", 0x0000, false);
 	goto labelFunc0417_03BB;
 labelFunc0417_03A2:
 	if (!Func0942(0xFFFD)) goto labelFunc0417_03BB;
-	var000A = Func0992(0xFFFD, "@她指的是\r\n\t\t\t\t\t\t\t\t\t\t\t\t不列顛王！@", 0x0000, false);
+	var000A = Func0992(0xFFFD, "@她指的是…不列顛王！@", 0x0000, false);
 labelFunc0417_03BB:
 	var000B = (var000B & ["@我侍奉不列顛王！@", "什麼都不說"]);
 	if (!(var000A != 0x0000)) goto labelFunc0417_03F1;
@@ -240,16 +240,16 @@ labelFunc0417_0414:
 	message("「沒必要這麼粗俗。惡魔之王已經死了很多個世紀了。現在沒有人侍奉他了。」");
 	say();
 labelFunc0417_0422:
-	message("「惡魔 British 對他的子民強加了一種極端的理念制度，如果他們不屈服，就迫使他們流亡。」");
+	message("「惡魔不列顛對他的子民強加了一種極端的理念制度，如果他們不屈服，就迫使他們流亡。」");
 	say();
 	message("「法師和遊俠被一種被稱為『誠實的誓言』的荒唐事所束縛！」");
 	say();
-	var000A = Func0992(0xFFFE, "@但『誠實』有什麼\r\n\t\t\t\t\t\t\t\t\t不對嗎？@", 0x0000, false);
+	var000A = Func0992(0xFFFE, "@但『誠實』有什麼…不對嗎？@", 0x0000, false);
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	message("「沒有什麼比毫不退讓的誠實更殘酷的了。它會粉碎人心、灌輸不安全感，並引發內亂。」");
 	say();
-	message("「因此，我們的祖先逃離了那片被 British 征服的土地上的月之城，並航行直到他們找到了這片土地。」");
+	message("「因此，我們的祖先，逃離了那片被惡魔不列顛征服的土地上的月之城，並航行直到他們找到了這片土地。」");
 	say();
 labelFunc0417_044D:
 	case "月影城" attend labelFunc0417_0475:
@@ -280,29 +280,29 @@ labelFunc0417_0493:
 labelFunc0417_04B7:
 	case "Pothos" attend labelFunc0417_04CE:
 	UI_remove_answer("Pothos");
-	message("「Pothos 是月影城( Moonshade )這裡的藥劑師。他能告訴你施展魔法所需的一切東西。」");
+	message("「Pothos 是月影城這裡的藥劑師。他能告訴你施展魔法所需的一切東西。」");
 	say();
 	message("「我聽說風暴嚴重影響了他的補給，但他應該能幫你。或者至少他可能比較有時間應付你……我是個大忙人！」");
 	say();
 labelFunc0417_04CE:
 	case "Fedabiblio" attend labelFunc0417_04E5:
 	UI_remove_answer("Fedabiblio");
-	message("「Fedabiblio 是月影城( Moonshade )這裡的新手導師。他那可悲的職責就是試圖把那些惡棍變成法師！」");
+	message("「Fedabiblio 是月影城這裡的新手導師。他那可悲的職責就是試圖把那些惡棍變成法師！」");
 	say();
 	message("「如果他沒空理你，也許他可以讓你在魔法圖書館裡滿足你的好奇心。」");
 	say();
 labelFunc0417_04E5:
 	case "巫術" attend labelFunc0417_0509:
 	UI_remove_answer("巫術");
-	message("「在月影城( Moonshade )，巫術是非法的，但這並不代表某些法師沒有在暗中修煉這種黑暗技藝。」");
+	message("「在月影城，巫術是非法的，但這並不代表某些法師沒有在暗中修煉這種黑暗技藝。」");
 	say();
-	message("「魔法本身無善無惡，但巫術——因為它會用到 Bloodspawn ——完全沒有任何好意圖。只要你擁有 Stoneheart ，就會被扔進地牢最深處。」");
+	message("「魔法本身無善無惡，但巫術——因為它會用到 血菌絲 ——完全沒有任何好意圖。只要你擁有石心( Stoneheart )，就會被扔進地牢最深處。」");
 	say();
-	UI_add_answer(["Bloodspawn", "Stoneheart"]);
+	UI_add_answer(["血菌絲", "Stoneheart"]);
 labelFunc0417_0509:
-	case "Bloodspawn" attend labelFunc0417_0524:
-	UI_remove_answer("Bloodspawn");
-	message("「你不知道 Bloodspawn ？很好！」");
+	case "血菌絲" attend labelFunc0417_0524:
+	UI_remove_answer("血菌絲");
+	message("「你不知道 血菌絲 ？很好！」");
 	say();
 	message("「你知道的越少，惹的麻煩就越少！」");
 	say();
@@ -319,7 +319,7 @@ labelFunc0417_0524:
 	message("「哎呀，你還真敏感！我沒有惡意……只是你連這裡的常識都不知道。」");
 	say();
 labelFunc0417_055C:
-	message("「Stoneheart 是用來產生 Bloodspawn 的礦石。我不知道它是怎麼做的。我又不是法師。」");
+	message("「石心是用來產生血菌絲的礦石。我不知道它是怎麼做的。我又不是法師。」");
 	say();
 	message("「而且我建議你，在問問題的時候要非常小心對象……免得你發現自己被扔進了地牢。」");
 	say();
@@ -330,7 +330,7 @@ labelFunc0417_0564:
 	say();
 	message("「從來沒有人能從那個陰暗潮濕的深淵中活著回來。」");
 	say();
-	UI_add_answer(["領主法師", "違法者", "Freedom"]);
+	UI_add_answer(["領主法師", "違法者", "自由山脈"]);
 labelFunc0417_058B:
 	case "領主法師" attend labelFunc0417_05C6:
 	UI_remove_answer("領主法師");
@@ -366,7 +366,7 @@ labelFunc0417_0601:
 	UI_remove_answer("法規");
 	message("「去了解它們不是我的工作。那是法師議會要執行的事。」");
 	say();
-	message("「簡而言之，除非得到議會的批准，否則你不能擁有 Bloodspawn 。而且如果你想進行任何研究，你也必須向議會報告。」");
+	message("「簡而言之，除非得到議會的批准，否則你不能擁有 血菌絲 。而且如果你想進行任何研究，你也必須向議會報告。」");
 	say();
 	UI_add_answer(["批准", "議會"]);
 labelFunc0417_0625:
@@ -379,13 +379,13 @@ labelFunc0417_0625:
 labelFunc0417_063C:
 	case "議會" attend labelFunc0417_0653:
 	UI_remove_answer("議會");
-	message("「議會由領主法師和另外兩名法師組成。他們代表了月影城( Moonshade )所有法師的聲音，除非召開了所有法師的法定投票……」");
+	message("「議會由領主法師和另外兩名法師組成。他們代表了月影城所有法師的聲音，除非召開了所有法師的法定投票……」");
 	say();
 	message("「這通常是在選舉新的議會成員，或是新的領主法師時。」");
 	say();
 labelFunc0417_0653:
-	case "Freedom" attend labelFunc0417_066E:
-	UI_remove_answer("Freedom");
+	case "自由山脈" attend labelFunc0417_066E:
+	UI_remove_answer("自由山脈");
 	message("「哈！如果這不是個天大的笑話，我就沒聽過笑話了！」");
 	say();
 	message("「從那些山裡挖出來的唯一東西，就是在它還是礦場時挖出的礦石！」");
@@ -511,7 +511,7 @@ labelFunc0417_082C:
 	UI_remove_answer("瘋狂法師");
 	message("「你沒聽說過瘋狂法師嗎？！」");
 	say();
-	message("「他的真名叫 Erstam 。他住在遠離月影城( Moonshade )的一個小島上。他曾經是法師們的導師……在他發瘋之前。」");
+	message("「他的真名叫 Erstam 。他住在遠離月影城的一個小島上。他曾經是法師們的導師……在他發瘋之前。」");
 	say();
 labelFunc0417_0843:
 	case "實驗" attend labelFunc0417_085E:
@@ -570,7 +570,7 @@ labelFunc0417_08F2:
 labelFunc0417_0909:
 	case "法師" attend labelFunc0417_0924:
 	UI_remove_answer("法師");
-	message("「我記得他的名字叫 巴特林( Batlin ) 。在月影城( Moonshade )四處打探了好一陣子，問問題和買法術。」");
+	message("「我記得他的名字叫巴特林。在月影城四處打探了好一陣子，問問題和買法術。」");
 	say();
 	message("「我聽說他身上有引起 Celennia 興趣的東西——雖然我永遠不知道那是什麼，但他可不是她喜歡的類型。而且不管那是什麼，都讓 Frigidazzi 氣瘋了！」");
 	say();

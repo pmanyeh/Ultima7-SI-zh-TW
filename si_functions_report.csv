@@ -6,17 +6,17 @@ Function,String Count,Total Characters,Translated,NPC/Event
 00D2H,1,11,Yes,無需翻譯
 00D7H,1,11,Yes,無需翻譯
 00E1H,1,11,Yes,無需翻譯
-00E4H,229,1407,Yes,完成翻譯
-00E6H,143,968,Yes,Frigidazzi
+00E4H,229,1407,Yes,蒙利多城長槍兵通用對話、公牛塔守衛盤查、Hawk贖金談判與戰鬥訓練/切磋選單
+00E6H,143,968,Yes,Frigidazzi 閨房劇情（夜晚邀約、激情之舞、送黑皮斗篷與床戲對話）
 00F3H,1,11,Yes,無需翻譯
 00F6H,1,11,Yes,無需翻譯
 00F9H,77,477,Yes,完成翻譯
-00FAH,19,269,Yes,N完成翻譯
+00FAH,19,269,Yes,僧侶島鳴鐘事件與武僧浮動台詞（時機已到、女先知降臨等）
 00FBH,3,72,Yes,完成翻譯
 0102H,2,29,Yes,完成翻譯
-0103H,286,8122,Yes,Ernesto
+0103H,286,8122,Yes,月影城遊俠通用對話、副指揮官 Ernesto 對話（釀酒機、法師禁制令、惡魔與裝備）
 0105H,2,63,Yes,完成翻譯
-0109H,33,314,Yes,enka (他的)
+0109H,33,314,Yes,僧侶島 Xenka 歸來儀式與 Karnax、Thoxa 阻攔對話
 010EH,2,33,Yes,完成翻譯
 0112H,13,157,Yes,完成翻譯
 011CH,7,104,Yes,完成翻譯
@@ -251,7 +251,7 @@ Function,String Count,Total Characters,Translated,NPC/Event
 041EH,277,1784,Yes,Rocco (@Petra ，拿酒來！@)
 041FH,124,758,Yes,Rotoluncia (@女巫死了！@)
 0420H,289,1339,Yes,Topo (@打擾一下……@)
-0421H,294,13913,Yes,Torrissio (@能談談嗎？@)
+0421H,294,13913,Yes,Torrissio（月影城傲慢法師）的對話——買賣法術、政治手腕、靈魂封印秘術、風流鬼魔杖等支線。漏譯的三處英文台詞已補譯完成。
 0422H,135,1241,Yes,Boydon (@咳咳……@)
 0423H,277,7816,Yes,Erstam (「終於，一生的勞力終於大功告成...)
 0424H,158,1168,Yes,Vasel Erstam (@等一下，好兄弟。@)

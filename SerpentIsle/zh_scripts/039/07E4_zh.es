@@ -57,7 +57,7 @@ labelFunc07E4_0205:
 	if (!(var0001 == 0x0006)) goto labelFunc07E4_027E;
 	UI_set_barge_dir(var0002, 0x0002);
 	UI_show_npc_face0(0xFFD8, 0x0000);
-	message("\"Reef the sails an' hang on! There be one of those damned storms a bearin' down on us! Heavens help us!\"");
+	message("「收帆！給老子抓緊了！那該死的鬼暴風雨朝我們砸過來了！老天爺保佑啊！」");
 	say();
 	UI_remove_npc_face0();
 	UI_play_music(0x0016, var0000);

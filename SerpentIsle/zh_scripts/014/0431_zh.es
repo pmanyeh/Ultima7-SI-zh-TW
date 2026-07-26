@@ -272,25 +272,25 @@ labelFunc0431_03E1:
 	message("「黛爾菲妮亞( Delphynia )是個園藝師。」 ~「她對藥草的了解使她成為 Seth 被殺後唯一合理的治療師人選。」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0431_040E;
-	message("「自從夫人允許那些友誼會( The Fellowship )的敗類回到城裡後，她最近似乎開心多了。」");
+	message("「自從夫人允許那些友誼會的敗類回到城裡後，她最近似乎開心多了。」");
 	say();
 	message("「她怎麼能忍受 Ruggs 那傢伙？他是如此地醜陋……」");
 	say();
 	goto labelFunc0431_041F;
 labelFunc0431_040E:
-	message("「自從 Kylista 安排將友誼會( The Fellowship )的水手驅逐出城後，黛爾菲妮亞( Delphynia )就一直很傷心。」 ~「她無法決定是否慶幸 Ruggs 離開了。可憐的女士。」");
+	message("「自從 Kylista 安排將友誼會的水手驅逐出城後，黛爾菲妮亞( Delphynia )就一直很傷心。」 ~「她無法決定是否慶幸 Ruggs 離開了。可憐的女士。」");
 	say();
 	UI_add_answer(["友誼會水手", "Ruggs"]);
 labelFunc0431_041F:
 	case "友誼會水手" attend labelFunc0431_0436:
-	message("「他們很久以前就航行來了。我們以前從沒見過他們那樣的船。」 ~「後來他們其中一人證明自己是個有魅力的領袖，他雄辯地講述了一種叫做友誼會( The Fellowship )的新信仰。」 ~「它吸引了很多人，特別是女人。」");
+	message("「他們很久以前就航行來了。我們以前從沒見過他們那樣的船。」 ~「後來他們其中一人證明自己是個有魅力的領袖，他雄辯地講述了一種叫做友誼會的新信仰。」 ~「它吸引了很多人，特別是女人。」");
 	say();
 	message("「我告訴你，Kylista 非常生氣。」 ~「所以她把風暴歸咎於陌生人，並把他們趕出了城。她現在還讓每個人為他們對『美』的罪過贖罪。」 ~「她說直到平息了上天的憤怒，風暴才會停止。我不認為她知道它們何時會停止，或者是否會停止。」");
 	say();
 	UI_remove_answer("友誼會水手");
 labelFunc0431_0436:
 	case "Ruggs" attend labelFunc0431_0449:
-	message("「Ruggs 是其中一位友誼會( The Fellowship )水手。」 ~「他是個好人，認為黛爾菲妮亞( Delphynia )就像天上的星星一樣美好。」 ~「唯一的問題是他奇醜無比。」 *「Ruggs 的臉能讓牛奶變酸！但他是個溫和的人。」");
+	message("「Ruggs 是其中一位友誼會水手。」 ~「他是個好人，認為黛爾菲妮亞( Delphynia )就像天上的星星一樣美好。」 ~「唯一的問題是他奇醜無比。」 *「Ruggs 的臉能讓牛奶變酸！但他是個溫和的人。」");
 	say();
 	UI_remove_answer("Ruggs");
 labelFunc0431_0449:

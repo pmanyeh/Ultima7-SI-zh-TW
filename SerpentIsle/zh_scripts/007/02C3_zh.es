@@ -28,7 +28,7 @@ labelFunc02C3_00A9:
 	UI_play_sound_effect2(0x005E, item);
 	UI_book_mode(item);
 	if (!(var0000 == 0x0000)) goto labelFunc02C3_00C7;
-	message("來自大教主（Great Hierophant）的辦公桌。");
+	message("來自大祭司（Great Hierophant）的辦公桌。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_00C7:
@@ -48,7 +48,7 @@ labelFunc02C3_00E8:
 	if (!(var0000 == 0x0002)) goto labelFunc02C3_00FD;
 	message("沉思（MUSINGS），由建築師伊西克（Issik the Architect）所著~~");
 	say();
-	message("  日出島（Sunrise Isle）被雪覆蓋的表面完全荒蕪。沒有生命能在表面長久生存。大教主（Great Hierophant）下令禁止進入表面，認為這太危險了，這確實是一件好事。");
+	message("  日出島（Sunrise Isle）被雪覆蓋的表面完全荒蕪。沒有生命能在表面長久生存。大祭司（Great Hierophant）下令禁止進入表面，認為這太危險了，這確實是一件好事。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_00FD:
@@ -224,7 +224,7 @@ labelFunc02C3_02FC:
 	say();
 	message("平衡——來自混沌和秩序的兩種力量的結合，產生了原則。寬容和道德結合形成和諧（Harmony），即與自我、個人和世界和平相處的能力。熱情和紀律的結合產生了奉獻（Dedication），即讓人能夠克服障礙並領導他人的能力。最後，情感被邏輯調和結果產生理性（Rationality），即理解生活和理解我們周圍世界的能力。混沌和秩序的力量必須永遠保持平衡，因為不平衡會導致災難。見證今天我們這個飽受戰爭蹂躪的世界！正如你一定能看到的，我的世界因為無視平衡——我們最親愛的公理——而被撕裂！如果你在一個不那麼暴力的時代繁榮發展，我只能懇求你幫助恢復巨蛇之島（Serpent Isle）的平衡！我必須在這裡結束這簡短的解釋，因為我能聽到攻擊者在樓下敲打橡木門。");
 	say();
-	message("我祝願你和你的世界比我自己有更好的運氣。——大教主西斯諾斯（Ssithnos, the Great Hierophant）");
+	message("我祝願你和你的世界比我自己有更好的運氣。——大祭司西斯諾斯（Ssithnos, the Great Hierophant）");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0321:

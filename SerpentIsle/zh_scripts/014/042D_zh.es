@@ -95,7 +95,7 @@ labelFunc042D_01D2:
 	UI_show_npc_face0(0xFFD3, 0x0000);
 	if (!UI_get_item_flag(0xFFD3, 0x0006)) goto labelFunc042D_0213;
 	UI_set_schedule_type(0xFFD3, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc042D_021A;
 labelFunc042D_0213:
 	UI_run_schedule(0xFFD3);
@@ -106,7 +106,7 @@ labelFunc042D_021A:
 	goto labelFunc042D_0250;
 labelFunc042D_023F:
 	UI_set_schedule_type(0xFFD3, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 labelFunc042D_0250:
 	if (!((gflags[0x01E2] || gflags[0x01E3]) && (gflags[0x0016] && UI_get_cont_items(0xFFD3, 0xFE99, 0xFE99, 0xFE99)))) goto labelFunc042D_0276;
 	UI_add_answer("歸還我的物品");
@@ -156,7 +156,7 @@ labelFunc042D_02EB:
 	UI_add_to_party(0xFFD3);
 	gflags[0x0016] = true;
 	UI_set_item_flag(0xFFD3, 0x001D);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	gflags[0x01E1] = true;
 	goto labelFunc042D_0331;
 labelFunc042D_032D:
@@ -232,10 +232,10 @@ labelFunc042D_0409:
 	UI_add_to_party(0xFFD3);
 	gflags[0x0016] = true;
 	UI_set_item_flag(0xFFD3, 0x001D);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 labelFunc042D_0429:
-	case "離開" attend labelFunc042D_04DB:
-	UI_remove_answer("離開");
+	case "離隊" attend labelFunc042D_04DB:
+	UI_remove_answer("離隊");
 	message("「什麼！你把我當成什麼隨便的女人了嗎，隨便找個藉口就想把我拋棄？我不同意離開。」");
 	say();
 	var000A = Func0956(["堅持", "讓步"]);

@@ -66,7 +66,7 @@ labelFunc0401_010D:
 	UI_clear_item_say(0xFFFF);
 	if (!UI_get_item_flag(0xFFFF, 0x0006)) goto labelFunc0401_0147;
 	UI_set_schedule_type(0xFFFF, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc0401_0155;
 labelFunc0401_0147:
 	UI_run_schedule(0xFFFF);
@@ -94,7 +94,7 @@ labelFunc0401_019E:
 	UI_add_to_party(0xFFFF);
 	gflags[0x0017] = true;
 	UI_remove_answer("加入");
-	UI_add_answer(["離開"]);
+	UI_add_answer(["離隊"]);
 	goto labelFunc0401_027A;
 labelFunc0401_01C7:
 	if (!(gflags[0x0006] && (!gflags[0x00B7]))) goto labelFunc0401_0235;
@@ -115,7 +115,7 @@ labelFunc0401_01C7:
 labelFunc0401_0207:
 	UI_add_to_party(0xFFFF);
 	UI_remove_answer("加入");
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	UI_set_new_schedules(0xFFFF, 0x0000, 0x001A, [0x097C, 0x0464]);
 	goto labelFunc0401_027A;
 labelFunc0401_0235:
@@ -183,7 +183,7 @@ labelFunc0401_0341:
 labelFunc0401_0380:
 	UI_remove_answer("加入");
 	if (!(UI_get_array_size(UI_get_party_list2()) < 0x0005)) goto labelFunc0401_03AF;
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	message("「這是我的榮幸！」");
 	say();
 	UI_add_to_party(0xFFFF);
@@ -199,8 +199,8 @@ labelFunc0401_03AF:
 	message("。」");
 	say();
 labelFunc0401_03C3:
-	case "離開" attend labelFunc0401_03FB:
-	UI_remove_answer("離開");
+	case "離隊" attend labelFunc0401_03FB:
+	UI_remove_answer("離隊");
 	if (!(!gflags[0x0006])) goto labelFunc0401_03E0;
 	message("「在這種時候離開你？你肯定在開玩笑。前進！」");
 	say();

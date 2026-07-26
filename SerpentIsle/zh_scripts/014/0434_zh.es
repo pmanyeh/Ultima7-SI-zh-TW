@@ -355,7 +355,7 @@ labelFunc0434_0577:
 	say();
 	goto labelFunc0434_05A8;
 labelFunc0434_05A4:
-	message("「但當那些水手開始散播友誼會( The Fellowship )的廢話時，Kylista 做得對，下令把他們那些傳染病趕出城牆外。」");
+	message("「但當那些水手開始散播友誼會的廢話時，Kylista 做得對，下令把他們那些傳染病趕出城牆外。」");
 	say();
 labelFunc0434_05A8:
 	var0003 = Func09AE(var0003);
@@ -393,7 +393,7 @@ labelFunc0434_05FE:
 labelFunc0434_061D:
 	case "學者" attend labelFunc0434_0654:
 	UI_remove_answer("學者");
-	message("「是搭船來的。說友誼會( The Fellowship )派他們來這裡研究我們的生活方式——繪製地圖、收集歷史等等。」");
+	message("「是搭船來的。說友誼會派他們來這裡研究我們的生活方式——繪製地圖、收集歷史等等。」");
 	say();
 	message("「Scots 是地圖學家。把他所有的時間都花在繪製新的大陸地圖上。」");
 	say();

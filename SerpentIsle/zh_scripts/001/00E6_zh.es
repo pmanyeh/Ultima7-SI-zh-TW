@@ -93,9 +93,9 @@ labelFunc00E6_0116:
 	UI_set_npc_id(0xFFEC, 0x0010);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0002);
-	message("「我想我愛上你了，");
+	message("「我想我深深愛上你了，");
 	message(var0003);
-	message("！沒有你，我怎麼能活下去……」");
+	message("！沒有你，我該怎麼活下去……」");
 	say();
 	UI_end_conversation();
 	Func097F(item, "@再吻我一次，愛人……@", 0x0000);
@@ -153,7 +153,7 @@ labelFunc00E6_039E:
 	UI_clear_item_say(0xFFEC);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0002);
-	message("「沒有凡人能夠抵抗激情之舞！告訴我，你的熱血是否已沸騰至狂亂！」");
+	message("「沒有凡人能抵擋得了激情之舞！告訴我，你的血液是否已經沸騰狂亂！」");
 	say();
 	if (!Func0955()) goto labelFunc00E6_0444;
 	UI_end_conversation();
@@ -164,7 +164,7 @@ labelFunc00E6_039E:
 	abort;
 	goto labelFunc00E6_0469;
 labelFunc00E6_0444:
-	message("「不，你不明白。正如我所說，沒有凡人能夠抵抗激情之舞……」");
+	message("「不，你不懂。就像我說的，根本沒有凡人能抵擋得了這激情之舞……」");
 	say();
 	UI_end_conversation();
 	var000E = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x52, "@糟了……@"]);
@@ -202,9 +202,9 @@ labelFunc00E6_0619:
 	0xFFEC->Func07D1();
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0002);
-	message("「當心，");
+	message("「看好了，");
 	message(var0003);
-	message("！我即將開始激情之舞，沒有凡人能夠抵抗！」");
+	message("！我即將跳起激情之舞，這可是凡人絕無法抗拒的魔力！」");
 	say();
 	UI_end_conversation();
 	var0013 = Func09A0(0x0000, 0x0001);
@@ -229,13 +229,13 @@ labelFunc00E6_0746:
 	UI_set_npc_id(0xFFEC, 0x0006);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0000);
-	message("「既然我已嚐過你的唇，我想我對你的迷戀更深了！」");
+	message("「既然我已經親吻過你，我想我對你更加無法自拔了！」");
 	say();
-	message("「奇怪——你進來時這裡還是那麼冷，但現在我感到突然暖了起來……」");
+	message("「真是奇妙——你剛進來時這裡還如此冰冷，現在我卻突然覺得周圍全身溫暖了起來……」");
 	say();
-	message("「我好幾個月沒有這樣充滿活力的感覺了！也許……我不知道該如何開口，但……」");
+	message("「我已經好幾個月沒有這種煥發熱情與活力的感覺了！也許……我真不知該怎麼說，但是……」");
 	say();
-	message("「你渴望得到我嗎，聖者？」");
+	message("「你渴望擁有我嗎，聖者？」");
 	say();
 	var000E = ["是", "否", "那 Filbercio 怎麼辦？"];
 	if (!UI_is_pc_female()) goto labelFunc00E6_079C;
@@ -243,9 +243,9 @@ labelFunc00E6_0746:
 labelFunc00E6_079C:
 	var000F = Func0956(var000E);
 	if (!(var000F == "那 Filbercio 怎麼辦？")) goto labelFunc00E6_07F6;
-	message("「法師領主( MageLord )？哦，當我們兩個都在這裡，越來越親密時，你怎麼還想著他……」");
+	message("「法師領主( MageLord )？噢，在我們靠得這麼近、如此貼心的這一刻，你怎麼還管得著他……」");
 	say();
-	message("「也許這個能引起你的興趣！」");
+	message("「也許這個能激起你的興趣！」");
 	say();
 	UI_end_conversation();
 	UI_si_path_run_usecode(0xFFEC, [0x097B, 0x0743, 0x0000], 0x000D, item, [0x00E6, 0x0000], false);
@@ -253,7 +253,7 @@ labelFunc00E6_079C:
 	abort;
 labelFunc00E6_07F6:
 	if (!(var000F == "是")) goto labelFunc00E6_0846;
-	message("「那就看好了，我的愛人……」");
+	message("「那就盡情看吧，我的心上人……」");
 	say();
 	UI_end_conversation();
 	UI_si_path_run_usecode(0xFFEC, [0x097B, 0x0743, 0x0000], 0x000D, item, [0x00E6, 0x0000], false);
@@ -262,7 +262,7 @@ labelFunc00E6_07F6:
 	goto labelFunc00E6_0912;
 labelFunc00E6_0846:
 	if (!(var000F == "否")) goto labelFunc00E6_08A2;
-	message("「哦……這真是太讓我難堪了！」");
+	message("「噢……這可真是太令人尷尬難堪了！」");
 	say();
 	UI_end_conversation();
 	var000E = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x68, (byte)0x27, 0x0002, (byte)0x59, 0x0000, (byte)0x52, "@我真想一頭鑽進地縫……@", (byte)0x27, 0x0006, (byte)0x55, 0x00E6, 0x0000, (byte)0x27, 0x0004, (byte)0x59, 0x0002, (byte)0x59, 0x0004]);
@@ -270,7 +270,7 @@ labelFunc00E6_0846:
 	abort;
 	goto labelFunc00E6_0912;
 labelFunc00E6_08A2:
-	message("「我是否察覺到一絲不以為然？好吧，我不需要忍受任何人這樣！」");
+	message("「我是不是在你眼中看到了一絲鄙視？哼，我可沒必要忍受任何人對我這種態度！」");
 	say();
 	UI_end_conversation();
 	0xFFEC->Func07D1();
@@ -285,17 +285,17 @@ labelFunc00E6_0912:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0000);
 	if (!UI_is_pc_female()) goto labelFunc00E6_0946;
-	message("「坦白說，你有一種非比尋常的……性感魅力。我對你這個女人最為傾心。」");
+	message("「坦白說，你身上有一種非同尋常的……迷人魅力。我深深被你吸引。」");
 	say();
 	goto labelFunc00E6_094A;
 labelFunc00E6_0946:
-	message("「知道你是法師，卻又見你如此陽剛——這在月影城( Moonshade )中實屬罕見！」");
+	message("「看你身為法師，卻又如此具備雄性陽剛之氣——這在月影城可真是罕見至極！」");
 	say();
 labelFunc00E6_094A:
-	message("「你是來學法術的，但我能教你一些真正的魔法……」");
+	message("「你是來向我學習法術的，但我能教你的，可是真正的魔力……」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc00E6_095A;
-	message("「被你那強健的臂膀擁入懷中，我願意為此獻身！」");
+	message("「只要能被你那強健的雙臂緊緊擁入懷中，我甘願為此付出一切！」");
 	say();
 labelFunc00E6_095A:
 	message("「你願意吻我嗎，");
@@ -322,7 +322,7 @@ labelFunc00E6_09DF:
 	UI_set_npc_id(0xFFEC, 0x0011);
 	goto labelFunc00E6_0A9B;
 labelFunc00E6_0A57:
-	message("「你讓我失望了。我本來希望你能更接受這一切……」");
+	message("「你真讓我太失望了。我本來還期待你能更懂得享受這一切呢……」");
 	say();
 	UI_end_conversation();
 	UI_set_npc_id(0xFFEC, 0x0011);
@@ -341,19 +341,19 @@ labelFunc00E6_0A9C:
 labelFunc00E6_0AEB:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0000);
-	message("「我在你身邊感到如此自在。感覺我們好像以前就認識——也許是在某個其他的存在中？」");
+	message("「待在你身邊讓我感到格外自在放鬆。總覺得我們彷彿很久以前就認識——也許是在前世的某個夢境中？」");
 	say();
-	message("「不必跟我這麼正式，");
+	message("「不必對我這麼拘謹，");
 	message(var0003);
-	message("。請來這裡陪我坐在水池旁。」");
+	message("。過來陪我一起坐在水池邊吧。」");
 	say();
 	var000F = Func0956(["是", "否", "關於那些法術……"]);
 	if (!(var000F == "關於那些法術……")) goto labelFunc00E6_0C03;
-	message("「你為何如此急躁？在月影城( Moonshade )，我們懂得將享樂與正事融合。」");
+	message("「你急什麼呢？在月影城，我們向來懂得把享受樂趣與談論正事完美融為一體。」");
 	say();
-	message("「我相信在討論法術的事情之前，我們還有時間更深入地了解彼此。」");
+	message("「我相信在切入正題探討法術前，我們還有充裕的時間好好深入瞭解彼此。」");
 	say();
-	message("「你應該學會放鬆。」");
+	message("「放輕鬆點嘛。」");
 	say();
 	UI_end_conversation();
 	var0009 = UI_get_object_position(0xFE9C);
@@ -374,7 +374,7 @@ labelFunc00E6_0C03:
 	var000E = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x2B, 0x0002, (byte)0x27, 0x0004, (byte)0x55, 0x07D2, (byte)0x27, 0x0004, (byte)0x55, 0x00E6, 0x0000]);
 	goto labelFunc00E6_0D4A;
 labelFunc00E6_0C72:
-	message("「啊，你真是太害羞了！也許我可以用一個小小的法術來鼓勵你加入我……」");
+	message("「哎呀，你可真是害羞！看來我得施一個小小的魔法，來好提醒你該如何加入了……」");
 	say();
 	UI_end_conversation();
 	var0009 = UI_get_object_position(0xFE9C);
@@ -394,7 +394,7 @@ labelFunc00E6_0D4B:
 	UI_set_npc_id(0xFFEC, 0x0003);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0000);
-	message("「我很高興你來這裡見我，親愛的聖者。我覺得陌生人……」");
+	message("「我真高興你願意今晚來見我，親愛的聖者。不知為何，陌生人總是……」");
 	say();
 	UI_end_conversation();
 	var000E = UI_find_nearby(item, 0x011D, 0x0005, 0x0000);
@@ -424,7 +424,7 @@ labelFunc00E6_0E45:
 	UI_clear_item_flag(0xFFEB, 0x0001);
 	Func097F(0xFFEB, "@Tar gorlfog!@", 0x0003);
 	if (!((var000C < 0x000F) && ((!UI_npc_nearby(0xFFFD)) && ((!UI_npc_nearby(0xFFFF)) && ((!UI_npc_nearby(0xFFFE)) && (!UI_npc_nearby(0xFFDE))))))) goto labelFunc00E6_0F06;
-	message("「我很高興你答應在此與我相會。」");
+	message("「真高興你今晚如約前來與我相會。」");
 	say();
 	UI_play_music(0x001F, Func09A0(0x0005, 0x0001));
 	UI_set_npc_id(0xFFEC, 0x0001);
@@ -435,13 +435,13 @@ labelFunc00E6_0E45:
 	goto labelFunc00E6_1170;
 labelFunc00E6_0F06:
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0001)) goto labelFunc00E6_1062;
-	message("「你來了！我無法言說見到你是多麼高興，");
+	message("「你終於來了！我簡直無法用言語形容見到你有多高興，");
 	message(var0003);
 	message("。」");
 	say();
-	message("「但關於法術的事，必須私下談。只有法師才能聽到我即將透露的秘密。」");
+	message("「不過關於法術的事，我們必須私下單獨談。我即將透露的奧秘，只有法師才有資格聽聞。」");
 	say();
-	message("「你能請你的隨從離開嗎？」");
+	message("「能請你的同伴們先到外面避一下嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc00E6_104E;
 	UI_set_item_flag(0xFE9C, 0x0010);

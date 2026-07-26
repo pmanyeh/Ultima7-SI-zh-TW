@@ -134,7 +134,7 @@ labelFunc041B_02B0:
 	if (!(gflags[0x00EA] && (!UI_get_item_flag(0xFFE1, 0x0004)))) goto labelFunc041B_02C9;
 	UI_add_answer("綁架");
 labelFunc041B_02C9:
-	UI_add_answer(["bye"]);
+	UI_add_answer(["告辭"]);
 labelFunc041B_02D3:
 	converse attend labelFunc041B_06C4;
 	case "綁架" attend labelFunc041B_02F6:
@@ -343,7 +343,7 @@ labelFunc041B_0657:
 	var0003 = Func099B(0xFE9C, 0x0001, 0x01FA, 0xFE99, 0xFE99, 0x0000, true);
 	gflags[0x00E1] = true;
 labelFunc041B_068F:
-	case "bye" attend labelFunc041B_06C1:
+	case "告辭" attend labelFunc041B_06C1:
 	UI_remove_npc_face0();
 	Func097F(0xFE9C, "@謝謝你的幫助。@", 0x0000);
 	Func097F(0xFFE5, (("@永別了， " + var0000) + "。@"), 0x0005);

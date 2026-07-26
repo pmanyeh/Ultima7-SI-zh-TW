@@ -108,7 +108,7 @@ labelFunc040E_01CE:
 labelFunc040E_01DE:
 	case "女巫" attend labelFunc040E_0201:
 	UI_remove_answer("女巫");
-	message("「也許你會對法術感興趣。來自巨蛇之島( Serpent Isle )各地的陌生旅人，來到這裡向我學習法術。但這當然是在傳送風暴發生之前的事了。」");
+	message("「也許你會對法術感興趣。來自巨蛇之島各地的陌生旅人，來到這裡向我學習法術。但這當然是在傳送風暴發生之前的事了。」");
 	say();
 	UI_add_answer(["購買法術", "陌生旅人", "傳送風暴"]);
 labelFunc040E_0201:
@@ -134,7 +134,7 @@ labelFunc040E_024D:
 labelFunc040E_0258:
 	case "陌生旅人" attend labelFunc040E_0278:
 	UI_remove_answer("陌生旅人");
-	message("「幾週前，一位名叫 Gwenno 的女士經過了月影城( Moonshade )，而最近則是一位名叫『巴特林( Batlin )』的智者。」");
+	message("「幾週前，一位名叫 Gwenno 的女士經過了月影城( Moonshade )，而最近則是一位名叫『巴特林』的智者。」");
 	say();
 	UI_add_answer(["Gwenno", "巴特林"]);
 labelFunc040E_0278:

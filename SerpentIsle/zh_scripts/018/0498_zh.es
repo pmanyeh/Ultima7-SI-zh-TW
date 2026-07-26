@@ -31,7 +31,7 @@ labelFunc0498_004F:
 	message("「我們必須趕往巨蛇之門( Serpent Gate )！」");
 	say();
 	UI_set_schedule_type(0xFF68, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc0498_00F0;
 	goto labelFunc0498_0097;
 labelFunc0498_0090:
@@ -178,8 +178,8 @@ labelFunc0498_02DC:
 	say();
 	UI_pop_answers();
 labelFunc0498_02F3:
-	case "離開" attend labelFunc0498_0306:
-	UI_remove_answer("離開");
+	case "離隊" attend labelFunc0498_0306:
+	UI_remove_answer("離隊");
 	message("「哦，但我現在不能讓你離開！我已發誓要帶你去找大祭司的安息之所，我不會讓你失望的。」");
 	say();
 labelFunc0498_0306:

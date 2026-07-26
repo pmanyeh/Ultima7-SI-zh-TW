@@ -429,15 +429,15 @@ labelFunc042E_06ED:
 labelFunc042E_0712:
 	message("「大業勝利了， ");
 	message(var0003);
-	message("！Yelinda 夫人結束了對友誼會( The Fellowship )的放逐。大船長們顏面掃地，而且 Yelinda 夫人現在親自掌管政權了。」");
+	message("！Yelinda 夫人結束了對友誼會的放逐。大船長們顏面掃地，而且 Yelinda 夫人現在親自掌管政權了。」");
 	say();
 	message("「如果我有任何能為你效勞的地方，回到幼鹿城( Fawn )來，我會協助你的。」");
 	say();
 	if (!gflags[0x01B4]) goto labelFunc042E_072D;
-	UI_add_answer("吻我。");
+	UI_add_answer("吻我");
 labelFunc042E_072D:
-	case "吻我。" attend labelFunc042E_074E:
-	UI_remove_answer("吻我。");
+	case "吻我" attend labelFunc042E_074E:
+	UI_remove_answer("吻我");
 	message("「嗯， ");
 	message(var0003);
 	message("……當我說我愛你的時候，那只是一時的軟弱……」");
@@ -541,13 +541,13 @@ labelFunc042E_089A:
 	case "Leon" attend labelFunc042E_0907:
 	message("「你沒聽過 Leon 演講嗎？哦，你應該去聽聽！」");
 	say();
-	message("「他講述了一種奇妙的東西，在裡面所有人都是平等的，並且有能力獨立思考。那東西叫做友誼會( The Fellowship )。」");
+	message("「他講述了一種奇妙的東西，在裡面所有人都是平等的，並且有能力獨立思考。那東西叫做友誼會。」");
 	say();
 	message("「你可以在城門外的營地找到他。」");
 	say();
 	var000E = Func0992(0x0001, 0x0000, 0x0000, false);
 	if (!((var000E == 0xFFFD) || ((var000E == 0xFFFF) || (var000E == 0xFFFE)))) goto labelFunc042E_08F9;
-	var000B = ("@我原以為我們已經擺脫了那個禍害。" & "@但看來它正步上巴特林( Batlin )的後塵。@");
+	var000B = ("@我原以為我們已經擺脫了那個禍害。" & "@但看來它正步上巴特林的後塵。@");
 	var000E = Func0992(var000E, var000B, 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 labelFunc042E_08F9:

@@ -144,7 +144,7 @@ labelFunc0403_01D4:
 	say();
 	UI_remove_npc_face1();
 	UI_show_npc_face1(0xFFFF, 0x0000);
-	message("「我也希望盡快找到巴特林( Batlin )那傢伙！」");
+	message("「我也希望盡快找到巴特林那傢伙！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -154,7 +154,7 @@ labelFunc0403_01D4:
 	say();
 	UI_remove_npc_face0();
 	Func097F(0xFFFE, "@我們在哪裡？@", 0x0005);
-	Func097F(0xFFFF, "@我們去找巴特林( Batlin )那傢伙吧！@", 0x000F);
+	Func097F(0xFFFF, "@我們去找巴特林那傢伙吧！@", 0x000F);
 	Func097F(0xFFFD, "@別忘了 Gwenno ……@", 0x0023);
 	UI_add_to_party(0xFFFD);
 	UI_add_to_party(0xFFFF);
@@ -204,7 +204,7 @@ labelFunc0403_0351:
 	UI_show_npc_face0(0xFFFD, 0x0000);
 	if (!UI_get_item_flag(0xFFFD, 0x0006)) goto labelFunc0403_037C;
 	UI_set_schedule_type(0xFFFD, 0x001F);
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc0403_038A;
 labelFunc0403_037C:
 	UI_run_schedule(0xFFFD);
@@ -233,7 +233,7 @@ labelFunc0403_03CB:
 	UI_set_npc_id(0xFFFD, 0x0000);
 	UI_add_to_party(0xFFFD);
 	gflags[0x0019] = true;
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	goto labelFunc0403_0409;
 labelFunc0403_03F8:
 	message("「你想閒聊一下嗎，");
@@ -327,7 +327,7 @@ labelFunc0403_060E:
 labelFunc0403_061B:
 	UI_remove_answer("加入");
 	if (!(UI_get_array_size(UI_get_party_list2()) < 0x0005)) goto labelFunc0403_0650;
-	UI_add_answer("離開");
+	UI_add_answer("離隊");
 	message("「和你一起旅行總是一場冒險，");
 	message(var0002);
 	message("！我很榮幸能陪伴你。」");
@@ -343,8 +343,8 @@ labelFunc0403_0650:
 	message("「我想或許我應該留在原地……」");
 	say();
 labelFunc0403_065E:
-	case "離開" attend labelFunc0403_07BB:
-	UI_remove_answer("離開");
+	case "離隊" attend labelFunc0403_07BB:
+	UI_remove_answer("離隊");
 	if (!(!gflags[0x0006])) goto labelFunc0403_067B;
 	message("「我很感激你對一個老人的關心，老朋友。然而，我們才剛開始這場冒險，我還夠敏捷，能跟上你的腳步！」");
 	say();

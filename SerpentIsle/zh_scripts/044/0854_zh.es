@@ -210,7 +210,7 @@ labelFunc0854_0310:
 	say();
 labelFunc0854_0324:
 	if (!(var000F == 0x0003)) goto labelFunc0854_0338;
-	message("「我可能是個自動機器人，但我不是傻瓜！低於 ");
+	message("「我可能是個魔導人偶，但我不是傻瓜！低於 ");
 	message(var0004);
 	message(" 吉爾得幣我是不會接受的。」");
 	say();

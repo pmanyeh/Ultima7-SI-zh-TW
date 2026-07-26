@@ -46,7 +46,7 @@ void Func041F object#(0x41F) ()
 	UI_reduce_health(0xFFE1, 0x0032, 0x0000);
 	var0003 = Func0992(0x0001, 0x0000, 0x0000, true);
 	Func097F(var0003, "@女巫死了！@", 0x0005);
-	message("「在我臨死前，我要將紅衣女巫(Red Witch)的詛咒降在你身上！」");
+	message("「在我臨死前，我要將紅女巫的詛咒降在你身上！」");
 	say();
 	message("「呃啊……」");
 	say();
@@ -64,7 +64,7 @@ labelFunc041F_00BD:
 	say();
 	message("「或者你願意告訴我我渴望的秘密，也就是控制惡魔(Daemons)的關鍵！！！」");
 	say();
-	var0003 = Func0992(0x0001, "@但我們對石像鬼(gargoyles)一無所知……呃，惡魔(Daemons)。@", "@但我對惡魔(Daemons)一無所知……@", false);
+	var0003 = Func0992(0x0001, "@但我們對石像鬼一無所知……呃，惡魔…。@", "@但我對惡魔一無所知……@", false);
 	UI_set_conversation_slot(0x0000);
 	message("「那你去死吧，騙子。」");
 	say();
@@ -192,7 +192,7 @@ labelFunc041F_03AF:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「誰說的！嘲笑紅衣女巫(Red Witch) Rotoluncia 的人死期將至。」");
+	message("「誰說的！嘲笑紅女巫 Rotoluncia 的人死期將至。」");
 	say();
 labelFunc041F_0448:
 	UI_add_answer(["魔法", "議會", "不害怕", "告辭"]);
@@ -215,7 +215,7 @@ labelFunc041F_045B:
 	var0003 = Func095B(var000E[0x0001]);
 	message("「你的話太多了，");
 	message(var0003);
-	message(".\"");
+	message("。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -228,7 +228,7 @@ labelFunc041F_04D0:
 labelFunc041F_04DC:
 	case "議會" attend labelFunc041F_04F7:
 	UI_remove_answer("議會");
-	message("「所以我的僕人告訴你我在法師議會？也許我該把他拆了來治治他那張大嘴巴……」");
+	message("「所以我的僕人告訴你…我在法師議會？也許我該把他拆了，來治治他那張大嘴巴……」");
 	say();
 	message("「沒錯，我是統治這座城市的三人之一，另外還有老朽的 Gustacio ，以及那個意志薄弱的放蕩傢伙 Filbercio 。」");
 	say();
@@ -261,9 +261,9 @@ labelFunc041F_055C:
 	var000C = true;
 labelFunc041F_056A:
 	case "告辭" attend labelFunc041F_065F:
-	message("「別急著走！你應該知道我見過你的盟友了，那個又胖又令人討厭、名叫 巴特林( Batlin ) 的智者……」");
+	message("「別急著走！你應該知道我見過你的盟友了，那個又胖又令人討厭、名叫巴特林的智者……」");
 	say();
-	message("「他和一個名叫 Palos 的惡魔(Daemon)同行。 巴特林( Batlin ) 是從哪裡獲得這種力量的？如果我有這種力量，我就能統治巨蛇之島( Serpent Isle )！」");
+	message("「他和一個名叫 Palos 的惡魔(Daemon)同行。巴特林是從哪裡獲得這種力量的？如果我有這種力量，我就能統治巨蛇之島！」");
 	say();
 	message("「向我揭示控制惡魔的秘密，我將用你無法理解的力量獎勵你。」");
 	say();

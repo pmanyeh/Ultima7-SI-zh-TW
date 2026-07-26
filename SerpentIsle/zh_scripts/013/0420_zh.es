@@ -124,13 +124,13 @@ labelFunc0420_01FA:
 	message("「是的，師傅……」");
 	say();
 labelFunc0420_0233:
-	message("「我負責陶器。自動機器人們很難處理泥漿……它們通常在陶器完全成型並準備燒製之前就會把它弄碎。燒製之後它們就沒問題了，但在那之前——那就是我的工作。」");
+	message("「我負責陶器。魔導人偶們很難處理泥漿……它們通常在陶器完全成型並準備燒製之前就會把它弄碎。燒製之後它們就沒問題了，但在那之前——那就是我的工作。」");
 	say();
 	UI_add_answer(["魔導人偶", "泥漿", "燒製"]);
 labelFunc0420_0247:
 	case "魔導人偶" attend labelFunc0420_0275:
 	UI_remove_answer("魔導人偶");
-	message("「我師傅是月影城( Moonshade )裡最富有的凡夫俗子(Mundanes)之一。當然，跟法師們沒得比。我們有三個自動機器人——一個負責縫紉，一個負責打鐵，還有一個負責烘焙。」");
+	message("「我師傅是月影城( Moonshade )裡最富有的凡夫俗子(Mundanes)之一。當然，跟法師們沒得比。我們有三個魔導人偶——一個負責縫紉，一個負責打鐵，還有一個負責烘焙。」");
 	say();
 	if (!(!Func0942(0xFFF1))) goto labelFunc0420_0268;
 	message("「這就是我師傅真正的專長……讓所有其他人替他工作！」");
@@ -148,13 +148,13 @@ labelFunc0420_0275:
 	message("「除非你是我師傅！」");
 	say();
 labelFunc0420_029C:
-	message("「一個低微的凡夫俗子唯一能指望的，就是買得起 Torrissio 製造的自動機器人，來幫忙分擔工作。」");
+	message("「一個低微的凡夫俗子唯一能指望的，就是買得起 Torrissio 製造的魔導人偶，來幫忙分擔工作。」");
 	say();
 	UI_add_answer("Torrissio");
 labelFunc0420_02A7:
 	case "Torrissio" attend labelFunc0420_0301:
 	UI_remove_answer("Torrissio");
-	message("「Torrissio 是製造自動機器人的行家(Adept)。沒有人知道他是怎麼做到的……」");
+	message("「Torrissio 是製造魔導人偶的高階法師(Adept)。沒有人知道他是怎麼做到的……」");
 	say();
 	if (!Func0942(0xFFF1)) goto labelFunc0420_02F6;
 	UI_show_npc_face1(0xFFF1, 0x0000);
@@ -171,12 +171,12 @@ labelFunc0420_02A7:
 	message("「是的，師傅……」");
 	say();
 labelFunc0420_02F6:
-	message("「雖然 Torrissio 製造的大多數自動機器人都非常實用，但他有能力製造更複雜的型號……你只要看看 Petra 就知道了。」");
+	message("「雖然 Torrissio 製造的大多數魔導人偶都非常實用，但他有能力製造更複雜的型號……你只要看看 Petra 就知道了。」");
 	say();
-	UI_add_answer("行家");
+	UI_add_answer("高階法師");
 labelFunc0420_0301:
-	case "行家" attend labelFunc0420_0327:
-	UI_remove_answer("行家");
+	case "高階法師" attend labelFunc0420_0327:
+	UI_remove_answer("高階法師");
 	message("「那些被賦予魔法能力的人並不都是平等的，");
 	message(var0000);
 	message("。有些人，像 Andrio ，是還在學習手藝的新手。而有些人，像 Stefano ，即使學了也幾乎沒有什麼力量可以施展。」");
@@ -274,7 +274,7 @@ labelFunc0420_045B:
 labelFunc0420_048F:
 	message("「如果我曾經相信過變形，那我在 Ducio 身上相信了！那個男人太懶了，不可能是人類……也許是鼻涕蟲。但絕對不是人類。」");
 	say();
-	message("「如果不是有我和自動機器人，他早就得加入老 Mosh 的行列出去乞討了！」");
+	message("「如果不是有我和魔導人偶，他早就得加入老 Mosh 的行列出去乞討了！」");
 	say();
 	UI_add_answer("Mosh");
 labelFunc0420_049E:
@@ -327,7 +327,7 @@ labelFunc0420_0534:
 labelFunc0420_0547:
 	case "Petra" attend labelFunc0420_055E:
 	UI_remove_answer("Petra");
-	message("「Petra 是一個自動機器人。她是 Torrissio 的傑作……她看起來和真實的女人一模一樣，只是是金屬做的。她非常了不起。」");
+	message("「Petra 是一個魔導人偶。她是 Torrissio 的傑作……她看起來和真實的女人一模一樣，只是是金屬做的。她非常了不起。」");
 	say();
 	message("「Petra 照顧 Rocco ，並為旅館煮飯。事實上，她提供附近最好的烤魚。你有時間應該嚐嚐看。」");
 	say();
@@ -349,12 +349,12 @@ labelFunc0420_0592:
 	say();
 	message("「現在看看裡面。你看到裝滿這個骨灰甕的骨灰了嗎？」");
 	say();
-	message("「你帶著的是蒙利多城( Monitor )監視鎮(蒙利多城( Monitor ))的一位好市民的骨灰。」");
+	message("「你帶著的是蒙利多城( Monitor )中一位好市民的骨灰。」");
 	say();
 	gflags[0x028E] = true;
-	Func094E(0xFFF1, "@他們會想要回來的。監視鎮(Monitor)的人非常尊敬死者。@");
+	Func094E(0xFFF1, "@他們會想要回來的。蒙利多城(Monitor)的人非常尊敬死者。@");
 	UI_set_conversation_slot(0x0000);
-	UI_add_answer("監視鎮");
+	UI_add_answer("蒙利多城");
 	goto labelFunc0420_05EC;
 labelFunc0420_05D1:
 	var0006 = Func0992(0xFFFD, "@但我們沒有帶在身上……@", "@我沒帶在身上。@", false);
@@ -362,11 +362,11 @@ labelFunc0420_05D1:
 	message("「把它帶來，我就會給你答案。」");
 	say();
 labelFunc0420_05EC:
-	case "監視鎮" attend labelFunc0420_0633:
-	UI_remove_answer("監視鎮");
+	case "蒙利多城" attend labelFunc0420_0633:
+	UI_remove_answer("蒙利多城");
 	message("「我從沒離開過月影城( Moonshade )，");
 	message(var0000);
-	message("，所以我對它了解不多。我聽說監視鎮(蒙利多城( Monitor ))所有的市民都是強大的戰士。雖然這對我來說聽起來有點奇怪。」");
+	message("，所以我對它了解不多。我聽說蒙利多城( Monitor )有的市民都是強大的戰士。雖然這對我來說聽起來有點奇怪。」");
 	say();
 	message("「你能想像如果你和一個店主對他的商品價格有不同意見會發生什麼事嗎？哎呀，你可能會死得很慘！或者至少受重傷……」");
 	say();
@@ -436,7 +436,7 @@ labelFunc0420_06FE:
 labelFunc0420_0719:
 	case "Mortegro" attend labelFunc0420_0730:
 	UI_remove_answer("Mortegro");
-	message("「Mortegro 是一個專精於死亡領域的行家。他有點令人毛骨悚然，但如果那真的是骨頭，他一定能明確地告訴你。」");
+	message("「Mortegro 是一個專精於死亡領域的高階法師。他有點令人毛骨悚然，但如果那真的是骨頭，他一定能明確地告訴你。」");
 	say();
 	message("「我最後一次聽說， Mortegro 正在幫助 Gustacio 進行某種天氣實驗。你可以在那裡或藍野豬找到他。」");
 	say();
