@@ -94,7 +94,7 @@ labelFunc0427_013F:
 	UI_add_answer("Gorlab 沼澤");
 labelFunc0427_0159:
 	case "Gorlab 沼澤" attend labelFunc0427_0179:
-	message("「很久以前——甚至在蛇人將這片土地作為家園之前——一位名叫 Rabindrinath 的巫師發誓要摧毀和平的 Gorlab 鎮。但鎮上的治療師 Siranush 反對他，於是那邪惡的法術出現了偏差。*鎮上的居民並沒有被摧毀，而是被困在夢境的領域中……還有那個瘋狂的巫師……以及任何敢於踏入 Gorlab 範圍的人。」");
+	message("「很久以前——甚至在蛇神教徒將這片土地作為家園之前——一位名叫 Rabindrinath 的巫師發誓要摧毀和平的 Gorlab 鎮。但鎮上的治療師 Siranush 反對他，於是那邪惡的法術出現了偏差。*鎮上的居民並沒有被摧毀，而是被困在夢境的領域中……還有那個瘋狂的巫師……以及任何敢於踏入 Gorlab 範圍的人。」");
 	say();
 	UI_remove_answer("Gorlab 沼澤");
 	UI_add_answer(["Rabindrinath", "Siranush"]);

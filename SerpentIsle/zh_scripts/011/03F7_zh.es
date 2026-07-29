@@ -132,7 +132,7 @@ labelFunc03F7_01F5:
 labelFunc03F7_0225:
 	message("「我不明白你的同伴在說什麼，");
 	message(var0000);
-	message("。我無意冒犯，但我從未聽說過@聖者@這號人物。");
+	message("。我無意冒犯，但我從未聽過『聖者』這號人物。");
 	say();
 	message("「但若你能讓我看看他們所說的護身符，也許我現在就能結束這番盤問。」");
 	say();
@@ -201,7 +201,7 @@ labelFunc03F7_0305:
 labelFunc03F7_033A:
 	if (!Func0942(0xFFFE)) goto labelFunc03F7_0360;
 	UI_show_npc_face1(0xFFFE, 0x0000);
-	message("「我懷疑這沒有你想的那麼容易。你面對的可不是普通的戰士……");
+	message("「我懷疑這沒有你想的那麼容易。你面對的可不是普通的戰士…」");
 	say();
 	message("「你所質問的，可是聖者！」");
 	say();
@@ -253,34 +253,34 @@ labelFunc03F7_042A:
 	say();
 	message("「一支充滿如 Isstanar 這般戰士的軍隊，怎可能無法輕易邁向勝利？這場該死的戰爭很快就會結束，而我將退休，投身研究的生活。");
 	say();
-	message("「誰知道呢，也許有一天——一旦我確信自己仍能使用魔法——我將做出最終的犧牲，成為如 Isstanar 般的存在。」");
+	message("「誰知道呢，也許有一天…一旦我確信自己仍能使用魔法，我將做出最終的犧牲，成為如 Isstanar 般的存在。」");
 	say();
 	UI_add_answer(["這怎麼可能？", "最終的犧牲"]);
 labelFunc03F7_0452:
 	case "這怎麼可能？" attend labelFunc03F7_0469:
 	UI_remove_answer("這怎麼可能？");
-	message("「哦，不！就算我知道這是如何做到的——而我並不知道——我也不會告訴你！");
+	message("「哦，不！就算我知道這是如何做到的——而我並不知道——我也不會告訴你！」");
 	say();
 	message("「我的榮譽比這更重要！我決不讓人說我背叛了秩序！」");
 	say();
 labelFunc03F7_0469:
 	case "最終的犧牲" attend labelFunc03F7_0480:
 	UI_remove_answer("最終的犧牲");
-	message("「捨棄肉體的需求與欲望，這還不夠嗎？");
+	message("「捨棄肉體的需求與欲望，這還不夠嗎？」");
 	say();
 	message("「我所知道的，不超過我告訴你的那些。我尚未達到那個境界。」");
 	say();
 labelFunc03F7_0480:
 	case "刀槍不入" attend labelFunc03F7_0497:
 	UI_remove_answer("刀槍不入");
-	message("「 Isstanar 已超脫了肉體的束縛。留下來的，只有他如鐵的意志和他精密的邏輯( Logic )之心。");
+	message("「 Isstanar 已超脫了肉體的束縛。留下來的，只有他如鐵的意志和他精密的邏輯之心。」");
 	say();
 	message("「沒有任何事物能使他分心於職責。他不恐懼，不憂慮。與我們這裡其他人不同，他不受無聊或不耐煩的侵擾。他就是……存在著。」");
 	say();
 labelFunc03F7_0497:
 	case "混沌間諜" attend labelFunc03F7_04B7:
 	UI_remove_answer("混沌間諜");
-	message("「眾所周知，自從最高指揮部啟用了我們的秘密武器後，戰局已然扭轉。混沌方面會不惜一切來探知如何抵消我們的優勢。」");
+	message("「眾所周知，自從最高指揮部啟用了我們的秘密武器後，戰局已然扭轉。混沌方面會不惜一切，來探知如何抵消我們的優勢。」");
 	say();
 	UI_add_answer(["秘密武器", "抵消優勢"]);
 labelFunc03F7_04B7:
@@ -296,11 +296,11 @@ labelFunc03F7_04CA:
 labelFunc03F7_04DD:
 	case "一階法師" attend labelFunc03F7_0503:
 	UI_remove_answer("一階法師");
-	message("「你總能從一位法師的等階高低看出其品質……你能從老遠聞到他的優越氣息！");
+	message("「你總能從一位法師的等階高低看出其品質……你能從老遠聞到其優越氣息！」");
 	say();
-	message("「但我不該這樣開玩笑……你是個陌生人，可能會誤解我。說真的，法師的等階反映了他的能力。");
+	message("「但我不該這樣開玩笑……你是個陌生人，可能會誤解我。說真的，法師的等階反映了其能力。」");
 	say();
-	message("「一階法師精通所有法術。二階法師精通次一等級的法術，以此類推。");
+	message("「一階法師精通所有法術。二階法師精通次一等級的法術，以此類推。」");
 	say();
 	message("「雖然我們的頭銜不同，但我與副指揮官 Tsandar 的等階相同。」");
 	say();
@@ -308,7 +308,7 @@ labelFunc03F7_04DD:
 labelFunc03F7_0503:
 	case "副指揮官 Tsandar" attend labelFunc03F7_0521:
 	UI_remove_answer("副指揮官 Tsandar");
-	message("「 Tsandar 現在是 Isstanar 的副官，雖然他在 Ardiniss 指揮官陣亡後曾指揮過這座要塞。 Tsandar 對自己被取代這件事接受得不太好，我擔心。");
+	message("「 Tsandar 現在是 Isstanar 的副官，雖然他在 Ardiniss 指揮官陣亡後曾指揮過這座要塞。 Tsandar 對自己被取代這件事接受得不太好，我擔心。」");
 	say();
 	message("「 Tsandar 對秩序的忠誠無庸置疑。但如今 Isstanar 已在這裡，他又怎能奢望繼續指揮呢？」");
 	say();
@@ -318,17 +318,17 @@ labelFunc03F7_0521:
 	UI_remove_answer("Ardiniss 指揮官");
 	message("「 Ardiniss 是個老人，");
 	message(var0000);
-	message("。是他創建了這座要塞。他是秩序的忠誠僕人，但他未能像應有的那樣維持紀律。");
+	message("。是他創建了這座要塞。他是秩序的忠誠僕人，但他未能像應有的那樣維持紀律。」");
 	say();
 	message("「幸好，在任何人能質疑其指揮的嚴格性之前，他便於一場戰鬥中光榮地清白陣亡了。」");
 	say();
 labelFunc03F7_053E:
 	case "效勞" attend labelFunc03F7_05C2:
 	UI_remove_answer("效勞");
-	message("「這些天我實在沒什麼事做。我不知道自己是渴望回到前線，還是只是嚮往被調往別處。待在這座幾乎廢棄的要塞裡，實在令人消沉。");
+	message("「這些天我實在沒什麼事做。我不知道自己是渴望回到前線，還是只是嚮往被調往別處。待在這座幾乎廢棄的要塞裡，實在令人消沉。」");
 	say();
 	if (!gflags[0x00DB]) goto labelFunc03F7_05AD;
-	message("「我能看出你是個法師，雖然我看不出等階。如果你願意，我可以教你幾個法術……當然，需要收取一點費用。");
+	message("「我能看出你是個法師，雖然我看不出等階。如果你願意，我可以教你幾個法術……當然，需要收取一點費用。」");
 	say();
 	message("「或者，如果你不需要法術，也許我可以訓練你使用魔法……自然也要收取一點費用。這也能幫我打發時間。」");
 	say();

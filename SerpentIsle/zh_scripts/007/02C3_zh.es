@@ -197,7 +197,7 @@ labelFunc02C3_02AC:
 	goto labelFunc02C3_043B;
 labelFunc02C3_02C5:
 	if (!(var0000 == 0x004B)) goto labelFunc02C3_02DA;
-	message("~這裡躺著西斯諾斯（Ssithnos），他在對平衡（balance）的不懈服侍中");
+	message("~這裡躺著 Ssithnos，他在對平衡（balance）的不懈服侍中");
 	say();
 	message("被殘忍謀殺。");
 	say();
@@ -224,7 +224,7 @@ labelFunc02C3_02FC:
 	say();
 	message("平衡——來自混沌和秩序的兩種力量的結合，產生了原則。寬容和道德結合形成和諧（Harmony），即與自我、個人和世界和平相處的能力。熱情和紀律的結合產生了奉獻（Dedication），即讓人能夠克服障礙並領導他人的能力。最後，情感被邏輯調和結果產生理性（Rationality），即理解生活和理解我們周圍世界的能力。混沌和秩序的力量必須永遠保持平衡，因為不平衡會導致災難。見證今天我們這個飽受戰爭蹂躪的世界！正如你一定能看到的，我的世界因為無視平衡——我們最親愛的公理——而被撕裂！如果你在一個不那麼暴力的時代繁榮發展，我只能懇求你幫助恢復巨蛇之島（Serpent Isle）的平衡！我必須在這裡結束這簡短的解釋，因為我能聽到攻擊者在樓下敲打橡木門。");
 	say();
-	message("我祝願你和你的世界比我自己有更好的運氣。——大祭司西斯諾斯（Ssithnos, the Great Hierophant）");
+	message("我祝願你和你的世界比我自己有更好的運氣。——大祭司 Ssithnos");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0321:
@@ -306,7 +306,7 @@ labelFunc02C3_03E9:
 	goto labelFunc02C3_043B;
 labelFunc02C3_03FA:
 	if (!(var0000 == 0x007C)) goto labelFunc02C3_0426;
-	message("~我已經用力量之牆封鎖了我們前哨站下方地下墓穴（Catacombs）的入口。在使用這把鑰匙之前，沒有人可以通過。如果你非常需要，並且你遵循秩序的步驟，你將知道該怎麼做來取回洛瑞爾的禮物（Loriel's Gift）。 ~~阿迪尼斯（Ardiniss）");
+	message("~我已經用力量之牆，封鎖了我們前哨站下方地下墓穴的入口。在使用這把鑰匙之前，沒有人可以通過。如果你非常需要，並且你遵循秩序的步驟，你將知道該怎麼做來取回洛瑞爾的禮物（Loriel's Gift）。 ~~Ardiniss");
 	say();
 	var0003 = UI_delayed_execute_usecode_array(Func09A0(0x0000, 0x0001), [(byte)0x55, 0x0603], 0x0001);
 	goto labelFunc02C3_043B;

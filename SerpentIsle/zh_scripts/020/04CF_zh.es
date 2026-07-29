@@ -112,7 +112,7 @@ labelFunc04CF_00D0:
 	say();
 	message("「當森林之主( Forest Master )最初進入我們的世界時，我們以為或許他就是來自異世界之英雄。但後來我們得知，他所擁有的種子在穿越虛空( Void )時被扭曲了。它永遠長不出來……」");
 	say();
-	message("「在 Miggim 找到平衡護身符( Amulet of Balance )之前，我們甚至沒有想過蛇人( Ophidians )也知道關於平衡之樹的事情。");
+	message("「在 Miggim 找到平衡護身符( Amulet of Balance )之前，我們甚至沒有想過蛇神教徒( Ophidians )也知道關於平衡之樹的事情。");
 	say();
 	message("「把它種在瀑布前這塊深色的沃土上吧，我的");
 	message(var0002);
@@ -490,15 +490,15 @@ labelFunc04CF_0914:
 	UI_remove_answer("圖書管理員");
 	message("「他把我們圖書館的混亂變成了一個井然有序的地方。」");
 	say();
-	message("「事實上，我相信我們擁有目前僅存最簡明扼要的蛇人( Ophidian )書籍和卷軸收藏。」");
+	message("「事實上，我相信我們擁有目前僅存最簡明扼要的蛇神教徒( Ophidian )書籍和卷軸收藏。」");
 	say();
 	message("「當然，這有助於我們擁有翻譯透鏡( Lens of Translating )。」");
 	say();
-	UI_add_answer(["蛇人", "透鏡"]);
+	UI_add_answer(["蛇神教徒", "透鏡"]);
 labelFunc04CF_093C:
-	case "蛇人" attend labelFunc04CF_0960:
-	UI_remove_answer("蛇人");
-	message("「蛇人( Ophidians )通常被稱為巨蛇之民，因為在他們的城市廢墟中發現了浮雕的巨蛇。」");
+	case "蛇神教徒" attend labelFunc04CF_0960:
+	UI_remove_answer("蛇神教徒");
+	message("「蛇神教徒( Ophidians )通常被稱為巨蛇之民，因為在他們的城市廢墟中發現了浮雕的巨蛇。」");
 	say();
 	message("「早在我們的祖先逃離侵略者不列顛( British )之前，他們就在這裡擁有了一個高度發展的文明。我相信他們在一場血腥的內戰中毀滅了自己。」");
 	say();
@@ -519,7 +519,7 @@ labelFunc04CF_097E:
 labelFunc04CF_0991:
 	case "內戰" attend labelFunc04CF_09A8:
 	UI_remove_answer("內戰");
-	message("「我相信蛇人政府瓦解了，他們的社會分裂成了兩個對立的群體。」");
+	message("「我相信蛇神教徒政府瓦解了，他們的社會分裂成了兩個對立的群體。」");
 	say();
 	message("「最後，顯然是一派屠殺了另一派。但在最後一戰發生後不久，勝利者的蹤跡就消失了。他們去哪裡仍是個謎。」");
 	say();
@@ -559,7 +559,7 @@ labelFunc04CF_09FE:
 labelFunc04CF_0A15:
 	case "透鏡" attend labelFunc04CF_0A28:
 	UI_remove_answer("透鏡");
-	message("「就是矗立在圖書館中央的那個大型裝置。任何人使用它，都能在短時間內解讀那些隱晦的蛇人文字。」");
+	message("「就是矗立在圖書館中央的那個大型裝置。任何人使用它，都能在短時間內解讀那些隱晦的蛇神教徒文字。」");
 	say();
 labelFunc04CF_0A28:
 	case "Gwenno" attend labelFunc04CF_0A7A:
@@ -591,7 +591,7 @@ labelFunc04CF_0A70:
 labelFunc04CF_0A7A:
 	case "混沌之禍( Bane of Chaos )" attend labelFunc04CF_0A95:
 	UI_remove_answer("混沌之禍( Bane of Chaos )");
-	message("「真奇怪，混沌之禍( Bane of Chaos )是一個蛇人的術語。」");
+	message("「真奇怪，混沌之禍( Bane of Chaos )是一個蛇神教徒的術語。」");
 	say();
 	message("「Fedabiblio 有個被他稱為巨蛇卷軸( Scroll of the Serpent )的東西。我相信它可能有我需要用來幫你的女性朋友恢復正常的資訊。把它帶給我，我會盡我所能幫助你。」");
 	say();
@@ -601,7 +601,7 @@ labelFunc04CF_0A95:
 	UI_remove_answer("秘密");
 	message("「一切都明朗了！」");
 	say();
-	message("「蛇人的所有信仰都建立在六大美德之上。而這些美德失衡的後果是非常可怕的……」");
+	message("「蛇神教徒的所有信仰都建立在六大美德之上。而這些美德失衡的後果是非常可怕的……」");
 	say();
 	message("「事實上，聽起來它們甚至能毀滅世界！」");
 	say();

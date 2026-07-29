@@ -300,13 +300,13 @@ labelFunc04D5_0517:
 labelFunc04D5_052A:
 	case "歷史" attend labelFunc04D5_0544:
 	UI_remove_answer("歷史");
-	message("「 Karnax 對蛇人( Serpent people )的歷史進行了詳盡的研究。他幾乎能告訴你關於他們的一切事情。」");
+	message("「 Karnax 對蛇神教徒( Serpent people )的歷史進行了詳盡的研究。他幾乎能告訴你關於他們的一切事情。」");
 	say();
-	UI_add_answer("蛇人");
+	UI_add_answer("蛇神教徒");
 labelFunc04D5_0544:
-	case "蛇人" attend labelFunc04D5_0557:
-	UI_remove_answer("蛇人");
-	message("「在我們的祖先在此定居之前，蛇人( Serpent people )就在這片土地上生活了很久。我不知道他們遭遇了什麼，但 Karnax 也許知道。」");
+	case "蛇神教徒" attend labelFunc04D5_0557:
+	UI_remove_answer("蛇神教徒");
+	message("「在我們的祖先在此定居之前，蛇神教徒( Serpent people )就在這片土地上生活了很久。我不知道他們遭遇了什麼，但 Karnax 也許知道。」");
 	say();
 labelFunc04D5_0557:
 	case "觀看幻象" attend labelFunc04D5_05F4:

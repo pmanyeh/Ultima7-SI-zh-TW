@@ -252,7 +252,7 @@ labelFunc04D1_03D0:
 	if (!var0006) goto labelFunc04D1_0407;
 	message("「恐怕我們沒有地圖可以幫你。但我知道修道院這裡有一本描述古老神廟的書。」");
 	say();
-	message("「當然，它是用蛇人( Ophidian )符文寫成的。但你可以使用翻譯透鏡( Lens of Translating )來幫助你閱讀它。」");
+	message("「當然，它是用蛇神教徒( Ophidian )符文寫成的。但你可以使用翻譯透鏡( Lens of Translating )來幫助你閱讀它。」");
 	say();
 	message("「去找到它吧。我確信它會對你有幫助。」");
 	say();
@@ -260,7 +260,7 @@ labelFunc04D1_03D0:
 labelFunc04D1_0407:
 	message("「恐怕我們沒有地圖可以幫你。但我知道修道院裡有一本描述古老神廟的書。」");
 	say();
-	message("「當然，它是用蛇人( Ophidian )符文寫成的。但你可以使用翻譯透鏡( Lens of Translating )來幫助你閱讀它。」");
+	message("「當然，它是用蛇神教徒( Ophidian )符文寫成的。但你可以使用翻譯透鏡( Lens of Translating )來幫助你閱讀它。」");
 	say();
 	message("「去找到它吧。我確信它會對你有幫助。」");
 	say();
@@ -269,7 +269,7 @@ labelFunc04D1_0413:
 labelFunc04D1_041A:
 	case "翻譯透鏡( Lens of Translating )" attend labelFunc04D1_042D:
 	UI_remove_answer("翻譯透鏡( Lens of Translating )");
-	message("「就是矗立在圖書館中央的那個大型裝置。使用它能讓你在短時間內解讀那些艱澀的蛇人符文。」");
+	message("「就是矗立在圖書館中央的那個大型裝置。使用它能讓你在短時間內解讀那些艱澀的蛇神教徒符文。」");
 	say();
 labelFunc04D1_042D:
 	case "雜務" attend labelFunc04D1_044D:

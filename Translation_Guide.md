@@ -271,6 +271,7 @@
 - **Protection** ➔ **保護術**
 
 ### 第三環 (Third Circle of Magic)
+- **Chill** ➔ **冷卻術**
 - **Columna's Intuition** ➔ **直覺顯像術**
 - **Curse** ➔ **詛咒術**
 - **Enchant Missiles** ➔ **魔法飛彈**
@@ -283,6 +284,7 @@
 - **Blink** ➔ **瞬目移步法**
 - **Deter** ➔ **妨礙術**
 - **Flash** ➔ **強光術**
+- **Create Soul Prism** ➔ **創造靈魂棱鏡**
 - **Mass Curse** ➔ **大詛咒術**
 - **Reveal** ➔ **現形術**
 - **Transcribe** ➔ **抄寫術**
@@ -290,10 +292,12 @@
 
 ### 第五環 (Fifth Circle of Magic)
 - **Conjure** ➔ **召遣術**
+- **Dispel Field**** ➔ **解除力場**
 - **Explosion** ➔ **爆炸術**
 - **Great Heal** ➔ **大醫療術**
 - **Invisibility** ➔ **隱身術**
 - **Mass Sleep** ➔ **大催眠術**
+- **Summon Shade** ➔ **喚靈術**
 - **Surprise** ➔ **奇襲術**
 
 ### 第六環 (Sixth Circle of Magic)
@@ -302,6 +306,7 @@
 - **Cold Strike** ➔ **冷擊術**
 - **Create Automata** ➔ **創造運輸工具**
 - **Create Missile** ➔ **造箭術**
+- **Create Ammo** ➔ **造箭術**
 - **Dispel Illusion** ➔ **解除幻象**
 - **Fire Field** ➔ **火焰力場**
 - **Fire Ring** ➔ **火焰環**

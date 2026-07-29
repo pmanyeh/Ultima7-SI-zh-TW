@@ -66,7 +66,7 @@ labelFunc04DA_0101:
 	UI_add_answer("果雷沼澤");
 labelFunc04DA_011B:
 	case "果雷沼澤" attend labelFunc04DA_013B:
-	message("「很久以前——甚至在蛇人( Serpent people )以這片土地為家之前——一個名叫 Rabindrinath 的巫師發誓要摧毀和平的果雷鎮。但在小鎮的治療師 Siranush 反對他之後，邪惡的法術出錯了。」*「鎮上的居民沒有被消滅，而是被困在夢境的領域中……」~「連同那個瘋狂的巫師一起……」~「還有任何敢於進入果雷( Gorlab )周圍地區的人。」");
+	message("「很久以前——甚至在蛇神教徒( Serpent people )以這片土地為家之前——一個名叫 Rabindrinath 的巫師發誓要摧毀和平的果雷鎮。但在小鎮的治療師 Siranush 反對他之後，邪惡的法術出錯了。」*「鎮上的居民沒有被消滅，而是被困在夢境的領域中……」~「連同那個瘋狂的巫師一起……」~「還有任何敢於進入果雷( Gorlab )周圍地區的人。」");
 	say();
 	UI_remove_answer("果雷沼澤");
 	UI_add_answer(["Rabindrinath", "Siranush"]);

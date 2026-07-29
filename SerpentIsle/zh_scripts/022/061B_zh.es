@@ -58,17 +58,17 @@ labelFunc061B_00B3:
 labelFunc061B_00D9:
 	case "預言的" attend labelFunc061B_0106:
 	UI_remove_answer("預言的");
-	message("「我想蛇人( Ophidians )是透過他們的大祭司們得知的。我們則是從嚮導那裡得知的……");
+	message("「我想蛇神教徒( Ophidians )是透過他們的大祭司們得知的。我們則是從嚮導那裡得知的……");
 	say();
 	message("「我奉命在此等待你。所以我就一直等……你來得很遲，你知道嗎，");
 	message(var0001);
 	message("。」");
 	say();
-	UI_add_answer(["蛇人", "大祭司", "嚮導"]);
+	UI_add_answer(["蛇神教徒", "大祭司", "嚮導"]);
 labelFunc061B_0106:
-	case "蛇人" attend labelFunc061B_011D:
-	UI_remove_answer("蛇人");
-	message("「你不知道蛇人( Ophidians )是誰嗎？真奇怪。");
+	case "蛇神教徒" attend labelFunc061B_011D:
+	UI_remove_answer("蛇神教徒");
+	message("「你不知道蛇神教徒( Ophidians )是誰嗎？真奇怪。");
 	say();
 	message("「他們就是佔據那座要塞的人。非常好戰，說真的。我跟他們沒什麼往來……」");
 	say();
@@ -77,7 +77,7 @@ labelFunc061B_011D:
 	UI_remove_answer("大祭司");
 	message("「至少我想那就是他們的稱號。");
 	say();
-	message("「大祭司們是蛇人( Ophidians )的聖職者——包括男性和女性。我了解他們同時也是政治領袖……");
+	message("「大祭司們是蛇神教徒( Ophidians )的聖職者——包括男性和女性。我了解他們同時也是政治領袖……");
 	say();
 	message("「個人而言，我認為任何人擁有那麼大的權力都是件壞事。」");
 	say();
@@ -92,7 +92,7 @@ labelFunc061B_0138:
 labelFunc061B_0158:
 	case "遲了" attend labelFunc061B_0175:
 	UI_remove_answer("遲了");
-	message("「蛇人( Ophidians )的戰爭已經持續了很多年了，");
+	message("「蛇神教徒( Ophidians )的戰爭已經持續了很多年了，");
 	message(var0001);
 	message("。我不認為混沌還能抵擋秩序多久了。");
 	say();
@@ -101,7 +101,7 @@ labelFunc061B_0158:
 labelFunc061B_0175:
 	case "任務" attend labelFunc061B_0199:
 	UI_remove_answer("任務");
-	message("「預言棋子的任務——或者，按照蛇人( Ophidians )對你的稱呼，平衡鬥士( Champion of Balance )——是恢復世界的平衡。");
+	message("「預言棋子的任務——或者，按照蛇神教徒( Ophidians )對你的稱呼，平衡鬥士( Champion of Balance )——是恢復世界的平衡。");
 	say();
 	message("「我擔心戰局可能已經傾斜到連你也無法扭轉的地步。如果秩序摧毀了混沌，就什麼都沒有可以恢復平衡了，");
 	message(var0001);
@@ -111,7 +111,7 @@ labelFunc061B_0175:
 labelFunc061B_0199:
 	case "摧毀混沌" attend labelFunc061B_01B7:
 	UI_remove_answer("摧毀混沌");
-	message("「遵循秩序的蛇人( Ophidians )相信遵循混沌的人應該為謀殺他們其中一個聖職者而負責。他們發誓要將混沌從世界上根除……");
+	message("「遵循秩序的蛇神教徒( Ophidians )相信遵循混沌的人應該為謀殺他們其中一個聖職者而負責。他們發誓要將混沌從世界上根除……");
 	say();
 	message("「而現在他們製造了魔導人偶，他們可能會成功。」");
 	say();

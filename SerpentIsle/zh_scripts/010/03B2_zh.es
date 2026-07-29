@@ -51,7 +51,7 @@ labelFunc03B2_00C5:
 	UI_show_npc_face0(0xFECC, 0x0000);
 	var0008 = UI_get_npc_id(item);
 	if (!(gflags[0x02FC] || gflags[0x0313])) goto labelFunc03B2_0107;
-	message("「誰能想到卑微的蘇洛克(Surok)竟然能和平衡鬥士(Champion of Balance)說話？我深感榮幸。」");
+	message("「誰能想到卑微的 Surok 竟然能和平衡鬥士說話？我深感榮幸。」");
 	say();
 	message("「我能如何協助你，");
 	message(var0000);
@@ -63,13 +63,13 @@ labelFunc03B2_0107:
 	if (!(!gflags[0x026F])) goto labelFunc03B2_0120;
 	message("「啊，新面孔！你是誰，陌生人，竟敢冒著生命危險來到巨蛇之牙(Serpent's Fang)？混沌的僕人？嗯……我想不是。」");
 	say();
-	message("「我是蘇洛克，巨蛇之牙的治療師，我看出你迷路了。也許我能幫你，如果你願意的話。」");
+	message("「我是 Surok ，巨蛇之牙的治療師，我看出你迷路了。也許我能幫你，如果你願意的話。」");
 	say();
 	goto labelFunc03B2_012C;
 labelFunc03B2_0120:
 	message("「巡邏隊能找到你真是你的運氣，陌生人！你當時昏迷不醒，身上多處傷口都在流血……啊，但我忘了禮貌！」");
 	say();
-	message("「我是蘇洛克，巨蛇之牙的治療師，是我治好了你的傷。」");
+	message("「我是 Surok ，巨蛇之牙的治療師，是我治好了你的傷。」");
 	say();
 	gflags[0x026F] = false;
 labelFunc03B2_012C:
@@ -131,7 +131,7 @@ labelFunc03B2_01FC:
 	say();
 	UI_push_answers();
 	var0009 = 0x0002;
-	UI_add_answer(["伊斯坦納", "伊莉莎", "特桑達", "護衛", "陌生人", "沒什麼了"]);
+	UI_add_answer(["Isstanar", "Elissa", "Tsandar", "護衛", "陌生人", "沒什麼了"]);
 labelFunc03B2_0238:
 	case "地點" attend labelFunc03B2_026E:
 	UI_remove_answer("地點");
@@ -141,7 +141,7 @@ labelFunc03B2_0238:
 	say();
 	UI_push_answers();
 	var0009 = 0x0002;
-	UI_add_answer(["廢棄前哨站", "迷宮", "阿拉姆-多爾的巢穴", "沒什麼了"]);
+	UI_add_answer(["廢棄前哨站", "迷宮", "Aram-Dol 的巢穴", "沒什麼了"]);
 labelFunc03B2_026E:
 	case "奇特物品" attend labelFunc03B2_02D3:
 	UI_remove_answer("奇特物品");
@@ -192,7 +192,7 @@ labelFunc03B2_0317:
 labelFunc03B2_0339:
 	case "洛瑞爾的禮物" attend labelFunc03B2_035B:
 	UI_remove_answer("洛瑞爾的禮物");
-	message("「哎呀，你戴著力量腰帶(Belt of Strength)！這是阿迪尼斯指揮官的妻子洛瑞爾(Loriel)多年前製作的。如果我沒記錯的話，她用巨人的頭髮編織了這條腰帶，並對它施了魔法。洛瑞爾是一位極具天賦的法師，但唉，她也是這場與混沌該死戰爭的受害者之一！既然你戴著她的手藝，你應該記住她，");
+	message("「哎呀，你戴著力量腰帶(Belt of Strength)！這是 Ardiniss 指揮官的妻子洛瑞爾(Loriel)多年前製作的。如果我沒記錯的話，她用巨人的頭髮編織了這條腰帶，並對它施了魔法。洛瑞爾是一位極具天賦的法師，但唉，她也是這場與混沌該死戰爭的受害者之一！既然你戴著她的手藝，你應該記住她，");
 	message(var0002);
 	message("……」");
 	say();
@@ -200,39 +200,39 @@ labelFunc03B2_0339:
 labelFunc03B2_035B:
 	case "頭盔" attend labelFunc03B2_0394:
 	UI_remove_answer("頭盔");
-	message("「你擁有光之頭盔(Helm of Light)！這是建築師伊西克(Issik the Architect)建造迷宮時所戴的。你發現迷宮的秘密了嗎，");
+	message("「你擁有光之頭盔(Helm of Light)！這是建築師 Issik 建造迷宮時所戴的。你發現迷宮的秘密了嗎，");
 	message(var0002);
 	message("？」");
 	say();
 	if (!Func0955()) goto labelFunc03B2_0381;
-	message("「你真的是平衡鬥士！除了伊西克之外，沒有人能在那個死亡迷宮中穿梭。從我和伊西克的交談中得知，這頂頭盔永遠不會停止發光，唯一能掩蓋其光芒的方法，就是把它蓋住或放進袋子裡。」");
+	message("「你真的是平衡鬥士！除了 Issik 之外，沒有人能在那個死亡迷宮中穿梭。從我和 Issik 的交談中得知，這頂頭盔永遠不會停止發光，唯一能掩蓋其光芒的方法，就是把它蓋住或放進袋子裡。」");
 	say();
 	goto labelFunc03B2_038B;
 labelFunc03B2_0381:
-	message("「那你怎麼會得到這頂頭盔？伊西克消失在他自己的傑作中，再也沒有回來。*啊，沒關係。別聽一個老頭子胡言亂語，");
+	message("「那你怎麼會得到這頂頭盔？ Issik 消失在他自己的傑作中，再也沒有回來。*啊，沒關係。別聽一個老頭子胡言亂語，");
 	message(var0002);
 	message("。」");
 	say();
 labelFunc03B2_038B:
 	var000A = Func09AE(var000A);
 labelFunc03B2_0394:
-	case "伊斯坦納" attend labelFunc03B2_03B6:
-	UI_remove_answer("伊斯坦納");
+	case "Isstanar" attend labelFunc03B2_03B6:
+	UI_remove_answer("Isstanar");
 	message("「他是我們前哨站的指揮官，儘管一年前他還不是。別惹火他，");
 	message(var0000);
-	message("，因為他生氣時非常可怕！他認為那些沒有為秩序的事業獻出生命的人並不真正配得上這一切。他已經成為『終極的秩序戰士(@Ultimate Warrior of Order@)』，拋棄了人類的肉體變成金屬。我相信他的靈魂也變得和他的外表一樣堅硬。」");
+	message("，因為他生氣時非常可怕！他認為那些沒有為秩序的事業獻出生命的人並不真正配得上這一切。他已經成為『終極的秩序戰士』，拋棄了人類的肉體變成金屬。我相信他的靈魂也變得和他的外表一樣堅硬。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_03B6:
-	case "伊莉莎" attend labelFunc03B2_03D2:
-	UI_remove_answer("伊莉莎");
+	case "Elissa" attend labelFunc03B2_03D2:
+	UI_remove_answer("Elissa");
 	message("「她是我們的法師。如果你有足夠的金幣，我肯定她會願意教你法術。雖然她還年輕，但她最希望的莫過於永遠保持青春。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_03D2:
-	case "特桑達" attend labelFunc03B2_03F4:
-	UI_remove_answer("特桑達");
-	message("「特桑達是我的朋友，我不會說他的壞話。雖然我希望他能向我吐露最近有什麼事在困擾他。他心煩意亂，也許有充分的理由。我不會再談論這個話題了，");
+	case "Tsandar" attend labelFunc03B2_03F4:
+	UI_remove_answer("Tsandar");
+	message("「Tsandar 是我的朋友，我不會說他的壞話。雖然我希望他能向我吐露最近有什麼事在困擾他。他心煩意亂，也許有充分的理由。我不會再談論這個話題了，");
 	message(var0002);
 	message("。」");
 	say();
@@ -254,7 +254,7 @@ labelFunc03B2_0410:
 labelFunc03B2_0432:
 	case "廢棄前哨站" attend labelFunc03B2_044E:
 	UI_remove_answer("廢棄前哨站");
-	message("「九個月前，我們的指揮官是阿迪尼斯(Ardiniss)。他帶領一支探險隊前往我們西南方的前哨站，清除潛入的混沌密探，並設置神秘陷阱以殺死那些必定會再來的人。我們知道他成功製造了陷阱，但他再也沒有回來。我們認為他被那些他想殺死的人給殺了。他是個好人。如果在你的旅途中找到他的遺體，請行行好把他帶回巨蛇之牙。」");
+	message("「九個月前，我們的指揮官是 Ardiniss。他帶領一支探險隊前往我們西南方的前哨站，清除潛入的混沌密探，並設置神秘陷阱以殺死那些必定會再來的人。我們知道他成功製造了陷阱，但他再也沒有回來。我們認為他被那些他想殺死的人給殺了。他是個好人。如果在你的旅途中找到他的遺體，請行行好把他帶回巨蛇之牙。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_044E:
@@ -264,9 +264,9 @@ labelFunc03B2_044E:
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_046A:
-	case "阿拉姆-多爾的巢穴" attend labelFunc03B2_0486:
-	UI_remove_answer("阿拉姆-多爾的巢穴");
-	message("「阿拉姆-多爾(Aram-Dol)是個應該被消滅的邪惡東西！它的存在只是為了破壞，我擔心如果我們的軍隊不趕快回來，那個令人作嘔的混沌生物會繼續測試我們的防禦，並派遣它邪惡的僕人到我們的大門前！阿拉姆-多爾是個強大的巫師，並控制著強大的物品。如果你能消滅這個惡魔，我肯定伊斯坦納會獎賞你的！」");
+	case "Aram-Dol 的巢穴" attend labelFunc03B2_0486:
+	UI_remove_answer("Aram-Dol 的巢穴");
+	message("「Aram-Dol 是個應該被消滅的邪惡東西！它的存在只是為了破壞，我擔心如果我們的軍隊不趕快回來，那個令人作嘔的混沌生物會繼續測試我們的防禦，並派遣它邪惡的僕人到我們的大門前！阿拉姆-多爾是個強大的巫師，並控制著強大的物品。如果你能消滅這個惡魔，我肯定 Isstanar 會獎賞你的！」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_0486:

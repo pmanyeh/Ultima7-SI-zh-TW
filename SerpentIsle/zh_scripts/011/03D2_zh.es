@@ -251,14 +251,14 @@ labelFunc03D2_03A9:
 	case "危機" attend labelFunc03D2_03DF:
 	UI_remove_answer("危機");
 	if (!(var0009 == true)) goto labelFunc03D2_03CE;
-	message("「我已提過蛇神教( Ophidian )內戰，但我覺得你還不知道那個叫做阿拉姆-多爾( Aram-Dol )的巫妖。」");
+	message("「我已提過蛇神教( Ophidian )內戰，但我覺得你還不知道那個叫做 Aram-Dol 的巫妖。」");
 	say();
-	UI_add_answer("阿拉姆-多爾");
+	UI_add_answer("Aram-Dol");
 	goto labelFunc03D2_03DF;
 labelFunc03D2_03CE:
-	message("「你若連蛇神教徒( Ophidians )彼此之間的內戰都不知道，也不曉得阿拉姆-多爾( Aram-Dol )領地的危險，那你肯定不是本地人！」");
+	message("「你若連蛇神教徒( Ophidians )彼此之間的內戰都不知道，也不曉得 Aram-Dol 領地的危險，那你肯定不是本地人！」");
 	say();
-	UI_add_answer(["內戰", "阿拉姆-多爾"]);
+	UI_add_answer(["內戰", "Aram-Dol"]);
 labelFunc03D2_03DF:
 	case "蛇神教徒" attend labelFunc03D2_03F9:
 	UI_remove_answer("蛇神教徒");
@@ -298,15 +298,15 @@ labelFunc03D2_0493:
 	say();
 	var0009 = true;
 labelFunc03D2_049B:
-	case "阿拉姆-多爾" attend labelFunc03D2_05A6:
-	UI_remove_answer("阿拉姆-多爾");
+	case "Aram-Dol" attend labelFunc03D2_05A6:
+	UI_remove_answer("Aram-Dol");
 	if (!(var000A == true)) goto labelFunc03D2_0536;
 	message("「我已描述過那巫妖給你聽了。要我再說一遍嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc03D2_052F;
 	message("「你不會找到比牠更邪惡或更狡猾的生物！幸好那巫妖很少出沒於自己的巢穴之外。");
 	say();
-	message("「若你珍惜自己的性命，我勸你不要涉足阿拉姆-多爾( Aram-Dol )的領地。」");
+	message("「若你珍惜自己的性命，我勸你不要涉足 Aram-Dol 的領地。」");
 	say();
 	var000E = Func0992(0x0001, 0x0000, 0x0000, false);
 	if (!((var000E == 0xFFFD) || ((var000E == 0xFFFE) || (var000E == 0xFFFF)))) goto labelFunc03D2_0517;
@@ -315,7 +315,7 @@ labelFunc03D2_049B:
 	UI_set_conversation_slot(0x0000);
 	Func097F(var000E, "@<PCName> 毫不畏懼！@", 0x0000);
 labelFunc03D2_0517:
-	message("「阿拉姆-多爾( Aram-Dol )並不容易到達。那巫妖用許多生物將自己的巢穴團團圍住。」");
+	message("「Aram-Dol 並不容易到達。那巫妖用許多生物將自己的巢穴團團圍住。」");
 	say();
 	message("「若我是你，我會避開那片領地……不過，我聽說那巫妖藏有兩件絕世寶物。」");
 	say();
@@ -329,7 +329,7 @@ labelFunc03D2_0533:
 labelFunc03D2_0536:
 	message("「你不會找到比牠更邪惡或更狡猾的生物！幸好那巫妖很少出沒於自己的巢穴之外。");
 	say();
-	message("「若你珍惜自己的性命，我勸你不要涉足阿拉姆-多爾( Aram-Dol )的領地。」");
+	message("「若你珍惜自己的性命，我勸你不要涉足 Aram-Dol 的領地。」");
 	say();
 	var000E = Func0992(0x0001, 0x0000, 0x0000, false);
 	if (!((var000E == 0xFFFD) || ((var000E == 0xFFFE) || (var000E == 0xFFFF)))) goto labelFunc03D2_0591;
@@ -338,7 +338,7 @@ labelFunc03D2_0536:
 	UI_set_conversation_slot(0x0000);
 	Func097F(var000E, "@<PCName> 毫不畏懼！@", 0x0000);
 labelFunc03D2_0591:
-	message("「阿拉姆-多爾( Aram-Dol )並不容易到達。那巫妖用許多生物將自己的巢穴團團圍住。」");
+	message("「Aram-Dol 並不容易到達。那巫妖用許多生物將自己的巢穴團團圍住。」");
 	say();
 	message("「若我是你，我會避開那片領地……不過，我聽說那巫妖藏有兩件絕世寶物。」");
 	say();
@@ -371,7 +371,7 @@ labelFunc03D2_05DF:
 labelFunc03D2_05F6:
 	case "生物" attend labelFunc03D2_0614:
 	UI_remove_answer("生物");
-	message("「那巫妖使用被他復活的死人屍體作為守衛。要到達阿拉姆-多爾( Aram-Dol )，必須穿越一條有如地獄考驗般的不死生物長廊。」");
+	message("「那巫妖使用被他復活的死人屍體作為守衛。要到達 Aram-Dol ，必須穿越一條有如地獄考驗般的不死生物長廊。」");
 	say();
 	message("「此外還有那些被稱為『 Arachnians 』的畸形怪物。」");
 	say();
@@ -379,7 +379,7 @@ labelFunc03D2_05F6:
 labelFunc03D2_0614:
 	case "Arachnians" attend labelFunc03D2_067E:
 	UI_remove_answer("Arachnians");
-	message("「多年前，阿拉姆-多爾( Aram-Dol )俘虜了許多人類。他運用最黑暗的巫術，將人類的上半身與巨型蜘蛛的球狀身軀融合在一起。」");
+	message("「多年前，Aram-Dol 俘虜了許多人類。他運用最黑暗的巫術，將人類的上半身與巨型蜘蛛的球狀身軀融合在一起。」");
 	say();
 	message("「這些生物是兇猛的戰士，狡詐且邪惡。若你被 Arachnians 抓住，就向你所信奉的神明祈禱吧。牠們會把獵物活生生吞食……」");
 	say();
@@ -415,7 +415,7 @@ labelFunc03D2_06A4:
 labelFunc03D2_070A:
 	message("「不過，為了回答你的問題，我認識，或聽說過，許多『人物』。你特別想了解誰？」");
 	say();
-	UI_add_answer(["蛇神教徒", "惡魔", "阿拉姆-多爾", " Longtooth "]);
+	UI_add_answer(["蛇神教徒", "惡魔", "Aram-Dol", " Longtooth "]);
 labelFunc03D2_0721:
 	case "非人類" attend labelFunc03D2_07B5:
 	UI_remove_answer("非人類");
@@ -537,13 +537,13 @@ labelFunc03D2_0930:
 	UI_remove_answer("洞穴");
 	message("「這片洞穴群相當寬闊，這讓我很適合居住，因為我自己也相當龐大。」");
 	say();
-	message("「這個洞穴對我而言是完美的。我可以來去自如，至少在阿拉姆-多爾( Aram-Dol )開始擴張他的領地之前是如此。」");
+	message("「這個洞穴對我而言是完美的。我可以來去自如，至少在 Aram-Dol 開始擴張他的領地之前是如此。」");
 	say();
 	UI_add_answer("領地");
 labelFunc03D2_094E:
 	case "領地" attend labelFunc03D2_096E:
 	UI_remove_answer("領地");
-	message("「許多年前，阿拉姆-多爾( Aram-Dol )創造了 Arachnian 生物。那巫妖將這些生物釋放到這片洞穴中。那些骯髒的野獸所過之處盡皆死亡。那些邪惡的生物甚至群起攻擊我！我險些喪命。幸好，Arachnians 有一個弱點。」");
+	message("「許多年前，Aram-Dol 創造了 Arachnian 生物。那巫妖將這些生物釋放到這片洞穴中。那些骯髒的野獸所過之處盡皆死亡。那些邪惡的生物甚至群起攻擊我！我險些喪命。幸好，Arachnians 有一個弱點。」");
 	say();
 	UI_add_answer(["弱點", "Arachnians"]);
 labelFunc03D2_096E:

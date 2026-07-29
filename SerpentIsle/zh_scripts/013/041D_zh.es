@@ -327,14 +327,14 @@ labelFunc041D_0570:
 labelFunc041D_0587:
 	case "問題" attend labelFunc041D_05AB:
 	UI_remove_answer("問題");
-	message("「巴特林 似乎非常有興趣了解更多關於這片土地上古老人民的歷史——我們稱之為蛇人(Ophidians)。」");
+	message("「巴特林 似乎非常有興趣了解更多關於這片土地上古老人民的歷史——我們稱之為蛇神教徒(Ophidians)。」");
 	say();
 	message("「因為我早就不當學徒了，所以我不記得導師教給我們的所有東西。我以前不感興趣，現在也一樣。我讓他去找 Fedabiblio 。」");
 	say();
-	UI_add_answer(["蛇人", "Fedabiblio"]);
+	UI_add_answer(["蛇神教徒", "Fedabiblio"]);
 labelFunc041D_05AB:
-	case "蛇人" attend labelFunc041D_05BE:
-	UI_remove_answer("蛇人");
+	case "蛇神教徒" attend labelFunc041D_05BE:
+	UI_remove_answer("蛇神教徒");
 	message("「正如我告訴你的，我不記得多少歷史了。我只知道古人似乎崇拜巨蛇(Serpents)。如果你想了解更多，去問 Fedabiblio 吧。他在這方面非常有學問。」");
 	say();
 labelFunc041D_05BE:
