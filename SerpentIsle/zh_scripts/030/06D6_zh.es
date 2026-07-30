@@ -52,6 +52,9 @@ void Func06D6 object#(0x6D6) ()
 	var var002D;
 	var var002E;
 
+	if (gflags[0x02FF]) return;
+	gflags[0x02FF] = true;
+
 	if (!(event == 0x0003)) goto labelFunc06D6_0B4B;
 	if (!gflags[0x0004]) goto labelFunc06D6_0815;
 	var0000 = UI_get_item_quality(item);
