@@ -169,7 +169,7 @@ labelFunc03CF_0295:
 labelFunc03CF_02B5:
 	case "盔甲" attend labelFunc03CF_02CF:
 	UI_remove_answer("盔甲");
-	message("「自動機(automatons)的前身。它們不會說話，幾乎無法聽從命令。它們讓像你這樣的白痴看起來都顯得聰明了。」");
+	message("「魔導人偶(automatons)的前身。它們不會說話，幾乎無法聽從命令。它們讓像你這樣的白痴看起來都顯得聰明了。」");
 	say();
 	UI_add_answer("命令");
 labelFunc03CF_02CF:

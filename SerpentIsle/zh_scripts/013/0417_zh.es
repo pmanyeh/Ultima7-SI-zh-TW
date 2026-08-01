@@ -39,10 +39,10 @@ void Func0417 object#(0x417) ()
 	var0002 = Func0953();
 	var0003 = UI_part_of_day();
 	if (!((var0003 > 0x0001) || (var0003 < 0x0006))) goto labelFunc0417_0035;
-	var0003 = "日安(day)";
+	var0003 = "日安";
 	goto labelFunc0417_003B;
 labelFunc0417_0035:
-	var0003 = "晚安(evening)";
+	var0003 = "晚安";
 labelFunc0417_003B:
 	if (!(event == 0x0001)) goto labelFunc0417_0071;
 	UI_item_say(0xFE9C, (("@" + var0003) + "，女士。@"));

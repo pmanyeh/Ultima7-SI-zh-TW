@@ -54,7 +54,7 @@ void Func04AA object#(0x4AA) ()
 	var0005 = Func0953();
 	var0006 = Func097D(0xFE9B, 0x0001, 0x0268, 0xFE99, 0x0014);
 	var0007 = UI_get_item_flag(0xFF56, 0x001C);
-	var0008 = (("我是" + var0005) + "。");
+	var0008 = (("我是 " + var0005) + "。");
 	var0009 = "他的";
 	var000A = "他";
 	var000B = "他";
@@ -243,7 +243,7 @@ labelFunc04AA_041B:
 labelFunc04AA_0432:
 	case "你的同類" attend labelFunc04AA_0454:
 	UI_remove_answer("你的同類");
-	message("「悲傷地說，人類總是來傷害我們。不明白他們為什麼叫我們惡魔( Daemons )……」");
+	message("「悲傷地說，人類總是來傷害我們。不明白他們為什麼叫我們惡魔…」");
 	say();
 	message("「他們是穿著厚重盔甲、肌肉發達的戰士。以讓我們流血為樂。極其痛恨我們。」");
 	say();
@@ -357,7 +357,7 @@ labelFunc04AA_060E:
 labelFunc04AA_0618:
 	case "雙子石柱" attend labelFunc04AA_063D:
 	UI_remove_answer("雙子石柱");
-	message("「曾參觀過地下城( Underground City )的這個地方。位在城市的東北部房間。」");
+	message("「在地下城的東北部房間…」");
 	say();
 	message("「曾見過兩根巨大的石柱，外形如同巨蛇。」");
 	say();
@@ -538,8 +538,8 @@ labelFunc04AA_08C3:
 	Func0878();
 	abort;
 labelFunc04AA_08E6:
-	case "離開熔爐( Furnace )" attend labelFunc04AA_098B:
-	UI_remove_answer("離開熔爐( Furnace )");
+	case "離開熔爐城" attend labelFunc04AA_098B:
+	UI_remove_answer("離開熔爐城");
 	var0018 = UI_find_nearby(0xFF56, 0x0313, 0x0014, 0x0000);
 	if (!(UI_get_item_quality(var0018) == 0x0049)) goto labelFunc04AA_0944;
 	message("「打開黃銅大門，好讓你能夠前往地表。」");

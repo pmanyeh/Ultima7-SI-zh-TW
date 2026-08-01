@@ -98,10 +98,10 @@ labelFunc040E_01AE:
 	converse attend labelFunc040E_044F;
 	case "綠女巫" attend labelFunc040E_01DE:
 	UI_remove_answer("綠女巫");
-	message("「我叫 Columna 。是一名女巫，Melino 的妻子，我也是月影城( Moonshade )裡最令人渴望的絕世美女。」");
+	message("「我叫 Columna 。是一名女巫，Melino 的妻子，我也是月影城裡最令人渴望的絕世美女。」");
 	say();
 	if (!gflags[0x00FD]) goto labelFunc040E_01CE;
-	message("「這難道不是個可笑的笑話嗎？！我，一個衰老的醜婆娘？！月影城( Moonshade )裡最令人渴望的絕世美女？！曾經，在我的時代……在我的時代……」");
+	message("「這難道不是個可笑的笑話嗎？！我，一個衰老的醜婆娘？！月影城裡最令人渴望的絕世美女？！曾經，在我的時代……在我的時代……」");
 	say();
 labelFunc040E_01CE:
 	UI_add_answer(["女巫", "Melino", "美女"]);
@@ -134,7 +134,7 @@ labelFunc040E_024D:
 labelFunc040E_0258:
 	case "陌生旅人" attend labelFunc040E_0278:
 	UI_remove_answer("陌生旅人");
-	message("「幾週前，一位名叫 Gwenno 的女士經過了月影城( Moonshade )，而最近則是一位名叫『巴特林』的智者。」");
+	message("「幾週前，一位名叫 Gwenno 的女士經過了月影城，而最近則是一位名叫『巴特林』的智者。」");
 	say();
 	UI_add_answer(["Gwenno", "巴特林"]);
 labelFunc040E_0278:
@@ -167,7 +167,7 @@ labelFunc040E_02D1:
 labelFunc040E_02F1:
 	case "影響力" attend labelFunc040E_0304:
 	UI_remove_answer("影響力");
-	message("「他是月影城( Moonshade )領主法師暨議會資深成員 Filbercio 關係密切且值得信賴的顧問。」");
+	message("「他是月影城魔法領主 Filbercio 近身且深獲信任的顧問，同時也是參議會的資深成員。」");
 	say();
 labelFunc040E_0304:
 	case "滿足需求" attend labelFunc040E_0317:
@@ -190,7 +190,7 @@ labelFunc040E_0337:
 	message("「就是 Stefano 從 Torrissio 家裡偷了我的長襪，企圖用我們的風流韻事來勒索我們。」");
 	say();
 	if (!gflags[0x0239]) goto labelFunc040E_0357;
-	message("「既然他已經回到了月影城( Moonshade )，我們一定會確保他為他企圖對我們做的事付出死刑的代價。」");
+	message("「既然他已經回到了月影城，我們一定會確保他為他企圖對我們做的事付出死刑的代價。」");
 	say();
 	goto labelFunc040E_035B;
 labelFunc040E_0357:

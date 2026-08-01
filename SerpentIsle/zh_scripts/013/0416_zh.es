@@ -107,7 +107,7 @@ labelFunc0416_01D0:
 	converse attend labelFunc0416_0590;
 	case "審判" attend labelFunc0416_01F6:
 	UI_remove_answer("審判");
-	message("「請不要把這場荒謬的審判怪罪於我！在月影城( Moonshade )，沒有人會反駁領主法師！」");
+	message("「請不要把這場荒謬的審判怪罪於我！在月影城，沒有人會反駁領主法師！」");
 	say();
 	message("「而且，你確實犯了罪，也就是說你進入了禁忌的臥室……」");
 	say();
@@ -232,7 +232,7 @@ labelFunc0416_03DA:
 	gflags[0x0009] = false;
 	gflags[0x000A] = false;
 	if (!(!gflags[0x011C])) goto labelFunc0416_0421;
-	message("「既然你已經同意協助我的實驗，就把這個能量球拿到我的專用塔樓去。你可以在月影城( Moonshade )北方平原中央的山谷裡找到這座塔。」");
+	message("「既然你已經同意協助我的實驗，就把這個能量球拿到我的專用塔樓去。你可以在月影城北方平原中央的山谷裡找到這座塔。」");
 	say();
 	var0003 = Func099B(0xFE9C, 0x0001, 0x01C2, 0x0000, 0x0002, 0x0000, true);
 	gflags[0x011C] = true;
@@ -265,7 +265,7 @@ labelFunc0416_045A:
 	var0003 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0004), [(byte)0x23, (byte)0x55, 0x0377], 0x0064);
 	goto labelFunc0416_04C2;
 labelFunc0416_04BA:
-	message("「那是當然的！你必須去找 Fedabiblio 尋求答案……」");
+	message("「原來如此！接下來，你必須去找 Fedabiblio，看看他是否知道答案……」");
 	say();
 	gflags[0x00E4] = true;
 labelFunc0416_04C2:

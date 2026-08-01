@@ -116,7 +116,7 @@ labelFunc03D2_0166:
 	say();
 	UI_add_answer("很少");
 labelFunc03D2_017B:
-	message("「既然我現在對你有了些了解，那我也該公平告訴你——我的名字叫 Draxinar ，而我的朋友們叫我『矮墩』。」");
+	message("「既然我現在對你有了些了解，那我也該公平告訴你——我的名字叫 Draxinar ，而我的朋友們叫我『Stumpy』。」");
 	say();
 	message("「如果你想在此多待片刻，我不會阻攔你。事實上，能有你作伴是我的榮幸。」");
 	say();
@@ -124,7 +124,7 @@ labelFunc03D2_017B:
 	say();
 	message("「那麼，我能如何幫到你？」");
 	say();
-	UI_add_answer(["謎語", "資訊", "作伴", "矮墩？"]);
+	UI_add_answer(["謎語", "資訊", "作伴", "Stumpy?"]);
 labelFunc03D2_019E:
 	case "謎語" attend labelFunc03D2_02C3:
 	UI_push_answers();
@@ -210,8 +210,8 @@ labelFunc03D2_02C3:
 	say();
 	UI_add_answer(["人物", "地點", "事物"]);
 labelFunc03D2_02E6:
-	case "矮墩？" attend labelFunc03D2_034F:
-	UI_remove_answer("矮墩？");
+	case "Stumpy?" attend labelFunc03D2_034F:
+	UI_remove_answer("Stumpy?");
 	if (!(var0008 == true)) goto labelFunc03D2_034B;
 	message("「你大概已猜到，我的朋友之所以叫我『矮墩』，是因為我很愛用謎語難住他們。」");
 	say();

@@ -33,10 +33,10 @@ labelFunc0418_004D:
 	var0005 = Func097D(0xFE9B, 0x0001, 0x034A, 0xFE99, 0x000F);
 	var0006 = UI_part_of_day();
 	if (!((var0006 > 0x0001) || (var0006 < 0x0006))) goto labelFunc0418_0084;
-	var0006 = "日安(day))";
+	var0006 = "日安";
 	goto labelFunc0418_008A;
 labelFunc0418_0084:
-	var0006 = "晚安(evening)";
+	var0006 = "晚安";
 labelFunc0418_008A:
 	if (!((event == 0x0007) && UI_get_item_flag(item, 0x001D))) goto labelFunc0418_00AD;
 	var0007 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0329]);
@@ -99,7 +99,7 @@ labelFunc0418_01DE:
 	converse attend labelFunc0418_05F8;
 	case "新法師" attend labelFunc0418_0210:
 	UI_remove_answer("新法師");
-	message("「你當然是新來的！我認識月影城( Moonshade )裡所有的其他法師……但我以前從未見過你。」");
+	message("「你當然是新來的！我認識月影城裡所有的其他法師……但我以前從未見過你。」");
 	say();
 	message("「而你帶著法術書，所以你不是凡夫俗子。因此，你是一名法師。」");
 	say();
@@ -126,14 +126,14 @@ labelFunc0418_023E:
 	UI_push_answers();
 	UI_add_answer("改變話題");
 	if (!(!gflags[0x00E2])) goto labelFunc0418_027A;
-	message("「法師議會是月影城( Moonshade )的統治機構。受邀成為議會成員是極大的榮譽，但我不得不拒絕……」");
+	message("「法師議會是月影城的統治機構。受邀成為議會成員是極大的榮譽，但我不得不拒絕……」");
 	say();
 	message("「目前的成員是 Mortegro 、 Gustacio 和 Filbercio ……這當然不用說。」");
 	say();
 	UI_add_answer(["Mortegro", "Gustacio", "Filbercio"]);
 	goto labelFunc0418_028F;
 labelFunc0418_027A:
-	message("「法師議會是月影城( Moonshade )的統治機構。我本來不想接受議會的席位，但 Columna 說服了我……」");
+	message("「法師議會是月影城的統治機構。我本來不想接受議會的席位，但 Columna 說服了我……」");
 	say();
 	message("「其他成員當然是 Gustacio 和 Filbercio ……」");
 	say();
@@ -214,18 +214,18 @@ labelFunc0418_039E:
 	UI_remove_answer("Torrissio");
 	message("「Torrissio 是一位非常有才華的年輕法師。他的專長是創造魔導人偶，用來做為我們宅邸的僕人和守衛。」");
 	say();
-	message("「他對細節很有眼光，即便是對僕人這種低下的創造物也是如此。你可以在 Blue Boar 看到他最傑出的作品——他讓 Rocco 在那裡展示 Petra 。」");
+	message("「他對細節很有眼光，即便是對僕人這種低下的創造物也是如此。你可以在藍豬旅店看到他最傑出的作品——他讓 Rocco 在那裡展示 Petra 。」");
 	say();
-	UI_add_answer(["Blue Boar", "Rocco", "Petra"]);
+	UI_add_answer(["藍豬旅店", "Rocco", "Petra"]);
 labelFunc0418_03C5:
-	case "Blue Boar" attend labelFunc0418_03D8:
-	UI_remove_answer("Blue Boar");
-	message("「Blue Boar 是月影城( Moonshade )唯一一家餐廳。因此，不幸的是，它同時服務法師和凡夫俗子。如果你夠有耐心，你可能會在那裡遇到許多其他法師。」");
+	case "藍豬旅店" attend labelFunc0418_03D8:
+	UI_remove_answer("藍豬旅店");
+	message("「藍豬旅店是月影城唯一一家餐廳。因此，不幸的是，它同時服務法師和凡夫俗子。如果你夠有耐心，你可能會在那裡遇到許多其他法師。」");
 	say();
 labelFunc0418_03D8:
 	case "Rocco" attend labelFunc0418_03EF:
 	UI_remove_answer("Rocco");
-	message("「Rocco 是 Blue Boar 的凡夫俗子旅館老闆。他是個脾氣暴躁的粗漢。不過我去那裡不是為了聽他說話……只是為了他的食物。」");
+	message("「Rocco 是 藍豬旅店的凡夫俗子旅館老闆。他是個脾氣暴躁的粗漢。不過我去那裡不是為了聽他說話……只是為了他的食物。」");
 	say();
 	message("「他的生意當然因為 Petra 的手藝而受益。 Petra 是這座城市裡最好的廚師之一。」");
 	say();
@@ -234,7 +234,7 @@ labelFunc0418_03EF:
 	UI_remove_answer("Petra");
 	message("「Petra 是 Torrissio 的創造物之一。以一個魔導人偶來說，她非常漂亮，而且非常會做菜。有時候我覺得 Torrissio 不只是個法師，更是個藝術家。」");
 	say();
-	message("「我認為 Petra 出現在 Blue Boar ，對 Torrissio 的名聲有很大的幫助……」");
+	message("「我認為 Petra 出現在藍豬旅店，對 Torrissio 的名聲有很大的幫助……」");
 	say();
 labelFunc0418_0406:
 	case "凡夫俗子" attend labelFunc0418_0428:
@@ -329,7 +329,7 @@ labelFunc0418_052C:
 labelFunc0418_0547:
 	case "Stoneheart" attend labelFunc0418_056B:
 	UI_remove_answer("Stoneheart");
-	message("「我告訴你，在月影城( Moonshade )擁有 Stoneheart 是被禁止的。我不知道你是從哪裡弄來的，我也不想知道。」");
+	message("「我告訴你，在月影城擁有 Stoneheart 是被禁止的。我不知道你是從哪裡弄來的，我也不想知道。」");
 	say();
 	message("「你可以去找其他的法術，不需要訴諸於那些受限制的法術。」");
 	say();

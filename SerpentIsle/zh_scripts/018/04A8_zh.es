@@ -125,7 +125,7 @@ labelFunc04A8_01F4:
 	say();
 	message("「我被不公正地囚禁在這裡，");
 	message(var0000);
-	message("！我坦白承認我不是戰士……但我機智敏捷，而且有能幫我們離開這個鬼地方的情報( information )。也許如果我們聯手，我們就有機會逃脫。」");
+	message("！我坦白承認我不是戰士……但我機智敏捷，而且有能幫我們離開這個鬼地方的情報。也許如果我們聯手，我們就有機會逃脫。」");
 	say();
 	goto labelFunc04A8_023E;
 labelFunc04A8_023A:
@@ -262,9 +262,9 @@ labelFunc04A8_0448:
 labelFunc04A8_045B:
 	case "月影城" attend labelFunc04A8_0489:
 	UI_remove_answer("月影城");
-	message("「不，我不是法師……雖然他們告訴我我有一點能力( ability )。但當整個城市都被高階法師( Adepts )統治時，那有什麼用呢？不，不，這不適合我！」");
+	message("「不，我不是法師……雖然他們告訴我我有一點『資質』。但當整個城市都被高階法師統治時，那有什麼用呢？不，不，這不適合我！」");
 	say();
-	message("「隨時給我一個充滿挑戰的搜索( search )任務吧！越難找到的東西，我越喜歡。」");
+	message("「隨時給我一個充滿挑戰的搜索任務吧！越難找到的東西，我越喜歡。」");
 	say();
 	UI_push_answers();
 	UI_add_answer(["能力", "高階法師", "搜索", "改變話題"]);
@@ -301,15 +301,15 @@ labelFunc04A8_04C3:
 labelFunc04A8_04E8:
 	case "高階法師" attend labelFunc04A8_050C:
 	UI_remove_answer("高階法師");
-	message("「如果月影城不是由高階法師( Adepts )統治的，你能想像要如何管理那些強大的法師嗎？帶著他們那些脆弱的自尊( egos )？——巨大、脆弱的自尊。」");
+	message("「如果月影城不是由高階法師統治的，你能想像要如何管理那些強大的法師嗎？帶著他們那些脆弱的自尊？——巨大、脆弱的自尊。」");
 	say();
-	message("「如果說高階法師( Adepts )有一個核心問題，那就是他們完全不把那些只有一點點或沒有魔法的人放在眼裡。不過，在某些方面，這讓我的生活更輕鬆( easier )了。」");
+	message("「如果說高階法師有一個核心問題，那就是他們完全不把那些只有一點點或沒有魔法的人放在眼裡。不過，在某些方面，這讓我的生活更輕鬆了。」");
 	say();
 	UI_add_answer(["自尊", "更輕鬆"]);
 labelFunc04A8_050C:
 	case "自尊" attend labelFunc04A8_053E:
 	UI_remove_answer("自尊");
-	message("「你根本不了解其中的一小部分！有一次我在藍豬酒館( Blue Boar )打發時間， Frigidazzi 也在那裡。」");
+	message("「你根本不了解其中的一小部分！有一次我在藍豬酒館打發時間， Frigidazzi 也在那裡。」");
 	say();
 	message("「 Rotoluncia 走進來，很刻意地說 Frigidazzi 那天看起來特別邋遢。然後突然間，她們就打了起來……」");
 	say();
@@ -324,7 +324,7 @@ labelFunc04A8_053E:
 	say();
 	message("「哦，我承認在那層冰冷的外衣下隱藏著一個火熱的捕食者，但很少有人見過。」");
 	say();
-	message("「就像她擅長的冰冷法術一樣， Frigidazzi 肯定知道如何降低房間裡的溫度……」");
+	message("「就像她擅長的冰冷法術一樣，Frigidazzi 肯定知道如何降低房間裡的溫度……」");
 	say();
 	message("「 Filbercio 到現在還沒被凍死真是個奇蹟！我看不出他是個勇敢的人……還是純粹愚蠢！」");
 	say();
@@ -335,7 +335,7 @@ labelFunc04A8_055D:
 	say();
 	message("「我對你的技巧印象深刻，");
 	message(var0000);
-	message("！大多數人都殺不了紅女巫( the Red Witch )。」");
+	message("！大多數人都殺不了紅女巫。」");
 	say();
 labelFunc04A8_057A:
 	case "Celennia" attend labelFunc04A8_059F:
@@ -344,9 +344,9 @@ labelFunc04A8_057A:
 	message(var0000);
 	message("！她在殺你之前會先戲弄你——她要讓你有時間思考將會發生什麼事，以及為什麼。」");
 	say();
-	message("「 Celennia 曾經是 Frigidazzi 最好的朋友，直到她們大吵一架。我不知道是為了什麼，但如果起因是 Frigidazzi 跟法師領主( MageLord )走得很近，我也不會感到意外……我想 Celennia 認為她自己才是他的下一個伴侶。」");
+	message("「 Celennia 曾經是 Frigidazzi 最好的朋友，直到她們大吵一架。我不知道是為了什麼，但如果起因是 Frigidazzi 跟法師領主走得很近，我也不會感到意外……我想 Celennia 認為她自己才是他的下一個伴侶。」");
 	say();
-	message("「我只知道那場戰鬥非常壯觀，第二天 Celennia 就登上了 Hawk 的船，前往沉睡公牛( Sleeping Bull )。他們說她在勇氣之城( Monitor )有親戚……」");
+	message("「我只知道那場戰鬥非常壯觀，第二天 Celennia 就登上了 Hawk 的船，前往睡牛客棧。他們說她在蒙利多城( Monitor )有親戚……」");
 	say();
 	var0009 = true;
 labelFunc04A8_059F:
@@ -354,7 +354,7 @@ labelFunc04A8_059F:
 	UI_remove_answer("Vasculio");
 	message("「我不確定能不能在這個可怕的地方談論這件事。老 Fedabiblio 把它當作嚇唬新手的鬼故事……而且我承認那讓我印象深刻。」");
 	say();
-	message("「 Vasculio 是個不受戒律( Strictures )約束的高階法師( Adept )。他毫無節制地折磨和殺戮，利用臨死的痛苦來為他的法術提供力量。」");
+	message("「 Vasculio 是個不受戒律約束的高階法師。他毫無節制地折磨和殺戮，利用臨死的痛苦來為他的法術提供力量。」");
 	say();
 	message("「議會將他處死，但他的力量已經成長到超越了那個限制。他們在埋葬他不久後發現他的墳墓空了……而且他們說他仍然在這個世界上遊蕩，尋找新的受害者。」");
 	say();
@@ -362,9 +362,9 @@ labelFunc04A8_059F:
 labelFunc04A8_05C1:
 	case "戒律" attend labelFunc04A8_05DE:
 	UI_remove_answer("戒律");
-	message("「戒律( Strictures )是所有法師都必須遵守的規則，無論新手還是高階法師( Adept )。它們規範了可以進行什麼實驗，可以使用或出售什麼秘藥( reagents )……諸如此類的事情。」");
+	message("「戒律是所有法師都必須遵守的規則，無論新手還是高階法師。它們規範了可以進行什麼實驗，可以使用或出售什麼藥材……諸如此類的事情。」");
 	say();
-	message("「戒律是為了防止法師在追求知識時放棄所有文明行為的約束。如你所知，");
+	message("「戒律是為了防止法師在追求知識時，放棄所有文明行為的約束。如你所知，");
 	message(var0000);
 	message("，世界上有些事情還是不要知道比較好。」");
 	say();
@@ -375,9 +375,9 @@ labelFunc04A8_05DE:
 	message(var0000);
 	message("，我獲取稀有物品。有時候那些物品是……我們說，之前有人擁有過？」");
 	say();
-	message("「但高階法師( Adepts )們就是那麼自負，除了魔法攻擊之外，他們看不出任何其他威脅。」");
+	message("「但高階法師們就是那麼自負，除了魔法攻擊之外，他們看不起任何其他威脅。」");
 	say();
-	message("「大多數高階法師都採用簡單的物理陷阱( physical traps )來守衛他們的宅邸。當然，還有魔導人偶( automatons )要對付……但只要我知道了那個秘密，他們的家就跟我的家一樣！」");
+	message("「大多數高階法師都採用簡單的物理陷阱，來守衛他們的宅邸。當然，還有魔導人偶要對付……但只要我知道了那個秘密，他們的家就跟我的家一樣！」");
 	say();
 	UI_add_answer(["物理陷阱", "魔導人偶"]);
 labelFunc04A8_060C:
@@ -385,7 +385,7 @@ labelFunc04A8_060C:
 	UI_remove_answer("物理陷阱");
 	message("「哦，可能是滑動的牆壁、從牆上射出的火球，或者是秘密通道。如果小心的話，應付這些大都很容易。」");
 	say();
-	message("「魔導人偶( automatons )比較難對付……」");
+	message("「魔導人偶比較難對付……」");
 	say();
 labelFunc04A8_0623:
 	case "魔導人偶" attend labelFunc04A8_0636:
@@ -402,7 +402,7 @@ labelFunc04A8_0636:
 labelFunc04A8_064D:
 	case "稀有物品" attend labelFunc04A8_0674:
 	UI_remove_answer("稀有物品");
-	message("「我承認這個頭銜涵蓋了相當多的東西……卷軸、魔法器具( magical apparatus )、實驗室設備、秘藥。任何委託人( client )認為有價值的東西——這就是我所謂的稀有物品。」");
+	message("「這個涵蓋了相當多的東西……卷軸、魔法器具、實驗室設備、秘藥。任何委託人認為有價值的東西——這就是我所謂的稀有物品。」");
 	say();
 	UI_push_answers();
 	UI_add_answer(["魔法器具", "委託人", "改變話題"]);
@@ -427,7 +427,7 @@ labelFunc04A8_06A8:
 	UI_remove_answer("情報");
 	message("「在這個迷宮裡的某個地方，有兩個開關必須被拉下……同時拉下，才能繼續前往出口。我不知道確切的位置在哪裡，但我確定會很明顯。」");
 	say();
-	message("「沒有我幫你，儘管你武藝高強，你也無法離開這個地方。而沒有你，我也沒有希望克服隔壁房間( next room )裡的東西。」");
+	message("「沒有我幫你，儘管你武藝高強，你也無法離開這個地方。而沒有你，我也沒有希望克服隔壁房間裡的東西。」");
 	say();
 	UI_push_answers();
 	UI_add_answer(["隔壁房間", "改變話題"]);
@@ -438,7 +438,7 @@ labelFunc04A8_06D0:
 	message(var0000);
 	message("。這可能是這次救了我一命的唯一原因……」");
 	say();
-	message("「當我來到這個房間時，我聽到隔壁房間有一些騷動。當我偷偷溜到入口時，我只看到一個法師( mage )和一隻非常、非常大的怪物( monster )，然後我就跑回這裡了。」");
+	message("「當我來到這個房間時，我聽到隔壁房間有一些騷動。當我偷偷溜到入口時，我只看到一個法師和一隻非常、非常大的怪物，然後我就跑回這裡了。」");
 	say();
 	message("「我上次看的時候，他們還在裡面……」");
 	say();
@@ -452,7 +452,7 @@ labelFunc04A8_06FE:
 labelFunc04A8_0718:
 	case "石心" attend labelFunc04A8_0738:
 	UI_remove_answer("石心");
-	message("「擁有石心( Stoneheart )是被禁止的，");
+	message("「擁有石心是被禁止的，");
 	message(var0000);
 	message("，而且這是有充分理由的。它是為 Vasculio 所有法術提供力量的秘藥基礎——而且有人說它能偷走一個人的理智。它非常危險。」");
 	say();

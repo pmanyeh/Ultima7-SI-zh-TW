@@ -142,7 +142,7 @@ labelFunc0614_026C:
 labelFunc0614_028C:
 	if (!(var0000 == 0x0011)) goto labelFunc0614_02AC;
 	UI_show_npc_face(var0002, 0x0000);
-	message("「你是誰，陌生人？為什麼我看不見你？詛咒這遮蔽了我心智的失衡( Imbalance )……」");
+	message("「你是誰，陌生人？為什麼我看不見你？詛咒這遮蔽了我心智的失衡( Imbalance )…」");
 	say();
 	UI_remove_npc_face(var0002);
 	return;

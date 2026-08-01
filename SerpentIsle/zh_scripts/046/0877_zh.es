@@ -19,10 +19,10 @@ labelFunc0877_0015:
 	message("。」");
 	say();
 labelFunc0877_001F:
-	message("「感到寬慰你在夢病蔓延前趕到。曾擔憂無人能保持清醒將戒指交給你。現在它是你的了。」");
+	message("「感到寬慰你在沉睡病蔓延前趕到。曾擔憂無人能保持清醒將戒指交給你。現在它是你的了。」");
 	say();
 	var0001 = Func099B(0xFE9C, 0x0001, 0x0377, 0xFE99, 0x0001, false, true);
 	gflags[0x0207] = true;
-	UI_add_answer(["情報", "援助", "夢病"]);
+	UI_add_answer(["情報", "援助", "沉睡病"]);
 	return;
 }

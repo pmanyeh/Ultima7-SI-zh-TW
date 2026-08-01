@@ -13,7 +13,7 @@ void Func08E3 0x8E3 ()
 	goto labelFunc08E3_0039;
 labelFunc08E3_002B:
 	UI_show_npc_face0(var0000, 0x0000);
-	message("\"Dost thou not see? Red, green and yellow -- and we have observed their properties. Now we can report to Gustacio.\"");
+	message("「你難道沒看出來嗎？紅、綠、黃——我們已經掌握它們的特性了。現在我們可以去向 Gustacio 回報了。」");
 	say();
 labelFunc08E3_0039:
 	return;

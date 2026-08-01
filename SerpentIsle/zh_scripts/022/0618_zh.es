@@ -70,7 +70,7 @@ labelFunc0618_028B:
 	UI_set_weather(0x0000);
 	UI_item_say(0xFE9C, "@以不列顛王的鬍子起誓！@");
 	UI_show_npc_face0(0xFE9C, 0x0000);
-	message("\"Look at how quickly it has grown! It looks as if it has been here for decades!\"");
+	message("「瞧瞧它長得有多快！簡直就像已經在這裡矗立了幾十年一樣！」");
 	say();
 	UI_remove_npc_face0();
 	var0002 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x04CF]);

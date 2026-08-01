@@ -65,7 +65,7 @@ labelFunc02C3_0112:
 	goto labelFunc02C3_043B;
 labelFunc02C3_0123:
 	if (!(var0000 == 0x0005)) goto labelFunc02C3_0134;
-	message("創造自動機（Create Automata）~~ 這個法術的名字其實起錯了，因為它並不創造自動機，而是修復它們。如果你有一個損壞的自動機，只需對著身體施放這個法術，它就會完全恢復。施放這個法術所需的魔法藥材如下：硫磺灰燼（sulfuric ash）、曼德拉草根（mandrake root）、蜘蛛絲（spider silk）和巨蛇鱗片（serpent scales）。 ");
+	message("創造魔導人偶（Create Automata）~~ 這個法術的名字其實起錯了，因為它並不創造魔導人偶，而是修復它們。如果你有一個損壞的魔導人偶，只需對著身體施放這個法術，它就會完全恢復。施放這個法術所需的魔法藥材如下：硫磺灰燼（sulfuric ash）、曼德拉草根（mandrake root）、蜘蛛絲（spider silk）和巨蛇鱗片（serpent scales）。 ");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0134:
@@ -245,14 +245,14 @@ labelFunc02C3_033A:
 	goto labelFunc02C3_043B;
 labelFunc02C3_034F:
 	if (!(var0000 == 0x0053)) goto labelFunc02C3_0360;
-	message("~尊崇這些遺骸，因為它們是勇敢的新信徒的骨灰，他們為秩序戰勝混沌的更大勝利犧牲了自己的身體。他們的頭腦使紀律領主（Lords of Discipline）不僅僅是自動機（automatons）。他們的犧牲將為我們的事業帶來最終的勝利，因為沒有人能對抗具有新信徒的意志（Will）和紀律（Discipline）的自動機！");
+	message("~尊崇這些遺骸，因為它們是勇敢的新信徒的骨灰，他們為秩序戰勝混沌的更大勝利犧牲了自己的身體。他們的頭腦使紀律領主（Lords of Discipline）不僅僅是魔導人偶（automatons）。他們的犧牲將為我們的事業帶來最終的勝利，因為沒有人能對抗具有新信徒的意志（Will）和紀律（Discipline）的魔導人偶！");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0360:
 	if (!(var0000 == 0x0054)) goto labelFunc02C3_0375;
 	message("~關於淨化惡魔領域的報告~");
 	say();
-	message("~副指揮官斯特拉斯克（Subcommander Stherask），我很遺憾地通知你，整個黃銅自動機連隊沒有一個回來。這次任務不僅證明了我們的巫師為製造這些自動機所付出的努力代價高昂，而且勇敢士兵的生命也是如此。 我們派去執行任務的三個人類中，阿爾斯佩斯中尉（Lieutenant Alspeth）和她的兩名中士謝斯帕里奧斯（Shesparios）和伊斯基爾（Iskil）都沒有回來。 在這種情況下，我們只能做最壞的打算；任務失敗了。 要不是我對你和我們的指揮官有著堅定不移的信心，我會質疑我們嘗試的價值，因為惡魔已經停止干涉巨蛇之牙（Serpent's Fang）的事務。 我向你保證，副指揮官，沒有人因為這三名優秀戰士的死亡而責備你。 所有知道任務失敗的人都毫不懷疑這是失去生命的合理理由。");
+	message("~副指揮官斯特拉斯克（Subcommander Stherask），我很遺憾地通知你，整個黃銅魔導人偶連隊沒有一個回來。這次任務不僅證明了我們的巫師為製造這些魔導人偶所付出的努力代價高昂，而且勇敢士兵的生命也是如此。 我們派去執行任務的三個人類中，阿爾斯佩斯中尉（Lieutenant Alspeth）和她的兩名中士謝斯帕里奧斯（Shesparios）和伊斯基爾（Iskil）都沒有回來。 在這種情況下，我們只能做最壞的打算；任務失敗了。 要不是我對你和我們的指揮官有著堅定不移的信心，我會質疑我們嘗試的價值，因為惡魔已經停止干涉巨蛇之牙（Serpent's Fang）的事務。 我向你保證，副指揮官，沒有人因為這三名優秀戰士的死亡而責備你。 所有知道任務失敗的人都毫不懷疑這是失去生命的合理理由。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_0375:

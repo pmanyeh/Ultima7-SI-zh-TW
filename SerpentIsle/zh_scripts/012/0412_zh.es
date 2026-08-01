@@ -43,10 +43,10 @@ labelFunc0412_0044:
 	var0008 = 0x0002;
 labelFunc0412_006B:
 	if (!((var0007 > 0x0001) || (var0007 < 0x0006))) goto labelFunc0412_0086;
-	var0007 = "日安(day)";
+	var0007 = "日安";
 	goto labelFunc0412_008C;
 labelFunc0412_0086:
-	var0007 = "晚安(evening)";
+	var0007 = "晚安";
 labelFunc0412_008C:
 	if (!((event == 0x0007) && UI_get_item_flag(item, 0x001D))) goto labelFunc0412_00AF;
 	var0009 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0329]);
