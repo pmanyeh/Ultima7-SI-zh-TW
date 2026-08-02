@@ -610,7 +610,7 @@
 0x25f:路徑(25f)(path)
 0x260:裝飾劍(260)(decorative sword)
 0x261:風箏盾(261)(kite shield)
-0x262:規模(262)(scale)
+0x262:天平(262)(scale)
 0x263:睡蓮葉(263)(lily pads)
 0x264:海浪(264)(surf)
 0x265:海浪(265)(surf)
@@ -1112,7 +1112,7 @@
 0x53:“詛咒你的子孫！”(53)("Curse thine offspring!")
 0x54:“該死的你！”(54)("Damn thee!")
 0x55:“拿著這個！”(55)("Take this!")
-0x56:「禿鷹會啄食你的骨頭！」(56)("Vultures will pick thy bones!")
+0x56:“禿鷹會啄食你的骨頭！”(56)("Vultures will pick thy bones!")
 0x57:“我想要你的頭！”(57)("I shall have thine head!")
 0x58:“去死吧，笨蛋！”(58)("Die, fool!")
 0x59:“你的血將會玷污這片土地！”(59)("Thy blood will soil the land!")
@@ -1122,7 +1122,7 @@
 0x5d:“讓開，讓我練習一下！”(5d)("Step aside so that I can practice!")
 0x5e:“你擋了我的路！”(5e)("Thou art in my way!")
 0x5f:“請讓開！”(5f)("Kindly step aside!")
-0x60:「哇！太熱了！」；(60)("Whew!  'Tis hot!";)
+0x60:“哇！太熱了！”；(60)("Whew!  'Tis hot!";)
 0x61:“工作……工作……工作……”(61)("Work...work...work...")
 0x62:“我們需要下雨…”(62)("We need rain...")
 0x63:“啊，好多了。”(63)("Ah, 'tis better.")
@@ -1132,7 +1132,7 @@
 0x67:“這個不需要開。”(67)("This need not be on.")
 0x68:“這個需要更換。”(68)("This needs replacing.")
 0x69:“衛兵！衛兵！”(69)("Guards!  Guards!")
-0x6a:「救命啊！」(6a)("Help!")
+0x6a:“救命啊！”(6a)("Help!")
 0x6b:“救救我！”(6b)("Save me!")
 0x6c:“叫守衛來！”(6c)("Call the guards!")
 0x6d:“通知鎮守衛！”(6d)("Alert the town guard!")
@@ -1161,7 +1161,7 @@
 0x84:“石像鬼小子！”(84)("Gargoyle boy!")
 0x85:“鬼魂！”(85)("Ghosts!")
 0x86:“陰影！”(86)("Shades!")
-0x87:「幽靈！」(87)("Spectres!")
+0x87:“幽靈！”(87)("Spectres!")
 0x88:“我聽到北方有動靜！”(88)("I hear something to the north!")
 0x89:“我聽到東方有動靜！”(89)("I hear something to the east!")
 0x8a:“我聽到南方有動靜！”(8a)("I hear something to the south!")
@@ -1222,10 +1222,10 @@
 0xc1:“天氣暖和了。”(c1)("It is warmer.")
 0xc2:“牙齒沒動。”(c2)("Stilled teeth.")
 0xc3:“沒那麼冷……冷。”(c3)("Not so c-c-cold.")
-0xc4:“解凍肉。”(c4)("Thawing flesh.")
+0xc4:“解凍中…”(c4)("Thawing flesh.")
 0xc5:“我感覺到我的腳了。”(c5)("I feel my feet.")
 0xc6:“多姆皮庫！！”(c6)("Dom picuh!!")
-0xc7:“天哪！”(c7)("Gord fhalfa!")
+0xc7:“天哪！
 0xc8:“德拉爾西·羅爾法？”(c8)("Dralthi rolfa?")
 0xc9:“希拉克慢跑！”(c9)("Shirak jogh!")
 0xca:“交通拉加爾！”(ca)("Traf lagar!")
@@ -1239,7 +1239,7 @@
 0xd2:“烏爾古賈格！”(d2)("Urgu jaag!")
 0xd3:“賈法爾烏爾古！”(d3)("Jafal urgu!")
 0xd4:“誒誒！”(d4)("Eeeeerrrr!")
-0xd5:“悍匪唐！”(d5)("Blaggar don!")
+0xd5:“混蛋！”(d5)("Blaggar don!")
 0xd6:“厄加特轉移！”(d6)("Urgot tranf!")
 0xd7:“格洛魯gank！”(d7)("Gloru gank!")
 0xd8:“賈弗魯克！”(d8)("Jafruk!")
@@ -1248,7 +1248,7 @@
 0xdb:“迪迪迪達…”(db)("Dee dee, dee da...")
 0xdc:“大家好！”(dc)("Howdy folks!")
 0xdd:“比迪，比迪，嗨，巴克！”(dd)("Beedee, beedee, hi Buck!")
-0xde:「直腸？見鬼，它殺了他！」(de)("Rectum? Hell, it killed him!")
+0xde:“直腸？見鬼，它殺了他！”(de)("Rectum? Hell, it killed him!")
 0xdf:“哎呀！！已經很接近了！”(df)("Yikes!! That was close!")
 0xe0:“約德爾約德爾喲呼呼！”(e0)("Yodel yodel yoouuhoohoo!")
 0xe1:“就這樣吧…”(e1)("Let it be...")
@@ -1260,7 +1260,7 @@
 0xe7:“進攻！”(e7)("To attack!")
 0xe8:“從沉睡中醒來！”(e8)("To waken from slumber!")
 0xe9:“做一個骯髒的人！”(e9)("To be a filthy human!")
-0xea:「咕咕…」(ea)("Grrrr...")
+0xea:“咕咕…”(ea)("Grrrr...")
 0xeb:“嘎嘎嘎！”(eb)("Gaarrrrr!")
 0xec:“你可以擁有它。”(ec)("Thou may have it.")
 0xed:“把它當作你的吧。”(ed)("Consider it thine.")
@@ -1329,66 +1329,66 @@
 0x146:並在 Twitter 上標註 @RichardGarriott(146)(@RichardGarriott on Twitter,)
 0x147:向他訴說(147)(telling him of your)
 0x148:你的豐功偉業吧！(148)(accomplishment!)
-0x14b:不列顛王的城堡(14b)(Lord British's Castle)
-0x14c:不列顛屌王的城堡(14c)(Dick British's Castle)
-0x14d:在黑月之門遭到摧毀(14d)(Eighteen months after the destruction)
-0x14e:、且友誼會被瓦解(14e)(of the Black Gate and the)
-0x14f:的十八個月後。(14f)(dismantling of The Fellowship)
-0x150:吾王(150)(My liege)
-0x151:嗯，怎麼了？(151)(Yo, homes)
-0x152:我們在巴特林的遺物中，(152)(All we found among Batlin's)
-0x153:僅發現了這卷魔法卷軸……(153)(belongings was this enchanted scroll...)
-0x154:以及一張指向了名為(154)(and a map showing the way to)
-0x155:「巨蛇之島」的地圖。(155)(a place called the Serpent Isle.)
-0x156:好吧...(156)(Indeed.)
-0x157:把它放在桌上。(157)(Put it on the table.)
-0x158:快點！把它丟在桌上！(158)(Iree. Slap it down there!)
-0x159:退後！(159)(Stand Back!)
-0x15a:快退後！(15a)(Jump Back!)
-0x15b:巴特林！萬一聖者(15b)(Batlin! In the event that the)
-0x15c:摧毀了黑月之門，(15c)(Avatar destroys the Black Gate)
-0x15d:你即刻尾隨那毫不知情的(15d)(you shall follow the unwitting)
-0x15e:Gwenno 前往巨蛇之島。(15e)(human Gwenno to the Serpent Isle)
-0x15f:到那裡，我將會詳述(15f)(There I shall outline my plan)
-0x160:摧毀不列顛尼亞的計畫！(160)(to destroy Britannia!)
-0x161:巴特林！你要知道，(161)(Batlin! Know that my face is most)
-0x162:我的臉長得像極了布偶！(162)(muppet like!)
-0x163:你必須前往巨蛇之島，(163)(You must go to the Serpent Isle)
-0x164:去學習抗痘藥膏的祕密。(164)(to learn the secret of Acne Medication)
-0x165:很快，我和我的布偶大軍，(165)(Soon I and my horde of muppets will)
-0x166:就要毀滅不列顛尼亞了！(166)(destroy Britannia!)
-0x167:「這是我最害怕的夢魘！」(167)('Tis my worst fear!)
-0x168:「我必須將聖者送過那些石柱，(168)(I must send the Avatar through)
-0x169:讓他前往巨蛇之島！」(169)(the pillars to the Serpent Isle!)
-0x16a:就此，我們大功告成。(16a)(There, we are done.)
-0x16b:平衡已然恢復(16b)(Balance is restored)
-0x16c:巨蛇之島、不列顛尼亞、你的家鄉...地球，(16c)(Serpent Isle, Britannia, your Earth,)
-0x16d:以至整個宇宙，全都獲救了。(16d)(the entire universe, all are saved.)
-0x16e:無須掛念你的朋友 Dupre(16e)(Worry not about your friend Dupre.)
-0x16f:他已與我們合而為一，並且內心充滿平靜。(16f)(He is one with us, and content.)
-0x170:再會了，聖者。(170)(Goodbye, Avatar.)
-0x171:我們向你致謝。(171)(We thank you.)
-0x172:噢噢噢～聖者～～(172)(Well well well, Avatar. You)
-0x173:你又一次成功地阻撓了我。(173)(have managed to thwart me once again.)
-0x174:為混沌橫行的地帶(174)(By restoring balance where)
-0x175:恢復了平衡，(175)(once chaos reigned, you have)
-0x176:拯救了你那可詛咒的世界。(176)(saved your accursed world.)
-0x177:但現在，(177)(But now here you are, poised)
-0x178:你站在了永恆的邊緣。(178)(at the edge of Eternity.)
-0x179:你打算去哪呢？(179)(Where would you go?)
-0x17a:回到不列顛尼亞？(17a)(Back to Britannia?)
-0x17b:還是回地球？(17b)(To Earth?)
-0x17c:或許，你想加入我，(17c)(Perhaps you would join me in)
-0x17d:前往另一個全新的世界？(17d)(another world alltogether?)
-0x17e:我們之間，還有一筆帳要算呢！(17e)(We do have a score to settle!)
-0x17f:您已恢復了巨蛇之島的平衡！(17f)(You have restored balance to)
-0x180:共耗時了：(180)(the Serpent Isle in)
+0x14b:不列顛王的城堡
+0x14c:不列顛屌王的城堡
+0x14d:在黑月之門遭到摧毀
+0x14e:、且友誼會被瓦解
+0x14f:的十八個月後…
+0x150:吾王
+0x151:嗯，怎麼了？
+0x152:我們在巴特林的遺物中
+0x153:僅發現了這卷魔法卷軸…
+0x154:以及一張指向了名為
+0x155:「巨蛇之島」的地圖
+0x156:好吧...
+0x157:把它放在桌上
+0x158:快點！把它丟在桌上！
+0x159:退後！
+0x15a:快退後！
+0x15b:巴特林！萬一聖者
+0x15c:摧毀了黑月之門
+0x15d:你即刻尾隨那毫不知情的
+0x15e:Gwenno 前往巨蛇之島
+0x15f:到那裡，我將會詳述
+0x160:摧毀不列顛尼亞的計畫！
+0x161:巴特林！你要知道
+0x162:我的臉長得像極了布偶！
+0x163:你必須前往巨蛇之島
+0x164:去學習抗痘藥膏的祕密
+0x165:很快，我和我的布偶大軍
+0x166:就要毀滅不列顛尼亞了！
+0x167:「這是我最害怕的夢魘！」
+0x168:「我必須將聖者送過那些石柱
+0x169:讓他前往巨蛇之島！」
+0x16a:就此，我們大功告成
+0x16b:平衡已然恢復
+0x16c:巨蛇之島、不列顛尼亞、你的家鄉...地球
+0x16d:以至整個宇宙，全都獲救了
+0x16e:無須掛念你的朋友 Dupre
+0x16f:他已與我們合而為一，並且內心充滿平靜
+0x170:再會了，聖者
+0x171:我們向你致謝
+0x172:噢噢噢～聖者～～
+0x173:你又一次成功地阻撓了我
+0x174:為混沌橫行的地帶
+0x175:恢復了平衡
+0x176:拯救了你那可詛咒的世界
+0x177:但現在…你站在了永恆的邊緣
+0x178:
+0x179:你打算去哪呢？
+0x17a:回到不列顛尼亞？
+0x17b:還是回地球？
+0x17c:或許，你想加入我…
+0x17d:前往另一個全新的世界？
+0x17e:我們之間，還有一筆帳要算呢！
+0x17f:您已恢復了巨蛇之島的平衡！
+0x180:共耗時了：
 0x181:& |僅|完全|年|年|月|月|日|天|小時|小時|負時間！(181)(& |only |exactly | year| years| month| months| day| days| hour| hours|negative time!)
-0x182:不幸的是…守護者綁架了你！(182)(Unfortunately the Guardian has kidnapped you!)
-0x183:請務必去寫信給 Lord British(183)(Please write Lord British,)
-0x184:並在 Twitter 上標註 @RichardGarriott(184)(@RichardGarriott on Twitter,)
-0x185:告訴他你的命運！(185)(telling him of your fate!)
-0x190:食物耗盡(190)(Out of Food)
+0x182:不幸的是…守護者綁架了你！
+0x183:請務必去寫信給 Lord British
+0x184:並在 Twitter 上標註 @RichardGarriott
+0x185:告訴他你的命運！
+0x190:食物耗盡
 0x191:OK
 0x192:CANCEL
 0x193:HELP

@@ -259,7 +259,7 @@ labelFunc04D7_03CD:
 	message(var0002);
 	message(" ！」");
 	say();
-	message("「你的命運和我們的劫數，將在被稱為晨曦島( Sunrise Isle )的島嶼上揭曉。拿著這把巨蛇之劍( Serpent Sword )，這是我對你最後的幫助…我能做的就只有這些了。」");
+	message("「你的命運和我們的劫數，將在被稱為晨曦島( Sunrise Isle )的島嶼上揭曉。拿著這把蛇神之劍，這是我對你最後的幫助…我能做的就只有這些了。」");
 	say();
 	var0004 = Func099B(0xFE9C, 0x0001, 0x02C6, 0x0000, 0x0000, 0x0000, true);
 	gflags[0x0276] = true;

@@ -107,7 +107,7 @@ labelFunc02C5_01F4:
 labelFunc02C5_020A:
 	if (!(var0000 == 0x004F)) goto labelFunc02C5_0220;
 	var0001 = ["TOLERANCE"];
-	var_chinese = ["包容"];
+	var_chinese = ["寬容"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_0220:
 	if (!(var0000 == 0x0050)) goto labelFunc02C5_0236;
@@ -212,12 +212,12 @@ labelFunc02C5_03E9:
 labelFunc02C5_03FF:
 	if (!(var0000 == 0x008E)) goto labelFunc02C5_0415;
 	var0001 = ["LOGIC"];
-	var_chinese = ["理性"];
+	var_chinese = ["邏輯"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_0415:
 	if (!(var0000 == 0x008F)) goto labelFunc02C5_042B;
 	var0001 = ["TOLERANCE"];
-	var_chinese = ["包容"];
+	var_chinese = ["寬容"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_042B:
 	if (!(var0000 == 0x0090)) goto labelFunc02C5_0441;

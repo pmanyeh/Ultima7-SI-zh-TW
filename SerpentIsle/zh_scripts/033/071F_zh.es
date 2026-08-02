@@ -37,7 +37,7 @@ void Func071F object#(0x71F) ()
 	var0000 = UI_get_object_position(0xFE9C);
 	if (!(var0000[0x0003] == 0x0000)) goto labelFunc071F_002A;
 	UI_show_npc_face0(0xFE9C, 0x0000);
-	message("\"It seems that I cannot put the serpent in the slot. Perhaps I should step up a level...\"");
+	message("看來我沒辦法把巨蛇放進插槽裡。也許我該往上一層走……」");
 	say();
 	UI_remove_npc_face0();
 	abort;

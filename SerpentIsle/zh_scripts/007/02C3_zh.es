@@ -48,7 +48,7 @@ labelFunc02C3_00E8:
 	if (!(var0000 == 0x0002)) goto labelFunc02C3_00FD;
 	message("沉思（MUSINGS），由建築師伊西克（Issik the Architect）所著~~");
 	say();
-	message("  日出島（Sunrise Isle）被雪覆蓋的表面完全荒蕪。沒有生命能在表面長久生存。大祭司（Great Hierophant）下令禁止進入表面，認為這太危險了，這確實是一件好事。");
+	message("  晨曦島（Sunrise Isle）被雪覆蓋的表面完全荒蕪。沒有生命能在表面長久生存。大祭司（Great Hierophant）下令禁止進入表面，認為這太危險了，這確實是一件好事。");
 	say();
 	goto labelFunc02C3_043B;
 labelFunc02C3_00FD:

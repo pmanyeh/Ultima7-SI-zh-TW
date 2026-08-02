@@ -39,6 +39,22 @@ void Func073B object#(0x73B) ()
 	if (!((UI_get_item_quality(item) == 0x00FF) && (event == 0x0003))) goto labelFunc073B_00DD;
 	UI_set_weather(0x0003);
 	UI_play_sound_effect(0x0082);
+	// SI Fixes: 強制清除三位夥伴(Shamino -3, Dupre -2, Iolo -1)的異常狀態，確保過場正常發動
+	UI_clear_item_flag(0xFFFD, 0x0000); // DEAD
+	UI_clear_item_flag(0xFFFD, 0x0002); // ASLEEP
+	UI_clear_item_flag(0xFFFD, 0x001B); // CHARMED
+	UI_clear_item_flag(0xFFFD, 0x001E); // PARALYZED
+	UI_clear_item_flag(0xFFFD, 0x0014); // POISONED
+	UI_clear_item_flag(0xFFFE, 0x0000);
+	UI_clear_item_flag(0xFFFE, 0x0002);
+	UI_clear_item_flag(0xFFFE, 0x001B);
+	UI_clear_item_flag(0xFFFE, 0x001E);
+	UI_clear_item_flag(0xFFFE, 0x0014);
+	UI_clear_item_flag(0xFFFF, 0x0000);
+	UI_clear_item_flag(0xFFFF, 0x0002);
+	UI_clear_item_flag(0xFFFF, 0x001B);
+	UI_clear_item_flag(0xFFFF, 0x001E);
+	UI_clear_item_flag(0xFFFF, 0x0014);
 	var0000 = UI_get_object_position(item);
 	var0001 = UI_create_new_object2(0x013E, [var0000[0x0001], (var0000[0x0002] + 0x0001), var0000[0x0003]]);
 	UI_set_schedule_type(var0001, 0x000F);
@@ -307,13 +323,12 @@ labelFunc073B_09FB:
 	if (!var000F) goto labelFunc073B_0B44;
 	var0000 = UI_get_object_position(var000F);
 	UI_remove_item(var000F);
-	var0010 = UI_get_cont_items(0xFFFD, 0xFE99, 0xFE99, 0xFE99);
-	if (!var0010) goto labelFunc073B_0B44;
-	enum();
+	var0010 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 labelFunc073B_0AB4:
 	for (var0013 in var0010 with var0011 to var0012) attend labelFunc073B_0B44;
-	var0014 = UI_set_last_created(var0013);
-	if (!var0014) goto labelFunc073B_0B41;
+	var0014 = UI_get_readied(0xFFFD, var0013);
+	if (!var0014) goto labelFunc073B_0AB4;
+	UI_set_last_created(var0014);
 	var0014 = UI_update_last_created(var0000);
 	if (!(!var0014)) goto labelFunc073B_0AF3;
 	var0014 = UI_update_last_created([0x0921, 0x017A, 0x0000]);
@@ -334,13 +349,12 @@ labelFunc073B_0B44:
 	if (!var000F) goto labelFunc073B_0C37;
 	var0000 = UI_get_object_position(var000F);
 	UI_remove_item(var000F);
-	var0010 = UI_get_cont_items(0xFFFF, 0xFE99, 0xFE99, 0xFE99);
-	if (!var0010) goto labelFunc073B_0C37;
-	enum();
+	var0010 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 labelFunc073B_0BA7:
 	for (var0013 in var0010 with var0015 to var0016) attend labelFunc073B_0C37;
-	var0014 = UI_set_last_created(var0013);
-	if (!var0014) goto labelFunc073B_0C34;
+	var0014 = UI_get_readied(0xFFFF, var0013);
+	if (!var0014) goto labelFunc073B_0BA7;
+	UI_set_last_created(var0014);
 	var0014 = UI_update_last_created(var0000);
 	if (!(!var0014)) goto labelFunc073B_0BE6;
 	var0014 = UI_update_last_created([0x092B, 0x0174, 0x0000]);
@@ -361,13 +375,12 @@ labelFunc073B_0C37:
 	if (!var000F) goto labelFunc073B_0D2A;
 	var0000 = UI_get_object_position(var000F);
 	UI_remove_item(var000F);
-	var0010 = UI_get_cont_items(0xFFFE, 0xFE99, 0xFE99, 0xFE99);
-	if (!var0010) goto labelFunc073B_0D2A;
-	enum();
+	var0010 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 labelFunc073B_0C9A:
 	for (var0013 in var0010 with var0017 to var0018) attend labelFunc073B_0D2A;
-	var0014 = UI_set_last_created(var0013);
-	if (!var0014) goto labelFunc073B_0D27;
+	var0014 = UI_get_readied(0xFFFE, var0013);
+	if (!var0014) goto labelFunc073B_0C9A;
+	UI_set_last_created(var0014);
 	var0014 = UI_update_last_created(var0000);
 	if (!(!var0014)) goto labelFunc073B_0CD9;
 	var0014 = UI_update_last_created([0x092A, 0x017A, 0x0000]);
