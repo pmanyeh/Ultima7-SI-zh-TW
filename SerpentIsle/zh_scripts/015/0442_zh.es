@@ -14,7 +14,7 @@ void Func0442 object#(0x442) ()
 	if (!(event == 0x0002)) goto labelFunc0442_01AB;
 	if (!UI_get_item_flag(0xFFBE, 0x001C)) goto labelFunc0442_014F;
 	UI_show_npc_face0(0xFFBE, 0x0000);
-	message("「你殺了我！我的血正在流失……這都是因為 Pomdirgun ，那個叛徒！」");
+	message("「你殺了我！我的血正在流失…這都是因為 Pomdirgun ，那個叛徒！」");
 	say();
 	message("「靠近點，好讓我在死前誇耀一下我的事蹟。」");
 	say();
@@ -46,21 +46,21 @@ labelFunc0442_0091:
 labelFunc0442_00B1:
 	case "許多年前" attend labelFunc0442_00C4:
 	UI_remove_answer("許多年前");
-	message("「是 Pomdirgun 的父親弄到了魔法藥水，讓我改變了外貌。但現在……我厭倦了做一個人類！我想再當一次哥布林！我已經浪費了我的一生！我想死……」");
+	message("「是 Pomdirgun 的父親弄到了魔法藥水，讓我改變了外貌。但現在…我厭倦了做一個人類！我想再當一次哥布林！我已經浪費了我的一生！我想死…」");
 	say();
 labelFunc0442_00C4:
 	case "掩護" attend labelFunc0442_00D7:
 	UI_remove_answer("掩護");
-	message("「一位月影城的法師製造了一種藥水，讓我們能擁有類似人類的外表。但這會上癮！我不能沒有它……」");
+	message("「一位月影城的法師製造了一種藥水，讓我們能擁有類似人類的外表。但這會上癮！我不能沒有它…」");
 	say();
 labelFunc0442_00D7:
 	case "復仇", "告辭" attend labelFunc0442_0148:
-	message("「嗯……也許你想知道 Pomdirgun 營地的秘密地點？如果你答應殺死 Pomdirgun 國王，我就告訴你！」");
+	message("「嗯…也許你想知道 Pomdirgun 營地的秘密地點？如果你答應殺死 Pomdirgun 國王，我就告訴你！」");
 	say();
 	if (!Func0955()) goto labelFunc0442_00FF;
 	message("「在騎士森林( Knights' Forest )裡，騎士考驗的北方，有一棵巨大的枯樹( Great Dead Tree )。你會認出它的，因為它被岩石包圍著。附近隱藏著一條通往地底深處的古老樓梯。」");
 	say();
-	message("「這會通向一條通道，帶你前往隱藏在一個秘密山谷裡的首領村莊。從來沒有人類踏足過那裡……」");
+	message("「這會通向一條通道，帶你前往隱藏在一個秘密山谷裡的首領村莊。從來沒有人類踏足過那裡…」");
 	say();
 	message("「但是要小心！粗心大意的人將面臨許多挑戰，而你必須活下來，把 Pomdirgun 的頭劈成兩半！」");
 	say();
@@ -68,10 +68,10 @@ labelFunc0442_00D7:
 	say();
 	goto labelFunc0442_0103;
 labelFunc0442_00FF:
-	message("「那麼詛咒你吧！我會把哥布林的秘密帶進我的墳墓……」");
+	message("「那麼詛咒你吧！我會把哥布林的秘密帶進我的墳墓…」");
 	say();
 labelFunc0442_0103:
-	message("「呃啊……」");
+	message("「呃啊…」");
 	say();
 	var0001 = Func0992(0x0001, "@他死了。@", "@他死了。@", true);
 	UI_set_conversation_slot(0x0000);
@@ -88,7 +88,7 @@ labelFunc0442_014B:
 	goto labelFunc0442_01AB;
 labelFunc0442_014F:
 	UI_show_npc_face0(0xFFBE, 0x0000);
-	message("「你發現了我的秘密！現在，你必須死……」");
+	message("「你發現了我的秘密！現在，你必須死…」");
 	say();
 	UI_set_item_flag(0xFFBE, 0x001D);
 	UI_set_alignment(0xFFBE, 0x0002);

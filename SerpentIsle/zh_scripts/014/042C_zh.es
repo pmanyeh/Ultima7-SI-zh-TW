@@ -64,7 +64,7 @@ void Func042C object#(0x42C) ()
 	UI_item_say(0xFE9C, "@妳好。@");
 	goto labelFunc042C_0056;
 labelFunc042C_004C:
-	UI_item_say(0xFE9C, "@打擾一下，小姐……@");
+	UI_item_say(0xFE9C, "@打擾一下，小姐…@");
 labelFunc042C_0056:
 	0xFFD4->Func07D1();
 	Func097F(0xFFD4, (("@有什麼事嗎，" + var0000) + "？@"), 0x0002);
@@ -96,16 +96,16 @@ labelFunc042C_00E6:
 	goto labelFunc042C_0147;
 labelFunc042C_010F:
 	if (!(!UI_get_item_flag(0xFFD4, 0x001C))) goto labelFunc042C_0132;
-	message("「請允許我自我介紹。我的名字是 Selina。而且我聽說你現在需要……資金，我們就這麼說吧。」");
+	message("「請允許我自我介紹。我的名字是 Selina。而且我聽說你現在需要…資金，我們就這麼說吧。」");
 	say();
-	message("「我相信我能幫得上忙……」");
+	message("「我相信我能幫得上忙…」");
 	say();
 	UI_set_item_flag(0xFFD4, 0x001C);
 	goto labelFunc042C_013A;
 labelFunc042C_0132:
-	message("「我聽說你現在需要……資金，我們就這麼說吧。」");
+	message("「我聽說你現在需要…資金，我們就這麼說吧。」");
 	say();
-	message("「我相信我能幫得上忙……」");
+	message("「我相信我能幫得上忙…」");
 	say();
 labelFunc042C_013A:
 	UI_add_answer(["資金", "幫忙"]);
@@ -127,7 +127,7 @@ labelFunc042C_014A:
 labelFunc042C_017B:
 	message("「原諒我， ");
 	message(var0000);
-	message("……\t我的名字是 Selina。」");
+	message("…\t我的名字是 Selina。」");
 	say();
 	message("「你看起來既勇敢又值得信賴。」");
 	say();
@@ -143,7 +143,7 @@ labelFunc042C_01A1:
 	message(var0001);
 	message("！」");
 	say();
-	message("「看來我們註定要在一起……」");
+	message("「看來我們註定要在一起…」");
 	say();
 	if (!UI_is_pc_female()) goto labelFunc042C_01D6;
 	message("「我很高興你回來了。」");
@@ -265,7 +265,7 @@ labelFunc042C_0407:
 	say();
 	message("「現在，隨著 Hawk 船長成為塔樓守衛的囚犯，你肯定正在想辦法湊齊足夠的贖金，來滿足那些貪婪的惡棍。」");
 	say();
-	message("「只要稍微想想，這一切都非常明顯……」");
+	message("「只要稍微想想，這一切都非常明顯…」");
 	say();
 labelFunc042C_0422:
 	case "離隊" attend labelFunc042C_0435:
@@ -279,7 +279,7 @@ labelFunc042C_0435:
 	say();
 	message("「取而代之的是一棟奇怪的建築，門鎖得死死的，據說裡面充滿了可怕的怪物和大量的寶藏！」");
 	say();
-	message("「曾經被我視為摯愛的人在建築外面的一個生物身上找到了一把鑰匙。他為了某種……回報……把這把鑰匙給了我，並答應在這裡跟我碰面，這樣我們就能一起尋寶了。」");
+	message("「曾經被我視為摯愛的人在建築外面的一個生物身上找到了一把鑰匙。他為了某種…回報…把這把鑰匙給了我，並答應在這裡跟我碰面，這樣我們就能一起尋寶了。」");
 	say();
 	UI_add_answer(["摯愛", "鑰匙"]);
 labelFunc042C_045D:
@@ -288,11 +288,11 @@ labelFunc042C_045D:
 	message("「他人不在這裡，而且看起來也不打算遵守諾言。男人！」");
 	say();
 	if (!UI_is_pc_female()) goto labelFunc042C_047E;
-	message("「坦白說，如果我們能完全擺脫男人的話就最好了！我們應該建立一個什麼樣的姊妹會才好呢……」");
+	message("「坦白說，如果我們能完全擺脫男人的話就最好了！我們應該建立一個什麼樣的姊妹會才好呢…」");
 	say();
 	goto labelFunc042C_0482;
 labelFunc042C_047E:
-	message("「我感覺很糟，因為這次我交出了我的真心，而現在它碎了……」");
+	message("「我感覺很糟，因為這次我交出了我的真心，而現在它碎了…」");
 	say();
 labelFunc042C_0482:
 	case "鑰匙", "繼續任務" attend labelFunc042C_06A8:
@@ -339,18 +339,18 @@ labelFunc042C_054A:
 labelFunc042C_0559:
 	message("「希望你活著的時候不會後悔你的決定， ");
 	message(var0001);
-	message("。他們是你的朋友，如果你帶他們去送死，他們可不會感激你的……」");
+	message("。他們是你的朋友，如果你帶他們去送死，他們可不會感激你的…」");
 	say();
 labelFunc042C_0563:
 	if (!(UI_get_array_size(UI_get_party_list2()) > 0x0004)) goto labelFunc042C_05ED;
 	var000E = Func0992(0x0001, 0x0000, 0x0000, false);
 	UI_show_npc_face1(var000E, 0x0000);
-	message("「這隊伍對我的品味來說有點太大了。我想我還是留在客棧一陣子好了……」");
+	message("「這隊伍對我的品味來說有點太大了。我想我還是留在客棧一陣子好了…」");
 	say();
 	UI_remove_from_party(var000E);
 	UI_set_new_schedules(var000E, [0x0000, 0x0002, 0x0003], [0x000E, 0x001A, 0x0007], [var0002, var0003, var0004]);
 	UI_set_schedule_type(var000E, 0x000C);
-	Func097F(var000E, "@回頭見……@", 0x0000);
+	Func097F(var000E, "@回頭見…@", 0x0000);
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	message("「沒有那個麻煩製造者，我們也會沒事的， ");
@@ -384,25 +384,25 @@ labelFunc042C_067A:
 	abort;
 	goto labelFunc042C_06A8;
 labelFunc042C_069E:
-	message("「我還以為你會感興趣的！喔，好吧，他用這麼廉價的條件換取我的……回報，是他的損失！而你不加入我，則是你的損失！」 *「不過，我不會怪你的， ");
+	message("「我還以為你會感興趣的！喔，好吧，他用這麼廉價的條件換取我的…回報，是他的損失！而你不加入我，則是你的損失！」 *「不過，我不會怪你的， ");
 	message(var0001);
-	message("。如果你還留在這裡，而且在我回來時需要錢的話……也許我會借你一些！」");
+	message("。如果你還留在這裡，而且在我回來時需要錢的話…也許我會借你一些！」");
 	say();
 labelFunc042C_06A8:
 	case "教導" attend labelFunc042C_06D7:
-	message("「在蒙利多城( Monitor )，女性可以成為戰士……但代價是失去她們的女性氣質。」");
+	message("「在蒙利多城( Monitor )，女性可以成為戰士…但代價是失去她們的女性氣質。」");
 	say();
-	message("「在幼鹿城( Fawn )，女性因其美貌而受重視……代價是她們的獨立和智慧。」");
+	message("「在幼鹿城( Fawn )，女性因其美貌而受重視…代價是她們的獨立和智慧。」");
 	say();
-	message("「而在月影城( Moonshade )，女性可以成為法師……但真正的權力掌握在男人手中。」");
+	message("「而在月影城( Moonshade )，女性可以成為法師…但真正的權力掌握在男人手中。」");
 	say();
-	message("「所以，你看……你勇敢、聰明又美麗。你不是其中之一……而是兼具了所有特質。」");
+	message("「所以，你看…你勇敢、聰明又美麗。你不是其中之一…而是兼具了所有特質。」");
 	say();
 	UI_remove_answer("教導");
 	UI_add_answer(["蒙利多城", "幼鹿城", "月影城"]);
 labelFunc042C_06D7:
 	case "蒙利多城" attend labelFunc042C_06F1:
-	message("「蒙利多城( Monitor )就在這裡的南邊……它被長槍兵控制，他們把戰鬥能力看得比什麼都重要。」 *「那裡很少人重視美貌，擁有智慧的人更少。給他們一劑謙卑的藥對他們有好處。」");
+	message("「蒙利多城( Monitor )就在這裡的南邊…它被長槍兵控制，他們把戰鬥能力看得比什麼都重要。」 *「那裡很少人重視美貌，擁有智慧的人更少。給他們一劑謙卑的藥對他們有好處。」");
 	say();
 	UI_remove_answer("蒙利多城");
 	UI_add_answer("長槍兵");
@@ -421,7 +421,7 @@ labelFunc042C_0712:
 	UI_remove_answer("長槍兵");
 labelFunc042C_0719:
 	case "幼鹿城" attend labelFunc042C_0733:
-	message("「幼鹿城( Fawn )在這裡的西北方……他們有一位女性統治者，但她只是個掛名的統治者。」 *「大船長們和金錢才是真正控制著這座城市的力量，並且只有在方便的時候才會對美貌做表面功夫。如果那裡的女人們起義並前往蒙利多城( Monitor )學習如何戰鬥，那他們就是活該了。」");
+	message("「幼鹿城( Fawn )在這裡的西北方…他們有一位女性統治者，但她只是個掛名的統治者。」 *「大船長們和金錢才是真正控制著這座城市的力量，並且只有在方便的時候才會對美貌做表面功夫。如果那裡的女人們起義並前往蒙利多城( Monitor )學習如何戰鬥，那他們就是活該了。」");
 	say();
 	UI_remove_answer("幼鹿城");
 	UI_add_answer("大船長");
@@ -434,13 +434,13 @@ labelFunc042C_0733:
 	UI_remove_answer("大船長");
 labelFunc042C_074C:
 	case "月影城" attend labelFunc042C_0766:
-	message("「月影城( Moonshade )在東邊的另一座島上……他們由專家( Adept )統治，但卻避開普通人，認為他們不值得注意。」 *「每個法師都有他或她自己版本的現實，以至於你應該過濾他們說的每一句話，以尋找真實的核心。我好幾次都希望那些法師能發現自己站在幼鹿城( Fawn )的捕魚船隊甲板上，為了誠實的生計工作個幾天……也許那樣他們就會學到誰才是真正重要的人。」");
+	message("「月影城( Moonshade )在東邊的另一座島上…他們由專家( Adept )統治，但卻避開普通人，認為他們不值得注意。」 *「每個法師都有他或她自己版本的現實，以至於你應該過濾他們說的每一句話，以尋找真實的核心。我好幾次都希望那些法師能發現自己站在幼鹿城( Fawn )的捕魚船隊甲板上，為了誠實的生計工作個幾天…也許那樣他們就會學到誰才是真正重要的人。」");
 	say();
 	UI_remove_answer("月影城");
 	UI_add_answer("專家");
 labelFunc042C_0766:
 	case "專家" attend labelFunc042C_077F:
-	message("「據我所知，成為專家與其說是任何偉大訓練的結果，不如說是出生的意外。每個專家專精於某種技能……」 *「所以一個能用一個法術殺死他豪宅裡所有人的法師，很可能連一連串法術都無法把他的拖鞋從火爐前拿過來！專家們實在是太自以為是了， ");
+	message("「據我所知，成為專家與其說是任何偉大訓練的結果，不如說是出生的意外。每個專家專精於某種技能…」 *「所以一個能用一個法術殺死他豪宅裡所有人的法師，很可能連一連串法術都無法把他的拖鞋從火爐前拿過來！專家們實在是太自以為是了， ");
 	message(var0001);
 	message("。」");
 	say();
@@ -448,7 +448,7 @@ labelFunc042C_0766:
 labelFunc042C_077F:
 	case "保護" attend labelFunc042C_07A6:
 	UI_remove_answer("保護");
-	message("「是的，保護……這附近有人在失蹤。」 *「我不知道是那些神秘的風暴，還是有更邪惡的力量在作祟。我只知道我很害怕。」");
+	message("「是的，保護…這附近有人在失蹤。」 *「我不知道是那些神秘的風暴，還是有更邪惡的力量在作祟。我只知道我很害怕。」");
 	say();
 	UI_push_answers();
 	UI_add_answer(["人員失蹤", "神秘風暴", "換個話題"]);
@@ -461,7 +461,7 @@ labelFunc042C_07A6:
 	say();
 labelFunc042C_07BC:
 	case "人員失蹤" attend labelFunc042C_07D6:
-	message("「一開始是一個他們稱為 Silverpate 的人……現在 Angus 也不見了。」 *「一個建造了這家客棧，另一個是這裡的客棧老闆……而其他失蹤的人讓我懷疑這個地方是不是被詛咒了！」");
+	message("「一開始是一個他們稱為 Silverpate 的人…現在 Angus 也不見了。」 *「一個建造了這家客棧，另一個是這裡的客棧老闆…而其他失蹤的人讓我懷疑這個地方是不是被詛咒了！」");
 	say();
 	UI_remove_answer("人員失蹤");
 	UI_add_answer("其他人");
@@ -473,31 +473,31 @@ labelFunc042C_07D6:
 	UI_add_answer(["Ensorcio", "兩名客人"]);
 labelFunc042C_07F6:
 	case "Ensorcio" attend labelFunc042C_0810:
-	message("「他是住在這裡的法師……他看起來很陰險，但對我很好。雖然沒有 Argus 那麼好……但以一個法師來說算好了。」 *「他似乎喝很多酒。而且他的脾氣也很壞。」");
+	message("「他是住在這裡的法師…他看起來很陰險，但對我很好。雖然沒有 Argus 那麼好…但以一個法師來說算好了。」 *「他似乎喝很多酒。而且他的脾氣也很壞。」");
 	say();
 	UI_remove_answer("Ensorcio");
 	UI_add_answer("Argus");
 labelFunc042C_0810:
 	case "Argus" attend labelFunc042C_082A:
-	message("「Argus 對我很好。他會稱讚我的衣服或頭髮，即使我知道我看起來一團糟。」 *「當 Devra 不在的時候，他會好得多……我不覺得她喜歡我。」");
+	message("「Argus 對我很好。他會稱讚我的衣服或頭髮，即使我知道我看起來一團糟。」 *「當 Devra 不在的時候，他會好得多…我不覺得她喜歡我。」");
 	say();
 	UI_remove_answer("Argus");
 	UI_add_answer("Devra");
 labelFunc042C_082A:
 	case "Devra" attend labelFunc042C_083D:
-	message("「她總是在盯著我……這讓我感到緊張。也許下一個失蹤的就會是我。」 *「如果她不是那麼老，我也許會認為她和那些人的失蹤有關。又或者她知道的比她承認的還多……」");
+	message("「她總是在盯著我…這讓我感到緊張。也許下一個失蹤的就會是我。」 *「如果她不是那麼老，我也許會認為她和那些人的失蹤有關。又或者她知道的比她承認的還多…」");
 	say();
 	UI_remove_answer("Devra");
 labelFunc042C_083D:
 	case "兩名客人" attend labelFunc042C_0850:
-	message("「我沒有見過他們，但 Ensorcio 跟我說了他們的事。他說其中一個是法師，另一個是個非常高大的男人。」 *「所以現在你明白我為什麼這麼擔心了吧……如果一個法師，或者一個強壯的大男人都會發生這種事，我還有什麼機會？」");
+	message("「我沒有見過他們，但 Ensorcio 跟我說了他們的事。他說其中一個是法師，另一個是個非常高大的男人。」 *「所以現在你明白我為什麼這麼擔心了吧…如果一個法師，或者一個強壯的大男人都會發生這種事，我還有什麼機會？」");
 	say();
 	UI_remove_answer("兩名客人");
 labelFunc042C_0850:
 	case "神秘風暴" attend labelFunc042C_0876:
 	message("「大家都知道這些不是自然的風暴， ");
 	message(var0001);
-	message("！就連月影城( Moonshade )的法師們都很擔心……」 *「老 Gustacio 幾乎快把僅剩的頭髮拔光了，就為了找出原因。如果法師們都很擔心， ");
+	message("！就連月影城( Moonshade )的法師們都很擔心…」 *「老 Gustacio 幾乎快把僅剩的頭髮拔光了，就為了找出原因。如果法師們都很擔心， ");
 	message(var0001);
 	message("，像我們這樣的人確實應該非常警惕。」");
 	say();
@@ -507,7 +507,7 @@ labelFunc042C_0876:
 	case "Gustacio" attend labelFunc042C_0896:
 	message("「Gustacio 專精於天氣魔法， ");
 	message(var0001);
-	message("。如果你問我的話，這一切都讓人很困惑……」 *「我知道在這些風暴開始之後，法師議會( Council of Mages )仔細盤問過他。但他們似乎認為他與此無關，並讓他負責阻止這些風暴。」");
+	message("。如果你問我的話，這一切都讓人很困惑…」 *「我知道在這些風暴開始之後，法師議會( Council of Mages )仔細盤問過他。但他們似乎認為他與此無關，並讓他負責阻止這些風暴。」");
 	say();
 	UI_remove_answer("Gustacio");
 	UI_add_answer("法師議會");
@@ -519,7 +519,7 @@ labelFunc042C_0896:
 labelFunc042C_08A9:
 	case "網眼絲襪" attend labelFunc042C_08DE:
 	if (!Func097D(0xFE9B, 0x0001, 0x02A5, 0xFE99, 0x0001)) goto labelFunc042C_08CD;
-	message("「喔，你看！多麼奇特……網眼絲襪！我聽說有些人覺得它們很吸引人，但對我的品味來說太粗糙了。我絕對不會穿這種東西。」");
+	message("「喔，你看！多麼奇特…網眼絲襪！我聽說有些人覺得它們很吸引人，但對我的品味來說太粗糙了。我絕對不會穿這種東西。」");
 	say();
 	goto labelFunc042C_08D7;
 labelFunc042C_08CD:
@@ -537,7 +537,7 @@ labelFunc042C_08DE:
 	say();
 	message("「你不需要來增強你的美貌了， ");
 	message(var0001);
-	message("……你願意把它們給我嗎？」");
+	message("…你願意把它們給我嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc042C_0933;
 	message("「太棒了！我就知道另一個女人會懂的！」");
@@ -545,7 +545,7 @@ labelFunc042C_08DE:
 	var000E = UI_remove_party_items(0x0001, 0x02A5, 0xFE99, 0x0000, true);
 	goto labelFunc042C_093D;
 labelFunc042C_0933:
-	message("「唉……你不能怪一個女孩作夢， ");
+	message("「唉…你不能怪一個女孩作夢， ");
 	message(var0001);
 	message("。」");
 	say();
@@ -556,7 +556,7 @@ labelFunc042C_0940:
 	say();
 	message("「你願意把它們給我嗎， ");
 	message(var0001);
-	message("？我會永遠珍藏它們的……」");
+	message("？我會永遠珍藏它們的…」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc042C_0971;
 	message("「你真是太棒了！每次穿上它們，我也都會想起你的！」");
@@ -564,7 +564,7 @@ labelFunc042C_0940:
 	var000E = UI_remove_party_items(0x0001, 0x02A5, 0xFE99, 0x0000, true);
 	goto labelFunc042C_097B;
 labelFunc042C_0971:
-	message("「唉……你不能怪一個女孩作夢， ");
+	message("「唉…你不能怪一個女孩作夢， ");
 	message(var0001);
 	message("。」");
 	say();
@@ -588,12 +588,12 @@ labelFunc042C_098F:
 	message("！哪個男人這麼幸運？」");
 	say();
 	if (!(!UI_get_item_flag(0xFFD4, 0x0006))) goto labelFunc042C_09E6;
-	var0012 = Func0992(0x0001, "@真的嗎，年輕的女士！@", "@這不是我的……@", false);
+	var0012 = Func0992(0x0001, "@真的嗎，年輕的女士！@", "@這不是我的…@", false);
 	UI_set_conversation_slot(0x0000);
 labelFunc042C_09E6:
 	message("「原諒我， ");
 	message(var0001);
-	message("……我在仔細看這枚戒指之前就妄下定論了。」");
+	message("…我在仔細看這枚戒指之前就妄下定論了。」");
 	say();
 	message("「我早該發現這不是你的。\t看看這窗花裝飾多粗糙，寶石鑲嵌得多麼不合？」");
 	say();
@@ -603,15 +603,15 @@ labelFunc042C_09E6:
 labelFunc042C_09FB:
 	message("「訂婚戒指！」");
 	say();
-	message("「我想，希望這是送給我的，是不是太奢望了……」");
+	message("「我想，希望這是送給我的，是不是太奢望了…」");
 	say();
 	if (!(!UI_get_item_flag(0xFFD4, 0x0006))) goto labelFunc042C_0A28;
-	var0012 = Func0992(0x0001, "@說實話，年輕的女士！@", "@這不是我的……@", false);
+	var0012 = Func0992(0x0001, "@說實話，年輕的女士！@", "@這不是我的…@", false);
 	UI_set_conversation_slot(0x0000);
 labelFunc042C_0A28:
 	message("「原諒我， ");
 	message(var0001);
-	message("。\t我只是開個玩笑……\t我早該發現這不是你的， ");
+	message("。\t我只是開個玩笑…\t我早該發現這不是你的， ");
 	message(var0001);
 	message("！」");
 	say();
@@ -631,7 +631,7 @@ labelFunc042C_0A4D:
 labelFunc042C_0A54:
 	case "毛皮帽" attend labelFunc042C_0A83:
 	if (!Func097D(0xFE9B, 0x0001, 0x03EC, 0xFE99, 0x0004)) goto labelFunc042C_0A78;
-	message("「好可愛！但你不覺得在這裡戴毛皮帽有點太熱了嗎？」 「而且……我不知道……但這頂對你來說似乎有點小……」");
+	message("「好可愛！但你不覺得在這裡戴毛皮帽有點太熱了嗎？」 「而且…我不知道…但這頂對你來說似乎有點小…」");
 	say();
 	goto labelFunc042C_0A7C;
 labelFunc042C_0A78:
@@ -642,9 +642,9 @@ labelFunc042C_0A7C:
 labelFunc042C_0A83:
 	case "石心" attend labelFunc042C_0AC5:
 	if (!Func097D(0xFE9B, 0x0001, 0x034A, 0xFE99, 0x000F)) goto labelFunc042C_0AAD;
-	message("「我……嗯……我不懂……呃……石頭， ");
+	message("「我…嗯…我不懂…呃…石頭， ");
 	message(var0001);
-	message("。把它收起來……拜託。」* 「你應該找別人問問。」");
+	message("。把它收起來…拜託。」* 「你應該找別人問問。」");
 	say();
 	goto labelFunc042C_0AB7;
 labelFunc042C_0AAD:
@@ -657,14 +657,14 @@ labelFunc042C_0AB7:
 	UI_add_answer("別人");
 labelFunc042C_0AC5:
 	case "別人" attend labelFunc042C_0AD8:
-	message("「你可以去問問學者之類的……也許連法師都能幫上忙。我不知道。」");
+	message("「你可以去問問學者之類的…也許連法師都能幫上忙。我不知道。」");
 	say();
 	UI_remove_answer("別人");
 labelFunc042C_0AD8:
 	case "告辭" attend labelFunc042C_0AFD:
 	UI_remove_npc_face0();
 	Func097F(0xFE9C, "@再會，Selina！@", 0x0000);
-	Func097F(0xFFD4, "@直到我們再次相見……@", 0x0002);
+	Func097F(0xFFD4, "@直到我們再次相見…@", 0x0002);
 	abort;
 labelFunc042C_0AFD:
 	goto labelFunc042C_0293;
@@ -746,7 +746,7 @@ labelFunc042C_0C9F:
 	UI_show_npc_face0(0xFFD4, 0x0000);
 	message("「盡情得意吧！就算你在這裡殺了我，你也並未真正擊敗我！」");
 	say();
-	message("「就在我們說話的同時，巴特林正在隔壁房間開啟光明之牆！在守護者( Guardian )的幫助下，他和我將在永恆的虛空( Void )中會合，一起征服新的領域！」");
+	message("「就在我們說話的同時，巴特林正在隔壁房間開啟光之牆！在守護者( Guardian )的幫助下，他和我將在永恆的虛空( Void )中會合，一起征服新的領域！」");
 	say();
 	message("「巴特林！守護者( Guardian )！我在虛空( Void )等待你們！」");
 	say();

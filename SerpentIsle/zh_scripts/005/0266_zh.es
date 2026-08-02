@@ -51,7 +51,7 @@ labelFunc0266_00A3:
 labelFunc0266_00A6:
 	if (!(var0004 == 0x0001)) goto labelFunc0266_0112;
 	Func097F(0xFFFD, "@啊，是《Stones》！@", 0x0002);
-	Func097F(0xFFFE, "@別又是《Stones》……@", 0x000A);
+	Func097F(0xFFFE, "@別又是《Stones》…@", 0x000A);
 	UI_play_music(0x000D, item);
 	var0000 = UI_find_nearby(item, 0xFE99, 0x0028, 0x0008);
 	enum();
@@ -64,17 +64,17 @@ labelFunc0266_010F:
 	goto labelFunc0266_00E2;
 labelFunc0266_0112:
 	if (!(var0004 == 0x0002)) goto labelFunc0266_013C;
-	Func097F(0xFFFF, "@這首好耳熟……@", 0x0003);
-	Func097F(0xFFFE, "@讓我們聽點真正的曲子……@", 0x0014);
+	Func097F(0xFFFF, "@這首好耳熟…@", 0x0003);
+	Func097F(0xFFFE, "@讓我們聽點真正的曲子…@", 0x0014);
 	UI_play_music(0x0011, item);
 labelFunc0266_013C:
 	if (!(var0004 == 0x0003)) goto labelFunc0266_015A;
-	Func097F(0xFFFE, "@啊，我最喜歡的曲子……@", 0x0005);
+	Func097F(0xFFFE, "@啊，我最喜歡的曲子…@", 0x0005);
 	UI_play_music(0x0013, item);
 labelFunc0266_015A:
 	if (!(var0004 == 0x0004)) goto labelFunc0266_01C6;
 	Func097F(0xFE9C, "@啊，真好聽。@", 0x0002);
-	Func097F(0xFFFD, "@我還真有點睏了……@", 0x0011);
+	Func097F(0xFFFD, "@我還真有點睏了…@", 0x0011);
 	UI_play_music(0x001F, item);
 	var0000 = UI_find_nearby(item, 0xFE99, 0x0028, 0x0008);
 	enum();
@@ -89,12 +89,12 @@ labelFunc0266_01C6:
 	if (!(var0004 == 0x0005)) goto labelFunc0266_01F0;
 	UI_play_music(0x0017, item);
 	Func097F(0xFF2F, "@另一首曲子！@", 0x0002);
-	Func097F(0xFFFD, "@這首曲子真黑暗……@", 0x000A);
+	Func097F(0xFFFD, "@這首曲子真黑暗…@", 0x000A);
 labelFunc0266_01F0:
 	if (!(var0004 == 0x0006)) goto labelFunc0266_0268;
 	Func097F(0xFFFE, "@或許來玩局飛鏢？@", 0x0003);
-	Func097F(0xFE9C, "@太慢了……@", 0x000A);
-	Func097F(0xFFFF, "@或許換首歌……@", 0x000F);
+	Func097F(0xFE9C, "@太慢了…@", 0x000A);
+	Func097F(0xFFFF, "@或許換首歌…@", 0x000F);
 	UI_play_music(0x0015, item);
 	var0000 = UI_find_nearby(item, 0xFE99, 0x0028, 0x0008);
 	enum();

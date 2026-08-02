@@ -122,7 +122,7 @@ labelFunc087B_01F8:
 labelFunc087B_0212:
 	if (!(var0007 >= 0x0001)) goto labelFunc087B_0270;
 	var000C = UI_remove_party_items(var0007, var0005, 0xFE99, 0xFE99, false);
-	message("「嗯……」~「很好，我收下你的 ");
+	message("「嗯…」~「很好，我收下你的 ");
 	message(var0007);
 	message(" ");
 	message(var0004);
@@ -153,7 +153,7 @@ labelFunc087B_0277:
 labelFunc087B_0287:
 	goto labelFunc087B_028E;
 labelFunc087B_028A:
-	message("「我的匯率和所有其他貨幣兌換商都是一樣的……」");
+	message("「我的匯率和所有其他貨幣兌換商都是一樣的…」");
 	say();
 labelFunc087B_028E:
 	if (!(var0001 == "吉爾得幣")) goto labelFunc087B_0529;
@@ -252,7 +252,7 @@ labelFunc087B_0491:
 labelFunc087B_04A1:
 	if (!(var0007 >= 0x0001)) goto labelFunc087B_050B;
 	var000C = UI_remove_party_items(var0007, var0005, 0xFE99, 0xFE99, false);
-	message("「嗯……」~「很好，我收下你的 ");
+	message("「嗯…」~「很好，我收下你的 ");
 	message(var0007);
 	message(" ");
 	message(var0004);
@@ -287,7 +287,7 @@ labelFunc087B_0512:
 labelFunc087B_0522:
 	goto labelFunc087B_0529;
 labelFunc087B_0525:
-	message("「我的匯率和所有其他貨幣兌換商都是一樣的……」");
+	message("「我的匯率和所有其他貨幣兌換商都是一樣的…」");
 	say();
 labelFunc087B_0529:
 	if (!(var0001 == "法拉利幣")) goto labelFunc087B_0792;
@@ -379,7 +379,7 @@ labelFunc087B_06FC:
 labelFunc087B_0716:
 	if (!(var0007 >= 0x0001)) goto labelFunc087B_0774;
 	var000C = UI_remove_party_items(var0007, var0005, 0xFE99, 0xFE99, false);
-	message("「嗯……」~「很好，我收下你的 ");
+	message("「嗯…」~「很好，我收下你的 ");
 	message(var0007);
 	message(" ");
 	message(var0004);
@@ -410,7 +410,7 @@ labelFunc087B_077B:
 labelFunc087B_078B:
 	goto labelFunc087B_0792;
 labelFunc087B_078E:
-	message("「我的匯率和所有其他貨幣兌換商都是一樣的……」");
+	message("「我的匯率和所有其他貨幣兌換商都是一樣的…」");
 	say();
 labelFunc087B_0792:
 	if (!(var0001 == "金幣")) goto labelFunc087B_0A3D;
@@ -514,7 +514,7 @@ labelFunc087B_09A5:
 labelFunc087B_09B5:
 	if (!(var0007 >= 0x0001)) goto labelFunc087B_0A1F;
 	var000C = UI_remove_party_items(var0007, var0005, 0xFE99, 0xFE99, false);
-	message("「嗯……」~「很好，我收下你的 ");
+	message("「嗯…」~「很好，我收下你的 ");
 	message(var0007);
 	message(" ");
 	message(var0004);
@@ -549,7 +549,7 @@ labelFunc087B_0A26:
 labelFunc087B_0A36:
 	goto labelFunc087B_0A3D;
 labelFunc087B_0A39:
-	message("「我的匯率和所有其他貨幣兌換商都是一樣的……」");
+	message("「我的匯率和所有其他貨幣兌換商都是一樣的…」");
 	say();
 labelFunc087B_0A3D:
 	message("「你還想兌換更多硬幣嗎？」");

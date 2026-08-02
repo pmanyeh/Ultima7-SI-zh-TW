@@ -143,7 +143,7 @@ labelFunc0334_02B2:
 labelFunc0334_02C8:
 	if (!(var0001 == 0x001D)) goto labelFunc0334_02E4;
 	var000A = ["(e", "blue", "boar"];
-	var_chinese = ["藍野豬酒館"];
+	var_chinese = ["藍野豬旅店"];
 	goto labelFunc0334_0B45;
 labelFunc0334_02E4:
 	if (!(var0001 == 0x001E)) goto labelFunc0334_02FD;

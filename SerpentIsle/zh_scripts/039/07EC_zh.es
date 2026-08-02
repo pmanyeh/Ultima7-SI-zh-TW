@@ -35,7 +35,7 @@ labelFunc07EC_00A1:
 	goto labelFunc07EC_00A1;
 labelFunc07EC_0107:
 	Func097F(0xFF2D, "@該死！@", 0x000A);
-	Func097F(0xFF2D, "@喔……@", 0x0011);
+	Func097F(0xFF2D, "@喔…@", 0x0011);
 	var0003 = UI_delayed_execute_usecode_array(0xFF2D, [(byte)0x23, (byte)0x27, 0x0006, (byte)0x6C, (byte)0x27, 0x0006, (byte)0x6D, (byte)0x27, 0x000A, (byte)0x6E, (byte)0x27, 0x0014, (byte)0x6D, (byte)0x27, 0x0005, (byte)0x6C, (byte)0x27, 0x0003, (byte)0x61, (byte)0x27, 0x0002, (byte)0x59, (byte)0x32, (byte)0x27, 0x0002, (byte)0x55, 0x07EC], 0x0001);
 	gflags[0x0007] = true;
 	abort;
@@ -43,7 +43,7 @@ labelFunc07EC_0173:
 	if (!((event == 0x0002) && (gflags[0x0007] == true))) goto labelFunc07EC_028C;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFF2D, 0x0000);
-	message("「我可沒那麼容易被打敗，僧侶朋友……」");
+	message("「我可沒那麼容易被打敗，僧侶朋友…」");
 	say();
 	UI_end_conversation();
 	var0003 = ("@In Frio Grav！@" & ("@Mas Frio！@" & "@接招！@"));

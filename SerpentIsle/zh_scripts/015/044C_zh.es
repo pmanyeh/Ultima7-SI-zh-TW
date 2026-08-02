@@ -179,7 +179,7 @@ labelFunc044C_0386:
 	case "叛徒" attend labelFunc044C_03A1:
 	UI_remove_answer("叛徒");
 	var0003 = true;
-	message("「我有我自己的懷疑。仔細看看 Krayg 。他似乎花很多時間在森林裡長途跋涉……獨自一人。」");
+	message("「我有我自己的懷疑。仔細看看 Krayg 。他似乎花很多時間在森林裡長途跋涉…獨自一人。」");
 	say();
 	var0009 = true;
 labelFunc044C_03A1:
@@ -198,7 +198,7 @@ labelFunc044C_03A1:
 	var0005 = Func099B(0xFE9C, 0x0001, 0x0281, 0x004A, 0x0006, 0x0000, true);
 	goto labelFunc044C_045D;
 labelFunc044C_042A:
-	var000D = Func0992(0x0001, "@但是我們沒有足夠的錢……@", 0x0000, false);
+	var000D = Func0992(0x0001, "@但是我們沒有足夠的錢…@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	if (!(var000D == 0xFE9C)) goto labelFunc044C_0452;
 	message("「我相信你沒有足夠的 monetari 。請當你有足夠的金額時再來。」");
@@ -279,7 +279,7 @@ labelFunc044C_05CE:
 	if (!(var000D != 0xFE9C)) goto labelFunc044C_060A;
 	UI_set_conversation_slot(0x0000);
 labelFunc044C_060A:
-	message("「那個人的名字是什麼來著？那是個簡單的名字，聽起來不愉快又卑鄙……」");
+	message("「那個人的名字是什麼來著？那是個簡單的名字，聽起來不愉快又卑鄙…」");
 	say();
 	message("「巴特林，就是這個。他稱自己為智者巴特林( Sage Batlin )。」");
 	say();
@@ -306,7 +306,7 @@ labelFunc044C_0662:
 labelFunc044C_0679:
 	case "兜帽男" attend labelFunc044C_068C:
 	UI_remove_answer("兜帽男");
-	message("「我注意到他身上有一種奇怪的味道……幾乎就像——硫磺( brimstone )？我甚至敢發誓，在他的兜帽下，頭上長著角。但是，不——那太愚蠢了。那一定是某種戲法。」");
+	message("「我注意到他身上有一種奇怪的味道…幾乎就像——硫磺( brimstone )？我甚至敢發誓，在他的兜帽下，頭上長著角。但是，不——那太愚蠢了。那一定是某種戲法。」");
 	say();
 labelFunc044C_068C:
 	case "學者" attend labelFunc044C_0737:
@@ -321,7 +321,7 @@ labelFunc044C_068C:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「是的，我相信那是她的名字……」");
+	message("「是的，我相信那是她的名字…」");
 	say();
 	UI_show_npc_face1(0xFFFD, 0x0000);
 	message("\"");
@@ -330,7 +330,7 @@ labelFunc044C_068C:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「我相信她往東走了，急於學習 Xenkan 武僧的智慧。她和 Hawk 船長一起揚帆起航，前往月影城及更遠的地方。」");
+	message("「我相信她往東走了，急於學習 Xenkan 僧侶的智慧。她和 Hawk 船長一起揚帆起航，前往月影城及更遠的地方。」");
 	say();
 	message("「當然，這是在風暴發生之前。現在沒有水手敢冒險進入這些危險的水域了。」");
 	say();
@@ -343,7 +343,7 @@ labelFunc044C_068C:
 	say();
 	goto labelFunc044C_0737;
 labelFunc044C_0718:
-	message("「她的名字是 Gwenno 。她從這裡出發向東，急於學習 Xenkan 武僧的智慧。」");
+	message("「她的名字是 Gwenno 。她從這裡出發向東，急於學習 Xenkan 僧侶的智慧。」");
 	say();
 	message("「當然，這是在風暴發生之前。現在沒有水手敢冒險進入這些危險的水域了。」");
 	say();
@@ -352,7 +352,7 @@ labelFunc044C_0718:
 labelFunc044C_0737:
 	case "棕色瓶子" attend labelFunc044C_075E:
 	UI_remove_answer("棕色瓶子");
-	message("「嗯。我無法想像……哦是的，我記得了。我當時在那個地區散步。我一定是不小心弄掉了瓶子。」");
+	message("「嗯。我無法想像…哦是的，我記得了。我當時在那個地區散步。我一定是不小心弄掉了瓶子。」");
 	say();
 	UI_push_answers();
 	UI_add_answer(["散步？", "地區", "換個話題"]);
@@ -420,7 +420,7 @@ labelFunc044C_0874:
 labelFunc044C_0902:
 	case "換個話題" attend labelFunc044C_0919:
 	UI_remove_answer("換個話題");
-	message("「很樂意！你總算清醒了……」");
+	message("「很樂意！你總算清醒了…」");
 	say();
 	UI_pop_answers();
 labelFunc044C_0919:

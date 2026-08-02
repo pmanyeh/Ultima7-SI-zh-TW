@@ -41,7 +41,7 @@ labelFunc0491_00CF:
 	if (!var0001) goto labelFunc0491_00F2;
 	UI_show_npc_face1(0xFFFD, 0x0000);
 	UI_set_conversation_slot(0x0001);
-	message("「聖者，是毛皮！他們聞到我們身上有猿怪( Gwani )毛皮的味道！我建議我們把它們丟掉！」");
+	message("「聖者，是毛皮！他們聞到我們身上有猿怪毛皮的味道！我建議我們把它們丟掉！」");
 	say();
 	UI_remove_npc_face1();
 	abort;
@@ -50,7 +50,7 @@ labelFunc0491_00F2:
 	if (!var0002) goto labelFunc0491_0115;
 	UI_show_npc_face1(0xFFFE, 0x0000);
 	UI_set_conversation_slot(0x0001);
-	message("「聖者，是毛皮！他們聞到我們身上有猿怪( Gwani )毛皮的味道！我建議我們把它們丟掉！」");
+	message("「聖者，是毛皮！他們聞到我們身上有猿怪毛皮的味道！我建議我們把它們丟掉！」");
 	say();
 	UI_remove_npc_face1();
 	abort;
@@ -59,7 +59,7 @@ labelFunc0491_0115:
 	if (!var0003) goto labelFunc0491_0138;
 	UI_show_npc_face1(0xFFFF, 0x0000);
 	UI_set_conversation_slot(0x0001);
-	message("「聖者，是毛皮！他們聞到我們身上有猿怪( Gwani )毛皮的味道！我建議我們把它們丟掉！」");
+	message("「聖者，是毛皮！他們聞到我們身上有猿怪毛皮的味道！我建議我們把它們丟掉！」");
 	say();
 	UI_remove_npc_face1();
 	abort;

@@ -24,14 +24,14 @@ labelFunc0419_000F:
 	var0001 = UI_is_pc_female();
 	var0002 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc0419_0052;
-	UI_item_say(0xFE9C, "@打擾一下……@");
+	UI_item_say(0xFE9C, "@打擾一下…@");
 	Func097F(0xFFE7, (("@隨時為你服務，" + var0000) + "！@"), 0x0002);
 	UI_set_schedule_type(0xFFE7, 0x0003);
 labelFunc0419_0052:
 	if (!(event == 0x0000)) goto labelFunc0419_00DC;
 	var0003 = UI_get_random(0x0006);
 	if (!(var0003 == 0x0001)) goto labelFunc0419_0078;
-	UI_item_say(0xFFE7, "@請離開……@");
+	UI_item_say(0xFFE7, "@請離開…@");
 labelFunc0419_0078:
 	if (!(var0003 == 0x0002)) goto labelFunc0419_008C;
 	UI_item_say(0xFFE7, "@遊俠！@");
@@ -82,7 +82,7 @@ labelFunc0419_01A7:
 labelFunc0419_01AA:
 	message("「我必須去履行我的職責了。」");
 	say();
-	Func097F(item, "@恕我失陪……@", 0x0000);
+	Func097F(item, "@恕我失陪…@", 0x0000);
 	UI_set_schedule_type(item, 0x000C);
 	abort;
 labelFunc0419_01C1:
@@ -136,9 +136,9 @@ labelFunc0419_025A:
 	goto labelFunc0419_02D3;
 labelFunc0419_0285:
 	if (!(gflags[0x00EA] && var0006)) goto labelFunc0419_02C5;
-	message("「你用奇怪的眼神看著我……我想我說得太多了！」");
+	message("「你用奇怪的眼神看著我…我想我說得太多了！」");
 	say();
-	message("「現在我必須殺了你……」");
+	message("「現在我必須殺了你…」");
 	say();
 	UI_set_alignment(0xFFE7, 0x0003);
 	Func097F(0xFFE7, "@必須殺死！@", 0x0000);
@@ -160,7 +160,7 @@ labelFunc0419_02DA:
 	if (!((event == 0x0007) && UI_get_item_flag(item, 0x001D))) goto labelFunc0419_0334;
 	if (!(gflags[0x00EA] && (!UI_get_item_flag(0xFFE1, 0x0004)))) goto labelFunc0419_031D;
 	UI_show_npc_face0(0xFED6, 0x0000);
-	message("「Rotoluncia 會為我的損失報仇……」");
+	message("「Rotoluncia 會為我的損失報仇…」");
 	say();
 	gflags[0x00EB] = true;
 	UI_set_alignment(0xFFE1, 0x0003);

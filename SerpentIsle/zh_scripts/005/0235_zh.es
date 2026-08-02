@@ -34,7 +34,7 @@ labelFunc0235_0024:
 	UI_set_schedule_type(0xFF6A, 0x000F);
 	UI_set_npc_id(0xFF6A, 0x0007);
 	var0000 = UI_execute_usecode_array(0xFF6A, [(byte)0x23, (byte)0x55, 0x0235]);
-	var0000 = ("@謝謝你……@" & "@再見！@");
+	var0000 = ("@謝謝你…@" & "@再見！@");
 	Func094F(0xFF6A, var0000);
 	abort;
 labelFunc0235_0078:
@@ -89,7 +89,7 @@ labelFunc0235_021F:
 	if (!((UI_get_npc_id(0xFF6A) == 0x0006) && (item == UI_get_npc_object(0xFF6A)))) goto labelFunc0235_0281;
 	UI_set_npc_id(0xFF6A, 0x0007);
 	var0000 = UI_execute_usecode_array(0xFF6A, [(byte)0x23, (byte)0x59, 0x0006, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x58, 0x0024, (byte)0x27, 0x0002, (byte)0x61, (byte)0x55, 0x0235]);
-	var0000 = ("@謝謝你……@" & "@再見！@");
+	var0000 = ("@謝謝你…@" & "@再見！@");
 	Func094F(0xFF6A, var0000);
 	abort;
 labelFunc0235_0281:
@@ -133,7 +133,7 @@ labelFunc0235_03D8:
 labelFunc0235_0405:
 	if (!((UI_get_npc_id(0xFF6A) == 0x0000) && (item == UI_get_npc_object(0xFF6A)))) goto labelFunc0235_04B6;
 	UI_clear_item_say(0xFF6A);
-	Func097F(0xFF6A, "@我準備好了……@", 0x0003);
+	Func097F(0xFF6A, "@我準備好了…@", 0x0003);
 	UI_set_polymorph(0xFF6A, 0x00E5);
 	UI_play_sound_effect(0x0001);
 	UI_set_npc_id(0xFF6A, 0x0001);
@@ -141,7 +141,7 @@ labelFunc0235_0405:
 	UI_si_path_run_usecode(0xFE9C, [0x03A7, 0x0A43, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), 0x0235, false);
 	UI_set_path_failure(0x0235, UI_get_npc_object(0xFE9C), 0x000E);
 	UI_clear_item_say(0xFE9C);
-	Func097F(0xFE9C, "@我該換衣服了……@", 0x0000);
+	Func097F(0xFE9C, "@我該換衣服了…@", 0x0000);
 	var0000 = UI_execute_usecode_array(0xFF6A, [(byte)0x23, (byte)0x6F, (byte)0x27, 0x0002, (byte)0x55, 0x0235]);
 	abort;
 labelFunc0235_04B6:
@@ -159,7 +159,7 @@ labelFunc0235_0517:
 labelFunc0235_0518:
 	if (!(UI_get_npc_id(0xFF6A) == 0x0008)) goto labelFunc0235_056C;
 	UI_clear_item_say(0xFE9C);
-	Func097F(0xFE9C, "@我該穿好衣服……@", 0x0003);
+	Func097F(0xFE9C, "@我該穿好衣服…@", 0x0003);
 	UI_si_path_run_usecode(0xFE9C, [0x03A7, 0x0A43, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), 0x0235, false);
 	UI_set_path_failure(0x0235, UI_get_npc_object(0xFE9C), 0x000E);
 	abort;
@@ -189,7 +189,7 @@ labelFunc0235_0627:
 	UI_set_npc_id(0xFF6A, 0x0006);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFF6A, 0x0000);
-	message("「你是我夢寐以求的女人！我從未感到如此精神煥發。多麼美妙的經歷……」");
+	message("「你是我夢寐以求的女人！我從未感到如此精神煥發。多麼美妙的經歷…」");
 	say();
 	message("「為了表達我的感激與對你的深情，請收下這份禮物。這是我最珍貴的財產。」");
 	say();
@@ -198,7 +198,7 @@ labelFunc0235_0627:
 	message("「請穿上它，並且永遠記住我。」");
 	say();
 	UI_clear_item_say(0xFF6A);
-	Func097F(0xFF6A, "@永遠……@", 0x0000);
+	Func097F(0xFF6A, "@永遠…@", 0x0000);
 	var0000 = Func099B(0xFE9C, 0x0001, 0x00E3, 0xFE99, 0x0004, 0x0000, true);
 	UI_end_conversation();
 	gflags[0x008A] = true;
@@ -233,12 +233,12 @@ labelFunc0235_071F:
 	UI_clear_item_say(0xFE9C);
 	Func097F(0xFE9C, "@我在哪裡？@", 0x0023);
 	UI_clear_item_say(0xFF6A);
-	Func097F(0xFF6A, "@親愛的……@", 0x001F);
+	Func097F(0xFF6A, "@親愛的…@", 0x001F);
 	abort;
 labelFunc0235_07BB:
 	if (!(UI_get_npc_id(0xFF6A) == 0x0002)) goto labelFunc0235_0822;
 	UI_clear_item_say(0xFE9C);
-	Func097F(0xFE9C, "@我準備好了……@", 0x0000);
+	Func097F(0xFE9C, "@我準備好了…@", 0x0000);
 	UI_clear_item_say(0xFF6A);
 	Func097F(0xFF6A, "@我也是！@", 0x0003);
 	UI_si_path_run_usecode(0xFE9C, [0x03A4, 0x0A4B, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), 0x0235, false);
@@ -256,7 +256,7 @@ labelFunc0235_0863:
 	message("「從我第一眼看到你那一刻起，我就已經準備好了！」");
 	say();
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0001)) goto labelFunc0235_08F8;
-	var0008 = Func0992(0x0001, "@呃，嗯，我想我需要呼吸點新鮮空氣……我在酒館等。@", 0x0000, false);
+	var0008 = Func0992(0x0001, "@呃，嗯，我想我需要呼吸點新鮮空氣…我在酒館等。@", 0x0000, false);
 	var0000 = Func0988(UI_get_npc_object(0xFE9C), UI_get_party_list2());
 	enum();
 labelFunc0235_08BA:
@@ -266,7 +266,7 @@ labelFunc0235_08BA:
 	UI_run_schedule(var000B);
 	goto labelFunc0235_08BA;
 labelFunc0235_08EC:
-	Func097F(var000B, "@再會了……@", 0x0000);
+	Func097F(var000B, "@再會了…@", 0x0000);
 labelFunc0235_08F8:
 	UI_end_conversation();
 	UI_set_item_flag(0xFE9C, 0x0010);
@@ -279,7 +279,7 @@ labelFunc0235_08F8:
 labelFunc0235_094F:
 	message("「現在不是好時機，我的愛。也許你可以改天早晨再來。」");
 	say();
-	Func097F(0xFF6A, "@再會……@", 0x0000);
+	Func097F(0xFF6A, "@再會…@", 0x0000);
 	UI_set_schedule_type(0xFF6A, 0x0014);
 	abort;
 labelFunc0235_096A:

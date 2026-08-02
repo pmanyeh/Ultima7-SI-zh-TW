@@ -159,7 +159,7 @@ labelFunc0282_0147:
 	say();
 	message("在破曉的第一線曙光中，我們穿越了白雪皚皚的荒野，來到了我主人稱為 Skullcrusher 群峰的雄偉山脈。");
 	say();
-	message("在山脈下方的深處，我們尋找著另一個這類的惡魔。這被證明是一項艱鉅的任務。我們必須嚴密監視才能在他的藏身處發現他。最後，我們困住了第二個囚犯，他的名字是無政府狀態( Anarchy )。");
+	message("在山脈下方的深處，我們尋找著另一個這類的惡魔。這被證明是一項艱鉅的任務。我們必須嚴密監視才能在他的藏身處發現他。最後，我們困住了第二個囚犯，他的名字是無序災厄( Anarchy )。");
 	say();
 	message("為了這個災禍，我們找遍了整個 Skullcrusher 山脈。");
 	say();
@@ -387,7 +387,7 @@ labelFunc0282_0329:
 	say();
 labelFunc0282_034B:
 	if (!(var0000 == 0x0044)) goto labelFunc0282_038D;
-	message("我的日記 作者：~~Maleccio");
+	message("我的日記 作者：~~　Maleccio");
 	say();
 	message("\t\t我在月影城出生和長大，是 Vasculio 的敵人。然後我被帶到了這個地方，在那裡我是曾經死過的人——Vasculio——的囚犯。");
 	say();

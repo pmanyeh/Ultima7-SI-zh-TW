@@ -54,7 +54,7 @@ labelFunc0112_0139:
 labelFunc0112_013C:
 	var0000 = UI_set_npc_prop(item, 0x0003, 0x0014);
 	UI_clear_item_say(item);
-	var0007 = ["@哦，天哪！@", "@我在流血……@", "@哦，救我！@", "@哎呀！@", "@惡棍，住手！@", "@我要死了！@"];
+	var0007 = ["@哦，天哪！@", "@我在流血…@", "@哦，救我！@", "@哎呀！@", "@惡棍，住手！@", "@我要死了！@"];
 	Func097F(item, [var0007[UI_get_random(UI_get_array_size(var0007))]], 0x0000);
 	UI_set_attack_mode(item, 0x0007);
 labelFunc0112_0187:

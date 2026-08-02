@@ -26,7 +26,7 @@ void Func082C 0x82C ()
 	say();
 	var0004 = Func0956(["是", "否"]);
 	if (!(var0004 == "否")) goto labelFunc082C_0040;
-	message("「隨你便吧……這是你的損失。」");
+	message("「隨你便吧…這是你的損失。」");
 	say();
 	abort;
 labelFunc082C_0040:
@@ -50,15 +50,15 @@ labelFunc082C_0099:
 labelFunc082C_009D:
 	if (!(var0005 == 0x0003)) goto labelFunc082C_012E;
 labelFunc082C_00A7:
-	message("「讓我看看你如何處理這些試劑……」");
+	message("「讓我看看你如何處理這些試劑…」");
 	say();
 	message("「不對，不對！你拿的可不是雞飼料！」");
 	say();
-	message("「好了，現在唸出力量真言……」");
+	message("「好了，現在唸出力量真言…」");
 	say();
 	message("「慢點，慢點！如果你唸錯了音，法術就會出錯，你就白白浪費試劑了。」");
 	say();
-	message("「釋放法術……就是現在！」");
+	message("「釋放法術…就是現在！」");
 	say();
 	var0006 = UI_get_object_position(0xFE9C);
 	UI_sprite_effect(0x001A, var0006[0x0001], var0006[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);

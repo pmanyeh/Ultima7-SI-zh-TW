@@ -86,13 +86,13 @@ labelFunc0828_015F:
 	if (!(var0011 == 0x0001)) goto labelFunc0828_0189;
 	message("「別讓 Topo 聽到了，");
 	message(var0002);
-	message("！我可不常把價格壓這麼低……」");
+	message("！我可不常把價格壓這麼低…」");
 	say();
 labelFunc0828_0189:
 	if (!(var0011 == 0x0002)) goto labelFunc0828_019D;
 	message("「");
 	message(var0004);
-	message("，我一定是發昏了！我平時絕不會給這種價格……」");
+	message("，我一定是發昏了！我平時絕不會給這種價格…」");
 	say();
 labelFunc0828_019D:
 	if (!(var0011 == 0x0003)) goto labelFunc0828_01B1;
@@ -156,7 +156,7 @@ labelFunc0828_026E:
 	say();
 labelFunc0828_027C:
 	if (!(var0011 == 0x0002)) goto labelFunc0828_028A;
-	message("「我們的協議算什麼？我原以為你個人品更好……」");
+	message("「我們的協議算什麼？我原以為你個人品更好…」");
 	say();
 labelFunc0828_028A:
 	if (!(var0011 == 0x0003)) goto labelFunc0828_0299;
@@ -229,13 +229,13 @@ labelFunc0828_038C:
 	say();
 labelFunc0828_03AA:
 	if (!(var0011 == 0x0002)) goto labelFunc0828_03BE;
-	message("「不可能……");
+	message("「不可能…");
 	message(var0005);
 	message(" 枚吉爾得幣怎麼樣？」");
 	say();
 labelFunc0828_03BE:
 	if (!(var0011 == 0x0003)) goto labelFunc0828_03D2;
-	message("「我的原料所剩無幾……也許 ");
+	message("「我的原料所剩無幾…也許 ");
 	message(var0005);
 	message(" 枚吉爾得幣？」");
 	say();

@@ -77,7 +77,7 @@ void Func0423 object#(0x423) ()
 	UI_show_npc_face0(0xFFDD, 0x0000);
 	message("「一旦你找到了顎骨，就回到我這裡——因為我還有別的東西要給你。」");
 	say();
-	Func097F(0xFFDD, "@待會見……@", 0x0000);
+	Func097F(0xFFDD, "@待會見…@", 0x0000);
 	Func097F(0xFE9C, "@我會回來的！@", 0x0008);
 	abort;
 	goto labelFunc0423_01CA;
@@ -109,9 +109,9 @@ labelFunc0423_01F8:
 	say();
 	Func094E(0xFE9C, "@一位共同的朋友要我向你提到 Iskatradeeth 。@");
 	UI_set_conversation_slot(0x0000);
-	message("「Iskatradeeth ！密碼？那麼我不會把你餵給鯨魚了……」");
+	message("「Iskatradeeth ！密碼？那麼我不會把你餵給鯨魚了…」");
 	say();
-	message("「我會跟你談談……暫時的。」");
+	message("「我會跟你談談…暫時的。」");
 	say();
 	gflags[0x01BF] = true;
 	goto labelFunc0423_0269;
@@ -196,7 +196,7 @@ labelFunc0423_03A7:
 	abort;
 	goto labelFunc0423_03F7;
 labelFunc0423_03DB:
-	message("「這些實驗是非常危險的！如果你膽子小，我建議你離遠點！如果你看看四周，你就會發現這些實驗對生命……和四肢都是一種威脅！」");
+	message("「這些實驗是非常危險的！如果你膽子小，我建議你離遠點！如果你看看四周，你就會發現這些實驗對生命…和四肢都是一種威脅！」");
 	say();
 	if (!(!(gflags[0x01B7] || gflags[0x01BB]))) goto labelFunc0423_03F7;
 	UI_add_answer(["生命", "四肢"]);
@@ -232,15 +232,15 @@ labelFunc0423_0455:
 labelFunc0423_0459:
 	goto labelFunc0423_0460;
 labelFunc0423_045C:
-	message("「不朽代表著對死亡的最終勝利。我必須盡快獲得這個……毫無疑問，你已經聽說過，甚至可能目睹過傳送風暴(teleportation storms)。」");
+	message("「不朽代表著對死亡的最終勝利。我必須盡快獲得這個…毫無疑問，你已經聽說過，甚至可能目睹過傳送風暴(teleportation storms)。」");
 	say();
 labelFunc0423_0460:
 	if (!(!var0006)) goto labelFunc0423_046E;
-	message("「我似乎記得莊園裡大約在傳送風暴發生時出現了一把奇怪的匕首。也許那把匕首還在某個地方……」");
+	message("「我似乎記得莊園裡大約在傳送風暴發生時出現了一把奇怪的匕首。也許那把匕首還在某個地方…」");
 	say();
 	goto labelFunc0423_0472;
 labelFunc0423_046E:
-	message("「我看你已經發現了出現在我莊園裡的奇怪匕首。該死的傳送風暴！你已經宣稱它是你的了，是嗎？那好吧，如果它真的屬於你，你可以拿走它……」");
+	message("「我看你已經發現了出現在我莊園裡的奇怪匕首。該死的傳送風暴！你已經宣稱它是你的了，是嗎？那好吧，如果它真的屬於你，你可以拿走它…」");
 	say();
 labelFunc0423_0472:
 	UI_add_answer(["死亡", "傳送風暴"]);
@@ -259,12 +259,12 @@ labelFunc0423_0492:
 	UI_add_answer("傳送");
 labelFunc0423_04BA:
 	case "傳送" attend labelFunc0423_0506:
-	message("「哼……我對他們稱之為傳送的這種愚蠢而危險的力量一無所知，你聽見了嗎？一無所知！不要再問我這件事了！我警告你，也不要因為這件事去煩我的僕人！」");
+	message("「哼…我對他們稱之為傳送的這種愚蠢而危險的力量一無所知，你聽見了嗎？一無所知！不要再問我這件事了！我警告你，也不要因為這件事去煩我的僕人！」");
 	say();
 	gflags[0x01BE] = true;
 	if (!var0002) goto labelFunc0423_04FF;
 	UI_show_npc_face1(0xFFDC, 0x0000);
-	message("「但是主人，你確實知道一些關於傳送的事情！那……呢？」");
+	message("「但是主人，你確實知道一些關於傳送的事情！那…呢？」");
 	say();
 	UI_set_conversation_slot(0x0000);
 	message("「閉嘴，你這愚蠢的傢伙， Vasel ！不准再說一個字！別理我那愚蠢的僕人。他腦子有問題。我對這個傳送的事情一無所知。我沒有什麼秘密可以跟你分享！」");
@@ -321,7 +321,7 @@ labelFunc0423_0581:
 	goto labelFunc0423_05E1;
 labelFunc0423_05A8:
 	if (!(!gflags[0x01B7])) goto labelFunc0423_05C3;
-	message("「所以！那個小混蛋 Vasel 已經把我的魔法巨蛇顎骨的事告訴你了！你無論如何，哪怕是面臨死亡、酷刑或任何代價，都不會得到它。我關心的只是我創造生命的努力。而你在這方面無能為力。嗯……或許可以……」");
+	message("「所以！那個小混蛋 Vasel 已經把我的魔法巨蛇顎骨的事告訴你了！你無論如何，哪怕是面臨死亡、酷刑或任何代價，都不會得到它。我關心的只是我創造生命的努力。而你在這方面無能為力。嗯…或許可以…」");
 	say();
 	UI_add_answer(["Vasel", "我能做什麼？"]);
 	goto labelFunc0423_05E1;
@@ -553,7 +553,7 @@ labelFunc0423_0A4B:
 labelFunc0423_0A4F:
 	goto labelFunc0423_0A56;
 labelFunc0423_0A52:
-	message("「那個物品看起來像是我的一個實驗室儀器——但我不記得有什麼東西不見了……」");
+	message("「那個物品看起來像是我的一個實驗室儀器——但我不記得有什麼東西不見了…」");
 	say();
 labelFunc0423_0A56:
 	case "斷手" attend labelFunc0423_0AEC:
@@ -561,22 +561,22 @@ labelFunc0423_0A56:
 	if (!(Func097D(0xFE9B, 0x0001, 0x031A, 0xFE99, 0x0000) || (Func097D(0xFE9B, 0x0001, 0x031A, 0xFE99, 0x0001) || (Func097D(0xFE9B, 0x0001, 0x031A, 0xFE99, 0x0002) || (Func097D(0xFE9B, 0x0001, 0x031A, 0xFE99, 0x0003) || (Func097D(0xFE9B, 0x0001, 0x031A, 0xFE99, 0x0004) || Func097D(0xFE9B, 0x0001, 0x031A, 0xFE99, 0x0005))))))) goto labelFunc0423_0AE8;
 	message("「那是我其中一個實驗的殘留物，是 Vasel 要清理的東西。你帶著那東西到處跑做什麼？」");
 	say();
-	message("「我不知道你的事……你真是個奇怪的人！」");
+	message("「我不知道你的事…你真是個奇怪的人！」");
 	say();
 	gflags[0x029B] = true;
 	goto labelFunc0423_0AEC;
 labelFunc0423_0AE8:
-	message("「帶給我，我來檢查一下！它可能來自我的某個實驗……」");
+	message("「帶給我，我來檢查一下！它可能來自我的某個實驗…」");
 	say();
 labelFunc0423_0AEC:
 	case "改變話題" attend labelFunc0423_0AFC:
-	message("「當然……」");
+	message("「當然…」");
 	say();
 	UI_pop_answers();
 labelFunc0423_0AFC:
 	case "告辭" attend labelFunc0423_0B21:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@真有趣……@", 0x0000);
+	Func097F(0xFE9C, "@真有趣…@", 0x0000);
 	Func097F(0xFFDD, "@上路吧！@", 0x0002);
 	abort;
 labelFunc0423_0B21:

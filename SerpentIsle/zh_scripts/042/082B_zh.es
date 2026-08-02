@@ -54,7 +54,7 @@ labelFunc082B_00D9:
 	if (!(var000C < 0x0002)) goto labelFunc082B_027A;
 	if (!(var0002 < (var0001 + ((var0000 - var0001) / 0x0004)))) goto labelFunc082B_0130;
 	if (!(var000F == 0x0001)) goto labelFunc082B_0111;
-	message("「通常我絕不會接受這種出價，但我在這裡又能教誰呢？希望這場戰爭快點結束……」");
+	message("「通常我絕不會接受這種出價，但我在這裡又能教誰呢？希望這場戰爭快點結束…」");
 	say();
 labelFunc082B_0111:
 	if (!(var000F == 0x0002)) goto labelFunc082B_011F;
@@ -62,7 +62,7 @@ labelFunc082B_0111:
 	say();
 labelFunc082B_011F:
 	if (!(var000F == 0x0003)) goto labelFunc082B_012D;
-	message("「我接受你的出價。但我到死都不會承認的……你知道的，我得維護自己的聲譽。」");
+	message("「我接受你的出價。但我到死都不會承認的…你知道的，我得維護自己的聲譽。」");
 	say();
 labelFunc082B_012D:
 	goto labelFunc082B_01F2;
@@ -90,7 +90,7 @@ labelFunc082B_017F:
 	if (!(var000F == 0x0001)) goto labelFunc082B_01A9;
 	message("「只要 ");
 	message(var0002);
-	message(" ？？！好吧，好吧……我接受這個價格。」");
+	message(" ？？！好吧，好吧…我接受這個價格。」");
 	say();
 labelFunc082B_01A9:
 	if (!(var000F == 0x0002)) goto labelFunc082B_01B7;
@@ -191,7 +191,7 @@ labelFunc082B_031C:
 labelFunc082B_0330:
 	if (!(var000C == 0x0003)) goto labelFunc082B_0376;
 	if (!(var000F == 0x0001)) goto labelFunc082B_034E;
-	message("「嗯……你願意付 ");
+	message("「嗯…你願意付 ");
 	message(var0002);
 	message(" 嗎？」");
 	say();

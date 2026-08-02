@@ -35,29 +35,29 @@ void Func07FB object#(0x7FB) ()
 	message("「Alyssand，我們聽說妳經常與被指控為叛徒的人在一起。他都問了妳些什麼？」");
 	say();
 	UI_show_npc_face1(0xFFD2, 0x0000);
-	message("「我記得我們談到了奇怪的風暴，以及其他類似的事情……」");
+	message("「我記得我們談到了奇怪的風暴，以及其他類似的事情…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「妳有所隱瞞……」");
+	message("「妳有所隱瞞…」");
 	say();
 	UI_show_npc_face1(0xFFCA, 0x0000);
 	message("「Alyssand，小心點！神諭是神聖真理的工具，不容嘲弄！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「陌生人問了妳什麼，Alyssand？有個特別的物品……」");
+	message("「陌生人問了妳什麼，Alyssand？有個特別的物品…」");
 	say();
 	UI_show_npc_face1(0xFFD2, 0x0000);
-	message("「嗯，是的……我遺失的訂婚戒指……」");
+	message("「嗯，是的…我遺失的訂婚戒指…」");
 	say();
 	UI_set_conversation_slot(0x0000);
 	UI_remove_npc_face1();
-	message("「事實上，這叛徒身上有妳遺失的珠寶！所以野獸教他偷竊……我懷疑是使用了惡魔的力量……」");
+	message("「事實上，這叛徒身上有妳遺失的珠寶！所以野獸教他偷竊…我懷疑是使用了惡魔的力量…」");
 	say();
 	message("「我沒有其他問題了。謝謝妳。」");
 	say();
-	Func097F(0xFFD2, "@別扭曲我的話……@", 0x0000);
+	Func097F(0xFFD2, "@別扭曲我的話…@", 0x0000);
 	UI_end_conversation();
 	var0004 = UI_set_item_quality(Func09A0(0x0001, 0x0001), 0x001D);
 	var0005 = (UI_get_object_position(0xFFD2) & (0x000F & 0x0006));
@@ -73,10 +73,10 @@ labelFunc07FB_010B:
 	var0004 = UI_set_item_quality(Func09A0(0x0001, 0x0001), (var0000 + 0x0001));
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFCD, 0x0000);
-	message("「你好，Delin！那個……神諭在另一邊。」");
+	message("「你好，Delin！那個…神諭在另一邊。」");
 	say();
 	UI_show_npc_face1(0xFFD1, 0x0000);
-	message("「什麼……哦！請原諒我，各位大人和女士們。」");
+	message("「什麼…哦！請原諒我，各位大人和女士們。」");
 	say();
 	UI_end_conversation();
 	var0004 = UI_execute_usecode_array(0xFFD1, [(byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x27, 0x0002, (byte)0x59, 0x0006, (byte)0x01, (byte)0x63, (byte)0x27, 0x0002, (byte)0x59, 0x0000, (byte)0x01, (byte)0x61, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6D, (byte)0x27, 0x0002, (byte)0x55, 0x07FB]);
@@ -97,11 +97,11 @@ labelFunc07FB_01A7:
 	message("「就站在你面前那個框框裡的人！你曾經見過他嗎？」");
 	say();
 	UI_show_npc_face1(0xFFD1, 0x0000);
-	message("「英俊的小伙子……我不記得他了。你覺得他會是個配得上我們家 Alyssand 嗎？」");
+	message("「英俊的小伙子…我不記得他了。你覺得他會是個配得上我們家 Alyssand 嗎？」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「呃……我不這麼認為，Delin。」");
+	message("「呃…我不這麼認為，Delin。」");
 	say();
 	message("「…我放棄繼續提問！謝謝你…Delin…你可以走了。」");
 	say();
@@ -114,12 +114,12 @@ labelFunc07FB_0264:
 	if (!(var0000 == 0x0021)) goto labelFunc07FB_0315;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFCD, 0x0000);
-	message("「現在我想傳喚……」");
+	message("「現在我想傳喚…」");
 	say();
 	message("「Delin，請回你的座位。」");
 	say();
 	UI_show_npc_face1(0xFFD1, 0x0000);
-	message("「好…好的……隊長。」");
+	message("「好…好的…隊長。」");
 	say();
 	UI_end_conversation();
 	var0004 = UI_execute_usecode_array(0xFFCD, [(byte)0x27, 0x0002, (byte)0x59, 0x0004]);
@@ -190,7 +190,7 @@ labelFunc07FB_0418:
 	message("「Delphynia，被告有見過妳嗎？」");
 	say();
 	UI_show_npc_face1(0xFFD0, 0x0000);
-	message("「是的，隊長。他和他的同謀一起來，那位同謀正在尋找某種魔法葉子……」");
+	message("「是的，隊長。他和他的同謀一起來，那位同謀正在尋找某種魔法葉子…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -201,7 +201,7 @@ labelFunc07FB_0418:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「也許是因為他與野獸有所牽連！多麼邪惡……」");
+	message("「也許是因為他與野獸有所牽連！多麼邪惡…」");
 	say();
 	message("「我沒有其他問題了。非常感謝妳的幫忙，Delphynia。如果妳願意，請回座位上。」");
 	say();
@@ -246,7 +246,7 @@ labelFunc07FB_053E:
 	if (!gflags[0x0158]) goto labelFunc07FB_056F;
 	message("「");
 	message(var0003);
-	message(" 對這片土地上的古代遺跡有著強烈的好奇心！我能告訴他的不夠多。他還對我很生氣……」");
+	message(" 對這片土地上的古代遺跡有著強烈的好奇心！我能告訴他的不夠多。他還對我很生氣…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -261,7 +261,7 @@ labelFunc07FB_056F:
 	UI_set_conversation_slot(0x0000);
 	message("「由此可見，被告顯然懷有一種極其扭曲的獵奇心！這恐怕正是他與野獸不列顛為伍後所染上的墮落弱點！」");
 	say();
-	message("「你可以走了，Jendon……」");
+	message("「你可以走了，Jendon…」");
 	say();
 	UI_end_conversation();
 	var0004 = UI_set_item_quality(Func09A0(0x0001, 0x0001), 0x001D);
@@ -305,10 +305,10 @@ labelFunc07FB_05E2:
 	UI_show_npc_face1(0xFFCD, 0x0000);
 	message("「根據傳說，曾經有把靈魂賣給野獸不列顛的人。這樣的人然後會四處搜刮世界，希望能再次找回他們失去的靈魂。」");
 	say();
-	message("「沒有其他問題了……」");
+	message("「沒有其他問題了…」");
 	say();
 	UI_end_conversation();
-	Func097F(0xFFC9, "@真讓我發抖……@", 0x0002);
+	Func097F(0xFFC9, "@真讓我發抖…@", 0x0002);
 	Func097F(0xFFD0, "@太可怕了！@", 0x0003);
 	var0004 = UI_set_item_quality(Func09A0(0x0001, 0x0001), 0x001D);
 	var0005 = (UI_get_object_position(0xFFCB) & (0x0007 & 0x0006));
@@ -339,10 +339,10 @@ labelFunc07FB_06DA:
 	UI_set_conversation_slot(0x0000);
 	message("「這麼說，他們顯然未曾真正領悟過『美』之真諦了？」");
 	say();
-	var0008 = Func0992(0xFFFD, "@美存在於觀察者的眼中……@", 0x0000, false);
+	var0008 = Func0992(0xFFFD, "@美存在於觀察者的眼中…@", 0x0000, false);
 	if (!(var0008 == 0xFE9C)) goto labelFunc07FB_074F;
 	UI_show_npc_face1(0xFFD2, 0x0000);
-	message("「美存在於觀察者的眼中……」");
+	message("「美存在於觀察者的眼中…」");
 	say();
 labelFunc07FB_074F:
 	UI_end_conversation();
@@ -416,7 +416,7 @@ labelFunc07FB_08A4:
 	message("「毫無疑問，你們兩個確實交流過關於友誼會褻瀆神明的心得。事實上，這個叛徒不就是你暗地裡的同夥嗎？」");
 	say();
 	UI_show_npc_face1(0xFFC8, 0x0000);
-	message("「我否認『褻瀆神明』的指控。友誼會並不是宣揚邪惡的教條，而是一個為信仰者帶來啟發的信仰體系……」");
+	message("「我否認『褻瀆神明』的指控。友誼會並不是宣揚邪惡的教條，而是一個為信仰者帶來啟發的信仰體系…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -427,8 +427,8 @@ labelFunc07FB_08A4:
 	Func097F(0xFFCD, "@放逐這個褻瀆者！@", 0x0000);
 	Func097F(0xFFCA, "@拿石頭丟他！@", 0x0001);
 	Func097F(0xFFC3, "@小心 Leon！@", 0x0003);
-	Func097F(0xFFD2, "@我們真丟臉……@", 0x0007);
-	Func097F(0xFFC8, "@我原諒你……@", 0x0003);
+	Func097F(0xFFD2, "@我們真丟臉…@", 0x0007);
+	Func097F(0xFFC8, "@我原諒你…@", 0x0003);
 	UI_si_path_run_usecode(item, [0x0407, 0x0679, 0x0000], 0x000D, item, 0x07FB, false);
 	abort;
 labelFunc07FB_0996:
@@ -445,7 +445,7 @@ labelFunc07FB_09D8:
 	var0004 = UI_execute_usecode_array(0xFFCD, [(byte)0x23, (byte)0x61]);
 	Func097F(0xFFCA, "@真沒禮貌！@", 0x0000);
 	Func097F(0xFFC3, "@給我回來！@", 0x0002);
-	Func097F(0xFFCD, "@讓他走吧……@", 0x0005);
+	Func097F(0xFFCD, "@讓他走吧…@", 0x0005);
 	Func08C5();
 	UI_si_path_run_usecode(item, [0x0407, 0x0679, 0x0000], 0x000D, item, 0x07FB, false);
 	var0004 = UI_set_item_quality(Func09A0(0x0001, 0x0001), 0x002D);
@@ -458,11 +458,11 @@ labelFunc07FB_0A4B:
 	message("「別妄想在神諭面前發言後，還能多留片刻。」");
 	say();
 	UI_show_npc_face1(0xFFC5, 0x0000);
-	message("「我只對一件事抱有期望，隊長。而那深深地存在於我的心中，就如 Delphynia 所知……」");
+	message("「我只對一件事抱有期望，隊長。而那深深地存在於我的心中，就如 Delphynia 所知…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「別轉移話題！現在，我聽說有人看見你和這名被指控為叛徒的人說過話……」");
+	message("「別轉移話題！現在，我聽說有人看見你和這名被指控為叛徒的人說過話…」");
 	say();
 	UI_show_npc_face1(0xFFC5, 0x0000);
 	message("「是的，隊長。我請他幫個忙，替我遞送一份文件。」");
@@ -471,10 +471,10 @@ labelFunc07FB_0A4B:
 	UI_set_conversation_slot(0x0000);
 	message("「毫無疑問，這份文件是 Leon 給他的祕密盟友 ");
 	message(var0003);
-	message(" 指示文件！就是這樣！沒有其他問題了……」");
+	message(" 指示文件！就是這樣！沒有其他問題了…」");
 	say();
 	UI_show_npc_face1(0xFFC5, 0x0000);
-	message("「不！那是一封給我心愛的 Delphynia 的信……」");
+	message("「不！那是一封給我心愛的 Delphynia 的信…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -482,7 +482,7 @@ labelFunc07FB_0A4B:
 	say();
 	UI_end_conversation();
 	Func097F(0xFFC5, "@我愛妳，Delphynia！@", 0x0000);
-	Func097F(0xFFD0, "@我不能……@", 0x0002);
+	Func097F(0xFFD0, "@我不能…@", 0x0002);
 	Func097F(0xFFC3, "@Ruggs，安靜點！@", 0x0003);
 	UI_si_path_run_usecode(item, [0x0407, 0x0679, 0x0000], 0x000D, item, 0x07FB, false);
 	var0004 = UI_set_item_quality(Func09A0(0x0001, 0x0001), 0x002D);
@@ -504,7 +504,7 @@ labelFunc07FB_0B1D:
 	message("「異端！離開這座神殿，永遠別再回到我們美麗的城市，否則死路一條！」");
 	say();
 	UI_show_npc_face1(0xFFC4, 0x0000);
-	message("「而且不列顛王不是惡魔！他是個好人，並經常委託我為他繪製新地圖……」");
+	message("「而且不列顛王不是惡魔！他是個好人，並經常委託我為他繪製新地圖…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -512,7 +512,7 @@ labelFunc07FB_0B1D:
 	say();
 	UI_end_conversation();
 	Func097F(0xFFC4, "@別用法杖！@", 0x0000);
-	Func097F(0xFFCD, "@Jorvin……@", 0x0003);
+	Func097F(0xFFCD, "@Jorvin…@", 0x0003);
 	UI_si_path_run_usecode(item, [0x0407, 0x0679, 0x0000], 0x000D, item, 0x07FB, false);
 	var0004 = UI_delayed_execute_usecode_array(0xFFCB, [(byte)0x23, (byte)0x6C, (byte)0x61], 0x0004);
 	var0004 = UI_set_item_quality(Func09A0(0x0001, 0x0001), (var0000 + 0x0001));
@@ -527,7 +527,7 @@ labelFunc07FB_0BDE:
 labelFunc07FB_0C3F:
 	if (!(var0000 == 0x0032)) goto labelFunc07FB_0CB7;
 	UI_play_sound_effect(0x0039);
-	Func097F(0xFFCB, "@該死，我沒打中……@", 0x0000);
+	Func097F(0xFFCB, "@該死，我沒打中…@", 0x0000);
 	var0004 = UI_execute_usecode_array(0xFFCB, [(byte)0x23, (byte)0x6C, (byte)0x6B]);
 	UI_move_object(0xFFC4, [0x05F0, 0x078F, 0x0000]);
 	UI_run_schedule(0xFFC4);
@@ -548,7 +548,7 @@ labelFunc07FB_0CB7:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「我必須聽從女士的指示……」");
+	message("「我必須聽從女士的指示…」");
 	say();
 	UI_show_npc_face1(0xFFC9, 0x0000);
 	message("「我不明白你為何不能暢所欲言，Zulith。」");
@@ -573,7 +573,7 @@ labelFunc07FB_0CB7:
 	message(" 對我來說太敏銳了，在我能得知更多之前就發現了我。不過，我確實看到他和 Delin  的女兒商議，而那女人可是眾所皆知的『友誼會』支持者！」");
 	say();
 	UI_show_npc_face1(0xFFD1, 0x0000);
-	message("「注意你的言辭，Zulith！否則你必須先過我這關。我或許老了，但我依舊兇狠……」");
+	message("「注意你的言辭，Zulith！否則你必須先過我這關。我或許老了，但我依舊兇狠…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -587,7 +587,7 @@ labelFunc07FB_0CB7:
 	UI_end_conversation();
 	Func097F(0xFFD1, "@把話收回去！@", 0x0000);
 	Func097F(0xFFD2, "@惡魔？呸！@", 0x0004);
-	var0004 = ("@Alyssand？@" & "@我從來不知道……@");
+	var0004 = ("@Alyssand？@" & "@我從來不知道…@");
 	Func094F(0xFFC8, var0004);
 	var0004 = UI_set_item_quality(Func09A0(0x0001, 0x0001), 0x001D);
 	var0005 = (UI_get_object_position(0xFFC3) & (0x000A & 0x0006));
@@ -621,7 +621,7 @@ labelFunc07FB_0EA3:
 	if (!(var0000 == 0x0035)) goto labelFunc07FB_0F66;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFCD, 0x0000);
-	message("「妳太仁慈了，女士。我會長話短說……」");
+	message("「妳太仁慈了，女士。我會長話短說…」");
 	say();
 	message("「為了神諭，妳能否敘述一下 ");
 	message(var0003);
@@ -639,7 +639,7 @@ labelFunc07FB_0EA3:
 	UI_show_npc_face1(0xFFC9, 0x0000);
 	message("「說實話，那次討論實在太令人不快了，所以我很快就把它拋諸腦後了。」");
 	say();
-	message("「我相信他說的是——詛咒你們所有人，野獸不列顛將喝下你們的血……」");
+	message("「我相信他說的是——詛咒你們所有人，野獸不列顛將喝下你們的血…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);

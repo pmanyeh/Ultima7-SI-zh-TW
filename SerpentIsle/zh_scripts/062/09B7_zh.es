@@ -25,7 +25,7 @@ labelFunc09B7_003B:
 	var0005 = "@該死！@";
 	goto labelFunc09B7_0060;
 labelFunc09B7_005A:
-	var0005 = "@格羅克……@";
+	var0005 = "@格羅克…@";
 labelFunc09B7_0060:
 	var0006 = UI_get_object_position(item);
 	UI_set_item_flag(item, 0x0004);

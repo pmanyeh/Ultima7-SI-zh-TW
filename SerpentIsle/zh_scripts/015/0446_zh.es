@@ -59,15 +59,15 @@ labelFunc0446_014F:
 	UI_clear_item_say(0xFFBA);
 	UI_show_npc_face0(0xFFBA, 0x0000);
 	if (!(gflags[0x0054] && (UI_get_schedule_type(0xFFBA) == 0x000E))) goto labelFunc0446_0199;
-	message("「噢，親愛的！我們去我的臥室見吧……」");
+	message("「噢，親愛的！我們去我的臥室見吧…」");
 	say();
-	Func097F(0xFFBA, "@我好睏喔……@", 0x0000);
+	Func097F(0xFFBA, "@我好睏喔…@", 0x0000);
 	UI_run_schedule(0xFFBA);
 	abort;
 labelFunc0446_0199:
 	if (!(!UI_get_item_flag(0xFFBA, 0x001C))) goto labelFunc0446_01E5;
 	if (!(!UI_is_pc_female())) goto labelFunc0446_01B6;
-	message("「原諒我的大膽，但我必須說你的身材真好，大人！想必你已經用你武器強而有力的刺擊克服了許多敵人……」");
+	message("「原諒我的大膽，但我必須說你的身材真好，大人！想必你已經用你武器強而有力的刺擊克服了許多敵人…」");
 	say();
 	goto labelFunc0446_01BA;
 labelFunc0446_01B6:
@@ -75,7 +75,7 @@ labelFunc0446_01B6:
 	say();
 labelFunc0446_01BA:
 	if (!UI_npc_nearby(0xFFB3)) goto labelFunc0446_01D4;
-	Func094E(0xFFB3, "@希望我沒有打擾到你們……@");
+	Func094E(0xFFB3, "@希望我沒有打擾到你們…@");
 	UI_set_conversation_slot(0x0000);
 labelFunc0446_01D4:
 	message("「我的名字是 Lucilla 。有什麼我能為你效勞的嗎？任何事都可以喔？」");
@@ -118,12 +118,12 @@ labelFunc0446_029A:
 	UI_remove_answer("叛徒");
 	message("「這一切都太令人困惑了。 Brendann 大人確信一定有叛徒，而且野狼軍團都在背後支持他。」");
 	say();
-	message("「然而我也聽說絕對沒有叛徒，我們不該陷入歇斯底里……」");
+	message("「然而我也聽說絕對沒有叛徒，我們不該陷入歇斯底里…」");
 	say();
 	var0003 = Func0992(0x0001, "@誰告訴妳的，夫人？@", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc0446_02D9;
 	UI_set_conversation_slot(0x0000);
-	message("「嗯……其實沒有特定的人。我只是在閒聊中聽到的。在酒館裡，什麼都聽得到。」");
+	message("「嗯…其實沒有特定的人。我只是在閒聊中聽到的。在酒館裡，什麼都聽得到。」");
 	say();
 labelFunc0446_02D9:
 	case "棕色瓶子" attend labelFunc0446_0318:
@@ -187,7 +187,7 @@ labelFunc0446_03CE:
 labelFunc0446_03DB:
 	goto labelFunc0446_03E9;
 labelFunc0446_03DE:
-	message("「如果你在我們營業的時候回來，也許我能為你提供食物或飲料……」");
+	message("「如果你在我們營業的時候回來，也許我能為你提供食物或飲料…」");
 	say();
 	UI_remove_answer("買賣");
 labelFunc0446_03E9:
@@ -196,7 +196,7 @@ labelFunc0446_03E9:
 	message("「這間酒館是代代相傳的祖業，最早是由我曾祖父創立的。雖然這裡是享用佳餚的好地方，但鎮上大半的男人上門，其實都是為了向我獻殷勤呢！」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0446_040F;
-	message("「我很享受所有的關注……」");
+	message("「我很享受所有的關注…」");
 	say();
 	UI_add_answer("獻殷勤");
 labelFunc0446_040F:
@@ -221,7 +221,7 @@ labelFunc0446_045C:
 	say();
 	UI_add_answer("配得上");
 	if (!(!UI_is_pc_female())) goto labelFunc0446_0473;
-	message("「或許，除了你之外？我相信你一定也有過不少征服的經驗……」");
+	message("「或許，除了你之外？我相信你一定也有過不少征服的經驗…」");
 	say();
 labelFunc0446_0473:
 	case "配得上" attend labelFunc0446_04C5:
@@ -262,7 +262,7 @@ labelFunc0446_04E3:
 	if (!(!gflags[0x00B2])) goto labelFunc0446_0515;
 	message("「他們說他的新盾牌有特殊的力量，所以現在他真的是無敵了！」");
 	say();
-	message("「嗯，我說如果是魔法，那就強迫他不要用！蒙利多人不使用魔法武器或盔甲……」");
+	message("「嗯，我說如果是魔法，那就強迫他不要用！蒙利多人不使用魔法武器或盔甲…」");
 	say();
 	message("「但沒人能對 Luther 說什麼。」");
 	say();
@@ -273,7 +273,7 @@ labelFunc0446_0519:
 	case "男人" attend labelFunc0446_0557:
 	UI_remove_answer("男人");
 	if (!UI_is_pc_female()) goto labelFunc0446_054F;
-	message("「難道你不知道男人都是人渣嗎？但我們又不能不理他們……」");
+	message("「難道你不知道男人都是人渣嗎？但我們又不能不理他們…」");
 	say();
 	message("「你想了解更多關於蒙利多城男人的事嗎？」");
 	say();
@@ -291,7 +291,7 @@ labelFunc0446_054C:
 labelFunc0446_054F:
 	message("「為什麼女人一定要有男人？我找了又找，還沒找到適合我的那個人。」");
 	say();
-	message("「他必須強悍，但對他的女人要溫柔。勇敢，但害怕讓他的伴侶失望。他必須夠狡猾以贏得多場戰鬥，但也必須夠公平，把我視為與他平起平坐的人……」");
+	message("「他必須強悍，但對他的女人要溫柔。勇敢，但害怕讓他的伴侶失望。他必須夠狡猾以贏得多場戰鬥，但也必須夠公平，把我視為與他平起平坐的人…」");
 	say();
 labelFunc0446_0557:
 	case "Andral" attend labelFunc0446_056A:
@@ -301,7 +301,7 @@ labelFunc0446_0557:
 labelFunc0446_056A:
 	case "獻殷勤" attend labelFunc0446_05B4:
 	UI_remove_answer("獻殷勤");
-	message("「你覺得我美嗎？我承認我喜歡被關注！但我一直沒找到對的男人……」");
+	message("「你覺得我美嗎？我承認我喜歡被關注！但我一直沒找到對的男人…」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0446_05B4;
 	message("「但我感覺你有些與眾不同，大人。」");
@@ -327,19 +327,19 @@ labelFunc0446_05B0:
 labelFunc0446_05B4:
 	case "煮飯" attend labelFunc0446_05DA:
 	UI_remove_answer("煮飯");
-	message("「如果不謙虛地說，我是烹飪家禽的大師。或者像他們說的……」");
+	message("「如果不謙虛地說，我是烹飪家禽的大師。或者像他們說的…」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0446_05D6;
-	message("「胸肉還是腿肉，胸肉還是腿肉。大人，你更喜歡哪一個？但先不要回答……」");
+	message("「胸肉還是腿肉，胸肉還是腿肉。大人，你更喜歡哪一個？但先不要回答…」");
 	say();
 	goto labelFunc0446_05DA;
 labelFunc0446_05D6:
-	message("「如果我不能在臥室裡成功，我還不如在廚房裡試試！他們說長相平庸的女人都是好廚師……」");
+	message("「如果我不能在臥室裡成功，我還不如在廚房裡試試！他們說長相平庸的女人都是好廚師…」");
 	say();
 labelFunc0446_05DA:
 	case "勇氣的考驗" attend labelFunc0446_060F:
 	UI_remove_answer("勇氣的考驗");
-	message("「你知道的——那些證明你配得上騎士頭銜的考驗……」");
+	message("「你知道的——那些證明你配得上騎士頭銜的考驗…」");
 	say();
 	if (!gflags[0x002C]) goto labelFunc0446_05FA;
 	message("「就像你從那個卑鄙的 Pomdirgun 手中奪回蒙利多頭盔時一樣。」");
@@ -349,11 +349,11 @@ labelFunc0446_05FA:
 	message("「想必，像你這樣優秀的年輕戰士，應該計畫參加找回蒙利多頭盔的考驗吧？」");
 	say();
 	if (!Func0955()) goto labelFunc0446_060B;
-	message("「要是我們能知道他們隱密營地的秘密就好了！但那還是個謎……」");
+	message("「要是我們能知道他們隱密營地的秘密就好了！但那還是個謎…」");
 	say();
 	goto labelFunc0446_060F;
 labelFunc0446_060B:
-	message("「對你這樣的懦夫來說太危險了？我還以為你有多了不起……」");
+	message("「對你這樣的懦夫來說太危險了？我還以為你有多了不起…」");
 	say();
 labelFunc0446_060F:
 	case "打擾" attend labelFunc0446_0680:
@@ -389,7 +389,7 @@ labelFunc0446_06A6:
 labelFunc0446_06AA:
 	goto labelFunc0446_06BE;
 labelFunc0446_06AD:
-	message("「現在時機不對。我現在不能見你。改天吧，我的愛人……」");
+	message("「現在時機不對。我現在不能見你。改天吧，我的愛人…」");
 	say();
 	Func097F(0xFFBA, "@現在不行！@", 0x0000);
 	abort;
@@ -400,10 +400,10 @@ labelFunc0446_06BE:
 	message("「很好，我將對你敞開心扉。」");
 	say();
 	if (!gflags[0x0055]) goto labelFunc0446_06E2;
-	message("「當你撞見 Spektor 和我在一起那次，我就懷疑你已經知道了。但我們騙不了你……」");
+	message("「當你撞見 Spektor 和我在一起那次，我就懷疑你已經知道了。但我們騙不了你…」");
 	say();
 labelFunc0446_06E2:
-	message("「 Spektor 和我是情人。你能相信嗎？但那個男人身上確實有某種吸引人的地方……」");
+	message("「 Spektor 和我是情人。你能相信嗎？但那個男人身上確實有某種吸引人的地方…」");
 	say();
 	message("「儘管良心不安，這幾個月來我一直守著他那有罪的秘密。這讓我的靈魂蒙上了污垢。我很慚愧。」");
 	say();
@@ -418,9 +418,9 @@ labelFunc0446_06FA:
 labelFunc0446_0720:
 	case "情人" attend labelFunc0446_0737:
 	UI_remove_answer("情人");
-	message("「這太令人尷尬了。想想這個鎮上任何男人我都可以得到，但我卻把心交給了…… Spektor ！」");
+	message("「這太令人尷尬了。想想這個鎮上任何男人我都可以得到，但我卻把心交給了… Spektor ！」");
 	say();
-	message("「一個好幾個月都沒拔過劍的騎士……」");
+	message("「一個好幾個月都沒拔過劍的騎士…」");
 	say();
 labelFunc0446_0737:
 	case "秘密" attend labelFunc0446_0752:
@@ -449,7 +449,7 @@ labelFunc0446_0793:
 	say();
 labelFunc0446_0797:
 	case "告辭" attend labelFunc0446_07D1:
-	Func097F(0xFE9C, "@我得走了……@", 0x0000);
+	Func097F(0xFE9C, "@我得走了…@", 0x0000);
 	if (!(!UI_is_pc_female())) goto labelFunc0446_07C2;
 	Func097F(0xFFBA, "@再見，愛人。@", 0x0002);
 	goto labelFunc0446_07CE;

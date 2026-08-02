@@ -54,7 +54,7 @@ labelFunc0852_00DC:
 	if (!var0001) goto labelFunc0852_035C;
 	var000B = Func0957(var0002);
 	if (!(var000B == 0x0001)) goto labelFunc0852_0100;
-	message("「你不知道你錯過了什麼……」");
+	message("「你不知道你錯過了什麼…」");
 	say();
 	var0001 = false;
 	goto labelFunc0852_0359;
@@ -182,7 +182,7 @@ labelFunc0852_0305:
 	say();
 	goto labelFunc0852_034C;
 labelFunc0852_0348:
-	message("「你沒有足夠的錢付那個……」");
+	message("「你沒有足夠的錢付那個…」");
 	say();
 labelFunc0852_034C:
 	goto labelFunc0852_034F;

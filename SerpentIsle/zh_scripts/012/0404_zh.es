@@ -37,7 +37,7 @@ labelFunc0404_005E:
 	if (!(UI_get_random(0x000A) < 0x0006)) goto labelFunc0404_0081;
 	abort;
 labelFunc0404_0081:
-	var0005 = ["@真是太迷人了！@", "@別管我。@", "@我只是看看……@", "@你在做什麼？@", "@希望我沒擋到路……@", "@可以讓我看看嗎？@"];
+	var0005 = ["@真是太迷人了！@", "@別管我。@", "@我只是看看…@", "@你在做什麼？@", "@希望我沒擋到路…@", "@可以讓我看看嗎？@"];
 	Func097F(0xFFFC, var0005[UI_get_random(UI_get_array_size(var0005))], 0x0000);
 labelFunc0404_00B0:
 	if (!(event == 0x0001)) goto labelFunc0404_00EE;
@@ -117,7 +117,7 @@ labelFunc0404_020A:
 	if (!(var0004 == "陌生人")) goto labelFunc0404_0248;
 	message("「或許吧。然而對我來說，這充滿了月影城( Moonshade )陰謀的惡臭。」");
 	say();
-	message("「目前，我們暫且假設我是對的，而你錯了……」");
+	message("「目前，我們暫且假設我是對的，而你錯了…」");
 	say();
 labelFunc0404_0248:
 	message("「你的敵人是凡夫俗子，還是法師？你認為呢？」");
@@ -187,7 +187,7 @@ labelFunc0404_0322:
 	say();
 	goto labelFunc0404_0350;
 labelFunc0404_034C:
-	message("「我明白了……我想像你這樣身負重任的人，是沒有時間理會一個簡單的秘術學徒的……」");
+	message("「我明白了…我想像你這樣身負重任的人，是沒有時間理會一個簡單的秘術學徒的…」");
 	say();
 labelFunc0404_0350:
 	case "Freli" attend labelFunc0404_03AC:
@@ -199,7 +199,7 @@ labelFunc0404_0350:
 	message("「幾乎！」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("「嗯……」");
+	message("「嗯…」");
 	say();
 	UI_set_conversation_slot(0x0001);
 	message("「更好！」");
@@ -276,7 +276,7 @@ labelFunc0404_049A:
 labelFunc0404_04AD:
 	case "告辭" attend labelFunc0404_04D7:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@我得走了……@", 0x0000);
+	Func097F(0xFE9C, "@我得走了…@", 0x0000);
 	Func097F(0xFFFC, "@感謝你。@", 0x0002);
 	Func08FF();
 	goto labelFunc0404_04DA;

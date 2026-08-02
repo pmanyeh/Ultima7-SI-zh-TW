@@ -72,7 +72,7 @@ labelFunc0632_0169:
 	message("！這不像我們原本以為的那麼容易！」");
 	say();
 	UI_show_npc_face0(0xFEC8, 0x0000);
-	message("「那我們就必須齊心協力……」");
+	message("「那我們就必須齊心協力…」");
 	say();
 	UI_show_npc_face1(0xFEC7, 0x0000);
 	message("「導師將使我們的目標準確無誤！導師將引領我們走向真正完美的世界！」");

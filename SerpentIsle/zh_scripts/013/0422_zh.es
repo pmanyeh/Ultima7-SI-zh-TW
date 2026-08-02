@@ -100,7 +100,7 @@ labelFunc0422_0334:
 	goto labelFunc0422_0244;
 labelFunc0422_0337:
 	if (!(event == 0x0001)) goto labelFunc0422_0365;
-	UI_item_say(0xFE9C, "@咳咳……@");
+	UI_item_say(0xFE9C, "@咳咳…@");
 	0xFFDE->Func07D1();
 	Func097F(0xFFDE, "@你在說話嗎？@", 0x0002);
 	UI_set_schedule_type(0xFFDE, 0x0003);
@@ -121,7 +121,7 @@ labelFunc0422_03A6:
 labelFunc0422_03BA:
 	UI_show_npc_face0(0xFFDE, 0x0000);
 	if (!(UI_get_npc_id(0xFFDE) == 0x001E)) goto labelFunc0422_0411;
-	message("「主人，我很感激你還活著！我已經對你產生了感情，就像兒子看待父母一樣……」");
+	message("「主人，我很感激你還活著！我已經對你產生了感情，就像兒子看待父母一樣…」");
 	say();
 	if (!(!gflags[0x0135])) goto labelFunc0422_03E8;
 	message("「你可能會很高興知道有好消息！」");
@@ -213,7 +213,7 @@ labelFunc0422_0571:
 	UI_remove_answer("Erstam");
 labelFunc0422_0584:
 	case "實驗" attend labelFunc0422_05A7:
-	message("「當然， Erstam 在掌握了傳送藝術之後，將目光轉向了創造生命。在我記憶中的那個特別的夜晚，我們去了他的實驗室。他拉動了大量的控制桿和一些東西……在那之後我的記憶開始有點模糊了。我記得的下一件事就是在這種狀態下醒來。」");
+	message("「當然， Erstam 在掌握了傳送藝術之後，將目光轉向了創造生命。在我記憶中的那個特別的夜晚，我們去了他的實驗室。他拉動了大量的控制桿和一些東西…在那之後我的記憶開始有點模糊了。我記得的下一件事就是在這種狀態下醒來。」");
 	say();
 	UI_remove_answer("實驗");
 	UI_add_answer(["傳送", "創造生命", "狀態"]);

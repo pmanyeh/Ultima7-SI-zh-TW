@@ -63,7 +63,7 @@ labelFunc0819_0117:
 	if (!(var000F == 0x0002)) goto labelFunc0819_012B;
 	message("「你做生意的技巧真是無人能及，");
 	message(var0002);
-	message("……」");
+	message("…」");
 	say();
 labelFunc0819_012B:
 	if (!(var000F == 0x0003)) goto labelFunc0819_0139;
@@ -74,7 +74,7 @@ labelFunc0819_0139:
 labelFunc0819_013C:
 	if (!(var0003 < (var0001 + ((var0000 - var0001) / 0x0003)))) goto labelFunc0819_0195;
 	if (!(var000F == 0x0001)) goto labelFunc0819_0160;
-	message("「啊……我這裡的價格很公道。確實很公道。」");
+	message("「啊…我這裡的價格很公道。確實很公道。」");
 	say();
 labelFunc0819_0160:
 	if (!(var000F == 0x0002)) goto labelFunc0819_016E;
@@ -82,7 +82,7 @@ labelFunc0819_0160:
 	say();
 labelFunc0819_016E:
 	if (!(var000F == 0x0003)) goto labelFunc0819_0192;
-	message("「讓我想想……啊，我真的覺得你會成為一個好店主，");
+	message("「讓我想想…啊，我真的覺得你會成為一個好店主，");
 	message(var0002);
 	message("！我很少做這種不明智的交易！」");
 	say();
@@ -102,7 +102,7 @@ labelFunc0819_01B9:
 	say();
 labelFunc0819_01CD:
 	if (!(var000F == 0x0003)) goto labelFunc0819_01E1;
-	message("「我們剛才在討論什麼？啊，對了……這個價格比大多數人給的都要公道，");
+	message("「我們剛才在討論什麼？啊，對了…這個價格比大多數人給的都要公道，");
 	message(var0002);
 	message("。」");
 	say();
@@ -116,13 +116,13 @@ labelFunc0819_01E4:
 	say();
 labelFunc0819_01F8:
 	if (!(var000F == 0x0002)) goto labelFunc0819_020C;
-	message("「啊……願上天保佑你，");
+	message("「啊…願上天保佑你，");
 	message(var0002);
 	message("。」");
 	say();
 labelFunc0819_020C:
 	if (!(var000F == 0x0003)) goto labelFunc0819_021A;
-	message("「嗯……在這個艱難的時期，我必須收取高價，否則我就會變成窮光蛋。」");
+	message("「嗯…在這個艱難的時期，我必須收取高價，否則我就會變成窮光蛋。」");
 	say();
 labelFunc0819_021A:
 	message("「我們同意以 ");
@@ -186,7 +186,7 @@ labelFunc0819_0317:
 labelFunc0819_031A:
 	if (!(var000C == 0x0002)) goto labelFunc0819_0366;
 	if (!(var000F == 0x0001)) goto labelFunc0819_0338;
-	message("「啊，嗯……能和如此值得敬重的人討價還價真是令我高興。");
+	message("「啊，嗯…能和如此值得敬重的人討價還價真是令我高興。");
 	message(var0003);
 	message(" 枚法拉利幣聽起來如何？」");
 	say();
@@ -207,13 +207,13 @@ labelFunc0819_0352:
 labelFunc0819_0366:
 	if (!(var000C == 0x0003)) goto labelFunc0819_03AC;
 	if (!(var000F == 0x0001)) goto labelFunc0819_0384;
-	message("「這是一個艱難的時期，而且貨物稀缺……你會考慮 ");
+	message("「這是一個艱難的時期，而且貨物稀缺…你會考慮 ");
 	message(var0003);
 	message(" 枚法拉利幣嗎？」");
 	say();
 labelFunc0819_0384:
 	if (!(var000F == 0x0002)) goto labelFunc0819_0398;
-	message("「嗯……我不太確定……你覺得 ");
+	message("「嗯…我不太確定…你覺得 ");
 	message(var0003);
 	message(" 枚法拉利幣聽起來如何？」");
 	say();
@@ -240,7 +240,7 @@ labelFunc0819_03CE:
 	say();
 labelFunc0819_03E2:
 	if (!(var000F == 0x0003)) goto labelFunc0819_03FC;
-	message("「啊，嗯……");
+	message("「啊，嗯…");
 	message(var0002);
 	message("，你可不是在跟傻瓜說話。我理應得到不少於 ");
 	message(var0003);

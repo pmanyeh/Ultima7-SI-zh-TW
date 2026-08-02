@@ -35,10 +35,10 @@ labelFunc04A2_000F:
 labelFunc04A2_004D:
 	if (!(event == 0x0002)) goto labelFunc04A2_00AF;
 	UI_show_npc_face0(0xFED6, 0x0000);
-	message("「你竟然能走到這一步……你想要購買食物或治療藥水嗎？」");
+	message("「你竟然能走到這一步…你想要購買食物或治療藥水嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04A2_0098;
-	message("「這些物品在這裡非常珍貴，重罪犯。你可能會覺得價格有點高……」");
+	message("「這些物品在這裡非常珍貴，重罪犯。你可能會覺得價格有點高…」");
 	say();
 	message("「你想要什麼，食物還是治療藥水？」");
 	say();
@@ -51,7 +51,7 @@ labelFunc04A2_0092:
 labelFunc04A2_0095:
 	goto labelFunc04A2_00AF;
 labelFunc04A2_0098:
-	message("「但我的任務仍然是阻止你離開。如果你能擊敗我，你就可以拿走鑰匙並重獲自由！」*「但如果你做不到，你將永遠留在這裡！」");
+	message("「但我的任務仍然是阻止你離開。如果你能擊敗我，你就可以拿走鑰匙並重獲自由！」* 「但如果你做不到，你將永遠留在這裡！」");
 	say();
 	Func097F(0xFF5E, "@準備戰鬥，重罪犯！@", 0x0002);
 	Func09AD(0xFF5E);
@@ -61,7 +61,7 @@ labelFunc04A2_00AF:
 	UI_show_npc_face0(0xFED6, 0x0000);
 	message("「恭喜你， ");
 	message(var0000);
-	message("！你已經證明了你的清白……」");
+	message("！你已經證明了你的清白…」");
 	say();
 	message("「拿走鑰匙，享受你的自由吧！」");
 	say();

@@ -52,11 +52,11 @@ labelFunc07FC_00A6:
 	if (!gflags[0x0173]) goto labelFunc07FC_00B4;
 	message("「嗯，我必須說我覺得他挺討人喜歡的。他盡忠職守，不會總是喋喋不休。」");
 	say();
-	message("「很難相信像 Dupre 這樣的好人會跟惡魔不列顛勾結……」");
+	message("「很難相信像 Dupre 這樣的好人會跟惡魔不列顛勾結…」");
 	say();
 labelFunc07FC_00B4:
 	if (!gflags[0x0175]) goto labelFunc07FC_00C2;
-	message("「很難說。他不常說話，而且似乎總是匆匆忙忙的……」");
+	message("「很難說。他不常說話，而且似乎總是匆匆忙忙的…」");
 	say();
 	message("「我說不出更多了。不過是個普通的無賴罷了。」");
 	say();
@@ -75,18 +75,18 @@ labelFunc07FC_00C9:
 	say();
 	message("「然而我們所有的傳說都在講述這頭野獸不列顛，以及他對我們祖先犯下的罪行。」");
 	say();
-	message("「我想我也不知道該相信什麼——請原諒我，凱麗斯塔……」");
+	message("「我想我也不知道該相信什麼——請原諒我，凱麗斯塔…」");
 	say();
 labelFunc07FC_00F7:
 	case "沒有問題" attend labelFunc07FC_011A:
 	UI_show_npc_face1(0xFE9C, 0x0000);
 	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@浪費時間……@", 0x0000);
+	Func097F(item, "@浪費時間…@", 0x0000);
 	goto labelFunc07FC_0135;
 labelFunc07FC_011A:
 	case "沒有其他問題了" attend labelFunc07FC_0131:
-	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
+	Func097F(0xFE9C, "@沒有其他問題了…@", 0x0000);
 	goto labelFunc07FC_0135;
 labelFunc07FC_0131:
 	goto labelFunc07FC_0069;
@@ -137,7 +137,7 @@ labelFunc07FC_01C2:
 	message("「哎呀，你說得對，水手。儘管如此，我還是堅持我的宣誓證詞！」");
 	say();
 	UI_show_npc_face1(0xFFC6, 0x0000);
-	message("「我可能喝醉了，但我可不笨……」");
+	message("「我可能喝醉了，但我可不笨…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -149,18 +149,18 @@ labelFunc07FC_025C:
 	say();
 	message("「我們祖先的故事——關於那位名為不列顛王的惡魔國王，以及他以美德之名竊取的土地——都是千真萬確的。」");
 	say();
-	message("「最後，我對美之祭司有著絕對的信仰……無論她身在何處。她太美了，絕不會錯！」");
+	message("「最後，我對美之祭司有著絕對的信仰…無論她身在何處。她太美了，絕不會錯！」");
 	say();
 labelFunc07FC_0284:
 	case "沒有問題" attend labelFunc07FC_02A7:
 	UI_show_npc_face1(0xFE9C, 0x0000);
 	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@該死的叛徒……@", 0x0000);
+	Func097F(item, "@該死的叛徒…@", 0x0000);
 	goto labelFunc07FC_02C2;
 labelFunc07FC_02A7:
 	case "沒有其他問題了" attend labelFunc07FC_02BE:
-	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
+	Func097F(0xFE9C, "@沒有其他問題了…@", 0x0000);
 	goto labelFunc07FC_02C2;
 labelFunc07FC_02BE:
 	goto labelFunc07FC_01C2;
@@ -206,9 +206,9 @@ labelFunc07FC_0387:
 	message(var0002);
 	message(" 帶了奇怪的物品給我，並要我辨認它們。」");
 	say();
-	var0008 = Func0992(0x0001, "@但你是個旅店老闆！肯定有很多人會帶些神祕的東西來找你……@", 0x0000, false);
+	var0008 = Func0992(0x0001, "@但你是個旅店老闆！肯定有很多人會帶些神祕的東西來找你…@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
-	message("「或許吧，陌生人。但沒有一半那麼奇怪的……」");
+	message("「或許吧，陌生人。但沒有一半那麼奇怪的…」");
 	say();
 labelFunc07FC_03CB:
 	case "古代遺跡" attend labelFunc07FC_042B:
@@ -238,7 +238,7 @@ labelFunc07FC_042B:
 	message(" 。他似乎對故事中最可怕的部分津津樂道。」");
 	say();
 	UI_show_npc_face1(0xFFC6, 0x0000);
-	message("「啊，可是詹登，你逢人就講那個故事。你不能因為一個人聽了你的故事就給他定罪……」");
+	message("「啊，可是詹登，你逢人就講那個故事。你不能因為一個人聽了你的故事就給他定罪…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -268,7 +268,7 @@ labelFunc07FC_049B:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「是啊。但話又說回來，傳說中不是說惡魔都有著三寸不爛之舌嗎？這個 Iolo 確實很有魅力……」");
+	message("「是啊。但話又說回來，傳說中不是說惡魔都有著三寸不爛之舌嗎？這個 Iolo 確實很有魅力…」");
 	say();
 labelFunc07FC_04EB:
 	if (!gflags[0x0175]) goto labelFunc07FC_0518;
@@ -309,11 +309,11 @@ labelFunc07FC_0557:
 	UI_show_npc_face1(0xFE9C, 0x0000);
 	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@奇怪的人……@", 0x0000);
+	Func097F(item, "@奇怪的人…@", 0x0000);
 	goto labelFunc07FC_0595;
 labelFunc07FC_057A:
 	case "沒有其他問題了" attend labelFunc07FC_0591:
-	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
+	Func097F(0xFE9C, "@沒有其他問題了…@", 0x0000);
 	goto labelFunc07FC_0595;
 labelFunc07FC_0591:
 	goto labelFunc07FC_0387;
@@ -363,7 +363,7 @@ labelFunc07FC_0637:
 	UI_set_conversation_slot(0x0000);
 	message("「我道歉，");
 	message(var0001);
-	message("。我不知道……」");
+	message("。我不知道…」");
 	say();
 	UI_show_npc_face1(0xFFCF, 0x0000);
 	message("「我們怎麼知道這是真的？我說他在說謊！」");
@@ -397,18 +397,18 @@ labelFunc07FC_06E4:
 	say();
 	message("「我們的祖先是為了逃避不列顛王才來到這片土地的。惡魔想要報復，這有那麼令人難以置信嗎？」");
 	say();
-	message("「我們應該要非常害怕，我們所有人都該如此……」");
+	message("「我們應該要非常害怕，我們所有人都該如此…」");
 	say();
 labelFunc07FC_070C:
 	case "沒有問題" attend labelFunc07FC_072F:
 	UI_show_npc_face1(0xFE9C, 0x0000);
 	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@別管了……@", 0x0000);
+	Func097F(item, "@別管了…@", 0x0000);
 	goto labelFunc07FC_074A;
 labelFunc07FC_072F:
 	case "沒有其他問題了" attend labelFunc07FC_0746:
-	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
+	Func097F(0xFE9C, "@沒有其他問題了…@", 0x0000);
 	goto labelFunc07FC_074A;
 labelFunc07FC_0746:
 	goto labelFunc07FC_0637;
@@ -429,7 +429,7 @@ labelFunc07FC_07AB:
 	if (!(var0000 == 0x001F)) goto labelFunc07FC_0965;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFD1, 0x0000);
-	message("「哦……我不習慣像這樣站在群眾面前……人群讓我感到緊張……」");
+	message("「哦…我不習慣像這樣站在群眾面前…人群讓我感到緊張…」");
 	say();
 	message("「長話短說吧。問你的問題。」");
 	say();
@@ -473,7 +473,7 @@ labelFunc07FC_085E:
 	if (!gflags[0x0174]) goto labelFunc07FC_0888;
 	message("「現在我仔細看他，他看起來似乎配我女兒年紀太大了點。」");
 	say();
-	message("「當一個男人變老時，他就會開始失去理智。我可不希望我們家亞歷珊必須應付那種人……」");
+	message("「當一個男人變老時，他就會開始失去理智。我可不希望我們家亞歷珊必須應付那種人…」");
 	say();
 labelFunc07FC_0888:
 	if (!gflags[0x0175]) goto labelFunc07FC_0892;
@@ -498,11 +498,11 @@ labelFunc07FC_08C6:
 	UI_show_npc_face1(0xFE9C, 0x0000);
 	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@我對你也沒有……@", 0x0000);
+	Func097F(item, "@我對你也沒有…@", 0x0000);
 	goto labelFunc07FC_0904;
 labelFunc07FC_08E9:
 	case "沒有其他問題了" attend labelFunc07FC_0900:
-	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
+	Func097F(0xFE9C, "@沒有其他問題了…@", 0x0000);
 	goto labelFunc07FC_0904;
 labelFunc07FC_0900:
 	goto labelFunc07FC_07EC;
@@ -523,10 +523,10 @@ labelFunc07FC_0965:
 	if (!(var0000 == 0x002E)) goto labelFunc07FC_0B8F;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFC6, 0x0000);
-	message("「向葉琳達女士致敬，向神諭致敬，向……向大家致敬！」");
+	message("「向葉琳達女士致敬，向神諭致敬，向…向大家致敬！」");
 	say();
 	UI_show_npc_face1(0xFFCC, 0x0000);
-	message("「我怕他是喝醉了……」");
+	message("「我怕他是喝醉了…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -544,7 +544,7 @@ labelFunc07FC_09B1:
 	say();
 labelFunc07FC_09E7:
 	if (!gflags[0x0175]) goto labelFunc07FC_09F1;
-	message("「真是個悶瓜！甚至不願意跟我喝杯麥酒……」");
+	message("「真是個悶瓜！甚至不願意跟我喝杯麥酒…」");
 	say();
 labelFunc07FC_09F1:
 	if (!gflags[0x0173]) goto labelFunc07FC_0A71;
@@ -555,7 +555,7 @@ labelFunc07FC_09F1:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「我帶著我的魯特琴……」");
+	message("「我帶著我的魯特琴…」");
 	say();
 	UI_play_music(0x003B, Func09A0(0x0005, 0x0001));
 	message("「如果所有的年輕姑娘都是一疊磚塊，」");
@@ -564,12 +564,12 @@ labelFunc07FC_09F1:
 	message("「那我要當個泥水匠，優雅地把她們砌上！」");
 	say();
 	UI_play_music(0x003D, Func09A0(0x0005, 0x0001));
-	message("「把妳的腿翻過來，把妳的腿翻過來……」");
+	message("「把妳的腿翻過來，把妳的腿翻過來…」");
 	say();
 	UI_show_npc_face1(0xFFC3, 0x0000);
 	message("「老天啊，老兄！在葉琳達女士聽得見的地方？你難道不知羞恥嗎！」");
 	say();
-	Func097F(0xFFC6, "@別管我……@", 0x0000);
+	Func097F(0xFFC6, "@別管我…@", 0x0000);
 	goto labelFunc07FC_0B2E;
 labelFunc07FC_0A71:
 	goto labelFunc07FC_0A78;
@@ -591,28 +591,28 @@ labelFunc07FC_0A78:
 	UI_set_conversation_slot(0x0000);
 	message("「我可能是個酒鬼，但我也是個誠實的酒鬼。我不會跟隨一個偽君子葬身海底。」");
 	say();
-	Func097F(0xFFC6, "@這就是我要說的……@", 0x0000);
+	Func097F(0xFFC6, "@這就是我要說的…@", 0x0000);
 	goto labelFunc07FC_0B2E;
 labelFunc07FC_0AC8:
 	case "喝酒" attend labelFunc07FC_0AF0:
 	UI_remove_answer(["喝酒", "沒有問題"]);
 	UI_add_answer("沒有其他問題了");
-	message("「我為什麼喝這麼多酒？這算是個滿私人的問題……」");
+	message("「我為什麼喝這麼多酒？這算是個滿私人的問題…」");
 	say();
 	message("「我被困在岸上，老兄，我是個水手啊。沒有比這更糟的命運了。我親眼看著我們的船隊被風暴擊碎。我看著水手們死去！」");
 	say();
-	message("「一個死裡逃生的人為什麼不喝酒，聖者？也許我該和我的兄弟們一起死……」");
+	message("「一個死裡逃生的人為什麼不喝酒，聖者？也許我該和我的兄弟們一起死…」");
 	say();
 labelFunc07FC_0AF0:
 	case "沒有問題" attend labelFunc07FC_0B13:
 	UI_show_npc_face1(0xFE9C, 0x0000);
 	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@酒鬼……@", 0x0000);
+	Func097F(item, "@酒鬼…@", 0x0000);
 	goto labelFunc07FC_0B2E;
 labelFunc07FC_0B13:
 	case "沒有其他問題了" attend labelFunc07FC_0B2A:
-	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
+	Func097F(0xFE9C, "@沒有其他問題了…@", 0x0000);
 	goto labelFunc07FC_0B2E;
 labelFunc07FC_0B2A:
 	goto labelFunc07FC_09B1;
@@ -669,7 +669,7 @@ labelFunc07FC_0C40:
 	say();
 labelFunc07FC_0C4A:
 	if (!gflags[0x0173]) goto labelFunc07FC_0C54;
-	message("「這是一個充滿熱情與慾望的野人！我現在就能感覺到他的眼睛正盯著我……」");
+	message("「這是一個充滿熱情與慾望的野人！我現在就能感覺到他的眼睛正盯著我…」");
 	say();
 labelFunc07FC_0C54:
 	case "惡魔崇拜" attend labelFunc07FC_0C7C:
@@ -691,7 +691,7 @@ labelFunc07FC_0C7C:
 	goto labelFunc07FC_0CC8;
 labelFunc07FC_0CAD:
 	case "沒有其他問題了" attend labelFunc07FC_0CC4:
-	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
+	Func097F(0xFE9C, "@沒有其他問題了…@", 0x0000);
 	goto labelFunc07FC_0CC8;
 labelFunc07FC_0CC4:
 	goto labelFunc07FC_0BC4;
@@ -740,7 +740,7 @@ labelFunc07FC_0D8A:
 	UI_set_conversation_slot(0x0000);
 	goto labelFunc07FC_0DCE;
 labelFunc07FC_0DC7:
-	message("「問我別的事吧……」");
+	message("「問我別的事吧…」");
 	say();
 	goto labelFunc07FC_0E12;
 labelFunc07FC_0DCE:
@@ -757,11 +757,11 @@ labelFunc07FC_0DCE:
 	say();
 labelFunc07FC_0DF5:
 	UI_show_npc_face1(0xFFD1, 0x0000);
-	message("「我女兒不是在這裡受審，總理……」");
+	message("「我女兒不是在這裡受審，總理…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「嗯……我想也是……」");
+	message("「嗯…我想也是…」");
 	say();
 labelFunc07FC_0E12:
 	var0003 = 0x0001;
@@ -774,7 +774,7 @@ labelFunc07FC_0E18:
 	say();
 labelFunc07FC_0E3E:
 	if (!gflags[0x0175]) goto labelFunc07FC_0E48;
-	message("「他有著專業劊子手那種冷酷的沉默。沙米諾從不笑。我覺得他令人不安……」");
+	message("「他有著專業劊子手那種冷酷的沉默。沙米諾從不笑。我覺得他令人不安…」");
 	say();
 labelFunc07FC_0E48:
 	if (!gflags[0x0173]) goto labelFunc07FC_0E52;
@@ -793,11 +793,11 @@ labelFunc07FC_0E76:
 	UI_show_npc_face1(0xFE9C, 0x0000);
 	message("「請原諒我。我對你沒有問題。」");
 	say();
-	Func097F(item, "@白痴……@", 0x0000);
+	Func097F(item, "@白痴…@", 0x0000);
 	goto labelFunc07FC_0EB4;
 labelFunc07FC_0E99:
 	case "沒有其他問題了" attend labelFunc07FC_0EB0:
-	Func097F(0xFE9C, "@沒有其他問題了……@", 0x0000);
+	Func097F(0xFE9C, "@沒有其他問題了…@", 0x0000);
 	goto labelFunc07FC_0EB4;
 labelFunc07FC_0EB0:
 	goto labelFunc07FC_0D58;

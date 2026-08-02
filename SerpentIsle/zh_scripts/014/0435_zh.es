@@ -67,7 +67,7 @@ labelFunc0435_011A:
 	message("「一定要帶上那個叫 Iolo 的傢伙——夫人希望賜予他一份榮譽。」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(0xFFCB, "@如此的榮譽……@", 0x0002);
+	Func097F(0xFFCB, "@如此的榮譽…@", 0x0002);
 	gflags[0x015C] = true;
 	abort;
 labelFunc0435_017D:
@@ -152,11 +152,11 @@ labelFunc0435_0297:
 	goto labelFunc0435_02AD;
 labelFunc0435_029A:
 	if (!(gflags[0x014E] == true)) goto labelFunc0435_02A9;
-	message("「蒙利多( Monitor )人在城市之間的主要道路上設有護衛塔。長槍兵( Pikemen )通常是唯一擋在哥布林和旅行者之間的力量。」 *「Yelinda 夫人現在很放心，因為長槍兵( Pikemen )已經從那些邪惡的哥布林手中奪回了幼鹿城塔樓( Fawn tower )。被困在哥布林和風暴之間，而且沒有逃生的希望……這真是一個可怕的念頭。」");
+	message("「蒙利多( Monitor )人在城市之間的主要道路上設有護衛塔。長槍兵( Pikemen )通常是唯一擋在哥布林和旅行者之間的力量。」 *「Yelinda 夫人現在很放心，因為長槍兵( Pikemen )已經從那些邪惡的哥布林手中奪回了幼鹿城塔樓( Fawn tower )。被困在哥布林和風暴之間，而且沒有逃生的希望…這真是一個可怕的念頭。」");
 	say();
 	goto labelFunc0435_02AD;
 labelFunc0435_02A9:
-	message("「蒙利多( Monitor )人在城市之間的主要道路上設有護衛塔。長槍兵( Pikemen )通常是唯一擋在哥布林和旅行者之間的力量。」 *「現在那些邪惡的哥布林從長槍兵( Pikemen )手中奪走了幼鹿城塔樓( Fawn tower )，Yelinda 夫人非常擔憂。這真是一個可怕的念頭，被困在哥布林和風暴之間，而且沒有逃生的希望……」");
+	message("「蒙利多( Monitor )人在城市之間的主要道路上設有護衛塔。長槍兵( Pikemen )通常是唯一擋在哥布林和旅行者之間的力量。」 *「現在那些邪惡的哥布林從長槍兵( Pikemen )手中奪走了幼鹿城塔樓( Fawn tower )，Yelinda 夫人非常擔憂。這真是一個可怕的念頭，被困在哥布林和風暴之間，而且沒有逃生的希望…」");
 	say();
 labelFunc0435_02AD:
 	UI_remove_answer("塔樓");
@@ -314,7 +314,7 @@ labelFunc0435_04CB:
 	UI_remove_answer("哥布林");
 labelFunc0435_04D9:
 	case "首領" attend labelFunc0435_04EC:
-	message("「一個自稱 Pomdirgun 的巨大野獸。至少我認為是這個名字……很難聽懂哥布林在說什麼。」 *「他殺死了所有其他哥布林首領，並自立為大頭目。他非常危險。簡直就像他有大腦一樣。」");
+	message("「一個自稱 Pomdirgun 的巨大野獸。至少我認為是這個名字…很難聽懂哥布林在說什麼。」 *「他殺死了所有其他哥布林首領，並自立為大頭目。他非常危險。簡直就像他有大腦一樣。」");
 	say();
 	UI_remove_answer("首領");
 labelFunc0435_04EC:
@@ -330,7 +330,7 @@ labelFunc0435_04FF:
 	UI_add_answer("治療師");
 labelFunc0435_0519:
 	case "治療師" attend labelFunc0435_0533:
-	message("「我們盡快帶了一支武裝隊伍去追他們，但我們只找到了他的頭……其餘的部分無疑是在煮鍋裡或絞肉機裡了。黛爾菲妮亞( Delphynia )正在盡她所能接替他的位置。」");
+	message("「我們盡快帶了一支武裝隊伍去追他們，但我們只找到了他的頭…其餘的部分無疑是在煮鍋裡或絞肉機裡了。黛爾菲妮亞( Delphynia )正在盡她所能接替他的位置。」");
 	say();
 	UI_remove_answer("治療師");
 	UI_add_answer("黛爾菲妮亞");
@@ -341,7 +341,7 @@ labelFunc0435_0533:
 	UI_remove_answer("黛爾菲妮亞");
 labelFunc0435_0546:
 	case "風暴" attend labelFunc0435_0559:
-	message("「我們這座城市位在水上，本來就預期天氣會不好。但這些風暴似乎……嗯……某種程度上有些邪惡。閃電會讓東西消失。請注意，不是燒成灰燼，而是完全消失。閃電帶走某樣東西，然後留下另一樣東西取代它。」 *「當你認為風暴要來臨時，你必須趕快找個地方躲避。」");
+	message("「我們這座城市位在水上，本來就預期天氣會不好。但這些風暴似乎…嗯…某種程度上有些邪惡。閃電會讓東西消失。請注意，不是燒成灰燼，而是完全消失。閃電帶走某樣東西，然後留下另一樣東西取代它。」 *「當你認為風暴要來臨時，你必須趕快找個地方躲避。」");
 	say();
 	UI_remove_answer("風暴");
 labelFunc0435_0559:
@@ -352,7 +352,7 @@ labelFunc0435_0559:
 	say();
 	goto labelFunc0435_0589;
 labelFunc0435_057E:
-	message("「我看守衛還在傳播那個流言……」 *「在這些奇怪的風暴開始之前，有一艘船駛入我們的港口，它和我們認識的任何船都不像。船上的人告訴我們，他們是從古索沙利亞( Old Sosaria )航行而來的。雖然我們的海員覺得很難以置信，但我們還是接納了他們。」 *「就在風暴開始前，Leon 開始宣講一種名為友誼會的奇怪觀念。Kylista 認為這是一個徵兆，表示上天對我們允許這種外國信仰進入城市感到憤怒。在與大船長們協商後，Yelinda 夫人遺憾地將這些水手和乘客驅逐出了城市。」");
+	message("「我看守衛還在傳播那個流言…」 *「在這些奇怪的風暴開始之前，有一艘船駛入我們的港口，它和我們認識的任何船都不像。船上的人告訴我們，他們是從古索沙利亞( Old Sosaria )航行而來的。雖然我們的海員覺得很難以置信，但我們還是接納了他們。」 *「就在風暴開始前，Leon 開始宣講一種名為友誼會的奇怪觀念。Kylista 認為這是一個徵兆，表示上天對我們允許這種外國信仰進入城市感到憤怒。在與大船長們協商後，Yelinda 夫人遺憾地將這些水手和乘客驅逐出了城市。」");
 	say();
 	UI_add_answer("Kylista");
 labelFunc0435_0589:
@@ -393,13 +393,13 @@ labelFunc0435_05FF:
 	message(var0000);
 	message("。那是你自己的事。」");
 	say();
-	message("「我只要求你不要把它拿出來到處展示……你看，這是哥布林使用的髮刷，而且是用人骨製成的。」");
+	message("「我只要求你不要把它拿出來到處展示…你看，這是哥布林使用的髮刷，而且是用人骨製成的。」");
 	say();
 	message("「當我們試圖將哥布林趕出這個區域時，我在空蕩蕩的哥布林營地裡見過幾個像這樣的東西。」");
 	say();
 	goto labelFunc0435_0640;
 labelFunc0435_0638:
-	message("「聽起來你描述的是哥布林使用的髮刷。它是用人骨製成的……」");
+	message("「聽起來你描述的是哥布林使用的髮刷。它是用人骨製成的…」");
 	say();
 	message("「當我們試圖將哥布林趕出這個區域時，我在空蕩蕩的哥布林營地裡見過幾個。」");
 	say();
@@ -421,14 +421,14 @@ labelFunc0435_0677:
 	case "樸素的盾牌" attend labelFunc0435_06E2:
 	UI_remove_answer("樸素的盾牌");
 	if (!Func097D(0xFE9B, 0x0001, 0x02D9, 0xFE99, 0xFE99)) goto labelFunc0435_06BF;
-	message("「Jendon 讓你來找我是對的。我懷疑幼鹿城( Fawn )裡還有誰會去注意這種東西……」");
+	message("「Jendon 讓你來找我是對的。我懷疑幼鹿城( Fawn )裡還有誰會去注意這種東西…」");
 	say();
 	message("「這是蒙利多城( Monitor )的盾牌， ");
 	message(var0000);
 	message("。」");
 	say();
 	if (!(gflags[0x003E] == true)) goto labelFunc0435_06B8;
-	message("「我很驚訝你到現在還沒意識到……你的一個長槍兵( Pikeman )同伴正在找這個東西。」");
+	message("「我很驚訝你到現在還沒意識到…你的一個長槍兵( Pikeman )同伴正在找這個東西。」");
 	say();
 	goto labelFunc0435_06BC;
 labelFunc0435_06B8:

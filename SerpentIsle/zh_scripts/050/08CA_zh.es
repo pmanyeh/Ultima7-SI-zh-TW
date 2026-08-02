@@ -40,10 +40,10 @@ labelFunc08CA_0062:
 	var0003 = UI_find_nearby(var0002, 0x0190, 0x0005, 0x0000);
 	if (!var0003) goto labelFunc08CA_00CB;
 	UI_clear_item_say(var0000);
-	UI_item_say(var0000, "@她那樣喜愛鮮花……@");
+	UI_item_say(var0000, "@她那樣喜愛鮮花…@");
 	goto labelFunc08CA_00DF;
 labelFunc08CA_00CB:
-	UI_item_say(var0000, "@如果我有鮮花……@");
+	UI_item_say(var0000, "@如果我有鮮花…@");
 	UI_set_alignment(var0000, 0x0000);
 labelFunc08CA_00DF:
 	if (!(UI_get_item_quality(item) == 0x0011)) goto labelFunc08CA_019E;
@@ -61,7 +61,7 @@ labelFunc08CA_00DF:
 labelFunc08CA_0187:
 	goto labelFunc08CA_019E;
 labelFunc08CA_018A:
-	UI_item_say(var0000, "@如果我有鮮花……@");
+	UI_item_say(var0000, "@如果我有鮮花…@");
 	UI_set_alignment(var0000, 0x0000);
 labelFunc08CA_019E:
 	if (!(event == 0x0002)) goto labelFunc08CA_03FE;

@@ -93,7 +93,7 @@ labelFunc041A_01B4:
 	UI_item_say(0xFFE6, "@我該如何回家？@");
 labelFunc041A_01D2:
 	if (!(var000A == 0x0002)) goto labelFunc041A_01E6;
-	UI_item_say(0xFFE6, "@我迷路了……@");
+	UI_item_say(0xFFE6, "@我迷路了…@");
 labelFunc041A_01E6:
 	if (!(var000A == 0x0003)) goto labelFunc041A_01FA;
 	UI_item_say(0xFFE6, "@我在哪裡？@");
@@ -102,11 +102,11 @@ labelFunc041A_01FA:
 	UI_item_say(0xFFE6, "@我是怎麼來到這裡的？@");
 labelFunc041A_020E:
 	if (!(var000A == 0x0005)) goto labelFunc041A_022C;
-	UI_item_say(0xFFE6, "@我好冷……@");
+	UI_item_say(0xFFE6, "@我好冷…@");
 	UI_set_schedule_type(0xFFE6, 0x0004);
 labelFunc041A_022C:
 	if (!(var000A == 0x0006)) goto labelFunc041A_024A;
-	UI_item_say(0xFFE6, "@也許是這個方向……@");
+	UI_item_say(0xFFE6, "@也許是這個方向…@");
 	UI_set_schedule_type(0xFFE6, 0x0001);
 labelFunc041A_024A:
 	if (!(event == 0x0009)) goto labelFunc041A_0912;
@@ -140,17 +140,17 @@ labelFunc041A_02D7:
 	if (!(Func0955() == true)) goto labelFunc041A_0305;
 	message("「太好了！」");
 	say();
-	message("「也許你在這座建築裡找找，就能找到放下吊橋的方法……」");
+	message("「也許你在這座建築裡找找，就能找到放下吊橋的方法…」");
 	say();
 	goto labelFunc041A_0328;
 labelFunc041A_0305:
-	message("「隨便你……」");
+	message("「隨便你…」");
 	say();
 	message("「也許我能在餓死之前找到別的逃生方法。」");
 	say();
 	gflags[0x0214] = true;
 	UI_set_schedule_type(0xFFE6, 0x0014);
-	Func097F(0xFFE6, "@好冷……@", 0x0000);
+	Func097F(0xFFE6, "@好冷…@", 0x0000);
 	abort;
 labelFunc041A_0328:
 	goto labelFunc041A_0352;
@@ -166,7 +166,7 @@ labelFunc041A_034A:
 	message("「聖者！很高興見到你！」");
 	say();
 labelFunc041A_034E:
-	message("「我被捲進了一場奇怪的風暴中，似乎被困在這個島上了。如果你願意幫我逃離這個地方，我很樂意教你一兩個法術……或者如果你無法掌握那個等級的法術，我也可以給你合適的法術卷軸。」");
+	message("「我被捲進了一場奇怪的風暴中，似乎被困在這個島上了。如果你願意幫我逃離這個地方，我很樂意教你一兩個法術…或者如果你無法掌握那個等級的法術，我也可以給你合適的法術卷軸。」");
 	say();
 labelFunc041A_0352:
 	UI_add_answer(["被困住", "法術"]);
@@ -226,7 +226,7 @@ labelFunc041A_0444:
 	say();
 	goto labelFunc041A_0464;
 labelFunc041A_0460:
-	message("「也許如果我能親眼看看這雙拖鞋，我就能告訴你更多關於它們的事……」");
+	message("「也許如果我能親眼看看這雙拖鞋，我就能告訴你更多關於它們的事…」");
 	say();
 labelFunc041A_0464:
 	case "血手" attend labelFunc041A_0484:
@@ -236,7 +236,7 @@ labelFunc041A_0464:
 	say();
 	goto labelFunc041A_0484;
 labelFunc041A_0480:
-	message("「你完全確定這東西是一隻活的斷手嗎？我懷疑不是。也許如果你能拿給我看看……」");
+	message("「你完全確定這東西是一隻活的斷手嗎？我懷疑不是。也許如果你能拿給我看看…」");
 	say();
 labelFunc041A_0484:
 	case "指控" attend labelFunc041A_04F3:
@@ -245,7 +245,7 @@ labelFunc041A_0484:
 	say();
 	message("「我的興趣在於死物，而不是活人。我沒有抓你的朋友，也不知道是誰抓了他。」");
 	say();
-	message("「你的無禮真是令人難以置信！總是那些迷信和嫉妒的人在迫害死靈法師……」");
+	message("「你的無禮真是令人難以置信！總是那些迷信和嫉妒的人在迫害死靈法師…」");
 	say();
 	var000C = UI_get_object_position(0xFFE6);
 	UI_sprite_effect(0x001A, var000C[0x0001], var000C[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
@@ -319,7 +319,7 @@ labelFunc041A_05F6:
 	UI_show_npc_face1(0xFEEB, 0x0000);
 	message("「我聽到了你的召喚， Mortegro ！我生前是 Trinsic 的鐵匠 Christopher 。我在這裡的時間很短，我希望能和那位被稱為聖者的人說幾句話。」");
 	say();
-	message("「聖者，感謝你保護了我的兒子，並打破了友誼會對不列顛尼亞的邪惡控制。但我也要給你一個警告。在這個領域裡有很多靈魂在等著你，他們心裡只有一件事——就是要向你復仇！有一件事……你必須……永遠……記住……」");
+	message("「聖者，感謝你保護了我的兒子，並打破了友誼會對不列顛尼亞的邪惡控制。但我也要給你一個警告。在這個領域裡有很多靈魂在等著你，他們心裡只有一件事——就是要向你復仇！有一件事…你必須…永遠…記住…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -366,7 +366,7 @@ labelFunc041A_06DE:
 labelFunc041A_06E2:
 	case "被困住" attend labelFunc041A_06FC:
 	UI_remove_answer("被困住");
-	message("「這個嘛，我很不想承認像我這樣的高階法師(Adept)會被這樣困住……但我所有的法術都無法讓我從這個島上解脫。」");
+	message("「這個嘛，我很不想承認像我這樣的高階法師(Adept)會被這樣困住…但我所有的法術都無法讓我從這個島上解脫。」");
 	say();
 	UI_add_answer("法術");
 labelFunc041A_06FC:
@@ -378,7 +378,7 @@ labelFunc041A_06FC:
 labelFunc041A_0716:
 	case "無魔力區域" attend labelFunc041A_0729:
 	UI_remove_answer("無魔力區域");
-	message("\"There are such areas where magic cannot be used. I think that this... place... may be one of them.\" *\"Or, perhaps, common magic --  if thou wilt -- cannot function here. Whatever the case, I cannot escape by magical means.\"");
+	message("「世上的確有些地方是無法使用魔法的。我想……眼前這個地方……恐怕就是其中之一。又或者，該怎麼說呢——也許只是一般的魔法無法在此發揮作用。無論如何，我都無法透過魔法手段逃離這裡。」");
 	say();
 labelFunc041A_0729:
 	case "學習法術" attend labelFunc041A_0778:
@@ -395,7 +395,7 @@ labelFunc041A_074A:
 	goto labelFunc041A_0778;
 labelFunc041A_075C:
 	if (!gflags[0x00DB]) goto labelFunc041A_076C;
-	message("「我可以教你法術……但要收費。」");
+	message("「我可以教你法術…但要收費。」");
 	say();
 	Func084F();
 	goto labelFunc041A_0778;
@@ -404,7 +404,7 @@ labelFunc041A_076C:
 	say();
 	message("「如果你真的想掌握魔法，也許你應該去魔法學院(Seminarium)和 Fedabiblio 大師談談。」");
 	say();
-	message("「但我覺得你學施法已經太老了……」");
+	message("「但我覺得你學施法已經太老了…」");
 	say();
 labelFunc041A_0778:
 	case "法術" attend labelFunc041A_0798:
@@ -423,7 +423,7 @@ labelFunc041A_07B2:
 	UI_remove_answer("實驗");
 	message("「我被 Gustacio 說服，去幫助他執行改變傳送風暴(teleport storms)方向的計畫。」");
 	say();
-	message("「也許這不是最明智的做法……因為我被困在這裡，完全不知道如何回月影城。」");
+	message("「也許這不是最明智的做法…因為我被困在這裡，完全不知道如何回月影城。」");
 	say();
 	message("「我相信我跟某種祭壇交換了位置。我很確定當我消失時，老 Gustacio 會非常驚訝。他毫無疑問正在好奇現在在他工作區裡的究竟是什麼東西。」");
 	say();
@@ -438,13 +438,13 @@ labelFunc041A_07D4:
 labelFunc041A_07EB:
 	case "召喚陰影" attend labelFunc041A_0805:
 	UI_remove_answer("召喚陰影");
-	message("「這實際上是一個相當方便的法術。它能讓你詢問死者的陰影……只要你擁有那個人生前珍視的某件物品。當然，這法術也有缺點……」");
+	message("「這實際上是一個相當方便的法術。它能讓你詢問死者的陰影…只要你擁有那個人生前珍視的某件物品。當然，這法術也有缺點…」");
 	say();
 	UI_add_answer("缺點");
 labelFunc041A_0805:
 	case "缺點" attend labelFunc041A_081F:
 	UI_remove_answer("缺點");
-	message("「如果你在沒有合適物品的情況下將陰影從其安息地召喚出來，陰影很可能會攻擊你。而且這個法術會消耗大量的施法材料……但你能學到非常有趣的事情！」");
+	message("「如果你在沒有合適物品的情況下將陰影從其安息地召喚出來，陰影很可能會攻擊你。而且這個法術會消耗大量的施法材料…但你能學到非常有趣的事情！」");
 	say();
 	UI_add_answer("施法材料");
 labelFunc041A_081F:
@@ -462,14 +462,14 @@ labelFunc041A_0832:
 	goto labelFunc041A_0895;
 labelFunc041A_0872:
 	if (!(Func0955() == true)) goto labelFunc041A_0895;
-	message("「儘管我是個高階法師(Adept)，但我相信沒有你的指引我無法回家……」");
+	message("「儘管我是個高階法師(Adept)，但我相信沒有你的指引我無法回家…」");
 	say();
 	UI_add_to_party(0xFFE6);
 	Func097F(0xFFE6, "@謝謝你！@", 0x0000);
 	abort;
 	goto labelFunc041A_08B0;
 labelFunc041A_0895:
-	message("「好吧，也許我能自己找到回家的路……畢竟，我是個高階法師(Adept)。」");
+	message("「好吧，也許我能自己找到回家的路…畢竟，我是個高階法師(Adept)。」");
 	say();
 	Func097F(0xFFE6, "@這條路通向哪裡？@", 0x0000);
 	UI_set_schedule_type(0xFFE6, 0x000C);

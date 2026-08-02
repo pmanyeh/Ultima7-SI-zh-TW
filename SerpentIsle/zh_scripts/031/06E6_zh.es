@@ -161,7 +161,7 @@ labelFunc06E6_058A:
 	var0008 = "「進來，快進來，聖者。我為你煮了些特別的東西。」";
 labelFunc06E6_059A:
 	if (!(var0002 == 0x0007)) goto labelFunc06E6_05AA;
-	var0008 = "「看來，你找到我的遊戲室了……」";
+	var0008 = "「看來，你找到我的遊戲室了…」";
 labelFunc06E6_05AA:
 	if (!(var0002 == 0x0008)) goto labelFunc06E6_05D0;
 	var0008 = "「你就快要到了，聖者。」";

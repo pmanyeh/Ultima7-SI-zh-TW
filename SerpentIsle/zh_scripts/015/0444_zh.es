@@ -145,7 +145,7 @@ labelFunc0444_0241:
 	if (!Func097D(0xFE9B, 0x0001, 0x0268, 0xFE99, 0x0009)) goto labelFunc0444_0274;
 	message("「看！我告訴過大家我不可能會是叛徒！」");
 	say();
-	message("「我甚至不喝酒。但大家都知道 Luther 喜歡縱酒……」");
+	message("「我甚至不喝酒。但大家都知道 Luther 喜歡縱酒…」");
 	say();
 	message("「這個瓶子一定他的！ Luther 就是叛徒！」");
 	say();
@@ -160,7 +160,7 @@ labelFunc0444_0274:
 	say();
 	message("「這是因為我的傷。我只能喝得下牛奶。煮沸的牛奶。」");
 	say();
-	Func097F(0xFFBC, "@離我遠一點……@", 0x0000);
+	Func097F(0xFFBC, "@離我遠一點…@", 0x0000);
 	abort;
 labelFunc0444_0299:
 	case "職責" attend labelFunc0444_02BD:
@@ -172,7 +172,7 @@ labelFunc0444_0299:
 labelFunc0444_02BD:
 	case "狀況" attend labelFunc0444_02D4:
 	UI_remove_answer("狀況");
-	message("「如果你仔細看，你會發現我的手臂在手肘處彎曲得不自然。我在小時候第一場戰鬥中受了傷——哥布林偷襲我們，那是一場激烈的戰鬥……我沒能及時得到治療。因此我變得不適合戰鬥。」");
+	message("「如果你仔細看，你會發現我的手臂在手肘處彎曲得不自然。我在小時候第一場戰鬥中受了傷——哥布林偷襲我們，那是一場激烈的戰鬥…我沒能及時得到治療。因此我變得不適合戰鬥。」");
 	say();
 	UI_pop_answers();
 labelFunc0444_02D4:
@@ -197,7 +197,7 @@ labelFunc0444_0331:
 	if (!(var000B == "賣")) goto labelFunc0444_0353;
 	message("「我收購一些皮革製品，");
 	message(var0001);
-	message("……」");
+	message("…」");
 	say();
 	message("「但我的價格是固定的，恐怕不能議價。」");
 	say();
@@ -261,7 +261,7 @@ labelFunc0444_03F5:
 	gflags[0x007F] = true;
 labelFunc0444_040C:
 	case "野狼" attend labelFunc0444_0423:
-	message("「作為一個不擅長戰鬥的騎士是很難的。我在戰場上毫無用處，但作為糧草官，我至少能養活自己！野狼對我很好。但如果我是一隻巨熊……嗯，他們腦子裡只有武勇。」");
+	message("「作為一個不擅長戰鬥的騎士是很難的。我在戰場上毫無用處，但作為糧草官，我至少能養活自己！野狼對我很好。但如果我是一隻巨熊…嗯，他們腦子裡只有武勇。」");
 	say();
 	UI_remove_answer("野狼");
 	var0006 = true;
@@ -278,7 +278,7 @@ labelFunc0444_044E:
 	UI_remove_answer("獵豹");
 	if (!(gflags[0x0038] == true)) goto labelFunc0444_047B;
 	if (!(gflags[0x0069] == false)) goto labelFunc0444_0474;
-	message("「那個蠢貨 Marsten 破壞了軍團所代表的一切……我相信他永遠地毀了獵豹軍團的聲譽。」");
+	message("「那個蠢貨 Marsten 破壞了軍團所代表的一切…我相信他永遠地毀了獵豹軍團的聲譽。」");
 	say();
 	goto labelFunc0444_0478;
 labelFunc0444_0474:
@@ -310,7 +310,7 @@ labelFunc0444_04B6:
 	case "在森林中散步" attend labelFunc0444_0516:
 	UI_remove_answer("在森林中散步");
 	if (!var0002) goto labelFunc0444_04D2;
-	message("「哦，我們不要再討論這個了……」");
+	message("「哦，我們不要再討論這個了…」");
 	say();
 	goto labelFunc0444_0516;
 labelFunc0444_04D2:
@@ -331,7 +331,7 @@ labelFunc0444_0500:
 	UI_pop_answers();
 labelFunc0444_0516:
 	case "換個話題", "沒什麼了" attend labelFunc0444_0529:
-	message("「很好……」");
+	message("「很好…」");
 	say();
 	UI_pop_answers();
 labelFunc0444_0529:
@@ -339,7 +339,7 @@ labelFunc0444_0529:
 	var0008 = true;
 	UI_remove_answer("戰場遺跡");
 	UI_remove_answer("廢墟");
-	message("「這裡肯定發生過一場大戰，在惡魔統治巨蛇之島的日子裡。我的散步把我帶到了最糾結的森林深處，在那裡我發現了許多謎團——用奇怪石頭建造的廢墟、黃銅製成的文物，有時是頭骨或破碎的武器……而且總是會有巨蛇印記。」");
+	message("「這裡肯定發生過一場大戰，在惡魔統治巨蛇之島的日子裡。我的散步把我帶到了最糾結的森林深處，在那裡我發現了許多謎團——用奇怪石頭建造的廢墟、黃銅製成的文物，有時是頭骨或破碎的武器…而且總是會有巨蛇印記。」");
 	say();
 	UI_add_answer("巨蛇印記");
 labelFunc0444_0551:
@@ -350,7 +350,7 @@ labelFunc0444_0551:
 labelFunc0444_0564:
 	case "哥布林" attend labelFunc0444_0577:
 	UI_remove_answer("哥布林");
-	message("「他們是個禍害！自從我們的祖先踏上這個島的那一刻起，我們就一直在與他們戰鬥。如果我們想要安全，就必須消滅他們，但除非巨熊和獵豹願意聽從 Brendann 的話，否則我們無法做到這一點。我們必須追蹤他們到他們村莊的巢穴並殺死他們。如果叛徒確實存在，那麼我們從一開始就註定要失敗……」");
+	message("「他們是個禍害！自從我們的祖先踏上這個島的那一刻起，我們就一直在與他們戰鬥。如果我們想要安全，就必須消滅他們，但除非巨熊和獵豹願意聽從 Brendann 的話，否則我們無法做到這一點。我們必須追蹤他們到他們村莊的巢穴並殺死他們。如果叛徒確實存在，那麼我們從一開始就註定要失敗…」");
 	say();
 labelFunc0444_0577:
 	case "密謀" attend labelFunc0444_059E:
@@ -372,7 +372,7 @@ labelFunc0444_059E:
 	say();
 	goto labelFunc0444_05E1;
 labelFunc0444_05DD:
-	message("「他不可能是哥布林，因為他們從不獨自在森林裡行走。因此……我認為他一定是蒙利多城的叛徒！」");
+	message("「他不可能是哥布林，因為他們從不獨自在森林裡行走。因此…我認為他一定是蒙利多城的叛徒！」");
 	say();
 labelFunc0444_05E1:
 	case "證據" attend labelFunc0444_0601:

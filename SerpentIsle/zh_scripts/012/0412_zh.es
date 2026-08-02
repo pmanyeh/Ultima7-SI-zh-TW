@@ -54,7 +54,7 @@ labelFunc0412_00AF:
 	if (!(event == 0x0001)) goto labelFunc0412_00DD;
 	UI_item_say(0xFE9C, "@你好！@");
 	0xFFEE->Func07D1();
-	Func097F(0xFFEE, "@啊，是的……@", 0x0002);
+	Func097F(0xFFEE, "@啊，是的…@", 0x0002);
 	UI_set_schedule_type(0xFFEE, 0x0003);
 labelFunc0412_00DD:
 	if (!(event == 0x0009)) goto labelFunc0412_0649;
@@ -81,7 +81,7 @@ labelFunc0412_0173:
 labelFunc0412_017D:
 	converse attend labelFunc0412_0648;
 	case "改變話題" attend labelFunc0412_0190:
-	message("「但我們才剛開始啊！好吧，如果你堅持的話……」");
+	message("「但我們才剛開始啊！好吧，如果你堅持的話…」");
 	say();
 	UI_pop_answers();
 labelFunc0412_0190:
@@ -95,7 +95,7 @@ labelFunc0412_0190:
 labelFunc0412_01C0:
 	case "法術" attend labelFunc0412_01D7:
 	UI_remove_answer("法術");
-	message("「哼……」");
+	message("「哼…」");
 	say();
 	message("「教導你或任何其他人我獨有的驚人知識，有失我的身分。如果你想學習奧秘技藝，去煩 Melino 或 Columna 吧。」");
 	say();
@@ -104,7 +104,7 @@ labelFunc0412_01D7:
 	UI_remove_answer("負擔");
 	message("「的確。有時我覺得我的臣民不懂得感激我。他們給了我財富和權力，但我卻給了他們我的人生！這算是一場公平的交易嗎？」");
 	say();
-	message("「也許我應該去海岸邊的小屋生活。那樣壓力會小一點……」");
+	message("「也許我應該去海岸邊的小屋生活。那樣壓力會小一點…」");
 	say();
 	Func0830();
 labelFunc0412_01F1:
@@ -118,14 +118,14 @@ labelFunc0412_01F1:
 labelFunc0412_020B:
 	case "生活" attend labelFunc0412_024B:
 	UI_remove_answer("生活");
-	message("「當領主法師是很孤獨的。我有正常男人的需求，但我卻被市民的要求給淹沒了……」");
+	message("「當領主法師是很孤獨的。我有正常男人的需求，但我卻被市民的要求給淹沒了…」");
 	say();
 	if (!UI_is_pc_female()) goto labelFunc0412_0234;
 	message("「我很感激妳的同情，女士。我也被妳吸引了。啊哈，妳以為我沒注意到妳的眼神嗎！」");
 	say();
 	message("「但可惜，我已經名花有主了！女巫 Frigidazzi 是我現在的愛人，她不允許我有任何越軌行為。」");
 	say();
-	message("「而且我也很嫉妒她的情感。我發現女人出了名的善變……」");
+	message("「而且我也很嫉妒她的情感。我發現女人出了名的善變…」");
 	say();
 	goto labelFunc0412_0248;
 labelFunc0412_0234:
@@ -171,7 +171,7 @@ labelFunc0412_02B0:
 	UI_remove_answer("高階法師 Rotoluncia");
 	message("「女巫 Rotoluncia 是紛爭的核心。她野心勃勃，惹出各種麻煩。」");
 	say();
-	message("「她以前不是這樣的。我記得我學徒生涯最後一年的夏天。她比我小兩歲，並請我當她的導師……」");
+	message("「她以前不是這樣的。我記得我學徒生涯最後一年的夏天。她比我小兩歲，並請我當她的導師…」");
 	say();
 	message("「啊，但那個夏天她也教了我不少！那之前和之後我都有過許多愛人，但我將永遠記得 Rotoluncia 。」");
 	say();
@@ -234,7 +234,7 @@ labelFunc0412_03A4:
 	UI_remove_answer("拖鞋");
 	message("「拖鞋！我穿什麼鞋關你什麼事！你以為可以拿我來開玩笑嗎？」");
 	say();
-	message("「滾開，你這蠢貨……」");
+	message("「滾開，你這蠢貨…」");
 	say();
 	var000C = UI_get_object_position(0xFFEE);
 	UI_sprite_effect(0x001A, var000C[0x0001], var000C[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
@@ -243,7 +243,7 @@ labelFunc0412_03A4:
 labelFunc0412_03F8:
 	case "綁架" attend labelFunc0412_0444:
 	UI_remove_answer("綁架");
-	message("「你的朋友被抓走了！多麼可惡！而且是用魔法手段！這真是……」");
+	message("「你的朋友被抓走了！多麼可惡！而且是用魔法手段！這真是…」");
 	say();
 	message("「你懷疑是誰犯下了這個可怕的罪行？」");
 	say();
@@ -258,20 +258,20 @@ labelFunc0412_0437:
 	UI_add_answer(["Rotoluncia", "不知道"]);
 labelFunc0412_0444:
 	case "Mortegro" attend labelFunc0412_0458:
-	message("「胡說！那個人是個誠實正直的法師，儘管他確實有些令人不安的習慣……」");
+	message("「胡說！那個人是個誠實正直的法師，儘管他確實有些令人不安的習慣…」");
 	say();
 	message("「收回你的懷疑——我保證他的人格。 Mortegro 沒有偷走你的朋友。」");
 	say();
 	UI_pop_answers();
 labelFunc0412_0458:
 	case "Torrissio" attend labelFunc0412_0468:
-	message("「嗯……他很年輕，但也很聰明且狡猾。或許你應該拿著你的懷疑去和他對質，看看他有什麼話要說。」");
+	message("「嗯…他很年輕，但也很聰明且狡猾。或許你應該拿著你的懷疑去和他對質，看看他有什麼話要說。」");
 	say();
 	UI_pop_answers();
 labelFunc0412_0468:
 	case "巴特林" attend labelFunc0412_0483:
 	UI_remove_answer("巴特林");
-	message("「這個名字我很熟悉……好幾個星期前他來過月影城( Moonshade )，是個穿著很普通的棕色斗篷的大塊頭。」");
+	message("「這個名字我很熟悉…好幾個星期前他來過月影城( Moonshade )，是個穿著很普通的棕色斗篷的大塊頭。」");
 	say();
 	message("「或許你該去雜貨店問問 Bucia ——如果這座城市有什麼事情是需要知道的，她一定會知道。」");
 	say();
@@ -309,9 +309,9 @@ labelFunc0412_04DE:
 	say();
 	goto labelFunc0412_0516;
 labelFunc0412_04FA:
-	message("「所以你已經搜查過 Rotoluncia 的莊園，沒有發現你朋友的蹤跡，也沒看見 Rotoluncia ？這真有趣……」");
+	message("「所以你已經搜查過 Rotoluncia 的莊園，沒有發現你朋友的蹤跡，也沒看見 Rotoluncia ？這真有趣…」");
 	say();
-	message("「我對你還有最後一個希望，但我必須先跟你分享一個秘密……」");
+	message("「我對你還有最後一個希望，但我必須先跟你分享一個秘密…」");
 	say();
 	UI_push_answers();
 	UI_add_answer(["最後的希望", "秘密", "改變話題"]);
@@ -327,7 +327,7 @@ labelFunc0412_052D:
 	UI_remove_answer("秘密");
 	message("「我很不願意承認這件事，但在這種情況下，我想我必須說。」");
 	say();
-	message("「一年前，紅女巫和我重燃了我們年輕時開始的激情韻事。這不是我的主意，但我無法抗拒她的攻勢……」");
+	message("「一年前，紅女巫和我重燃了我們年輕時開始的激情韻事。這不是我的主意，但我無法抗拒她的攻勢…」");
 	say();
 	message("「她要求我們的親熱必須在秘密中進行，所以我建了一座隱蔽的愛巢。」");
 	say();
@@ -359,10 +359,10 @@ labelFunc0412_059D:
 	message("「她和我做愛，難道只是想利用我？她的熱情是假的，只是為了脅迫我建造那座隱藏堡壘的藉口？」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0412_05BC;
-	message("「女人都是善變的！永遠不要把心交給她們那種人，陌生人。最好是愛她們，然後離開她們……」");
+	message("「女人都是善變的！永遠不要把心交給她們那種人，陌生人。最好是愛她們，然後離開她們…」");
 	say();
 labelFunc0412_05BC:
-	message("「我完蛋了！我的心好痛。我必須離開，一個人靜一靜……」");
+	message("「我完蛋了！我的心好痛。我必須離開，一個人靜一靜…」");
 	say();
 	var000C = UI_get_object_position(0xFFEE);
 	UI_sprite_effect(0x0007, var000C[0x0001], var000C[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
@@ -373,14 +373,14 @@ labelFunc0412_05BC:
 labelFunc0412_0607:
 	case "親熱" attend labelFunc0412_061E:
 	UI_remove_answer("親熱");
-	message("「啊哈，但我不能跟你談論這個！這是私人問題……」");
+	message("「啊哈，但我不能跟你談論這個！這是私人問題…」");
 	say();
 	message("「但我可以說——在我們年輕之後的這些年裡，紅女巫學會了許多奇怪且高難度的招式。哎呀，她甚至還教了我一兩招！」");
 	say();
 labelFunc0412_061E:
 	case "再見" attend labelFunc0412_0645:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@我該走了……@", 0x0000);
+	Func097F(0xFE9C, "@我該走了…@", 0x0000);
 	Func097F(0xFFEE, "@祝你好運！@", 0x0002);
 	goto labelFunc0412_0648;
 labelFunc0412_0645:

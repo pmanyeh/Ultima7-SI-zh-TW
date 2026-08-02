@@ -27,7 +27,7 @@ void Func0935 0x935 (var var0000)
 	var0001 = ["不用", "劍", "長矛", "戰錘", "晨星錘", "釘頭錘", "長柄斧", "戰斧"];
 	var0002 = Func0957(var0001);
 	if (!(var0002 == 0x0001)) goto labelFunc0935_0043;
-	message("「確實。如果那是你想要的……祝你好運啦。」");
+	message("「確實。如果那是你想要的…祝你好運啦。」");
 	say();
 labelFunc0935_0043:
 	if (!(var0002 == 0x0002)) goto labelFunc0935_0073;
@@ -117,7 +117,7 @@ labelFunc0935_0208:
 	Func092F(var0000, 0x0014);
 labelFunc0935_0211:
 	UI_clear_item_say(var0007);
-	Func097F(var0007, "@跟我來……@", 0x000F);
+	Func097F(var0007, "@跟我來…@", 0x000F);
 	var0008 = UI_find_nearby(var0000, 0x036F, 0x001E, 0x0000);
 	enum();
 labelFunc0935_0238:

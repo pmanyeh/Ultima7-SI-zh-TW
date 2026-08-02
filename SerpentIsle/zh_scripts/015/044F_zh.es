@@ -119,7 +119,7 @@ labelFunc044F_022D:
 	converse attend labelFunc044F_060C;
 	case "可怕的刷子" attend labelFunc044F_0263:
 	UI_remove_answer("可怕的刷子");
-	message("「一個奇特的刷子？我懷疑我已經知道那是什麼了，但讓我看看……」");
+	message("「一個奇特的刷子？我懷疑我已經知道那是什麼了，但讓我看看…」");
 	say();
 	if (!var0002) goto labelFunc044F_025F;
 	message("「那是一個哥布林梳子！傳說是由他們受害者的骨頭製成的。」");
@@ -159,9 +159,9 @@ labelFunc044F_02A4:
 	if (!(!gflags[0x0048])) goto labelFunc044F_02DC;
 	message("「這關你什麼事，陌生人？你難道看不出我正在從傷痛中恢復嗎？」");
 	say();
-	message("「我不想把我有限的精力花在閒聊上。我是一名戰士，不是職員……」");
+	message("「我不想把我有限的精力花在閒聊上。我是一名戰士，不是職員…」");
 	say();
-	Func097F(0xFFB1, "@抱歉……@", 0x0000);
+	Func097F(0xFFB1, "@抱歉…@", 0x0000);
 	UI_set_schedule_type(0xFFB1, 0x0014);
 	abort;
 	goto labelFunc044F_02ED;
@@ -186,7 +186,7 @@ labelFunc044F_0300:
 	UI_add_answer(["模式", "何時", "方式", "換個話題"]);
 	goto labelFunc044F_033B;
 labelFunc044F_0337:
-	message("「但我不能和陌生人談論這些事情。你可能是他們的間諜……」");
+	message("「但我不能和陌生人談論這些事情。你可能是他們的間諜…」");
 	say();
 labelFunc044F_033B:
 	case "模式" attend labelFunc044F_035A:
@@ -367,7 +367,7 @@ labelFunc044F_0590:
 	message("「這一定是人類留下的。最後——確定我們叛徒的證據！」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0268, 0xFE99, 0x0009)) goto labelFunc044F_05C3;
-	message("「這麼不尋常的瓶子……也許 Lucilla 可以為你辨認。」");
+	message("「這麼不尋常的瓶子…也許 Lucilla 可以為你辨認。」");
 	say();
 	goto labelFunc044F_05C7;
 labelFunc044F_05C3:

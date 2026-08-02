@@ -33,7 +33,7 @@ labelFunc0431_005B:
 	UI_show_npc_face0(0xFFCF, 0x0000);
 	var0004 = UI_get_item_flag(0xFFCF, 0x001C);
 	if (!(gflags[0x0171] || (gflags[0x0170] && (!gflags[0x0172])))) goto labelFunc0431_00B6;
-	message("「哎呀，你是那被指控的褻瀆者的心腹！我不能讓人看見我和你說話……」");
+	message("「哎呀，你是那被指控的褻瀆者的心腹！我不能讓人看見我和你說話…」");
 	say();
 	UI_remove_npc_face0();
 	Func097F(0xFFCF, "@快走開！@", 0x0000);
@@ -96,7 +96,7 @@ labelFunc0431_0145:
 labelFunc0431_0168:
 	case "生計" attend labelFunc0431_01D4:
 	UI_remove_answer("生計");
-	message("「如你所見，幼鹿城( Fawn )是建在水上的。我們……或者說曾經……是以捕魚為生。」");
+	message("「如你所見，幼鹿城( Fawn )是建在水上的。我們…或者說曾經…是以捕魚為生。」");
 	say();
 	message("「我們就是這樣養活我們的人民，以及和其他城鎮進行貿易的。」");
 	say();
@@ -104,7 +104,7 @@ labelFunc0431_0168:
 	message("「但我們是堅韌的一群。」 ~「我們將挺過這些惡劣的風暴，並重建被摧毀的一切。」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0431_01A1;
-	message("「也許我會再次和 Yelinda 夫人談談。如果要拯救這座城鎮，她肯定需要我的建議……」");
+	message("「也許我會再次和 Yelinda 夫人談談。如果要拯救這座城鎮，她肯定需要我的建議…」");
 	say();
 	goto labelFunc0431_01AC;
 labelFunc0431_01A1:
@@ -117,11 +117,11 @@ labelFunc0431_01AF:
 	message("「我們大部分的人都命喪大海和風暴中。」 ~「我們不知道他們是淹死了還是被變形了。」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0431_01C9;
-	message("「願『美』能讓他們的靈魂安息……」");
+	message("「願『美』能讓他們的靈魂安息…」");
 	say();
 	goto labelFunc0431_01D4;
 labelFunc0431_01C9:
-	message("「現在 Yelinda 夫人交代我一個任務，要找出在我們重建船隻之前維持人民生計的方法。」 ~「說實話，我並不抱太大希望……」");
+	message("「現在 Yelinda 夫人交代我一個任務，要找出在我們重建船隻之前維持人民生計的方法。」 ~「說實話，我並不抱太大希望…」");
 	say();
 	UI_add_answer("Yelinda 夫人");
 labelFunc0431_01D4:
@@ -167,7 +167,7 @@ labelFunc0431_0246:
 	UI_add_answer("燈塔");
 labelFunc0431_026C:
 	case "燈塔" attend labelFunc0431_0286:
-	message("「當風暴把我們的燈塔換成一座鬧鬼的建築時，水手們的心似乎都死了。」 ~「他們認為這是不祥之兆……」 *「他們說對了。」");
+	message("「當風暴把我們的燈塔換成一座鬧鬼的建築時，水手們的心似乎都死了。」 ~「他們認為這是不祥之兆…」 *「他們說對了。」");
 	say();
 	UI_remove_answer("燈塔");
 	UI_add_answer("鬧鬼的建築");
@@ -239,7 +239,7 @@ labelFunc0431_035A:
 	UI_add_answer("船隻");
 labelFunc0431_0374:
 	case "船隻" attend labelFunc0431_0387:
-	message("「我們知道有一些在海上失蹤了……天知道變成了什麼。」 ~「其他的就我們所知，可能被傳送到了冰封的山脈。再也沒有人見過他們。」");
+	message("「我們知道有一些在海上失蹤了…天知道變成了什麼。」 ~「其他的就我們所知，可能被傳送到了冰封的山脈。再也沒有人見過他們。」");
 	say();
 	UI_remove_answer("船隻");
 labelFunc0431_0387:
@@ -274,7 +274,7 @@ labelFunc0431_03E1:
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0431_040E;
 	message("「自從夫人允許那些友誼會的敗類回到城裡後，她最近似乎開心多了。」");
 	say();
-	message("「她怎麼能忍受 Ruggs 那傢伙？他是如此地醜陋……」");
+	message("「她怎麼能忍受 Ruggs 那傢伙？他是如此地醜陋…」");
 	say();
 	goto labelFunc0431_041F;
 labelFunc0431_040E:

@@ -58,7 +58,7 @@ labelFunc033D_00E3:
 	var0006 = UI_get_object_position(0xFE9C);
 	var0002 = UI_direction_from(0xFE9C, 0xFFE4);
 	var0003 = UI_direction_from(0xFFE4, 0xFE9C);
-	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@……沒事的……@"]);
+	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@…沒事的…@"]);
 	var0004 = UI_execute_usecode_array(0xFFE4, [(byte)0x23, (byte)0x27, 0x0004, (byte)0x55, 0x033D]);
 	var0007 = UI_get_object_position(0xFFE4);
 	UI_sprite_effect(0x002B, var0007[0x0001], var0007[0x0002], 0x0000, 0x0000, 0x0001, 0xFFFF);

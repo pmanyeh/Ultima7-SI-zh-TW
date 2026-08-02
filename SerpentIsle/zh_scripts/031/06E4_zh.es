@@ -41,7 +41,7 @@ labelFunc06E4_00CA:
 labelFunc06E4_00D4:
 	if (!((event == 0x0002) && (gflags[0x0007] == false))) goto labelFunc06E4_0140;
 	UI_show_npc_face0(0xFEE0, 0x0000);
-	message("\"Want to try some spinning...\"* \"...and dying, Avatar?\"");
+	message("想來體驗一下旋轉……還有死亡的滋味嗎，聖者？」");
 	say();
 	UI_remove_npc_face0();
 	var0004 = UI_find_nearby(item, 0x0178, 0x000A, 0x0000);

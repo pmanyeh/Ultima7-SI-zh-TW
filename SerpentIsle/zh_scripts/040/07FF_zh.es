@@ -187,7 +187,7 @@ labelFunc07FF_0336:
 	say();
 	goto labelFunc07FF_0359;
 labelFunc07FF_0355:
-	message("「嗯……我好像找不到我的鑰匙。你或許可以稍後再來。」");
+	message("「嗯…我好像找不到我的鑰匙。你或許可以稍後再來。」");
 	say();
 labelFunc07FF_0359:
 	UI_remove_npc_face0();

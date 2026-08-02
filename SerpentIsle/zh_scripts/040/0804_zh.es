@@ -71,7 +71,7 @@ labelFunc0804_0134:
 	if (!(var0011 == 0x0002)) goto labelFunc0804_0148;
 	message("「");
 	message(var0004);
-	message("，如果父親知道我用這個價格把東西賣給你，他一定會羞愧得臉紅……」");
+	message("，如果父親知道我用這個價格把東西賣給你，他一定會羞愧得臉紅…」");
 	say();
 labelFunc0804_0148:
 	if (!(var0011 == 0x0003)) goto labelFunc0804_015C;
@@ -158,7 +158,7 @@ labelFunc0804_0276:
 	say();
 labelFunc0804_0284:
 	if (!(var0011 == 0x0003)) goto labelFunc0804_0292;
-	message("「父親如果知道這件事，一定會非常生氣……」");
+	message("「父親如果知道這件事，一定會非常生氣…」");
 	say();
 labelFunc0804_0292:
 	if (!(0x001F < (var000C + 0x000A))) goto labelFunc0804_02AD;
@@ -218,13 +218,13 @@ labelFunc0804_036B:
 labelFunc0804_037F:
 	if (!(var000E == 0x0003)) goto labelFunc0804_03C5;
 	if (!(var0011 == 0x0001)) goto labelFunc0804_039D;
-	message("「父親常說現在世道艱難，物資短缺……你願意考慮 ");
+	message("「父親常說現在世道艱難，物資短缺…你願意考慮 ");
 	message(var0005);
 	message(" 法拉利幣嗎？」");
 	say();
 labelFunc0804_039D:
 	if (!(var0011 == 0x0002)) goto labelFunc0804_03B1;
-	message("「我不確定……你願意考慮 ");
+	message("「我不確定…你願意考慮 ");
 	message(var0005);
 	message(" 法拉利幣嗎？」");
 	say();

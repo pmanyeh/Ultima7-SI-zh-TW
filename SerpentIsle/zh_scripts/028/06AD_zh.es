@@ -33,7 +33,7 @@ labelFunc06AD_004A:
 	gflags[0x0045] = true;
 	UI_set_alignment(0xFFB4, 0x0003);
 	UI_set_item_flag(0xFFB4, 0x001D);
-	var0004 = Func0992(0x0001, "@線索……@", "@線索……@", true);
+	var0004 = Func0992(0x0001, "@線索…@", "@線索…@", true);
 	if (!(var0004 != 0xFE9C)) goto labelFunc06AD_00A1;
 	var0005 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x55, 0x06AD], 0x000A);
 labelFunc06AD_00A1:

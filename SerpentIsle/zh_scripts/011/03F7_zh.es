@@ -79,7 +79,7 @@ labelFunc03F7_00F6:
 labelFunc03F7_0119:
 	case "死亡守望" attend labelFunc03F7_0141:
 	UI_remove_answer("死亡守望");
-	message("「那不是我們最高指揮部的稱呼，但他們並不在這裡。對他們而言，這是巨蛇之牙( Serpent's Fang )城砦。對我們這些抵禦混沌無腦大軍的人來說，這裡是死亡守望( DeathWatch )城砦……");
+	message("「那不是我們最高指揮部的稱呼，但他們並不在這裡。對他們而言，這是巨蛇之牙( Serpent's Fang )城砦。對我們這些抵禦混沌無腦大軍的人來說，這裡是死亡守望( DeathWatch )城砦…");
 	say();
 	message("「或者，如今這場戰爭已將我們遺忘，也許我們應該改叫它『死亡等待』。");
 	say();
@@ -91,7 +91,7 @@ labelFunc03F7_0119:
 labelFunc03F7_0141:
 	case "確認身份" attend labelFunc03F7_0240:
 	UI_remove_answer("確認身份");
-	message("「你必須要有某種身份證明……」");
+	message("「你必須要有某種身份證明…」");
 	say();
 	if (!((!Func0942(0xFFFD)) || ((!Func0942(0xFFFE)) || (!Func0942(0xFFFF))))) goto labelFunc03F7_0181;
 	UI_add_answer(["我不需要證明！", "我是聖者！", "護身符"]);
@@ -154,7 +154,7 @@ labelFunc03F7_0276:
 	UI_remove_answer(["護身符", "我是聖者！", "我不需要證明！"]);
 	message("「不，這不可能！自從 Ssithnos 遭到謀殺以來，從未有過任何平衡鬥士！");
 	say();
-	message("「我幾乎不敢相信自己的眼睛！但這件物品是真品，這一點我確信無疑……");
+	message("「我幾乎不敢相信自己的眼睛！但這件物品是真品，這一點我確信無疑…");
 	say();
 	message("「請原諒我的懷疑，");
 	message(var0001);
@@ -238,7 +238,7 @@ labelFunc03F7_03DE:
 	message("「你必須履行你的職責。我為對你這樣一位光榮的戰士說出不敬之語而道歉。」");
 	say();
 	UI_remove_npc_face1();
-	UI_item_say(0xFFFF, "@職責即我們的榮耀……@");
+	UI_item_say(0xFFFF, "@職責即我們的榮耀…@");
 	UI_set_conversation_slot(0x0000);
 labelFunc03F7_040A:
 	case "Isstanar" attend labelFunc03F7_042A:
@@ -275,7 +275,7 @@ labelFunc03F7_0480:
 	UI_remove_answer("刀槍不入");
 	message("「 Isstanar 已超脫了肉體的束縛。留下來的，只有他如鐵的意志和他精密的邏輯之心。」");
 	say();
-	message("「沒有任何事物能使他分心於職責。他不恐懼，不憂慮。與我們這裡其他人不同，他不受無聊或不耐煩的侵擾。他就是……存在著。」");
+	message("「沒有任何事物能使他分心於職責。他不恐懼，不憂慮。與我們這裡其他人不同，他不受無聊或不耐煩的侵擾。他就是…存在著。」");
 	say();
 labelFunc03F7_0497:
 	case "混沌間諜" attend labelFunc03F7_04B7:
@@ -286,19 +286,19 @@ labelFunc03F7_0497:
 labelFunc03F7_04B7:
 	case "秘密武器" attend labelFunc03F7_04CA:
 	UI_remove_answer("秘密武器");
-	message("「若你有觀察力，你就知道這個問題的答案。若你沒有，我也不會告訴你……無論你是誰。」");
+	message("「若你有觀察力，你就知道這個問題的答案。若你沒有，我也不會告訴你…無論你是誰。」");
 	say();
 labelFunc03F7_04CA:
 	case "抵消優勢" attend labelFunc03F7_04DD:
 	UI_remove_answer("抵消優勢");
-	message("「間諜唯一需要探知的秘密，就是我們的優勢根本無法被抵消。秩序如今不可能失敗……那些可悲的混沌追隨者越早明白這一點，這場戰爭就越快結束！」");
+	message("「間諜唯一需要探知的秘密，就是我們的優勢根本無法被抵消。秩序如今不可能失敗…那些可悲的混沌追隨者越早明白這一點，這場戰爭就越快結束！」");
 	say();
 labelFunc03F7_04DD:
 	case "一階法師" attend labelFunc03F7_0503:
 	UI_remove_answer("一階法師");
-	message("「你總能從一位法師的等階高低看出其品質……你能從老遠聞到其優越氣息！」");
+	message("「你總能從一位法師的等階高低看出其品質…你能從老遠聞到其優越氣息！」");
 	say();
-	message("「但我不該這樣開玩笑……你是個陌生人，可能會誤解我。說真的，法師的等階反映了其能力。」");
+	message("「但我不該這樣開玩笑…你是個陌生人，可能會誤解我。說真的，法師的等階反映了其能力。」");
 	say();
 	message("「一階法師精通所有法術。二階法師精通次一等級的法術，以此類推。」");
 	say();
@@ -328,18 +328,18 @@ labelFunc03F7_053E:
 	message("「這些天我實在沒什麼事做。我不知道自己是渴望回到前線，還是只是嚮往被調往別處。待在這座幾乎廢棄的要塞裡，實在令人消沉。」");
 	say();
 	if (!gflags[0x00DB]) goto labelFunc03F7_05AD;
-	message("「我能看出你是個法師，雖然我看不出等階。如果你願意，我可以教你幾個法術……當然，需要收取一點費用。」");
+	message("「我能看出你是個法師，雖然我看不出等階。如果你願意，我可以教你幾個法術…當然，需要收取一點費用。」");
 	say();
-	message("「或者，如果你不需要法術，也許我可以訓練你使用魔法……自然也要收取一點費用。這也能幫我打發時間。」");
+	message("「或者，如果你不需要法術，也許我可以訓練你使用魔法…自然也要收取一點費用。這也能幫我打發時間。」");
 	say();
 	message("「你想要什麼？」");
 	say();
 	var0003 = Func0956(["什麼都不用", "法術", "訓練"]);
 	if (!(var0003 == "什麼都不用")) goto labelFunc03F7_0590;
-	message("「也許下次吧。我現在應該去巡邏了……」");
+	message("「也許下次吧。我現在應該去巡邏了…」");
 	say();
 	UI_remove_npc_face0();
-	UI_item_say(item, "@待會兒見……@");
+	UI_item_say(item, "@待會兒見…@");
 	abort;
 labelFunc03F7_0590:
 	if (!(var0003 == "法術")) goto labelFunc03F7_059D;
@@ -350,9 +350,9 @@ labelFunc03F7_059D:
 labelFunc03F7_05AA:
 	goto labelFunc03F7_05C2;
 labelFunc03F7_05AD:
-	message("「如果你是個法師，我本願意教你幾個法術。或者我也可以訓練你使用魔法……自然都要收取一點費用。那也能幫我打發時間。");
+	message("「如果你是個法師，我本願意教你幾個法術。或者我也可以訓練你使用魔法…自然都要收取一點費用。那也能幫我打發時間。");
 	say();
-	message("「唉，我只好去巡邏了。我想，這次我大概不太可能遇到什麼混沌怪物了……」");
+	message("「唉，我只好去巡邏了。我想，這次我大概不太可能遇到什麼混沌怪物了…」");
 	say();
 	UI_remove_npc_face0();
 	UI_item_say(item, "@職責在召喚！@");

@@ -38,7 +38,7 @@ labelFunc0851_009B:
 labelFunc0851_009F:
 	goto labelFunc0851_00A6;
 labelFunc0851_00A2:
-	message("「改天吧……」");
+	message("「改天吧…」");
 	say();
 labelFunc0851_00A6:
 	return;

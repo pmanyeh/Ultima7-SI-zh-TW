@@ -65,22 +65,22 @@ labelFunc0151_00D9:
 	goto labelFunc0151_00AD;
 labelFunc0151_00DC:
 	// 幽靈 1 的隨機自語（悲嘆型）
-	var0009 = ["@我不確定……@", "@死亡並非獎賞……@", "@去尋求死亡吧，朋友們！@", "@混沌沒有答案。@", "@秩序錯了嗎？@", "@我已失去信仰。@"];
+	var0009 = ["@我不確定…@", "@死亡並非獎賞…@", "@去尋求死亡吧，朋友們！@", "@混沌沒有答案。@", "@秩序錯了嗎？@", "@我已失去信仰。@"];
 	var000A = ["@我們也都不確定。@", "@虛空才是獎賞！@", "@但我們本就是死亡。@", "@我沒有問題。@", "@失衡才是錯的。@", "@別絕望，老友。@"];
 labelFunc0151_010C:
 	if (!(var0000 == 0x0002)) goto labelFunc0151_0146;
 	// 幽靈 2 的隨機自語（狂信型）
-	var0009 = ["@混沌終將勝利！@", "@虛空是我的獎賞。@", "@我不是鬼魂。@", "@銘記教父的話語。@", "@戰爭永無止境。@", "@然而，偉大者仍在沉眠……@"];
-	var000A = ["@一切皆是灰燼。@", "@虛空什麼都不是。@", "@那我們又是什麼？@", "@空洞的言語。@", "@悲哀，但卻真實。@", "@噓，祂現在在傾聽……@"];
+	var0009 = ["@混沌終將勝利！@", "@虛空是我的獎賞。@", "@我不是鬼魂。@", "@銘記教父的話語。@", "@戰爭永無止境。@", "@然而，偉大者仍在沉眠…@"];
+	var000A = ["@一切皆是灰燼。@", "@虛空什麼都不是。@", "@那我們又是什麼？@", "@空洞的言語。@", "@悲哀，但卻真實。@", "@噓，祂現在在傾聽…@"];
 labelFunc0151_0146:
 	if (!(var0000 == 0x0003)) goto labelFunc0151_0180;
 	// 幽靈 3 的隨機自語（盼望型）
-	var0009 = ["@勇士終將出現……@", "@我們即將獲得解脫。@", "@要有信仰，朋友們。@", "@不要懷疑。@", "@有人來了！@", "@聆聽虛空……@"];
-	var000A = ["@承諾……@", "@已經太久了！@", "@我們會努力的。@", "@難以置信。@", "@我看不見……@", "@是的，它在向我歌唱！@"];
+	var0009 = ["@勇士終將出現…@", "@我們即將獲得解脫。@", "@要有信仰，朋友們。@", "@不要懷疑。@", "@有人來了！@", "@聆聽虛空…@"];
+	var000A = ["@承諾…@", "@已經太久了！@", "@我們會努力的。@", "@難以置信。@", "@我看不見…@", "@是的，它在向我歌唱！@"];
 labelFunc0151_0180:
 	if (!(var0000 == 0x0004)) goto labelFunc0151_01BA;
 	// 幽靈 4 的隨機自語（好戰型）
-	var0009 = ["@殺死那些冒犯者！@", "@混沌必須勝利！@", "@沒有妥協的餘地。@", "@戰鬥就是現在！@", "@我鄙視秩序……@", "@我太累了！@"];
+	var0009 = ["@殺死那些冒犯者！@", "@混沌必須勝利！@", "@沒有妥協的餘地。@", "@戰鬥就是現在！@", "@我鄙視秩序…@", "@我太累了！@"];
 	var000A = ["@朋友，他們都死了。@", "@混沌孤獨地留存。@", "@我們必須達成一致！@", "@已沒有敵人。@", "@秩序並非邪惡，朋友。@", "@我們都是古老的靈魂。@"];
 labelFunc0151_01BA:
 	var000B = UI_get_random(0x0006);
@@ -92,10 +92,10 @@ labelFunc0151_01BA:
 	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, var000A[var000B]], 0x0005);
 labelFunc0151_0214:
 	if (!((event == 0x0001) && (var0000 != 0x0000))) goto labelFunc0151_02C2;
-	UI_item_say(0xFE9C, "@打擾一下……@");
+	UI_item_say(0xFE9C, "@打擾一下…@");
 	item->Func07D1();
 	if (!(var0000 != 0x0005)) goto labelFunc0151_025C;
-	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@是的……？@"], 0x0000);
+	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@是的…？@"], 0x0000);
 	UI_set_schedule_type(item, 0x0003);
 	goto labelFunc0151_02C2;
 labelFunc0151_025C:
@@ -137,7 +137,7 @@ labelFunc0151_030F:
 labelFunc0151_0337:
 	if (!(var0000 == 0x0003)) goto labelFunc0151_035F;
 	UI_show_npc_face0(0xFEEB, 0x0000);
-	message("「終於有陌生人了！哦，但我們以前見過嗎？這樣的存在令人困惑……」");
+	message("「終於有陌生人了！哦，但我們以前見過嗎？這樣的存在令人困惑…」");
 	say();
 	UI_add_answer(["姓名", "見過", "存在"]);
 labelFunc0151_035F:
@@ -157,12 +157,12 @@ labelFunc0151_0387:
 	var000C = UI_update_last_created(var0013);
 labelFunc0151_03D4:
 	var000C = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@哦！@"]);
-	var0015 = Func0992(0x0001, "@看！一本書……@", "@一本書……@", true);
+	var0015 = Func0992(0x0001, "@看！一本書…@", "@一本書…@", true);
 	abort;
 labelFunc0151_03F7:
 	if (!(var0000 == 0x0006)) goto labelFunc0151_041F;
 	UI_show_npc_face0(0xFEEB, 0x0000);
-	message("「你難道看不出我們是在試圖幫助你嗎！我們所說的每一句話都有含義。你必須戰勝敵人……」");
+	message("「你難道看不出我們是在試圖幫助你嗎！我們所說的每一句話都有含義。你必須戰勝敵人…」");
 	say();
 	UI_add_answer(["幫助", "我們是誰？", "敵人"]);
 labelFunc0151_041F:
@@ -179,7 +179,7 @@ labelFunc0151_0430:
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_047C;
 labelFunc0151_0462:
-	message("「我必須走了。其他人在等著……」");
+	message("「我必須走了。其他人在等著…」");
 	say();
 	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@再次開始！@"], 0x0000);
 	abort;
@@ -217,7 +217,7 @@ labelFunc0151_04EE:
 	say();
 	message("「然而，我懷疑是否真的有任何勝利可言。失衡怎能是勝利？我們是對立，而非敵對。」");
 	say();
-	message("「哦，我說了褻瀆的話！但我無法收回我的話語……」");
+	message("「哦，我說了褻瀆的話！但我無法收回我的話語…」");
 	say();
 	if (!(UI_get_random(0x0006) > 0x0003)) goto labelFunc0151_051A;
 	goto labelFunc0151_0462;
@@ -244,7 +244,7 @@ labelFunc0151_056A:
 	UI_remove_answer("見過");
 	message("「很抱歉，即使我們曾經見過，我也無法記起。我們似乎一遍又一遍地活在同樣的片刻之中，而那些打斷又迅速消逝。」");
 	say();
-	message("「作為一個幽靈般的存在，生命是如此乏味。曾幾何時，我是一個正值壯年的女人。如今我只是存在著……」");
+	message("「作為一個幽靈般的存在，生命是如此乏味。曾幾何時，我是一個正值壯年的女人。如今我只是存在著…」");
 	say();
 	message("「我懷念肉體！有痛苦和悲傷，但那遠比這無歡樂的生命要好得多。」");
 	say();
@@ -301,7 +301,7 @@ labelFunc0151_0641:
 labelFunc0151_0669:
 	case "幫助" attend labelFunc0151_0680:
 	UI_remove_answer("幫助");
-	message("「我不能……這是不被允許的……話語無法說出……」");
+	message("「我不能…這是不被允許的…話語無法說出…」");
 	say();
 	message("「直接幫助你是被禁止的，陌生人。你必須自己去辨明事物。」");
 	say();
@@ -324,7 +324,7 @@ labelFunc0151_06AA:
 	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@再次開始！@"], 0x0005);
 labelFunc0151_06DD:
 	if (!(var0000 == 0x0006)) goto labelFunc0151_075C;
-	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@再見……@"], 0x0000);
+	var000C = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@再見…@"], 0x0000);
 	UI_reduce_health(item, 0x0037, 0x0000);
 	var0016 = UI_get_object_position(item);
 	var0016[0x0001] = (var0016[0x0001] - (var0016[0x0003] / 0x0002));

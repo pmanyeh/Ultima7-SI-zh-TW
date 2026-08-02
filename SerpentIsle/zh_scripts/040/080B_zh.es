@@ -116,7 +116,7 @@ labelFunc080B_01E1:
 	if (!(var0008 == 0x0000)) goto labelFunc080B_021F;
 	message("「也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc080B_0F03;
 labelFunc080B_021F:
@@ -172,7 +172,7 @@ labelFunc080B_0327:
 labelFunc080B_0341:
 	if (!(var0008 >= 0x0001)) goto labelFunc080B_03A5;
 	var000D = UI_remove_party_items(var0008, var0006, 0xFE99, 0xFE99, false);
-	message("「讓我想想……」~「我會收下你的 ");
+	message("「讓我想想…」~「我會收下你的 ");
 	message(var0008);
 	message(" ");
 	message(var0005);
@@ -193,7 +193,7 @@ labelFunc080B_0341:
 labelFunc080B_03A5:
 	message("「也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 labelFunc080B_03AF:
 	goto labelFunc080B_03C2;
@@ -207,7 +207,7 @@ labelFunc080B_03B2:
 labelFunc080B_03C2:
 	goto labelFunc080B_03C9;
 labelFunc080B_03C5:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc080B_03C9:
 	if (!(var0002 == "吉爾得幣")) goto labelFunc080B_0799;
@@ -290,7 +290,7 @@ labelFunc080B_0577:
 	if (!(var0008 == 0x0000)) goto labelFunc080B_05B5;
 	message("「也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc080B_0F03;
 labelFunc080B_05B5:
@@ -353,7 +353,7 @@ labelFunc080B_06F5:
 labelFunc080B_0705:
 	if (!(var0008 >= 0x0001)) goto labelFunc080B_0775;
 	var000D = UI_remove_party_items(var0008, var0006, 0xFE99, 0xFE99, false);
-	message("「讓我想想……」~「我會收下你的 ");
+	message("「讓我想想…」~「我會收下你的 ");
 	message(var0008);
 	message(" ");
 	message(var0005);
@@ -378,7 +378,7 @@ labelFunc080B_0705:
 labelFunc080B_0775:
 	message("「也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 labelFunc080B_077F:
 	goto labelFunc080B_0792;
@@ -392,7 +392,7 @@ labelFunc080B_0782:
 labelFunc080B_0792:
 	goto labelFunc080B_0799;
 labelFunc080B_0795:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc080B_0799:
 	if (!(var0002 == "法拉利幣")) goto labelFunc080B_0B37;
@@ -475,7 +475,7 @@ labelFunc080B_0947:
 	if (!(var0008 == 0x0000)) goto labelFunc080B_0985;
 	message("「也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc080B_0F03;
 labelFunc080B_0985:
@@ -531,7 +531,7 @@ labelFunc080B_0A95:
 labelFunc080B_0AAF:
 	if (!(var0008 >= 0x0001)) goto labelFunc080B_0B13;
 	var000D = UI_remove_party_items(var0008, var0006, 0xFE99, 0xFE99, false);
-	message("「讓我想想……」~「我會收下你的 ");
+	message("「讓我想想…」~「我會收下你的 ");
 	message(var0008);
 	message(" ");
 	message(var0005);
@@ -552,7 +552,7 @@ labelFunc080B_0AAF:
 labelFunc080B_0B13:
 	message("「也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 labelFunc080B_0B1D:
 	goto labelFunc080B_0B30;
@@ -566,7 +566,7 @@ labelFunc080B_0B20:
 labelFunc080B_0B30:
 	goto labelFunc080B_0B37;
 labelFunc080B_0B33:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc080B_0B37:
 	if (!(var0002 == "金幣")) goto labelFunc080B_0F03;
@@ -649,7 +649,7 @@ labelFunc080B_0CE5:
 	if (!(var0008 == 0x0000)) goto labelFunc080B_0D23;
 	message("「也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc080B_0F03;
 labelFunc080B_0D23:
@@ -712,7 +712,7 @@ labelFunc080B_0E5F:
 labelFunc080B_0E6F:
 	if (!(var0008 >= 0x0001)) goto labelFunc080B_0EDF;
 	var000D = UI_remove_party_items(var0008, var0006, 0xFE99, 0xFE99, false);
-	message("「讓我想想……」~「我會收下你的 ");
+	message("「讓我想想…」~「我會收下你的 ");
 	message(var0008);
 	message(" ");
 	message(var0005);
@@ -737,7 +737,7 @@ labelFunc080B_0E6F:
 labelFunc080B_0EDF:
 	message("「也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 labelFunc080B_0EE9:
 	goto labelFunc080B_0EFC;
@@ -751,7 +751,7 @@ labelFunc080B_0EEC:
 labelFunc080B_0EFC:
 	goto labelFunc080B_0F03;
 labelFunc080B_0EFF:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc080B_0F03:
 	message("「你還想兌換更多貨幣嗎？」");
@@ -761,7 +761,7 @@ labelFunc080B_0F03:
 labelFunc080B_0F10:
 	goto labelFunc080B_0F17;
 labelFunc080B_0F13:
-	message("「如果這是你想要的……」");
+	message("「如果這是你想要的…」");
 	say();
 labelFunc080B_0F17:
 	return;

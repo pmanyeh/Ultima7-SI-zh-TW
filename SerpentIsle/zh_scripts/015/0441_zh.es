@@ -39,7 +39,7 @@ labelFunc0441_002B:
 	var0004 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x01D0]);
 labelFunc0441_0060:
 	if (!(event == 0x0001)) goto labelFunc0441_0098;
-	Func097F(0xFE9C, "@不好意思……@", 0x0000);
+	Func097F(0xFE9C, "@不好意思…@", 0x0000);
 	0xFFBF->Func07D1();
 	Func097F(0xFFBF, (("@是的，" + var0001) + "？@"), 0x0002);
 	UI_set_schedule_type(0xFFBF, 0x0003);
@@ -150,7 +150,7 @@ labelFunc0441_025F:
 	if (!(var000B != 0xFE9C)) goto labelFunc0441_02B1;
 	UI_set_conversation_slot(0x0000);
 	UI_remove_npc_face1();
-	message("「而且我完全知道要在哪裡以及如何使用它……」");
+	message("「而且我完全知道要在哪裡以及如何使用它…」");
 	say();
 labelFunc0441_02B1:
 	Func097F(0xFFBF, "@給我點時間！@", 0x0000);
@@ -232,7 +232,7 @@ labelFunc0441_03DC:
 labelFunc0441_03E0:
 	goto labelFunc0441_03EE;
 labelFunc0441_03E3:
-	message("「如果你在白天來我的店裡，我可以賣你一些東西……」");
+	message("「如果你在白天來我的店裡，我可以賣你一些東西…」");
 	say();
 	UI_remove_answer("購買");
 labelFunc0441_03EE:

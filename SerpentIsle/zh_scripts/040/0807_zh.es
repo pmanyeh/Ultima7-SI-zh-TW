@@ -58,11 +58,11 @@ labelFunc0807_00E0:
 	if (!(var000D < 0x0002)) goto labelFunc0807_02B9;
 	if (!(var0004 < (var0001 + ((var0000 - var0001) / 0x0004)))) goto labelFunc0807_0165;
 	if (!(var0010 == 0x0001)) goto labelFunc0807_013A;
-	message("「別告訴戴芙拉(Devra)……她要是知道我用這價格賣給你，一定會覺得她兒子腦袋軟掉了。」");
+	message("「別告訴戴芙拉(Devra)…她要是知道我用這價格賣給你，一定會覺得她兒子腦袋軟掉了。」");
 	say();
 	if (!Func0942(0xFFD7)) goto labelFunc0807_013A;
 	UI_show_npc_face1(0xFFD7, 0x0000);
-	message("「你這個毛茸茸的笨狼！你的腦袋沒問題。是你的心太軟了……」");
+	message("「你這個毛茸茸的笨狼！你的腦袋沒問題。是你的心太軟了…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -106,11 +106,11 @@ labelFunc0807_01B4:
 	say();
 labelFunc0807_01D8:
 	if (!(var0010 == 0x0002)) goto labelFunc0807_01E6;
-	message("「要是客人全都像你一樣，我永遠也別想賺錢了……」");
+	message("「要是客人全都像你一樣，我永遠也別想賺錢了…」");
 	say();
 labelFunc0807_01E6:
 	if (!(var0010 == 0x0003)) goto labelFunc0807_01F4;
-	message("「在這動盪的時期，我必須提高價格……」");
+	message("「在這動盪的時期，我必須提高價格…」");
 	say();
 labelFunc0807_01F4:
 	goto labelFunc0807_022D;
@@ -217,13 +217,13 @@ labelFunc0807_0373:
 	say();
 labelFunc0807_0391:
 	if (!(var0010 == 0x0002)) goto labelFunc0807_03A5;
-	message("「我不確定……」~「你願意考慮 ");
+	message("「我不確定…」~「你願意考慮 ");
 	message(var0004);
 	message(" 嗎？」");
 	say();
 labelFunc0807_03A5:
 	if (!(var0010 == 0x0003)) goto labelFunc0807_03B9;
-	message("「我不確定……你覺得 ");
+	message("「我不確定…你覺得 ");
 	message(var0004);
 	message(" 怎麼樣？」");
 	say();

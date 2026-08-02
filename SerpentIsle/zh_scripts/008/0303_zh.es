@@ -29,7 +29,7 @@ labelFunc0303_0041:
 	UI_obj_sprite_effect(var0001, 0x0009, 0xFFFE, 0xFFFE, 0x0000, 0x0000, 0x0000, 0xFFFF);
 	var0002 = UI_get_random(0x0003);
 	if (!((var0002 == 0x0001) || (var0002 == 0x0002))) goto labelFunc0303_00D1;
-	var0003 = UI_delayed_execute_usecode_array(var0001, [(byte)0x23, (byte)0x65, (byte)0x52, "啊……啊……哈啾！", (byte)0x6C, (byte)0x27, 0x0002, (byte)0x65, (byte)0x61], 0x0005);
+	var0003 = UI_delayed_execute_usecode_array(var0001, [(byte)0x23, (byte)0x65, (byte)0x52, "啊…啊…哈啾！", (byte)0x6C, (byte)0x27, 0x0002, (byte)0x65, (byte)0x61], 0x0005);
 	if (!((var0001 == 0xFE9C) && (Func0942(0xFFFE) && (UI_get_random(0x0002) == 0x0001)))) goto labelFunc0303_00D1;
 	var0003 = UI_delayed_execute_usecode_array(0xFFFE, [(byte)0x23, (byte)0x52, "保重！"], 0x000C);
 labelFunc0303_00D1:

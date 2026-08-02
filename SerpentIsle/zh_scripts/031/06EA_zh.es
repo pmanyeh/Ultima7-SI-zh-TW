@@ -9,7 +9,7 @@ void Func06EA object#(0x6EA) ()
 	if (!(event == 0x0003)) goto labelFunc06EA_00B1;
 	if (!(!gflags[0x00D5])) goto labelFunc06EA_0021;
 	UI_show_npc_face0(0xFEE0, 0x0000);
-	message("\"I had almost tired of waiting for thee, Avatar. Thou'rt some hero... it\ttook thee long enough.\"");
+	message("「我差點就要等得不耐煩了，聖者。你算哪門子英雄啊……花的時間還真久。」");
 	say();
 	UI_remove_npc_face0();
 labelFunc06EA_0021:

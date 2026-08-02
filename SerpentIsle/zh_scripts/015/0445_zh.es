@@ -99,7 +99,7 @@ labelFunc0445_0184:
 	say();
 	message("「問題在於巨熊和野狼——他們的爭吵削弱了我們。所以我有一個計畫！獵豹將會統治，而我將會成為國王。」");
 	say();
-	message("「有了我們隱藏軍械庫中的奇蹟武器，就連哥布林也無法攻下這座城市……」");
+	message("「有了我們隱藏軍械庫中的奇蹟武器，就連哥布林也無法攻下這座城市…」");
 	say();
 	UI_clear_item_flag(0xFFBB, 0x001D);
 	UI_reduce_health(0xFFBB, 0x0032, 0x0000);
@@ -142,7 +142,7 @@ labelFunc0445_029A:
 	UI_set_conversation_slot(0x0000);
 	message("「哥布林伏擊了她的巡邏隊。他們殺死了除了一名長槍兵之外的所有人，並把 Astrid 的屍體帶回了他們的營地——毫無疑問，是用來大快朵頤，並製成他們令人作嘔的戰利品！當增援部隊趕到時，他們只晚了幾分鐘。他們設法救出了 Groat ，但他的傷勢太重了。即使是我們的治療師 Harnna 也救不了他。」");
 	say();
-	Func094E(0xFF6A, "「該死的哥布林！他們應該被消滅……」");
+	Func094E(0xFF6A, "「該死的哥布林！他們應該被消滅…」");
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	message("「你找我有什麼事，陌生人？」");
@@ -202,7 +202,7 @@ labelFunc0445_03DD:
 	case "棕色瓶子" attend labelFunc0445_0420:
 	UI_remove_answer("棕色瓶子");
 	if (!Func097D(0xFE9B, 0x0001, 0x0268, 0xFE99, 0x0009)) goto labelFunc0445_0418;
-	message("「把那個髒瓶子拿開！它看起來像是在森林裡躺了幾個星期……」");
+	message("「把那個髒瓶子拿開！它看起來像是在森林裡躺了幾個星期…」");
 	say();
 	Func097F(0xFFBB, "@媽的！@", 0x0000);
 	abort;
@@ -257,7 +257,7 @@ labelFunc0445_04C5:
 labelFunc0445_04D2:
 	case "Astrid" attend labelFunc0445_050E:
 	UI_remove_answer("Astrid");
-	message("「你能想像被活活吃掉的恐懼嗎？！她是一位大師級的戰士，本應有更好的死法……」");
+	message("「你能想像被活活吃掉的恐懼嗎？！她是一位大師級的戰士，本應有更好的死法…」");
 	say();
 	if (!(!gflags[0x0032])) goto labelFunc0445_0503;
 	Func094E(0xFF6A, "@明白吧，陌生人， Marsten 和這個女人是床伴。@");
@@ -303,7 +303,7 @@ labelFunc0445_056A:
 	say();
 	goto labelFunc0445_059C;
 labelFunc0445_0598:
-	message("「但沒有人知道哥布林村莊在哪裡。這是一個邪惡的謎團……」");
+	message("「但沒有人知道哥布林村莊在哪裡。這是一個邪惡的謎團…」");
 	say();
 labelFunc0445_059C:
 	goto labelFunc0445_05A3;
@@ -316,7 +316,7 @@ labelFunc0445_05A3:
 	message("「是的， Astrid 和我是床伴。我不會說我們是戀人。因為我們也是戰士和戰友。我們知道，無論哪一次我們中的任何一個人上了戰場，都可能是我們見對方的最後一次。我愛過她，但我們沒有相愛。我會永遠記得她。」");
 	say();
 	UI_show_npc_face1(0xFF6A, 0x0000);
-	message("「我也會……」");
+	message("「我也會…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -354,7 +354,7 @@ labelFunc0445_0643:
 	if (!((gflags[0x00A5] == false) && (gflags[0x002D] == false))) goto labelFunc0445_06A0;
 	message("「他是一個邪惡的人，騎士和法師都反叛了他的暴政。所以我們的祖先逃到了這裡，建立了三座城市( Three Cities )。」");
 	say();
-	message("「他名叫不列顛( British )。他自稱為不列顛王( Lord British )。但我們稱他為野獸不列顛( Beast British )！」");
+	message("「他名叫不列顛( British )。他自稱為不列顛王。但我們稱他為野獸不列顛( Beast British )！」");
 	say();
 	if (!(Func0956([var0003, "什麼也不說"]) == var0003)) goto labelFunc0445_069D;
 	message("「什麼？！我早該知道那個邪惡的暴君還活著！小心——任何野獸的僕人都不會得到任何蒙利多騎士的幫助！」");
@@ -405,7 +405,7 @@ labelFunc0445_0709:
 labelFunc0445_071C:
 	case "換個話題" attend labelFunc0445_0733:
 	UI_remove_answer("換個話題");
-	message("「當然……」");
+	message("「當然…」");
 	say();
 	UI_pop_answers();
 labelFunc0445_0733:
@@ -495,7 +495,7 @@ labelFunc0445_0868:
 	case "叛徒" attend labelFunc0445_08CC:
 	UI_remove_answer("叛徒");
 	if (!var000C) goto labelFunc0445_0884;
-	message("「你為我們提供了一項寶貴的服務，揪出了那個可憐的叛徒 Simon 。雖然就其真正的意義來說，他只是一個忠誠的哥布林，而不是叛徒……呸！該死的哥布林！」");
+	message("「你為我們提供了一項寶貴的服務，揪出了那個可憐的叛徒 Simon 。雖然就其真正的意義來說，他只是一個忠誠的哥布林，而不是叛徒…呸！該死的哥布林！」");
 	say();
 	goto labelFunc0445_08CC;
 labelFunc0445_0884:
@@ -626,7 +626,7 @@ labelFunc0445_0A3E:
 	abort;
 labelFunc0445_0A6B:
 	if (!(var0016 == "@我不知道。@")) goto labelFunc0445_0A79;
-	message("「嗯，這是一個神秘的時代。奇怪的事情已經變得司空見慣……」");
+	message("「嗯，這是一個神秘的時代。奇怪的事情已經變得司空見慣…」");
 	say();
 labelFunc0445_0A79:
 	if (!(var0016 == "@他被閃電擊中了。@")) goto labelFunc0445_0A98;
@@ -666,7 +666,7 @@ labelFunc0445_0AEE:
 labelFunc0445_0AF1:
 	message("「如果你是一名騎士就好了！那樣我就可以讓你為你的朋友擔保，並放他自由。」");
 	say();
-	message("「但你在這裡只是一個陌生人……」");
+	message("「但你在這裡只是一個陌生人…」");
 	say();
 	gflags[0x00B5] = true;
 labelFunc0445_0AFD:
@@ -683,7 +683,7 @@ labelFunc0445_0B1D:
 labelFunc0445_0B30:
 	case "博物館" attend labelFunc0445_0B62:
 	UI_remove_answer("博物館");
-	message("「我們的博物館裡有許多精美的展品。你應該特別注意從哥布林那裡繳獲的文物……」");
+	message("「我們的博物館裡有許多精美的展品。你應該特別注意從哥布林那裡繳獲的文物…」");
 	say();
 	message("「我敢肯定，許多文物是用被擊敗的騎士的骨頭製成的。那面鼓——我想鼓面上的皮是人皮！」");
 	say();
@@ -721,14 +721,14 @@ labelFunc0445_0B9B:
 	message("「現在，我不同意關於我們中間有間諜的說法。不要讓這些謠言分裂我們的城市， Caladin 。」");
 	say();
 	UI_show_npc_face1(0xFF6A, 0x0000);
-	message("「然而還有那個可疑的陌生人，那個胖智者……」");
+	message("「然而還有那個可疑的陌生人，那個胖智者…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「那個我把他趕出城的……」");
+	message("「那個我把他趕出城的…」");
 	say();
 	UI_show_npc_face1(0xFF6A, 0x0000);
-	message("「還有那個學者——一個骨骼結構很好，但有點太老不能讓我開心的女人……」");
+	message("「還有那個學者——一個骨骼結構很好，但有點太老不能讓我開心的女人…」");
 	say();
 	UI_remove_npc_face1();
 	if (!UI_npc_nearby(0xFFFE)) goto labelFunc0445_0C1C;
@@ -748,7 +748,7 @@ labelFunc0445_0C1C:
 	say();
 	gflags[0x0032] = true;
 	Func097F(0xFFBB, "@沒有間諜！@", 0x0000);
-	Func097F(0xFFC1, "@我沒被說服……@", 0x0004);
+	Func097F(0xFFC1, "@我沒被說服…@", 0x0004);
 	Func097F(0xFF6A, "@我也沒有！@", 0x0008);
 	UI_set_schedule_type(0xFFBB, 0x0014);
 	UI_set_schedule_type(0xFFC1, 0x0014);
@@ -757,7 +757,7 @@ labelFunc0445_0C1C:
 	goto labelFunc0445_0CBF;
 labelFunc0445_0CA7:
 	Func097F(0xFE9C, "@祝你有個美好的一天！@", 0x0000);
-	Func097F(0xFFBB, "@當然……@", 0x0002);
+	Func097F(0xFFBB, "@當然…@", 0x0002);
 labelFunc0445_0CBF:
 	goto labelFunc0445_0D4F;
 labelFunc0445_0CC2:

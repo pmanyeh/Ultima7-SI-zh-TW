@@ -103,7 +103,7 @@ labelFunc0428_01F6:
 	UI_show_npc_face0(0xFFD8, 0x0000);
 	message("「你能打開這扇門放我走嗎？」");
 	say();
-	Func097F(0xFFD8, "@我好冷……@", 0x0000);
+	Func097F(0xFFD8, "@我好冷…@", 0x0000);
 	abort;
 labelFunc0428_0211:
 	if (!(event == 0x0009)) goto labelFunc0428_07C4;
@@ -112,11 +112,11 @@ labelFunc0428_0211:
 	if (!gflags[0x0004]) goto labelFunc0428_025C;
 	message("「我本希望能再見到你，");
 	message(var0005);
-	message("。」~「我的健康每況愈下，我想確保 Arabella 能交給我信任的人照顧。」*「我已經沒有在世的親人了……」~「所以我想把它交給你。」");
+	message("。」~「我的健康每況愈下，我想確保 Arabella 能交給我信任的人照顧。」* 「我已經沒有在世的親人了…」~「所以我想把它交給你。」");
 	say();
 	message("「你是個勇敢的");
 	message(var0005);
-	message("。」~「而且你願意花時間聽一個老頭子說故事。」*「你……是……」~「值得的……」");
+	message("。」~「而且你願意花時間聽一個老頭子說故事。」* 「你…是…」~「值得的…」");
 	say();
 	var0014 = Func0992(0x0001, "@他死了！@", "@他死了。@", false);
 	UI_kill_npc(0xFFD8);
@@ -174,7 +174,7 @@ labelFunc0428_03AB:
 	say();
 labelFunc0428_03B5:
 	if (!(var0006 == 0x0009)) goto labelFunc0428_03D0;
-	message("「謝謝你把我從牢房裡放出來！」~「我從沒想過會因為不想在這些該死的風暴中航行而進監獄！」*「如果我有什麼能幫上忙的，儘管告訴我。」~「 Hawk 船長可是個說話算話的人！」");
+	message("「謝謝你把我從牢房裡放出來！」~「我從沒想過會因為不想在這些該死的風暴中航行而進監獄！」* 「如果我有什麼能幫上忙的，儘管告訴我。」~「 Hawk 船長可是個說話算話的人！」");
 	say();
 	UI_add_answer(["監獄", "風暴"]);
 labelFunc0428_03D0:
@@ -194,7 +194,7 @@ labelFunc0428_0420:
 labelFunc0428_042A:
 	converse attend labelFunc0428_07C3;
 	case "監獄" attend labelFunc0428_0450:
-	message("「這根本就是恩將仇報！」~「我拒絕讓 Arabella 和乘客們在可怕的惡劣天氣中冒險。」*「結果他們之中居然有人跑去叫長矛兵來抓我！」");
+	message("「這根本就是恩將仇報！」~「我拒絕讓 Arabella 和乘客們在可怕的惡劣天氣中冒險。」* 「結果他們之中居然有人跑去叫長矛兵來抓我！」");
 	say();
 	UI_remove_answer("監獄");
 	UI_add_answer(["Arabella", "乘客", "長矛兵"]);
@@ -202,7 +202,7 @@ labelFunc0428_0450:
 	case "Arabella" attend labelFunc0428_0469:
 	message("「 Arabella 是我的船，");
 	message(var0005);
-	message("。」~「她是以我親愛且已故的妻子命名的……」~「對我來說，她比一杯好烈酒還要珍貴！」");
+	message("。」~「她是以我親愛且已故的妻子命名的…」~「對我來說，她比一杯好烈酒還要珍貴！」");
 	say();
 	UI_remove_answer("Arabella");
 labelFunc0428_0469:
@@ -213,7 +213,7 @@ labelFunc0428_0469:
 	UI_add_answer(["Kane", "Flindo", "Selina"]);
 labelFunc0428_048C:
 	case "Kane" attend labelFunc0428_04A6:
-	message("「我好像聽說他是個牧羊人什麼的。」~「 Kane 想去月影城( Moonshade )找那些花俏的巫師談談……」*「看看他們能不能幫他找出他幾個月前失蹤的哥哥到底發生了什麼事。」~「你絕對不會錯認他……他身邊總是帶著一隻鳥。」");
+	message("「我好像聽說他是個牧羊人什麼的。」~「 Kane 想去月影城( Moonshade )找那些花俏的巫師談談…」* 「看看他們能不能幫他找出他幾個月前失蹤的哥哥到底發生了什麼事。」~「你絕對不會錯認他…他身邊總是帶著一隻鳥。」");
 	say();
 	UI_remove_answer("Kane");
 	UI_add_answer("鳥");
@@ -221,7 +221,7 @@ labelFunc0428_04A6:
 	case "鳥" attend labelFunc0428_04BF:
 	message("「那隻鳥肯定是個水手，");
 	message(var0005);
-	message("！」~「我從沒見過這種事！那隻鳥對烈酒有著真正的偏好。」*「而且牠說話也挺流利的。」");
+	message("！」~「我從沒見過這種事！那隻鳥對烈酒有著真正的偏好。」* 「而且牠說話也挺流利的。」");
 	say();
 	UI_remove_answer("鳥");
 labelFunc0428_04BF:
@@ -233,24 +233,24 @@ labelFunc0428_04BF:
 	message("「你這底艙老鼠倒是挺會說的！」~「你竟然為了一己私慾酗酒，而把誠實的商人扣為人質！」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("「哎呀，你這隻長太大的屎甲蟲！」~「我上岸時就告訴過你，在這些該死的風暴中，海上絕對不安全！」*「而你這『誠實』的商人，真該連喝幾天的鹹海水！」~「那樣你就會知道酒鬼和口渴的人有什麼差別了！」");
+	message("「哎呀，你這隻長太大的屎甲蟲！」~「我上岸時就告訴過你，在這些該死的風暴中，海上絕對不安全！」* 「而你這『誠實』的商人，真該連喝幾天的鹹海水！」~「那樣你就會知道酒鬼和口渴的人有什麼差別了！」");
 	say();
 	UI_set_conversation_slot(0x0001);
 	message("「你這個吹牛大王，還說自己能航行穿過地獄之火再回來！」~「而你唯一渴望的只有更多的錢，你這小偷！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「小偷，是嗎！？當我拒絕了你提出的所有讓我再次出海的條件時？」~「而且我什麼都不怕，無論大海向我拋出什麼，你這藤壺！」*「但我不會跟魔法造出來的東西打交道，因為我既不是傻子也不是法師！」~「而且我之前就警告過你，別再誣衊我的名聲……」");
+	message("「小偷，是嗎！？當我拒絕了你提出的所有讓我再次出海的條件時？」~「而且我什麼都不怕，無論大海向我拋出什麼，你這藤壺！」* 「但我不會跟魔法造出來的東西打交道，因為我既不是傻子也不是法師！」~「而且我之前就警告過你，別再誣衊我的名聲…」");
 	say();
 	if (!(var0008 == true)) goto labelFunc0428_0520;
 	UI_show_npc_face1(0xFFDA, 0x0000);
-	message("「現在都給我停下來，你們兩個！」~「這跟之前發生的事一模一樣！」*「如果你再弄壞我任何一件家具，我就把你的頭給打破！」");
+	message("「現在都給我停下來，你們兩個！」~「這跟之前發生的事一模一樣！」* 「如果你再弄壞我任何一件家具，我就把你的頭給打破！」");
 	say();
 	UI_remove_npc_face1();
 labelFunc0428_0520:
 	if (!(var0009 == true)) goto labelFunc0428_053A;
 	UI_show_npc_face1(0xFFAF, 0x0000);
-	message("「你們兩個能不能安靜點！」~「你們吵得連死人都要醒了……」~「我對你們兩個都快失去耐心了！」");
+	message("「你們兩個能不能安靜點！」~「你們吵得連死人都要醒了…」~「我對你們兩個都快失去耐心了！」");
 	say();
 	UI_remove_npc_face1();
 labelFunc0428_053A:
@@ -262,28 +262,28 @@ labelFunc0428_0541:
 	UI_add_answer("賄賂");
 labelFunc0428_0553:
 	case "賄賂" attend labelFunc0428_057D:
-	message("「對，賄賂！」~「我聽到那些人渣……」");
+	message("「對，賄賂！」~「我聽到那些人渣…」");
 	say();
 	if (!(var0008 == true)) goto labelFunc0428_056B;
-	message("「……呃，長矛兵。抱歉， Argus 。」");
+	message("「…呃，長矛兵。抱歉， Argus 。」");
 	say();
 labelFunc0428_056B:
-	message("「就在我剛醒來的時候說的。」~「看來 Flindo 賄賂他們來揍我一頓，好讓我決定不留下來，回去月影城( Moonshade )。」*「但是，財迷心竅的 Flindo 沒算到那些豬玀會變得貪婪！」");
+	message("「就在我剛醒來的時候說的。」~「看來 Flindo 賄賂他們來揍我一頓，好讓我決定不留下來，回去月影城( Moonshade )。」* 「但是，財迷心竅的 Flindo 沒算到那些豬玀會變得貪婪！」");
 	say();
 	UI_remove_answer("賄賂");
 	UI_remove_answer("貪婪");
 labelFunc0428_057D:
 	case "貪婪" attend labelFunc0428_0590:
-	message("「他們以為可以逼我付錢換取釋放，但我根本沒什麼錢……」~「然後他們以為能說服 Flindo 替我付保釋金，但他要不是把錢都花在賄賂他們揍我上，就是出於惡意不肯付！」");
+	message("「他們以為可以逼我付錢換取釋放，但我根本沒什麼錢…」~「然後他們以為能說服 Flindo 替我付保釋金，但他要不是把錢都花在賄賂他們揍我上，就是出於惡意不肯付！」");
 	say();
 	UI_remove_answer("貪婪");
 labelFunc0428_0590:
 	case "Selina" attend labelFunc0428_05BE:
 	message("「漂亮的小東西，");
 	message(var0005);
-	message("……不久前才把她從月影城( Moonshade )帶過來。大概是那次載那個胖賢者 Batlin 過去的回程吧。」");
+	message("…不久前才把她從月影城( Moonshade )帶過來。大概是那次載那個胖賢者 Batlin 過去的回程吧。」");
 	say();
-	message("「他也是個陰沉、愛使喚人的傢伙。在航行中甚至連跟我舉杯的禮貌都沒有！呸！我剛說到哪了……啊對，那個可愛的小姑娘， Selina 。」");
+	message("「他也是個陰沉、愛使喚人的傢伙。在航行中甚至連跟我舉杯的禮貌都沒有！呸！我剛說到哪了…啊對，那個可愛的小姑娘， Selina 。」");
 	say();
 	message("「她肯定是某人的僕人。說她想回家探親。說她可能會待在這裡等我載她回去。」");
 	say();
@@ -301,30 +301,30 @@ labelFunc0428_05D1:
 	UI_remove_answer("家鄉");
 labelFunc0428_05E4:
 	case "長矛兵" attend labelFunc0428_0612:
-	message("「好吧，為了尊重這家店的優秀老闆……」");
+	message("「好吧，為了尊重這家店的優秀老闆…」");
 	say();
 	if (!gflags[0x003E]) goto labelFunc0428_0600;
 	message("「還有你，當然，");
 	message(var0005);
-	message("……」");
+	message("…」");
 	say();
 labelFunc0428_0600:
-	message("「我會盡量客氣點。」~「所以我只能說，蒙利多最精銳的部隊已經不再像 Argus 那樣可靠了……」*「根據我所見所聞，我敢說那些長矛兵對錢……還有我的寶藏……比對勇氣更感興趣。」");
+	message("「我會盡量客氣點。」~「所以我只能說，蒙利多最精銳的部隊已經不再像 Argus 那樣可靠了…」* 「根據我所見所聞，我敢說那些長矛兵對錢…還有我的寶藏…比對勇氣更感興趣。」");
 	say();
 	UI_remove_answer("長矛兵");
 	UI_add_answer("寶藏");
 labelFunc0428_0612:
 	case "寶藏" attend labelFunc0428_0629:
-	message("「對，寶藏……來自於我更狂野、年輕的歲月。」");
+	message("「對，寶藏…來自於我更狂野、年輕的歲月。」");
 	say();
-	message("「那些無賴長矛兵試圖說服我告訴他們我的地圖藏在哪。幸好 Argus 絕不讓他們搜我的房間。我從不帶在身上……通常都藏在房間裡。」");
+	message("「那些無賴長矛兵試圖說服我告訴他們我的地圖藏在哪。幸好 Argus 絕不讓他們搜我的房間。我從不帶在身上…通常都藏在房間裡。」");
 	say();
 	UI_remove_answer("寶藏");
 labelFunc0428_0629:
 	case "風暴" attend labelFunc0428_0642:
 	message("「我大半輩子都在海上航行，");
 	message(var0005);
-	message("。」~「我告訴你，水面上沒有什麼是我不能駕船穿過的。」*「但人怎麼能跟那種把船從水裡拔起來，或是把船帆變成石板的東西對抗？」~「我跟你說這些風暴讓我深切體會到海有多深，這可不是懦弱！」");
+	message("。」~「我告訴你，水面上沒有什麼是我不能駕船穿過的。」* 「但人怎麼能跟那種把船從水裡拔起來，或是把船帆變成石板的東西對抗？」~「我跟你說這些風暴讓我深切體會到海有多深，這可不是懦弱！」");
 	say();
 	UI_remove_answer("風暴");
 labelFunc0428_0642:
@@ -346,12 +346,12 @@ labelFunc0428_068C:
 	if (!gflags[0x01BD]) goto labelFunc0428_06A9;
 	message("「所以你還在試著離開這座島？」");
 	say();
-	message("「好吧，我之前不想提，但在南部山區有洞穴。」~「傳說如果能找到正確的路，就能通往大陸……」~「但進去的人從未回來過！」~「我打賭 Julia 手上有一把能讓你進去的鑰匙，但如果我是你，在踏上這種旅程前我會三思！」");
+	message("「好吧，我之前不想提，但在南部山區有洞穴。」~「傳說如果能找到正確的路，就能通往大陸…」~「但進去的人從未回來過！」~「我打賭 Julia 手上有一把能讓你進去的鑰匙，但如果我是你，在踏上這種旅程前我會三思！」");
 	say();
 	gflags[0x00ED] = true;
 	goto labelFunc0428_06AD;
 labelFunc0428_06A9:
-	message("「在我的船上絕對不行！」~「在這些風暴中航行太危險了！」*「如果你想去別的地方，為什麼不去跟那些法師談談？」~「他們知道怎麼用魔法進行短距離傳送……」*「而且我聽說那個瘋狂法師老 Erstam 可以去任何他想去的地方！」");
+	message("「在我的船上絕對不行！」~「在這些風暴中航行太危險了！」* 「如果你想去別的地方，為什麼不去跟那些法師談談？」~「他們知道怎麼用魔法進行短距離傳送…」* 「而且我聽說那個瘋狂法師老 Erstam 可以去任何他想去的地方！」");
 	say();
 labelFunc0428_06AD:
 	UI_remove_answer("離開島嶼");
@@ -373,7 +373,7 @@ labelFunc0428_0704:
 labelFunc0428_0707:
 	message("「一顆藍色的蛋？」~「");
 	message(var0005);
-	message("，在我所有的旅途中，從未見過或聽過這種東西。」*「不過，也許你該去問問學者，像是法師 Fedabiblio 。」");
+	message("，在我所有的旅途中，從未見過或聽過這種東西。」* 「不過，也許你該去問問學者，像是法師 Fedabiblio 。」");
 	say();
 	var0014 = Func0992(0x0001, "@但他叫我們來找你！@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
@@ -385,7 +385,7 @@ labelFunc0428_0736:
 labelFunc0428_073D:
 	case "松果" attend labelFunc0428_0799:
 	if (!Func097D(0xFE9B, 0x0001, 0x0108, 0xFE99, 0xFE99)) goto labelFunc0428_0786;
-	message("「誰都看得出來這是一顆松果……」~「你想問什麼？」");
+	message("「誰都看得出來這是一顆松果…」~「你想問什麼？」");
 	say();
 	var0014 = Func0992(0x0001, "@但它是從哪裡來的？@", "@我在哪裡可以找到松果？@", false);
 	UI_show_npc_face0(0xFFD8, 0x0000);

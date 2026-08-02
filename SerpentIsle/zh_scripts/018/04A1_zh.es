@@ -44,7 +44,7 @@ labelFunc04A1_0073:
 	message("「你需要食物還是治療？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04A1_00D8;
-	message("「這些物品在這裡非常珍貴，重罪犯。你可能會覺得價格有點高……」");
+	message("「這些物品在這裡非常珍貴，重罪犯。你可能會覺得價格有點高…」");
 	say();
 	message("「你想要什麼，食物還是治療？」");
 	say();
@@ -55,13 +55,13 @@ labelFunc04A1_0073:
 labelFunc04A1_00C2:
 	Func0810();
 labelFunc04A1_00C5:
-	message("「這裡隨時歡迎你，重罪犯……只要你有錢的話。」");
+	message("「這裡隨時歡迎你，重罪犯…只要你有錢的話。」");
 	say();
 	UI_remove_npc_face0();
 	UI_item_say(item, "@再見，重罪犯！@");
 	goto labelFunc04A1_00DF;
 labelFunc04A1_00D8:
-	message("「那麼你只能繼續前進了……」");
+	message("「那麼你只能繼續前進了…」");
 	say();
 	goto labelFunc04A1_0162;
 labelFunc04A1_00DF:

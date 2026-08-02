@@ -18,19 +18,19 @@ labelFunc097A_0015:
 	var0004 = UI_die_roll(0x0001, 0x0004);
 	if (!(var0002 == 0x000B)) goto labelFunc097A_007C;
 	if (!(var0004 == 0x0001)) goto labelFunc097A_004C;
-	var0003 = "@好像快下雨了……@";
+	var0003 = "@好像快下雨了…@";
 labelFunc097A_004C:
 	if (!(var0004 == 0x0002)) goto labelFunc097A_005C;
 	var0003 = "@你好。@";
 labelFunc097A_005C:
 	if (!(var0004 == 0x0003)) goto labelFunc097A_006C;
-	var0003 = "@噢，我的腰好酸啊……@";
+	var0003 = "@噢，我的腰好酸啊…@";
 labelFunc097A_006C:
 	if (!(var0004 == 0x0004)) goto labelFunc097A_007C;
-	var0003 = "@哈……欠……@";
+	var0003 = "@哈…欠…@";
 labelFunc097A_007C:
 	if (!(var0002 == 0x000E)) goto labelFunc097A_008C;
-	var0003 = "@呼——呼——……@";
+	var0003 = "@呼——呼——…@";
 labelFunc097A_008C:
 	if (!(var0002 == 0x0017)) goto labelFunc097A_00D6;
 	if (!(var0004 == 0x0001)) goto labelFunc097A_00A6;
@@ -79,10 +79,10 @@ labelFunc097A_0184:
 	var0003 = "@哎呀！割到手了！@";
 labelFunc097A_0194:
 	if (!(var0004 == 0x0003)) goto labelFunc097A_01A4;
-	var0003 = "@工作……工作……工作……@";
+	var0003 = "@工作…工作…工作…@";
 labelFunc097A_01A4:
 	if (!(var0004 == 0x0004)) goto labelFunc097A_01B4;
-	var0003 = "@我們需要下點雨……@";
+	var0003 = "@我們需要下點雨…@";
 labelFunc097A_01B4:
 	if (!(var0002 == 0x0019)) goto labelFunc097A_01FE;
 	if (!(var0004 == 0x0001)) goto labelFunc097A_01CE;

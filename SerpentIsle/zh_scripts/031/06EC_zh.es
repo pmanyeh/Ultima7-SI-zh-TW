@@ -55,7 +55,7 @@ labelFunc06EC_0186:
 labelFunc06EC_018F:
 	if (!(event == 0x0002)) goto labelFunc06EC_01AC;
 	UI_show_npc_face0(0xFEE0, 0x0000);
-	message("\"Thou'rt not here to sleep, Avatar.\"");
+	message("「你可不是來這裡睡覺的，聖者。」");
 	say();
 	UI_remove_npc_face0();
 	Func09B8();

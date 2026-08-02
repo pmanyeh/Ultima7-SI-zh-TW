@@ -67,7 +67,7 @@ labelFunc06EB_0181:
 labelFunc06EB_0184:
 	if (!var0001) goto labelFunc06EB_019C;
 	UI_show_npc_face0(0xFEE0, 0x0000);
-	message("\"Hurry, Avatar, I am waiting for thee...\"");
+	message("「快點，聖者，我正在等著你……」");
 	say();
 	UI_remove_npc_face0();
 labelFunc06EB_019C:

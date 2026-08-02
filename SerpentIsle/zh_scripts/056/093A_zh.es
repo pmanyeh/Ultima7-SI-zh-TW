@@ -73,7 +73,7 @@ labelFunc093A_0019:
 	message(" 的辯護。你同意這樣處置嗎，Yelinda 夫人？」");
 	say();
 	UI_show_npc_face1(0xFFC9, 0x0000);
-	message("「噢……嗯，當然同意。就這麼辦吧。」");
+	message("「噢…嗯，當然同意。就這麼辦吧。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -125,13 +125,13 @@ labelFunc093A_01BF:
 	var0003 = Func08AC(true);
 	UI_remove_from_party(var0003);
 	UI_si_path_run_usecode(var0003, [0x0408, 0x067A, 0x0000], 0x000D, UI_get_npc_object(var0003), 0x07F8, false);
-	Func097F(var0003, "@再見了……@", 0x0000);
+	Func097F(var0003, "@再見了…@", 0x0000);
 	abort;
 labelFunc093A_020A:
 	if (!(var0000 == 0x005C)) goto labelFunc093A_02C7;
 	gflags[0x0171] = true;
 	var0003 = UI_execute_usecode_array(0xFFC3, [(byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x27, 0x0003, (byte)0x52, "@本庭現在休庭！@"]);
-	var0004 = ("" & ("@真是荒謬！@" & ("@我該怎麼辦？@" & "@我好苦命啊……@")));
+	var0004 = ("" & ("@真是荒謬！@" & ("@我該怎麼辦？@" & "@我好苦命啊…@")));
 	Func094F(0xFE9C, var0004);
 	UI_remove_npc(Func08AC(true));
 	UI_si_path_run_usecode(0xFE9C, [0x0407, 0x068D, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), 0x07F8, false);
@@ -235,13 +235,13 @@ labelFunc093A_0512:
 	message(var0001);
 	message(" 同樣有罪！」");
 	say();
-	message("「對美貌的冒犯絕不能姑息……他們存在的污痕必須用鮮血來洗淨。」");
+	message("「對美貌的冒犯絕不能姑息…他們存在的污痕必須用鮮血來洗淨。」");
 	say();
-	Func097F(0xFFC3, "@它渴望他們的鮮血……@", 0x0000);
+	Func097F(0xFFC3, "@它渴望他們的鮮血…@", 0x0000);
 	Func097F(0xFFCF, "@用石頭砸死他們！@", 0x0003);
 	Func097F(0xFFCC, "@砍下惡魔的頭！@", 0x0005);
 	Func097F(Func08AC(true), "@我們該怎麼辦？@", 0x0001);
-	Func097F(0xFFC9, "@天哪……@", 0x0005);
+	Func097F(0xFFC9, "@天哪…@", 0x0005);
 	UI_end_conversation();
 	var0003 = (UI_get_object_position(0xFE9C) & (0x0001 & 0x0006));
 	var0003 = UI_find_nearby(var0003, 0x0113, 0x000A, 0x0010);
@@ -306,7 +306,7 @@ labelFunc093A_078C:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「現在我們知道這個城鎮的真相了……」");
+	message("「現在我們知道這個城鎮的真相了…」");
 	say();
 	UI_show_npc_face1(0xFFCB, 0x0000);
 	message("「我有極極嚴重的消息，親愛的夫人。這座神殿裡發生了醜惡的勾當！」");
@@ -354,7 +354,7 @@ labelFunc093A_0960:
 	if (!(var0000 == 0x005C)) goto labelFunc093A_0A16;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFD2, 0x0000);
-	message("「Voldin 與 Kylista 把我們大家都當成傻子耍！而我們卻盲目地聽信他們……」");
+	message("「Voldin 與 Kylista 把我們大家都當成傻子耍！而我們卻盲目地聽信他們…」");
 	say();
 	if (!UI_get_item_flag(0xFFCD, 0x0004)) goto labelFunc093A_0996;
 	UI_show_npc_face1(0xFFCA, 0x0000);
@@ -375,7 +375,7 @@ labelFunc093A_09A0:
 	say();
 	UI_remove_npc_face1();
 	UI_show_npc_face0(0xFFD2, 0x0000);
-	message("「那麼如果我動了那些祈禱拉桿，審判的結果應該不會改變吧……？」");
+	message("「那麼如果我動了那些祈禱拉桿，審判的結果應該不會改變吧…？」");
 	say();
 	message("「Yelinda 夫人，能否請您再次呼喚神諭，讓它重新作出裁決？」");
 	say();
@@ -438,7 +438,7 @@ labelFunc093A_0B66:
 	message(" 與他的夥伴！」");
 	say();
 	UI_show_npc_face1(0xFFC9, 0x0000);
-	message("「這是什麼意思？裁決居然改變了……」");
+	message("「這是什麼意思？裁決居然改變了…」");
 	say();
 	UI_remove_npc_face0();
 	UI_remove_npc_face1();
@@ -447,15 +447,15 @@ labelFunc093A_0B66:
 	say();
 	UI_show_npc_face1(0xFFC9, 0x0000);
 	if (!UI_get_item_flag(0xFFCD, 0x0004)) goto labelFunc093A_0BDB;
-	message("「我們被背叛了！把 Kylista 從我眼前帶走！我稍後會處理她的背叛……」");
+	message("「我們被背叛了！把 Kylista 從我眼前帶走！我稍後會處理她的背叛…」");
 	say();
 	goto labelFunc093A_0BDF;
 labelFunc093A_0BDB:
-	message("「我們被背叛了！把他們從我眼前帶走！我稍後會處理他們的背叛……」");
+	message("「我們被背叛了！把他們從我眼前帶走！我稍後會處理他們的背叛…」");
 	say();
 labelFunc093A_0BDF:
 	UI_end_conversation();
-	Func097F(0xFFCB, "@跟我來……@", 0x0000);
+	Func097F(0xFFCB, "@跟我來…@", 0x0000);
 	var0003 = (UI_get_object_position(0xFE9C) & (0x0001 & 0x0006));
 	var0003 = UI_find_nearby(var0003, 0x0113, 0x000A, 0x0010);
 	if (!var0003) goto labelFunc093A_0C4C;
@@ -492,7 +492,7 @@ labelFunc093A_0D3A:
 	var0005 = UI_get_object_position(var0003);
 	var0005[0x0002] = (var0005[0x0002] + 0x000A);
 	UI_si_path_run_usecode(0xFFCD, var0005, 0x000D, UI_get_npc_object(0xFFCD), 0x07F8, false);
-	Func097F(0xFFCD, "@她對我撒了謊……@", 0x0000);
+	Func097F(0xFFCD, "@她對我撒了謊…@", 0x0000);
 labelFunc093A_0DA3:
 	abort;
 labelFunc093A_0DA4:
@@ -508,7 +508,7 @@ labelFunc093A_0DD1:
 	message(var0003);
 	message("，我們冤枉你了。我無法抹去我們的恥辱，但如果你願意接受一份表達我們歉意的禮物，我會非常高興。」");
 	say();
-	message("「這是愛之水晶玫瑰……」");
+	message("「這是愛之水晶玫瑰…」");
 	say();
 	var0003 = Func08AC(true);
 	var0003 = Func099B(var0003, 0x0001, 0x0289, 0xFE99, 0x0003, 0x0000, true);
@@ -572,7 +572,7 @@ labelFunc093A_103C:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFCB, 0x0000);
 	if (!UI_get_item_flag(0xFFCD, 0x0004)) goto labelFunc093A_1072;
-	message("「我們已經抓到了虛偽的叛徒，Yelinda 夫人！Kylista 已戴上枷鎖，而大船長 Voldin 則被發現死亡……」");
+	message("「我們已經抓到了虛偽的叛徒，Yelinda 夫人！Kylista 已戴上枷鎖，而大船長 Voldin 則被發現死亡…」");
 	say();
 	goto labelFunc093A_1076;
 labelFunc093A_1072:
@@ -580,7 +580,7 @@ labelFunc093A_1072:
 	say();
 labelFunc093A_1076:
 	UI_show_npc_face1(0xFFC9, 0x0000);
-	message("「你做得對，Jorvin ——神諭剛才譴責了他們……」");
+	message("「你做得對，Jorvin ——神諭剛才譴責了他們…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -595,7 +595,7 @@ labelFunc093A_1076:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「我先前不相信你的話，Alyssand ，但既然 Kylista 已經招認……我真不知該相信什麼了。」");
+	message("「我先前不相信你的話，Alyssand ，但既然 Kylista 已經招認…我真不知該相信什麼了。」");
 	say();
 	UI_show_npc_face1(0xFFC9, 0x0000);
 	if (!UI_get_item_flag(0xFFCD, 0x0004)) goto labelFunc093A_10DC;
@@ -622,7 +622,7 @@ labelFunc093A_1117:
 	message(var0003);
 	message("。請原諒我們。」");
 	say();
-	message("「你可以自由離開幼鹿城( Fawn )，若你日後歸來，定會受到熱烈歡迎。你讓我明白，作為一名統治者，我還有很多東西要學習……謝謝你。」");
+	message("「你可以自由離開幼鹿城( Fawn )，若你日後歸來，定會受到熱烈歡迎。你讓我明白，作為一名統治者，我還有很多東西要學習…謝謝你。」");
 	say();
 	message("「衛兵，釋放 ");
 	message(var0003);

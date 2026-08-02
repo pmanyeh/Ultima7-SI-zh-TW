@@ -41,10 +41,10 @@ labelFunc04CD_00A0:
 	UI_item_say(0xFF33, "@食物在哪裡？@");
 labelFunc04CD_00B4:
 	if (!(var0004 == 0x0003)) goto labelFunc04CD_00C8;
-	UI_item_say(0xFF33, "@除灰塵外什麼也沒有……@");
+	UI_item_say(0xFF33, "@除灰塵外什麼也沒有…@");
 labelFunc04CD_00C8:
 	if (!(var0004 == 0x0004)) goto labelFunc04CD_00DC;
-	UI_item_say(0xFF33, "@必須吃點東西……@");
+	UI_item_say(0xFF33, "@必須吃點東西…@");
 labelFunc04CD_00DC:
 	if (!(var0004 == 0x0005)) goto labelFunc04CD_00F0;
 	UI_item_say(0xFF33, "@一定有食物的！@");

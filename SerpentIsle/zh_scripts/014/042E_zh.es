@@ -63,7 +63,7 @@ labelFunc042E_0087:
 	var000B = UI_approach_avatar(0xFFD2, 0x0078, 0x0028);
 	UI_set_schedule_type(0xFFD2, 0x0003);
 	var000B = UI_delayed_execute_usecode_array(Func09A0(0x0001, 0x0002), [(byte)0x23, (byte)0x55, 0x042E], 0x0032);
-	var000B = ("" & ("@噓！@" & "@聖者……@"));
+	var000B = ("" & ("@噓！@" & "@聖者…@"));
 	Func094F(0xFFD2, var000B);
 	abort;
 labelFunc042E_00D6:
@@ -129,7 +129,7 @@ labelFunc042E_023F:
 	Func0801();
 	message("「我們又見面了， ");
 	message(var0003);
-	message("。也許現在，你的經歷已經給了你改變答案的理由……」");
+	message("。也許現在，你的經歷已經給了你改變答案的理由…」");
 	say();
 	message("「我們需要你。我們的大業需要你！」");
 	say();
@@ -167,7 +167,7 @@ labelFunc042E_0309:
 	converse attend labelFunc042E_0C67;
 	case "補給品" attend labelFunc042E_0337:
 	if (!(UI_get_schedule_type(0xFFD2) == 0x0013)) goto labelFunc042E_032C;
-	message("「當父親……不舒服時，我會在店裡幫忙。你想買什麼？」");
+	message("「當父親…不舒服時，我會在店裡幫忙。你想買什麼？」");
 	say();
 	Func0803();
 	goto labelFunc042E_0330;
@@ -195,7 +195,7 @@ labelFunc042E_035D:
 labelFunc042E_037F:
 	message("「『美』滋養感官， ");
 	message(var0001);
-	message("。但愛( Love )滋養靈魂。幼鹿城( Fawn )的靈魂早已枯萎了……」");
+	message("。但愛( Love )滋養靈魂。幼鹿城( Fawn )的靈魂早已枯萎了…」");
 	say();
 labelFunc042E_0389:
 	UI_remove_answer("幼鹿城");
@@ -208,14 +208,14 @@ labelFunc042E_039D:
 	say();
 	goto labelFunc042E_03C6;
 labelFunc042E_03C2:
-	message("「幼鹿城( Fawn )的人民滿足於讓世界末日來臨……只要這不破壞他們欣賞餘燼的美麗景象！」");
+	message("「幼鹿城( Fawn )的人民滿足於讓世界末日來臨…只要這不破壞他們欣賞餘燼的美麗景象！」");
 	say();
 labelFunc042E_03C6:
 	case "愛" attend labelFunc042E_03F3:
 	message("「愛( Love )與『美』曾經被視為同一個實體的兩個面向。有愛的人就是美的。培育真理之美的人就會被愛。」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc042E_03E8;
-	message("「在 Yelinda 夫人( Lady Yelinda )的幫助下，這些觀念將會在幼鹿城( Fawn )恢復。這真是個光榮的時代……」");
+	message("「在 Yelinda 夫人( Lady Yelinda )的幫助下，這些觀念將會在幼鹿城( Fawn )恢復。這真是個光榮的時代…」");
 	say();
 	goto labelFunc042E_03EC;
 labelFunc042E_03E8:
@@ -299,7 +299,7 @@ labelFunc042E_051E:
 labelFunc042E_052C:
 	message("「隨時做好準備，因為沒人知道行動的時機何時會到來。」");
 	say();
-	message("「我們曾經試圖在夜間潛入神殿，趁 Kylista 和她其中一個情人在一起時……但守衛挫敗了我們的企圖。」");
+	message("「我們曾經試圖在夜間潛入神殿，趁 Kylista 和她其中一個情人在一起時…但守衛挫敗了我們的企圖。」");
 	say();
 	message("「無論如何——到處看看，和每個人談談，看看你是否能找到我們一直找不到的線索！」");
 	say();
@@ -312,7 +312,7 @@ labelFunc042E_0538:
 	message("。」");
 	say();
 	Func0801();
-	message("「像你這樣勇敢且充滿冒險精神的人，在這種時期會很有用的……」");
+	message("「像你這樣勇敢且充滿冒險精神的人，在這種時期會很有用的…」");
 	say();
 	message("「你願意幫助我們，把這座城市從虛假的傳統和邪惡的陰謀中解放出來嗎？」");
 	say();
@@ -325,7 +325,7 @@ labelFunc042E_0538:
 	goto labelFunc042E_05C6;
 labelFunc042E_0594:
 	if (!(var000B == "是的")) goto labelFunc042E_05A8;
-	message("「你的思想比我期望的還要進步！但你肯定還有疑問吧……？」");
+	message("「你的思想比我期望的還要進步！但你肯定還有疑問吧…？」");
 	say();
 	Func0802();
 	goto labelFunc042E_05AC;
@@ -355,7 +355,7 @@ labelFunc042E_0600:
 	Func0802();
 	goto labelFunc042E_0618;
 labelFunc042E_0614:
-	message("「我求你，讓我解釋推動我們大業的理念。當你明白後，你肯定會加入我們的……」");
+	message("「我求你，讓我解釋推動我們大業的理念。當你明白後，你肯定會加入我們的…」");
 	say();
 labelFunc042E_0618:
 	UI_push_answers();
@@ -398,19 +398,19 @@ labelFunc042E_06A6:
 	say();
 labelFunc042E_06B9:
 	if (!gflags[0x016F]) goto labelFunc042E_06D9;
-	message("「現在讓審判繼續吧！Kylista 和她那些無賴會後悔他們來到這個世上……」");
+	message("「現在讓審判繼續吧！Kylista 和她那些無賴會後悔他們來到這個世上…」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc042E_06D9;
 	gflags[0x01B4] = true;
 	message("「我想我會愛上像你這樣的男人， ");
 	message(var0003);
-	message("……」");
+	message("…」");
 	say();
 labelFunc042E_06D9:
 	if (!gflags[0x016E]) goto labelFunc042E_06ED;
 	message("「你忘了你的盟友了嗎， ");
 	message(var0003);
-	message("？光是強迫神諭釋放你的朋友是不夠的……」");
+	message("？光是強迫神諭釋放你的朋友是不夠的…」");
 	say();
 	message("「你必須找到方法，讓那東西公開譴責 Kylista 和大船長們，並推翻這個邪惡的體制！」");
 	say();
@@ -419,7 +419,7 @@ labelFunc042E_06ED:
 	if (!gflags[0x016E]) goto labelFunc042E_0712;
 	message("「我們的大業注定要失敗了， ");
 	message(var0003);
-	message("。我很高興你的朋友從監獄裡被釋放了……」");
+	message("。我很高興你的朋友從監獄裡被釋放了…」");
 	say();
 	message("「但我相信我們不知為何錯失了最後的機會，沒能揭露 Kylista 和她的爪牙偽君子的真面目！」");
 	say();
@@ -440,11 +440,11 @@ labelFunc042E_072D:
 	UI_remove_answer("吻我");
 	message("「嗯， ");
 	message(var0003);
-	message("……當我說我愛你的時候，那只是一時的軟弱……」");
+	message("…當我說我愛你的時候，那只是一時的軟弱…」");
 	say();
 	message("「你該不會想為了幾句草率的話，就佔一個女孩的便宜吧？」");
 	say();
-	message("「再說，為了大業和 Yelinda 夫人，還有很多事情要做。我很有希望成為夫人的顧問！現在沒有時間談情說愛，現在不行……」");
+	message("「再說，為了大業和 Yelinda 夫人，還有很多事情要做。我很有希望成為夫人的顧問！現在沒有時間談情說愛，現在不行…」");
 	say();
 labelFunc042E_074E:
 	case "虛假的傳統" attend labelFunc042E_0781:
@@ -480,7 +480,7 @@ labelFunc042E_07B7:
 	UI_remove_answer("邪惡的陰謀");
 	message("「『神諭』理應只說真理，但它卻太常像鸚鵡一樣，重複祭司和大船長們的話了。」");
 	say();
-	message("「我們不相信真理只為掌權者服務……我們認為有人腐化了神諭！」");
+	message("「我們不相信真理只為掌權者服務…我們認為有人腐化了神諭！」");
 	say();
 	UI_add_answer(["祭司", "大船長"]);
 	if (!(!var0008)) goto labelFunc042E_07E9;
@@ -488,7 +488,7 @@ labelFunc042E_07B7:
 labelFunc042E_07E9:
 	case "祭司" attend labelFunc042E_0804:
 	UI_remove_answer("祭司");
-	message("「Kylista 就是這種有害的唯美教條最糟糕的例子……」");
+	message("「Kylista 就是這種有害的唯美教條最糟糕的例子…」");
 	say();
 	message("「她相信她的魅力使她優於所有人，並認為她的性感是一種神聖的禮物，可以用來影響男人的心智。」");
 	say();
@@ -511,7 +511,7 @@ labelFunc042E_0836:
 	say();
 	message("「當我們其中一人與他交談時，他聲稱同情我們的大業。但 Garth 說他不敢拿我們的猜疑去對抗 Voldin。」");
 	say();
-	message("「我不信任他……」");
+	message("「我不信任他…」");
 	say();
 	UI_remove_answer("Garth");
 labelFunc042E_0851:
@@ -533,7 +533,7 @@ labelFunc042E_086C:
 labelFunc042E_0883:
 	case "Zulith" attend labelFunc042E_089A:
 	UI_remove_answer("Zulith");
-	message("「那條蟲一直在跟蹤你？那他一定是懷疑你和我們的大業結盟了……」");
+	message("「那條蟲一直在跟蹤你？那他一定是懷疑你和我們的大業結盟了…」");
 	say();
 	message("「小心點，免得你像友誼會的人一樣被流放。如果沒有你來幫我們，我們的大業就完了。」");
 	say();
@@ -586,7 +586,7 @@ labelFunc042E_09B9:
 	case "Scots" attend labelFunc042E_09D7:
 	message("「我想，Scots 嚴格來說並不算是水手。他其實是個製圖師。」");
 	say();
-	message("「他經常拿著筆墨，畫著錯綜複雜的小線條……」");
+	message("「他經常拿著筆墨，畫著錯綜複雜的小線條…」");
 	say();
 	UI_remove_answer("Scots");
 	UI_add_answer("線條");
@@ -621,7 +621,7 @@ labelFunc042E_0A18:
 	say();
 	goto labelFunc042E_0A44;
 labelFunc042E_0A3C:
-	message("「Yelinda 夫人( Lady Yelinda )是幼鹿城( Fawn )的統治者。她的話就是法律……通常由她的小跟班 Zulith 來傳達。」");
+	message("「Yelinda 夫人( Lady Yelinda )是幼鹿城( Fawn )的統治者。她的話就是法律…通常由她的小跟班 Zulith 來傳達。」");
 	say();
 	message("「Zulith 的官方頭銜是總理。但他只不過是個好聽點的信差罷了。」");
 	say();
@@ -629,7 +629,7 @@ labelFunc042E_0A44:
 	case "網眼絲襪" attend labelFunc042E_0A66:
 	message("「我沒想到一個陌生人會知道我這小小的產業。我在我父親的店裡編織網子和縫紉。」");
 	say();
-	message("「這能幫助我照看父親……自從我母親 Elissia 去世後，他的精神狀況一直不太好。」");
+	message("「這能幫助我照看父親…自從我母親 Elissia 去世後，他的精神狀況一直不太好。」");
 	say();
 	message("「我的顧客很少，但也許人們開始產生興趣了。」");
 	say();
@@ -666,20 +666,20 @@ labelFunc042E_0AC2:
 labelFunc042E_0AC5:
 	message("「我聽說過他們在月影城( Moonshade )賣的絲襪。所以我知道這種精細的做工是可能實現的。」");
 	say();
-	message("「沒有親眼看到，我不能確定你擁有的絲襪是來自月影城( Moonshade )。它們可能只是像我做的一樣，是家裡自己織的……」");
+	message("「沒有親眼看到，我不能確定你擁有的絲襪是來自月影城( Moonshade )。它們可能只是像我做的一樣，是家裡自己織的…」");
 	say();
 labelFunc042E_0ACD:
 	case "訂婚戒指" attend labelFunc042E_0BA3:
 	var000A = "Ring";
 	UI_remove_answer("訂婚戒指");
-	message("「我聽說你一直在找我。說你對我遺失的訂婚戒指有興趣……或許是對取代它的護手有興趣。」");
+	message("「我聽說你一直在找我。說你對我遺失的訂婚戒指有興趣…或許是對取代它的護手有興趣。」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0377, 0xFE99, 0x0000)) goto labelFunc042E_0B02;
-	message("「就是它了，沒錯。謝謝你告訴我……但如果你想留著，你可以留著它。」");
+	message("「就是它了，沒錯。謝謝你告訴我…但如果你想留著，你可以留著它。」");
 	say();
 	goto labelFunc042E_0B06;
 labelFunc042E_0B02:
-	message("「謝謝你告訴我你見過它……但如果你有它，你可以留著。」");
+	message("「謝謝你告訴我你見過它…但如果你有它，你可以留著。」");
 	say();
 labelFunc042E_0B06:
 	gflags[0x01B2] = true;
@@ -700,7 +700,7 @@ labelFunc042E_0BC1:
 	case "護手" attend labelFunc042E_0C18:
 	UI_remove_answer("護手");
 	if (!(!gflags[0x01A4])) goto labelFunc042E_0C14;
-	message("「我猜這副護手是你的……它們顯然是給比一個區區織工更具冒險精神的人準備的。」");
+	message("「我猜這副護手是你的…它們顯然是給比一個區區織工更具冒險精神的人準備的。」");
 	say();
 	message("「你想把它們拿回去嗎？」");
 	say();

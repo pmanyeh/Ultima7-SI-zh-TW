@@ -80,7 +80,7 @@ labelFunc085E_0174:
 	if (!(var000B == 0x0002)) goto labelFunc085E_0198;
 	message("「恐怕這價格是 ");
 	message(var000C);
-	message(" 吉爾得幣，只換兩條肉乾……畢竟現在世道很艱難。」");
+	message(" 吉爾得幣，只換兩條肉乾…畢竟現在世道很艱難。」");
 	say();
 	message("「");
 	message(var000F);

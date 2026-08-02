@@ -59,7 +59,7 @@ labelFunc0417_0097:
 	UI_item_say(0xFFE9, "@賣酒喔！@");
 labelFunc0417_00AB:
 	if (!(var0004 == 0x0003)) goto labelFunc0417_00BF;
-	UI_item_say(0xFFE9, "@非常可疑……@");
+	UI_item_say(0xFFE9, "@非常可疑…@");
 labelFunc0417_00BF:
 	if (!(var0004 == 0x0004)) goto labelFunc0417_00D3;
 	UI_item_say(0xFFE9, "@魔法酒！@");
@@ -136,7 +136,7 @@ labelFunc0417_024E:
 	message(var0002);
 	message("。那起犯罪事件仍然是個謎。」");
 	say();
-	message("「也許如果你能提供 30 個公會幣來支付適當的調查費用……？」");
+	message("「也許如果你能提供 30 個公會幣來支付適當的調查費用…？」");
 	say();
 	if (!Func0955()) goto labelFunc0417_0290;
 	if (!UI_remove_party_items(0x001E, 0x03B8, 0xFE99, 0xFE99, 0x0000)) goto labelFunc0417_0289;
@@ -282,7 +282,7 @@ labelFunc0417_04B7:
 	UI_remove_answer("Pothos");
 	message("「Pothos 是月影城這裡的藥劑師。他能告訴你施展魔法所需的一切東西。」");
 	say();
-	message("「我聽說風暴嚴重影響了他的補給，但他應該能幫你。或者至少他可能比較有時間應付你……我是個大忙人！」");
+	message("「我聽說風暴嚴重影響了他的補給，但他應該能幫你。或者至少他可能比較有時間應付你…我是個大忙人！」");
 	say();
 labelFunc0417_04CE:
 	case "Fedabiblio" attend labelFunc0417_04E5:
@@ -306,7 +306,7 @@ labelFunc0417_0509:
 	say();
 	message("「你知道的越少，惹的麻煩就越少！」");
 	say();
-	message("「我只會說，極具破壞性的法術需要那種邪惡的化合物。我不會再多說了……」");
+	message("「我只會說，極具破壞性的法術需要那種邪惡的化合物。我不會再多說了…」");
 	say();
 labelFunc0417_0524:
 	case "Stoneheart" attend labelFunc0417_0564:
@@ -316,12 +316,12 @@ labelFunc0417_0524:
 	var000A = Func0992(0x0001, "@你真粗魯！@", 0x0000, false);
 	if (!(var000A != 0xFE9C)) goto labelFunc0417_055C;
 	UI_set_conversation_slot(0x0000);
-	message("「哎呀，你還真敏感！我沒有惡意……只是你連這裡的常識都不知道。」");
+	message("「哎呀，你還真敏感！我沒有惡意…只是你連這裡的常識都不知道。」");
 	say();
 labelFunc0417_055C:
 	message("「石心是用來產生血菌絲的礦石。我不知道它是怎麼做的。我又不是法師。」");
 	say();
-	message("「而且我建議你，在問問題的時候要非常小心對象……免得你發現自己被扔進了地牢。」");
+	message("「而且我建議你，在問問題的時候要非常小心對象…免得你發現自己被扔進了地牢。」");
 	say();
 labelFunc0417_0564:
 	case "地牢" attend labelFunc0417_058B:
@@ -335,7 +335,7 @@ labelFunc0417_058B:
 	case "領主法師" attend labelFunc0417_05C6:
 	UI_remove_answer("領主法師");
 	if (!(gflags[0x0004] && (UI_get_schedule_type(0xFEF9) != 0x000F))) goto labelFunc0417_05B7;
-	message("「我們的城市由無政府主義者 Shamino 統治，他是一位極其強大的巫師。」");
+	message("「我們的城市由無序災厄 Shamino 統治，他是一位極其強大的巫師。」");
 	say();
 	message("「他比我們前任那位懶惰又騙人的領主法師好太多了。我很高興由 Shamino 統治。」");
 	say();
@@ -350,7 +350,7 @@ labelFunc0417_05C6:
 	case "違法者" attend labelFunc0417_0601:
 	UI_remove_answer("違法者");
 	if (!(gflags[0x0004] && (UI_get_schedule_type(0xFEF9) != 0x000F))) goto labelFunc0417_05F2;
-	message("「最好不要試圖去猜測無政府主義者 Shamino 在想什麼。他對違法行為的定義隨時都在改變……」");
+	message("「最好不要試圖去猜測無序災厄 Shamino 在想什麼。他對違法行為的定義隨時都在改變…」");
 	say();
 	message("「而懲罰可能小到只是口頭訓斥，也可能大到要了你的命。」");
 	say();
@@ -379,7 +379,7 @@ labelFunc0417_0625:
 labelFunc0417_063C:
 	case "議會" attend labelFunc0417_0653:
 	UI_remove_answer("議會");
-	message("「議會由領主法師和另外兩名法師組成。他們代表了月影城所有法師的聲音，除非召開了所有法師的法定投票……」");
+	message("「議會由領主法師和另外兩名法師組成。他們代表了月影城所有法師的聲音，除非召開了所有法師的法定投票…」");
 	say();
 	message("「這通常是在選舉新的議會成員，或是新的領主法師時。」");
 	say();
@@ -399,12 +399,12 @@ labelFunc0417_066E:
 	message("「我們釀造的是你在任何地方都能找到的最好的酒。你想嚐一點嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0417_06A1;
-	message("「很好……」");
+	message("「很好…」");
 	say();
 	Func0840();
 	goto labelFunc0417_06A5;
 labelFunc0417_06A1:
-	message("「那是你的損失……」");
+	message("「那是你的損失…」");
 	say();
 labelFunc0417_06A5:
 	goto labelFunc0417_06AC;
@@ -428,20 +428,20 @@ labelFunc0417_06D4:
 	say();
 	message("「當然，我的工作是不讓任何那種生物進入城市，」");
 	say();
-	message("「但如果價錢夠好，我也許可以裝作沒看到有人下去……」");
+	message("「但如果價錢夠好，我也許可以裝作沒看到有人下去…」");
 	say();
 	message("「但我懷疑連你都無法在下面的高溫中存活。雖然鼠人很適應那裡，但那裡的溫度肯定會把你的肉給煮熟。」");
 	say();
 labelFunc0417_06F3:
 	case "酷熱" attend labelFunc0417_071A:
 	UI_remove_answer("酷熱");
-	message("「我只去過地下墓穴一次，身後跟著二十名強壯的遊俠。但我們還沒走多遠，我們隊伍裡就有一半的人被高溫給擊倒了……」");
+	message("「我只去過地下墓穴一次，身後跟著二十名強壯的遊俠。但我們還沒走多遠，我們隊伍裡就有一半的人被高溫給擊倒了…」");
 	say();
 	message("「感覺就像走進了鐵匠的火爐裡！我們只好折返，從那以後就再也沒有人進去過了。」");
 	say();
-	message("「在某個價錢下，我也許會受到誘惑把鑰匙『借』給你……」");
+	message("「在某個價錢下，我也許會受到誘惑把鑰匙『借』給你…」");
 	say();
-	message("「……但那必須等到你找到方法保護自己免受那股灼熱高溫的傷害。現在就把鑰匙給你，等於是如果你真的傻到去那裡冒險，就必死無疑。」");
+	message("「…但那必須等到你找到方法保護自己免受那股灼熱高溫的傷害。現在就把鑰匙給你，等於是如果你真的傻到去那裡冒險，就必死無疑。」");
 	say();
 	message("「劍也許能保護你免受鼠人的傷害，但只有魔法能從那可怕的高溫中拯救你。」");
 	say();
@@ -449,9 +449,9 @@ labelFunc0417_06F3:
 	say();
 labelFunc0417_071A:
 	case "鑰匙" attend labelFunc0417_07B5:
-	message("「我聽說你有魔法可以保護自己免受地下墓穴的高溫傷害。我希望你有想到帶足夠的藥材，不過我不認為你能活著逃出鼠人的魔爪……」");
+	message("「我聽說你有魔法可以保護自己免受地下墓穴的高溫傷害。我希望你有想到帶足夠的藥材，不過我不認為你能活著逃出鼠人的魔爪…」");
 	say();
-	message("「我也許會把這把鑰匙『借』給你，就收…… 40 個公會幣？去地下墓穴冒險值得這麼多錢嗎？」");
+	message("「我也許會把這把鑰匙『借』給你，就收… 40 個公會幣？去地下墓穴冒險值得這麼多錢嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0417_07B1;
 	var000D = UI_count_objects(0xFE9B, 0x03B8, 0xFE99, 0xFE99);
@@ -486,7 +486,7 @@ labelFunc0417_07C8:
 	case "奇怪的酒" attend labelFunc0417_0802:
 	UI_remove_answer("奇怪的酒");
 	if (!Func097D(0xFE9B, 0x0001, 0x0268, 0xFE99, 0x0010)) goto labelFunc0417_07F7;
-	message("「你拿的酒是我們酒莊釀的！希望你喜歡……嗯。這跟失蹤的那批酒是同一個年份的。」");
+	message("「你拿的酒是我們酒莊釀的！希望你喜歡…嗯。這跟失蹤的那批酒是同一個年份的。」");
 	say();
 	message("「你見過我們的榨酒機嗎？我們對它感到非常自豪。」");
 	say();
@@ -503,7 +503,7 @@ labelFunc0417_0802:
 	say();
 	message("「這是一台魔法榨酒機，");
 	message(var0000);
-	message("。是獨一無二的瘋狂法師所製造的……我是說，在他開始那些奇怪實驗之前。」");
+	message("。是獨一無二的瘋狂法師所製造的…我是說，在他開始那些奇怪實驗之前。」");
 	say();
 	UI_add_answer(["瘋狂法師", "實驗"]);
 labelFunc0417_082C:
@@ -511,7 +511,7 @@ labelFunc0417_082C:
 	UI_remove_answer("瘋狂法師");
 	message("「你沒聽說過瘋狂法師嗎？！」");
 	say();
-	message("「他的真名叫 Erstam 。他住在遠離月影城的一個小島上。他曾經是法師們的導師……在他發瘋之前。」");
+	message("「他的真名叫 Erstam 。他住在遠離月影城的一個小島上。他曾經是法師們的導師…在他發瘋之前。」");
 	say();
 labelFunc0417_0843:
 	case "實驗" attend labelFunc0417_085E:
@@ -531,14 +531,14 @@ labelFunc0417_085E:
 labelFunc0417_087E:
 	case "喝海水的醉水手" attend labelFunc0417_0891:
 	UI_remove_answer("喝海水的醉水手");
-	message("「住在 幼鹿城( Fawn ) 的幾乎都是水手。我想在海上待了那麼長時間之後，任何東西嚐起來都會很美味……也許它會破壞你的味覺。又或許是魚腥味破壞了你的嗅覺。我不知道還有誰能以其他方式喝下那種像艙底水一樣的東西！」");
+	message("「住在 幼鹿城( Fawn ) 的幾乎都是水手。我想在海上待了那麼長時間之後，任何東西嚐起來都會很美味…也許它會破壞你的味覺。又或許是魚腥味破壞了你的嗅覺。我不知道還有誰能以其他方式喝下那種像艙底水一樣的東西！」");
 	say();
 labelFunc0417_0891:
 	case "幼鹿城" attend labelFunc0417_08AF:
 	UI_remove_answer("幼鹿城");
 	message("「幼鹿城( Fawn ) 是一座美麗的城市，建在水上。它位於大陸的西側。」");
 	say();
-	message("「我見過 幼鹿城( Fawn ) 的護衛隊長。他是個英俊的男人，相當有能力……雖然我永遠無法理解他是怎麼喝得下那種他們稱為麥酒的劣酒。」");
+	message("「我見過 幼鹿城( Fawn ) 的護衛隊長。他是個英俊的男人，相當有能力…雖然我永遠無法理解他是怎麼喝得下那種他們稱為麥酒的劣酒。」");
 	say();
 	UI_add_answer("護衛隊長");
 labelFunc0417_08AF:
@@ -546,7 +546,7 @@ labelFunc0417_08AF:
 	UI_remove_answer("護衛隊長");
 	message("「幼鹿城( Fawn ) 的護衛隊長名叫 Jorvin 。」");
 	say();
-	message("「我本來想多了解他一點，但我認為他已經和 幼鹿城( Fawn ) 的女領主——很友好了……」");
+	message("「我本來想多了解他一點，但我認為他已經和 幼鹿城( Fawn ) 的女領主——很友好了…」");
 	say();
 	message("「一般女孩可競爭不過她。」");
 	say();
@@ -580,7 +580,7 @@ labelFunc0417_0924:
 	case "證書" attend labelFunc0417_0961:
 	UI_remove_answer("證書");
 	if (!(gflags[0x00FC] == false)) goto labelFunc0417_095D;
-	message("「有了這張犯罪證書，你就可以犯下一項違法行為而不必擔心受到懲罰。如果你在沒有另一張證書的情況下犯下超過一項罪行，無政府主義者 Shamino 的制裁將會很快降臨！」");
+	message("「有了這張犯罪證書，你就可以犯下一項違法行為而不必擔心受到懲罰。如果你在沒有另一張證書的情況下犯下超過一項罪行，無序災厄 Shamino 的制裁將會很快降臨！」");
 	say();
 	var000F = Func099B(0xFE9C, 0x0001, 0x031D, 0x00BB, 0xFE99, true, true);
 	gflags[0x00FC] = true;

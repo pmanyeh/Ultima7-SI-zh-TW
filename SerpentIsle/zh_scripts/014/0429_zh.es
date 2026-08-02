@@ -76,7 +76,7 @@ labelFunc0429_0118:
 	UI_item_say(0xFFD7, "@我的腰啊！@");
 labelFunc0429_0122:
 	if (!(var0007 == 0x0006)) goto labelFunc0429_0136;
-	UI_item_say(0xFFD7, "@唉……@");
+	UI_item_say(0xFFD7, "@唉…@");
 labelFunc0429_0136:
 	if (!(event == 0x0009)) goto labelFunc0429_0671;
 	UI_run_schedule(0xFFD7);
@@ -86,7 +86,7 @@ labelFunc0429_0136:
 	if (!(var0008 == false)) goto labelFunc0429_0192;
 	message("「歡迎來到睡牛客棧( Sleeping Bull )， ");
 	message(var0000);
-	message("！趕快進來，免得又碰上風暴。」 *「我是 Devra……我兒子 Argus 和我在 Angus 失蹤後，一起經營這間旅店。」");
+	message("！趕快進來，免得又碰上風暴。」 *「我是 Devra…我兒子 Argus 和我在 Angus 失蹤後，一起經營這間旅店。」");
 	say();
 	UI_set_item_flag(0xFFD7, 0x001C);
 	UI_add_answer(["風暴", "Argus", "失蹤"]);
@@ -120,20 +120,20 @@ labelFunc0429_01FF:
 	message("「這真的是魔法的力量嗎？他們知道是誰幹的嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0429_0226;
-	message("「太好了！希望這意味著風暴很快就會結束……」");
+	message("「太好了！希望這意味著風暴很快就會結束…」");
 	say();
 	goto labelFunc0429_022A;
 labelFunc0429_0226:
-	message("「我一直希望風暴能早點結束，否則我們都要關門大吉了……」");
+	message("「我一直希望風暴能早點結束，否則我們都要關門大吉了…」");
 	say();
 labelFunc0429_022A:
 	goto labelFunc0429_026F;
 labelFunc0429_022D:
-	message("「好吧，我還是認為這是那些法師幹的！掌控這種力量從來不會有好事，我告訴你……」");
+	message("「好吧，我還是認為這是那些法師幹的！掌控這種力量從來不會有好事，我告訴你…」");
 	say();
 	if (!(var0003 == true)) goto labelFunc0429_026F;
 	UI_show_npc_face1(0xFFDA, 0x0000);
-	message("「說得是，母親。你每次都要把這些說給願意聽的人！別去煩我們僅剩的幾位客人了……」");
+	message("「說得是，母親。你每次都要把這些說給願意聽的人！別去煩我們僅剩的幾位客人了…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -148,14 +148,14 @@ labelFunc0429_026F:
 	UI_remove_answer("月影城");
 labelFunc0429_0276:
 	case "Theron" attend labelFunc0429_028D:
-	message("「Theron 是個普通人，頭腦不太靈光，你懂我的意思。他幫 Angus 和我砍柴已有將近三年……直到那場風暴來了。」");
+	message("「Theron 是個普通人，頭腦不太靈光，你懂我的意思。他幫 Angus 和我砍柴已有將近三年…直到那場風暴來了。」");
 	say();
-	message("「風暴來臨時 Angus 把 Theron 拉進屋內，但 Theron 又跑了出去，想把他最愛的斧頭帶進來……接著出現了一道耀眼的閃光，Theron 就這樣消失了！」");
+	message("「風暴來臨時 Angus 把 Theron 拉進屋內，但 Theron 又跑了出去，想把他最愛的斧頭帶進來…接著出現了一道耀眼的閃光，Theron 就這樣消失了！」");
 	say();
 	UI_remove_answer("Theron");
 labelFunc0429_028D:
 	case "Argus" attend labelFunc0429_02A7:
-	message("「Argus 是我的長子。他曾是長槍兵的隊長……直到他回家接管他父親的位子。」 *「我丈夫一直以為 Wilfred，我們最小的孩子，會是接管旅店的那個。但他現在傲氣沖天，哪肯做個老實本分的旅店老闆！」");
+	message("「Argus 是我的長子。他曾是長槍兵的隊長…直到他回家接管他父親的位子。」 *「我丈夫一直以為 Wilfred，我們最小的孩子，會是接管旅店的那個。但他現在傲氣沖天，哪肯做個老實本分的旅店老闆！」");
 	say();
 	UI_remove_answer("Argus");
 	UI_add_answer("Wilfred");
@@ -163,19 +163,19 @@ labelFunc0429_02A7:
 	case "Wilfred" attend labelFunc0429_02C0:
 	message("「Wilfred 是蒙利多城( Monitor )的騎士， ");
 	message(var0000);
-	message("。他向來意志堅定……我想是他父親對他管得太嚴了。」 *「他離家出走，想要效仿他的哥哥……還說要青出於藍。」");
+	message("。他向來意志堅定…我想是他父親對他管得太嚴了。」 *「他離家出走，想要效仿他的哥哥…還說要青出於藍。」");
 	say();
 	UI_remove_answer("Wilfred");
 labelFunc0429_02C0:
 	case "失蹤" attend labelFunc0429_02F2:
-	message("「你看起來是個誠實、勤懇的人。也許你能幫我查清楚 Angus 究竟發生了什麼事。」 *「這真是個謎。他先失蹤了，然後我的拖鞋也不見了……」");
+	message("「你看起來是個誠實、勤懇的人。也許你能幫我查清楚 Angus 究竟發生了什麼事。」 *「這真是個謎。他先失蹤了，然後我的拖鞋也不見了…」");
 	say();
 	if (!(!gflags[0x01E9])) goto labelFunc0429_02DA;
 	message("「現在我既沒有丈夫，也沒有那雙舊臭靴子。」");
 	say();
 	goto labelFunc0429_02DE;
 labelFunc0429_02DA:
-	message("「現在我雖然沒有丈夫，但至少拖鞋找回來了……」");
+	message("「現在我雖然沒有丈夫，但至少拖鞋找回來了…」");
 	say();
 labelFunc0429_02DE:
 	UI_remove_answer("失蹤");
@@ -193,14 +193,14 @@ labelFunc0429_02F2:
 	say();
 	var000A = Func097D(0xFE9B, 0x0001, 0x024B, 0xFE99, 0x0005);
 	if (!(var000A == true)) goto labelFunc0429_0379;
-	message("「這雙靴子就是你的了……謝謝你還我的拖鞋。」");
+	message("「這雙靴子就是你的了…謝謝你還我的拖鞋。」");
 	say();
 	var000B = Func099B(0xFE9C, 0x0001, 0x024B, 0xFE99, 0x0006, false, true);
 	var000C = UI_remove_party_items(0x0001, 0x024B, 0xFE99, 0x0005, false);
 	gflags[0x01E9] = true;
 	goto labelFunc0429_037D;
 labelFunc0429_0379:
-	message("「那麼希望你不介意讓我繼續留著……我現在根本買不起新拖鞋，風暴害的。」 *「如果你哪天找到我的拖鞋，我就把這雙靴子還給你。」");
+	message("「那麼希望你不介意讓我繼續留著…我現在根本買不起新拖鞋，風暴害的。」 *「如果你哪天找到我的拖鞋，我就把這雙靴子還給你。」");
 	say();
 labelFunc0429_037D:
 	gflags[0x0293] = true;
@@ -221,11 +221,11 @@ labelFunc0429_0395:
 	UI_add_answer(["奇怪的法師", "地窖", "法師的同伴"]);
 labelFunc0429_03BC:
 	case "奇怪的法師" attend labelFunc0429_03DE:
-	message("「他是個相當肥胖的人，如果我記得沒錯的話。他以前曾來過一次……」");
+	message("「他是個相當肥胖的人，如果我記得沒錯的話。他以前曾來過一次…」");
 	say();
 	message("「我就是想不起他的名字。他不是那種健談的人，至少對我不是。」");
 	say();
-	message("「你可以去問 Ensorcio，他們聊了挺多。或者……我知道了……你可以去看登記簿！就在吧台上。」");
+	message("「你可以去問 Ensorcio，他們聊了挺多。或者…我知道了…你可以去看登記簿！就在吧台上。」");
 	say();
 	UI_remove_answer("奇怪的法師");
 	UI_add_answer("Ensorcio");
@@ -239,16 +239,16 @@ labelFunc0429_03DE:
 	UI_add_answer("月影城的蠢貨");
 labelFunc0429_03FC:
 	case "月影城的蠢貨" attend labelFunc0429_0413:
-	message("「Ensorcio 是個被流放的法師。誰知道他幹了什麼好事？我可不敢問……」");
+	message("「Ensorcio 是個被流放的法師。誰知道他幹了什麼好事？我可不敢問…」");
 	say();
-	message("「能被那批人踢走，可見他做的事絕對不是好事。雖然 Angus 不信任法師，但還是讓 Ensorcio 留下來……Angus 說，法師要施展法術需要頭腦清醒，若 Ensorcio 哪天戒酒了，我們才要真的擔心。」");
+	message("「能被那批人踢走，可見他做的事絕對不是好事。雖然 Angus 不信任法師，但還是讓 Ensorcio 留下來…Angus 說，法師要施展法術需要頭腦清醒，若 Ensorcio 哪天戒酒了，我們才要真的擔心。」");
 	say();
 	UI_remove_answer("月影城的蠢貨");
 labelFunc0429_0413:
 	case "地窖" attend labelFunc0429_0431:
-	message("「是啊，地窖。曾經有那麼一兩個無賴以為能偷偷摸下去拿走幾瓶酒。」 *「但 Angus 好像總能察覺到……把他們踢出去，還讓他們多捱了幾拳。」");
+	message("「是啊，地窖。曾經有那麼一兩個無賴以為能偷偷摸下去拿走幾瓶酒。」 *「但 Angus 好像總能察覺到…把他們踢出去，還讓他們多捱了幾拳。」");
 	say();
-	message("「這就是為什麼我沒有立刻擔心……等到隔天早上，我才發現一切亂糟糟的，而且 Angus 不見了。」");
+	message("「這就是為什麼我沒有立刻擔心…等到隔天早上，我才發現一切亂糟糟的，而且 Angus 不見了。」");
 	say();
 	UI_remove_answer("地窖");
 	UI_add_answer("亂糟糟");
@@ -261,7 +261,7 @@ labelFunc0429_0431:
 	UI_remove_answer("亂糟糟");
 labelFunc0429_0448:
 	case "法師的同伴" attend labelFunc0429_0462:
-	message("「我也不知道他的名字……據我所知，他從不和任何人說話，除了那位法師。」 *「他總是把帽子的兜帽拉起來，好像他很冷似的。每次看到他，我都不禁打冷顫。」");
+	message("「我也不知道他的名字…據我所知，他從不和任何人說話，除了那位法師。」 *「他總是把帽子的兜帽拉起來，好像他很冷似的。每次看到他，我都不禁打冷顫。」");
 	say();
 	UI_remove_answer("法師的同伴");
 	UI_add_answer("冷顫");
@@ -269,7 +269,7 @@ labelFunc0429_0462:
 	case "冷顫" attend labelFunc0429_0482:
 	message("「你有沒有在病房裡待過， ");
 	message(var0000);
-	message("？那種某人即將斷氣的病房？」 *「空氣中有一種張力，一種靜寂……而那種感覺，似乎總是籠罩在那位法師的高大同伴身上。」 *「他很可能就是那天晚上從 Ensorcio 那裡偷走東西的人。」");
+	message("？那種某人即將斷氣的病房？」 *「空氣中有一種張力，一種靜寂…而那種感覺，似乎總是籠罩在那位法師的高大同伴身上。」 *「他很可能就是那天晚上從 Ensorcio 那裡偷走東西的人。」");
 	say();
 	UI_remove_answer("冷顫");
 	UI_add_answer("偷竊");
@@ -300,26 +300,26 @@ labelFunc0429_04E7:
 	UI_remove_answer("食物");
 labelFunc0429_04F2:
 	case "Donal" attend labelFunc0429_050C:
-	message("「Donal 是 Angus 的父親，海盜 Silverpate 的兒子。Donal 在我還是個黃毛丫頭的時候僱我當廚子……就是那時候我吸引了 Angus 的注意。」 *「Donal 從不像他那個不成器的父親，動不動就想一走了之。這就是為什麼我答應嫁給 Angus……我以為那愛冒險的血脈到了老海盜那一代就斷了。」");
+	message("「Donal 是 Angus 的父親，海盜 Silverpate 的兒子。Donal 在我還是個黃毛丫頭的時候僱我當廚子…就是那時候我吸引了 Angus 的注意。」 *「Donal 從不像他那個不成器的父親，動不動就想一走了之。這就是為什麼我答應嫁給 Angus…我以為那愛冒險的血脈到了老海盜那一代就斷了。」");
 	say();
 	UI_remove_answer("Donal");
 	UI_add_answer("Silverpate");
 labelFunc0429_050C:
 	case "Silverpate" attend labelFunc0429_0526:
-	message("「你還沒聽說過 Silverpate？我還以為這裡的牆都在嚷嚷這個名字，客人們一來就聽到了！」 *「據說……只是傳說，要記住……Silverpate 是個海盜，他用自己的財寶開了這間旅店。據說他在失蹤之前，把寶藏藏在這附近的某個地方。」");
+	message("「你還沒聽說過 Silverpate？我還以為這裡的牆都在嚷嚷這個名字，客人們一來就聽到了！」 *「據說…只是傳說，要記住…Silverpate 是個海盜，他用自己的財寶開了這間旅店。據說他在失蹤之前，把寶藏藏在這附近的某個地方。」");
 	say();
 	UI_remove_answer("Silverpate");
 	UI_add_answer("寶藏");
 labelFunc0429_0526:
 	case "寶藏" attend labelFunc0429_053F:
-	message("「真是一堆無稽之談！都過了整整兩代人了，親朋鄰居找遍了每一個想得到的地方。」 *「我一開始也找了一下……但要是這麼多年找了這麼多人都找不到， ");
+	message("「真是一堆無稽之談！都過了整整兩代人了，親朋鄰居找遍了每一個想得到的地方。」 *「我一開始也找了一下…但要是這麼多年找了這麼多人都找不到， ");
 	message(var0000);
 	message("，我勸你別浪費時間了！」");
 	say();
 	UI_remove_answer("寶藏");
 labelFunc0429_053F:
 	case "Angus" attend labelFunc0429_0552:
-	message("「Angus 是我丈夫。Donal 過世後，他繼承了這裡的旅店老闆一職。」 *「我們養育了兩個好兒子，他希望等自己老了、管不動了，能把旅店傳給其中一個。結果他就這樣不見了……就和老 Silverpate 一樣。」");
+	message("「Angus 是我丈夫。Donal 過世後，他繼承了這裡的旅店老闆一職。」 *「我們養育了兩個好兒子，他希望等自己老了、管不動了，能把旅店傳給其中一個。結果他就這樣不見了…就和老 Silverpate 一樣。」");
 	say();
 	UI_remove_answer("Angus");
 labelFunc0429_0552:
@@ -349,7 +349,7 @@ labelFunc0429_0589:
 	say();
 	goto labelFunc0429_0634;
 labelFunc0429_0601:
-	var0009 = Func0992(0x0001, "@但我們的錢不夠……@", 0x0000, false);
+	var0009 = Func0992(0x0001, "@但我們的錢不夠…@", 0x0000, false);
 	if (!(var0009 != 0xFE9C)) goto labelFunc0429_062C;
 	UI_show_npc_face0(0xFFD7, 0x0000);
 	message("「我實在不忍心在這種風暴中趕走你們。幫手都跑光了，我也非常需要人手。」 *「但我不能讓你們免費住。你們只能去外面碰運氣了。」");

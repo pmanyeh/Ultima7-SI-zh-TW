@@ -58,7 +58,7 @@ labelFunc085A_00FB:
 	say();
 labelFunc085A_0122:
 	if (!(var000A == 0x0003)) goto labelFunc085A_013A;
-	message("「嗯……一雙魔法靴會保護得你很好。我一雙開價 ");
+	message("「嗯…一雙魔法靴會保護得你很好。我一雙開價 ");
 	message(var000B);
 	message(" 吉爾得幣。」");
 	say();

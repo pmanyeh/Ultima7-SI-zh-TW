@@ -57,7 +57,7 @@ labelFunc01EF_01D6:
 	abort;
 	goto labelFunc01EF_01EC;
 labelFunc01EF_01DA:
-	var0001 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@Meow!@"]);
+	var0001 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@喵!@"]);
 labelFunc01EF_01EC:
 	return;
 }

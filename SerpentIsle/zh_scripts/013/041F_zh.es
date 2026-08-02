@@ -48,7 +48,7 @@ void Func041F object#(0x41F) ()
 	Func097F(var0003, "@女巫死了！@", 0x0005);
 	message("「在我臨死前，我要將紅女巫的詛咒降在你身上！」");
 	say();
-	message("「呃啊……」");
+	message("「呃啊…」");
 	say();
 	var0004 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0001), [(byte)0x23, (byte)0x55, 0x016B], 0x0005);
 labelFunc041F_0088:
@@ -64,7 +64,7 @@ labelFunc041F_00BD:
 	say();
 	message("「或者你願意告訴我我渴望的秘密，也就是控制惡魔(Daemons)的關鍵！！！」");
 	say();
-	var0003 = Func0992(0x0001, "@但我們對石像鬼一無所知……呃，惡魔…。@", "@但我對惡魔一無所知……@", false);
+	var0003 = Func0992(0x0001, "@但我們對石像鬼一無所知…呃，惡魔…。@", "@但我對惡魔一無所知…@", false);
 	UI_set_conversation_slot(0x0000);
 	message("「那你去死吧，騙子。」");
 	say();
@@ -94,11 +94,11 @@ labelFunc041F_014A:
 	UI_set_schedule_type(0xFFE1, 0x000A);
 	UI_set_schedule_type(0xFE9C, 0x000F);
 	gflags[0x0007] = true;
-	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@呃……@", (byte)0x6C, (byte)0x61, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x6D, (byte)0x6E, (byte)0x52, "@我的頭！@", (byte)0x27, 0x0006, (byte)0x55, 0x041F]);
+	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@呃…@", (byte)0x6C, (byte)0x61, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x6D, (byte)0x6E, (byte)0x52, "@我的頭！@", (byte)0x27, 0x0006, (byte)0x55, 0x041F]);
 	abort;
 	goto labelFunc041F_01E0;
 labelFunc041F_01BA:
-	message("「那你帶著你的秘密去死吧，聖者……」");
+	message("「那你帶著你的秘密去死吧，聖者…」");
 	say();
 	Func09AD(0xFFE1);
 	Func097F(0xFFE1, "@去死吧，愚蠢的人！@", 0x0000);
@@ -161,7 +161,7 @@ labelFunc041F_037C:
 	say();
 	message("「永別了，");
 	message(var0002);
-	message("……」");
+	message("…」");
 	say();
 	gflags[0x00EA] = true;
 	abort;
@@ -205,7 +205,7 @@ labelFunc041F_045B:
 	var000E = Func0900(0x0002);
 	if (!(var000E != false)) goto labelFunc041F_04D0;
 	UI_show_npc_face1(var000E[0x0001], 0x0000);
-	message("「但聖者不是凡夫俗子……」");
+	message("「但聖者不是凡夫俗子…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -222,13 +222,13 @@ labelFunc041F_045B:
 labelFunc041F_04D0:
 	message("「你不是法師，否則我早就察覺到你的力量了。」");
 	say();
-	message("「或者……也許你向我的感官隱藏了你的能力？這就非常有趣了……」");
+	message("「或者…也許你向我的感官隱藏了你的能力？這就非常有趣了…」");
 	say();
 	var000A = true;
 labelFunc041F_04DC:
 	case "議會" attend labelFunc041F_04F7:
 	UI_remove_answer("議會");
-	message("「所以我的僕人告訴你…我在法師議會？也許我該把他拆了，來治治他那張大嘴巴……」");
+	message("「所以我的僕人告訴你…我在法師議會？也許我該把他拆了，來治治他那張大嘴巴…」");
 	say();
 	message("「沒錯，我是統治這座城市的三人之一，另外還有老朽的 Gustacio ，以及那個意志薄弱的放蕩傢伙 Filbercio 。」");
 	say();
@@ -261,7 +261,7 @@ labelFunc041F_055C:
 	var000C = true;
 labelFunc041F_056A:
 	case "告辭" attend labelFunc041F_065F:
-	message("「別急著走！你應該知道我見過你的盟友了，那個又胖又令人討厭、名叫巴特林的智者……」");
+	message("「別急著走！你應該知道我見過你的盟友了，那個又胖又令人討厭、名叫巴特林的智者…」");
 	say();
 	message("「他和一個名叫 Palos 的惡魔(Daemon)同行。巴特林是從哪裡獲得這種力量的？如果我有這種力量，我就能統治巨蛇之島！」");
 	say();
@@ -270,7 +270,7 @@ labelFunc041F_056A:
 	if (!Func0955()) goto labelFunc041F_065A;
 	message("「那就向我敞開你的心智，讓我提取我渴望的知識！」");
 	say();
-	var0010 = Func0992(0x0001, "@不，我的朋友。你不能……！@", 0x0000, false);
+	var0010 = Func0992(0x0001, "@不，我的朋友。你不能…！@", 0x0000, false);
 	if (!(var0010 != 0xFE9C)) goto labelFunc041F_060C;
 	UI_set_npc_id(0xFFE1, (0x0000 - var0010));
 	UI_set_conversation_slot(0x0000);
@@ -288,7 +288,7 @@ labelFunc041F_060C:
 	UI_set_item_flag(0xFE9C, 0x0010);
 	UI_set_schedule_type(0xFE9C, 0x000F);
 	gflags[0x0007] = true;
-	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@呃……@", (byte)0x6C, (byte)0x61, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x6D, (byte)0x6E, (byte)0x52, "@我的頭！@", (byte)0x27, 0x0006, (byte)0x55, 0x041F]);
+	var0004 = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@呃…@", (byte)0x6C, (byte)0x61, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x6D, (byte)0x6E, (byte)0x52, "@我的頭！@", (byte)0x27, 0x0006, (byte)0x55, 0x041F]);
 	abort;
 labelFunc041F_0657:
 	goto labelFunc041F_065E;
@@ -329,7 +329,7 @@ labelFunc041F_072E:
 	UI_set_npc_id(0xFFE1, (0x0000 - var0010));
 	if (!UI_npc_nearby(var0010)) goto labelFunc041F_07E9;
 	UI_show_npc_face0(var0010, 0x0000);
-	message("「什麼！發生了什麼事……」");
+	message("「什麼！發生了什麼事…」");
 	say();
 	var0008 = UI_get_object_position(var0010);
 	var0008[0x0001] = (var0008[0x0001] - (var0008[0x0003] / 0x0002));
@@ -350,7 +350,7 @@ labelFunc041F_07E9:
 	var0004 = UI_update_last_created(var0008);
 	UI_obj_sprite_effect(0xFE9C, 0x000D, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF);
 	if (!var0004) goto labelFunc041F_085E;
-	var0003 = Func0992(0x0001, "@看！一張卷軸！@", "@一張卷軸……@", true);
+	var0003 = Func0992(0x0001, "@看！一張卷軸！@", "@一張卷軸…@", true);
 labelFunc041F_085E:
 	goto labelFunc041F_08DC;
 labelFunc041F_0861:
@@ -360,7 +360,7 @@ labelFunc041F_0861:
 	goto labelFunc041F_08DC;
 labelFunc041F_08A5:
 	if (!(var0004[0x0001] == 0x0000)) goto labelFunc041F_08C5;
-	var0003 = Func0992(0x0001, "@看！一張卷軸！@", "@一張卷軸……@", true);
+	var0003 = Func0992(0x0001, "@看！一張卷軸！@", "@一張卷軸…@", true);
 	goto labelFunc041F_08DC;
 labelFunc041F_08C5:
 	var0003 = Func0992(UI_get_npc_number(var0004[0x0001]), "@看我拿到了什麼！@", "@你有張卷軸！@", true);

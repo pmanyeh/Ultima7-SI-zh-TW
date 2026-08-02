@@ -163,7 +163,7 @@ labelFunc098C_03C4:
 	return false;
 labelFunc098C_03DA:
 	if (!var0001) goto labelFunc098C_03EE;
-	message("「我還未被說服……」");
+	message("「我還未被說服…」");
 	say();
 	var0000 = true;
 	goto labelFunc098C_0004;

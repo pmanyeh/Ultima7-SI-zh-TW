@@ -18,9 +18,9 @@ void Func0973 0x973 (var var0000)
 	Func0945(var0000);
 	var0001 = UI_get_item_frame(var0000);
 	if (!(var0001 == 0x0000)) goto labelFunc0973_0038;
-	Func094A(["我敢打賭，如果你在裡面裝點液體，效果會好得多……"]);
+	Func094A(["我敢打賭，如果你在裡面裝點液體，效果會好得多…"]);
 	Func094E(0xFFFF, "比方說裝點啤酒。");
-	Func094E(0xFFFE, "或是裝點葡萄酒……");
+	Func094E(0xFFFE, "或是裝點葡萄酒…");
 	goto labelFunc0973_00D0;
 labelFunc0973_0038:
 	UI_set_item_frame(var0000, 0x0000);
@@ -28,9 +28,9 @@ labelFunc0973_0038:
 	UI_play_sound_effect(0x0024);
 	var0003 = UI_die_roll(0x0001, 0x000A);
 	var0004 = var0002[var0001];
-	var0005 = (("天哪，我打賭那" + var0004) + "真的很棒……");
+	var0005 = (("天哪，我打賭那" + var0004) + "真的很棒…");
 	if (!(var0003 == 0x0001)) goto labelFunc0973_00A4;
-	var0006 = "嗯……我打賭那一定能解渴。";
+	var0006 = "嗯…我打賭那一定能解渴。";
 labelFunc0973_00A4:
 	if (!(var0003 == 0x0002)) goto labelFunc0973_00CA;
 	var0007 = Func0953();

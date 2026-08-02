@@ -53,7 +53,7 @@ labelFunc0421_0066:
 	if (!(event == 0x0001)) goto labelFunc0421_0094;
 	UI_item_say(0xFE9C, "@能談談嗎？@");
 	0xFFDF->Func07D1();
-	Func097F(0xFFDF, "@長話短說……@", 0x0002);
+	Func097F(0xFFDF, "@長話短說…@", 0x0002);
 	UI_set_schedule_type(0xFFDF, 0x0003);
 labelFunc0421_0094:
 	if (!(event == 0x0009)) goto labelFunc0421_08DA;
@@ -109,24 +109,24 @@ labelFunc0421_01AE:
 	message(var0002);
 	message("？你竟敢來質問我——一個法師！」");
 	say();
-	message("「你的懷疑讓我感到受寵若驚，但是哎呀……在這種情況下我是無辜的。」");
+	message("「你的懷疑讓我感到受寵若驚，但是哎呀…在這種情況下我是無辜的。」");
 	say();
 	if (!UI_npc_nearby(0xFFF9)) goto labelFunc0421_01E5;
 	message("「你肯定看得很清楚，你的同伴並沒有被關在我的莊園裡。請隨意四處看看。」");
 	say();
 	goto labelFunc0421_01E9;
 labelFunc0421_01E5:
-	message("「搜查我的莊園吧！我那裡沒有囚犯……」");
+	message("「搜查我的莊園吧！我那裡沒有囚犯…」");
 	say();
 labelFunc0421_01E9:
-	Func097F(0xFFDF, "@現在讓我一個人靜一靜……@", 0x0000);
+	Func097F(0xFFDF, "@現在讓我一個人靜一靜…@", 0x0000);
 	UI_set_schedule_type(0xFFDF, 0x000C);
 	abort;
 	goto labelFunc0421_0221;
 labelFunc0421_0203:
 	message("「流年不利啊，");
 	message(var0002);
-	message("……竟然惹怒了月影城的法師……」");
+	message("…竟然惹怒了月影城的法師…」");
 	say();
 	message("「會不會是 Mortegro ，對他來說，死亡的冰冷感覺比生命更生動？」");
 	say();
@@ -341,17 +341,17 @@ labelFunc0421_0565:
 	var000C = (var000B * 0x05DC);
 	Func0986(var000B, item);
 	var0006 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0001), [(byte)0x23, (byte)0x55, 0x0636], 0x0021);
-	var0006 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@噢，我的頭……@"], 0x0023);
+	var0006 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@噢，我的頭…@"], 0x0023);
 	abort;
 	goto labelFunc0421_05F3;
 labelFunc0421_05EF:
-	message("「你不信任我，是嗎？隨便你……」 *「哈！長襪現在是我的了！」");
+	message("「你不信任我，是嗎？隨便你…」 *「哈！長襪現在是我的了！」");
 	say();
 labelFunc0421_05F3:
 	goto labelFunc0421_0611;
 labelFunc0421_05F6:
 	if (!(!gflags[0x013C])) goto labelFunc0421_060C;
-	message("「你不信任我？那就走你的路吧！我想要的只有長襪……」");
+	message("「你不信任我？那就走你的路吧！我想要的只有長襪…」");
 	say();
 	message("「畢竟， Columna 比你所能指望的更像個女人。」");
 	say();
@@ -427,7 +427,7 @@ labelFunc0421_06F6:
 	case "古老技藝", "開口要求" attend labelFunc0421_074F:
 	UI_remove_answer(["古老技藝", "開口要求"]);
 	if (!gflags[0x0136]) goto labelFunc0421_0747;
-	message("「知識將屬於你，聖者(Avatar)。秘密就在於靈魂可以被囚禁在寶石裡。只有蟲蛹寶石(Worm Gems)才有用，而且即使是這些寶石，也必須先用我現在給你的法術來附魔。」");
+	message("「知識將屬於你，聖者。秘密就在於靈魂可以被囚禁在寶石裡。只有蟲蛹寶石(Worm Gems)才有用，而且即使是這些寶石，也必須先用我現在給你的法術來附魔。」");
 	say();
 	gflags[0x0268] = true;
 	message("「在這個卷軸上，你會找到創造靈魂稜鏡(Soul Prisms)的法術。一有機會就把它抄寫到你的法術書裡，因為我不會再給你另一個！」");
@@ -451,7 +451,7 @@ labelFunc0421_074F:
 	say();
 	goto labelFunc0421_078D;
 labelFunc0421_0777:
-	message("「話說回來，你的確把魔杖還給了我——而風流鬼的朋友(Philanderer's Friend)是一件很棒的獎品……」");
+	message("「話說回來，你的確把魔杖還給了我——而風流鬼的朋友(Philanderer's Friend)是一件很棒的獎品…」");
 	say();
 	message("「你已經付出了代價，我將滿足你的願望。你儘管開口。」");
 	say();
@@ -460,14 +460,14 @@ labelFunc0421_0777:
 labelFunc0421_078D:
 	goto labelFunc0421_0798;
 labelFunc0421_0790:
-	message("「你有我非常想要的東西，聖者(Avatar)！我察覺到你接觸過一件從我這裡被拿走的魔法神器——風流鬼的朋友(Philanderer's Friend)，一根擁有神秘力量的魔杖。」");
+	message("「你有我非常想要的東西，聖者！我察覺到你接觸過一件從我這裡被拿走的魔法神器——風流鬼的朋友，一根擁有神秘力量的魔杖。」");
 	say();
 	message("「把那根魔杖交給我，你的願望就會實現！」");
 	say();
 labelFunc0421_0798:
 	goto labelFunc0421_07AB;
 labelFunc0421_079B:
-	message("「遺憾的是，你沒有我渴望的東西。我不需要黃金，而你也不知道任何我渴望的法術……」");
+	message("「遺憾的是，你沒有我渴望的東西。我不需要黃金，而你也不知道任何我渴望的法術…」");
 	say();
 	message("「啊，但你是一個強大的戰士！我有一個主意。」");
 	say();
@@ -480,7 +480,7 @@ labelFunc0421_07AB:
 	UI_remove_answer("結果");
 	message("「你不是第一個來向我尋求這個秘密的人，冒險者！那個胖傻瓜巴特林也向我買過。」");
 	say();
-	message("「而且我給過他這個警告：寶石的力量不足以容納任何擁有強大力量的靈魂。如果它們失敗了，被釋放出來的靈魂會非常憤怒……」");
+	message("「而且我給過他這個警告：寶石的力量不足以容納任何擁有強大力量的靈魂。如果它們失敗了，被釋放出來的靈魂會非常憤怒…」");
 	say();
 labelFunc0421_07C2:
 	case "蟲蛹寶石" attend labelFunc0421_07F9:
@@ -489,7 +489,7 @@ labelFunc0421_07C2:
 	say();
 	var0010 = Func097D(0xFE9B, 0x0001, 0x0326, 0xFE99, 0x0000);
 	if (!((!gflags[0x00CE]) && var0010)) goto labelFunc0421_07F9;
-	message("「真可惜你劍上的寶石碎了。它看起來非常像 Ducio 製作的蟲蛹寶石(Worm Gems)。也許他能幫你修理……」");
+	message("「真可惜你劍上的寶石碎了。它看起來非常像 Ducio 製作的蟲蛹寶石(Worm Gems)。也許他能幫你修理…」");
 	say();
 labelFunc0421_07F9:
 	case "魔法魔杖" attend labelFunc0421_08AC:
@@ -523,7 +523,7 @@ labelFunc0421_08AC:
 	case "告辭" attend labelFunc0421_08D6:
 	UI_remove_npc_face0();
 	Func097F(0xFE9C, "@再見！@", 0x0000);
-	Func097F(0xFFDF, "@別偷東西……@", 0x0002);
+	Func097F(0xFFDF, "@別偷東西…@", 0x0002);
 	Func08FF();
 	goto labelFunc0421_08D9;
 labelFunc0421_08D6:

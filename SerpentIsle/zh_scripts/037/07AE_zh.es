@@ -30,7 +30,7 @@ labelFunc07AE_0021:
 labelFunc07AE_0050:
 	var0002 = (("@" + Func0953()) + "...@");
 	var0003 = (("@" + Func0954()) + "...@");
-	var0004 = ["@聖者……@", var0002, var0003, "@請原諒我……@", "@如果可以的話……@", "@看！@"];
+	var0004 = ["@聖者…@", var0002, var0003, "@請原諒我…@", "@如果可以的話…@", "@看！@"];
 	UI_item_say(0xFFFE, var0004[UI_get_random(UI_get_array_size(var0004))]);
 	var0005 = 0x0004;
 	var0006 = false;
@@ -113,13 +113,13 @@ labelFunc07AE_0271:
 	if (!(!UI_find_nearby(0xFE9C, 0x0253, 0x000A, 0x0000))) goto labelFunc07AE_029A;
 	message("「你把那支火把撿起來真是明智！我們需要盡可能多找一些，因為它們燒不了多久。」");
 	say();
-	message("「毫無疑問，在我們的冒險結束之前，我們會進入許多奇怪的地牢……」");
+	message("「毫無疑問，在我們的冒險結束之前，我們會進入許多奇怪的地牢…」");
 	say();
 	goto labelFunc07AE_02A2;
 labelFunc07AE_029A:
 	message("「我們把那支火把帶走吧！我們需要盡可能多找一些，因為它們燒不了多久。」");
 	say();
-	message("「毫無疑問，在我們的冒險結束之前，我們會進入許多奇怪的地牢……」");
+	message("「毫無疑問，在我們的冒險結束之前，我們會進入許多奇怪的地牢…」");
 	say();
 labelFunc07AE_02A2:
 	if (!(var0000 == 0x0006)) goto labelFunc07AE_02E4;

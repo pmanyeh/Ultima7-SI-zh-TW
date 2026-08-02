@@ -62,7 +62,7 @@ labelFunc048F_0095:
 labelFunc048F_00AC:
 	case "姓名" attend labelFunc048F_00D6:
 	UI_remove_answer("姓名");
-	message("「我是 Baiyanda ， Mwaerno 的伴侶，也是猿怪( Gwani )一族的治療師。」");
+	message("「我是 Baiyanda ， Mwaerno 的伴侶，也是猿怪一族的治療師。」");
 	say();
 	UI_set_item_flag(0xFF71, 0x001C);
 	UI_add_answer(["Mwaerno", "治療師"]);
@@ -75,12 +75,12 @@ labelFunc048F_00D6:
 labelFunc048F_00F6:
 	case "獵人" attend labelFunc048F_0109:
 	UI_remove_answer("獵人");
-	message("「 Myauri 是猿怪( Gwani )的首席獵人。他知道獵物在哪裡，也知道怎麼找到牠們。但 Mwaerno 最擅長捕捉獵物。我為他感到驕傲。」");
+	message("「 Myauri 是猿怪的首席獵人。他知道獵物在哪裡，也知道怎麼找到牠們。但 Mwaerno 最擅長捕捉獵物。我為他感到驕傲。」");
 	say();
 labelFunc048F_0109:
 	case "Yenani" attend labelFunc048F_0123:
 	UI_remove_answer("Yenani");
-	message("「她是我們的酋長。猿怪( Gwani )一族總是由女性領導。 Yenani 是 Gwenno 的好朋友。」");
+	message("「她是我們的酋長。猿怪一族總是由女性領導。 Yenani 是 Gwenno 的好朋友。」");
 	say();
 	UI_add_answer("Gwenno");
 labelFunc048F_0123:
@@ -104,7 +104,7 @@ labelFunc048F_015C:
 labelFunc048F_016F:
 	case "治療師" attend labelFunc048F_018F:
 	UI_remove_answer("治療師");
-	message("「我治療猿怪( Gwani )一族所有的傷口和疾病。 Baiyanda 不用人類治療師的方法。猿怪( Gwani )與大自然保持平衡，過著簡單的生活，不強求自然。猿怪( Gwani )的治療師學習草藥和動物的秘密。如果你需要治療師，我會幫你。」");
+	message("「我治療猿怪一族所有的傷口和疾病。 Baiyanda 不用人類治療師的方法。猿怪與大自然保持平衡，過著簡單的生活，不強求自然。猿怪的治療師學習草藥和動物的秘密。如果你需要治療師，我會幫你。」");
 	say();
 	UI_add_answer(["我需要治療師", "草藥和動物"]);
 labelFunc048F_018F:
@@ -176,13 +176,13 @@ labelFunc048F_02B7:
 labelFunc048F_02CD:
 	case "草藥和動物" attend labelFunc048F_02F0:
 	UI_remove_answer("草藥和動物");
-	message("「魔法會破壞大自然的平衡。猿怪( Gwani )治療師學習如何準備魚乾，以及使用冰龍血( Ice Dragon blood )等事物。」");
+	message("「魔法會破壞大自然的平衡。猿怪治療師學習如何準備魚乾，以及使用冰龍血( Ice Dragon blood )等事物。」");
 	say();
 	UI_add_answer(["大自然的平衡", "魚乾", "冰龍血"]);
 labelFunc048F_02F0:
 	case "大自然的平衡" attend labelFunc048F_0303:
 	UI_remove_answer("大自然的平衡");
-	message("「對猿怪( Gwani )來說，最好的生活方式——也是唯一的方式——就是與大自然和諧相處。所以我們不做任何違背自然的事情。」");
+	message("「對猿怪來說，最好的生活方式——也是唯一的方式——就是與大自然和諧相處。所以我們不做任何違背自然的事情。」");
 	say();
 labelFunc048F_0303:
 	case "魚乾" attend labelFunc048F_0348:
@@ -205,7 +205,7 @@ labelFunc048F_0348:
 	UI_remove_answer("冰龍血");
 	message("「冰龍血的特別之處在於，它幾乎可以治癒任何疾病。」");
 	say();
-	message("「但冰龍是非常罕見的生物。猿怪( Gwani )尊重所有生命——在我們獵殺牠們之前，我們會嘗試所有其他方法。」");
+	message("「但冰龍是非常罕見的生物。猿怪尊重所有生命——在我們獵殺牠們之前，我們會嘗試所有其他方法。」");
 	say();
 	message("「有一隻確實住在我們村莊的北方。許多年前，我們把另一隻趕到了東邊。」");
 	say();
@@ -241,7 +241,7 @@ labelFunc048F_03C6:
 labelFunc048F_03D9:
 	case "東方的龍" attend labelFunc048F_03EC:
 	UI_remove_answer("東方的龍");
-	message("「多年前，猿怪( Gwani )遭到龍的襲擊。 Myauri 和 Mwaerno 帶領獵人們對抗牠。猿怪( Gwani )把牠趕到了山脈以東。那是隻非常古老的龍，而且依然沒有伴侶。非常罕見。」");
+	message("「多年前，猿怪遭到龍的襲擊。 Myauri 和 Mwaerno 帶領獵人們對抗牠。猿怪把牠趕到了山脈以東。那是隻非常古老的龍，而且依然沒有伴侶。非常罕見。」");
 	say();
 labelFunc048F_03EC:
 	case "Neyobi" attend labelFunc048F_0419:
@@ -252,7 +252,7 @@ labelFunc048F_03EC:
 	say();
 	goto labelFunc048F_0419;
 labelFunc048F_0415:
-	message("「世界上沒有任何魔法能救 Neyobi 的命。但是當猿怪( Gwani )與大自然保持平衡的治療方式完成後，她好多了。」");
+	message("「世界上沒有任何魔法能救 Neyobi 的命。但是當猿怪與大自然保持平衡的治療方式完成後，她好多了。」");
 	say();
 labelFunc048F_0419:
 	case "告辭" attend labelFunc048F_0444:

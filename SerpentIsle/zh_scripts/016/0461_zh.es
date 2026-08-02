@@ -49,9 +49,9 @@ labelFunc0461_00BB:
 	converse attend labelFunc0461_01B8;
 	case "拋棄" attend labelFunc0461_00D5:
 	UI_remove_answer("拋棄");
-	message("「七號為何不在這裡，除非有人摧毀了他？如果七號在履行他的職責，我們就會有讓你冥想的鑰匙……這是我們發誓的職責。」");
+	message("「七號為何不在這裡，除非有人摧毀了他？如果七號在履行他的職責，我們就會有讓你冥想的鑰匙…這是我們發誓的職責。」");
 	say();
-	message("「我們任何人最後一次見到七號時，我和二號( Number 2 )在一起……而那已經是一段時間前的事了。」");
+	message("「我們任何人最後一次見到七號時，我和二號( Number 2 )在一起…而那已經是一段時間前的事了。」");
 	say();
 labelFunc0461_00D5:
 	case "噴泉" attend labelFunc0461_00E8:
@@ -80,10 +80,10 @@ labelFunc0461_0101:
 	say();
 	Func094E(0xFFA1, "@那是謊言！我和一號( Number 1 )以及六號( Number 6 )在一起，不是四號( Number 4 )！@");
 	UI_set_conversation_slot(0x0000);
-	message("「你抓到我了！好吧……鑰匙是你的了。」");
+	message("「你抓到我了！好吧…鑰匙是你的了。」");
 	say();
 	var0002 = Func099B(0xFE9C, 0x0001, 0x0281, 0x0046, 0x0005, false, true);
-	message("「我坦白。是我摧毀了七號……就如同我要摧毀你一樣！鑰匙的保管者從一開始就應該是我！七號不把鑰匙交給我是錯的！」");
+	message("「我坦白。是我摧毀了七號…就如同我要摧毀你一樣！鑰匙的保管者從一開始就應該是我！七號不把鑰匙交給我是錯的！」");
 	say();
 	UI_set_alignment(0xFF9F, 0x0003);
 	UI_set_schedule_type(0xFF9F, 0x0000);
@@ -99,7 +99,7 @@ labelFunc0461_017A:
 labelFunc0461_0184:
 	case "告辭" attend labelFunc0461_01B5:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@待會見……@", 0x0000);
+	Func097F(0xFE9C, "@待會見…@", 0x0000);
 	Func097F(0xFF9F, "@運用你的邏輯( Logic )！@", 0x0002);
 	UI_set_schedule_type(0xFF9F, 0x000B);
 	goto labelFunc0461_01B8;

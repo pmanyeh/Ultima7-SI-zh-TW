@@ -84,60 +84,60 @@ labelFunc04B4_0145:
 labelFunc04B4_0180:
 	UI_show_npc_face0(0xFF4C, 0x0000);
 	if (!((gflags[0x01F3] == true) && ((gflags[0x01F7] == true) && (!(gflags[0x01F8] == true))))) goto labelFunc04B4_01D7;
-	message("「聖者！你必須來看看我發現了什麼！快來……Zhelkas 可能不會給你時間看這個。你要來看看嗎？你可以等回來再解決最後一隻蠕蟲。」");
+	message("「聖者！你必須來看看我發現了什麼！快來…Zhelkas 可能不會給你時間看這個。你要來看看嗎？你可以等回來再解決最後一隻蠕蟲。」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04B4_01BE;
-	message("「就在這裡面……」");
+	message("「就在這裡面…」");
 	say();
 	Func097F(0xFF4C, "@跟我來！@", 0x0000);
 	goto labelFunc04B4_01D2;
 labelFunc04B4_01BE:
-	message("「這看起來很重要，雖然我不擅長判斷這種事。你應該趁有機會來看看……」");
+	message("「這看起來很重要，雖然我不擅長判斷這種事。你應該趁有機會來看看…」");
 	say();
-	Func097F(0xFF4C, "@那是你的損失……@", 0x0000);
+	Func097F(0xFF4C, "@那是你的損失…@", 0x0000);
 	gflags[0x01ED] = true;
 labelFunc04B4_01D2:
 	gflags[0x01F8] = true;
 	abort;
 labelFunc04B4_01D7:
 	if (!((gflags[0x01F3] == true) && ((gflags[0x01F6] == true) && (!(gflags[0x01F8] == true))))) goto labelFunc04B4_01FD;
-	message("「這裡沒有酒，聖者。但你應該看看這些武器！如果你不快點結束，我可不敢保證會分給你……」");
+	message("「這裡沒有酒，聖者。但你應該看看這些武器！如果你不快點結束，我可不敢保證會分給你…」");
 	say();
 	Func097F(0xFF4C, "@這真是太棒了！@", 0x0000);
 	abort;
 labelFunc04B4_01FD:
 	if (!((gflags[0x01F3] == true) && ((gflags[0x01F5] == true) && (!(gflags[0x01F8] == true))))) goto labelFunc04B4_0223;
-	message("「聖者！你應該看看我找到的寶藏！留下來完成遊戲吧。我會試著帶一些給你……」");
+	message("「聖者！你應該看看我找到的寶藏！留下來完成遊戲吧。我會試著帶一些給你…」");
 	say();
-	Func097F(0xFF4C, "@在這裡等……@", 0x0000);
+	Func097F(0xFF4C, "@在這裡等…@", 0x0000);
 	abort;
 labelFunc04B4_0223:
 	if (!((gflags[0x01F3] == true) && ((gflags[0x01F4] == true) && (!(gflags[0x01F8] == true))))) goto labelFunc04B4_0249;
-	message("「這實在很無聊。我要把你留在遊戲裡了，聖者。我要去探索了……」");
+	message("「這實在很無聊。我要把你留在遊戲裡了，聖者。我要去探索了…」");
 	say();
-	Func097F(0xFF4C, "@再會了……@", 0x0000);
+	Func097F(0xFF4C, "@再會了…@", 0x0000);
 	abort;
 labelFunc04B4_0249:
 	if (!((gflags[0x01F3] == true) && ((gflags[0x01F4] == true) && (gflags[0x01F8] == true)))) goto labelFunc04B4_0285;
-	message("「該死，聖者！該死！你已經消滅了蠕蟲。或許有了那樣的武器，你就不需要我在這裡找到的東西了……」");
+	message("「該死，聖者！該死！你已經消滅了蠕蟲。或許有了那樣的武器，你就不需要我在這裡找到的東西了…」");
 	say();
 	Func097F(0xFF4C, "@該死！@", 0x0000);
 	var0003 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x07F7], 0x0019);
 	abort;
 labelFunc04B4_0285:
-	message("「Zhelkas 任命我為遊戲的主持人，聖者。他也允許我去探索……」*「你準備好開始了嗎？」");
+	message("「Zhelkas 任命我為遊戲的主持人，聖者。他也允許我去探索…」* 「你準備好開始了嗎？」");
 	say();
 	UI_add_answer(["主持人", "遊戲", "探索", "開始"]);
 labelFunc04B4_029C:
 	converse attend labelFunc04B4_04B3;
 	case "主持人" attend labelFunc04B4_02BF:
-	message("「身為主持人，我的職責是確保你了解規則。告知你之後，我就不能幫助你了……以任何方式都不行。」");
+	message("「身為主持人，我的職責是確保你了解規則。告知你之後，我就不能幫助你了…以任何方式都不行。」");
 	say();
 	UI_remove_answer("主持人");
 	UI_add_answer(["規則", "幫助"]);
 labelFunc04B4_02BF:
 	case "規則" attend labelFunc04B4_02DF:
-	message("「規則沒幾條……」*「你將面對十隻蠕蟲( Worms )。在解決掉最後一隻之前，你無法離開。」");
+	message("「規則沒幾條…」* 「你將面對十隻蠕蟲( Worms )。在解決掉最後一隻之前，你無法離開。」");
 	say();
 	UI_remove_answer("規則");
 	UI_add_answer(["蠕蟲", "解決"]);
@@ -154,13 +154,13 @@ labelFunc04B4_02F2:
 	UI_add_answer("槌子");
 labelFunc04B4_030C:
 	case "槌子" attend labelFunc04B4_0326:
-	message("「它們是蠕蟲啊，聖者！大家都知道，如果你用劍對付蠕蟲，每次攻擊後你將面對雙倍數量的敵人。」*「你附近的地板上有一把小槌子……」");
+	message("「它們是蠕蟲啊，聖者！大家都知道，如果你用劍對付蠕蟲，每次攻擊後你將面對雙倍數量的敵人。」* 「你附近的地板上有一把小槌子…」");
 	say();
 	UI_remove_answer("槌子");
 	UI_add_answer("大家都知道");
 labelFunc04B4_0326:
 	case "大家都知道" attend labelFunc04B4_0339:
-	message("「這是常識，聖者！我對你感到驚訝……別再問這些問題，把注意力放在遊戲上吧！」");
+	message("「這是常識，聖者！我對你感到驚訝…別再問這些問題，把注意力放在遊戲上吧！」");
 	say();
 	UI_remove_answer("大家都知道");
 labelFunc04B4_0339:
@@ -193,12 +193,12 @@ labelFunc04B4_039F:
 	UI_add_answer("毀滅");
 labelFunc04B4_03B9:
 	case "毀滅" attend labelFunc04B4_03CC:
-	message("「你為什麼問我？大家都害怕如果不阻止這些風暴，世界很快就會迎來末日……」*「把心思放在眼前的任務上吧。你越快完成這場遊戲，我們就能越快上路……」");
+	message("「你為什麼問我？大家都害怕如果不阻止這些風暴，世界很快就會迎來末日…」* 「把心思放在眼前的任務上吧。你越快完成這場遊戲，我們就能越快上路…」");
 	say();
 	UI_remove_answer("毀滅");
 labelFunc04B4_03CC:
 	case "應變能力" attend labelFunc04B4_03DF:
-	message("「真正的戰士不會只依賴一種武器，聖者。如果你沒有劍，卻必須與守護者戰鬥時該怎麼辦？真正的英雄在必要時會把任何東西當作武器……」");
+	message("「真正的戰士不會只依賴一種武器，聖者。如果你沒有劍，卻必須與守護者戰鬥時該怎麼辦？真正的英雄在必要時會把任何東西當作武器…」");
 	say();
 	UI_remove_answer("應變能力");
 labelFunc04B4_03DF:
@@ -209,23 +209,23 @@ labelFunc04B4_03DF:
 	UI_add_answer(["感興趣", "有益"]);
 labelFunc04B4_03FF:
 	case "感興趣" attend labelFunc04B4_041F:
-	message("「嗯，除非 Zhelkas 說的是酒桶……我會說他指的可能是武器。」");
+	message("「嗯，除非 Zhelkas 說的是酒桶…我會說他指的可能是武器。」");
 	say();
 	UI_remove_answer("感興趣");
 	UI_add_answer(["酒桶", "武器"]);
 labelFunc04B4_041F:
 	case "酒桶" attend labelFunc04B4_0432:
-	message("「別擔心，老朋友！我會試著為你留個一兩滴。」*「但你最好快點，免得我忘了……」");
+	message("「別擔心，老朋友！我會試著為你留個一兩滴。」* 「但你最好快點，免得我忘了…」");
 	say();
 	UI_remove_answer("酒桶");
 labelFunc04B4_0432:
 	case "武器" attend labelFunc04B4_0445:
-	message("「如果在遊戲結束後還有時間，或許你可以來找我。如果我拿得動的話……或許我會帶點什麼給你。」");
+	message("「如果在遊戲結束後還有時間，或許你可以來找我。如果我拿得動的話…或許我會帶點什麼給你。」");
 	say();
 	UI_remove_answer("武器");
 labelFunc04B4_0445:
 	case "有益" attend labelFunc04B4_0458:
-	message("「情報、武器……」*「我會盡我所能帶回來……只要那裡沒有太多酒的話！」");
+	message("「情報、武器…」* 「我會盡我所能帶回來…只要那裡沒有太多酒的話！」");
 	say();
 	UI_remove_answer("有益");
 labelFunc04B4_0458:

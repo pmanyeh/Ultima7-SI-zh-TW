@@ -29,7 +29,7 @@ void Func0357 shape#(0x357) ()
 	UI_lightning();
 	var0004 = UI_get_random(0x0002);
 	UI_reduce_health(0xFE9C, var0004, 0x0005);
-	var0005 = ("@哎呀！@" & ("@好痛！@" & ("@真痛！@" & ("@呃……@" & ("@該死！@" & "@哇！@")))));
+	var0005 = ("@哎呀！@" & ("@好痛！@" & ("@真痛！@" & ("@呃…@" & ("@該死！@" & "@哇！@")))));
 	var0002 = var0005[UI_get_random(UI_get_array_size(var0005))];
 	Func097F(0xFE9C, var0002, 0x0001);
 labelFunc0357_009E:
@@ -91,7 +91,7 @@ labelFunc0357_01A1:
 	goto labelFunc0357_0203;
 labelFunc0357_01DC:
 	var0002 = UI_execute_usecode_array(var000B, [(byte)0x23, (byte)0x49, 0x0002, 0x0005]);
-	var000A = Func0992(0x0001, "@小心！@", "@哎呀……@", true);
+	var000A = Func0992(0x0001, "@小心！@", "@哎呀…@", true);
 labelFunc0357_0203:
 	goto labelFunc0357_0214;
 labelFunc0357_0206:
@@ -114,11 +114,11 @@ labelFunc0357_0225:
 labelFunc0357_025D:
 	for (var0009 in var0006 with var000C to var000D) attend labelFunc0357_02A1;
 	if (!(UI_get_item_frame(var0009) == 0x0001)) goto labelFunc0357_029E;
-	var0002 = UI_execute_usecode_array(var0009, [(byte)0x23, (byte)0x52, "@喔！@", (byte)0x27, 0x000F, (byte)0x52, "@拜託，主人……@", (byte)0x27, 0x000F, (byte)0x52, "@停下來！@"]);
+	var0002 = UI_execute_usecode_array(var0009, [(byte)0x23, (byte)0x52, "@喔！@", (byte)0x27, 0x000F, (byte)0x52, "@拜託，主人…@", (byte)0x27, 0x000F, (byte)0x52, "@停下來！@"]);
 labelFunc0357_029E:
 	goto labelFunc0357_025D;
 labelFunc0357_02A1:
-	var000A = Func0992(0x0001, "@我聽到了什麼聲音……@", "@那是什麼？@", true);
+	var000A = Func0992(0x0001, "@我聽到了什麼聲音…@", "@那是什麼？@", true);
 labelFunc0357_02B1:
 	goto labelFunc0357_02C2;
 labelFunc0357_02B4:

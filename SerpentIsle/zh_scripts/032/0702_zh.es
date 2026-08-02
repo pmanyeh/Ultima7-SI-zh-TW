@@ -58,7 +58,7 @@ labelFunc0702_013E:
 	Func097F(0xFFE1, "@讓他流血。@", 0x0000);
 labelFunc0702_0154:
 	if (!(var0003 == 0x0006)) goto labelFunc0702_016A;
-	Func097F(0xFFE1, "@折磨他……@", 0x0000);
+	Func097F(0xFFE1, "@折磨他…@", 0x0000);
 labelFunc0702_016A:
 	var0000 = UI_find_nearby(item, 0x016B, 0x001E, 0x0000);
 	var0004 = false;
@@ -78,7 +78,7 @@ labelFunc0702_0200:
 	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@讓我來！@"], 0x0002);
 labelFunc0702_0221:
 	if (!(var0003 == 0x0005)) goto labelFunc0702_0242;
-	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@我口渴了……@"], 0x0007);
+	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@我口渴了…@"], 0x0007);
 labelFunc0702_0242:
 	if (!(var0003 == 0x0006)) goto labelFunc0702_0263;
 	var0002 = UI_delayed_execute_usecode_array(var0004, [(byte)0x23, (byte)0x52, "@那就殺了他！@"], 0x0004);

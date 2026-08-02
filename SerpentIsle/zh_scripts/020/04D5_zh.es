@@ -68,7 +68,7 @@ labelFunc04D5_00CD:
 labelFunc04D5_00ED:
 	if (!(var000B == 0x0003)) goto labelFunc04D5_010D;
 	UI_item_say(var000A, "@我們可以停下來嗎？@");
-	Func097F(0xFF2B, "@時間還沒到……@", 0x0003);
+	Func097F(0xFF2B, "@時間還沒到…@", 0x0003);
 labelFunc04D5_010D:
 	if (!(var000B == 0x0004)) goto labelFunc04D5_012D;
 	UI_item_say(0xFF2B, "@拿出活力！@");
@@ -76,7 +76,7 @@ labelFunc04D5_010D:
 labelFunc04D5_012D:
 	if (!(var000B == 0x0005)) goto labelFunc04D5_014D;
 	UI_item_say(0xFF2B, "@不要辜負 Xenka ！@");
-	Func097F(var000A, "@我很虛弱……@", 0x0003);
+	Func097F(var000A, "@我很虛弱…@", 0x0003);
 labelFunc04D5_014D:
 	if (!(var000B == 0x0006)) goto labelFunc04D5_0179;
 	UI_item_say(0xFF2B, "@ Xenka 很滿意！@");
@@ -85,7 +85,7 @@ labelFunc04D5_014D:
 labelFunc04D5_0179:
 	if (!(event == 0x0001)) goto labelFunc04D5_01C8;
 	if (!(UI_get_npc_id(0xFF31) != 0x0000)) goto labelFunc04D5_019A;
-	UI_item_say(0xFF2B, "@噓……@");
+	UI_item_say(0xFF2B, "@噓…@");
 	abort;
 labelFunc04D5_019A:
 	UI_item_say(0xFE9C, "@我們能談談嗎？@");
@@ -113,7 +113,7 @@ labelFunc04D5_0232:
 	UI_add_answer("Gwenno");
 labelFunc04D5_024A:
 	if (!Func08FC()) goto labelFunc04D5_025B;
-	message("「噢！你的一位朋友不幸去世了。這不該發生……如果你準備好再次見到你的朋友，只要開口，我就會把他們帶回你身邊。」");
+	message("「噢！你的一位朋友不幸去世了。這不該發生…如果你準備好再次見到你的朋友，只要開口，我就會把他們帶回你身邊。」");
 	say();
 	UI_add_answer("復活");
 labelFunc04D5_025B:
@@ -131,7 +131,7 @@ labelFunc04D5_0287:
 	UI_remove_answer("姓名");
 	message("「我的名字微不足道，偉大的人。我不過是你命運與 Xenka 榮光中的一道影子。」");
 	say();
-	var000A = Func0992(0x0001, "@又一個神秘主義者……@", 0x0000, false);
+	var000A = Func0992(0x0001, "@又一個神秘主義者…@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「但是，如果你願意屈尊直呼我的名字，我是 Draxta 。」");
 	say();
@@ -215,7 +215,7 @@ labelFunc04D5_03FA:
 	UI_remove_answer("Xenka");
 	message("「 Xenka 是一位非常聰慧的女性，偉大的人。神聖的幻象降臨於她，警告我們世界即將終結。」");
 	say();
-	message("「是她在幻象之地( Place of Visions )預見了你的到來。儘管她從未告訴我們，她也預見到了自己的離去……」");
+	message("「是她在幻象之地( Place of Visions )預見了你的到來。儘管她從未告訴我們，她也預見到了自己的離去…」");
 	say();
 	UI_add_answer(["幻象之地", "離去"]);
 labelFunc04D5_041E:
@@ -228,7 +228,7 @@ labelFunc04D5_041E:
 labelFunc04D5_043A:
 	message("「幻象之地( Place of Visions )就在農田的最西北角，偉大的人。你會看到大牆前擺放著長椅，那裡就是了。」");
 	say();
-	message("「我還記得我們最後一次見到 Xenka 的那個晚上……我當時在場見證了她最後的三個幻象。你想讓我展示一個幻象給你看嗎？」");
+	message("「我還記得我們最後一次見到 Xenka 的那個晚上…我當時在場見證了她最後的三個幻象。你想讓我展示一個幻象給你看嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc04D5_0455;
 	message("「前往幻象之地( Place of Visions )，我會在那裡與你見面。」");
@@ -274,7 +274,7 @@ labelFunc04D5_04C2:
 	UI_remove_answer("Gwenno");
 	message("「你的朋友 Gwenno 看起來不太對勁，偉大的人。」");
 	say();
-	var000A = Func0992(0x0001, "@她倒是有臉說別人……@", 0x0000, false);
+	var000A = Func0992(0x0001, "@她倒是有臉說別人…@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「 Karnax 肯定能占卜出她得了什麼病。」");
 	say();
@@ -311,7 +311,7 @@ labelFunc04D5_0544:
 labelFunc04D5_0557:
 	case "觀看幻象" attend labelFunc04D5_05F4:
 	UI_remove_answer("觀看幻象");
-	message("「請安靜！我們現在將傾聽虛空之歌，它正低語著過去與現在的種種事件……」");
+	message("「請安靜！我們現在將傾聽虛空之歌，它正低語著過去與現在的種種事件…」");
 	say();
 	var000D = UI_find_nearest(0xFF2B, 0x0308, 0x0014);
 	if (!var000D) goto labelFunc04D5_05E3;
@@ -323,9 +323,9 @@ labelFunc04D5_0557:
 	gflags[0x0273] = false;
 	goto labelFunc04D5_05F3;
 labelFunc04D5_05E3:
-	message("「讓我們靠近大牆……」");
+	message("「讓我們靠近大牆…」");
 	say();
-	Func097F(0xFF2B, "@前往大牆……@", 0x0000);
+	Func097F(0xFF2B, "@前往大牆…@", 0x0000);
 labelFunc04D5_05F3:
 	abort;
 labelFunc04D5_05F4:

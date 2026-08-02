@@ -66,7 +66,7 @@ labelFunc0638_0009:
 	say();
 	message("\t\t\t\t這次尋寶行動耗費了我們太多的人命，而且可能");
 	say();
-	message("\t\t\t\t還要耗費更多……");
+	message("\t\t\t\t還要耗費更多…");
 	say();
 	message("第56天：\t我們被冰流夾住了。食物快要見底。");
 	say();
@@ -100,7 +100,7 @@ labelFunc0638_00D1:
 	say();
 	message("第22天 -- 我們被迫殺死了營地附近的一對狼。");
 	say();
-	message("第28天 -- 船員們為沒有找到任何金子而沮喪……");
+	message("第28天 -- 船員們為沒有找到任何金子而沮喪…");
 	say();
 	message("\t\t\t\t不過，我對我們的事業仍然充滿信心。*");
 	say();
@@ -146,7 +146,7 @@ labelFunc0638_00D1:
 	say();
 	message("\t\t\t\t奪去了他的性命。");
 	say();
-	message("\t\t\t\t所以，事情已經走到這一步……");
+	message("\t\t\t\t所以，事情已經走到這一步…");
 	say();
 	message("\t\t\t\t嗜金如命、嗜血如命的混蛋。*");
 	say();
@@ -182,7 +182,7 @@ labelFunc0638_00D1:
 	say();
 	message("\t\t\t\t 船燒掉了。我們完了。");
 	say();
-	message("\t\t\t\t 嚎叫聲越來越近……");
+	message("\t\t\t\t 嚎叫聲越來越近…");
 	say();
 labelFunc0638_019B:
 	if (!(var0000 == 0x007A)) goto labelFunc0638_01B1;
@@ -190,7 +190,7 @@ labelFunc0638_019B:
 	say();
 	message("~~毛皮~按客戶銷售~以幣表示*");
 	say();
-	message("……夏季~~Glendor，3 張毛皮 - 90~~Miri，1 張毛皮 - 50~~Tranch，6 張毛皮 - 180~~Falco，3 張毛皮 - 90*秋季~~蒙利多城的 Cellia，4 張毛皮 - 88~~幼鹿城的 Voldin，2 張毛皮 - 90~~ *初冬~~月影城的 Tornaldo，3 張毛皮 - 1035~~幼鹿城的 Yelinda，4 張毛皮 - 138~~幼鹿城的 Jorvin，1 張毛皮 - 34 *嚴寒~~蒙利多城的 Marsten，4 張毛皮 - 88~~蒙利多城的 Brendann，2 張毛皮 - 69~~月影城的 Fedabiblio，1 張毛皮 - 34 *隆冬~~蒙利多城的 Cellia，2 張毛皮 - 63~~月影城的 Torrissio，4 張毛皮 - 140*初春~~蒙利多城的 Cellia，1 張毛皮 - 35 *暮春~~蒙利多城的 Karl，1 張毛皮 - 25~~幼鹿城的 Garth，2 張毛皮 - 79~~Marnok，1 張毛皮 - 35");
+	message("…夏季~~Glendor，3 張毛皮 - 90~~Miri，1 張毛皮 - 50~~Tranch，6 張毛皮 - 180~~Falco，3 張毛皮 - 90*秋季~~蒙利多城的 Cellia，4 張毛皮 - 88~~幼鹿城的 Voldin，2 張毛皮 - 90~~ *初冬~~月影城的 Tornaldo，3 張毛皮 - 1035~~幼鹿城的 Yelinda，4 張毛皮 - 138~~幼鹿城的 Jorvin，1 張毛皮 - 34 *嚴寒~~蒙利多城的 Marsten，4 張毛皮 - 88~~蒙利多城的 Brendann，2 張毛皮 - 69~~月影城的 Fedabiblio，1 張毛皮 - 34 *隆冬~~蒙利多城的 Cellia，2 張毛皮 - 63~~月影城的 Torrissio，4 張毛皮 - 140*初春~~蒙利多城的 Cellia，1 張毛皮 - 35 *暮春~~蒙利多城的 Karl，1 張毛皮 - 25~~幼鹿城的 Garth，2 張毛皮 - 79~~Marnok，1 張毛皮 - 35");
 	say();
 labelFunc0638_01B1:
 	if (!(var0000 == 0x007B)) goto labelFunc0638_020B;
@@ -366,7 +366,7 @@ labelFunc0638_02A9:
 	say();
 	message("若所有的姑娘都是磨坊的石頭，");
 	say();
-	message("我若是夾在其中的穀粒，我就傾洩……");
+	message("我若是夾在其中的穀粒，我就傾洩…");
 	say();
 	message(" ");
 	say();
@@ -433,7 +433,7 @@ labelFunc0638_03A1:
 	say();
 	message("血菌絲( Bloodspawn )的影響一直是我的追求。石心( Stoneheart )也在我的考量之中，你");
 	say();
-	message("說得對，真的很對……順帶一提，親愛的讀者，若你知道如何獲得");
+	message("說得對，真的很對…順帶一提，親愛的讀者，若你知道如何獲得");
 	say();
 	message("一些，請立即聯繫我。先謝謝你的好意了。");
 	say();
@@ -455,7 +455,7 @@ labelFunc0638_03A1:
 	say();
 	message("在山的深處，我找到了那種紅橙色的礦物。我採集了樣本，經過多次轉化，我將其製成了禁忌藥材。你確定，親愛的讀者，");
 	say();
-	message("你不再害怕死亡嗎？我想說清楚，這不像你以前見過的任何東西……許多法師的生命為此付出了代價。*");
+	message("你不再害怕死亡嗎？我想說清楚，這不像你以前見過的任何東西…許多法師的生命為此付出了代價。*");
 	say();
 	message("\t\t我是如何將它轉化成強大的魔法藥材的，你問道？");
 	say();

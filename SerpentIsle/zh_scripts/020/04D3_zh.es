@@ -43,10 +43,10 @@ labelFunc04D3_0048:
 	var0007 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc04D3_009D;
 	if (!(UI_get_npc_id(0xFF31) != 0x0000)) goto labelFunc04D3_006F;
-	UI_item_say(0xFF2D, "@現在不行……@");
+	UI_item_say(0xFF2D, "@現在不行…@");
 	abort;
 labelFunc04D3_006F:
-	UI_item_say(0xFE9C, "@不好意思……@");
+	UI_item_say(0xFE9C, "@不好意思…@");
 	0xFF2D->Func07D1();
 	Func097F(0xFF2D, (("@什麼事，我的" + var0003) + "？@"), 0x0002);
 	UI_set_schedule_type(0xFF2D, 0x0003);
@@ -87,10 +87,10 @@ labelFunc04D3_0147:
 	var000C = UI_execute_usecode_array(var0005, [(byte)0x23, (byte)0x55, 0x0363]);
 	abort;
 labelFunc04D3_0197:
-	message("「我們又見面了。你的使命正快速逼近……我能為你效勞嗎？」");
+	message("「我們又見面了。你的使命正快速逼近…我能為你效勞嗎？」");
 	say();
 	if (!Func08FC()) goto labelFunc04D3_01AF;
-	message("「噢！你的一位朋友遭遇了不幸。這不該發生的……如果你準備好再次見到你的朋友，只要開口，我就會把他們還給你。」");
+	message("「噢！你的一位朋友遭遇了不幸。這不該發生的…如果你準備好再次見到你的朋友，只要開口，我就會把他們還給你。」");
 	say();
 	UI_add_answer("復活");
 	goto labelFunc04D3_01E0;
@@ -100,14 +100,14 @@ labelFunc04D3_01AF:
 	message(var0003);
 	message("。」");
 	say();
-	message("「只要你願意，你可以和我們待在一起多久都行，但請記住……時光之沙( Sands of Time )不等人，即使是你也一樣。」");
+	message("「只要你願意，你可以和我們待在一起多久都行，但請記住…時光之沙( Sands of Time )不等人，即使是你也一樣。」");
 	say();
 	message("「當你在這裡時，你將會了解到僧侶的生活是由鐘聲所支配的。並非我們所有的成員都可以與你交談，新手們受到靜語誓言( vow of silence )的約束，以幫助他們更好地思考那些奧秘( mysteries )。」");
 	say();
 	UI_add_answer(["時光之沙", "鐘聲", "奧秘"]);
 labelFunc04D3_01E0:
 	if (!(gflags[0x0279] && (!gflags[0x022B]))) goto labelFunc04D3_0213;
-	message("「我明白了……你的任務取得了巨大的進展，我的");
+	message("「我明白了…你的任務取得了巨大的進展，我的");
 	message(var0003);
 	message("。但在你繼續之前，你必須尋求最後一位混沌之子( child of Chaos )的智慧。只有他掌握著尋找混沌大祭司( Chaos Hierophant )下落的關鍵。」");
 	say();
@@ -144,11 +144,11 @@ labelFunc04D3_0260:
 	case "毀滅" attend labelFunc04D3_0280:
 	UI_remove_answer("毀滅");
 	if (!gflags[0x0004]) goto labelFunc04D3_027C;
-	message("「如果你在任務中失敗，我們的世界將會終結……被現在正肆虐的風暴和地震撕裂。」");
+	message("「如果你在任務中失敗，我們的世界將會終結…被現在正肆虐的風暴和地震撕裂。」");
 	say();
 	goto labelFunc04D3_0280;
 labelFunc04D3_027C:
-	message("「如果你在任務中失敗，我們的世界將會終結……被即將肆虐的地震撕裂。」");
+	message("「如果你在任務中失敗，我們的世界將會終結…被即將肆虐的地震撕裂。」");
 	say();
 labelFunc04D3_0280:
 	case "鐘聲" attend labelFunc04D3_02A6:
@@ -221,7 +221,7 @@ labelFunc04D3_0392:
 labelFunc04D3_039A:
 	goto labelFunc04D3_03A1;
 labelFunc04D3_039D:
-	message("「她和我們待了一小段時間。我想她是在尋找關於北方冰人( Ice People )的資訊。但你應該去和 Miggim 談談……Gwenno 大部分時間都待在圖書館裡。」");
+	message("「她和我們待了一小段時間。我想她是在尋找關於北方冰人( Ice People )的資訊。但你應該去和 Miggim 談談…Gwenno 大部分時間都待在圖書館裡。」");
 	say();
 labelFunc04D3_03A1:
 	UI_add_answer("冰人");

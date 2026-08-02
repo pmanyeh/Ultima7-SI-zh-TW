@@ -43,7 +43,7 @@ labelFunc043E_007B:
 labelFunc043E_0085:
 	UI_add_answer(["藝術家", "告辭"]);
 	if (!(!gflags[0x0058])) goto labelFunc043E_00A4;
-	message("「也許我不該跟你說話……我希望你不是來搶劫我的！」");
+	message("「也許我不該跟你說話…我希望你不是來搶劫我的！」");
 	say();
 	UI_add_answer("搶劫");
 labelFunc043E_00A4:
@@ -162,7 +162,7 @@ labelFunc043E_022F:
 labelFunc043E_024D:
 	message("「還有一個名叫 Brunt 的戰士和巴特林一起旅行。他身材矮小，但肩膀卻寬得令人難以置信——」");
 	say();
-	message("「哦！要是他願意在我的工作室裡擺姿勢就好了！我可以創作出這樣的藝術……」");
+	message("「哦！要是他願意在我的工作室裡擺姿勢就好了！我可以創作出這樣的藝術…」");
 	say();
 	message("「Standarr 在比武場與他交手，並說他是一個與眾不同的對手！」");
 	say();
@@ -174,7 +174,7 @@ labelFunc043E_025D:
 	say();
 	message("「老實說，我們不敢丟棄它。它有著惡魔般的外觀，形狀像一條蛇，由一種前所未見的黑色岩石組成。」");
 	say();
-	var0003 = Func0992(0x0001, "@也許是黑石( blackrock )，聖者……@", 0x0000, false);
+	var0003 = Func0992(0x0001, "@也許是黑石( blackrock )，聖者…@", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc043E_0295;
 	UI_set_conversation_slot(0x0000);
 labelFunc043E_0295:
@@ -200,7 +200,7 @@ labelFunc043E_02C1:
 	var0003 = Func0992(0xFFFE, "@你能描述一下那條蛇的彎曲程度嗎？@", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc043E_0314;
 	UI_set_conversation_slot(0x0000);
-	message("「嗯……為什麼，頭部向右彎曲，身體非常蜿蜒。你為什麼問這個？」");
+	message("「嗯…為什麼，頭部向右彎曲，身體非常蜿蜒。你為什麼問這個？」");
 	say();
 	var0003 = Func0992(var0003, "@聖者，這個人被偷的古物與你在風暴( Storm )中遺失的那個\t完美吻合，只是它面向相反的方向！", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
@@ -237,7 +237,7 @@ labelFunc043E_0353:
 labelFunc043E_036E:
 	case "告辭" attend labelFunc043E_0391:
 	Func097F(0xFE9C, "@再見！@", 0x0000);
-	Func097F(0xFFC2, "@直到我們下次見面……@", 0x0002);
+	Func097F(0xFFC2, "@直到我們下次見面…@", 0x0002);
 	goto labelFunc043E_0394;
 labelFunc043E_0391:
 	goto labelFunc043E_00A4;
@@ -252,7 +252,7 @@ labelFunc043E_0395:
 	var0004 = UI_execute_usecode_array(0xFFC2, [(byte)0x23, (byte)0x59, var0004]);
 	var0005 = UI_get_random(0x0006);
 	if (!(var0005 == 0x0001)) goto labelFunc043E_040E;
-	Func097F(0xFFC2, "@轉向這邊……@", 0x0000);
+	Func097F(0xFFC2, "@轉向這邊…@", 0x0000);
 	Func097F(0xFFB9, "@快點！@", 0x0003);
 labelFunc043E_040E:
 	if (!(var0005 == 0x0002)) goto labelFunc043E_0430;
@@ -272,7 +272,7 @@ labelFunc043E_0452:
 labelFunc043E_04A5:
 	goto labelFunc043E_04D7;
 labelFunc043E_04A8:
-	var0007 = ["@一塊接一塊……@", "@藝術就是生活！@", "@我有個願景……@", "@碰碰運氣！@", "@耐心點！@", "@藝術並不容易……@"];
+	var0007 = ["@一塊接一塊…@", "@藝術就是生活！@", "@我有個願景…@", "@碰碰運氣！@", "@耐心點！@", "@藝術並不容易…@"];
 	Func097F(0xFFC2, var0007[UI_get_random(UI_get_array_size(var0007))], 0x0000);
 labelFunc043E_04D7:
 	if (!(event == 0x000E)) goto labelFunc043E_0507;
@@ -297,7 +297,7 @@ labelFunc043E_057A:
 	abort;
 labelFunc043E_057B:
 	if (!(event == 0x0002)) goto labelFunc043E_05B9;
-	var0007 = ["@好多了！@", "@逐漸成形了！@", "@嗯……@", "@啊哦……@", "@哎喲！@", "@一件傑作！@"];
+	var0007 = ["@好多了！@", "@逐漸成形了！@", "@嗯…@", "@啊哦…@", "@哎喲！@", "@一件傑作！@"];
 	Func097F(0xFFC2, var0007[UI_get_random(UI_get_array_size(var0007))], 0x0000);
 	UI_run_schedule(0xFFC2);
 labelFunc043E_05B9:

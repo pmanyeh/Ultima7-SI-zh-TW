@@ -85,7 +85,7 @@ labelFunc0858_016D:
 	say();
 labelFunc0858_018B:
 	if (!(var000A == 0x0006)) goto labelFunc0858_01A9;
-	message("「這瓶藥水當然可以喚醒任何人……或任何事物……不論睡得多沉。價格是 ");
+	message("「這瓶藥水當然可以喚醒任何人…或任何事物…不論睡得多沉。價格是 ");
 	message(var000B);
 	message(" 吉爾得幣。」");
 	say();

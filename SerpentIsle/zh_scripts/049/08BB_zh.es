@@ -36,7 +36,7 @@ labelFunc08BB_00C9:
 	var0004 = "@難道沒人願意幫我嗎？@";
 labelFunc08BB_00D9:
 	if (!(var0003 == 0x0003)) goto labelFunc08BB_00E9;
-	var0004 = "@求求你……救救我。@";
+	var0004 = "@求求你…救救我。@";
 labelFunc08BB_00E9:
 	if (!(var0003 == 0x0004)) goto labelFunc08BB_00F9;
 	var0004 = "@我求求你，拯救我吧。@";

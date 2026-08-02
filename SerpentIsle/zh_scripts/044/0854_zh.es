@@ -56,7 +56,7 @@ labelFunc0854_00CA:
 	if (!(var000C < 0x0002)) goto labelFunc0854_0228;
 	if (!(var0004 < (var0001 + ((var0000 - var0001) / 0x0004)))) goto labelFunc0854_0127;
 	if (!(var000F == 0x0001)) goto labelFunc0854_0102;
-	message("「如果我這樣降價， Rocco 會把我當成廢鐵賣了。請千萬不要告訴他……」");
+	message("「如果我這樣降價， Rocco 會把我當成廢鐵賣了。請千萬不要告訴他…」");
 	say();
 labelFunc0854_0102:
 	if (!(var000F == 0x0002)) goto labelFunc0854_0116;
@@ -81,18 +81,18 @@ labelFunc0854_014B:
 	say();
 labelFunc0854_0159:
 	if (!(var000F == 0x0003)) goto labelFunc0854_0167;
-	message("「也許這是人類的特性……這麼擅長討價還價。」");
+	message("「也許這是人類的特性…這麼擅長討價還價。」");
 	say();
 labelFunc0854_0167:
 	goto labelFunc0854_01DD;
 labelFunc0854_016A:
 	if (!(var0004 < (var0001 + ((var0000 - var0001) / 0x0002)))) goto labelFunc0854_01AD;
 	if (!(var000F == 0x0001)) goto labelFunc0854_018E;
-	message("「連 Rocco 也會認為這筆交易很公平……」");
+	message("「連 Rocco 也會認為這筆交易很公平…」");
 	say();
 labelFunc0854_018E:
 	if (!(var000F == 0x0002)) goto labelFunc0854_019C;
-	message("「我們這樣是賺不到利潤的……」");
+	message("「我們這樣是賺不到利潤的…」");
 	say();
 labelFunc0854_019C:
 	if (!(var000F == 0x0003)) goto labelFunc0854_01AA;
@@ -112,7 +112,7 @@ labelFunc0854_01C1:
 	say();
 labelFunc0854_01CF:
 	if (!(var000F == 0x0003)) goto labelFunc0854_01DD;
-	message("「如果世道沒這麼差，我們的價格會便宜得多……」");
+	message("「如果世道沒這麼差，我們的價格會便宜得多…」");
 	say();
 labelFunc0854_01DD:
 	message("「你同意 ");
@@ -134,7 +134,7 @@ labelFunc0854_0208:
 	say();
 labelFunc0854_0216:
 	if (!(var000F == 0x0003)) goto labelFunc0854_0224;
-	message("「快滾……免得我去叫 Rocco 來打破你那榆木腦袋！」");
+	message("「快滾…免得我去叫 Rocco 來打破你那榆木腦袋！」");
 	say();
 labelFunc0854_0224:
 	return 0x0000;
@@ -151,7 +151,7 @@ labelFunc0854_0250:
 	var0008 = 0x0000;
 	goto labelFunc0854_0263;
 labelFunc0854_0259:
-	message("「好吧…… ");
+	message("「好吧… ");
 	message(var0004);
 	message(" 吉爾得幣是我最後的報價。」");
 	say();
@@ -179,7 +179,7 @@ labelFunc0854_0298:
 labelFunc0854_02AC:
 	if (!(var000C == 0x0003)) goto labelFunc0854_02F2;
 	if (!(var000F == 0x0001)) goto labelFunc0854_02CA;
-	message("「我們的存貨這麼少……也許 ");
+	message("「我們的存貨這麼少…也許 ");
 	message(var0004);
 	message(" 吉爾得幣？」");
 	say();
@@ -187,7 +187,7 @@ labelFunc0854_02CA:
 	if (!(var000F == 0x0002)) goto labelFunc0854_02DE;
 	message("「");
 	message(var0004);
-	message(" ？不過，我本該收更多才對……」");
+	message(" ？不過，我本該收更多才對…」");
 	say();
 labelFunc0854_02DE:
 	if (!(var000F == 0x0003)) goto labelFunc0854_02F2;

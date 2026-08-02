@@ -125,13 +125,13 @@ labelFunc06DC_03AD:
 	if (!var0014) goto labelFunc06DC_0418;
 	var0019 = UI_die_roll(0x0001, 0x0006);
 	if (!(var0019 == 0x0001)) goto labelFunc06DC_03D6;
-	Func097F(0xFE9C, "@那毫無作用……@", 0x0002);
+	Func097F(0xFE9C, "@那毫無作用…@", 0x0002);
 labelFunc06DC_03D6:
 	if (!(var0019 == 0x0002)) goto labelFunc06DC_03EC;
-	Func097F(0xFE9C, "@不是這個……@", 0x0001);
+	Func097F(0xFE9C, "@不是這個…@", 0x0001);
 labelFunc06DC_03EC:
 	if (!(var0019 == 0x0003)) goto labelFunc06DC_0402;
-	Func097F(0xFE9C, "@放錯物品了……@", 0x0001);
+	Func097F(0xFE9C, "@放錯物品了…@", 0x0001);
 labelFunc06DC_0402:
 	if (!(var0019 == 0x0004)) goto labelFunc06DC_0418;
 	Func097F(0xFE9C, "@也許是別的東西？@", 0x0001);

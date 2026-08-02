@@ -46,7 +46,7 @@ labelFunc049B_00DA:
 	UI_set_item_flag(0xFF65, 0x001C);
 	UI_clear_item_say(0xFF65);
 	if (!var0002) goto labelFunc049B_017F;
-	message("「我的名字是 Beryl。我需要你的幫助，但我現在不能說話……」");
+	message("「我的名字是 Beryl。我需要你的幫助，但我現在不能說話…」");
 	say();
 	UI_show_npc_face1(0xFF64, 0x0000);
 	message("「你在和那個陌生人說什麼，Beryl？」");
@@ -54,9 +54,9 @@ labelFunc049B_00DA:
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	if (!gflags[0x02BD]) goto labelFunc049B_0144;
-	message("「我會像以前一樣去見你。現在，走吧……」");
+	message("「我會像以前一樣去見你。現在，走吧…」");
 	say();
-	Func097F(0xFF65, "@沒什麼，Draygan……@", 0x0000);
+	Func097F(0xFF65, "@沒什麼，Draygan…@", 0x0000);
 	gflags[0x02BE] = true;
 	goto labelFunc049B_0154;
 labelFunc049B_0144:
@@ -135,9 +135,9 @@ labelFunc049B_02CF:
 	abort;
 	goto labelFunc049B_032D;
 labelFunc049B_031C:
-	message("「不要給我虛假的希望，陌生人！我沒看到任何箭……」");
+	message("「不要給我虛假的希望，陌生人！我沒看到任何箭…」");
 	say();
-	Func097F(0xFF65, "@把箭帶來……@", 0x0000);
+	Func097F(0xFF65, "@把箭帶來…@", 0x0000);
 	abort;
 labelFunc049B_032D:
 	goto labelFunc049B_0341;
@@ -171,13 +171,13 @@ labelFunc049B_0391:
 labelFunc049B_03C2:
 	message("「不要給我虛假的希望，陌生人！我沒看到任何王者救星。」");
 	say();
-	message("「我一天比一天更害怕 Draygan……」");
+	message("「我一天比一天更害怕 Draygan…」");
 	say();
 	UI_add_answer(["害怕", "Draygan", "王者救星"]);
 labelFunc049B_03DA:
 	goto labelFunc049B_03F1;
 labelFunc049B_03DD:
-	message("「那我感到絕望！因為沒有這種草藥，就無法阻止 Draygan。我好害怕……」");
+	message("「那我感到絕望！因為沒有這種草藥，就無法阻止 Draygan。我好害怕…」");
 	say();
 	UI_add_answer(["害怕", "Draygan", "王者救星"]);
 labelFunc049B_03F1:
@@ -226,7 +226,7 @@ labelFunc049B_0483:
 labelFunc049B_04A1:
 	case "逃跑" attend labelFunc049B_04B8:
 	UI_remove_answer("逃跑");
-	message("「是的，我無法和謀殺我丈夫的人待在一起！我深入森林……但是 Draygan 的走狗找到了我，把我帶了回來。」");
+	message("「是的，我無法和謀殺我丈夫的人待在一起！我深入森林…但是 Draygan 的走狗找到了我，把我帶了回來。」");
 	say();
 	message("「現在他們嚴密地監視著我——但還不夠嚴密！」");
 	say();
@@ -239,7 +239,7 @@ labelFunc049B_04B8:
 labelFunc049B_04D2:
 	case "後果" attend labelFunc049B_04E5:
 	UI_remove_answer("後果");
-	message("「他們會打人，還有其他的事情……我寧願不談這個。」");
+	message("「他們會打人，還有其他的事情…我寧願不談這個。」");
 	say();
 labelFunc049B_04E5:
 	case "狼群" attend labelFunc049B_04F8:

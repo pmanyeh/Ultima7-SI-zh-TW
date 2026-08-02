@@ -16,11 +16,11 @@ void Func0718 object#(0x718) ()
 
 	if (!(event == 0x0002)) goto labelFunc0718_01D4;
 	UI_show_npc_face0(0xFF68, 0x0000);
-	message("「我完蛋了——我走出了神殿，現在歲月的重擔壓倒了我……」");
+	message("「我完蛋了——我走出了神殿，現在歲月的重擔壓倒了我…」");
 	say();
-	message("「從我的屍體上拿走混沌之石( Chaos Stone )……它將是你召喚陰魂所需要的信物……」");
+	message("「從我的屍體上拿走混沌之石( Chaos Stone )…它將是你召喚陰魂所需要的信物…」");
 	say();
-	message("「我的遺體躺在熱忱神殿( Temple of Enthusiasm )的花園裡，在東北方，靠近巨蛇之門( Gate of the Serpent )……」");
+	message("「我的遺體躺在熱忱神殿( Temple of Enthusiasm )的花園裡，在東北方，靠近巨蛇之門( Gate of the Serpent )…」");
 	say();
 	message("「現在我要進入虛空了！」");
 	say();

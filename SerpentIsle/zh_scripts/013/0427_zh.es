@@ -58,16 +58,16 @@ labelFunc0427_00D1:
 	if (!(var0003 == false)) goto labelFunc0427_0108;
 	if (!(gflags[0x003E] == true)) goto labelFunc0427_00F7;
 	if (!(var0001 == true)) goto labelFunc0427_00F0;
-	message("「啊，歡迎來到沉睡公牛( Sleeping Bull )，高貴的女士！我是 Byrin ，一個流浪藝人……或者你也可以叫我吟遊詩人。我知道幾個能打動你勇敢之心的故事或曲子。」");
+	message("「啊，歡迎來到沉睡公牛( Sleeping Bull )，高貴的女士！我是 Byrin ，一個流浪藝人…或者你也可以叫我吟遊詩人。我知道幾個能打動你勇敢之心的故事或曲子。」");
 	say();
 	goto labelFunc0427_00F4;
 labelFunc0427_00F0:
-	message("「歡迎來到沉睡公牛，勇敢的長矛兵！我是 Byrin ，一個流浪藝人……或者你也可以叫我吟遊詩人。我知道許多關於勇氣與冒險的故事和曲子。」");
+	message("「歡迎來到沉睡公牛，勇敢的長矛兵！我是 Byrin ，一個流浪藝人…或者你也可以叫我吟遊詩人。我知道許多關於勇氣與冒險的故事和曲子。」");
 	say();
 labelFunc0427_00F4:
 	goto labelFunc0427_00FB;
 labelFunc0427_00F7:
-	message("「歡迎來到沉睡公牛，旅行者同伴！我是 Byrin ，一個流浪藝人……或者你也可以叫我吟遊詩人。我知道許多能幫你打發漫漫長夜的故事和曲子。」");
+	message("「歡迎來到沉睡公牛，旅行者同伴！我是 Byrin ，一個流浪藝人…或者你也可以叫我吟遊詩人。我知道許多能幫你打發漫漫長夜的故事和曲子。」");
 	say();
 labelFunc0427_00FB:
 	UI_set_item_flag(0xFFD9, 0x001C);
@@ -75,7 +75,7 @@ labelFunc0427_00FB:
 labelFunc0427_0108:
 	message("「");
 	message(var0002);
-	message("！真高興能在這裡見到你……我就知道你離不開我的故事與曲子！」");
+	message("！真高興能在這裡見到你…我就知道你離不開我的故事與曲子！」");
 	say();
 labelFunc0427_0112:
 	UI_add_answer(["故事", "曲子", "告辭"]);
@@ -88,19 +88,19 @@ labelFunc0427_0122:
 	UI_add_answer("兩種方法");
 labelFunc0427_013F:
 	case "兩種方法" attend labelFunc0427_0159:
-	message("「進入這個領域的第一種方法，是在你安全舒適的床上……在你的夜間睡眠中。*第二種進入這裡的方法要危險得多……那便是成為 Gorlab 沼澤( Gorlab Swamp )中那些魔法的獵物。」");
+	message("「進入這個領域的第一種方法，是在你安全舒適的床上…在你的夜間睡眠中。*第二種進入這裡的方法要危險得多…那便是成為 Gorlab 沼澤( Gorlab Swamp )中那些魔法的獵物。」");
 	say();
 	UI_remove_answer("兩種方法");
 	UI_add_answer("Gorlab 沼澤");
 labelFunc0427_0159:
 	case "Gorlab 沼澤" attend labelFunc0427_0179:
-	message("「很久以前——甚至在蛇神教徒將這片土地作為家園之前——一位名叫 Rabindrinath 的巫師發誓要摧毀和平的 Gorlab 鎮。但鎮上的治療師 Siranush 反對他，於是那邪惡的法術出現了偏差。*鎮上的居民並沒有被摧毀，而是被困在夢境的領域中……還有那個瘋狂的巫師……以及任何敢於踏入 Gorlab 範圍的人。」");
+	message("「很久以前——甚至在蛇神教徒將這片土地作為家園之前——一位名叫 Rabindrinath 的巫師發誓要摧毀和平的 Gorlab 鎮。但鎮上的治療師 Siranush 反對他，於是那邪惡的法術出現了偏差。*鎮上的居民並沒有被摧毀，而是被困在夢境的領域中…還有那個瘋狂的巫師…以及任何敢於踏入 Gorlab 範圍的人。」");
 	say();
 	UI_remove_answer("Gorlab 沼澤");
 	UI_add_answer(["Rabindrinath", "Siranush"]);
 labelFunc0427_0179:
 	case "Rabindrinath" attend labelFunc0427_0193:
-	message("「隨著時間的推移， Rabindrinath 與 Siranush 展開了激烈的鬥爭。他的每一次攻擊都被擊退了……這讓他非常不滿。」");
+	message("「隨著時間的推移， Rabindrinath 與 Siranush 展開了激烈的鬥爭。他的每一次攻擊都被擊退了…這讓他非常不滿。」");
 	say();
 	UI_remove_answer("Rabindrinath");
 	UI_add_answer("不滿");
@@ -123,12 +123,12 @@ labelFunc0427_01C0:
 	UI_add_answer("死亡");
 labelFunc0427_01DA:
 	case "死亡" attend labelFunc0427_01ED:
-	message("「我所說的死，並不是指你必須停止生命。我的意思是你在這裡感知到的生命必須結束……*你在這裡的死亡會讓你回到你的身體裡。只要 Siranush 獲勝，且你的身體還活著，你就能回到清醒的世界。*但如果 Siranush 倒下，或你的身體死去……你將被永遠困在這裡。」");
+	message("「我所說的死，並不是指你必須停止生命。我的意思是你在這裡感知到的生命必須結束…*你在這裡的死亡會讓你回到你的身體裡。只要 Siranush 獲勝，且你的身體還活著，你就能回到清醒的世界。*但如果 Siranush 倒下，或你的身體死去…你將被永遠困在這裡。」");
 	say();
 	UI_remove_answer("死亡");
 labelFunc0427_01ED:
 	case "歌曲" attend labelFunc0427_031B:
-	message("「我知道很多歌曲……」~「你想聽一首我已經唱過的嗎？」~「還是你想聽一首新歌？」");
+	message("「我知道很多歌曲…」~「你想聽一首我已經唱過的嗎？」~「還是你想聽一首新歌？」");
 	say();
 	var0008 = [];
 	if (!(Func0957(["老歌", "新歌"]) == 0x0001)) goto labelFunc0427_0281;
@@ -171,7 +171,7 @@ labelFunc0427_02DB:
 	var0008 = (var0008 & 0x0006);
 labelFunc0427_02ED:
 	if (!(var0008 == [])) goto labelFunc0427_02FE;
-	message("「很抱歉……你已經聽過我所有的歌了。」");
+	message("「很抱歉…你已經聽過我所有的歌了。」");
 	say();
 	goto labelFunc0427_031B;
 labelFunc0427_02FE:
@@ -200,7 +200,7 @@ labelFunc0427_0346:
 	message("「還有一首關於北方野蠻人的歌。」~「你想聽聽看嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0427_037B;
-	message("「那好吧……」");
+	message("「那好吧…」");
 	say();
 	Func09B0(0x0003);
 	goto labelFunc0427_037F;
@@ -215,7 +215,7 @@ labelFunc0427_0386:
 	say();
 	message("「由於只有土之巨蛇能同時承受其他兩條巨蛇的火與冰，因此牠擁有了最大的力量。火之巨蛇與冰之巨蛇彼此強烈對立，但受到土之巨蛇的制衡。」");
 	say();
-	message("「後來土之巨蛇失去了力量。火之巨蛇和冰之巨蛇為了爭奪霸權而開戰。當戰鬥結束時，哪條巨蛇獲勝已不再重要……因為土地被摧毀了，所有的崇拜者都死了。」");
+	message("「後來土之巨蛇失去了力量。火之巨蛇和冰之巨蛇為了爭奪霸權而開戰。當戰鬥結束時，哪條巨蛇獲勝已不再重要…因為土地被摧毀了，所有的崇拜者都死了。」");
 	say();
 	UI_remove_answer("失落的文化");
 labelFunc0427_03A1:
@@ -224,14 +224,14 @@ labelFunc0427_03A1:
 	say();
 	message("「在一座宏偉的城堡裡，一位女士等待著她那背信棄義、曾立下海誓山盟卻一去不返的情人。在另一座城堡裡，一位父親兼統治者，因失去女兒和昔日朋友而發瘋，帶著他的人民超越了時間的煩憂。」");
 	say();
-	message("「所有被困的靈魂都在等待那個人的歸來，他的離去永遠地改變了他曾發誓要保護的土地。所有人都在等待失落的國王歸來……以及復仇！」");
+	message("「所有被困的靈魂都在等待那個人的歸來，他的離去永遠地改變了他曾發誓要保護的土地。所有人都在等待失落的國王歸來…以及復仇！」");
 	say();
 	if (!(var0007 == true)) goto labelFunc0427_03DA;
 	UI_show_npc_face1(0xFFFE, 0x0000);
-	message("「等等！你在說什麼？這聽起來……但是不！這不可能！*你有沒有更多關於這位@失落的國王@的事？你知道他的名字嗎？」");
+	message("「等等！你在說什麼？這聽起來…但是不！這不可能！*你有沒有更多關於這位@失落的國王@的事？你知道他的名字嗎？」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("「大人，事實上很少有人敢進入那座城堡。他們害怕住在裡面的女主人的憤怒……*也從未有人從另一座城堡回來過。但人們口中那位失落的國王的名字是…… Shamino 領主。」");
+	message("「大人，事實上很少有人敢進入那座城堡。他們害怕住在裡面的女主人的憤怒…*也從未有人從另一座城堡回來過。但人們口中那位失落的國王的名字是… Shamino 領主。」");
 	say();
 	UI_remove_npc_face1();
 labelFunc0427_03DA:
@@ -253,7 +253,7 @@ labelFunc0427_041C:
 	message("「有一首關於那位女士的歌。」~「你想聽聽看嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0427_043D;
-	message("「這確實是一首悲傷的歌謠……」");
+	message("「這確實是一首悲傷的歌謠…」");
 	say();
 	Func09B0(0x0001);
 	goto labelFunc0427_0441;
@@ -265,7 +265,7 @@ labelFunc0427_0441:
 	message("「也有一首關於另一座城堡的歌。」~「你想聽聽看嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0427_0462;
-	message("「做好準備……」");
+	message("「做好準備…」");
 	say();
 	Func09B0(0x0006);
 	goto labelFunc0427_0466;
@@ -278,18 +278,18 @@ labelFunc0427_046D:
 	case "曲子" attend labelFunc0427_04C5:
 	if (!(gflags[0x003E] == true)) goto labelFunc0427_04AD;
 	if (!(var0001 == true)) goto labelFunc0427_0499;
-	message("「為了你，勇敢的女士，我願意唱關於夢境的歌，或是悲劇。當然，雖然我唱歌是為了娛樂他人，但我希望能得到一些小小的讚賞……如果可能的話。唱歌可是件口渴的差事。」");
+	message("「為了你，勇敢的女士，我願意唱關於夢境的歌，或是悲劇。當然，雖然我唱歌是為了娛樂他人，但我希望能得到一些小小的讚賞…如果可能的話。唱歌可是件口渴的差事。」");
 	say();
 	UI_add_answer(["夢境", "悲劇"]);
 	goto labelFunc0427_04AA;
 labelFunc0427_0499:
-	message("「為了你，高貴的先生，我願意唱一首撕心裂肺的歌謠，或是失傳已久的傳說。當然，雖然我唱歌是為了娛樂他人，但我希望能得到一些小小的讚賞……如果可能的話。唱歌可是件口渴的差事。」");
+	message("「為了你，高貴的先生，我願意唱一首撕心裂肺的歌謠，或是失傳已久的傳說。當然，雖然我唱歌是為了娛樂他人，但我希望能得到一些小小的讚賞…如果可能的話。唱歌可是件口渴的差事。」");
 	say();
 	UI_add_answer(["歌謠", "傳說"]);
 labelFunc0427_04AA:
 	goto labelFunc0427_04BE;
 labelFunc0427_04AD:
-	message("「我感覺你喜歡冒險。為了你，我願意唱關於奇特生物和奇異之地的歌。當然，雖然我唱歌是為了娛樂他人，但我希望能得到一些小小的讚賞……如果可能的話。唱歌可是件口渴的差事。」");
+	message("「我感覺你喜歡冒險。為了你，我願意唱關於奇特生物和奇異之地的歌。當然，雖然我唱歌是為了娛樂他人，但我希望能得到一些小小的讚賞…如果可能的話。唱歌可是件口渴的差事。」");
 	say();
 	UI_add_answer(["奇特生物", "奇異之地"]);
 labelFunc0427_04BE:
@@ -300,18 +300,18 @@ labelFunc0427_04C5:
 	message("「我相信你已經聽過這首了。」~「你想再聽一次嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0427_04EE;
-	message("「我的榮幸……」");
+	message("「我的榮幸…」");
 	say();
 	Func09B0(0x0005);
 	goto labelFunc0427_04F9;
 labelFunc0427_04EE:
-	message("「也許我可以為你找另一首歌……」");
+	message("「也許我可以為你找另一首歌…」");
 	say();
 	UI_add_answer("歌曲");
 labelFunc0427_04F9:
 	goto labelFunc0427_0506;
 labelFunc0427_04FC:
-	message("「希望你會喜歡……」");
+	message("「希望你會喜歡…」");
 	say();
 	Func09B0(0x0005);
 labelFunc0427_0506:
@@ -319,21 +319,21 @@ labelFunc0427_0506:
 labelFunc0427_050D:
 	case "悲劇" attend labelFunc0427_0555:
 	if (!(gflags[0x01D8] == true)) goto labelFunc0427_0544;
-	message("「我似乎記得以前為你唱過這首……」~「你想再聽一次嗎？」");
+	message("「我似乎記得以前為你唱過這首…」~「你想再聽一次嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0427_0536;
-	message("「那就再來一次……」");
+	message("「那就再來一次…」");
 	say();
 	Func09B0(0x0006);
 	goto labelFunc0427_0541;
 labelFunc0427_0536:
-	message("「也許我可以為你找另一首歌……」");
+	message("「也許我可以為你找另一首歌…」");
 	say();
 	UI_add_answer("歌曲");
 labelFunc0427_0541:
 	goto labelFunc0427_054E;
 labelFunc0427_0544:
-	message("「放輕鬆，安心聽吧……」");
+	message("「放輕鬆，安心聽吧…」");
 	say();
 	Func09B0(0x0006);
 labelFunc0427_054E:
@@ -341,21 +341,21 @@ labelFunc0427_054E:
 labelFunc0427_0555:
 	case "歌謠" attend labelFunc0427_059D:
 	if (!(gflags[0x01D3] == true)) goto labelFunc0427_058C;
-	message("「我確信你已經……」~「你想再聽一次嗎？」");
+	message("「我確信你已經…」~「你想再聽一次嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0427_057E;
-	message("「如你所願……」");
+	message("「如你所願…」");
 	say();
 	Func09B0(0x0001);
 	goto labelFunc0427_0589;
 labelFunc0427_057E:
-	message("「也許我可以為你找另一首歌……」");
+	message("「也許我可以為你找另一首歌…」");
 	say();
 	UI_add_answer("歌曲");
 labelFunc0427_0589:
 	goto labelFunc0427_0596;
 labelFunc0427_058C:
-	message("「我想我還記得……」");
+	message("「我想我還記得…」");
 	say();
 	Func09B0(0x0001);
 labelFunc0427_0596:
@@ -363,21 +363,21 @@ labelFunc0427_0596:
 labelFunc0427_059D:
 	case "傳說" attend labelFunc0427_05E5:
 	if (!(gflags[0x01D4] == true)) goto labelFunc0427_05D4;
-	message("「我怕你已經知道這首了……」~「你想再聽一次嗎？」");
+	message("「我怕你已經知道這首了…」~「你想再聽一次嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0427_05C6;
-	message("「如果你想的話，可以跟著唱……」");
+	message("「如果你想的話，可以跟著唱…」");
 	say();
 	Func09B0(0x0002);
 	goto labelFunc0427_05D1;
 labelFunc0427_05C6:
-	message("「也許我可以為你找另一首歌……」");
+	message("「也許我可以為你找另一首歌…」");
 	say();
 	UI_add_answer("歌曲");
 labelFunc0427_05D1:
 	goto labelFunc0427_05DE;
 labelFunc0427_05D4:
-	message("「我想這個音調是對的……」");
+	message("「我想這個音調是對的…」");
 	say();
 	Func09B0(0x0002);
 labelFunc0427_05DE:
@@ -385,21 +385,21 @@ labelFunc0427_05DE:
 labelFunc0427_05E5:
 	case "奇特生物" attend labelFunc0427_062D:
 	if (!(gflags[0x01D5] == true)) goto labelFunc0427_061C;
-	message("「我以前為你唱過這首……」~「你想再聽一次嗎？」");
+	message("「我以前為你唱過這首…」~「你想再聽一次嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0427_060E;
-	message("「很好……」");
+	message("「很好…」");
 	say();
 	Func09B0(0x0003);
 	goto labelFunc0427_0619;
 labelFunc0427_060E:
-	message("「也許我可以為你找另一首歌……」");
+	message("「也許我可以為你找另一首歌…」");
 	say();
 	UI_add_answer("歌曲");
 labelFunc0427_0619:
 	goto labelFunc0427_0626;
 labelFunc0427_061C:
-	message("「你會喜歡這首的節奏的……」");
+	message("「你會喜歡這首的節奏的…」");
 	say();
 	Func09B0(0x0003);
 labelFunc0427_0626:
@@ -407,21 +407,21 @@ labelFunc0427_0626:
 labelFunc0427_062D:
 	case "奇異之地" attend labelFunc0427_0675:
 	if (!(gflags[0x01D6] == true)) goto labelFunc0427_0664;
-	message("「你知道這首的……」~「你想再聽一次嗎？」");
+	message("「你知道這首的…」~「你想再聽一次嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0427_0656;
-	message("「很高興你喜歡它……」");
+	message("「很高興你喜歡它…」");
 	say();
 	Func09B0(0x0004);
 	goto labelFunc0427_0661;
 labelFunc0427_0656:
-	message("「也許我可以為你找另一首歌……」");
+	message("「也許我可以為你找另一首歌…」");
 	say();
 	UI_add_answer("歌曲");
 labelFunc0427_0661:
 	goto labelFunc0427_066E;
 labelFunc0427_0664:
-	message("「仔細聽……」");
+	message("「仔細聽…」");
 	say();
 	Func09B0(0x0004);
 labelFunc0427_066E:

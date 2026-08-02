@@ -65,7 +65,7 @@ labelFunc0403_0055:
 	return;
 labelFunc0403_005A:
 	if (!(event == 0x0001)) goto labelFunc0403_01D4;
-	Func097F(0xFE9C, "@親愛的朋友……@", 0x0000);
+	Func097F(0xFE9C, "@親愛的朋友…@", 0x0000);
 	0xFFFD->Func07D1();
 	if (!(!UI_get_item_flag(0xFFFD, 0x001E))) goto labelFunc0403_0172;
 	if (!(gflags[0x0006] && (!gflags[0x0078]))) goto labelFunc0403_0159;
@@ -113,7 +113,7 @@ labelFunc0403_0192:
 	Func097F(0xFFFD, "@生命是一場鬧劇！@", 0x0002);
 labelFunc0403_01A8:
 	if (!(var000C == 0x0003)) goto labelFunc0403_01BE;
-	Func097F(0xFFFD, "@唱起愛的輓歌……@", 0x0002);
+	Func097F(0xFFFD, "@唱起愛的輓歌…@", 0x0002);
 labelFunc0403_01BE:
 	if (!(var000C == 0x0004)) goto labelFunc0403_01D4;
 	Func097F(0xFFFD, "@徒勞無功就是答案！@", 0x0002);
@@ -126,9 +126,9 @@ labelFunc0403_01D4:
 	UI_show_npc_face0(0xFFFD, 0x0000);
 	message("「真是一段可怕的航程，");
 	message(var0002);
-	message("。在我們航行經過巨蛇之柱後，我發誓我們一定是在飛……」");
+	message("。在我們航行經過巨蛇之柱後，我發誓我們一定是在飛…」");
 	say();
-	message("「然而我們現在卻在船上。不知道我有沒有弄丟什麼……」");
+	message("「然而我們現在卻在船上。不知道我有沒有弄丟什麼…」");
 	say();
 	UI_show_npc_face1(0xFFFF, 0x0000);
 	message("「我們可能是在船上，但這艘船卻在陸地上！我想你是對的，Iolo 。我們確實飛起來了！」");
@@ -137,7 +137,7 @@ labelFunc0403_01D4:
 	UI_set_conversation_slot(0x0000);
 	message("「冷呀！你注意到空氣中的寒意了嗎？這裡比家裡冷多了。」");
 	say();
-	message("「希望 Gwenno 帶了足夠的保暖衣物……」");
+	message("「希望 Gwenno 帶了足夠的保暖衣物…」");
 	say();
 	UI_show_npc_face1(0xFFFE, 0x0000);
 	message("「別這麼擔心，老朋友。我們很快就會找到你妻子的。」");
@@ -155,7 +155,7 @@ labelFunc0403_01D4:
 	UI_remove_npc_face0();
 	Func097F(0xFFFE, "@我們在哪裡？@", 0x0005);
 	Func097F(0xFFFF, "@我們去找巴特林那傢伙吧！@", 0x000F);
-	Func097F(0xFFFD, "@別忘了 Gwenno ……@", 0x0023);
+	Func097F(0xFFFD, "@別忘了 Gwenno …@", 0x0023);
 	UI_add_to_party(0xFFFD);
 	UI_add_to_party(0xFFFF);
 	UI_add_to_party(0xFFFE);
@@ -216,7 +216,7 @@ labelFunc0403_038A:
 	message(var0001);
 	message("！」");
 	say();
-	message("「我本來擔心我同時失去了你和我摯愛的妻子，但你從深淵中倖存了下來，就如同 Dupre 向我保證的那樣……」");
+	message("「我本來擔心我同時失去了你和我摯愛的妻子，但你從深淵中倖存了下來，就如同 Dupre 向我保證的那樣…」");
 	say();
 	if (!Func0942(0xFFEA)) goto labelFunc0403_03CB;
 	UI_show_npc_face1(0xFFEA, 0x0000);
@@ -310,7 +310,7 @@ labelFunc0403_05C3:
 	if (!Func0942(0xFFB5)) goto labelFunc0403_060A;
 	message("「但是，");
 	message(var0001);
-	message("，試煉守護者就站在這裡。如果你想作弊，至少也該偷偷地做……」");
+	message("，試煉守護者就站在這裡。如果你想作弊，至少也該偷偷地做…」");
 	say();
 	UI_show_npc_face1(0xFFB5, 0x0000);
 	message("「不准作弊，陌生人！」");
@@ -322,7 +322,7 @@ labelFunc0403_060A:
 	message("「我不能加入你，朋友。即使你想在試煉中作弊，我也不能幫你。我是你真正的朋友。」");
 	say();
 labelFunc0403_060E:
-	Func097F(0xFFFD, "@抱歉……@", 0x0000);
+	Func097F(0xFFFD, "@抱歉…@", 0x0000);
 	abort;
 labelFunc0403_061B:
 	UI_remove_answer("加入");
@@ -340,7 +340,7 @@ labelFunc0403_0650:
 	message(var0001);
 	message("。不過，我是個老人，而且我看得出你身邊已經有許多同伴了。」");
 	say();
-	message("「我想或許我應該留在原地……」");
+	message("「我想或許我應該留在原地…」");
 	say();
 labelFunc0403_065E:
 	case "離隊" attend labelFunc0403_07BB:
@@ -483,7 +483,7 @@ labelFunc0403_094C:
 	var0015 = (var0015 & 0x0006);
 labelFunc0403_095E:
 	if (!(var0015 == [])) goto labelFunc0403_096F;
-	message("「我很抱歉……你已經聽過我所有的歌了。」");
+	message("「我很抱歉…你已經聽過我所有的歌了。」");
 	say();
 	goto labelFunc0403_098C;
 labelFunc0403_096F:
@@ -495,7 +495,7 @@ labelFunc0403_098C:
 labelFunc0403_098F:
 	message("「我現在想不出要唱什麼，");
 	message(var0001);
-	message("。或許你晚點再問我……」");
+	message("。或許你晚點再問我…」");
 	say();
 labelFunc0403_0999:
 	case "Shamino 的下落" attend labelFunc0403_09C1:
@@ -503,7 +503,7 @@ labelFunc0403_0999:
 	if (!gflags[0x012B]) goto labelFunc0403_09B9;
 	message("「你無疑已經聽說了這個消息？ Shamino 又活過來了！僧侶們把他帶到了我們這裡。」");
 	say();
-	message("「我想你離開對他的打擊比他願意表現出來的還要大。或者是他們告訴了他什麼……」");
+	message("「我想你離開對他的打擊比他願意表現出來的還要大。或者是他們告訴了他什麼…」");
 	say();
 	goto labelFunc0403_09BD;
 labelFunc0403_09B9:
@@ -520,7 +520,7 @@ labelFunc0403_09C1:
 labelFunc0403_09D4:
 	case "Boydon 的下落" attend labelFunc0403_09E7:
 	UI_remove_answer("Boydon 的下落");
-	message("「嗯……這個嘛，我不太確定。或許 Dupre 或 Shamino 會知道。」");
+	message("「嗯…這個嘛，我不太確定。或許 Dupre 或 Shamino 會知道。」");
 	say();
 labelFunc0403_09E7:
 	case "告辭" attend labelFunc0403_0A0E:
@@ -538,7 +538,7 @@ labelFunc0403_0A12:
 	var0019 = UI_get_item_quality(item);
 	if (!(var0018 == 0x001F)) goto labelFunc0403_0AA9;
 	UI_show_npc_face0(0xFFFD, 0x0000);
-	message("「聖者！你為什麼在我的夢裡？我在找 Gwenno ……」");
+	message("「聖者！你為什麼在我的夢裡？我在找 Gwenno …」");
 	say();
 	message("「喔。或許我闖入了你的夢境。」");
 	say();
@@ -572,7 +572,7 @@ labelFunc0403_0AFB:
 	if (!(event == 0x0000)) goto labelFunc0403_0B4B;
 	if (!(UI_get_schedule_type(0xFFFD) == 0x001D)) goto labelFunc0403_0B4B;
 	if (!(gflags[0x0006] && (!gflags[0x0078]))) goto labelFunc0403_0B4B;
-	var001B = ["@我真悲慘！@", "@我覺得冷。@", "@我肚子餓了。@", "@放開我！@", "@我是無辜的！@", "@可憐可憐一個老人吧……@"];
+	var001B = ["@我真悲慘！@", "@我覺得冷。@", "@我肚子餓了。@", "@放開我！@", "@我是無辜的！@", "@可憐可憐一個老人吧…@"];
 	Func097F(0xFFFD, var001B[UI_get_random(UI_get_array_size(var001B))], 0x0000);
 labelFunc0403_0B4B:
 	return;

@@ -71,7 +71,7 @@ labelFunc045F_00D6:
 labelFunc045F_00ED:
 	case "破壞" attend labelFunc045F_0107:
 	UI_remove_answer("破壞");
-	message("「那個法師摧毀了我們負責保護的囚禁容器……我不知道他究竟為了什麼秩序( Order )的名義要做這種可怕的事。」");
+	message("「那個法師摧毀了我們負責保護的囚禁容器…我不知道他究竟為了什麼秩序( Order )的名義要做這種可怕的事。」");
 	say();
 	UI_add_answer("囚禁容器");
 labelFunc045F_0107:

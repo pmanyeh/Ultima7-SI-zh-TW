@@ -26,24 +26,24 @@ labelFunc06FC_0018:
 	UI_remove_item(item);
 	UI_show_npc_face0(0xFEE2, 0x0000);
 	if (!(var0002 == 0x0000)) goto labelFunc06FC_00CC;
-	message("「所以，你終於想到要回來了嗎，國王？太遲了！大家都死了，哥布林征服了一切……」");
+	message("「所以，你終於想到要回來了嗎，國王？太遲了！大家都死了，哥布林征服了一切…」");
 	say();
 	var0001 = UI_execute_usecode_array(var0000, [(byte)0x23, (byte)0x52, "@太遲了！@"]);
 labelFunc06FC_00CC:
 	if (!(var0002 == 0x0001)) goto labelFunc06FC_00F2;
-	message("「這裡曾是我的遺體安息之所，直到哥布林掠奪了這座墳墓……」");
+	message("「這裡曾是我的遺體安息之所，直到哥布林掠奪了這座墳墓…」");
 	say();
-	message("「我因心碎而死，在等待你歸來的日子裡……」");
+	message("「我因心碎而死，在等待你歸來的日子裡…」");
 	say();
 	var0001 = UI_execute_usecode_array(var0000, [(byte)0x23, (byte)0x52, "@叛徒！@"]);
 labelFunc06FC_00F2:
 	if (!(var0002 == 0x0002)) goto labelFunc06FC_0114;
-	message("「想想我曾經多麼愛你！我給你寫過情書，寫過充滿信任的信件——但當不列顛王( Lord British )召喚你去協助他時，你卻再也沒有想起過我！」");
+	message("「想想我曾經多麼愛你！我給你寫過情書，寫過充滿信任的信件——但當不列顛王召喚你去協助他時，你卻再也沒有想起過我！」");
 	say();
 	var0001 = UI_execute_usecode_array(var0000, [(byte)0x23, (byte)0x52, "@該死的不列顛！@"]);
 labelFunc06FC_0114:
 	if (!(var0002 > 0x0002)) goto labelFunc06FC_0136;
-	message("「歡迎來到叛徒 Shamino 國王的城堡！讓我來迎接你吧……」");
+	message("「歡迎來到叛徒 Shamino 國王的城堡！讓我來迎接你吧…」");
 	say();
 	var0001 = UI_execute_usecode_array(var0000, [(byte)0x23, (byte)0x52, "@受死吧，國王！@"]);
 labelFunc06FC_0136:

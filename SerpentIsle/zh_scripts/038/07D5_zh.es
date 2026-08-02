@@ -49,12 +49,12 @@ labelFunc07D5_00CD:
 	UI_set_polymorph(var000B, var000C);
 	goto labelFunc07D5_00CD;
 labelFunc07D5_00EF:
-	var000D = Func0992(0xFFFD, "@以不列顛王的王座發誓……@", "@以不列顛王的王座發誓……@", true);
+	var000D = Func0992(0xFFFD, "@以不列顛王的王座發誓…@", "@以不列顛王的王座發誓…@", true);
 	if (!(var000D == UI_get_npc_number(0xFE9C))) goto labelFunc07D5_011C;
-	Func097F(var000D, "@……我在哪裡？@", 0x000F);
+	Func097F(var000D, "@…我在哪裡？@", 0x000F);
 	goto labelFunc07D5_0128;
 labelFunc07D5_011C:
-	Func097F(var000D, "@……我們在哪裡？@", 0x000F);
+	Func097F(var000D, "@…我們在哪裡？@", 0x000F);
 labelFunc07D5_0128:
 	UI_show_npc_face0(UI_get_npc_number(var000D), 0x0000);
 	if (!(var000D == UI_get_npc_number(0xFE9C))) goto labelFunc07D5_014B;

@@ -34,7 +34,7 @@ labelFunc00F9_004D:
 	abort;
 labelFunc00F9_0072:
 	if (!gflags[0x016E]) goto labelFunc00F9_007D;
-	message("「你的朋友已經獲得赦免了，陌生人。請離去吧……我還得聽從我主人的吩咐。」");
+	message("「你的朋友已經獲得赦免了，陌生人。請離去吧…我還得聽從我主人的吩咐。」");
 	say();
 	abort;
 labelFunc00F9_007D:
@@ -63,7 +63,7 @@ labelFunc00F9_00A6:
 	say();
 	var0003 = true;
 labelFunc00F9_00C0:
-	message("「奉命，我將宣讀以下旨意……」");
+	message("「奉命，我將宣讀以下旨意…」");
 	say();
 	if (!gflags[0x016E]) goto labelFunc00F9_00E4;
 	message("「");
@@ -92,7 +92,7 @@ labelFunc00F9_00F8:
 	message(var0000);
 	message("，亦同罪難逃！」");
 	say();
-	message("「如此褻瀆美貌的大罪絕不可輕饒……他們存在所留下的污點，必須用鮮血方能洗淨！」");
+	message("「如此褻瀆美貌的大罪絕不可輕饒…他們存在所留下的污點，必須用鮮血方能洗淨！」");
 	say();
 labelFunc00F9_0117:
 	case "更改啟示" attend labelFunc00F9_0137:

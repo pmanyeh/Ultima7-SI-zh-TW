@@ -36,7 +36,7 @@ labelFunc0490_0028:
 	say();
 	UI_remove_npc_face1();
 labelFunc0490_00B3:
-	var0004 = Func0992(0xFFFD, "@聖者，他們聞到了猿怪( Gwani )毛皮的味道！@", "@他們聞到了猿怪( Gwani )毛皮的味道！@", false);
+	var0004 = Func0992(0xFFFD, "@聖者，他們聞到了猿怪毛皮的味道！@", "@他們聞到了猿怪毛皮的味道！@", false);
 	goto labelFunc0490_0181;
 labelFunc0490_00C6:
 	if (!var0003) goto labelFunc0490_00D3;
@@ -44,7 +44,7 @@ labelFunc0490_00C6:
 	say();
 	goto labelFunc0490_00D7;
 labelFunc0490_00D3:
-	message("「你……那個…… Gwenno 說過。」~你可以看出這生物說你的語言時顯然有很大的困難。");
+	message("「你…那個… Gwenno 說過。」~你可以看出這生物說你的語言時顯然有很大的困難。");
 	say();
 labelFunc0490_00D7:
 	UI_add_answer(["姓名", "猿怪", "告辭"]);
@@ -58,7 +58,7 @@ labelFunc0490_00E7:
 labelFunc0490_0105:
 	case "猿怪" attend labelFunc0490_0118:
 	UI_remove_answer("猿怪");
-	message("「我們村莊近。但是，你找 Gwenno ……」~他若有所思地停頓了一下，然後再次對你說話。~「猿怪死亡神殿( Gwani Death Temple )在北方島嶼。冰龍洞穴西邊。」");
+	message("「我們村莊近。但是，你找 Gwenno …」~他若有所思地停頓了一下，然後再次對你說話。~「猿怪死亡神殿( Gwani Death Temple )在北方島嶼。冰龍洞穴西邊。」");
 	say();
 labelFunc0490_0118:
 	case "告辭" attend labelFunc0490_017D:

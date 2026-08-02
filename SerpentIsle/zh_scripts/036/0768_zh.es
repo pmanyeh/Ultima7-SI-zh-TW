@@ -101,7 +101,7 @@ labelFunc0768_023A:
 	UI_set_conversation_slot(0x0000);
 	message("「聰明？！我倒覺得是個白痴，竟然想讓這個有缺陷的世界繼續存活！");
 	say();
-	message("人們總以為預言中的棋子會……我不知道，更聰明一點！」");
+	message("人們總以為預言中的棋子會…我不知道，更聰明一點！」");
 	say();
 	UI_remove_npc_face1();
 	UI_show_npc_face1(0xFEC7, 0x0000);
@@ -113,11 +113,11 @@ labelFunc0768_023A:
 	message(var000A);
 	message("沒有守護者的智慧來指引");
 	message(var000B);
-	message("……」");
+	message("…」");
 	say();
 	message("「再說，我覺得");
 	message(var000A);
-	message("還挺可愛的……」");
+	message("還挺可愛的…」");
 	say();
 	UI_set_conversation_slot(0x0000);
 	message("「嘶嘶！Solaria！妳不該跟外人提起指引者！現在妳已經決定了");
@@ -127,7 +127,7 @@ labelFunc0768_023A:
 	UI_remove_npc_face0();
 	UI_remove_npc_face1();
 	var000D = UI_find_nearby(0xFE9C, 0x0299, 0x001E, 0x0000);
-	var000E = ["@噢，天哪……@", "@笨蛋！@", "@接招吧！@"];
+	var000E = ["@噢，天哪…@", "@笨蛋！@", "@接招吧！@"];
 	var000F = 0x0001;
 	enum();
 labelFunc0768_0306:

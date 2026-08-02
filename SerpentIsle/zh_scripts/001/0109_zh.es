@@ -62,7 +62,7 @@ labelFunc0109_00B5:
 labelFunc0109_0109:
 	if (!(UI_get_npc_id(0xFF31) == 0x0007)) goto labelFunc0109_01C4;
 	UI_show_npc_face0(0xFF31, 0x0000);
-	message("「來自虛空( Void )彼端的偉力此刻正匯聚於此！這正是 Xenka 跨越萬古歲月、為我們降下預言曙光的神聖時刻……」");
+	message("「來自虛空( Void )彼端的偉力此刻正匯聚於此！這正是 Xenka 跨越萬古歲月、為我們降下預言曙光的神聖時刻…」");
 	say();
 	var0009 = UI_find_nearby(0xFE9C, 0x02D6, 0x0014, 0x0000);
 	UI_remove_item(var0009);
@@ -70,7 +70,7 @@ labelFunc0109_0109:
 	UI_move_object(0xFF29, var0002);
 	UI_sprite_effect(0x001A, var0002[0x0001], var0002[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	var0008 = UI_execute_usecode_array(0xFF29, [(byte)0x23, (byte)0x59, 0x0002, (byte)0x01, (byte)0x70]);
-	Func097F(0xFF29, "@是我……@", 0x0005);
+	Func097F(0xFF29, "@是我…@", 0x0005);
 	Func097F(0xFF31, "@降臨於此吧，Xenka！@", 0x0000);
 	var0008 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x55, 0x0109], 0x000A);
 	gflags[0x0270] = true;
@@ -112,7 +112,7 @@ labelFunc0109_032F:
 	UI_set_weather(0x0003);
 	UI_play_music(0x0041, var0001);
 	UI_set_item_flag(0xFE9C, 0x0010);
-	UI_item_say(0xFF31, "@我們苦苦等待了漫長歲月……@");
+	UI_item_say(0xFF31, "@我們苦苦等待了漫長歲月…@");
 	var000A = "@無須再等待了！@";
 	var0008 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x55, 0x0109], 0x000A);
 labelFunc0109_0385:
@@ -137,7 +137,7 @@ labelFunc0109_0400:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「妳真是一如既往地愚蠢盲目，孩子……」");
+	message("「妳真是一如既往地愚蠢盲目，孩子…」");
 	say();
 	message("「Xenka 的典籍記載得無比清晰——凡是試圖插手協助英雄的人，必將為");
 	message(var0000);
@@ -145,7 +145,7 @@ labelFunc0109_0400:
 	say();
 	message("「我必須立刻阻止妳，絕不能任由妳將我們所有人拖入毀滅的深淵！」");
 	say();
-	Func097F(0xFF31, "@我必須阻止妳……@", 0x0000);
+	Func097F(0xFF31, "@我必須阻止妳…@", 0x0000);
 	UI_remove_npc_face1();
 	UI_remove_npc_face0();
 	UI_end_conversation();
@@ -153,7 +153,7 @@ labelFunc0109_0400:
 	var0008 = UI_execute_usecode_array(0xFF2D, [(byte)0x23, (byte)0x59, (byte)0x30, (byte)0x70, (byte)0x27, 0x0002, (byte)0x6F, (byte)0x27, 0x0004, (byte)0x67, (byte)0x55, 0x075A]);
 	Func097F(0xFF2D, "@Flam Mas Flam！@", 0x0002);
 	gflags[0x000A] = true;
-	var0008 = UI_delayed_execute_usecode_array(0xFF31, [(byte)0x23, (byte)0x66, (byte)0x27, 0x0002, (byte)0x68, (byte)0x27, 0x0002, (byte)0x52, "@Thoxa……@", (byte)0x69, (byte)0x27, 0x0002, (byte)0x6A, (byte)0x61, (byte)0x55, 0x07EC], 0x000A);
+	var0008 = UI_delayed_execute_usecode_array(0xFF31, [(byte)0x23, (byte)0x66, (byte)0x27, 0x0002, (byte)0x68, (byte)0x27, 0x0002, (byte)0x52, "@Thoxa…@", (byte)0x69, (byte)0x27, 0x0002, (byte)0x6A, (byte)0x61, (byte)0x55, 0x07EC], 0x000A);
 	var000D = UI_get_object_position(0xFF31);
 	var000E = UI_get_object_position(0xFF2D);
 	UI_sprite_effect(0x0015, (var000E[0x0001] - 0x0002), (var000E[0x0002] - 0x0002), 0x0000, 0x0000, 0x0000, 0xFFFF);

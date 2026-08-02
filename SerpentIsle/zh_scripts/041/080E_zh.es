@@ -10,14 +10,14 @@ void Func080E 0x80E ()
 	message("「離我遠點，法師。我只是個小女孩。」");
 	say();
 	UI_show_npc_face1(0xFEE1, 0x0000);
-	message("「我知道你是什麼東西，渾沌之災(Bane of Chaos)。那具身體只不過是你披著的一層外殼而已。」");
+	message("「我知道你是什麼東西，渾沌災厄(Bane of Chaos)。那具身體只不過是你披著的一層外殼而已。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「我可以從你手中逃走！我的力量遠勝於你……」");
+	message("「我可以從你手中逃走！我的力量遠勝於你…」");
 	say();
 	UI_show_npc_face1(0xFEE1, 0x0000);
-	message("「你的力量因為被囚禁而衰退了。你現在不是我的對手……」");
+	message("「你的力量因為被囚禁而衰退了。你現在不是我的對手…」");
 	say();
 	UI_remove_npc_face1();
 	UI_remove_npc_face0();

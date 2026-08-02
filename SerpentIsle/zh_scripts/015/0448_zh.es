@@ -79,7 +79,7 @@ labelFunc0448_0147:
 	abort;
 labelFunc0448_0148:
 	if (!(UI_get_item_flag(0xFE9C, 0x0008) && (item == Func09A0(0x0005, 0x0002)))) goto labelFunc0448_01A8;
-	var0009 = Func0992(0xFFFE, "@你還好嗎？@", "@噢……@", true);
+	var0009 = Func0992(0xFFFE, "@你還好嗎？@", "@噢…@", true);
 	if (!(var0009 != 0xFE9C)) goto labelFunc0448_01A8;
 	UI_set_item_flag(0xFFB8, 0x001E);
 	var0007 = Func09A0(0x0005, 0x0002);
@@ -145,14 +145,14 @@ labelFunc0448_0317:
 	converse attend labelFunc0448_069E;
 	case "叛徒" attend labelFunc0448_033E:
 	UI_remove_answer("叛徒");
-	message("「儘管 Luther 令人討厭，但也許他說得有道理。 Krayg 確實會在樹林裡走很長的路，非常奇怪……」");
+	message("「儘管 Luther 令人討厭，但也許他說得有道理。 Krayg 確實會在樹林裡走很長的路，非常奇怪…」");
 	say();
 	if (!gflags[0x00C0]) goto labelFunc0448_033A;
 	message("「然而如果他告訴過你有一個哥布林的集會地點，那麼你應該去檢查那個地方。那裡可能會有能將叛徒定罪的證據，不管他是誰。」");
 	say();
 	goto labelFunc0448_033E;
 labelFunc0448_033A:
-	message("「但我們不能僅憑奇怪的習慣就給一個人定罪！我們必須有證據……」");
+	message("「但我們不能僅憑奇怪的習慣就給一個人定罪！我們必須有證據…」");
 	say();
 labelFunc0448_033E:
 	case "職業" attend labelFunc0448_0377:
@@ -160,7 +160,7 @@ labelFunc0448_033E:
 	if (!var000A) goto labelFunc0448_0362;
 	message("「看看四周！你看到那些針、墨水瓶和素描了嗎！」");
 	say();
-	message("「靠近一點看。你看到裝飾在我身上的圖案和彩色的漩渦了嗎？每一個都有它的意義……」");
+	message("「靠近一點看。你看到裝飾在我身上的圖案和彩色的漩渦了嗎？每一個都有它的意義…」");
 	say();
 	message("「我是創作刺青的藝術家。」");
 	say();
@@ -187,7 +187,7 @@ labelFunc0448_039F:
 	UI_remove_answer("傳統");
 	message("「藝術天分是與生俱來的——它無法被學習或模仿。既然我生來就有這種天賦，我就不能拒絕我的職責。」");
 	say();
-	message("「如你所見，我在自己身上練習過很多次。身為刺青師，我可以擁有我想要的任何刺青……」");
+	message("「如你所見，我在自己身上練習過很多次。身為刺青師，我可以擁有我想要的任何刺青…」");
 	say();
 	message("「我全身都是刺青！我母親幫我刺了背部和一些我勾不到的地方。」");
 	say();
@@ -195,7 +195,7 @@ labelFunc0448_039F:
 labelFunc0448_03C7:
 	case "母親" attend labelFunc0448_03F2:
 	UI_remove_answer("母親");
-	message("「她是一位勇敢的騎士！我非常想念她……」");
+	message("「她是一位勇敢的騎士！我非常想念她…」");
 	say();
 	message("「其他人會告訴你我母親死於與強盜的戰鬥，但我很清楚。她早就失去了求生的意志！」");
 	say();
@@ -221,7 +221,7 @@ labelFunc0448_0420:
 	UI_remove_answer("女兒");
 	message("「我姊姊 Selene 是一個非常美麗的女孩。她大我四歲，我以前覺得她好成熟！」");
 	say();
-	message("「她被帶走時才十二歲，所以她從來沒有機會通過騎士考驗…… Selene 身上沒有刺青。」");
+	message("「她被帶走時才十二歲，所以她從來沒有機會通過騎士考驗… Selene 身上沒有刺青。」");
 	say();
 	message("「我經常想知道她在法師中過著什麼樣的生活，學習法術並迷惑她的敵人。我願意付出任何代價只為了再見她一面！」");
 	say();
@@ -229,11 +229,11 @@ labelFunc0448_0420:
 labelFunc0448_043F:
 	case "部位？" attend labelFunc0448_0492:
 	UI_remove_answer("部位？");
-	message("「嗯，你知道的……私密處！」");
+	message("「嗯，你知道的…私密處！」");
 	say();
 	if (!var0006) goto labelFunc0448_0492;
 	UI_show_npc_face1(0xFFFF, 0x0000);
-	message("「女士，我對妳所有的刺青很感興趣。也許我們可以走進……」");
+	message("「女士，我對妳所有的刺青很感興趣。也許我們可以走進…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -244,7 +244,7 @@ labelFunc0448_043F:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「也許晚點吧……英俊的陌生人。」");
+	message("「也許晚點吧…英俊的陌生人。」");
 	say();
 labelFunc0448_0492:
 	case "特殊的刺青" attend labelFunc0448_04AD:
@@ -253,7 +253,7 @@ labelFunc0448_0492:
 	say();
 	message("「我們最勇敢的戰士身上有很多刺青。 Caladin 和 Brendann ，這對在任何事上都互相競爭的對手，他們身上的刺青比蒙利多城裡的任何人都多！」");
 	say();
-	message("「 Caladin 把他的刺青刺在他強壯的手臂上，而 Brendann 的則藏在更隱密的位置……」");
+	message("「 Caladin 把他的刺青刺在他強壯的手臂上，而 Brendann 的則藏在更隱密的位置…」");
 	say();
 labelFunc0448_04AD:
 	case "圖案" attend labelFunc0448_04C4:
@@ -356,7 +356,7 @@ labelFunc0448_063B:
 labelFunc0448_0674:
 	case "告辭" attend labelFunc0448_069B:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@再見……@", 0x0000);
+	Func097F(0xFE9C, "@再見…@", 0x0000);
 	Func097F(0xFFB8, "@祝你有個美好的一天！@", 0x0002);
 	goto labelFunc0448_069E;
 labelFunc0448_069B:

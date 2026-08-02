@@ -27,9 +27,9 @@ void Func0433 object#(0x433) ()
 	var0003 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0112]);
 labelFunc0433_002D:
 	if (!((event == 0x0000) && (UI_get_schedule_type(0xFFCD) == 0x0007))) goto labelFunc0433_0094;
-	var0004 = ["@Garth 會來救我……@", (("@該死的 " + var0002) + "！@"), "@我需要更多食物！@", "@獄卒！@", "@耐心點。@", "@詛咒那個織工！@"];
+	var0004 = ["@Garth 會來救我…@", (("@該死的 " + var0002) + "！@"), "@我需要更多食物！@", "@獄卒！@", "@耐心點。@", "@詛咒那個織工！@"];
 	if (!UI_npc_nearby(0xFFCA)) goto labelFunc0433_007D;
-	var0004 = (var0004 & ("@安靜，祭司！@" & ("@取悅我，Kylista！@" & "@我們的時代會到來的……@")));
+	var0004 = (var0004 & ("@安靜，祭司！@" & ("@取悅我，Kylista！@" & "@我們的時代會到來的…@")));
 labelFunc0433_007D:
 	Func097F(0xFFCD, var0004[UI_get_random(UI_get_array_size(var0004))], 0x0000);
 labelFunc0433_0094:
@@ -118,13 +118,13 @@ labelFunc0433_024E:
 	UI_remove_answer("騙局");
 	message("「幾百年來，我們文化中的女人一直相信自己是神聖的。然而，男人透過神諭( Oracle )發布的啟示秘密地進行統治。」");
 	say();
-	message("「你毀了一個偉大的傳統，外國人！它曾經是那麼輝煌，當它還存在的時候……」");
+	message("「你毀了一個偉大的傳統，外國人！它曾經是那麼輝煌，當它還存在的時候…」");
 	say();
 labelFunc0433_0265:
 	case "為什麼？" attend labelFunc0433_0290:
 	UI_remove_answer("為什麼？");
 	if (!UI_is_pc_female()) goto labelFunc0433_0282;
-	message("「你不會明白的……」");
+	message("「你不會明白的…」");
 	say();
 	goto labelFunc0433_0290;
 labelFunc0433_0282:
@@ -148,7 +148,7 @@ labelFunc0433_0290:
 	message("「多麼聰明的威脅，女孩！妳難道沒意識到妳是靠我的施捨才活著的嗎？」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0433_02D6;
-	message("「別擔心——只要夜晚依然寒冷，我就還用得著妳……」");
+	message("「別擔心——只要夜晚依然寒冷，我就還用得著妳…」");
 	say();
 labelFunc0433_02D6:
 	case "還沒完" attend labelFunc0433_02F1:

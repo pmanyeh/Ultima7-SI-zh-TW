@@ -40,7 +40,7 @@ labelFunc0526_0008:
 	var0003 = Func097D(0xFE9B, 0x0001, 0x00E7, 0xFE99, 0xFE99);
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「而你就是我捕食的牲口！」*「是誰派你來消滅 Vasculio 的？是月影城( Moonshade )那些腐爛的蠕蟲嗎？」*「我知道就是他們！很快我將為他們對我所做的事進行復仇！」*「是誰派你來的？ Filbercio ？！ Mortegro ？！ Gustacio ？！ Torrissio ？！」");
+	message("「而你就是我捕食的牲口！」* 「是誰派你來消滅 Vasculio 的？是月影城( Moonshade )那些腐爛的蠕蟲嗎？」* 「我知道就是他們！很快我將為他們對我所做的事進行復仇！」* 「是誰派你來的？ Filbercio ？！ Mortegro ？！ Gustacio ？！ Torrissio ？！」");
 	say();
 	UI_add_answer(["Filbercio", "Mortegro", "Gustacio", "Torrissio", "復仇"]);
 labelFunc0526_0088:
@@ -60,7 +60,7 @@ labelFunc0526_00BC:
 	UI_remove_answer("Gustacio");
 	UI_remove_answer("Torrissio");
 	UI_remove_answer("Filbercio");
-	message("「不要在我面前提 Filbercio 那個卑鄙的名字！就是他判處我死刑的！」*「如果那頭豬敢靠近我，我向你保證他會付出代價，而且是慘痛的代價。」");
+	message("「不要在我面前提 Filbercio 那個卑鄙的名字！就是他判處我死刑的！」* 「如果那頭豬敢靠近我，我向你保證他會付出代價，而且是慘痛的代價。」");
 	say();
 	var0004 = true;
 labelFunc0526_00E8:
@@ -104,7 +104,7 @@ labelFunc0526_0192:
 	UI_add_answer("告辭");
 	if (!var0003) goto labelFunc0526_02A3;
 	UI_show_npc_face0(0xFEF8, 0x0000);
-	message("「啊！但你擁有噬魔劍( Magebane )！那麼我跟你做個交易，聖者。用你的那把藍色神劍，交換我教你我最強大的法術，那可以解決任何敵人。你同意嗎？」");
+	message("「啊！但你擁有法師剋星( Magebane )！那麼我跟你做個交易，聖者。用你的那把藍色神劍，交換我教你我最強大的法術，那可以解決任何敵人。你同意嗎？」");
 	say();
 	if (!var0000) goto labelFunc0526_01D4;
 	UI_show_npc_face1(0xFFFD, 0x0000);
@@ -130,7 +130,7 @@ labelFunc0526_0204:
 	var0008 = Func0955();
 	if (!var0008) goto labelFunc0526_027F;
 	UI_show_npc_face0(0xFEF8, 0x0000);
-	message("「我就知道你無法抗拒獲得這種力量的機會！」*「拿著這張卷軸。它會擊敗任何威脅你的敵人。」");
+	message("「我就知道你無法抗拒獲得這種力量的機會！」* 「拿著這張卷軸。它會擊敗任何威脅你的敵人。」");
 	say();
 	var0009 = Func099B(0xFE9C, 0x0001, 0x02CB, 0x0041, 0xFE99, 0x0000, true);
 	UI_show_npc_face0(0xFEF8, 0x0000);

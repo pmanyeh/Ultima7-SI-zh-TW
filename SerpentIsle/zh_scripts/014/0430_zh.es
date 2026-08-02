@@ -121,7 +121,7 @@ labelFunc0430_01EC:
 	UI_remove_answer("Jorvin");
 labelFunc0430_01FF:
 	case "Pomdirgun" attend labelFunc0430_0212:
-	message("「啊啊啊！那個名字就能讓我脊背發涼！Pomdirgun 已經將所有哥布林鍛造成他的武器。他絕不會停止，直到將我們全部趕出這片土地……或者將我們全部吃光為止。」 *「他是一個被召喚的惡魔，要來摧毀我們的美！！」");
+	message("「啊啊啊！那個名字就能讓我脊背發涼！Pomdirgun 已經將所有哥布林鍛造成他的武器。他絕不會停止，直到將我們全部趕出這片土地…或者將我們全部吃光為止。」 *「他是一個被召喚的惡魔，要來摧毀我們的美！！」");
 	say();
 	UI_remove_answer("Pomdirgun");
 labelFunc0430_0212:
@@ -130,7 +130,7 @@ labelFunc0430_0212:
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0430_023B;
 	message("「我唯一的希望是，現在 Kylista 和 Voldin 的陰謀已被揭露，籠罩在這片土地上的詛咒也許能夠被解除。」");
 	say();
-	message("「一個建立在純粹美( Pure Beauty )理念上的城市，難道能永遠受到詛咒嗎？我希望不會……」");
+	message("「一個建立在純粹美( Pure Beauty )理念上的城市，難道能永遠受到詛咒嗎？我希望不會…」");
 	say();
 	goto labelFunc0430_024C;
 labelFunc0430_023B:
@@ -142,12 +142,12 @@ labelFunc0430_024C:
 	message("「當那些水手——那些假先知——第一次登上我們的海岸時，他們之中有兩人前來找我。其中一個是某種法師，前來尋找我培植的藥草。」");
 	say();
 	if (!gflags[0x01A3]) goto labelFunc0430_0272;
-	message("「另一個……正如你所知道的，是 Ruggs。」");
+	message("「另一個…正如你所知道的，是 Ruggs。」");
 	say();
 	UI_add_answer(["假先知", "法師"]);
 	goto labelFunc0430_0286;
 labelFunc0430_0272:
-	message("「另一個……他是個小偷，長著一張無人能愛的臉。他偷走了我的心！」");
+	message("「另一個…他是個小偷，長著一張無人能愛的臉。他偷走了我的心！」");
 	say();
 	UI_add_answer(["假先知", "法師", "小偷"]);
 labelFunc0430_0286:
@@ -156,7 +156,7 @@ labelFunc0430_028D:
 	case "假先知" attend labelFunc0430_02C5:
 	UI_remove_answer("假先知");
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0430_02B6;
-	message("「但現在我太困惑了……是 Kylista 告訴我們友誼會是虛假的，但現在她卻被指控異端……」");
+	message("「但現在我太困惑了…是 Kylista 告訴我們友誼會是虛假的，但現在她卻被指控異端…」");
 	say();
 	message("「而友誼會又重新被允許在城裡公開出現！我不知道該怎麼想。」");
 	say();
@@ -169,7 +169,7 @@ labelFunc0430_02B6:
 	UI_add_answer("友誼會");
 labelFunc0430_02C5:
 	case "友誼會" attend labelFunc0430_02D8:
-	message("「我什麼都不能告訴你。什麼都不能！我不會聽這種褻瀆之言。他們之中有一個人已經迷惑了我，偷走了我的心……這已經夠了。」");
+	message("「我什麼都不能告訴你。什麼都不能！我不會聽這種褻瀆之言。他們之中有一個人已經迷惑了我，偷走了我的心…這已經夠了。」");
 	say();
 	UI_remove_answer("友誼會");
 labelFunc0430_02D8:
@@ -218,10 +218,10 @@ labelFunc0430_036E:
 	UI_add_answer(["戒指", "神諭"]);
 labelFunc0430_0383:
 	case "戒指" attend labelFunc0430_03B2:
-	message("「我對它知之甚少。我只是瞥了一眼……但若再次看到，我應該能認出來。」");
+	message("「我對它知之甚少。我只是瞥了一眼…但若再次看到，我應該能認出來。」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0377, 0xFE99, 0x0000)) goto labelFunc0430_03A8;
-	message("「我無法在神諭( Oracle )面前發誓，這確實是 Alyssand 的戒指。但它看起來確實像……」 *「你應該去找 Alyssand 問她，以確認此事。」");
+	message("「我無法在神諭( Oracle )面前發誓，這確實是 Alyssand 的戒指。但它看起來確實像…」 *「你應該去找 Alyssand 問她，以確認此事。」");
 	say();
 labelFunc0430_03A8:
 	Func08A9();
@@ -250,7 +250,7 @@ labelFunc0430_03F9:
 	UI_remove_answer("小偷");
 labelFunc0430_040C:
 	case "醜陋真相" attend labelFunc0430_041F:
-	message("「我必須坦白，我就是這些風暴的起因。我知道我是。我必須帶著心底深藏的醜陋真相生活下去。」 *「我愛上了那些給我的城市帶來毀滅的人中的其中一個！雖然我沒有接受他的信念，但我的心卻接受了他。」 *「我和 Alyssand 一樣有罪！我想不出她是如何承受這樣的恥辱的……」");
+	message("「我必須坦白，我就是這些風暴的起因。我知道我是。我必須帶著心底深藏的醜陋真相生活下去。」 *「我愛上了那些給我的城市帶來毀滅的人中的其中一個！雖然我沒有接受他的信念，但我的心卻接受了他。」 *「我和 Alyssand 一樣有罪！我想不出她是如何承受這樣的恥辱的…」");
 	say();
 	UI_remove_answer("醜陋真相");
 labelFunc0430_041F:
@@ -261,9 +261,9 @@ labelFunc0430_041F:
 	message(var0000);
 	message("。」");
 	say();
-	message("「你說那不是你的？嗯……那麼你必須去月影城( Moonshade )打聽是誰的。」");
+	message("「你說那不是你的？嗯…那麼你必須去月影城( Moonshade )打聽是誰的。」");
 	say();
-	message("「每位法師的設備都與其他法師的不同……很大程度上是出於自尊。很抱歉我無法幫上更多忙。」");
+	message("「每位法師的設備都與其他法師的不同…很大程度上是出於自尊。很抱歉我無法幫上更多忙。」");
 	say();
 	goto labelFunc0430_0466;
 labelFunc0430_0458:
@@ -280,7 +280,7 @@ labelFunc0430_0466:
 	if (!Func097D(0xFE9B, 0x0001, 0x010B, 0xFE99, 0xFE99)) goto labelFunc0430_049F;
 	message("「哎，這是浮岩( pumice )， ");
 	message(var0000);
-	message("。在幼鹿城( Fawn )這裡見到這種東西非常不尋常……附近根本沒有火山活動。」");
+	message("。在幼鹿城( Fawn )這裡見到這種東西非常不尋常…附近根本沒有火山活動。」");
 	say();
 	message("「就我所知，這種岩石唯一可能來自的地方，是在月影城( Moonshade )更遠的地方。」");
 	say();
@@ -288,7 +288,7 @@ labelFunc0430_0466:
 labelFunc0430_049F:
 	message("「灰色的岩石？重量比體積輕？」");
 	say();
-	message("「聽起來像是浮岩( pumice )。就我所知，這種岩石唯一可能來自的地方，是在月影城( Moonshade )更遠的地方……那裡有火山活動。」");
+	message("「聽起來像是浮岩( pumice )。就我所知，這種岩石唯一可能來自的地方，是在月影城( Moonshade )更遠的地方…那裡有火山活動。」");
 	say();
 labelFunc0430_04A7:
 	case "藍蛋" attend labelFunc0430_04EF:
@@ -313,9 +313,9 @@ labelFunc0430_04EF:
 	if (!Func097D(0xFE9B, 0x0001, 0x034A, 0xFE99, 0x000F)) goto labelFunc0430_0528;
 	message("「這不是我所知道的任何藥草， ");
 	message(var0000);
-	message("。但它令人著迷……」");
+	message("。但它令人著迷…」");
 	say();
-	message("「我確定它有魔力，但我不知道是什麼魔力。由於某種原因，我覺得我應該讓你把它帶離這裡，並假裝我從未見過它……」");
+	message("「我確定它有魔力，但我不知道是什麼魔力。由於某種原因，我覺得我應該讓你把它帶離這裡，並假裝我從未見過它…」");
 	say();
 	message("「很抱歉我無法提供更多幫助。」");
 	say();
@@ -323,7 +323,7 @@ labelFunc0430_04EF:
 labelFunc0430_0528:
 	message("「這不是我所知道的任何藥草， ");
 	message(var0000);
-	message("。但聽起來令人著迷……」");
+	message("。但聽起來令人著迷…」");
 	say();
 	message("「如果它會發光而且拿起來還是涼的，我確定它有魔力。但我以前從未聽說過它。」");
 	say();
@@ -338,9 +338,9 @@ labelFunc0430_053A:
 	gflags[0x01A3] = true;
 	message("「我心神不定！我的靈魂被撕裂了，我不知道該怎麼辦。你一定要幫我。」");
 	say();
-	message("「Ruggs 多次告訴我他對我的愛。說實話，如果我說我對他毫無感情，那就是謊言。但他是如此……醜陋……如此難看，讓我不知道該怎麼想。」");
+	message("「Ruggs 多次告訴我他對我的愛。說實話，如果我說我對他毫無感情，那就是謊言。但他是如此…醜陋…如此難看，讓我不知道該怎麼想。」");
 	say();
-	message("「我所受過的一切教誨都告訴我，Ruggs 的外貌正是他內心邪惡的體現。然而我卻找不到絲毫邪惡的痕跡……然而，我卻在他身上找不到半點惡意……如果連這點都錯了，那…還有什麼是真的？」 *「我的信念已被徹底震撼，但我無法違背自己的內心。」");
+	message("「我所受過的一切教誨都告訴我，Ruggs 的外貌正是他內心邪惡的體現。然而我卻找不到絲毫邪惡的痕跡…然而，我卻在他身上找不到半點惡意…如果連這點都錯了，那…還有什麼是真的？」 *「我的信念已被徹底震撼，但我無法違背自己的內心。」");
 	say();
 	message("「你願意替我帶封信回給 Ruggs 嗎？」");
 	say();
@@ -351,7 +351,7 @@ labelFunc0430_053A:
 	gflags[0x0150] = true;
 	goto labelFunc0430_05AF;
 labelFunc0430_05AB:
-	message("「也許這樣最好……我不知道該如何直視他的臉，又不去猜想那裡是否藏著什麼邪惡。」");
+	message("「也許這樣最好…我不知道該如何直視他的臉，又不去猜想那裡是否藏著什麼邪惡。」");
 	say();
 labelFunc0430_05AF:
 	goto labelFunc0430_05CD;

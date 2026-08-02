@@ -41,7 +41,7 @@ labelFunc0401_005C:
 	return;
 labelFunc0401_0061:
 	if (!(event == 0x0001)) goto labelFunc0401_010D;
-	UI_item_say(0xFE9C, "@Dupre……@");
+	UI_item_say(0xFE9C, "@Dupre…@");
 	0xFFFF->Func07D1();
 	if (!(!UI_get_item_flag(0xFFFF, 0x001E))) goto labelFunc0401_00A8;
 	Func097F(0xFFFF, (("@什麼事，" + var0001) + "？@"), 0x0002);
@@ -158,7 +158,7 @@ labelFunc0401_0302:
 	case "好消息" attend labelFunc0401_0341:
 	UI_remove_answer("好消息");
 	if (!(UI_get_item_flag(0xFFFD, 0x0006) || (UI_get_npc_id(0xFFFD) == 0x001E))) goto labelFunc0401_0331;
-	message("「但我應該讓 Iolo 來告訴你……」");
+	message("「但我應該讓 Iolo 來告訴你…」");
 	say();
 	goto labelFunc0401_0341;
 labelFunc0401_0331:
@@ -166,7 +166,7 @@ labelFunc0401_0331:
 	say();
 	message("「他跟我打賭說你無法在自由山地牢( Dungeon Freedom )中倖存下來，但我告訴他你比任何地牢都要堅韌！」");
 	say();
-	message("「我想你的生還一定會讓他印象深刻……」");
+	message("「我想你的生還一定會讓他印象深刻…」");
 	say();
 	gflags[0x0135] = true;
 labelFunc0401_0341:
@@ -207,7 +207,7 @@ labelFunc0401_03C3:
 	goto labelFunc0401_03FB;
 labelFunc0401_03E0:
 	UI_add_answer("加入");
-	message("「我真不想離開你。但既然你堅持……」");
+	message("「我真不想離開你。但既然你堅持…」");
 	say();
 	UI_remove_from_party(0xFFFF);
 	Func0829();

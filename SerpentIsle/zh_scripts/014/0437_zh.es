@@ -235,7 +235,7 @@ labelFunc0437_05EF:
 	gflags[0x0174] = true;
 labelFunc0437_0607:
 	UI_show_npc_face1(var0015, 0x0000);
-	message("「你不能忘記我們遠方的君主，Yelinda 夫人。向不列顛王( Lord British )和不列顛尼亞( Britannia )的榮耀致敬！」");
+	message("「你不能忘記我們遠方的君主，Yelinda 夫人。向不列顛王和不列顛尼亞( Britannia )的榮耀致敬！」");
 	say();
 	UI_remove_npc_face1();
 	UI_play_music(0x001E, Func09A0(0x0005, 0x0001));
@@ -275,7 +275,7 @@ labelFunc0437_072A:
 	abort;
 	goto labelFunc0437_0737;
 labelFunc0437_072E:
-	message("「「我很高興你來了……但善良的吟遊詩人 Iolo 呢？」");
+	message("「「我很高興你來了…但善良的吟遊詩人 Iolo 呢？」");
 	say();
 	message("「我想歡迎他，也歡迎你。當他和你在一起時再來吧！」");
 	say();
@@ -285,7 +285,7 @@ labelFunc0437_0737:
 labelFunc0437_073A:
 	if (!(var0014 == false)) goto labelFunc0437_075E;
 	if (!((var0002 == true) && (gflags[0x003E] == true))) goto labelFunc0437_0757;
-	message("「妳有一個多麼有趣的美人誌( Beauty mark )……我是 Yelinda 夫人，幼鹿城( Fawn )——『美之城』——的統治者。」");
+	message("「妳有一個多麼有趣的美人誌( Beauty mark )…我是 Yelinda 夫人，幼鹿城( Fawn )——『美之城』——的統治者。」");
 	say();
 	goto labelFunc0437_075B;
 labelFunc0437_0757:
@@ -298,7 +298,7 @@ labelFunc0437_075E:
 	message("「在你朋友的清白或有罪被證明之前，聖者( Avatar )，我們不能說話。」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(0xFFC9, "@我很抱歉……@", 0x0000);
+	Func097F(0xFFC9, "@我很抱歉…@", 0x0000);
 	abort;
 	goto labelFunc0437_078B;
 labelFunc0437_0781:
@@ -341,7 +341,7 @@ labelFunc0437_081D:
 	UI_add_answer("大船長");
 labelFunc0437_0828:
 	case "大船長" attend labelFunc0437_0846:
-	message("「是的，Joth、Garth 和 Voldin。他們是我最信任的顧問……當然，除了總理( Chancellor )以外。」");
+	message("「是的，Joth、Garth 和 Voldin。他們是我最信任的顧問…當然，除了總理( Chancellor )以外。」");
 	say();
 	message("「他們處理管理這座城市所有繁瑣的小細節。沒了他們，我肯定會不知所措。」");
 	say();
@@ -360,7 +360,7 @@ labelFunc0437_0859:
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0437_0886;
 	message("「Alyssand 告訴我，風暴是因為缺乏對『美』的純粹概念的虔誠所致。」");
 	say();
-	message("「她對我很有幫助。我想我會讓她成為我的首席顧問……」");
+	message("「她對我很有幫助。我想我會讓她成為我的首席顧問…」");
 	say();
 	goto labelFunc0437_08A3;
 labelFunc0437_0886:
@@ -373,7 +373,7 @@ labelFunc0437_0886:
 	UI_add_answer("神諭");
 labelFunc0437_08A3:
 	case "異教徒" attend labelFunc0437_08BD:
-	message("「那些在城門外紮營的骯髒水手完全不把『美』放在眼裡。他們宣揚一些關於兄弟情誼……之類的荒謬觀念。」");
+	message("「那些在城門外紮營的骯髒水手完全不把『美』放在眼裡。他們宣揚一些關於兄弟情誼…之類的荒謬觀念。」");
 	say();
 	UI_remove_answer("異教徒");
 	UI_add_answer("水手");
@@ -397,7 +397,7 @@ labelFunc0437_08F7:
 	UI_add_answer("惡魔遺物");
 labelFunc0437_0911:
 	case "惡魔遺物" attend labelFunc0437_0924:
-	message("「你可以在這片土地上到處找到它們。它們沒什麼意思……一點都……不『美』。」");
+	message("「你可以在這片土地上到處找到它們。它們沒什麼意思…一點都…不『美』。」");
 	say();
 	UI_remove_answer("惡魔遺物");
 labelFunc0437_0924:
@@ -422,7 +422,7 @@ labelFunc0437_0960:
 	UI_add_answer("Kylista");
 labelFunc0437_097E:
 	case "Kylista" attend labelFunc0437_09A0:
-	message("「她是鎮上最美麗的女人……」");
+	message("「她是鎮上最美麗的女人…」");
 	say();
 	message("「當然，除了我之外。」");
 	say();

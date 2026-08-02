@@ -30,18 +30,18 @@ void Func040F object#(0x40F) ()
 	var0004 = false;
 	var0005 = UI_find_nearby(0xFFF1, 0x02E3, 0x001E, 0x0000);
 	if (!((var0003 > 0x0001) || (var0003 < 0x0006))) goto labelFunc040F_004C;
-	var0003 = "day";
+	var0003 = "早";
 	goto labelFunc040F_0052;
 labelFunc040F_004C:
-	var0003 = "evening";
+	var0003 = "晚";
 labelFunc040F_0052:
 	if (!(event == 0x000A)) goto labelFunc040F_005E;
 	Func0826(event);
 labelFunc040F_005E:
 	if (!(event == 0x0001)) goto labelFunc040F_0094;
-	UI_item_say(0xFE9C, "@Hello!@");
+	UI_item_say(0xFE9C, "@你好！@");
 	0xFFF1->Func07D1();
-	Func097F(0xFFF1, (("@Good " + var0003) + ".@"), 0x0002);
+	Func097F(0xFFF1, ("@" + var0003 + "安！@"), 0x0002);
 	UI_set_schedule_type(0xFFF1, 0x0003);
 labelFunc040F_0094:
 	if (!(event == 0x0009)) goto labelFunc040F_0635;
@@ -57,12 +57,12 @@ labelFunc040F_0094:
 	goto labelFunc040F_0100;
 labelFunc040F_00E1:
 	if (!gflags[0x0004]) goto labelFunc040F_00F5;
-	message("「你還活著！你在那場大災難中活下來了！好多人都死了……」");
+	message("「你還活著！你在那場大災難中活下來了！好多人都死了…」");
 	say();
 	UI_add_answer("大災難");
 	goto labelFunc040F_0100;
 labelFunc040F_00F5:
-	message("「歡迎回來……」");
+	message("「歡迎回來…」");
 	say();
 	UI_add_answer("工匠大師");
 labelFunc040F_0100:
@@ -124,13 +124,13 @@ labelFunc040F_01D6:
 labelFunc040F_01F2:
 	case "魔導人偶" attend labelFunc040F_020C:
 	UI_remove_answer("魔導人偶");
-	message("「一個會烘焙。一個會縫紉。一個會打鐵。全都是從 Torrissio 那裡來的。他們工作很勤奮……不會像 Topo 那樣頂嘴。」");
+	message("「一個會烘焙。一個會縫紉。一個會打鐵。全都是從 Torrissio 那裡來的。他們工作很勤奮…不會像 Topo 那樣頂嘴。」");
 	say();
 	UI_add_answer("Torrissio");
 labelFunc040F_020C:
 	case "Torrissio" attend labelFunc040F_0230:
 	UI_remove_answer("Torrissio");
-	message("「Torrissio 是個內行。他製造魔導人偶衛兵和僕人。他的手藝不錯……幾乎像個工匠大師了。但他需要魔法才能讓所有東西運轉。」");
+	message("「Torrissio 是個內行。他製造魔導人偶衛兵和僕人。他的手藝不錯…幾乎像個工匠大師了。但他需要魔法才能讓所有東西運轉。」");
 	say();
 	message("「我用很划算的價格賣給他需要的金屬。現在我得到了三個金屬做的勤勞工人。這交易挺不錯的。」");
 	say();
@@ -142,7 +142,7 @@ labelFunc040F_0230:
 	say();
 	message("「我只知道他的法術很古老。不是這些法師創造的任何東西。」");
 	say();
-	message("「你想問更多，去問 Torrissio ……如果他願意跟你說話的話。」");
+	message("「你想問更多，去問 Torrissio …如果他願意跟你說話的話。」");
 	say();
 	UI_add_answer("古老");
 labelFunc040F_0252:
@@ -207,17 +207,17 @@ labelFunc040F_032A:
 	UI_remove_answer("儀器");
 	if (!var0005) goto labelFunc040F_0380;
 	if (!Func097D(0xFE9B, 0x0001, 0x02ED, 0xFE99, 0x0001)) goto labelFunc040F_0362;
-	message("「嗯……這是法師使用的實驗室儀器。事實上，這個曾是我早期的傑作之一。我以為它已經被毀了。」");
+	message("「嗯…這是法師使用的實驗室儀器。事實上，這個曾是我早期的傑作之一。我以為它已經被毀了。」");
 	say();
-	message("「我或許該問你是怎麼得到這東西的。但我不想問。我不想知道。 Vasculio 已經死了很多年了……」");
+	message("「我或許該問你是怎麼得到這東西的。但我不想問。我不想知道。 Vasculio 已經死了很多年了…」");
 	say();
 	var0007 = true;
 	UI_add_answer("Vasculio");
 	goto labelFunc040F_037D;
 labelFunc040F_0362:
-	message("「你根本沒有那種東西！別浪費我的時間，我很忙的……」");
+	message("「你根本沒有那種東西！別浪費我的時間，我很忙的…」");
 	say();
-	Func097F(0xFFF1, "@必須工作……@", 0x0000);
+	Func097F(0xFFF1, "@必須工作…@", 0x0000);
 	UI_set_schedule_type(0xFFF1, 0x0014);
 	abort;
 labelFunc040F_037D:
@@ -230,7 +230,7 @@ labelFunc040F_0384:
 	UI_remove_answer("Vasculio");
 	message("「那傢伙不是什麼好人。企圖超越生命並統治死亡。不是好人。」");
 	say();
-	message("「議會多年前殺了他。我以為他們在發現空墳墓後，已經把他的設備全毀了……但也許是 Ensorcio 拿走了。」");
+	message("「議會多年前殺了他。我以為他們在發現空墳墓後，已經把他的設備全毀了…但也許是 Ensorcio 拿走了。」");
 	say();
 	UI_add_answer(["空墳墓", "Ensorcio"]);
 labelFunc040F_03A8:
@@ -259,7 +259,7 @@ labelFunc040F_03ED:
 	UI_remove_answer("Topo");
 	message("「我的學徒。瘦弱的男孩。野心很大。嘴巴很大。」");
 	say();
-	message("「但他工作很努力……當我對他大吼的時候。看起來很有前途。」");
+	message("「但他工作很努力…當我對他大吼的時候。看起來很有前途。」");
 	say();
 	message("「不過他有點懶惰。必須好好教導他。確保他學到的能跟自以為懂的一樣多。」");
 	say();
@@ -304,9 +304,9 @@ labelFunc040F_048D:
 	UI_remove_answer("遺失的戒指");
 	if (!var0005) goto labelFunc040F_04DA;
 	if (!Func097D(0xFE9B, 0x0001, 0x0377, 0xFE99, 0x0000)) goto labelFunc040F_04D3;
-	message("「可以讓我看看嗎？啊，謝謝你……」");
+	message("「可以讓我看看嗎？啊，謝謝你…」");
 	say();
-	message("「對法師來說太普通了……等等，我想起來了！」");
+	message("「對法師來說太普通了…等等，我想起來了！」");
 	say();
 	message("「這是我為一個來自 幼鹿城( Fawn ) 的水手做的。我敢打賭這花了他半年的工資。他想拿這當訂婚戒指。」");
 	say();
@@ -340,12 +340,12 @@ labelFunc040F_050C:
 	message("「魔法劍非常難處理。有些情況我能幫上忙，但有些情況需要法師的協助。」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0326, 0xFE99, 0xFE99)) goto labelFunc040F_055F;
-	message("「這的確是一把魔法劍。我就姑且相信你說的惡魔這回事……」");
+	message("「這的確是一把魔法劍。我就姑且相信你說的惡魔這回事…」");
 	say();
 	message("「劍刃的結構沒有受損。這不是我能修理的問題。」");
 	say();
 	if (!UI_get_item_flag(0xFFEA, 0x0004)) goto labelFunc040F_0554;
-	message("「你必須找一位法師來幫助你，如果還有活著的法師的話……」");
+	message("「你必須找一位法師來幫助你，如果還有活著的法師的話…」");
 	say();
 	message("「如果 Gustacio 的流量分析儀 (flux analyzer) 沒有被偷的話，我會派你去他的實驗室。那是唯一能幫助你的東西。」");
 	say();
@@ -363,12 +363,12 @@ labelFunc040F_0563:
 	case "蠕蟲寶石" attend labelFunc040F_05D9:
 	UI_remove_answer("蠕蟲寶石");
 	if (!var0005) goto labelFunc040F_05D5;
-	message("「真是個奇怪的要求……是的，如果你想要，我可以為你製造一顆蠕蟲寶石。」");
+	message("「真是個奇怪的要求…是的，如果你想要，我可以為你製造一顆蠕蟲寶石。」");
 	say();
 	UI_add_answer("奇怪的要求");
 	if (!Func097D(0xFE9B, 0x0001, 0x034A, 0xFE99, 0x000A)) goto labelFunc040F_05C7;
 	if (!Func097D(0xFE9B, 0x0003, 0x034A, 0xFE99, 0x000A)) goto labelFunc040F_05B9;
-	message("「這很簡單，只要你知道其中的秘密……」");
+	message("「這很簡單，只要你知道其中的秘密…」");
 	say();
 	Func0826(event);
 	abort;
@@ -386,14 +386,14 @@ labelFunc040F_05C7:
 labelFunc040F_05D2:
 	goto labelFunc040F_05D9;
 labelFunc040F_05D5:
-	message("「如果你在我店裡的時候過來，我會為你製作蠕蟲寶石……」");
+	message("「如果你在我店裡的時候過來，我會為你製作蠕蟲寶石…」");
 	say();
 labelFunc040F_05D9:
 	case "奇怪的要求" attend labelFunc040F_05F0:
 	UI_remove_answer("奇怪的要求");
 	message("「是 Torrissio 告訴我製造這些寶石的秘密。他說他是從一些寫著奇怪盧恩文字的古老卷軸上學到的。」");
 	say();
-	message("「多年來，他一直是我這種寶石的唯一顧客。但後來那個叫巴特林的陌生人要求我為他製作一些，現在你也要求……」");
+	message("「多年來，他一直是我這種寶石的唯一顧客。但後來那個叫巴特林的陌生人要求我為他製作一些，現在你也要求…」");
 	say();
 labelFunc040F_05F0:
 	case "蠕蟲心臟" attend labelFunc040F_0607:

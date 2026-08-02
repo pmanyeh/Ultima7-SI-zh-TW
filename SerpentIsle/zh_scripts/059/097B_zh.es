@@ -30,7 +30,7 @@ labelFunc097B_006C:
 	var0003 = "@問候你好嗎？@";
 labelFunc097B_007C:
 	if (!(var0002 == 0x000E)) goto labelFunc097B_008C;
-	var0003 = "@呼——呼——……@";
+	var0003 = "@呼——呼——…@";
 labelFunc097B_008C:
 	if (!(var0002 == 0x0017)) goto labelFunc097B_00D6;
 	if (!(var0004 == 0x0001)) goto labelFunc097B_00A6;

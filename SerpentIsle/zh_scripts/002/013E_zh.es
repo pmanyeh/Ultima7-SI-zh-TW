@@ -35,7 +35,7 @@ labelFunc013E_0019:
 	var0003 = UI_find_nearby(0xFE9C, 0x013E, 0x0014, 0x0000);
 	if (!(event == 0x0002)) goto labelFunc013E_0169;
 	UI_show_npc_face0(0xFEE1, 0x0000);
-	message("「好啊，好啊，好啊……難道不是聖者嗎！」 *「蠢貨！你以為我死了……但現在該死的是你！」");
+	message("「好啊，好啊，好啊…難道不是聖者嗎！」 *「蠢貨！你以為我死了…但現在該死的是你！」");
 	say();
 	var0004 = UI_add_cont_items(var0003, 0x0001, 0x0321, 0xFE99, 0x0000, 0x0012);
 	var0004 = UI_add_cont_items(var0003, 0x0001, 0x0358, 0x0003, 0xFE99, 0x0012);
@@ -83,7 +83,7 @@ labelFunc013E_01E3:
 	say();
 	message("「不久我將能與守護者相抗衡，並把你這令人惱怒的害蟲碾成齏粉！」");
 	say();
-	message("「我將開啟光明之牆，毀滅世界！而你無力追趕我！」");
+	message("「我將開啟光之牆，毀滅世界！而你無力追趕我！」");
 	say();
 	var0008 = UI_get_object_position(item);
 	UI_sprite_effect(0x0015, var0008[0x0001], var0008[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
@@ -100,7 +100,7 @@ labelFunc013E_0269:
 	var0004 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0004), [(byte)0x23, (byte)0x55, 0x0377], 0x00C8);
 labelFunc013E_029C:
 	if (!((event == 0x0007) && (!UI_get_item_flag(item, 0x001E)))) goto labelFunc013E_02E5;
-	Func097F(item, "@終於……@", 0x0000);
+	Func097F(item, "@終於…@", 0x0000);
 	item->Func07D2();
 	item->Func07D1();
 	UI_set_schedule_type(item, 0x000F);
@@ -119,7 +119,7 @@ labelFunc013E_0330:
 	goto labelFunc013E_038D;
 labelFunc013E_033B:
 	if (!((UI_get_distance(0xFE9C, item) < 0x000C) && (!UI_get_item_flag(item, 0x001E)))) goto labelFunc013E_038D;
-	Func097F(item, "@終於……@", 0x0000);
+	Func097F(item, "@終於…@", 0x0000);
 	0xFE9C->Func07D2();
 	item->Func07D1();
 	UI_set_schedule_type(item, 0x000F);
@@ -134,7 +134,7 @@ labelFunc013E_038D:
 	message("「Palos ，你的烈火將溫暖我陷阱的核心。我將倚仗你確保聖者感受到我們的歡迎之熱情。」");
 	say();
 	UI_show_npc_face1(0xFEEF, 0x0000);
-	message("「這將是我莫大的榮幸。期待這次會面……」");
+	message("「這將是我莫大的榮幸。期待這次會面…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -151,7 +151,7 @@ labelFunc013E_0433:
 	if (!(UI_get_npc_id(item) == 0x0008)) goto labelFunc013E_04D5;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFEE1, 0x0000);
-	message("「你將擔任我的門衛。我可以指望你的力量來阻延聖者……」");
+	message("「你將擔任我的門衛。我可以指望你的力量來阻延聖者…」");
 	say();
 	UI_show_npc_face1(0xFF81, 0x0000);
 	message("「你希望讓");
@@ -160,10 +160,10 @@ labelFunc013E_0433:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「殘廢就夠了，強大的 Brunt 。但隨你高興……」");
+	message("「殘廢就夠了，強大的 Brunt 。但隨你高興…」");
 	say();
 	UI_show_npc_face1(0xFF81, 0x0000);
-	message("「很好……那就死吧！」");
+	message("「很好…那就死吧！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -180,12 +180,12 @@ labelFunc013E_04EB:
 	if (!(UI_get_npc_id(item) == 0x0006)) goto labelFunc013E_0524;
 	var000D = [0x0926, 0x0187, 0x0000];
 	UI_si_path_run_usecode(0xFF81, var000D, 0x000D, 0xFF81, 0x047F, false);
-	Func097F(item, "@我必須確認一下……@", 0x0000);
+	Func097F(item, "@我必須確認一下…@", 0x0000);
 labelFunc013E_0524:
 	if (!(UI_get_npc_id(item) == 0x0005)) goto labelFunc013E_0583;
 	UI_init_conversation();
 	UI_show_npc_face0(0xFEE1, 0x0000);
-	message("「我給你安排壓軸的任務……光明之牆完全開啟之前，聖者絕不能進入平衡神殿。若其他人失敗，你必須阻止聖者。」");
+	message("「我給你安排壓軸的任務…光之牆完全開啟之前，聖者絕不能進入平衡神殿。若其他人失敗，你必須阻止聖者。」");
 	say();
 	UI_show_npc_face1(0xFF80, 0x0000);
 	message("「我會把");
@@ -196,11 +196,11 @@ labelFunc013E_0524:
 	say();
 	message("「當然，還有另一個人也迫不及待想和");
 	message(var0001);
-	message("再度相遇……」");
+	message("再度相遇…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「啊，是的……我幾乎忘了。」");
+	message("「啊，是的…我幾乎忘了。」");
 	say();
 	UI_set_schedule_type(0xFF80, 0x000B);
 	UI_end_conversation();
@@ -218,11 +218,11 @@ labelFunc013E_0599:
 	UI_si_path_run_usecode(0xFF80, var000E, 0x000D, 0xFF80, 0x0480, false);
 labelFunc013E_05DE:
 	if (!(UI_get_npc_id(item) == 0x0002)) goto labelFunc013E_05F4;
-	Func097F(item, "@……在聖者到來之前。@", 0x0000);
+	Func097F(item, "@…在聖者到來之前。@", 0x0000);
 labelFunc013E_05F4:
 	if (!(UI_get_npc_id(item) == 0x0001)) goto labelFunc013E_0627;
 	UI_fade_palette(0x000C, 0x0001, 0x0001);
-	Func097F(item, "@時間所剩無幾……@", 0x0000);
+	Func097F(item, "@時間所剩無幾…@", 0x0000);
 	UI_play_music(0x0034, Func09A0(0x0005, 0x0001));
 labelFunc013E_0627:
 	abort;
@@ -243,7 +243,7 @@ labelFunc013E_0628:
 labelFunc013E_06A1:
 	if (!((event == 0x0003) && (var0002 == 0x001F))) goto labelFunc013E_06EE;
 	UI_show_npc_face0(0xFEE1, 0x0000);
-	message("「啊，聖者！你從未是我的對手……」 *「不久我將擁有足以與守護者本人相抗衡的力量！而你將無能為力，就如同現在一樣。」 *「我將把刀刃深深刺入你的內臟，緩緩地旋轉，盡情享受你每一聲可悲的哀嚎。」 *「再見了，不列顛尼亞的英雄。雖然你將哀求讓你的生命儘快結束，但我將忍住。我想好好享受你的死亡……」");
+	message("「啊，聖者！你從未是我的對手…」 *「不久我將擁有足以與守護者本人相抗衡的力量！而你將無能為力，就如同現在一樣。」 *「我將把刀刃深深刺入你的內臟，緩緩地旋轉，盡情享受你每一聲可悲的哀嚎。」 *「再見了，不列顛尼亞的英雄。雖然你將哀求讓你的生命儘快結束，但我將忍住。我想好好享受你的死亡…」");
 	say();
 	UI_remove_npc_face0();
 	Func097F(item, "@好好享受你的死亡！@", 0x0002);

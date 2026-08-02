@@ -55,7 +55,7 @@ labelFunc0402_0076:
 	if (!gflags[0x025B]) goto labelFunc0402_0135;
 	if (!((Func0994() != 0x0010) && ((!gflags[0x0004]) && (Func0994() != 0x0018)))) goto labelFunc0402_011E;
 	UI_show_npc_face0(0xFEE2, 0x0000);
-	message("「別死，我親愛的國王……」");
+	message("「別死，我親愛的國王…」");
 	say();
 	UI_show_npc_face1(0xFFFE, 0x0000);
 	message("「Beatrix ，是妳嗎？」");
@@ -64,7 +64,7 @@ labelFunc0402_0076:
 	UI_set_conversation_slot(0x0000);
 	message("「我原諒你拋棄了我們，Shamino 國王。為了證明我對你的愛勝過永恆，我將治癒你的傷口。」");
 	say();
-	message("「把這本書當作我們之間的紀念品。現在我必須進入虛空了，但請永遠記住我……」");
+	message("「把這本書當作我們之間的紀念品。現在我必須進入虛空了，但請永遠記住我…」");
 	say();
 	var0006 = Func095C(0xFFFE, 0x0000);
 	var0007 = Func095C(0xFFFE, 0x0003);
@@ -80,7 +80,7 @@ labelFunc0402_011E:
 	UI_reduce_health(0xFFFE, 0x0032, 0x0000);
 labelFunc0402_0135:
 	if (!(event == 0x0001)) goto labelFunc0402_01E1;
-	UI_item_say(0xFE9C, "Shamino ……");
+	UI_item_say(0xFE9C, "Shamino …");
 	0xFFFE->Func07D1();
 	if (!(!UI_get_item_flag(0xFFFE, 0x001E))) goto labelFunc0402_017C;
 	Func097F(0xFFFE, (("@是的，" + var0003) + "？"), 0x0002);
@@ -112,7 +112,7 @@ labelFunc0402_0211:
 labelFunc0402_021F:
 	UI_show_npc_face0(0xFFFE, 0x0000);
 	if (!(gflags[0x0006] && (!gflags[0x02A2]))) goto labelFunc0402_0295;
-	message("「聖者！你沒事吧？我聽到了像是火山爆發的聲音——看看這裡…到處都是火……」");
+	message("「聖者！你沒事吧？我聽到了像是火山爆發的聲音——看看這裡…到處都是火…」");
 	say();
 	message("「我到處在找你！那場風暴讓我非常不安。我既找不到 Iolo 也找不到 Dupre 。」");
 	say();
@@ -133,7 +133,7 @@ labelFunc0402_0295:
 	if (!(var0000 == 0x001E)) goto labelFunc0402_033A;
 	message("「你確實很快就逃出了邪惡法師的監獄。太棒了！」");
 	say();
-	message("「當然，我從未懷疑過你會回來……」");
+	message("「當然，我從未懷疑過你會回來…」");
 	say();
 	message("「我也有些消息，");
 	message(var0001);
@@ -190,7 +190,7 @@ labelFunc0402_03CE:
 	UI_remove_answer("你是怎麼來的？");
 	message("「僧侶們來了並把我帶到這裡，說我在這裡是非常重要的事。」");
 	say();
-	message("「那個叫 Karnax 的人說我必須完成我的使命，否則世界本身將處於危險之中……」");
+	message("「那個叫 Karnax 的人說我必須完成我的使命，否則世界本身將處於危險之中…」");
 	say();
 	if (!(var000B && var000C)) goto labelFunc0402_03F2;
 	goto labelFunc0402_02F8;
@@ -266,7 +266,7 @@ labelFunc0402_04CE:
 labelFunc0402_04DA:
 	message("「最後，還有一張便條紙，但我不知道裡面的內容。」");
 	say();
-	message("「這些給你……」");
+	message("「這些給你…」");
 	say();
 	var0009 = Func099B(0xFE9C, 0x0001, 0x027B, 0xFE99, 0x0000, 0x0000, true);
 	var0009 = Func099B(0xFE9C, 0x0001, 0x031D, 0x00CD, 0x0006, 0x0000, true);
@@ -308,7 +308,7 @@ labelFunc0402_05B4:
 	goto labelFunc0402_05EC;
 labelFunc0402_05D1:
 	UI_add_answer("加入");
-	message("「如果你是這麼希望的話……」");
+	message("「如果你是這麼希望的話…」");
 	say();
 	UI_remove_from_party(0xFFFE);
 	Func0863();
@@ -358,7 +358,7 @@ labelFunc0402_068F:
 	message("「時間過得太久了，我幾乎認不出這個地方，就像夢中的某個地方一樣。我確實記得在城堡大門西邊，一棵大樹附近有一扇幻影門。」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(0xFFFE, "@就在這附近……@", 0x0003);
+	Func097F(0xFFFE, "@就在這附近…@", 0x0003);
 labelFunc0402_06B7:
 	return;
 }

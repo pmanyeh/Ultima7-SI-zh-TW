@@ -30,7 +30,7 @@ labelFunc04D1_0025:
 	var0004 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc04D1_007A;
 	if (!(UI_get_npc_id(0xFF31) != 0x0000)) goto labelFunc04D1_004C;
-	UI_item_say(0xFF2F, "@安靜……@");
+	UI_item_say(0xFF2F, "@安靜…@");
 	abort;
 labelFunc04D1_004C:
 	UI_item_say(0xFE9C, "@等一下，僧侶！@");
@@ -46,7 +46,7 @@ labelFunc04D1_007A:
 	if (!(var0002 == 0x0009)) goto labelFunc04D1_00D6;
 	message("「我的名字是 Miggim。我是僧侶島( Monk Isle )上的圖書管理員。」");
 	say();
-	message("「我一直在等待你的到來……」");
+	message("「我一直在等待你的到來…」");
 	say();
 	UI_set_item_flag(0xFF2F, 0x001C);
 	UI_add_answer(["圖書管理員", "僧侶島", "到來"]);
@@ -68,12 +68,12 @@ labelFunc04D1_0103:
 	UI_add_answer("圖書館");
 labelFunc04D1_0114:
 	if (!((!gflags[0x0038]) && (gflags[0x002D] && (!gflags[0x00A5])))) goto labelFunc04D1_012F;
-	message("「我有一種奇怪的不祥預感……」");
+	message("「我有一種奇怪的不祥預感…」");
 	say();
 	UI_add_answer("不祥預感");
 labelFunc04D1_012F:
 	if (!Func08FC()) goto labelFunc04D1_0144;
-	message("「噢！你的一位朋友遭遇了不幸。這不該發生的……」");
+	message("「噢！你的一位朋友遭遇了不幸。這不該發生的…」");
 	say();
 	message("「如果你準備好再次見到你的朋友，只要開口，我就會把他們還給你。」");
 	say();
@@ -160,12 +160,12 @@ labelFunc04D1_0279:
 	UI_remove_answer("偉大的天平");
 	message("「它可以代表任何東西，");
 	message(var0004);
-	message("。音階( Music scales )、比例尺( map scales )、蛇鱗( snake scales )或是天平( weight scales )……」");
+	message("。音階( Music scales )、比例尺( map scales )、蛇鱗( snake scales )或是天平( weight scales )…」");
 	say();
 labelFunc04D1_0292:
 	case "對立的力量" attend labelFunc04D1_02A5:
 	UI_remove_answer("對立的力量");
-	message("「我不知道……不過我大膽猜測，它指的是善與惡的力量。」");
+	message("「我不知道…不過我大膽猜測，它指的是善與惡的力量。」");
 	say();
 labelFunc04D1_02A5:
 	case "段落" attend labelFunc04D1_02C9:
@@ -187,7 +187,7 @@ labelFunc04D1_02C9:
 labelFunc04D1_02E6:
 	case "事件" attend labelFunc04D1_02FD:
 	UI_remove_answer("事件");
-	message("「預言中的事件雜亂無章，我們至今無法發現它們之間有任何框架連結……」");
+	message("「預言中的事件雜亂無章，我們至今無法發現它們之間有任何框架連結…」");
 	say();
 	message("「『巨大的風暴，希望的容器被粉碎，失去的愛被寬恕並恢復』——我們仍在尋找它們的含義。」");
 	say();
@@ -198,17 +198,17 @@ labelFunc04D1_02FD:
 	message(var0004);
 	message("。」");
 	say();
-	message("「只剩下少數信徒留下來研究和思考她話語中的奧秘。現在很少有人願意奉獻一生，去等待可能需要幾個世紀才會發生的事件。信仰不是一件容易的事……」");
+	message("「只剩下少數信徒留下來研究和思考她話語中的奧秘。現在很少有人願意奉獻一生，去等待可能需要幾個世紀才會發生的事件。信仰不是一件容易的事…」");
 	say();
 labelFunc04D1_031A:
 	case "到來" attend labelFunc04D1_034C:
 	UI_remove_answer("到來");
 	message("「是的，");
 	message(var0004);
-	message("，書上寫著，一位來自異世界之英雄將會來糾正我們土地上的混亂。那個人就是你……」");
+	message("，書上寫著，一位來自異世界之英雄將會來糾正我們土地上的混亂。那個人就是你…」");
 	say();
 	if (!(var0002 == 0x0009)) goto labelFunc04D1_034C;
-	message("「書上還寫著，在你的任務剛開始時，背叛將會如影隨形。這就是我為什麼在這裡……」");
+	message("「書上還寫著，在你的任務剛開始時，背叛將會如影隨形。這就是我為什麼在這裡…」");
 	say();
 	message("「並非所有 Xenka 的追隨者都認為我們應該採取直接行動來幫助你。然而，Thoxa 和我並不同意。」");
 	say();
@@ -241,7 +241,7 @@ labelFunc04D1_0387:
 labelFunc04D1_03AB:
 	case "各式各樣的書籍和卷軸" attend labelFunc04D1_03D0:
 	UI_remove_answer("各式各樣的書籍和卷軸");
-	message("「詩歌、天文觀測、潮汐表和地圖……任何可能為預言含義提供線索的東西。」");
+	message("「詩歌、天文觀測、潮汐表和地圖…任何可能為預言含義提供線索的東西。」");
 	say();
 	if (!(gflags[0x0269] && (!gflags[0x0220]))) goto labelFunc04D1_03D0;
 	UI_add_answer("地圖");

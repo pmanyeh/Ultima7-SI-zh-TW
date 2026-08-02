@@ -200,7 +200,7 @@ labelFunc0842_03D2:
 	var0011 = "支火把";
 labelFunc0842_03F6:
 	if (!(var000C == 0x0006)) goto labelFunc0842_041A;
-	message("「睡在我的睡袋上你會感到最舒適。」~「我發誓！」*「一個我賣你 ");
+	message("「睡在我的睡袋上你會感到最舒適。」~「我發誓！」* 「一個我賣你 ");
 	message(var000D);
 	message(" 蒙里他利幣。」");
 	say();
@@ -289,7 +289,7 @@ labelFunc0842_055C:
 	say();
 	goto labelFunc0842_059D;
 labelFunc0842_0599:
-	message("「你沒有足夠的蒙里他利幣購買這個……」");
+	message("「你沒有足夠的蒙里他利幣購買這個…」");
 	say();
 labelFunc0842_059D:
 	if (!(0x001F < (UI_get_npc_id(0xFFBC) + 0x0006))) goto labelFunc0842_05BC;

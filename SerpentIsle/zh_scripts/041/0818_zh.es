@@ -59,13 +59,13 @@ labelFunc0818_0212:
 	if (!(var000A == 0x0001)) goto labelFunc0818_02BC;
 	var000B = UI_die_roll(0x0001, 0x0003);
 	if (!(var000B == 0x0001)) goto labelFunc0818_0242;
-	var000C = "嗯……啊，";
+	var000C = "嗯…啊，";
 labelFunc0818_0242:
 	if (!(var000B == 0x0002)) goto labelFunc0818_0252;
-	var000C = "啊……呃，";
+	var000C = "啊…呃，";
 labelFunc0818_0252:
 	if (!(var000B == 0x0003)) goto labelFunc0818_0262;
-	var000C = "嗯……我明白了，";
+	var000C = "嗯…我明白了，";
 labelFunc0818_0262:
 	var000B = UI_die_roll(0x0001, 0x0003);
 	if (!(var000B == 0x0001)) goto labelFunc0818_027F;
@@ -98,7 +98,7 @@ labelFunc0818_02E8:
 	var0010 = "你覺得這個價格可以接受嗎？";
 labelFunc0818_02F8:
 	if (!(var000B == 0x0003)) goto labelFunc0818_0308;
-	var0010 = "讓我想想……啊，對了！你覺得這價格合適嗎？";
+	var0010 = "讓我想想…啊，對了！你覺得這價格合適嗎？";
 labelFunc0818_0308:
 	if (!(var000B == 0x0004)) goto labelFunc0818_0318;
 	var0010 = "你同意嗎？";
@@ -107,10 +107,10 @@ labelFunc0818_0318:
 	var0010 = "這價格可以接受嗎？";
 labelFunc0818_0328:
 	if (!(var000B == 0x0006)) goto labelFunc0818_0338;
-	var0010 = "啊，嗯……這價格可以接受嗎？";
+	var0010 = "啊，嗯…這價格可以接受嗎？";
 labelFunc0818_0338:
 	if (!(var000A == 0x0002)) goto labelFunc0818_0395;
-	message("「讓我想想……啊，那要三百枚法拉利幣。」");
+	message("「讓我想想…啊，那要三百枚法拉利幣。」");
 	say();
 	if (!Func0942(0xFFD2)) goto labelFunc0818_0375;
 	UI_show_npc_face1(0xFFD2, 0x0000);
@@ -120,11 +120,11 @@ labelFunc0818_0338:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「啊，呃……妳是對的，親愛的！」");
+	message("「啊，呃…妳是對的，親愛的！」");
 	say();
 	goto labelFunc0818_0385;
 labelFunc0818_0375:
-	message("「呃，這不對……喔，抱歉，");
+	message("「呃，這不對…喔，抱歉，");
 	message(var0000);
 	message("，我的皮袋賣 ");
 	message(var000E);
@@ -138,7 +138,7 @@ labelFunc0818_0385:
 	var0011 = "袋子";
 labelFunc0818_0395:
 	if (!(var000A == 0x0003)) goto labelFunc0818_03B3;
-	message("「我店裡有幼鹿城最好的水桶！嗯……一個賣 ");
+	message("「我店裡有幼鹿城最好的水桶！嗯…一個賣 ");
 	message(var000E);
 	message(" 枚法拉利幣。」");
 	say();
@@ -150,7 +150,7 @@ labelFunc0818_03B3:
 	if (!(var000A == 0x0004)) goto labelFunc0818_03D7;
 	message("「如果你留在幼鹿城，你肯定會需要一個，");
 	message(var0000);
-	message("。啊……嗯，我會以 ");
+	message("。啊…嗯，我會以 ");
 	message(var000E);
 	message(" 枚法拉利幣的公道價格賣給你一個。」");
 	say();
@@ -169,7 +169,7 @@ labelFunc0818_03D7:
 	var0011 = "蠟燭";
 labelFunc0818_03F7:
 	if (!(var000A == 0x0006)) goto labelFunc0818_041B;
-	message("「火把？啊，是的……我的火把品質最好！我可以賣你一把，只要 ");
+	message("「火把？啊，是的…我的火把品質最好！我可以賣你一把，只要 ");
 	message(var000E);
 	message(" 枚法拉利幣。」");
 	say();
@@ -215,11 +215,11 @@ labelFunc0818_0463:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「啊，妳說得對，女兒……」");
+	message("「啊，妳說得對，女兒…」");
 	say();
 	goto labelFunc0818_04B6;
 labelFunc0818_04A6:
-	message("「呃，嗯……我想我弄錯了，");
+	message("「呃，嗯…我想我弄錯了，");
 	message(var0000);
 	message("。我的背包賣 ");
 	message(var000E);
@@ -238,7 +238,7 @@ labelFunc0818_04C6:
 	message("。」");
 	say();
 	if (!UI_is_pc_female()) goto labelFunc0818_04EE;
-	message("「咳嗯……我相信你一定會喜歡穿的，");
+	message("「咳嗯…我相信你一定會喜歡穿的，");
 	message(var0000);
 	message("。我保證它們穿起來非常舒服。」");
 	say();
@@ -254,16 +254,16 @@ labelFunc0818_04EE:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「但是，親愛的……他是客人……」");
+	message("「但是，親愛的…他是客人…」");
 	say();
 	UI_show_npc_face1(0xFFD2, 0x0000);
 	message("「父親，在公開場合談論這種事太無禮了！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「啊，嗯……她今天脾氣很暴躁，");
+	message("「啊，嗯…她今天脾氣很暴躁，");
 	message(var0000);
-	message("。我……呃，我為她的行為向你道歉。」");
+	message("。我…呃，我為她的行為向你道歉。」");
 	say();
 	UI_show_npc_face1(0xFFD2, 0x0000);
 	message("「父親！！！」");
@@ -271,7 +271,7 @@ labelFunc0818_04EE:
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0818_055A:
-	message("「啊，我剛說到哪了？喔，對了……這一雙精美的長襪我要價 ");
+	message("「啊，我剛說到哪了？喔，對了…這一雙精美的長襪我要價 ");
 	message(var000E);
 	message(" 枚法拉利幣。」");
 	say();
@@ -306,7 +306,7 @@ labelFunc0818_0598:
 	var0011 = "把十字弓";
 labelFunc0818_05C2:
 	if (!(var000A == 0x000D)) goto labelFunc0818_05E6;
-	message("「啊，你的十字弓會需要弩箭。讓我想想……喔，那將是 ");
+	message("「啊，你的十字弓會需要弩箭。讓我想想…喔，那將是 ");
 	message(var000E);
 	message(" 枚法拉利幣二十支弩箭。」");
 	say();
@@ -317,7 +317,7 @@ labelFunc0818_05C2:
 	var0011 = "束十字弓箭";
 labelFunc0818_05E6:
 	if (!(var000A == 0x000E)) goto labelFunc0818_0610;
-	message("「嗯……呃，儘管現在沒有可以航行的船隻，");
+	message("「嗯…呃，儘管現在沒有可以航行的船隻，");
 	message(var0000);
 	message("，但我可以給你一個公道的價格，買一個可靠的六分儀！只要 ");
 	message(var000E);
@@ -339,7 +339,7 @@ labelFunc0818_0610:
 	say();
 	goto labelFunc0818_063E;
 labelFunc0818_0634:
-	message("「或許是要送給心上人的禮物？啊，不，我問這個不太謹慎……只要 ");
+	message("「或許是要送給心上人的禮物？啊，不，我問這個不太謹慎…只要 ");
 	message(var000E);
 	message(" 枚法拉利幣，我就能賣給你一把做工精美的手鏡。」");
 	say();
@@ -380,7 +380,7 @@ labelFunc0818_06F0:
 	goto labelFunc0818_0799;
 labelFunc0818_0707:
 	if (!(var000F == 0x0002)) goto labelFunc0818_071E;
-	message("「啊，呃……」 ~「我想你的手已經拿不下了，");
+	message("「啊，呃…」 ~「我想你的手已經拿不下了，");
 	message(var0000);
 	message("！」");
 	say();
@@ -390,13 +390,13 @@ labelFunc0818_071E:
 	var000B = Func0992(0x0001, (("@但是" + var0000) + "，我們沒有足夠的錢買這個。@"), 0x0000, false);
 	if (!(var000B != 0xFE9C)) goto labelFunc0818_0761;
 	UI_show_npc_face0(0xFFD1, 0x0000);
-	message("「啊……看來你的錢包空了，");
+	message("「啊…看來你的錢包空了，");
 	message(var0000);
 	message("。」");
 	say();
 	goto labelFunc0818_0765;
 labelFunc0818_0761:
-	message("「看來你沒有足夠的錢買那個……」");
+	message("「看來你沒有足夠的錢買那個…」");
 	say();
 labelFunc0818_0765:
 	if (!(0x001F < (UI_get_npc_id(0xFFD1) + 0x0006))) goto labelFunc0818_0784;

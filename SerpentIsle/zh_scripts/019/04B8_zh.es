@@ -23,7 +23,7 @@ labelFunc04B8_004C:
 	if (!(event == 0x0009)) goto labelFunc04B8_0083;
 	UI_run_schedule(0xFF48);
 	UI_show_npc_face0(0xFF48, 0x0000);
-	message("「發生……什麼事了？我……在哪裡？我是誰？」");
+	message("「發生…什麼事了？我…在哪裡？我是誰？」");
 	say();
 	message("「我想起來了！我是 7 號！」");
 	say();

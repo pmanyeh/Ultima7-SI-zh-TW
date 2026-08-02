@@ -63,7 +63,7 @@ labelFunc0438_00DA:
 labelFunc0438_00EA:
 	converse attend labelFunc0438_04BC;
 	case "友誼會" attend labelFunc0438_0116:
-	message("「雖然不列顛王( Lord British )闡述的美德( Virtues )都很好，但普通人幾乎不可能做到。」");
+	message("「雖然不列顛王闡述的美德都很好，但普通人幾乎不可能做到。」");
 	say();
 	message("「普通人需要簡單的哲學。」");
 	say();
@@ -185,7 +185,7 @@ labelFunc0438_02E0:
 	case "Kylista" attend labelFunc0438_0302:
 	message("「她是一位美之祭司( Priestess of Beauty )——這個控制著幼鹿城( Fawn )的邪教。」");
 	say();
-	message("「Kylista 主持神諭( Oracle )，神諭總是毫不動搖地支持她的觀點……」");
+	message("「Kylista 主持神諭( Oracle )，神諭總是毫不動搖地支持她的觀點…」");
 	say();
 	message("「有人可能會懷疑 Kylista 利用神諭( Oracle )來增加她自己的個人權力。但我不知道她是怎麼做到的。」");
 	say();
@@ -195,7 +195,7 @@ labelFunc0438_0302:
 	case "神諭" attend labelFunc0438_0324:
 	message("「它是由幼鹿城夫人( Lady Fawn )親自委託，並由不列顛尼亞( Britannia )的法師們建造的。」");
 	say();
-	message("「它本該是傳達真理的工具……我不能說現在還是如此。」");
+	message("「它本該是傳達真理的工具…我不能說現在還是如此。」");
 	say();
 	message("「它全天候地給予啟示。」");
 	say();
@@ -213,7 +213,7 @@ labelFunc0438_0324:
 	UI_add_answer("大船長");
 labelFunc0438_0346:
 	case "大船長" attend labelFunc0438_0370:
-	message("「他們名義上是 Yelinda 夫人的顧問。他們控制著捕魚艦隊……或者說在風暴開始之前是這樣的。」");
+	message("「他們名義上是 Yelinda 夫人的顧問。他們控制著捕魚艦隊…或者說在風暴開始之前是這樣的。」");
 	say();
 	message("「實際上，他們控制著整個幼鹿城( Fawn )。痛苦而明顯的事實是，Yelinda 夫人只是一個在 Garth、Joth 和 Voldin 的命令下，被 Zulith 操縱的傀儡。」");
 	say();
@@ -277,7 +277,7 @@ labelFunc0438_0405:
 labelFunc0438_0431:
 	message("「他是個多麼了不起、多麼有洞察力的人啊！」");
 	say();
-	message("「如果沒有他為內在力量三法則( Triad of Inner Strength )發聲，我們都註定會失敗……無法達到不列顛王( Lord British )的高標準，或者無法實現我們每個人的全部潛力。」");
+	message("「如果沒有他為內在力量三法則( Triad of Inner Strength )發聲，我們都註定會失敗…無法達到不列顛王的高標準，或者無法實現我們每個人的全部潛力。」");
 	say();
 	message("「很遺憾你錯過了他。他已經前往內陸傳播友誼會的福音了。」");
 	say();
@@ -296,7 +296,7 @@ labelFunc0438_0457:
 	say();
 	message("「必須告訴巴特林這件事！如果他回了不列顛尼亞，向不列顛王解釋，我相信一切都會解決的。」");
 	say();
-	message("「也許我們的好名聲被那些想阻止我們傳教的人給貶低了……但這顯示出他們缺乏信任。」");
+	message("「也許我們的好名聲被那些想阻止我們傳教的人給貶低了…但這顯示出他們缺乏信任。」");
 	say();
 	message("「我必須對此進行冥想。毫無疑問，我的內在之聲( Inner Voice )會為這樣可怕的消息提供一個答案。」");
 	say();

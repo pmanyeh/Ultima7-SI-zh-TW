@@ -10,7 +10,7 @@ void Func04B1 object#(0x4B1) ()
 labelFunc04B1_0012:
 	if (!((event == 0x0009) || (event == 0x0000))) goto labelFunc04B1_0059;
 	var0000 = UI_die_roll(0x0001, 0x0003);
-	var0001 = ["水！拜託！", "我求求你！", "我的喉嚨好乾……"];
+	var0001 = ["水！拜託！", "我求求你！", "我的喉嚨好乾…"];
 	var0002 = var0001[var0000];
 	UI_item_say(0xFF4F, var0002);
 	UI_set_schedule_type(0xFF4F, 0x0007);

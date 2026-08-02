@@ -105,7 +105,7 @@ labelFunc08AD_0275:
 	goto labelFunc08AD_0288;
 labelFunc08AD_0288:
 	if (!((var0005 == 0x0179) && ((var0006 == 0x001F) && (var000A < 0x0019)))) goto labelFunc08AD_02B8;
-	var000C = (var000C & ("@咬起來脆脆的……@" & ("@味道很怪……@" & ("" & "@真管飽！@"))));
+	var000C = (var000C & ("@咬起來脆脆的…@" & ("@味道很怪…@" & ("" & "@真管飽！@"))));
 labelFunc08AD_02B8:
 	if (!(!(var000C == ""))) goto labelFunc08AD_02EC;
 	if (!Func0983(var0003)) goto labelFunc08AD_02EC;

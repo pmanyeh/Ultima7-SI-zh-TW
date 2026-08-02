@@ -54,7 +54,7 @@ labelFunc0410_00B3:
 	UI_sprite_effect(0x0028, var0004[0x0001], var0004[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 labelFunc0410_011D:
 	if (!(UI_get_npc_id(0xFFF0) == 0x0006)) goto labelFunc0410_0177;
-	Func097F(0xFFF0, "@必須躲起來……@", 0x0000);
+	Func097F(0xFFF0, "@必須躲起來…@", 0x0000);
 	UI_play_sound_effect(0x0074);
 	var0004 = UI_get_object_position(0xFFF0);
 	var0004[0x0001] = (var0004[0x0001] + 0x0011);
@@ -86,7 +86,7 @@ labelFunc0410_0268:
 	if (!(UI_get_npc_id(0xFFF0) == 0x0002)) goto labelFunc0410_029F;
 	UI_fade_palette(0x000C, 0x0001, 0x0001);
 	UI_play_music(0x000C, Func09A0(0x0005, 0x0001));
-	Func097F(0xFFF0, "@這預示著一場風暴……@", 0x0000);
+	Func097F(0xFFF0, "@這預示著一場風暴…@", 0x0000);
 labelFunc0410_029F:
 	if (!(UI_get_npc_id(0xFFF0) == 0x0001)) goto labelFunc0410_0381;
 	UI_play_sound_effect(0x0074);
@@ -127,7 +127,7 @@ labelFunc0410_0382:
 	var0005 = UI_delayed_execute_usecode_array(0xFFDB, [(byte)0x23, (byte)0x55, 0x0425], 0x0005);
 labelFunc0410_03D8:
 	if (!(event == 0x0001)) goto labelFunc0410_0400;
-	UI_item_say(0xFE9C, "@打擾一下……@");
+	UI_item_say(0xFE9C, "@打擾一下…@");
 	Func097F(0xFFF0, "@當然！@", 0x0002);
 	UI_set_schedule_type(0xFFF0, 0x0003);
 labelFunc0410_0400:
@@ -197,7 +197,7 @@ labelFunc0410_0525:
 	case "夢" attend labelFunc0410_056E:
 	UI_remove_answer("夢");
 	if (!(!gflags[0x00F3])) goto labelFunc0410_0550;
-	message("「那是我經歷過最不尋常的事。嗯，除了變成鳥之外。當我作夢時，我會看到這位少女——像夏日一樣美麗。她自稱 Siranush 。通常我只能從遠處看著她，在泉水中沐浴或在陽光下取暖。而有些時候，我們會在一起，游泳、園藝、散步……」");
+	message("「那是我經歷過最不尋常的事。嗯，除了變成鳥之外。當我作夢時，我會看到這位少女——像夏日一樣美麗。她自稱 Siranush 。通常我只能從遠處看著她，在泉水中沐浴或在陽光下取暖。而有些時候，我們會在一起，游泳、園藝、散步…」");
 	say();
 	message("「哦，請原諒，");
 	message(var0000);
@@ -215,7 +215,7 @@ labelFunc0410_0550:
 labelFunc0410_0564:
 	message("他微笑著。「是的，");
 	message(var0000);
-	message("。我忘了向你道謝。你給了我一個機會去了解我的幻象是真實的。然而，現在我再也沒有機會見到我美麗的 Siranush 了……」");
+	message("。我忘了向你道謝。你給了我一個機會去了解我的幻象是真實的。然而，現在我再也沒有機會見到我美麗的 Siranush 了…」");
 	say();
 labelFunc0410_056E:
 	case "羊群" attend labelFunc0410_0587:
@@ -239,7 +239,7 @@ labelFunc0410_05A7:
 labelFunc0410_05CA:
 	case "Hawk" attend labelFunc0410_0645:
 	UI_remove_answer("Hawk");
-	message("「他是那艘……那艘……那艘船叫什麼名字來著的船長？」");
+	message("「他是那艘…那艘…那艘船叫什麼名字來著的船長？」");
 	say();
 	if (!Func0942(0xFFD5)) goto labelFunc0410_0622;
 	UI_show_npc_face1(0xFFD5, 0x0000);
@@ -269,7 +269,7 @@ labelFunc0410_0641:
 	say();
 labelFunc0410_0645:
 	case "被殺" attend labelFunc0410_067D:
-	message("「我什麼也沒看見……」");
+	message("「我什麼也沒看見…」");
 	say();
 	if (!Func0942(0xFFD5)) goto labelFunc0410_0673;
 	UI_show_npc_face1(0xFFD5, 0x0000);

@@ -26,7 +26,7 @@ void Func0424 object#(0x424) ()
 	if (!(event == 0x0001)) goto labelFunc0424_0064;
 	UI_item_say(0xFE9C, "@等一下，好兄弟。@");
 	0xFFDC->Func07D1();
-	var0005 = ("@不要打我……@" & "@我求求你！@");
+	var0005 = ("@不要打我…@" & "@我求求你！@");
 	Func094F(0xFFDC, var0005);
 	UI_set_schedule_type(0xFFDC, 0x0003);
 labelFunc0424_0064:
@@ -57,7 +57,7 @@ labelFunc0424_00B7:
 	UI_add_answer(["孤兒", "你被叫作什麼？", "改變話題"]);
 labelFunc0424_00E1:
 	case "改變話題" attend labelFunc0424_00F7:
-	message("「是的，主人……呃，我是說， ");
+	message("「是的，主人…呃，我是說， ");
 	message(var0000);
 	message(" 。」");
 	say();
@@ -166,7 +166,7 @@ labelFunc0424_02AF:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「是的，主人……對不起……請不要打我……！」");
+	message("「是的，主人…對不起…請不要打我…！」");
 	say();
 labelFunc0424_02E5:
 	case "危險" attend labelFunc0424_0308:
@@ -188,7 +188,7 @@ labelFunc0424_0308:
 labelFunc0424_033A:
 	case "上一任助手" attend labelFunc0424_0389:
 	UI_remove_answer("上一任助手");
-	message("「上一任主人助手——也就是我之前的那位——名叫 Boydon 。事實上，你可以說他仍然是『首要』(head)的助手。嘿嘿嘿嘿……」");
+	message("「上一任主人助手——也就是我之前的那位——名叫 Boydon 。事實上，你可以說他仍然是『首要』(head)的助手。嘿嘿嘿嘿…」");
 	say();
 	if (!var0002) goto labelFunc0424_0389;
 	UI_show_npc_face1(0xFFDD, 0x0000);
@@ -206,7 +206,7 @@ labelFunc0424_033A:
 labelFunc0424_0389:
 	case "其他助手" attend labelFunc0424_03BB:
 	UI_remove_answer("其他助手");
-	message("「噢，一點一點地、一塊一塊地，他們時不時會冒出來。我從來都不擅長記名字或臉孔……或是手臂、腿，或其他那些部位。」");
+	message("「噢，一點一點地、一塊一塊地，他們時不時會冒出來。我從來都不擅長記名字或臉孔…或是手臂、腿，或其他那些部位。」");
 	say();
 	if (!var0002) goto labelFunc0424_03BB;
 	UI_show_npc_face1(0xFFDD, 0x0000);
@@ -217,7 +217,7 @@ labelFunc0424_0389:
 labelFunc0424_03BB:
 	case "家事" attend labelFunc0424_03FA:
 	UI_remove_answer("家事");
-	message("「這個地方變得非常……不整潔，需要不斷地清理。這真是一件可怕的事情！我討厭清理！我討厭它們！」");
+	message("「這個地方變得非常…不整潔，需要不斷地清理。這真是一件可怕的事情！我討厭清理！我討厭它們！」");
 	say();
 	if (!var0002) goto labelFunc0424_03ED;
 	UI_show_npc_face1(0xFFDD, 0x0000);
@@ -230,18 +230,18 @@ labelFunc0424_03ED:
 labelFunc0424_03FA:
 	case "為什麼有這麼多清理工作？" attend labelFunc0424_040D:
 	UI_remove_answer("為什麼有這麼多清理工作？");
-	message("「這些實驗，退一步說，相當凌亂……」");
+	message("「這些實驗，退一步說，相當凌亂…」");
 	say();
 labelFunc0424_040D:
 	case "為什麼討厭清理？" attend labelFunc0424_0449:
 	UI_remove_answer("為什麼討厭清理？");
-	message("「因為我必須……去觸碰……所有那些東西！我必須把它們撿起來，聽著它們發出那些小小的吱吱聲……然後扭動！」");
+	message("「因為我必須…去觸碰…所有那些東西！我必須把它們撿起來，聽著它們發出那些小小的吱吱聲…然後扭動！」");
 	say();
 	var0006 = Func0992(0xFFFE, "@東西？！扭動的東西？！什麼樣的扭動東西？！不是蛇吧！@", 0x0000, false);
 	UI_remove_npc_face1();
 	if (!(var0006 != 0xFE9C)) goto labelFunc0424_0449;
 	UI_set_conversation_slot(0x0000);
-	message("「與你在這裡能找到的東西相比，蛇就顯得令人愉快多了……」");
+	message("「與你在這裡能找到的東西相比，蛇就顯得令人愉快多了…」");
 	say();
 labelFunc0424_0449:
 	case "傳送" attend labelFunc0424_0489:
@@ -253,7 +253,7 @@ labelFunc0424_0449:
 	UI_remove_npc_face1();
 	if (!(var0006 != 0xFE9C)) goto labelFunc0424_0489;
 	UI_set_conversation_slot(0x0000);
-	message("「這沒那麼可怕。有時候我會自娛自樂，把牙齒拔出來再放回顎骨裡……」");
+	message("「這沒那麼可怕。有時候我會自娛自樂，把牙齒拔出來再放回顎骨裡…」");
 	say();
 labelFunc0424_0489:
 	case "告辭" attend labelFunc0424_04B4:

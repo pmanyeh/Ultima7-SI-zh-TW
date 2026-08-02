@@ -53,7 +53,7 @@ labelFunc043A_0107:
 	if (!(event == 0x0001)) goto labelFunc043A_0135;
 	UI_item_say(0xFE9C, "@朋友，我想跟你說句話。@");
 	0xFFC6->Func07D1();
-	Func097F(0xFFC6, "@如果你請客的話……@", 0x0005);
+	Func097F(0xFFC6, "@如果你請客的話…@", 0x0005);
 	UI_set_schedule_type(0xFFC6, 0x0003);
 labelFunc043A_0135:
 	if (!(event == 0x0009)) goto labelFunc043A_0FDE;
@@ -70,17 +70,17 @@ labelFunc043A_0135:
 	UI_set_conversation_slot(0x0000);
 	message("「我求求你，能為我彈一首曲子嗎？那險惡的雷聲一直在我耳邊縈繞。」");
 	say();
-	message("「從你琴弦上撥出的幾聲和弦，或許能為這個悲傷的小鎮帶來慰藉……」");
+	message("「從你琴弦上撥出的幾聲和弦，或許能為這個悲傷的小鎮帶來慰藉…」");
 	say();
 	UI_show_npc_face1(0xFFFD, 0x0000);
-	message("「我真的很抱歉，但我想我幫不了你……」");
+	message("「我真的很抱歉，但我想我幫不了你…」");
 	say();
 	UI_remove_npc_face0();
 	UI_remove_npc_face1();
 	gflags[0x018B] = true;
 	UI_set_schedule_type(0xFFC6, 0x000F);
-	Func097F(0xFFFD, "@嗯……@", 0x0000);
-	Func097F(0xFFD0, "@請唱吧……@", 0x0002);
+	Func097F(0xFFFD, "@嗯…@", 0x0000);
+	Func097F(0xFFD0, "@請唱吧…@", 0x0002);
 	Func097F(0xFFCA, "@歌頌美吧！@", 0x0004);
 	Func097F(0xFFCB, "@散開！@", 0x0008);
 	Func097F(0xFFC6, "@現在我需要喝一杯！@", 0x000C);
@@ -101,7 +101,7 @@ labelFunc043A_0245:
 	if (!(var0008 == false)) goto labelFunc043A_0291;
 	if (!(gflags[0x003E] == true)) goto labelFunc043A_0279;
 	if (!(var0003 == true)) goto labelFunc043A_026B;
-	message("「真讓我不敢相信我的眼睛！是個有刺青的漂亮丫頭……就像任何優秀的水手一樣！我叫 Olon，以捕魚為生。」");
+	message("「真讓我不敢相信我的眼睛！是個有刺青的漂亮丫頭…就像任何優秀的水手一樣！我叫 Olon，以捕魚為生。」");
 	say();
 	UI_add_answer("刺青");
 	goto labelFunc043A_0276;
@@ -147,7 +147,7 @@ labelFunc043A_02FE:
 	message("「現在別告訴我你是個長槍兵( Pikeman )，就像塔樓裡那些醜陋的傢伙一樣。」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc043A_031C;
-	message("「好吧，也許他們提高了標準。你確實很養眼。那邊的 Jendon 人是還不錯，但不是你會想跟他共度時光的人……如果你懂我的意思的話。」");
+	message("「好吧，也許他們提高了標準。你確實很養眼。那邊的 Jendon 人是還不錯，但不是你會想跟他共度時光的人…如果你懂我的意思的話。」");
 	say();
 	goto labelFunc043A_0320;
 labelFunc043A_031C:
@@ -168,20 +168,20 @@ labelFunc043A_0338:
 	UI_add_answer(["我不記得了。", "我被騙了。", "我是蒙利多的勇士。"]);
 labelFunc043A_035B:
 	case "我不記得了。" attend labelFunc043A_037E:
-	message("「啊！我非常能理解，真的。我自己也曾斷片過一兩天。回想起來，我就是這樣得到我第一個刺青的……那是在那次航行中，我們發現了那座奇特的貓之島。」");
+	message("「啊！我非常能理解，真的。我自己也曾斷片過一兩天。回想起來，我就是這樣得到我第一個刺青的…那是在那次航行中，我們發現了那座奇特的貓之島。」");
 	say();
 	UI_remove_answer(["我不記得了。", "我被騙了。", "我是蒙利多的勇士。"]);
 	UI_add_answer("貓之島");
 labelFunc043A_037E:
 	case "貓之島" attend labelFunc043A_0416:
-	message("「有這麼一座島……完全不記得它在哪裡了。不過那裡沒有人住。是個荒蕪、不討喜的地方……」");
+	message("「有這麼一座島…完全不記得它在哪裡了。不過那裡沒有人住。是個荒蕪、不討喜的地方…」");
 	say();
 	if (!(var0001 == true)) goto labelFunc043A_0404;
 	UI_show_npc_face1(0xFFCC, 0x0000);
 	message("「哦，別再講那個酒後胡話了，Olon！如果你把剩下的客人都趕走了，你就去別的地方喝吧。」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("「別抱怨了，Jendon。我是現在還有人會進來的唯一原因，你心知肚明！他們是來聽我說故事的……」");
+	message("「別抱怨了，Jendon。我是現在還有人會進來的唯一原因，你心知肚明！他們是來聽我說故事的…」");
 	say();
 	UI_set_conversation_slot(0x0001);
 	message("「隨你怎麼說，Olon。現在跟你說話的可不是什麼酒吧女侍。你有些故事可不適合水手以外的耳朵。」");
@@ -195,11 +195,11 @@ labelFunc043A_037E:
 	say();
 	UI_set_conversation_slot(0x0000);
 	if (!gflags[0x003E]) goto labelFunc043A_03E6;
-	message("「嚇到一個帶著刺青的潑辣妞？我剛才說到哪了？哦，對了……」");
+	message("「嚇到一個帶著刺青的潑辣妞？我剛才說到哪了？哦，對了…」");
 	say();
 	goto labelFunc043A_03EA;
 labelFunc043A_03E6:
-	message("「嚇到這麼有冒險精神的丫頭？我剛才說到哪了？哦，對了……」");
+	message("「嚇到這麼有冒險精神的丫頭？我剛才說到哪了？哦，對了…」");
 	say();
 labelFunc043A_03EA:
 	UI_remove_npc_face1();
@@ -208,11 +208,11 @@ labelFunc043A_03F1:
 	message("「這個故事倒沒什麼，雖然它比飛鯨的故事還要扯。但我了解你！只要你開始講一個故事，你就必須把它們全講完。我可不允許你的故事讓花錢的客人感到噁心。」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("「會讓這麼大膽的小伙子反胃？我剛才說到哪了？哦，對了……」");
+	message("「會讓這麼大膽的小伙子反胃？我剛才說到哪了？哦，對了…」");
 	say();
 	UI_remove_npc_face1();
 labelFunc043A_0404:
-	message("「整座島上爬滿了發光的貓。不知道牠們是怎麼到那裡的，也不知道牠們怎麼能在那麼荒涼的地方生存。但我聽說牠們住在那裡是為了守護某種神奇的貓咪寶藏。」 ~「這是小黛爾菲妮亞( Delphynia )最喜歡的故事……」");
+	message("「整座島上爬滿了發光的貓。不知道牠們是怎麼到那裡的，也不知道牠們怎麼能在那麼荒涼的地方生存。但我聽說牠們住在那裡是為了守護某種神奇的貓咪寶藏。」 ~「這是小黛爾菲妮亞( Delphynia )最喜歡的故事…」");
 	say();
 	UI_remove_answer("貓之島");
 	UI_add_answer("黛爾菲妮亞");
@@ -222,7 +222,7 @@ labelFunc043A_0416:
 	say();
 	if (!(var0001 == true)) goto labelFunc043A_046A;
 	UI_show_npc_face1(0xFFCC, 0x0000);
-	message("「她是園藝家，Olon。你應該只說事實……」");
+	message("「她是園藝家，Olon。你應該只說事實…」");
 	say();
 	UI_set_conversation_slot(0x0000);
 	if (!var0003) goto labelFunc043A_044C;
@@ -237,7 +237,7 @@ labelFunc043A_0450:
 	message("「哦，我投降！」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("「他還擔心什麼合適不合適的……」");
+	message("「他還擔心什麼合適不合適的…」");
 	say();
 	UI_remove_npc_face1();
 labelFunc043A_046A:
@@ -274,22 +274,22 @@ labelFunc043A_04D0:
 labelFunc043A_04D7:
 	case "另一則故事" attend labelFunc043A_04FE:
 	if (!var0003) goto labelFunc043A_04EC;
-	message("「啊，我知道剛好有一個適合妳這樣大膽丫頭的故事！肯定能讓人熱血沸騰……白龍王( King of the White Dragon )！」");
+	message("「啊，我知道剛好有一個適合妳這樣大膽丫頭的故事！肯定能讓人熱血沸騰…白龍王( King of the White Dragon )！」");
 	say();
 	goto labelFunc043A_04F0;
 labelFunc043A_04EC:
-	message("「啊，我知道剛好有一個適合你這樣勇敢戰士的故事！肯定能讓人熱血沸騰……白龍王( King of the White Dragon )！」");
+	message("「啊，我知道剛好有一個適合你這樣勇敢戰士的故事！肯定能讓人熱血沸騰…白龍王( King of the White Dragon )！」");
 	say();
 labelFunc043A_04F0:
 	UI_remove_answer("另一則故事");
 	UI_add_answer("白龍王");
 labelFunc043A_04FE:
 	case "我被騙了。" attend labelFunc043A_057B:
-	message("「是啊，有些人就是會做這種事。有時候還是你最信任的人。就像那位老白龍王( King of the White Dragon )一樣……」");
+	message("「是啊，有些人就是會做這種事。有時候還是你最信任的人。就像那位老白龍王( King of the White Dragon )一樣…」");
 	say();
 	if (!(var0001 == true)) goto labelFunc043A_0564;
 	UI_show_npc_face1(0xFFCC, 0x0000);
-	message("「Olon，就連我都不想聽那個故事……再也不想了！」");
+	message("「Olon，就連我都不想聽那個故事…再也不想了！」");
 	say();
 	UI_set_conversation_slot(0x0000);
 	message("「你一直都很沒骨氣，Jendon！去神殿( Temple )聽神諭( Oracle )空洞的話語來撫慰你的神經吧！」");
@@ -359,7 +359,7 @@ labelFunc043A_0617:
 	UI_add_answer("愛情故事");
 	UI_remove_npc_face1();
 labelFunc043A_0622:
-	message("「白龍王( King of the White Dragon )趕走了他的敵對國王，但他無法享受勝利的果實，因為哥布林來了。成群結隊的哥布林……年老的白龍王對此無能為力，無法將牠們擋在外面。」");
+	message("「白龍王( King of the White Dragon )趕走了他的敵對國王，但他無法享受勝利的果實，因為哥布林來了。成群結隊的哥布林…年老的白龍王對此無能為力，無法將牠們擋在外面。」");
 	say();
 	message("「當老國王看到自己永遠無法控制這片土地時，他腦子裡似乎有什麼東西斷裂了。所以國王計畫了一個能讓他最終控制一切的方法。他召集了他所有的人民舉行一場盛大的宴會，並把他們鎖在城堡裡。然後，他把他們一個接一個地全殺了——直到最後一個嬰兒。」");
 	say();
@@ -443,13 +443,13 @@ labelFunc043A_074C:
 	say();
 	if (!(var0001 == true)) goto labelFunc043A_0787;
 	UI_show_npc_face1(0xFFCC, 0x0000);
-	message("「在我聽起來像個愛情故事……」");
+	message("「在我聽起來像個愛情故事…」");
 	say();
 	UI_set_conversation_slot(0x0000);
 	message("「我想你認為貓之島是個悲劇囉？」");
 	say();
 	UI_set_conversation_slot(0x0001);
-	message("「不，我會稱之為酒後胡話……是用我的麥酒酒氣捏造出來的！」");
+	message("「不，我會稱之為酒後胡話…是用我的麥酒酒氣捏造出來的！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -502,7 +502,7 @@ labelFunc043A_0866:
 	case "友誼會水手" attend labelFunc043A_08C0:
 	UI_remove_answer("友誼會水手");
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc043A_088B;
-	message("「現在，如果你想進一步了解他們，你應該去問他們。夫人已經讓他們回到城裡了，你知道的……」");
+	message("「現在，如果你想進一步了解他們，你應該去問他們。夫人已經讓他們回到城裡了，你知道的…」");
 	say();
 	goto labelFunc043A_08C0;
 labelFunc043A_088B:
@@ -524,7 +524,7 @@ labelFunc043A_08C0:
 	UI_add_answer("美");
 labelFunc043A_08DA:
 	case "美" attend labelFunc043A_08ED:
-	message("「這就是這個鎮上每個人都致力追求的東西。除了那些試圖增加權力或財富的人之外，所有人都是這樣……」 *「我父親曾告訴我，很久以前，幼鹿城( Fawn )是為了榮耀愛而建的。我想我們現在離那個初衷已經很遠了。」");
+	message("「這就是這個鎮上每個人都致力追求的東西。除了那些試圖增加權力或財富的人之外，所有人都是這樣…」 *「我父親曾告訴我，很久以前，幼鹿城( Fawn )是為了榮耀愛而建的。我想我們現在離那個初衷已經很遠了。」");
 	say();
 	UI_remove_answer("美");
 labelFunc043A_08ED:
@@ -573,14 +573,14 @@ labelFunc043A_0956:
 	message("「我們的『官方』吟遊詩人和 Delyssia 號一起沉了。我想現在只剩下我了。」");
 	say();
 	UI_set_conversation_slot(0x0001);
-	message("「那我最好開始多洗幾個杯子。這消息傳出去後，我可能連杯子都不夠用了……如果你沒因為吹牛先被趕出城的話！」");
+	message("「那我最好開始多洗幾個杯子。這消息傳出去後，我可能連杯子都不夠用了…如果你沒因為吹牛先被趕出城的話！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc043A_0999:
 	message("「很久以前，當群山還年輕的時候，這片土地由兩個敵對的國王統治。其中一個國王被稱為白龍王( King of the White Dragon )。」");
 	say();
-	message("「白龍王( King of the White Dragon )趕走了他的敵對國王，但他無法享受勝利的果實，因為哥布林來了。成群結隊的哥布林……年老的白龍王對此無能為力，無法將牠們擋在外面。」");
+	message("「白龍王( King of the White Dragon )趕走了他的敵對國王，但他無法享受勝利的果實，因為哥布林來了。成群結隊的哥布林…年老的白龍王對此無能為力，無法將牠們擋在外面。」");
 	say();
 	message("「當老國王看到自己永遠無法控制這片土地時，他腦子裡似乎有什麼東西斷裂了。所以國王計畫了一個能讓他最終控制一切的方法。他召集了他所有的人民舉行一場盛大的宴會，並把他們鎖在城堡裡。然後，他把他們一個接一個地全殺了——直到最後一個嬰兒。」");
 	say();
@@ -600,14 +600,14 @@ labelFunc043A_09D6:
 	UI_add_answer(["貓之島", "愛情故事"]);
 labelFunc043A_09EA:
 	case "貓之島" attend labelFunc043A_0A31:
-	message("「有這麼一座島……完全不記得它在哪裡了。不過那裡沒有人住。是個荒蕪、不討喜的地方……」");
+	message("「有這麼一座島…完全不記得它在哪裡了。不過那裡沒有人住。是個荒蕪、不討喜的地方…」");
 	say();
 	if (!(var0001 == true)) goto labelFunc043A_0A1B;
 	UI_show_npc_face1(0xFFCC, 0x0000);
 	message("「哦，別再來了，Olon！如果你把剩下的客人都趕走了，你就去別的地方喝吧。」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("「別抱怨了，Jendon。我是現在還有人會進來的唯一原因，你心知肚明！他們是來聽我說故事的……」我剛才說到哪了？哦，對了……」");
+	message("「別抱怨了，Jendon。我是現在還有人會進來的唯一原因，你心知肚明！他們是來聽我說故事的…」我剛才說到哪了？哦，對了…」");
 	say();
 	UI_remove_npc_face1();
 labelFunc043A_0A1B:
@@ -623,7 +623,7 @@ labelFunc043A_0A31:
 	say();
 	if (!(var0001 == true)) goto labelFunc043A_0A74;
 	UI_show_npc_face1(0xFFCC, 0x0000);
-	message("「她是園藝家，Olon。你應該只說事實……」");
+	message("「她是園藝家，Olon。你應該只說事實…」");
 	say();
 	UI_set_conversation_slot(0x0000);
 	message("「你要我在陌生人面前說這些？這樣談論一位女士是不禮貌的，Jendon。」");
@@ -730,7 +730,7 @@ labelFunc043A_0BD4:
 	say();
 	if (!(var0001 == true)) goto labelFunc043A_0C01;
 	UI_show_npc_face1(0xFFCC, 0x0000);
-	message("「在我聽起來像個愛情故事……」");
+	message("「在我聽起來像個愛情故事…」");
 	say();
 	UI_set_conversation_slot(0x0000);
 	message("「這就顯示了你懂多少！」");
@@ -803,7 +803,7 @@ labelFunc043A_0D24:
 	UI_set_conversation_slot(0x0000);
 	message("「沒有足夠的佛羅林，就沒有酒。沒有酒，就沒有故事。好吧，如果你想聽我講故事，你知道在哪裡可以找到我。」");
 	say();
-	Func097F(0xFFC6, "@我口渴了……@", 0x0000);
+	Func097F(0xFFC6, "@我口渴了…@", 0x0000);
 	UI_set_schedule_type(0xFFC6, 0x001A);
 	abort;
 labelFunc043A_0D46:
@@ -811,7 +811,7 @@ labelFunc043A_0D46:
 labelFunc043A_0D49:
 	message("「改變主意了，是嗎？沒有酒，就沒有故事。好吧，如果你想聽我講故事，你知道在哪裡可以找到我。」");
 	say();
-	Func097F(0xFFC6, "@我口渴了……@", 0x0000);
+	Func097F(0xFFC6, "@我口渴了…@", 0x0000);
 	UI_set_schedule_type(0xFFC6, 0x001A);
 	abort;
 labelFunc043A_0D64:
@@ -825,7 +825,7 @@ labelFunc043A_0D72:
 labelFunc043A_0D75:
 	message("「沒有酒，就沒有故事！如果你想聽我講故事，你知道在哪裡可以找到我。」");
 	say();
-	Func097F(0xFFC6, "@我口渴了……@", 0x0000);
+	Func097F(0xFFC6, "@我口渴了…@", 0x0000);
 	UI_set_schedule_type(0xFFC6, 0x001A);
 	abort;
 labelFunc043A_0D90:
@@ -839,7 +839,7 @@ labelFunc043A_0D9E:
 	UI_add_answer("Simon");
 labelFunc043A_0DB8:
 	case "Simon" attend labelFunc043A_0DCB:
-	message("「他是蒙利多( Monitor )的旅店老闆。如果你有機會住在那裡，請代我 Olon 向他問好……一個同樣喜歡喝幼鹿城麥酒的傢伙。」");
+	message("「他是蒙利多( Monitor )的旅店老闆。如果你有機會住在那裡，請代我 Olon 向他問好…一個同樣喜歡喝幼鹿城麥酒的傢伙。」");
 	say();
 	UI_remove_answer("Simon");
 labelFunc043A_0DCB:
@@ -863,7 +863,7 @@ labelFunc043A_0E0E:
 	message("「牠們不會煮你的，Olon。你已經醃入味了！」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("「牠們也不會吃你的舌頭……過度使用太硬了！」");
+	message("「牠們也不會吃你的舌頭…過度使用太硬了！」");
 	say();
 	UI_remove_npc_face1();
 labelFunc043A_0E3F:
@@ -877,7 +877,7 @@ labelFunc043A_0E46:
 	message("「你怎麼會知道，Olon？我敢打賭你從來沒見過！」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("「我也不想見到……你已經夠把人嚇個半死了！」");
+	message("「我也不想見到…你已經夠把人嚇個半死了！」");
 	say();
 	UI_set_conversation_slot(0x0001);
 	message("「要不是你是我唯一穩定的客人，Olon，我早就把你揪著耳朵扔出去了！我會的。」");
@@ -890,7 +890,7 @@ labelFunc043A_0E89:
 	UI_remove_answer("Gwani");
 labelFunc043A_0E94:
 	case "風暴" attend labelFunc043A_0F12:
-	message("「我幾乎要相信世界末日到了。這些可怕的風暴幾乎摧毀了整個城鎮！沒有船，人要怎麼謀生？漁夫要怎麼在馬車上捕魚……馬車會沉啊！」");
+	message("「我幾乎要相信世界末日到了。這些可怕的風暴幾乎摧毀了整個城鎮！沒有船，人要怎麼謀生？漁夫要怎麼在馬車上捕魚…馬車會沉啊！」");
 	say();
 	if (!(var0001 == true)) goto labelFunc043A_0EC1;
 	UI_show_npc_face1(0xFFCC, 0x0000);
@@ -899,7 +899,7 @@ labelFunc043A_0E94:
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc043A_0EC1:
-	message("「你不能在馬車上裝帆，還指望它帶你出海再回來！淹死了！」 *「都是好人……都沉到海底了！我也應該和他們在一起的！他們會來找我的。我知道他們會！沉到海底！」");
+	message("「你不能在馬車上裝帆，還指望它帶你出海再回來！淹死了！」 *「都是好人…都沉到海底了！我也應該和他們在一起的！他們會來找我的。我知道他們會！沉到海底！」");
 	say();
 	if (!(var0001 == true)) goto labelFunc043A_0EEC;
 	UI_show_npc_face1(0xFFCC, 0x0000);
@@ -936,7 +936,7 @@ labelFunc043A_0F4F:
 	case "死貓" attend labelFunc043A_0FAD:
 	UI_remove_answer("死貓");
 	if (!Func097D(0xFE9B, 0x0001, 0x037C, 0xFE99, 0x001E)) goto labelFunc043A_0F8F;
-	message("「可憐的小傢伙。你應該給牠一個體面的葬禮……趁 Jendon 還沒看到，如果你知道這對你有好處的話。」");
+	message("「可憐的小傢伙。你應該給牠一個體面的葬禮…趁 Jendon 還沒看到，如果你知道這對你有好處的話。」");
 	say();
 	message("「他在他的旅店裡對這種事很挑剔。」");
 	say();
@@ -945,12 +945,12 @@ labelFunc043A_0F4F:
 	abort;
 	goto labelFunc043A_0FAD;
 labelFunc043A_0F8F:
-	message("「我從沒想過 Jendon 會聽我講故事！聽起來就像那座島上的貓一樣……」");
+	message("「我從沒想過 Jendon 會聽我講故事！聽起來就像那座島上的貓一樣…」");
 	say();
 	message("「我有告訴過你關於貓之島的事嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc043A_0FA6;
-	message("「喔，好吧……或許下次再說。」");
+	message("「喔，好吧…或許下次再說。」");
 	say();
 	goto labelFunc043A_0FAD;
 labelFunc043A_0FA6:

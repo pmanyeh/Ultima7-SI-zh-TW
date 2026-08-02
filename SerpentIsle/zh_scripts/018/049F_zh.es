@@ -42,7 +42,7 @@ labelFunc049F_0052:
 	var0004 = UI_delayed_execute_usecode_array(0xFF61, [(byte)0x23, (byte)0x55, 0x049F], 0x000A);
 labelFunc049F_00E9:
 	if (!(event == 0x0001)) goto labelFunc049F_0117;
-	UI_item_say(0xFE9C, "@你好，老爺爺……@");
+	UI_item_say(0xFE9C, "@你好，老爺爺…@");
 	0xFF61->Func07D1();
 	Func097F(0xFF61, "@誰說我老？@", 0x0002);
 	UI_set_schedule_type(0xFF61, 0x0003);
@@ -133,7 +133,7 @@ labelFunc049F_02CA:
 labelFunc049F_02E5:
 	case "森林主人" attend labelFunc049F_0315:
 	UI_remove_answer("森林主人");
-	message("「沒錯！我是森林主人！追風者( Windrunner )的朋友！伊勒里昂前任保護者，現在是佩根( Pagan )的難民！當然，對你這樣的異鄉人來說，這些毫無意義。你知道我能和動物、樹木說話嗎？別傻笑了，無賴！」");
+	message("「沒錯！我是森林主人！追風者( Windrunner )的朋友！伊勒里昂( Elerion )前任保護者，現在是佩根( Pagan )的難民！當然，對你這樣的異鄉人來說，這些毫無意義。你知道我能和動物、樹木說話嗎？別傻笑了，無賴！」");
 	say();
 	UI_set_item_flag(0xFF61, 0x001C);
 	UI_add_answer(["追風者", "佩根", "伊勒里昂", "和動物與樹木說話"]);
@@ -173,7 +173,7 @@ labelFunc049F_0395:
 labelFunc049F_03A8:
 	case "伊勒里昂" attend labelFunc049F_03CF:
 	UI_remove_answer("伊勒里昂");
-	message("「伊勒里昂( Elerion )是佩根世界上宏偉的生命之樹！你怎麼會不知道這種事！一千多年來，它一直是和平與忍耐的象徵，它的枝椏橫跨整個天空。我是伊勒里昂眾多高尚、盡責的保護者中的最後一位。它是銀色種子( Silver Seed )的持有者，也是邪惡之尊及其追隨者的首要目標。」");
+	message("「伊勒里昂是佩根世界上宏偉的生命之樹！你怎麼會不知道這種事！一千多年來，它一直是和平與忍耐的象徵，它的枝椏橫跨整個天空。我是伊勒里昂眾多高尚、盡責的保護者中的最後一位。它是銀色種子的持有者，也是邪惡之尊及其追隨者的首要目標。」");
 	say();
 	UI_push_answers();
 	UI_add_answer(["銀色種子", "首要目標", "轉移話題"]);
@@ -224,7 +224,7 @@ labelFunc049F_0461:
 labelFunc049F_047C:
 	case "魔法力量" attend labelFunc049F_049C:
 	UI_remove_answer("魔法力量");
-	message("「我承認我對這個世界上由月影( Moonshade )的法師所規定的魔法修練方式感到不適應。我想我只是不習慣而已。這個世界飽受混亂和失衡的折磨。很久以前，我對自己無法理解它的運作方式感到非常沮喪，所以我把我所有的力量都注入了一顆活著的法球裡——伊勒里昂之心( Heart of Elerion )。」");
+	message("「我承認我對這個世界上由月影城( Moonshade )的法師，所規定的魔法修練方式…感到不適應。我想我只是不習慣而已。這個世界飽受混亂和失衡的折磨。很久以前，我對自己無法理解它的運作方式感到非常沮喪，所以我把我所有的力量都注入了一顆活著的法球裡——伊勒里昂之心( Heart of Elerion )。」");
 	say();
 	UI_add_answer(["混亂與失衡", "伊勒里昂之心"]);
 labelFunc049F_049C:
@@ -269,7 +269,7 @@ labelFunc049F_0520:
 	say();
 	var0006 = Func0955();
 	if (!var0006) goto labelFunc049F_054D;
-	message("「直到我的法球，伊勒里昂之心歸還之前，我都無法幫助你……」");
+	message("「直到我的法球，伊勒里昂之心歸還之前，我都無法幫助你…」");
 	say();
 	goto labelFunc049F_055E;
 labelFunc049F_054D:
@@ -292,7 +292,7 @@ labelFunc049F_0565:
 labelFunc049F_058F:
 	case "另一個問題" attend labelFunc049F_05A2:
 	UI_remove_answer("另一個問題");
-	message("「那就是獵人 Hazard( Hazard the Trapper )。也許你聽說過他。有人告訴我，他在某些圈子裡很有名氣。他和我以前發生過衝突。我對任何在我的森林裡狩獵為食的人，或者以打獵為生的人都沒有怨恨。但是這個 Hazard 就像他的名字(危險)一樣。除了殺戮之外，他對任何事物都沒有感覺，也沒有愛。他不停地狩獵和殺戮，用血腥和痛苦的方法。沒有掠食者的優雅——就像狼一樣。我無法忍受像他這樣的人！」");
+	message("「那就是獵人 Hazard( Hazard the Trapper )。也許你聽說過他。有人告訴我，他在某些圈子裡很有名氣。他和我以前發生過衝突。我對任何在我的森林裡狩獵為食的人，或者以打獵為生的人都沒有怨恨。但是這個 Hazard 就像他的名字一樣。除了殺戮之外，他對任何事物都沒有感覺，也沒有愛。他不停地狩獵和殺戮，用血腥和痛苦的方法。沒有掠食者的優雅——就像狼一樣。我無法忍受像他這樣的人！」");
 	say();
 labelFunc049F_05A2:
 	case "採礦營地" attend labelFunc049F_05B5:
@@ -325,7 +325,7 @@ labelFunc049F_05DB:
 labelFunc049F_0609:
 	message("「那我沒什麼好對你說的了！」");
 	say();
-	Func097F(0xFF61, "@我是孤獨的……@", 0x0000);
+	Func097F(0xFF61, "@我是孤獨的…@", 0x0000);
 	abort;
 labelFunc049F_061A:
 	case "告辭" attend labelFunc049F_0645:

@@ -33,7 +33,7 @@ labelFunc06BC_0025:
 	var0003 = UI_set_item_quality(var0000, 0x0000);
 	gflags[0x018C] = true;
 	UI_set_weather(0x0002);
-	var0004 = Func0992(0x0001, "@看起來風暴要來了……@", 0x0000, true);
+	var0004 = Func0992(0x0001, "@看起來風暴要來了…@", 0x0000, true);
 	var0003 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x55, 0x06BC], 0x001E);
 labelFunc06BC_008A:
 	if (!(event == 0x0002)) goto labelFunc06BC_043E;

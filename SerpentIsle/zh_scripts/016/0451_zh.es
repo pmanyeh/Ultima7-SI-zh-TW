@@ -58,10 +58,10 @@ labelFunc0451_007B:
 	UI_item_say(0xFFAF, "@我是個法師( Adept )！@");
 labelFunc0451_008F:
 	if (!(var000D == 0x0003)) goto labelFunc0451_00A3;
-	UI_item_say(0xFFAF, "@等著瞧吧……@");
+	UI_item_say(0xFFAF, "@等著瞧吧…@");
 labelFunc0451_00A3:
 	if (!(var000D == 0x0004)) goto labelFunc0451_00B7;
-	UI_item_say(0xFFAF, "@他們會明白的……@");
+	UI_item_say(0xFFAF, "@他們會明白的…@");
 labelFunc0451_00B7:
 	if (!(var000D == 0x0005)) goto labelFunc0451_00ED;
 	if (!Func0942(0xFFD5)) goto labelFunc0451_00E3;
@@ -90,7 +90,7 @@ labelFunc0451_0161:
 	if (!((gflags[0x0004] == true) && (gflags[0x00D4] == false))) goto labelFunc0451_018C;
 	message("「你看到了嗎，");
 	message(var0002);
-	message("？我告訴過你，我會教導他們不要輕視 Ensorcio！我告訴過你，總有一天他們會歡迎我回來……求我回去！」");
+	message("？我告訴過你，我會教導他們不要輕視 Ensorcio！我告訴過你，總有一天他們會歡迎我回來…求我回去！」");
 	say();
 	UI_add_answer(["給他們個教訓", "歡迎", "告辭"]);
 	goto labelFunc0451_0213;
@@ -99,14 +99,14 @@ labelFunc0451_018C:
 	if (!(gflags[0x003E] == true)) goto labelFunc0451_01BB;
 	message("「哼，這不是又來了一個小暴君嘛！」");
 	say();
-	message("「你還是趁早離開吧，長槍兵( Pikeman )。我對你這種人沒興趣……而且你也無法為我所遭受的冤屈報仇。」");
+	message("「你還是趁早離開吧，長槍兵( Pikeman )。我對你這種人沒興趣…而且你也無法為我所遭受的冤屈報仇。」");
 	say();
 	message("「所以，在我對你感到厭煩、讓你嘗嘗法師 Ensorcio( Ensorcio the Adept ) 的怒火之前，趕快滾吧！」");
 	say();
 	UI_add_answer(["暴君", "冤屈", "告辭"]);
 	goto labelFunc0451_01D3;
 labelFunc0451_01BB:
-	message("「你還是趁早離開吧，英雄。我見過你這種人，而且我對你這種人沒興趣……而且你也無法為我所遭受的冤屈報仇。」");
+	message("「你還是趁早離開吧，英雄。我見過你這種人，而且我對你這種人沒興趣…而且你也無法為我所遭受的冤屈報仇。」");
 	say();
 	message("「所以，在我對你感到厭煩、讓你嘗嘗法師 Ensorcio 的怒火之前，趕快滾吧！」");
 	say();
@@ -116,11 +116,11 @@ labelFunc0451_01D3:
 	goto labelFunc0451_01F3;
 labelFunc0451_01E0:
 	if (!(gflags[0x003E] == true)) goto labelFunc0451_01EF;
-	message("「所以，你回來了……你那微不足道的任務已經失敗了嗎，長槍兵？」");
+	message("「所以，你回來了…你那微不足道的任務已經失敗了嗎，長槍兵？」");
 	say();
 	goto labelFunc0451_01F3;
 labelFunc0451_01EF:
-	message("「所以，你回來了……你那微不足道的任務已經失敗了嗎，英雄？」");
+	message("「所以，你回來了…你那微不足道的任務已經失敗了嗎，英雄？」");
 	say();
 labelFunc0451_01F3:
 	if (!var000E) goto labelFunc0451_0200;
@@ -130,14 +130,14 @@ labelFunc0451_0200:
 labelFunc0451_0213:
 	converse attend labelFunc0451_095B;
 	case "給他們個教訓" attend labelFunc0451_0229:
-	message("「無政府主義者 Shamino( Shamino the Anarch )宣稱我是最優秀的法師！終於有人看到了我的才華，並讓全世界都看到了……我再也不是被排斥的 Ensorcio，再也不是被流放的 Ensorcio 了！現在我是首屈一指的法師！」");
+	message("「無序災厄 Shamino( Shamino the Anarch )宣稱我是最優秀的法師！終於有人看到了我的才華，並讓全世界都看到了…我再也不是被排斥的 Ensorcio，再也不是被流放的 Ensorcio 了！現在我是首屈一指的法師！」");
 	say();
 	UI_remove_answer("給他們個教訓");
 labelFunc0451_0229:
 	case "歡迎" attend labelFunc0451_0244:
 	message("「Filbercio 不公不義的統治已經結束了！」");
 	say();
-	message("「無政府主義者 Shamino，你那出色的同伴，已經剝奪了他的權力，而我受到了張開雙臂的歡迎！」");
+	message("「無序災厄 Shamino，你那出色的同伴，已經剝奪了他的權力，而我受到了張開雙臂的歡迎！」");
 	say();
 	message("「哦，多麼令人喜悅！能回到月影城( Moonshade )，自由地隨心所欲進行實驗！」");
 	say();
@@ -169,7 +169,7 @@ labelFunc0451_0296:
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0451_02B7:
-	message("「我看到你挺起胸膛了……我冒犯你了嗎？你要怎麼辦呢，長槍兵？像你的同袍把 Hawk 拖去坐牢那樣，也把我拖去你的監獄嗎？」");
+	message("「我看到你挺起胸膛了…我冒犯你了嗎？你要怎麼辦呢，長槍兵？像你的同袍把 Hawk 拖去坐牢那樣，也把我拖去你的監獄嗎？」");
 	say();
 	UI_remove_answer("暴君");
 	UI_add_answer(["Argus", "貢品", "Hawk"]);
@@ -177,7 +177,7 @@ labelFunc0451_02D2:
 	case "Argus" attend labelFunc0451_02FF:
 	message("「儘管他是 Devra 的兒子，但他骨子裡還是條狗！」");
 	say();
-	message("「我承認，當 Devra 召喚他時他回家了，不像 Wilfred 。但這兩人骨子裡都是同一塊料……都是自負、浮誇的愛吹牛的人！」");
+	message("「我承認，當 Devra 召喚他時他回家了，不像 Wilfred 。但這兩人骨子裡都是同一塊料…都是自負、浮誇的愛吹牛的人！」");
 	say();
 	UI_remove_answer("Argus");
 	UI_add_answer("Wilfred");
@@ -189,12 +189,12 @@ labelFunc0451_02FF:
 	say();
 	if (!(var0007 == true)) goto labelFunc0451_032C;
 	UI_show_npc_face1(0xFFFD, 0x0000);
-	message("「他還真有資格談論別人的態度……」");
+	message("「他還真有資格談論別人的態度…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0451_032C:
-	message("「Wilfred 離家出走，是為了向世人證明他比他哥哥更好……你絕對找不到比他更稱職的惡霸、流氓和殺人犯了！」");
+	message("「Wilfred 離家出走，是為了向世人證明他比他哥哥更好…你絕對找不到比他更稱職的惡霸、流氓和殺人犯了！」");
 	say();
 	UI_remove_answer("Wilfred");
 labelFunc0451_0337:
@@ -208,7 +208,7 @@ labelFunc0451_034E:
 	case "Hawk" attend labelFunc0451_0380:
 	message("「Hawk 是 Arabella 號的船長。」");
 	say();
-	message("「恐怕 Flindo 在聽到這位好船長無意在這些該死的風暴中冒著生命危險或賠上船隻，把這位正直的商人帶回月影城( Moonshade )時，感到有點苦惱。所以他買通了長槍兵的武力來『說服』 Hawk 留在這裡會有害健康……」");
+	message("「恐怕 Flindo 在聽到這位好船長無意在這些該死的風暴中冒著生命危險或賠上船隻，把這位正直的商人帶回月影城( Moonshade )時，感到有點苦惱。所以他買通了長槍兵的武力來『說服』 Hawk 留在這裡會有害健康…」");
 	say();
 	gflags[0x01CD] = true;
 	UI_remove_answer("Hawk");
@@ -216,7 +216,7 @@ labelFunc0451_034E:
 	UI_add_answer(["月影城", "風暴", "Flindo", "換個話題"]);
 labelFunc0451_0380:
 	case "換個話題" attend labelFunc0451_0390:
-	message("「如你所願……」");
+	message("「如你所願…」");
 	say();
 	UI_pop_answers();
 labelFunc0451_0390:
@@ -244,7 +244,7 @@ labelFunc0451_03DA:
 	say();
 	message("「自由山脈是一座監獄，英雄！一座充滿魔法陷阱、無人能逃脫的監獄。而那裡就是 Filbercio 關押所有激怒他或反對他的人的地方。」");
 	say();
-	message("「我沒有死在那裡真是個奇蹟……」");
+	message("「我沒有死在那裡真是個奇蹟…」");
 	say();
 	UI_remove_answer("自由山脈");
 labelFunc0451_03F5:
@@ -257,9 +257,9 @@ labelFunc0451_03F5:
 	UI_remove_answer("法師議會");
 labelFunc0451_0410:
 	case "風暴" attend labelFunc0451_042E:
-	message("「如果你問我，這相當浮誇……但結果相當驚人。不過這完全太隨機了，不符合我的品味。」");
+	message("「如果你問我，這相當浮誇…但結果相當驚人。不過這完全太隨機了，不符合我的品味。」");
 	say();
-	message("「當然，我忍不住想知道這背後是哪個法師在搞鬼。我也想知道那個兩面三刀的巴特林是否與此有關……你要知道，風暴是在他離開這裡之後開始的。」");
+	message("「當然，我忍不住想知道這背後是哪個法師在搞鬼。我也想知道那個兩面三刀的巴特林是否與此有關…你要知道，風暴是在他離開這裡之後開始的。」");
 	say();
 	UI_remove_answer("風暴");
 	UI_add_answer("巴特林");
@@ -269,13 +269,13 @@ labelFunc0451_042E:
 	say();
 	message("「巴特林一段時間前來到這裡，帶著他馴服的惡魔。他似乎對我的故事很感興趣，我們花了許多個夜晚交流奧秘知識。然後他就出去辦事了。」");
 	say();
-	message("「當他帶著另外兩個暴徒回來時，巴特林顯得很焦躁。但我們還是像什麼都沒改變一樣繼續我們的討論。我還以為他是我的朋友……」");
+	message("「當他帶著另外兩個暴徒回來時，巴特林顯得很焦躁。但我們還是像什麼都沒改變一樣繼續我們的討論。我還以為他是我的朋友…」");
 	say();
 	UI_remove_answer("巴特林");
 	UI_add_answer(["惡魔", "暴徒"]);
 labelFunc0451_0456:
 	case "惡魔" attend labelFunc0451_0478:
-	message("「非常巨大……而且很醜！」");
+	message("「非常巨大…而且很醜！」");
 	say();
 	message("「巴特林叫他 Palos 。那隻惡魔溫順地穿著長袍、戴著兜帽，聽從他主人的命令。」");
 	say();
@@ -287,9 +287,9 @@ labelFunc0451_0478:
 	case "Rotoluncia" attend labelFunc0451_0493:
 	message("「自從 Filbercio 找了新玩伴取代了 Rotoluncia 之後，Rotoluncia 就不得不找點別的興趣來打發時間。」");
 	say();
-	message("「而且，就我聽到的消息，那似乎是惡魔……或許我可以期待她正計畫復仇。我會很樂意想到 Filbercio 填飽惡魔肚子的畫面。」");
+	message("「而且，就我聽到的消息，那似乎是惡魔…或許我可以期待她正計畫復仇。我會很樂意想到 Filbercio 填飽惡魔肚子的畫面。」");
 	say();
-	message("「所以，我確定她會對那個胖法師的寵物惡魔非常感興趣。我希望能送個信給她……」");
+	message("「所以，我確定她會對那個胖法師的寵物惡魔非常感興趣。我希望能送個信給她…」");
 	say();
 	UI_remove_answer("Rotoluncia");
 labelFunc0451_0493:
@@ -298,7 +298,7 @@ labelFunc0451_0493:
 	say();
 	message("「我敢肯定巴特林帶他們來，就是為了偷走我導師留給我的舊顎骨。」");
 	say();
-	message("「夾在白痴 Brunt 和獨眼海盜 Deadeye 中間，我還能活著算是幸運的了……」");
+	message("「夾在白痴 Brunt 和獨眼海盜 Deadeye 中間，我還能活著算是幸運的了…」");
 	say();
 	UI_remove_answer("暴徒");
 	UI_add_answer(["顎骨", "導師"]);
@@ -308,7 +308,7 @@ labelFunc0451_04BB:
 	say();
 	message("「我一直無法發現它的用途是什麼，儘管它顯然具有魔力。它是一個紀念品——雖然我希望能有一天發現它的秘密。」");
 	say();
-	message("「我想巴特林發現了它的秘密……並製造了這些該死的風暴。」");
+	message("「我想巴特林發現了它的秘密…並製造了這些該死的風暴。」");
 	say();
 	var0009 = true;
 	UI_remove_answer("顎骨");
@@ -317,7 +317,7 @@ labelFunc0451_04E1:
 	case "瘋狂法師" attend labelFunc0451_04FC:
 	message("「他的真名是 Erstam 。他教授了許多月影城( Moonshade )的法師們手藝。但是，就像師傅和學徒之間的關係一樣，他們最終在技能和視野上超越了他。」");
 	say();
-	message("「這位老法師無法忍受這些法師不再是他溫順的學生的想法，於是變得相當瘋狂……他把他們都看作是企圖竊取他秘密的小偷，並搬到了月影城外的一座島上。」");
+	message("「這位老法師無法忍受這些法師不再是他溫順的學生的想法，於是變得相當瘋狂…他把他們都看作是企圖竊取他秘密的小偷，並搬到了月影城外的一座島上。」");
 	say();
 	message("「直到今天，他仍拒絕與月影城有任何往來。他坐在他的島上，試圖找到創造生命的方法。」");
 	say();
@@ -326,7 +326,7 @@ labelFunc0451_04FC:
 	case "導師" attend labelFunc0451_0524:
 	message("「他是個非常偉大的人。他的名字是 Vasculio 。」");
 	say();
-	message("「不幸的是，Vasculio 是一個不斷挑戰傳統界限的人。法師議會( Council of Mages )認為他具有威脅性，當他拒絕屈服於他們的意願時，他們企圖殺死他……」");
+	message("「不幸的是，Vasculio 是一個不斷挑戰傳統界限的人。法師議會( Council of Mages )認為他具有威脅性，當他拒絕屈服於他們的意願時，他們企圖殺死他…」");
 	say();
 	message("「但是他對石心( Stoneheart )的實驗讓他獲得了能夠逃脫那種可怕命運的法術。他仍然在某個地方，奮力掙脫公認智慧的枷鎖。」");
 	say();
@@ -334,14 +334,14 @@ labelFunc0451_04FC:
 	UI_add_answer(["石心", "法術"]);
 labelFunc0451_0524:
 	case "石心" attend labelFunc0451_0567:
-	message("「啊，多麼奇妙的寶物！它產自自由山脈( Mountains of Freedom )的深處，而且相當罕見……」");
+	message("「啊，多麼奇妙的寶物！它產自自由山脈( Mountains of Freedom )的深處，而且相當罕見…」");
 	say();
 	message("「議會已經立法禁止持有石心( Stoneheart )，因為他們害怕它的力量。但是有一小部分被悄悄地藏了起來——否則死亡法術怎麼會有效呢？」");
 	say();
 	gflags[0x029D] = true;
 	UI_remove_answer("石心");
 	if (!Func097D(0xFE9B, 0x0001, 0x034A, 0xFE99, 0x000F)) goto labelFunc0451_0567;
-	message("「你有石心( Stoneheart )！我能……」");
+	message("「你有石心( Stoneheart )！我能…」");
 	say();
 	message("「不，我不會屈服於它的誘惑。我會堅強起來。但是你要小心，因為這種藥材有一種扭曲人心的魔力，讓他無法忍受與它分開。」");
 	say();
@@ -375,34 +375,34 @@ labelFunc0451_05D0:
 	var0013 = ((var0012 * 0x0002) / 0x0003);
 labelFunc0451_0601:
 	if (!(var0013 < 0x0001)) goto labelFunc0451_0612;
-	message("「傳授這類資訊是有風險的。你出這個價錢來換取我的健康，未免太少了……」");
+	message("「傳授這類資訊是有風險的。你出這個價錢來換取我的健康，未免太少了…」");
 	say();
 	goto labelFunc0451_06E3;
 labelFunc0451_0612:
 	if (!((var0013 >= 0x0001) && (var0013 <= 0x000F))) goto labelFunc0451_062B;
-	message("「這點微不足道的錢連一個新手的照明法術都買不到！也許你該再出個價……」");
+	message("「這點微不足道的錢連一個新手的照明法術都買不到！也許你該再出個價…」");
 	say();
 	goto labelFunc0451_05A6;
 labelFunc0451_062B:
 	if (!((var0013 >= 0x0010) && (var0013 <= 0x001E))) goto labelFunc0451_064A;
 	message("「你是認真的嗎？毀滅的力量你只願意出 ");
 	message(var0012);
-	message(" ？再想想吧……」");
+	message(" ？再想想吧…」");
 	say();
 	goto labelFunc0451_05A6;
 labelFunc0451_064A:
 	if (!((var0013 >= 0x001F) && (var0013 <= 0x002D))) goto labelFunc0451_0663;
-	message("「你以為我是可以討價還價的店主嗎？我是法師 Ensorcio( Ensorcio the Adept ) ！別拿我尋開心……」");
+	message("「你以為我是可以討價還價的店主嗎？我是法師 Ensorcio( Ensorcio the Adept ) ！別拿我尋開心…」");
 	say();
 	goto labelFunc0451_05A6;
 labelFunc0451_0663:
 	if (!((var0013 >= 0x002E) && (var0013 <= 0x003C))) goto labelFunc0451_067C;
-	message("「你可以再通情達理一點的……」");
+	message("「你可以再通情達理一點的…」");
 	say();
 	goto labelFunc0451_05A6;
 labelFunc0451_067C:
 	if (!((var0013 >= 0x003D) && (var0013 <= 0x004B))) goto labelFunc0451_0695;
-	message("「我怎麼能確定你會用這東西做什麼？我不知道……」");
+	message("「我怎麼能確定你會用這東西做什麼？我不知道…」");
 	say();
 	goto labelFunc0451_05A6;
 labelFunc0451_0695:
@@ -415,26 +415,26 @@ labelFunc0451_0695:
 	say();
 	if (!(Func0955() == true)) goto labelFunc0451_06DF;
 	var0014 = Func0996(0xFE9C, 0xFFAF, var0012, var0010, 0xFE99, 0xFE99, true);
-	message("「首先，你必須擁有一個儀式用放血裝置……大多數法師都有一個，儘管它們在技術上是非法的。」");
+	message("「首先，你必須擁有一個儀式用放血裝置…大多數法師都有一個，儘管它們在技術上是非法的。」");
 	say();
-	message("「然後，你必須用這個裝置在一個小容器裡裝滿血。這些血可以是你自己的，也可以是你任何同伴的……隨你覺得哪個方便。」");
+	message("「然後，你必須用這個裝置在一個小容器裡裝滿血。這些血可以是你自己的，也可以是你任何同伴的…隨你覺得哪個方便。」");
 	say();
 	message("「一旦你有了血，你必須將血使用在石心( Stoneheart )上。這將產生你施放死亡法術所需要的血菌絲( Bloodspawn )。」");
 	say();
 	goto labelFunc0451_06E3;
 labelFunc0451_06DF:
-	message("「那也許改天吧……」");
+	message("「那也許改天吧…」");
 	say();
 labelFunc0451_06E3:
 	UI_remove_answer("秘密");
 labelFunc0451_06EA:
 	case "法術" attend labelFunc0451_0718:
 	if (!(var000C == false)) goto labelFunc0451_0702;
-	message("「就像任何學徒一樣，我盡我所能地向我的導師學習……不管他願不願意教我。這一切都取決於不要在行動中被發現。」");
+	message("「就像任何學徒一樣，我盡我所能地向我的導師學習…不管他願不願意教我。這一切都取決於不要在行動中被發現。」");
 	say();
 	var000C = true;
 labelFunc0451_0702:
-	message("「也許你有興趣買個法術？我隨時都需要更多的錢來買麥酒……」");
+	message("「也許你有興趣買個法術？我隨時都需要更多的錢來買麥酒…」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0451_0714;
 	Func082D();
@@ -446,7 +446,7 @@ labelFunc0451_0718:
 	case "Flindo" attend labelFunc0451_0736:
 	message("「Flindo 自以為是來自美麗的月影城( Moonshade )的大人物，無人不曉。但實際上，他不過是個喜歡說閒話的大聲公店主而已。」");
 	say();
-	message("「Flindo 四處奔波，為 Bucia 採購物資，並盡可能地收集情報。我想這就是為什麼法師們會時不時地給他一點消息來逗他開心的唯一原因……」");
+	message("「Flindo 四處奔波，為 Bucia 採購物資，並盡可能地收集情報。我想這就是為什麼法師們會時不時地給他一點消息來逗他開心的唯一原因…」");
 	say();
 	UI_remove_answer("Flindo");
 	UI_add_answer("Bucia");
@@ -461,7 +461,7 @@ labelFunc0451_074D:
 	case "英雄" attend labelFunc0451_07D8:
 	message("「沒錯，英雄！就算當著 Devra 的面我也敢這麼說，那又怎樣！」");
 	say();
-	message("「你們這些冒險者大搖大擺地走來走去，彷彿你們能拯救世界似的！你期望遇到的人對你敬畏有加……而當你的傲慢遇到對手時，正是那些人埋葬了你的屍體！」");
+	message("「你們這些冒險者大搖大擺地走來走去，彷彿你們能拯救世界似的！你期望遇到的人對你敬畏有加…而當你的傲慢遇到對手時，正是那些人埋葬了你的屍體！」");
 	say();
 	if (!(var0005 == true)) goto labelFunc0451_077E;
 	UI_show_npc_face1(0xFFFF, 0x0000);
@@ -484,18 +484,18 @@ labelFunc0451_079F:
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0451_07C0:
-	message("「我看到你挺起胸膛了……我冒犯你了嗎？你要怎麼辦呢，英雄？把我關進監獄？還是乾脆謀殺我？」");
+	message("「我看到你挺起胸膛了…我冒犯你了嗎？你要怎麼辦呢，英雄？把我關進監獄？還是乾脆謀殺我？」");
 	say();
 	UI_remove_answer("英雄");
 	UI_add_answer(["Devra", "Hawk"]);
 labelFunc0451_07D8:
 	case "Devra" attend labelFunc0451_0809:
 	if (!(var0001 == true)) goto labelFunc0451_07EF;
-	message("「Devra 是個好女人，儘管她有點控制慾……」");
+	message("「Devra 是個好女人，儘管她有點控制慾…」");
 	say();
 	goto labelFunc0451_07F3;
 labelFunc0451_07EF:
-	message("「Devra 是個好女人，儘管她有點控制慾……但大多數女人不都是這樣嗎？」");
+	message("「Devra 是個好女人，儘管她有點控制慾…但大多數女人不都是這樣嗎？」");
 	say();
 labelFunc0451_07F3:
 	message("「她非常堅強地接受了她的損失。她說服了她那個不成器的兒子回來，在客棧裡幫忙做些正經事。但如果你問我的話，我會說她對那些流氓和邊緣人太仁慈了。」");
@@ -508,13 +508,13 @@ labelFunc0451_0809:
 	if (!(var0001 == true)) goto labelFunc0451_0824;
 	message("「事實上，這相當令人難過。我記得我去向她報告失竊案的那天早上，她非常難過。」");
 	say();
-	message("「看來 Angus 終究還是遺傳了一點 Silverpate 的性格，然後消失了……想起來，也許就是他偷了我的顎骨……雖然我永遠無法理解這東西為何會引起他的興趣。」");
+	message("「看來 Angus 終究還是遺傳了一點 Silverpate 的性格，然後消失了…想起來，也許就是他偷了我的顎骨…雖然我永遠無法理解這東西為何會引起他的興趣。」");
 	say();
 	goto labelFunc0451_082C;
 labelFunc0451_0824:
-	message("「事實上，這相當可悲。那天早上我去向她報告失竊案時，她心煩意亂到甚至沒有注意我的投訴……一點都不專業——畢竟，我是付錢住在這的客人。」");
+	message("「事實上，這相當可悲。那天早上我去向她報告失竊案時，她心煩意亂到甚至沒有注意我的投訴…一點都不專業——畢竟，我是付錢住在這的客人。」");
 	say();
-	message("「看來 Angus 終究還是遺傳了一點 Silverpate 的性格，然後消失了……想起來，也許就是他偷了我的顎骨……雖然我永遠無法理解這東西為何會引起他的興趣。」");
+	message("「看來 Angus 終究還是遺傳了一點 Silverpate 的性格，然後消失了…想起來，也許就是他偷了我的顎骨…雖然我永遠無法理解這東西為何會引起他的興趣。」");
 	say();
 labelFunc0451_082C:
 	UI_remove_answer("損失");
@@ -523,16 +523,16 @@ labelFunc0451_082C:
 	UI_add_answer("顎骨");
 labelFunc0451_084F:
 	case "Angus" attend labelFunc0451_0866:
-	message("「Angus 是……呃，曾經是…… Devra 的丈夫。看起來是個挺正直的傢伙。喜歡在晚上喝個一兩杯麥酒。工作很努力——不過，有她那麼嘮叨，他也沒法不努力工作！」");
+	message("「Angus 是…呃，曾經是… Devra 的丈夫。看起來是個挺正直的傢伙。喜歡在晚上喝個一兩杯麥酒。工作很努力——不過，有她那麼嘮叨，他也沒法不努力工作！」");
 	say();
-	message("「絕對猜不到他有骨氣那樣離開。但我想每個人都有他的臨界點……」");
+	message("「絕對猜不到他有骨氣那樣離開。但我想每個人都有他的臨界點…」");
 	say();
 	UI_remove_answer("Angus");
 labelFunc0451_0866:
 	case "Silverpate" attend labelFunc0451_0888:
 	message("「Silverpate 是 Angus 的曾祖父。」");
 	say();
-	message("「他們說老 Silverpate 是個嗜血的海盜。根據大眾的傳說，他改邪歸正，用他的不義之財建造了這間客棧……」");
+	message("「他們說老 Silverpate 是個嗜血的海盜。根據大眾的傳說，他改邪歸正，用他的不義之財建造了這間客棧…」");
 	say();
 	message("「但在月影城( Moonshade )的法師們那裡，卻流傳著另一個傳說。」");
 	say();
@@ -549,7 +549,7 @@ labelFunc0451_089F:
 	case "冤屈" attend labelFunc0451_08DB:
 	message("「你根本不知道其中的一半！我坐在這裡，一個待在破敗小屋裡的法師，被流放而無法練習那視同我生命的魔法！」");
 	say();
-	message("「法師議會( Council of Mages )對 Filbercio 的所作所為視而不見太久了，以至於他們試圖讓我成為他們的代罪羔羊……他們殺雞儆猴的對象。」");
+	message("「法師議會( Council of Mages )對 Filbercio 的所作所為視而不見太久了，以至於他們試圖讓我成為他們的代罪羔羊…他們殺雞儆猴的對象。」");
 	say();
 	UI_remove_answer("冤屈");
 	UI_add_answer("殺雞儆猴");
@@ -570,9 +570,9 @@ labelFunc0451_08DB:
 	UI_add_answer(["強迫", "法師的女兒"]);
 labelFunc0451_0903:
 	case "強迫" attend labelFunc0451_091A:
-	message("「我聽到最輕微的是勒索……誰知道 Filbercio 還會用什麼卑鄙的手段來滿足他的慾望？」");
+	message("「我聽到最輕微的是勒索…誰知道 Filbercio 還會用什麼卑鄙的手段來滿足他的慾望？」");
 	say();
-	message("「但我不知道細節，因為我盡量不去聽這類故事，它們總是讓我陷入近乎殺人的衝動……你得去別處打聽消息了。」");
+	message("「但我不知道細節，因為我盡量不去聽這類故事，它們總是讓我陷入近乎殺人的衝動…你得去別處打聽消息了。」");
 	say();
 	UI_remove_answer("強迫");
 labelFunc0451_091A:
@@ -586,7 +586,7 @@ labelFunc0451_0931:
 	case "告辭" attend labelFunc0451_0958:
 	UI_remove_npc_face0();
 	Func097F(0xFE9C, "@再見！@", 0x0000);
-	Func097F(0xFFAF, "@保重……@", 0x0005);
+	Func097F(0xFFAF, "@保重…@", 0x0005);
 	goto labelFunc0451_095B;
 labelFunc0451_0958:
 	goto labelFunc0451_0213;
@@ -598,9 +598,9 @@ labelFunc0451_095C:
 	UI_item_say(0xFFEE, "@救我遠離這個瘋子！@");
 	UI_show_npc_face0(0xFFAF, 0x0000);
 	if (!(var0003 == true)) goto labelFunc0451_0995;
-	message("「別干涉我，聖者！( Avatar )」 ~「我現在是法師領主( MageLord )了……」");
+	message("「別干涉我，聖者！( Avatar )」 ~「我現在是法師領主( MageLord )了…」");
 	say();
-	message("「你知道 Filbercio 比豬還不如……」 ~「他理應為他所做的一切壞事受到折磨。」");
+	message("「你知道 Filbercio 比豬還不如…」 ~「他理應為他所做的一切壞事受到折磨。」");
 	say();
 	goto labelFunc0451_099D;
 labelFunc0451_0995:

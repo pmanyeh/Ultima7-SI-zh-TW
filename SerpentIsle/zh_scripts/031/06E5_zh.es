@@ -66,7 +66,7 @@ labelFunc06E5_01CB:
 labelFunc06E5_01D0:
 	if (!((event == 0x0002) && (gflags[0x0007] == false))) goto labelFunc06E5_01F3;
 	UI_show_npc_face0(0xFEE0, 0x0000);
-	message("\"Want to sing an opera, Avatar?\"");
+	message("「想跟我一起唱部歌劇嗎，聖者？」");
 	say();
 	UI_remove_npc_face0();
 	Func09B8();

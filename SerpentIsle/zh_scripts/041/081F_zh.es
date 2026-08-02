@@ -58,7 +58,7 @@ labelFunc081F_00C6:
 	if (!(var000B == 0x0002)) goto labelFunc081F_00EF;
 	message("「那個的話，我必須要價 ");
 	message(var000C);
-	message(" 枚金幣……上一批貨品質不合標準，所以我退回去了。」*「我們剩下的很少。這個價格你能接受嗎？」");
+	message(" 枚金幣…上一批貨品質不合標準，所以我退回去了。」* 「我們剩下的很少。這個價格你能接受嗎？」");
 	say();
 	var000E = "瓶葡萄酒";
 labelFunc081F_00EF:
@@ -118,7 +118,7 @@ labelFunc081F_01FC:
 	var0010 = Func0992(0x0001, (("@但是 " + var0001) + "，我們沒有足夠的金幣！@"), 0x0000, false);
 	if (!(var0010 != 0xFE9C)) goto labelFunc081F_0246;
 	UI_show_npc_face0(0xFFD7, 0x0000);
-	message("「我自己偶爾也喜歡喝上一兩杯。」*「我會讓你免費喝，但最近我連付錢顧客的份都不夠了。」");
+	message("「我自己偶爾也喜歡喝上一兩杯。」* 「我會讓你免費喝，但最近我連付錢顧客的份都不夠了。」");
 	say();
 	message("「恐怕你們只能喝水了，");
 	message(var0000);
@@ -129,7 +129,7 @@ labelFunc081F_01FC:
 labelFunc081F_0246:
 	message("「抱歉，");
 	message(var0000);
-	message("，你的錢不夠付那個。」*「我會讓你免費喝，但最近我連付錢顧客的份都不夠了。」");
+	message("，你的錢不夠付那個。」* 「我會讓你免費喝，但最近我連付錢顧客的份都不夠了。」");
 	say();
 	message("「恐怕你們只能喝水了，");
 	message(var0000);

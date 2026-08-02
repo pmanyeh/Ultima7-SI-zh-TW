@@ -33,7 +33,7 @@ void Func041D object#(0x41D) ()
 labelFunc041D_001F:
 	var0003 = Func0953();
 	if (!(event == 0x0001)) goto labelFunc041D_005B;
-	UI_item_say(0xFE9C, "@打擾一下……@");
+	UI_item_say(0xFE9C, "@打擾一下…@");
 	0xFFE3->Func07D1();
 	Func097F(0xFFE3, (("@是的，" + var0000) + "？@"), 0x0002);
 	UI_set_schedule_type(0xFFE3, 0x0003);
@@ -154,7 +154,7 @@ labelFunc041D_02E5:
 labelFunc041D_0312:
 	case "綁架" attend labelFunc041D_032D:
 	UI_remove_answer("綁架");
-	message("「你的朋友是透過魔法手段被帶走的？這太不可思議了。你剛來到這個鎮上……」");
+	message("「你的朋友是透過魔法手段被帶走的？這太不可思議了。你剛來到這個鎮上…」");
 	say();
 	message("「遊俠(Rangers)的 Julia 可能幫得上忙，但我表示懷疑。這件事牽涉到魔法，而她只是一個凡夫俗子(Mundane)。」");
 	say();
@@ -190,7 +190,7 @@ labelFunc041D_0399:
 	message(var0000);
 	message("。一座用來關押法師和凡夫俗子(Mundane)的監獄。」");
 	say();
-	message("「據說，如果你被判處進入那個可怕的石坑，而你能成功回到外面的世界，那你自由了。沒有人會因為你入獄前犯下的罪行而追捕你……」");
+	message("「據說，如果你被判處進入那個可怕的石坑，而你能成功回到外面的世界，那你自由了。沒有人會因為你入獄前犯下的罪行而追捕你…」");
 	say();
 	message("「唯一的問題是，從來沒有人能獲得自由。而 Filbercio 依然無人能挑戰。」");
 	say();
@@ -230,7 +230,7 @@ labelFunc041D_0424:
 	UI_remove_answer("差事");
 	message("「因為這些風暴，我幾乎無法與大陸進行貿易，所以我大部分的施法材料都快用光了。 Filbercio 希望我能為他收集一些血苔。」");
 	say();
-	message("「我試過了。但這些風暴把兇猛的怪物帶到了那個區域……而我不是能對付牠們的高階法師(Adept)。」");
+	message("「我試過了。但這些風暴把兇猛的怪物帶到了那個區域…而我不是能對付牠們的高階法師(Adept)。」");
 	say();
 	message("「Filbercio 威脅我說，如果我拿不到血苔，就要把我扔進自由山脈( Mountains of Freedom )！我願意用我最珍貴的秘密來換取一些血苔！」");
 	say();
@@ -263,7 +263,7 @@ labelFunc041D_04AB:
 labelFunc041D_04AE:
 	message("「你知道了？！」");
 	say();
-	message("「沒錯。我是 Erstam 的兒子……這就是為什麼即使是被禁止的，我仍然繼續和他進行交易。如果議會知道了，我肯定會被流放。」");
+	message("「沒錯。我是 Erstam 的兒子…這就是為什麼即使是被禁止的，我仍然繼續和他進行交易。如果議會知道了，我肯定會被流放。」");
 	say();
 	message("「既然你知道了，我就跟你做個交易。如果你願意去南邊的沼澤，幫我帶些血苔回來，我就告訴你如何聯絡我父親。」");
 	say();
@@ -287,7 +287,7 @@ labelFunc041D_04E6:
 	message("「她堅信有某種外部力量應該為這些可惡的風暴負責。」");
 	say();
 	if (!gflags[0x00EA]) goto labelFunc041D_050E;
-	message("「我想知道……也許 Rotoluncia 跟你的同伴的失蹤有關？」");
+	message("「我想知道…也許 Rotoluncia 跟你的同伴的失蹤有關？」");
 	say();
 	message("「如果你想拜訪她，她住在城市東北角的莊園裡。」");
 	say();
@@ -314,13 +314,13 @@ labelFunc041D_0542:
 	say();
 	message("「我承認他四處打聽各種問題，還纏著別人賣巨蛇之牙(Serpent Teeth)給他。但我不明白她為什麼認為他跟這些風暴有關。」");
 	say();
-	message("「恐怕她認為所有的陌生人，都跟巴特林是一夥的。當然，他帶著那隻惡魔(Daemon)也無濟於事……」");
+	message("「恐怕她認為所有的陌生人，都跟巴特林是一夥的。當然，他帶著那隻惡魔(Daemon)也無濟於事…」");
 	say();
 	UI_add_answer(["巴特林", "問題", "巨蛇之牙", "惡魔"]);
 labelFunc041D_0570:
 	case "巴特林" attend labelFunc041D_0587:
 	UI_remove_answer("巴特林");
-	message("「一個又矮又胖的人……留著小鬍子……一臉怒容。如果你見過他，你肯定會記得。」");
+	message("「一個又矮又胖的人…留著小鬍子…一臉怒容。如果你見過他，你肯定會記得。」");
 	say();
 	message("「據我回憶，他不是個特別好的人。看起來就像其他的高階法師(Adept)一樣——習慣於隨心所欲，一旦受挫就會發怒。我盡量減少和他的接觸。」");
 	say();
@@ -354,7 +354,7 @@ labelFunc041D_05D5:
 	say();
 	message("「最常被偷走的東西是從我父親的收藏中拿走的巨蛇之牙(Serpent Tooth)。據我所知，它們毫無用處。但巴特林肯定想買下它們。」");
 	say();
-	message("「沒有人願意賣……誰知道呢，也許他希望能和我父親做某種交易來換取這些。」");
+	message("「沒有人願意賣…誰知道呢，也許他希望能和我父親做某種交易來換取這些。」");
 	say();
 	goto labelFunc041D_0615;
 labelFunc041D_0603:
@@ -364,14 +364,14 @@ labelFunc041D_0603:
 	say();
 	message("「最常被偷走的東西是從瘋狂法師的收藏中拿走的巨蛇之牙(Serpent Tooth)。據我所知，它們毫無用處。但巴特林肯定想買下它們。」");
 	say();
-	message("「沒有人願意賣……誰知道呢，也許他希望能和瘋狂法師做某種交易來換取這些。」");
+	message("「沒有人願意賣…誰知道呢，也許他希望能和瘋狂法師做某種交易來換取這些。」");
 	say();
 labelFunc041D_0615:
 	case "惡魔" attend labelFunc041D_0630:
 	UI_remove_answer("惡魔");
-	message("「是的！巴特林腳邊跟著一隻惡魔(Daemon)，馴服得令人難以置信。一聲不吭地聽從他的吩咐……一隻巨大、醜陋的紅色生物。」");
+	message("「是的！巴特林腳邊跟著一隻惡魔(Daemon)，馴服得令人難以置信。一聲不吭地聽從他的吩咐…一隻巨大、醜陋的紅色生物。」");
 	say();
-	message("「這正是吸引 Rotoluncia 眼睛的東西……她非常有興趣學習如何馴服一隻惡魔(Daemon)作為她的私人僕人。她因為巴特林不肯告訴她如何做到而非常生氣。」");
+	message("「這正是吸引 Rotoluncia 眼睛的東西…她非常有興趣學習如何馴服一隻惡魔(Daemon)作為她的私人僕人。她因為巴特林不肯告訴她如何做到而非常生氣。」");
 	say();
 	message("「但我敢肯定，當巴特林拒絕告訴她時， Filbercio 鬆了一口氣。大家都知道 Rotoluncia 很想把 Filbercio 切成小塊餵給惡魔(Daemon)。」");
 	say();
@@ -380,7 +380,7 @@ labelFunc041D_0630:
 	UI_remove_answer("風暴");
 	message("「絕對是魔法產生的，毫無疑問。任何在風暴期間被困在外面的人，都有被傳送到不知名地方的風險。」");
 	say();
-	message("「Gustacio 一直在尋找阻止風暴的方法。但到目前為止，他還沒有成功。也許現在有 Mortegro 的幫助，他們能找到答案……」");
+	message("「Gustacio 一直在尋找阻止風暴的方法。但到目前為止，他還沒有成功。也許現在有 Mortegro 的幫助，他們能找到答案…」");
 	say();
 	message("「我當然希望如此。在他們找到方法之前，月影城是被孤立的。」");
 	say();
@@ -388,9 +388,9 @@ labelFunc041D_0630:
 labelFunc041D_0658:
 	case "Gustacio" attend labelFunc041D_066F:
 	UI_remove_answer("Gustacio");
-	message("「Gustacio 是一位專注於研究天氣的高階法師(Adept)……大自然的力量，諸如此類的東西。」");
+	message("「Gustacio 是一位專注於研究天氣的高階法師(Adept)…大自然的力量，諸如此類的東西。」");
 	say();
-	message("「Gustacio 說過需要盡可能多地了解風暴。甚至胡言亂語地說什麼要學會看到顏色……至少對我來說聽起來像是在胡言亂語。」");
+	message("「Gustacio 說過需要盡可能多地了解風暴。甚至胡言亂語地說什麼要學會看到顏色…至少對我來說聽起來像是在胡言亂語。」");
 	say();
 labelFunc041D_066F:
 	case "Mortegro" attend labelFunc041D_0686:
@@ -402,7 +402,7 @@ labelFunc041D_066F:
 labelFunc041D_0686:
 	case "藥劑店" attend labelFunc041D_069D:
 	UI_remove_answer("藥劑店");
-	message("「我賣施展法術或施展魔法所需的一切……」");
+	message("「我賣施展法術或施展魔法所需的一切…」");
 	say();
 	message("「不幸的是，我現在大部分東西的存貨都非常有限。」");
 	say();
@@ -410,11 +410,11 @@ labelFunc041D_069D:
 	case "密碼" attend labelFunc041D_06C9:
 	UI_remove_answer("密碼");
 	if (!gflags[0x0145]) goto labelFunc041D_06B9;
-	message("「噢——你忘記了嗎？真尷尬……」");
+	message("「噢——你忘記了嗎？真尷尬…」");
 	say();
 	goto labelFunc041D_06BD;
 labelFunc041D_06B9:
-	message("「血苔如此強大，因為它與生命的液體有關聯，這難道不有趣嗎？血……但我又在胡言亂語了……」");
+	message("「血苔如此強大，因為它與生命的液體有關聯，這難道不有趣嗎？血…但我又在胡言亂語了…」");
 	say();
 labelFunc041D_06BD:
 	gflags[0x0145] = true;
@@ -432,14 +432,14 @@ labelFunc041D_06DC:
 	UI_remove_answer("呼叫交通工具");
 	message("「要呼叫那隻生物，去碼頭。在那裡，你會找到一個船鐘。」");
 	say();
-	message("「一旦你敲響鐘並詠唱咒語，你的交通工具就會抵達。牠只能帶你去我父親的島嶼……其他地方都不行。」");
+	message("「一旦你敲響鐘並詠唱咒語，你的交通工具就會抵達。牠只能帶你去我父親的島嶼…其他地方都不行。」");
 	say();
 	UI_add_answer("咒語");
 labelFunc041D_06FA:
 	case "咒語" attend labelFunc041D_076C:
 	if (!gflags[0x0145]) goto labelFunc041D_0768;
 	UI_remove_answer("咒語");
-	message("「天哪，你真是不耐煩！我正要告訴你……」");
+	message("「天哪，你真是不耐煩！我正要告訴你…」");
 	say();
 	message("「記住咒語：I Re-Ten Bentas Juxark I! Praetimde Mir-Wis Re-Por I.」");
 	say();
@@ -447,11 +447,11 @@ labelFunc041D_06FA:
 	say();
 	message("「唉——就像通常的情況一樣，使用力量並不需要了解它。」");
 	say();
-	var0006 = Func0992(0xFFFD, (((("@" + var0003) + " 在偽先知(False Prophet)的時代裡學得很好。@"))), "@在偽先知(False Prophet)的時代裡，我受過良好的教導……@", false);
+	var0006 = Func0992(0xFFFD, (((("@" + var0003) + " 在偽先知(False Prophet)的時代裡學得很好。@"))), "@在偽先知(False Prophet)的時代裡，我受過良好的教導…@", false);
 	UI_set_conversation_slot(0x0000);
 	message("「誰？」");
 	say();
-	var0006 = Func0992(0x0001, "@沒什麼……@", "@沒什麼……@", false);
+	var0006 = Func0992(0x0001, "@沒什麼…@", "@沒什麼…@", false);
 	UI_set_conversation_slot(0x0000);
 	gflags[0x013D] = true;
 	goto labelFunc041D_076C;
@@ -496,7 +496,7 @@ labelFunc041D_07FD:
 	UI_remove_answer("Julia");
 	message("「Julia 是個相當令人望而生畏的女人。似乎總是在尋找你製造麻煩的秘密慾望，如果你明白我的意思。」");
 	say();
-	message("「她非常能幹，但不太熱情。我甚至見過她拒絕領主法師的追求……真是一個令人敬畏的女人。」");
+	message("「她非常能幹，但不太熱情。我甚至見過她拒絕領主法師的追求…真是一個令人敬畏的女人。」");
 	say();
 labelFunc041D_0814:
 	case "魔法榨酒機" attend labelFunc041D_084B:
@@ -527,7 +527,7 @@ labelFunc041D_0866:
 	UI_remove_answer("拖鞋");
 	message("「嗯。我不認為它們屬於一個法師，");
 	message(var0000);
-	message("。大多數法師更喜歡一些……令人印象深刻的東西。」");
+	message("。大多數法師更喜歡一些…令人印象深刻的東西。」");
 	say();
 	message("「這看起來比較像凡夫俗子會穿的鞋子。你可以去卡佩西商行(Capessii Canton)找 Bucia 問問。」");
 	say();
@@ -574,14 +574,14 @@ labelFunc041D_091E:
 	UI_remove_answer("Ducio");
 	message("「Ducio 是一位工匠大師。他的作品好得令人難以置信——前提是他有在工作。」");
 	say();
-	message("「大多數時候，他會把工作交給學徒。但我確切知道他為高階法師們(Adepts)製作所有的實驗室儀器。他應該能告訴你這件物品的主人是誰……前提是他還醒著！」");
+	message("「大多數時候，他會把工作交給學徒。但我確切知道他為高階法師們(Adepts)製作所有的實驗室儀器。他應該能告訴你這件物品的主人是誰…前提是他還醒著！」");
 	say();
 labelFunc041D_0935:
 	case "Topo" attend labelFunc041D_0950:
 	UI_remove_answer("Topo");
 	message("「Topo 是 Ducio 大師收的可憐學徒男孩。他是店裡做所有工作的人。」");
 	say();
-	message("「儘管 Ducio 很懶惰，但 Topo 似乎很有天賦和前途。事實上，月影城的每個人都知道如果需要什麼東西，就去找 Topo ……」");
+	message("「儘管 Ducio 很懶惰，但 Topo 似乎很有天賦和前途。事實上，月影城的每個人都知道如果需要什麼東西，就去找 Topo …」");
 	say();
 	message("「他的服務更快也更友善。」");
 	say();
@@ -609,13 +609,13 @@ labelFunc041D_0991:
 	if (!(gflags[0x00E8] || gflags[0x011F])) goto labelFunc041D_09B5;
 	message("「我父親試圖尋找創造生命的秘密。我猜想那是他試圖獲得永生——畢竟連法術最終也會屈服於時間的摧殘。」");
 	say();
-	message("「不幸的是， Erstam 對知識的追求是以犧牲助手為代價的。 Vasel 已經避開了那不可避免的命運，比我預期的要久得多……」");
+	message("「不幸的是， Erstam 對知識的追求是以犧牲助手為代價的。 Vasel 已經避開了那不可避免的命運，比我預期的要久得多…」");
 	say();
 	goto labelFunc041D_09BD;
 labelFunc041D_09B5:
 	message("「Erstam 試圖尋找創造生命的秘密。我猜想那是他試圖獲得永生——畢竟連法術最終也會屈服於時間的摧殘。」");
 	say();
-	message("「不幸的是， Erstam 對知識的追求是以犧牲助手為代價的。 Vasel 已經避開了那不可避免的命運，比我預期的要久得多……」");
+	message("「不幸的是， Erstam 對知識的追求是以犧牲助手為代價的。 Vasel 已經避開了那不可避免的命運，比我預期的要久得多…」");
 	say();
 labelFunc041D_09BD:
 	UI_add_answer("Vasel");
@@ -634,7 +634,7 @@ labelFunc041D_09E8:
 	UI_remove_answer("瘋狂法師");
 	message("「對於一個為了實驗而把助手切成碎片的男人，你還能怎麼稱呼他呢？！」");
 	say();
-	message("「這是他與其他法師分開居住的另一個原因。他永遠不會屈服於他們的戒律……而且我懷疑月影城的任何高階法師(Adepts)能有辦法強制他遵守！」");
+	message("「這是他與其他法師分開居住的另一個原因。他永遠不會屈服於他們的戒律…而且我懷疑月影城的任何高階法師(Adepts)能有辦法強制他遵守！」");
 	say();
 labelFunc041D_09FF:
 	case "石心" attend labelFunc041D_0A27:
@@ -653,12 +653,12 @@ labelFunc041D_0A27:
 	message(var0000);
 	message("。而讓那種施法材料所產生的力量落入瘋子手中是不可想像的！」");
 	say();
-	message("「當然，作為一名藥劑師，我可以從你這裡買下它……並找一兩個有資格擁有它的買家。」");
+	message("「當然，作為一名藥劑師，我可以從你這裡買下它…並找一兩個有資格擁有它的買家。」");
 	say();
-	message("「我可以給你一個好價錢……比方說， 120 枚吉爾得幣(guilders)。你願意賣嗎？」");
+	message("「我可以給你一個好價錢…比方說， 120 枚吉爾得幣(guilders)。你願意賣嗎？」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc041D_0A5A;
-	message("「太好了！這會為你省去很多麻煩……」");
+	message("「太好了！這會為你省去很多麻煩…」");
 	say();
 	Func0857();
 	goto labelFunc041D_0A64;
@@ -670,7 +670,7 @@ labelFunc041D_0A5A:
 labelFunc041D_0A64:
 	case "施法材料" attend labelFunc041D_0A7F:
 	UI_remove_answer("施法材料");
-	message("「當它與一定量的血液混合時，會產生血菌絲(Bloodspawn)……好吧，我說得太遠了。」");
+	message("「當它與一定量的血液混合時，會產生血菌絲(Bloodspawn)…好吧，我說得太遠了。」");
 	say();
 	message("「如果你有一個儀式用的放血設備——這在技術上也是被禁止的——你必須在一個小容器裡裝滿血。」");
 	say();
@@ -684,7 +684,7 @@ labelFunc041D_0A7F:
 	Func097F(0xFFE3, "@歡迎再來！@", 0x0002);
 	goto labelFunc041D_0ACC;
 labelFunc041D_0AB4:
-	Func097F(0xFE9C, "@回頭見……@", 0x0000);
+	Func097F(0xFE9C, "@回頭見…@", 0x0000);
 	Func097F(0xFFE3, "@保重！@", 0x0002);
 labelFunc041D_0ACC:
 	Func08FF();

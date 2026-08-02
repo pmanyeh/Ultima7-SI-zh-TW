@@ -104,7 +104,7 @@ labelFunc0450_01F2:
 	message("「你是敵是友？」");
 	say();
 	if (!(Func0956(["朋友", "敵人"]) == "朋友")) goto labelFunc0450_02D9;
-	message("「我不知道你是朋友……我會讓你進去，但在你與 Marsten 領主大人交談之前，你必須有人護送。」");
+	message("「我不知道你是朋友…我會讓你進去，但在你與 Marsten 領主大人交談之前，你必須有人護送。」");
 	say();
 	message("「你可以在火葬場( Crematorium )找到他，他正在為死者哀悼。沿著路往北走。」");
 	say();
@@ -145,7 +145,7 @@ labelFunc0450_02EA:
 labelFunc0450_030B:
 	UI_add_answer("風暴");
 	if (!(!gflags[0x0078])) goto labelFunc0450_0341;
-	message("「事實上，挺可疑的……」");
+	message("「事實上，挺可疑的…」");
 	say();
 	message("「也許你和那個在市中心突然出現的附魔師是一夥的！我們立刻把他關進了監牢。」");
 	say();
@@ -166,7 +166,7 @@ labelFunc0450_0341:
 labelFunc0450_0358:
 	case "門" attend labelFunc0450_037A:
 	UI_remove_answer("門");
-	message("「沒錯，這確實是一扇門。而且非常堅固。用來擊退任何膽敢嘗試突破這些城牆的敵人。」*「我想你是要我來操作它吧。說得好像我很閒似的……」");
+	message("「沒錯，這確實是一扇門。而且非常堅固。用來擊退任何膽敢嘗試突破這些城牆的敵人。」* 「我想你是要我來操作它吧。說得好像我很閒似的…」");
 	say();
 	UI_set_item_flag(0xFE9C, 0x0010);
 	Func0833(event);
@@ -265,7 +265,7 @@ labelFunc0450_04AF:
 	UI_add_answer("統治者");
 	goto labelFunc0450_04DB;
 labelFunc0450_04D7:
-	message("「隨著 Marsten 入獄，花豹必須恢復他們曾經的樣貌！不過 Shazzana 是隻母老虎……她會把事情導回正軌的。」");
+	message("「隨著 Marsten 入獄，花豹必須恢復他們曾經的樣貌！不過 Shazzana 是隻母老虎…她會把事情導回正軌的。」");
 	say();
 labelFunc0450_04DB:
 	case "統治者" attend labelFunc0450_04F2:
@@ -300,7 +300,7 @@ labelFunc0450_053A:
 labelFunc0450_0555:
 	case "旅行" attend labelFunc0450_0570:
 	UI_remove_answer("旅行");
-	message("「為什麼會有人想去蒙利多城( Monitor )以外的任何地方？這裡是勇氣( Courage )繁盛之地——而在外頭，則是輕浮當道……」");
+	message("「為什麼會有人想去蒙利多城( Monitor )以外的任何地方？這裡是勇氣( Courage )繁盛之地——而在外頭，則是輕浮當道…」");
 	say();
 	message("「月影城( Moonshade )不過是個法師之城。誰需要魔法？它在一把千錘百鍊的利劍面前相形見絀。」");
 	say();

@@ -100,8 +100,8 @@ labelFunc0843_0184:
 labelFunc0843_0198:
 	var000F = UI_die_roll(0x0001, 0x0005);
 	if (!(var000F == 0x0001)) goto labelFunc0843_01BB;
-	var0010 = "我不確定……";
-	var0011 = "嗯……這品質肯定很差勁！";
+	var0010 = "我不確定…";
+	var0011 = "嗯…這品質肯定很差勁！";
 labelFunc0843_01BB:
 	if (!(var000F == 0x0002)) goto labelFunc0843_01D1;
 	var0010 = "這上面有發霉！";
@@ -133,7 +133,7 @@ labelFunc0843_0263:
 	if (!(var0014 == 0x0000)) goto labelFunc0843_0284;
 	message("「或許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0843_05DB;
 labelFunc0843_0284:
@@ -183,7 +183,7 @@ labelFunc0843_0319:
 	if (!(var0014 == 0x0000)) goto labelFunc0843_033A;
 	message("「或許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0843_05DB;
 labelFunc0843_033A:
@@ -191,7 +191,7 @@ labelFunc0843_033A:
 	message(var0011);
 	message("」");
 	say();
-	message("「嗯……這 ");
+	message("「嗯…這 ");
 	message(var0014);
 	message(" 雙皮手套我可以給你 ");
 	message(var0013);
@@ -231,7 +231,7 @@ labelFunc0843_03C9:
 	if (!(var0014 == 0x0000)) goto labelFunc0843_03EA;
 	message("「或許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0843_05DB;
 labelFunc0843_03EA:
@@ -281,7 +281,7 @@ labelFunc0843_047F:
 	if (!(var0014 == 0x0000)) goto labelFunc0843_04A0;
 	message("「或許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0843_05DB;
 labelFunc0843_04A0:
@@ -331,7 +331,7 @@ labelFunc0843_0535:
 	if (!(var0014 == 0x0000)) goto labelFunc0843_0556;
 	message("「或許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0843_05DB;
 labelFunc0843_0556:

@@ -28,7 +28,7 @@ labelFunc047E_0035:
 	say();
 	message("「來吧！來見證我力量的崛起。」");
 	say();
-	message("「來吧，聖者……來受死吧！」");
+	message("「來吧，聖者…來受死吧！」");
 	say();
 	UI_set_schedule_type(0xFF82, 0x0000);
 	UI_set_alignment(0xFF82, 0x0002);

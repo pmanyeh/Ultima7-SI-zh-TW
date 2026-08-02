@@ -112,37 +112,37 @@ labelFunc02A3_026A:
 	var000B = UI_count_objects(0xFE9B, 0x0285, 0xFE99, 0xFE99);
 	var000C = UI_count_objects(0xFE9B, 0x03A9, 0xFE99, 0xFE99);
 	var000D = UI_count_objects(0xFE9B, 0x0286, 0xFE99, 0xFE99);
-	var000E = "金幣";
+	var000E = "枚金幣";
 	if (!(var0006 == 0x0001)) goto labelFunc02A3_0318;
-	var000E = "金幣";
+	var000E = "枚金幣";
 labelFunc02A3_0318:
-	var000F = "寶石";
+	var000F = "枚寶石";
 	if (!(var000A == 0x0001)) goto labelFunc02A3_032E;
-	var000F = "寶石";
+	var000F = "枚寶石";
 labelFunc02A3_032E:
-	var0010 = "珠寶";
+	var0010 = "枚珠寶";
 	if (!(var000C == 0x0001)) goto labelFunc02A3_0344;
-	var0010 = "珠寶";
+	var0010 = "枚珠寶";
 labelFunc02A3_0344:
-	var0011 = "吉爾得幣";
+	var0011 = "枚吉爾得幣";
 	if (!(var0009 == 0x0001)) goto labelFunc02A3_035A;
-	var0011 = "吉爾得幣";
+	var0011 = "枚吉爾得幣";
 labelFunc02A3_035A:
-	var0012 = "金條";
+	var0012 = "塊金條";
 	if (!(var000D == 0x0001)) goto labelFunc02A3_0370;
-	var0012 = "金條";
+	var0012 = "塊金條";
 labelFunc02A3_0370:
-	var0013 = "金塊";
+	var0013 = "塊金塊";
 	if (!(var000B == 0x0001)) goto labelFunc02A3_0386;
-	var0013 = "金塊";
+	var0013 = "塊金塊";
 labelFunc02A3_0386:
 	if (!(var0006 || (var0007 || (var0008 || (var0009 || (var000A || (var000B || (var000C || var000D)))))))) goto labelFunc02A3_0417;
 	UI_show_npc_face0(0xFE9C, 0x0000);
-	message("「讓我看看... ");
+	message("「讓我看看...");
 	message(var0005);
-	message(" 有 -- ");
+	message("有 -- ");
 	message(var0007);
-	message(" 蒙里他利幣( monetari )， ");
+	message(" 枚蒙里他利幣， ");
 	message(var0006);
 	message(" ");
 	message(var000E);
@@ -152,7 +152,7 @@ labelFunc02A3_0386:
 	message(var0011);
 	message("， ");
 	message(var0008);
-	message(" 法拉利幣( filari )， ");
+	message(" 枚法拉利幣， ");
 	message(var000B);
 	message(" ");
 	message(var0013);
@@ -257,29 +257,29 @@ labelFunc02A3_05CA:
 labelFunc02A3_05DE:
 	if (!(var0000 == 0x0015)) goto labelFunc02A3_06B2;
 	var001E = UI_game_hour();
-	var001F = "am";
+	var001F = "上午";
 	if (!(var001E > 0x000C)) goto labelFunc02A3_060F;
 	var001E = (var001E - 0x000C);
-	var001F = "pm";
+	var001F = "下午";
 labelFunc02A3_060F:
 	if (!(var001E == 0x000C)) goto labelFunc02A3_061F;
-	var001F = "pm";
+	var001F = "中午";
 labelFunc02A3_061F:
 	if (!(var001E == 0x0000)) goto labelFunc02A3_0635;
 	var001E = 0x000C;
-	var001F = "am";
+	var001F = "子夜";
 labelFunc02A3_0635:
 	var0020 = UI_game_minute();
 	if (!(var0020 <= 0x0009)) goto labelFunc02A3_0650;
 	var0020 = ("0" + var0020);
 labelFunc02A3_0650:
-	var0021 = ((((" " + var001E) + ":") + var0020) + var001F);
+	var0021 = (var001F + " " + var001E + ":" + var0020);
 	if (!UI_in_gump_mode()) goto labelFunc02A3_068E;
-	var0021 = ((((" " + var001E) + ":") + var0020) + var001F);
+	var0021 = (var001F + " " + var001E + ":" + var0020);
 	UI_item_say(item, var0021);
 	goto labelFunc02A3_06B2;
 labelFunc02A3_068E:
-	var0021 = ((((("@" + var001E) + ":") + var0020) + var001F) + "@");
+	var0021 = ("@" + var001F + " " +  var001E + ":" + var0020 + "@");
 	UI_item_say(0xFE9C, var0021);
 labelFunc02A3_06B2:
 	if (!(var0000 == 0x0016)) goto labelFunc02A3_07B3;

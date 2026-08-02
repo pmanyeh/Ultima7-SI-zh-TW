@@ -21,7 +21,7 @@ labelFunc06FF_0008:
 	if (!(!(gflags[0x0209] && (gflags[0x020A] && (gflags[0x020B] && gflags[0x020C]))))) goto labelFunc06FF_002E;
 	abort;
 labelFunc06FF_002E:
-	var0001 = ("@糟糕……@" & ("@有什麼東西來了！@" & ("@我聽到有聲音……@" & ("@那是什麼？@" & ("@噢，不！@" & "@聽！@")))));
+	var0001 = ("@糟糕…@" & ("@有什麼東西來了！@" & ("@我聽到有聲音…@" & ("@那是什麼？@" & ("@噢，不！@" & "@聽！@")))));
 	var0002 = Func0992(0x0001, var0001[UI_get_random(UI_get_array_size(var0001))], var0001[UI_get_random(UI_get_array_size(var0001))], true);
 	var0001 = UI_find_nearby(item, 0x036C, 0x0064, 0x0000);
 	enum();

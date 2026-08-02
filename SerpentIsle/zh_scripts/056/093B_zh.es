@@ -60,13 +60,13 @@ labelFunc093B_00B6:
 	message("「美之祭司何在？大船長 Voldin 又何在？」");
 	say();
 	UI_show_npc_face1(0xFFC3, 0x0000);
-	message("「額……我不清楚，夫人閣下。連 Jorvin 也找不到人了。」");
+	message("「額…我不清楚，夫人閣下。連 Jorvin 也找不到人了。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「Voldin 與 Kylista 竟都不在此處，實在太不像話……但我絕不允許正義延宕。」");
+	message("「Voldin 與 Kylista 竟都不在此處，實在太不像話…但我絕不允許正義延宕。」");
 	say();
-	message("「我將頂替 Kylista 的位置繼續審理……」");
+	message("「我將頂替 Kylista 的位置繼續審理…」");
 	say();
 	UI_end_conversation();
 	UI_si_path_run_usecode(0xFFC9, [0x03FE, 0x0666, 0x0006], 0x000D, UI_get_npc_object(0xFFC9), 0x07F8, false);
@@ -80,7 +80,7 @@ labelFunc093B_010F:
 	message("「Yelinda 夫人，既然您統治此城，您是否希望親自主持審問？」");
 	say();
 	UI_end_conversation();
-	var0003 = UI_delayed_execute_usecode_array(0xFFC9, [(byte)0x23, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x52, "@不……@", (byte)0x27, 0x0007, (byte)0x55, 0x07F8], 0x0002);
+	var0003 = UI_delayed_execute_usecode_array(0xFFC9, [(byte)0x23, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x52, "@不…@", (byte)0x27, 0x0007, (byte)0x55, 0x07F8], 0x0002);
 	goto labelFunc093B_0191;
 labelFunc093B_0162:
 	UI_set_schedule_type(item, 0x000F);
@@ -119,7 +119,7 @@ labelFunc093B_0255:
 	Func097F(0xFFCC, "@萬歲！@", 0x0000);
 	Func097F(0xFFD1, "@向夫人致敬！@", 0x0005);
 	Func097F(0xFFD0, "@偉大的夫人！@", 0x0009);
-	Func097F(0xFFC6, "@隨便啦……！@", 0x000F);
+	Func097F(0xFFC6, "@隨便啦…！@", 0x000F);
 	var0003 = UI_delayed_execute_usecode_array(0xFFC9, [(byte)0x23, (byte)0x6F, (byte)0x27, 0x0002, (byte)0x70, (byte)0x27, 0x0002, (byte)0x0B, 0xFFFA, 0x0002, (byte)0x61, (byte)0x55, 0x07F8], 0x0014);
 labelFunc093B_02D9:
 	abort;
@@ -136,7 +136,7 @@ labelFunc093B_02DA:
 	UI_end_conversation();
 	var0003 = UI_execute_usecode_array(0xFFCA, [(byte)0x27, 0x0002, (byte)0x59, 0x0006, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6B]);
 	Func08C7();
-	var0003 = UI_execute_usecode_array(0xFFCB, [(byte)0x52, "@請稍等……@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x07F8]);
+	var0003 = UI_execute_usecode_array(0xFFCB, [(byte)0x52, "@請稍等…@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x07F8]);
 	goto labelFunc093B_03BC;
 labelFunc093B_0363:
 	UI_init_conversation();
@@ -153,7 +153,7 @@ labelFunc093B_0363:
 	say();
 	UI_end_conversation();
 	Func08C7();
-	var0003 = UI_execute_usecode_array(0xFFC3, [(byte)0x52, "@請原諒，夫人……@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x07F8]);
+	var0003 = UI_execute_usecode_array(0xFFC3, [(byte)0x52, "@請原諒，夫人…@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x07F8]);
 labelFunc093B_03BC:
 	abort;
 labelFunc093B_03BD:
@@ -173,7 +173,7 @@ labelFunc093B_03BD:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「我們拭目以待……」");
+	message("「我們拭目以待…」");
 	say();
 	UI_end_conversation();
 	var0003 = UI_delayed_execute_usecode_array(0xFFCB, [(byte)0x23, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6B], 0x0004);
@@ -193,7 +193,7 @@ labelFunc093B_0486:
 	message("「鑑於『友誼會』那些惹事生非之徒，在先前會面時極不討喜，本次庭審已將他們全數排除在外。」");
 	say();
 	UI_end_conversation();
-	Func097F(0xFFC3, "@聖者……@", 0x0002);
+	Func097F(0xFFC3, "@聖者…@", 0x0002);
 	var0003 = UI_delayed_execute_usecode_array(0xFFC9, [(byte)0x23, (byte)0x55, 0x07F8], 0x0007);
 	gflags[0x0176] = false;
 	gflags[0x0177] = false;
@@ -216,7 +216,7 @@ labelFunc093B_04F8:
 	var0003 = UI_execute_usecode_array(0xFFCD, [(byte)0x23, (byte)0x64, (byte)0x59, 0x0004]);
 	goto labelFunc093B_0537;
 labelFunc093B_0521:
-	var0003 = UI_execute_usecode_array(0xFFC3, [(byte)0x23, (byte)0x52, "@聖者……@", (byte)0x64]);
+	var0003 = UI_execute_usecode_array(0xFFC3, [(byte)0x23, (byte)0x52, "@聖者…@", (byte)0x64]);
 labelFunc093B_0537:
 	var0003 = UI_delayed_execute_usecode_array(item, [(byte)0x55, 0x07F8], 0x0006);
 	abort;
@@ -312,7 +312,7 @@ labelFunc093B_0840:
 	if (!(gflags[0x0170] && ((((((((((((gflags[0x0176] + gflags[0x0177]) + gflags[0x0178]) + gflags[0x0179]) + gflags[0x017A]) + gflags[0x017C]) + gflags[0x017D]) + gflags[0x017E]) + gflags[0x017F]) + gflags[0x0180]) + gflags[0x0181]) + gflags[0x0182]) > 0x0004))) goto labelFunc093B_08CC;
 	var0003 = UI_set_item_quality(Func09A0(0x0001, 0x0001), 0x0022);
 	var0003 = UI_execute_usecode_array(0xFFCD, [(byte)0x23, (byte)0x61]);
-	var0003 = UI_execute_usecode_array(0xFFC9, [(byte)0x23, (byte)0x52, "@如果我可以發言的話……@", (byte)0x6C, (byte)0x27, 0x0001, (byte)0x61, (byte)0x55, 0x07FB]);
+	var0003 = UI_execute_usecode_array(0xFFC9, [(byte)0x23, (byte)0x52, "@如果我可以發言的話…@", (byte)0x6C, (byte)0x27, 0x0001, (byte)0x61, (byte)0x55, 0x07FB]);
 	abort;
 labelFunc093B_08CC:
 	if (!(var0007 && gflags[0x0170])) goto labelFunc093B_09BE;
@@ -333,14 +333,14 @@ labelFunc093B_092F:
 	UI_play_music(0x000C, Func09A0(0x0005, 0x0001));
 labelFunc093B_0949:
 	if (!(var0007 == 0xFFCB)) goto labelFunc093B_095F;
-	Func097F(0xFFCB, "@對，對……@", 0x000A);
+	Func097F(0xFFCB, "@對，對…@", 0x000A);
 labelFunc093B_095F:
 	if (!(var0007 == 0xFFCA)) goto labelFunc093B_0975;
 	Func097F(0xFFCA, "@真是的，Voldin ！@", 0x000E);
 labelFunc093B_0975:
 	if (!(var0007 == 0xFFC5)) goto labelFunc093B_09A7;
-	Func097F(0xFFC9, "@他好醜……@", 0x000A);
-	Func097F(0xFFD2, "@天哪……@", 0x000E);
+	Func097F(0xFFC9, "@他好醜…@", 0x000A);
+	Func097F(0xFFD2, "@天哪…@", 0x000E);
 	UI_play_music(0x000A, Func09A0(0x0005, 0x0001));
 labelFunc093B_09A7:
 	if (!(var0007 == 0xFFC3)) goto labelFunc093B_09BD;
@@ -356,7 +356,7 @@ labelFunc093B_09BE:
 	message(var0002);
 	message(" 罪名成立的證據。」");
 	say();
-	message("「我將發言權交還給祭司 Kylista ……」");
+	message("「我將發言權交還給祭司 Kylista …」");
 	say();
 	UI_end_conversation();
 	var0003 = UI_execute_usecode_array(0xFFCA, [(byte)0x23, (byte)0x52, "@肅靜！@", (byte)0x6C, (byte)0x61, (byte)0x70, (byte)0x01, (byte)0x58, 0x001E, (byte)0x6F, (byte)0x01, (byte)0x58, 0x001E, (byte)0x61, (byte)0x01, (byte)0x58, 0x001E]);
@@ -393,15 +393,15 @@ labelFunc093B_0B00:
 	UI_play_music(0x0013, Func09A0(0x0005, 0x0001));
 	var000B = (((((((((((gflags[0x0176] + gflags[0x0177]) + gflags[0x0178]) + gflags[0x0179]) + gflags[0x017A]) + gflags[0x017C]) + gflags[0x017D]) + gflags[0x017E]) + gflags[0x017F]) + gflags[0x0180]) + gflags[0x0181]) + gflags[0x0182]);
 	if (!(var000B == 0x0000)) goto labelFunc093B_0B5B;
-	message("「你竟連一人都未曾傳喚……看來你對神諭之洞察力信心十足，想必定能如願以償吧。」");
+	message("「你竟連一人都未曾傳喚…看來你對神諭之洞察力信心十足，想必定能如願以償吧。」");
 	say();
 labelFunc093B_0B5B:
 	if (!(var000B == 0x0001)) goto labelFunc093B_0B69;
-	message("「你竟只傳喚了區區一人……看來你對神諭之洞察力信心十足，想必定能如願以償吧。」");
+	message("「你竟只傳喚了區區一人…看來你對神諭之洞察力信心十足，想必定能如願以償吧。」");
 	say();
 labelFunc093B_0B69:
 	if (!((var000B == 0x0002) || (var000B == 0x0003))) goto labelFunc093B_0B7F;
-	message("「你傳喚的人這麼少……看來你對神諭之洞察力信心十足，想必定能如願以償吧。」");
+	message("「你傳喚的人這麼少…看來你對神諭之洞察力信心十足，想必定能如願以償吧。」");
 	say();
 labelFunc093B_0B7F:
 	message("「我將發言權…交還給優雅的 Yelinda 夫人…」");

@@ -102,7 +102,7 @@ labelFunc0463_0169:
 labelFunc0463_0173:
 	case "告辭" attend labelFunc0463_01A4:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@待會見……@", 0x0000);
+	Func097F(0xFE9C, "@待會見…@", 0x0000);
 	Func097F(0xFF9D, "@運用你的邏輯( Logic )！@", 0x0002);
 	UI_set_schedule_type(0xFF9D, 0x000B);
 	goto labelFunc0463_01A7;

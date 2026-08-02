@@ -23,7 +23,7 @@ labelFunc0614_0069:
 labelFunc0614_006C:
 	if (!(var0000 == 0x0000)) goto labelFunc0614_008C;
 	UI_show_npc_face(var0002, 0x0000);
-	message("「快點！失衡( Imbalance )正變得越來越強……」");
+	message("「快點！失衡( Imbalance )正變得越來越強…」");
 	say();
 	UI_remove_npc_face(var0002);
 	return;
@@ -65,7 +65,7 @@ labelFunc0614_010C:
 labelFunc0614_012C:
 	if (!(var0000 == 0x0006)) goto labelFunc0614_014C;
 	UI_show_npc_face(var0002, 0x0000);
-	message("「黑石巨蛇……你必須擁有三條黑石巨蛇( Serpents of Blackrock )。」");
+	message("「黑石巨蛇…你必須擁有三條黑石巨蛇( Serpents of Blackrock )。」");
 	say();
 	UI_remove_npc_face(var0002);
 	return;
@@ -100,7 +100,7 @@ labelFunc0614_01AC:
 labelFunc0614_01CC:
 	if (!(var0000 == 0x000B)) goto labelFunc0614_01EC;
 	UI_show_npc_face(var0002, 0x0000);
-	message("「釋放 Gwenno ……將她從冰封中解救出來！」");
+	message("「釋放 Gwenno …將她從冰封中解救出來！」");
 	say();
 	UI_remove_npc_face(var0002);
 	return;
@@ -114,28 +114,28 @@ labelFunc0614_01EC:
 labelFunc0614_020C:
 	if (!(var0000 == 0x000D)) goto labelFunc0614_022C;
 	UI_show_npc_face(var0002, 0x0000);
-	message("「巫師……關鍵是那個死去的巫師……你必須擊敗他。」");
+	message("「巫師…關鍵是那個死去的巫師…你必須擊敗他。」");
 	say();
 	UI_remove_npc_face(var0002);
 	return;
 labelFunc0614_022C:
 	if (!(var0000 == 0x000E)) goto labelFunc0614_024C;
 	UI_show_npc_face(var0002, 0x0000);
-	message("「骨灰……將骨灰放置在祭壇上。」");
+	message("「骨灰…將骨灰放置在祭壇上。」");
 	say();
 	UI_remove_npc_face(var0002);
 	return;
 labelFunc0614_024C:
 	if (!(var0000 == 0x000F)) goto labelFunc0614_026C;
 	UI_show_npc_face(var0002, 0x0000);
-	message("「混沌之禍( Bane of Chaos )……混沌之禍……扭曲了她的靈魂……」");
+	message("「混沌之禍( Bane of Chaos )…混沌之禍…扭曲了她的靈魂…」");
 	say();
 	UI_remove_npc_face(var0002);
 	return;
 labelFunc0614_026C:
 	if (!(var0000 == 0x0010)) goto labelFunc0614_028C;
 	UI_show_npc_face(var0002, 0x0000);
-	message("「一位新的英雄進入了這個世界……我是在做夢，還是他是真實的？」");
+	message("「一位新的英雄進入了這個世界…我是在做夢，還是他是真實的？」");
 	say();
 	UI_remove_npc_face(var0002);
 	return;
@@ -163,14 +163,14 @@ labelFunc0614_02CC:
 labelFunc0614_02EC:
 	if (!(var0000 == 0x0014)) goto labelFunc0614_030C;
 	UI_show_npc_face(var0002, 0x0000);
-	message("「尋找那支號角…… Gwani 之角……在碎骨者山脈( Skullcrusher Mountains )下方的深處尋找它。」");
+	message("「尋找那支號角… Gwani 之角…在碎骨者山脈( Skullcrusher Mountains )下方的深處尋找它。」");
 	say();
 	UI_remove_npc_face(var0002);
 	return;
 labelFunc0614_030C:
 	if (!(var0000 == 0x0015)) goto labelFunc0614_0330;
 	UI_show_npc_face(0xFED8, 0x0000);
-	message("「祝你美夢，聖者……」");
+	message("「祝你美夢，聖者…」");
 	say();
 	message("「哈哈哈哈哈！」");
 	say();

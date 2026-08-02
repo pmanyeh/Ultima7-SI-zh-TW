@@ -32,7 +32,7 @@ labelFunc0440_005A:
 	Func097F(var0000, "@給我妳的力量！@", 0x0000);
 labelFunc0440_0080:
 	if (!(UI_get_npc_id(0xFFC0) == 0x0003)) goto labelFunc0440_00A6;
-	Func097F(0xFFC0, "@我只是一個小女孩……@", 0x0002);
+	Func097F(0xFFC0, "@我只是一個小女孩…@", 0x0002);
 	Func097F(var0000, "@我認識你！@", 0x0000);
 labelFunc0440_00A6:
 	if (!(UI_get_npc_id(0xFFC0) == 0x0002)) goto labelFunc0440_00CC;
@@ -121,7 +121,7 @@ labelFunc0440_033D:
 	UI_clear_item_say(0xFFC0);
 	UI_show_npc_face0(0xFFC0, 0x0000);
 	if (!(!var0001)) goto labelFunc0440_0379;
-	message("「我並不像看起來那麼小！你知道對於同年齡的人來說長得嬌小有多困難嗎？我十四歲了，幾乎到了可以成為蒙利多城( Monitor )騎士( Knight )的年紀。但大家都以為我只是個小女孩……」");
+	message("「我並不像看起來那麼小！你知道對於同年齡的人來說長得嬌小有多困難嗎？我十四歲了，幾乎到了可以成為蒙利多城( Monitor )騎士( Knight )的年紀。但大家都以為我只是個小女孩…」");
 	say();
 	message("「嗯，抱歉。我是說，歡迎來到蒙利多城！我的名字是 Cantra 。」");
 	say();
@@ -178,7 +178,7 @@ labelFunc0440_042C:
 	UI_remove_answer("父親");
 	message("「大家都說他可能還活著，但他已經失蹤好幾個星期了。我已經夠大了，可以面對真相了。」");
 	say();
-	message("「他在蒙利多城附近巡邏。他告訴長槍兵( Pikemen )說他發現了一些可疑的東西，然後他去查看……就再也沒有回來了。」");
+	message("「他在蒙利多城附近巡邏。他告訴長槍兵( Pikemen )說他發現了一些可疑的東西，然後他去查看…就再也沒有回來了。」");
 	say();
 	message("「一定是哥布林！我拒絕哭泣。但我發誓，我殺死的前十二隻哥布林將是為了他！」");
 	say();
@@ -210,7 +210,7 @@ labelFunc0440_04A6:
 	UI_remove_answer("地點");
 	message("「騎士考驗在城鎮北方的騎士山脈( Knight Mountains )舉行。你必須沿著公路向西的小徑前進。」");
 	say();
-	message("「但是要小心哥布林！他們最近離城鎮越來越近了。即使是最勇敢的戰士如果遭到伏擊也可能被殺……」");
+	message("「但是要小心哥布林！他們最近離城鎮越來越近了。即使是最勇敢的戰士如果遭到伏擊也可能被殺…」");
 	say();
 labelFunc0440_04BD:
 	case "秘密" attend labelFunc0440_04E4:
@@ -230,7 +230,7 @@ labelFunc0440_04BD:
 labelFunc0440_04E4:
 	case "Shmed" attend labelFunc0440_04FF:
 	UI_remove_answer("Shmed");
-	message("「哦，他是負責管理考驗的老人。我不太喜歡他。他有時會用奇怪的眼神看我……」");
+	message("「哦，他是負責管理考驗的老人。我不太喜歡他。他有時會用奇怪的眼神看我…」");
 	say();
 	message("「除非你給他密碼，否則他不會讓你進入地城。只有 Marsten 領主能把密碼給你。」");
 	say();
@@ -277,7 +277,7 @@ labelFunc0440_05A0:
 	var0007 = Func0994();
 	if (!((var0007 == 0x001F) && (gflags[0x004A] == true))) goto labelFunc0440_05D1;
 	UI_show_npc_face0(0xFFC0, 0x0000);
-	message("「咿……救救我，聖者！救命啊！我逃不掉……它會抓住我並把我吃掉！」 *「救命啊！」*");
+	message("「咿…救救我，聖者！救命啊！我逃不掉…它會抓住我並把我吃掉！」 *「救命啊！」*");
 	say();
 	UI_remove_npc_face0();
 	abort;

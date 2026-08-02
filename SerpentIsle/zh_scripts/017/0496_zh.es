@@ -156,12 +156,12 @@ labelFunc0496_02D6:
 	if (!(var0011 == 0x0005)) goto labelFunc0496_033A;
 	if (!gflags[0x0044]) goto labelFunc0496_0301;
 	Func097F(0xFF6A, "@Simon 是叛徒！@", 0x0000);
-	Func097F(var0010, "@我為他的死感到高興……@", 0x0002);
+	Func097F(var0010, "@我為他的死感到高興…@", 0x0002);
 	goto labelFunc0496_033A;
 labelFunc0496_0301:
 	if (!gflags[0x0038]) goto labelFunc0496_0322;
 	Func097F(0xFF6A, "@處決 Marsten ！@", 0x0000);
-	Func097F(var0010, "@我們必須考慮……@", 0x0002);
+	Func097F(var0010, "@我們必須考慮…@", 0x0002);
 	goto labelFunc0496_033A;
 labelFunc0496_0322:
 	Func097F(0xFF6A, "@有叛徒。@", 0x0000);
@@ -303,7 +303,7 @@ labelFunc0496_0605:
 	message("「我是狼之軍團( Command of the Wolf )的領袖。就像所有的狼一樣，我是一個兼具狡猾與力量的戰士。」");
 	say();
 	if (!gflags[0x002C]) goto labelFunc0496_0625;
-	message("「哎呀，我敢說我可能是整個蒙利多城最能幹的騎士……除了你之外，冠軍騎士( Champion Knight )。既然你無可否認地贏得了這份榮譽，女士們肯定會對你阿諛奉承！」");
+	message("「哎呀，我敢說我可能是整個蒙利多城最能幹的騎士…除了你之外，冠軍騎士( Champion Knight )。既然你無可否認地贏得了這份榮譽，女士們肯定會對你阿諛奉承！」");
 	say();
 	goto labelFunc0496_062D;
 labelFunc0496_0625:
@@ -337,7 +337,7 @@ labelFunc0496_0697:
 	case "熊之軍團" attend labelFunc0496_06D1:
 	message("「我相信他們其中一個是叛徒！你聽說他們的巡邏隊在幼鹿塔( Fawn Tower )遭到伏擊了嗎？我們敬愛的冠軍騎士( Champion Knight )在那場戰鬥中被哥布林殺死了。」");
 	say();
-	message("「她可能是一隻熊，但她很美……」");
+	message("「她可能是一隻熊，但她很美…」");
 	say();
 	if (!UI_is_pc_female()) goto labelFunc0496_06B8;
 	message("「但是，呃，妳更美， ");
@@ -364,7 +364,7 @@ labelFunc0496_06EE:
 	goto labelFunc0496_0783;
 labelFunc0496_0700:
 	if (!gflags[0x0038]) goto labelFunc0496_0717;
-	message("「我還是不敢相信 Marsten 會把整座城市出賣給哥布林。不過，你的證據非常有說服力……」");
+	message("「我還是不敢相信 Marsten 會把整座城市出賣給哥布林。不過，你的證據非常有說服力…」");
 	say();
 	if (!gflags[0x0092]) goto labelFunc0496_0714;
 	message("「而且 Marsten 的惡行肯定需要一個共犯。看來那就是 Spektor 在這齣可悲的小戲碼中選擇扮演的角色。」");
@@ -392,7 +392,7 @@ labelFunc0496_0783:
 	UI_remove_answer("Lydia 是叛徒嗎？");
 	message("「我覺得很難相信我的軍團中，會有任何成員會背叛蒙利多城。」");
 	say();
-	message("「她怎麼可能出賣巡邏隊？她是個刺青師，不是戰士……」");
+	message("「她怎麼可能出賣巡邏隊？她是個刺青師，不是戰士…」");
 	say();
 	message("「不，Luther 仍然是最有可能的嫌疑犯。身為你的指揮官，我命令你，繼續尋找叛徒的任務，我的朋友。」");
 	say();
@@ -408,7 +408,7 @@ labelFunc0496_079E:
 	message("「領主 Marsten 可能想讓我們相信叛徒已經被抓到了，但我不信。」");
 	say();
 	if (!(!UI_get_item_flag(0xFFB8, 0x0004))) goto labelFunc0496_07D1;
-	message("「就當是幫我一個忙，請繼續尋找間諜。確鑿的證據遲早會出現的……」");
+	message("「就當是幫我一個忙，請繼續尋找間諜。確鑿的證據遲早會出現的…」");
 	say();
 labelFunc0496_07D1:
 	case "Luther" attend labelFunc0496_07E4:
@@ -420,7 +420,7 @@ labelFunc0496_07E4:
 	message("「如果你想打一場，我很樂意在比武場那裡跟你碰面。我經常在那裡教授戰鬥課程，教人如何快速打擊。我每天三點都會在那裡。你看起來像是能打上幾回合的人！」");
 	say();
 	if (!UI_is_pc_female()) goto labelFunc0496_0803;
-	message("「如果妳在下一個午夜到我的營房找我，我會教妳另一種切磋的方法……」");
+	message("「如果妳在下一個午夜到我的營房找我，我會教妳另一種切磋的方法…」");
 	say();
 	message("「我的房間在 Kosric 街和 Roland 街的轉角，面向比武場。」");
 	say();
@@ -462,7 +462,7 @@ labelFunc0496_086F:
 	if (!UI_is_pc_female()) goto labelFunc0496_0898;
 	message("「蒙利多城裡沒有哪位女士比妳更美！當我凝視妳可愛的容貌時，我不再記得我幾乎和這個鎮上的每個女人都發生過關係。」");
 	say();
-	message("「她們叫什麼名字？ Lydia 、 Lucilla 、 Shazzana 、 Cellia ……妳難道沒看出我和年輕的 Cantra 之間的相似之處嗎？但我不該談這個……」");
+	message("「她們叫什麼名字？ Lydia 、 Lucilla 、 Shazzana 、 Cellia …妳難道沒看出我和年輕的 Cantra 之間的相似之處嗎？但我不該談這個…」");
 	say();
 	message("「好吧，既然妳出現在我的生命中，她們對我來說就什麼都不是了。」");
 	say();
@@ -470,7 +470,7 @@ labelFunc0496_086F:
 labelFunc0496_0898:
 	message("「啊，蒙利多城的女士們。都被她們自己特定的熱情所支配。」");
 	say();
-	message("「 Lydia 、 Lucilla 、 Shazzana 、 Cellia 、 Harnna ……」");
+	message("「 Lydia 、 Lucilla 、 Shazzana 、 Cellia 、 Harnna …」");
 	say();
 labelFunc0496_08A0:
 	UI_remove_answer("女士們");
@@ -509,7 +509,7 @@ labelFunc0496_091A:
 	message("「她比較安靜。但她也並非不受蒙利多城騎士常有的孤獨生活所影響。」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0496_0932;
-	message("「她的皮膚光滑柔軟。我向妳保證，比妳在她的店裡找到的任何華麗鬃毛或獸皮都要精緻……咳咳，抱歉！」");
+	message("「她的皮膚光滑柔軟。我向妳保證，比妳在她的店裡找到的任何華麗鬃毛或獸皮都要精緻…咳咳，抱歉！」");
 	say();
 labelFunc0496_0932:
 	UI_remove_answer("Cellia");
@@ -541,10 +541,10 @@ labelFunc0496_0989:
 	message("。最好留給更有經驗的戰士。」");
 	say();
 	var0012 = Func0956(["我會去的！", "你說什麼！"]);
-	message("「好吧，如果你是這麼想的……去吧。證明你的價值！去吧！」");
+	message("「好吧，如果你是這麼想的…去吧。證明你的價值！去吧！」");
 	say();
 	if (!UI_is_pc_female()) goto labelFunc0496_09B1;
-	message("「如果妳沒回來，我會想妳的……」");
+	message("「如果妳沒回來，我會想妳的…」");
 	say();
 labelFunc0496_09B1:
 	message("「 Templar 是哥布林專家。在你冒生命危險之前，你可能要考慮尋求他的建議。」");
@@ -568,7 +568,7 @@ labelFunc0496_0A74:
 	var0010 = Func0992(0xFFFD, "@就是這個。@", "@就是這個。@", false);
 labelFunc0496_0A84:
 	UI_set_conversation_slot(0x0000);
-	message("「但這不是我所預期的……」");
+	message("「但這不是我所預期的…」");
 	say();
 	var0000 = 0x0000;
 	if (!Func097D(0xFE9B, 0x0001, 0x031D, 0x0078, 0xFE99)) goto labelFunc0496_0ABC;
@@ -674,7 +674,7 @@ labelFunc0496_0D73:
 labelFunc0496_0D76:
 	var0010 = Func0992(0xFFFE, "@我們沒有把它帶在身上。@", "@我沒有帶它。@", false);
 	UI_set_conversation_slot(0x0000);
-	message("「除非你帶來證據，否則沒人會相信我們……」");
+	message("「除非你帶來證據，否則沒人會相信我們…」");
 	say();
 	Func097F(0xFF6A, "@帶證據來！@", 0x0000);
 	abort;
@@ -727,7 +727,7 @@ labelFunc0496_0E56:
 	var0000 = Func099B(0xFE9C, 0x0001, 0x0281, 0x0068, 0x0005, 0x0000, true);
 	goto labelFunc0496_0E84;
 labelFunc0496_0E80:
-	message("「很好。我可不希望你把它弄丟了……」");
+	message("「很好。我可不希望你把它弄丟了…」");
 	say();
 labelFunc0496_0E84:
 	case "告辭" attend labelFunc0496_0ED2:
@@ -737,7 +737,7 @@ labelFunc0496_0E84:
 	Func097F(0xFF6A, "@今晚見！@", 0x0002);
 	goto labelFunc0496_0EC0;
 labelFunc0496_0EB4:
-	Func097F(0xFF6A, "@好腿……@", 0x0002);
+	Func097F(0xFF6A, "@好腿…@", 0x0002);
 labelFunc0496_0EC0:
 	goto labelFunc0496_0ECF;
 labelFunc0496_0EC3:

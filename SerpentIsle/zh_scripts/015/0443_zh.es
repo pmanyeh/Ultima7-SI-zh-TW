@@ -105,10 +105,10 @@ labelFunc0443_00A4:
   goto labelFunc0443_0156;
 labelFunc0443_013B:
   message(
-      "「那麼我唯一的女兒 Cantra 很快就會死去……或者更糟。你現在離開我吧。」");
+      "「那麼我唯一的女兒 Cantra 很快就會死去…或者更糟。你現在離開我吧。」");
   say();
   UI_set_schedule_type(0xFFBD, 0x0014);
-  Func097F(0xFFBD, "@哦……@", 0x0000);
+  Func097F(0xFFBD, "@哦…@", 0x0000);
   abort;
 labelFunc0443_0156:
   goto labelFunc0443_016E;
@@ -265,9 +265,9 @@ case "Cantra" attend labelFunc0443_0491:
     goto labelFunc0443_0401;
   if (!gflags[0x0096])
     goto labelFunc0443_03DB;
-  message("「知道我女兒在僧侶們那裡讓我感到欣慰。但我有一種不祥的預感……」");
+  message("「知道我女兒在僧侶們那裡讓我感到欣慰。但我有一種不祥的預感…」");
   say();
-  message("「有什麼東西出現在我的腦海裡……一個想法……一個預感……」");
+  message("「有什麼東西出現在我的腦海裡…一個想法…一個預感…」");
   say();
   message("「去吧！僧侶們需要你。我女兒需要你！」");
   say();
@@ -289,7 +289,7 @@ labelFunc0443_03FE:
 labelFunc0443_0401:
   if (!(!gflags[0x0079]))
     goto labelFunc0443_041E;
-  message("「Cantra 非常想念她的父親。他已經離開好幾個星期了……」");
+  message("「Cantra 非常想念她的父親。他已經離開好幾個星期了…」");
   say();
   message("「她現在幾乎準備好成為一名騎士了。她父親一定會為她感到驕傲的！」");
   say();
@@ -364,7 +364,7 @@ case "治療" attend labelFunc0443_058A:
   if (!(gflags[0x0098] && (gflags[0x00C2] && (!gflags[0x005A]))))
     goto labelFunc0443_057A;
   var000A =
-      Func0992(0xFFFD, "@聖者發燒得很厲害！@", "@哦……對……我的頭……@", false);
+      Func0992(0xFFFD, "@聖者發燒得很厲害！@", "@哦…對…我的頭…@", false);
   UI_set_conversation_slot(0x0000);
   if (!(gflags[0x0076] == false))
     goto labelFunc0443_0521;
@@ -398,7 +398,7 @@ labelFunc0443_0521:
     goto labelFunc0443_0552;
   message("「既然我有了合適的材料，治癒你就是件簡單的事了。」");
   say();
-  message("「別動，我要把這些直接塗在你的刺青上……」");
+  message("「別動，我要把這些直接塗在你的刺青上…」");
   say();
   message("「好了，完成了。你的感染已經痊癒了。」");
   say();
@@ -415,7 +415,7 @@ labelFunc0443_0563:
           "子。」");
   say();
   Func0836();
-  Func097F(0xFFBD, "@快點……@", 0x0000);
+  Func097F(0xFFBD, "@快點…@", 0x0000);
   abort;
 labelFunc0443_0577:
   goto labelFunc0443_058A;
@@ -492,7 +492,7 @@ case "預言" attend labelFunc0443_06A1:
   goto labelFunc0443_067D;
 labelFunc0443_066B:
   message("「你需要三件古老且強大的神器來完成你的任務。其中一件是頭盔。這對我來"
-          "說似乎非常熟悉……」");
+          "說似乎非常熟悉…」");
   say();
   if (!gflags[0x002C])
     goto labelFunc0443_067D;
@@ -511,7 +511,7 @@ labelFunc0443_067D:
           "。」");
   say();
 labelFunc0443_068B:
-  message("「你的旅途將帶你向北。穿過西邊的洞穴往極北之地走去……我能感覺到冷風吹"
+  message("「你的旅途將帶你向北。穿過西邊的洞穴往極北之地走去…我能感覺到冷風吹"
           "拂在你身上。」");
   say();
   if (!(gflags[0x0170] && gflags[0x002C]))
@@ -584,7 +584,7 @@ case "發現卷軸" attend labelFunc0443_07CA:
   say();
   UI_show_npc_face1(0xFE9C, 0x0000);
   message("「我在一名被殺的長槍兵身上發現了一個卷軸，顯然是 Cantra "
-          "寫的。我恐怕那就是妳的丈夫。他被背叛了……」");
+          "寫的。我恐怕那就是妳的丈夫。他被背叛了…」");
   say();
   UI_remove_npc_face1();
   UI_set_conversation_slot(0x0000);
@@ -641,7 +641,7 @@ case "Lydia" attend labelFunc0443_086A:
   say();
   goto labelFunc0443_0861;
 labelFunc0443_0851:
-  message("「她竟然會對你下毒，這簡直難以置信……但你說她承認了她的罪行。」");
+  message("「她竟然會對你下毒，這簡直難以置信…但你說她承認了她的罪行。」");
   say();
   message("「這一定和她那個姊姊有關。 Selene "
           "在還是個孩子的時候就被月影城的法師們帶走了。」");
@@ -1064,7 +1064,7 @@ labelFunc0443_0F38:
   message("「聽起來你描述的物品可能是一個骨灰甕。」");
   say();
 labelFunc0443_0F3C:
-  message("「我在想…… Caladin "
+  message("「我在想… Caladin "
           "最近很生氣，因為他祖父的骨灰不見了。也許那個甕裡裝的就是那個。」");
   say();
   gflags[0x009A] = true;
@@ -1110,7 +1110,7 @@ case "浮石" attend labelFunc0443_1074:
   if (!Func097D(0xFE9B, 0x0001, 0x010B, 0xFE99, 0xFE99))
     goto labelFunc0443_102E;
   message("「這種類型的岩石在這一帶並不常見。如果你去跟 Krayg "
-          "談談，也許他能幫你……」");
+          "談談，也許他能幫你…」");
   say();
   message("「他喜歡長途散步，有時候他會發現奇怪的石頭和植物。他有時還會帶曼陀羅"
           "根( mandrake roots )給我。」");
@@ -1249,9 +1249,9 @@ case "奇怪的髮刷" attend labelFunc0443_1316:
   UI_remove_answer("奇怪的髮刷");
   if (!Func097D(0xFE9B, 0x0001, 0x011D, 0xFE99, 0x0006))
     goto labelFunc0443_12D0;
-  message("「別把那東西拿靠近我！如果你想知道它的性質，去問 Templar ……」");
+  message("「別把那東西拿靠近我！如果你想知道它的性質，去問 Templar …」");
   say();
-  message("「……但千萬別再把那東西帶到這裡來！」");
+  message("「…但千萬別再把那東西帶到這裡來！」");
   say();
   gflags[0x00A0] = true;
   goto labelFunc0443_12D4;
@@ -1281,7 +1281,7 @@ case "酒瓶" attend labelFunc0443_137D:
   goto labelFunc0443_133B;
 labelFunc0443_1337:
   message("「我不知道有誰能幫你這個忙。我對飲料一無所知。也許 Lucilla "
-          "知道些什麼……」");
+          "知道些什麼…」");
   say();
 labelFunc0443_133B:
   var0008 = Func09AE(var0008);
@@ -1347,7 +1347,7 @@ case "血淋淋的手" attend labelFunc0443_14DD:
   if (!Func097D(0xFE9B, 0x0001, 0x031A, 0xFE99, 0x0000))
     goto labelFunc0443_1497;
   message("「這似乎是在戰場上遺失的，所以失去它的人大概活不下來了。然而它沒有腐"
-          "爛的跡象——這是最近的傷……」");
+          "爛的跡象——這是最近的傷…」");
   say();
   message("「你也許可以去問問 Renfry ，看他最近是否處理過受這種傷的屍體。」");
   say();
@@ -1400,7 +1400,7 @@ case "發光的岩石" attend labelFunc0443_15B8:
   message("「這塊發光的岩石一定來自某個奇怪、不尋常的地方。我從未在附近的任何地"
           "方見過這種岩石。」");
   say();
-  message("「我感覺到它具有不尋常的力量……難以置信的能量……隱藏的能力……」");
+  message("「我感覺到它具有不尋常的力量…難以置信的能量…隱藏的能力…」");
   say();
   goto labelFunc0443_1576;
 labelFunc0443_1572:
@@ -1474,7 +1474,7 @@ case "沒有別的了" attend labelFunc0443_16E2:
   if (!(var0009 == 0x0001))
     goto labelFunc0443_16C3;
   UI_pop_answers();
-  message("「真希望我能幫上你更多的忙……」");
+  message("「真希望我能幫上你更多的忙…」");
   say();
   goto labelFunc0443_16E2;
 labelFunc0443_16C3:
@@ -1490,7 +1490,7 @@ labelFunc0443_16E2:
 case "告辭" attend labelFunc0443_1734:
   if (!(gflags[0x005B] && (!var0003)))
     goto labelFunc0443_170B;
-  message("「且慢……我感覺到原始力量正在逼近……我聽到虛空的聲音……」");
+  message("「且慢…我感覺到原始力量正在逼近…我聽到虛空的聲音…」");
   say();
   message("「我有一個給你的預言，聖者( Avatar )。」");
   say();

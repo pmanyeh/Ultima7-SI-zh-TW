@@ -72,7 +72,7 @@ labelFunc083F_0133:
 labelFunc083F_0136:
 	if (!(var0003 < (var0001 + ((var0000 - var0001) / 0x0003)))) goto labelFunc083F_0179;
 	if (!(var000F == 0x0001)) goto labelFunc083F_015A;
-	message("「這附近你能找到最公道的價格了……」");
+	message("「這附近你能找到最公道的價格了…」");
 	say();
 labelFunc083F_015A:
 	if (!(var000F == 0x0002)) goto labelFunc083F_0168;
@@ -80,14 +80,14 @@ labelFunc083F_015A:
 	say();
 labelFunc083F_0168:
 	if (!(var000F == 0x0003)) goto labelFunc083F_0176;
-	message("「你確定你不是巫師嗎……竟然能說服我接受這種價格？」");
+	message("「你確定你不是巫師嗎…竟然能說服我接受這種價格？」");
 	say();
 labelFunc083F_0176:
 	goto labelFunc083F_01F8;
 labelFunc083F_0179:
 	if (!(var0003 < (var0001 + ((var0000 - var0001) / 0x0002)))) goto labelFunc083F_01C2;
 	if (!(var000F == 0x0001)) goto labelFunc083F_019D;
-	message("「還不賴……一點也不賴。」");
+	message("「還不賴…一點也不賴。」");
 	say();
 labelFunc083F_019D:
 	if (!(var000F == 0x0002)) goto labelFunc083F_01AB;
@@ -109,7 +109,7 @@ labelFunc083F_01C2:
 	say();
 labelFunc083F_01D6:
 	if (!(var000F == 0x0002)) goto labelFunc083F_01E4;
-	message("「你真難纏……就像個老水手一樣！」");
+	message("「你真難纏…就像個老水手一樣！」");
 	say();
 labelFunc083F_01E4:
 	if (!(var000F == 0x0003)) goto labelFunc083F_01F8;
@@ -168,7 +168,7 @@ labelFunc083F_02CA:
 	var0007 = 0x0000;
 	goto labelFunc083F_02F5;
 labelFunc083F_02D3:
-	message("「好吧……");
+	message("「好吧…");
 	message(var0003);
 	message(" 法拉利幣是我的最終底線。」");
 	say();
@@ -198,7 +198,7 @@ labelFunc083F_032A:
 labelFunc083F_033E:
 	if (!(var000C == 0x0003)) goto labelFunc083F_0384;
 	if (!(var000F == 0x0001)) goto labelFunc083F_035C;
-	message("「這些日子我沒幾個顧客了…… ");
+	message("「這些日子我沒幾個顧客了… ");
 	message(var0003);
 	message(" 法拉利幣？」");
 	say();
@@ -212,7 +212,7 @@ labelFunc083F_0370:
 	if (!(var000F == 0x0003)) goto labelFunc083F_0384;
 	message("「也許 ");
 	message(var0003);
-	message(" 法拉利幣？你找不到更划算的了……」");
+	message(" 法拉利幣？你找不到更划算的了…」");
 	say();
 labelFunc083F_0384:
 	if (!(var000C == 0x0004)) goto labelFunc083F_03CA;

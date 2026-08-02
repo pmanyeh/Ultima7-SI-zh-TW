@@ -44,7 +44,7 @@ labelFunc03BD_009B:
 	if (!(!var0000)) goto labelFunc03BD_00DC;
 	message("「我是 Yurel 。 Yurel 不是怪物。 Yurel 不會傷害任何人。");
 	say();
-	message("「Yurel 只希望能平靜地生活……然後回家。」");
+	message("「Yurel 只希望能平靜地生活…然後回家。」");
 	say();
 	UI_set_npc_id(item, 0x0001);
 	goto labelFunc03BD_00E0;
@@ -60,7 +60,7 @@ labelFunc03BD_0102:
 	converse attend labelFunc03BD_0374;
 	case "怪物" attend labelFunc03BD_0123:
 	UI_remove_answer("怪物");
-	message("「Yurel 不知道自己怎麼會變成這樣……和其他人如此不同。 Yurel 聽說自己是……很久以前一個失敗的實驗。");
+	message("「Yurel 不知道自己怎麼會變成這樣…和其他人如此不同。 Yurel 聽說自己是…很久以前一個失敗的實驗。");
 	say();
 	message("「Yurel 不在乎。 Yurel 會呼吸。 Yurel 會恐懼。 Yurel 會去愛。這讓 Yurel 和其他人一樣，不管 Yurel 身上有沒有毛皮。」");
 	say();
@@ -70,7 +70,7 @@ labelFunc03BD_0123:
 	UI_remove_answer("實驗");
 	message("「Yurel 不知道是誰做了這種事，或是為什麼。寬容大師(Master of Tolerance)說，混沌(Chaos)不會做這種事。他說那是秩序(Order)的一方做的。");
 	say();
-	message("「Yurel 不在乎。 Yurel 現在在這裡，必須找到回家的路。 Yurel 只想活下去……難道其他人不也是這麼想的嗎？」");
+	message("「Yurel 不在乎。 Yurel 現在在這裡，必須找到回家的路。 Yurel 只想活下去…難道其他人不也是這麼想的嗎？」");
 	say();
 	UI_add_answer(["混沌", "秩序"]);
 labelFunc03BD_0147:
@@ -78,7 +78,7 @@ labelFunc03BD_0147:
 	UI_remove_answer("混沌");
 	message("「寬容大師告訴 Yurel ，他的家是一個獻給混沌的地方。 Yurel 不確定這是什麼意思。 Yurel 只高興 Yurel 能待在那裡，並且能派上用場。");
 	say();
-	message("「Yurel 不明白為什麼其他人要互相仇恨。他們不是一樣的嗎？他們沒有毛皮，就像 Yurel 這樣。 Yurel 很困惑……也很餓。」");
+	message("「Yurel 不明白為什麼其他人要互相仇恨。他們不是一樣的嗎？他們沒有毛皮，就像 Yurel 這樣。 Yurel 很困惑…也很餓。」");
 	say();
 labelFunc03BD_015E:
 	case "秩序" attend labelFunc03BD_0175:
@@ -92,7 +92,7 @@ labelFunc03BD_0175:
 	UI_remove_answer("和平");
 	message("「Yurel 記得和平。 Yurel 希望能沒有痛苦和恐懼地度過餘生。 Yurel 希望能和其他人一樣，看到這場戰鬥結束。");
 	say();
-	message("「還有食物……有食物就好了。 Yurel 非常餓。」");
+	message("「還有食物…有食物就好了。 Yurel 非常餓。」");
 	say();
 	UI_add_answer(["戰鬥", "食物"]);
 labelFunc03BD_0199:
@@ -106,9 +106,9 @@ labelFunc03BD_0199:
 labelFunc03BD_01B7:
 	case "抓住" attend labelFunc03BD_01D5:
 	UI_remove_answer("抓住");
-	message("「秩序的戰士發現 Yurel 出去打獵。他們打了 Yurel ，把 Yurel 拖到這些牆外的殘酷地方。他們想把 Yurel 切碎……所以 Yurel 逃跑了。 Yurel 不笨。");
+	message("「秩序的戰士發現 Yurel 出去打獵。他們打了 Yurel ，把 Yurel 拖到這些牆外的殘酷地方。他們想把 Yurel 切碎…所以 Yurel 逃跑了。 Yurel 不笨。");
 	say();
-	message("「Yurel 希望如果 Yurel 拿走他們的球，他們就會忙著找球而沒空來獵殺 Yurel 。 Yurel 一定是對的……他們還沒來找 Yurel ，而且 Yurel 還有那個球。」");
+	message("「Yurel 希望如果 Yurel 拿走他們的球，他們就會忙著找球而沒空來獵殺 Yurel 。 Yurel 一定是對的…他們還沒來找 Yurel ，而且 Yurel 還有那個球。」");
 	say();
 	UI_add_answer("球");
 labelFunc03BD_01D5:
@@ -128,7 +128,7 @@ labelFunc03BD_01E8:
 labelFunc03BD_0208:
 	message("「Yurel 好餓。 Yurel 已經很多天沒吃東西了。 Yurel 願意用 Yurel 的球跟你換乳酪。");
 	say();
-	message("「Yurel 喜歡乳酪……」");
+	message("「Yurel 喜歡乳酪…」");
 	say();
 	message("「你有願意給 Yurel 的乳酪嗎？」");
 	say();
@@ -139,7 +139,7 @@ labelFunc03BD_0208:
 	if (!(var0002 || (var0003 || var0004))) goto labelFunc03BD_02FC;
 	if (!var0002) goto labelFunc03BD_02A3;
 	var0005 = UI_remove_party_items(0x0001, 0x0179, 0xFE99, 0x001A, 0x0012);
-	message("「噢， Yurel 好高興！你真好，真好，真好！球是你的了……但要小心那些戰士，他們正在找它。」");
+	message("「噢， Yurel 好高興！你真好，真好，真好！球是你的了…但要小心那些戰士，他們正在找它。」");
 	say();
 	var0005 = UI_add_cont_items(0xFE9C, 0x0001, 0x01C2, 0xFE99, 0x0009, 0x0000);
 	goto labelFunc03BD_02F9;
@@ -150,7 +150,7 @@ labelFunc03BD_02A3:
 labelFunc03BD_02C2:
 	var0005 = UI_remove_party_items(0x0001, 0x0179, 0xFE99, 0x001C, 0x0012);
 labelFunc03BD_02D8:
-	message("「噢， Yurel 好高興！你真好，真好，真好！球是你的了……但要小心那些戰士，他們正在找它。」");
+	message("「噢， Yurel 好高興！你真好，真好，真好！球是你的了…但要小心那些戰士，他們正在找它。」");
 	say();
 	var0005 = UI_add_cont_items(0xFE9C, 0x0001, 0x01C2, 0xFE99, 0x0009, 0x0000);
 	gflags[0x030E] = true;
@@ -173,7 +173,7 @@ labelFunc03BD_0313:
 	UI_remove_answer("家");
 	message("「Yurel 的家是寬容神殿(Temple of Tolerance)。他們在那裡接納了 Yurel 。沒有朝 Yurel 丟石頭。讓 Yurel 幫忙，為其他人捕捉食物。教 Yurel 怎麼吃東西才不會嚇到別人。");
 	say();
-	message("「Yurel 有朋友。 Yurel 有個安全的地方睡覺。 Yurel 努力工作也過得很開心。 Yurel 想回家……」");
+	message("「Yurel 有朋友。 Yurel 有個安全的地方睡覺。 Yurel 努力工作也過得很開心。 Yurel 想回家…」");
 	say();
 	UI_add_answer("寬容神殿");
 labelFunc03BD_0331:
@@ -181,9 +181,9 @@ labelFunc03BD_0331:
 	UI_remove_answer("寬容神殿");
 	message("「寬容神殿是那些不被其他人接納的人的家。 Yurel 在那裡交了很多朋友。");
 	say();
-	message("「Yurel 不在乎他們是不是不聰明，或者長得不一樣…… Yurel 長得和所有人都不同。 Yurel 不明白為什麼其他人會因為自己的孩子長得不一樣就把他們趕出去。在 Yurel 看來，他們長得已經夠像了。");
+	message("「Yurel 不在乎他們是不是不聰明，或者長得不一樣… Yurel 長得和所有人都不同。 Yurel 不明白為什麼其他人會因為自己的孩子長得不一樣就把他們趕出去。在 Yurel 看來，他們長得已經夠像了。");
 	say();
-	message("「也許 Yurel 永遠不會知道。也許 Yurel 永遠活不到再次看見家鄉的那一天。 Yurel 好孤單……也好餓。」");
+	message("「也許 Yurel 永遠不會知道。也許 Yurel 永遠活不到再次看見家鄉的那一天。 Yurel 好孤單…也好餓。」");
 	say();
 labelFunc03BD_034C:
 	case "告辭" attend labelFunc03BD_0371:

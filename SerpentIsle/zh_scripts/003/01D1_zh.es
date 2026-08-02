@@ -21,7 +21,7 @@ void Func01D1 shape#(0x1D1) ()
 	UI_show_npc_face0(0xFFFD, 0x0000);
 	var0001 = UI_get_music_track();
 	gflags[0x0190] = true;
-	message("「等等，水手！讓我為你唱我心中那首歌……我恐怕那是首悲傷的歌——」");
+	message("「等等，水手！讓我為你唱我心中那首歌…我恐怕那是首悲傷的歌——」");
 	say();
 	UI_play_music(0x003D, var0001);
 	message("「這是一種遺憾，一種心碎的遺憾，」");
@@ -49,8 +49,8 @@ void Func01D1 shape#(0x1D1) ()
 	UI_revert_schedule(0xFFC6);
 	UI_run_schedule(0xFFC6);
 	UI_set_schedule_type(0xFFC6, 0x000C);
-	Func097F(0xFFD0, "@真是悲傷……@", 0x0000);
-	Func097F(0xFFCB, "@倒是挺上口的……@", 0x000A);
+	Func097F(0xFFD0, "@真是悲傷…@", 0x0000);
+	Func097F(0xFFCB, "@倒是挺上口的…@", 0x000A);
 	abort;
 labelFunc01D1_00DF:
 	goto labelFunc01D1_0124;
@@ -63,14 +63,14 @@ labelFunc01D1_00E2:
 	say();
 	message("「那場風暴把我傳送到了這座奇怪的城市。因為我是陌生人，他們就把我逮捕了。他們說我是個施法者！」");
 	say();
-	message("「去找 Marsten 領主說情，替我爭取自由！我知道你不會丟下我不管的……」");
+	message("「去找 Marsten 領主說情，替我爭取自由！我知道你不會丟下我不管的…」");
 	say();
 	goto labelFunc01D1_010C;
 labelFunc01D1_0108:
 	message("「聖者！請救出你的老朋友！既然 Marsten 也被關押了，請去找 Brendann 說情，替我爭取自由！」");
 	say();
 labelFunc01D1_010C:
-	Func097F(0xFFFD, "@快點回來……@", 0x0000);
+	Func097F(0xFFFD, "@快點回來…@", 0x0000);
 	UI_run_schedule(0xFFFD);
 	gflags[0x00AA] = true;
 	abort;

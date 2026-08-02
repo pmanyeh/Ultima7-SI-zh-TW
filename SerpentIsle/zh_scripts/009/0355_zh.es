@@ -42,7 +42,7 @@ labelFunc0355_00CF:
 	UI_remove_answer("不安的長眠");
 	message("「忠誠的 Sethys 沒有告訴你我的命運嗎？幾個世紀前，我就在這裡被秩序士兵(Soldiers of Order)殺害。」");
 	say();
-	message("「我的靈魂一直在此徘徊，因為我最後的職責仍未完成……」");
+	message("「我的靈魂一直在此徘徊，因為我最後的職責仍未完成…」");
 	say();
 	message("「一旦我將知識傳授給你，我就能自由地飛昇至虛空。然而，在混沌巨蛇(Chaos Serpent)恢復之前，我的靈魂將無法安息。」");
 	say();
@@ -51,19 +51,19 @@ labelFunc0355_00ED:
 	UI_remove_answer("來自虛空的低語");
 	message("「別跟我開玩笑了，英雄！雖然我們的目的可能相同，但我們的哲學不同——我知道你不是混沌的朋友！」");
 	say();
-	message("「然而我們都能感覺到來自世界之間虛空的訊息。大地巨蛇(Great Earth Serpent)的智慧……」");
+	message("「然而我們都能感覺到來自世界之間虛空的訊息。大地巨蛇(Great Earth Serpent)的智慧…」");
 	say();
 	message("「我們以為他死了，或是被廢黜了，然而他又再次向人類說話——儘管他的力量只是昔日榮光的蒼白模仿。」");
 	say();
 labelFunc0355_0108:
 	case "改變話題" attend labelFunc0355_0118:
 	UI_pop_answers();
-	message("「有必要嗎？好吧……」");
+	message("「有必要嗎？好吧…」");
 	say();
 labelFunc0355_0118:
 	case "沒有其他的了" attend labelFunc0355_0128:
 	UI_pop_answers();
-	message("「如果你很確定的話……」");
+	message("「如果你很確定的話…」");
 	say();
 labelFunc0355_0128:
 	case "問題" attend labelFunc0355_0157:
@@ -83,7 +83,7 @@ labelFunc0355_0157:
 	say();
 	message("「因此，混沌與秩序都註定要滅亡！」");
 	say();
-	message("「當巨蛇破碎時，三種混沌之力被逼瘋了——但秩序巨蛇也是如此……」");
+	message("「當巨蛇破碎時，三種混沌之力被逼瘋了——但秩序巨蛇也是如此…」");
 	say();
 	UI_add_answer(["混沌之力", "秩序巨蛇"]);
 labelFunc0355_017F:
@@ -109,7 +109,7 @@ labelFunc0355_01B5:
 	UI_remove_answer("協助");
 	message("「我現在就告訴你恢復混沌巨蛇的方法。在你完成這件事之前，平衡無法被恢復。」");
 	say();
-	message("「我對『平衡』沒有愛，但我也知道混沌無法在『失衡』中統治……」");
+	message("「我對『平衡』沒有愛，但我也知道混沌無法在『失衡』中統治…」");
 	say();
 	message("「問我這些事情：你必須去哪裡、你必須帶什麼，以及你必須執行的儀式。」");
 	say();
@@ -142,7 +142,7 @@ labelFunc0355_021D:
 	say();
 	message("「當你正確地放置好每一個時，混沌之火將會作為你的標記出現。」");
 	say();
-	message("「現在正是讓混沌巨蛇恢復完整的時機。背誦這個真言……」");
+	message("「現在正是讓混沌巨蛇恢復完整的時機。背誦這個真言…」");
 	say();
 	message("「In pri kli ort ailem, Priin ort inten mani！」");
 	say();
@@ -164,7 +164,7 @@ labelFunc0355_0271:
 	say();
 	message("「如果沒有一股強大到，足以將災禍融合進巨蛇的友方力量，儀式就無法成功。修復…是比破壞…更艱鉅的任務。」");
 	say();
-	message("「尋找這個謎團的答案吧，否則你不會成功的！現在，我必須走了……」");
+	message("「尋找這個謎團的答案吧，否則你不會成功的！現在，我必須走了…」");
 	say();
 	UI_remove_npc_face0();
 	UI_play_music(0x0035, Func09A0(0x0005, 0x0001));

@@ -51,7 +51,7 @@ labelFunc084C_00D3:
 	if (!(var000B < 0x0002)) goto labelFunc084C_0262;
 	if (!(var0002 < (var0001 + ((var0000 - var0001) / 0x0004)))) goto labelFunc084C_012A;
 	if (!(var000E == 0x0001)) goto labelFunc084C_010B;
-	message("「你真是個精明狡黠的殺價高手，竟然能說服我接受這個價格……」");
+	message("「你真是個精明狡黠的殺價高手，竟然能說服我接受這個價格…」");
 	say();
 labelFunc084C_010B:
 	if (!(var000E == 0x0002)) goto labelFunc084C_0119;
@@ -59,14 +59,14 @@ labelFunc084C_010B:
 	say();
 labelFunc084C_0119:
 	if (!(var000E == 0x0003)) goto labelFunc084C_0127;
-	message("「這真是令人驚訝……你的嘴唇真巧，竟然能讓我降低這麼多價格。」");
+	message("「這真是令人驚訝…你的嘴唇真巧，竟然能讓我降低這麼多價格。」");
 	say();
 labelFunc084C_0127:
 	goto labelFunc084C_01DA;
 labelFunc084C_012A:
 	if (!(var0002 < (var0001 + ((var0000 - var0001) / 0x0003)))) goto labelFunc084C_016D;
 	if (!(var000E == 0x0001)) goto labelFunc084C_014E;
-	message("「這比我預期的要低……但我就同意這個價格吧。」");
+	message("「這比我預期的要低…但我就同意這個價格吧。」");
 	say();
 labelFunc084C_014E:
 	if (!(var000E == 0x0002)) goto labelFunc084C_015C;
@@ -74,14 +74,14 @@ labelFunc084C_014E:
 	say();
 labelFunc084C_015C:
 	if (!(var000E == 0x0003)) goto labelFunc084C_016A;
-	message("「我明白了。」*「非常好，儘管這比我希望的要低，但我還是同意這個價格。」");
+	message("「我明白了。」* 「非常好，儘管這比我希望的要低，但我還是同意這個價格。」");
 	say();
 labelFunc084C_016A:
 	goto labelFunc084C_01DA;
 labelFunc084C_016D:
 	if (!(var0002 < (var0001 + ((var0000 - var0001) / 0x0002)))) goto labelFunc084C_01B0;
 	if (!(var000E == 0x0001)) goto labelFunc084C_0191;
-	message("「嗯……」~「我想必須接受這種價格——雖然它本可以更高的。」");
+	message("「嗯…」~「我想必須接受這種價格——雖然它本可以更高的。」");
 	say();
 labelFunc084C_0191:
 	if (!(var000E == 0x0002)) goto labelFunc084C_019F;
@@ -95,15 +95,15 @@ labelFunc084C_01AD:
 	goto labelFunc084C_01DA;
 labelFunc084C_01B0:
 	if (!(var000E == 0x0001)) goto labelFunc084C_01BE;
-	message("「非常好。」*「我接受你的出價！」");
+	message("「非常好。」* 「我接受你的出價！」");
 	say();
 labelFunc084C_01BE:
 	if (!(var000E == 0x0002)) goto labelFunc084C_01CC;
-	message("「真是太愉快了！」*「我會接受你的出價。」");
+	message("「真是太愉快了！」* 「我會接受你的出價。」");
 	say();
 labelFunc084C_01CC:
 	if (!(var000E == 0x0003)) goto labelFunc084C_01DA;
-	message("「是的……」*「這是個非常好的價格。」");
+	message("「是的…」* 「這是個非常好的價格。」");
 	say();
 labelFunc084C_01DA:
 	message("「那麼，我們算同意以 ");
@@ -182,7 +182,7 @@ labelFunc084C_0304:
 labelFunc084C_0318:
 	if (!(var000B == 0x0003)) goto labelFunc084C_035E;
 	if (!(var000E == 0x0001)) goto labelFunc084C_0336;
-	message("「我不是很確定……也許 ");
+	message("「我不是很確定…也許 ");
 	message(var0002);
 	message(" 嗎？」");
 	say();
@@ -194,7 +194,7 @@ labelFunc084C_0336:
 	say();
 labelFunc084C_034A:
 	if (!(var000E == 0x0003)) goto labelFunc084C_035E;
-	message("「我想我還是得拿你的錢……」*「但不能按那個價格。 ");
+	message("「我想我還是得拿你的錢…」* 「但不能按那個價格。 ");
 	message(var0002);
 	message(" 怎麼樣？」");
 	say();
@@ -213,7 +213,7 @@ labelFunc084C_037C:
 	say();
 labelFunc084C_0390:
 	if (!(var000E == 0x0003)) goto labelFunc084C_03A4;
-	message("「我不確定誰更傻……」*「是你開出這種可憐的金額，還是我自己繼續跟你討價還價。我出價 ");
+	message("「我不確定誰更傻…」* 「是你開出這種可憐的金額，還是我自己繼續跟你討價還價。我出價 ");
 	message(var0002);
 	message("。」");
 	say();

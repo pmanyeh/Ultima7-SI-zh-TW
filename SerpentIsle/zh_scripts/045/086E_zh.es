@@ -27,7 +27,7 @@ void Func086E 0x86E ()
 	var0004 = "顆寶石";
 labelFunc086E_0068:
 	var0005 = UI_remove_party_items(var0001, 0x02F8, 0xFE99, 0xFE99, false);
-	message("「很好……~拿去吧，這是你的 ");
+	message("「很好…~拿去吧，這是你的 ");
 	message(var0002);
 	message(" 吉爾得幣，換取你的 ");
 	message(var0001);
@@ -38,7 +38,7 @@ labelFunc086E_0068:
 	var0006 = Func099B(0xFE9C, var0002, var0003, 0xFE99, 0xFE99, false, true);
 	goto labelFunc086E_00B0;
 labelFunc086E_00AC:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc086E_00B0:
 	goto labelFunc086E_00B7;

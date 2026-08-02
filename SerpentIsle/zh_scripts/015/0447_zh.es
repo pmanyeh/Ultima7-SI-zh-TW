@@ -89,7 +89,7 @@ labelFunc0447_00F3:
 	UI_item_say(0xFFB9, "@懦夫！@");
 labelFunc0447_0129:
 	if (!(var0009 == 0x0002)) goto labelFunc0447_013D;
-	UI_item_say(0xFFB9, "@可悲的藉口……@");
+	UI_item_say(0xFFB9, "@可悲的藉口…@");
 labelFunc0447_013D:
 	if (!(var0009 == 0x0003)) goto labelFunc0447_0151;
 	UI_item_say(0xFFB9, "@剝了那個陌生人的皮！@");
@@ -190,7 +190,7 @@ labelFunc0447_0312:
 	message("「你在樹林裡找到垃圾干我什麼事？」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0268, 0xFE99, 0x0009)) goto labelFunc0447_0342;
-	message("「別把它放在我面前！那個瓶子很髒……」");
+	message("「別把它放在我面前！那個瓶子很髒…」");
 	say();
 	message("「再說了，我不喝那種酒。那是布恩麥酒( Fawnish ale )。一種苦澀的酒！」");
 	say();
@@ -217,9 +217,9 @@ labelFunc0447_0387:
 	message("「我是蒙利多城最偉大的戰士！但我感覺你不確定。你不同意嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0447_03AB;
-	message("「我很樂意向你證明這一點——就在競技場( List Field )！早上在那裡見我……」");
+	message("「我很樂意向你證明這一點——就在競技場( List Field )！早上在那裡見我…」");
 	say();
-	message("「……但別太早。我喜歡睡覺。第九個小時應該夠了。」");
+	message("「…但別太早。我喜歡睡覺。第九個小時應該夠了。」");
 	say();
 	goto labelFunc0447_03AF;
 labelFunc0447_03AB:
@@ -257,10 +257,10 @@ labelFunc0447_03FF:
 labelFunc0447_0421:
 	case "勇敢" attend labelFunc0447_0456:
 	UI_remove_answer("勇敢");
-	message("「許多騎士都在講述我的成就。你特別應該去跟 Lucilla 談談——她對我印象非常深刻……」");
+	message("「許多騎士都在講述我的成就。你特別應該去跟 Lucilla 談談——她對我印象非常深刻…」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0447_0440;
-	message("「……如果你懂我的意思，對吧？」");
+	message("「…如果你懂我的意思，對吧？」");
 	say();
 labelFunc0447_0440:
 	if (!(!gflags[0x0038])) goto labelFunc0447_0452;
@@ -280,7 +280,7 @@ labelFunc0447_0456:
 labelFunc0447_0469:
 	case "霸凌" attend labelFunc0447_04B1:
 	UI_remove_answer("霸凌");
-	message("「你怎麼敢叫我惡霸！一定是 Lydia 那個小婊子指使你的……」");
+	message("「你怎麼敢叫我惡霸！一定是 Lydia 那個小婊子指使你的…」");
 	say();
 	if (!UI_get_item_flag(0xFFB8, 0x0004)) goto labelFunc0447_0490;
 	message("「我很高興她死了，這個婊子！」");
@@ -300,7 +300,7 @@ labelFunc0447_04B1:
 	message("「吹牛！你在叫誰吹牛？你這條只會哭鼻子的蟲！」");
 	say();
 	if (!(!gflags[0x0092])) goto labelFunc0447_04D3;
-	message("「一定是 Spektor 那條冷血動物哄騙你這麼做的。他忌妒我的男子氣概已經好幾個月了……」");
+	message("「一定是 Spektor 那條冷血動物哄騙你這麼做的。他忌妒我的男子氣概已經好幾個月了…」");
 	say();
 	message("「他知道女人比較喜歡我而不是他，所以他密謀對付我！」");
 	say();
@@ -314,7 +314,7 @@ labelFunc0447_04D3:
 labelFunc0447_04F4:
 	case "令人作嘔" attend labelFunc0447_0528:
 	UI_remove_answer("令人作嘔");
-	message("「 Lucilla 說了什麼？！她覺得我令人作嘔？你在說謊，這是一個骯髒的謊言……」");
+	message("「 Lucilla 說了什麼？！她覺得我令人作嘔？你在說謊，這是一個骯髒的謊言…」");
 	say();
 	message("「我要把你的頭掛在長矛上，因為你散布這種謠言！」");
 	say();
@@ -344,7 +344,7 @@ labelFunc0447_056A:
 labelFunc0447_056E:
 	case "新盾牌" attend labelFunc0447_064A:
 	UI_remove_answer("新盾牌");
-	message("「所以，你聽說了我的新盾牌！以前沒人見過像它這樣的東西。它很輕，但所有的攻擊似乎都會被它彈開……」");
+	message("「所以，你聽說了我的新盾牌！以前沒人見過像它這樣的東西。它很輕，但所有的攻擊似乎都會被它彈開…」");
 	say();
 	if (!UI_npc_nearby(0xFFFF)) goto labelFunc0447_05A5;
 	var000B = Func0992(0xFFFF, "@看！他拿著我遺失的盾牌！@", 0x0000, false);
@@ -406,7 +406,7 @@ labelFunc0447_0693:
 	Func094E(UI_get_npc_number(var0011), "@Luther ！要和我們一起旅行？！@");
 labelFunc0447_06AA:
 	if (!(var000E == 0x0003)) goto labelFunc0447_06C1;
-	Func094E(UI_get_npc_number(var0011), "@我不認為這是個好主意……@");
+	Func094E(UI_get_npc_number(var0011), "@我不認為這是個好主意…@");
 labelFunc0447_06C1:
 	if (!(var000E == 0x0004)) goto labelFunc0447_06D8;
 	Func094E(UI_get_npc_number(var0011), "@如果他要去，我就走！@");

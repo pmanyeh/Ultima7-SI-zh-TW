@@ -38,7 +38,7 @@ labelFunc0432_0063:
 	say();
 	goto labelFunc0432_00B1;
 labelFunc0432_00A7:
-	message("「我不記得在這裡見過你……我是大船長 Joth。你可以叫我 Joth。」 *「歡迎來到幼鹿城( Fawn )， ");
+	message("「我不記得在這裡見過你…我是大船長 Joth。你可以叫我 Joth。」 *「歡迎來到幼鹿城( Fawn )， ");
 	message(var0000);
 	message("。」");
 	say();
@@ -82,7 +82,7 @@ labelFunc0432_013D:
 	UI_add_answer("大自然本身");
 labelFunc0432_0157:
 	case "大自然本身" attend labelFunc0432_016A:
-	message("「很明顯你不是水手……雨是大自然的眼淚。而風，那是大自然的呼吸。每當有猛烈的風暴，那就是大自然的憤怒。」 *「我敢打賭她現在一定非常生氣。」");
+	message("「很明顯你不是水手…雨是大自然的眼淚。而風，那是大自然的呼吸。每當有猛烈的風暴，那就是大自然的憤怒。」 *「我敢打賭她現在一定非常生氣。」");
 	say();
 	UI_remove_answer("大自然本身");
 labelFunc0432_016A:
@@ -111,13 +111,13 @@ labelFunc0432_01BA:
 	UI_remove_answer("Olon");
 labelFunc0432_01D1:
 	case "Voldin" attend labelFunc0432_01F1:
-	message("「Voldin 確實是個船長。而且還是個守衛。他喜歡掌控一切……喜歡當權。」 *「我想他最終進入議會也是很自然的事。現在他可以欺負 Garth 和我，並且對 Zulith 和 Kylista 呼之即來。」");
+	message("「Voldin 確實是個船長。而且還是個守衛。他喜歡掌控一切…喜歡當權。」 *「我想他最終進入議會也是很自然的事。現在他可以欺負 Garth 和我，並且對 Zulith 和 Kylista 呼之即來。」");
 	say();
 	UI_remove_answer("Voldin");
 	UI_add_answer(["Zulith", "Kylista"]);
 labelFunc0432_01F1:
 	case "Zulith" attend labelFunc0432_0204:
-	message("「尋找一道明亮的綠色閃光……那就是穿著浮誇的總理長袍的 Zulith。」 *「他裝腔作勢地在宮殿和大船長( Great Captains )之間傳遞訊息，好像自己很重要似的。但每個人都在背後偷偷嘲笑他。Zulith是個報復心很強的小人，你在他周圍最好小心點。」");
+	message("「尋找一道明亮的綠色閃光…那就是穿著浮誇的總理長袍的 Zulith。」 *「他裝腔作勢地在宮殿和大船長( Great Captains )之間傳遞訊息，好像自己很重要似的。但每個人都在背後偷偷嘲笑他。Zulith是個報復心很強的小人，你在他周圍最好小心點。」");
 	say();
 	UI_remove_answer("Zulith");
 labelFunc0432_0204:
@@ -146,7 +146,7 @@ labelFunc0432_024A:
 	UI_remove_answer("啟示");
 labelFunc0432_025D:
 	case "朋友" attend labelFunc0432_0270:
-	message("「都是優秀的海員。無論是漁夫還是船長。這些該死的風暴把幼鹿城( Fawn )海岸上所有的好人都帶走了，只留下我獨自和這些旱鴨子在一起。」 *「這足以讓人考慮在漲潮時走進海裡……」");
+	message("「都是優秀的海員。無論是漁夫還是船長。這些該死的風暴把幼鹿城( Fawn )海岸上所有的好人都帶走了，只留下我獨自和這些旱鴨子在一起。」 *「這足以讓人考慮在漲潮時走進海裡…」");
 	say();
 	UI_remove_answer("朋友");
 labelFunc0432_0270:
@@ -155,7 +155,7 @@ labelFunc0432_0270:
 	message("「幼鹿城( Fawn )以前捕的魚不僅夠我們吃，還能供應給其他城市。現在只剩下幾艘破舊的划艇了。」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0432_0299;
-	message("「而且甚至沒有人勇敢到敢去划那些划艇！在這些風暴中是不可能的……」");
+	message("「而且甚至沒有人勇敢到敢去划那些划艇！在這些風暴中是不可能的…」");
 	say();
 	goto labelFunc0432_02A4;
 labelFunc0432_0299:

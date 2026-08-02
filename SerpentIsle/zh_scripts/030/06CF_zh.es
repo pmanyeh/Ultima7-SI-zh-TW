@@ -7,12 +7,12 @@ void Func06CF object#(0x6CF) ()
 	var var0000;
 
 	if (!(event == 0x0003)) goto labelFunc06CF_0029;
-	UI_item_say(0xFED9, "@救救我……@");
+	UI_item_say(0xFED9, "@救救我…@");
 	var0000 = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x55, 0x06CF], 0x000A);
 labelFunc06CF_0029:
 	if (!(event == 0x0002)) goto labelFunc06CF_00C1;
 	UI_show_npc_face0(0xFEDF, 0x0000);
-	message("「噢，真痛苦……我的大限將至……」");
+	message("「噢，真痛苦…我的大限將至…」");
 	say();
 	UI_add_answer(["你是誰？", "發生了什麼事？"]);
 labelFunc06CF_004C:
@@ -31,7 +31,7 @@ labelFunc06CF_0062:
 	UI_add_answer("安心休息吧。");
 labelFunc06CF_0080:
 	case "安心休息吧。" attend labelFunc06CF_00BD:
-	message("「我很慶幸你找到了我。我真討厭獨自死在這裡……」");
+	message("「我很慶幸你找到了我。我真討厭獨自死在這裡…」");
 	say();
 	Func097F(0xFED9, "@好痛！@", 0x0000);
 	UI_remove_npc_face0();

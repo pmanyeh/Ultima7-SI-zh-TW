@@ -113,15 +113,15 @@ labelFunc07FA_0368:
 	if (!(var000A != 0x0045)) goto labelFunc07FA_0427;
 	if (!(var0009 == 0x00C9)) goto labelFunc07FA_03AB;
 	UI_show_npc_face0(var000A, 0x0000);
-	message("「多麼悅耳的音樂！有一種奇妙的撫慰感……我可以在這裡站上好幾個小時，就為了聽它……」");
+	message("「多麼悅耳的音樂！有一種奇妙的撫慰感…我可以在這裡站上好幾個小時，就為了聽它…」");
 	say();
-	message("「稍微逗留一下肯定無妨……」");
+	message("「稍微逗留一下肯定無妨…」");
 	say();
 	UI_remove_npc_face0();
 labelFunc07FA_03AB:
 	if (!(var0009 == 0x00CA)) goto labelFunc07FA_03CB;
 	UI_show_npc_face0(var000A, 0x0000);
-	message("「美酒！讚美美德！我現在正需要喝一杯……」");
+	message("「美酒！讚美美德！我現在正需要喝一杯…」");
 	say();
 	message("「來吧，讓我們為友誼乾杯，並希望這趟旅程能早日結束！」");
 	say();
@@ -131,7 +131,7 @@ labelFunc07FA_03CB:
 	UI_show_npc_face0(var000A, 0x0000);
 	message("「看！好漂亮的一顆寶石！這很容易就能買到足夠支撐整個任務的物資！」");
 	say();
-	message("「或是想想，這對不列顛王( Lord British )來說會是一份多棒的禮物！他一定會印象深刻的。」");
+	message("「或是想想，這對不列顛王來說會是一份多棒的禮物！他一定會印象深刻的。」");
 	say();
 	UI_remove_npc_face0();
 labelFunc07FA_03EB:
@@ -139,7 +139,7 @@ labelFunc07FA_03EB:
 	UI_show_npc_face0(var000A, 0x0000);
 	message("「我已經很久沒看過這麼豐盛的食物了！香氣真是不可思議！」");
 	say();
-	message("「要是這些全浪費了那就太可惜了……」");
+	message("「要是這些全浪費了那就太可惜了…」");
 	say();
 	UI_remove_npc_face0();
 labelFunc07FA_040B:

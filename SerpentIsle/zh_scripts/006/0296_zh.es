@@ -54,7 +54,7 @@ labelFunc0296_0150:
 	Func097F(0xFE9C, "@我的魚餌沒了！@", 0x0000);
 labelFunc0296_0166:
 	if (!(var0004 == 0x0004)) goto labelFunc0296_0192;
-	Func097F(0xFE9C, "@我感覺到有魚在咬餌……@", 0x0000);
+	Func097F(0xFE9C, "@我感覺到有魚在咬餌…@", 0x0000);
 	if (!UI_npc_nearby(0xFFFF)) goto labelFunc0296_0192;
 	Func097F(0xFFFF, "@聖者，我們應該去打獵才對！@", 0x0010);
 labelFunc0296_0192:

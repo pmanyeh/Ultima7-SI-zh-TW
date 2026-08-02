@@ -56,14 +56,14 @@ labelFunc040D_0090:
 	UI_item_say(0xFFF3, "@呼！@");
 labelFunc040D_00A4:
 	if (!(var0008 == 0x0003)) goto labelFunc040D_00B8;
-	UI_item_say(0xFFF3, "@腐臭味……@");
+	UI_item_say(0xFFF3, "@腐臭味…@");
 labelFunc040D_00B8:
 	if (!(var0008 == 0x0004)) goto labelFunc040D_00E0;
 	if (!(!gflags[0x0104])) goto labelFunc040D_00D6;
 	UI_item_say(0xFFF3, "@離開這裡！@");
 	goto labelFunc040D_00E0;
 labelFunc040D_00D6:
-	UI_item_say(0xFFF3, "@有東西發臭……@");
+	UI_item_say(0xFFF3, "@有東西發臭…@");
 labelFunc040D_00E0:
 	if (!(var0008 == 0x0005)) goto labelFunc040D_00F4;
 	UI_item_say(0xFFF3, "@開窗！@");
@@ -269,14 +269,14 @@ labelFunc040D_04DD:
 	say();
 	message("「但如果你問我，她太粗魯了——我想如果可以的話，她很樂意對每個人下命令。」");
 	say();
-	message("「對了，一定要向遊俠 Ernesto 問好……」");
+	message("「對了，一定要向遊俠 Ernesto 問好…」");
 	say();
 	if (!var0003) goto labelFunc040D_0505;
-	message("「……他滿可愛的。」");
+	message("「…他滿可愛的。」");
 	say();
 	goto labelFunc040D_0509;
 labelFunc040D_0505:
-	message("「……他是個迷人的小伙子。」");
+	message("「…他是個迷人的小伙子。」");
 	say();
 labelFunc040D_0509:
 	var0009 = Func09AE(var0009);
@@ -310,14 +310,14 @@ labelFunc040D_0588:
 	UI_remove_answer("領主法師");
 	message("「Filbercio 是他們之中最強大的巫師。」");
 	say();
-	message("「據說他對女人有某種奇怪的致命吸引力……」");
+	message("「據說他對女人有某種奇怪的致命吸引力…」");
 	say();
 	if (!var0003) goto labelFunc040D_05AC;
-	message("「……你最好小心點，免得他對你施展愛情咒語！」");
+	message("「…你最好小心點，免得他對你施展愛情咒語！」");
 	say();
 	goto labelFunc040D_05B7;
 labelFunc040D_05AC:
-	message("「……當然不是我，但他得手過許多其他的美麗女人！你如果了解其中的一些，一定會感到驚訝。」");
+	message("「…當然不是我，但他得手過許多其他的美麗女人！你如果了解其中的一些，一定會感到驚訝。」");
 	say();
 	UI_add_answer("了解");
 labelFunc040D_05B7:
@@ -358,7 +358,7 @@ labelFunc040D_062A:
 	UI_remove_answer("Melino 與 Columna");
 	message("「真是奇怪的一對！ Melino 是我們最年長的法師之一，已經從議會退休了。他是個好人，但常常糊塗。」");
 	say();
-	message("「至於 Columna ，她只有他年齡的三分之一！而且是個如此迷人的女人……」");
+	message("「至於 Columna ，她只有他年齡的三分之一！而且是個如此迷人的女人…」");
 	say();
 	if (!var0003) goto labelFunc040D_064E;
 	message("「就我們兩個人之間說說，她對她丈夫來說太年輕了。如果我是她，我寧可去死！」");
@@ -394,7 +394,7 @@ labelFunc040D_0699:
 labelFunc040D_06A2:
 	case "訪客" attend labelFunc040D_0730:
 	UI_remove_answer("訪客");
-	message("「或許你應該去藍野豬酒館 (Blue Boar Inn) 和 Rocco 談談。鎮上所有的訪客都住在他那間不錯的酒館裡，即使是那位旅行學者也不例外。」");
+	message("「或許你應該去藍野豬旅店 (Blue Boar Inn) 和 Rocco 談談。鎮上所有的訪客都住在他那間不錯的酒館裡，即使是那位旅行學者也不例外。」");
 	say();
 	message("「還有，Julia 會監視所有不受歡迎的人。」");
 	say();
@@ -418,7 +418,7 @@ labelFunc040D_071C:
 labelFunc040D_0730:
 	case "旅行學者" attend labelFunc040D_0743:
 	UI_remove_answer("旅行學者");
-	message("「Rocco 可以告訴你更多，因為他和她……挺熟的。我只知道她的名字： Gwenno 。她幾個星期前離開了這裡。」");
+	message("「Rocco 可以告訴你更多，因為他和她…挺熟的。我只知道她的名字： Gwenno 。她幾個星期前離開了這裡。」");
 	say();
 labelFunc040D_0743:
 	case "地點" attend labelFunc040D_0769:
@@ -573,11 +573,11 @@ labelFunc040D_0AAA:
 	message("「她還有一件月絲睡袍，那價格比我這輩子能賺到的錢還要多！」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x02A5, 0xFE99, 0x0000)) goto labelFunc040D_0B4C;
-	message("「請讓我看看這雙長襪……」");
+	message("「請讓我看看這雙長襪…」");
 	say();
 	message("「絲綢如此柔軟！你知道這雙長襪是用月蛾的繭做的嗎？」");
 	say();
-	message("「我可以……我能……你介意我留下這雙襪子嗎？沒有凡夫俗子能擁有這般華美的東西！」");
+	message("「我可以…我能…你介意我留下這雙襪子嗎？沒有凡夫俗子能擁有這般華美的東西！」");
 	say();
 	if (!Func0955()) goto labelFunc040D_0B48;
 	message("「哦哦哦！」");
@@ -604,7 +604,7 @@ labelFunc040D_0B92:
 	case "罈子" attend labelFunc040D_0C07:
 	UI_remove_answer("罈子");
 	if (!Func097D(0xFE9B, 0x0001, 0x0392, 0xFE99, 0x0000)) goto labelFunc040D_0BBD;
-	message("「我不知道那是什麼，但它給了我一種不寒而慄的感覺。請把它拿走……」");
+	message("「我不知道那是什麼，但它給了我一種不寒而慄的感覺。請把它拿走…」");
 	say();
 	goto labelFunc040D_0BC5;
 labelFunc040D_0BBD:
@@ -697,7 +697,7 @@ labelFunc040D_0D67:
 	say();
 	message("「不過，因為風暴的關係，現在航行到北方太危險了。我們也沒辦法走陸路做生意，因為 果雷沼澤( Gorlab Swamp )把大陸切成兩半了。」");
 	say();
-	var000C = Func0992(0x0001, "@關於那頂毛皮帽……@", "@關於那頂毛皮帽……@", false);
+	var000C = Func0992(0x0001, "@關於那頂毛皮帽…@", "@關於那頂毛皮帽…@", false);
 	UI_set_conversation_slot(0x0000);
 	message("「是，是，是，我想起來了。我把它賣給了領主法師，他在幻象盛宴上把它送給了他的新歡。我很驚訝那個不尋常的傢伙沒有買一頂，因為他當時正在收集其他的毛皮。」");
 	say();
@@ -751,7 +751,7 @@ labelFunc040D_0EA4:
 	case "胸甲" attend labelFunc040D_0F1D:
 	UI_remove_answer("胸甲");
 	if (!Func097D(0xFE9B, 0x0001, 0x01A3, 0xFE99, 0x0000)) goto labelFunc040D_0ED3;
-	message("「多麼奇特——專為女性打造的盔甲！它太美了，不像是 蒙利多城( Monitor ) 來的，而且這裡的遊俠也沒有人穿這種東西……」");
+	message("「多麼奇特——專為女性打造的盔甲！它太美了，不像是 蒙利多城( Monitor ) 來的，而且這裡的遊俠也沒有人穿這種東西…」");
 	say();
 	message("「我敢打賭這來自幼鹿城( Fawn )。你應該去那裡打聽一下。」");
 	say();
@@ -862,7 +862,7 @@ labelFunc040D_1124:
 	case "頭骨" attend labelFunc040D_1199:
 	UI_remove_answer("頭骨");
 	if (!Func097D(0xFE9B, 0x0001, 0x00F4, 0xFE99, 0xFE99)) goto labelFunc040D_114F;
-	message("「多麼奇特啊。你離開的時候帶著它走……」");
+	message("「多麼奇特啊。你離開的時候帶著它走…」");
 	say();
 	goto labelFunc040D_1157;
 labelFunc040D_114F:
@@ -882,7 +882,7 @@ labelFunc040D_1199:
 	case "血手" attend labelFunc040D_1230:
 	UI_remove_answer("血手");
 	if (!Func097D(0xFE9B, 0x0001, 0x031A, 0xFE99, 0x0000)) goto labelFunc040D_11DA;
-	message("「你拿著什麼？天啊，它在動……」");
+	message("「你拿著什麼？天啊，它在動…」");
 	say();
 	Func097F(0xFFF3, "@啊！！！@", 0x0000);
 	UI_set_schedule_type(0xFFF3, 0x0014);
@@ -931,7 +931,7 @@ labelFunc040D_12A5:
 	UI_remove_answer("發光的岩石");
 	if (!(var0001 || gflags[0x0119])) goto labelFunc040D_12DE;
 	if (!var0001) goto labelFunc040D_12CF;
-	message("「把它收起來！希望沒人看見……」");
+	message("「把它收起來！希望沒人看見…」");
 	say();
 	message("「你難道不知道擁有石心 (Stoneheart) 是犯罪嗎！那是非常危險的物質。」");
 	say();
@@ -969,7 +969,7 @@ labelFunc040D_1332:
 	say();
 	goto labelFunc040D_1367;
 labelFunc040D_1363:
-	message("「我想我知道你說的長襪，但我不敢確定……」");
+	message("「我想我知道你說的長襪，但我不敢確定…」");
 	say();
 labelFunc040D_1367:
 	message("「我不再進那種貨了，但我知道哪裡可以買到——幼鹿城( Fawn )。」");
@@ -1003,7 +1003,7 @@ labelFunc040D_13EF:
 	case "棕色瓶子" attend labelFunc040D_1492:
 	UI_remove_answer("棕色瓶子");
 	if (!Func097D(0xFE9B, 0x0001, 0x0268, 0xFE99, 0x0000)) goto labelFunc040D_1435;
-	message("「可以讓我看看你的瓶子嗎？嗯……某種苦艾爾酒。」");
+	message("「可以讓我看看你的瓶子嗎？嗯…某種苦艾爾酒。」");
 	say();
 	message("「如果我是你，我會把這膽汁般的東西丟掉，換成我們上好的月影城( Moonshade )酒。如果你想要一些，去鎮上西邊的酒莊問問就知道了。」");
 	say();
@@ -1028,7 +1028,7 @@ labelFunc040D_1492:
 	case "沒別的了" attend labelFunc040D_14CE:
 	if (!(var000B == 0x0001)) goto labelFunc040D_14AF;
 	UI_pop_answers();
-	message("「希望我能幫上更多的忙……」");
+	message("「希望我能幫上更多的忙…」");
 	say();
 	goto labelFunc040D_14CE;
 labelFunc040D_14AF:

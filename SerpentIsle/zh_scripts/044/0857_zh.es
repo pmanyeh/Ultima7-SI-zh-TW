@@ -20,7 +20,7 @@ void Func0857 0x857 ()
 	if (!(var0001 == 0x0001)) goto labelFunc0857_0092;
 	message("「我會收下你的石心並付你 ");
 	message(var0002);
-	message(" 吉爾得幣……」");
+	message(" 吉爾得幣…」");
 	say();
 	message("「好啦。交易完成！」");
 	say();
@@ -30,7 +30,7 @@ labelFunc0857_0092:
 	message(var0001);
 	message(" 個石心並付你 ");
 	message(var0002);
-	message(" 吉爾得幣……」");
+	message(" 吉爾得幣…」");
 	say();
 	message("「好啦。交易完成！」");
 	say();

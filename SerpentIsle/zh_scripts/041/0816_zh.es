@@ -98,7 +98,7 @@ labelFunc0816_028E:
 	say();
 	var0009 = Func0957(var0005);
 	if (!(var0009 == 0x0001)) goto labelFunc0816_02AC;
-	message("「如果那是你想要的……」");
+	message("「如果那是你想要的…」");
 	say();
 	goto labelFunc0816_03D3;
 labelFunc0816_02AC:

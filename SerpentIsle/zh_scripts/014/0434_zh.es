@@ -64,7 +64,7 @@ labelFunc0434_0099:
 	UI_show_npc_face0(0xFFCC, 0x0000);
 	var0003 = 0x0005;
 	if (!(gflags[0x0171] || (gflags[0x0170] && (!gflags[0x0172])))) goto labelFunc0434_00E7;
-	message("「我早該知道你是個麻煩！問了那麼多問題……」");
+	message("「我早該知道你是個麻煩！問了那麼多問題…」");
 	say();
 	message("「在神諭( Oracle )做出裁決之前，我不會和你說話的！」");
 	say();
@@ -131,7 +131,7 @@ labelFunc0434_01C6:
 	say();
 	message("「但自從那些該死的風暴摧毀了艦隊之後，生意就少得可憐了。」");
 	say();
-	message("「以前有個小夥子幫我端酒。他媽媽負責煮飯和洗碗。但 Danysia 生病死了——治療師束手無策——年輕的 Rindor 出海了……再也沒有回來。」");
+	message("「以前有個小夥子幫我端酒。他媽媽負責煮飯和洗碗。但 Danysia 生病死了——治療師束手無策——年輕的 Rindor 出海了…再也沒有回來。」");
 	say();
 	UI_add_answer(["風暴"]);
 labelFunc0434_01F4:
@@ -139,7 +139,7 @@ labelFunc0434_01F4:
 	UI_remove_answer("風暴");
 	message("「我告訴你，這是邪惡的產物！我們是靠海吃飯的人。但這些風暴似乎不喜歡水面上的任何東西！」");
 	say();
-	message("「所有的漁船不是被摧毀，就是被變成了根本不該碰到水的東西。Rindor 就遇到了這種事——他的船突然變成了一輛穀物車。車可浮不起來……」");
+	message("「所有的漁船不是被摧毀，就是被變成了根本不該碰到水的東西。Rindor 就遇到了這種事——他的船突然變成了一輛穀物車。車可浮不起來…」");
 	say();
 labelFunc0434_020B:
 	case "房間" attend labelFunc0434_02B3:
@@ -208,11 +208,11 @@ labelFunc0434_0358:
 	UI_remove_answer("水手們");
 	message("「這些該死的巫術風暴摧毀了我們所有的船。Olon 是城裡唯一活下來的水手。」");
 	say();
-	message("「他以前是其中一艘漁船上的大副……」");
+	message("「他以前是其中一艘漁船上的大副…」");
 	say();
 	message("「直到船沉了。」");
 	say();
-	message("「可以說他很幸運……雖然他不這麼認為。他把大部分時間都花在這裡喝酒……我擔心他已經是個迷失的靈魂了。他甚至拒絕去神殿！」");
+	message("「可以說他很幸運…雖然他不這麼認為。他把大部分時間都花在這裡喝酒…我擔心他已經是個迷失的靈魂了。他甚至拒絕去神殿！」");
 	say();
 	var0003 = Func09AE(var0003);
 labelFunc0434_0380:
@@ -233,7 +233,7 @@ labelFunc0434_03AB:
 	say();
 	message("「月影城( Moonshade )的法師們聲稱，讓有魔法天賦的孩子在沒有適當訓練的情況下長大是很危險的。」");
 	say();
-	message("「我不喜歡這樣，但凡人對法師之城也無能為力……」");
+	message("「我不喜歡這樣，但凡人對法師之城也無能為力…」");
 	say();
 	var0003 = Func09AE(var0003);
 labelFunc0434_03CF:
@@ -348,10 +348,10 @@ labelFunc0434_0577:
 	UI_remove_answer("水手");
 	message("「他們是那艘從世界另一端航行來的船上的船員——說什麼海裡有巨蛇之柱( Serpent Pillars )。」");
 	say();
-	message("「Brunt、Ruggs、Deadeye、Kalen……我覺得他們挺好相處的。除了 Kalen……他喜歡和我的客人爭吵。」");
+	message("「Brunt、Ruggs、Deadeye、Kalen…我覺得他們挺好相處的。除了 Kalen…他喜歡和我的客人爭吵。」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc0434_05A4;
-	message("「你知道的，夫人已經允許他們回到城裡了……他們還沒惹麻煩，但我正盯著他們。」");
+	message("「你知道的，夫人已經允許他們回到城裡了…他們還沒惹麻煩，但我正盯著他們。」");
 	say();
 	goto labelFunc0434_05A8;
 labelFunc0434_05A4:
@@ -365,16 +365,16 @@ labelFunc0434_05B8:
 	UI_remove_answer("友誼會");
 	message("「純粹是愚蠢。每個人都知道『美』才是重要的。」");
 	say();
-	message("「經過這幾個世紀，我們現在沒有改變我們神聖信仰的打算……」");
+	message("「經過這幾個世紀，我們現在沒有改變我們神聖信仰的打算…」");
 	say();
 labelFunc0434_05CF:
 	case "領袖" attend labelFunc0434_05FE:
 	UI_remove_answer("領袖");
-	message("「他以最不自然的方式到來！水手們豎起了一根由某種黑色岩石做成的巨大柱子……」");
+	message("「他以最不自然的方式到來！水手們豎起了一根由某種黑色岩石做成的巨大柱子…」");
 	say();
 	message("「然後在夜裡——砰！閃電，爆炸！柱子瓦解了。然後這個法師就站在那裡。」");
 	say();
-	message("「說他叫巴特林。來鎮上打聽這附近的惡魔遺物( Daemon artifacts )。還去騷擾可憐的 Delin……」");
+	message("「說他叫巴特林。來鎮上打聽這附近的惡魔遺物( Daemon artifacts )。還去騷擾可憐的 Delin…」");
 	say();
 	message("「我叫他去跟他的同類說話，別來煩老實人。」");
 	say();
@@ -383,7 +383,7 @@ labelFunc0434_05CF:
 labelFunc0434_05FE:
 	case "惡魔遺物" attend labelFunc0434_061D:
 	UI_remove_answer("惡魔遺物");
-	message("「我自己是敬而遠之。但你不會錯過它們的……」");
+	message("「我自己是敬而遠之。但你不會錯過它們的…」");
 	say();
 	message("「上面雕刻著蛇。是這片土地古代居民留下來的。可怕的惡魔( Daemonic )種族。」");
 	say();
@@ -397,9 +397,9 @@ labelFunc0434_061D:
 	say();
 	message("「Scots 是地圖學家。把他所有的時間都花在繪製新的大陸地圖上。」");
 	say();
-	message("「然後是那位文化學者——她的名字是，呃……」");
+	message("「然後是那位文化學者——她的名字是，呃…」");
 	say();
-	message("「Gwenno……」");
+	message("「Gwenno…」");
 	say();
 	message("「打聽民間傳說。請大夥喝了一兩杯酒，好讓他們打開話匣子。她最喜歡的是 Gwani 的傳說。」");
 	say();
@@ -411,7 +411,7 @@ labelFunc0434_0654:
 	UI_remove_answer("Gwani");
 	message("「從沒見過他們。也不想見。」");
 	say();
-	message("「全身覆蓋著毛皮，像野獸一樣。聽說他們比哥布林還糟……甚至會吃同類！」");
+	message("「全身覆蓋著毛皮，像野獸一樣。聽說他們比哥布林還糟…甚至會吃同類！」");
 	say();
 	message("「Olon 也許能告訴你更多。」");
 	say();
@@ -428,7 +428,7 @@ labelFunc0434_0673:
 labelFunc0434_069D:
 	case "荒野地區" attend labelFunc0434_06C8:
 	UI_remove_answer("荒野地區");
-	message("「哦，我小時候曾到處閒晃過，但我從未走得太遠。從不想讓自己迷路……」");
+	message("「哦，我小時候曾到處閒晃過，但我從未走得太遠。從不想讓自己迷路…」");
 	say();
 	message("「我往西走得最遠的地方，就是蒙利多城( Monitor )戰士用來訓練的那片森林。我沒有進去。我被一些穿著花哨的騎士攔住了，他們叫我回去。」");
 	say();
@@ -448,7 +448,7 @@ labelFunc0434_06C8:
 labelFunc0434_06F8:
 	case "月影城" attend labelFunc0434_071C:
 	UI_remove_answer("月影城");
-	message("「那是位於這裡東邊一個島上的法師之城……」");
+	message("「那是位於這裡東邊一個島上的法師之城…」");
 	say();
 	message("「按照我的想法，這也挺好的。誰會想住在一個什麼都不能信任的地方？記住我的話，絕對不要相信法師。他們會誤導你的。」");
 	say();
@@ -459,7 +459,7 @@ labelFunc0434_071C:
 	UI_remove_answer("睡牛客棧");
 	message("「睡牛( Sleeping Bull )客棧嚴格來說不算是一個城鎮，但它位於通往蒙利多城( Monitor )的路上，在那裡你可以租船前往月影城( Moonshade )。」");
 	say();
-	message("「客棧由一個叫 Angus 的人和他的妻子 Devra 經營。他們是老實人……雖然我聽說這家客棧在很久以前原本是一座海盜堡壘。」");
+	message("「客棧由一個叫 Angus 的人和他的妻子 Devra 經營。他們是老實人…雖然我聽說這家客棧在很久以前原本是一座海盜堡壘。」");
 	say();
 	var0003 = Func09AE(var0003);
 labelFunc0434_073C:
@@ -471,7 +471,7 @@ labelFunc0434_073C:
 	message("？很明顯你已經去過那裡了。」");
 	say();
 	if (!UI_is_pc_female()) goto labelFunc0434_076B;
-	message("「這在妳身上看起來非常漂亮。妳一定是個喜歡冒險的人……」");
+	message("「這在妳身上看起來非常漂亮。妳一定是個喜歡冒險的人…」");
 	say();
 	goto labelFunc0434_076F;
 labelFunc0434_076B:
@@ -482,7 +482,7 @@ labelFunc0434_076F:
 labelFunc0434_0772:
 	message("「那裡的人很傲慢。總是想打你。他們在南邊有一座帶城牆的大城市。蒙利多城( Monitor )就是長槍兵( Pikeman )的故鄉。」");
 	say();
-	message("「一群披著盔甲的盜賊！他們會為你保護道路……如果你把所有的錢都給他們的話！」");
+	message("「一群披著盔甲的盜賊！他們會為你保護道路…如果你把所有的錢都給他們的話！」");
 	say();
 	message("「這附近的那群人也沒什麼用。哥布林把他們都殺了。」");
 	say();
@@ -506,7 +506,7 @@ labelFunc0434_07AF:
 	Func083D();
 labelFunc0434_07BE:
 	case "飲料" attend labelFunc0434_07CD:
-	message("「如果你想潤潤嗓子，我可以賣你一杯好酒——幼鹿城麥酒( Fawnish Ale )。這可是種很烈的飲料哦……」");
+	message("「如果你想潤潤嗓子，我可以賣你一杯好酒——幼鹿城麥酒( Fawnish Ale )。這可是種很烈的飲料哦…」");
 	say();
 	Func083E();
 labelFunc0434_07CD:
@@ -624,11 +624,11 @@ labelFunc0434_0A8A:
 	if (!UI_is_pc_female()) goto labelFunc0434_0ADD;
 	message("「妳難道沒有廉恥心嗎， ");
 	message(var0001);
-	message("？把妳的長襪這樣到處炫耀……」");
+	message("？把妳的長襪這樣到處炫耀…」");
 	say();
 	var000E = Func0992(0x0001, "@那不是她的！@", "@那不是我的！@", false);
 	UI_set_conversation_slot(0x0000);
-	message("「哦……這些是很精緻的物品，不是你在漁村婦女那裡能找到的。」");
+	message("「哦…這些是很精緻的物品，不是你在漁村婦女那裡能找到的。」");
 	say();
 	goto labelFunc0434_0AE1;
 labelFunc0434_0ADD:
@@ -657,7 +657,7 @@ labelFunc0434_0B1B:
 labelFunc0434_0B22:
 	message("「好一雙花俏的長襪， ");
 	message(var0001);
-	message("！你會讓某個女人很高興的……」");
+	message("！你會讓某個女人很高興的…」");
 	say();
 	message("「我們這裡沒有這麼花俏的——只有 Alyssand 做的那些。」");
 	say();
@@ -690,7 +690,7 @@ labelFunc0434_0BBD:
 	message(var0001);
 	message("。但聽起來像是用來裝蒙利多城( Monitor )陣亡戰士骨灰的骨灰罈之一。」");
 	say();
-	message("「我相信他們會很感激你把它還回去的……」");
+	message("「我相信他們會很感激你把它還回去的…」");
 	say();
 labelFunc0434_0BCB:
 	if (!(!var0011)) goto labelFunc0434_0C04;
@@ -725,7 +725,7 @@ labelFunc0434_0C74:
 	case "浮岩" attend labelFunc0434_0CE4:
 	UI_remove_answer("浮岩");
 	if (!Func097D(0xFE9B, 0x0001, 0x010B, 0xFE99, 0xFE99)) goto labelFunc0434_0CA7;
-	message("「真是奇怪的石頭……不是這附近的。用來建築或做壓艙石都沒什麼用。」");
+	message("「真是奇怪的石頭…不是這附近的。用來建築或做壓艙石都沒什麼用。」");
 	say();
 	message("「不過你去問問黛爾菲妮亞( Delphynia )吧。她收集一些被她稱為藥材的奇怪東西。也許她知道那是什麼。」");
 	say();
@@ -780,13 +780,13 @@ labelFunc0434_0D83:
 	case "毛皮帽" attend labelFunc0434_0DF7:
 	UI_remove_answer("毛皮帽");
 	if (!Func097D(0xFE9B, 0x0001, 0x03EC, 0xFE99, 0x0004)) goto labelFunc0434_0DB2;
-	message("「漂亮的帽子。不過有點小。不是漁夫會戴的東西……在船上會被吹走的。」");
+	message("「漂亮的帽子。不過有點小。不是漁夫會戴的東西…在船上會被吹走的。」");
 	say();
 	message("「你去問問 Delin 有沒有見過像這樣的帽子。他是補給商。他應該知道。」");
 	say();
 	goto labelFunc0434_0DBA;
 labelFunc0434_0DB2:
-	message("「聽起來不像漁夫會戴的東西……」");
+	message("「聽起來不像漁夫會戴的東西…」");
 	say();
 	message("「你去問問 Delin 有沒有聽說過這樣的帽子。他是補給商。他應該知道。」");
 	say();
@@ -886,14 +886,14 @@ labelFunc0434_0F96:
 	case "奇怪的髮刷" attend labelFunc0434_1006:
 	UI_remove_answer("奇怪的髮刷");
 	if (!Func097D(0xFE9B, 0x0001, 0x011D, 0xFE99, 0x0006)) goto labelFunc0434_0FC9;
-	message("「長得真奇怪的刷子……」");
+	message("「長得真奇怪的刷子…」");
 	say();
 	message("「想起來了，這看起來像是 Jorvin 在我們治療師被殺時談論的東西。你應該把它拿給他看看。」");
 	say();
 	gflags[0x0198] = true;
 	goto labelFunc0434_0FCD;
 labelFunc0434_0FC9:
-	message("「嗯……聽起來形狀很奇怪。『美之城』裡沒有人會用這種刷子。」");
+	message("「嗯…聽起來形狀很奇怪。『美之城』裡沒有人會用這種刷子。」");
 	say();
 labelFunc0434_0FCD:
 	if (!(!var0011)) goto labelFunc0434_1006;
@@ -913,7 +913,7 @@ labelFunc0434_1006:
 	say();
 	goto labelFunc0434_1039;
 labelFunc0434_1035:
-	message("「聽起來不像是幼鹿城麥酒( Fawnish Ale )……也許是月影城( Moonshade )那種清淡的年份酒。我這裡沒賣——幼鹿城( Fawn )的人比較喜歡幼鹿城麥酒( Fawnish Ale )！」");
+	message("「聽起來不像是幼鹿城麥酒( Fawnish Ale )…也許是月影城( Moonshade )那種清淡的年份酒。我這裡沒賣——幼鹿城( Fawn )的人比較喜歡幼鹿城麥酒( Fawnish Ale )！」");
 	say();
 labelFunc0434_1039:
 	if (!(!var0011)) goto labelFunc0434_1072;
@@ -927,7 +927,7 @@ labelFunc0434_1072:
 	case "奇怪的硬幣" attend labelFunc0434_10EC:
 	UI_remove_answer("奇怪的硬幣");
 	if (!Func097D(0xFE9B, 0x0001, 0x03B4, 0xFE99, 0xFE99)) goto labelFunc0434_10A1;
-	message("「哎呀，那是 filari！那是幼鹿城( Fawn )的硬幣……」");
+	message("「哎呀，那是 filari！那是幼鹿城( Fawn )的硬幣…」");
 	say();
 	message("「你說它們就這樣出現了？真是奇怪的風暴。我好像記得 Delin 抱怨說他弄丟了一些硬幣——但我還以為那是他健忘呢！」");
 	say();
@@ -1009,7 +1009,7 @@ labelFunc0434_1210:
 	message(var0001);
 	message("。我只是個可憐的旅店老闆，不是守衛。」");
 	say();
-	message("「尋求 Jorvin 的幫助吧。他對戰鬥武器訓練有素。而我只要有杯子和掃帚就心滿意足了……」");
+	message("「尋求 Jorvin 的幫助吧。他對戰鬥武器訓練有素。而我只要有杯子和掃帚就心滿意足了…」");
 	say();
 labelFunc0434_121E:
 	gflags[0x019C] = true;
@@ -1028,7 +1028,7 @@ labelFunc0434_125B:
 	message(var0001);
 	message("。」");
 	say();
-	message("「我會很感激你把它帶出這裡。我不想跟這種邪惡的東西有任何牽扯……如果你一定要炫耀它，那就帶去給黛爾菲妮亞( Delphynia )吧。」");
+	message("「我會很感激你把它帶出這裡。我不想跟這種邪惡的東西有任何牽扯…如果你一定要炫耀它，那就帶去給黛爾菲妮亞( Delphynia )吧。」");
 	say();
 	goto labelFunc0434_1294;
 labelFunc0434_1290:
@@ -1054,7 +1054,7 @@ labelFunc0434_12D1:
 	say();
 	var000E = Func0992(0x0001, "@那不是她的！@", "@那不是我的！@", false);
 	UI_set_conversation_slot(0x0000);
-	message("「嗯……呃……這些是這裡做的，由年輕的 Alyssand 製作的。」");
+	message("「嗯…呃…這些是這裡做的，由年輕的 Alyssand 製作的。」");
 	say();
 	goto labelFunc0434_1328;
 labelFunc0434_1324:
@@ -1075,11 +1075,11 @@ labelFunc0434_132B:
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc0434_135E:
-	message("「去找另一個女人幫妳吧……也許是 Alyssand。她會做長襪。」");
+	message("「去找另一個女人幫妳吧…也許是 Alyssand。她會做長襪。」");
 	say();
 	goto labelFunc0434_136D;
 labelFunc0434_1365:
-	message("「如果你在找長襪……」");
+	message("「如果你在找長襪…」");
 	say();
 	message("「Alyssand 就在幼鹿城( Fawn )這裡編織它們。」");
 	say();
@@ -1103,7 +1103,7 @@ labelFunc0434_13AA:
 	say();
 	if (!UI_npc_nearby(0xFFC6)) goto labelFunc0434_13EE;
 	UI_show_npc_face1(0xFFC6, 0x0000);
-	message("「你說錯了，朋友。記住，你在蒙利多城( Monitor )還有個客人……」");
+	message("「你說錯了，朋友。記住，你在蒙利多城( Monitor )還有個客人…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -1116,7 +1116,7 @@ labelFunc0434_13EE:
 	Func083E();
 	goto labelFunc0434_1404;
 labelFunc0434_1400:
-	message("「那就下次吧……」");
+	message("「那就下次吧…」");
 	say();
 labelFunc0434_1404:
 	if (!(!var0011)) goto labelFunc0434_143D;
@@ -1130,7 +1130,7 @@ labelFunc0434_143D:
 	case "沒有了" attend labelFunc0434_147F:
 	if (!(var0004 == 0x0001)) goto labelFunc0434_145A;
 	UI_pop_answers();
-	message("「我真希望我能給你更多幫助……」");
+	message("「我真希望我能給你更多幫助…」");
 	say();
 	goto labelFunc0434_147F;
 labelFunc0434_145A:
@@ -1146,11 +1146,11 @@ labelFunc0434_1475:
 labelFunc0434_147F:
 	case "change subject" attend labelFunc0434_148F:
 	UI_pop_answers();
-	message("「哎呀，我們完全離題了！我們剛剛在說什麼……？」");
+	message("「哎呀，我們完全離題了！我們剛剛在說什麼…？」");
 	say();
 labelFunc0434_148F:
 	case "沒事" attend labelFunc0434_149F:
-	message("「我明白——這些日子大家都手頭緊……」");
+	message("「我明白——這些日子大家都手頭緊…」");
 	say();
 	UI_pop_answers();
 labelFunc0434_149F:

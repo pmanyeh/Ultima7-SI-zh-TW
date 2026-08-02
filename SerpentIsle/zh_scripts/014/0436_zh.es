@@ -38,9 +38,9 @@ void Func0436 object#(0x436) ()
 labelFunc0436_0047:
 	if (!((event == 0x0000) && (UI_get_schedule_type(0xFFCA) == 0x0007))) goto labelFunc0436_00B5;
 	if (!((gflags[0x0170] && gflags[0x0172]) && (!gflags[0x016E]))) goto labelFunc0436_00B5;
-	var0006 = ["@我不該受這種罪！@", "@救救我，求求你！@", "@太髒了！@", "@真希望能有個枕頭……@", "@該死的 Alyssand！@", "@詛咒友誼會！@"];
+	var0006 = ["@我不該受這種罪！@", "@救救我，求求你！@", "@太髒了！@", "@真希望能有個枕頭…@", "@該死的 Alyssand！@", "@詛咒友誼會！@"];
 	if (!UI_npc_nearby(0xFFCD)) goto labelFunc0436_009E;
-	var0006 = (var0006 & ("@安靜，Voldin。@" & ("@離我遠點……@" & "@你的夢想化為塵土了。@")));
+	var0006 = (var0006 & ("@安靜，Voldin。@" & ("@離我遠點…@" & "@你的夢想化為塵土了。@")));
 labelFunc0436_009E:
 	Func097F(0xFFCA, var0006[UI_get_random(UI_get_array_size(var0006))], 0x0000);
 labelFunc0436_00B5:
@@ -49,7 +49,7 @@ labelFunc0436_00B5:
 	if (!((gflags[0x0170] && gflags[0x0172]) && (!gflags[0x016E]))) goto labelFunc0436_011E;
 	UI_item_say(0xFE9C, "@驚喜！@");
 	UI_set_schedule_type(0xFFCA, 0x000F);
-	Func097F(0xFFCA, "@你好，那邊的……！@", 0x0002);
+	Func097F(0xFFCA, "@你好，那邊的…！@", 0x0002);
 	0xFFCA->Func07D2();
 	var0005 = UI_delayed_execute_usecode_array(0xFFCA, [(byte)0x23, (byte)0x55, 0x0436], 0x0007);
 	goto labelFunc0436_014C;
@@ -65,7 +65,7 @@ labelFunc0436_014C:
 	UI_show_npc_face0(0xFFCA, 0x0000);
 	message("「我真的很感激你能來看我， ");
 	message(var0002);
-	message("！所有人都把我忘了。我在這裡好孤單……」");
+	message("！所有人都把我忘了。我在這裡好孤單…」");
 	say();
 	UI_add_answer(["陰謀", "Voldin", "孤單"]);
 	goto labelFunc0436_02BC;
@@ -78,7 +78,7 @@ labelFunc0436_0189:
 	if (!(gflags[0x0171] || (gflags[0x0170] && (!gflags[0x0172])))) goto labelFunc0436_01DE;
 	message("「你這與『美』之敵為伍的人，讓我背脊發涼！");
 	say();
-	message("「我求你離開……」");
+	message("「我求你離開…」");
 	say();
 	UI_remove_npc_face0();
 	Func097F(0xFFCA, "@離我遠點！@", 0x0000);
@@ -93,11 +93,11 @@ labelFunc0436_01DE:
 	say();
 	var0008 = Func0955();
 	if (!var0008) goto labelFunc0436_0211;
-	message("「大多數男人似乎覺得我很有吸引力……除了長槍兵( Pikemen )。我一直想知道為什麼。謝謝你這具啟發性的情報。」");
+	message("「大多數男人似乎覺得我很有吸引力…除了長槍兵( Pikemen )。我一直想知道為什麼。謝謝你這具啟發性的情報。」");
 	say();
 	goto labelFunc0436_0215;
 labelFunc0436_0211:
-	message("「也許這種景象太常見了，對他們起不了作用。我敢肯定幼鹿城( Fawn )的男人不會這麼……無動於衷，我們說。」");
+	message("「也許這種景象太常見了，對他們起不了作用。我敢肯定幼鹿城( Fawn )的男人不會這麼…無動於衷，我們說。」");
 	say();
 labelFunc0436_0215:
 	goto labelFunc0436_0220;
@@ -122,7 +122,7 @@ labelFunc0436_0236:
 	say();
 	var0009 = Func0955();
 	if (!var0009) goto labelFunc0436_0251;
-	message("「嗯……也許我們可以安排私人指導……」");
+	message("「嗯…也許我們可以安排私人指導…」");
 	say();
 	goto labelFunc0436_0255;
 labelFunc0436_0251:
@@ -158,7 +158,7 @@ labelFunc0436_02C3:
 	say();
 	if (!UI_npc_nearby(0xFFCD)) goto labelFunc0436_0300;
 	UI_show_npc_face1(0xFFCD, 0x0000);
-	message("「我們當然這麼做了，祭司。男人總是比弱女子更有優勢……」");
+	message("「我們當然這麼做了，祭司。男人總是比弱女子更有優勢…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -173,7 +173,7 @@ labelFunc0436_0308:
 	case "孤單" attend labelFunc0436_0359:
 	UI_remove_answer("孤單");
 	if (!UI_npc_nearby(0xFFCD)) goto labelFunc0436_0325;
-	message("「Voldin 不算——他是個野獸。我需要的是陪伴……」");
+	message("「Voldin 不算——他是個野獸。我需要的是陪伴…」");
 	say();
 labelFunc0436_0325:
 	if (!UI_is_pc_female()) goto labelFunc0436_033D;
@@ -187,7 +187,7 @@ labelFunc0436_0325:
 labelFunc0436_033D:
 	message("「看著我， ");
 	message(var0002);
-	message("。我是一個正值青春年華的女人。這樣的美貌不該住在骯髒的牢房裡……」");
+	message("。我是一個正值青春年華的女人。這樣的美貌不該住在骯髒的牢房裡…」");
 	say();
 	message("「聽說你和那個叫 Alyssand 的年輕織工交上了朋友。我想我們也可以成為朋友。」");
 	say();
@@ -195,7 +195,7 @@ labelFunc0436_033D:
 	say();
 	message("「想著我， ");
 	message(var0002);
-	message("。我會想著你的……」");
+	message("。我會想著你的…」");
 	say();
 labelFunc0436_0359:
 	case "哥布林" attend labelFunc0436_0373:
@@ -306,7 +306,7 @@ labelFunc0436_04CA:
 	say();
 	goto labelFunc0436_0531;
 labelFunc0436_0500:
-	message("「整個計畫都是他的——不是我的！我只是照吩咐行事。他強迫我服侍他……」");
+	message("「整個計畫都是他的——不是我的！我只是照吩咐行事。他強迫我服侍他…」");
 	say();
 	if (!UI_npc_nearby(0xFFCD)) goto labelFunc0436_0531;
 	UI_show_npc_face1(0xFFCD, 0x0000);
@@ -345,7 +345,7 @@ labelFunc0436_056E:
 	case "啟示" attend labelFunc0436_0585:
 	message("「啟示是透過石頭嘴巴過濾出來的上天真理！」");
 	say();
-	message("「很遺憾你聽不到啟示了……我決定對所有外來者關閉儀式。在經歷了假先知的事情後，我們再小心也不為過。」");
+	message("「很遺憾你聽不到啟示了…我決定對所有外來者關閉儀式。在經歷了假先知的事情後，我們再小心也不為過。」");
 	say();
 	UI_remove_answer("啟示");
 labelFunc0436_0585:
@@ -355,7 +355,7 @@ labelFunc0436_0585:
 	if (!Func097D(0xFE9B, 0x0001, 0x01A3, 0xFE99, 0x0000)) goto labelFunc0436_0613;
 	message("「你有美之盔甲( Armour of Beauty )！哦，這真是上天的徵兆！」");
 	say();
-	message("「把它還給我……也許上天會再次對幼鹿城( Fawn )微笑。」");
+	message("「把它還給我…也許上天會再次對幼鹿城( Fawn )微笑。」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0436_060C;
 	var000A = Func0992(0x0001, "@那妳自己的盔甲呢，聖者( Avatar )？@", "@那我自己的盔甲呢？@", false);
@@ -364,7 +364,7 @@ labelFunc0436_0585:
 labelFunc0436_05DE:
 	message("「哦，那件出現在我臥室的奇怪盔甲是你的嗎？」");
 	say();
-	message("「我不記得我把它放在哪了。也許我還留著……也許你哪天晚上過來，我幫你找找。」");
+	message("「我不記得我把它放在哪了。也許我還留著…也許你哪天晚上過來，我幫你找找。」");
 	say();
 	var000B = Func0996(0xFE9B, 0xFFCA, 0x0001, 0x01A3, 0xFE99, 0x0000, false);
 	message("「謝謝你， ");
@@ -386,7 +386,7 @@ labelFunc0436_0613:
 labelFunc0436_0638:
 	message("「哦，那件出現在我臥室的奇怪盔甲是你的嗎？」");
 	say();
-	message("「我不記得我把它放在哪了。也許我還留著……也許你哪天晚上過來，我幫你找找。」");
+	message("「我不記得我把它放在哪了。也許我還留著…也許你哪天晚上過來，我幫你找找。」");
 	say();
 labelFunc0436_0640:
 	case "告辭" attend labelFunc0436_0675:

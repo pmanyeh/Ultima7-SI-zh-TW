@@ -86,7 +86,7 @@ labelFunc0844_015F:
 	if (!(var0011 == 0x0001)) goto labelFunc0844_0189;
 	message("「算你幸運，我今天心情挺不錯，");
 	message(var0002);
-	message("！我不常這樣降價的……」");
+	message("！我不常這樣降價的…」");
 	say();
 labelFunc0844_0189:
 	if (!(var0011 == 0x0002)) goto labelFunc0844_019D;
@@ -235,7 +235,7 @@ labelFunc0844_039E:
 	say();
 labelFunc0844_03BC:
 	if (!(var0011 == 0x0002)) goto labelFunc0844_03D0;
-	message("「嗯……我不確定…… ");
+	message("「嗯…我不確定… ");
 	message(var0005);
 	message(" 蒙里他利幣？」");
 	say();

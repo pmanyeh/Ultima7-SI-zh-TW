@@ -90,7 +90,7 @@ labelFunc0869_0179:
 	if (!(var0012 == 0x0001)) goto labelFunc0869_01A3;
 	message("「你該慶幸我看你順眼，");
 	message(var0002);
-	message("！我可不常降價的……」");
+	message("！我可不常降價的…」");
 	say();
 labelFunc0869_01A3:
 	if (!(var0012 == 0x0002)) goto labelFunc0869_01B7;
@@ -233,13 +233,13 @@ labelFunc0869_039E:
 labelFunc0869_03B8:
 	if (!(var000F == 0x0003)) goto labelFunc0869_03FE;
 	if (!(var0012 == 0x0001)) goto labelFunc0869_03D6;
-	message("「讓我想想……也許 ");
+	message("「讓我想想…也許 ");
 	message(var0006);
 	message(" 蒙里他利幣？」");
 	say();
 labelFunc0869_03D6:
 	if (!(var0012 == 0x0002)) goto labelFunc0869_03EA;
-	message("「我必須重新考慮一下…… ");
+	message("「我必須重新考慮一下… ");
 	message(var0006);
 	message(" 蒙里他利幣？」");
 	say();
@@ -288,7 +288,7 @@ labelFunc0869_0480:
 	if (!(var0012 == 0x0003)) goto labelFunc0869_0494;
 	message("「");
 	message(var0006);
-	message(" 蒙里他利幣是我所能給的最低底限！我也要吃飯跟付材料費啊……」");
+	message(" 蒙里他利幣是我所能給的最低底限！我也要吃飯跟付材料費啊…」");
 	say();
 labelFunc0869_0494:
 	if (!(var000D < 0x001F)) goto labelFunc0869_04AC;

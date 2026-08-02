@@ -77,7 +77,7 @@ labelFunc073B_01B2:
 	if (!(var0004 == 0x0000)) goto labelFunc073B_029C;
 	var0001 = UI_find_nearby(0xFE9C, 0x013E, 0x0014, 0x0000);
 	UI_show_npc_face0(0xFEE1, 0x0001);
-	message("「笨蛋！你太遲了。現在我將進入光明之牆( Wall of Lights )，並獲得永生！」");
+	message("「笨蛋！你太遲了。現在我將進入光之牆( Wall of Lights )，並獲得永生！」");
 	say();
 	message("「然後我會回來摧毀你凡人的靈魂！」");
 	say();
@@ -93,11 +93,11 @@ labelFunc073B_029C:
 	UI_error_message("No Batlin");
 labelFunc073B_02C7:
 	UI_show_npc_face0(0xFEE1, 0x0001);
-	message("「等等……不！這道牆沒有為我打開！這不可能！」");
+	message("「等等…不！這道牆沒有為我打開！這不可能！」");
 	say();
-	message("「不……那些災禍，牠們已經……噢，我都做了些什麼！」");
+	message("「不…那些災禍，牠們已經…噢，我都做了些什麼！」");
 	say();
-	message("「我被耍了！聖者！我哀求你！快幫幫我，在……之前……」");
+	message("「我被耍了！聖者！我哀求你！快幫幫我，在…之前…」");
 	say();
 	UI_remove_npc_face0();
 	UI_clear_item_flag(var0001, 0x001D);
@@ -284,19 +284,19 @@ labelFunc073B_095D:
 labelFunc073B_09FB:
 	if (!(var0004 == 0x0007)) goto labelFunc073B_0DC3;
 	UI_show_npc_face0(0xFEDE, 0x0000);
-	message("「我即是『無序』！哈哈哈！」");
+	message("「我即是『無序災厄』！哈哈哈！」");
 	say();
 	message("「世界將在我腳下顫抖！是非將會顛倒！正道將蕩然無存！沒有任何事物能逃出我的掌心！」");
 	say();
 	UI_remove_npc_face0();
 	UI_show_npc_face0(0xFEDD, 0x0000);
-	message("「哈哈哈！我就是『放縱之災』！」");
+	message("「哈哈哈！我就是『放縱災厄』！」");
 	say();
 	message("「凡我所踏足之地，人們皆將狂歡縱慾，滿足其最狂野的慾望！我將驅使你，去填飽你內心最黑暗的飢渴！」");
 	say();
 	UI_remove_npc_face0();
 	UI_show_npc_face0(0xFEDC, 0x0000);
-	message("「我——哈哈哈！——即是『瘋狂之災』！哈哈哈！」");
+	message("「我——哈哈哈！——即是『瘋狂災厄』！哈哈哈！」");
 	say();
 	message("「凡落入我陰影之中者，皆將理智蒙蔽、神智錯亂！他們昔日深惡痛絕的垃圾，將成為他們一生的至愛！哈哈哈！」");
 	say();

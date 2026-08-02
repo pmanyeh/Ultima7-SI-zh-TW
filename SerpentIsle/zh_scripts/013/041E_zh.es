@@ -42,10 +42,10 @@ labelFunc041E_0029:
 	var0006 = UI_get_random(0x0006);
 	if (!(var0006 == 0x0001)) goto labelFunc041E_005B;
 	UI_item_say(0xFFE2, "@Petra ，拿酒來！@");
-	Func097F(0xFFE4, "@等一下……@", 0x0002);
+	Func097F(0xFFE4, "@等一下…@", 0x0002);
 labelFunc041E_005B:
 	if (!(var0006 == 0x0002)) goto labelFunc041E_006F;
-	UI_item_say(0xFFE2, "@現在時局艱難……@");
+	UI_item_say(0xFFE2, "@現在時局艱難…@");
 labelFunc041E_006F:
 	if (!(var0006 == 0x0003)) goto labelFunc041E_0083;
 	UI_item_say(0xFFE2, "@出租房間！@");
@@ -57,7 +57,7 @@ labelFunc041E_0097:
 	UI_item_say(0xFFE2, "@餓了嗎？@");
 labelFunc041E_00AB:
 	if (!(var0006 == 0x0006)) goto labelFunc041E_00BF;
-	UI_item_say(0xFFE2, "@請坐……@");
+	UI_item_say(0xFFE2, "@請坐…@");
 labelFunc041E_00BF:
 	if (!(event == 0x0001)) goto labelFunc041E_00F5;
 	UI_item_say(0xFE9C, "@我能和你談談嗎？@");
@@ -109,7 +109,7 @@ labelFunc041E_01C6:
 	message(var0002);
 	message("。你的到來極大地擾亂了法師們。」");
 	say();
-	message("「現在有許多嫌疑人—— Torrissio 絕對是個狡猾的傢伙，而 Mortegro 確實有著奇怪的興趣——但我們都知道你的敵人是誰……」");
+	message("「現在有許多嫌疑人—— Torrissio 絕對是個狡猾的傢伙，而 Mortegro 確實有著奇怪的興趣——但我們都知道你的敵人是誰…」");
 	say();
 	gflags[0x0142] = true;
 	gflags[0x013F] = true;
@@ -125,7 +125,7 @@ labelFunc041E_01C6:
 	UI_set_conversation_slot(0x0000);
 	message("「不——她只會試著向 ");
 	message(var0004);
-	message(" 勒索錢財。 Julia 是個小偷……」");
+	message(" 勒索錢財。 Julia 是個小偷…」");
 	say();
 	message("「如果我是你，");
 	message(var0002);
@@ -138,19 +138,19 @@ labelFunc041E_022F:
 	say();
 	var0008 = Func0992(0x0001, "@聽起來就像不列顛尼亞(Britannia)的那家！@", "@我以前聽過那個名字。@", false);
 	UI_set_conversation_slot(0x0000);
-	message("「我想一切皆有可能。我從父母那裡繼承了這家旅館，而他們又是從他們父母那裡繼承的。這是一個古老的名字……也許是從渡海(crossing)那個時代傳下來的。」");
+	message("「我想一切皆有可能。我從父母那裡繼承了這家旅館，而他們又是從他們父母那裡繼承的。這是一個古老的名字…也許是從渡海(crossing)那個時代傳下來的。」");
 	say();
 	UI_add_answer("渡海");
 labelFunc041E_0264:
 	case "渡海" attend labelFunc041E_0287:
 	UI_remove_answer("渡海");
-	message("「我已經很久沒聽過完整的故事了。讓我看看我還記不記得……主要是關於一個篡位國王和法師們的事。但對我的人民來說，我想那只是為了錢。」");
+	message("「我已經很久沒聽過完整的故事了。讓我看看我還記不記得…主要是關於一個篡位國王和法師們的事。但對我的人民來說，我想那只是為了錢。」");
 	say();
 	UI_add_answer(["篡位國王", "法師", "錢"]);
 labelFunc041E_0287:
 	case "篡位國王" attend labelFunc041E_02BE:
 	UI_remove_answer("篡位國王");
-	message("「在舊大陸，一個名叫……布拉提什(Brattish)，或是布魯提什(Brutish)，或者類似名字的專橫男人，篡奪了王位。他的統治嚴酷而不公，所以許多人逃過大海來到這片土地。」");
+	message("「在舊大陸，一個名叫…布拉提什(Brattish)，或是布魯提什(Brutish)，或者類似名字的專橫男人，篡奪了王位。他的統治嚴酷而不公，所以許多人逃過大海來到這片土地。」");
 	say();
 	var0008 = Func0992(0x0001, "@聽起來他好像在說不列顛王(Lord British)！@", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
@@ -158,12 +158,12 @@ labelFunc041E_0287:
 labelFunc041E_02BE:
 	case "舊大陸" attend labelFunc041E_02D1:
 	UI_remove_answer("舊大陸");
-	message("「讓我想一下。我對這種名字記性很差……啊哈！我想起來了！舊大陸被稱為索沙利亞(Sosaria)。」");
+	message("「讓我想一下。我對這種名字記性很差…啊哈！我想起來了！舊大陸被稱為索沙利亞(Sosaria)。」");
 	say();
 labelFunc041E_02D1:
 	case "這片土地" attend labelFunc041E_02F1:
 	UI_remove_answer("這片土地");
-	message("「嗯，當人們到達這裡時，他們想用他們故鄉的名字來命名這片土地……啊，等一下……新索沙利亞(New Sosaria)。但後來他們發現這裡到處散佈著廢墟，上面還畫著所有那些蛇，所以大多數人稱這裡為巨蛇之島。儘管有些人仍然用它正確的名字來稱呼它，新索沙利亞。」");
+	message("「嗯，當人們到達這裡時，他們想用他們故鄉的名字來命名這片土地…啊，等一下…新索沙利亞(New Sosaria)。但後來他們發現這裡到處散佈著廢墟，上面還畫著所有那些蛇，所以大多數人稱這裡為巨蛇之島。儘管有些人仍然用它正確的名字來稱呼它，新索沙利亞。」");
 	say();
 	UI_add_answer(["廢墟", "蛇"]);
 labelFunc041E_02F1:
@@ -185,7 +185,7 @@ labelFunc041E_0317:
 labelFunc041E_0337:
 	case "瘋狂法師" attend labelFunc041E_034A:
 	UI_remove_answer("瘋狂法師");
-	message("「瘋狂法師是一個住在離這裡不遠的島嶼上的瘋老頭。以為自己能創造生命……據我所知，他曾經住在月影城( Moonshade )——是個老師或什麼的，直到他瘋了。」");
+	message("「瘋狂法師是一個住在離這裡不遠的島嶼上的瘋老頭。以為自己能創造生命…據我所知，他曾經住在月影城( Moonshade )——是個老師或什麼的，直到他瘋了。」");
 	say();
 labelFunc041E_034A:
 	case "領主法師" attend labelFunc041E_036A:
@@ -220,7 +220,7 @@ labelFunc041E_03B7:
 	if (!Func0942(0xFFE4)) goto labelFunc041E_03EA;
 	Func094E(0xFFE4, "@是三個月前， Rocco 。@");
 	UI_show_npc_face0(0xFFE2, 0x0000);
-	message("「是的，她說得對……是三個月前。」");
+	message("「是的，她說得對…是三個月前。」");
 	say();
 labelFunc041E_03EA:
 	message("「我記得當時發生了一些醜聞。據說這個巴特林偷了某種古代的神器。他乘船逃走了——也許 Hawk 船長能告訴你更多。」");
@@ -265,7 +265,7 @@ labelFunc041E_0480:
 	UI_show_npc_face0(0xFFE2, 0x0000);
 labelFunc041E_04AF:
 	case "沒別的了", "換個話題" attend labelFunc041E_04C2:
-	message("「我很抱歉沒能幫上更多忙……」");
+	message("「我很抱歉沒能幫上更多忙…」");
 	say();
 	UI_pop_answers();
 labelFunc041E_04C2:
@@ -303,7 +303,7 @@ labelFunc041E_0551:
 labelFunc041E_0558:
 	case "Torrissio" attend labelFunc041E_056B:
 	UI_remove_answer("Torrissio");
-	message("「Torrissio 被稱為狡猾是有充分理由的。他總是偷偷摸摸地和別人的妻子約會。而且他非常喜歡傷害別人，但又從不至於引起議會的注意…… Torrissio 不是個好人。」");
+	message("「Torrissio 被稱為狡猾是有充分理由的。他總是偷偷摸摸地和別人的妻子約會。而且他非常喜歡傷害別人，但又從不至於引起議會的注意… Torrissio 不是個好人。」");
 	say();
 labelFunc041E_056B:
 	case "Petra" attend labelFunc041E_057E:
@@ -378,7 +378,7 @@ labelFunc041E_06C0:
 	say();
 	if (!Func0942(0xFFE4)) goto labelFunc041E_06F9;
 	UI_show_npc_face1(0xFFE4, 0x0000);
-	message("「對我來說聽起來很危險……」");
+	message("「對我來說聽起來很危險…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -402,7 +402,7 @@ labelFunc041E_0734:
 labelFunc041E_073B:
 	case "死亡騎士" attend labelFunc041E_0778:
 	UI_remove_answer("死亡騎士");
-	message("「我希望你不要在這裡重複那個詞。就像 Petra 說的，沒必要自找麻煩……」");
+	message("「我希望你不要在這裡重複那個詞。就像 Petra 說的，沒必要自找麻煩…」");
 	say();
 	if (!Func0942(0xFFE4)) goto labelFunc041E_0774;
 	UI_show_npc_face1(0xFFE4, 0x0000);
@@ -418,7 +418,7 @@ labelFunc041E_0774:
 labelFunc041E_0778:
 	case "拖鞋" attend labelFunc041E_07CE:
 	UI_remove_answer("拖鞋");
-	message("「那不是我會穿的東西，而且 Petra 金屬的腳從來不會冷……至少她感覺不到冷。」");
+	message("「那不是我會穿的東西，而且 Petra 金屬的腳從來不會冷…至少她感覺不到冷。」");
 	say();
 	if (!Func0942(0xFFE4)) goto labelFunc041E_07C7;
 	UI_show_npc_face1(0xFFE4, 0x0000);

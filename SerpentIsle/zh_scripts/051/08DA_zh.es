@@ -96,7 +96,7 @@ labelFunc08DA_0168:
 labelFunc08DA_0192:
 	if (!(var0002 == 0x00A1)) goto labelFunc08DA_0270;
 	Func097F(0xFE9C, "@有動作了。@", 0x0002);
-	Func097F(0xFF58, "@希望不是什麼壞事……@", 0x0012);
+	Func097F(0xFF58, "@希望不是什麼壞事…@", 0x0012);
 	UI_play_sound_effect(0x0058);
 	if (!(UI_get_item_frame(item) == 0x0000)) goto labelFunc08DA_01D2;
 	UI_set_item_frame(item, 0x0001);
@@ -135,7 +135,7 @@ labelFunc08DA_0296:
 	Func0924(item, 0xFE99);
 labelFunc08DA_029D:
 	if (!((var0002 == 0x0047) || ((var0002 == 0x0048) || (var0002 == 0x0049)))) goto labelFunc08DA_02CF;
-	var0001 = ("@卡住了……@" & "@我根本拉不動！@");
+	var0001 = ("@卡住了…@" & "@我根本拉不動！@");
 	Func094F(0xFE9C, var0001);
 	var0001 = false;
 	abort;

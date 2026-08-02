@@ -70,7 +70,7 @@ labelFunc040E_012A:
 	UI_show_npc_face0(0xFFF2, 0x0000);
 labelFunc040E_0134:
 	if (!(!gflags[0x00DB])) goto labelFunc040E_014C;
-	message("「抱歉，閣下怕是認錯人了。你絕不可能是在與我說話……因我乃是法師，而你，不過是個凡夫俗子。」");
+	message("「抱歉，閣下怕是認錯人了。你絕不可能是在與我說話…因我乃是法師，而你，不過是個凡夫俗子。」");
 	say();
 	Func097F(0xFFF2, "@真是不敢相信！@", 0x0000);
 	abort;
@@ -101,7 +101,7 @@ labelFunc040E_01AE:
 	message("「我叫 Columna 。是一名女巫，Melino 的妻子，我也是月影城裡最令人渴望的絕世美女。」");
 	say();
 	if (!gflags[0x00FD]) goto labelFunc040E_01CE;
-	message("「這難道不是個可笑的笑話嗎？！我，一個衰老的醜婆娘？！月影城裡最令人渴望的絕世美女？！曾經，在我的時代……在我的時代……」");
+	message("「這難道不是個可笑的笑話嗎？！我，一個衰老的醜婆娘？！月影城裡最令人渴望的絕世美女？！曾經，在我的時代…在我的時代…」");
 	say();
 labelFunc040E_01CE:
 	UI_add_answer(["女巫", "Melino", "美女"]);
@@ -253,7 +253,7 @@ labelFunc040E_03F9:
 labelFunc040E_0422:
 	case "告辭" attend labelFunc040E_044C:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@我得走了……@", 0x0000);
+	Func097F(0xFE9C, "@我得走了…@", 0x0000);
 	Func097F(0xFFF2, "@告辭！@", 0x0002);
 	Func08FF();
 	goto labelFunc040E_044F;

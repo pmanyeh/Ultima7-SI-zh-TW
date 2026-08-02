@@ -75,7 +75,7 @@ labelFunc043D_013C:
 	var000A = "@小心！@";
 labelFunc043D_014C:
 	if (!(var0009 == 0x0006)) goto labelFunc043D_015C;
-	var000A = "@現在不要看……@";
+	var000A = "@現在不要看…@";
 labelFunc043D_015C:
 	var000B = Func0992(0x0001, var000A, 0x0000, true);
 	UI_set_schedule_type(0xFFC3, 0x0009);
@@ -148,7 +148,7 @@ labelFunc043D_024C:
 labelFunc043D_02A0:
 	case "風暴" attend labelFunc043D_02E8:
 	UI_remove_answer("風暴");
-	message("「相當具有破壞性……它們已經讓我們的捕魚船隊全毀了。」");
+	message("「相當具有破壞性…它們已經讓我們的捕魚船隊全毀了。」");
 	say();
 	if (!(gflags[0x0170] && (gflags[0x0172] && (!gflags[0x016E])))) goto labelFunc043D_02C9;
 	message("「要是這些可怕的風暴能結束就好了！」");
@@ -218,7 +218,7 @@ labelFunc043D_0395:
 labelFunc043D_03B9:
 	case "受傷" attend labelFunc043D_03CC:
 	UI_remove_answer("受傷");
-	message("「Joth 的船在風暴中擱淺了……當他的傷勢使他無法重返大海時， Yelinda 夫人非常仁慈地為他提供了議會的一個席位。」");
+	message("「Joth 的船在風暴中擱淺了…當他的傷勢使他無法重返大海時， Yelinda 夫人非常仁慈地為他提供了議會的一個席位。」");
 	say();
 labelFunc043D_03CC:
 	case "不安全" attend labelFunc043D_03EA:
@@ -386,7 +386,7 @@ labelFunc043D_05F7:
 labelFunc043D_060A:
 	case "接見" attend labelFunc043D_061D:
 	UI_remove_answer("接見");
-	message("「Yelinda 夫人每天早上都會接見訪客和請願。讓我看看……她下週某個時候可以接見你。」 *「也許如果我為你求情，你可能會更早被接見。我會看看能安排什麼。」*");
+	message("「Yelinda 夫人每天早上都會接見訪客和請願。讓我看看…她下週某個時候可以接見你。」 *「也許如果我為你求情，你可能會更早被接見。我會看看能安排什麼。」*");
 	say();
 labelFunc043D_061D:
 	case "兌換貨幣" attend labelFunc043D_0628:

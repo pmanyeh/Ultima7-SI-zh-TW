@@ -56,7 +56,7 @@ labelFunc06CE_0099:
 	Func09AD(var0008);
 	goto labelFunc06CE_0099;
 labelFunc06CE_00CA:
-	Func097F(0xFE9C, "@哎呀……@", 0x0005);
+	Func097F(0xFE9C, "@哎呀…@", 0x0005);
 labelFunc06CE_00D6:
 	if (!(var0000 == 0x0001)) goto labelFunc06CE_019C;
 	var0009 = UI_find_nearby(item, 0x03D1, 0x0014, 0x0000);

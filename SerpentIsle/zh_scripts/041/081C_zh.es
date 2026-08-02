@@ -56,11 +56,11 @@ labelFunc081C_00D9:
 	if (!(var000F == 0x0001)) goto labelFunc081C_0117;
 	message("「你真是個精明的殺價高手，");
 	message(var0002);
-	message("。這件事可別告訴任何人……大家對我的評價已經夠低了！」");
+	message("。這件事可別告訴任何人…大家對我的評價已經夠低了！」");
 	say();
 labelFunc081C_0117:
 	if (!(var000F == 0x0002)) goto labelFunc081C_0125;
-	message("「你真有講價的眼光……」");
+	message("「你真有講價的眼光…」");
 	say();
 labelFunc081C_0125:
 	if (!(var000F == 0x0003)) goto labelFunc081C_0133;
@@ -81,14 +81,14 @@ labelFunc081C_0168:
 	if (!(var000F == 0x0003)) goto labelFunc081C_017C;
 	message("「你真該去當個店主的，");
 	message(var0002);
-	message("……」");
+	message("…」");
 	say();
 labelFunc081C_017C:
 	goto labelFunc081C_0204;
 labelFunc081C_017F:
 	if (!(var0003 < (var0001 + ((var0000 - var0001) / 0x0002)))) goto labelFunc081C_01CE;
 	if (!(var000F == 0x0001)) goto labelFunc081C_01A3;
-	message("「很公平的交易……」");
+	message("「很公平的交易…」");
 	say();
 labelFunc081C_01A3:
 	if (!(var000F == 0x0002)) goto labelFunc081C_01B7;
@@ -139,7 +139,7 @@ labelFunc081C_0239:
 	say();
 labelFunc081C_0247:
 	if (!(var000F == 0x0002)) goto labelFunc081C_0255;
-	message("「我們講好的協議呢？我原本還挺看好你的……」");
+	message("「我們講好的協議呢？我原本還挺看好你的…」");
 	say();
 labelFunc081C_0255:
 	if (!(var000F == 0x0003)) goto labelFunc081C_0263;
@@ -182,7 +182,7 @@ labelFunc081C_02FE:
 	if (!(var000F == 0x0001)) goto labelFunc081C_031C;
 	message("「");
 	message(var0003);
-	message(" 枚法拉利幣聽起來如何？你真會討價還價……」");
+	message(" 枚法拉利幣聽起來如何？你真會討價還價…」");
 	say();
 labelFunc081C_031C:
 	if (!(var000F == 0x0002)) goto labelFunc081C_0330;
@@ -201,11 +201,11 @@ labelFunc081C_0344:
 	if (!(var000F == 0x0001)) goto labelFunc081C_0362;
 	message("「你會考慮 ");
 	message(var0003);
-	message(" 枚法拉利幣嗎？我的存貨實在有限……」");
+	message(" 枚法拉利幣嗎？我的存貨實在有限…」");
 	say();
 labelFunc081C_0362:
 	if (!(var000F == 0x0002)) goto labelFunc081C_0376;
-	message("「我不確定……你能給 ");
+	message("「我不確定…你能給 ");
 	message(var0003);
 	message(" 枚法拉利幣嗎？」");
 	say();

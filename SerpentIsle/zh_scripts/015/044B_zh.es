@@ -78,7 +78,7 @@ labelFunc044B_007E:
 	UI_show_npc_face0(0xFFB5, 0x0000);
 	message("「但我不明白。你怎麼能在騎士考驗中活下來？我們在那個地方佈置了陷阱，絕對是致命的！」");
 	say();
-	message("「我不想這麼做的。她誘惑我試圖殺死你！但即使現在，我也不能背叛她……」");
+	message("「我不想這麼做的。她誘惑我試圖殺死你！但即使現在，我也不能背叛她…」");
 	say();
 labelFunc044B_00B1:
 	UI_clear_item_flag(0xFFB5, 0x001D);
@@ -98,7 +98,7 @@ labelFunc044B_0109:
 	if (!gflags[0x004A]) goto labelFunc044B_0142;
 	message("「但我不明白。你怎麼能在騎士考驗中活下來？我們在那個地方佈置了陷阱，絕對是致命的！」");
 	say();
-	message("「我不想這麼做的。她誘惑我試圖殺死你！但即使現在，我也不能背叛她……」");
+	message("「我不想這麼做的。她誘惑我試圖殺死你！但即使現在，我也不能背叛她…」");
 	say();
 	Func09AD(0xFFB5);
 	UI_set_item_flag(0xFFB5, 0x001D);
@@ -112,7 +112,7 @@ labelFunc044B_0142:
 	say();
 	goto labelFunc044B_016E;
 labelFunc044B_015C:
-	message("「我的名字是 Shmed 。我是蒙利多城的騎士，為你服務……」");
+	message("「我的名字是 Shmed 。我是蒙利多城的騎士，為你服務…」");
 	say();
 	UI_set_item_flag(0xFFB5, 0x001C);
 	var0004 = false;
@@ -174,7 +174,7 @@ labelFunc044B_022C:
 	UI_remove_npc_face0();
 	UI_remove_npc_face1();
 	UI_item_say(0xFE9C, "@再會。@");
-	Func097F(0xFFB5, "@到時見……@", 0x0002);
+	Func097F(0xFFB5, "@到時見…@", 0x0002);
 	abort;
 labelFunc044B_02AE:
 	UI_show_npc_face0(0xFFB5, 0x0000);
@@ -278,8 +278,8 @@ labelFunc044B_0539:
 	var0015 = UI_add_cont_items(0xFE9C, 0x0001, 0x0293, 0xFE99, 0x0000, false);
 	var0015 = UI_add_cont_items(0xFE9C, 0x0001, 0x0239, 0xFE99, 0x0000, false);
 	UI_si_path_run_usecode(0xFFB5, [0x0339, 0x08D7, 0x0000], 0x0007, 0xFE9C, 0x0739, true);
-	Func097F(0xFFB5, "@跟著我……@", 0x0002);
-	Func097F(0xFE9C, "@帶路吧……@", 0x0005);
+	Func097F(0xFFB5, "@跟著我…@", 0x0002);
+	Func097F(0xFE9C, "@帶路吧…@", 0x0005);
 	UI_set_item_flag(0xFE9C, 0x0010);
 	UI_end_conversation();
 	abort;
@@ -318,7 +318,7 @@ labelFunc044B_0619:
 	if (!(UI_get_item_quality(var0020) == 0x0048)) goto labelFunc044B_0655;
 	if (!(Func0906(var0020) == 0x0002)) goto labelFunc044B_0655;
 	Func0907(var0020, 0x0000);
-	Func094F(item, ["你走吧……", "你可以開始了。"]);
+	Func094F(item, ["你走吧…", "你可以開始了。"]);
 labelFunc044B_0655:
 	goto labelFunc044B_0619;
 labelFunc044B_0658:

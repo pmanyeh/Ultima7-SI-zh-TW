@@ -53,7 +53,7 @@ labelFunc0850_00BD:
 	say();
 labelFunc0850_00F5:
 	if (!(var000D == 0x0002)) goto labelFunc0850_0103;
-	message("「答應你真讓我心痛……但除此之外我還能怎麼辦呢？」");
+	message("「答應你真讓我心痛…但除此之外我還能怎麼辦呢？」");
 	say();
 labelFunc0850_0103:
 	if (!(var000D == 0x0003)) goto labelFunc0850_0111;
@@ -85,11 +85,11 @@ labelFunc0850_0157:
 	say();
 labelFunc0850_0181:
 	if (!(var000D == 0x0002)) goto labelFunc0850_018F;
-	message("「金額適中。還不錯……」");
+	message("「金額適中。還不錯…」");
 	say();
 labelFunc0850_018F:
 	if (!(var000D == 0x0003)) goto labelFunc0850_019D;
-	message("「出售法術根本就沒什麼利潤……」");
+	message("「出售法術根本就沒什麼利潤…」");
 	say();
 labelFunc0850_019D:
 	goto labelFunc0850_01CA;
@@ -142,7 +142,7 @@ labelFunc0850_023B:
 labelFunc0850_0244:
 	message("「");
 	message(var0002);
-	message(" 是我的最終底線。我從幽靈身上能賺到的利潤都比這多……」");
+	message(" 是我的最終底線。我從幽靈身上能賺到的利潤都比這多…」");
 	say();
 labelFunc0850_024E:
 	goto labelFunc0850_036F;
@@ -151,7 +151,7 @@ labelFunc0850_0251:
 	if (!(var000D == 0x0001)) goto labelFunc0850_026F;
 	message("「");
 	message(var0002);
-	message(" 聽起來如何？我挺喜歡你的……」");
+	message(" 聽起來如何？我挺喜歡你的…」");
 	say();
 labelFunc0850_026F:
 	if (!(var000D == 0x0002)) goto labelFunc0850_0283;
@@ -168,13 +168,13 @@ labelFunc0850_0283:
 labelFunc0850_0297:
 	if (!(var000A == 0x0003)) goto labelFunc0850_02DD;
 	if (!(var000D == 0x0001)) goto labelFunc0850_02B5;
-	message("「嗯……或許 ");
+	message("「嗯…或許 ");
 	message(var0002);
 	message(" 嗎？」");
 	say();
 labelFunc0850_02B5:
 	if (!(var000D == 0x0002)) goto labelFunc0850_02C9;
-	message("「我必須考慮一下…… ");
+	message("「我必須考慮一下… ");
 	message(var0002);
 	message(" 怎麼樣？」");
 	say();
@@ -182,7 +182,7 @@ labelFunc0850_02C9:
 	if (!(var000D == 0x0003)) goto labelFunc0850_02DD;
 	message("「對 ");
 	message(var0002);
-	message(" 你怎麼說？我總得有能力購買魔法材料( Reagents )啊……」");
+	message(" 你怎麼說？我總得有能力購買魔法材料( Reagents )啊…」");
 	say();
 labelFunc0850_02DD:
 	if (!(var000A == 0x0004)) goto labelFunc0850_0323;
@@ -207,7 +207,7 @@ labelFunc0850_0323:
 	if (!(var000A == 0x0005)) goto labelFunc0850_036F;
 	var0002 = var000C;
 	if (!(var000D == 0x0001)) goto labelFunc0850_0347;
-	message("「你一定是不想要這個法術……維持我先前的出價，");
+	message("「你一定是不想要這個法術…維持我先前的出價，");
 	message(var0002);
 	message("。」");
 	say();

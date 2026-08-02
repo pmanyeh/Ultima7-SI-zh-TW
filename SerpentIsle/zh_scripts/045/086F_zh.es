@@ -54,9 +54,9 @@ labelFunc086F_0170:
 labelFunc086F_0176:
 	if (!(var0001 == false)) goto labelFunc086F_01AE;
 	if (!Func0942(0xFFF1)) goto labelFunc086F_01A6;
-	message("「喔，我們賣各式各樣的東西。斗篷、劍……」");
+	message("「喔，我們賣各式各樣的東西。斗篷、劍…」");
 	say();
-	Func094E(0xFFF1, "@還有鏟子……@");
+	Func094E(0xFFF1, "@還有鏟子…@");
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	message("「是的，主人，還有鏟子。水壺和其他容器。布料和一些武器。我們也賣烘焙食品。」");
@@ -102,7 +102,7 @@ labelFunc086F_024A:
 	var0011 = (var000C + "，這個價格可以接受嗎？");
 labelFunc086F_025E:
 	if (!(var000D == 0x0002)) goto labelFunc086F_027F;
-	message("「這個嘛，我們的斗篷並不花梢，但很保暖。」*「如果你想要一件，費用是 ");
+	message("「這個嘛，我們的斗篷並不花梢，但很保暖。」* 「如果你想要一件，費用是 ");
 	message(var000E);
 	message(" 吉爾得幣。」");
 	say();
@@ -113,7 +113,7 @@ labelFunc086F_025E:
 	var0012 = "件斗篷";
 labelFunc086F_027F:
 	if (!(var000D == 0x0003)) goto labelFunc086F_02A3;
-	message("「喔，我們賣鐵匠魔導人偶打造的劍。它們非常經久耐用……*「");
+	message("「喔，我們賣鐵匠魔導人偶打造的劍。它們非常經久耐用…*「");
 	message(var000E);
 	message(" 吉爾得幣我就能賣你一把我們精良的劍。」");
 	say();
@@ -135,7 +135,7 @@ labelFunc086F_02A3:
 	var0012 = "把鏟子";
 labelFunc086F_02C7:
 	if (!(var000D == 0x0005)) goto labelFunc086F_02EB;
-	message("「我們賣的火把浸過瀝青，所以能燃燒很長時間。」*「一支火把我可以賣你 ");
+	message("「我們賣的火把浸過瀝青，所以能燃燒很長時間。」* 「一支火把我可以賣你 ");
 	message(var000E);
 	message(" 吉爾得幣。」");
 	say();
@@ -281,7 +281,7 @@ labelFunc086F_04E4:
 	say();
 	goto labelFunc086F_0525;
 labelFunc086F_0521:
-	message("「你沒有足夠的吉爾得幣來購買這個……」");
+	message("「你沒有足夠的吉爾得幣來購買這個…」");
 	say();
 labelFunc086F_0525:
 	if (!(0x001F < (UI_get_npc_id(0xFFE0) + 0x0006))) goto labelFunc086F_0544;

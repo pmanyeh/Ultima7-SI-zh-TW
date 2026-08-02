@@ -122,7 +122,7 @@ labelFunc0720_0389:
 	UI_play_sound_effect(0x0074);
 	Func097F(var0017, "@喲喔！@", var0014);
 	var0014 = (var0014 + 0x0007);
-	Func097F(0xFE9C, "@那是錯的……@", 0x0014);
+	Func097F(0xFE9C, "@那是錯的…@", 0x0014);
 	goto labelFunc0720_0389;
 labelFunc0720_03D7:
 	abort;

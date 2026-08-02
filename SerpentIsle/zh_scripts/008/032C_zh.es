@@ -55,7 +55,7 @@ labelFunc032C_0103:
 	if (!((event == 0x0002) && (gflags[0x0007] == false))) goto labelFunc032C_0274;
 	var0007 = UI_get_item_frame(item);
 	if (!(var0007 == 0x0000)) goto labelFunc032C_0135;
-	var0006 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@……呃嗯……@"]);
+	var0006 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x52, "@…呃嗯…@"]);
 labelFunc032C_0135:
 	if (!(var0007 == 0x0001)) goto labelFunc032C_023A;
 	var0008 = 0x0000;

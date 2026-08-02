@@ -128,7 +128,7 @@ labelFunc01C3_02E4:
 	var0003 = UI_delayed_execute_usecode_array(0xFFBC, [(byte)0x23, (byte)0x55, 0x01C3], 0x000A);
 	Func097F(0xFFB9, "@我會讓他開口的！@", 0x0002);
 	gflags[0x004E] = true;
-	Func097F(0xFFB3, "@這實在不像話……@", 0x0000);
+	Func097F(0xFFB3, "@這實在不像話…@", 0x0000);
 	Func097F(0xFFB6, "@住手！@", 0x0002);
 	Func097F(0xFFBC, "@別管我！@", 0x0000);
 	abort;
@@ -190,7 +190,7 @@ labelFunc01C3_04DB:
 	Func097F(0xFFB9, "@可惡的奸細！@", 0x0000);
 	Func097F(0xFFBA, "@我們該怎麼辦？@", 0x0005);
 	var0003 = UI_execute_usecode_array(0xFFB1, [(byte)0x23, (byte)0x6C, (byte)0x6B]);
-	var0003 = UI_execute_usecode_array(0xFFB3, [(byte)0x23, (byte)0x27, 0x000F, (byte)0x6C, (byte)0x61, (byte)0x52, "@好了，好了……@", (byte)0x27, 0x0006, (byte)0x55, 0x01C3]);
+	var0003 = UI_execute_usecode_array(0xFFB3, [(byte)0x23, (byte)0x27, 0x000F, (byte)0x6C, (byte)0x61, (byte)0x52, "@好了，好了…@", (byte)0x27, 0x0006, (byte)0x55, 0x01C3]);
 	abort;
 labelFunc01C3_05BE:
 	if (!(UI_get_npc_id(0xFFBB) == 0x0007)) goto labelFunc01C3_07FF;
@@ -224,7 +224,7 @@ labelFunc01C3_0627:
 labelFunc01C3_0659:
 	case "爆炸陷阱" attend labelFunc01C3_069B:
 	UI_remove_answer("爆炸陷阱");
-	message("「但那些很容易閃過的……」");
+	message("「但那些很容易閃過的…」");
 	say();
 	UI_show_npc_face1(0xFFC1, 0x0000);
 	message("「也許你走得太慢了。如果你磨蹭，爆炸就會追上你。」");
@@ -275,7 +275,7 @@ labelFunc01C3_073B:
 	if (!(var0005 == 0x0000)) goto labelFunc01C3_0762;
 	message("「很高興見到一位不愛吹噓的騎士。 Luther ，你應該向這位多學學。」");
 	say();
-	Func097F(0xFFB9, "@我很懷疑……@", 0x0000);
+	Func097F(0xFFB9, "@我很懷疑…@", 0x0000);
 	goto labelFunc01C3_078F;
 labelFunc01C3_0762:
 	if (!(var0005 < 0x0003)) goto labelFunc01C3_077F;
@@ -306,11 +306,11 @@ labelFunc01C3_07FF:
 	message("「現在讓我們開席吧，並在用餐之際，歡迎這位新騎士加入我們的行列。」");
 	say();
 	UI_end_conversation();
-	var0003 = UI_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x52, "@開席了……@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x6B, (byte)0x27, 0x0010, (byte)0x55, 0x01C3]);
+	var0003 = UI_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x52, "@開席了…@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x6B, (byte)0x27, 0x0010, (byte)0x55, 0x01C3]);
 	Func097F(0xFFB9, "@快點， Lucilla ！@", 0x0004);
-	Func097F(0xFFBF, "@這把刀太鈍了……@", 0x0008);
+	Func097F(0xFFBF, "@這把刀太鈍了…@", 0x0008);
 	UI_set_item_flag(0xFFBF, 0x001C);
-	Func097F(0xFFB0, (("@" + var0001) + "……@"), 0x0010);
+	Func097F(0xFFB0, (("@" + var0001) + "…@"), 0x0010);
 	UI_play_music(0x0022, Func09A0(0x0005, 0x0001));
 	abort;
 labelFunc01C3_089F:
@@ -373,7 +373,7 @@ labelFunc01C3_09F4:
 	Func097F(0xFFB9, "@說得對！說得好！@", 0x0000);
 	var0003 = UI_execute_usecode_array(0xFFC1, [(byte)0x23, (byte)0x6C, (byte)0x6B]);
 	var0003 = UI_delayed_execute_usecode_array(0xFF6A, [(byte)0x23, (byte)0x6C, (byte)0x61], 0x000A);
-	var0003 = UI_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x27, 0x0006, (byte)0x59, 0x0006, (byte)0x52, "@野狼指揮部……@", (byte)0x27, 0x000A, (byte)0x55, 0x01C3]);
+	var0003 = UI_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x27, 0x0006, (byte)0x59, 0x0006, (byte)0x52, "@野狼指揮部…@", (byte)0x27, 0x000A, (byte)0x55, 0x01C3]);
 	abort;
 labelFunc01C3_0A9D:
 	if (!(UI_get_npc_id(0xFFBB) == 0x0002)) goto labelFunc01C3_0B0D;
@@ -387,7 +387,7 @@ labelFunc01C3_0A9D:
 	message("「為了向你致敬，蒙利多城( Monitor )所有指揮部都派遣了代表出席你的騎士授封晚宴。」");
 	say();
 	UI_end_conversation();
-	var0003 = UI_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x59, 0x0002, (byte)0x52, "@巨熊指揮部……@"]);
+	var0003 = UI_execute_usecode_array(0xFFBB, [(byte)0x23, (byte)0x59, 0x0002, (byte)0x52, "@巨熊指揮部…@"]);
 	var0003 = UI_delayed_execute_usecode_array(0xFFC1, [(byte)0x23, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0004, (byte)0x55, 0x01C3], 0x0004);
 	abort;
 labelFunc01C3_0B0D:
@@ -518,7 +518,7 @@ labelFunc01C3_0EE2:
 	goto labelFunc01C3_0EC0;
 labelFunc01C3_0EE5:
 	Func097F(0xFFBB, "@都回家去！@", 0x0000);
-	Func097F(0xFFB6, "@下次再見……@", 0x0004);
+	Func097F(0xFFB6, "@下次再見…@", 0x0004);
 	Func097F(0xFFB9, "@懦夫！@", 0x0008);
 	Func097F(0xFFC1, "@我還沒吃飽！@", 0x000A);
 	gflags[0x0048] = true;
@@ -550,7 +550,7 @@ labelFunc01C3_0FF1:
 	if (!(event == 0x000E)) goto labelFunc01C3_11FC;
 	if (!((item == UI_get_npc_object(0xFFBF)) && (UI_get_npc_id(0xFFBB) == 0x0008))) goto labelFunc01C3_1026;
 	UI_set_schedule_type(0xFFBF, 0x000F);
-	UI_item_say(0xFFBF, "@可憐的 Cantra ……@");
+	UI_item_say(0xFFBF, "@可憐的 Cantra …@");
 	abort;
 labelFunc01C3_1026:
 	if (!((item == UI_get_npc_object(0xFFB6)) && (UI_get_npc_id(0xFFBB) == 0x000C))) goto labelFunc01C3_108E;
@@ -567,10 +567,10 @@ labelFunc01C3_108E:
 	message("「別管他了， Luther 。」");
 	say();
 	UI_show_npc_face1(0xFFB9, 0x0000);
-	message("「女人，你最好別插手……」");
+	message("「女人，你最好別插手…」");
 	say();
 	UI_end_conversation();
-	Func097F(0xFF6A, "@不行， Shazzana ……@", 0x0004);
+	Func097F(0xFF6A, "@不行， Shazzana …@", 0x0004);
 	Func097F(0xFFB6, "@沒有人可以命令我做什麼！@", 0x0002);
 	UI_si_path_run_usecode(0xFFB6, [0x041C, 0x0A81, 0x0000], 0x000D, UI_get_npc_object(0xFFB6), 0x01C3, false);
 	UI_set_path_failure(0x01C3, UI_get_npc_object(0xFFB6), 0x000E);
@@ -599,7 +599,7 @@ labelFunc01C3_11FC:
 	if (!(event == 0x000D)) goto labelFunc01C3_1675;
 	if (!((item == UI_get_npc_object(0xFFBF)) && (UI_get_npc_id(0xFFBB) == 0x0008))) goto labelFunc01C3_1253;
 	UI_set_schedule_type(0xFFBF, 0x000F);
-	var0003 = UI_execute_usecode_array(0xFFBF, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x27, 0x0002, (byte)0x59, 0x0006, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x6D, (byte)0x52, "@別哭……@"]);
+	var0003 = UI_execute_usecode_array(0xFFBF, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x27, 0x0002, (byte)0x59, 0x0006, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x6D, (byte)0x52, "@別哭…@"]);
 	abort;
 labelFunc01C3_1253:
 	if (!((item == UI_get_npc_object(0xFFB6)) && (UI_get_npc_id(0xFFBB) == 0x000C))) goto labelFunc01C3_12BB;
@@ -616,10 +616,10 @@ labelFunc01C3_12BB:
 	message("「別管他了， Luther 。」");
 	say();
 	UI_show_npc_face1(0xFFB9, 0x0000);
-	message("「女人，你最好別插手……」");
+	message("「女人，你最好別插手…」");
 	say();
 	UI_end_conversation();
-	Func097F(0xFF6A, "@不行， Shazzana ……@", 0x0004);
+	Func097F(0xFF6A, "@不行， Shazzana …@", 0x0004);
 	Func097F(0xFFB6, "@沒有人可以命令我做什麼！@", 0x0002);
 	UI_si_path_run_usecode(0xFFB6, [0x041C, 0x0A81, 0x0000], 0x000D, UI_get_npc_object(0xFFB6), 0x01C3, false);
 	UI_set_path_failure(0x01C3, UI_get_npc_object(0xFFB6), 0x000E);
@@ -646,7 +646,7 @@ labelFunc01C3_134C:
 	say();
 	UI_end_conversation();
 	var0003 = UI_execute_usecode_array(0xFFBD, [(byte)0x23, (byte)0x52, "@我的女兒！@", (byte)0x6C, (byte)0x6D, (byte)0x27, 0x0007, (byte)0x52, "@唔！@", (byte)0x27, 0x0007, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x52, "@我們必須找到她！@", (byte)0x6C, (byte)0x6D, (byte)0x6E]);
-	var0003 = UI_delayed_execute_usecode_array(0xFFB1, [(byte)0x23, (byte)0x52, "@Marsten 領主大人……@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0004, (byte)0x55, 0x01C3], 0x0014);
+	var0003 = UI_delayed_execute_usecode_array(0xFFB1, [(byte)0x23, (byte)0x52, "@Marsten 領主大人…@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0004, (byte)0x55, 0x01C3], 0x0014);
 	Func097F(0xFFC1, "@殺掉哥布林！@", 0x0005);
 	Func097F(0xFFBF, "@可憐的孩子！@", 0x0002);
 	UI_si_path_run_usecode(0xFFBF, [0x0422, 0x0A73, 0x0000], 0x000D, UI_get_npc_object(0xFFBF), 0x01C3, false);
@@ -659,7 +659,7 @@ labelFunc01C3_145D:
 	abort;
 labelFunc01C3_1480:
 	if (!((item == UI_get_npc_object(0xFFBC)) && (UI_get_npc_id(0xFFBB) == 0x0002))) goto labelFunc01C3_14C0;
-	var0003 = UI_execute_usecode_array(0xFFBC, [(byte)0x23, (byte)0x52, "@對不起，我來晚了……@", (byte)0x59, 0x0002, (byte)0x6C, (byte)0x6B]);
+	var0003 = UI_execute_usecode_array(0xFFBC, [(byte)0x23, (byte)0x52, "@對不起，我來晚了…@", (byte)0x59, 0x0002, (byte)0x6C, (byte)0x6B]);
 	UI_set_schedule_type(0xFFBC, 0x000F);
 	abort;
 labelFunc01C3_14C0:
@@ -673,9 +673,9 @@ labelFunc01C3_14C0:
 labelFunc01C3_1546:
 	if (!((UI_get_npc_id(0xFFBB) == 0x0000) && ((UI_get_item_shape(item) == 0x01B0) || (UI_get_item_shape(item) == 0x010E)))) goto labelFunc01C3_1675;
 	UI_set_npc_id(0xFFBB, 0x0001);
-	Func097F(0xFE9C, "@看！大家都到了……@", 0x0003);
+	Func097F(0xFE9C, "@看！大家都到了…@", 0x0003);
 	Func097F(0xFFB0, "@Harnna 在哪裡？@", 0x0017);
-	Func097F(0xFFB3, "@我們的貴客到了……@", 0x0016);
+	Func097F(0xFFB3, "@我們的貴客到了…@", 0x0016);
 	var0003 = (UI_find_nearby(0xFE9C, 0x010E, 0x000A, 0x0000) & UI_find_nearby(0xFE9C, 0x01B0, 0x000A, 0x0000));
 	enum();
 labelFunc01C3_15BB:

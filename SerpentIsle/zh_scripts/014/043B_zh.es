@@ -51,7 +51,7 @@ void Func043B object#(0x43B) ()
 labelFunc043B_006A:
 	if (!((event == 0x0000) || (event == 0x000E))) goto labelFunc043B_008B;
 	UI_run_schedule(0xFFC5);
-	Func097F(0xFFC5, "@我必須工作……@", 0x0002);
+	Func097F(0xFFC5, "@我必須工作…@", 0x0002);
 labelFunc043B_008B:
 	if (!(event == 0x0001)) goto labelFunc043B_00B9;
 	UI_item_say(0xFE9C, "@打擾一下，朋友。@");
@@ -113,7 +113,7 @@ labelFunc043B_01F6:
 	abort;
 	goto labelFunc043B_03D4;
 labelFunc043B_020C:
-	message("「我一輩子都在尋找一個能忽視我的畸形並學著去愛我的女人。我總會找到方法向黛爾菲妮亞傾訴我的愛的……」");
+	message("「我一輩子都在尋找一個能忽視我的畸形並學著去愛我的女人。我總會找到方法向黛爾菲妮亞傾訴我的愛的…」");
 	say();
 	if (!(var0003 == true)) goto labelFunc043B_031C;
 	UI_show_npc_face1(0xFFFD, 0x0000);
@@ -123,7 +123,7 @@ labelFunc043B_020C:
 	say();
 	if (!(Func0955() == true)) goto labelFunc043B_02B4;
 	UI_set_conversation_slot(0x0000);
-	message("「也許終究還是有希望的……這是那捲軸。」");
+	message("「也許終究還是有希望的…這是那捲軸。」");
 	say();
 	var0008 = Func099B(0xFE9C, 0x0001, 0x031D, 0x0004, 0x0005, false, true);
 	message("「把這個交給草藥學家『黛爾菲妮亞( Delphynia )』。你可以在溫室裡找到她。」");
@@ -150,7 +150,7 @@ labelFunc043B_02B4:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「聖者( Avatar )！請原諒我……和這些當地人不同，我知道你是誰！」");
+	message("「聖者( Avatar )！請原諒我…和這些當地人不同，我知道你是誰！」");
 	say();
 	message("「我相信你的事情要緊急得多。」");
 	say();
@@ -169,18 +169,18 @@ labelFunc043B_0309:
 labelFunc043B_031C:
 	if (!(var0004 == true)) goto labelFunc043B_033D;
 	UI_show_npc_face1(0xFFFF, 0x0000);
-	message("「喝個一兩杯吧……你很快就會忘記她了。」");
+	message("「喝個一兩杯吧…你很快就會忘記她了。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc043B_033D:
 	if (!(var0005 == true)) goto labelFunc043B_0383;
 	UI_show_npc_face1(0xFFFE, 0x0000);
-	message("「喔，不……為什麼每個人都指望聖者( Avatar )來幫忙處理他們的感情生活？」");
+	message("「喔，不…為什麼每個人都指望聖者( Avatar )來幫忙處理他們的感情生活？」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「為什麼……我……」");
+	message("「為什麼…我…」");
 	say();
 	if (!(var0003 == true)) goto labelFunc043B_0383;
 	UI_show_npc_face1(0xFFFD, 0x0000);
@@ -255,7 +255,7 @@ labelFunc043B_04A8:
 	UI_remove_answer("發生了什麼事？");
 	message("「你庇護了什麼邪惡的同伴啊，");
 	message(var0000);
-	message("？吟遊詩人 Iolo 來到這裡，把幼鹿城( Fawn )變成了一場嘲弄……」");
+	message("？吟遊詩人 Iolo 來到這裡，把幼鹿城( Fawn )變成了一場嘲弄…」");
 	say();
 	UI_add_answer(["Iolo", "嘲弄"]);
 labelFunc043B_04CE:
@@ -265,7 +265,7 @@ labelFunc043B_04CE:
 	say();
 	message("「他做出了如此殘忍的行為，以至於我無法轉述，免得我的靈魂枯萎死去。」");
 	say();
-	message("「然而瘋子 Iolo 全程都在大笑……」");
+	message("「然而瘋子 Iolo 全程都在大笑…」");
 	say();
 labelFunc043B_04E9:
 	case "嘲弄" attend labelFunc043B_0504:
@@ -307,7 +307,7 @@ labelFunc043B_0567:
 	UI_add_answer(["Leon", "Palos", "Brunt", "Deadeye", "換個話題"]);
 labelFunc043B_0598:
 	case "換個話題" attend labelFunc043B_05A8:
-	message("「好吧……」");
+	message("「好吧…」");
 	say();
 	UI_pop_answers();
 labelFunc043B_05A8:
@@ -330,7 +330,7 @@ labelFunc043B_05CA:
 labelFunc043B_05E1:
 	case "Palos" attend labelFunc043B_05FF:
 	UI_remove_answer("Palos");
-	message("「我對他了解不多。大部分時間他都待在船艙下面，或者把自己包得緊緊的。我不認為他是人類……」");
+	message("「我對他了解不多。大部分時間他都待在船艙下面，或者把自己包得緊緊的。我不認為他是人類…」");
 	say();
 	message("「我告訴你，我們都非常慶幸他這麼強壯。」");
 	say();
@@ -344,7 +344,7 @@ labelFunc043B_05FF:
 	say();
 	message("「在一次風暴中，主桅杆被閃電擊中並倒塌了，卡住了操作船錨的絞盤。」");
 	say();
-	message("「如果沒有船錨，我們很快就會被狂風巨浪吞噬。但是 Palos 大步跨過甲板，把桅杆推到一邊，鬆開了絞盤……全靠他自己一個人。」");
+	message("「如果沒有船錨，我們很快就會被狂風巨浪吞噬。但是 Palos 大步跨過甲板，把桅杆推到一邊，鬆開了絞盤…全靠他自己一個人。」");
 	say();
 labelFunc043B_0620:
 	case "Brunt" attend labelFunc043B_0644:
@@ -411,7 +411,7 @@ labelFunc043B_06EF:
 	say();
 	message("「當那場風暴來襲時，我正幫一名跑去躲避風暴的船員開著門。」");
 	say();
-	message("「然後有一道刺眼的閃光和震耳欲聾的撞擊聲……當我的視線恢復時，Geof 不見了，一隻雞站在 Geof 剛剛站的地方，呆呆地看著我。」");
+	message("「然後有一道刺眼的閃光和震耳欲聾的撞擊聲…當我的視線恢復時，Geof 不見了，一隻雞站在 Geof 剛剛站的地方，呆呆地看著我。」");
 	say();
 	UI_remove_answer("把人變了");
 labelFunc043B_0710:
@@ -422,7 +422,7 @@ labelFunc043B_0710:
 	say();
 	message("「突然之間，一場風暴襲來，Olon 和我跳進一艘划艇下面躲避。」");
 	say();
-	message("「我們看到剛剛出海的船被閃電擊中，然後它就……消失了！再也找不到它或船員的任何蹤跡。」");
+	message("「我們看到剛剛出海的船被閃電擊中，然後它就…消失了！再也找不到它或船員的任何蹤跡。」");
 	say();
 	UI_remove_answer("船消失了");
 labelFunc043B_072F:
@@ -447,9 +447,9 @@ labelFunc043B_076C:
 	case "黛爾菲妮亞" attend labelFunc043B_07D8:
 	UI_remove_answer("黛爾菲妮亞");
 	if (!gflags[0x0004]) goto labelFunc043B_0790;
-	message("「我發現她可憐的屍體被丟棄在街上，她的內臟……被扭曲……被扯了出來……」");
+	message("「我發現她可憐的屍體被丟棄在街上，她的內臟…被扭曲…被扯了出來…」");
 	say();
-	message("「她早就死了……」");
+	message("「她早就死了…」");
 	say();
 	message("「我把她的屍體帶到了現在的地方。我不能把我的愛人留在外面，讓老鼠啃食。」");
 	say();
@@ -477,7 +477,7 @@ labelFunc043B_07B9:
 	say();
 	goto labelFunc043B_07D8;
 labelFunc043B_07D0:
-	message("「你已經見過她了……對我來說，黛爾菲妮亞是整個幼鹿城( Fawn )最美麗的女人。」");
+	message("「你已經見過她了…對我來說，黛爾菲妮亞是整個幼鹿城( Fawn )最美麗的女人。」");
 	say();
 	message("「她也是一位出色的草藥學家和治療師。我跟著巴特林進城採購補給品時遇見了她。」");
 	say();
@@ -573,7 +573,7 @@ labelFunc043B_08F3:
 	UI_remove_npc_face0();
 	Func097F(0xFE9C, "@再見，Ruggs。@", 0x0000);
 	if (!gflags[0x0004]) goto labelFunc043B_092B;
-	var0008 = ("" & ("@我真可悲……@" & "@我的愛人被殺了！@"));
+	var0008 = ("" & ("@我真可悲…@" & "@我的愛人被殺了！@"));
 	Func094F(0xFFC5, var0008);
 	goto labelFunc043B_0937;
 labelFunc043B_092B:

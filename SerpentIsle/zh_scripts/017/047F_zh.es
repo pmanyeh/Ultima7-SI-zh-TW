@@ -31,7 +31,7 @@ labelFunc047F_0090:
 labelFunc047F_00BD:
 	if (!(event == 0x000A)) goto labelFunc047F_0109;
 	UI_show_npc_face0(0xFF81, 0x0000);
-	message("「聖者！如果不阻止巴特林那個惡魔，他會毀滅我們所有人的！」*「這將會是我們的末日！他企圖打開那道被詛咒的光明之牆( Wall of Lights )！」*「快跟我來！我會直接帶你去找他。」");
+	message("「聖者！如果不阻止巴特林那個惡魔，他會毀滅我們所有人的！」* 「這將會是我們的末日！他企圖打開那道被詛咒的光之牆( Wall of Lights )！」* 「快跟我來！我會直接帶你去找他。」");
 	say();
 	UI_remove_npc_face1();
 	gflags[0x0007] = true;

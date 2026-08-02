@@ -96,7 +96,7 @@ labelFunc086B_0131:
 	goto labelFunc086B_017E;
 	goto labelFunc086B_0164;
 labelFunc086B_0156:
-	message("「啊，這種毒我可以解。稍等……*好，好了。你再次痊癒了。」");
+	message("「啊，這種毒我可以解。稍等…*好，好了。你再次痊癒了。」");
 	say();
 	UI_clear_item_flag(0xFE9C, 0x0008);
 labelFunc086B_0164:

@@ -48,7 +48,7 @@ labelFunc028C_00CC:
 labelFunc028C_0109:
 	if (!(UI_get_npc_id(0xFFB8) == 0x0002)) goto labelFunc028C_0165;
 	UI_set_npc_id(0xFFB8, 0x0003);
-	var0005 = UI_execute_usecode_array(0xFFB8, [(byte)0x23, (byte)0x52, "@你做得不錯……@", (byte)0x66, (byte)0x65, (byte)0x67, (byte)0x01, (byte)0x58, 0x003E, (byte)0x6A, (byte)0x27, 0x000C, (byte)0x6F, (byte)0x52, "@哎呀！@", (byte)0x66, (byte)0x67, (byte)0x6A, (byte)0x01, (byte)0x58, 0x001B, (byte)0x6F, (byte)0x55, 0x028C]);
+	var0005 = UI_execute_usecode_array(0xFFB8, [(byte)0x23, (byte)0x52, "@你做得不錯…@", (byte)0x66, (byte)0x65, (byte)0x67, (byte)0x01, (byte)0x58, 0x003E, (byte)0x6A, (byte)0x27, 0x000C, (byte)0x6F, (byte)0x52, "@哎呀！@", (byte)0x66, (byte)0x67, (byte)0x6A, (byte)0x01, (byte)0x58, 0x001B, (byte)0x6F, (byte)0x55, 0x028C]);
 	abort;
 labelFunc028C_0165:
 	if (!(UI_get_npc_id(0xFFB8) == 0x0001)) goto labelFunc028C_01C2;
@@ -60,7 +60,7 @@ labelFunc028C_01C2:
 	if (!(UI_get_npc_id(0xFFB8) == 0x0000)) goto labelFunc028C_0240;
 	UI_set_schedule_type(0xFE9C, 0x000F);
 	UI_set_npc_id(0xFFB8, 0x0001);
-	Func097F(0xFFB8, "@現在開始……@", 0x0000);
+	Func097F(0xFFB8, "@現在開始…@", 0x0000);
 	var0004 = UI_get_object_position(var0003);
 	var0004[0x0002] = (var0004[0x0002] + 0x0001);
 	UI_si_path_run_usecode(0xFFB8, var0004, 0x0002, item, 0x028C, false);
@@ -70,7 +70,7 @@ labelFunc028C_01C2:
 labelFunc028C_0240:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFB8, 0x0000);
-	message("「用布料擦去血跡……」");
+	message("「用布料擦去血跡…」");
 	say();
 	enum();
 labelFunc028C_0253:

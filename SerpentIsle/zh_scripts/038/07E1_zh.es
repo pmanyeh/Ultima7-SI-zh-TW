@@ -26,7 +26,7 @@ labelFunc07E1_001B:
 	UI_set_schedule_type(0xFF64, 0x000F);
 	var0002 = UI_get_npc_prop(0xFF64, 0x0003);
 	Func0982(0xFF64, (var0002 - 0x0001));
-	Func097F(0xFF64, "@zzzzzz……@", 0x0002);
+	Func097F(0xFF64, "@zzzzzz…@", 0x0002);
 	if (!UI_npc_nearby(0xFF63)) goto labelFunc07E1_00A4;
 	Func09AD(0xFF63);
 	Func097F(0xFF63, "@遵命，主人！@", 0x0002);

@@ -22,7 +22,7 @@ void Func04D7 object#(0x4D7) ()
 	var0002 = Func0953();
 	var0003 = UI_get_item_flag(0xFF29, 0x001C);
 	if (!(event == 0x0001)) goto labelFunc04D7_004E;
-	UI_item_say(0xFE9C, "最受尊敬的人……");
+	UI_item_say(0xFE9C, "最受尊敬的人…");
 	0xFF29->Func07D1();
 	Func097F(0xFF29, "@什麼事？@", 0x0002);
 	UI_set_schedule_type(0xFF29, 0x0003);
@@ -38,15 +38,15 @@ labelFunc04D7_004E:
 	goto labelFunc04D7_00A3;
 labelFunc04D7_0083:
 	UI_set_item_flag(0xFF29, 0x001C);
-	message("「讓鐘聲響起……因為 Xenka 歸來了！！！」");
+	message("「讓鐘聲響起…因為 Xenka 歸來了！！！」");
 	say();
 	message("「所以， ");
 	message(var0002);
-	message(" ，你就是那個帶給我所有痛苦的人……」");
+	message(" ，你就是那個帶給我所有痛苦的人…」");
 	say();
-	message("「還有你們，我那些木頭腦袋的武僧！這就是你們服務我的幻象的方式嗎？！你們甚至連記錄話語都記不對！」");
+	message("「還有你們，我那些木頭腦袋的僧侶！這就是你們服務我的幻象的方式嗎？！你們甚至連記錄話語都記不對！」");
 	say();
-	message("「我就知道你會需要我來收拾這些武僧在我的預言裡搞出的爛攤子。」");
+	message("「我就知道你會需要我來收拾這些僧侶在我的預言裡搞出的爛攤子。」");
 	say();
 labelFunc04D7_00A3:
 	UI_add_answer(["歸來", "悲傷", "收拾爛攤子"]);
@@ -73,7 +73,7 @@ labelFunc04D7_011A:
 	UI_add_answer("最終任務");
 labelFunc04D7_0127:
 	if (!Func08FC()) goto labelFunc04D7_013C;
-	message("「噢！你的一位朋友不幸去世了。這不該發生……」");
+	message("「噢！你的一位朋友不幸去世了。這不該發生…」");
 	say();
 	message("「如果你準備好再次見到你的朋友，只要開口，我就會把他們帶回你身邊。」");
 	say();
@@ -88,9 +88,9 @@ labelFunc04D7_0146:
 labelFunc04D7_015B:
 	case "歸來" attend labelFunc04D7_0182:
 	UI_remove_answer("歸來");
-	message("「我知道如果我不承諾歸來，這些懶散的武僧就會偏離我給他們設定的任務。」");
+	message("「我知道如果我不承諾歸來，這些懶散的僧侶就會偏離我給他們設定的任務。」");
 	say();
-	message("「事實上，他們差點給我們所有人帶來災難……包括你，來自異世界的英雄。」");
+	message("「事實上，他們差點給我們所有人帶來災難…包括你，來自異世界的英雄。」");
 	say();
 	UI_remove_answer(["任務", "災難", "英雄"]);
 labelFunc04D7_0182:
@@ -145,9 +145,9 @@ labelFunc04D7_021F:
 labelFunc04D7_0243:
 	case "虛空" attend labelFunc04D7_025A:
 	UI_remove_answer("虛空");
-	message("「我無法解釋我是如何到達那裡的，甚至無法解釋那裡並非空無一物……」");
+	message("「我無法解釋我是如何到達那裡的，甚至無法解釋那裡並非空無一物…」");
 	say();
-	message("「你無法理解它的。因為它包容了無數的世界，並從每個世界的生命力量中汲取能量。這真是……太神奇了！」");
+	message("「你無法理解它的。因為它包容了無數的世界，並從每個世界的生命力量中汲取能量。這真是…太神奇了！」");
 	say();
 labelFunc04D7_025A:
 	case "力量" attend labelFunc04D7_0271:
@@ -163,7 +163,7 @@ labelFunc04D7_0271:
 	say();
 	message("「當這些幻象降臨到我身上時，我可憐的丈夫把我帶到了月影城( Moonshade )的偉大法師面前。而那些聰明人卻把我打發走，說：『她瘋了。』」");
 	say();
-	message("「我的丈夫、我的孩子……甚至我子孫的子孫都早已化為塵土。而我卻還活著，淪為我從未渴求過的幻象的奴隸！」");
+	message("「我的丈夫、我的孩子…甚至我子孫的子孫都早已化為塵土。而我卻還活著，淪為我從未渴求過的幻象的奴隸！」");
 	say();
 	UI_add_answer(["月影城法師", "幻象"]);
 labelFunc04D7_0299:
@@ -179,21 +179,21 @@ labelFunc04D7_0299:
 labelFunc04D7_02BB:
 	case "誠實的人" attend labelFunc04D7_02D2:
 	UI_remove_answer("誠實的人");
-	message("「你肯定知道我說的是誰……因為他就是派你來這裡面對命運的統治者。」");
+	message("「你肯定知道我說的是誰…因為他就是派你來這裡面對命運的統治者。」");
 	say();
-	message("「你的不列顛王( Lord British )要求那些自稱為法師的惡棍們保持誠實。當這讓他們感到不適時，他們就逃到了可以安安靜靜欺騙人們的地方！」");
+	message("「你的不列顛王要求那些自稱為法師的惡棍們保持誠實。當這讓他們感到不適時，他們就逃到了可以安安靜靜欺騙人們的地方！」");
 	say();
 labelFunc04D7_02D2:
 	case "幻象" attend labelFunc04D7_02E9:
 	UI_remove_answer("幻象");
-	message("「起初那些只是噩夢……直到我害怕閉上眼睛。然後我看到的死亡和毀滅跟隨著我醒著的每一步。」");
+	message("「起初那些只是噩夢…直到我害怕閉上眼睛。然後我看到的死亡和毀滅跟隨著我醒著的每一步。」");
 	say();
 	message("「我村裡的人命令我丈夫把我趕出去，因為他們害怕我的瘋狂會蔓延。所以我來到這個島上，以擺脫那些低語與注視。」");
 	say();
 labelFunc04D7_02E9:
 	case "收拾爛攤子" attend labelFunc04D7_0300:
 	UI_remove_answer("收拾爛攤子");
-	message("「我看得出來你不知道該如何前進，偉大的英雄……這就是我為什麼在這裡的原因。」");
+	message("「我看得出來你不知道該如何前進，偉大的英雄…這就是我為什麼在這裡的原因。」");
 	say();
 	message("「如果你不知道該如何進行，就回到這裡來。我會為你提供一些小小的指引。」");
 	say();
@@ -201,13 +201,13 @@ labelFunc04D7_0300:
 	case "指示" attend labelFunc04D7_033E:
 	UI_remove_answer("指示");
 	if (!(!gflags[0x024C])) goto labelFunc04D7_033A;
-	message("「帶上這顆巨蛇之牙( Serpent's Tooth )……你必須去地穴之島( Isle of Crypts )尋找死者。」");
+	message("「帶上這顆巨蛇之牙…你必須去地穴之島( Isle of Crypts )尋找死者。」");
 	say();
 	var0004 = Func099B(0xFE9C, 0x0001, 0x022F, 0xFE99, 0x0006, 0x0000, true);
 	gflags[0x024C] = true;
 	goto labelFunc04D7_033E;
 labelFunc04D7_033A:
-	message("「使用我給你的那顆牙齒！去地穴之島( Isle of Crypts )尋找死者。」");
+	message("「使用我給你的那顆牙齒！去地穴之島尋找死者。」");
 	say();
 labelFunc04D7_033E:
 	case "旅程" attend labelFunc04D7_036D:
@@ -217,7 +217,7 @@ labelFunc04D7_033E:
 	say();
 	goto labelFunc04D7_036D;
 labelFunc04D7_0369:
-	message("「你必須前往冰封荒原，與那些被視為野蠻人的人交談。他們擁有你所缺少的巨蛇之牙( Serpent Tooth )，那能推進你的任務。」");
+	message("「你必須前往冰封荒原，與那些被視為野蠻人的人交談。他們擁有你所缺少的巨蛇之牙，那能推進你的任務。」");
 	say();
 labelFunc04D7_036D:
 	case "巨蛇之杖" attend labelFunc04D7_0380:
@@ -232,7 +232,7 @@ labelFunc04D7_0380:
 	message(var0002);
 	message(" 。感到欣慰的是，他的骨灰將成為重新將我們破碎土地粘合在一起的膠水。」");
 	say();
-	message("「但我們必須快點……只剩下幾粒沙子了。時間正在流逝。帶上你朋友的骨灰， ");
+	message("「但我們必須快點…只剩下幾粒沙子了。時間正在流逝。帶上你朋友的骨灰， ");
 	message(var0002);
 	message(" ，因為那三者必須與你一同前往碎骨者( Skullcrusher )深處的混沌神殿。」");
 	say();
@@ -243,7 +243,7 @@ labelFunc04D7_03AC:
 	say();
 	goto labelFunc04D7_03CD;
 labelFunc04D7_03B9:
-	message("「正如我所擔心的，失衡已經變得太強大了……」");
+	message("「正如我所擔心的，失衡已經變得太強大了…」");
 	say();
 	message("「現在只有一個處於平衡之人的終極犧牲才能幫助你。為此，只有你的三位夥伴、 Gwenno 女士和你自己符合資格。」");
 	say();
@@ -259,7 +259,7 @@ labelFunc04D7_03CD:
 	message(var0002);
 	message(" ！」");
 	say();
-	message("「你的命運和我們的劫數，將在被稱為晨曦島( Sunrise Isle )的島嶼上揭曉。拿著這把巨蛇之劍( Serpent Sword )，這是我對你最後的幫助……我能做的就只有這些了。」");
+	message("「你的命運和我們的劫數，將在被稱為晨曦島( Sunrise Isle )的島嶼上揭曉。拿著這把巨蛇之劍( Serpent Sword )，這是我對你最後的幫助…我能做的就只有這些了。」");
 	say();
 	var0004 = Func099B(0xFE9C, 0x0001, 0x02C6, 0x0000, 0x0000, 0x0000, true);
 	gflags[0x0276] = true;

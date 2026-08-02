@@ -27,7 +27,7 @@ labelFunc049C_003A:
 	if (!(UI_get_random(0x000A) < 0x0007)) goto labelFunc049C_005D;
 	abort;
 labelFunc049C_005D:
-	var0002 = ["@離開！@", "@走你的路！@", "@不要偷東西……@", "@我就是命運。@", "@別理其他人。@", "@我在這裡是主人。@"];
+	var0002 = ["@離開！@", "@走你的路！@", "@不要偷東西…@", "@我就是命運。@", "@別理其他人。@", "@我在這裡是主人。@"];
 	Func097F(0xFF64, var0002[UI_get_random(UI_get_array_size(var0002))], 0x0000);
 labelFunc049C_008C:
 	if (!((event == 0x0007) && UI_get_item_flag(0xFF64, 0x001D))) goto labelFunc049C_00FE;
@@ -65,14 +65,14 @@ labelFunc049C_0164:
 	converse attend labelFunc049C_0329;
 	case "轉移話題" attend labelFunc049C_0177:
 	UI_pop_answers();
-	message("「但我們很快就會聽到最精彩的部分了……」");
+	message("「但我們很快就會聽到最精彩的部分了…」");
 	say();
 labelFunc049C_0177:
 	case "命運" attend labelFunc049C_01A2:
 	UI_remove_answer("命運");
 	message("「我生來就是個窮光蛋的兒子。我父親是個令人作嘔的乞丐，住在路邊的泥土裡。我討厭這樣的生活，就像我討厭他一樣。但他總告訴我一件事。他說總有一天我會成為一個富有而強大的人。我相信這就是我的命運。當我還是個小男孩的時候，我偷了他那幾乎空了的錢包，去尋找我的財富。」");
 	say();
-	message("「我只獲得了一半的遺產……雖然我已經擁有了力量！」");
+	message("「我只獲得了一半的遺產…雖然我已經擁有了力量！」");
 	say();
 	UI_push_answers();
 	UI_add_answer(["財富", "力量", "轉移話題"]);
@@ -95,7 +95,7 @@ labelFunc049C_01D8:
 labelFunc049C_01EB:
 	case "狩獵探險" attend labelFunc049C_020B:
 	UI_remove_answer("狩獵探險");
-	message("「在第一次重大發現後沒多久，我們計劃舉行一場盛宴來慶祝。我帶領一群獵人進入森林尋找獵物。我們遭到了一群兇猛的狼群襲擊。只有我活著回到了營地。就在那時，我發現了我的力量。但那次失敗的探險是個不祥之兆。很快，我的人就分裂了，我們的團隊陷入了叛亂。」");
+	message("「在第一次重大發現後沒多久，我們計劃舉行一場盛宴來慶祝。我帶領一群獵人進入森林尋找獵物。我們遭到了一群兇猛的狼群襲擊。只有我活著回到了營地。就在那時，我發現了我的力量。但那次失敗的探險是個不祥之兆。很快地…我的人就分裂了，我們的團隊陷入了叛亂。」");
 	say();
 	UI_add_answer(["分裂", "叛亂"]);
 labelFunc049C_020B:
@@ -105,7 +105,7 @@ labelFunc049C_020B:
 	say();
 	message("「他是一個性格極其軟弱的人。他建議我們身無分文地回家，連一件財寶都不帶！就因為少數婦女和兒童在荒野中度過了一段艱難的時光。」");
 	say();
-	message("「嗯，這一切都過去了，死人是無能為力的。而且我們有財寶……」");
+	message("「嗯，這一切都過去了，死人是無能為力的。而且我們有財寶…」");
 	say();
 labelFunc049C_0226:
 	case "叛亂" attend labelFunc049C_0241:
@@ -114,12 +114,12 @@ labelFunc049C_0226:
 	say();
 	message("「在這之後，大多數人都選擇離開。那我該怎麼辦？我給了他們應得的黃金份額，並帶著我的祝福送他們回船上。」");
 	say();
-	message("「他們由那個懦夫 Falcon 帶領。他們離開後，我再也沒見過他們。啊，算了……」");
+	message("「他們由那個懦夫 Falcon 帶領。他們離開後，我再也沒見過他們。啊，算了…」");
 	say();
 labelFunc049C_0241:
 	case "力量" attend labelFunc049C_0263:
 	UI_remove_answer("力量");
-	message("「我不需要拿我如何得知這種力量的細節來煩你。只要知道我不會死就夠了。」");
+	message("「別管我如何得知這種力量，只要知道我不會死就夠了。」");
 	say();
 	message("「你最好把這當作一個警告。別想偷我的黃金，否則丟掉性命的會是你。我不會死，因為我注定會變得富有。」");
 	say();
@@ -152,7 +152,7 @@ labelFunc049C_0299:
 labelFunc049C_02C9:
 	var0003 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0002), [(byte)0x23, (byte)0x55, 0x049E], 0x012C);
 	var0003 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0003), [(byte)0x23, (byte)0x55, 0x049D], 0x00C8);
-	Func097F(0xFE9C, "@有意思……@", 0x0000);
+	Func097F(0xFE9C, "@有意思…@", 0x0000);
 	Func097F(0xFF64, "@別再回來！@", 0x0003);
 	UI_set_schedule_type(0xFF64, 0x0007);
 	abort;

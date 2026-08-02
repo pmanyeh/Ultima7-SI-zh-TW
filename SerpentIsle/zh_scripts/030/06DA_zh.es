@@ -37,11 +37,11 @@ labelFunc06DA_0088:
 	Func097F(var0002, "@我們迷路了，聖者。@", 0x0020);
 labelFunc06DA_00C4:
 	if (!(var0000 == 0x0004)) goto labelFunc06DA_00DA;
-	Func097F(0xFE9C, "@我不喜歡這個地方……@", 0x0000);
+	Func097F(0xFE9C, "@我不喜歡這個地方…@", 0x0000);
 labelFunc06DA_00DA:
 	if (!(var0000 == 0x0005)) goto labelFunc06DA_0100;
-	var0003 = "巴特林一定在開啟光明之牆( Wall of Lights )！";
-	var0004 = "快點！巴特林一定在開啟光明之牆( Wall of Lights )！";
+	var0003 = "巴特林一定在開啟光之牆( Wall of Lights )！";
+	var0004 = "快點！巴特林一定在開啟光之牆( Wall of Lights )！";
 	var0002 = Func0992(0x0001, var0004, var0003, false);
 labelFunc06DA_0100:
 	return;

@@ -30,7 +30,7 @@ labelFunc049E_00AC:
 	UI_clear_item_say(0xFF62);
 	0xFF62->Func07D1();
 	if (!UI_npc_nearby(0xFF64)) goto labelFunc049E_010B;
-	Func097F(0xFF62, "@我們不能說話……@", 0x0003);
+	Func097F(0xFF62, "@我們不能說話…@", 0x0003);
 	UI_set_schedule_type(0xFF64, 0x0009);
 	UI_clear_item_say(0xFF64);
 	Func097F(0xFF64, "@走開！@", 0x0005);

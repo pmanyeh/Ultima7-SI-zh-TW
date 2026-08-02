@@ -229,7 +229,7 @@ labelFunc0866_0405:
 	say();
 	goto labelFunc0866_0446;
 labelFunc0866_0442:
-	message("「你沒有足夠的蒙里他利幣來購買這個……」");
+	message("「你沒有足夠的蒙里他利幣來購買這個…」");
 	say();
 labelFunc0866_0446:
 	if (!(0x001F < (UI_get_npc_id(0xFFB2) + 0x0006))) goto labelFunc0866_0465;

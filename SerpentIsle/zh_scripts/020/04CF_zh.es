@@ -110,7 +110,7 @@ labelFunc04CF_00D0:
 	say();
 	message("「Xenka 的預言說到英雄將會恢復平衡之樹。但即使是 Xenka 本人也說不出要去哪裡尋找這樣一棵樹的種子。");
 	say();
-	message("「當森林之主( Forest Master )最初進入我們的世界時，我們以為或許他就是來自異世界之英雄。但後來我們得知，他所擁有的種子在穿越虛空( Void )時被扭曲了。它永遠長不出來……」");
+	message("「當森林之主( Forest Master )最初進入我們的世界時，我們以為或許他就是來自異世界之英雄。但後來我們得知，他所擁有的種子在穿越虛空( Void )時被扭曲了。它永遠長不出來…」");
 	say();
 	message("「在 Miggim 找到平衡護身符( Amulet of Balance )之前，我們甚至沒有想過蛇神教徒( Ophidians )也知道關於平衡之樹的事情。");
 	say();
@@ -125,7 +125,7 @@ labelFunc04CF_011C:
 	if (!(UI_get_npc_id(0xFF31) != 0x0000)) goto labelFunc04CF_0133;
 	abort;
 labelFunc04CF_0133:
-	UI_item_say(0xFE9C, "@不好意思……@");
+	UI_item_say(0xFE9C, "@不好意思…@");
 	0xFF31->Func07D1();
 	Func097F(0xFF31, (("@什麼事，我的" + var0002) + "？@"), 0x0002);
 	UI_set_schedule_type(0xFF31, 0x0003);
@@ -283,7 +283,7 @@ labelFunc04CF_05D9:
 	UI_add_answer(["告辭"]);
 labelFunc04CF_05E3:
 	if (!Func08FC()) goto labelFunc04CF_05F8;
-	message("「噢！你的一位朋友遭遇了不幸。這不該發生的……」");
+	message("「噢！你的一位朋友遭遇了不幸。這不該發生的…」");
 	say();
 	message("「如果你準備好再次見到你的朋友，只要開口，我就會把他們還給你。」");
 	say();
@@ -293,7 +293,7 @@ labelFunc04CF_05F8:
 	UI_add_answer("混沌之禍( Bane of Chaos )");
 labelFunc04CF_060A:
 	if (!(!gflags[0x02FB])) goto labelFunc04CF_0625;
-	message("「以免我忘記……我們最近有了一項發現，我相信那會對你有幫助，我的");
+	message("「以免我忘記…我們最近有了一項發現，我相信那會對你有幫助，我的");
 	message(var0002);
 	message("。」");
 	say();
@@ -326,7 +326,7 @@ labelFunc04CF_0691:
 	if (!var0007) goto labelFunc04CF_06CC;
 	message("「我們正在搜尋所有的參考資料，以獲取關於你護身符的更多資訊，我的");
 	message(var0002);
-	message("。但到目前為止，除了我已經告訴你的之外，我們沒有發現任何新東西……");
+	message("。但到目前為止，除了我已經告訴你的之外，我們沒有發現任何新東西…");
 	say();
 	message("「它是用在巨蛇之門( Serpent gates )上的，但我們不知道它的作用。」");
 	say();
@@ -334,7 +334,7 @@ labelFunc04CF_0691:
 labelFunc04CF_06CC:
 	message("「如果你弄丟了護身符，我的");
 	message(var0002);
-	message("，我不知道該如何幫助你。據我們所知，護身符只有一個……也就是我給你的那個。");
+	message("，我不知道該如何幫助你。據我們所知，護身符只有一個…也就是我給你的那個。");
 	say();
 	message("「我很抱歉。你必須自己去尋找它。恐怕我幫不上忙。」");
 	say();
@@ -379,7 +379,7 @@ labelFunc04CF_0766:
 labelFunc04CF_077D:
 	case "虛空" attend labelFunc04CF_0794:
 	UI_remove_answer("虛空");
-	message("「你可以把虛空( Void )當作是束縛我們宇宙的框架。它是無法想像的力量之源……」");
+	message("「你可以把虛空( Void )當作是束縛我們宇宙的框架。它是無法想像的力量之源…」");
 	say();
 	message("「這力量你可以自由汲取，只要你透過長時間的冥想，鍛造出通往其中的通道。」");
 	say();
@@ -443,7 +443,7 @@ labelFunc04CF_086A:
 	UI_remove_answer("Xenka");
 	message("「Xenka 是個脾氣暴躁的農婦，她把自己的幻象當成讓別人替她工作的手段。」");
 	say();
-	message("「然而，儘管她有人性的弱點，她的幻象卻是真實的……即便她不在這裡，但你確實來了。」");
+	message("「然而，儘管她有人性的弱點，她的幻象卻是真實的…即便她不在這裡，但你確實來了。」");
 	say();
 	UI_add_answer("她不在");
 labelFunc04CF_0888:
@@ -528,7 +528,7 @@ labelFunc04CF_09A8:
 	UI_remove_answer("干涉");
 	message("「所有僧侶一致認定，來自異世界之英雄( Hero from Another World )出現的時機已到。」");
 	say();
-	message("「我們也決定不採取任何直接行動，以任何方式影響這位英雄……」");
+	message("「我們也決定不採取任何直接行動，以任何方式影響這位英雄…」");
 	say();
 	message("「Thoxa 越權了，她把命運沙漏( Hourglass of Fate )交給了你。」");
 	say();
@@ -601,7 +601,7 @@ labelFunc04CF_0A95:
 	UI_remove_answer("秘密");
 	message("「一切都明朗了！」");
 	say();
-	message("「蛇神教徒的所有信仰都建立在六大美德之上。而這些美德失衡的後果是非常可怕的……」");
+	message("「蛇神教徒的所有信仰都建立在六大美德之上。而這些美德失衡的後果是非常可怕的…」");
 	say();
 	message("「事實上，聽起來它們甚至能毀滅世界！」");
 	say();
@@ -626,9 +626,9 @@ labelFunc04CF_0B15:
 labelFunc04CF_0B19:
 	case "後果" attend labelFunc04CF_0B3B:
 	UI_remove_answer("後果");
-	message("「最終世界將會自我毀滅……就像現在發生的事情一樣。」");
+	message("「最終世界將會自我毀滅…就像現在發生的事情一樣。」");
 	say();
-	message("「在一個人身上，就像你的朋友 Gwenno，缺乏紀律( Discipline )就會產生放縱( Wantonness )……這很像她現在表現出來的行為。」");
+	message("「在一個人身上，就像你的朋友 Gwenno，缺乏紀律( Discipline )就會產生放縱( Wantonness )…這很像她現在表現出來的行為。」");
 	say();
 	message("「不過，似乎有治癒的方法。」");
 	say();
@@ -638,7 +638,7 @@ labelFunc04CF_0B3B:
 	UI_remove_answer("治癒");
 	message("「根據記載，你應該讓受害者喝下供奉那個人所缺乏之美德的神廟裡的水。」");
 	say();
-	message("「聽起來你應該從其中一座神廟帶些水來……我想 Miggim 有一本畫有那些古老神廟地圖的書。」");
+	message("「聽起來你應該從其中一座神廟帶些水來…我想 Miggim 有一本畫有那些古老神廟地圖的書。」");
 	say();
 	gflags[0x0269] = true;
 labelFunc04CF_0B56:

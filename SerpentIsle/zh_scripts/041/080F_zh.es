@@ -43,7 +43,7 @@ labelFunc080F_008C:
 	if (!(var0008 == 0x0002)) goto labelFunc080F_00AF;
 	message("「價格是 ");
 	message(var0009);
-	message(" 枚吉爾得幣……我的存貨非常有限。你接受嗎？」");
+	message(" 枚吉爾得幣…我的存貨非常有限。你接受嗎？」");
 	say();
 labelFunc080F_00AF:
 	if (!(var0008 == 0x0003)) goto labelFunc080F_00C3;
@@ -61,7 +61,7 @@ labelFunc080F_00E1:
 labelFunc080F_00E7:
 	goto labelFunc080F_00EE;
 labelFunc080F_00EA:
-	message("「這裡可不是月影城，囚犯。我的價格是固定的……要買就買，不買拉倒。」");
+	message("「這裡可不是月影城，囚犯。我的價格是固定的…要買就買，不買拉倒。」");
 	say();
 labelFunc080F_00EE:
 	if (!(var000B > 0x0000)) goto labelFunc080F_0156;

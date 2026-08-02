@@ -11,7 +11,7 @@ var Func08ED 0x8ED (var var0000)
 	if (!(var0000 == 0x0001)) goto labelFunc08ED_002C;
 	message("「");
 	message(var0001);
-	message("，我們在這裡全都是戰士。你沒必要用誇大的故事來試圖打動我們……」");
+	message("，我們在這裡全都是戰士。你沒必要用誇大的故事來試圖打動我們…」");
 	say();
 	message("「你在騎士考驗中還看到了什麼？」");
 	say();
@@ -31,12 +31,12 @@ labelFunc08ED_0052:
 labelFunc08ED_0056:
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「安靜點，Luther ——我覺得有古怪的事情發生。多跟我說說你還看到了什麼……」");
+	message("「安靜點，Luther ——我覺得有古怪的事情發生。多跟我說說你還看到了什麼…」");
 	say();
 	return var0000;
 labelFunc08ED_0069:
 	if (!(var0000 == 0x0003)) goto labelFunc08ED_0098;
-	message("「騎士們，你們有在聽嗎？我們的新戰士遇到了糟糕透頂的經歷……」");
+	message("「騎士們，你們有在聽嗎？我們的新戰士遇到了糟糕透頂的經歷…」");
 	say();
 	UI_show_npc_face1(0xFFB3, 0x0000);
 	message("「我相信凡事總有個合理的解釋。」");
@@ -48,7 +48,7 @@ labelFunc08ED_0069:
 	return var0000;
 labelFunc08ED_0098:
 	if (!(var0000 == 0x0004)) goto labelFunc08ED_00CD;
-	message("「事情一定有蹊蹺……」");
+	message("「事情一定有蹊蹺…」");
 	say();
 	UI_show_npc_face1(0xFFBB, 0x0000);
 	message("「我明天會找 Shmed 談談。如果這位騎士所言有一半屬實，那這個地牢看守人嚴重失職了。」");

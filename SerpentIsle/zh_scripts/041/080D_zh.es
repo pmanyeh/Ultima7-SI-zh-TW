@@ -79,7 +79,7 @@ labelFunc080D_015B:
 	say();
 labelFunc080D_0169:
 	if (!(var0010 == 0x0003)) goto labelFunc080D_017B;
-	message("「我覺得你說服我接受的價格太低了……」");
+	message("「我覺得你說服我接受的價格太低了…」");
 	say();
 	message("「但我不在乎。你有注意到最近的日落有多美嗎？」");
 	say();
@@ -116,7 +116,7 @@ labelFunc080D_01E7:
 	if (!(var0010 == 0x0002)) goto labelFunc080D_01FB;
 	message("「太棒了！整整 ");
 	message(var0004);
-	message(" 枚吉爾得幣……哎呀，老闆一定會為我做成這筆生意感到驕傲的！」");
+	message(" 枚吉爾得幣…哎呀，老闆一定會為我做成這筆生意感到驕傲的！」");
 	say();
 labelFunc080D_01FB:
 	if (!(var0010 == 0x0003)) goto labelFunc080D_0209;
@@ -205,7 +205,7 @@ labelFunc080D_0341:
 labelFunc080D_0355:
 	if (!(var000D == 0x0003)) goto labelFunc080D_039B;
 	if (!(var0010 == 0x0001)) goto labelFunc080D_0373;
-	message("「嗯……也許 ");
+	message("「嗯…也許 ");
 	message(var0004);
 	message(" 枚吉爾得幣？」");
 	say();

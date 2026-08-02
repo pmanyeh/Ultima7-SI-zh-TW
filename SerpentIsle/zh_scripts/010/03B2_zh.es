@@ -61,13 +61,13 @@ labelFunc03B2_00C5:
 labelFunc03B2_0107:
 	if (!(!var0008)) goto labelFunc03B2_0137;
 	if (!(!gflags[0x026F])) goto labelFunc03B2_0120;
-	message("「啊，新面孔！你是誰，陌生人，竟敢冒著生命危險來到巨蛇之牙(Serpent's Fang)？混沌的僕人？嗯……我想不是。」");
+	message("「啊，新面孔！你是誰，陌生人，竟敢冒著生命危險來到巨蛇之牙(Serpent's Fang)？混沌的僕人？嗯…我想不是。」");
 	say();
 	message("「我是 Surok ，巨蛇之牙的治療師，我看出你迷路了。也許我能幫你，如果你願意的話。」");
 	say();
 	goto labelFunc03B2_012C;
 labelFunc03B2_0120:
-	message("「巡邏隊能找到你真是你的運氣，陌生人！你當時昏迷不醒，身上多處傷口都在流血……啊，但我忘了禮貌！」");
+	message("「巡邏隊能找到你真是你的運氣，陌生人！你當時昏迷不醒，身上多處傷口都在流血…啊，但我忘了禮貌！」");
 	say();
 	message("「我是 Surok ，巨蛇之牙的治療師，是我治好了你的傷。」");
 	say();
@@ -89,7 +89,7 @@ labelFunc03B2_0145:
 labelFunc03B2_0153:
 	UI_add_answer(["治療", "資訊", "告辭"]);
 	if (!(UI_get_array_size(Func08FB()) > 0x0000)) goto labelFunc03B2_017C;
-	message("「啊，你的一個同伴被殺了。如果你願意，我有能力治癒你的朋友……」");
+	message("「啊，你的一個同伴被殺了。如果你願意，我有能力治癒你的朋友…」");
 	say();
 	UI_add_answer("復活");
 labelFunc03B2_017C:
@@ -168,7 +168,7 @@ labelFunc03B2_02CC:
 labelFunc03B2_02D3:
 	case "護手" attend labelFunc03B2_02F5:
 	UI_remove_answer("護手");
-	message("「嗯……這些很明顯被施了魔法，可以幫助你更快速地揮擊，但我從未見過這樣的東西。它們看起來確實像是秩序盔甲匠的作品，但上面卻縈繞著邪惡的臭味。你最好別太相信這雙手套，");
+	message("「嗯…這些很明顯被施了魔法，可以幫助你更快速地揮擊，但我從未見過這樣的東西。它們看起來確實像是秩序盔甲匠的作品，但上面卻縈繞著邪惡的臭味。你最好別太相信這雙手套，");
 	message(var0002);
 	message("！」");
 	say();
@@ -178,7 +178,7 @@ labelFunc03B2_02F5:
 	UI_remove_answer("斧頭");
 	message("「這真是一把奇妙的武器，");
 	message(var0002);
-	message("！你從哪裡得來的？我不知道它確切的作用是什麼，但我相信你能善用它……」");
+	message("！你從哪裡得來的？我不知道它確切的作用是什麼，但我相信你能善用它…」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_0317:
@@ -186,7 +186,7 @@ labelFunc03B2_0317:
 	UI_remove_answer("戒指");
 	message("「你冒了極大的風險才獲得這枚戒指，");
 	message(var0002);
-	message("。這正是沙爾之戒(Shal's ring)。我敢打賭你在惡魔巢穴(Fiend's Lair)裡對付了許多邪惡生物……但你知道這枚戒指真正的力量嗎？它能讓你施法而不需要法藥！你也許擁有了有史以來最強大的神器之一！」");
+	message("。這正是沙爾之戒(Shal's ring)。我敢打賭你在惡魔巢穴(Fiend's Lair)裡對付了許多邪惡生物…但你知道這枚戒指真正的力量嗎？它能讓你施法而不需要法藥！你也許擁有了有史以來最強大的神器之一！」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_0339:
@@ -194,7 +194,7 @@ labelFunc03B2_0339:
 	UI_remove_answer("洛瑞爾的禮物");
 	message("「哎呀，你戴著力量腰帶(Belt of Strength)！這是 Ardiniss 指揮官的妻子洛瑞爾(Loriel)多年前製作的。如果我沒記錯的話，她用巨人的頭髮編織了這條腰帶，並對它施了魔法。洛瑞爾是一位極具天賦的法師，但唉，她也是這場與混沌該死戰爭的受害者之一！既然你戴著她的手藝，你應該記住她，");
 	message(var0002);
-	message("……」");
+	message("…」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_035B:
@@ -240,7 +240,7 @@ labelFunc03B2_03D2:
 labelFunc03B2_03F4:
 	case "護衛" attend labelFunc03B2_0410:
 	UI_remove_answer("護衛");
-	message("「你在我們前哨站周圍看到的魔導人偶(Automatons)是我們的僕役。毫無疑問你已經知道它們充當護衛，但它們也提供其他服務。廚師、裁縫、鐵匠……所有這些瑣碎的工作都能由我們的金屬人來完成。」");
+	message("「你在我們前哨站周圍看到的魔導人偶(Automatons)是我們的僕役。毫無疑問你已經知道它們充當護衛，但它們也提供其他服務。廚師、裁縫、鐵匠…所有這些瑣碎的工作都能由我們的金屬人來完成。」");
 	say();
 	var000A = Func09AE(var000A);
 labelFunc03B2_0410:
@@ -272,7 +272,7 @@ labelFunc03B2_046A:
 labelFunc03B2_0486:
 	case "洛瑞爾的禮物" attend labelFunc03B2_04A8:
 	UI_remove_answer("洛瑞爾的禮物");
-	message("「你竟然戴著力量腰帶？！你怎麼得來的？這幾個月來大家都以為它遺失了。不……不，我不想知道，");
+	message("「你竟然戴著力量腰帶？！你怎麼得來的？這幾個月來大家都以為它遺失了。不…不，我不想知道，");
 	message(var0002);
 	message("，不過我不會向其他人展示這條腰帶。他們不會像我這樣善解人意，也許會要求你歸還它。」");
 	say();
@@ -281,7 +281,7 @@ labelFunc03B2_04A8:
 	case "沒什麼了" attend labelFunc03B2_04E4:
 	if (!(var0009 == 0x0001)) goto labelFunc03B2_04C5;
 	UI_pop_answers();
-	message("「如你所願……」");
+	message("「如你所願…」");
 	say();
 	goto labelFunc03B2_04E4;
 labelFunc03B2_04C5:

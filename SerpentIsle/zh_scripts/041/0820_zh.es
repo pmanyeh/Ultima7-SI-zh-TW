@@ -57,7 +57,7 @@ labelFunc0820_00E0:
 	if (!(var000D < 0x0002)) goto labelFunc0820_02B3;
 	if (!(var0004 < (var0001 + ((var0000 - var0001) / 0x0004)))) goto labelFunc0820_015F;
 	if (!(var0010 == 0x0001)) goto labelFunc0820_0118;
-	message("「別告訴 Argus ……他會以為他母親腦子糊塗了才會給出這種價格。」");
+	message("「別告訴 Argus …他會以為他母親腦子糊塗了才會給出這種價格。」");
 	say();
 labelFunc0820_0118:
 	if (!(var0010 == 0x0002)) goto labelFunc0820_012C;
@@ -101,7 +101,7 @@ labelFunc0820_01A8:
 	say();
 labelFunc0820_01CC:
 	if (!(var0010 == 0x0002)) goto labelFunc0820_01DA;
-	message("「遇到像你這樣的客人，我永遠別想賺錢了……」");
+	message("「遇到像你這樣的客人，我永遠別想賺錢了…」");
 	say();
 labelFunc0820_01DA:
 	if (!(var0010 == 0x0003)) goto labelFunc0820_01E8;
@@ -193,7 +193,7 @@ labelFunc0820_0321:
 	say();
 labelFunc0820_033F:
 	if (!(var0010 == 0x0002)) goto labelFunc0820_0353;
-	message("「你很適合當個旅店老闆……我們算同意以 ");
+	message("「你很適合當個旅店老闆…我們算同意以 ");
 	message(var0004);
 	message(" 枚金幣成交了嗎？」");
 	say();
@@ -201,24 +201,24 @@ labelFunc0820_0353:
 	if (!(var0010 == 0x0003)) goto labelFunc0820_0367;
 	message("「我的價格是 ");
 	message(var0004);
-	message("……算你特價。你接受嗎？」");
+	message("…算你特價。你接受嗎？」");
 	say();
 labelFunc0820_0367:
 	if (!(var000D == 0x0003)) goto labelFunc0820_03AD;
 	if (!(var0010 == 0x0001)) goto labelFunc0820_0385;
-	message("「現在時局艱難，貨源稀少……你能給 ");
+	message("「現在時局艱難，貨源稀少…你能給 ");
 	message(var0004);
 	message(" 嗎？」");
 	say();
 labelFunc0820_0385:
 	if (!(var0010 == 0x0002)) goto labelFunc0820_0399;
-	message("「我不知道……");
+	message("「我不知道…");
 	message(var0004);
 	message(" 怎樣？」");
 	say();
 labelFunc0820_0399:
 	if (!(var0010 == 0x0003)) goto labelFunc0820_03AD;
-	message("「我需要雇更多人手……也許 ");
+	message("「我需要雇更多人手…也許 ");
 	message(var0004);
 	message(" 呢？」");
 	say();

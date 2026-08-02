@@ -88,7 +88,7 @@ labelFunc083D_019C:
 	if (!(var000A == 0x0003)) goto labelFunc083D_01C0;
 	message("「火腿餐一套 ");
 	message(var000B);
-	message(" 法拉利幣。不算太貴……」");
+	message(" 法拉利幣。不算太貴…」");
 	say();
 	message("「");
 	message(var000E);

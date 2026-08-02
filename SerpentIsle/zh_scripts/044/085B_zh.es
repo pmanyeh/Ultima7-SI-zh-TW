@@ -54,11 +54,11 @@ labelFunc085B_00D9:
 	if (!(var000C < 0x0002)) goto labelFunc085B_0290;
 	if (!(var0003 < (var0001 + ((var0000 - var0001) / 0x0004)))) goto labelFunc085B_0130;
 	if (!(var000F == 0x0001)) goto labelFunc085B_0111;
-	message("「如果你告訴別人的話，我這輩子都抬不起頭了……」");
+	message("「如果你告訴別人的話，我這輩子都抬不起頭了…」");
 	say();
 labelFunc085B_0111:
 	if (!(var000F == 0x0002)) goto labelFunc085B_011F;
-	message("「很少遇到交易手腕像你這麼厲害的人……」");
+	message("「很少遇到交易手腕像你這麼厲害的人…」");
 	say();
 labelFunc085B_011F:
 	if (!(var000F == 0x0003)) goto labelFunc085B_012D;
@@ -77,7 +77,7 @@ labelFunc085B_0154:
 	say();
 labelFunc085B_0162:
 	if (!(var000F == 0x0003)) goto labelFunc085B_0170;
-	message("「我幾乎要懷疑你對我施了魅惑術……」");
+	message("「我幾乎要懷疑你對我施了魅惑術…」");
 	say();
 labelFunc085B_0170:
 	goto labelFunc085B_01FE;
@@ -104,7 +104,7 @@ labelFunc085B_01C5:
 	goto labelFunc085B_01FE;
 labelFunc085B_01C8:
 	if (!(var000F == 0x0001)) goto labelFunc085B_01D6;
-	message("「你是個很好的顧客……隨時歡迎再來！」");
+	message("「你是個很好的顧客…隨時歡迎再來！」");
 	say();
 labelFunc085B_01D6:
 	if (!(var000F == 0x0002)) goto labelFunc085B_01EA;
@@ -171,7 +171,7 @@ labelFunc085B_02D0:
 labelFunc085B_02D9:
 	message("「");
 	message(var0003);
-	message(" 吉爾得幣是我最後的開價。要就要，不要拉倒……」");
+	message(" 吉爾得幣是我最後的開價。要就要，不要拉倒…」");
 	say();
 	if (!(var000A < 0x001E)) goto labelFunc085B_02FB;
 	UI_set_npc_id(0xFFE3, (var000A + 0x0002));
@@ -180,7 +180,7 @@ labelFunc085B_02FB:
 labelFunc085B_02FE:
 	if (!(var000C == 0x0002)) goto labelFunc085B_0344;
 	if (!(var000F == 0x0001)) goto labelFunc085B_031C;
-	message("「其他的法師可沒像你這樣討價還價的…… ");
+	message("「其他的法師可沒像你這樣討價還價的… ");
 	message(var0003);
 	message(" 吉爾得幣聽起來如何？」");
 	say();
@@ -199,13 +199,13 @@ labelFunc085B_0330:
 labelFunc085B_0344:
 	if (!(var000C == 0x0003)) goto labelFunc085B_038A;
 	if (!(var000F == 0x0001)) goto labelFunc085B_0362;
-	message("「我現在能賣的東西那麼少……也許 ");
+	message("「我現在能賣的東西那麼少…也許 ");
 	message(var0003);
 	message(" 吉爾得幣？」");
 	say();
 labelFunc085B_0362:
 	if (!(var000F == 0x0002)) goto labelFunc085B_0376;
-	message("「讓我想想…… ");
+	message("「讓我想想… ");
 	message(var0003);
 	message(" 吉爾得幣？」");
 	say();
@@ -226,7 +226,7 @@ labelFunc085B_038A:
 	say();
 labelFunc085B_03AC:
 	if (!(var000F == 0x0002)) goto labelFunc085B_03C0;
-	message("「供求關係決定價格…… ");
+	message("「供求關係決定價格… ");
 	message(var0003);
 	message(" 吉爾得幣，一分也不能少。」");
 	say();

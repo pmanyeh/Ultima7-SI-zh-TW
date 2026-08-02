@@ -75,7 +75,7 @@ labelFunc041B_0157:
 	UI_item_say(0xFFE5, "@現在，不准咬我！@");
 labelFunc041B_016B:
 	if (!(var0009 == 0x0006)) goto labelFunc041B_0190;
-	var000A = ["@我很餓……@", "@嗯……@", "@我聞到烤魚的味道了嗎？@", "@Petra 是一位了不起的廚師……@"];
+	var000A = ["@我很餓…@", "@嗯…@", "@我聞到烤魚的味道了嗎？@", "@Petra 是一位了不起的廚師…@"];
 	Func094F(0xFFE5, var000A);
 labelFunc041B_0190:
 	goto labelFunc041B_020B;
@@ -111,12 +111,12 @@ labelFunc041B_020B:
 labelFunc041B_0251:
 	if (!gflags[0x00EF]) goto labelFunc041B_0281;
 	if (!Func097D(0xFE9B, 0x0001, 0x0179, 0xFE99, 0x000D)) goto labelFunc041B_027A;
-	message("「我聞到什麼味道……你有魚！你是帶給我的！噢，我太愛好魚了。」");
+	message("「我聞到什麼味道…你有魚！你是帶給我的！噢，我太愛好魚了。」");
 	say();
 	UI_add_answer("給魚");
 	goto labelFunc041B_027E;
 labelFunc041B_027A:
-	message("「噢，是我的朋友！你有帶東西給我嗎？沒有，我想也是……」");
+	message("「噢，是我的朋友！你有帶東西給我嗎？沒有，我想也是…」");
 	say();
 labelFunc041B_027E:
 	goto labelFunc041B_0285;
@@ -139,7 +139,7 @@ labelFunc041B_02D3:
 	converse attend labelFunc041B_06C4;
 	case "綁架" attend labelFunc041B_02F6:
 	UI_remove_answer("綁架");
-	message("「好吧，別那樣盯著我看。我是無辜的。他們從未判定我有任何罪行……」");
+	message("「好吧，別那樣盯著我看。我是無辜的。他們從未判定我有任何罪行…」");
 	say();
 	Func097F(0xFFE5, "@離我遠一點！@", 0x0000);
 	abort;
@@ -152,15 +152,15 @@ labelFunc041B_02F6:
 labelFunc041B_0316:
 	case "Mosh" attend labelFunc041B_0341:
 	UI_remove_answer("Mosh");
-	message("「是的， Mosh ……」");
+	message("「是的， Mosh …」");
 	say();
 	if (!gflags[0x00EF]) goto labelFunc041B_033D;
-	message("「……而我和綠衣女巫(Green Enchantress) Columna 命運相連！她就是我的親姊妹。」");
+	message("「…而我和綠衣女巫(Green Enchantress) Columna 命運相連！她就是我的親姊妹。」");
 	say();
 	UI_add_answer("姊妹");
 	goto labelFunc041B_0341;
 labelFunc041B_033D:
-	message("「要是你能相信我，我就能講個故事給你聽！事情已經過去了……雖然還沒忘記。我現在不想談這個。」");
+	message("「要是你能相信我，我就能講個故事給你聽！事情已經過去了…雖然還沒忘記。我現在不想談這個。」");
 	say();
 labelFunc041B_0341:
 	case "姊妹" attend labelFunc041B_0358:
@@ -214,7 +214,7 @@ labelFunc041B_03FF:
 	message("「Trulacci ，他那苦命的兒子現在正在自由山脈( Mountains of Freedom )深處受苦受難。」");
 	say();
 	if (!gflags[0x00EF]) goto labelFunc041B_0423;
-	message("「是 Columna 用她的魔法把他從我的愛中偷走。然而她從未愛過他……他對她來說只是一個玩具。」");
+	message("「是 Columna 用她的魔法把他從我的愛中偷走。然而她從未愛過他…他對她來說只是一個玩具。」");
 	say();
 	goto labelFunc041B_0431;
 labelFunc041B_0423:
@@ -302,11 +302,11 @@ labelFunc041B_0596:
 	UI_set_schedule_type(0xFFE5, 0x0014);
 	abort;
 labelFunc041B_05DD:
-	message("「你現在真的相信我了……啊，我看得出來你相信了。你真的可以說是我的一個朋友。」");
+	message("「你現在真的相信我了…啊，我看得出來你相信了。你真的可以說是我的一個朋友。」");
 	say();
 	gflags[0x00EF] = true;
 	if (!Func097D(0xFE9B, 0x0001, 0x0179, 0xFE99, 0x000D)) goto labelFunc041B_0608;
-	message("「我聞到什麼味道……你有魚！噢，我太愛好魚了。」");
+	message("「我聞到什麼味道…你有魚！噢，我太愛好魚了。」");
 	say();
 	UI_add_answer("給魚");
 	goto labelFunc041B_0610;

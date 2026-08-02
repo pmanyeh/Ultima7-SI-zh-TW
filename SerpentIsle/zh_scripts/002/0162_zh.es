@@ -21,7 +21,7 @@ labelFunc0162_0028:
 	UI_clear_item_say(item);
 	UI_set_schedule_type(item, 0x0000);
 	UI_show_npc_face0(0xFEF2, 0x0000);
-	message("「哦，勇敢的勇士來殺哥布林王？哈！我們先說說話……」");
+	message("「哦，勇敢的勇士來殺哥布林王？哈！我們先說說話…」");
 	say();
 	UI_add_answer(["姓名", "哥布林", "蒙利多頭盔", "Simon", "告辭"]);
 labelFunc0162_0087:
@@ -39,7 +39,7 @@ labelFunc0162_009D:
 labelFunc0162_00B7:
 	case "人類" attend labelFunc0162_00CA:
 	UI_remove_answer("人類");
-	message("「總有一天，我們要殺盡所有人類。今天就先殺你。哈！然後把你當晚餐吃掉！嗯……真美味！」");
+	message("「總有一天，我們要殺盡所有人類。今天就先殺你。哈！然後把你當晚餐吃掉！嗯…真美味！」");
 	say();
 labelFunc0162_00CA:
 	case "蒙利多頭盔" attend labelFunc0162_00DD:
@@ -86,7 +86,7 @@ labelFunc0162_0141:
 labelFunc0162_0142:
 	if (!((event == 0x0007) && UI_get_item_flag(item, 0x001E))) goto labelFunc0162_0170;
 	UI_clear_item_flag(item, 0x001D);
-	Func097F(item, "@你……殺了我……@", 0x0000);
+	Func097F(item, "@你…殺了我…@", 0x0000);
 	UI_reduce_health(item, 0x0037, 0x0000);
 labelFunc0162_0170:
 	return;

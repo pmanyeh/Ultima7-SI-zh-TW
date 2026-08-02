@@ -74,7 +74,7 @@ labelFunc02BE_0159:
 	UI_remove_answer("真名");
 	message("「那是一個你會覺得很難發音的聲音。我的名字是我們同類語言中的一個詞，粗略翻譯為『天際( Skyrise )』。」");
 	say();
-	message("「這在我們同類中是個很受歡迎的名字。但先不說這個了！我想感謝你的所作所為……」");
+	message("「這在我們同類中是個很受歡迎的名字。但先不說這個了！我想感謝你的所作所為…」");
 	say();
 	UI_add_answer(["天際", "不客氣"]);
 labelFunc02BE_017D:
@@ -101,7 +101,7 @@ labelFunc02BE_01B0:
 labelFunc02BE_01ED:
 	case "鳳凰" attend labelFunc02BE_020A:
 	UI_remove_answer("鳳凰");
-	message("「你以前從未見過這樣的生物……？如果你願意，我會告訴你我的故事。」");
+	message("「你以前從未見過這樣的生物…？如果你願意，我會告訴你我的故事。」");
 	say();
 	UI_add_answer(["故事"]);
 labelFunc02BE_020A:

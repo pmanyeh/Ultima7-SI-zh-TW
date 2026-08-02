@@ -36,7 +36,7 @@ labelFunc0830_00F7:
 	if (!(var0001 == 0x0002)) goto labelFunc0830_010B;
 	message("「那種事當然可以等等！ ");
 	message(var0002);
-	message("，正如你所見，統治這座偉大城市的壓力讓我瘦得只剩皮包骨了……」");
+	message("，正如你所見，統治這座偉大城市的壓力讓我瘦得只剩皮包骨了…」");
 	say();
 labelFunc0830_010B:
 	if (!(var0001 > 0x0002)) goto labelFunc0830_0119;

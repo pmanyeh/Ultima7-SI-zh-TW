@@ -180,7 +180,7 @@ labelFunc0289_0536:
 labelFunc0289_0547:
 	goto labelFunc0289_055A;
 labelFunc0289_054A:
-	var001C = Func0992(0x0001, "@試著用在別的東西上吧！@", "@也許用在別的東西上……@", false);
+	var001C = Func0992(0x0001, "@試著用在別的東西上吧！@", "@也許用在別的東西上…@", false);
 labelFunc0289_055A:
 	goto labelFunc0289_056D;
 labelFunc0289_055D:
@@ -196,7 +196,7 @@ labelFunc0289_056D:
 	say();
 	goto labelFunc0289_05BC;
 labelFunc0289_05AC:
-	var001C = Func0992(0xFE9C, 0x0000, "@我應該在其他地方試試……@", true);
+	var001C = Func0992(0xFE9C, 0x0000, "@我應該在其他地方試試…@", true);
 labelFunc0289_05BC:
 	abort;
 labelFunc0289_05BD:

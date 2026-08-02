@@ -185,11 +185,11 @@ labelFunc043F_02F8:
 labelFunc043F_030B:
 	case "棕色瓶子" attend labelFunc043F_0326:
 	UI_remove_answer("棕色瓶子");
-	message("「你在森林裡找到了證據？好想法！你應該成為巨熊而不是野狼……」");
+	message("「你在森林裡找到了證據？好想法！你應該成為巨熊而不是野狼…」");
 	say();
 	message("「我對瓶子一無所知，但也許你可以問問酒館的 Lucilla 。或者也許是雜貨商 Krayg 。」");
 	say();
-	message("「也許 Luther 是對的！作為雜貨商， Krayg 可以弄到許多種類的瓶子……」");
+	message("「也許 Luther 是對的！作為雜貨商， Krayg 可以弄到許多種類的瓶子…」");
 	say();
 labelFunc043F_0326:
 	case "Marsten" attend labelFunc043F_0346:
@@ -232,7 +232,7 @@ labelFunc043F_03AA:
 	say();
 	goto labelFunc043F_03E7;
 labelFunc043F_03E3:
-	message("「目前，頭盔在哥布林手中。他們殺了我們上一任冠軍騎士 Astrid 時，奪走了頭盔。必須找回頭盔，並為 Astrid 報仇……！」");
+	message("「目前，頭盔在哥布林手中。他們殺了我們上一任冠軍騎士 Astrid 時，奪走了頭盔。必須找回頭盔，並為 Astrid 報仇…！」");
 	say();
 labelFunc043F_03E7:
 	case "死者的骨灰", "失蹤的骨灰甕" attend labelFunc043F_0445:
@@ -240,7 +240,7 @@ labelFunc043F_03E7:
 	UI_push_answers();
 	message("「我不迷信，請注意，但我確實相信一個人的骨灰是神聖的。它們代表著他的靈魂、他的心、他的榮譽。」");
 	say();
-	message("「一想到我祖父的骨灰被從地下墓穴帶走……」");
+	message("「一想到我祖父的骨灰被從地下墓穴帶走…」");
 	say();
 	UI_add_answer(["榮譽", "地下墓穴", "換個話題"]);
 	if (!(Func097D(0xFE9B, 0x0001, 0x0392, 0xFE99, 0x0000) && ((!var0006) && (!var0007)))) goto labelFunc043F_0445;
@@ -266,7 +266,7 @@ labelFunc043F_0464:
 	say();
 labelFunc043F_047B:
 	case "換個話題" attend labelFunc043F_048B:
-	message("「當然……」");
+	message("「當然…」");
 	say();
 	UI_pop_answers();
 labelFunc043F_048B:
@@ -276,7 +276,7 @@ labelFunc043F_048B:
 	var0007 = true;
 	message("「你有？一個死者的骨灰甕？你是怎麼偶然發現的？也許你殺了那些侮辱我祖先靈魂的盜賊！」");
 	say();
-	var0010 = Func0992(0xFFFD, "@為什麼……嗯……我們找到的，大人。@", "@我找到的。@", false);
+	var0010 = Func0992(0xFFFD, "@為什麼…嗯…我們找到的，大人。@", "@我找到的。@", false);
 	UI_set_conversation_slot(0x0000);
 	message("「請讓我檢查一下好嗎？」");
 	say();
@@ -352,11 +352,11 @@ labelFunc043F_05E1:
 	UI_remove_answer("哥布林");
 	message("「這些可惡的野獸！我想你已經聽說了幼鹿塔( Fawn Tower )的伏擊。這對他們來說…不公平！」");
 	say();
-	message("「可憐的 Astrid ……她是一位鼓舞人心的戰士，也是一個充滿活力的少女。該死，但她確實很會殺哥布林……」");
+	message("「可憐的 Astrid …她是一位鼓舞人心的戰士，也是一個充滿活力的少女。該死，但她確實很會殺哥布林…」");
 	say();
 	UI_add_answer("幼鹿塔");
 	if (!(!UI_get_item_flag(0xFEF7, 0x0004))) goto labelFunc043F_0621;
-	message("「在這種危機時刻，野狼和獵豹是無用的，但巨熊將向哥布林展開復仇。如果我發現是誰背叛了那支巡邏隊……」");
+	message("「在這種危機時刻，野狼和獵豹是無用的，但巨熊將向哥布林展開復仇。如果我發現是誰背叛了那支巡邏隊…」");
 	say();
 	UI_add_answer(["無用", "被背叛"]);
 	goto labelFunc043F_0625;
@@ -381,7 +381,7 @@ labelFunc043F_0649:
 labelFunc043F_0653:
 	case "無用" attend labelFunc043F_066A:
 	UI_remove_answer("無用");
-	message("「比無用還糟！因為，獵豹是由所謂的戰士領導的，他們整天坐在自己的屁股上！ Marsten 太老了，而 Spektor ……他居然看書！」");
+	message("「比無用還糟！因為，獵豹是由所謂的戰士領導的，他們整天坐在自己的屁股上！ Marsten 太老了，而 Spektor …他居然看書！」");
 	say();
 	message("「至於野狼，大家都知道 Brendann 很軟弱。如果你問我，他花太多時間在當種馬，而不是花在他的劍和斧頭上。」");
 	say();
@@ -403,7 +403,7 @@ labelFunc043F_068F:
 	if (!gflags[0x00C0]) goto labelFunc043F_06B7;
 	message("「我不信任那個弱者 Krayg ，但如果他說去森林裡尋找證據，也許你應該去。」");
 	say();
-	message("「然而，他也可能把你送進另一個伏擊圈！嗯……」");
+	message("「然而，他也可能把你送進另一個伏擊圈！嗯…」");
 	say();
 	goto labelFunc043F_06CC;
 labelFunc043F_06B7:
@@ -438,7 +438,7 @@ labelFunc043F_0717:
 	say();
 	message("「但我無法相信她會把整個城市出賣給哥布林。不可能！」");
 	say();
-	message("「我告訴你， Krayg 就是叛徒……」");
+	message("「我告訴你， Krayg 就是叛徒…」");
 	say();
 labelFunc043F_073C:
 	case "Shmed 是叛徒嗎？" attend labelFunc043F_0757:
@@ -460,7 +460,7 @@ labelFunc043F_0757:
 labelFunc043F_077C:
 	message("「是的，我是個訓練師。在戰鬥中獲勝的關鍵是強壯，並在運用力量時達到致命的精準。這些就是我教的東西。我教導讓軟弱的戰士變強的方法，以及讓強壯的戰士無敵的方法！」");
 	say();
-	message("「如你可能已經猜到的，我特別擅長教導女學生……但你應該改天再問我這件事。」");
+	message("「如你可能已經猜到的，我特別擅長教導女學生…但你應該改天再問我這件事。」");
 	say();
 labelFunc043F_0784:
 	message("「任何一天的中午來比武場，我會很樂意訓練你。它在城鎮的南端，是所有騎士去參加錦標賽戰鬥並提升戰鬥技巧的地方。」");
@@ -552,7 +552,7 @@ labelFunc043F_089C:
 	say();
 	message("「你將會獲得你的刺青，並且穿著你圖騰動物的毛皮。」");
 	say();
-	message("「但我們可以等你回來再討論這個……如果你有勇氣參加騎士考驗的話……」");
+	message("「但我們可以等你回來再討論這個…如果你有勇氣參加騎士考驗的話…」");
 	say();
 	goto labelFunc043F_091D;
 labelFunc043F_08C1:
@@ -712,7 +712,7 @@ labelFunc043F_0CCA:
 	gflags[0x0033] = true;
 	goto labelFunc043F_0D13;
 labelFunc043F_0CF8:
-	Func097F(0xFE9C, "@待會見……@", 0x0000);
+	Func097F(0xFE9C, "@待會見…@", 0x0000);
 	Func097F(0xFFC1, "@勇氣！@", 0x0002);
 	goto labelFunc043F_0D16;
 labelFunc043F_0D13:

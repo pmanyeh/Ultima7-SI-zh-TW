@@ -120,7 +120,7 @@ labelFunc0853_01F4:
 	say();
 	goto labelFunc0853_0235;
 labelFunc0853_0231:
-	message("「看來你沒有足夠的錢付給我……你考慮過喝公共井水嗎？」");
+	message("「看來你沒有足夠的錢付給我…你考慮過喝公共井水嗎？」");
 	say();
 labelFunc0853_0235:
 	goto labelFunc0853_0238;

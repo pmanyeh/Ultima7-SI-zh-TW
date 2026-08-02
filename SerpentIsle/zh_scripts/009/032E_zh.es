@@ -88,11 +88,11 @@ labelFunc032E_00F1:
 	UI_set_npc_id(0xFFEE, 0x000C);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEE, 0x0000);
-	message("「想想看，她曾經是一位年輕美麗的女巫，直到野心使她變得冷酷無情……」");
+	message("「想想看，她曾經是一位年輕美麗的女巫，直到野心使她變得冷酷無情…」");
 	say();
 	UI_end_conversation();
 	UI_si_path_run_usecode(0xFFE3, [0x090A, 0x071A, 0x0000], 0x0002, item, 0x032E, false);
-	Func097F(0xFFE3, "@請原諒我……@", 0x0005);
+	Func097F(0xFFE3, "@請原諒我…@", 0x0005);
 	UI_play_music(0x0012, Func09A0(0x0005, 0x0001));
 	abort;
 labelFunc032E_0157:
@@ -108,10 +108,10 @@ labelFunc032E_0157:
 	UI_remove_npc_face1();
 	UI_remove_npc_face0();
 	UI_show_npc_face0(0xFFEE, 0x0000);
-	message("「親愛的，冷靜點。也許我們的訪客會把一切告訴我們，而無需動用武力……」");
+	message("「親愛的，冷靜點。也許我們的訪客會把一切告訴我們，而無需動用武力…」");
 	say();
 	UI_show_npc_face1(0xFFE1, 0x0000);
-	message("「如果有一件事是我無法忍受的，那就是被瑣碎的政治手段給束縛。你甚至不及你過去一半的男子氣概， Filbercio ……」");
+	message("「如果有一件事是我無法忍受的，那就是被瑣碎的政治手段給束縛。你甚至不及你過去一半的男子氣概， Filbercio …」");
 	say();
 	message("「祝各位有個愉快的晚餐。我已經沒有胃口，要離開了。但記住我的話——我一定會如願以償的！」");
 	say();
@@ -123,7 +123,7 @@ labelFunc032E_0157:
 	UI_run_schedule(0xFFE1);
 	UI_move_object(0xFFE1, [0x086D, 0x0837, 0x0000]);
 	UI_set_item_flag(0xFFE1, 0x001D);
-	Func097F(0xFFEC, "@再見了，女巫……@", 0x0004);
+	Func097F(0xFFEC, "@再見了，女巫…@", 0x0004);
 	var0009 = UI_execute_usecode_array(0xFFEA, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x6C, (byte)0x6B, (byte)0x27, 0x0002]);
 	var0009 = UI_delayed_execute_usecode_array(0xFFEE, [(byte)0x23, (byte)0x27, 0x0008, (byte)0x52, "@走得好！@", (byte)0x27, 0x0004, (byte)0x55, 0x032E], 0x0008);
 	abort;
@@ -210,7 +210,7 @@ labelFunc032E_060B:
 	var0009 = UI_execute_usecode_array(0xFFE1, [(byte)0x23, (byte)0x61, (byte)0x52, "@Flam Mas!@", (byte)0x67, (byte)0x01, (byte)0x58, 0x0014, (byte)0x7A, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x032E]);
 	Func097F(0xFFF6, "@救命啊！@", 0x0000);
 	UI_si_path_run_usecode(0xFFF6, [0x0916, 0x0742, 0x0000], 0x0003, item, 0x032E, false);
-	Func097F(0xFFEC, "@太粗魯了……@", 0x0006);
+	Func097F(0xFFEC, "@太粗魯了…@", 0x0006);
 	Func097F(0xFFFE, "@快住手！@", 0x0002);
 	Func097F(0xFFFF, "@不！@", 0x000A);
 	abort;
@@ -230,7 +230,7 @@ labelFunc032E_0684:
 	UI_set_conversation_slot(0x0000);
 	message("「親愛的，我希望");
 	message(var0004);
-	message("是我們解決問題的方法，而不是造成問題的原因……」");
+	message("是我們解決問題的方法，而不是造成問題的原因…」");
 	say();
 	UI_show_npc_face1(0xFFE1, 0x0000);
 	message("「你是個傻瓜，法師領主！我們的客人肯定就是威脅我們世界的超自然干擾因素之一。現在就讓我們來審問");
@@ -266,7 +266,7 @@ labelFunc032E_07D4:
 	UI_show_npc_face0(0xFFE1, 0x0000);
 	message("「 Filbercio 從來不缺社交禮儀，");
 	message(var0000);
-	message("。要是他能像照顧情婦那樣來處理月影城的問題就好了。說到這個……」");
+	message("。要是他能像照顧情婦那樣來處理月影城的問題就好了。說到這個…」");
 	say();
 	UI_show_npc_face1(0xFFEE, 0x0000);
 	message("「咳咳——！同樣在場的還有我迷人的晚餐伴侶 Frigidazzi 。她也是一名法師。」");
@@ -284,7 +284,7 @@ labelFunc032E_0826:
 	message("。雖然我們違反你的意願將你帶來這裡，但只是為了認識你。一旦晚餐結束，你就可以自由離開。」");
 	say();
 	UI_show_npc_face1(0xFFEE, 0x0000);
-	message("「完全正確， Gustacio ……這位是法師 Rotoluncia ，我相信你已經見過了。」");
+	message("「完全正確， Gustacio …這位是法師 Rotoluncia ，我相信你已經見過了。」");
 	say();
 	UI_end_conversation();
 	Func09AF(0xFFEA, 0xFFE1, 0x0004, 0x032E);
@@ -323,7 +323,7 @@ labelFunc032E_093C:
 	UI_show_npc_face0(0xFFEE, 0x0000);
 	message("「請入座。我們一直在等你。我是法師領主 Filbercio 。」");
 	say();
-	message("「容我為你介紹其他人。首先，是我的法師議會同僚。法師 Gustacio ……」");
+	message("「容我為你介紹其他人。首先，是我的法師議會同僚。法師 Gustacio …」");
 	say();
 	UI_end_conversation();
 	Func09AF(0xFFEE, 0xFFEA, 0x0002, 0x032E);

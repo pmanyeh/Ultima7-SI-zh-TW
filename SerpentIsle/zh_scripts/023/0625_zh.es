@@ -77,7 +77,7 @@ labelFunc0625_00B9:
 	UI_show_npc_face(var0003, 0x0000);
 labelFunc0625_00CB:
 	if (!(var0003 == 0xFFDC)) goto labelFunc0625_00DA;
-	message("「求你了，請停下來，否則你會惹怒我的主人……」");
+	message("「求你了，請停下來，否則你會惹怒我的主人…」");
 	say();
 	return;
 labelFunc0625_00DA:
@@ -103,7 +103,7 @@ labelFunc0625_0110:
 	goto labelFunc0625_016E;
 	goto labelFunc0625_025D;
 labelFunc0625_015E:
-	message("守衛對你微薄的出價不以為然。「我們的牢裡關著一些不三不四的歹徒。你的自由應該比這更值錢……」");
+	message("守衛對你微薄的出價不以為然。「我們的牢裡關著一些不三不四的歹徒。你的自由應該比這更值錢…」");
 	say();
 	if (!Func087E(var0005, var0004)) goto labelFunc0625_025A;
 labelFunc0625_016E:

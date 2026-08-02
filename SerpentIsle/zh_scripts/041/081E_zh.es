@@ -55,7 +55,7 @@ labelFunc081E_00EA:
 	if (!(var000A == 0x0002)) goto labelFunc081E_0113;
 	message("「恐怕價格是 ");
 	message(var000B);
-	message(" 枚金幣……我們的補給越來越少了。你接受嗎？」");
+	message(" 枚金幣…我們的補給越來越少了。你接受嗎？」");
 	say();
 	var000D = "塊火腿";
 labelFunc081E_0113:
@@ -131,7 +131,7 @@ labelFunc081E_0256:
 	UI_show_npc_face0(0xFFD7, 0x0000);
 	message("「我不希望你們任何一個人挨餓，");
 	message(var0000);
-	message("。」*「如果我自己不用做生意的活，我一定免費請你們吃。」");
+	message("。」* 「如果我自己不用做生意的活，我一定免費請你們吃。」");
 	say();
 	message("「我怕你們要挨餓了，");
 	message(var0000);
@@ -142,7 +142,7 @@ labelFunc081E_0256:
 labelFunc081E_02A6:
 	message("「你的錢不夠付這個，");
 	message(var0000);
-	message("。」*「如果我自己不用做生意的活，我一定免費請你們吃。」");
+	message("。」* 「如果我自己不用做生意的活，我一定免費請你們吃。」");
 	say();
 	message("「恐怕你們要挨餓了，");
 	message(var0000);

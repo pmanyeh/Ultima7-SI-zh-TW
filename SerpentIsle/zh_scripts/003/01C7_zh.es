@@ -148,7 +148,7 @@ labelFunc01C7_03B8:
 	UI_play_sound_effect(0x0040);
 	var0009 = UI_get_object_position(0xFE9C);
 	UI_sprite_effect(0x000D, var0009[0x0001], var0009[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
-	var000A = ["@這是怎麼回事？@", "@停不下來……@", "@我要去哪裡？@"];
+	var000A = ["@這是怎麼回事？@", "@停不下來…@", "@我要去哪裡？@"];
 	Func094F(0xFE9C, var000A);
 	UI_si_path_run_usecode(0xFE9C, [0x093C, 0x0740, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), 0x01C7, false);
 	UI_set_npc_id(0xFFEC, 0x0000);
@@ -176,14 +176,14 @@ labelFunc01C7_0444:
 	say();
 	UI_end_conversation();
 	var000A = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x27, 0x0005, (byte)0x6C, (byte)0x61, (byte)0x59, 0x0004, (byte)0x52, "@哦，閉嘴吧你！@"]);
-	Func097F(0xFFEA, "@可憐的蠢蛋……@", 0x0014);
+	Func097F(0xFFEA, "@可憐的蠢蛋…@", 0x0014);
 	Func097F(0xFFFF, "@保持冷靜，聖者！@", 0x0019);
 	Func097F(0xFFFD, "@別絕望！@", 0x0014);
 	Func097F(0xFFFE, "@我們會在這裡等你！@", 0x000C);
 	Func097F(0xFFDE, (((("@" + var0004) + "是個死定的") + var0005) + "！@"), 0x0000);
-	Func097F(0xFFD6, "@是他強迫我的……@", 0x000C);
+	Func097F(0xFFD6, "@是他強迫我的…@", 0x000C);
 	var000A = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x27, 0x0002, (byte)0x59, 0x0004, (byte)0x27, 0x0002, (byte)0x59, 0x0006]);
-	var000A = UI_execute_usecode_array(0xFFF3, [(byte)0x23, (byte)0x59, 0x0006, (byte)0x6C, (byte)0x6B, (byte)0x52, (("@" + var0004) + "完了……@")]);
+	var000A = UI_execute_usecode_array(0xFFF3, [(byte)0x23, (byte)0x59, 0x0006, (byte)0x6C, (byte)0x6B, (byte)0x52, (("@" + var0004) + "完了…@")]);
 	var000A = UI_execute_usecode_array(0xFFE6, [(byte)0x23, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x6B]);
 	var000A = UI_set_to_attack(0xFFEE, 0xFE9C, 0x0118);
 	var000A = UI_execute_usecode_array(0xFFEE, [(byte)0x23, (byte)0x69, (byte)0x6A, (byte)0x7A, (byte)0x58, 0x0039, (byte)0x61, (byte)0x27, 0x0004, (byte)0x55, 0x01C7]);
@@ -263,7 +263,7 @@ labelFunc01C7_07AA:
 	message(var0004);
 	message("出言不遜，這就是");
 	message(var0006);
-	message("總是惹禍上身的原因……」");
+	message("總是惹禍上身的原因…」");
 	say();
 	message("「");
 	message(var0004);
@@ -273,7 +273,7 @@ labelFunc01C7_07AA:
 	say();
 	message("「他們指控");
 	message(var0003);
-	message("賄賂守衛，以釋放他們的囚犯……」");
+	message("賄賂守衛，以釋放他們的囚犯…」");
 	say();
 	goto labelFunc01C7_084E;
 labelFunc01C7_082D:
@@ -315,18 +315,18 @@ labelFunc01C7_08A3:
 labelFunc01C7_08FE:
 	if (!(var0016 == "我只是好奇")) goto labelFunc01C7_0942;
 	UI_show_npc_face1(0xFFEA, 0x0000);
-	message("「如此好奇心，對於你這樣一個異鄉人來說，實在冒昧……」");
+	message("「如此好奇心，對於你這樣一個異鄉人來說，實在冒昧…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	message("「而且");
 	message(var0004);
-	message("還問了許多其他人的事，以及一些我所不熟悉的奇怪物品……」");
+	message("還問了許多其他人的事，以及一些我所不熟悉的奇怪物品…」");
 	say();
 	UI_show_npc_face1(0xFFEE, 0x0000);
 	message("「這絕非");
 	message(var0004);
-	message("所假裝的那種漫無目的的冒險者所為……」");
+	message("所假裝的那種漫無目的的冒險者所為…」");
 	say();
 	goto labelFunc01C7_095C;
 labelFunc01C7_0942:
@@ -343,7 +343,7 @@ labelFunc01C7_095C:
 	UI_end_conversation();
 	Func097F(0xFFEE, "@商人 Flindo ！@", 0x0000);
 	var000A = UI_execute_usecode_array(0xFFF3, [(byte)0x23, (byte)0x6C, (byte)0x6B]);
-	var000A = UI_delayed_execute_usecode_array(0xFFD6, [(byte)0x23, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x6D, (byte)0x6C, (byte)0x52, "@Lord Filbercio……@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x01C7], 0x0005);
+	var000A = UI_delayed_execute_usecode_array(0xFFD6, [(byte)0x23, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x6D, (byte)0x6C, (byte)0x52, "@Lord Filbercio…@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x01C7], 0x0005);
 	abort;
 labelFunc01C7_09BD:
 	if (!(UI_get_npc_id(0xFFEE) == 0x0004)) goto labelFunc01C7_0AC5;
@@ -375,15 +375,15 @@ labelFunc01C7_0A4C:
 	say();
 	message("「畢竟，我當場抓到");
 	message(var0003);
-	message("在可愛的 Frigidazzi 閨房內……」");
+	message("在可愛的 Frigidazzi 閨房內…」");
 	say();
 labelFunc01C7_0A64:
 	message("「請就座， Frigidazzi 。現在我們來聽取品行證人的陳述。」");
 	say();
 	UI_end_conversation();
 	var000A = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x6C, (byte)0x6B]);
-	var000A = UI_delayed_execute_usecode_array(0xFFF3, [(byte)0x23, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x6D, (byte)0x6C, (byte)0x52, "@法師領主……@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x01C7], 0x0005);
-	Func097F(0xFFEE, "@善良的 Bucia 女士……@", 0x0000);
+	var000A = UI_delayed_execute_usecode_array(0xFFF3, [(byte)0x23, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0002, (byte)0x6C, (byte)0x6D, (byte)0x6C, (byte)0x52, "@法師領主…@", (byte)0x27, 0x0002, (byte)0x6C, (byte)0x61, (byte)0x27, 0x0002, (byte)0x55, 0x01C7], 0x0005);
+	Func097F(0xFFEE, "@善良的 Bucia 女士…@", 0x0000);
 	abort;
 labelFunc01C7_0AC5:
 	if (!(UI_get_npc_id(0xFFEE) == 0x0003)) goto labelFunc01C7_0B61;
@@ -407,7 +407,7 @@ labelFunc01C7_0AC5:
 labelFunc01C7_0B20:
 	UI_end_conversation();
 	var000A = UI_execute_usecode_array(0xFE9C, [(byte)0x27, 0x0004, (byte)0x59, 0x0002]);
-	var000A = UI_execute_usecode_array(0xFFEC, [(byte)0x27, 0x0002, (byte)0x6C, (byte)0x61, (byte)0x52, "@讓我說話……@", (byte)0x27, 0x0007, (byte)0x55, 0x01C7]);
+	var000A = UI_execute_usecode_array(0xFFEC, [(byte)0x27, 0x0002, (byte)0x6C, (byte)0x61, (byte)0x52, "@讓我說話…@", (byte)0x27, 0x0007, (byte)0x55, 0x01C7]);
 	abort;
 labelFunc01C7_0B61:
 	if (!(UI_get_npc_id(0xFFEE) == 0x0002)) goto labelFunc01C7_1291;
@@ -449,7 +449,7 @@ labelFunc01C7_0F84:
 	if (!(!UI_get_item_flag(0xFFFE, 0x0004))) goto labelFunc01C7_10B5;
 	gflags[0x013A] = true;
 labelFunc01C7_10B5:
-	Func097F(var0016, "@噓……@", 0x0007);
+	Func097F(var0016, "@噓…@", 0x0007);
 	UI_move_object(0xFE9C, [0x0930, 0x074E, 0x0000]);
 	var000A = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x59, 0x0006, (byte)0x55, 0x0636, (byte)0x54, 0x0020], 0x000A);
 	UI_move_object(0xFFEE, [0x0925, 0x074F, 0x0001]);
@@ -459,12 +459,12 @@ labelFunc01C7_10B5:
 	var000A = UI_delayed_execute_usecode_array(0xFFEA, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x6C, (byte)0x6B], 0x000C);
 	UI_set_schedule_type(0xFFE6, 0x000F);
 	UI_move_object(0xFFE6, [0x092F, 0x0758, 0x0001]);
-	var000A = UI_delayed_execute_usecode_array(0xFFE6, [(byte)0x23, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x6B, (byte)0x27, 0x000A, (byte)0x52, "@讓我們了結此事……@"], 0x000C);
+	var000A = UI_delayed_execute_usecode_array(0xFFE6, [(byte)0x23, (byte)0x59, 0x0000, (byte)0x6C, (byte)0x6B, (byte)0x27, 0x000A, (byte)0x52, "@讓我們了結此事…@"], 0x000C);
 	UI_move_object(0xFFEC, [0x0938, 0x0751, 0x0000]);
 	var000A = UI_delayed_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x59, 0x0006, (byte)0x6C, (byte)0x6B], 0x000C);
 	UI_set_schedule_type(0xFFF3, 0x000F);
 	UI_move_object(0xFFF3, [0x0938, 0x0756, 0x0000]);
-	var000A = UI_delayed_execute_usecode_array(0xFFF3, [(byte)0x23, (byte)0x27, 0x0004, (byte)0x52, "@這應該很有看頭……@", (byte)0x59, 0x0006, (byte)0x6C, (byte)0x6B], 0x000C);
+	var000A = UI_delayed_execute_usecode_array(0xFFF3, [(byte)0x23, (byte)0x27, 0x0004, (byte)0x52, "@這應該很有看頭…@", (byte)0x59, 0x0006, (byte)0x6C, (byte)0x6B], 0x000C);
 	UI_set_schedule_type(0xFFD6, 0x000F);
 	UI_move_object(0xFFD6, [0x0938, 0x0754, 0x0000]);
 	var000A = UI_delayed_execute_usecode_array(0xFFD6, [(byte)0x23, (byte)0x59, 0x0006, (byte)0x6C, (byte)0x6B, (byte)0x27, 0x0008, (byte)0x52, (("@" + var0004) + "有罪！@")], 0x000C);
@@ -487,7 +487,7 @@ labelFunc01C7_12CA:
 	say();
 labelFunc01C7_12FA:
 	UI_show_npc_face1(0xFFEC, var0008);
-	message("「親愛的！真是個驚喜……我對這一切都有解釋……」");
+	message("「親愛的！真是個驚喜…我對這一切都有解釋…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -515,7 +515,7 @@ labelFunc01C7_1363:
 	message("「白痴！你以為我看不出激情之舞( Dance of Passion )過後的後遺症嗎！？」");
 	say();
 	UI_show_npc_face1(0xFFEC, var0008);
-	message("「哦，不……」");
+	message("「哦，不…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -526,24 +526,24 @@ labelFunc01C7_139B:
 	say();
 	goto labelFunc01C7_13DF;
 labelFunc01C7_13BC:
-	message("「鬼話連篇！聽著，你這頭豬——你不是第一個企圖奪走我最鍾愛情婦的人……」");
+	message("「鬼話連篇！聽著，你這頭豬——你不是第一個企圖奪走我最鍾愛情婦的人…」");
 	say();
 	UI_show_npc_face1(0xFFEC, var0008);
 	message("「不！不要對");
 	message(var0003);
-	message("做你對其他人所做的事……」");
+	message("做你對其他人所做的事…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc01C7_13DF:
 	goto labelFunc01C7_1405;
 labelFunc01C7_13E2:
-	message("「別那麼快，農夫！對於膽敢覬覦我情婦的人，我自有特別的懲罰……」");
+	message("「別那麼快，農夫！對於膽敢覬覦我情婦的人，我自有特別的懲罰…」");
 	say();
 	UI_show_npc_face1(0xFFEC, var0008);
 	message("「不！不要這樣， Filbercio ！饒了這個人！不要把");
 	message(var0003);
-	message("扔進深坑……」");
+	message("扔進深坑…」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);

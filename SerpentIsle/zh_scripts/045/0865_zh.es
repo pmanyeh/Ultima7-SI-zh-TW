@@ -153,7 +153,7 @@ labelFunc0865_0277:
 labelFunc0865_0287:
 	goto labelFunc0865_028E;
 labelFunc0865_028A:
-	message("「你找不到更好的兌換率了……」");
+	message("「你找不到更好的兌換率了…」");
 	say();
 labelFunc0865_028E:
 	if (!(var0001 == "吉爾得幣")) goto labelFunc0865_0529;
@@ -287,7 +287,7 @@ labelFunc0865_0512:
 labelFunc0865_0522:
 	goto labelFunc0865_0529;
 labelFunc0865_0525:
-	message("「你找不到更好的兌換率了……」");
+	message("「你找不到更好的兌換率了…」");
 	say();
 labelFunc0865_0529:
 	if (!(var0001 == "法拉利幣")) goto labelFunc0865_0792;
@@ -410,7 +410,7 @@ labelFunc0865_077B:
 labelFunc0865_078B:
 	goto labelFunc0865_0792;
 labelFunc0865_078E:
-	message("「你找不到更好的兌換率了……」");
+	message("「你找不到更好的兌換率了…」");
 	say();
 labelFunc0865_0792:
 	if (!(var0001 == "金幣")) goto labelFunc0865_0A3D;
@@ -549,7 +549,7 @@ labelFunc0865_0A26:
 labelFunc0865_0A36:
 	goto labelFunc0865_0A3D;
 labelFunc0865_0A39:
-	message("「你找不到更好的兌換率了……」");
+	message("「你找不到更好的兌換率了…」");
 	say();
 labelFunc0865_0A3D:
 	message("「你還想兌換更多錢幣嗎？」");

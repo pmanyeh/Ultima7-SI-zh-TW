@@ -18,7 +18,7 @@ void Func013D shape#(0x13D) ()
 	var0001 = UI_find_nearby(item, 0x0370, 0x0005, 0x0000);
 	var0002 = UI_find_nearby(item, 0x038A, 0x0005, 0x0000);
 	if (!(UI_get_npc_id(item) == 0x0006)) goto labelFunc013D_0089;
-	Func097F(item, "@世界將走向滅亡……@", 0x0000);
+	Func097F(item, "@世界將走向滅亡…@", 0x0000);
 	UI_set_schedule_type(item, 0x000F);
 	var0003 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x59, 0x0002, (byte)0x6C, (byte)0x6B, (byte)0x27, 0x000A, (byte)0x55, 0x013D]);
 labelFunc013D_0089:
@@ -29,14 +29,14 @@ labelFunc013D_009F:
 	Func097F(item, "@混沌將君臨天下！@", 0x0000);
 labelFunc013D_00B5:
 	if (!(UI_get_npc_id(item) == 0x0003)) goto labelFunc013D_00CB;
-	Func097F(item, "@……白龍之中！@", 0x0000);
+	Func097F(item, "@…白龍之中！@", 0x0000);
 labelFunc013D_00CB:
 	if (!(UI_get_npc_id(item) == 0x0002)) goto labelFunc013D_00E1;
-	Func097F(item, "@在荒廢的城堡之中……@", 0x0000);
+	Func097F(item, "@在荒廢的城堡之中…@", 0x0000);
 labelFunc013D_00E1:
 	if (!(UI_get_npc_id(item) == 0x0001)) goto labelFunc013D_013C;
 	UI_fade_palette(0x000C, 0x0001, 0x0001);
-	Func097F(item, "@我們將永遠不被找到……@", 0x0000);
+	Func097F(item, "@我們將永遠不被找到…@", 0x0000);
 	var0003 = UI_execute_usecode_array(0xFEFA, [(byte)0x23, (byte)0x59, 0x0002]);
 	var0003 = UI_execute_usecode_array(0xFEF9, [(byte)0x23, (byte)0x59, 0x0002]);
 	UI_play_music(0x0033, Func09A0(0x0005, 0x0001));
@@ -44,12 +44,12 @@ labelFunc013D_013C:
 	if (!((UI_get_npc_id(0xFEFA) == 0x0000) && var0001)) goto labelFunc013D_01BC;
 	UI_show_npc_face0(0xFEF4, 0x0000);
 	UI_init_conversation();
-	message("「如今我們混沌之兄弟齊聚一堂，世間無人可以阻擋我們！我們將碾碎那渺小的聖者……正如我們殺死了所有其他人一樣！」");
+	message("「如今我們混沌之兄弟齊聚一堂，世間無人可以阻擋我們！我們將碾碎那渺小的聖者…正如我們殺死了所有其他人一樣！」");
 	say();
 	UI_show_npc_face1(0xFEE0, 0x0000);
-	message("「在一起……在一起……直到烈焰般寧靜的終末！如今是敵人……昔日曾是朋友！」");
+	message("「在一起…在一起…直到烈焰般寧靜的終末！如今是敵人…昔日曾是朋友！」");
 	say();
-	message("「糾纏、翻騰、纏繞……錯的變成了對的，裡面的變成了外面的……」");
+	message("「糾纏、翻騰、纏繞…錯的變成了對的，裡面的變成了外面的…」");
 	say();
 	message("「躲藏！躲藏！因為聖者在追尋！」");
 	say();
@@ -62,12 +62,12 @@ labelFunc013D_01BC:
 	if (!((UI_get_npc_id(0xFEFA) == 0x0001) && var0002)) goto labelFunc013D_0238;
 	UI_show_npc_face0(0xFEF4, 0x0000);
 	UI_init_conversation();
-	message("「如今跟隨者成了領袖！主人成了奴僕！世界將回歸其自然的軌道……只要我們除掉那個可惡的聖者！」");
+	message("「如今跟隨者成了領袖！主人成了奴僕！世界將回歸其自然的軌道…只要我們除掉那個可惡的聖者！」");
 	say();
 	UI_show_npc_face1(0xFEE6, 0x0000);
-	message("「讓我們令這個世界俯首稱臣！讓這些可憐的凡人崇拜我們……哪怕他們在死去之時！」");
+	message("「讓我們令這個世界俯首稱臣！讓這些可憐的凡人崇拜我們…哪怕他們在死去之時！」");
 	say();
-	message("「而我對聖者有著特別的安排……！」");
+	message("「而我對聖者有著特別的安排…！」");
 	say();
 	var0003 = ("@鮮血！@" & ("@更多的血！@" & "@流血至死！@"));
 	Func094F(0xFEF9, var0003);

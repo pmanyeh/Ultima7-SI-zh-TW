@@ -99,7 +99,7 @@ labelFunc0871_0292:
 	say();
 	var0008 = Func0957(var0004);
 	if (!(var0008 == 0x0001)) goto labelFunc0871_02B0;
-	message("「很好……」");
+	message("「很好…」");
 	say();
 	goto labelFunc0871_03A3;
 labelFunc0871_02B0:

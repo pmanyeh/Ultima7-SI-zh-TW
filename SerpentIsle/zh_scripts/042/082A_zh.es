@@ -75,7 +75,7 @@ labelFunc082A_018B:
 	say();
 	var0007 = Func0957(var0003);
 	if (!(var0007 == 0x0001)) goto labelFunc082A_01A9;
-	message("「那就算了吧……」");
+	message("「那就算了吧…」");
 	say();
 	goto labelFunc082A_0250;
 labelFunc082A_01A9:

@@ -94,20 +94,20 @@ labelFunc07F8_01EC:
 	if (!((var0001 < 0x0003) || (var0001 > 0x0006))) goto labelFunc07F8_024B;
 	var0001 = Func0992(0x0001, 0x0000, 0x0000, true);
 	if (!(var0001 == 0xFE9C)) goto labelFunc07F8_023E;
-	Func097F(0xFE9C, "@我應該晚點再來……@", 0x0000);
+	Func097F(0xFE9C, "@我應該晚點再來…@", 0x0000);
 	goto labelFunc07F8_024A;
 labelFunc07F8_023E:
-	Func097F(var0001, "@我們晚點再來吧……@", 0x0000);
+	Func097F(var0001, "@我們晚點再來吧…@", 0x0000);
 labelFunc07F8_024A:
 	abort;
 labelFunc07F8_024B:
 	if (!(gflags[0x0172] && (UI_get_timer(0x0000) < 0x000C))) goto labelFunc07F8_0293;
 	var0001 = Func0992(0x0001, 0x0000, 0x0000, true);
 	if (!(var0001 == 0xFE9C)) goto labelFunc07F8_0286;
-	Func097F(0xFE9C, "@時間還沒到……@", 0x0000);
+	Func097F(0xFE9C, "@時間還沒到…@", 0x0000);
 	goto labelFunc07F8_0292;
 labelFunc07F8_0286:
-	Func097F(var0001, "@我們來得太早了……@", 0x0000);
+	Func097F(var0001, "@我們來得太早了…@", 0x0000);
 labelFunc07F8_0292:
 	abort;
 labelFunc07F8_0293:
@@ -139,7 +139,7 @@ labelFunc07F8_0332:
 	Func08C2();
 	if (!gflags[0x0170]) goto labelFunc07F8_03C0;
 	var000C = Func0992(0x0001, "@審判要開始了！@", "@審判在等我們出席。@", true);
-	Func097F(0xFFD1, "@是那個陌生人……@", 0x0016);
+	Func097F(0xFFD1, "@是那個陌生人…@", 0x0016);
 	Func097F(0xFFC8, "@現在審判開始！@", 0x001C);
 	Func097F(0xFFD2, "@噓！@", 0x0023);
 	goto labelFunc07F8_03DF;

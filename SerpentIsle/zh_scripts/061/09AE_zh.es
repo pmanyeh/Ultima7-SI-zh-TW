@@ -10,9 +10,9 @@ var Func09AE 0x9AE (var var0000)
 	if (!(item == UI_get_npc_object(0xFFCC))) goto labelFunc09AE_00A8;
 	gflags[0x01A0] = true;
 	if (!(UI_get_schedule_type(0xFFCC) == 0x0017)) goto labelFunc09AE_0052;
-	Func094E(0xFFC6, "@我需要喝一杯……@");
+	Func094E(0xFFC6, "@我需要喝一杯…@");
 	UI_set_conversation_slot(0x0000);
-	message("「我很高興能跟你聊天，老兄，但我最好還是回去工作了……」");
+	message("「我很高興能跟你聊天，老兄，但我最好還是回去工作了…」");
 	say();
 	Func097F(0xFFCC, "@你要點什麼？@", 0x0000);
 labelFunc09AE_0052:
@@ -23,10 +23,10 @@ labelFunc09AE_0052:
 labelFunc09AE_007A:
 	message("「這裡不是長談的地方，老兄。晚點在酒館見，我們再多聊聊。」");
 	say();
-	Func097F(0xFFCC, "@現在不行……@", 0x0000);
+	Func097F(0xFFCC, "@現在不行…@", 0x0000);
 labelFunc09AE_008A:
 	if (!(UI_get_schedule_type(0xFFCC) == 0x000E)) goto labelFunc09AE_00A8;
-	message("「我們最好明早再談，老兄。至於現在，我要回去睡覺了……」");
+	message("「我們最好明早再談，老兄。至於現在，我要回去睡覺了…」");
 	say();
 	Func097F(0xFFCC, "@睡覺時間到了！@", 0x0000);
 labelFunc09AE_00A8:
@@ -39,7 +39,7 @@ labelFunc09AE_00A8:
 	message("「我現在必須回去工作了。但很高興能跟你談話。」");
 	say();
 	if (!(UI_get_npc_id(0xFFF3) < 0x000F)) goto labelFunc09AE_00FC;
-	message("「如果你今晚10點能來藍豬酒館( Blue Boar Inn )，我們可以進一步討論這些事情……」");
+	message("「如果你今晚10點能來藍野豬旅店( Blue Boar Inn )，我們可以進一步討論這些事情…」");
 	say();
 	gflags[0x013E] = true;
 labelFunc09AE_00FC:
@@ -51,7 +51,7 @@ labelFunc09AE_0103:
 	if (!(item == UI_get_npc_object(0xFFBD))) goto labelFunc09AE_016F;
 	gflags[0x0097] = true;
 	if (!(gflags[0x005B] && (!gflags[0x0047]))) goto labelFunc09AE_012D;
-	Func097F(0xFFBD, "@記住 Cantra ……@", 0x0000);
+	Func097F(0xFFBD, "@記住 Cantra …@", 0x0000);
 	goto labelFunc09AE_0139;
 labelFunc09AE_012D:
 	Func097F(0xFFBD, "@祝你有勇氣！@", 0x0000);
@@ -65,13 +65,13 @@ labelFunc09AE_014B:
 	say();
 labelFunc09AE_015D:
 	if (!(UI_get_schedule_type(0xFFBD) == 0x000E)) goto labelFunc09AE_016F;
-	message("「我必須睡覺了！你應該明天再來……」");
+	message("「我必須睡覺了！你應該明天再來…」");
 	say();
 labelFunc09AE_016F:
 	if (!(item == UI_get_npc_object(0x03B2))) goto labelFunc09AE_01B5;
 	gflags[0x02F4] = true;
 	if (!(UI_get_schedule_type(0x03B2) == 0x0015)) goto labelFunc09AE_0191;
-	message("「我必須回去工作了……」");
+	message("「我必須回去工作了…」");
 	say();
 labelFunc09AE_0191:
 	if (!(UI_get_schedule_type(0x03B2) == 0x0005)) goto labelFunc09AE_01A3;
@@ -79,7 +79,7 @@ labelFunc09AE_0191:
 	say();
 labelFunc09AE_01A3:
 	if (!(UI_get_schedule_type(0x03B2) == 0x000E)) goto labelFunc09AE_01B5;
-	message("「我需要休息！明天再來……」");
+	message("「我需要休息！明天再來…」");
 	say();
 labelFunc09AE_01B5:
 	UI_set_timer(0x0002);

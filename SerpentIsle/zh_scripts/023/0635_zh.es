@@ -36,7 +36,7 @@ labelFunc0635_0063:
 	Func0949("@我想麵包烤好了。@");
 labelFunc0635_00E6:
 	if (!(var0006 == 0x0002)) goto labelFunc0635_00F6;
-	Func0949("@嗯……真是美妙的香氣。@");
+	Func0949("@嗯…真是美妙的香氣。@");
 labelFunc0635_00F6:
 	return;
 }

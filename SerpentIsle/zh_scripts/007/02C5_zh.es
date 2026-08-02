@@ -77,17 +77,17 @@ labelFunc02C5_0155:
 labelFunc02C5_0171:
 	if (!(var0000 == 0x0048)) goto labelFunc02C5_018D;
 	var0001 = ["DISCIPLINE", "OF", "MIND"];
-	var_chinese = ["心靈之克己"];
+	var_chinese = ["心靈之紀律"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_018D:
 	if (!(var0000 == 0x0049)) goto labelFunc02C5_01A9;
 	var0001 = ["DISCIPLINE", "OF", "BODY"];
-	var_chinese = ["肉體之克己"];
+	var_chinese = ["肉體之紀律"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_01A9:
 	if (!(var0000 == 0x004A)) goto labelFunc02C5_01C5;
 	var0001 = ["DISCIPLINE", "OF", "ENVIRONMENT"];
-	var_chinese = ["環境之克己"];
+	var_chinese = ["環境之紀律"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_01C5:
 	if (!(var0000 == 0x004B)) goto labelFunc02C5_01DE;
@@ -112,37 +112,37 @@ labelFunc02C5_020A:
 labelFunc02C5_0220:
 	if (!(var0000 == 0x0050)) goto labelFunc02C5_0236;
 	var0001 = ["I"];
-	var_chinese = ["理性"];
+	var_chinese = ["I"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_0236:
 	if (!(var0000 == 0x0051)) goto labelFunc02C5_024C;
 	var0001 = ["S"];
-	var_chinese = ["克己"];
+	var_chinese = ["S"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_024C:
 	if (!(var0000 == 0x0052)) goto labelFunc02C5_0262;
 	var0001 = ["C"];
-	var_chinese = ["倫理"];
+	var_chinese = ["C"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_0262:
 	if (!(var0000 == 0x0053)) goto labelFunc02C5_0278;
 	var0001 = ["G"];
-	var_chinese = ["情感"];
+	var_chinese = ["G"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_0278:
 	if (!(var0000 == 0x0054)) goto labelFunc02C5_028E;
 	var0001 = ["B"];
-	var_chinese = ["包容"];
+	var_chinese = ["B"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_028E:
 	if (!(var0000 == 0x0055)) goto labelFunc02C5_02A4;
 	var0001 = ["O"];
-	var_chinese = ["狂熱"];
+	var_chinese = ["O"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_02A4:
 	if (!(var0000 == 0x0056)) goto labelFunc02C5_02BA;
 	var0001 = ["W"];
-	var_chinese = ["智慧"];
+	var_chinese = ["W"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_02BA:
 	if (!(var0000 == 0x0057)) goto labelFunc02C5_02D3;
@@ -167,7 +167,7 @@ labelFunc02C5_0302:
 labelFunc02C5_031B:
 	if (!(var0000 == 0x0085)) goto labelFunc02C5_0334;
 	var0001 = ["EXAMINE", "DISCIPLINE"];
-	var_chinese = ["檢視克己之道"];
+	var_chinese = ["檢視紀律之道"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_0334:
 	if (!(var0000 == 0x0086)) goto labelFunc02C5_0350;
@@ -202,7 +202,7 @@ labelFunc02C5_03BD:
 labelFunc02C5_03D3:
 	if (!(var0000 == 0x008C)) goto labelFunc02C5_03E9;
 	var0001 = ["DISCIPLINE"];
-	var_chinese = ["克己"];
+	var_chinese = ["紀律"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_03E9:
 	if (!(var0000 == 0x008D)) goto labelFunc02C5_03FF;
@@ -252,7 +252,7 @@ labelFunc02C5_04AB:
 labelFunc02C5_04CA:
 	if (!(var0000 == 0x0096)) goto labelFunc02C5_04E9;
 	var0001 = ["ORDER SYMBOL", "THAT DOTH SPEAK", "OF PRINCIPLES", "AND WISDOM"];
-	var_chinese = ["秩序符號", "象徵原則", "與智慧"];
+	var_chinese = ["秩序符號", "象徵原則與智慧"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_04E9:
 	if (!(var0000 == 0x0097)) goto labelFunc02C5_0508;
@@ -262,7 +262,7 @@ labelFunc02C5_04E9:
 labelFunc02C5_0508:
 	if (!(var0000 == 0x0098)) goto labelFunc02C5_0524;
 	var0001 = ["ORDER SYMBOL", "FOR A STRAIGHT", "PATH OF TRUTH"];
-	var_chinese = ["秩序符號", "代表直達真理", "之道"];
+	var_chinese = ["秩序符號", "代表直達真理之道"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_0524:
 	if (!(var0000 == 0x0099)) goto labelFunc02C5_0540;
@@ -302,7 +302,7 @@ labelFunc02C5_05CC:
 labelFunc02C5_05E5:
 	if (!(var0000 == 0x00B6)) goto labelFunc02C5_05FE;
 	var0001 = ["SCEPTRE OF", "ENLIGHTENMENT"];
-	var_chinese = ["啟迪權杖"];
+	var_chinese = ["啟蒙權杖"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_05FE:
 	if (!(var0000 == 0x00B7)) goto labelFunc02C5_0617;
@@ -312,7 +312,7 @@ labelFunc02C5_05FE:
 labelFunc02C5_0617:
 	if (!(var0000 == 0x00B8)) goto labelFunc02C5_0633;
 	var0001 = ["GLASS", "VIPER OF", "SESSENRA"];
-	var_chinese = ["塞森拉的", "玻璃蝰蛇"];
+	var_chinese = ["塞森拉的", "玻璃莽蛇"];
 	goto labelFunc02C5_06AF;
 labelFunc02C5_0633:
 	if (!(var0000 == 0x00B9)) goto labelFunc02C5_0652;

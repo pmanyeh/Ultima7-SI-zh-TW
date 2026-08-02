@@ -132,7 +132,7 @@ labelFunc00E4_01DB:
 	UI_show_npc_face0(0xFEEA, 0x0000);
 	message("「那就別來煩我！我還得執行公務呢！」");
 	say();
-	Func097F(item, "@當心哥布林……@", 0x0002);
+	Func097F(item, "@當心哥布林…@", 0x0002);
 	abort;
 labelFunc00E4_01F4:
 	UI_set_schedule_type(item, 0x0003);
@@ -258,7 +258,7 @@ labelFunc00E4_04A4:
 	message("「快帶你的人去逮捕 Marsten 領主！我有確鑿的證據證明他是叛徒！」");
 	say();
 	UI_set_conversation_slot(0x0000);
-	message("「逮捕…… Marsten 領主？」");
+	message("「逮捕… Marsten 領主？」");
 	say();
 	UI_set_conversation_slot(0x0001);
 	message("「聽著，老弟，你跟我一樣都是巨熊軍團的人！現在聽我的命令行事，保證不會有事。」");
@@ -279,13 +279,13 @@ labelFunc00E4_0513:
 	if (!((event == 0x0009) && (var0000 == 0x000F))) goto labelFunc00E4_055B;
 	UI_set_schedule_type(item, 0x0009);
 	UI_show_npc_face0(0xFEED, 0x0000);
-	message("「求求你饒了我吧！我什麼都願意做！我可不想被哥布林架在火堆上烤啊……」");
+	message("「求求你饒了我吧！我什麼都願意做！我可不想被哥布林架在火堆上烤啊…」");
 	say();
 	message("「啊，呃，你好。我是 Johnson 。抱歉剛才失態了，我還以為你是哥布林呢。我本來想在衝過去殺他們個措手不及之前，先大吼一聲嚇嚇他們的。」");
 	say();
 	message("「算你運氣好，要不是我一眼認出你是從蒙利多城來的，搞不好就誤傷你了。我原本打算在撤退之前，儘量多宰幾個那些綠皮惡魔。」");
 	say();
-	message("「咱們快回蒙利多城吧！大家一定會像英雄一樣歡迎我們的，畢竟我們可是第一批生還……我是說，第一批勇敢殺進哥布林巢穴的勇士！」");
+	message("「咱們快回蒙利多城吧！大家一定會像英雄一樣歡迎我們的，畢竟我們可是第一批生還…我是說，第一批勇敢殺進哥布林巢穴的勇士！」");
 	say();
 	UI_remove_npc_face0();
 	Func097F(item, "@回蒙利多城去！@", 0x0005);
@@ -297,7 +297,7 @@ labelFunc00E4_055B:
 	message("「沒時間閒聊了！我們得趕快回蒙利多城！」 *「你也不想在成為英雄前就被啃得連骨頭都不剩吧，對吧？」 *「那還用說！快走吧！」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(item, "@我不會害怕哥布林……@", 0x0005);
+	Func097F(item, "@我不會害怕哥布林…@", 0x0005);
 labelFunc00E4_058F:
 	if (!((event == 0x0009) && (var0000 == 0x000D))) goto labelFunc00E4_05DA;
 	UI_set_npc_id(item, 0x0003);
@@ -351,7 +351,7 @@ labelFunc00E4_069A:
 	message(var000F);
 	message(" 蒙里他利幣( Monetari )。」");
 	say();
-	message("「當然，我們也接受其他值錢的玩意兒……」");
+	message("「當然，我們也接受其他值錢的玩意兒…」");
 	say();
 	if (!(!gflags[0x01CE])) goto labelFunc00E4_06CD;
 	Func09AC(0xFFD4, 0x0507, 0x08BF, 0x0003);
@@ -507,7 +507,7 @@ labelFunc00E4_0A0E:
 	goto labelFunc00E4_0D43;
 labelFunc00E4_0A29:
 	if (!(var0013 == 0x0002)) goto labelFunc00E4_0A3B;
-	message("「只是想切磋一下對吧？行啊，沒問題……」");
+	message("「只是想切磋一下對吧？行啊，沒問題…」");
 	say();
 	message("「你們當中哪一位要上場？」");
 	say();

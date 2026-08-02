@@ -66,7 +66,7 @@ labelFunc0414_00E7:
 	var000B = UI_delayed_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x55, 0x00E6, 0x0000], 0x0005);
 	goto labelFunc0414_019D;
 labelFunc0414_0162:
-	UI_item_say(0xFE9C, "請原諒我……");
+	UI_item_say(0xFE9C, "請原諒我…");
 	0xFFEC->Func07D1();
 	if (!var0002) goto labelFunc0414_0187;
 	Func097F(0xFFEC, "@是的，親愛的？@", 0x0002);
@@ -111,7 +111,7 @@ labelFunc0414_0267:
 labelFunc0414_026B:
 	case "哥布林" attend labelFunc0414_027E:
 	UI_remove_answer("哥布林");
-	message("「是的，我有一個哥布林僕人。怎麼了嗎？她是個完美的僕人，因為她幾乎完全不怕冷。但我們肯定能想到更有趣的話題……」");
+	message("「是的，我有一個哥布林僕人。怎麼了嗎？她是個完美的僕人，因為她幾乎完全不怕冷。但我們肯定能想到更有趣的話題…」");
 	say();
 labelFunc0414_027E:
 	case "Gwenno" attend labelFunc0414_0291:
@@ -129,14 +129,14 @@ labelFunc0414_0291:
 labelFunc0414_02AF:
 	case "巨蛇遺物" attend labelFunc0414_02E3:
 	UI_remove_answer("巨蛇遺物");
-	message("「它並不起眼——只是一塊巨蛇牙齒形狀的石頭。據我所知它沒有什麼魔力……」");
+	message("「它並不起眼——只是一塊巨蛇牙齒形狀的石頭。據我所知它沒有什麼魔力…」");
 	say();
 	message("「我們很多人都有這些石頭。事實上，擁有一個或多個這種石頭是頂尖法師的傳統。」");
 	say();
 	message("「你能保守秘密嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc0414_02DF;
-	message("「我可以告訴你巨蛇之牙是從哪裡來的……」");
+	message("「我可以告訴你巨蛇之牙是從哪裡來的…」");
 	say();
 	message("「月影城的法師們是從住在島上的瘋狂法師 Erstam 那裡偷來的！這是很好的運動，但如果他抓到你，他會把你變成一隻蠑螈！」");
 	say();
@@ -144,7 +144,7 @@ labelFunc0414_02AF:
 	say();
 	goto labelFunc0414_02E3;
 labelFunc0414_02DF:
-	message("「我也不能！但我最好不要跟你分享我的秘密……」");
+	message("「我也不能！但我最好不要跟你分享我的秘密…」");
 	say();
 labelFunc0414_02E3:
 	case "月影城" attend labelFunc0414_02F6:
@@ -158,7 +158,7 @@ labelFunc0414_02F6:
 	message(var0003);
 	message("。午夜過後，獨自一人來我的莊園，我會向你展示你從未見過的知識。」");
 	say();
-	message("「我睡得很沉，所以你很可能必須叫醒我……」");
+	message("「我睡得很沉，所以你很可能必須叫醒我…」");
 	say();
 	gflags[0x0125] = true;
 	var000B = UI_find_nearby(0xFE9C, 0x010E, 0x003C, 0x0000);

@@ -93,7 +93,7 @@ labelFunc043C_0169:
 labelFunc043C_0170:
 	case "騎士試煉" attend labelFunc043C_0192:
 	if (!(gflags[0x003E] == true)) goto labelFunc043C_0187;
-	message("「好騎士，我所知道的就是所有的蒙利多人( Monitorians )都會去西南方的一個半島進行某種成年禮。這就是我能告訴你的全部。除非你願意進一步啟發我……」");
+	message("「好騎士，我所知道的就是所有的蒙利多人( Monitorians )都會去西南方的一個半島進行某種成年禮。這就是我能告訴你的全部。除非你願意進一步啟發我…」");
 	say();
 	goto labelFunc043C_018B;
 labelFunc043C_0187:
@@ -103,7 +103,7 @@ labelFunc043C_018B:
 	UI_remove_answer("騎士試煉");
 labelFunc043C_0192:
 	case "風暴" attend labelFunc043C_01AC:
-	message("「我一生走南闖北，從未見過這樣的事。這些風暴毫無預警地出現，並在身後留下混亂。把東西移來移去，改變事物的模樣……這根本不自然。讓我開始覺得 Leon 可能是對的。」");
+	message("「我一生走南闖北，從未見過這樣的事。這些風暴毫無預警地出現，並在身後留下混亂。把東西移來移去，改變事物的模樣…這根本不自然。讓我開始覺得 Leon 可能是對的。」");
 	say();
 	UI_remove_answer("風暴");
 	UI_add_answer("Leon");
@@ -118,7 +118,7 @@ labelFunc043C_01AC:
 	UI_add_answer("友誼會");
 labelFunc043C_01D9:
 	case "友誼會" attend labelFunc043C_01FF:
-	message("「我可以告訴你，這與不列顛王( Lord British )所提出的美德( Virtues )有所偏離。但它是有道理的。」 *「去跟 Leon 談談。在這個主題上，他比我能言善道得多。」");
+	message("「我可以告訴你，這與不列顛王所提出的美德有所偏離。但它是有道理的。」 *「去跟 Leon 談談。在這個主題上，他比我能言善道得多。」");
 	say();
 	UI_remove_answer("友誼會");
 	gflags[0x0169] = true;
@@ -137,13 +137,13 @@ labelFunc043C_0224:
 	UI_add_answer("總理");
 labelFunc043C_022F:
 	case "總理" attend labelFunc043C_0249:
-	message("「一條名叫 Zulith 的小蟲子。Yelinda 夫人的影子……一直牽著她走。如果你想求見夫人，你必須先跟 Zulith 說話。」 *「在我們這些水手被禁止進城的前一天，我看到 Kylista 正在和 Zulith 說話。她擔心 Leon 搶走了她的信徒。而 Zulith，這隻渴望權力的癩蛤蟆，確保了她的意願成為法律。」 *「恐怕在幼鹿城( Fawn )掌權的，是那些大船長( Great Captains )和總理( Chancellor )。」");
+	message("「一條名叫 Zulith 的小蟲子。Yelinda 夫人的影子…一直牽著她走。如果你想求見夫人，你必須先跟 Zulith 說話。」 *「在我們這些水手被禁止進城的前一天，我看到 Kylista 正在和 Zulith 說話。她擔心 Leon 搶走了她的信徒。而 Zulith，這隻渴望權力的癩蛤蟆，確保了她的意願成為法律。」 *「恐怕在幼鹿城( Fawn )掌權的，是那些大船長( Great Captains )和總理( Chancellor )。」");
 	say();
 	UI_remove_answer("總理");
 	UI_add_answer("大船長");
 labelFunc043C_0249:
 	case "大船長" attend labelFunc043C_025C:
-	message("「他們有三個人：Joth、Garth 和 Voldin。他們裝出一副崇尚『美』的樣子，但他們更崇尚金錢和權力。Yelinda 凡事都向他們和 Zulith 請教……我敢說就連晚餐菜單也是如此。」 *「再加上 Kylista 在 Zulith 耳邊吹風，你最好把她也算成幼鹿城( Fawn )的掌權者之一。」");
+	message("「他們有三個人：Joth、Garth 和 Voldin。他們裝出一副崇尚『美』的樣子，但他們更崇尚金錢和權力。Yelinda 凡事都向他們和 Zulith 請教…我敢說就連晚餐菜單也是如此。」 *「再加上 Kylista 在 Zulith 耳邊吹風，你最好把她也算成幼鹿城( Fawn )的掌權者之一。」");
 	say();
 	UI_remove_answer("大船長");
 labelFunc043C_025C:
@@ -168,7 +168,7 @@ labelFunc043C_029F:
 	UI_add_answer("巴特林");
 labelFunc043C_02B9:
 	case "巴特林" attend labelFunc043C_02D3:
-	message("「他剛到時似乎非常沮喪。但我懷疑那只是帶他來到這裡的傳送風暴造成的迷失感。」 *「他帶了幾名船員前往內陸。他正在尋找某種黑石神器( blackrock artifact )……也許它和方尖碑有某種關聯。我不知道。」");
+	message("「他剛到時似乎非常沮喪。但我懷疑那只是帶他來到這裡的傳送風暴造成的迷失感。」 *「他帶了幾名船員前往內陸。他正在尋找某種黑石神器( blackrock artifact )…也許它和方尖碑有某種關聯。我不知道。」");
 	say();
 	UI_remove_answer("巴特林");
 	UI_add_answer("黑石神器");
@@ -191,7 +191,7 @@ labelFunc043C_0307:
 	UI_remove_answer("Ruggs");
 labelFunc043C_031A:
 	case "地圖" attend labelFunc043C_0348:
-	message("「不列顛王( Lord British )曾說我是全不列顛尼亞最優秀的地圖製作者。我對我的工作非常用心。因為我對這片大陸的探索還很少，我擔心我的地圖不夠準確。」 *「如果你願意收下我地圖的一份副本，我會感到很榮幸。也許這能在你的旅途中幫助到你。」");
+	message("「不列顛王曾說我是全不列顛尼亞最優秀的地圖製作者。我對我的工作非常用心。因為我對這片大陸的探索還很少，我擔心我的地圖不夠準確。」 *「如果你願意收下我地圖的一份副本，我會感到很榮幸。也許這能在你的旅途中幫助到你。」");
 	say();
 	var0005 = Func099B(0xFE9C, 0x0001, 0x00B2, 0xFE99, 0x0000, false, true);
 	gflags[0x0151] = true;
@@ -200,14 +200,14 @@ labelFunc043C_0348:
 	case "瘋子 Iolo" attend labelFunc043C_0361:
 	message("「你那位值得信賴的同伴究竟遭遇了什麼樣的大災難，");
 	message(var0002);
-	message("。我擔心他已經失去理智了。他用他那惡魔般的玩笑來恐嚇這座城市。」 *「就在昨天，Iolo 向幼鹿城( Fawn )的市民宣布，他要一勞永逸地證明『美』是否只是膚淺的表面。然後他對可憐的 Yelinda 夫人施了一個法術，剝掉了她身上所有的皮膚。她跑出城，朝著 Gorlab 沼澤( Gorlab Swamp )跑去。沒有了真正的統治者，我擔心幼鹿城( Fawn )將永遠無法復原……即使有你的幫助也一樣。」");
+	message("。我擔心他已經失去理智了。他用他那惡魔般的玩笑來恐嚇這座城市。」 *「就在昨天，Iolo 向幼鹿城( Fawn )的市民宣布，他要一勞永逸地證明『美』是否只是膚淺的表面。然後他對可憐的 Yelinda 夫人施了一個法術，剝掉了她身上所有的皮膚。她跑出城，朝著 Gorlab 沼澤( Gorlab Swamp )跑去。沒有了真正的統治者，我擔心幼鹿城( Fawn )將永遠無法復原…即使有你的幫助也一樣。」");
 	say();
 	UI_remove_answer("瘋子 Iolo");
 labelFunc043C_0361:
 	case "告辭" attend labelFunc043C_0388:
 	UI_remove_npc_face0();
 	Func097F(0xFE9C, "@感謝你的協助。@", 0x0000);
-	Func097F(0xFFC4, "@這是我的榮幸……@", 0x0005);
+	Func097F(0xFFC4, "@這是我的榮幸…@", 0x0005);
 	goto labelFunc043C_038B;
 labelFunc043C_0388:
 	goto labelFunc043C_00D8;

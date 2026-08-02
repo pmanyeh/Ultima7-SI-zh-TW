@@ -18,8 +18,8 @@ void Func0739 object#(0x739) ()
 	if (!(event == 0x000E)) goto labelFunc0739_002F;
 	UI_clear_item_flag(0xFE9C, 0x0010);
 	UI_init_conversation();
-	Func097F(0xFE9C, "@我可以做到的……@", 0x0000);
-	Func097F(0xFE9C, "@我改變主意了……@", 0x0010);
+	Func097F(0xFE9C, "@我可以做到的…@", 0x0000);
+	Func097F(0xFE9C, "@我改變主意了…@", 0x0010);
 	abort;
 labelFunc0739_002F:
 	if (!(event == 0x0000)) goto labelFunc0739_0061;
@@ -49,7 +49,7 @@ labelFunc0739_00F1:
 	var0006 = Func09AB(0x0178, 0x000E, 0x0048, true, var0005);
 	goto labelFunc0739_00F1;
 labelFunc0739_012A:
-	Func097F(0xFFB5, "@嘿，嘿……@", 0x0000);
+	Func097F(0xFFB5, "@嘿，嘿…@", 0x0000);
 	var0006 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0739], 0x0003);
 	abort;
 labelFunc0739_014C:
@@ -69,7 +69,7 @@ labelFunc0739_018D:
 labelFunc0739_01D1:
 	UI_clear_item_flag(0xFE9C, 0x0010);
 	UI_init_conversation();
-	Func097F(0xFE9C, "@我有種不祥的預感……@", 0x0007);
+	Func097F(0xFE9C, "@我有種不祥的預感…@", 0x0007);
 	goto labelFunc0739_018D;
 labelFunc0739_01EE:
 	UI_si_path_run_usecode(0xFE9C, [0x0337, 0x08C1, 0x0000], 0x000B, 0xFE9C, 0x0739, true);

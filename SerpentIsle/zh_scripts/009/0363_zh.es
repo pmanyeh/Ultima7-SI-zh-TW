@@ -28,13 +28,13 @@ labelFunc0363_0029:
 	UI_show_npc_face0(0xFF2D, 0x0000);
 	message("「歡迎，來自另一個世界的英雄！」");
 	say();
-	message("「我預言我們會再次相遇，雖然我沒想到會是在夢境中。」*「你眼前看到的是月之眼( Moon's Eye )。它是你在現實世界中的目標。」");
+	message("「我預言我們會再次相遇，雖然我沒想到會是在夢境中。」* 「你眼前看到的是月之眼( Moon's Eye )。它是你在現實世界中的目標。」");
 	say();
-	message("「去北方冰原的古人神廟( Temple of the Ancient Ones )尋找真正的『月之眼』。它會向你展示你必須知道的事情……」");
+	message("「去北方冰原的古人神廟( Temple of the Ancient Ones )尋找真正的『月之眼』。它會向你展示你必須知道的事情…」");
 	say();
 	UI_remove_npc_face0();
-	Func097F(0xFF2D, "@尋找月之眼……@", 0x0002);
-	Func097F(0xFE9C, "@等等……@", 0x000C);
+	Func097F(0xFF2D, "@尋找月之眼…@", 0x0002);
+	Func097F(0xFE9C, "@等等…@", 0x000C);
 	var0004 = UI_get_object_position(item);
 	UI_sprite_effect(0x0007, var0004[0x0001], var0004[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_play_sound_effect(0x0051);
@@ -64,7 +64,7 @@ labelFunc0363_0161:
 	UI_show_npc_face0(0xFF2D, 0x0000);
 	message("「果然如預言所說！我跋山涉水來見你。我的名字是 Thoxa。」");
 	say();
-	message("「等等！我進展太快了。或許你不是那個應許的英雄……我必須測試你，免得我幫錯了人。」");
+	message("「等等！我進展太快了。或許你不是那個應許的英雄…我必須測試你，免得我幫錯了人。」");
 	say();
 	if (!Func098C()) goto labelFunc0363_0407;
 	message("「你果然是我要找的人！這是命運沙漏( Hourglass of Fate )。把它隨身帶在身上，透過它，Xenka 的僧侶們就能幫助你。」");
@@ -101,7 +101,7 @@ labelFunc0363_0208:
 	say();
 	message("「他們將是你最古老、最信任的朋友，與你分享冒險是他們的職責。」");
 	say();
-	message("「你必須找到他們，英雄！然後永遠別讓他們離開你身邊……」");
+	message("「你必須找到他們，英雄！然後永遠別讓他們離開你身邊…」");
 	say();
 	gflags[0x02C3] = true;
 labelFunc0363_0227:
@@ -117,7 +117,7 @@ labelFunc0363_0227:
 labelFunc0363_0246:
 	case "Xenka" attend labelFunc0363_0259:
 	UI_remove_answer("Xenka");
-	message("「在我們這麼短的時間裡，我該怎麼解釋 Xenka 呢？Xenka 是一位從虛空( Void )之外獲得智慧的女先知……」");
+	message("「在我們這麼短的時間裡，我該怎麼解釋 Xenka 呢？Xenka 是一位從虛空( Void )之外獲得智慧的女先知…」");
 	say();
 labelFunc0363_0259:
 	case "應許的英雄" attend labelFunc0363_0284:
@@ -126,7 +126,7 @@ labelFunc0363_0259:
 	say();
 	message("「這裡有閃爍著魔法閃電的風暴，還有折磨無辜者的奇怪疾病。」");
 	say();
-	message("「最後，越來越感覺到這片土地有些不對勁……」");
+	message("「最後，越來越感覺到這片土地有些不對勁…」");
 	say();
 	UI_add_answer(["風暴", "疾病", "不對勁"]);
 labelFunc0363_0284:
@@ -148,7 +148,7 @@ labelFunc0363_029F:
 labelFunc0363_02B6:
 	case "不對勁" attend labelFunc0363_02CD:
 	UI_remove_answer("不對勁");
-	message("「我無法進一步解釋。你沒感覺到嗎？那種事情……不對勁的感覺？」");
+	message("「我無法進一步解釋。你沒感覺到嗎？那種事情…不對勁的感覺？」");
 	say();
 	message("「Xenka 稱這些日子為失衡時代( Time of Imbalance )。」");
 	say();
@@ -175,7 +175,7 @@ labelFunc0363_02FB:
 labelFunc0363_0315:
 	case "末日" attend labelFunc0363_0328:
 	UI_remove_answer("末日");
-	message("「如果你在任務中失敗，我們的世界將會終結……被即將肆虐的地震撕裂。」");
+	message("「如果你在任務中失敗，我們的世界將會終結…被即將肆虐的地震撕裂。」");
 	say();
 labelFunc0363_0328:
 	case "告辭" attend labelFunc0363_0400:

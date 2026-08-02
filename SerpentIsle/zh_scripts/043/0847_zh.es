@@ -82,7 +82,7 @@ labelFunc0847_0149:
 	if (!(var0012 == 0x0001)) goto labelFunc0847_018D;
 	message("「");
 	message(var0004);
-	message("，你真的很有一套……若我再多聽你說幾句，恐怕要身無分文了。」");
+	message("，你真的很有一套…若我再多聽你說幾句，恐怕要身無分文了。」");
 	say();
 labelFunc0847_018D:
 	if (!(var0012 == 0x0002)) goto labelFunc0847_01A1;
@@ -98,17 +98,17 @@ labelFunc0847_01AF:
 	goto labelFunc0847_01E2;
 labelFunc0847_01B2:
 	if (!(var0012 == 0x0001)) goto labelFunc0847_01C0;
-	message("「你討價還價的本領能把我的價格壓這麼低，或許你在其他方面也同樣出色……」");
+	message("「你討價還價的本領能把我的價格壓這麼低，或許你在其他方面也同樣出色…」");
 	say();
 labelFunc0847_01C0:
 	if (!(var0012 == 0x0002)) goto labelFunc0847_01D4;
 	message("「");
 	message(var0004);
-	message("，你的言辭很有力量……也許你想來場不同形式的較量？」");
+	message("，你的言辭很有力量…也許你想來場不同形式的較量？」");
 	say();
 labelFunc0847_01D4:
 	if (!(var0012 == 0x0003)) goto labelFunc0847_01E2;
-	message("「啊，親愛的……你的機智讓你把我的價格壓得這麼低。你身上其他部分是否也跟你的舌頭一樣得心應手？」");
+	message("「啊，親愛的…你的機智讓你把我的價格壓得這麼低。你身上其他部分是否也跟你的舌頭一樣得心應手？」");
 	say();
 labelFunc0847_01E2:
 	goto labelFunc0847_0384;
@@ -136,19 +136,19 @@ labelFunc0847_023A:
 	if (!(var0012 == 0x0001)) goto labelFunc0847_024E;
 	message("「");
 	message(var0004);
-	message("，你的蒙里他利幣花得很值，即便你的伶牙俐齒把我的價格壓低了……」");
+	message("，你的蒙里他利幣花得很值，即便你的伶牙俐齒把我的價格壓低了…」");
 	say();
 labelFunc0847_024E:
 	if (!(var0012 == 0x0002)) goto labelFunc0847_0262;
 	message("「男人不常佔我的便宜！你應該好好享受，");
 	message(var0002);
-	message("，這樣欺負一個可憐的女孩……」");
+	message("，這樣欺負一個可憐的女孩…」");
 	say();
 labelFunc0847_0262:
 	if (!(var0012 == 0x0003)) goto labelFunc0847_0274;
-	message("「喔……」");
+	message("「喔…」");
 	say();
-	message("「你確實跟我討了個好價格！你真淘氣……」");
+	message("「你確實跟我討了個好價格！你真淘氣…」");
 	say();
 labelFunc0847_0274:
 	goto labelFunc0847_0384;
@@ -176,7 +176,7 @@ labelFunc0847_02CF:
 	goto labelFunc0847_0306;
 labelFunc0847_02D2:
 	if (!(var0012 == 0x0001)) goto labelFunc0847_02EA;
-	message("「喔……」");
+	message("「喔…」");
 	say();
 	message("「你讓我起雞皮疙瘩了，");
 	message(var0002);
@@ -227,7 +227,7 @@ labelFunc0847_0362:
 	say();
 labelFunc0847_0376:
 	if (!(var0012 == 0x0003)) goto labelFunc0847_0384;
-	message("「你願意同意這個價格，真甜心，親愛的……」");
+	message("「你願意同意這個價格，真甜心，親愛的…」");
 	say();
 labelFunc0847_0384:
 	if (!var0003) goto labelFunc0847_039D;
@@ -345,7 +345,7 @@ labelFunc0847_052A:
 	goto labelFunc0847_056F;
 labelFunc0847_052D:
 	if (!(var0012 == 0x0001)) goto labelFunc0847_0541;
-	message("「甜心，與你交易是一種享受……");
+	message("「甜心，與你交易是一種享受…");
 	message(var0006);
 	message(" 蒙里他利幣如何？」");
 	say();
@@ -359,7 +359,7 @@ labelFunc0847_0555:
 	if (!(var0012 == 0x0003)) goto labelFunc0847_056F;
 	message("「");
 	message(var0004);
-	message("，你出的價格不錯……願意改付 ");
+	message("，你出的價格不錯…願意改付 ");
 	message(var0006);
 	message(" 蒙里他利幣嗎？」");
 	say();
@@ -373,13 +373,13 @@ labelFunc0847_056F:
 	say();
 labelFunc0847_0593:
 	if (!(var0012 == 0x0002)) goto labelFunc0847_05A7;
-	message("「我也需要賺點利潤……");
+	message("「我也需要賺點利潤…");
 	message(var0006);
 	message(" 蒙里他利幣如何？」");
 	say();
 labelFunc0847_05A7:
 	if (!(var0012 == 0x0003)) goto labelFunc0847_05BB;
-	message("「你比男人更能理解我們女人在交易中所賺不多……也許 ");
+	message("「你比男人更能理解我們女人在交易中所賺不多…也許 ");
 	message(var0006);
 	message(" 蒙里他利幣？」");
 	say();
@@ -401,7 +401,7 @@ labelFunc0847_05E6:
 	if (!(var0012 == 0x0003)) goto labelFunc0847_0604;
 	message("「");
 	message(var0004);
-	message("，你的肌肉真發達！你在蒙利多城( Monitor )裡肯定是最強壯的男人……」");
+	message("，你的肌肉真發達！你在蒙利多城( Monitor )裡肯定是最強壯的男人…」");
 	say();
 	message("「也許你願意同意 ");
 	message(var0006);
@@ -431,7 +431,7 @@ labelFunc0847_0650:
 	goto labelFunc0847_0697;
 labelFunc0847_0653:
 	if (!(var0012 == 0x0001)) goto labelFunc0847_0667;
-	message("「你肯定不會給我出這麼低的價格……");
+	message("「你肯定不會給我出這麼低的價格…");
 	message(var0006);
 	message(" 蒙里他利幣如何？」");
 	say();

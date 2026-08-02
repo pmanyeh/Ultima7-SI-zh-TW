@@ -25,7 +25,7 @@ labelFunc0876_0035:
 	say();
 	UI_set_item_flag(0xFF56, 0x001C);
 labelFunc0876_0047:
-	UI_add_answer([var0001, "我是聖者。", "我迷路了……"]);
+	UI_add_answer([var0001, "我是聖者。", "我迷路了…"]);
 	if (!(!gflags[0x02DA])) goto labelFunc0876_007F;
 	gflags[0x02DA] = true;
 	var0003 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0004), [(byte)0x23, (byte)0x55, 0x0377], 0x0064);

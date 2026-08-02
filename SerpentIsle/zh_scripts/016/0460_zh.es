@@ -62,7 +62,7 @@ labelFunc0460_00BD:
 labelFunc0460_00D0:
 	case "七號" attend labelFunc0460_00E7:
 	UI_remove_answer("七號");
-	message("「七號一定出事了。讓我想想，我們最後一次見到七號時，我和五號( Number 5 )在一起……而那已經是很久以前的事了。」");
+	message("「七號一定出事了。讓我想想，我們最後一次見到七號時，我和五號( Number 5 )在一起…而那已經是很久以前的事了。」");
 	say();
 	message("「我擔心我們現在可能永遠也找不到噴泉室的鑰匙了。」");
 	say();

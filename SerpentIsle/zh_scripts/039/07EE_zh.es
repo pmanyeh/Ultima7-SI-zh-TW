@@ -37,8 +37,8 @@ labelFunc07EE_0058:
 	UI_set_item_flag(var0001, 0x0012);
 	var0001 = UI_update_last_created(UI_get_object_position(0xFF31));
 labelFunc07EE_00CF:
-	Func097F(0xFF2D, "@再見了……@", 0x0002);
-	Func097F(0xFF2D, "@英雄……@", 0x0016);
+	Func097F(0xFF2D, "@再見了…@", 0x0002);
+	Func097F(0xFF2D, "@英雄…@", 0x0016);
 	var0001 = UI_delayed_execute_usecode_array(0xFF2D, [(byte)0x23, (byte)0x6C, (byte)0x27, 0x0002, (byte)0x6D, (byte)0x27, 0x0002, (byte)0x55, 0x07EE], 0x0019);
 	gflags[0x000A] = false;
 	gflags[0x0007] = true;
@@ -48,7 +48,7 @@ labelFunc07EE_0115:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFF2D, 0x0000);
 	UI_clear_item_flag(0xFE9C, 0x0010);
-	message("「Karnax 暫時被擊敗了……我很虛弱，必須離開了……」");
+	message("「Karnax 暫時被擊敗了…我很虛弱，必須離開了…」");
 	say();
 	if (!gflags[0x02C3]) goto labelFunc07EE_014C;
 	message("「記住要尋找三個同伴——他們必須在你的身邊！」");
@@ -57,7 +57,7 @@ labelFunc07EE_0115:
 labelFunc07EE_014C:
 	message("「Xenka 的著作中提到了將與你同行的三個同伴。沒有他們，你無法成功。」");
 	say();
-	message("「你必須找到他們，英雄！然後永遠不要讓他們離開你的身邊……」");
+	message("「你必須找到他們，英雄！然後永遠不要讓他們離開你的身邊…」");
 	say();
 	gflags[0x02C3] = true;
 labelFunc07EE_0158:

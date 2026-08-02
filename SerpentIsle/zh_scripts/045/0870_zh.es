@@ -86,7 +86,7 @@ labelFunc0870_015F:
 	if (!(var0011 == 0x0001)) goto labelFunc0870_0189;
 	message("「你今天運氣好碰上我心情不錯，");
 	message(var0002);
-	message("！我可不常把價格降到這種地步……」");
+	message("！我可不常把價格降到這種地步…」");
 	say();
 labelFunc0870_0189:
 	if (!(var0011 == 0x0002)) goto labelFunc0870_019D;
@@ -235,7 +235,7 @@ labelFunc0870_039E:
 	say();
 labelFunc0870_03BC:
 	if (!(var0011 == 0x0002)) goto labelFunc0870_03D0;
-	message("「嗯……我不太確定…… ");
+	message("「嗯…我不太確定… ");
 	message(var0005);
 	message(" 吉爾得幣怎麼樣？」");
 	say();

@@ -177,7 +177,7 @@ labelFunc080C_0319:
 	var0010 = "個鋪蓋";
 labelFunc080C_0343:
 	if (!(var000B == 0x000A)) goto labelFunc080C_036D;
-	message("「這……粉末……如果你經常失眠，它非常有效， ");
+	message("「這…粉末…如果你經常失眠，它非常有效， ");
 	message(var0000);
 	message(" 。我只收一小筆費用，一罐 ");
 	message(var000D);
@@ -247,7 +247,7 @@ labelFunc080C_0471:
 labelFunc080C_0482:
 	if (!(var000E == 0x0003)) goto labelFunc080C_0503;
 	var000C = Func0992(0x0001, "@但我們資金不足！@", 0x0000, false);
-	var000C = Func0992(0x0001, "@真尷尬……@", 0x0000, false);
+	var000C = Func0992(0x0001, "@真尷尬…@", 0x0000, false);
 	if (!(var000C != 0xFE9C)) goto labelFunc080C_04CB;
 	UI_show_npc_face0(0xFFF3, 0x0000);
 	message("「我很樂意把東西免費送給你，因為我相信你是個值得信賴的人。」");

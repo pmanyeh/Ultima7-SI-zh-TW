@@ -51,7 +51,7 @@ labelFunc09B4_00CF:
 	goto labelFunc09B4_0167;
 labelFunc09B4_00FF:
 	if (!(var0001 == "月影城")) goto labelFunc09B4_0126;
-	message("「如果我不能留在這裡，我們就在月影城( Moonshade )的藍豬酒館( Blue Boar Inn )碰面。」");
+	message("「如果我不能留在這裡，我們就在月影城( Moonshade )的藍野豬旅店( Blue Boar Inn )碰面。」");
 	say();
 	UI_set_new_schedules(var0000, 0x0000, 0x001A, [0x08C1, 0x0710]);
 	goto labelFunc09B4_0167;

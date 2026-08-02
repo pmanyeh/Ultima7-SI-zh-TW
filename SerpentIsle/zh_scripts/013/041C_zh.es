@@ -79,10 +79,10 @@ labelFunc041C_014D:
 	if (!(var0007 == 0x0005)) goto labelFunc041C_0183;
 	if (!Func0942(0xFFE2)) goto labelFunc041C_0179;
 	UI_item_say(0xFFE4, "@Rocco ！@");
-	Func097F(0xFFE2, "@等一下……@", 0x0002);
+	Func097F(0xFFE2, "@等一下…@", 0x0002);
 	goto labelFunc041C_0183;
 labelFunc041C_0179:
-	UI_item_say(0xFFE4, "@工作，工作，工作……@");
+	UI_item_say(0xFFE4, "@工作，工作，工作…@");
 labelFunc041C_0183:
 	if (!(var0007 == 0x0006)) goto labelFunc041C_0197;
 	UI_item_say(0xFFE4, "@烤魚！@");
@@ -133,7 +133,7 @@ labelFunc041C_0296:
 	if (!(UI_get_item_flag(0xFFE4, 0x0006) || (!(Func0994() == 0x000E)))) goto labelFunc041C_02B9;
 	message("「很高興再次和你說話，");
 	message(var0002);
-	message("。我只希望能對你多點幫助。我只是一個魔導人偶(automaton)……」");
+	message("。我只希望能對你多點幫助。我只是一個魔導人偶(automaton)…」");
 	say();
 	goto labelFunc041C_02C3;
 labelFunc041C_02B9:
@@ -224,7 +224,7 @@ labelFunc041C_0408:
 labelFunc041C_0424:
 	message("「如你所願，");
 	message(var0000);
-	message("……如果你還需要我，只要開口就行了。」");
+	message("…如果你還需要我，只要開口就行了。」");
 	say();
 labelFunc041C_042E:
 	UI_remove_from_party(0xFFE4);
@@ -299,7 +299,7 @@ labelFunc041C_0549:
 labelFunc041C_0551:
 	case "藍野豬旅館" attend labelFunc041C_059A:
 	UI_remove_answer("藍野豬旅館");
-	message("「全月影城最好的餐飲場所！由全月影城最好的人經營……」");
+	message("「全月影城最好的餐飲場所！由全月影城最好的人經營…」");
 	say();
 	if (!(Func0942(0xFFE2) == true)) goto labelFunc041C_058C;
 	UI_show_npc_face1(0xFFE2, 0x0000);
@@ -307,7 +307,7 @@ labelFunc041C_0551:
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「這不是瘋話， Rocco 。我為你感到驕傲……」");
+	message("「這不是瘋話， Rocco 。我為你感到驕傲…」");
 	say();
 labelFunc041C_058C:
 	message("「Rocco ，旅館老闆。你再也找不到比他更好的人了。」");
@@ -316,19 +316,19 @@ labelFunc041C_058C:
 labelFunc041C_059A:
 	case "Rocco" attend labelFunc041C_05C1:
 	UI_remove_answer("Rocco");
-	message("「你可能覺得 Rocco 有點粗魯，但他心地善良。畢竟，只有他挺身而出保護我免受 Torrissio 的傷害……我必須說，這讓他冒了極大的危險。」");
+	message("「你可能覺得 Rocco 有點粗魯，但他心地善良。畢竟，只有他挺身而出保護我免受 Torrissio 的傷害…我必須說，這讓他冒了極大的危險。」");
 	say();
 	UI_push_answers();
 	UI_add_answer(["Torrissio", "危險", "換個話題"]);
 labelFunc041C_05C1:
 	case "換個話題" attend labelFunc041C_05D1:
-	message("「噢，當然！我不是故意讓你覺得無聊……」");
+	message("「噢，當然！我不是故意讓你覺得無聊…」");
 	say();
 	UI_pop_answers();
 labelFunc041C_05D1:
 	case "Torrissio" attend labelFunc041C_05F3:
 	UI_remove_answer("Torrissio");
-	message("「你不可能沒注意到我是個魔導人偶(automaton)。 Torrissio 是我的製造者……詛咒他黑心肝！」");
+	message("「你不可能沒注意到我是個魔導人偶(automaton)。 Torrissio 是我的製造者…詛咒他黑心肝！」");
 	say();
 	message("「Torrissio 是一個以別人的痛苦為樂的人。他創造我的唯一目的，就是擁有一個可以讓他折磨一輩子的俘虜。」");
 	say();
@@ -395,7 +395,7 @@ labelFunc041C_0689:
 labelFunc041C_06A4:
 	case "女侍" attend labelFunc041C_06C8:
 	UI_remove_answer("女侍");
-	message("「我盡我所能為 Rocco 服務……女侍、廚師、任何需要做的事情。我在這家旅館裡做過你能想像的每一份工作。從粉刷天花板到阻止 Mosh 偷我們的魚。」");
+	message("「我盡我所能為 Rocco 服務…女侍、廚師、任何需要做的事情。我在這家旅館裡做過你能想像的每一份工作。從粉刷天花板到阻止 Mosh 偷我們的魚。」");
 	say();
 	UI_add_answer("Mosh");
 	if (!var0004) goto labelFunc041C_06C8;
@@ -411,7 +411,7 @@ labelFunc041C_06DB:
 	UI_remove_answer("酸");
 	message("「是的，我知道酸是什麼，");
 	message(var0000);
-	message("。那是一種腐蝕性液體，對人體和大多數金屬都非常有害……除了我的。」");
+	message("。那是一種腐蝕性液體，對人體和大多數金屬都非常有害…除了我的。」");
 	say();
 	message("「你需要我的幫忙嗎，");
 	message(var0000);
@@ -421,7 +421,7 @@ labelFunc041C_06DB:
 	if (!gflags[0x0227]) goto labelFunc041C_076D;
 	message("「讓我看看我有沒有理解錯。你希望我陪你去一座古老的神廟。」");
 	say();
-	message("「一到那裡，我就會短暫地變成你的樣子，而你會變成我的樣子。嗯……」");
+	message("「一到那裡，我就會短暫地變成你的樣子，而你會變成我的樣子。嗯…」");
 	say();
 	message("「聽起來很有趣。我將能體會，哪怕只有一瞬間，真正身為人類是什麼感覺。」");
 	say();
@@ -457,7 +457,7 @@ labelFunc041C_076D:
 	message(var0000);
 	message("！即使有你陪伴，我也無法面對那種地方的危險！」");
 	say();
-	message("「要是能有辦法把你的勇氣注入我金屬的身體裡就好了……」");
+	message("「要是能有辦法把你的勇氣注入我金屬的身體裡就好了…」");
 	say();
 labelFunc041C_077B:
 	goto labelFunc041C_0788;
@@ -506,7 +506,7 @@ labelFunc041C_084B:
 labelFunc041C_0888:
 	Func097F(0xFE9C, "@再見！@", 0x0000);
 	if (!gflags[0x0004]) goto labelFunc041C_08A9;
-	Func097F(0xFFE4, "@永別了……@", 0x0002);
+	Func097F(0xFFE4, "@永別了…@", 0x0002);
 	goto labelFunc041C_08B5;
 labelFunc041C_08A9:
 	Func097F(0xFFE4, "@請再來！@", 0x0002);

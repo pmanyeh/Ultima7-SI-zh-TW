@@ -117,7 +117,7 @@ labelFunc03CF_01B4:
 labelFunc03CF_01C7:
 	case "力量" attend labelFunc03CF_01E1:
 	UI_remove_answer("力量");
-	message("「蠢貨！無知之徒！我應該殺了你，把你的骨頭加入我的收藏！你很清楚這枚戒指的力量！如果我有多餘的法藥，我就會用最可怕的法術把你擊倒！如果我有這枚戒指……」");
+	message("「蠢貨！無知之徒！我應該殺了你，把你的骨頭加入我的收藏！你很清楚這枚戒指的力量！如果我有多餘的法藥，我就會用最可怕的法術把你擊倒！如果我有這枚戒指…」");
 	say();
 	UI_add_answer("法藥");
 labelFunc03CF_01E1:
@@ -140,7 +140,7 @@ labelFunc03CF_021B:
 labelFunc03CF_022E:
 	case "代價" attend labelFunc03CF_024E:
 	UI_remove_answer("代價");
-	message("「代價？他被看見了自己過去的錯誤！這是一份禮物！他被賜予了一年的時間來完成他的工作，到那時他將被改變……變成我。讚美混沌之蛇的智慧！」");
+	message("「代價？他被看見了自己過去的錯誤！這是一份禮物！他被賜予了一年的時間來完成他的工作，到那時他將被改變…變成我。讚美混沌之蛇的智慧！」");
 	say();
 	UI_add_answer(["改變", "時間"]);
 labelFunc03CF_024E:

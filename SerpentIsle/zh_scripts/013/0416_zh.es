@@ -34,7 +34,7 @@ labelFunc0416_0042:
 	if (!(event == 0x0001)) goto labelFunc0416_0070;
 	UI_item_say(0xFE9C, "@等一下，先生。@");
 	0xFFEA->Func07D1();
-	Func097F(0xFFEA, "@我是個很忙的法師……@", 0x0002);
+	Func097F(0xFFEA, "@我是個很忙的法師…@", 0x0002);
 	UI_set_schedule_type(0xFFEA, 0x0003);
 labelFunc0416_0070:
 	if (!(event == 0x0009)) goto labelFunc0416_0591;
@@ -57,11 +57,11 @@ labelFunc0416_00D1:
 	message("「很高興見到你，我敢肯定。但我沒有耐心閒聊。」");
 	say();
 labelFunc0416_00D5:
-	message("「原諒我，但當還有其他更緊迫的事情時，這絕對是浪費時間……」");
+	message("「原諒我，但當還有其他更緊迫的事情時，這絕對是浪費時間…」");
 	say();
 	UI_set_item_flag(0xFFEA, 0x001C);
 	UI_set_schedule_type(0xFFEA, 0x000C);
-	Func097F(0xFFEA, "@去工作……@", 0x0000);
+	Func097F(0xFFEA, "@去工作…@", 0x0000);
 	abort;
 	goto labelFunc0416_013E;
 labelFunc0416_00FD:
@@ -109,7 +109,7 @@ labelFunc0416_01D0:
 	UI_remove_answer("審判");
 	message("「請不要把這場荒謬的審判怪罪於我！在月影城，沒有人會反駁領主法師！」");
 	say();
-	message("「而且，你確實犯了罪，也就是說你進入了禁忌的臥室……」");
+	message("「而且，你確實犯了罪，也就是說你進入了禁忌的臥室…」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc0416_01F6;
 	message("「喔，我多麼羨慕你！但我現在老了，只能安於我的研究。」");
@@ -182,7 +182,7 @@ labelFunc0416_02C9:
 labelFunc0416_02F7:
 	message("「那我很抱歉，我沒有時間分給你。」");
 	say();
-	Func097F(0xFFEA, "@再會……@", 0x0000);
+	Func097F(0xFFEA, "@再會…@", 0x0000);
 	abort;
 labelFunc0416_0308:
 	case "傳送" attend labelFunc0416_0338:
@@ -244,7 +244,7 @@ labelFunc0416_0421:
 	var0005 = Func0992(0x0001, "@你希望我們召喚風暴？這太瘋狂了！@", 0x0000, false);
 	if (!(var0005 != 0xFE9C)) goto labelFunc0416_044E;
 	UI_set_conversation_slot(0x0000);
-	message("「我向你保證，你不會有危險！我本來想親自去做的，但在我這個年紀，爬樓梯是非常困難的……」");
+	message("「我向你保證，你不會有危險！我本來想親自去做的，但在我這個年紀，爬樓梯是非常困難的…」");
 	say();
 labelFunc0416_044E:
 	message("「一次拉動一根拉桿。這會從風暴中引下閃電，並使它擊中我放在塔上的物品。」");
@@ -265,7 +265,7 @@ labelFunc0416_045A:
 	var0003 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0004), [(byte)0x23, (byte)0x55, 0x0377], 0x0064);
 	goto labelFunc0416_04C2;
 labelFunc0416_04BA:
-	message("「原來如此！接下來，你必須去找 Fedabiblio，看看他是否知道答案……」");
+	message("「原來如此！接下來，你必須去找 Fedabiblio，看看他是否知道答案…」");
 	say();
 	gflags[0x00E4] = true;
 labelFunc0416_04C2:
@@ -300,15 +300,15 @@ labelFunc0416_053E:
 	say();
 	message("「當 Mortegro 和我正在努力解開傳送風暴的祕密時， Mortegro 被閃電擊中了。」");
 	say();
-	message("「在我的地窖裡取代他位置的，就是這個奇怪的石祭壇。從外觀看來，它像是來自某座巨蛇神廟的東西，但我還不知道要怎麼把它送回它原來的地方……目前還不知道。」");
+	message("「在我的地窖裡取代他位置的，就是這個奇怪的石祭壇。從外觀看來，它像是來自某座巨蛇神廟的東西，但我還不知道要怎麼把它送回它原來的地方…目前還不知道。」");
 	say();
-	message("「如果我能想出如何逆轉這場傳送，也許我就能救出可憐的 Mortegro 。我希望他在這場交換中沒有被殺死……」");
+	message("「如果我能想出如何逆轉這場傳送，也許我就能救出可憐的 Mortegro 。我希望他在這場交換中沒有被殺死…」");
 	say();
 labelFunc0416_0563:
 	case "告辭" attend labelFunc0416_058D:
 	UI_remove_npc_face0();
 	Func097F(0xFE9C, "@非常感謝！@", 0x0000);
-	Func097F(0xFFEA, "@回到我的研究……@", 0x0002);
+	Func097F(0xFFEA, "@回到我的研究…@", 0x0002);
 	Func08FF();
 	goto labelFunc0416_0590;
 labelFunc0416_058D:

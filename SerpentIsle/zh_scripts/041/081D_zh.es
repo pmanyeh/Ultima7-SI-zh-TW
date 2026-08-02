@@ -58,7 +58,7 @@ labelFunc081D_00E5:
 labelFunc081D_0104:
 	var0004 = Func0956(var0003);
 	if (!(var0004 == "再看看")) goto labelFunc081D_0122;
-	message("「好吧……那麼也許下次吧。」");
+	message("「好吧…那麼也許下次吧。」");
 	say();
 	var0000 = false;
 	goto labelFunc081D_0E99;
@@ -108,7 +108,7 @@ labelFunc081D_01CF:
 	say();
 	var0007 = UI_input_numeric_value(0x0000, var0006, 0x0001, 0x0000);
 	if (!(var0007 == 0x0000)) goto labelFunc081D_0207;
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 	goto labelFunc081D_0E85;
 labelFunc081D_0207:
@@ -164,7 +164,7 @@ labelFunc081D_030F:
 labelFunc081D_0329:
 	if (!(var0007 >= 0x0001)) goto labelFunc081D_0387;
 	var000C = UI_remove_party_items(var0007, var0005, 0xFE99, 0xFE99, false);
-	message("「很好……」~「收下你的 ");
+	message("「很好…」~「收下你的 ");
 	message(var0007);
 	message(" ");
 	message(var0004);
@@ -181,7 +181,7 @@ labelFunc081D_0329:
 	say();
 	goto labelFunc081D_038B;
 labelFunc081D_0387:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc081D_038B:
 	goto labelFunc081D_039E;
@@ -195,7 +195,7 @@ labelFunc081D_038E:
 labelFunc081D_039E:
 	goto labelFunc081D_03A5;
 labelFunc081D_03A1:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc081D_03A5:
 	if (!(var0001 == "吉爾得幣")) goto labelFunc081D_0757;
@@ -223,7 +223,7 @@ labelFunc081D_045D:
 labelFunc081D_047C:
 	var0004 = Func0956(var0003);
 	if (!(var0004 == "再看看")) goto labelFunc081D_049A;
-	message("「好吧……那麼也許下次吧。」");
+	message("「好吧…那麼也許下次吧。」");
 	say();
 	var0000 = false;
 	goto labelFunc081D_0E99;
@@ -273,7 +273,7 @@ labelFunc081D_0547:
 	say();
 	var0007 = UI_input_numeric_value(0x0000, var0006, 0x0001, 0x0000);
 	if (!(var0007 == 0x0000)) goto labelFunc081D_057F;
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 	goto labelFunc081D_0E85;
 labelFunc081D_057F:
@@ -336,7 +336,7 @@ labelFunc081D_06BF:
 labelFunc081D_06CF:
 	if (!(var0007 >= 0x0001)) goto labelFunc081D_0739;
 	var000C = UI_remove_party_items(var0007, var0005, 0xFE99, 0xFE99, false);
-	message("「很好……」~「收下你的 ");
+	message("「很好…」~「收下你的 ");
 	message(var0007);
 	message(" ");
 	message(var0004);
@@ -357,7 +357,7 @@ labelFunc081D_06CF:
 	say();
 	goto labelFunc081D_073D;
 labelFunc081D_0739:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc081D_073D:
 	goto labelFunc081D_0750;
@@ -371,7 +371,7 @@ labelFunc081D_0740:
 labelFunc081D_0750:
 	goto labelFunc081D_0757;
 labelFunc081D_0753:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc081D_0757:
 	if (!(var0001 == "法拉利幣")) goto labelFunc081D_0AD7;
@@ -399,7 +399,7 @@ labelFunc081D_080F:
 labelFunc081D_082E:
 	var0004 = Func0956(var0003);
 	if (!(var0004 == "再看看")) goto labelFunc081D_084C;
-	message("「好吧……那麼也許下次吧。」");
+	message("「好吧…那麼也許下次吧。」");
 	say();
 	var0000 = false;
 	goto labelFunc081D_0E99;
@@ -449,7 +449,7 @@ labelFunc081D_08F9:
 	say();
 	var0007 = UI_input_numeric_value(0x0000, var0006, 0x0001, 0x0000);
 	if (!(var0007 == 0x0000)) goto labelFunc081D_0931;
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 	goto labelFunc081D_0E85;
 labelFunc081D_0931:
@@ -505,7 +505,7 @@ labelFunc081D_0A41:
 labelFunc081D_0A5B:
 	if (!(var0007 >= 0x0001)) goto labelFunc081D_0AB9;
 	var000C = UI_remove_party_items(var0007, var0005, 0xFE99, 0xFE99, false);
-	message("「很好……」~「收下你的 ");
+	message("「很好…」~「收下你的 ");
 	message(var0007);
 	message(" ");
 	message(var0004);
@@ -522,7 +522,7 @@ labelFunc081D_0A5B:
 	say();
 	goto labelFunc081D_0ABD;
 labelFunc081D_0AB9:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc081D_0ABD:
 	goto labelFunc081D_0AD0;
@@ -536,7 +536,7 @@ labelFunc081D_0AC0:
 labelFunc081D_0AD0:
 	goto labelFunc081D_0AD7;
 labelFunc081D_0AD3:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc081D_0AD7:
 	if (!(var0001 == "金幣")) goto labelFunc081D_0E85;
@@ -564,7 +564,7 @@ labelFunc081D_0B8F:
 labelFunc081D_0BAE:
 	var0004 = Func0956(var0003);
 	if (!(var0004 == "再看看")) goto labelFunc081D_0BCC;
-	message("「好吧……那麼也許下次吧。」");
+	message("「好吧…那麼也許下次吧。」");
 	say();
 	var0000 = false;
 	goto labelFunc081D_0E99;
@@ -614,7 +614,7 @@ labelFunc081D_0C79:
 	say();
 	var0007 = UI_input_numeric_value(0x0000, var0006, 0x0001, 0x0000);
 	if (!(var0007 == 0x0000)) goto labelFunc081D_0CB1;
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 	goto labelFunc081D_0E85;
 labelFunc081D_0CB1:
@@ -677,7 +677,7 @@ labelFunc081D_0DED:
 labelFunc081D_0DFD:
 	if (!(var0007 >= 0x0001)) goto labelFunc081D_0E67;
 	var000C = UI_remove_party_items(var0007, var0005, 0xFE99, 0xFE99, false);
-	message("「很好……」~「收下你的 ");
+	message("「很好…」~「收下你的 ");
 	message(var0007);
 	message(" ");
 	message(var0004);
@@ -698,7 +698,7 @@ labelFunc081D_0DFD:
 	say();
 	goto labelFunc081D_0E6B;
 labelFunc081D_0E67:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc081D_0E6B:
 	goto labelFunc081D_0E7E;
@@ -712,7 +712,7 @@ labelFunc081D_0E6E:
 labelFunc081D_0E7E:
 	goto labelFunc081D_0E85;
 labelFunc081D_0E81:
-	message("「那麼也許下次吧……」");
+	message("「那麼也許下次吧…」");
 	say();
 labelFunc081D_0E85:
 	message("「你還想兌換更多貨幣嗎？」");
@@ -722,7 +722,7 @@ labelFunc081D_0E85:
 labelFunc081D_0E92:
 	goto labelFunc081D_0E99;
 labelFunc081D_0E95:
-	message("「如果這是你所希望的話……」");
+	message("「如果這是你所希望的話…」");
 	say();
 labelFunc081D_0E99:
 	return;

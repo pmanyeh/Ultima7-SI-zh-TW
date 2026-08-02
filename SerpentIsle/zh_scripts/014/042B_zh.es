@@ -50,15 +50,15 @@ labelFunc042B_00C1:
 	if (!(gflags[0x003E] == true)) goto labelFunc042B_0141;
 	message("「我沒有惹上麻煩吧？」 ~「我什麼都沒做！」");
 	say();
-	message("「俺叫 Kane。俺是個牧羊人……」");
+	message("「俺叫 Kane。俺是個牧羊人…」");
 	say();
 	if (!gflags[0x01CC]) goto labelFunc042B_0133;
 	if (!(gflags[0x00E6] == true)) goto labelFunc042B_0125;
 	message("「Edrin 回來了， ");
 	message(var0000);
-	message("！」 ~「Edrin 就是 Ale！」 *「俺的意思是，風暴把……呃，把 Edrin 變成了俺找到的那隻鸚鵡！」 ~「俺找了他這麼久，結果他一直都在俺身邊！」");
+	message("！」 ~「Edrin 就是 Ale！」 *「俺的意思是，風暴把…呃，把 Edrin 變成了俺找到的那隻鸚鵡！」 ~「俺找了他這麼久，結果他一直都在俺身邊！」");
 	say();
-	message("「俺就知道那些法師裡有人能幫俺！」 *「我們很快就要回家了……」 ~「等 Edrin 找到一艘能回去的船。」");
+	message("「俺就知道那些法師裡有人能幫俺！」 *「我們很快就要回家了…」 ~「等 Edrin 找到一艘能回去的船。」");
 	say();
 	goto labelFunc042B_0129;
 labelFunc042B_0125:
@@ -80,9 +80,9 @@ labelFunc042B_0141:
 	say();
 	if (!gflags[0x01CC]) goto labelFunc042B_0172;
 	if (!(gflags[0x00E6] == true)) goto labelFunc042B_0164;
-	message("「Edrin 回來了！Edrin 就是 Ale！」 *「俺的意思是，風暴把……呃，把 Edrin 變成了俺找到的那隻鸚鵡！」 ~「俺找了他這麼久，結果他一直都在俺身邊！」");
+	message("「Edrin 回來了！Edrin 就是 Ale！」 *「俺的意思是，風暴把…呃，把 Edrin 變成了俺找到的那隻鸚鵡！」 ~「俺找了他這麼久，結果他一直都在俺身邊！」");
 	say();
-	message("「俺就知道那些法師裡有人能幫俺！」 *「我們很快就要回家了……」 ~「等 Edrin 找到一艘能回去的船。」");
+	message("「俺就知道那些法師裡有人能幫俺！」 *「我們很快就要回家了…」 ~「等 Edrin 找到一艘能回去的船。」");
 	say();
 	goto labelFunc042B_0168;
 labelFunc042B_0164:
@@ -92,7 +92,7 @@ labelFunc042B_0168:
 	UI_add_answer("風暴");
 	goto labelFunc042B_017D;
 labelFunc042B_0172:
-	message("「俺叫 Kane。俺是個牧羊人……」 ~「俺在等去月影城( Moonshade )的船，勞駕。」");
+	message("「俺叫 Kane。俺是個牧羊人…」 ~「俺在等去月影城( Moonshade )的船，勞駕。」");
 	say();
 	UI_add_answer("航程");
 labelFunc042B_017D:
@@ -107,16 +107,16 @@ labelFunc042B_018A:
 	if (!(gflags[0x00E6] == true)) goto labelFunc042B_01BA;
 	message("「Edrin 回來了， ");
 	message(var0000);
-	message("！」 ~「Edrin 就是 Ale！」 *「俺的意思是，風暴把……呃，把 Edrin 變成了俺找到的那隻鸚鵡！」 ~「俺找了他這麼久，結果他一直都在俺身邊！」");
+	message("！」 ~「Edrin 就是 Ale！」 *「俺的意思是，風暴把…呃，把 Edrin 變成了俺找到的那隻鸚鵡！」 ~「俺找了他這麼久，結果他一直都在俺身邊！」");
 	say();
-	message("「俺不是告訴過你，那些法師裡有人能幫俺嗎？」 ~「俺就知道！」 *「我們很快就要回家了……」 ~「等 Edrin 找到一艘能回去的船。」");
+	message("「俺不是告訴過你，那些法師裡有人能幫俺嗎？」 ~「俺就知道！」 *「我們很快就要回家了…」 ~「等 Edrin 找到一艘能回去的船。」");
 	say();
 	UI_add_answer("風暴");
 	goto labelFunc042B_01CF;
 labelFunc042B_01BA:
 	message("「這地方真是不可思議， ");
 	message(var0000);
-	message("，對吧？有這麼多好看的……每樣東西都那麼精緻！要是 Edrin 也跟俺在這裡就好了。俺肯定他能帶俺四處逛逛。」");
+	message("，對吧？有這麼多好看的…每樣東西都那麼精緻！要是 Edrin 也跟俺在這裡就好了。俺肯定他能帶俺四處逛逛。」");
 	say();
 	message("「希望這些強大的法師裡有人能幫俺找到他。」");
 	say();
@@ -161,14 +161,14 @@ labelFunc042B_023D:
 	say();
 	goto labelFunc042B_0276;
 labelFunc042B_0252:
-	message("「Hawk 船長開的船叫 Arabella，就是停在外面碼頭那艘。」 ~「他本來住在這兒，直到他跟人打架被長槍兵帶走……」");
+	message("「Hawk 船長開的船叫 Arabella，就是停在外面碼頭那艘。」 ~「他本來住在這兒，直到他跟人打架被長槍兵帶走…」");
 	say();
 	if (!(gflags[0x003E] == true)) goto labelFunc042B_0265;
 	message("「你不是來抓俺的吧？」 ~「俺沒打架，真的。Hawk 船長和 Flindo 老爺開始大吵的時候，俺躲在桌子底下來著。」");
 	say();
 	goto labelFunc042B_0269;
 labelFunc042B_0265:
-	message("「俺沒打架，真的。Hawk 船長和 Flindo 老爺開始大吵的時候，俺躲在桌子底下來著。」 ~「希望他們沒覺得俺做了什麼……」");
+	message("「俺沒打架，真的。Hawk 船長和 Flindo 老爺開始大吵的時候，俺躲在桌子底下來著。」 ~「希望他們沒覺得俺做了什麼…」");
 	say();
 labelFunc042B_0269:
 	UI_add_answer(["長槍兵", "Flindo"]);
@@ -179,17 +179,17 @@ labelFunc042B_027D:
 	if (!(gflags[0x003E] == true)) goto labelFunc042B_02A2;
 	message("「請恕俺冒昧， ");
 	message(var0000);
-	message("。」 ~「俺沒有不敬的意思……」");
+	message("。」 ~「俺沒有不敬的意思…」");
 	say();
-	message("「Flindo 老爺帶著幾個長槍兵進來，對 Hawk 船長說了些俺沒聽清的話。」 ~「然後他們兩個就開始大吼，接著，嗯，就有人動手了……」 ~「俺躲在桌子底下，沒看到是誰。」");
+	message("「Flindo 老爺帶著幾個長槍兵進來，對 Hawk 船長說了些俺沒聽清的話。」 ~「然後他們兩個就開始大吼，接著，嗯，就有人動手了…」 ~「俺躲在桌子底下，沒看到是誰。」");
 	say();
-	message("「有人狠狠揍了 Hawk 船長一拳，然後長槍兵就把他拖走了。」 ~「Argus 老爺大喊叫他們放開他，但，請原諒俺這麼說，他們叫他管好自己的客棧就行，別管閒事。」 *「Argus 老爺氣壞了，本想追出去。但 Devra 夫人攔住了他。」 ~「他說了些俺以前從沒聽過的髒話……」");
+	message("「有人狠狠揍了 Hawk 船長一拳，然後長槍兵就把他拖走了。」 ~「Argus 老爺大喊叫他們放開他，但，請原諒俺這麼說，他們叫他管好自己的客棧就行，別管閒事。」 *「Argus 老爺氣壞了，本想追出去。但 Devra 夫人攔住了他。」 ~「他說了些俺以前從沒聽過的髒話…」");
 	say();
 	goto labelFunc042B_02AA;
 labelFunc042B_02A2:
-	message("「Flindo 老爺帶著幾個長槍兵進來，對 Hawk 船長說了些俺沒聽清的話。」 ~「然後他們兩個就開始大吼，接著，嗯，就有人動手了……」 ~「俺躲在桌子底下，沒看到是誰。」");
+	message("「Flindo 老爺帶著幾個長槍兵進來，對 Hawk 船長說了些俺沒聽清的話。」 ~「然後他們兩個就開始大吼，接著，嗯，就有人動手了…」 ~「俺躲在桌子底下，沒看到是誰。」");
 	say();
-	message("「有人狠狠揍了 Hawk 船長一拳，然後長槍兵就把他拖走了。」 ~「Argus 老爺大喊叫他們放開他，但他們叫他管好自己的客棧就行，別管閒事。」 *「Argus 老爺氣壞了，本想追出去。但 Devra 夫人攔住了他。」 ~「他說了些俺以前從沒聽過的髒話……」");
+	message("「有人狠狠揍了 Hawk 船長一拳，然後長槍兵就把他拖走了。」 ~「Argus 老爺大喊叫他們放開他，但他們叫他管好自己的客棧就行，別管閒事。」 *「Argus 老爺氣壞了，本想追出去。但 Devra 夫人攔住了他。」 ~「他說了些俺以前從沒聽過的髒話…」");
 	say();
 labelFunc042B_02AA:
 	gflags[0x01CD] = true;
@@ -199,7 +199,7 @@ labelFunc042B_02BC:
 	case "Argus" attend labelFunc042B_02D3:
 	message("「他不是又高又壯嗎？俺敢打賭他的力氣比俺哥哥還大。」 ~「而 Edrin 自己一個人就能舉起兩隻成年的母羊！」");
 	say();
-	message("「俺看得出 Argus 老爺是……或曾經是……一名長槍兵。」 ~「他臉上有那些印記。」 *「但俺不明白為什麼那些傢伙那樣對待他。」 ~「也許是因為他在他母親面前那樣說話，惹惱了他們……」");
+	message("「俺看得出 Argus 老爺是…或曾經是…一名長槍兵。」 ~「他臉上有那些印記。」 *「但俺不明白為什麼那些傢伙那樣對待他。」 ~「也許是因為他在他母親面前那樣說話，惹惱了他們…」");
 	say();
 	UI_remove_answer("Argus");
 labelFunc042B_02D3:
@@ -211,7 +211,7 @@ labelFunc042B_02D3:
 labelFunc042B_02E8:
 	message("「Flindo 老爺好像是個商人什麼的，俺想。」 ~「他人不怎麼好。」");
 	say();
-	message("「他整天就只會抱怨 Hawk 船長不肯開船去月影城( Moonshade )。」 ~「他說 Hawk 船長只是想多要點錢……但船長拒絕了他所有加錢的提議。」");
+	message("「他整天就只會抱怨 Hawk 船長不肯開船去月影城( Moonshade )。」 ~「他說 Hawk 船長只是想多要點錢…但船長拒絕了他所有加錢的提議。」");
 	say();
 	message("「俺覺得船長只是不想讓我們大家陷入危險罷了。」 ~「而且當長槍兵把 Hawk 船長帶走的時候，Flindo 老爺似乎也沒多高興。」");
 	say();
@@ -249,11 +249,11 @@ labelFunc042B_0345:
 	if (!(gflags[0x00E6] == true)) goto labelFunc042B_0366;
 	message("「他現在不做鸚鵡了，一切都好。不過他說最近老做噩夢。俺也不怪他。」");
 	say();
-	message("「俺打賭，當過鳥的人肯定都會做噩夢……」");
+	message("「俺打賭，當過鳥的人肯定都會做噩夢…」");
 	say();
 	goto labelFunc042B_036E;
 labelFunc042B_0366:
-	message("「俺還沒跟那些法師說過話。俺承認俺有點怕他們……」");
+	message("「俺還沒跟那些法師說過話。俺承認俺有點怕他們…」");
 	say();
 	message("「但俺知道遲早得去。他們是俺找到 Edrin 的唯一希望。」");
 	say();
@@ -271,7 +271,7 @@ labelFunc042B_038F:
 	case "鸚鵡" attend labelFunc042B_03AD:
 	message("「俺大概找了 Edrin 一天多吧，後來在一棵樹下發現了這隻鸚鵡，看著怪可憐的。」 ~「當時俺覺得挺孤單的，就問這隻鳥為什麼會在森林裡，而不是在家裡的籠子裡呆著。」 *「這傢伙突然啞著嗓子叫了一聲『Ale！』，差點沒把俺嚇死。」 ~「但 Hawk 船長說，這種鳥就是這樣的。」");
 	say();
-	message("「話雖如此，俺覺得 Ale——現在這就是他的名字了——比俺認識的一些人還聰明。」 ~「而且他特別喜歡麥酒。」 *「俺希望 Edrin 會讓俺留著 Ale……」 ~「畢竟，他有他的水晶，而俺什麼都沒有。」");
+	message("「話雖如此，俺覺得 Ale——現在這就是他的名字了——比俺認識的一些人還聰明。」 ~「而且他特別喜歡麥酒。」 *「俺希望 Edrin 會讓俺留著 Ale…」 ~「畢竟，他有他的水晶，而俺什麼都沒有。」");
 	say();
 	UI_remove_answer("鸚鵡");
 	UI_add_answer("水晶");
@@ -279,16 +279,16 @@ labelFunc042B_03AD:
 	case "水晶" attend labelFunc042B_03C4:
 	message("「俺還很小的時候，爹帶著 Edrin 去了月影城( Moonshade )。」 ~「俺記得俺哭個不停，但娘說俺太小了不能去。她答應俺下次就讓俺去。」");
 	say();
-	message("「只可惜沒有下次了，因為爹那年秋天就去世了，從那以後 Edrin 和俺一直忙著放羊，再也沒去過。」 ~「不過有時候，俺晚上害怕的時候，Edrin 會讓俺拿著那塊水晶直到睡著……」 *「那時候俺從不做夢。」 ~「誰能想到有一天俺會像這樣獨自去月影城( Moonshade )呢？」");
+	message("「只可惜沒有下次了，因為爹那年秋天就去世了，從那以後 Edrin 和俺一直忙著放羊，再也沒去過。」 ~「不過有時候，俺晚上害怕的時候，Edrin 會讓俺拿著那塊水晶直到睡著…」 *「那時候俺從不做夢。」 ~「誰能想到有一天俺會像這樣獨自去月影城( Moonshade )呢？」");
 	say();
 	UI_remove_answer("水晶");
 labelFunc042B_03C4:
 	case "月影城" attend labelFunc042B_03E8:
 	message("「嗯， ");
 	message(var0000);
-	message("，照俺推算，如果這些風暴不是自然現象，那肯定就是魔法造成的。」 ~「而且大家都知道，如果想找跟魔法有關的東西，就得去月影城( Moonshade )。」 *「如果這些風暴帶走了 Edrin，而且又是魔法造成的，那肯定有法師能告訴俺怎麼找到他。」 ~「俺只要去那裡問問就行了……」");
+	message("，照俺推算，如果這些風暴不是自然現象，那肯定就是魔法造成的。」 ~「而且大家都知道，如果想找跟魔法有關的東西，就得去月影城( Moonshade )。」 *「如果這些風暴帶走了 Edrin，而且又是魔法造成的，那肯定有法師能告訴俺怎麼找到他。」 ~「俺只要去那裡問問就行了…」");
 	say();
-	message("「Devra 夫人告訴俺，俺可以去問問 Ensorcio 老爺能不能幫忙。」 ~「她說他就是個法師。」 *「俺有點納悶……因為大家都知道法師都住在月影城( Moonshade )。」 ~「但俺還是去問了……」");
+	message("「Devra 夫人告訴俺，俺可以去問問 Ensorcio 老爺能不能幫忙。」 ~「她說他就是個法師。」 *「俺有點納悶…因為大家都知道法師都住在月影城( Moonshade )。」 ~「但俺還是去問了…」");
 	say();
 	UI_remove_answer("月影城");
 	UI_add_answer("Ensorcio");
@@ -296,9 +296,9 @@ labelFunc042B_03E8:
 	case "Ensorcio" attend labelFunc042B_0405:
 	message("「俺不喜歡說人壞話， ");
 	message(var0000);
-	message("。」 ~「但 Ensorcio 老爺的脾氣是俺見過最差的！」 *「俺只是問他是不是法師，能不能幫幫俺……」 ~「他就威脅要把俺變成青蛙！」");
+	message("。」 ~「但 Ensorcio 老爺的脾氣是俺見過最差的！」 *「俺只是問他是不是法師，能不能幫幫俺…」 ~「他就威脅要把俺變成青蛙！」");
 	say();
-	message("「他其實只要叫俺走開，別煩他就行了。」 ~「俺絕不會再打擾他。」 ~「現在俺終於明白，為什麼爹以前總說如果我們不聽話，法師就會來把我們抓走……」 ~「也許 Ensorcio 老爺從來沒有個爹教他規矩吧。」");
+	message("「他其實只要叫俺走開，別煩他就行了。」 ~「俺絕不會再打擾他。」 ~「現在俺終於明白，為什麼爹以前總說如果我們不聽話，法師就會來把我們抓走…」 ~「也許 Ensorcio 老爺從來沒有個爹教他規矩吧。」");
 	say();
 	UI_remove_answer("Ensorcio");
 labelFunc042B_0405:

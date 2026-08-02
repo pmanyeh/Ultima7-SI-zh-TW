@@ -64,7 +64,7 @@ labelFunc0841_0118:
 	say();
 labelFunc0841_0126:
 	if (!(var0010 == 0x0003)) goto labelFunc0841_0134;
-	message("「你還真是能言善道。我得小心盯著你……」");
+	message("「你還真是能言善道。我得小心盯著你…」");
 	say();
 labelFunc0841_0134:
 	goto labelFunc0841_01FF;
@@ -75,7 +75,7 @@ labelFunc0841_0137:
 	say();
 labelFunc0841_015B:
 	if (!(var0010 == 0x0002)) goto labelFunc0841_0169;
-	message("「我今天心情好大方……算你幸運！」");
+	message("「我今天心情好大方…算你幸運！」");
 	say();
 labelFunc0841_0169:
 	if (!(var0010 == 0x0003)) goto labelFunc0841_0177;
@@ -96,7 +96,7 @@ labelFunc0841_01AC:
 	if (!(var0010 == 0x0003)) goto labelFunc0841_01C0;
 	message("「告訴你遇到的每個人關於我們的酒，");
 	message(var0002);
-	message("……還有我們公道的價格！」");
+	message("…還有我們公道的價格！」");
 	say();
 labelFunc0841_01C0:
 	goto labelFunc0841_01FF;
@@ -139,7 +139,7 @@ labelFunc0841_0242:
 	if (!(var0010 == 0x0002)) goto labelFunc0841_0256;
 	message("「你快要把我激怒了，");
 	message(var0002);
-	message("。破壞協議可是一件危險的事……」");
+	message("。破壞協議可是一件危險的事…」");
 	say();
 labelFunc0841_0256:
 	if (!(var0010 == 0x0003)) goto labelFunc0841_026B;
@@ -174,7 +174,7 @@ labelFunc0841_02D8:
 labelFunc0841_02E1:
 	message("「");
 	message(var0004);
-	message(" 吉爾得幣……否則你就去別家吧。」");
+	message(" 吉爾得幣…否則你就去別家吧。」");
 	say();
 	if (!(var000B < 0x001E)) goto labelFunc0841_0303;
 	UI_set_npc_id(0xFFE9, (var000B + 0x0002));
@@ -183,7 +183,7 @@ labelFunc0841_0303:
 labelFunc0841_0306:
 	if (!(var000D == 0x0002)) goto labelFunc0841_034C;
 	if (!(var0010 == 0x0001)) goto labelFunc0841_0324;
-	message("「我挺喜歡你的…… ");
+	message("「我挺喜歡你的… ");
 	message(var0004);
 	message(" 吉爾得幣聽起來如何？」");
 	say();
@@ -257,7 +257,7 @@ labelFunc0841_0408:
 	say();
 labelFunc0841_041C:
 	if (!(var0010 == 0x0003)) goto labelFunc0841_0430;
-	message("「我得顧及我的名聲…… ");
+	message("「我得顧及我的名聲… ");
 	message(var0004);
 	message(" 吉爾得幣就是我的底線。」");
 	say();

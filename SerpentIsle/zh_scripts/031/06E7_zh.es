@@ -36,7 +36,7 @@ labelFunc06E7_00C0:
 labelFunc06E7_00C5:
 	if (!(event == 0x0002)) goto labelFunc06E7_0164;
 	UI_show_npc_face0(0xFEE0, 0x0000);
-	message("\"Welcome to mine own private shooting gallery, Avatar.\"");
+	message("「歡迎來到我的私人靶場，聖者。」");
 	say();
 	UI_remove_npc_face0();
 	Func09B8();

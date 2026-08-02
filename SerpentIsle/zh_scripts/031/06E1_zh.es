@@ -58,7 +58,7 @@ labelFunc06E1_00F5:
 	UI_show_npc_face0(0xFEEB, 0x0002);
 	message("「我是白龍王！」");
 	say();
-	message("「我會保護你……我會帶你超越所有凡世的紛擾——進入我的死亡王國！」");
+	message("「我會保護你…我會帶你超越所有凡世的紛擾——進入我的死亡王國！」");
 	say();
 	UI_remove_npc_face0();
 labelFunc06E1_0111:

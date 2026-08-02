@@ -70,7 +70,7 @@ labelFunc04AA_0088:
 	var000E = (UI_get_item_frame(var000C) + 0x0001);
 	UI_set_item_frame(var000C, var000E);
 	Func087A();
-	Func094F(0xFF56, "@要進入我們的領域……@");
+	Func094F(0xFF56, "@要進入我們的領域…@");
 	gflags[0x01FE] = true;
 	Func097F(0xFF56, "@去尋找石柱！@", 0x0010);
 	Func0878();
@@ -156,9 +156,9 @@ labelFunc04AA_02C1:
 	say();
 	if (!(Func0955() == true)) goto labelFunc04AA_0334;
 	if (!(var0006 == true)) goto labelFunc04AA_0305;
-	var0016 = Func0992(0x0001, "@我們帶來了高腳杯！@", "@我有高腳杯……@", false);
+	var0016 = Func0992(0x0001, "@我們帶來了高腳杯！@", "@我有高腳杯…@", false);
 	UI_set_conversation_slot(0x0000);
-	message("「原來是真的！為了懷疑你致上最誠摯的歉意……」");
+	message("「原來是真的！為了懷疑你致上最誠摯的歉意…」");
 	say();
 	message("「請保留高腳杯，來自另一個世界的英雄。希望能有助於你在任務中的力量。」");
 	say();
@@ -223,13 +223,13 @@ labelFunc04AA_03D0:
 	case var0008 attend labelFunc04AA_041B:
 	message("「要保持警惕，你可能和你的同類一樣，來這裡殺害我的人民並偷走我們的財寶。」");
 	say();
-	message("「然而……想知道你是否是夢中英雄。」");
+	message("「然而…想知道你是否是夢中英雄。」");
 	say();
 	if (!var0004) goto labelFunc04AA_03ED;
-	message("「如同夢中的英雄般，是名女性……」");
+	message("「如同夢中的英雄般，是名女性…」");
 	say();
 labelFunc04AA_03ED:
-	UI_remove_answer([var0008, "我是聖者。", "我迷路了……"]);
+	UI_remove_answer([var0008, "我是聖者。", "我迷路了…"]);
 	UI_add_answer(["你的同類", "財寶", "夢"]);
 	if (!(!gflags[0x01FE])) goto labelFunc04AA_041B;
 	UI_add_answer("吊橋");
@@ -262,7 +262,7 @@ labelFunc04AA_046B:
 	UI_remove_answer("財寶");
 	message("「想說有很多人類來到這裡，偷走失落之城( Lost City )的財富。」");
 	say();
-	message("「我們願意分享……但很憤怒那些穿著盔甲的人類不想分享。他們只想殺了我們。」");
+	message("「我們願意分享…但很憤怒那些穿著盔甲的人類不想分享。他們只想殺了我們。」");
 	say();
 	message("「他們的無知與貪婪並駕齊驅。」");
 	say();
@@ -281,16 +281,16 @@ labelFunc04AA_04AA:
 	say();
 	message("「四處看看，並知道過去住在這裡的人崇敬巨蛇。要說他們也遭遇了一場大災難。」");
 	say();
-	message("「想知道曾經住在這裡的人發生了什麼事……」");
+	message("「想知道曾經住在這裡的人發生了什麼事…」");
 	say();
 labelFunc04AA_04C5:
 	case "夢" attend labelFunc04AA_0569:
 	UI_remove_answer("夢");
 	UI_push_answers();
-	message("「告訴你，我們的沉睡中充滿著一個夢，那是來自另一個世界的英雄幻象……」");
+	message("「告訴你，我們的沉睡中充滿著一個夢，那是來自另一個世界的英雄幻象…」");
 	say();
 	if (!var0004) goto labelFunc04AA_04E9;
-	message("「想說這位英雄非常像你……」");
+	message("「想說這位英雄非常像你…」");
 	say();
 	goto labelFunc04AA_04ED;
 labelFunc04AA_04E9:
@@ -306,7 +306,7 @@ labelFunc04AA_0524:
 	var0017 = Func0992(0x0001, 0x0000, 0x0000, false);
 	goto labelFunc04AA_0524;
 labelFunc04AA_0541:
-	var0017 = Func0992(var0017, "@聖者就是那位英雄……毫無疑問！@", 0x0000, false);
+	var0017 = Func0992(var0017, "@聖者就是那位英雄…毫無疑問！@", 0x0000, false);
 labelFunc04AA_0551:
 	UI_set_conversation_slot(0x0000);
 labelFunc04AA_0558:
@@ -317,9 +317,9 @@ labelFunc04AA_0569:
 	case "我不是英雄" attend labelFunc04AA_0590:
 	message("「走你的路吧！讓我的人民繼續沉睡，面對在黑夜中攫取他們的命運。」");
 	say();
-	message("「希望英雄能早日到來……」");
+	message("「希望英雄能早日到來…」");
 	say();
-	Func097F(0xFF56, "@早日……@", 0x0000);
+	Func097F(0xFF56, "@早日…@", 0x0000);
 	UI_set_schedule_type(0xFF56, 0x000C);
 	abort;
 labelFunc04AA_0590:
@@ -406,7 +406,7 @@ labelFunc04AA_068E:
 labelFunc04AA_06A9:
 	case "沒事" attend labelFunc04AA_06E9:
 	UI_remove_answer("沒事");
-	message("「不要再拖延我的使命……」");
+	message("「不要再拖延我的使命…」");
 	say();
 	message("「想問你是否願意接受試煉。證明你就是我們夢中的英雄。」");
 	say();
@@ -414,15 +414,15 @@ labelFunc04AA_06A9:
 	Func0879();
 	goto labelFunc04AA_06E9;
 labelFunc04AA_06CE:
-	message("「感到悲傷……知道我們正在迅速消亡。希望英雄能早日到來。」");
+	message("「感到悲傷…知道我們正在迅速消亡。希望英雄能早日到來。」");
 	say();
-	Func097F(0xFF56, "@離開……@", 0x0000);
+	Func097F(0xFF56, "@離開…@", 0x0000);
 	UI_set_schedule_type(0xFF56, 0x000C);
 	abort;
 labelFunc04AA_06E9:
 	case "我是聖者。" attend labelFunc04AA_0749:
-	UI_remove_answer([var0008, "我是聖者。", "我迷路了……"]);
-	message("「沒聽說過什麼聖者……」");
+	UI_remove_answer([var0008, "我是聖者。", "我迷路了…"]);
+	message("「沒聽說過什麼聖者…」");
 	say();
 	message("「要保持警惕，你和那些人類不一樣，並希望你不是來偷我們財寶的。」");
 	say();
@@ -433,13 +433,13 @@ labelFunc04AA_06E9:
 	say();
 	goto labelFunc04AA_0735;
 labelFunc04AA_0731:
-	message("「似乎認得你，彷彿從我沉睡的幻象中見過……想知道你是否是夢中英雄……」");
+	message("「似乎認得你，彷彿從我沉睡的幻象中見過…想知道你是否是夢中英雄…」");
 	say();
 labelFunc04AA_0735:
 	gflags[0x01FD] = true;
 	UI_add_answer(["你的同類", "財寶", "夢"]);
 labelFunc04AA_0749:
-	case "我迷路了……" attend labelFunc04AA_076C:
+	case "我迷路了…" attend labelFunc04AA_076C:
 	message("「認為你想傷害我們，就像你所有的同類一樣。認為你是來偷我們財寶的。要求你現在就離開！」");
 	say();
 	Func097F(0xFF56, "@離開！@", 0x0000);
@@ -447,13 +447,13 @@ labelFunc04AA_0749:
 	abort;
 labelFunc04AA_076C:
 	case "沉睡病" attend labelFunc04AA_0786:
-	message("「感到憂心。這片土地出現了失衡。影響了石像鬼，使他們陷入無助的沉睡中。」*「我是唯一保持清醒來抵抗巨魔( trolls )的……」");
+	message("「感到憂心。這片土地出現了失衡。影響了石像鬼，使他們陷入無助的沉睡中。」* 「我是唯一保持清醒來抵抗巨魔( trolls )的…」");
 	say();
 	UI_remove_answer("沉睡病");
 	UI_add_answer("巨魔");
 labelFunc04AA_0786:
 	case "巨魔" attend labelFunc04AA_07A0:
-	message("「是不文明的生物！喜歡殺戮……世世代代都在困擾我們。」*「建議你如果聽到鼓聲就要小心。」");
+	message("「是不文明的生物！喜歡殺戮…世世代代都在困擾我們。」* 「建議你如果聽到鼓聲就要小心。」");
 	say();
 	UI_remove_answer("巨魔");
 	UI_add_answer("鼓聲");
@@ -464,13 +464,13 @@ labelFunc04AA_07A0:
 	UI_remove_answer("鼓聲");
 labelFunc04AA_07B3:
 	case "戒指" attend labelFunc04AA_07CD:
-	message("「這是一件曾經住在這裡的人類所留下來的遺物……曾夢到它是一件充滿力量的物品。」*「在夢中看到，你將會從這枚戒指獲得極大的幫助。」");
+	message("「這是一件曾經住在這裡的人類所留下來的遺物…曾夢到它是一件充滿力量的物品。」* 「在夢中看到，你將會從這枚戒指獲得極大的幫助。」");
 	say();
 	UI_remove_answer("戒指");
 	UI_add_answer("幫助");
 labelFunc04AA_07CD:
 	case "幫助" attend labelFunc04AA_07E0:
-	message("「一直不清楚。只看到了兩條蛇在戰鬥……知道這枚戒指在這場戰鬥中很重要。其他的一無所知。」");
+	message("「一直不清楚。只看到了兩條蛇在戰鬥…知道這枚戒指在這場戰鬥中很重要。其他的一無所知。」");
 	say();
 	UI_remove_answer("幫助");
 labelFunc04AA_07E0:
@@ -482,12 +482,12 @@ labelFunc04AA_07E0:
 labelFunc04AA_07FA:
 	case "巨魔國王" attend labelFunc04AA_080D:
 	UI_remove_answer("巨魔國王");
-	message("「在想這根法杖將為巨魔帶來毀滅石像鬼的力量。確信你將必須殺死巨魔國王才能奪回法杖。」*「遺憾的是沉睡者必須有人看守。多希望我也能和你一起去……」");
+	message("「在想這根法杖將為巨魔帶來毀滅石像鬼的力量。確信你將必須殺死巨魔國王才能奪回法杖。」* 「遺憾的是沉睡者必須有人看守。多希望我也能和你一起去…」");
 	say();
 labelFunc04AA_080D:
 	case "情報" attend labelFunc04AA_0824:
 	UI_remove_answer("情報");
-	message("「幾乎沒什麼能告訴你的……」");
+	message("「幾乎沒什麼能告訴你的…」");
 	say();
 	message("「只能說失衡正在惡化。擔心很快就不會有石像鬼還能保持清醒了。」");
 	say();
@@ -553,8 +553,8 @@ labelFunc04AA_0944:
 	say();
 	message("「現在就去黃銅大門吧，英雄。在那裡與你見面，並讓你回到地表。」");
 	say();
-	Func097F(0xFF56, "@在那裡與你見面……@", 0x0000);
-	Func097F(0xFE9C, "@大門見……@", 0x0000);
+	Func097F(0xFF56, "@在那裡與你見面…@", 0x0000);
+	Func097F(0xFE9C, "@大門見…@", 0x0000);
 	var0019 = [0x05C4, 0x09B3];
 	UI_set_new_schedules(0xFF56, 0x0000, 0x000A, [var0019]);
 	UI_run_schedule(0xFF56);
@@ -566,7 +566,7 @@ labelFunc04AA_098B:
 	say();
 	message("「稱讚你在面對他人脅迫時的道德。令人振奮的是你並沒有試圖從他們的奴役中獲利。」");
 	say();
-	message("「看出你就是那位英雄，因為你擁有美德並且能夠完成任務——不管有多麼繁瑣。對於你終於到來感到如釋重負……」");
+	message("「看出你就是那位英雄，因為你擁有美德並且能夠完成任務——不管有多麼繁瑣。對於你終於到來感到如釋重負…」");
 	say();
 	gflags[0x01FA] = true;
 labelFunc04AA_09AA:
@@ -583,7 +583,7 @@ labelFunc04AA_09AA:
 labelFunc04AA_09E7:
 	message("「知道時間不多了。希望真正的英雄能盡快到來。」");
 	say();
-	Func097F(0xFF56, "@盡快……@", 0x0000);
+	Func097F(0xFF56, "@盡快…@", 0x0000);
 labelFunc04AA_09F7:
 	UI_set_schedule_type(0xFF56, 0x0014);
 	abort;

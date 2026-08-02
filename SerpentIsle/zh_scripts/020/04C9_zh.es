@@ -11,7 +11,7 @@ void Func04C9 object#(0x4C9) ()
 	var0000 = UI_get_item_flag(0xFF37, 0x001C);
 	if (!(event == 0x0007)) goto labelFunc04C9_005C;
 	UI_show_npc_face0(0xFFC0, 0x0000);
-	message("「你為什麼攻擊我？你的眼睛欺騙了你嗎？」*「去殺了那個想吞噬我的邪惡毒物吧！如果不阻止它，它會摧毀我們所有人！」*「我再也受不了這場惡夢了……」");
+	message("「你為什麼攻擊我？你的眼睛欺騙了你嗎？」* 「去殺了那個想吞噬我的邪惡毒物吧！如果不阻止它，它會摧毀我們所有人！」* 「我再也受不了這場惡夢了…」");
 	say();
 	UI_remove_npc_face0();
 	var0001 = UI_get_object_position(item);
@@ -36,7 +36,7 @@ labelFunc04C9_00C9:
 	if (!(event == 0x0001)) goto labelFunc04C9_0120;
 	if (!(var0000 != true)) goto labelFunc04C9_0103;
 	UI_show_npc_face0(0xFFC0, 0x0000);
-	message("「咿呀啊啊啊……救命！」~「我逃不掉……」~「它會抓住我並把我吃掉！」*「你看不見它嗎？求求你，救救我！」");
+	message("「咿呀啊啊啊…救命！」~「我逃不掉…」~「它會抓住我並把我吃掉！」* 「你看不見它嗎？求求你，救救我！」");
 	say();
 	UI_set_item_flag(0xFF37, 0x001C);
 	UI_remove_npc_face0();
@@ -45,7 +45,7 @@ labelFunc04C9_00C9:
 	goto labelFunc04C9_0120;
 labelFunc04C9_0103:
 	UI_show_npc_face0(0xFFC0, 0x0000);
-	message("「你瞎了嗎！你看不見那隻邪惡的野獸嗎？」*「發發慈悲吧！我求你去殺了那種怪物！拜託，你必須在它抓走我之前殺了它！」");
+	message("「你瞎了嗎！你看不見那隻邪惡的野獸嗎？」* 「發發慈悲吧！我求你去殺了那種怪物！拜託，你必須在它抓走我之前殺了它！」");
 	say();
 	UI_remove_npc_face0();
 	UI_set_schedule_type(0xFF37, 0x001D);

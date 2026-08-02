@@ -51,7 +51,7 @@ labelFunc0817_00D3:
 	if (!(var000B < 0x0002)) goto labelFunc0817_0262;
 	if (!(var0002 < (var0001 + ((var0000 - var0001) / 0x0004)))) goto labelFunc0817_012A;
 	if (!(var000E == 0x0001)) goto labelFunc0817_010B;
-	message("「你真是個精明狡猾的買賣人，居然能說服我接受這個價格……」");
+	message("「你真是個精明狡猾的買賣人，居然能說服我接受這個價格…」");
 	say();
 labelFunc0817_010B:
 	if (!(var000E == 0x0002)) goto labelFunc0817_0119;
@@ -59,14 +59,14 @@ labelFunc0817_010B:
 	say();
 labelFunc0817_0119:
 	if (!(var000E == 0x0003)) goto labelFunc0817_0127;
-	message("「真是太神奇了……你有一張能言善道的嘴，居然能說服我降價這麼多。」");
+	message("「真是太神奇了…你有一張能言善道的嘴，居然能說服我降價這麼多。」");
 	say();
 labelFunc0817_0127:
 	goto labelFunc0817_01DA;
 labelFunc0817_012A:
 	if (!(var0002 < (var0001 + ((var0000 - var0001) / 0x0003)))) goto labelFunc0817_016D;
 	if (!(var000E == 0x0001)) goto labelFunc0817_014E;
-	message("「這比我預期的還要低……但我同意這個價格。」");
+	message("「這比我預期的還要低…但我同意這個價格。」");
 	say();
 labelFunc0817_014E:
 	if (!(var000E == 0x0002)) goto labelFunc0817_015C;
@@ -81,7 +81,7 @@ labelFunc0817_016A:
 labelFunc0817_016D:
 	if (!(var0002 < (var0001 + ((var0000 - var0001) / 0x0002)))) goto labelFunc0817_01B0;
 	if (!(var000E == 0x0001)) goto labelFunc0817_0191;
-	message("「嗯……」 ~「我想只能接受這樣的價格了——雖然本來可以再高一點。」");
+	message("「嗯…」 ~「我想只能接受這樣的價格了——雖然本來可以再高一點。」");
 	say();
 labelFunc0817_0191:
 	if (!(var000E == 0x0002)) goto labelFunc0817_019F;
@@ -103,7 +103,7 @@ labelFunc0817_01BE:
 	say();
 labelFunc0817_01CC:
 	if (!(var000E == 0x0003)) goto labelFunc0817_01DA;
-	message("「是的……」*「這是一個非常好的價格。」");
+	message("「是的…」* 「這是一個非常好的價格。」");
 	say();
 labelFunc0817_01DA:
 	message("「所以，我們同意以 ");
@@ -182,7 +182,7 @@ labelFunc0817_0304:
 labelFunc0817_0318:
 	if (!(var000B == 0x0003)) goto labelFunc0817_035E;
 	if (!(var000E == 0x0001)) goto labelFunc0817_0336;
-	message("「我還不是完全確定……");
+	message("「我還不是完全確定…");
 	message(var0002);
 	message(" 怎麼樣？」");
 	say();
@@ -194,7 +194,7 @@ labelFunc0817_0336:
 	say();
 labelFunc0817_034A:
 	if (!(var000E == 0x0003)) goto labelFunc0817_035E;
-	message("「我想我的確需要你的錢……」 *「但不能是那個價格。");
+	message("「我想我的確需要你的錢…」 *「但不能是那個價格。");
 	message(var0002);
 	message(" 怎麼樣？」");
 	say();
@@ -213,7 +213,7 @@ labelFunc0817_037C:
 	say();
 labelFunc0817_0390:
 	if (!(var000E == 0x0003)) goto labelFunc0817_03A4;
-	message("「我不知道誰比較愚蠢……」*「是你開出這麼可憐的價格，還是我繼續跟你討價還價。我開價 ");
+	message("「我不知道誰比較愚蠢…」* 「是你開出這麼可憐的價格，還是我繼續跟你討價還價。我開價 ");
 	message(var0002);
 	message("。」");
 	say();

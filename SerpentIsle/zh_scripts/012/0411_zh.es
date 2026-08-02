@@ -36,17 +36,17 @@ void Func0411 object#(0x411) ()
 	var0002 = Func0953();
 	var0003 = UI_part_of_day();
 	if (!((var0003 > 0x0001) || (var0003 < 0x0006))) goto labelFunc0411_0035;
-	var0003 = "白天";
+	var0003 = "早";
 	goto labelFunc0411_003B;
 labelFunc0411_0035:
-	var0003 = "夜晚";
+	var0003 = "晚";
 labelFunc0411_003B:
 	if (!((event == 0x0007) && UI_get_item_flag(item, 0x001D))) goto labelFunc0411_005E;
 	var0004 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x0329]);
 labelFunc0411_005E:
 	if (!(event == 0x0001)) goto labelFunc0411_008E;
-	UI_item_say(0xFE9C, (("@早安" + var0003) + "!@"));
-	Func097F(0xFFEF, "@噓……@", 0x0002);
+	UI_item_say(0xFE9C, ("@" + var0003 + "安！@"));
+	Func097F(0xFFEF, "@噓…@", 0x0002);
 	UI_set_schedule_type(0xFFEF, 0x0003);
 labelFunc0411_008E:
 	if (!(event == 0x0009)) goto labelFunc0411_0B31;
@@ -70,24 +70,24 @@ labelFunc0411_00DD:
 	abort;
 	goto labelFunc0411_011B;
 labelFunc0411_0106:
-	message("「終於，一切都明朗了！去告訴好心的 Gustacio ，失蹤的兄弟 Edrin 其實就是怪鳥 Ale ！他會知道接下來該怎麼做的……」");
+	message("「終於，一切都明朗了！去告訴好心的 Gustacio ，失蹤的兄弟 Edrin 其實就是怪鳥 Ale ！他會知道接下來該怎麼做的…」");
 	say();
 	gflags[0x00F2] = true;
-	Func097F(0xFFEF, "@去跟 Gustacio 說……@", 0x0000);
+	Func097F(0xFFEF, "@去跟 Gustacio 說…@", 0x0000);
 	abort;
 labelFunc0411_011B:
 	if (!gflags[0x0004]) goto labelFunc0411_0150;
 	if (!gflags[0x00F6]) goto labelFunc0411_0134;
-	message("「真高興看到無政府主義者還沒有殺了你，");
+	message("「真高興看到無序災厄還沒有殺了你，");
 	message(var0000);
 	message("。我能幫上什麼忙嗎？」");
 	say();
 	goto labelFunc0411_0138;
 labelFunc0411_0134:
-	message("「萬分感謝！我本來還擔心我會永遠成為這個地方的裝飾品，這都要拜無政府主義者 Shamino 所賜。」");
+	message("「萬分感謝！我本來還擔心我會永遠成為這個地方的裝飾品，這都要拜無序災厄 Shamino 所賜。」");
 	say();
 labelFunc0411_0138:
-	UI_add_answer("無政府主義者 Shamino ");
+	UI_add_answer("無序災厄 Shamino ");
 	if (!(!gflags[0x00F6])) goto labelFunc0411_014D;
 	UI_add_answer("感謝");
 labelFunc0411_014D:
@@ -122,7 +122,7 @@ labelFunc0411_01FC:
 	case "綁架" attend labelFunc0411_0238:
 	UI_remove_answer("綁架");
 	if (!gflags[0x00EB]) goto labelFunc0411_021B;
-	message("「最不祥的……我再次建議你去找領主法師。他是個智力低下但狡猾的人。毫無疑問他能幫到你。」");
+	message("「最不祥的…我再次建議你去找領主法師。他是個智力低下但狡猾的人。毫無疑問他能幫到你。」");
 	say();
 	goto labelFunc0411_0238;
 labelFunc0411_021B:
@@ -133,23 +133,23 @@ labelFunc0411_021B:
 	say();
 	goto labelFunc0411_0238;
 labelFunc0411_022C:
-	message("「你的朋友被帶走了！靠著魔法！這是對評議會的冒犯……」");
+	message("「你的朋友被帶走了！靠著魔法！這是對評議會的冒犯…」");
 	say();
 	message("「把你的案子直接交給領主法師——他會幫助你的！」");
 	say();
 	gflags[0x0141] = true;
 labelFunc0411_0238:
-	case "無政府主義者 Shamino " attend labelFunc0411_0274:
-	UI_remove_answer("無政府主義者 Shamino ");
-	message("「你那位怪物同伴進城後做的第一件事就是罷黜領主法師和法師評議會。當他們反抗他的法令時， Shamino 殺了他們！」");
+	case "無序災厄 Shamino " attend labelFunc0411_0274:
+	UI_remove_answer("無序災厄 Shamino ");
+	message("「你那位怪物同伴進城後，做的第一件事…就是罷黜領主法師和法師評議會。當他們反抗他的法令時， Shamino 殺了他們！」");
 	say();
 	message("「你絕對不會相信的，");
 	message(var0000);
-	message("！無政府主義者輕易地彈開了他們所有的法術……它們完全沒有任何效果。」");
+	message("！無序災厄輕易地彈開了他們所有的法術…它們完全沒有任何效果。」");
 	say();
-	message("「遊俠變成了他製造混亂的工具……只要持有無政府主義者發的『許可證』，任何事都是被允許的。」");
+	message("「遊俠變成了他製造混亂的工具…只要持有無序災厄發的『許可證』，任何事都是被允許的。」");
 	say();
-	message("「我不知道我們現在還剩下多少人。似乎大部分的莊園都被遺棄了……」");
+	message("「我不知道我們現在還剩下多少人。似乎大部分的莊園都被遺棄了…」");
 	say();
 	UI_push_answers();
 	UI_add_answer(["任何事", "留下的人", "被遺棄的", "改變話題"]);
@@ -161,12 +161,12 @@ labelFunc0411_0274:
 labelFunc0411_0284:
 	case "任何事" attend labelFunc0411_02C7:
 	UI_remove_answer("任何事");
-	message("「許多法師死於無政府主義者那狂野的正義之下。其他人則死於他們同僚法師的非正統魔法。而我，因為『不』使用死亡法術，落得你發現我時那種悲慘的處境！」");
+	message("「許多法師死於無序災厄那狂野的正義之下。其他人則死於他們同僚法師的非正統魔法。而我，因為『不』使用死亡法術，落得你發現我時那種悲慘的處境！」");
 	say();
 	if (!(!gflags[0x0100])) goto labelFunc0411_02C7;
-	message("「我試圖從無政府主義者手中救出 Hawk 船長，但我的力量不夠。」");
+	message("「我試圖從無序災厄手中救出 Hawk 船長，但我的力量不夠。」");
 	say();
-	message("「當他奄奄一息時， Hawk 給了我這把鑰匙。他說這把鑰匙可以打開他在 Blue Boar 旅店的海員箱，裡面的東西總有一天會派上用場。」");
+	message("「當他奄奄一息時， Hawk 給了我這把鑰匙。他說這把鑰匙可以打開他在藍野豬旅店的海員箱，裡面的東西總有一天會派上用場。」");
 	say();
 	message("「我想這把鑰匙可能對你有用，所以我把它給你。」");
 	say();
@@ -179,7 +179,7 @@ labelFunc0411_02C7:
 	say();
 	message("「例如，你也許能收集到一套幾乎完整的傳說中的巨蛇之齒——」");
 	say();
-	message("「從老 Erstam 那裡偷走這樣的神器是一次大膽的行動，但現在這些戰利品卻被遺棄在豪宅裡……」");
+	message("「從老 Erstam 那裡偷走這樣的神器是一次大膽的行動，但現在這些戰利品卻被遺棄在豪宅裡…」");
 	say();
 	message("「我不知道那些牙齒的力量是什麼，但它們也許會向你揭示它們的秘密。」");
 	say();
@@ -188,7 +188,7 @@ labelFunc0411_02C7:
 labelFunc0411_02EA:
 	case "留下的人" attend labelFunc0411_0301:
 	UI_remove_answer("留下的人");
-	message("「在我惹怒無政府主義者之前，我最後所知的是， Stefano 還活著……儘管他正被某個可怕的生物追趕。」");
+	message("「在我惹怒無序災厄之前，我最後所知的是， Stefano 還活著…儘管他正被某個可怕的生物追趕。」");
 	say();
 	message("「 Ducio 依然健在。 Torrissio 也是。我只能祈禱 Andrio 和 Freli 能躲過那個怪物的注意！」");
 	say();
@@ -292,7 +292,7 @@ labelFunc0411_0484:
 labelFunc0411_0497:
 	case "花花公子" attend labelFunc0411_04AA:
 	UI_remove_answer("花花公子");
-	message("「如果 Filbercio 有什麼缺點，那就是他會被漂亮的臉蛋分心。如果那張臉屬於一位同樣強大的女法師，那也沒什麼壞處。麻煩的是，即使那個女人已經和別人訂婚，也無法阻止他！哦，也許我說得太多了……」");
+	message("「如果 Filbercio 有什麼缺點，那就是他會被漂亮的臉蛋分心。如果那張臉屬於一位同樣強大的女法師，那也沒什麼壞處。麻煩的是，即使那個女人已經和別人訂婚，也無法阻止他！哦，也許我說得太多了…」");
 	say();
 labelFunc0411_04AA:
 	case "Gustacio" attend labelFunc0411_04C1:
@@ -316,7 +316,7 @@ labelFunc0411_04D4:
 labelFunc0411_04EB:
 	case "失蹤？" attend labelFunc0411_0506:
 	UI_remove_answer("失蹤？");
-	message("「確實， Mortegro 失蹤了！據說他選擇在其中一場魔法風暴期間去散步……」");
+	message("「確實， Mortegro 失蹤了！據說他選擇在其中一場魔法風暴期間去散步…」");
 	say();
 	message("「當死靈法師在觀察風暴時，被閃電擊中——然後就消失了。」");
 	say();
@@ -330,7 +330,7 @@ labelFunc0411_0506:
 labelFunc0411_0519:
 	case "工匠" attend labelFunc0411_052C:
 	UI_remove_answer("工匠");
-	message("「這些基本上是在法師社會中擁有某些被重視技能的凡夫俗子。藝術家、作家、音樂家、金屬工匠……諸如此類的。」");
+	message("「這些基本上是在法師社會中擁有某些被重視技能的凡夫俗子。藝術家、作家、音樂家、金屬工匠…諸如此類的。」");
 	say();
 labelFunc0411_052C:
 	case "凡夫俗子" attend labelFunc0411_0543:
@@ -396,7 +396,7 @@ labelFunc0411_0654:
 	case "浮石" attend labelFunc0411_06A1:
 	UI_remove_answer("浮石");
 	if (!Func097D(0xFE9B, 0x0001, 0x010B, 0xFE99, 0xFE99)) goto labelFunc0411_0683;
-	message("「我能拿那個嗎……」");
+	message("「我能拿那個嗎…」");
 	say();
 	message("「是的，這是浮石——顏色是黑的，質地粗糙，重量很輕。」");
 	say();
@@ -462,11 +462,11 @@ labelFunc0411_076E:
 	if (!Func097D(0xFE9B, 0x0001, 0x0241, 0xFE99, 0x0003)) goto labelFunc0411_079D;
 	message("「好臭！這顆蛋已經腐敗了！」");
 	say();
-	message("「一顆藍色的蛋……似乎並非魔法物品或有任何神祕之處……」");
+	message("「一顆藍色的蛋…似乎並非魔法物品或有任何神祕之處…」");
 	say();
 	goto labelFunc0411_07A1;
 labelFunc0411_079D:
-	message("「一顆藍色的蛋……我有在書上看過這種東西嗎？藍色的母雞，藍色的青蛙——但是蛋？」");
+	message("「一顆藍色的蛋…我有在書上看過這種東西嗎？藍色的母雞，藍色的青蛙——但是蛋？」");
 	say();
 labelFunc0411_07A1:
 	message("「我不知道那是什麼！如果連我都不知道，那就沒有人會知道了。」");
@@ -477,7 +477,7 @@ labelFunc0411_07A1:
 	say();
 	gflags[0x010A] = true;
 	UI_set_conversation_slot(0x0000);
-	message("「這孩子說得有道理。而且……」");
+	message("「這孩子說得有道理。而且…」");
 	say();
 	message("「瘋狂法師 Erstam 幾乎肯定知道，但他不與任何人分享他的情報。」");
 	say();
@@ -485,7 +485,7 @@ labelFunc0411_07DB:
 	case "頭骨" attend labelFunc0411_0812:
 	UI_remove_answer("頭骨");
 	if (!Func097D(0xFE9B, 0x0001, 0x00F4, 0xFE99, 0xFE99)) goto labelFunc0411_080E;
-	message("「讓我來處理它……」");
+	message("「讓我來處理它…」");
 	say();
 	message("「但這只不過是隻普通熊的頭骨，這種熊在主大陸隨處可見，最常見於西海岸。」");
 	say();
@@ -502,7 +502,7 @@ labelFunc0411_0812:
 labelFunc0411_0822:
 	case "感謝" attend labelFunc0411_0875:
 	UI_remove_answer("感謝");
-	message("「謝謝你救了我。現在我不再被囚禁在石頭裡，可以繼續我的研究了。一定有辦法可以阻止無政府主義者 Shamino ！」");
+	message("「謝謝你救了我。現在我不再被囚禁在石頭裡，可以繼續我的研究了。一定有辦法可以阻止無序災厄 Shamino ！」");
 	say();
 	var0008 = Func0992(0x0001, "@先生，我們在尋找巨蛇卷軸。@", "@先生，我在尋找巨蛇卷軸。@", false);
 	UI_set_conversation_slot(0x0000);
@@ -517,7 +517,7 @@ labelFunc0411_0822:
 labelFunc0411_0875:
 	case " Gustacio 的實驗" attend labelFunc0411_089D:
 	UI_remove_answer(" Gustacio 的實驗");
-	message("「嗯……我想你應該去看看我的水晶球。也許它可以為失蹤兄弟的事情提供線索。」");
+	message("「嗯…我想你應該去看看我的水晶球。也許它可以為失蹤兄弟的事情提供線索。」");
 	say();
 	message("「你看過之後，回來找我，我會解讀你所看到的景象。」");
 	say();
@@ -540,7 +540,7 @@ labelFunc0411_08BB:
 	abort;
 labelFunc0411_08F7:
 	if (!gflags[0x026D]) goto labelFunc0411_0ADD;
-	message("「我看到你帶來了曼德拉草根。但我仍然有些猶豫……如果你真的是個法師，你就能回答我的四個問題。」");
+	message("「我看到你帶來了曼德拉草根。但我仍然有些猶豫…如果你真的是個法師，你就能回答我的四個問題。」");
 	say();
 	if (!Func098C()) goto labelFunc0411_0ABC;
 	message("「原諒我的多疑。但你會明白我對我的職責很認真。我現在就為你變出一本法術書。」");
@@ -554,7 +554,7 @@ labelFunc0411_08F7:
 labelFunc0411_0976:
 	var0004 = Func099F(0x02F9, 0xFE99, 0x0005);
 	if (!(var0004 == 0x0000)) goto labelFunc0411_0997;
-	message("「嗯……不知為何，我找不到我打算給你的那本法術書了。你必須晚點再來。」");
+	message("「嗯…不知為何，我找不到我打算給你的那本法術書了。你必須晚點再來。」");
 	say();
 	abort;
 	goto labelFunc0411_09A0;

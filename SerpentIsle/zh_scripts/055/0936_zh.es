@@ -216,7 +216,7 @@ labelFunc0936_0460:
 	return;
 labelFunc0936_0461:
 	UI_show_npc_face0(0xFFB9, 0x0000);
-	message("「我簡直不敢相信……你居然在光明正大的對決中……打敗了我……」");
+	message("「我簡直不敢相信…你居然在光明正大的對決中…打敗了我…」");
 	say();
 	var0002 = Func0953();
 	if (!UI_is_pc_female()) goto labelFunc0936_0489;

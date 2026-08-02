@@ -16,7 +16,7 @@ void Func06DB object#(0x6DB) ()
 	var0002 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x06DB], 0x0010);
 	var0002 = UI_set_item_quality(item, (var0000 - 0x0064));
 	if (!(var0000 == 0x0065)) goto labelFunc06DB_005C;
-	UI_item_say(0xFE9C, "@我有種不祥的預感……@");
+	UI_item_say(0xFE9C, "@我有種不祥的預感…@");
 labelFunc06DB_005C:
 	UI_play_sound_effect(0x0082);
 	UI_obj_sprite_effect(0xFE9C, 0x0007, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0xFFFF);
@@ -43,7 +43,7 @@ labelFunc06DB_010B:
 labelFunc06DB_0124:
 	if (!(var0000 == 0x0007)) goto labelFunc06DB_0149;
 	var0003 = [0x03C6, 0x0116, 0x0000];
-	Func097F(0xFE9C, "我有種不祥的預感……", 0x0005);
+	Func097F(0xFE9C, "我有種不祥的預感…", 0x0005);
 labelFunc06DB_0149:
 	if (!(var0000 == 0x0008)) goto labelFunc06DB_0162;
 	var0003 = [0x03A7, 0x00C6, 0x0000];

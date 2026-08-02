@@ -86,7 +86,7 @@ labelFunc0812_015F:
 	if (!(var0011 == 0x0001)) goto labelFunc0812_0189;
 	message("「我一定是被你迷住了，");
 	message(var0002);
-	message("！居然開出這種價格……」");
+	message("！居然開出這種價格…」");
 	say();
 labelFunc0812_0189:
 	if (!(var0011 == 0x0002)) goto labelFunc0812_019D;
@@ -231,7 +231,7 @@ labelFunc0812_0392:
 	say();
 labelFunc0812_03B0:
 	if (!(var0011 == 0x0002)) goto labelFunc0812_03C4;
-	message("「我不知道……");
+	message("「我不知道…");
 	message(var0005);
 	message(" 枚蒙里他利幣？」");
 	say();
@@ -239,7 +239,7 @@ labelFunc0812_03C4:
 	if (!(var0011 == 0x0003)) goto labelFunc0812_03D8;
 	message("「或許 ");
 	message(var0005);
-	message(" 枚蒙里他利幣？這麼好的毛皮可是很罕見的……」");
+	message(" 枚蒙里他利幣？這麼好的毛皮可是很罕見的…」");
 	say();
 labelFunc0812_03D8:
 	if (!(var000E == 0x0004)) goto labelFunc0812_0422;
@@ -254,13 +254,13 @@ labelFunc0812_03FA:
 	if (!(var0011 == 0x0002)) goto labelFunc0812_040E;
 	message("「我還是不能接受低於 ");
 	message(var0005);
-	message(" 枚蒙里他利幣的價格。我還得支付店鋪的開銷……」");
+	message(" 枚蒙里他利幣的價格。我還得支付店鋪的開銷…」");
 	say();
 labelFunc0812_040E:
 	if (!(var0011 == 0x0003)) goto labelFunc0812_0422;
 	message("「我不能接受低於 ");
 	message(var0005);
-	message(" 枚蒙里他利幣的價格……不管我有多喜歡你。」");
+	message(" 枚蒙里他利幣的價格…不管我有多喜歡你。」");
 	say();
 labelFunc0812_0422:
 	if (!(var000E == 0x0005)) goto labelFunc0812_048A;

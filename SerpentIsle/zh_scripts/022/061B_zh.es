@@ -52,15 +52,15 @@ labelFunc061B_00B3:
 	UI_remove_answer("預言");
 	message("「你的到來很久以前就被預言了，");
 	message(var0001);
-	message("……雖然你被期待早得多才到。我擔心你面前的任務現在要艱難得多了。」");
+	message("…雖然你被期待早得多才到。我擔心你面前的任務現在要艱難得多了。」");
 	say();
 	UI_add_answer(["預言的", "任務"]);
 labelFunc061B_00D9:
 	case "預言的" attend labelFunc061B_0106:
 	UI_remove_answer("預言的");
-	message("「我想蛇神教徒( Ophidians )是透過他們的大祭司們得知的。我們則是從嚮導那裡得知的……");
+	message("「我想蛇神教徒( Ophidians )是透過他們的大祭司們得知的。我們則是從嚮導那裡得知的…");
 	say();
-	message("「我奉命在此等待你。所以我就一直等……你來得很遲，你知道嗎，");
+	message("「我奉命在此等待你。所以我就一直等…你來得很遲，你知道嗎，");
 	message(var0001);
 	message("。」");
 	say();
@@ -70,14 +70,14 @@ labelFunc061B_0106:
 	UI_remove_answer("蛇神教徒");
 	message("「你不知道蛇神教徒( Ophidians )是誰嗎？真奇怪。");
 	say();
-	message("「他們就是佔據那座要塞的人。非常好戰，說真的。我跟他們沒什麼往來……」");
+	message("「他們就是佔據那座要塞的人。非常好戰，說真的。我跟他們沒什麼往來…」");
 	say();
 labelFunc061B_011D:
 	case "大祭司" attend labelFunc061B_0138:
 	UI_remove_answer("大祭司");
 	message("「至少我想那就是他們的稱號。");
 	say();
-	message("「大祭司們是蛇神教徒( Ophidians )的聖職者——包括男性和女性。我了解他們同時也是政治領袖……");
+	message("「大祭司們是蛇神教徒( Ophidians )的聖職者——包括男性和女性。我了解他們同時也是政治領袖…");
 	say();
 	message("「個人而言，我認為任何人擁有那麼大的權力都是件壞事。」");
 	say();
@@ -86,7 +86,7 @@ labelFunc061B_0138:
 	UI_remove_answer("嚮導");
 	message("「嚮導是我所追隨的，");
 	message(var0001);
-	message("。我很想站在這裡告訴你關於它的一切，但你真的應該趕緊上路了……你來得相當晚了，你知道嗎。」");
+	message("。我很想站在這裡告訴你關於它的一切，但你真的應該趕緊上路了…你來得相當晚了，你知道嗎。」");
 	say();
 	UI_add_answer("遲了");
 labelFunc061B_0158:
@@ -111,7 +111,7 @@ labelFunc061B_0175:
 labelFunc061B_0199:
 	case "摧毀混沌" attend labelFunc061B_01B7:
 	UI_remove_answer("摧毀混沌");
-	message("「遵循秩序的蛇神教徒( Ophidians )相信遵循混沌的人應該為謀殺他們其中一個聖職者而負責。他們發誓要將混沌從世界上根除……");
+	message("「遵循秩序的蛇神教徒( Ophidians )相信遵循混沌的人應該為謀殺他們其中一個聖職者而負責。他們發誓要將混沌從世界上根除…");
 	say();
 	message("「而現在他們製造了魔導人偶，他們可能會成功。」");
 	say();
@@ -123,7 +123,7 @@ labelFunc061B_01B7:
 	message(var0001);
 	message("。它們就是那些充實秩序陣營的鐵人。");
 	say();
-	message("「有了魔導人偶的增援，秩序將迅速壓倒混沌……你完成任務的時間越來越短了，");
+	message("「有了魔導人偶的增援，秩序將迅速壓倒混沌…你完成任務的時間越來越短了，");
 	message(var0001);
 	message("。」");
 	say();
@@ -140,7 +140,7 @@ labelFunc061B_01FA:
 	UI_remove_answer("鑰匙");
 	message("「不是實體的鑰匙，");
 	message(var0001);
-	message("，而是一個提示……如果你願意的話。");
+	message("，而是一個提示…如果你願意的話。");
 	say();
 	message("「你將來到一個通道受阻的房間。要贏得自由，你必須知道眾多拉桿中哪些需要移動。");
 	say();
@@ -149,7 +149,7 @@ labelFunc061B_01FA:
 labelFunc061B_021B:
 	case "等待" attend labelFunc061B_0245:
 	UI_remove_answer("等待");
-	message("「已經等了好一陣子了……但現在你在這裡，已經無所謂了，");
+	message("「已經等了好一陣子了…但現在你在這裡，已經無所謂了，");
 	message(var0001);
 	message("。");
 	say();
@@ -159,14 +159,14 @@ labelFunc061B_021B:
 labelFunc061B_0245:
 	case "想到一個方式" attend labelFunc061B_0258:
 	UI_remove_answer("想到一個方式");
-	message("「就說你讓我充滿了靈感……我可以向你保證，我將會……富有創意。」");
+	message("「就說你讓我充滿了靈感…我可以向你保證，我將會…富有創意。」");
 	say();
 labelFunc061B_0258:
 	case "補償你" attend labelFunc061B_0271:
 	UI_remove_answer("補償你");
 	message("「哦，不要誘惑我，");
 	message(var0001);
-	message("！我們還有職責要履行，你和我。也許我們以後可以找時間，在一個更……浪漫的地方，你說呢？」");
+	message("！我們還有職責要履行，你和我。也許我們以後可以找時間，在一個更…浪漫的地方，你說呢？」");
 	say();
 labelFunc061B_0271:
 	case "告辭" attend labelFunc061B_029E:

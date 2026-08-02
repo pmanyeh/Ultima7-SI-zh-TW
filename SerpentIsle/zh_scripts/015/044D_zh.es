@@ -38,7 +38,7 @@ labelFunc044D_0024:
 	if (!gflags[0x0092]) goto labelFunc044D_0094;
 	var0002 = UI_die_roll(0x0001, 0x0003);
 	if (!(var0002 == 0x0001)) goto labelFunc044D_0053;
-	UI_item_say(0xFFB3, "@我的錢……@");
+	UI_item_say(0xFFB3, "@我的錢…@");
 labelFunc044D_0053:
 	if (!(var0002 == 0x0002)) goto labelFunc044D_007D;
 	UI_item_say(0xFFB3, "@這是他的計畫！@");
@@ -82,7 +82,7 @@ labelFunc044D_014C:
 	if (!(var0008 == 0x0003)) goto labelFunc044D_0192;
 	if (!UI_get_item_flag(0xFEF7, 0x0004)) goto labelFunc044D_017C;
 	UI_item_say(var0007, "@哥布林很弱。@");
-	Func097F(0xFFB3, "@要小心……@", 0x0003);
+	Func097F(0xFFB3, "@要小心…@", 0x0003);
 	goto labelFunc044D_0192;
 labelFunc044D_017C:
 	UI_item_say(var0007, "@哥布林在哪裡？@");
@@ -100,7 +100,7 @@ labelFunc044D_01C3:
 labelFunc044D_01D9:
 	if (!(var0008 == 0x0005)) goto labelFunc044D_0237;
 	if (!gflags[0x0044]) goto labelFunc044D_0202;
-	UI_item_say(0xFFB3, "@可憐的 Simon ……@");
+	UI_item_say(0xFFB3, "@可憐的 Simon …@");
 	Func097F(var0007, "@但他是個叛徒！@", 0x0002);
 	goto labelFunc044D_0237;
 labelFunc044D_0202:
@@ -118,11 +118,11 @@ labelFunc044D_024B:
 	if (!((event == 0x0007) && UI_get_item_flag(0xFFB3, 0x001D))) goto labelFunc044D_02AF;
 	if (!gflags[0x0094]) goto labelFunc044D_029D;
 	UI_show_npc_face0(0xFFB3, 0x0000);
-	message("「很好，我的真面目被發現了。聽聽我的秘密吧，野獸，因為我必須在臨死前坦白一切……」");
+	message("「很好，我的真面目被發現了。聽聽我的秘密吧，野獸，因為我必須在臨死前坦白一切…」");
 	say();
 	message("「是的， Marsten 和我確實與哥布林共謀——但我們最終還是打算欺騙他們！然後獵豹就能統治蒙利多城。」");
 	say();
-	message("「而且是我從鎮上的金庫裡偷了錢，因為我們需要錢來獲取一批強大的武器——爆炸性武器……」");
+	message("「而且是我從鎮上的金庫裡偷了錢，因為我們需要錢來獲取一批強大的武器——爆炸性武器…」");
 	say();
 	message("「 Cantra 父親的血沉重地壓在我的靈魂上。他確實無意中發現了我們的秘密，所以他必須被殺死。如果我們的秘密沒有受到保護， Marsten 就會殺了我。」");
 	say();
@@ -165,7 +165,7 @@ labelFunc044D_0361:
 	say();
 	message("「我與 Marsten 領主結盟，他密謀成為蒙利多城的國王。巨熊和野狼將會無能為力！」");
 	say();
-	message("「 Cantra 的父親無意中走進了我們的秘密洞穴，所以他必須被殺死。如果爆炸性武器的秘密被揭露， Marsten 就會殺了我……」");
+	message("「 Cantra 的父親無意中走進了我們的秘密洞穴，所以他必須被殺死。如果爆炸性武器的秘密被揭露， Marsten 就會殺了我…」");
 	say();
 	gflags[0x00B4] = true;
 labelFunc044D_0371:
@@ -220,7 +220,7 @@ labelFunc044D_0449:
 	message("「在較好的時期，商隊走這些路線，我們從渴望得到保護的商人那裡收取豐厚的報酬。」");
 	say();
 	if (!UI_get_item_flag(0xFEF7, 0x0004)) goto labelFunc044D_0474;
-	message("「隨著哥布林國王被殺，也許道路會再次擠滿人。但風暴也阻礙了旅行……」");
+	message("「隨著哥布林國王被殺，也許道路會再次擠滿人。但風暴也阻礙了旅行…」");
 	say();
 	goto labelFunc044D_047F;
 labelFunc044D_0474:
@@ -262,14 +262,14 @@ labelFunc044D_04F1:
 	UI_remove_answer(["巨熊", "野狼", "獵豹"]);
 	message("「我厭倦了整個系統。野狼！巨熊！獵豹！為什麼我們不能團結起來，而不是被分成幾個軍團( Commands )？」");
 	say();
-	message("「我是一隻獵豹，坦白說，我們是唯一頭腦冷靜的。當像 Marsten 領主這樣的獵豹擔任蒙利多城的領主時，事情就……平衡多了。」");
+	message("「我是一隻獵豹，坦白說，我們是唯一頭腦冷靜的。當像 Marsten 領主這樣的獵豹擔任蒙利多城的領主時，事情就…平衡多了。」");
 	say();
 	message("「至於野狼和巨熊，他們就像孩子一樣。」");
 	say();
 labelFunc044D_051B:
 	case "坦白說" attend labelFunc044D_052E:
 	UI_remove_answer("坦白說");
-	message("「是的，我確實常這麼說，不是嗎？我道歉。這是一個壞習慣。坦白說……呃，說實話，我應該改掉。」");
+	message("「是的，我確實常這麼說，不是嗎？我道歉。這是一個壞習慣。坦白說…呃，說實話，我應該改掉。」");
 	say();
 labelFunc044D_052E:
 	case "Gwenno" attend labelFunc044D_058E:
@@ -280,16 +280,16 @@ labelFunc044D_052E:
 	if (!(var0007 != 0xFE9C)) goto labelFunc044D_0562;
 	UI_set_conversation_slot(0x0000);
 labelFunc044D_0562:
-	message("「她離開這裡往東走了。我記得是去武僧島( Monk Isle )的圖書館學習。」");
+	message("「她離開這裡往東走了。我記得是去僧侶島( Monk Isle )的圖書館學習。」");
 	say();
-	UI_add_answer("武僧島");
+	UI_add_answer("僧侶島");
 	var0007 = Func0992(0xFFFD, "@聖者！我們必須繼續前進並找到她！@", 0x0000, false);
 	if (!(var0007 != 0xFE9C)) goto labelFunc044D_058E;
 	UI_set_conversation_slot(0x0000);
 labelFunc044D_058E:
-	case "武僧島" attend labelFunc044D_05B6:
-	UI_remove_answer("武僧島");
-	message("「坦白說，那是一個神秘的地方。我對它了解不多，只知道傳說那裡住著有智慧的武僧。」");
+	case "僧侶島" attend labelFunc044D_05B6:
+	UI_remove_answer("僧侶島");
+	message("「坦白說，那是一個神秘的地方。我對它了解不多，只知道傳說那裡住著有智慧的僧侶。」");
 	say();
 	message("「去那裡的唯一方法是乘船，但這裡沒有水手——風暴讓他們卻步了。」");
 	say();
@@ -317,7 +317,7 @@ labelFunc044D_05E7:
 	message("「月影城位於彼岸島( Isle of Beyond )，與睡牛隔著海峽。你需要一艘船才能去那裡旅行。」");
 	say();
 	if (!(!gflags[0x00DB])) goto labelFunc044D_0626;
-	var0007 = Func0992(0xFFFD, "@也許你可以那裡獲得一本新的法術書……@", 0x0000, false);
+	var0007 = Func0992(0xFFFD, "@也許你可以那裡獲得一本新的法術書…@", 0x0000, false);
 	if (!(var0007 != 0xFE9C)) goto labelFunc044D_0626;
 	UI_set_conversation_slot(0x0000);
 labelFunc044D_0626:
@@ -346,7 +346,7 @@ labelFunc044D_0674:
 	message("「我必須看看這個。我可以看看證據嗎？」");
 	say();
 	if (!(!(Func097D(0xFE9B, 0x0001, 0x031D, 0x0078, 0xFE99) || (Func097D(0xFE9B, 0x0001, 0x031D, 0x0079, 0xFE99) || Func097D(0xFE9B, 0x0001, 0x031D, 0x007A, 0xFE99))))) goto labelFunc044D_06DC;
-	var0007 = Func0992(0xFFFD, "@我們沒帶在身上……@", "@我沒帶。@", false);
+	var0007 = Func0992(0xFFFD, "@我們沒帶在身上…@", "@我沒帶。@", false);
 	UI_set_conversation_slot(0x0000);
 	message("「那我什麼也做不了。看不見的證據就是無用的證據。」");
 	say();
@@ -372,7 +372,7 @@ labelFunc044D_0753:
 labelFunc044D_0756:
 	message("「那就上路吧！ Marsten 是叛徒——真是個笑話！」");
 	say();
-	Func097F(0xFFB3, "@別浪費我的時間……@", 0x0000);
+	Func097F(0xFFB3, "@別浪費我的時間…@", 0x0000);
 	abort;
 labelFunc044D_0767:
 	case "證據" attend labelFunc044D_078D:

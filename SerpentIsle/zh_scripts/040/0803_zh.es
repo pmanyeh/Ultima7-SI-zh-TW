@@ -281,7 +281,7 @@ labelFunc0803_04F6:
 	say();
 	goto labelFunc0803_053D;
 labelFunc0803_0539:
-	message("「如果你付不起我們的商品，請直說……」");
+	message("「如果你付不起我們的商品，請直說…」");
 	say();
 labelFunc0803_053D:
 	if (!(0x001F < (UI_get_npc_id(0xFFD2) + 0x0006))) goto labelFunc0803_055C;

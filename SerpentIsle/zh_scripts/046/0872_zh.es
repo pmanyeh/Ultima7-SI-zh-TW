@@ -83,11 +83,11 @@ labelFunc0872_016D:
 	if (!(var000E == 0x0001)) goto labelFunc0872_0197;
 	message("「才 ");
 	message(var0002);
-	message(" ！？我還不如白送算了……」");
+	message(" ！？我還不如白送算了…」");
 	say();
 labelFunc0872_0197:
 	if (!(var000E == 0x0002)) goto labelFunc0872_01A5;
-	message("「還不算太差……」");
+	message("「還不算太差…」");
 	say();
 labelFunc0872_01A5:
 	if (!(var000E == 0x0003)) goto labelFunc0872_01B3;
@@ -184,7 +184,7 @@ labelFunc0872_030A:
 labelFunc0872_031E:
 	if (!(var000B == 0x0003)) goto labelFunc0872_0364;
 	if (!(var000E == 0x0001)) goto labelFunc0872_033C;
-	message("「嗯……也許 ");
+	message("「嗯…也許 ");
 	message(var0002);
 	message(" 怎麼樣？」");
 	say();
@@ -223,7 +223,7 @@ labelFunc0872_03AA:
 	if (!(var000B == 0x0005)) goto labelFunc0872_040E;
 	var0002 = var000D;
 	if (!(var000E == 0x0001)) goto labelFunc0872_03CE;
-	message("「你顯然不是很想要這個……我先前的出價依然有效，就是 ");
+	message("「你顯然不是很想要這個…我先前的出價依然有效，就是 ");
 	message(var0002);
 	message("。」");
 	say();

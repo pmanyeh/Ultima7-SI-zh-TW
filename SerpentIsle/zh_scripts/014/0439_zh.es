@@ -80,7 +80,7 @@ labelFunc0439_011D:
 	message("「怕下點雨嗎？」");
 	say();
 	if (!(var0001 == true)) goto labelFunc0439_013F;
-	message("「我可以保護妳的安全，親愛的。妳應該來我的小屋……」");
+	message("「我可以保護妳的安全，親愛的。妳應該來我的小屋…」");
 	say();
 	goto labelFunc0439_0143;
 labelFunc0439_013F:
@@ -95,7 +95,7 @@ labelFunc0439_0143:
 	abort;
 labelFunc0439_0164:
 	case "瘋子 Iolo" attend labelFunc0439_0185:
-	message("「他現在是幼鹿城( Fawn )的主人了，聖者( Avatar )。趁他還覺得留你活命很有趣的時候離開，才是明智之舉。」 *「如果我把你的頭帶給他，他也許會把那個漂亮的丫頭，Alyssand，賞賜給我……」");
+	message("「他現在是幼鹿城( Fawn )的主人了，聖者( Avatar )。趁他還覺得留你活命很有趣的時候離開，才是明智之舉。」 *「如果我把你的頭帶給他，他也許會把那個漂亮的丫頭，Alyssand，賞賜給我…」");
 	say();
 	UI_set_schedule_type(0xFFC7, 0x0000);
 	UI_set_oppressor(0xFE9C, 0xFFC7);
@@ -124,15 +124,15 @@ labelFunc0439_01DF:
 	UI_show_npc_face0(0xFFC7, 0x0000);
 	UI_clear_item_flag(0xFFC7, 0x001D);
 	UI_reduce_health(0xFFC7, 0x0032, 0x0000);
-	Func097F(0xFFC7, "@呃啊……@", 0x0000);
+	Func097F(0xFFC7, "@呃啊…@", 0x0000);
 	var0004 = Func0992(0x0001, 0x0000, 0x0000, true);
-	Func097F(var0004, "@他死了……@", 0x0005);
+	Func097F(var0004, "@他死了…@", 0x0005);
 	if (!(gflags[0x0004] == true)) goto labelFunc0439_024E;
-	message("「你能打敗我，聖者( Avatar )。但面對瘋子 Iolo( Iolo the Mad )的力量，你毫無希望……」");
+	message("「你能打敗我，聖者( Avatar )。但面對瘋子 Iolo( Iolo the Mad )的力量，你毫無希望…」");
 	say();
 	goto labelFunc0439_0252;
 labelFunc0439_024E:
-	message("「我的死只會延遲不可避免的結局，聖者。巴特林很快就會擁有你無法想像的力量，而我也一定會得到獎賞……」");
+	message("「我的死只會延遲不可避免的結局，聖者。巴特林很快就會擁有你無法想像的力量，而我也一定會得到獎賞…」");
 	say();
 labelFunc0439_0252:
 	return;

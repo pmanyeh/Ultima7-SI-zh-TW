@@ -19,7 +19,7 @@ void Func04BE object#(0x4BE) ()
 	abort;
 labelFunc04BE_000F:
 	if (!((event == 0x0001) && (UI_get_schedule_type(0xFF42) != 0x000F))) goto labelFunc04BE_0066;
-	UI_item_say(0xFE9C, "@不好意思……@");
+	UI_item_say(0xFE9C, "@不好意思…@");
 	0xFF42->Func07D1();
 	Func097F(0xFF42, "@站住！@", 0x0005);
 	0xFF42->Func07D2();

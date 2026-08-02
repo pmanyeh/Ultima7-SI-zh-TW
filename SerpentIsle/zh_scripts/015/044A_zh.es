@@ -108,7 +108,7 @@ labelFunc044A_01BB:
 	Func097F(var000D, "@抱歉，夫人。@", 0x0003);
 labelFunc044A_01DB:
 	if (!(var000E == 0x0003)) goto labelFunc044A_01FB;
-	UI_item_say(var000D, "@奴隸主……@");
+	UI_item_say(var000D, "@奴隸主…@");
 	Func097F(0xFFB6, "@我聽到了！@", 0x0003);
 labelFunc044A_01FB:
 	if (!(var000E == 0x0004)) goto labelFunc044A_021B;
@@ -167,10 +167,10 @@ labelFunc044A_035F:
 labelFunc044A_0375:
 	if (!(var000E == 0x0005)) goto labelFunc044A_0395;
 	UI_item_say(var000D, "@殺了 Marsten ！@");
-	Func097F(0xFFB6, "@但是怎麼做……？", 0x0002);
+	Func097F(0xFFB6, "@但是怎麼做…？", 0x0002);
 labelFunc044A_0395:
 	if (!(var000E == 0x0006)) goto labelFunc044A_03B5;
-	UI_item_say(var000D, "@正如我剛才說的……@");
+	UI_item_say(var000D, "@正如我剛才說的…@");
 	Func097F(0xFFB6, "@安靜！@", 0x0003);
 labelFunc044A_03B5:
 	if (!(event == 0x0001)) goto labelFunc044A_03E3;
@@ -218,7 +218,7 @@ labelFunc044A_0474:
 labelFunc044A_0487:
 	case "神秘的水手" attend labelFunc044A_049E:
 	UI_remove_answer("神秘的水手");
-	message("「你說的那個神秘水手是一個名叫 Deadeye 的海盜。我們在比武場進行了騎士般的戰鬥，並在其他地方進行了更深奧的肉搏戰。他非常……有趣。」");
+	message("「你說的那個神秘水手是一個名叫 Deadeye 的海盜。我們在比武場進行了騎士般的戰鬥，並在其他地方進行了更深奧的肉搏戰。他非常…有趣。」");
 	say();
 	message("「不久前有一個非常奇怪的男人來到鎮上。他說他叫巴特林。他要我為他工作。但我感覺我不能信任他，所以我拒絕了。」");
 	say();
@@ -230,7 +230,7 @@ labelFunc044A_049E:
 	say();
 	message("「如果不想，那就走你的路。」");
 	say();
-	Func097F(0xFFB6, "@在中午……@", 0x0000);
+	Func097F(0xFFB6, "@在中午…@", 0x0000);
 	abort;
 	goto labelFunc044A_04E1;
 labelFunc044A_04CC:
@@ -257,7 +257,7 @@ labelFunc044A_04E1:
 	say();
 	goto labelFunc044A_0522;
 labelFunc044A_0511:
-	message("「你不配擁有你的騎士頭銜……」");
+	message("「你不配擁有你的騎士頭銜…」");
 	say();
 	Func097F(0xFFB6, "@呸！@", 0x0000);
 	abort;
@@ -269,7 +269,7 @@ labelFunc044A_052F:
 	message("「我教導戰鬥的藝術。我的技巧是基於動作的敏捷和準確性。如果你中午在比武場，我可以和你對練。」");
 	say();
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0001)) goto labelFunc044A_05CF;
-	message("「我確信我也能教你的朋友一兩手……」");
+	message("「我確信我也能教你的朋友一兩手…」");
 	say();
 	var0012 = UI_get_item_flag(0xFFFD, 0x0006);
 	var0013 = UI_get_item_flag(0xFFFE, 0x0006);
@@ -330,7 +330,7 @@ labelFunc044A_0645:
 	UI_remove_answer("Astrid");
 	message("「Astrid 是一位出色的冠軍騎士！儘管她是一隻巨熊而我是一隻獵豹，我們還是好夥伴。」");
 	say();
-	message("「需要一個罕見的人來領導戰士戰鬥。 Astrid 團結我們對抗哥布林。現在我擔心巨熊和野狼會再次爭吵……」");
+	message("「需要一個罕見的人來領導戰士戰鬥。 Astrid 團結我們對抗哥布林。現在我擔心巨熊和野狼會再次爭吵…」");
 	say();
 labelFunc044A_065C:
 	case "蒙利多頭盔" attend labelFunc044A_0684:

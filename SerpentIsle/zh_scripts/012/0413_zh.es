@@ -24,7 +24,7 @@ labelFunc0413_002D:
 	if (!(UI_get_random(0x000A) < 0x0006)) goto labelFunc0413_0050;
 	abort;
 labelFunc0413_0050:
-	var0003 = ["@天啊！@", "@一位真正的戰士！@", "@講個故事給我聽！@", "@看！是個陌生人！@", "@我可以做你的朋友嗎？@", "@小心法師們……@"];
+	var0003 = ["@天啊！@", "@一位真正的戰士！@", "@講個故事給我聽！@", "@看！是個陌生人！@", "@我可以做你的朋友嗎？@", "@小心法師們…@"];
 	Func097F(0xFFED, var0003[UI_get_random(0x0006)], 0x0000);
 labelFunc0413_007B:
 	if (!(event == 0x0001)) goto labelFunc0413_00A9;
@@ -42,11 +42,11 @@ labelFunc0413_00A9:
 	if (!gflags[0x00F1]) goto labelFunc0413_00EF;
 	message("「見到你真高興，");
 	message(var0000);
-	message("！最近這裡發生了好多麻煩事……」");
+	message("！最近這裡發生了好多麻煩事…」");
 	say();
 	goto labelFunc0413_00F3;
 labelFunc0413_00EF:
-	message("「我需要你的幫忙！我需要你的幫忙！我有大麻煩了……」");
+	message("「我需要你的幫忙！我需要你的幫忙！我有大麻煩了…」");
 	say();
 labelFunc0413_00F3:
 	UI_add_answer("麻煩");
@@ -175,9 +175,9 @@ labelFunc0413_0323:
 labelFunc0413_033F:
 	case "麻煩" attend labelFunc0413_0364:
 	UI_remove_answer("麻煩");
-	message("「這太可怕了！大家都死了，城市也被摧毀了……」");
+	message("「這太可怕了！大家都死了，城市也被摧毀了…」");
 	say();
-	message("「發光的人來的時候，我正在魔法學院裡。 Fedabiblio 試圖阻止他，但沒能成功……」");
+	message("「發光的人來的時候，我正在魔法學院裡。 Fedabiblio 試圖阻止他，但沒能成功…」");
 	say();
 	if (!(!var0001)) goto labelFunc0413_0364;
 	UI_add_answer("Fedabiblio");
@@ -190,11 +190,11 @@ labelFunc0413_0364:
 	message(var0000);
 	message("！」");
 	say();
-	message("「發光的人把 Fedabiblio 變成雕像後，我還以為他死了。我不知道怎麼把他變回來……希望 Fedabiblio 因為你救了他而給了你豐厚的報酬！」");
+	message("「發光的人把 Fedabiblio 變成雕像後，我還以為他死了。我不知道怎麼把他變回來…希望 Fedabiblio 因為你救了他而給了你豐厚的報酬！」");
 	say();
 	goto labelFunc0413_0396;
 labelFunc0413_038E:
-	message("「他死了，他死了……發光的人把他變成了冰冷、冰冷的石頭。他現在就站在魔法學院裡……」");
+	message("「他死了，他死了…發光的人把他變成了冰冷、冰冷的石頭。他現在就站在魔法學院裡…」");
 	say();
 	message("「而我不知道怎麼把他變回來！」");
 	say();

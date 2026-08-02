@@ -91,7 +91,7 @@ labelFunc035F_01FD:
 	Func0949("@我相信麵包已經烤好了。@");
 labelFunc035F_0280:
 	if (!(var000C == 0x0002)) goto labelFunc035F_0290;
-	Func0949("@嗯……真是美妙的香味。@");
+	Func0949("@嗯…真是美妙的香味。@");
 labelFunc035F_0290:
 	return;
 }

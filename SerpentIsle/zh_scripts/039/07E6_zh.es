@@ -44,7 +44,7 @@ labelFunc07E6_0068:
 labelFunc07E6_006E:
 	message("「到了，");
 	message(var0003);
-	message("……」~「我還以為我們撐不過來了，不過月影城( Moonshade )就在那邊。」");
+	message("…」~「我還以為我們撐不過來了，不過月影城( Moonshade )就在那邊。」");
 	say();
 	message("「在這些該死的風暴結束之前，我甚至不會嘗試去修理 Arabella 讓她能出航！」");
 	say();

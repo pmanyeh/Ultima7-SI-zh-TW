@@ -86,7 +86,7 @@ labelFunc044E_0123:
 labelFunc044E_0136:
 	case "Simon" attend labelFunc044E_0149:
 	UI_remove_answer("Simon");
-	message("「 Simon 是個哥布林間諜！我怎麼也想不到……」");
+	message("「 Simon 是個哥布林間諜！我怎麼也想不到…」");
 	say();
 labelFunc044E_0149:
 	case "Marsten" attend labelFunc044E_015C:

@@ -19,12 +19,12 @@ void Func011E shape#(0x11E) ()
 labelFunc011E_0050:
 	if (!((UI_get_item_shape(var0001) == 0x011E) && (UI_get_item_frame(var0001) == 0x0000))) goto labelFunc011E_007E;
 	UI_play_sound_effect(0x003C);
-	Func097F(0xFE9C, "@聽這個……@", 0x0001);
+	Func097F(0xFE9C, "@聽這個…@", 0x0001);
 	abort;
 labelFunc011E_007E:
 	if (!((UI_get_item_shape(var0001) == 0x011E) && (UI_get_item_frame(var0001) == 0x0003))) goto labelFunc011E_00AA;
 	UI_play_sound_effect(0x007A);
-	UI_item_say(0xFE9C, "@巨魔鼓，不錯……@");
+	UI_item_say(0xFE9C, "@巨魔鼓，不錯…@");
 	abort;
 labelFunc011E_00AA:
 	return;

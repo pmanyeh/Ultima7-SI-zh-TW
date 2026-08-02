@@ -43,7 +43,7 @@ labelFunc0810_008C:
 	if (!(var0008 == 0x0002)) goto labelFunc0810_00AF;
 	message("「價格是 ");
 	message(var0009);
-	message(" 枚吉爾得幣……這裡可沒有多餘的東西給囚犯。你接受嗎？」");
+	message(" 枚吉爾得幣…這裡可沒有多餘的東西給囚犯。你接受嗎？」");
 	say();
 labelFunc0810_00AF:
 	if (!(var0008 == 0x0003)) goto labelFunc0810_00C3;

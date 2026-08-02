@@ -190,7 +190,7 @@ labelFunc04A3_0637:
 	var0005 = UI_get_party_list();
 labelFunc04A3_0645:
 	if (!(UI_get_item_shape(item) == 0x01FB)) goto labelFunc04A3_0715;
-	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x52, "@也許我留著你終究還是有用的……@", (byte)0x01, (byte)0x70, (byte)0x27, 0x0001, (byte)0x6F, (byte)0x27, 0x0004, (byte)0x70, (byte)0x27, 0x0003, (byte)0x61]);
+	var0000 = UI_execute_usecode_array(0xFF5D, [(byte)0x52, "@也許我留著你終究還是有用的…@", (byte)0x01, (byte)0x70, (byte)0x27, 0x0001, (byte)0x6F, (byte)0x27, 0x0004, (byte)0x70, (byte)0x27, 0x0003, (byte)0x61]);
 	var0004 = UI_get_object_position(item);
 	UI_sprite_effect(0x000D, var0004[0x0001], var0004[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	UI_play_sound_effect(0x0082);

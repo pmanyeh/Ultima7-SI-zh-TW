@@ -95,10 +95,10 @@ labelFunc00E6_0116:
 	UI_show_npc_face0(0xFFEC, 0x0002);
 	message("「我想我深深愛上你了，");
 	message(var0003);
-	message("！沒有你，我該怎麼活下去……」");
+	message("！沒有你，我該怎麼活下去…」");
 	say();
 	UI_end_conversation();
-	Func097F(item, "@再吻我一次，愛人……@", 0x0000);
+	Func097F(item, "@再吻我一次，愛人…@", 0x0000);
 	Func097F(0xFE9C, "@我無法抗拒！@", 0x0002);
 	var000E = UI_delayed_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x55, 0x00E6, 0x0000], 0x0008);
 	abort;
@@ -110,7 +110,7 @@ labelFunc00E6_017B:
 	UI_move_object(0xFE9C, [0x0976, 0x0745, 0x0000]);
 	UI_move_object(0xFFEC, [0x0974, 0x0749, 0x0002]);
 	var000E = UI_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x61, (byte)0x59, 0x0004]);
-	var000E = UI_delayed_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x59, 0x0002, (byte)0x55, 0x0636, (byte)0x54, 0x001C, (byte)0x27, 0x0004, (byte)0x52, "@哇……@", (byte)0x27, 0x0006, (byte)0x55, 0x00E6, 0x0000], 0x000F);
+	var000E = UI_delayed_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x59, 0x0002, (byte)0x55, 0x0636, (byte)0x54, 0x001C, (byte)0x27, 0x0004, (byte)0x52, "@哇…@", (byte)0x27, 0x0006, (byte)0x55, 0x00E6, 0x0000], 0x000F);
 	abort;
 labelFunc00E6_0225:
 	if (!(UI_get_npc_id(0xFFEC) == 0x000D)) goto labelFunc00E6_0315;
@@ -118,7 +118,7 @@ labelFunc00E6_0225:
 	UI_clear_item_say(0xFFEC);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0002);
-	message("「我們不需要這些毛毯……」");
+	message("「我們不需要這些毛毯…」");
 	say();
 	UI_end_conversation();
 	var000F = UI_find_nearby(item, 0x02B8, 0x000A, 0x0000);
@@ -143,7 +143,7 @@ labelFunc00E6_0315:
 	UI_sprite_effect(0x0015, var0009[0x0001], var0009[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	Func09B2();
 	UI_play_sound_effect(0x0039);
-	var000E = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@我好冷……@", (byte)0x59, 0x0006], 0x0002);
+	var000E = UI_delayed_execute_usecode_array(0xFE9C, [(byte)0x23, (byte)0x52, "@我好冷…@", (byte)0x59, 0x0006], 0x0002);
 	UI_si_path_run_usecode(0xFFEC, [0x0975, 0x0747, 0x0000], 0x000D, item, [0x00E6, 0x0000], false);
 	abort;
 labelFunc00E6_039E:
@@ -157,17 +157,17 @@ labelFunc00E6_039E:
 	say();
 	if (!Func0955()) goto labelFunc00E6_0444;
 	UI_end_conversation();
-	Func097F(0xFFEC, "@同感……@", 0x0004);
+	Func097F(0xFFEC, "@同感…@", 0x0004);
 	Func097F(0xFE9C, "@我迫不及待！@", 0x0000);
 	UI_si_path_run_usecode(0xFE9C, [0x0975, 0x0749, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), [0x00E6, 0x0000], false);
 	var000E = UI_delayed_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x27, 0x0003, (byte)0x59, 0x0006], 0x0004);
 	abort;
 	goto labelFunc00E6_0469;
 labelFunc00E6_0444:
-	message("「不，你不懂。就像我說的，根本沒有凡人能抵擋得了這激情之舞……」");
+	message("「不，你不懂。就像我說的，根本沒有凡人能抵擋得了這激情之舞…」");
 	say();
 	UI_end_conversation();
-	var000E = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x52, "@糟了……@"]);
+	var000E = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x59, 0x0004, (byte)0x52, "@糟了…@"]);
 	Func08EC();
 	abort;
 labelFunc00E6_0469:
@@ -215,7 +215,7 @@ labelFunc00E6_066F:
 	UI_sprite_effect(0x000C, var0009[0x0001], var0009[0x0002], 0x0000, 0x0000, 0x0000, 0xFFFF);
 	Func097F(0xFFEC, "@Vas Flam!@", 0x0008);
 	var000E = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x6F, (byte)0x65, (byte)0x27, 0x0001, (byte)0x67, (byte)0x27, 0x0001, (byte)0x53, (byte)0x34, (byte)0x53, (byte)0x34, (byte)0x27, 0x0002, (byte)0x0B, 0xFFF3, 0x0003, (byte)0x55, 0x00E6, 0x0000]);
-	var000E = ["@天啊！@", "@哦，我的天！@", "@別傷到自己！@", "@哇！@", "@嗯……@", "@你需要幫忙嗎？@", "@哦！@"];
+	var000E = ["@天啊！@", "@哦，我的天！@", "@別傷到自己！@", "@哇！@", "@嗯…@", "@你需要幫忙嗎？@", "@哦！@"];
 	Func094F(0xFE9C, var000E);
 	abort;
 labelFunc00E6_0705:
@@ -231,9 +231,9 @@ labelFunc00E6_0746:
 	UI_show_npc_face0(0xFFEC, 0x0000);
 	message("「既然我已經親吻過你，我想我對你更加無法自拔了！」");
 	say();
-	message("「真是奇妙——你剛進來時這裡還如此冰冷，現在我卻突然覺得周圍全身溫暖了起來……」");
+	message("「真是奇妙——你剛進來時這裡還如此冰冷，現在我卻突然覺得周圍全身溫暖了起來…」");
 	say();
-	message("「我已經好幾個月沒有這種煥發熱情與活力的感覺了！也許……我真不知該怎麼說，但是……」");
+	message("「我已經好幾個月沒有這種煥發熱情與活力的感覺了！也許…我真不知該怎麼說，但是…」");
 	say();
 	message("「你渴望擁有我嗎，聖者？」");
 	say();
@@ -243,7 +243,7 @@ labelFunc00E6_0746:
 labelFunc00E6_079C:
 	var000F = Func0956(var000E);
 	if (!(var000F == "那 Filbercio 怎麼辦？")) goto labelFunc00E6_07F6;
-	message("「法師領主( MageLord )？噢，在我們靠得這麼近、如此貼心的這一刻，你怎麼還管得著他……」");
+	message("「法師領主( MageLord )？噢，在我們靠得這麼近、如此貼心的這一刻，你怎麼還管得著他…」");
 	say();
 	message("「也許這個能激起你的興趣！」");
 	say();
@@ -253,7 +253,7 @@ labelFunc00E6_079C:
 	abort;
 labelFunc00E6_07F6:
 	if (!(var000F == "是")) goto labelFunc00E6_0846;
-	message("「那就盡情看吧，我的心上人……」");
+	message("「那就盡情看吧，我的心上人…」");
 	say();
 	UI_end_conversation();
 	UI_si_path_run_usecode(0xFFEC, [0x097B, 0x0743, 0x0000], 0x000D, item, [0x00E6, 0x0000], false);
@@ -262,10 +262,10 @@ labelFunc00E6_07F6:
 	goto labelFunc00E6_0912;
 labelFunc00E6_0846:
 	if (!(var000F == "否")) goto labelFunc00E6_08A2;
-	message("「噢……這可真是太令人尷尬難堪了！」");
+	message("「噢…這可真是太令人尷尬難堪了！」");
 	say();
 	UI_end_conversation();
-	var000E = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x68, (byte)0x27, 0x0002, (byte)0x59, 0x0000, (byte)0x52, "@我真想一頭鑽進地縫……@", (byte)0x27, 0x0006, (byte)0x55, 0x00E6, 0x0000, (byte)0x27, 0x0004, (byte)0x59, 0x0002, (byte)0x59, 0x0004]);
+	var000E = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x68, (byte)0x27, 0x0002, (byte)0x59, 0x0000, (byte)0x52, "@我真想一頭鑽進地縫…@", (byte)0x27, 0x0006, (byte)0x55, 0x00E6, 0x0000, (byte)0x27, 0x0004, (byte)0x59, 0x0002, (byte)0x59, 0x0004]);
 	UI_set_npc_id(0xFFEC, 0x0011);
 	abort;
 	goto labelFunc00E6_0912;
@@ -285,14 +285,14 @@ labelFunc00E6_0912:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0000);
 	if (!UI_is_pc_female()) goto labelFunc00E6_0946;
-	message("「坦白說，你身上有一種非同尋常的……迷人魅力。我深深被你吸引。」");
+	message("「坦白說，你身上有一種非同尋常的…迷人魅力。我深深被你吸引。」");
 	say();
 	goto labelFunc00E6_094A;
 labelFunc00E6_0946:
 	message("「看你身為法師，卻又如此具備雄性陽剛之氣——這在月影城可真是罕見至極！」");
 	say();
 labelFunc00E6_094A:
-	message("「你是來向我學習法術的，但我能教你的，可是真正的魔力……」");
+	message("「你是來向我學習法術的，但我能教你的，可是真正的魔力…」");
 	say();
 	if (!(!UI_is_pc_female())) goto labelFunc00E6_095A;
 	message("「只要能被你那強健的雙臂緊緊擁入懷中，我甘願為此付出一切！」");
@@ -322,12 +322,12 @@ labelFunc00E6_09DF:
 	UI_set_npc_id(0xFFEC, 0x0011);
 	goto labelFunc00E6_0A9B;
 labelFunc00E6_0A57:
-	message("「你真讓我太失望了。我本來還期待你能更懂得享受這一切呢……」");
+	message("「你真讓我太失望了。我本來還期待你能更懂得享受這一切呢…」");
 	say();
 	UI_end_conversation();
 	UI_set_npc_id(0xFFEC, 0x0011);
-	var000E = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x52, "@哦，算了……@", (byte)0x59, 0x0002, (byte)0x27, 0x0008, (byte)0x55, 0x00E6, 0x0000]);
-	Func097F(0xFE9C, "@對不起……@", 0x0005);
+	var000E = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x52, "@哦，算了…@", (byte)0x59, 0x0002, (byte)0x27, 0x0008, (byte)0x55, 0x00E6, 0x0000]);
+	Func097F(0xFE9C, "@對不起…@", 0x0005);
 labelFunc00E6_0A9B:
 	abort;
 labelFunc00E6_0A9C:
@@ -347,8 +347,8 @@ labelFunc00E6_0AEB:
 	message(var0003);
 	message("。過來陪我一起坐在水池邊吧。」");
 	say();
-	var000F = Func0956(["是", "否", "關於那些法術……"]);
-	if (!(var000F == "關於那些法術……")) goto labelFunc00E6_0C03;
+	var000F = Func0956(["是", "否", "關於那些法術…"]);
+	if (!(var000F == "關於那些法術…")) goto labelFunc00E6_0C03;
 	message("「你急什麼呢？在月影城，我們向來懂得把享受樂趣與談論正事完美融為一體。」");
 	say();
 	message("「我相信在切入正題探討法術前，我們還有充裕的時間好好深入瞭解彼此。」");
@@ -369,12 +369,12 @@ labelFunc00E6_0AEB:
 labelFunc00E6_0C03:
 	if (!(var000F == "是")) goto labelFunc00E6_0C72;
 	UI_end_conversation();
-	Func097F(0xFFEC, "@不要害羞……@", 0x0000);
+	Func097F(0xFFEC, "@不要害羞…@", 0x0000);
 	UI_si_path_run_usecode(0xFE9C, [0x0980, 0x0748, 0x0000], 0x000D, UI_get_npc_object(0xFE9C), [0x00E6, 0x0000], false);
 	var000E = UI_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x2B, 0x0002, (byte)0x27, 0x0004, (byte)0x55, 0x07D2, (byte)0x27, 0x0004, (byte)0x55, 0x00E6, 0x0000]);
 	goto labelFunc00E6_0D4A;
 labelFunc00E6_0C72:
-	message("「哎呀，你可真是害羞！看來我得施一個小小的魔法，來好提醒你該如何加入了……」");
+	message("「哎呀，你可真是害羞！看來我得施一個小小的魔法，來好提醒你該如何加入了…」");
 	say();
 	UI_end_conversation();
 	var0009 = UI_get_object_position(0xFE9C);
@@ -394,7 +394,7 @@ labelFunc00E6_0D4B:
 	UI_set_npc_id(0xFFEC, 0x0003);
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0000);
-	message("「我真高興你願意今晚來見我，親愛的聖者。不知為何，陌生人總是……」");
+	message("「我真高興你願意今晚來見我，親愛的聖者。不知為何，陌生人總是…」");
 	say();
 	UI_end_conversation();
 	var000E = UI_find_nearby(item, 0x011D, 0x0005, 0x0000);
@@ -406,12 +406,12 @@ labelFunc00E6_0D8B:
 labelFunc00E6_0DAB:
 	goto labelFunc00E6_0D8B;
 labelFunc00E6_0DAE:
-	Func097F(0xFFEC, "@……令人傾心……@", 0x0000);
+	Func097F(0xFFEC, "@…令人傾心…@", 0x0000);
 	var000E = UI_delayed_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x68, (byte)0x58, 0x000B, (byte)0x62, (byte)0x27, 0x0002, (byte)0x0B, 0xFFFA, 0x0003, (byte)0x27, 0x0002, (byte)0x55, 0x07D2, (byte)0x27, 0x0002, (byte)0x55, 0x00E6, 0x0000], 0x0005);
 	abort;
 labelFunc00E6_0DFA:
 	if (!(UI_get_npc_id(0xFFEC) == 0x0001)) goto labelFunc00E6_0E45;
-	var000E = ["@我愛夜晚……@", "@如此寧靜……@", "@如此黑暗……@"];
+	var000E = ["@我愛夜晚…@", "@如此寧靜…@", "@如此黑暗…@"];
 	Func094F(0xFFEC, var000E);
 	UI_si_path_run_usecode(0xFFEC, [0x0980, 0x0746, 0x0000], 0x000D, item, [0x00E6, 0x0000], false);
 	abort;
@@ -446,7 +446,7 @@ labelFunc00E6_0F06:
 	if (!Func0955()) goto labelFunc00E6_104E;
 	UI_set_item_flag(0xFE9C, 0x0010);
 	UI_play_music(0x001F, Func09A0(0x0005, 0x0001));
-	var0016 = Func0992(0x0001, "@嗯，我想我先在外面等候……@", 0x0000, false);
+	var0016 = Func0992(0x0001, "@嗯，我想我先在外面等候…@", 0x0000, false);
 	UI_end_conversation();
 	var000E = Func098D();
 	var0017 = [];
@@ -473,7 +473,7 @@ labelFunc00E6_0FE9:
 	UI_run_schedule(var000F);
 	goto labelFunc00E6_0FCA;
 labelFunc00E6_1003:
-	Func097F(var000F, "@好好享受……@", 0x0000);
+	Func097F(var000F, "@好好享受…@", 0x0000);
 	var000E = UI_delayed_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x55, 0x00E6, 0x0000], 0x000A);
 	var000E = UI_set_item_quality(Func09A0(0x0005, 0x0003), UI_get_npc_id(0xFFEC));
 	UI_set_npc_id(0xFFEC, 0x0001);
@@ -487,11 +487,11 @@ labelFunc00E6_104E:
 labelFunc00E6_105F:
 	goto labelFunc00E6_1170;
 labelFunc00E6_1062:
-	message("「但我們必須等待，親愛的，等到我們獨處……」");
+	message("「但我們必須等待，親愛的，等到我們獨處…」");
 	say();
 	UI_end_conversation();
 	UI_set_item_flag(0xFE9C, 0x0010);
-	Func097F(0xFFEC, "@等待……@", 0x0000);
+	Func097F(0xFFEC, "@等待…@", 0x0000);
 	var000E = Func098D();
 	var0017 = [];
 	enum();
@@ -517,7 +517,7 @@ labelFunc00E6_110E:
 	UI_run_schedule(var000F);
 	goto labelFunc00E6_10EF;
 labelFunc00E6_1128:
-	Func097F(var000F, "@好好享受……@", 0x0000);
+	Func097F(var000F, "@好好享受…@", 0x0000);
 	var000E = UI_delayed_execute_usecode_array(0xFFEC, [(byte)0x23, (byte)0x55, 0x00E6, 0x0000], 0x000A);
 	var000E = UI_set_item_quality(Func09A0(0x0005, 0x0003), UI_get_npc_id(0xFFEC));
 	UI_set_npc_id(0xFFEC, 0x0001);
@@ -564,7 +564,7 @@ labelFunc00E6_13C8:
 	UI_init_conversation();
 	UI_show_npc_face0(0xFFEC, 0x0002);
 	0xFFEC->Func07D1();
-	message("「等等！你忘了這個……」");
+	message("「等等！你忘了這個…」");
 	say();
 	UI_end_conversation();
 	var000E = UI_set_to_attack(0xFFEC, 0xFE9C, 0x0118);

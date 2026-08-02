@@ -112,8 +112,8 @@ labelFunc0868_01E4:
 labelFunc0868_01F8:
 	var0011 = UI_die_roll(0x0001, 0x0005);
 	if (!(var0011 == 0x0001)) goto labelFunc0868_021B;
-	var0012 = "嗯……我不太確定。";
-	var0013 = "這個嘛……這些貨色算不上太好。";
+	var0012 = "嗯…我不太確定。";
+	var0013 = "這個嘛…這些貨色算不上太好。";
 labelFunc0868_021B:
 	if (!(var0011 == 0x0002)) goto labelFunc0868_0231;
 	var0012 = "這上面生鏽了！";
@@ -145,7 +145,7 @@ labelFunc0868_02BF:
 	if (!(var0016 == 0x0000)) goto labelFunc0868_02E0;
 	message("「那麼也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_02E0:
@@ -193,7 +193,7 @@ labelFunc0868_036F:
 	if (!(var0016 == 0x0000)) goto labelFunc0868_0390;
 	message("「那麼也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_0390:
@@ -201,7 +201,7 @@ labelFunc0868_0390:
 	message(var0013);
 	message("」");
 	say();
-	message("「嗯……我想我可以以 ");
+	message("「嗯…我想我可以以 ");
 	message(var0015);
 	message(" 蒙里他利幣向你購買你的 ");
 	message(var0016);
@@ -241,7 +241,7 @@ labelFunc0868_041F:
 	if (!(var0016 == 0x0000)) goto labelFunc0868_0440;
 	message("「那麼也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_0440:
@@ -289,7 +289,7 @@ labelFunc0868_04CF:
 	if (!(var0016 == 0x0000)) goto labelFunc0868_04F0;
 	message("「那麼也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_04F0:
@@ -297,7 +297,7 @@ labelFunc0868_04F0:
 	message(var0013);
 	message("」");
 	say();
-	message("「嗯……也許你的 ");
+	message("「嗯…也許你的 ");
 	message(var0016);
 	message(" 副鎖子腿甲我可以給你看 ");
 	message(var0015);
@@ -337,7 +337,7 @@ labelFunc0868_057F:
 	if (!(var0016 == 0x0000)) goto labelFunc0868_05A0;
 	message("「那麼也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_05A0:
@@ -385,7 +385,7 @@ labelFunc0868_062F:
 	if (!(var0016 == 0x0000)) goto labelFunc0868_0650;
 	message("「那麼也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_0650:
@@ -393,7 +393,7 @@ labelFunc0868_0650:
 	message(var0013);
 	message("」");
 	say();
-	message("「很好……」~「你的 ");
+	message("「很好…」~「你的 ");
 	message(var0016);
 	message(" 頂巨頭盔我可以開價 ");
 	message(var0015);
@@ -433,7 +433,7 @@ labelFunc0868_06DF:
 	if (!(var0016 == 0x0000)) goto labelFunc0868_0700;
 	message("「那麼也許下次吧，");
 	message(var0000);
-	message("……」");
+	message("…」");
 	say();
 	goto labelFunc0868_0785;
 labelFunc0868_0700:

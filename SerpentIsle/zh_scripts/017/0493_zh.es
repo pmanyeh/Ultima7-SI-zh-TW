@@ -69,7 +69,7 @@ labelFunc0493_0119:
 labelFunc0493_011D:
 	case "功課" attend labelFunc0493_0148:
 	UI_remove_answer("功課");
-	message("「母親會說以前的故事給我聽。她也教我人類的語言。她說猿怪( Gwani )很擅長學習語言。尤其是小孩子。」");
+	message("「母親會說以前的故事給我聽。她也教我人類的語言。她說猿怪很擅長學習語言。尤其是小孩子。」");
 	say();
 	var0003 = UI_get_item_flag(0xFF71, 0x0004);
 	if (!(!var0003)) goto labelFunc0493_0148;

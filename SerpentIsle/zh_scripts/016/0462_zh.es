@@ -81,7 +81,7 @@ labelFunc0462_00F7:
 labelFunc0462_0114:
 	case "鑰匙的保管者" attend labelFunc0462_012B:
 	UI_remove_answer("鑰匙的保管者");
-	message("「也許那個法師攔截了七號( Number 7 )並偷走了鑰匙……」");
+	message("「也許那個法師攔截了七號( Number 7 )並偷走了鑰匙…」");
 	say();
 	message("「但不，那不可能。因為七號消失那天，我和三號( Number 3 )在一起，早在那個陌生的法師到來之前。」");
 	say();

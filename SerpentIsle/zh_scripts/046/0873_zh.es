@@ -103,7 +103,7 @@ labelFunc0873_016A:
 labelFunc0873_0174:
 	if (!(var000D == 0x0003)) goto labelFunc0873_01DE;
 labelFunc0873_017E:
-	message("「拿好你的武器準備……現在揮擊……再來一次。」");
+	message("「拿好你的武器準備…現在揮擊…再來一次。」");
 	say();
 	message("「我想我知道你的問題所在了，");
 	message(var000C);

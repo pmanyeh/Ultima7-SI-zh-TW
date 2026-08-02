@@ -28,7 +28,7 @@ labelFunc0808_000F:
 	if (!(UI_get_random(0x000A) < 0x0006)) goto labelFunc0808_0043;
 	abort;
 labelFunc0808_0043:
-	var0005 = ["@離開這裡！@", "@不准闖入！@", "@快叫遊俠來！@", "@別惹怒法師們……@", "@什麼都不准拿！@", "@有小偷！小偷！@"];
+	var0005 = ["@離開這裡！@", "@不准闖入！@", "@快叫遊俠來！@", "@別惹怒法師們…@", "@什麼都不准拿！@", "@有小偷！小偷！@"];
 	Func097F(item, var0005[UI_get_random(0x0006)], 0x0000);
 labelFunc0808_006C:
 	if (!((event == 0x0001) && (UI_get_schedule_type(item) != 0x000A))) goto labelFunc0808_00EE;
@@ -75,7 +75,7 @@ labelFunc0808_0152:
 	say();
 labelFunc0808_0172:
 	if (!(var0001 == 0x0003)) goto labelFunc0808_018B;
-	message("「就像我說的，我服侍並保護我主人的家。我必須工作了……」");
+	message("「就像我說的，我服侍並保護我主人的家。我必須工作了…」");
 	say();
 	Func097F(item, "@鍋子在哪？@", 0x0000);
 	abort;
@@ -119,7 +119,7 @@ labelFunc0808_023D:
 	if (!(var0001 == 0x000B)) goto labelFunc0808_0256;
 	message("「就像我說的，我服侍並保護我主人的家。」");
 	say();
-	Func097F(item, "@我必須走了……@", 0x0000);
+	Func097F(item, "@我必須走了…@", 0x0000);
 	abort;
 labelFunc0808_0256:
 	if (!(var0001 == 0x0008)) goto labelFunc0808_0264;
@@ -173,7 +173,7 @@ labelFunc0808_0303:
 	goto labelFunc0808_035A;
 labelFunc0808_0347:
 	UI_set_schedule_type(item, 0x0009);
-	Func097F(item, "@快走吧……@", 0x000A);
+	Func097F(item, "@快走吧…@", 0x000A);
 	abort;
 labelFunc0808_035A:
 	goto labelFunc0808_0152;

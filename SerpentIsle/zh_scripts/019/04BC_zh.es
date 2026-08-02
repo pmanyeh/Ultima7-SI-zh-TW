@@ -42,12 +42,12 @@ labelFunc04BC_00DB:
 	if (!(event == 0x0000)) goto labelFunc04BC_0138;
 	var0001 = UI_get_random(0x000A);
 	if (!(var0001 == 0x0006)) goto labelFunc04BC_010A;
-	Func097F(0xFF44, "@我已經好聲好氣地說了……@", 0x0000);
+	Func097F(0xFF44, "@我已經好聲好氣地說了…@", 0x0000);
 	Func09AD(0xFF44);
 	abort;
 labelFunc04BC_010A:
 	if (!(var0001 < 0x0006)) goto labelFunc04BC_0138;
-	var0002 = ["@繼續走吧！@", "@這裡潛伏著危險。@", "@你必須離開！@", "@我求你離開……@", "@請離開。@"];
+	var0002 = ["@繼續走吧！@", "@這裡潛伏著危險。@", "@你必須離開！@", "@我求你離開…@", "@請離開。@"];
 	Func097F(0xFF44, var0002[var0001], 0x0000);
 labelFunc04BC_0138:
 	return;

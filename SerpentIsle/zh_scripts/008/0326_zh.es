@@ -55,7 +55,7 @@ labelFunc0326_00CA:
 	say();
 	message("「我在火燄之島( Isle of Fire )上為你效勞！為什麼你要把我帶到這個寒冷的地方？」");
 	say();
-	message("「我賦予了你殺死敵人的能力！看看你是怎麼回報我的？！我依然被束縛在這顆寶石中……在一個我無法進食的土地上！力量的脈絡已被打斷！放開我！放開我……」");
+	message("「我賦予了你殺死敵人的能力！看看你是怎麼回報我的？！我依然被束縛在這顆寶石中…在一個我無法進食的土地上！力量的脈絡已被打斷！放開我！放開我…」");
 	say();
 	UI_remove_npc_face0();
 	abort;
@@ -63,7 +63,7 @@ labelFunc0326_00CA:
 labelFunc0326_00F3:
 	UI_close_gumps();
 	UI_show_npc_face0(0xFEFF, 0x0000);
-	message("「我將再次向你提供協助，聖者……你沒有足夠的技能或力量來戰勝你必須面對的瘋子 Lorthondo。我有，但不能在束縛我的這顆寶石的限制之內。」");
+	message("「我將再次向你提供協助，聖者…你沒有足夠的技能或力量來戰勝你必須面對的瘋子 Lorthondo。我有，但不能在束縛我的這顆寶石的限制之內。」");
 	say();
 	message("「釋放我，我將幫助你從這個地方解脫！」");
 	say();
@@ -74,7 +74,7 @@ labelFunc0326_00F3:
 	UI_play_sound_effect(0x0074);
 	message("「你真是個傻瓜，聖者！你根本不知道你失去了什麼！」");
 	say();
-	message("「我感謝你的無知……」");
+	message("「我感謝你的無知…」");
 	say();
 	UI_remove_npc_face0();
 	Func0922(0x0017);
@@ -82,9 +82,9 @@ labelFunc0326_00F3:
 	gflags[0x00CF] = false;
 	goto labelFunc0326_014C;
 labelFunc0326_0140:
-	message("「當心！這裡石頭的能量正在吸走你將我囚禁的力量……」");
+	message("「當心！這裡石頭的能量正在吸走你將我囚禁的力量…」");
 	say();
-	message("「但你遲早會接受我的提議的……」");
+	message("「但你遲早會接受我的提議的…」");
 	say();
 	UI_remove_npc_face0();
 labelFunc0326_014C:
@@ -95,7 +95,7 @@ labelFunc0326_014C:
 	UI_remove_item(var0003);
 labelFunc0326_0186:
 	UI_clear_item_say(0xFF5D);
-	Func097F(0xFF5D, "@不，等等！……@", 0x0000);
+	Func097F(0xFF5D, "@不，等等！…@", 0x0000);
 	var0004 = UI_find_nearby(0xFF5D, 0x0341, 0x0005, 0x0000);
 	var0004 = (var0004 & UI_find_nearby(0xFF5D, 0x0349, 0x0005, 0x0000));
 	var0005 = UI_execute_usecode_array(var0004[0x0001], [(byte)0x27, 0x0005, (byte)0x55, 0x04A3, (byte)0x2D]);
@@ -114,11 +114,11 @@ labelFunc0326_0260:
 	say();
 	message("「現在我將報答你。」");
 	say();
-	message("「這個黑暗巫師將不會再找你麻煩了……」");
+	message("「這個黑暗巫師將不會再找你麻煩了…」");
 	say();
 	UI_remove_npc_face0();
 	UI_clear_item_say(0xFF5D);
-	Func097F(0xFF5D, "@不，等等！拜託……@", 0x0000);
+	Func097F(0xFF5D, "@不，等等！拜託…@", 0x0000);
 	var0004 = UI_find_nearby(0xFF5D, 0x0341, 0x0005, 0x0000);
 	var0004 = (var0004 & UI_find_nearby(0xFF5D, 0x0349, 0x0005, 0x0000));
 	var0005 = UI_execute_usecode_array(var0004[0x0001], [(byte)0x27, 0x0005, (byte)0x55, 0x04A3, (byte)0x2D]);
@@ -137,7 +137,7 @@ labelFunc0326_037A:
 	if (!gflags[0x0006]) goto labelFunc0326_0396;
 	UI_close_gumps();
 	UI_show_npc_face0(0xFEFF, 0x0000);
-	message("「聖者，你現在必須讓我自由！石頭的力量正在迅速減弱，這個邪惡的巫師很快就會抓走你。」~「只要你將我從這個水晶監獄中解放出來，我將再次為你效勞，然後才離開你身邊……」");
+	message("「聖者，你現在必須讓我自由！石頭的力量正在迅速減弱，這個邪惡的巫師很快就會抓走你。」~「只要你將我從這個水晶監獄中解放出來，我將再次為你效勞，然後才離開你身邊…」");
 	say();
 	UI_remove_npc_face0();
 labelFunc0326_0396:

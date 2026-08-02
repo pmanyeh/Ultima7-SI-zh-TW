@@ -63,13 +63,13 @@ labelFunc0838_00EF:
 	if (!(var0010 == 0x0001)) goto labelFunc0838_012D;
 	message("「請別跟鎮上的任何人提起這件事，");
 	message(var0002);
-	message("！否則我將無法繼續糊口了……」");
+	message("！否則我將無法繼續糊口了…」");
 	say();
 labelFunc0838_012D:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_0141;
 	message("「");
 	message(var0003);
-	message("，你真有做商人的天分……」");
+	message("，你真有做商人的天分…」");
 	say();
 labelFunc0838_0141:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_014F;
@@ -80,7 +80,7 @@ labelFunc0838_014F:
 labelFunc0838_0152:
 	if (!(var0004 < (var0001 + ((var0000 - var0001) / 0x0003)))) goto labelFunc0838_019B;
 	if (!(var0010 == 0x0001)) goto labelFunc0838_0176;
-	message("「你看得出我的價格很公道吧……」");
+	message("「你看得出我的價格很公道吧…」");
 	say();
 labelFunc0838_0176:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_018A;
@@ -90,7 +90,7 @@ labelFunc0838_0176:
 	say();
 labelFunc0838_018A:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_0198;
-	message("「誰能想到我這麼年輕就糊塗了！竟然接受這種價格……」");
+	message("「誰能想到我這麼年輕就糊塗了！竟然接受這種價格…」");
 	say();
 labelFunc0838_0198:
 	goto labelFunc0838_0220;
@@ -127,7 +127,7 @@ labelFunc0838_01FE:
 	say();
 labelFunc0838_0212:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_0220;
-	message("「我不喜歡賣這種價格，但時局艱難……」");
+	message("「我不喜歡賣這種價格，但時局艱難…」");
 	say();
 labelFunc0838_0220:
 	message("「你同意以 ");
@@ -191,7 +191,7 @@ labelFunc0838_031D:
 labelFunc0838_0320:
 	if (!(var000D == 0x0002)) goto labelFunc0838_0366;
 	if (!(var0010 == 0x0001)) goto labelFunc0838_033E;
-	message("「跟你交易真有挑戰性…… ");
+	message("「跟你交易真有挑戰性… ");
 	message(var0004);
 	message(" 蒙里他利幣聽起來如何？」");
 	say();
@@ -210,13 +210,13 @@ labelFunc0838_0352:
 labelFunc0838_0366:
 	if (!(var000D == 0x0003)) goto labelFunc0838_03AC;
 	if (!(var0010 == 0x0001)) goto labelFunc0838_0384;
-	message("「我也要糊口……你願意付 ");
+	message("「我也要糊口…你願意付 ");
 	message(var0004);
 	message(" 蒙里他利幣嗎？」");
 	say();
 labelFunc0838_0384:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_0398;
-	message("「讓我想想…… ");
+	message("「讓我想想… ");
 	message(var0004);
 	message(" 蒙里他利幣如何？」");
 	say();
@@ -239,7 +239,7 @@ labelFunc0838_03CE:
 	if (!(var0010 == 0x0002)) goto labelFunc0838_03E2;
 	message("「你肯定看得出我絕不能低於 ");
 	message(var0004);
-	message(" 蒙里他利幣。因為哥布林襲擊，種菜變得很困難……」");
+	message(" 蒙里他利幣。因為哥布林襲擊，種菜變得很困難…」");
 	say();
 labelFunc0838_03E2:
 	if (!(var0010 == 0x0003)) goto labelFunc0838_03F6;

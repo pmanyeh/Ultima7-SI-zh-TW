@@ -105,7 +105,7 @@ labelFunc03D2_011D:
 	say();
 labelFunc03D2_014D:
 	if (!(var000D == "我在找某樣東西")) goto labelFunc03D2_0166;
-	message("「是啊……我們不都是嗎。嗯哼。我想我不必用我那淺薄的哲思來浪費你的時間。」");
+	message("「是啊…我們不都是嗎。嗯哼。我想我不必用我那淺薄的哲思來浪費你的時間。」");
 	say();
 	message("「好吧，我不問你在找什麼。不過，若你願意在此待上片刻，我或許能幫你找到你所尋覓之物。」");
 	say();
@@ -184,7 +184,7 @@ labelFunc03D2_0277:
 	message("「你已解開了我所有的謎語。你想再聽一遍嗎？」");
 	say();
 	if (!Func0955()) goto labelFunc03D2_02AD;
-	message("「如你所願。我就從 Rhys 開始……」");
+	message("「如你所願。我就從 Rhys 開始…」");
 	say();
 	gflags[0x0309] = false;
 	gflags[0x030A] = false;
@@ -223,7 +223,7 @@ labelFunc03D2_02E6:
 labelFunc03D2_0348:
 	goto labelFunc03D2_034F;
 labelFunc03D2_034B:
-	message("「這是我的綽號。也許等我更了解你之後，我會告訴你這個綽號的來由……」");
+	message("「這是我的綽號。也許等我更了解你之後，我會告訴你這個綽號的來由…」");
 	say();
 labelFunc03D2_034F:
 	case "作伴" attend labelFunc03D2_0369:
@@ -239,7 +239,7 @@ labelFunc03D2_0369:
 labelFunc03D2_037C:
 	case "幫助" attend labelFunc03D2_038F:
 	UI_remove_answer("幫助");
-	message("「確實。我知道我看起來不像，但我已有好幾個世紀的歲月了。雖然我在這一帶住了不過一二十年，卻也學到了不少東西……」");
+	message("「確實。我知道我看起來不像，但我已有好幾個世紀的歲月了。雖然我在這一帶住了不過一二十年，卻也學到了不少東西…」");
 	say();
 labelFunc03D2_038F:
 	case "很少" attend labelFunc03D2_03A9:
@@ -317,7 +317,7 @@ labelFunc03D2_049B:
 labelFunc03D2_0517:
 	message("「Aram-Dol 並不容易到達。那巫妖用許多生物將自己的巢穴團團圍住。」");
 	say();
-	message("「若我是你，我會避開那片領地……不過，我聽說那巫妖藏有兩件絕世寶物。」");
+	message("「若我是你，我會避開那片領地…不過，我聽說那巫妖藏有兩件絕世寶物。」");
 	say();
 	UI_add_answer(["絕世寶物", "生物"]);
 	goto labelFunc03D2_0533;
@@ -340,7 +340,7 @@ labelFunc03D2_0536:
 labelFunc03D2_0591:
 	message("「Aram-Dol 並不容易到達。那巫妖用許多生物將自己的巢穴團團圍住。」");
 	say();
-	message("「若我是你，我會避開那片領地……不過，我聽說那巫妖藏有兩件絕世寶物。」");
+	message("「若我是你，我會避開那片領地…不過，我聽說那巫妖藏有兩件絕世寶物。」");
 	say();
 labelFunc03D2_0599:
 	UI_add_answer(["絕世寶物", "生物"]);
@@ -381,7 +381,7 @@ labelFunc03D2_0614:
 	UI_remove_answer("Arachnians");
 	message("「多年前，Aram-Dol 俘虜了許多人類。他運用最黑暗的巫術，將人類的上半身與巨型蜘蛛的球狀身軀融合在一起。」");
 	say();
-	message("「這些生物是兇猛的戰士，狡詐且邪惡。若你被 Arachnians 抓住，就向你所信奉的神明祈禱吧。牠們會把獵物活生生吞食……」");
+	message("「這些生物是兇猛的戰士，狡詐且邪惡。若你被 Arachnians 抓住，就向你所信奉的神明祈禱吧。牠們會把獵物活生生吞食…」");
 	say();
 	var000E = Func0992(0x0001, 0x0000, 0x0000, false);
 	if (!((var000E == 0xFFFD) || ((var000E == 0xFFFE) || (var000E == 0xFFFF)))) goto labelFunc03D2_067E;
@@ -419,7 +419,7 @@ labelFunc03D2_070A:
 labelFunc03D2_0721:
 	case "非人類" attend labelFunc03D2_07B5:
 	UI_remove_answer("非人類");
-	message("「是的。這位新指揮官是某種魔法構造物。我相信蛇神教徒( Ophidians )稱這類生物為『魔導人偶』。我敢說這大概算是個進步……」");
+	message("「是的。這位新指揮官是某種魔法構造物。我相信蛇神教徒( Ophidians )稱這類生物為『魔導人偶』。我敢說這大概算是個進步…」");
 	say();
 	UI_add_answer("魔導人偶");
 	var000E = Func0992(0x0001, 0x0000, 0x0000, false);
@@ -442,7 +442,7 @@ labelFunc03D2_07B5:
 labelFunc03D2_07D8:
 	case "家" attend labelFunc03D2_0811:
 	UI_remove_answer("家");
-	message("「我對自己的洞穴當然相當熟悉，雖然我懷疑你不會像我這樣覺得它迷人……你真的對我這簡陋的住所有興趣嗎？」");
+	message("「我對自己的洞穴當然相當熟悉，雖然我懷疑你不會像我這樣覺得它迷人…你真的對我這簡陋的住所有興趣嗎？」");
 	say();
 	var0010 = Func0955();
 	if (!var0010) goto labelFunc03D2_080D;
@@ -501,13 +501,13 @@ labelFunc03D2_08A2:
 	say();
 	message("「空間和食物足夠每個人生存。蛇神教徒( Ophidians )的到來打破了這平衡，他們把許多生靈從家中驅離。如今他們又彼此交戰。」");
 	say();
-	message("「實在是……我想我永遠也搞不懂人類。」");
+	message("「實在是…我想我永遠也搞不懂人類。」");
 	say();
 	UI_add_answer("內亂");
 labelFunc03D2_08C4:
 	case "內亂" attend labelFunc03D2_08E8:
 	UI_remove_answer("內亂");
-	message("「是的，這些崇蛇之人拿起武器互相對抗。他們開始相互屠殺，就像小雛龍學會噴火一樣輕鬆……」");
+	message("「是的，這些崇蛇之人拿起武器互相對抗。他們開始相互屠殺，就像小雛龍學會噴火一樣輕鬆…」");
 	say();
 	message("「我想他們已經打了至少一年了。」");
 	say();

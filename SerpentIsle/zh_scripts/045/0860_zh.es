@@ -72,7 +72,7 @@ labelFunc0860_0118:
 	say();
 labelFunc0860_012C:
 	if (!(var0010 == 0x0003)) goto labelFunc0860_0163;
-	message("「我不敢相信你竟然這麼會跟我討價還價……」");
+	message("「我不敢相信你竟然這麼會跟我討價還價…」");
 	say();
 	if (!Func0942(0xFFE4)) goto labelFunc0860_0163;
 	UI_show_npc_face1(0xFFE4, 0x0000);
@@ -80,7 +80,7 @@ labelFunc0860_012C:
 	say();
 	UI_remove_npc_face1();
 	UI_show_npc_face0(0xFFE2, 0x0000);
-	message("「可不是嗎……」");
+	message("「可不是嗎…」");
 	say();
 labelFunc0860_0163:
 	goto labelFunc0860_0268;
@@ -95,7 +95,7 @@ labelFunc0860_018A:
 	say();
 labelFunc0860_0198:
 	if (!(var0010 == 0x0003)) goto labelFunc0860_01F2;
-	message("「朋友，你的口才真好。這讓我想起了我像你這個年紀的時候……」");
+	message("「朋友，你的口才真好。這讓我想起了我像你這個年紀的時候…」");
 	say();
 	if (!var0003) goto labelFunc0860_01B5;
 	var0011 = "姑娘";
@@ -105,7 +105,7 @@ labelFunc0860_01B5:
 labelFunc0860_01BB:
 	message("「你是否曾考慮過換個工作？我總有一天會退休，也許像你這樣年輕的 ");
 	message(var0011);
-	message(" 會對經營旅店感興趣……」");
+	message(" 會對經營旅店感興趣…」");
 	say();
 	if (!var0003) goto labelFunc0860_01D4;
 	var0012 = "她";
@@ -123,7 +123,7 @@ labelFunc0860_01F5:
 	say();
 labelFunc0860_0219:
 	if (!(var0010 == 0x0002)) goto labelFunc0860_0227;
-	message("「遇到像你這樣的客人，我可發不了財……」");
+	message("「遇到像你這樣的客人，我可發不了財…」");
 	say();
 labelFunc0860_0227:
 	if (!(var0010 == 0x0003)) goto labelFunc0860_0235;
@@ -143,7 +143,7 @@ labelFunc0860_024C:
 	say();
 labelFunc0860_025A:
 	if (!(var0010 == 0x0003)) goto labelFunc0860_0268;
-	message("「在這種艱難的時期，我必須提高價格，否則就得關門大吉了……」");
+	message("「在這種艱難的時期，我必須提高價格，否則就得關門大吉了…」");
 	say();
 labelFunc0860_0268:
 	message("「我們同意了 ");
@@ -226,19 +226,19 @@ labelFunc0860_039A:
 labelFunc0860_03AE:
 	if (!(var000D == 0x0003)) goto labelFunc0860_03F4;
 	if (!(var0010 == 0x0001)) goto labelFunc0860_03CC;
-	message("「現在時局艱難，物資緊缺…… ");
+	message("「現在時局艱難，物資緊缺… ");
 	message(var0004);
 	message(" 吉爾得幣如何？」");
 	say();
 labelFunc0860_03CC:
 	if (!(var0010 == 0x0002)) goto labelFunc0860_03E0;
-	message("「我不確定……也許 ");
+	message("「我不確定…也許 ");
 	message(var0004);
 	message(" 吉爾得幣？」");
 	say();
 labelFunc0860_03E0:
 	if (!(var0010 == 0x0003)) goto labelFunc0860_03F4;
-	message("「但我必須賺夠錢來修理這間旅店，冬天這裡可是會漏風的……也許 ");
+	message("「但我必須賺夠錢來修理這間旅店，冬天這裡可是會漏風的…也許 ");
 	message(var0004);
 	message(" 吉爾得幣？」");
 	say();

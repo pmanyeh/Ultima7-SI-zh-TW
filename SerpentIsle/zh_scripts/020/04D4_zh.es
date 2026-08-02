@@ -48,13 +48,13 @@ labelFunc04D4_002B:
 	message(" 。我會把 Yelinda 帶回她該去的地方。」");
 	say();
 	UI_show_npc_face1(0xFFC9, 0x0000);
-	message("「噢，謝謝你，善良的武僧！」");
+	message("「噢，謝謝你，善良的僧侶！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	message("「至於你， ");
 	message(var0002);
-	message(" ，你必須繼續朝著與力量合一的方向前進……」");
+	message(" ，你必須繼續朝著與力量合一的方向前進…」");
 	say();
 	UI_remove_npc_face0();
 	Func097F(item, "@願你平安。@", 0x0002);
@@ -101,10 +101,10 @@ labelFunc04D4_002B:
 	labelFunc04D4_0218:
 	if (!(event == 0x0001)) goto labelFunc04D4_0267;
 	if (!(UI_get_npc_id(0xFF31) != 0x0000)) goto labelFunc04D4_0239;
-	UI_item_say(0xFF2C, "@現在不行……@");
+	UI_item_say(0xFF2C, "@現在不行…@");
 	abort;
 	labelFunc04D4_0239:
-	UI_item_say(0xFE9C, "@打擾一下……@");
+	UI_item_say(0xFE9C, "@打擾一下…@");
 	0xFF2C->Func07D1();
 	Func097F(0xFF2C, (("@是的，我的 " + var0003) + " ？@"), 0x0002);
 	UI_set_schedule_type(0xFF2C, 0x0003);
@@ -113,7 +113,7 @@ labelFunc04D4_002B:
 	UI_run_schedule(0xFF2C);
 	UI_clear_item_say(0xFF2C);
 	UI_show_npc_face0(0xFF2C, 0x0000);
-	message("「恐怕我只是一個謙卑的武僧。我對你沒有任何幫助。」");
+	message("「恐怕我只是一個謙卑的僧侶。我對你沒有任何幫助。」");
 	say();
 	var000C = false;
 	var000D = false;
@@ -127,7 +127,7 @@ labelFunc04D4_002B:
 	UI_add_answer("鹽潮");
 	labelFunc04D4_02BF:
 	if (!Func08FC()) goto labelFunc04D4_02D4;
-	message("「噢！你的一位朋友不幸去世了。這不該發生……」");
+	message("「噢！你的一位朋友不幸去世了。這不該發生…」");
 	say();
 	message("「如果你準備好再次見到你的朋友，只要開口，我就會把他們帶回你身邊。」");
 	say();
@@ -144,13 +144,13 @@ labelFunc04D4_002B:
 	UI_remove_answer("姓名");
 	message("「我不再相信姓名了。田裡的玉米有名字嗎？你能聽到玉米的哭泣聲嗎？」");
 	say();
-	var000E = Func0992(0xFFFD, (("@" + var0000) + " ，這位武僧確實是個神秘的人……@"), 0x0000, false);
+	var000E = Func0992(0xFFFD, (("@" + var0000) + " ，這位僧侶確實是個神秘的人…@"), 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	UI_add_answer(["信仰", "玉米"]);
 	labelFunc04D4_0338:
 	case "信仰" attend labelFunc04D4_0372:
 	UI_remove_answer("信仰");
-	message("「有一些看不見的能量充斥著各個世界。 Xenka 宗派的武僧試圖讓自己與這些虛無的氣體融為一體。」");
+	message("「有一些看不見的能量充斥著各個世界。 Xenka 宗派的僧侶試圖讓自己與這些虛無的氣體融為一體。」");
 	say();
 	message("「就我個人而言——我只是眾師兄弟中最微不足道的一個——我可以利用虛空的力量來促進植物的生長。」");
 	say();
@@ -180,7 +180,7 @@ labelFunc04D4_002B:
 	say();
 	goto labelFunc04D4_03A2;
 	labelFunc04D4_039E:
-	message("「如果你渴望領悟 Xenka 的奧秘，你應該去和 Draxta 武僧談談。」");
+	message("「如果你渴望領悟 Xenka 的奧秘，你應該去和 Draxta 僧侶談談。」");
 	say();
 	labelFunc04D4_03A2:
 	case "玉米" attend labelFunc04D4_03DC:
@@ -191,7 +191,7 @@ labelFunc04D4_002B:
 	say();
 	message("「我尋求與玉米合而為一。我是玉米之子。」");
 	say();
-	var000E = Func0992(0xFFFD, (("@正如我所說的， " + var0000) + "……@"), 0x0000, false);
+	var000E = Func0992(0xFFFD, (("@正如我所說的， " + var0000) + "…@"), 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	labelFunc04D4_03DC:
 	case "職責" attend labelFunc04D4_03F6:

@@ -26,7 +26,7 @@ void Func0495 object#(0x495) ()
 	var0002 = Func0953();
 	var0003 = UI_part_of_day();
 	if (!((event == 0x0001) || (event == 0x0002))) goto labelFunc0495_0109;
-	UI_item_say(0xFE9C, "@很高興見到你……@");
+	UI_item_say(0xFE9C, "@很高興見到你…@");
 	0xFF6B->Func07D1();
 	if (!(!UI_get_item_flag(0xFF6B, 0x001E))) goto labelFunc0495_005F;
 	Func097F(0xFF6B, "@很高興見到你！@", 0x0002);
@@ -77,7 +77,7 @@ labelFunc0495_0140:
 	UI_set_conversation_slot(0x0000);
 	message("「你看起來很蒼白，親愛的 Iolo 。」");
 	say();
-	message("「我不在的時候，你總是沒好好照顧自己……」");
+	message("「我不在的時候，你總是沒好好照顧自己…」");
 	say();
 	UI_set_conversation_slot(0x0001);
 	if (!Func097D(0xFE9B, 0x0001, 0x03BB, 0xFE99, 0x0005)) goto labelFunc0495_01DE;
@@ -116,7 +116,7 @@ labelFunc0495_0210:
 	say();
 	message("「我很悲痛他的理智似乎離開了他。但至少他在我身邊是安全的。」");
 	say();
-	message("「我會盡我所能幫助你恢復他的神智。或者很樂意在我的餘生中照顧他……即使他就是現在這副模樣。」");
+	message("「我會盡我所能幫助你恢復他的神智。或者很樂意在我的餘生中照顧他…即使他就是現在這副模樣。」");
 	say();
 labelFunc0495_0233:
 	if (!(!UI_get_item_flag(0xFF6B, 0x001C))) goto labelFunc0495_0260;
@@ -167,7 +167,7 @@ labelFunc0495_0301:
 	if (!gflags[0x0061]) goto labelFunc0495_0349;
 	if (!(UI_get_array_size(UI_get_party_list2()) < 0x0005)) goto labelFunc0495_033E;
 	UI_add_answer("離隊");
-	message("「如果你覺得我能幫上忙的話……」");
+	message("「如果你覺得我能幫上忙的話…」");
 	say();
 	UI_add_to_party(0xFF6B);
 	gflags[0x0010] = true;
@@ -193,23 +193,23 @@ labelFunc0495_0361:
 	UI_add_answer("加入");
 	message("「我明白， ");
 	message(var0002);
-	message("……」");
+	message("…」");
 	say();
 	UI_remove_from_party(0xFF6B);
 	Func09B4(0xFF6B);
 labelFunc0495_038E:
 	case "巴特林的行為" attend labelFunc0495_03B2:
 	UI_remove_answer("巴特林的行為");
-	message("「在巴特林介入之前，這片土地沒有平衡，但徹底的混沌是被控制住的……直到他釋放了災厄( Banes )。」");
+	message("「在巴特林介入之前，這片土地沒有平衡，但徹底的混沌是被控制住的…直到他釋放了災厄( Banes )。」");
 	say();
-	message("「除非恢復平衡，否則這片土地將會毀滅……並且把每一個與之接觸的世界也一起帶入遺忘的塵埃中。」");
+	message("「除非恢復平衡，否則這片土地將會毀滅…並且把每一個與之接觸的世界也一起帶入遺忘的塵埃中。」");
 	say();
 	UI_add_answer(["災厄", "每一個世界"]);
 labelFunc0495_03B2:
 	case "災厄" attend labelFunc0495_03E1:
 	UI_remove_answer("災厄");
 	UI_push_answers();
-	message("「災厄( Banes )是混沌( Chaos )的碎片力量。」");
+	message("「災厄( Banes )是混沌的碎片力量。」");
 	say();
 	message("「你必須把它們重新關起來，就像巴特林來之前那樣。這充其量只是個治標不治本的方法。」");
 	say();
@@ -219,7 +219,7 @@ labelFunc0495_03B2:
 labelFunc0495_03E1:
 	case "關起它們" attend labelFunc0495_0409:
 	UI_remove_answer("關起它們");
-	message("「你應該去月影城( Moonshade )。」");
+	message("「你應該去月影城。」");
 	say();
 	message("「如果你能查出是誰給了巴特林囚禁靈魂的秘密，我會試著找出什麼能讓它們承受我們想要封印的力量。」");
 	say();
@@ -235,9 +235,9 @@ labelFunc0495_0409:
 labelFunc0495_0420:
 	case "秘密" attend labelFunc0495_0437:
 	UI_remove_answer("秘密");
-	message("「雖然我在月影城( Moonshade )待了不少時間，但我沒聽說過這樣的法術。」");
+	message("「雖然我在月影城待了不少時間，但我沒聽說過這樣的法術。」");
 	say();
-	message("「既然法師們基本上都很虛榮，那這意味著這個法術是個秘密……或者至少不是常識。」");
+	message("「既然法師們基本上都很虛榮，那這意味著這個法術是個秘密…或者至少不是常識。」");
 	say();
 labelFunc0495_0437:
 	case "資料" attend labelFunc0495_044A:
@@ -248,7 +248,7 @@ labelFunc0495_044A:
 	case "每一個世界" attend labelFunc0495_0472:
 	UI_remove_answer("每一個世界");
 	UI_push_answers();
-	message("「不列顛尼亞( Britannia )——甚至是你的家鄉，聖者——都處於致命的危險之中！」");
+	message("「不列顛尼亞——甚至是你的家鄉，聖者——都處於致命的危險之中！」");
 	say();
 	message("「沒有任何世界可以不影響另一個世界而存在。所以如果新索沙利亞( New Sosaria )毀滅，所有的世界可能都會被毀滅。」");
 	say();
@@ -260,7 +260,7 @@ labelFunc0495_0472:
 	message(var0002);
 	message("，雖然它通常被稱為巨蛇之島。」");
 	say();
-	message("「這裡所有人民的祖先都是反對不列顛王( Lord British )統治的異議分子。」");
+	message("「這裡所有人民的祖先都是反對不列顛王統治的異議分子。」");
 	say();
 	UI_add_answer(["巨蛇之島", "不列顛王的統治"]);
 labelFunc0495_049C:
@@ -268,7 +268,7 @@ labelFunc0495_049C:
 	UI_remove_answer("巨蛇之島");
 	message("「在我的旅行中，我在許多地方發現了一個文明的廢墟。」");
 	say();
-	message("「它們都帶有某種巨蛇圖案的標記。我注意到不同地區似乎有不同的巨蛇圖案( serpent motif )。」");
+	message("「它們都帶有某種巨蛇圖案的標記。我注意到不同地區似乎有不同的巨蛇圖案。」");
 	say();
 	UI_add_answer("巨蛇圖案");
 labelFunc0495_04BA:
@@ -281,7 +281,7 @@ labelFunc0495_04BA:
 labelFunc0495_04D1:
 	case "不列顛王的統治" attend labelFunc0495_04E8:
 	UI_remove_answer("不列顛王的統治");
-	message("「似乎很難相信他們所說的是我們認識的不列顛王( Lord British )。」");
+	message("「似乎很難相信他們所說的是我們認識的不列顛王。」");
 	say();
 	message("「但也許這裡的時間流逝方式與不列顛尼亞( Britannia )不同。」");
 	say();
@@ -291,7 +291,7 @@ labelFunc0495_04E8:
 	UI_push_answers();
 	message("「你已經體驗過失衡風暴( Storms of Imbalance )的力量了。隨著時間推移，它們發生的頻率和強度都會增加。」");
 	say();
-	message("「再過一段時間( period of time )，地震將開始撕裂這片土地……直到它最終自我毀滅。」");
+	message("「再過一段時間，地震將開始撕裂這片土地…直到它最終自我毀滅。」");
 	say();
 	UI_add_answer(["失衡風暴", "一段時間", "改變話題"]);
 labelFunc0495_0513:
@@ -299,7 +299,7 @@ labelFunc0495_0513:
 	UI_remove_answer("失衡風暴");
 	message("「 Xenka 的預言( Prophecies )提到了失衡風暴。」");
 	say();
-	message("「任何活著的人都沒見過的風暴。沒人能預測其後果的風暴……」");
+	message("「任何活著的人都沒見過的風暴。沒人能預測其後果的風暴…」");
 	say();
 	message("「抱歉，這些預言充其量只能說是隱晦難懂( cryptic )。」");
 	say();
@@ -316,7 +316,7 @@ labelFunc0495_0552:
 	UI_remove_answer("隱晦難懂");
 	message("「用詞含糊，難以理解。」");
 	say();
-	message("「其中大部分聽起來就像糟糕的詩……事實上，如果 Iolo 的歌也這麼難聽，我寧願砸爛他的魯特琴，也不讓他拿這些歌去折磨別人！」");
+	message("「其中大部分聽起來就像糟糕的詩…事實上，如果 Iolo 的歌也這麼難聽，我寧願砸爛他的魯特琴，也不讓他拿這些歌去折磨別人！」");
 	say();
 labelFunc0495_0569:
 	case "一段時間" attend labelFunc0495_0580:
@@ -329,7 +329,7 @@ labelFunc0495_0580:
 	case "答案" attend labelFunc0495_05AE:
 	UI_remove_answer("答案");
 	UI_push_answers();
-	message("「根據 Xenka 的幻象：『來自另一個世界的英雄將透過強大的魔法( powerful magic )、鬼魂( specters )的幫助，以及教父的法器( implements )取得成功。』」");
+	message("「根據 Xenka 的幻象：『來自另一個世界的英雄將透過強大的魔法、鬼魂的幫助，以及教父的法器取得成功。』」");
 	say();
 	message("「在沙子漏完之前，我們必須找出這些該死謎語的含義！」");
 	say();
@@ -346,41 +346,41 @@ labelFunc0495_05AE:
 labelFunc0495_05C9:
 	case "鬼魂" attend labelFunc0495_05E4:
 	UI_remove_answer("鬼魂");
-	message("「就我所知， Xenka 可能是在說她自己！」");
+	message("「就我所知，Xenka 可能是在說她自己！」");
 	say();
-	message("「所有的修道士都堅信她會回來幫助你完成任務……而我卻要在這些瘋言瘋語中摸索！」");
+	message("「所有的修道士都堅信她會回來幫助你完成任務…而我卻要在這些瘋言瘋語中摸索！」");
 	say();
 	message("「我需要的是和她的鬼魂談談，看看能不能從她那裡擠出點有意義的東西，而不是看這些著作！」");
 	say();
 labelFunc0495_05E4:
 	case "法器" attend labelFunc0495_05FB:
 	UI_remove_answer("法器");
-	message("「根據 Karnax 告訴我的，教父是這些蛇神教徒( Ophidians )的某種祭司或聖人。」");
+	message("「根據 Karnax 告訴我的，教父是這些蛇神教徒的某種祭司或聖人。」");
 	say();
-	message("「一個聖人會用什麼工具？也許是某種用來祝福人們的東西……我不知道。我必須進一步尋找更多線索。」");
+	message("「一個聖人會用什麼工具？也許是某種用來祝福人們的東西…我不知道。我必須進一步尋找更多線索。」");
 	say();
 labelFunc0495_05FB:
 	case "神祕的聯繫" attend labelFunc0495_0629:
 	UI_remove_answer("神祕的聯繫");
 	UI_push_answers();
-	message("「在你拯救你忠實的同伴之前，你必須拿著靈魂囚籠，把它們浸泡( bathe )在與那個災厄相連的神殿( temple )的水中。」");
+	message("「在你拯救你忠實的同伴之前，你必須拿著靈魂囚籠，把它們浸泡在與那個災厄相連的神殿的水中。」");
 	say();
-	message("「當你在每座神殿時，根據卷軸上的記載，那裡有某種裝置( device )，你可以透過它占卜出每個災厄的位置。」");
+	message("「當你在每座神殿時，根據卷軸上的記載，那裡有某種裝置，你可以透過它占卜出每個災厄的位置。」");
 	say();
 	UI_add_answer(["浸泡", "神殿", "裝置", "改變話題"]);
 labelFunc0495_0629:
 	case "浸泡" attend labelFunc0495_0640:
 	UI_remove_answer("浸泡");
-	message("「靈魂囚籠……呃，稜鏡……你擁有的那個無法承受像災厄這種存在的力量。」");
+	message("「靈魂囚籠…呃，稜鏡…你擁有的那個無法承受像災厄這種存在的力量。」");
 	say();
 	message("「只有用對應神殿的水淨化過的稜鏡才能困住每個災厄。否則，稜鏡將失去效用。」");
 	say();
 labelFunc0495_0640:
 	case "神殿" attend labelFunc0495_0667:
 	UI_remove_answer("神殿");
-	message("「 Karnax 確實告訴過我 Miggim 有通往各個神殿的地圖……」");
+	message("「 Karnax 確實告訴過我 Miggim 有通往各個神殿的地圖…」");
 	say();
-	message("「顯然每座神殿都供奉著蛇神教徒( Ophidians )的六種美德之一。在你擊敗災厄之前，你應該找出正確的神殿。」");
+	message("「顯然每座神殿，都供奉著蛇神教徒的六種美德之一。在你擊敗災厄之前，你應該找出正確的神殿。」");
 	say();
 	UI_add_answer(["Karnax", "Miggim", "蛇神教徒"]);
 labelFunc0495_0667:
@@ -397,12 +397,12 @@ labelFunc0495_0682:
 	UI_remove_answer("Miggim");
 	message("「 Miggim 非常安靜且樂於助人。」");
 	say();
-	message("「他在閱讀可能包含某些線索的書籍和卷軸時提供了很大的幫助。我很感激他對這個圖書館的了解……沒有他，我將永遠找不到任何東西！」");
+	message("「他在閱讀可能包含某些線索的書籍和卷軸時提供了很大的幫助。我很感激他對這個圖書館的了解…沒有他，我將永遠找不到任何東西！」");
 	say();
 labelFunc0495_0699:
 	case "蛇神教徒" attend labelFunc0495_06B0:
 	UI_remove_answer("蛇神教徒");
-	message("「『蛇神教徒( Ophidians )』是 Karnax 用來稱呼曾經居住在各地巨蛇廢墟中人民的詞。」");
+	message("「『蛇神教徒』是 Karnax 用來稱呼曾經居住在各地巨蛇廢墟中人民的詞。」");
 	say();
 	message("「我不知道這是他們對自己的稱呼，還是他為他們編造的名字。」");
 	say();
@@ -411,17 +411,17 @@ labelFunc0495_06B0:
 	UI_remove_answer("裝置");
 	message("「再一次，聖者，我沒有更多可以告訴你的了。我一直無法找到任何關於神殿內裝置的參考資料。」");
 	say();
-	message("「我可以找到捐給神殿的穀物記錄，或是每個神殿管理員雇用的石工清單。但我找不到其他能幫上你的東西……我會繼續找的。」");
+	message("「我可以找到捐給神殿的穀物記錄，或是每個神殿管理員雇用的石工清單。但我找不到其他能幫上你的東西…我會繼續找的。」");
 	say();
 labelFunc0495_06C7:
 	case "改變話題" attend labelFunc0495_06D7:
-	message("「當然……」");
+	message("「當然…」");
 	say();
 	UI_pop_answers();
 labelFunc0495_06D7:
 	case "告辭" attend labelFunc0495_06FE:
 	UI_remove_npc_face0();
-	Func097F(0xFE9C, "@我會回來的……@", 0x0000);
+	Func097F(0xFE9C, "@我會回來的…@", 0x0000);
 	Func097F(0xFF6B, "@快點回來！@", 0x0002);
 	goto labelFunc0495_0701;
 labelFunc0495_06FE:

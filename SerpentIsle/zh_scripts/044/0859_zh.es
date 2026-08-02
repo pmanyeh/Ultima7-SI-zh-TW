@@ -140,7 +140,7 @@ labelFunc0859_0273:
 	var000A = Func0992(0x0001, (("@可是 " + var0000) + "，我們沒有足夠的吉爾得幣購買這個。@"), 0x0000, false);
 	if (!(var000A != 0xFE9C)) goto labelFunc0859_02B6;
 	UI_show_npc_face0(0xFFE3, 0x0000);
-	message("「啊……看來你的錢包是空空的， ");
+	message("「啊…看來你的錢包是空空的， ");
 	message(var0000);
 	message("。」");
 	say();

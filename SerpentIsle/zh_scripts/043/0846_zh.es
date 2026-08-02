@@ -57,7 +57,7 @@ labelFunc0846_00A9:
 	say();
 	goto labelFunc0846_00D9;
 labelFunc0846_00D5:
-	message("「如果你……口渴了，帥哥，再來問我喔。」");
+	message("「如果你…口渴了，帥哥，再來問我喔。」");
 	say();
 labelFunc0846_00D9:
 	var0003 = false;
@@ -134,7 +134,7 @@ labelFunc0846_0215:
 	say();
 	goto labelFunc0846_0256;
 labelFunc0846_0252:
-	message("「看來你沒有足夠的資金付給我……」");
+	message("「看來你沒有足夠的資金付給我…」");
 	say();
 labelFunc0846_0256:
 	if (!(0x001F < (UI_get_npc_id(0xFFBA) + 0x0006))) goto labelFunc0846_0275;

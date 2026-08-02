@@ -179,7 +179,7 @@ labelFunc0827_0331:
 	var0011 = "匹布料";
 labelFunc0827_0355:
 	if (!(var000C == 0x000B)) goto labelFunc0827_0379;
-	message("「嗯……我家魔導人偶麵包師烘焙的麵包既美味又管飽。一條賣你 ");
+	message("「嗯…我家魔導人偶麵包師烘焙的麵包既美味又管飽。一條賣你 ");
 	message(var000D);
 	message(" 枚吉爾得幣。」");
 	say();
@@ -251,7 +251,7 @@ labelFunc0827_0482:
 	say();
 	goto labelFunc0827_04C3;
 labelFunc0827_04BF:
-	message("「你沒有足夠的吉爾得幣來購買這個……」");
+	message("「你沒有足夠的吉爾得幣來購買這個…」");
 	say();
 labelFunc0827_04C3:
 	if (!(0x001F < (UI_get_npc_id(0xFFF1) + 0x0006))) goto labelFunc0827_04E2;

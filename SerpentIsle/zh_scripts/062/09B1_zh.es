@@ -39,12 +39,12 @@ labelFunc09B1_0072:
 	var0005 = UI_remove_party_items(var0004, var0002, 0xFE99, 0xFE99, false);
 	message("「非常感謝，");
 	message(var0000);
-	message("。也許你還想聽另一首歌。或者，如果你累了，我可以晚點再來……」");
+	message("。也許你還想聽另一首歌。或者，如果你累了，我可以晚點再來…」");
 	say();
 	UI_add_answer(["聽歌", "告辭"]);
 	goto labelFunc09B1_00E9;
 labelFunc09B1_00E4:
-	message("「也許下次吧……」");
+	message("「也許下次吧…」");
 	say();
 	abort;
 labelFunc09B1_00E9:
@@ -59,7 +59,7 @@ labelFunc09B1_00EC:
 labelFunc09B1_00FC:
 	goto labelFunc09B1_0104;
 labelFunc09B1_00FF:
-	message("「很好……那我就不再彈奏了。」");
+	message("「很好…那我就不再彈奏了。」");
 	say();
 	abort;
 labelFunc09B1_0104:

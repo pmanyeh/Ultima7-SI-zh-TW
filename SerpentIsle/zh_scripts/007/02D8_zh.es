@@ -43,7 +43,7 @@ labelFunc02D8_00AC:
 	say();
 	message("\"混沌是強壯的肢體，它是無法被擊敗的。它就像一根由許多股組成的繩子，繁多卻統一。\"");
 	say();
-	message("\"但我們在這裡被擊敗了……\"");
+	message("\"但我們在這裡被擊敗了…\"");
 	say();
 labelFunc02D8_00C7:
 	case "情感" attend labelFunc02D8_00E6:
@@ -54,7 +54,7 @@ labelFunc02D8_00C7:
 	say();
 	message("\"沒有愛，我們無法和平相處。如果我們沒有歡樂，生命將毫無意義。\"");
 	say();
-	message("\"因此，情感是最重要的美德( Virtues )。\"");
+	message("\"因此，情感是最重要的美德。\"");
 	say();
 labelFunc02D8_00E6:
 	case "困住？" attend labelFunc02D8_0106:
@@ -83,7 +83,7 @@ labelFunc02D8_0128:
 labelFunc02D8_0149:
 	case "水" attend labelFunc02D8_0164:
 	UI_remove_answer("水");
-	message("\"那是一場多麼美妙的儀式！老祭司會從一個房間走到另一個房間，收集四塊情感天然磁石( Lodestones of Emotion )……\"");
+	message("\"那是一場多麼美妙的儀式！老祭司會從一個房間走到另一個房間，收集四塊情感天然磁石( Lodestones of Emotion )…\"");
 	say();
 	message("\"有一年我被選中在合唱團中唱歌，我們跟在他後面，拋灑花瓣並唱著混沌讚美詩( Hymns of Chaos )。\"");
 	say();
@@ -102,7 +102,7 @@ labelFunc02D8_0188:
 	UI_remove_answer("自由");
 	message("\"如果你能砸碎愛之基座( Pedestal of Love )，那將會釋放神廟的一些古老力量。基座位於這個房間的中央。它現在看起來像一根破碎的柱子，但那是因為它太古老了。\"");
 	say();
-	message("\"我確信這會把我從石頭裡解放出來……\"");
+	message("\"我確信這會把我從石頭裡解放出來…\"");
 	say();
 	message("\"但它可能會殺了你！或者更糟，你可能會代替我被困在這堵牆裡！\"");
 	say();

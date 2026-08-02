@@ -230,7 +230,7 @@ labelFunc081B_03FA:
 	say();
 	goto labelFunc081B_0441;
 labelFunc081B_043D:
-	message("「恐怕你沒有足夠的錢買這個……」");
+	message("「恐怕你沒有足夠的錢買這個…」");
 	say();
 labelFunc081B_0441:
 	if (!(0x001F < (UI_get_npc_id(0xFFD0) + 0x0006))) goto labelFunc081B_0460;

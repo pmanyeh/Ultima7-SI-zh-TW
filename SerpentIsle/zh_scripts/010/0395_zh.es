@@ -20,7 +20,7 @@ void Func0395 shape#(0x395) ()
 labelFunc0395_0046:
 	if (!((event == 0x0007) && UI_get_item_flag(0xFEED, 0x001D))) goto labelFunc0395_0092;
 	UI_show_npc_face0(0xFEE8, 0x0000);
-	message("「呃啊！你以為殺了我就能拯救你寶貝的 Gwani 嗎？蠢貨！你的腦袋簡直跟無頭怪(headless)一樣！」 *「我嘲笑你，即使我現在倒在自己的血泊中奄奄一息。我告訴你， Gwani 註定要滅亡，就像我陷阱裡虛弱的兔子一樣註定滅亡，哈哈哈……」");
+	message("「呃啊！你以為殺了我就能拯救你寶貝的猿怪嗎？蠢貨！你的腦袋簡直跟無頭怪一樣！」 *「我嘲笑你，即使我現在倒在自己的血泊中奄奄一息。我告訴你，猿怪註定要滅亡，就像我陷阱裡虛弱的兔子一樣註定滅亡，哈哈哈…」");
 	say();
 	UI_remove_npc_face0();
 	UI_clear_item_flag(0xFEED, 0x001D);
@@ -57,28 +57,28 @@ labelFunc0395_011D:
 labelFunc0395_013A:
 	case "殺人兇手！" attend labelFunc0395_015D:
 	UI_remove_answer("殺人兇手！");
-	message("「這個指控太不公平了！ Gwani 只不過是動物！我殺牠們就像殺熊或豹一樣。」* 「當人們冒險進入這些冰冷地區時，牠們的毛皮能讓許多人保暖。怎麼，如果有人敢偷我的毛皮，我也會殺了他。」* 「沒錯，牠們的毛皮也是最賺錢的。」");
+	message("「這個指控太不公平了！ 猿怪( Gwani ) 只不過是動物！我殺牠們就像殺熊或豹一樣。」* 「當人們冒險進入這些冰冷地區時，牠們的毛皮能讓許多人保暖。怎麼，如果有人敢偷我的毛皮，我也會殺了他。」* 「沒錯，牠們的毛皮也是最賺錢的。」");
 	say();
-	UI_add_answer(["動物", "利潤", "Gwani"]);
+	UI_add_answer(["動物", "利潤", "猿怪"]);
 labelFunc0395_015D:
 	case "利潤" attend labelFunc0395_0170:
 	UI_remove_answer("利潤");
-	message("「沒錯，我拿到最好的毛皮，都是趁那些野獸活著的時候剝下來的。我已經好幾年沒有在剝皮前殺死一隻 Gwani 了，而且我不會停手，直到最後一隻消失為止！」");
+	message("「沒錯，我拿到最好的毛皮，都是趁那些野獸活著的時候剝下來的。我已經好幾年沒有在剝皮前殺死一隻猿怪了，而且我不會停手，直到最後一隻消失為止！」");
 	say();
 labelFunc0395_0170:
 	case "動物" attend labelFunc0395_018A:
 	UI_remove_answer("動物");
-	message("「設陷阱抓牠們太容易了。牠們能活在這裡簡直是個奇蹟！哎呀，牠們就像羊一樣溫馴！」* 「獵豹至少還有點樂趣。要是我給牠機會，牠可是會咬斷我的手臂。屠宰 Gwani 簡直是幫牠們解脫。」");
+	message("「設陷阱抓牠們太容易了。牠們能活在這裡簡直是個奇蹟！哎呀，牠們就像羊一樣溫馴！」* 「獵豹至少還有點樂趣。要是我給牠機會，牠可是會咬斷我的手臂。屠宰猿怪簡直是幫牠們解脫。」");
 	say();
 	UI_add_answer("停止殺戮。");
 labelFunc0395_018A:
-	case "Gwani" attend labelFunc0395_019D:
-	UI_remove_answer("Gwani");
+	case "猿怪" attend labelFunc0395_019D:
+	UI_remove_answer("猿怪");
 	message("「牠們讓我過上優渥的生活。你竟然會去關心那種生物，真是蠢透了！」* 「如果你有什麼阻止我的計畫，那我勸你現在就離開，免得我把你也活剝了！」");
 	say();
 labelFunc0395_019D:
 	case "停止殺戮。" attend labelFunc0395_01AE:
-	message("「沒有人能告訴我什麼能殺、什麼不能殺！準備好去牆上跟你的 Gwani 朋友們作伴吧，聖者。」");
+	message("「沒有人能告訴我什麼能殺、什麼不能殺！準備好去牆上跟你的猿怪朋友們作伴吧，聖者。」");
 	say();
 	Func09AD(item);
 	abort;

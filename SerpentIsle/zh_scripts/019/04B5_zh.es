@@ -48,7 +48,7 @@ labelFunc04B5_00FA:
 	var0007 = UI_execute_usecode_array(0xFF4B, [(byte)0x66, (byte)0x65, (byte)0x68, (byte)0x61, (byte)0x66, (byte)0x65, (byte)0x68, (byte)0x61]);
 labelFunc04B5_0144:
 	if (!(event == 0x0001)) goto labelFunc04B5_0183;
-	Func097F(0xFE9C, "@打擾了……@", 0x0000);
+	Func097F(0xFE9C, "@打擾了…@", 0x0000);
 	Func097F(0xFF4B, "@你是何人？@", 0x0002);
 	var0007 = UI_execute_usecode_array(0xFF4B, [(byte)0x02]);
 	UI_set_schedule_type(0xFF4B, 0x0003);
@@ -75,7 +75,7 @@ labelFunc04B5_01DE:
 labelFunc04B5_01E2:
 	if (!(var0006 == 0x0002)) goto labelFunc04B5_020C;
 	if (!(var0003 == true)) goto labelFunc04B5_01F8;
-	message("「詛咒那汝所謂勇氣的廢鐵護甲！汝不曾在夢境締造者的冰冷石墓上翩翩起舞，踏入力量的殿堂……」");
+	message("「詛咒那汝所謂勇氣的廢鐵護甲！汝不曾在夢境締造者的冰冷石墓上翩翩起舞，踏入力量的殿堂…」");
 	say();
 labelFunc04B5_01F8:
 	UI_set_npc_id(0xFF4B, 0x0005);
@@ -96,7 +96,7 @@ labelFunc04B5_0239:
 labelFunc04B5_023D:
 	if (!(var0006 == 0x0003)) goto labelFunc04B5_0267;
 	if (!(var0004 == true)) goto labelFunc04B5_0253;
-	message("「千咒加身於汝所謂愛的腐爛花朵！汝不曾漫步於夢境的雲端之上，收割弱者那凋零的靈魂……」");
+	message("「千咒加身於汝所謂愛的腐爛花朵！汝不曾漫步於夢境的雲端之上，收割弱者那凋零的靈魂…」");
 	say();
 labelFunc04B5_0253:
 	UI_set_npc_id(0xFF4B, 0x0006);
@@ -117,9 +117,9 @@ labelFunc04B5_0294:
 labelFunc04B5_0298:
 	if (!(var0006 == 0x0004)) goto labelFunc04B5_02C3;
 	if (!(var0005 == true)) goto labelFunc04B5_02C0;
-	message("「天譴那汝所謂真理的虛假倒影！汝不曾飛翔至被詆毀聖者的拱頂陵墓，攫取太陽韁繩……」");
+	message("「天譴那汝所謂真理的虛假倒影！汝不曾飛翔至被詆毀聖者的拱頂陵墓，攫取太陽韁繩…」");
 	say();
-	message("「不……不！」");
+	message("「不…不！」");
 	say();
 	UI_earthquake(0x0005);
 	UI_kill_npc(0xFF4B);
