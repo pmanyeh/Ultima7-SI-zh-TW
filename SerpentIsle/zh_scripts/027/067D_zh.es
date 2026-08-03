@@ -13,7 +13,7 @@ void Func067D object#(0x67D) ()
 
 	if (!(event == 0x0001)) goto labelFunc067D_00A0;
 	UI_halt_scheduled(item);
-	UI_item_say(item, "@An Frio Xen Ex@");
+	UI_item_say(item, "@Kal Frio Xen Ex@");
 	if (!(Func0951() && (!UI_get_item_flag(0xFE9C, 0x0023)))) goto labelFunc067D_007E;
 	var0000 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x68, (byte)0x69, (byte)0x6A, (byte)0x69, (byte)0x61, (byte)0x6D, (byte)0x6E, (byte)0x6E, (byte)0x55, 0x07D6, (byte)0x58, 0x0043]);
 	var0000 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0001), [(byte)0x23, (byte)0x2C, (byte)0x55, 0x067D], 0x012C);

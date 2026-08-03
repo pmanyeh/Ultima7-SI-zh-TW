@@ -8,7 +8,7 @@ void Func0684 object#(0x684) ()
 
 	if (!(event == 0x0001)) goto labelFunc0684_005C;
 	UI_halt_scheduled(item);
-	UI_item_say(item, "@Rel Hur@");
+	UI_item_say(item, "@An Hur@");
 	if (!Func0951()) goto labelFunc0684_0046;
 	var0000 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x65, (byte)0x67, (byte)0x58, 0x0039]);
 	if (!(UI_get_weather() != 0x0003)) goto labelFunc0684_0043;

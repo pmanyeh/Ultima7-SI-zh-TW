@@ -18,7 +18,7 @@ void Func066E object#(0x66E) ()
 
 	if (!(event == 0x0001)) goto labelFunc066E_0075;
 	UI_halt_scheduled(item);
-	UI_item_say(item, "@In Hur Sanct@");
+	UI_item_say(item, "@In Jux Ylem@");
 	if (!Func0951()) goto labelFunc066E_005B;
 	var0000 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x6C, (byte)0x70, (byte)0x6C, (byte)0x70, (byte)0x58, 0x0043]);
 	var0001 = Func09A0(0x0000, 0x0004);

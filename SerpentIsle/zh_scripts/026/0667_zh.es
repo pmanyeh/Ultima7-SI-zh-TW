@@ -15,7 +15,7 @@ void Func0667 object#(0x667) ()
 
 	if (!(event == 0x0001)) goto labelFunc0667_00B0;
 	UI_halt_scheduled(item);
-	UI_item_say(item, "@Ex Por@");
+	UI_item_say(item, "@Ex Jux Hur@");
 	if (!Func0951()) goto labelFunc0667_0098;
 	var0000 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x6A, (byte)0x67, (byte)0x69, (byte)0x58, 0x0014, (byte)0x27, 0x0005, (byte)0x55, 0x0667]);
 	var0001 = UI_find_nearby(item, 0xFE99, 0x001E, 0x0008);

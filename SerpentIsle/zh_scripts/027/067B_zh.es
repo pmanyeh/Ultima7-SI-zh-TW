@@ -17,7 +17,7 @@ void Func067B object#(0x67B) ()
 	var0002 = UI_get_item_weight(var0000);
 	var0003 = Func0979(item);
 	UI_halt_scheduled(item);
-	UI_item_say(item, "@An Frio Xen Ex@");
+	UI_item_say(item, "@Por Ylem@");
 	if (!(Func0951() && ((var0002 < 0x0002) && (var0002 > 0x0000)))) goto labelFunc067B_0083;
 	var0004 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x59, var0003, (byte)0x58, 0x0043]);
 	var0004 = UI_set_last_created(var0000);

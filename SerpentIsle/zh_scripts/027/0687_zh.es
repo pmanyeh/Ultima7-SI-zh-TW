@@ -12,7 +12,7 @@ void Func0687 object#(0x687) ()
 	if (!(event == 0x0001)) goto labelFunc0687_011F;
 	UI_halt_scheduled(item);
 	var0000 = UI_get_object_position(item);
-	UI_item_say(item, "@Ex Por@");
+	UI_item_say(item, "@Kal Vas An Grav@");
 	if (!Func0951()) goto labelFunc0687_0103;
 	UI_obj_sprite_effect(item, 0x0007, 0xFFFE, 0xFFFE, 0xFFFD, 0xFFFD, 0x0000, 0xFFFF);
 	UI_obj_sprite_effect(item, 0x0007, 0xFFFE, 0xFFFE, 0x0003, 0xFFFD, 0x0000, 0xFFFF);

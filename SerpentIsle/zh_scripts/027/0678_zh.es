@@ -18,7 +18,7 @@ void Func0678 object#(0x678) ()
 	if (!(event == 0x0001)) goto labelFunc0678_00E3;
 	UI_halt_scheduled(item);
 	var0001 = UI_click_on_item();
-	UI_item_say(item, "@In Sanct Grav@");
+	UI_item_say(item, "@In Frio@");
 	var0002 = (var0001[0x0002] + 0x0001);
 	var0003 = (var0001[0x0003] + 0x0001);
 	var0004 = var0001[0x0004];

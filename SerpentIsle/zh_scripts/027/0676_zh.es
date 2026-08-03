@@ -18,7 +18,7 @@ void Func0676 object#(0x676) ()
 	var0001 = UI_get_item_shape(var0000);
 	var0002 = Func0979(item);
 	UI_halt_scheduled(item);
-	UI_item_say(item, "@Ex Por@");
+	UI_item_say(item, "@Uus Des Por Grav@");
 	if (!(Func0951() && (UI_is_npc(var0000) && ((var0000[0x0001] != 0x0000) && (var0001 != 0x02D1))))) goto labelFunc0676_0089;
 	var0003 = UI_execute_usecode_array(item, [(byte)0x23, (byte)0x59, var0002, (byte)0x68, (byte)0x69, (byte)0x65, (byte)0x66, (byte)0x6A, (byte)0x58, 0x0043]);
 	var0003 = UI_delayed_execute_usecode_array(var0000, [(byte)0x23, (byte)0x55, 0x0676], 0x000A);
