@@ -47,7 +47,7 @@ labelFunc0709_00C5:
 	if (!(gflags[0x023E] && (gflags[0x0242] && (gflags[0x0240] && (gflags[0x0241] && gflags[0x023F]))))) goto labelFunc0709_010A;
 	Func0922(0x0019);
 	UI_show_npc_face0(0xFF29, 0x0000);
-	message("\"I am Xenka. Thou must take this Serpent Sword and go to Sunrise Isle.\"");
+	message("「我是 Xenka 。汝必須取得這把蛇神之劍，前往晨曦島。」");
 	say();
 	var0005 = Func099B(0xFE9C, 0x0001, 0x02C6, 0x0000, 0x0000, false, true);
 	UI_remove_npc_face0();

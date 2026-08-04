@@ -179,7 +179,7 @@ labelFunc0437_0485:
 labelFunc0437_04CD:
 	if (!(gflags[0x0004] == true)) goto labelFunc0437_04F1;
 	if (!(gflags[0x0212] == true)) goto labelFunc0437_04E4;
-	message("「謝謝你，聖者( Avatar )！謝謝你讓我恢復了以前的『美』。」");
+	message("「謝謝你，聖者！謝謝你讓我恢復了以前的『美』。」");
 	say();
 	goto labelFunc0437_04EE;
 labelFunc0437_04E4:
@@ -295,7 +295,7 @@ labelFunc0437_075B:
 	goto labelFunc0437_078B;
 labelFunc0437_075E:
 	if (!(gflags[0x0170] && (!gflags[0x0172]))) goto labelFunc0437_0781;
-	message("「在你朋友的清白或有罪被證明之前，聖者( Avatar )，我們不能說話。」");
+	message("「在你朋友的清白或有罪被證明之前，聖者，我們不能說話。」");
 	say();
 	UI_remove_npc_face0();
 	Func097F(0xFFC9, "@我很抱歉…@", 0x0000);

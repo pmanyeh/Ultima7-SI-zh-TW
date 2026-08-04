@@ -150,7 +150,7 @@ labelFunc0451_0244:
 	say();
 	if (!(var0005 == true)) goto labelFunc0451_0275;
 	UI_show_npc_face1(0xFFFF, 0x0000);
-	message("「你說話的對象可不是普通的長槍兵！」 *「這位可是聖者( Avatar )！」");
+	message("「你說話的對象可不是普通的長槍兵！」 *「這位可是聖者！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -465,7 +465,7 @@ labelFunc0451_074D:
 	say();
 	if (!(var0005 == true)) goto labelFunc0451_077E;
 	UI_show_npc_face1(0xFFFF, 0x0000);
-	message("「你說話的對象可不是普通的冒險者！」 *「這位可是聖者( Avatar )！」");
+	message("「你說話的對象可不是普通的冒險者！」 *「這位可是聖者！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);

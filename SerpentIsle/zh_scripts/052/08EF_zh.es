@@ -6,7 +6,7 @@ void Func08EF 0x8EF ()
 
 	gflags[0x0007] = true;
 	if (!gflags[0x0072]) goto labelFunc08EF_000F;
-	message("\"Caladin is already deceased!\"");
+	message("「 Caladin 已經死亡了！」");
 	say();
 	abort;
 labelFunc08EF_000F:

@@ -1492,7 +1492,7 @@ case "告辭" attend labelFunc0443_1734:
     goto labelFunc0443_170B;
   message("「且慢…我感覺到原始力量正在逼近…我聽到虛空的聲音…」");
   say();
-  message("「我有一個給你的預言，聖者( Avatar )。」");
+  message("「我有一個給你的預言，聖者。」");
   say();
   UI_add_answer("預言");
   var0003 = true;

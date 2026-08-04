@@ -10,7 +10,7 @@ var Func0970 0x970 (var var0000, var var0001)
 	var var0005;
 
 	var0002 = UI_count_objects(0xFE9B, 0x0284, 0xFE99, 0xFE99);
-	message("\"To be agreeable?\"");
+	message("「是否同意？」");
 	say();
 	if (!(!Func0955())) goto labelFunc0970_0027;
 	var0003 = 0x0000;

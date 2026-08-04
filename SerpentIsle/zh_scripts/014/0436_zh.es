@@ -241,7 +241,7 @@ labelFunc0436_03CA:
 	say();
 	if (!(var0003 == true)) goto labelFunc0436_040A;
 	UI_show_npc_face1(0xFFFD, 0x0000);
-	message("「我會說她對這件事感覺很強烈，聖者( Avatar )。但她提議用來阻止風暴的方法似乎有點極端。」");
+	message("「我會說她對這件事感覺很強烈，聖者。但她提議用來阻止風暴的方法似乎有點極端。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -300,7 +300,7 @@ labelFunc0436_04CA:
 	UI_remove_answer("Voldin");
 	if (!((gflags[0x0170] && gflags[0x0172]) && (!gflags[0x016E]))) goto labelFunc0436_0534;
 	if (!UI_get_item_flag(0xFFCD, 0x0004)) goto labelFunc0436_0500;
-	message("「他是個邪惡的人，聖者( Avatar )。Voldin 船長強迫我聽從他的命令，當我拒絕時就打我！」");
+	message("「他是個邪惡的人，聖者。Voldin 船長強迫我聽從他的命令，當我拒絕時就打我！」");
 	say();
 	message("「我很高興你殺了他——很高興！」");
 	say();
@@ -358,7 +358,7 @@ labelFunc0436_0585:
 	message("「把它還給我…也許上天會再次對幼鹿城( Fawn )微笑。」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0436_060C;
-	var000A = Func0992(0x0001, "@那妳自己的盔甲呢，聖者( Avatar )？@", "@那我自己的盔甲呢？@", false);
+	var000A = Func0992(0x0001, "@那妳自己的盔甲呢，聖者？@", "@那我自己的盔甲呢？@", false);
 	if (!(var000A != 0xFE9C)) goto labelFunc0436_05DE;
 	UI_set_conversation_slot(0x0000);
 labelFunc0436_05DE:
@@ -380,7 +380,7 @@ labelFunc0436_0610:
 labelFunc0436_0613:
 	message("「你見過美之盔甲( Armour of Beauty )了！哦，上天不會再對幼鹿城( Fawn )微笑了嗎？。我真希望你把它帶來了。」");
 	say();
-	var000A = Func0992(0x0001, "@那妳自己的盔甲呢，聖者( Avatar )？@", "@那我自己的盔甲呢？@", false);
+	var000A = Func0992(0x0001, "@那妳自己的盔甲呢，聖者？@", "@那我自己的盔甲呢？@", false);
 	if (!(var000A != 0xFE9C)) goto labelFunc0436_0638;
 	UI_set_conversation_slot(0x0000);
 labelFunc0436_0638:

@@ -16,7 +16,7 @@ labelFunc091A_002B:
 	var0002 = UI_get_npc_number(var0001);
 	if (!UI_get_item_flag(var0002, 0x0006)) goto labelFunc091A_009A;
 	UI_show_npc_face0(var0002, 0x0000);
-	message("\"I am the Lizard King. I can do anything.\"");
+	message("「我是蜥蜴王。我可以做任何事。」");
 	say();
 	UI_remove_npc_face0();
 	if (!(var0002 == 0xFE9C)) goto labelFunc091A_0079;

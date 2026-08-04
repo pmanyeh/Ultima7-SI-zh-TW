@@ -21,9 +21,9 @@ void Func08F5 0x8F5 (var var0000)
 	var var000D;
 
 	UI_show_npc_face0(var0000, 0x0000);
-	message("\"Enough, arrogant fool! Thou canst not kill a Xenkan Monk!\"");
+	message("「夠了，狂妄的蠢貨！汝殺不死一位 Xenkan 僧侶！」");
 	say();
-	message("\"Stand thou in awe of my true power... Let there be PEACE!\"");
+	message("「在我真正的力量面前顫抖吧……讓這裡重歸平和！」");
 	say();
 	UI_remove_npc_face0();
 	var0001 = UI_get_object_position(var0000);

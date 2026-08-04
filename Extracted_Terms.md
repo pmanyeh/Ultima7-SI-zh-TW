@@ -4,7 +4,7 @@
 **特別注意**：在遊戲對話文本 (`message(...)`) 中，這些有明確中文翻譯的地名請加上括號保留原文，並在括號內加上半形空白，例如：`幼鹿城( Fawn )`。而在玩家對話選項 (`UI_add_answer(...)`) 中則只需保留純中文，例如：`UI_add_answer("幼鹿城")`。
 
 ## 人名 (Names)
-- **Xenkan Monks** ➔ **Xenkan 武僧** [出自 044C_zh.es]
+- **Xenkan Monks / Xenkan Monk** ➔ **Xenkan 僧侶** [出自 044C_zh.es, 08F5_zh.es]
 - **Gannt** ➔ **Gannt** (詩人/作者) [出自 063B_zh.es]
 - **Captain Hawk** ➔ **Hawk 船長** [出自 044C_zh.es]
 - **Deadeye** ➔ **Deadeye** [出自 044A_zh.es]
@@ -566,8 +566,9 @@
 - **Amulet of Balance** ➔ **平衡護身符( Amulet of Balance )** (開啟巨蛇之門的道具) [出自 04CF_zh.es, 04D1_zh.es, 087C_zh.es]
 - **Lens of Translating** ➔ **翻譯透鏡( Lens of Translating )** (翻譯蛇人文字的道具) [出自 04CF_zh.es, 04D1_zh.es]
 - **Serpent gate** ➔ **巨蛇之門( Serpent gate )** (蛇人建立的傳送門) [出自 04CF_zh.es, 04D1_zh.es, 087C_zh.es]
-- **Hero from Another World** ➔ **來自異世界之英雄( Hero from Another World )** (預言中拯救世界的英雄) [出自 04CF_zh.es, 04D1_zh.es, 04D3_zh.es, 063B_zh.es]
+- **Hero from Another World** ➔ **來自異世界之英雄( Hero from Another World )** (預言中拯救世界的英雄) [出自 04CF_zh.es, 04D1_zh.es, 04D3_zh.es, 063B_zh.es, 08FA_zh.es, 0709_zh.es]
 - **Chaos Hierophant** ➔ **混沌大祭司( Chaos Hierophant )** (混沌陣營的大祭司) [出自 04D3_zh.es]
 - **Zhelkas** ➔ **Zhelkas** (熔爐城石像鬼領袖，意為鐵頭盔) [出自 0876_zh.es, 0877_zh.es]
 - **Monetari** ➔ **蒙里他利幣(Monetari)** (蒙利多城貨幣) [出自 080B_zh.es]
 - **Guilders** ➔ **吉爾得幣(Guilders)** (月影城貨幣) [出自 080B_zh.es, 080D_zh.es, 080F_zh.es, 0810_zh.es]
+- **Serpent Sword** ➔ **巨蛇之劍( Serpent Sword )** (Xenka預言中拯救世界的神勍之劍) [出自 0709_zh.es]

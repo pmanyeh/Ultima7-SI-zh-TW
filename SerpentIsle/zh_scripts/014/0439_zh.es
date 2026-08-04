@@ -88,14 +88,14 @@ labelFunc0439_013F:
 	say();
 labelFunc0439_0143:
 	case "刺客" attend labelFunc0439_0164:
-	message("「你很難抓啊，聖者( Avatar )。但現在你必須死了！」");
+	message("「你很難抓啊，聖者。但現在你必須死了！」");
 	say();
 	UI_set_schedule_type(0xFFC7, 0x0000);
 	UI_set_oppressor(0xFE9C, 0xFFC7);
 	abort;
 labelFunc0439_0164:
 	case "瘋子 Iolo" attend labelFunc0439_0185:
-	message("「他現在是幼鹿城( Fawn )的主人了，聖者( Avatar )。趁他還覺得留你活命很有趣的時候離開，才是明智之舉。」 *「如果我把你的頭帶給他，他也許會把那個漂亮的丫頭，Alyssand，賞賜給我…」");
+	message("「他現在是幼鹿城( Fawn )的主人了，聖者。趁他還覺得留你活命很有趣的時候離開，才是明智之舉。」 *「如果我把你的頭帶給他，他也許會把那個漂亮的丫頭，Alyssand，賞賜給我…」");
 	say();
 	UI_set_schedule_type(0xFFC7, 0x0000);
 	UI_set_oppressor(0xFE9C, 0xFFC7);
@@ -128,7 +128,7 @@ labelFunc0439_01DF:
 	var0004 = Func0992(0x0001, 0x0000, 0x0000, true);
 	Func097F(var0004, "@他死了…@", 0x0005);
 	if (!(gflags[0x0004] == true)) goto labelFunc0439_024E;
-	message("「你能打敗我，聖者( Avatar )。但面對瘋子 Iolo( Iolo the Mad )的力量，你毫無希望…」");
+	message("「你能打敗我，聖者。但面對瘋子 Iolo( Iolo the Mad )的力量，你毫無希望…」");
 	say();
 	goto labelFunc0439_0252;
 labelFunc0439_024E:

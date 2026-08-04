@@ -117,7 +117,7 @@ labelFunc043B_020C:
 	say();
 	if (!(var0003 == true)) goto labelFunc043B_031C;
 	UI_show_npc_face1(0xFFFD, 0x0000);
-	message("「你的心怎麼能這麼硬，聖者( Avatar )？你為了幫我找 Gwenno，連陸地和海洋的每個角落都找遍了。」");
+	message("「你的心怎麼能這麼硬，聖者？你為了幫我找 Gwenno，連陸地和海洋的每個角落都找遍了。」");
 	say();
 	message("「難道你不願意重新考慮，幫助這個可憐的靈魂尋找真愛嗎？」");
 	say();
@@ -146,11 +146,11 @@ labelFunc043B_029E:
 	abort;
 	goto labelFunc043B_031C;
 labelFunc043B_02B4:
-	message("「我相信你有你的理由，聖者( Avatar )。但我非常失望。」");
+	message("「我相信你有你的理由，聖者。但我非常失望。」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
-	message("「聖者( Avatar )！請原諒我…和這些當地人不同，我知道你是誰！」");
+	message("「聖者！請原諒我…和這些當地人不同，我知道你是誰！」");
 	say();
 	message("「我相信你的事情要緊急得多。」");
 	say();
@@ -176,7 +176,7 @@ labelFunc043B_031C:
 labelFunc043B_033D:
 	if (!(var0005 == true)) goto labelFunc043B_0383;
 	UI_show_npc_face1(0xFFFE, 0x0000);
-	message("「喔，不…為什麼每個人都指望聖者( Avatar )來幫忙處理他們的感情生活？」");
+	message("「喔，不…為什麼每個人都指望聖者來幫忙處理他們的感情生活？」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
@@ -222,11 +222,11 @@ labelFunc043B_040E:
 	goto labelFunc043B_042C;
 labelFunc043B_041B:
 	if (!gflags[0x0004]) goto labelFunc043B_0428;
-	message("「一切都完了，聖者( Avatar )！一切都完了！」");
+	message("「一切都完了，聖者！一切都完了！」");
 	say();
 	goto labelFunc043B_042C;
 labelFunc043B_0428:
-	message("「在幼鹿城( Fawn )能遇到另一個不列顛尼亞( Britannia )人總是一件令人愉快的事，聖者( Avatar )。今天我能為你效勞嗎？」");
+	message("「在幼鹿城( Fawn )能遇到另一個不列顛尼亞( Britannia )人總是一件令人愉快的事，聖者。今天我能為你效勞嗎？」");
 	say();
 labelFunc043B_042C:
 	if (!(!gflags[0x0004])) goto labelFunc043B_0443;
@@ -290,7 +290,7 @@ labelFunc043B_0528:
 	say();
 	message("「他是個虔誠且有價值的人，儘管他有一些奇怪的同伴。」");
 	say();
-	var0015 = Func0992(0x0001, "@他的描述和我們認識的巴特林不太像，對吧，聖者( Avatar )？@", 0x0000, false);
+	var0015 = Func0992(0x0001, "@他的描述和我們認識的巴特林不太像，對吧，聖者？@", 0x0000, false);
 	if (!(var0015 != 0xFE9C)) goto labelFunc043B_0559;
 	UI_set_conversation_slot(0x0000);
 labelFunc043B_0559:

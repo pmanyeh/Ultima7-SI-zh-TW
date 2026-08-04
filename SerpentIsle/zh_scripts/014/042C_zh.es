@@ -802,14 +802,14 @@ labelFunc042C_0E40:
 	var0023 = UI_get_oppressor(0xFFD4);
 	if (!UI_get_item_flag(var0023, 0x0006)) goto labelFunc042C_0EB1;
 	UI_show_npc_face0(0xFFD4, 0x0000);
-	message("「你休想這麼輕易就把我當成獵物，強大的聖者( Avatar )！」");
+	message("「你休想這麼輕易就把我當成獵物，強大的聖者！」");
 	say();
 	message("「當你最意想不到的時候，你會發現我是一個值得敬畏的對手！」");
 	say();
 	goto labelFunc042C_0EBF;
 labelFunc042C_0EB1:
 	UI_show_npc_face0(0xFFD4, 0x0000);
-	message("「我必須撤退到睡牛客棧( Sleeping Bull )的安全地帶。別擔心——我們會再見面的，聖者( Avatar )！」");
+	message("「我必須撤退到睡牛客棧( Sleeping Bull )的安全地帶。別擔心——我們會再見面的，聖者！」");
 	say();
 labelFunc042C_0EBF:
 	UI_remove_npc_face0();

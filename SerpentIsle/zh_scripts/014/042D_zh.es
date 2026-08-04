@@ -62,7 +62,7 @@ labelFunc042D_00D4:
 	if (!((event == 0x0002) && (!UI_get_item_flag(0xFFD3, 0x0004)))) goto labelFunc042D_0148;
 	var0008 = UI_set_npc_prop(0xFFD3, 0x0003, 0x000A);
 	UI_show_npc_face0(0xFFD3, 0x0000);
-	message("「跟著你是我太蠢了，聖者( Avatar )！現在我要在這個愚蠢的任務中丟掉性命了。」");
+	message("「跟著你是我太蠢了，聖者！現在我要在這個愚蠢的任務中丟掉性命了。」");
 	say();
 	UI_remove_from_party(0xFFD3);
 	gflags[0x01E2] = true;
@@ -124,7 +124,7 @@ labelFunc042D_0298:
 labelFunc042D_02A3:
 	goto labelFunc042D_033C;
 labelFunc042D_02A6:
-	message("「幸會，聖者( Avatar )！」");
+	message("「幸會，聖者！」");
 	say();
 	message("「你已經為巴特林的邪惡行徑向他復仇了嗎？」");
 	say();
@@ -240,7 +240,7 @@ labelFunc042D_0429:
 	say();
 	var000A = Func0956(["堅持", "讓步"]);
 	if (!(var000A == "堅持")) goto labelFunc042D_04D7;
-	message("「該死的，聖者( Avatar )！」");
+	message("「該死的，聖者！」");
 	say();
 	UI_remove_from_party(0xFFD3);
 	Func0874();
@@ -297,14 +297,14 @@ labelFunc042D_0577:
 	say();
 	if (!(var0005 == true)) goto labelFunc042D_05AB;
 	UI_show_npc_face1(0xFFFF, 0x0000);
-	message("「收回你的話，不然要你好看！你是在跟聖者( Avatar )說話！」");
+	message("「收回你的話，不然要你好看！你是在跟聖者說話！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 labelFunc042D_05AB:
 	if (!(var0004 == true)) goto labelFunc042D_05CC;
 	UI_show_npc_face1(0xFFFD, 0x0000);
-	message("「挫挫這隻自大狂狗的銳氣吧，聖者( Avatar )！」");
+	message("「挫挫這隻自大狂狗的銳氣吧，聖者！」");
 	say();
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);

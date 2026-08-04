@@ -24,9 +24,9 @@ void Func08FA 0x8FA ()
 	var var000C;
 	var var000D;
 
-	message("\"We have restored life to thy flesh, as promised, Hero from Another World. Now thou must continue thy quest.\"");
+	message("「如我們所承諾的，我們已恢復汝的肉身生命，來自另一個世界的英雄。現在，汝必須繼續汝的使命。」");
 	say();
-	message("\"We know not for certain from where thou wilt continue...\"");
+	message("「我們尚不確定汝將從何處繼續……」");
 	say();
 	var0000 = [0x0408, 0x07CE];
 	var0001 = [0x036B, 0x0ABB];
