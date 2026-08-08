@@ -136,7 +136,7 @@ labelFunc031D_0188:
 	goto labelFunc031D_0A44;
 labelFunc031D_01A1:
 	if (!(var0003 == 0x000C)) goto labelFunc031D_01B2;
-	message("你需要前往神殿接受審判");
+	message("你需要前往神殿接受審判！而且，記得敲門！");
 	say();
 	goto labelFunc031D_0A44;
 labelFunc031D_01B2:
