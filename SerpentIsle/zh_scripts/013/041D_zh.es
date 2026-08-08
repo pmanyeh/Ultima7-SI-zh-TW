@@ -447,11 +447,11 @@ labelFunc041D_06FA:
 	say();
 	message("「唉——就像通常的情況一樣，使用力量並不需要了解它。」");
 	say();
-	var0006 = Func0992(0xFFFD, (((("@" + var0003) + " 在偽先知(False Prophet)的時代裡學得很好。@"))), "@在偽先知(False Prophet)的時代裡，我受過良好的教導…@", false);
+	var0006 = Func0992(0xFFFD, (((("@" + var0003) + " 在偽先知(False Prophet)的時代裡學得很好。」"))), "「在偽先知(False Prophet)的時代裡，我受過良好的教導…」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「誰？」");
 	say();
-	var0006 = Func0992(0x0001, "@沒什麼…@", "@沒什麼…@", false);
+	var0006 = Func0992(0x0001, "「沒什麼…」", "「沒什麼…」", false);
 	UI_set_conversation_slot(0x0000);
 	gflags[0x013D] = true;
 	goto labelFunc041D_076C;

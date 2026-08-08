@@ -113,7 +113,7 @@ labelFunc0853_01E3:
 	goto labelFunc0853_0238;
 labelFunc0853_01F4:
 	if (!(var000D == 0x0003)) goto labelFunc0853_0238;
-	var0010 = Func0992(0x0001, (("@可是 " + var0001) + "，我們資金不夠！@"), 0x0000, false);
+	var0010 = Func0992(0x0001, (("「可是 " + var0001) + "，我們資金不夠！」"), 0x0000, false);
 	if (!(var0010 != 0xFE9C)) goto labelFunc0853_0231;
 	UI_show_npc_face0(0xFFE4, 0x0000);
 	message("「恐怕你只能喝井水解渴了。」");

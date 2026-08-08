@@ -398,7 +398,7 @@ labelFunc040D_06A2:
 	say();
 	message("「還有，Julia 會監視所有不受歡迎的人。」");
 	say();
-	var000C = Func0992(0xFFFD, "@那麼她一定發現了巴特林 (Batlin)！@", 0x0000, false);
+	var000C = Func0992(0xFFFD, "「那麼她一定發現了巴特林 (Batlin)！」", 0x0000, false);
 	if (!(var000C != 0xFE9C)) goto labelFunc040D_071C;
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0002)) goto labelFunc040D_0715;
 	var000D = var000C;
@@ -407,7 +407,7 @@ labelFunc040D_06E8:
 	var000D = Func0992(0x0001, 0x0000, 0x0000, false);
 	goto labelFunc040D_06E8;
 labelFunc040D_0705:
-	var000D = Func0992(var000D, "@啊，但是巴特林為了他的目的，也可以表現得非常像個紳士。@", 0x0000, false);
+	var000D = Func0992(var000D, "「啊，但是巴特林為了他的目的，也可以表現得非常像個紳士。」", 0x0000, false);
 labelFunc040D_0715:
 	UI_set_conversation_slot(0x0000);
 labelFunc040D_071C:
@@ -502,7 +502,7 @@ labelFunc040D_093A:
 	var000E = (var000E & "棕色瓶子");
 labelFunc040D_0956:
 	if (!(var000E == [])) goto labelFunc040D_0986;
-	var000C = Func0992(0x0001, (("@但我們沒有奇特物品可以問，" + var0002) + "。@"), 0x0000, false);
+	var000C = Func0992(0x0001, (("「但我們沒有奇特物品可以問，" + var0002) + "。@"), 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「我不認為我能幫上你，但如果我想起什麼，我會通知你的！」");
 	say();
@@ -566,7 +566,7 @@ labelFunc040D_0AAA:
 	say();
 	message("「我在這家店裡賣過，但不常賣。只有法師才買得起這種奢侈品。」");
 	say();
-	var000C = Func0992(0xFFFF, "@誰會買這些華而不實的東西？@", "@請問女士，妳都賣給誰呢？@", false);
+	var000C = Func0992(0xFFFF, "「誰會買這些華而不實的東西？」", "「請問女士，妳都賣給誰呢？」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「綠女巫， Columna ——她只穿最好的料子。」");
 	say();
@@ -697,7 +697,7 @@ labelFunc040D_0D67:
 	say();
 	message("「不過，因為風暴的關係，現在航行到北方太危險了。我們也沒辦法走陸路做生意，因為 果雷沼澤( Gorlab Swamp )把大陸切成兩半了。」");
 	say();
-	var000C = Func0992(0x0001, "@關於那頂毛皮帽…@", "@關於那頂毛皮帽…@", false);
+	var000C = Func0992(0x0001, "「關於那頂毛皮帽…」", "「關於那頂毛皮帽…」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「是，是，是，我想起來了。我把它賣給了領主法師，他在幻象盛宴上把它送給了他的新歡。我很驚訝那個不尋常的傢伙沒有買一頂，因為他當時正在收集其他的毛皮。」");
 	say();
@@ -820,13 +820,13 @@ labelFunc040D_100C:
 	say();
 	message("「如果你想要更多，去鎮上西邊的酒莊問問就知道了。」");
 	say();
-	var000C = Func0992(0xFFFF, "@好主意。我們走吧。@", 0x0000, false);
+	var000C = Func0992(0xFFFF, "「好主意。我們走吧。」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	goto labelFunc040D_106D;
 labelFunc040D_1052:
 	message("「或許你應該去酒莊打聽一下。遊俠對酒最了解。」");
 	say();
-	var000C = Func0992(0xFFFF, "@看來有必要去酒莊拜訪一下！@", 0x0000, false);
+	var000C = Func0992(0xFFFF, "「看來有必要去酒莊拜訪一下！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 labelFunc040D_106D:
 	var0009 = Func09AE(var0009);
@@ -974,7 +974,7 @@ labelFunc040D_1363:
 labelFunc040D_1367:
 	message("「我不再進那種貨了，但我知道哪裡可以買到——幼鹿城( Fawn )。」");
 	say();
-	var000C = Func0992(0xFFFE, "@但妳以前賣過這些長襪？@", 0x0000, false);
+	var000C = Func0992(0xFFFE, "「但妳以前賣過這些長襪？」", 0x0000, false);
 	if (!(var000C != 0xFE9C)) goto labelFunc040D_13AD;
 	UI_set_conversation_slot(0x0000);
 	if (!var0010) goto labelFunc040D_13A1;
@@ -1007,13 +1007,13 @@ labelFunc040D_13EF:
 	say();
 	message("「如果我是你，我會把這膽汁般的東西丟掉，換成我們上好的月影城( Moonshade )酒。如果你想要一些，去鎮上西邊的酒莊問問就知道了。」");
 	say();
-	var000C = Func0992(0xFFFF, "@我們可以走了嗎？@", 0x0000, false);
+	var000C = Func0992(0xFFFF, "「我們可以走了嗎？」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	goto labelFunc040D_1450;
 labelFunc040D_1435:
 	message("「或許你應該去酒莊打聽一下。 Ernesto 對酒最了解。」");
 	say();
-	var000C = Func0992(0xFFFF, "@我喜歡參觀酒莊！@", 0x0000, false);
+	var000C = Func0992(0xFFFF, "「我喜歡參觀酒莊！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 labelFunc040D_1450:
 	var0009 = Func09AE(var0009);

@@ -185,7 +185,7 @@ labelFunc0429_02F2:
 	if (!(!gflags[0x01E9])) goto labelFunc0429_0384;
 	message("「那雙拖鞋晾在晾衣繩上晒乾，結果那場風暴來了。我後來出去收衣物，發現我的拖鞋被換成了一雙大靴子。」 *「我巴不得把這雙東西送給人，只要能換回我的拖鞋！」");
 	say();
-	var0009 = Func0992(0x0001, "@聖者，那看起來像是你的沼澤靴！@", "@那看起來像是我的沼澤靴！@", false);
+	var0009 = Func0992(0x0001, "「聖者，那看起來像是你的沼澤靴！」", "「那看起來像是我的沼澤靴！」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「如果你有我的拖鞋， ");
 	message(var0000);
@@ -349,7 +349,7 @@ labelFunc0429_0589:
 	say();
 	goto labelFunc0429_0634;
 labelFunc0429_0601:
-	var0009 = Func0992(0x0001, "@但我們的錢不夠…@", 0x0000, false);
+	var0009 = Func0992(0x0001, "「但我們的錢不夠…」", 0x0000, false);
 	if (!(var0009 != 0xFE9C)) goto labelFunc0429_062C;
 	UI_show_npc_face0(0xFFD7, 0x0000);
 	message("「我實在不忍心在這種風暴中趕走你們。幫手都跑光了，我也非常需要人手。」 *「但我不能讓你們免費住。你們只能去外面碰運氣了。」");

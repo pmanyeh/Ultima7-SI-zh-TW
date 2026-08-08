@@ -588,7 +588,7 @@ labelFunc042C_098F:
 	message("！哪個男人這麼幸運？」");
 	say();
 	if (!(!UI_get_item_flag(0xFFD4, 0x0006))) goto labelFunc042C_09E6;
-	var0012 = Func0992(0x0001, "@真的嗎，年輕的女士！@", "@這不是我的…@", false);
+	var0012 = Func0992(0x0001, "「真的嗎，年輕的女士！」", "「這不是我的…」", false);
 	UI_set_conversation_slot(0x0000);
 labelFunc042C_09E6:
 	message("「原諒我， ");
@@ -606,7 +606,7 @@ labelFunc042C_09FB:
 	message("「我想，希望這是送給我的，是不是太奢望了…」");
 	say();
 	if (!(!UI_get_item_flag(0xFFD4, 0x0006))) goto labelFunc042C_0A28;
-	var0012 = Func0992(0x0001, "@說實話，年輕的女士！@", "@這不是我的…@", false);
+	var0012 = Func0992(0x0001, "「說實話，年輕的女士！」", "「這不是我的…」", false);
 	UI_set_conversation_slot(0x0000);
 labelFunc042C_0A28:
 	message("「原諒我， ");

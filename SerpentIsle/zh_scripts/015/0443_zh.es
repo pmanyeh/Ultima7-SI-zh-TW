@@ -364,7 +364,7 @@ case "治療" attend labelFunc0443_058A:
   if (!(gflags[0x0098] && (gflags[0x00C2] && (!gflags[0x005A]))))
     goto labelFunc0443_057A;
   var000A =
-      Func0992(0xFFFD, "@聖者發燒得很厲害！@", "@哦…對…我的頭…@", false);
+      Func0992(0xFFFD, "「聖者發燒得很厲害！」", "「哦…對…我的頭…」", false);
   UI_set_conversation_slot(0x0000);
   if (!(gflags[0x0076] == false))
     goto labelFunc0443_0521;
@@ -460,7 +460,7 @@ labelFunc0443_05DB:
 labelFunc0443_05F3:
   message("「你的痛苦並非來自偶然的疾病——混入你血液的毒液並不尋常。」");
   say();
-  var000A = Func0992(0xFFFF, "@是誰對聖者做了這種事？@", 0x0000, false);
+  var000A = Func0992(0xFFFF, "「是誰對聖者做了這種事？」", 0x0000, false);
   if (!(var000A != 0xFE9C))
     goto labelFunc0443_0618;
   UI_set_conversation_slot(0x0000);

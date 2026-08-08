@@ -127,7 +127,7 @@ labelFunc0846_0204:
 	goto labelFunc0846_028A;
 labelFunc0846_0215:
 	if (!(var000E == 0x0003)) goto labelFunc0846_028A;
-	var0011 = Func0992(0x0001, (("@但是 " + var0001) + "，我們缺乏足夠的資金！@"), 0x0000, false);
+	var0011 = Func0992(0x0001, (("「但是 " + var0001) + "，我們缺乏足夠的資金！」"), 0x0000, false);
 	if (!(var0011 != 0xFE9C)) goto labelFunc0846_0252;
 	UI_show_npc_face0(0xFFBA, 0x0000);
 	message("「那在這裡你的解渴願望是沒辦法實現了。」");

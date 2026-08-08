@@ -122,7 +122,7 @@ labelFunc043E_018C:
 	say();
 	message("「在智者巴特林( Batlin the Sage )離開城鎮的那晚，有人從我家偷走了一件古物。我懷疑他就是那個小偷！」");
 	say();
-	var0003 = Func0992(0xFFFF, "@巴特林！哎呀，他也是我們的敵人！@", 0x0000, false);
+	var0003 = Func0992(0xFFFF, "「巴特林！哎呀，他也是我們的敵人！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	gflags[0x0058] = true;
 	UI_push_answers();
@@ -174,7 +174,7 @@ labelFunc043E_025D:
 	say();
 	message("「老實說，我們不敢丟棄它。它有著惡魔般的外觀，形狀像一條蛇，由一種前所未見的黑色岩石組成。」");
 	say();
-	var0003 = Func0992(0x0001, "@也許是黑石( blackrock )，聖者…@", 0x0000, false);
+	var0003 = Func0992(0x0001, "「也許是黑石( blackrock )，聖者…」", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc043E_0295;
 	UI_set_conversation_slot(0x0000);
 labelFunc043E_0295:
@@ -197,12 +197,12 @@ labelFunc043E_02C1:
 	say();
 	message("「在遺跡中看到蛇的符號並不罕見，但我在那之前或之後都從未見過任何這樣的岩石蛇( Rock Serpent )。」");
 	say();
-	var0003 = Func0992(0xFFFE, "@你能描述一下那條蛇的彎曲程度嗎？@", 0x0000, false);
+	var0003 = Func0992(0xFFFE, "「你能描述一下那條蛇的彎曲程度嗎？」", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc043E_0314;
 	UI_set_conversation_slot(0x0000);
 	message("「嗯…為什麼，頭部向右彎曲，身體非常蜿蜒。你為什麼問這個？」");
 	say();
-	var0003 = Func0992(var0003, "@聖者，這個人被偷的古物與你在風暴( Storm )中遺失的那個\t完美吻合，只是它面向相反的方向！", 0x0000, false);
+	var0003 = Func0992(var0003, "「聖者，這個人被偷的古物與你在風暴( Storm )中遺失的那個\t完美吻合，只是它面向相反的方向！", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 labelFunc043E_0314:
 	case "沒別的了" attend labelFunc043E_0353:

@@ -78,7 +78,7 @@ labelFunc0401_0155:
 	message("！我知道你很快就會回來，所以我一直在這間店裡等你。」");
 	say();
 	if (!Func0942(0xFFE2)) goto labelFunc0401_0186;
-	Func094E(0xFFE2, "@他還欠下了一大筆酒錢呢！@");
+	Func094E(0xFFE2, "「他還欠下了一大筆酒錢呢！」");
 	UI_set_conversation_slot(0x0000);
 	message("「我會付的，你別擔心！」");
 	say();
@@ -176,7 +176,7 @@ labelFunc0401_0341:
 	message(var0001);
 	message("！我不能跟你一起去。」");
 	say();
-	Func094E(0xFFB5, "@你必須獨自進入，陌生人。@");
+	Func094E(0xFFB5, "「你必須獨自進入，陌生人。」");
 	Func097F(0xFFB5, "@獨自一人！@", 0x0000);
 	Func097F(0xFFFF, "@要勇敢！@", 0x0000);
 	abort;
@@ -251,7 +251,7 @@ labelFunc0401_0450:
 	message("「我會列一張清單。」");
 	say();
 	if (!UI_npc_nearby(0xFFFE)) goto labelFunc0401_0491;
-	Func094E(0xFFFE, "@我已經開始列了。@");
+	Func094E(0xFFFE, "「我已經開始列了。」");
 	UI_set_conversation_slot(0x0000);
 	message("「那我也要補充上去。」");
 	say();

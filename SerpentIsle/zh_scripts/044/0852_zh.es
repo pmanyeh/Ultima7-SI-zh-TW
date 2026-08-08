@@ -173,7 +173,7 @@ labelFunc0852_02EE:
 	goto labelFunc0852_034F;
 labelFunc0852_0305:
 	if (!(var000D == 0x0003)) goto labelFunc0852_034F;
-	var0012 = Func0992(0x0001, (("@但是 " + var0000) + "，我們沒有足夠的吉爾得幣來付這個。@"), 0x0000, false);
+	var0012 = Func0992(0x0001, (("「但是 " + var0000) + "，我們沒有足夠的吉爾得幣來付這個。」"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0852_0348;
 	UI_show_npc_face0(0xFFE4, 0x0000);
 	message("「我很抱歉，但 Rocco 可沒辦法免費請你吃飯，");

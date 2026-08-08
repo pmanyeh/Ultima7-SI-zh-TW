@@ -217,7 +217,7 @@ labelFunc042F_0335:
 	case "訂婚戒指" attend labelFunc042F_040D:
 	message("「Keth 對那枚戒指非常自豪。他特別從月影城( Moonshade )的人那裡訂製的…」 「我的 Elissia 也是來自月影城( Moonshade )。哦，我可憐的 Elissia…她走了。走了。」");
 	say();
-	var0003 = Func0992(0xFFFE, "@你瘋了嗎，老頭！@", 0x0000, false);
+	var0003 = Func0992(0xFFFE, "「你瘋了嗎，老頭！」", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc042F_03B2;
 	UI_set_conversation_slot(0x0000);
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0002)) goto labelFunc042F_03B2;
@@ -230,7 +230,7 @@ labelFunc042F_0394:
 	if (!(var0005 != 0xFE9C)) goto labelFunc042F_03B2;
 	message("「Elissia…親愛的，甜美的 Elissia…」");
 	say();
-	var0005 = Func0992(var0005, "@對他溫柔點。恐怕他有點糊塗了。@", 0x0000, false);
+	var0005 = Func0992(var0005, "「對他溫柔點。恐怕他有點糊塗了。」", 0x0000, false);
 labelFunc042F_03B2:
 	UI_set_conversation_slot(0x0000);
 	message("「我很抱歉…非常抱歉， ");
@@ -262,7 +262,7 @@ labelFunc042F_040D:
 	say();
 	message("「第二天早上我去開店時，發現 Alyssand 前一天晚上放在那裡的法拉利幣不見了，取而代之的是一包食物。」");
 	say();
-	var0003 = Func0992(0x0001, "@這就是我們食物的下落！@", 0x0000, false);
+	var0003 = Func0992(0x0001, "「這就是我們食物的下落！」", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc042F_0448;
 	UI_set_conversation_slot(0x0000);
 labelFunc042F_0448:
@@ -288,7 +288,7 @@ labelFunc042F_047A:
 	say();
 	message("「風暴從我這裡拿走的就是這麼多…」");
 	say();
-	var0003 = Func0992(0x0001, "@那麼這些一定是他的硬幣了，聖者！@", 0x0000, false);
+	var0003 = Func0992(0x0001, "「那麼這些一定是他的硬幣了，聖者！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	if (!(UI_get_schedule_type(0xFFD1) == 0x0007)) goto labelFunc042F_04CA;
 	message("「如果你想買些什麼，我願意收下你的錢。」");
@@ -329,12 +329,12 @@ labelFunc042F_051F:
 	say();
 	var0003 = Func0992(0xFFFF, 0x0000, 0x0000, false);
 	if (!((var0003 != 0xFFFD) && UI_npc_nearby(0xFFFD))) goto labelFunc042F_056F;
-	var0003 = Func0992(var0003, "@聽起來他的幽默感跟你很像，伊歐洛( Iolo )！@", 0x0000, false);
+	var0003 = Func0992(var0003, "「聽起來他的幽默感跟你很像，伊歐洛( Iolo )！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	goto labelFunc042F_0590;
 labelFunc042F_056F:
 	if (!(var0003 != 0xFE9C)) goto labelFunc042F_0590;
-	var0003 = Func0992(var0003, "@這個人真愉快！@", 0x0000, false);
+	var0003 = Func0992(var0003, "「這個人真愉快！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 labelFunc042F_0590:
 	if (!(var0003 != 0xFE9C)) goto labelFunc042F_05F8;
@@ -349,7 +349,7 @@ labelFunc042F_05CC:
 	UI_set_conversation_slot(0x0000);
 	message("「這真是個不可思議的景象。呵呵嘻！」");
 	say();
-	var0005 = Func0992(var0005, "@如果被擊中的是個人，那可就不好笑了！@", 0x0000, false);
+	var0005 = Func0992(var0005, "「如果被擊中的是個人，那可就不好笑了！」", 0x0000, false);
 labelFunc042F_05F1:
 	UI_set_conversation_slot(0x0000);
 labelFunc042F_05F8:
@@ -358,7 +358,7 @@ labelFunc042F_05FF:
 	case "哥布林" attend labelFunc042F_064F:
 	message("「你為什麼想談論他們？風暴有趣多了…」");
 	say();
-	var0003 = Func0992(0xFFFE, "@我們沒時間搞這些！@", 0x0000, false);
+	var0003 = Func0992(0xFFFE, "「我們沒時間搞這些！」", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc042F_0630;
 	UI_set_conversation_slot(0x0000);
 	message("「哦，好吧！別生氣！」");
@@ -377,7 +377,7 @@ labelFunc042F_064F:
 	if (!(UI_get_array_size(UI_get_party_list()) < 0x0003)) goto labelFunc042F_0676;
 	var0003 = "friend is";
 labelFunc042F_0676:
-	var0003 = Func0992(0xFFFD, ("@如果你能回到手邊的話題，" + ("Delin，我們會非常感激的。@" & "@我怕我的<Check>變得有點不耐煩了。@")), 0x0000, false);
+	var0003 = Func0992(0xFFFD, ("「如果你能回到手邊的話題，" + ("Delin，我們會非常感激的。」" & "「我怕我的<Check>變得有點不耐煩了。」")), 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc042F_069F;
 	UI_set_conversation_slot(0x0000);
 labelFunc042F_069F:
@@ -524,7 +524,7 @@ labelFunc042F_08CC:
 	case "巴特林" attend labelFunc042F_0913:
 	message("「蝙蝠？什麼蝙蝠？」");
 	say();
-	var0003 = Func0992(0x0001, "@不是蝙蝠！巴-特-林( B-A-T-L-I-N )！@", "@不是蝙蝠！巴-特-林( B-A-T-L-I-N )！@", false);
+	var0003 = Func0992(0x0001, "「不是蝙蝠！巴-特-林( B-A-T-L-I-N )！」", "「不是蝙蝠！巴-特-林( B-A-T-L-I-N )！」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「不需要大吼。我沒聾。」");
 	say();

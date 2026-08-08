@@ -126,7 +126,7 @@ labelFunc081E_023F:
 	goto labelFunc081E_02F1;
 labelFunc081E_0256:
 	if (!(var000C == 0x0003)) goto labelFunc081E_02F1;
-	var000F = Func0992(0x0001, (("@但是 " + var0000) + "，我們沒有足夠的金幣付這個錢。@"), 0x0000, false);
+	var000F = Func0992(0x0001, (("「但是 " + var0000) + "，我們沒有足夠的金幣付這個錢。」"), 0x0000, false);
 	if (!(var000F != 0xFE9C)) goto labelFunc081E_02A6;
 	UI_show_npc_face0(0xFFD7, 0x0000);
 	message("「我不希望你們任何一個人挨餓，");

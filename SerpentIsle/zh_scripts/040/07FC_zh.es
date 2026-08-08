@@ -206,7 +206,7 @@ labelFunc07FC_0387:
 	message(var0002);
 	message(" 帶了奇怪的物品給我，並要我辨認它們。」");
 	say();
-	var0008 = Func0992(0x0001, "@但你是個旅店老闆！肯定有很多人會帶些神祕的東西來找你…@", 0x0000, false);
+	var0008 = Func0992(0x0001, "「但你是個旅店老闆！肯定有很多人會帶些神祕的東西來找你…」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「或許吧，陌生人。但沒有一半那麼奇怪的…」");
 	say();
@@ -218,7 +218,7 @@ labelFunc07FC_03CB:
 	message(var0002);
 	message(" 的確問過我關於古代遺跡的事。非常可疑。」");
 	say();
-	var0008 = Func0992(0x0001, "@難道沒有其他人問過同樣的事情嗎？@", 0x0000, false);
+	var0008 = Func0992(0x0001, "「難道沒有其他人問過同樣的事情嗎？」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「的確，智者巴特林也對這些遺跡很好奇。」");
 	say();

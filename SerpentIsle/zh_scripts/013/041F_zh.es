@@ -64,7 +64,7 @@ labelFunc041F_00BD:
 	say();
 	message("「或者你願意告訴我我渴望的秘密，也就是控制惡魔(Daemons)的關鍵！！！」");
 	say();
-	var0003 = Func0992(0x0001, "@但我們對石像鬼一無所知…呃，惡魔…。@", "@但我對惡魔一無所知…@", false);
+	var0003 = Func0992(0x0001, "「但我們對石像鬼一無所知…呃，惡魔…。」", "「但我對惡魔一無所知…」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「那你去死吧，騙子。」");
 	say();
@@ -270,7 +270,7 @@ labelFunc041F_056A:
 	if (!Func0955()) goto labelFunc041F_065A;
 	message("「那就向我敞開你的心智，讓我提取我渴望的知識！」");
 	say();
-	var0010 = Func0992(0x0001, "@不，我的朋友。你不能…！@", 0x0000, false);
+	var0010 = Func0992(0x0001, "「不，我的朋友。你不能…！」", 0x0000, false);
 	if (!(var0010 != 0xFE9C)) goto labelFunc041F_060C;
 	UI_set_npc_id(0xFFE1, (0x0000 - var0010));
 	UI_set_conversation_slot(0x0000);

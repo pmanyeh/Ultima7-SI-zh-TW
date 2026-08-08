@@ -56,7 +56,7 @@ labelFunc086F_0176:
 	if (!Func0942(0xFFF1)) goto labelFunc086F_01A6;
 	message("「喔，我們賣各式各樣的東西。斗篷、劍…」");
 	say();
-	Func094E(0xFFF1, "@還有鏟子…@");
+	Func094E(0xFFF1, "「還有鏟子…」");
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	message("「是的，主人，還有鏟子。水壺和其他容器。布料和一些武器。我們也賣烘焙食品。」");
@@ -274,7 +274,7 @@ labelFunc086F_04D3:
 	goto labelFunc086F_0559;
 labelFunc086F_04E4:
 	if (!(var000F == 0x0003)) goto labelFunc086F_0559;
-	var0014 = Func0992(0x0001, (("@但是 " + var0000) + "，我們沒有足夠的吉爾得幣來買這個。@"), 0x0000, false);
+	var0014 = Func0992(0x0001, (("「但是 " + var0000) + "，我們沒有足夠的吉爾得幣來買這個。」"), 0x0000, false);
 	if (!(var0014 != 0xFE9C)) goto labelFunc086F_0521;
 	UI_show_npc_face0(0xFFE0, 0x0000);
 	message("「如果你付不起錢，請離開吧。」");

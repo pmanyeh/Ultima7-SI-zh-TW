@@ -151,7 +151,7 @@ labelFunc0858_029B:
 	goto labelFunc0858_0327;
 labelFunc0858_02B2:
 	if (!(var000C == 0x0003)) goto labelFunc0858_0327;
-	var000A = Func0992(0x0001, (("@可是 " + var0000) + "，我們沒有足夠的吉爾得幣購買這個。@"), 0x0000, false);
+	var000A = Func0992(0x0001, (("「可是 " + var0000) + "，我們沒有足夠的吉爾得幣購買這個。」"), 0x0000, false);
 	if (!(var000A != 0xFE9C)) goto labelFunc0858_02EF;
 	UI_show_npc_face0(0xFFE3, 0x0000);
 	message("「我可不會把我的商品白送給人！」");

@@ -115,7 +115,7 @@ labelFunc081F_01E5:
 	goto labelFunc081F_0291;
 labelFunc081F_01FC:
 	if (!(var000D == 0x0003)) goto labelFunc081F_0291;
-	var0010 = Func0992(0x0001, (("@但是 " + var0001) + "，我們沒有足夠的金幣！@"), 0x0000, false);
+	var0010 = Func0992(0x0001, (("「但是 " + var0001) + "，我們沒有足夠的金幣！」"), 0x0000, false);
 	if (!(var0010 != 0xFE9C)) goto labelFunc081F_0246;
 	UI_show_npc_face0(0xFFD7, 0x0000);
 	message("「我自己偶爾也喜歡喝上一兩杯。」* 「我會讓你免費喝，但最近我連付錢顧客的份都不夠了。」");

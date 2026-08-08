@@ -173,7 +173,7 @@ labelFunc085E_02EE:
 	goto labelFunc085E_0380;
 labelFunc085E_0305:
 	if (!(var000D == 0x0003)) goto labelFunc085E_0380;
-	var0012 = Func0992(0x0001, (("@可是 " + var0000) + "，我們沒有足夠的吉爾得幣付帳。@"), 0x0000, false);
+	var0012 = Func0992(0x0001, (("「可是 " + var0000) + "，我們沒有足夠的吉爾得幣付帳。」"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc085E_0348;
 	UI_show_npc_face0(0xFFE2, 0x0000);
 	message("「哎呀，我不想看到你挨餓，但 Petra 和我可沒辦法免費請你吃。真是抱歉， ");

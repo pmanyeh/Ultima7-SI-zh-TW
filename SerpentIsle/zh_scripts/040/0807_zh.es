@@ -255,7 +255,7 @@ labelFunc0807_0405:
 	message("「母親，妳快來聽聽！這位客人這是在跟我開玩笑呢！」");
 	say();
 	if (!Func0942(0xFFD7)) goto labelFunc0807_0452;
-	Func094E(0xFFD7, (((("@" + var0002) + "，我們不可能接受低於 ") + var0004) + " 金幣的價格。@"));
+	Func094E(0xFFD7, (((("@" + var0002) + "，我們不可能接受低於 ") + var0004) + " 金幣的價格。」"));
 	UI_show_npc_face0(0xFFDA, 0x0000);
 	goto labelFunc0807_045C;
 labelFunc0807_0452:

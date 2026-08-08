@@ -150,7 +150,7 @@ labelFunc044B_01C0:
 	message("「這是一項必須單獨忍受、沒有同伴的考驗。」");
 	say();
 	if (!UI_get_item_flag(0xFFD4, 0x0006)) goto labelFunc044B_021A;
-	Func094E(0xFFD4, (("@但在完成我們的任務之前不行，" + var0000) + "！@"));
+	Func094E(0xFFD4, (("「但在完成我們的任務之前不行，" + var0000) + "！@"));
 	UI_set_conversation_slot(0x0000);
 labelFunc044B_021A:
 	if (!(!gflags[0x002F])) goto labelFunc044B_022C;
@@ -192,7 +192,7 @@ labelFunc044B_02AE:
 	message("「你的朋友們必須在這裡等你。」");
 	say();
 	if (!UI_get_item_flag(0xFFD4, 0x0006)) goto labelFunc044B_0321;
-	Func094E(0xFFD4, "@那他就不能參加這個考驗！我拒絕離開！@");
+	Func094E(0xFFD4, "「那他就不能參加這個考驗！我拒絕離開！」");
 	UI_set_conversation_slot(0x0000);
 	message("「我不能改變考驗的規則。因此，我不能允許你進入，陌生人。」");
 	say();
@@ -201,7 +201,7 @@ labelFunc044B_02AE:
 labelFunc044B_0321:
 	gflags[0x0082] = true;
 	Func09AC(0xFFB5, 0xFFFF, 0x0000, 0x000B);
-	var0009 = Func0992(0xFFFF, "@我們不能在鎮上的酒館等嗎？@", 0x0000, false);
+	var0009 = Func0992(0xFFFF, "「我們不能在鎮上的酒館等嗎？」", 0x0000, false);
 	if (!(var0009 != 0xFE9C)) goto labelFunc044B_039F;
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0002)) goto labelFunc044B_0398;
 	var000A = var0009;
@@ -210,7 +210,7 @@ labelFunc044B_0363:
 	var000A = Func0992(0x0001, 0x0000, 0x0000, false);
 	goto labelFunc044B_0363;
 labelFunc044B_0380:
-	var000A = Func0992(var000A, (("@當然不行。我們將會在這裡忠誠地等你，" + var0000) + "。@"), 0x0000, false);
+	var000A = Func0992(var000A, (("「當然不行。我們將會在這裡忠誠地等你，" + var0000) + "。」"), 0x0000, false);
 labelFunc044B_0398:
 	UI_set_conversation_slot(0x0000);
 labelFunc044B_039F:

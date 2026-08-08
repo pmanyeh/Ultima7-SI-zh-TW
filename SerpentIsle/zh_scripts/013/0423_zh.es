@@ -103,11 +103,11 @@ labelFunc0423_01F8:
 	say();
 	message("「哎呀，我應該對你施個法術！我可以把你大卸八塊，但依然留你一命！事實上我可能真的會這麼做！現在，快說！你為什麼來這裡打擾我？！呸！事實上我一點也不在乎！滾！」");
 	say();
-	var0010 = Func0992(0xFFFD, "@密碼！聖者，告訴他密碼！@", 0x0000, false);
+	var0010 = Func0992(0xFFFD, "「密碼！聖者，告訴他密碼！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「我聽到了什麼？」");
 	say();
-	Func094E(0xFE9C, "@一位共同的朋友要我向你提到 Iskatradeeth 。@");
+	Func094E(0xFE9C, "「一位共同的朋友要我向你提到 Iskatradeeth 。」");
 	UI_set_conversation_slot(0x0000);
 	message("「Iskatradeeth ！密碼？那麼我不會把你餵給鯨魚了…」");
 	say();

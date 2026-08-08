@@ -210,11 +210,11 @@ labelFunc0437_04F1:
 	UI_set_conversation_slot(0x0000);
 	message("「這值得乾一杯。為『美』乾杯！」");
 	say();
-	var0015 = Func0992(0x0001, "@為『美』乾杯！@", "@為『美』乾杯！@", false);
+	var0015 = Func0992(0x0001, "「為『美』乾杯！」", "「為『美』乾杯！」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「也為愛乾杯！讓我們為浪漫與幸福的美德乾杯！」");
 	say();
-	var0015 = Func0992(0x0001, "@為幸福乾杯！@", "@為幸福乾杯！@", false);
+	var0015 = Func0992(0x0001, "「為幸福乾杯！」", "「為幸福乾杯！」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「也為好的統治者乾杯，比如建立了我們這個美好社會的敬愛的幼鹿女王( Queen Fawn )。」");
 	say();

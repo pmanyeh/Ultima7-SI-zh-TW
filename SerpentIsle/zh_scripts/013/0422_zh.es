@@ -197,7 +197,7 @@ labelFunc0422_0522:
 	message("「實際上，我相信我現在的工作是由一雙謹慎的眼睛來觀察，以判斷 Erstam 實驗的成功與否。儘管我現在絕對有能力勝任許多工作。」");
 	say();
 	if (!(!var0005)) goto labelFunc0422_055A;
-	var0012 = Func0992(0xFFFF, ("@我的第一項工作就是洗個舒舒服服的熱水澡。我敢發誓，其中一些身體部位肯定在 Erstam 的莊園裡放了一段時間了！@"), 0x0000, false);
+	var0012 = Func0992(0xFFFF, ("「我的第一項工作就是洗個舒舒服服的熱水澡。我敢發誓，其中一些身體部位肯定在 Erstam 的莊園裡放了一段時間了！」"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_055A;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_055A:
@@ -238,7 +238,7 @@ labelFunc0422_05E0:
 	message("「當然應該有人看著我。以確保我的新身體不會開始分崩離析。不用擔心，我雖然覺得奇怪，但的確感覺非常好。」");
 	say();
 	if (!(!var0005)) goto labelFunc0422_0623;
-	var0012 = Func0992(0xFFFD, ("@你根本不需要觀察。特別是當那股味道先傳過來的時候！呸！@"), 0x0000, false);
+	var0012 = Func0992(0xFFFD, ("「你根本不需要觀察。特別是當那股味道先傳過來的時候！呸！」"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_0623;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_0623:
@@ -262,7 +262,7 @@ labelFunc0422_063D:
 	message("「聽到你這麼說我很高興。但首先你應該去問 Erstam 我是否可以離開。畢竟，我是他創造的。是他造就了今天的我。」");
 	say();
 	gflags[0x01B9] = true;
-	var0012 = Func0992(0xFFFE, ("@你確定要這麼做嗎，" + var0001 + "？ Boydon 看起來滿腔熱血，但他身上也充滿了『熱血』的腥臭味。我很驚訝你居然沒注意到這一點。@"), 0x0000, false);
+	var0012 = Func0992(0xFFFE, ("「你確定要這麼做嗎，" + var0001 + "？ Boydon 看起來滿腔熱血，但他身上也充滿了『熱血』的腥臭味。我很驚訝你居然沒注意到這一點。」"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_069D;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_069D:
@@ -286,7 +286,7 @@ labelFunc0422_06DE:
 	UI_add_answer("離隊");
 	message("「真是個好消息！帶路吧！」");
 	say();
-	var0012 = Func0992(0xFFFE, ("@我無意質疑你的判斷，聖者。但你的感官真的遲鈍到沒注意到這傢伙散發出的強烈氣味嗎？@"), 0x0000, false);
+	var0012 = Func0992(0xFFFE, ("「我無意質疑你的判斷，聖者。但你的感官真的遲鈍到沒注意到這傢伙散發出的強烈氣味嗎？」"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_0730;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_0730:
@@ -308,7 +308,7 @@ labelFunc0422_074C:
 	UI_remove_from_party(0xFFDE);
 	Func080A();
 	Func09B4(0xFFDE);
-	var0012 = Func0992(0xFFFF, ("@我也很難過看到他離開。但說實話，他在我們身邊的時候，被薰出來的眼淚比他離開時流的還要多！@"), 0x0000, false);
+	var0012 = Func0992(0xFFFF, ("「我也很難過看到他離開。但說實話，他在我們身邊的時候，被薰出來的眼淚比他離開時流的還要多！」"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0422_079C;
 	UI_set_conversation_slot(0x0000);
 labelFunc0422_079C:

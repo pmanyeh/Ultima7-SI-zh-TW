@@ -51,7 +51,7 @@ labelFunc0420_0078:
 	if (!Func0942(0xFFF1)) goto labelFunc0420_00DB;
 	message("「我很幸運，能為這麼有才華的工匠服務。」");
 	say();
-	Func094E(0xFFF1, "@他是個好孩子。@");
+	Func094E(0xFFF1, "「他是個好孩子。」");
 	UI_set_conversation_slot(0x0000);
 	goto labelFunc0420_00E3;
 labelFunc0420_00DB:
@@ -66,7 +66,7 @@ labelFunc0420_00F3:
 	if (!Func0942(0xFFF1)) goto labelFunc0420_011B;
 	message("「再次歡迎！今天我能為你效勞嗎？」");
 	say();
-	Func094E(0xFFF1, "@別這麼囉嗦。@");
+	Func094E(0xFFF1, "「別這麼囉嗦。」");
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	message("「是的，師傅…」");
@@ -105,7 +105,7 @@ labelFunc0420_01C5:
 	UI_remove_answer("綁架");
 	message("「在這個敏感時期，我為你感到非常抱歉。悲傷是一種自然的情感…」");
 	say();
-	var0006 = Func0992(0x0001, "@我們的朋友是失蹤——不是死了！@", "@你能幫忙嗎？@", false);
+	var0006 = Func0992(0x0001, "「我們的朋友是失蹤——不是死了！」", "「你能幫忙嗎？」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「你應該把這件事告訴遊俠(Rangers)們。 Julia 不會讓這種不公義的事情存在的，我敢肯定。」");
 	say();
@@ -339,7 +339,7 @@ labelFunc0420_055E:
 	message("「把你的骨灰甕給我看，我會為你解開它的秘密。」");
 	say();
 	if (!Func0942(0xFFF1)) goto labelFunc0420_0592;
-	Func094E(0xFFF1, "@別這麼愛吹牛。你在讓自己出洋相！@");
+	Func094E(0xFFF1, "「別這麼愛吹牛。你在讓自己出洋相！」");
 	UI_set_conversation_slot(0x0000);
 	message("\"Yes, master.\"");
 	say();
@@ -352,12 +352,12 @@ labelFunc0420_0592:
 	message("「你帶著的是蒙利多城( Monitor )中一位好市民的骨灰。」");
 	say();
 	gflags[0x028E] = true;
-	Func094E(0xFFF1, "@他們會想要回來的。蒙利多城(Monitor)的人非常尊敬死者。@");
+	Func094E(0xFFF1, "「他們會想要回來的。蒙利多城(Monitor)的人非常尊敬死者。」");
 	UI_set_conversation_slot(0x0000);
 	UI_add_answer("蒙利多城");
 	goto labelFunc0420_05EC;
 labelFunc0420_05D1:
-	var0006 = Func0992(0xFFFD, "@但我們沒有帶在身上…@", "@我沒帶在身上。@", false);
+	var0006 = Func0992(0xFFFD, "「但我們沒有帶在身上…」", "「我沒帶在身上。」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「把它帶來，我就會給你答案。」");
 	say();
@@ -412,7 +412,7 @@ labelFunc0420_069D:
 	message("「身為一個專業工匠，只要能讓我檢查物品，我就能告訴你大部分的材料是什麼。」");
 	say();
 	if (!Func0942(0xFFF1)) goto labelFunc0420_06CD;
-	Func094E(0xFFF1, "@你這個愛吹牛的傢伙。你在考驗我的耐心！@");
+	Func094E(0xFFF1, "「你這個愛吹牛的傢伙。你在考驗我的耐心！」");
 	UI_set_conversation_slot(0x0000);
 	message("\"Yes, master.\"");
 	say();
@@ -429,7 +429,7 @@ labelFunc0420_06CD:
 	UI_add_answer("Mortegro");
 	goto labelFunc0420_0719;
 labelFunc0420_06FE:
-	var0006 = Func0992(0xFFFD, "@但它不在這裡…@", "@I've not brought it with me.@", false);
+	var0006 = Func0992(0xFFFD, "「但它不在這裡…」", "@I've not brought it with me.@", false);
 	UI_set_conversation_slot(0x0000);
 	message("「有空把它帶來，我就會告訴你它是什麼做的。」");
 	say();

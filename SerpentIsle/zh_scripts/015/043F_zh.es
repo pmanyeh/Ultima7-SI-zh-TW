@@ -276,7 +276,7 @@ labelFunc043F_048B:
 	var0007 = true;
 	message("「你有？一個死者的骨灰甕？你是怎麼偶然發現的？也許你殺了那些侮辱我祖先靈魂的盜賊！」");
 	say();
-	var0010 = Func0992(0xFFFD, "@為什麼…嗯…我們找到的，大人。@", "@我找到的。@", false);
+	var0010 = Func0992(0xFFFD, "「為什麼…嗯…我們找到的，大人。」", "「我找到的。」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「請讓我檢查一下好嗎？」");
 	say();
@@ -594,16 +594,16 @@ labelFunc043F_0930:
 	UI_remove_answer("知道叛徒");
 	message("「什麼？你知道是誰把 Astrid 出賣給哥布林！你怎麼知道的？快告訴我！」");
 	say();
-	var0010 = Func0992(0xFFFE, "@我們在哥布林中發現了證據。由叛徒簽署的\r\n\t\t\t\t\t\t\t文件！@", "@我在哥布林營地找到了證據。@", false);
+	var0010 = Func0992(0xFFFE, "「我們在哥布林中發現了證據。由叛徒簽署的\r\n\t\t\t\t\t\t\t文件！」", "「我在哥布林營地找到了證據。」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「我可以看看這個證據嗎？」");
 	say();
 	if (!(Func097D(0xFE9B, 0x0001, 0x031D, 0x0078, 0xFE99) || (Func097D(0xFE9B, 0x0001, 0x031D, 0x0079, 0xFE99) || Func097D(0xFE9B, 0x0001, 0x031D, 0x007A, 0xFE99)))) goto labelFunc043F_0CA2;
 	if (!(((Func097D(0xFE9B, 0x0001, 0x031D, 0x0078, 0xFE99) + Func097D(0xFE9B, 0x0001, 0x031D, 0x0079, 0xFE99)) + Func097D(0xFE9B, 0x0001, 0x031D, 0x007A, 0xFE99)) > 0x0001)) goto labelFunc043F_09EB;
-	var0010 = Func0992(0xFFFD, "@捲軸在這裡。@", "@捲軸在這裡。@", false);
+	var0010 = Func0992(0xFFFD, "「捲軸在這裡。」", "「捲軸在這裡。」", false);
 	goto labelFunc043F_09FB;
 labelFunc043F_09EB:
-	var0010 = Func0992(0xFFFD, "@在這裡。@", "@在這裡。@", false);
+	var0010 = Func0992(0xFFFD, "「在這裡。」", "「在這裡。」", false);
 labelFunc043F_09FB:
 	UI_set_conversation_slot(0x0000);
 	message("「這捲軸是什麼？藉著熔爐( Furnace )的烈焰！這就是證據！」");
@@ -693,7 +693,7 @@ labelFunc043F_0C88:
 labelFunc043F_0C9F:
 	goto labelFunc043F_0CCA;
 labelFunc043F_0CA2:
-	var0010 = Func0992(0xFFFE, "@我們沒帶在身上。@", "@我沒帶。@", false);
+	var0010 = Func0992(0xFFFE, "「我們沒帶在身上。」", "「我沒帶。」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「在你拿出證據之前，沒有人會相信你，包括我在內！」");
 	say();

@@ -387,12 +387,12 @@ labelFunc00E4_074C:
 	message("「這倒是個好東西！你身上有多少？」");
 	say();
 	var0010 = UI_count_objects(0xFE9B, 0x03B7, 0xFE99, 0xFE99);
-	var0011 = Func0992(0xFFFE, (("@我們手頭上有 " + var0010) + " 蒙里他利幣。@"), (("@我身上有 " + var0010) + " 蒙里他利幣。@"), false);
+	var0011 = Func0992(0xFFFE, (("「我們手頭上有 " + var0010) + " 蒙里他利幣。」"), (("「我身上有 " + var0010) + " 蒙里他利幣。」"), false);
 	UI_set_conversation_slot(0x0000);
 	if (!(var0010 > var000F)) goto labelFunc00E4_0853;
 	message("「那還不夠！」");
 	say();
-	var0011 = Func0992(0x0001, (("@但你剛才明明說贖金只要 " + var000F) + " 蒙里他利幣！@"), (("@但你剛才明明說贖金只要 " + var000F) + " 蒙里他利幣！@"), false);
+	var0011 = Func0992(0x0001, (("「但你剛才明明說贖金只要 " + var000F) + " 蒙里他利幣！」"), (("「但你剛才明明說贖金只要 " + var000F) + " 蒙里他利幣！」"), false);
 	UI_set_conversation_slot(0x0000);
 	var000F = (((var0010 / 0x0064) + UI_get_random(0x0005)) * 0x0064);
 	if (!(var000F < 0x0BB8)) goto labelFunc00E4_083E;
@@ -403,7 +403,7 @@ labelFunc00E4_074C:
 	message(var000F);
 	message(" 蒙里他利幣( Monetari )！」");
 	say();
-	var0011 = Func0992(0x0001, "@他們是小偷！@", 0x0000, false);
+	var0011 = Func0992(0x0001, "「他們是小偷！」", 0x0000, false);
 	if (!(var0011 != 0xFE9C)) goto labelFunc00E4_083B;
 	UI_set_conversation_slot(0x0000);
 	UI_remove_npc_face1();

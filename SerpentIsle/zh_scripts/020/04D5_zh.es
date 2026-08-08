@@ -131,7 +131,7 @@ labelFunc04D5_0287:
 	UI_remove_answer("姓名");
 	message("「我的名字微不足道，偉大的人。我不過是你命運與 Xenka 榮光中的一道影子。」");
 	say();
-	var000A = Func0992(0x0001, "@又一個神秘主義者…@", 0x0000, false);
+	var000A = Func0992(0x0001, "「又一個神秘主義者…」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「但是，如果你願意屈尊直呼我的名字，我是 Draxta 。」");
 	say();
@@ -147,7 +147,7 @@ labelFunc04D5_02DC:
 	UI_remove_answer("神聖之書");
 	message("「當然是一部神聖智慧的傑作！那是 Xenka 記錄她所有幻象的地方。」");
 	say();
-	var000A = Func0992(0x0001, "@這樣的智慧也許能對你的任務有所幫助，聖者。@", 0x0000, false);
+	var000A = Func0992(0x0001, "「這樣的智慧也許能對你的任務有所幫助，聖者。」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	if (!UI_find_nearby(item, 0x03E6, 0x000F, 0x0000)) goto labelFunc04D5_031E;
 	message("「你可以在這裡的禮拜堂( Chapel )祭壇上找到這本書。」");
@@ -274,7 +274,7 @@ labelFunc04D5_04C2:
 	UI_remove_answer("Gwenno");
 	message("「你的朋友 Gwenno 看起來不太對勁，偉大的人。」");
 	say();
-	var000A = Func0992(0x0001, "@她倒是有臉說別人…@", 0x0000, false);
+	var000A = Func0992(0x0001, "「她倒是有臉說別人…」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「 Karnax 肯定能占卜出她得了什麼病。」");
 	say();

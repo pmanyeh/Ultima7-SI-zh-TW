@@ -216,15 +216,15 @@ labelFunc0417_0345:
 	var000A = false;
 	var000B = [];
 	if (!Func0942(0xFFFF)) goto labelFunc0417_0386;
-	var000A = Func0992(0xFFFF, "@她指的是…不列顛王！@", 0x0000, false);
+	var000A = Func0992(0xFFFF, "「她指的是…不列顛王！」", 0x0000, false);
 	goto labelFunc0417_03BB;
 labelFunc0417_0386:
 	if (!Func0942(0xFFFE)) goto labelFunc0417_03A2;
-	var000A = Func0992(0xFFFE, "@她指的是…不列顛王！@", 0x0000, false);
+	var000A = Func0992(0xFFFE, "「她指的是…不列顛王！」", 0x0000, false);
 	goto labelFunc0417_03BB;
 labelFunc0417_03A2:
 	if (!Func0942(0xFFFD)) goto labelFunc0417_03BB;
-	var000A = Func0992(0xFFFD, "@她指的是…不列顛王！@", 0x0000, false);
+	var000A = Func0992(0xFFFD, "「她指的是…不列顛王！」", 0x0000, false);
 labelFunc0417_03BB:
 	var000B = (var000B & ["@我侍奉不列顛王！@", "什麼都不說"]);
 	if (!(var000A != 0x0000)) goto labelFunc0417_03F1;
@@ -233,7 +233,7 @@ labelFunc0417_03BB:
 labelFunc0417_03F1:
 	var000C = Func0957(var000B);
 	if (!(var000C == 0x0003)) goto labelFunc0417_0414;
-	Func094E(var000A, "@但她竟敢誹謗我們的君主！@");
+	Func094E(var000A, "「但她竟敢誹謗我們的君主！」");
 	UI_set_conversation_slot(0x0000);
 labelFunc0417_0414:
 	if (!(var000C == 0x0001)) goto labelFunc0417_0422;
@@ -244,7 +244,7 @@ labelFunc0417_0422:
 	say();
 	message("「法師和遊俠被一種被稱為『誠實的誓言』的荒唐事所束縛！」");
 	say();
-	var000A = Func0992(0xFFFE, "@但『誠實』有什麼…不對嗎？@", 0x0000, false);
+	var000A = Func0992(0xFFFE, "「但『誠實』有什麼…不對嗎？」", 0x0000, false);
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	message("「沒有什麼比毫不退讓的誠實更殘酷的了。它會粉碎人心、灌輸不安全感，並引發內亂。」");
@@ -313,7 +313,7 @@ labelFunc0417_0524:
 	UI_remove_answer("Stoneheart");
 	message("「你還真是無知！」");
 	say();
-	var000A = Func0992(0x0001, "@你真粗魯！@", 0x0000, false);
+	var000A = Func0992(0x0001, "「你真粗魯！」", 0x0000, false);
 	if (!(var000A != 0xFE9C)) goto labelFunc0417_055C;
 	UI_set_conversation_slot(0x0000);
 	message("「哎呀，你還真敏感！我沒有惡意…只是你連這裡的常識都不知道。」");

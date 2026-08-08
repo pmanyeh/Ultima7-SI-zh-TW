@@ -106,7 +106,7 @@ labelFunc0294_013E:
 	message("「若是能找回美麗之梳，我願以幼鹿城( Fawn )最珍貴的寶物換取！」");
 	say();
 	if (!Func097D(0xFE9B, 0x0001, 0x0289, 0xFE99, 0x0000)) goto labelFunc0294_018C;
-	var0006 = Func0992(0x0001, "@聖者，你從 Columna 那裡取得的梳子怎麼了？@", "@我在想…那把 Columna 的梳子！@", false);
+	var0006 = Func0992(0x0001, "「聖者，你從 Columna 那裡取得的梳子怎麼了？」", "「我在想…那把 Columna 的梳子！」", false);
 	UI_set_conversation_slot(0x0000);
 	UI_add_answer("Columna");
 labelFunc0294_018C:

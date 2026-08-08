@@ -225,7 +225,7 @@ labelFunc0811_03E6:
 	goto labelFunc0811_0472;
 labelFunc0811_03FD:
 	if (!(var000F == 0x0003)) goto labelFunc0811_0472;
-	var0013 = Func0992(0x0001, (("@但是" + var0001) + "，我們沒有足夠的錢！@"), 0x0000, false);
+	var0013 = Func0992(0x0001, (("「但是" + var0001) + "，我們沒有足夠的錢！」"), 0x0000, false);
 	if (!(var0013 != 0xFE9C)) goto labelFunc0811_043A;
 	UI_show_npc_face0(0xFFBF, 0x0000);
 	message("「很抱歉，但我也得討生活。」");

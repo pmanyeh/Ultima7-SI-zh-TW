@@ -139,7 +139,7 @@ labelFunc043D_024C:
 	say();
 	message("「再說，你做了什麼虧心事，讓你擔心我可能會跟蹤你？」");
 	say();
-	var000B = Func0992(0x0001, "@厚顏無恥的傢伙！@", 0x0000, false);
+	var000B = Func0992(0x0001, "「厚顏無恥的傢伙！」", 0x0000, false);
 	Func097F(0xFFC3, "@傲慢的陌生人！@", 0x0000);
 	gflags[0x018F] = true;
 	UI_revert_schedule(0xFFC3);

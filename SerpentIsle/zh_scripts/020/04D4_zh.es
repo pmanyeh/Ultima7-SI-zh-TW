@@ -144,7 +144,7 @@ labelFunc04D4_002B:
 	UI_remove_answer("姓名");
 	message("「我不再相信姓名了。田裡的玉米有名字嗎？你能聽到玉米的哭泣聲嗎？」");
 	say();
-	var000E = Func0992(0xFFFD, (("@" + var0000) + " ，這位僧侶確實是個神秘的人…@"), 0x0000, false);
+	var000E = Func0992(0xFFFD, (("@" + var0000) + " ，這位僧侶確實是個神秘的人…」"), 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	UI_add_answer(["信仰", "玉米"]);
 	labelFunc04D4_0338:
@@ -191,7 +191,7 @@ labelFunc04D4_002B:
 	say();
 	message("「我尋求與玉米合而為一。我是玉米之子。」");
 	say();
-	var000E = Func0992(0xFFFD, (("@正如我所說的， " + var0000) + "…@"), 0x0000, false);
+	var000E = Func0992(0xFFFD, (("「正如我所說的， " + var0000) + "…@"), 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	labelFunc04D4_03DC:
 	case "職責" attend labelFunc04D4_03F6:

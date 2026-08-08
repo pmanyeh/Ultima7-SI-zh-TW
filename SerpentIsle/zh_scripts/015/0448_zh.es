@@ -329,7 +329,7 @@ labelFunc0448_05D6:
 labelFunc0448_05F1:
 	message("「我對你吐口水，惡魔不列顛的走狗！」");
 	say();
-	var0009 = Func0992(0xFFFE, (("@為了不列顛王，你竟然毒害了 " + var0000) + " ？@"), 0x0000, false);
+	var0009 = Func0992(0xFFFE, (("「為了不列顛王，你竟然毒害了 " + var0000) + " ？@"), 0x0000, false);
 	if (!(var0009 != 0xFE9C)) goto labelFunc0448_0626;
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);

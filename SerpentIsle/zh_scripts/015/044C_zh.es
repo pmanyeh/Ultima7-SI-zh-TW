@@ -198,7 +198,7 @@ labelFunc044C_03A1:
 	var0005 = Func099B(0xFE9C, 0x0001, 0x0281, 0x004A, 0x0006, 0x0000, true);
 	goto labelFunc044C_045D;
 labelFunc044C_042A:
-	var000D = Func0992(0x0001, "@但是我們沒有足夠的錢…@", 0x0000, false);
+	var000D = Func0992(0x0001, "「但是我們沒有足夠的錢…」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	if (!(var000D == 0xFE9C)) goto labelFunc044C_0452;
 	message("「我相信你沒有足夠的 monetari 。請當你有足夠的金額時再來。」");
@@ -230,7 +230,7 @@ labelFunc044C_048F:
 	var000E = Func0955();
 	if (!var000E) goto labelFunc044C_05AA;
 	UI_set_schedule_type(0xFFB4, 0x000F);
-	Func094E(0xFE9C, "@噗滋！@");
+	Func094E(0xFE9C, "「噗滋！」");
 	var000D = Func0992(0x0001, 0x0000, 0x0000, false);
 	if (!(var000D != 0xFE9C)) goto labelFunc044C_04F3;
 	UI_show_npc_face0(var000D, 0x0000);
@@ -275,7 +275,7 @@ labelFunc044C_05CE:
 	say();
 	message("「我相信他從這裡往東北走，前往名為睡牛的小村莊。」");
 	say();
-	var000D = Func0992(0xFFFF, "@那個人的名字——你還記得嗎？！@", 0x0000, false);
+	var000D = Func0992(0xFFFF, "「那個人的名字——你還記得嗎？！」", 0x0000, false);
 	if (!(var000D != 0xFE9C)) goto labelFunc044C_060A;
 	UI_set_conversation_slot(0x0000);
 labelFunc044C_060A:
@@ -283,7 +283,7 @@ labelFunc044C_060A:
 	say();
 	message("「巴特林，就是這個。他稱自己為智者巴特林( Sage Batlin )。」");
 	say();
-	var000D = Func0992(0xFFFE, "@我們發現巴特林的蹤跡了！@", 0x0000, false);
+	var000D = Func0992(0xFFFE, "「我們發現巴特林的蹤跡了！」", 0x0000, false);
 	if (!(var000D != 0xFE9C)) goto labelFunc044C_0633;
 	UI_set_conversation_slot(0x0000);
 labelFunc044C_0633:
@@ -347,7 +347,7 @@ labelFunc044C_0718:
 	say();
 	message("「當然，這是在風暴發生之前。現在沒有水手敢冒險進入這些危險的水域了。」");
 	say();
-	var000D = Func0992(0x0001, "@太幸運了！我們找到線索了！@", 0x0000, false);
+	var000D = Func0992(0x0001, "「太幸運了！我們找到線索了！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 labelFunc044C_0737:
 	case "棕色瓶子" attend labelFunc044C_075E:

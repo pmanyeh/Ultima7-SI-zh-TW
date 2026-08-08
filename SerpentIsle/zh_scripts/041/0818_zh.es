@@ -387,7 +387,7 @@ labelFunc0818_0707:
 	goto labelFunc0818_0799;
 labelFunc0818_071E:
 	if (!(var000F == 0x0003)) goto labelFunc0818_0799;
-	var000B = Func0992(0x0001, (("@但是" + var0000) + "，我們沒有足夠的錢買這個。@"), 0x0000, false);
+	var000B = Func0992(0x0001, (("「但是" + var0000) + "，我們沒有足夠的錢買這個。」"), 0x0000, false);
 	if (!(var000B != 0xFE9C)) goto labelFunc0818_0761;
 	UI_show_npc_face0(0xFFD1, 0x0000);
 	message("「啊…看來你的錢包空了，");

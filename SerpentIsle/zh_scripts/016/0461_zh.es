@@ -78,7 +78,7 @@ labelFunc0461_0101:
 	if (!Func0955()) goto labelFunc0461_017A;
 	message("「你在說什麼？！七號消失的時候，我和二號在一起！」");
 	say();
-	Func094E(0xFFA1, "@那是謊言！我和一號( Number 1 )以及六號( Number 6 )在一起，不是四號( Number 4 )！@");
+	Func094E(0xFFA1, "「那是謊言！我和一號( Number 1 )以及六號( Number 6 )在一起，不是四號( Number 4 )！」");
 	UI_set_conversation_slot(0x0000);
 	message("「你抓到我了！好吧…鑰匙是你的了。」");
 	say();

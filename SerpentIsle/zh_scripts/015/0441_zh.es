@@ -120,7 +120,7 @@ labelFunc0441_01DA:
 	var0004 = Func0813();
 	goto labelFunc0441_01DA;
 labelFunc0441_01F8:
-	var000B = Func0992(0xFFFD, "@聖者在殺死大型動物方面相當熟練。@", 0x0000, false);
+	var000B = Func0992(0xFFFD, "「聖者在殺死大型動物方面相當熟練。」", 0x0000, false);
 	if (!(var000B != 0xFE9C)) goto labelFunc0441_021D;
 	UI_set_conversation_slot(0x0000);
 	UI_remove_npc_face1();
@@ -131,7 +131,7 @@ labelFunc0441_021D:
 	gflags[0x007D] = true;
 	goto labelFunc0441_025F;
 labelFunc0441_022F:
-	var000B = Func0992(0x0001, "@但是我們沒有帶屍體來。@", "@我沒有狼的屍體。@", false);
+	var000B = Func0992(0x0001, "「但是我們沒有帶屍體來。」", "「我沒有狼的屍體。」", false);
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);
 	message("「沒有動物的皮，我無法為你製作斗篷！」");
@@ -146,7 +146,7 @@ labelFunc0441_025F:
 	if (!(UI_get_timer(0x0004) < 0x0017)) goto labelFunc0441_02C1;
 	message("「時間還沒到！我必須有整整24小時！」");
 	say();
-	var000B = Func0992(0x0001, (("@小心點，" + var0003) + "。她有一把非常鋒利的刀！@"), 0x0000, false);
+	var000B = Func0992(0x0001, (("「小心點，" + var0003) + "。她有一把非常鋒利的刀！」"), 0x0000, false);
 	if (!(var000B != 0xFE9C)) goto labelFunc0441_02B1;
 	UI_set_conversation_slot(0x0000);
 	UI_remove_npc_face1();
@@ -159,7 +159,7 @@ labelFunc0441_02B1:
 labelFunc0441_02C1:
 	message("「準備好了。」");
 	say();
-	var000B = Func0992(0xFFFD, (("@它真美，" + var0003) + "！@"), 0x0000, false);
+	var000B = Func0992(0xFFFD, (("「它真美，" + var0003) + "！@"), 0x0000, false);
 	if (!(var000B != 0xFE9C)) goto labelFunc0441_02F6;
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);

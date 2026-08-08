@@ -175,16 +175,16 @@ labelFunc0289_050E:
 	Func0887(var0019);
 	goto labelFunc0289_0547;
 labelFunc0289_0536:
-	var001C = Func0992(0x0001, "@別把繩子留下來！@", "@我不該把繩子留下！@", false);
+	var001C = Func0992(0x0001, "「別把繩子留下來！」", "「我不該把繩子留下！」", false);
 	return;
 labelFunc0289_0547:
 	goto labelFunc0289_055A;
 labelFunc0289_054A:
-	var001C = Func0992(0x0001, "@試著用在別的東西上吧！@", "@也許用在別的東西上…@", false);
+	var001C = Func0992(0x0001, "「試著用在別的東西上吧！」", "「也許用在別的東西上…」", false);
 labelFunc0289_055A:
 	goto labelFunc0289_056D;
 labelFunc0289_055D:
-	var001C = Func0992(0x0001, "@那樣行不通的！@", "@那樣行不通的！@", false);
+	var001C = Func0992(0x0001, "「那樣行不通的！」", "「那樣行不通的！」", false);
 labelFunc0289_056D:
 	if (!(event == 0x0002)) goto labelFunc0289_05CD;
 	if (!(gflags[0x0007] == true)) goto labelFunc0289_05BD;
@@ -200,7 +200,7 @@ labelFunc0289_05AC:
 labelFunc0289_05BC:
 	abort;
 labelFunc0289_05BD:
-	var001C = Func0992(0xFFFD, "@法術書！它分解了！@", 0x0000, false);
+	var001C = Func0992(0xFFFD, "「法術書！它分解了！」", 0x0000, false);
 labelFunc0289_05CD:
 	return;
 }

@@ -84,7 +84,7 @@ labelFunc028C_026B:
 	gflags[0x0098] = true;
 	gflags[0x003E] = true;
 	var0005 = UI_delayed_execute_usecode_array(Func09A0(0x0005, 0x0001), [(byte)0x23, (byte)0x55, 0x0448], 0x03E8);
-	var0009 = Func0992(0xFFFD, "@你看起來真是美極了，聖者！@", 0x0000, false);
+	var0009 = Func0992(0xFFFD, "「你看起來真是美極了，聖者！」", 0x0000, false);
 	if (!(var0009 != 0xFE9C)) goto labelFunc028C_0371;
 	if (!(UI_get_array_size(var0002) > 0x0002)) goto labelFunc028C_0371;
 	var000A = var0009;
@@ -93,7 +93,7 @@ labelFunc028C_02D9:
 	var000A = Func0992(0x0001, 0x0000, 0x0000, false);
 	goto labelFunc028C_02D9;
 labelFunc028C_02F6:
-	var000A = Func0992(var000A, (("@非常好看，" + var0001) + "。@"), 0x0000, false);
+	var000A = Func0992(var000A, (("「非常好看，" + var0001) + "。@"), 0x0000, false);
 	if (!(UI_get_array_size(var0002) > 0x0003)) goto labelFunc028C_0371;
 	var000B = var000A;
 labelFunc028C_0322:
@@ -102,7 +102,7 @@ labelFunc028C_0322:
 	goto labelFunc028C_0322;
 labelFunc028C_0347:
 	if (!(!var0000)) goto labelFunc028C_0361;
-	var000B = Func0992(var000B, "@你看起來真像個花花公子，大人！@", 0x0000, false);
+	var000B = Func0992(var000B, "「你看起來真像個花花公子，大人！」", 0x0000, false);
 	goto labelFunc028C_0371;
 labelFunc028C_0361:
 	var000B = Func0992(var000B, "那顆痣真是美妙，女士。哼！", 0x0000, false);

@@ -358,7 +358,7 @@ labelFunc0436_0585:
 	message("「把它還給我…也許上天會再次對幼鹿城( Fawn )微笑。」");
 	say();
 	if (!(Func0955() == true)) goto labelFunc0436_060C;
-	var000A = Func0992(0x0001, "@那妳自己的盔甲呢，聖者？@", "@那我自己的盔甲呢？@", false);
+	var000A = Func0992(0x0001, "「那妳自己的盔甲呢，聖者？」", "「那我自己的盔甲呢？」", false);
 	if (!(var000A != 0xFE9C)) goto labelFunc0436_05DE;
 	UI_set_conversation_slot(0x0000);
 labelFunc0436_05DE:
@@ -380,7 +380,7 @@ labelFunc0436_0610:
 labelFunc0436_0613:
 	message("「你見過美之盔甲( Armour of Beauty )了！哦，上天不會再對幼鹿城( Fawn )微笑了嗎？。我真希望你把它帶來了。」");
 	say();
-	var000A = Func0992(0x0001, "@那妳自己的盔甲呢，聖者？@", "@那我自己的盔甲呢？@", false);
+	var000A = Func0992(0x0001, "「那妳自己的盔甲呢，聖者？」", "「那我自己的盔甲呢？」", false);
 	if (!(var000A != 0xFE9C)) goto labelFunc0436_0638;
 	UI_set_conversation_slot(0x0000);
 labelFunc0436_0638:

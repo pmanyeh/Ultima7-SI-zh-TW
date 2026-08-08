@@ -203,7 +203,7 @@ labelFunc0837_037A:
 	goto labelFunc0837_040C;
 labelFunc0837_0391:
 	if (!(var000F == 0x0003)) goto labelFunc0837_040C;
-	var0014 = Func0992(0x0001, (("@但是 " + var0000) + "，我們沒有足夠的蒙里他利幣來買這個。@"), 0x0000, false);
+	var0014 = Func0992(0x0001, (("「但是 " + var0000) + "，我們沒有足夠的蒙里他利幣來買這個。」"), 0x0000, false);
 	if (!(var0014 != 0xFE9C)) goto labelFunc0837_03D4;
 	UI_show_npc_face0(0xFFBD, 0x0000);
 	message("「那我恐怕你買不起我的任何商品，");

@@ -347,15 +347,15 @@ labelFunc0447_056E:
 	message("「所以，你聽說了我的新盾牌！以前沒人見過像它這樣的東西。它很輕，但所有的攻擊似乎都會被它彈開…」");
 	say();
 	if (!UI_npc_nearby(0xFFFF)) goto labelFunc0447_05A5;
-	var000B = Func0992(0xFFFF, "@看！他拿著我遺失的盾牌！@", 0x0000, false);
+	var000B = Func0992(0xFFFF, "「看！他拿著我遺失的盾牌！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	goto labelFunc0447_05BC;
 labelFunc0447_05A5:
-	var000B = Func0992(0x0001, "@看！他拿著 Dupre 遺失的盾牌！@", "@為什麼我認為那是 Dupre 遺失的盾牌！@", false);
+	var000B = Func0992(0x0001, "「看！他拿著 Dupre 遺失的盾牌！」", "「為什麼我認為那是 Dupre 遺失的盾牌！」", false);
 	UI_set_conversation_slot(0x0000);
 labelFunc0447_05BC:
 	if (!((gflags[0x00B2] == false) && gflags[0x028A])) goto labelFunc0447_05DF;
-	Func094E(var000B, "@而我們擁有的那面神秘盾牌一定是他的！@");
+	Func094E(var000B, "「而我們擁有的那面神秘盾牌一定是他的！」");
 	UI_add_answer("找到的盾牌");
 	UI_set_conversation_slot(0x0000);
 labelFunc0447_05DF:
@@ -400,16 +400,16 @@ labelFunc0447_064A:
 labelFunc0447_0671:
 	for (var0011 in var000D with var000F to var0010) attend labelFunc0447_06E5;
 	if (!(var000E == 0x0001)) goto labelFunc0447_0693;
-	Func094E(UI_get_npc_number(var0011), "@聖者！@");
+	Func094E(UI_get_npc_number(var0011), "「聖者！」");
 labelFunc0447_0693:
 	if (!(var000E == 0x0002)) goto labelFunc0447_06AA;
-	Func094E(UI_get_npc_number(var0011), "@Luther ！要和我們一起旅行？！@");
+	Func094E(UI_get_npc_number(var0011), "「Luther ！要和我們一起旅行？！」");
 labelFunc0447_06AA:
 	if (!(var000E == 0x0003)) goto labelFunc0447_06C1;
-	Func094E(UI_get_npc_number(var0011), "@我不認為這是個好主意…@");
+	Func094E(UI_get_npc_number(var0011), "「我不認為這是個好主意…」");
 labelFunc0447_06C1:
 	if (!(var000E == 0x0004)) goto labelFunc0447_06D8;
-	Func094E(UI_get_npc_number(var0011), "@如果他要去，我就走！@");
+	Func094E(UI_get_npc_number(var0011), "「如果他要去，我就走！」");
 labelFunc0447_06D8:
 	var000E = (var000E + 0x0001);
 	goto labelFunc0447_0671;

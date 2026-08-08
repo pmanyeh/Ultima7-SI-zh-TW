@@ -561,7 +561,7 @@ labelFunc042E_0907:
 	say();
 	message("「想像一下，如果女性不被溺愛，也不被視為劣等，會怎麼樣！如果我們都傾聽自己內在的聲音( Inner Voice )，這個世界會是什麼樣子？」");
 	say();
-	var000E = Func0992(0xFFFD, ("@我敢肯定，這世界會充滿了沮喪的傻瓜。@"), 0x0000, false);
+	var000E = Func0992(0xFFFD, ("「我敢肯定，這世界會充滿了沮喪的傻瓜。」"), 0x0000, false);
 	if (!(var000E != 0xFE9C)) goto labelFunc042E_0988;
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0002)) goto labelFunc042E_0981;
 	var000F = var000E;
@@ -570,7 +570,7 @@ labelFunc042E_0950:
 	var000F = Func0992(0x0001, 0x0000, 0x0000, false);
 	goto labelFunc042E_0950;
 labelFunc042E_096D:
-	var000F = Func0992(var000F, ("@又一個淪為友誼會虛假承諾犧牲品的人，聖者。@"), 0x0000, false);
+	var000F = Func0992(var000F, ("「又一個淪為友誼會虛假承諾犧牲品的人，聖者。」"), 0x0000, false);
 labelFunc042E_0981:
 	UI_set_conversation_slot(0x0000);
 labelFunc042E_0988:

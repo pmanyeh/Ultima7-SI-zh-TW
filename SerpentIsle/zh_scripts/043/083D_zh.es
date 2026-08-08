@@ -168,7 +168,7 @@ labelFunc083D_02EB:
 	goto labelFunc083D_0379;
 labelFunc083D_0302:
 	if (!(var000A == 0x0003)) goto labelFunc083D_0379;
-	var000D = Func0992(0x0001, (("@但是 " + var0000) + "，我們沒有足夠的法拉利幣來付這個。@"), 0x0000, false);
+	var000D = Func0992(0x0001, (("「但是 " + var0000) + "，我們沒有足夠的法拉利幣來付這個。」"), 0x0000, false);
 	if (!(var000D != 0xFE9C)) goto labelFunc083D_0340;
 	UI_show_npc_face0(0xFFCC, 0x0000);
 	message("「我這裡不允許乞丐進來！」");

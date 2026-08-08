@@ -36,7 +36,7 @@ labelFunc0490_0028:
 	say();
 	UI_remove_npc_face1();
 labelFunc0490_00B3:
-	var0004 = Func0992(0xFFFD, "@聖者，他們聞到了猿怪毛皮的味道！@", "@他們聞到了猿怪毛皮的味道！@", false);
+	var0004 = Func0992(0xFFFD, "「聖者，他們聞到了猿怪毛皮的味道！」", "「他們聞到了猿怪毛皮的味道！」", false);
 	goto labelFunc0490_0181;
 labelFunc0490_00C6:
 	if (!var0003) goto labelFunc0490_00D3;

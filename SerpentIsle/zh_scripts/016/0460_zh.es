@@ -79,7 +79,7 @@ labelFunc0460_00E7:
 	if (!Func0955()) goto labelFunc0460_0168;
 	message("「你瘋了！七號消失時，我和五號在一起！」");
 	say();
-	Func094E(0xFF9E, "@三號和我在一起！@");
+	Func094E(0xFF9E, "「三號和我在一起！」");
 	UI_set_conversation_slot(0x0000);
 	message("「我要讓你流血！」");
 	say();

@@ -45,7 +45,7 @@ labelFunc0809_007B:
 labelFunc0809_00AF:
 	message("「但我做不到，主人。」");
 	say();
-	var0000 = Func0992(0x0001, "@我們的隊伍太龐大了，聖者。@", 0x0000, false);
+	var0000 = Func0992(0x0001, "「我們的隊伍太龐大了，聖者。」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 labelFunc0809_00CA:
 	case "離隊" attend labelFunc0809_0158:

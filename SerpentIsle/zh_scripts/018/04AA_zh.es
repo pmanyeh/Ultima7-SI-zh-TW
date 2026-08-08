@@ -156,7 +156,7 @@ labelFunc04AA_02C1:
 	say();
 	if (!(Func0955() == true)) goto labelFunc04AA_0334;
 	if (!(var0006 == true)) goto labelFunc04AA_0305;
-	var0016 = Func0992(0x0001, "@我們帶來了高腳杯！@", "@我有高腳杯…@", false);
+	var0016 = Func0992(0x0001, "「我們帶來了高腳杯！」", "「我有高腳杯…」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「原來是真的！為了懷疑你致上最誠摯的歉意…」");
 	say();
@@ -166,7 +166,7 @@ labelFunc04AA_02C1:
 	gflags[0x0201] = true;
 	goto labelFunc04AA_0331;
 labelFunc04AA_0305:
-	var0016 = Func0992(0x0001, "@我們沒有高腳杯！@", 0x0000, false);
+	var0016 = Func0992(0x0001, "「我們沒有高腳杯！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「想知道你是不是在開玩笑。你說你沒有高腳杯。在你得到它之前，我們不想和你打交道。」");
 	say();
@@ -177,7 +177,7 @@ labelFunc04AA_0331:
 	goto labelFunc04AA_0391;
 labelFunc04AA_0334:
 	if (!(var0006 == true)) goto labelFunc04AA_0365;
-	var0016 = Func0992(0x0001, "@但我們確實有高腳杯！@", 0x0000, false);
+	var0016 = Func0992(0x0001, "「但我們確實有高腳杯！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「表示你很困惑，但仍會照約定給你戒指。我確定你就是我們夢中的英雄。」");
 	say();
@@ -187,7 +187,7 @@ labelFunc04AA_0334:
 	gflags[0x0201] = true;
 	goto labelFunc04AA_0391;
 labelFunc04AA_0365:
-	var0016 = Func0992(0x0001, "@我們沒有高腳杯！@", 0x0000, false);
+	var0016 = Func0992(0x0001, "「我們沒有高腳杯！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「對於你沒有高腳杯感到不悅。在你得到它之前，我們不想和你打交道。」");
 	say();
@@ -297,7 +297,7 @@ labelFunc04AA_04E9:
 	message("「想說這位英雄是一個人類，非常像你。」");
 	say();
 labelFunc04AA_04ED:
-	var0016 = Func0992(0xFFFF, (("@一定就是你，" + var0005) + "！@"), 0x0000, false);
+	var0016 = Func0992(0xFFFF, (("「一定就是你，" + var0005) + "！@"), 0x0000, false);
 	if (!(var0016 != 0xFE9C)) goto labelFunc04AA_0558;
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0002)) goto labelFunc04AA_0551;
 	var0017 = var0016;
@@ -306,7 +306,7 @@ labelFunc04AA_0524:
 	var0017 = Func0992(0x0001, 0x0000, 0x0000, false);
 	goto labelFunc04AA_0524;
 labelFunc04AA_0541:
-	var0017 = Func0992(var0017, "@聖者就是那位英雄…毫無疑問！@", 0x0000, false);
+	var0017 = Func0992(var0017, "「聖者就是那位英雄…毫無疑問！」", 0x0000, false);
 labelFunc04AA_0551:
 	UI_set_conversation_slot(0x0000);
 labelFunc04AA_0558:
@@ -426,7 +426,7 @@ labelFunc04AA_06E9:
 	say();
 	message("「要保持警惕，你和那些人類不一樣，並希望你不是來偷我們財寶的。」");
 	say();
-	var0016 = Func0992(0xFFFD, "@親愛的石像鬼，聖者就是美德的冠軍。@", 0x0000, false);
+	var0016 = Func0992(0xFFFD, "「親愛的石像鬼，聖者就是美德的冠軍。」", 0x0000, false);
 	if (!(var0016 != 0xFE9C)) goto labelFunc04AA_0731;
 	UI_set_conversation_slot(0x0000);
 	message("「這有可能嗎？你就是我們夢到的那位英雄？」");
@@ -502,7 +502,7 @@ labelFunc04AA_0837:
 	UI_set_npc_id(0xFF56, 0x0001);
 	message("「還需要你完成最後一項任務。以便毫無疑問。在將聖物交給你之前必須完成。」");
 	say();
-	var0016 = Func0992(0xFFFE, "@聖者是自願接受你的試煉的！可沒說過要通過所有的試煉！@", 0x0000, false);
+	var0016 = Func0992(0xFFFE, "「聖者是自願接受你的試煉的！可沒說過要通過所有的試煉！」", 0x0000, false);
 	if (!(var0016 != 0xFE9C)) goto labelFunc04AA_0879;
 	UI_set_conversation_slot(0x0000);
 	message("「確定你的朋友們在為你著急。」");

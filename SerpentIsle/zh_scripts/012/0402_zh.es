@@ -281,7 +281,7 @@ labelFunc0402_053E:
 	message(var0001);
 	message("，我真震驚。」");
 	say();
-	Func094E(0xFFB5, "@你必須獨自前進。@");
+	Func094E(0xFFB5, "「你必須獨自前進。」");
 	Func097F(0xFFB5, "@獨自！@", 0x0000);
 	Func097F(0xFFFE, "@震驚！@", 0x0002);
 	abort;

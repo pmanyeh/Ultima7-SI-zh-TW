@@ -270,7 +270,7 @@ labelFunc042D_0507:
 	UI_remove_answer("睡牛客棧");
 	message("「嗯，既然你這麼沒禮貌地問了…」");
 	say();
-	var000B = Func0992(0x0001, "@你才沒禮貌！@", 0x0000, false);
+	var000B = Func0992(0x0001, "「你才沒禮貌！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「客棧的老闆 Devra 和 Angus，是我的父母。我是在這裡出生的。」");
 	say();

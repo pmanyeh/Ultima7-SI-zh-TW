@@ -78,8 +78,8 @@ labelFunc0463_00DF:
 	if (!Func0955()) goto labelFunc0463_0169;
 	message("「你的邏輯( Logic )在哪裡？！二號( Number 2 )和一號都可以證明七號消失時我和他們在一起！」");
 	say();
-	Func094E(0xFFA2, "@一號和我在一起！@");
-	Func094E(0xFFA1, "@這不可能！我和一號在一起！@");
+	Func094E(0xFFA2, "「一號和我在一起！」");
+	Func094E(0xFFA1, "「這不可能！我和一號在一起！」");
 	UI_set_conversation_slot(0x0000);
 	message("「你會為這些話後悔的！」");
 	say();

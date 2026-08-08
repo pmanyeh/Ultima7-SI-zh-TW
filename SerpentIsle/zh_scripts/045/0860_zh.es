@@ -113,7 +113,7 @@ labelFunc0860_01BB:
 labelFunc0860_01D4:
 	var0012 = "他";
 labelFunc0860_01DA:
-	var0013 = Func0992(0x0001, ("@我可不這麼認為，旅店老闆。聖者可不是個會原地踏步的人。@"), 0x0000, false);
+	var0013 = Func0992(0x0001, ("「我可不這麼認為，旅店老闆。聖者可不是個會原地踏步的人。」"), 0x0000, false);
 labelFunc0860_01F2:
 	goto labelFunc0860_0268;
 labelFunc0860_01F5:
@@ -248,7 +248,7 @@ labelFunc0860_03F4:
 	message("「Petra ，快來聽聽這個！這位客人在跟我開玩笑呢！」");
 	say();
 	if (!Func0942(0xFFE4)) goto labelFunc0860_0433;
-	Func094E(0xFFE4, (("@我們絕不可能接受低於 " + var0004) + " 吉爾得幣的價格。@"));
+	Func094E(0xFFE4, (("「我們絕不可能接受低於 " + var0004) + " 吉爾得幣的價格。」"));
 	UI_show_npc_face0(0xFFE2, 0x0000);
 	goto labelFunc0860_043D;
 labelFunc0860_0433:

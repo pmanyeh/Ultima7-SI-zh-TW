@@ -246,8 +246,8 @@ labelFunc080C_0471:
 	goto labelFunc080C_0503;
 labelFunc080C_0482:
 	if (!(var000E == 0x0003)) goto labelFunc080C_0503;
-	var000C = Func0992(0x0001, "@但我們資金不足！@", 0x0000, false);
-	var000C = Func0992(0x0001, "@真尷尬…@", 0x0000, false);
+	var000C = Func0992(0x0001, "「但我們資金不足！」", 0x0000, false);
+	var000C = Func0992(0x0001, "「真尷尬…」", 0x0000, false);
 	if (!(var000C != 0xFE9C)) goto labelFunc080C_04CB;
 	UI_show_npc_face0(0xFFF3, 0x0000);
 	message("「我很樂意把東西免費送給你，因為我相信你是個值得信賴的人。」");

@@ -14,7 +14,7 @@ void Func089E 0x89E ()
 	var0001 = UI_execute_usecode_array(var0000, [(byte)0x39, (byte)0x21, (byte)0x0B, 0xFFFE, (0x0004 - var0001)]);
 	goto labelFunc089E_004A;
 labelFunc089E_0044:
-	Func094A("@我想地板正在上升。建議大家趕快站上去。@");
+	Func094A("「我想地板正在上升。建議大家趕快站上去。」");
 labelFunc089E_004A:
 	return;
 }

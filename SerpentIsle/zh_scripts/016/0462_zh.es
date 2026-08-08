@@ -98,7 +98,7 @@ labelFunc0462_012B:
 	if (!Func0955()) goto labelFunc0462_01AC;
 	message("「謊言！三號可以證明七號消失時我們在一起！」");
 	say();
-	Func094E(0xFFA0, "@五號說的是真的，他跟我在一起！@");
+	Func094E(0xFFA0, "「五號說的是真的，他跟我在一起！」");
 	UI_set_conversation_slot(0x0000);
 	message("「我要讓你為這個無禮的行為付出代價！」");
 	say();

@@ -573,7 +573,7 @@ labelFunc0434_096A:
 	var000D = (var000D & "棕色瓶子");
 labelFunc0434_0986:
 	if (!(var000D == [])) goto labelFunc0434_09B6;
-	var000E = Func0992(0x0001, (("@但我們沒有奇怪的物品可以問， " + var0001) + "。@"), 0x0000, false);
+	var000E = Func0992(0x0001, (("「但我們沒有奇怪的物品可以問， " + var0001) + "。@"), 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「如果你想到任何事，請告訴我！」");
 	say();
@@ -626,7 +626,7 @@ labelFunc0434_0A8A:
 	message(var0001);
 	message("？把妳的長襪這樣到處炫耀…」");
 	say();
-	var000E = Func0992(0x0001, "@那不是她的！@", "@那不是我的！@", false);
+	var000E = Func0992(0x0001, "「那不是她的！」", "「那不是我的！」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「哦…這些是很精緻的物品，不是你在漁村婦女那裡能找到的。」");
 	say();
@@ -676,7 +676,7 @@ labelFunc0434_0B6D:
 	if (!Func097D(0xFE9B, 0x0001, 0x0392, 0xFE99, 0x0000)) goto labelFunc0434_0BBD;
 	message("「你為什麼隨身帶著一個死人？是你的親戚嗎？」");
 	say();
-	var000E = Func0992(0x0001, "@什麼？！@", "@什麼？！@", false);
+	var000E = Func0992(0x0001, "「什麼？！」", "「什麼？！」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「你不知道嗎？那個骨灰罈裝的是蒙利多城( Monitor )某個陣亡戰士的骨灰。」");
 	say();
@@ -1052,7 +1052,7 @@ labelFunc0434_12D1:
 	message(var0001);
 	message("，像這樣到處炫耀私人衣物！」");
 	say();
-	var000E = Func0992(0x0001, "@那不是她的！@", "@那不是我的！@", false);
+	var000E = Func0992(0x0001, "「那不是她的！」", "「那不是我的！」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「嗯…呃…這些是這裡做的，由年輕的 Alyssand 製作的。」");
 	say();

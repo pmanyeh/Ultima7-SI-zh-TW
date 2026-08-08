@@ -29,15 +29,15 @@ labelFunc0296_004F:
 	var0001 = UI_update_last_created(var0002);
 	var0004 = UI_die_roll(0x0001, 0x0003);
 	if (!(var0004 == 0x0001)) goto labelFunc0296_00DB;
-	Func0949("@的確，好大一條！@");
+	Func0949("「的確，好大一條！」");
 	if (!UI_npc_nearby(0xFFFE)) goto labelFunc0296_00DB;
 	Func097F(0xFFFE, "@我看過更大的。@", 0x0010);
 labelFunc0296_00DB:
 	if (!(var0004 == 0x0002)) goto labelFunc0296_00EB;
-	Func0949("@真是一頓大餐！@");
+	Func0949("「真是一頓大餐！」");
 labelFunc0296_00EB:
 	if (!(var0004 == 0x0003)) goto labelFunc0296_00FE;
-	Func0949(["@那看起來不太對勁。@"]);
+	Func0949(["「那看起來不太對勁。」"]);
 labelFunc0296_00FE:
 	goto labelFunc0296_0192;
 labelFunc0296_0101:

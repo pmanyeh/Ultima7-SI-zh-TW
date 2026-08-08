@@ -134,7 +134,7 @@ labelFunc0416_0226:
 	message("「你的惡魔之劍需要重新校準它的魔法能量。如果我有我的通量分析儀，我就可以修復它。」");
 	say();
 	if (!gflags[0x023C]) goto labelFunc0416_0288;
-	var0005 = Func0992(0x0001, "@我們在 Skullcrusher 找到了它！@", "@我在 Skullcrusher 找到了它！@", false);
+	var0005 = Func0992(0x0001, "「我們在 Skullcrusher 找到了它！」", "「我在 Skullcrusher 找到了它！」", false);
 	var0006 = UI_count_objects(0xFE9B, 0x01C8, 0xFE99, 0xFE99);
 	if (!(var0006 > 0x0000)) goto labelFunc0416_027A;
 	UI_set_conversation_slot(0x0000);
@@ -241,7 +241,7 @@ labelFunc0416_0421:
 	say();
 	message("「接下來，你應該轉動絞盤。這會把你封鎖在塔內，並啟動拉桿。它還會召喚一場魔法風暴。」");
 	say();
-	var0005 = Func0992(0x0001, "@你希望我們召喚風暴？這太瘋狂了！@", 0x0000, false);
+	var0005 = Func0992(0x0001, "「你希望我們召喚風暴？這太瘋狂了！」", 0x0000, false);
 	if (!(var0005 != 0xFE9C)) goto labelFunc0416_044E;
 	UI_set_conversation_slot(0x0000);
 	message("「我向你保證，你不會有危險！我本來想親自去做的，但在我這個年紀，爬樓梯是非常困難的…」");

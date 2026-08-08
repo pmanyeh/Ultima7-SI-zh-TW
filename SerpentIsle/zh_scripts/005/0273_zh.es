@@ -73,12 +73,12 @@ labelFunc0273_0151:
 labelFunc0273_0152:
 	goto labelFunc0273_015C;
 labelFunc0273_0155:
-	Func0949("@奇怪，這怎麼沒用。@");
+	Func0949("「奇怪，這怎麼沒用。」");
 	return;
 labelFunc0273_015C:
 	goto labelFunc0273_00FB;
 labelFunc0273_015F:
-	Func094A("@也許你該試著用在鎖著的箱子或門上。@");
+	Func094A("「也許你該試著用在鎖著的箱子或門上。」");
 labelFunc0273_0165:
 	return;
 }

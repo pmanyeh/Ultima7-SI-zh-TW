@@ -256,7 +256,7 @@ labelFunc0235_0863:
 	message("「從我第一眼看到你那一刻起，我就已經準備好了！」");
 	say();
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0001)) goto labelFunc0235_08F8;
-	var0008 = Func0992(0x0001, "@呃，嗯，我想我需要呼吸點新鮮空氣…我在酒館等。@", 0x0000, false);
+	var0008 = Func0992(0x0001, "「呃，嗯，我想我需要呼吸點新鮮空氣…我在酒館等。」", 0x0000, false);
 	var0000 = Func0988(UI_get_npc_object(0xFE9C), UI_get_party_list2());
 	enum();
 labelFunc0235_08BA:

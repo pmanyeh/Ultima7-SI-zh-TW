@@ -15,7 +15,7 @@ void Func0493 object#(0x493) ()
 	var0000 = UI_get_item_flag(0xFF6D, 0x001E);
 	if (!var0000) goto labelFunc0493_0039;
 	UI_item_say(0xFE9C, "@醒醒，小傢伙！@");
-	var0001 = Func0992(0x0001, "@她醒不過來，聖者。她病得很重。@", "@可憐的小傢伙！她病得很重。@", false);
+	var0001 = Func0992(0x0001, "「她醒不過來，聖者。她病得很重。」", "「可憐的小傢伙！她病得很重。」", false);
 	abort;
 	goto labelFunc0493_0059;
 labelFunc0493_0039:

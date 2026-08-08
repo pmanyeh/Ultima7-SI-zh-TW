@@ -124,7 +124,7 @@ labelFunc0805_0239:
 	goto labelFunc0805_02A6;
 labelFunc0805_0250:
 	if (!(var000C == 0x0003)) goto labelFunc0805_02A6;
-	var000F = Func0992(0x0001, (("@但是，" + var0000) + "，我們沒有足夠的金幣來付這個。@"), 0x0000, false);
+	var000F = Func0992(0x0001, (("「但是，" + var0000) + "，我們沒有足夠的金幣來付這個。」"), 0x0000, false);
 	if (!(0x001F < (UI_get_npc_id(0xFFDA) + 0x0006))) goto labelFunc0805_0291;
 	UI_set_npc_id(0xFFDA, 0x001F);
 	goto labelFunc0805_02A3;

@@ -272,7 +272,7 @@ labelFunc0803_04DF:
 	goto labelFunc0803_0571;
 labelFunc0803_04F6:
 	if (!(var000E == 0x0003)) goto labelFunc0803_0571;
-	var0013 = Func0992(0x0001, (("@可是，" + var0000) + "，我們沒有足夠的金幣來買這個。@"), 0x0000, false);
+	var0013 = Func0992(0x0001, (("「可是，" + var0000) + "，我們沒有足夠的金幣來買這個。」"), 0x0000, false);
 	if (!(var0013 != 0xFE9C)) goto labelFunc0803_0539;
 	UI_show_npc_face0(0xFFD2, 0x0000);
 	message("「看來你的錢包是空的，");

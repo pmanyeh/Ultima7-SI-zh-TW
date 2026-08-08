@@ -182,7 +182,7 @@ labelFunc041B_0385:
 	UI_remove_answer("家");
 	message("「這不是個居住的壞地方。」");
 	say();
-	var000C = Func0992(0x0001, "@下水道還不壞？你瘋了嗎？@", 0x0000, false);
+	var000C = Func0992(0x0001, "「下水道還不壞？你瘋了嗎？」", 0x0000, false);
 	if (!(var000C != 0xFE9C)) goto labelFunc041B_03C0;
 	UI_set_conversation_slot(0x0000);
 	message("「別對 Mosh 怒目相視。你根本不知道自己在說什麼。我們每個人都在盡力生活，不論是出於命運，還是他人的背叛。你有看到我在批判你嗎？」");
@@ -228,7 +228,7 @@ labelFunc041B_043B:
 	UI_remove_answer("Trulacci");
 	message("「他去哪了？呸，我不知道。而且說真的，我也不在乎！」");
 	say();
-	var000C = Func0992(0xFFFD, "@啊，但我能看出來你依然在乎，女士。@", 0x0000, false);
+	var000C = Func0992(0xFFFD, "「啊，但我能看出來你依然在乎，女士。」", 0x0000, false);
 	if (!(var000C != 0xFE9C)) goto labelFunc041B_0473;
 	UI_set_conversation_slot(0x0000);
 	message("「胡說八道！那已經是很久以前的事了，我現在是個老太婆了。」");

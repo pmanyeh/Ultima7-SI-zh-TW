@@ -26,7 +26,7 @@ void Func0851 0x851 ()
 	say();
 	goto labelFunc0851_009F;
 labelFunc0851_0070:
-	var0004 = Func0992(0x0001, "@但是聖者，我們沒有吉爾得幣！@", 0x0000, false);
+	var0004 = Func0992(0x0001, "「但是聖者，我們沒有吉爾得幣！」", 0x0000, false);
 	if (!(var0004 != 0xFE9C)) goto labelFunc0851_009B;
 	UI_show_npc_face0(0xFFE2, 0x0000);
 	message("「那你就不能住在旅店了。在這艱難時期，我可沒辦法免費招待你和你的同伴。」");

@@ -113,7 +113,7 @@ labelFunc085F_01E3:
 	goto labelFunc085F_0269;
 labelFunc085F_01F4:
 	if (!(var000D == 0x0003)) goto labelFunc085F_0269;
-	var0010 = Func0992(0x0001, (("@可是 " + var0001) + "，我們資金不夠！@"), 0x0000, false);
+	var0010 = Func0992(0x0001, (("「可是 " + var0001) + "，我們資金不夠！」"), 0x0000, false);
 	if (!(var0010 != 0xFE9C)) goto labelFunc085F_0231;
 	UI_show_npc_face0(0xFFE2, 0x0000);
 	message("「那你就別想在這兒喝酒了！」");

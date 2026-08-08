@@ -213,7 +213,7 @@ labelFunc0412_0311:
 	message("「最好是這樣，否則你會發現自己被扔到廢鐵堆裡！」");
 	say();
 labelFunc0412_0360:
-	var000B = Func0992(0x0001, "@這就是了。@", "@這就是了。@", false);
+	var000B = Func0992(0x0001, "「這就是了。」", "「這就是了。」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「啊，很好！這根本不是我的。你必須了解，每件魔法裝備都必須為每位法師量身訂做。」");
 	say();
@@ -223,7 +223,7 @@ labelFunc0412_0360:
 labelFunc0412_0382:
 	message("「你把這東西帶來了嗎？」");
 	say();
-	var000B = Func0992(0x0001, "@不，我們沒有帶在身上。@", "@不，我沒有帶。@", false);
+	var000B = Func0992(0x0001, "「不，我們沒有帶在身上。」", "「不，我沒有帶。」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「那我也無可奉告。但如果你是從我這裡偷來的，我可不會付贖金買回它！」");
 	say();

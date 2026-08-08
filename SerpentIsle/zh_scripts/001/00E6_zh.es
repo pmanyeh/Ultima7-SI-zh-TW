@@ -446,7 +446,7 @@ labelFunc00E6_0F06:
 	if (!Func0955()) goto labelFunc00E6_104E;
 	UI_set_item_flag(0xFE9C, 0x0010);
 	UI_play_music(0x001F, Func09A0(0x0005, 0x0001));
-	var0016 = Func0992(0x0001, "@嗯，我想我先在外面等候…@", 0x0000, false);
+	var0016 = Func0992(0x0001, "「嗯，我想我先在外面等候…」", 0x0000, false);
 	UI_end_conversation();
 	var000E = Func098D();
 	var0017 = [];

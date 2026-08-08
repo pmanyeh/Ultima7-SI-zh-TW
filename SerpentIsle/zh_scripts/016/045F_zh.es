@@ -103,7 +103,7 @@ labelFunc045F_013B:
 	if (!Func0955()) goto labelFunc045F_01BC;
 	message("「你錯了！一號可以告訴你七號消失時我在哪裡！」");
 	say();
-	Func094E(0xFFA2, "@二號和我在一起，六號也是！@");
+	Func094E(0xFFA2, "「二號和我在一起，六號也是！」");
 	UI_set_conversation_slot(0x0000);
 	message("「你會付出代價的！」");
 	say();

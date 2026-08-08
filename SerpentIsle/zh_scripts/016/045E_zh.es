@@ -78,8 +78,8 @@ labelFunc045E_00DB:
 	if (!Func0955()) goto labelFunc045E_0165;
 	message("「你沒有證據！二號和六號都可以證明，當七號消失時，我和他們在一起！」");
 	say();
-	Func094E(0xFFA1, "@一號和我在一起！@");
-	Func094E(0xFF9D, "@這不可能！我和一號在一起！@");
+	Func094E(0xFFA1, "「一號和我在一起！」");
+	Func094E(0xFF9D, "「這不可能！我和一號在一起！」");
 	UI_set_conversation_slot(0x0000);
 	message("「你冤枉了我！」");
 	say();

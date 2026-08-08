@@ -18,11 +18,11 @@ void Func033B shape#(0x33B) ()
 	var0001 = UI_get_npc_prop(var0000, 0x0000);
 	var0002 = UI_get_npc_prop(var0000, 0x0003);
 	if (!(var0002 == var0001)) goto labelFunc033B_0046;
-	Func094A("@似乎不需要包紮。@");
+	Func094A("「似乎不需要包紮。」");
 	goto labelFunc033B_00E8;
 labelFunc033B_0046:
 	if (!(UI_get_npc_number(var0000) == 0xFE9C)) goto labelFunc033B_005D;
-	Func0949("@好多了。@");
+	Func0949("「好多了。」");
 	goto labelFunc033B_00AF;
 labelFunc033B_005D:
 	if (!Func0983(var0000)) goto labelFunc033B_00AF;
@@ -45,7 +45,7 @@ labelFunc033B_00D4:
 labelFunc033B_00E8:
 	goto labelFunc033B_00F1;
 labelFunc033B_00EB:
-	Func0949("@不要弄髒繃帶。@");
+	Func0949("「不要弄髒繃帶。」");
 labelFunc033B_00F1:
 	return;
 }

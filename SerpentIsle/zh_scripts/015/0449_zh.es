@@ -73,7 +73,7 @@ labelFunc0449_00F7:
 	UI_remove_answer("姓名");
 	message("「火焰( Flame )？喔，是的，我們讓火一直燒著。」");
 	say();
-	var0005 = Func0992(0x0001, (("@" + var0000) + "是在問你的姓名( NAME )，老頭。不是火焰( FLAME )！@"), 0x0000, false);
+	var0005 = Func0992(0x0001, (("@" + var0000) + "是在問你的姓名( NAME )，老頭。不是火焰( FLAME )！」"), 0x0000, false);
 	if (!(var0005 != 0xFE9C)) goto labelFunc0449_0148;
 	UI_set_conversation_slot(0x0000);
 	message("「喔。如你所見，我的聽力大不如前了。是爐火的轟鳴聲造成的…」");
@@ -160,12 +160,12 @@ labelFunc0449_0268:
 	message("「這和最近來鎮上的那個聖哲有關。 Andral 會知道得更多。去問他吧。」");
 	say();
 	gflags[0x0056] = true;
-	var0005 = Func0992(0x0001, "@你知道這位聖哲的名字嗎？@", 0x0000, false);
+	var0005 = Func0992(0x0001, "「你知道這位聖哲的名字嗎？」", 0x0000, false);
 	if (!(var0005 != 0xFE9C)) goto labelFunc0449_02B4;
 	UI_set_conversation_slot(0x0000);
 	message("「我對名字的記憶力很好。我想是 Badwin 。一個非常高大的男人，帶著一個戴兜帽的同伴。」");
 	say();
-	Func094E(var0005, "@一定是 巴特林 ！@");
+	Func094E(var0005, "「一定是 巴特林 ！」");
 	UI_set_conversation_slot(0x0000);
 labelFunc0449_02B4:
 	case "神祕主義" attend labelFunc0449_02E0:

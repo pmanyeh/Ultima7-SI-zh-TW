@@ -75,7 +75,7 @@ labelFunc0446_01B6:
 	say();
 labelFunc0446_01BA:
 	if (!UI_npc_nearby(0xFFB3)) goto labelFunc0446_01D4;
-	Func094E(0xFFB3, "@希望我沒有打擾到你們…@");
+	Func094E(0xFFB3, "「希望我沒有打擾到你們…」");
 	UI_set_conversation_slot(0x0000);
 labelFunc0446_01D4:
 	message("「我的名字是 Lucilla 。有什麼我能為你效勞的嗎？任何事都可以喔？」");
@@ -120,7 +120,7 @@ labelFunc0446_029A:
 	say();
 	message("「然而我也聽說絕對沒有叛徒，我們不該陷入歇斯底里…」");
 	say();
-	var0003 = Func0992(0x0001, "@誰告訴妳的，夫人？@", 0x0000, false);
+	var0003 = Func0992(0x0001, "「誰告訴妳的，夫人？」", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc0446_02D9;
 	UI_set_conversation_slot(0x0000);
 	message("「嗯…其實沒有特定的人。我只是在閒聊中聽到的。在酒館裡，什麼都聽得到。」");
@@ -239,7 +239,7 @@ labelFunc0446_0495:
 	say();
 	goto labelFunc0446_04C5;
 labelFunc0446_04A4:
-	var0003 = Func0992(0x0001, "@也許這是聖者的考驗？@", 0x0000, false);
+	var0003 = Func0992(0x0001, "「也許這是聖者的考驗？」", 0x0000, false);
 	if (!(var0003 != 0xFE9C)) goto labelFunc0446_04C5;
 	UI_set_conversation_slot(0x0000);
 labelFunc0446_04C5:

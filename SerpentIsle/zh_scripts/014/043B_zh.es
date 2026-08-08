@@ -290,7 +290,7 @@ labelFunc043B_0528:
 	say();
 	message("「他是個虔誠且有價值的人，儘管他有一些奇怪的同伴。」");
 	say();
-	var0015 = Func0992(0x0001, "@他的描述和我們認識的巴特林不太像，對吧，聖者？@", 0x0000, false);
+	var0015 = Func0992(0x0001, "「他的描述和我們認識的巴特林不太像，對吧，聖者？」", 0x0000, false);
 	if (!(var0015 != 0xFE9C)) goto labelFunc043B_0559;
 	UI_set_conversation_slot(0x0000);
 labelFunc043B_0559:

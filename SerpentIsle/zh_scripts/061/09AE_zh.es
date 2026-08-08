@@ -10,7 +10,7 @@ var Func09AE 0x9AE (var var0000)
 	if (!(item == UI_get_npc_object(0xFFCC))) goto labelFunc09AE_00A8;
 	gflags[0x01A0] = true;
 	if (!(UI_get_schedule_type(0xFFCC) == 0x0017)) goto labelFunc09AE_0052;
-	Func094E(0xFFC6, "@我需要喝一杯…@");
+	Func094E(0xFFC6, "「我需要喝一杯…」");
 	UI_set_conversation_slot(0x0000);
 	message("「我很高興能跟你聊天，老兄，但我最好還是回去工作了…」");
 	say();
@@ -18,7 +18,7 @@ var Func09AE 0x9AE (var var0000)
 labelFunc09AE_0052:
 	if (!(UI_get_schedule_type(0xFFCC) == 0x0010)) goto labelFunc09AE_008A;
 	if (!UI_npc_nearby(0xFFCA)) goto labelFunc09AE_007A;
-	Func094E(0xFFCA, "@安靜點！美是不容褻瀆的。@");
+	Func094E(0xFFCA, "「安靜點！美是不容褻瀆的。」");
 	UI_set_conversation_slot(0x0000);
 labelFunc09AE_007A:
 	message("「這裡不是長談的地方，老兄。晚點在酒館見，我們再多聊聊。」");
@@ -34,7 +34,7 @@ labelFunc09AE_00A8:
 	Func097F(0xFFF3, "@祝你有個美好的一天！@", 0x0000);
 	gflags[0x0103] = true;
 	if (!(UI_get_schedule_type(0xFFF3) == 0x0007)) goto labelFunc09AE_00FF;
-	Func094E(0xFFD6, "@我付錢給你不是讓你站在這喋喋不休的， Bucia 。@");
+	Func094E(0xFFD6, "「我付錢給你不是讓你站在這喋喋不休的， Bucia 。」");
 	UI_set_conversation_slot(0x0000);
 	message("「我現在必須回去工作了。但很高興能跟你談話。」");
 	say();

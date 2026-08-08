@@ -38,7 +38,7 @@ labelFunc035F_006F:
 	var0006 = (var0002[0x0003] + 0x0002);
 labelFunc035F_00A3:
 	if (!(var0004 == 0xFFFF)) goto labelFunc035F_00B6;
-	Func094A("@不要把麵粉倒在那上面！@");
+	Func094A("「不要把麵粉倒在那上面！」");
 	goto labelFunc035F_00ED;
 labelFunc035F_00B6:
 	var0007 = UI_create_new_object(0x035F);
@@ -73,7 +73,7 @@ labelFunc035F_0155:
 	if (!var0008) goto labelFunc035F_01FD;
 	var0008 = UI_delayed_execute_usecode_array(item, [(byte)0x23, (byte)0x55, 0x035F], 0x003C);
 	if (!(UI_die_roll(0x0001, 0x0002) == 0x0001)) goto labelFunc035F_01FD;
-	Func0949("@你可別把它烤焦了！@");
+	Func0949("「你可別把它烤焦了！」");
 labelFunc035F_01FD:
 	if (!(event == 0x0002)) goto labelFunc035F_0290;
 	var0002 = UI_get_object_position(item);
@@ -88,10 +88,10 @@ labelFunc035F_01FD:
 	if (!var0008) goto labelFunc035F_0290;
 	var000C = UI_die_roll(0x0001, 0x0003);
 	if (!(var000C == 0x0001)) goto labelFunc035F_0280;
-	Func0949("@我相信麵包已經烤好了。@");
+	Func0949("「我相信麵包已經烤好了。」");
 labelFunc035F_0280:
 	if (!(var000C == 0x0002)) goto labelFunc035F_0290;
-	Func0949("@嗯…真是美妙的香味。@");
+	Func0949("「嗯…真是美妙的香味。」");
 labelFunc035F_0290:
 	return;
 }

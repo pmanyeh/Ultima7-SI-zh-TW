@@ -136,7 +136,7 @@ labelFunc041E_022F:
 	UI_remove_answer("藍野豬");
 	message("「很有趣的名字，不是嗎？」");
 	say();
-	var0008 = Func0992(0x0001, "@聽起來就像不列顛尼亞(Britannia)的那家！@", "@我以前聽過那個名字。@", false);
+	var0008 = Func0992(0x0001, "「聽起來就像不列顛尼亞(Britannia)的那家！」", "「我以前聽過那個名字。」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「我想一切皆有可能。我從父母那裡繼承了這家旅館，而他們又是從他們父母那裡繼承的。這是一個古老的名字…也許是從渡海(crossing)那個時代傳下來的。」");
 	say();
@@ -152,7 +152,7 @@ labelFunc041E_0287:
 	UI_remove_answer("篡位國王");
 	message("「在舊大陸，一個名叫…布拉提什(Brattish)，或是布魯提什(Brutish)，或者類似名字的專橫男人，篡奪了王位。他的統治嚴酷而不公，所以許多人逃過大海來到這片土地。」");
 	say();
-	var0008 = Func0992(0x0001, "@聽起來他好像在說不列顛王(Lord British)！@", 0x0000, false);
+	var0008 = Func0992(0x0001, "「聽起來他好像在說不列顛王(Lord British)！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	UI_add_answer(["舊大陸", "這片土地"]);
 labelFunc041E_02BE:
@@ -218,7 +218,7 @@ labelFunc041E_03B7:
 	message("「確實有這樣的一個人來過這裡，大概是兩個月前吧。」");
 	say();
 	if (!Func0942(0xFFE4)) goto labelFunc041E_03EA;
-	Func094E(0xFFE4, "@是三個月前， Rocco 。@");
+	Func094E(0xFFE4, "「是三個月前， Rocco 。」");
 	UI_show_npc_face0(0xFFE2, 0x0000);
 	message("「是的，她說得對…是三個月前。」");
 	say();
@@ -231,7 +231,7 @@ labelFunc041E_03F2:
 	UI_remove_answer("學者 Gwenno");
 	message("「你認識她！她和我是一對最親密的朋友。她在這裡住了好幾個星期。」");
 	say();
-	var0008 = Func0992(0xFFFD, "@你對 Gwenno 有多了解？@", "@Gwenno 是我朋友失蹤的妻子。@", false);
+	var0008 = Func0992(0xFFFD, "「你對 Gwenno 有多了解？」", "「Gwenno 是我朋友失蹤的妻子。」", false);
 	UI_show_npc_face0(0xFFE2, 0x0000);
 	message("「我發誓我是清白的！我們只是朋友，");
 	message(var0000);
@@ -261,7 +261,7 @@ labelFunc041E_0480:
 	message("「我們最後一次見到 Gwenno 已經是很久以前的事了。有好幾個月了。」");
 	say();
 	if (!Func0942(0xFFE4)) goto labelFunc041E_04AF;
-	Func094E(0xFFE4, "@八個月了，親愛的 Rocco 。@");
+	Func094E(0xFFE4, "「八個月了，親愛的 Rocco 。」");
 	UI_show_npc_face0(0xFFE2, 0x0000);
 labelFunc041E_04AF:
 	case "沒別的了", "換個話題" attend labelFunc041E_04C2:
@@ -345,7 +345,7 @@ labelFunc041E_05D8:
 	say();
 	goto labelFunc041E_0677;
 labelFunc041E_0648:
-	var0008 = Func0992(0x0001, "@但是聖者，我們沒有那麼多吉爾得幣！@", 0x0000, false);
+	var0008 = Func0992(0x0001, "「但是聖者，我們沒有那麼多吉爾得幣！」", 0x0000, false);
 	if (!(var0008 != 0xFE9C)) goto labelFunc041E_0673;
 	UI_show_npc_face0(0xFFE2, 0x0000);
 	message("「那你就不能住在旅館裡了。在這些艱難的時期，我無法負擔讓你和你的同伴免費住宿。」");
@@ -364,7 +364,7 @@ labelFunc041E_067E:
 	UI_remove_answer("棕色瓶子");
 	message("「我確實認得這個描述。這種瓶子是用來裝法恩(幼鹿城( Fawn ))的水手們喜歡的那種惡劣釀造酒的。我自己無法忍受那種餿水，我的顧客也不能。這就是為什麼我不進貨的原因。」");
 	say();
-	var0008 = Func0992(0x0001, "@也許我們應該調查一下這個叫做 Fawn 的地方。@", 0x0000, false);
+	var0008 = Func0992(0x0001, "「也許我們應該調查一下這個叫做 Fawn 的地方。」", 0x0000, false);
 	UI_show_npc_face0(0xFFE2, 0x0000);
 	if (!(var0008 != 0xFE9C)) goto labelFunc041E_06B9;
 	message("「祝你好運！現在沒有船隻航行，從這裡沒辦法去法恩(幼鹿城( Fawn ))。」");

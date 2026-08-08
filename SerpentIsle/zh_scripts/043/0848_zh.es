@@ -19,7 +19,7 @@ void Func0848 0x848 ()
 	message("「現在我得為自己再找一面盾牌了…」");
 	say();
 	if (!(gflags[0x028A] && Func097D(0xFE9B, 0x0001, 0x02D9, 0xFE99, 0x0000))) goto labelFunc0848_00BF;
-	var0001 = Func0992(0x0001, "@但你可以拿我們找到的這面盾牌！@", 0x0000, false);
+	var0001 = Func0992(0x0001, "「但你可以拿我們找到的這面盾牌！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「你真是太慷慨了！是的，這就是我在那場風暴中莫名其妙失蹤的盾牌！」");
 	say();

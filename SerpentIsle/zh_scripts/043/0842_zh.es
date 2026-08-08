@@ -282,7 +282,7 @@ labelFunc0842_0545:
 	goto labelFunc0842_05D1;
 labelFunc0842_055C:
 	if (!(var000E == 0x0003)) goto labelFunc0842_05D1;
-	var0013 = Func0992(0x0001, (("@但是 " + var0000) + "，我們沒有足夠的錢幣來購買這個。@"), 0x0000, false);
+	var0013 = Func0992(0x0001, (("「但是 " + var0000) + "，我們沒有足夠的錢幣來購買這個。」"), 0x0000, false);
 	if (!(var0013 != 0xFE9C)) goto labelFunc0842_0599;
 	UI_show_npc_face0(0xFFBC, 0x0000);
 	message("「如果你付不起錢，請離開！」");

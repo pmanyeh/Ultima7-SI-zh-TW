@@ -208,7 +208,7 @@ labelFunc02E6_0701:
 	message("\"我現在準備好了！來床上吧，我的愛人！\"");
 	say();
 	if (!(UI_get_array_size(UI_get_party_list()) > 0x0001)) goto labelFunc02E6_07C4;
-	var0008 = Func0992(0x0001, "@呃，嗯，我想我需要去呼吸一些新鮮空氣…@", 0x0000, false);
+	var0008 = Func0992(0x0001, "「呃，嗯，我想我需要去呼吸一些新鮮空氣…」", 0x0000, false);
 	var0002 = Func0988(UI_get_npc_object(0xFE9C), UI_get_party_list2());
 	enum();
 labelFunc02E6_0786:

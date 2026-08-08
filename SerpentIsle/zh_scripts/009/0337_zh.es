@@ -16,7 +16,7 @@ void Func0337 shape#(0x337) ()
 	if (!(event == 0x0001)) goto labelFunc0337_0140;
 	var0000 = UI_get_item_frame(item);
 	if (!(var0000 < 0x0002)) goto labelFunc0337_002D;
-	var0001 = Func0992(0xFFFD, "@你又在用手指畫畫了？@", 0x0000, false);
+	var0001 = Func0992(0xFFFD, "「你又在用手指畫畫了？」", 0x0000, false);
 	goto labelFunc0337_0140;
 labelFunc0337_002D:
 	var0002 = UI_click_on_item();
@@ -52,11 +52,11 @@ labelFunc0337_0109:
 	var0001 = Func0992(0xFFFD, "@在刺青嗎？@", 0x0000, true);
 	goto labelFunc0337_0136;
 labelFunc0337_0126:
-	var0001 = Func0992(0xFFFD, "@這污漬永遠也洗不掉了。@", 0x0000, false);
+	var0001 = Func0992(0xFFFD, "「這污漬永遠也洗不掉了。」", 0x0000, false);
 labelFunc0337_0136:
 	goto labelFunc0337_0140;
 labelFunc0337_0139:
-	Func0949("@你必須使用顏料！@");
+	Func0949("「你必須使用顏料！」");
 	return;
 labelFunc0337_0140:
 	return;

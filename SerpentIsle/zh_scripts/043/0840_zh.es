@@ -123,7 +123,7 @@ labelFunc0840_01F2:
 	goto labelFunc0840_027E;
 labelFunc0840_0209:
 	if (!(var000D == 0x0003)) goto labelFunc0840_027E;
-	var0010 = Func0992(0x0001, (("@但是 " + var0001) + "，我們缺乏足夠的資金！@"), 0x0000, false);
+	var0010 = Func0992(0x0001, (("「但是 " + var0001) + "，我們缺乏足夠的資金！」"), 0x0000, false);
 	if (!(var0010 != 0xFE9C)) goto labelFunc0840_0246;
 	UI_show_npc_face0(0xFFE9, 0x0000);
 	message("「你沒有足夠的吉爾得幣購買那個！」");

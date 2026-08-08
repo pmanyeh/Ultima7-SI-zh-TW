@@ -72,7 +72,7 @@ labelFunc0424_010A:
 	UI_remove_answer("你被叫作什麼？");
 	message("「小時候，我被稱為怪胎，因為我收集蟲子！但當我去處理我的收藏品時，我被稱為怪物！我太難過了，連飯都吃不下去！但現在我被冠以一位尊敬的紳士的名字，那是主人賜予我的。」");
 	say();
-	var0006 = Func0992(0xFFFD, "@聖者，和這個小傢伙說話讓我想吐。@", 0x0000, false);
+	var0006 = Func0992(0xFFFD, "「聖者，和這個小傢伙說話讓我想吐。」", 0x0000, false);
 	if (!(var0006 != 0xFE9C)) goto labelFunc0424_013E;
 	UI_set_conversation_slot(0x0000);
 labelFunc0424_013E:
@@ -237,7 +237,7 @@ labelFunc0424_040D:
 	UI_remove_answer("為什麼討厭清理？");
 	message("「因為我必須…去觸碰…所有那些東西！我必須把它們撿起來，聽著它們發出那些小小的吱吱聲…然後扭動！」");
 	say();
-	var0006 = Func0992(0xFFFE, "@東西？！扭動的東西？！什麼樣的扭動東西？！不是蛇吧！@", 0x0000, false);
+	var0006 = Func0992(0xFFFE, "「東西？！扭動的東西？！什麼樣的扭動東西？！不是蛇吧！」", 0x0000, false);
 	UI_remove_npc_face1();
 	if (!(var0006 != 0xFE9C)) goto labelFunc0424_0449;
 	UI_set_conversation_slot(0x0000);
@@ -249,7 +249,7 @@ labelFunc0424_0449:
 	message("「有一種方法可以從一個地方快速旅行到另一個地方，它的魔法非常強大。巨蛇顎骨( Jawbone of the Serpent )能讓人穿越巨大的虛空。但它屬於主人。」");
 	say();
 	gflags[0x01C1] = true;
-	var0006 = Func0992(0xFFFE, "@你的意思是人必須實際觸碰如此可怕的東西？！我簡直無法忍受蛇！@", 0x0000, false);
+	var0006 = Func0992(0xFFFE, "「你的意思是人必須實際觸碰如此可怕的東西？！我簡直無法忍受蛇！」", 0x0000, false);
 	UI_remove_npc_face1();
 	if (!(var0006 != 0xFE9C)) goto labelFunc0424_0489;
 	UI_set_conversation_slot(0x0000);

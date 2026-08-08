@@ -118,7 +118,7 @@ labelFunc0428_0211:
 	message(var0005);
 	message("。」~「而且你願意花時間聽一個老頭子說故事。」* 「你…是…」~「值得的…」");
 	say();
-	var0014 = Func0992(0x0001, "@他死了！@", "@他死了。@", false);
+	var0014 = Func0992(0x0001, "「他死了！」", "「他死了。」", false);
 	UI_kill_npc(0xFFD8);
 	abort;
 labelFunc0428_025C:
@@ -375,7 +375,7 @@ labelFunc0428_0707:
 	message(var0005);
 	message("，在我所有的旅途中，從未見過或聽過這種東西。」* 「不過，也許你該去問問學者，像是法師 Fedabiblio 。」");
 	say();
-	var0014 = Func0992(0x0001, "@但他叫我們來找你！@", 0x0000, false);
+	var0014 = Func0992(0x0001, "「但他叫我們來找你！」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	if (!(var0014 != 0xFE9C)) goto labelFunc0428_0736;
 	message("「那你們運氣不好了，夥計。」");
@@ -387,7 +387,7 @@ labelFunc0428_073D:
 	if (!Func097D(0xFE9B, 0x0001, 0x0108, 0xFE99, 0xFE99)) goto labelFunc0428_0786;
 	message("「誰都看得出來這是一顆松果…」~「你想問什麼？」");
 	say();
-	var0014 = Func0992(0x0001, "@但它是從哪裡來的？@", "@我在哪裡可以找到松果？@", false);
+	var0014 = Func0992(0x0001, "「但它是從哪裡來的？」", "「我在哪裡可以找到松果？」", false);
 	UI_show_npc_face0(0xFFD8, 0x0000);
 	UI_set_conversation_slot(0x0000);
 	message("「當然是在北方的森林裡。」~「但你現在沒法去了——沒有船會航行到那裡，而 Gorlab 沼澤也無人能通過！」");

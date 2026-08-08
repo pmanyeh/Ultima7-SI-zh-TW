@@ -339,7 +339,7 @@ labelFunc07FB_06DA:
 	UI_set_conversation_slot(0x0000);
 	message("「這麼說，他們顯然未曾真正領悟過『美』之真諦了？」");
 	say();
-	var0008 = Func0992(0xFFFD, "@美存在於觀察者的眼中…@", 0x0000, false);
+	var0008 = Func0992(0xFFFD, "「美存在於觀察者的眼中…」", 0x0000, false);
 	if (!(var0008 == 0xFE9C)) goto labelFunc07FB_074F;
 	UI_show_npc_face1(0xFFD2, 0x0000);
 	message("「美存在於觀察者的眼中…」");

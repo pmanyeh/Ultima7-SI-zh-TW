@@ -222,7 +222,7 @@ labelFunc0866_03EE:
 	goto labelFunc0866_047A;
 labelFunc0866_0405:
 	if (!(var000E == 0x0003)) goto labelFunc0866_047A;
-	var0013 = Func0992(0x0001, (("@但是 " + var0000) + "，我們沒有足夠的蒙里他利幣來買這個。@"), 0x0000, false);
+	var0013 = Func0992(0x0001, (("「但是 " + var0000) + "，我們沒有足夠的蒙里他利幣來買這個。」"), 0x0000, false);
 	if (!(var0013 != 0xFE9C)) goto labelFunc0866_0442;
 	UI_show_npc_face0(0xFFB2, 0x0000);
 	message("「如果你付不起錢，請離開！」");

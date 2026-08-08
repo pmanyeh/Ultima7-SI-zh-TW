@@ -556,16 +556,16 @@ labelFunc0496_09B5:
 	say();
 	message("「但你有證據嗎？」");
 	say();
-	var0010 = Func0992(0xFFFF, "@我們在哥布林那裡找到了證據。由叛徒簽署的文件！@", "@我在哥布林營地找到了證據。@", false);
+	var0010 = Func0992(0xFFFF, "「我們在哥布林那裡找到了證據。由叛徒簽署的文件！」", "「我在哥布林營地找到了證據。」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「我可以看看嗎？」");
 	say();
 	if (!(Func097D(0xFE9B, 0x0001, 0x031D, 0x0078, 0xFE99) || (Func097D(0xFE9B, 0x0001, 0x031D, 0x0079, 0xFE99) || Func097D(0xFE9B, 0x0001, 0x031D, 0x007A, 0xFE99)))) goto labelFunc0496_0D76;
 	if (!(((Func097D(0xFE9B, 0x0001, 0x031D, 0x0078, 0xFE99) + Func097D(0xFE9B, 0x0001, 0x031D, 0x0079, 0xFE99)) + Func097D(0xFE9B, 0x0001, 0x031D, 0x007A, 0xFE99)) > 0x0001)) goto labelFunc0496_0A74;
-	var0010 = Func0992(0xFFFD, "@這些是卷軸。@", "@這些是卷軸。@", false);
+	var0010 = Func0992(0xFFFD, "「這些是卷軸。」", "「這些是卷軸。」", false);
 	goto labelFunc0496_0A84;
 labelFunc0496_0A74:
-	var0010 = Func0992(0xFFFD, "@就是這個。@", "@就是這個。@", false);
+	var0010 = Func0992(0xFFFD, "「就是這個。」", "「就是這個。」", false);
 labelFunc0496_0A84:
 	UI_set_conversation_slot(0x0000);
 	message("「但這不是我所預期的…」");
@@ -672,7 +672,7 @@ labelFunc0496_0D5C:
 labelFunc0496_0D73:
 	goto labelFunc0496_0D9E;
 labelFunc0496_0D76:
-	var0010 = Func0992(0xFFFE, "@我們沒有把它帶在身上。@", "@我沒有帶它。@", false);
+	var0010 = Func0992(0xFFFE, "「我們沒有把它帶在身上。」", "「我沒有帶它。」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「除非你帶來證據，否則沒人會相信我們…」");
 	say();

@@ -349,7 +349,7 @@ labelFunc041A_06A5:
 	UI_show_npc_face0(0xFFE6, 0x0000);
 	message("「我再次呼喚 Kane 的兄弟， Edrin 的靈魂。如果你能聽到我的聲音， Edrin ，請聯繫我們。你的兄弟 Kane 需要知道你是否已經過世。你失蹤太久了，連你的兄弟都以為他再也見不到你了。如果你能聽到我的話，請聯繫我們。」");
 	say();
-	var000D = Func0992(0x0001, "@似乎沒有回應。@", "@沒有回應。@", false);
+	var000D = Func0992(0x0001, "「似乎沒有回應。」", "「沒有回應。」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「對 Kane 來說，這是個好兆頭。這很可能意味著他的兄弟不在鬼魂的領域裡。」");
 	say();
@@ -458,7 +458,7 @@ labelFunc041A_0832:
 	message("「你願意讓我陪你一起回月影城嗎？我怕我不知道自己在哪裡。」");
 	say();
 	if (!(UI_get_array_size(UI_get_party_list2()) > 0x0004)) goto labelFunc041A_0872;
-	var000D = Func0992(0x0001, "@我們沒有足夠的空間讓另一個人與我們同行了，聖者。@", 0x0000, false);
+	var000D = Func0992(0x0001, "「我們沒有足夠的空間讓另一個人與我們同行了，聖者。」", 0x0000, false);
 	goto labelFunc041A_0895;
 labelFunc041A_0872:
 	if (!(Func0955() == true)) goto labelFunc041A_0895;

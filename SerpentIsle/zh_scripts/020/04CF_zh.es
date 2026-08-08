@@ -411,7 +411,7 @@ labelFunc04CF_07ED:
 	UI_remove_answer("世界終結");
 	message("「Xenka 預見到人們將背離他們基本的善良，直到大地本身也將起義反抗他們扭曲的行為。」");
 	say();
-	var0022 = Func0992(0x0001, "@確實是可怕的壞消息。@", 0x0000, false);
+	var0022 = Func0992(0x0001, "「確實是可怕的壞消息。」", 0x0000, false);
 	UI_set_conversation_slot(0x0000);
 	message("「現在風暴已經在肆虐這片土地了。很快，地震將會釋放出吞噬世界的烈火。」");
 	say();

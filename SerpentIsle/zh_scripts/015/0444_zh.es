@@ -364,7 +364,7 @@ labelFunc0444_059E:
 	UI_remove_answer("自己的理由");
 	message("「還有另一個人在森林裡走很長一段路。我從未清楚地看過他。他非常聰明，總是在我認出他之前衝進森林裡。」");
 	say();
-	var000C = Func0992(0xFFFF, "@但他是哥布林還是人類？@", 0x0000, false);
+	var000C = Func0992(0xFFFF, "「但他是哥布林還是人類？」", 0x0000, false);
 	if (!(var000C != 0xFE9C)) goto labelFunc0444_05DD;
 	UI_remove_npc_face1();
 	UI_set_conversation_slot(0x0000);

@@ -199,7 +199,7 @@ labelFunc0845_0365:
 	goto labelFunc0845_03F7;
 labelFunc0845_037C:
 	if (!(var000D == 0x0003)) goto labelFunc0845_03F7;
-	var0012 = Func0992(0x0001, (("@但是 " + var0000) + "，我們沒有足夠的蒙里他利幣來付這個。@"), 0x0000, false);
+	var0012 = Func0992(0x0001, (("「但是 " + var0000) + "，我們沒有足夠的蒙里他利幣來付這個。」"), 0x0000, false);
 	if (!(var0012 != 0xFE9C)) goto labelFunc0845_03BF;
 	UI_show_npc_face0(0xFFBA, 0x0000);
 	message("「我真的很抱歉，但你沒有足夠的錢支付那個，");

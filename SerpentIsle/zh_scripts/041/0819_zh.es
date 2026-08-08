@@ -86,7 +86,7 @@ labelFunc0819_016E:
 	message(var0002);
 	message("！我很少做這種不明智的交易！」");
 	say();
-	var000B = Func0992(0x0001, "@店主？你一定是在開玩笑吧？\r\n\t\t\t\t\t\t 聖者可是背負著神聖任務的！@", 0x0000, false);
+	var000B = Func0992(0x0001, "「店主？你一定是在開玩笑吧？\r\n\t\t\t\t\t\t 聖者可是背負著神聖任務的！」", 0x0000, false);
 labelFunc0819_0192:
 	goto labelFunc0819_021A;
 labelFunc0819_0195:

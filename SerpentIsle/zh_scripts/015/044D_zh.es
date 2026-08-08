@@ -276,14 +276,14 @@ labelFunc044D_052E:
 	UI_remove_answer("Gwenno");
 	message("「不久前有一位女士在這裡，她花了很多時間在蒙利多大廳( Hall of Monitor )檢查我們的博物館展品。非常友善。」");
 	say();
-	var0007 = Func0992(0xFFFD, "@她從這裡去了哪裡？你知道嗎？@", 0x0000, false);
+	var0007 = Func0992(0xFFFD, "「她從這裡去了哪裡？你知道嗎？」", 0x0000, false);
 	if (!(var0007 != 0xFE9C)) goto labelFunc044D_0562;
 	UI_set_conversation_slot(0x0000);
 labelFunc044D_0562:
 	message("「她離開這裡往東走了。我記得是去僧侶島( Monk Isle )的圖書館學習。」");
 	say();
 	UI_add_answer("僧侶島");
-	var0007 = Func0992(0xFFFD, "@聖者！我們必須繼續前進並找到她！@", 0x0000, false);
+	var0007 = Func0992(0xFFFD, "「聖者！我們必須繼續前進並找到她！」", 0x0000, false);
 	if (!(var0007 != 0xFE9C)) goto labelFunc044D_058E;
 	UI_set_conversation_slot(0x0000);
 labelFunc044D_058E:
@@ -317,7 +317,7 @@ labelFunc044D_05E7:
 	message("「月影城位於彼岸島( Isle of Beyond )，與睡牛隔著海峽。你需要一艘船才能去那裡旅行。」");
 	say();
 	if (!(!gflags[0x00DB])) goto labelFunc044D_0626;
-	var0007 = Func0992(0xFFFD, "@也許你可以那裡獲得一本新的法術書…@", 0x0000, false);
+	var0007 = Func0992(0xFFFD, "「也許你可以那裡獲得一本新的法術書…」", 0x0000, false);
 	if (!(var0007 != 0xFE9C)) goto labelFunc044D_0626;
 	UI_set_conversation_slot(0x0000);
 labelFunc044D_0626:
@@ -346,7 +346,7 @@ labelFunc044D_0674:
 	message("「我必須看看這個。我可以看看證據嗎？」");
 	say();
 	if (!(!(Func097D(0xFE9B, 0x0001, 0x031D, 0x0078, 0xFE99) || (Func097D(0xFE9B, 0x0001, 0x031D, 0x0079, 0xFE99) || Func097D(0xFE9B, 0x0001, 0x031D, 0x007A, 0xFE99))))) goto labelFunc044D_06DC;
-	var0007 = Func0992(0xFFFD, "@我們沒帶在身上…@", "@我沒帶。@", false);
+	var0007 = Func0992(0xFFFD, "「我們沒帶在身上…」", "「我沒帶。」", false);
 	UI_set_conversation_slot(0x0000);
 	message("「那我什麼也做不了。看不見的證據就是無用的證據。」");
 	say();

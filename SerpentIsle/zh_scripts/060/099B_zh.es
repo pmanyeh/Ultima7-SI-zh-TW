@@ -35,7 +35,7 @@ labelFunc099B_0090:
 	enum();
 labelFunc099B_0091:
 	for (var0002 in var0005 with var0008 to var0009) attend labelFunc099B_00B3;
-	Func094E(UI_get_npc_number(var0002), "@我來幫你拿吧。@");
+	Func094E(UI_get_npc_number(var0002), "「我來幫你拿吧。」");
 	UI_set_conversation_slot(0x0000);
 	goto labelFunc099B_0091;
 labelFunc099B_00B3:

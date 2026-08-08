@@ -89,7 +89,7 @@ labelFunc0808_01A4:
 	if (!(var0001 == 0x0005)) goto labelFunc0808_01E1;
 	message("「就像我說的，我服侍並保護我主人的家。我已經這麼做了好多年了。」");
 	say();
-	var0007 = Func0992(0xFFFD, "@為什麼這東西動起來這麼安靜！@", 0x0000, false);
+	var0007 = Func0992(0xFFFD, "「為什麼這東西動起來這麼安靜！」", 0x0000, false);
 	if (!(var0007 != 0xFE9C)) goto labelFunc0808_01D7;
 	UI_set_conversation_slot(0x0000);
 	message("「法師議長費伯西奧(Filbercio)對我的腳施了魔法，防止我走路時發出喀噠聲。他非常討厭那種噪音。」");

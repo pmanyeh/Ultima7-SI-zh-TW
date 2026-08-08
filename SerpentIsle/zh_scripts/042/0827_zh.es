@@ -244,7 +244,7 @@ labelFunc0827_0471:
 	goto labelFunc0827_04F7;
 labelFunc0827_0482:
 	if (!(var000E == 0x0003)) goto labelFunc0827_04F7;
-	var0013 = Func0992(0x0001, (("@但是 " + var0000) + "，我們沒有吉爾得幣來買這個。@"), 0x0000, false);
+	var0013 = Func0992(0x0001, (("「但是 " + var0000) + "，我們沒有吉爾得幣來買這個。」"), 0x0000, false);
 	if (!(var0013 != 0xFE9C)) goto labelFunc0827_04BF;
 	UI_show_npc_face0(0xFFF1, 0x0000);
 	message("「付不起錢的話就請離開吧。」");

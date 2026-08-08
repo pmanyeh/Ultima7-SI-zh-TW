@@ -248,7 +248,7 @@ labelFunc0334_04E3:
 labelFunc0334_04FF:
 	if (!(var0001 == 0x0047)) goto labelFunc0334_051E;
 	var000A = ["groat", "no|knight", "swifter", "(an|he"];
-	var_chinese = ["格羅特", "無人比其更迅捷的騎士"];
+	var_chinese = ["格羅特", "速度無人能及"];
 	goto labelFunc0334_0B45;
 labelFunc0334_051E:
 	if (!(var0001 == 0x0048)) goto labelFunc0334_053A;

@@ -10,11 +10,11 @@ void Func0096 shape#(0x96) ()
 	abort;
 labelFunc0096_000F:
 	if (!UI_get_item_flag(item, 0x000A)) goto labelFunc0096_0023;
-	Func094A("@收帆之後方可升起踏板。@");
+	Func094A("「收帆之後方可升起踏板。」");
 	goto labelFunc0096_003F;
 labelFunc0096_0023:
 	if (!(!Func0910(item))) goto labelFunc0096_0034;
-	Func094A("@我認為跳板遭到阻塞。@");
+	Func094A("「我認為跳板遭到阻塞。」");
 	goto labelFunc0096_003F;
 labelFunc0096_0034:
 	if (!UI_in_gump_mode()) goto labelFunc0096_003F;

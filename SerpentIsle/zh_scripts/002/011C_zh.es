@@ -28,7 +28,7 @@ labelFunc011C_0046:
   goto labelFunc011C_0082;
 labelFunc011C_0076:
   var0001 = Func0953();
-  Func094A("@嗯…我認為『日晷』這個詞，最重要的部分是『日』。@");
+  Func094A("「嗯…我認為『日晷』這個詞，最重要的部分是『日』。」");
 labelFunc011C_0082:
   return;
 }
