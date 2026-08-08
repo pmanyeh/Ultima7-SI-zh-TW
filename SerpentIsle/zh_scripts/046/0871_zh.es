@@ -82,7 +82,7 @@ labelFunc0871_01B7:
 	goto labelFunc0871_0292;
 labelFunc0871_01F4:
 	if (!(var0003 == 0x0006)) goto labelFunc0871_0249;
-	var0004 = ["再看看", "背叛( Betray )", "造成恐懼( Cause Fear )", "創造運輸工具( Create Automata )"];
+	var0004 = ["再看看", "背叛( Betray )", "造成恐懼( Cause Fear )", "創造魔導人偶( Create Automata )"];
 	var0005 = [0x0000, 0x0028, 0x002A, 0x002F];
 	var0006 = [0x0000, 0x011D, 0x012C, 0x02EE];
 	var0007 = [0x0000, 0x0096, 0x00AF, 0x0226];

@@ -260,7 +260,7 @@ labelFunc0445_04D2:
 	message("「你能想像被活活吃掉的恐懼嗎？！她是一位大師級的戰士，本應有更好的死法…」");
 	say();
 	if (!(!gflags[0x0032])) goto labelFunc0445_0503;
-	Func094E(0xFF6A, "@明白吧，陌生人， Marsten 和這個女人是床伴。@");
+	Func094E(0xFF6A, "「明白吧，陌生人， Marsten 和這個女人是床伴。」");
 	UI_set_conversation_slot(0x0000);
 	UI_add_answer("床伴");
 labelFunc0445_0503:

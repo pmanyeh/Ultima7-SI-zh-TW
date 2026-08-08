@@ -76,7 +76,7 @@ labelFunc098C_01A2:
 	if (!((var0004 == 0x0007) && (!gflags[0x0020]))) goto labelFunc098C_01DE;
 	gflags[0x0020] = true;
 	var0003 = true;
-	message("「法術『創造運輸工具( Create Automata )』出現在第幾環魔法中？」");
+	message("「法術『創造魔導人偶(運輸工具)( Create Automata )』出現在第幾環魔法中？」");
 	say();
 	var0005 = UI_input_numeric_value(0x0001, 0x0046, 0x0001, 0x0023);
 	if (!(var0005 != 0x0006)) goto labelFunc098C_01DE;
